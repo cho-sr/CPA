@@ -1,0 +1,3 @@
+method,quant_bits,final_accuracy,best_accuracy,best_round,accuracy_drop_vs_fp32,average_quant_mse,average_relative_l2,average_cosine_similarity,average_saturation_ratio,total_communication_bytes,compression_ratio_vs_fp32
+base,32,0.5991,0.6119,11,0.0,0.0,0.0,1.0,0.0,32419186560.0,1.0
+4bit,4,0.6022,0.6111,13,-0.0030999999999999917,3.941059916380454e-09,0.4403580468655973,0.9098646906387339,0.0,4052406000.0,7.999984838636602

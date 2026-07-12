@@ -1,0 +1,22 @@
+# Python cache and local metadata
+__pycache__/
+**/__pycache__/
+*.pyc
+.DS_Store
+.matplotlib/
+
+# Large generated checkpoints and attack artifacts
+*.pt
+*.pth
+*.ckpt
+*.pkl
+*.pickle
+
+# Generated training and collection outputs
+fedavg_fp32/outputs/
+fedavg_fp32/outputs_*/
+quantized_update_cpa/outputs/
+
+# Raw attack result dumps kept locally
+/02_naive_int4_update_cpa_nearest_uia/
+/exp/
