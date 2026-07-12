@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""FP32 FedAvg baseline on Tiny ImageNet-200 using the CPA FC2 model."""
+"""FP32 FedAvg baseline on Tiny ImageNet-200 using VGG16."""
 
 import argparse
 import csv
@@ -9,6 +9,7 @@ import os
 import random
 import sys
 import time
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from copy import deepcopy
 from pathlib import Path
 from typing import Dict, Iterable, List, Optional, Sequence, Tuple
@@ -20,6 +21,8 @@ from PIL import Image
 from torch.utils.data import DataLoader, Dataset, Subset
 from torchvision import datasets as tv_datasets
 from torchvision import transforms
+
+from quantization import merge_raw_quant_stats, quantize_dequantize_update, summarize_quant_stats
 
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
@@ -86,12 +89,12 @@ class TinyImageNetValAnnotations(Dataset):
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
-        description="FP32 weighted FedAvg baseline on Tiny ImageNet-200 with CPA FC2."
+        description="FP32 weighted FedAvg baseline on Tiny ImageNet-200 with VGG16."
     )
     parser.add_argument(
         "--data_root",
         type=Path,
-        default=REPO_ROOT / "cocktail_party_attack" / "datasets" / "tiny-imagenet-200",
+        default=REPO_ROOT / "datasets" / "tiny-imagenet-200",
         help="Tiny ImageNet-200 root directory.",
     )
     parser.add_argument(
@@ -99,6 +102,12 @@ def parse_args() -> argparse.Namespace:
         type=Path,
         default=REPO_ROOT / "fedavg_fp32" / "outputs",
         help="Directory for metrics and checkpoints.",
+    )
+    parser.add_argument(
+        "--experiment_name",
+        type=str,
+        default=None,
+        help="Optional output subdirectory name. Defaults to fp32/int8_nearest/int4_nearest.",
     )
     parser.add_argument(
         "--split_dir",
@@ -121,7 +130,28 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--rounds", type=int, default=50)
     parser.add_argument("--local_epochs", type=int, default=1)
     parser.add_argument("--batch_size", type=int, default=64)
+    parser.add_argument(
+        "--client_workers",
+        type=int,
+        default=1,
+        help="Number of clients to train in parallel within each FedAvg round.",
+    )
     parser.add_argument("--lr", type=float, default=0.01)
+    parser.add_argument("--quant_bits", type=int, default=32, choices=[32, 8, 4])
+    parser.add_argument(
+        "--quant_granularity",
+        type=str,
+        default="per_layer",
+        choices=["per_tensor", "per_layer"],
+        help="Update quantization scale granularity. per_layer means one scale per state_dict tensor.",
+    )
+    parser.add_argument(
+        "--rounding",
+        type=str,
+        default="nearest",
+        choices=["nearest", "stochastic"],
+        help="Rounding mode for INT8/INT4 update fake quantization.",
+    )
     parser.add_argument("--seed", type=int, default=42)
     parser.add_argument("--save_every", type=int, default=10)
     parser.add_argument("--h_dim", type=int, default=256)
@@ -129,6 +159,12 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--max_train_samples", type=int, default=None)
     parser.add_argument("--max_test_samples", type=int, default=None)
     parser.add_argument("--device", type=str, default=None, choices=[None, "cpu", "cuda"])
+    parser.add_argument(
+        "--resume_from",
+        type=Path,
+        default=None,
+        help="Optional checkpoint path to resume from.",
+    )
     parser.add_argument(
         "--extra_save_rounds",
         type=str,
@@ -147,8 +183,14 @@ def validate_args(args: argparse.Namespace) -> None:
         raise ValueError("--local_epochs must be positive")
     if args.batch_size <= 0:
         raise ValueError("--batch_size must be positive")
+    if args.client_workers <= 0:
+        raise ValueError("--client_workers must be positive")
     if args.lr <= 0:
         raise ValueError("--lr must be positive")
+    if args.quant_granularity not in {"per_tensor", "per_layer"}:
+        raise ValueError("--quant_granularity must be per_tensor or per_layer")
+    if args.rounding not in {"nearest", "stochastic"}:
+        raise ValueError("--rounding must be nearest or stochastic")
     if args.save_every < 0:
         raise ValueError("--save_every must be non-negative")
     if args.num_workers < 0:
@@ -157,6 +199,14 @@ def validate_args(args: argparse.Namespace) -> None:
 
 def resolve_path(path: Path) -> Path:
     return path if path.is_absolute() else (REPO_ROOT / path).resolve()
+
+
+def experiment_name(args: argparse.Namespace) -> str:
+    if args.experiment_name:
+        return args.experiment_name
+    if args.quant_bits == 32:
+        return "fp32"
+    return f"int{args.quant_bits}_{args.rounding}"
 
 
 def set_seed(seed: int) -> None:
@@ -383,11 +433,16 @@ def make_loader(
 
 def build_model(h_dim: int, device: torch.device) -> nn.Module:
     model = get_model(
-        model_name="fc2",
-        ds="tiny_imagenet",
+        model_name="vgg16",
+        ds="imagenet",
         h_dim=h_dim,
         dataparallel=False,
     )
+    final_layer = model.classifier[-1]
+    if not isinstance(final_layer, nn.Linear):
+        raise TypeError(f"Expected VGG16 classifier[-1] to be nn.Linear, found {type(final_layer)}")
+    if final_layer.out_features != NUM_CLASSES:
+        model.classifier[-1] = nn.Linear(final_layer.in_features, NUM_CLASSES)
     return model.to(device=device, dtype=torch.float32)
 
 
@@ -490,6 +545,9 @@ def metric_row(
     val_accuracy: float,
     round_time: float,
     lr: float,
+    quant_bits: int,
+    rounding: str,
+    quant_stats: Dict[str, float],
 ) -> Dict[str, float]:
     return {
         "round": round_idx,
@@ -498,6 +556,18 @@ def metric_row(
         "val_accuracy": val_accuracy,
         "round_time": round_time,
         "learning_rate": lr,
+        "quant_bits": quant_bits,
+        "rounding": rounding,
+        "quant_mse": quant_stats["quant_mse"],
+        "quant_relative_l2": quant_stats["quant_relative_l2"],
+        "quant_cosine_similarity": quant_stats["quant_cosine_similarity"],
+        "quant_saturation_ratio": quant_stats["quant_saturation_ratio"],
+        "quant_scale_mean": quant_stats["quant_scale_mean"],
+        "quant_scale_min": quant_stats["quant_scale_min"],
+        "quant_scale_max": quant_stats["quant_scale_max"],
+        "communication_bits": quant_stats["communication_bits"],
+        "communication_bytes": quant_stats["communication_bytes"],
+        "compression_ratio_vs_fp32": quant_stats["compression_ratio_vs_fp32"],
     }
 
 
@@ -505,7 +575,26 @@ def write_metrics(metrics: Sequence[Dict[str, float]], output_dir: Path) -> None
     output_dir.mkdir(parents=True, exist_ok=True)
     csv_path = output_dir / "metrics.csv"
     json_path = output_dir / "metrics.json"
-    fields = ["round", "train_loss", "val_loss", "val_accuracy", "round_time", "learning_rate"]
+    fields = [
+        "round",
+        "train_loss",
+        "val_loss",
+        "val_accuracy",
+        "round_time",
+        "learning_rate",
+        "quant_bits",
+        "rounding",
+        "quant_mse",
+        "quant_relative_l2",
+        "quant_cosine_similarity",
+        "quant_saturation_ratio",
+        "quant_scale_mean",
+        "quant_scale_min",
+        "quant_scale_max",
+        "communication_bits",
+        "communication_bytes",
+        "compression_ratio_vs_fp32",
+    ]
     with csv_path.open("w", newline="", encoding="utf-8") as f:
         writer = csv.DictWriter(f, fieldnames=fields)
         writer.writeheader()
@@ -531,6 +620,78 @@ def checkpoint_rounds(rounds: int, save_every: int, extra_save_rounds: Iterable[
         save_rounds.update(range(save_every, rounds + 1, save_every))
     save_rounds.update(round_idx for round_idx in extra_save_rounds if 0 <= round_idx <= rounds)
     return save_rounds
+
+
+def write_summary(metrics: Sequence[Dict[str, float]], output_dir: Path, args: argparse.Namespace) -> None:
+    if metrics:
+        final_metric = metrics[-1]
+        best_metric = max(metrics, key=lambda metric: metric["val_accuracy"])
+        avg_quant_mse = sum(metric["quant_mse"] for metric in metrics) / len(metrics)
+        avg_relative_l2 = sum(metric["quant_relative_l2"] for metric in metrics) / len(metrics)
+        avg_cosine = sum(metric["quant_cosine_similarity"] for metric in metrics) / len(metrics)
+        avg_saturation = sum(metric["quant_saturation_ratio"] for metric in metrics) / len(metrics)
+        total_communication_bits = sum(metric["communication_bits"] for metric in metrics)
+        total_communication_bytes = sum(metric["communication_bytes"] for metric in metrics)
+        total_fp32_bits = sum(metric["communication_bits"] * metric["compression_ratio_vs_fp32"] for metric in metrics)
+        compression_ratio = total_fp32_bits / total_communication_bits if total_communication_bits else 1.0
+        summary = {
+            "quant_bits": args.quant_bits,
+            "rounding": args.rounding,
+            "final_accuracy": final_metric["val_accuracy"],
+            "best_accuracy": best_metric["val_accuracy"],
+            "best_round": best_metric["round"],
+            "final_val_loss": final_metric["val_loss"],
+            "average_quant_mse": avg_quant_mse,
+            "average_relative_l2": avg_relative_l2,
+            "average_cosine_similarity": avg_cosine,
+            "average_saturation_ratio": avg_saturation,
+            "total_communication_bits": total_communication_bits,
+            "total_communication_bytes": total_communication_bytes,
+            "compression_ratio_vs_fp32": compression_ratio,
+        }
+    else:
+        summary = {
+            "quant_bits": args.quant_bits,
+            "rounding": args.rounding,
+            "final_accuracy": 0.0,
+            "best_accuracy": 0.0,
+            "best_round": 0,
+            "final_val_loss": 0.0,
+            "average_quant_mse": 0.0,
+            "average_relative_l2": 0.0,
+            "average_cosine_similarity": 0.0,
+            "average_saturation_ratio": 0.0,
+            "total_communication_bits": 0,
+            "total_communication_bytes": 0,
+            "compression_ratio_vs_fp32": 0.0,
+        }
+    with (output_dir / "summary.json").open("w", encoding="utf-8") as f:
+        json.dump(summary, f, indent=2)
+
+
+def read_existing_metrics(output_dir: Path, max_round: int) -> List[Dict[str, float]]:
+    metrics_path = output_dir / "metrics.csv"
+    if not metrics_path.is_file():
+        return []
+    metrics: List[Dict[str, float]] = []
+    with metrics_path.open("r", encoding="utf-8") as f:
+        reader = csv.DictReader(f)
+        for row in reader:
+            round_idx = int(row["round"])
+            if round_idx > max_round:
+                continue
+            parsed: Dict[str, float] = {}
+            for key, value in row.items():
+                if key == "round":
+                    parsed[key] = round_idx
+                elif key == "rounding":
+                    parsed[key] = value
+                elif key == "quant_bits":
+                    parsed[key] = int(value)
+                else:
+                    parsed[key] = float(value)
+            metrics.append(parsed)
+    return metrics
 
 
 def ensure_fp32_state(state_dict: Dict[str, torch.Tensor]) -> None:
@@ -584,7 +745,7 @@ def make_config(args: argparse.Namespace, data_root: Path, output_dir: Path, spl
         "output_dir": str(output_dir),
         "split_path": str(split_path),
         "validation_mode": val_mode,
-        "model": "fc2",
+        "model": "vgg16",
         "dataset": "tiny_imagenet",
         "num_classes": NUM_CLASSES,
         "input_shape": [3, 64, 64],
@@ -593,7 +754,17 @@ def make_config(args: argparse.Namespace, data_root: Path, output_dir: Path, spl
         "rounds": args.rounds,
         "local_epochs": args.local_epochs,
         "batch_size": args.batch_size,
+        "client_workers": args.client_workers,
         "lr": args.lr,
+        "quant_bits": args.quant_bits,
+        "quantization_enabled": args.quant_bits != 32,
+        "quantization_type": "none" if args.quant_bits == 32 else "symmetric_signed",
+        "quantization_granularity": args.quant_granularity,
+        "rounding": args.rounding,
+        "global_model_dtype": "float32",
+        "aggregation_dtype": "float32",
+        "fake_quantization": True,
+        "scale_metadata_bits": 32,
         "seed": args.seed,
         "save_every": args.save_every,
         "max_train_samples": args.max_train_samples,
@@ -620,7 +791,7 @@ def main() -> None:
     args = parse_args()
     validate_args(args)
     data_root = resolve_path(args.data_root)
-    output_dir = resolve_path(args.output_dir)
+    output_dir = resolve_path(args.output_dir) / experiment_name(args)
     output_dir.mkdir(parents=True, exist_ok=True)
 
     set_seed(args.seed)
@@ -658,15 +829,33 @@ def main() -> None:
         json.dump(config, f, indent=2)
 
     model = build_model(args.h_dim, device)
+    client_workers = min(args.client_workers, args.num_clients)
+    local_models = [deepcopy(model) for _ in range(client_workers)]
     criterion = nn.CrossEntropyLoss()
-    metrics: List[Dict[str, float]] = []
     save_rounds = checkpoint_rounds(
         args.rounds,
         args.save_every,
         parse_extra_save_rounds(args.extra_save_rounds),
     )
 
-    if 0 in save_rounds:
+    start_round = 1
+    metrics: List[Dict[str, float]] = []
+    if args.resume_from is not None:
+        resume_path = resolve_path(args.resume_from)
+        checkpoint = torch.load(resume_path, map_location=device)
+        resume_round = int(checkpoint["round"])
+        model.load_state_dict(checkpoint["model_state_dict"], strict=True)
+        ensure_fp32_state(model.state_dict())
+        local_models = [deepcopy(model) for _ in range(client_workers)]
+        start_round = resume_round + 1
+        metrics = read_existing_metrics(output_dir, max_round=resume_round)
+        if start_round > args.rounds + 1:
+            raise ValueError(
+                f"Resume checkpoint round {resume_round} is beyond requested rounds {args.rounds}"
+            )
+        print(f"Resuming from {resume_path} at round {start_round}", flush=True)
+
+    if start_round == 1 and 0 in save_rounds:
         save_checkpoint(
             model=model,
             round_idx=0,
@@ -680,18 +869,24 @@ def main() -> None:
 
     print(
         f"Starting FP32 FedAvg on {device} | train samples {sum(client_sizes)} | "
-        f"val samples {len(val_subset)} | clients {args.num_clients}",
+        f"val samples {len(val_subset)} | clients {args.num_clients} | "
+        f"client workers {client_workers}",
         flush=True,
     )
     print(f"Client split: {split_path}", flush=True)
 
-    for round_idx in range(1, args.rounds + 1):
+    for round_idx in range(start_round, args.rounds + 1):
         round_start = time.time()
         global_state = state_dict_to_device(model.state_dict(), device)
-        client_updates: List[Dict[str, torch.Tensor]] = []
-        client_train_losses: List[float] = []
+        client_updates: List[Optional[Dict[str, torch.Tensor]]] = [None] * args.num_clients
+        client_train_losses: List[Optional[float]] = [None] * args.num_clients
+        client_quant_stats: List[Optional[Dict[str, float]]] = [None] * args.num_clients
 
-        for client_id, indices in enumerate(client_indices):
+        def train_client_with_model(
+            local_model: nn.Module,
+            client_id: int,
+            indices: Sequence[int],
+        ) -> Tuple[int, Dict[str, torch.Tensor], float, Dict[str, float]]:
             client_seed = args.seed + round_idx * 1000 + client_id
             client_subset = Subset(train_dataset, indices)
             client_loader = make_loader(
@@ -702,12 +897,11 @@ def main() -> None:
                 num_workers=args.num_workers,
                 device=device,
             )
-            local_model = build_model(args.h_dim, device)
-            local_model.load_state_dict(global_state)
+            local_model.load_state_dict(global_state, strict=True)
             local_state, train_loss, sample_count = train_one_client(
                 model=local_model,
                 loader=client_loader,
-                criterion=criterion,
+                criterion=nn.CrossEntropyLoss(),
                 lr=args.lr,
                 local_epochs=args.local_epochs,
                 device=device,
@@ -716,16 +910,82 @@ def main() -> None:
                 raise ValueError(
                     f"Client {client_id} sample count mismatch: {sample_count} != {len(indices)}"
                 )
-            client_updates.append(compute_update(local_state, global_state))
-            client_train_losses.append(train_loss)
-            del local_model
+            fp32_update = compute_update(local_state, global_state)
+            quant_generator = None
+            if args.quant_bits != 32 and args.rounding == "stochastic":
+                quant_generator = torch.Generator(device=device).manual_seed(
+                    args.seed + round_idx * 1_000_000 + client_id
+                )
+            compressed_update, quant_stats = quantize_dequantize_update(
+                update=fp32_update,
+                bits=args.quant_bits,
+                rounding=args.rounding,
+                generator=quant_generator,
+            )
+            return client_id, compressed_update, train_loss, quant_stats
 
-        next_state = aggregate_updates(client_updates, client_sizes, global_state)
+        if client_workers == 1:
+            for client_id, indices in enumerate(client_indices):
+                result_client_id, update, train_loss, quant_stats = train_client_with_model(
+                    local_models[0],
+                    client_id,
+                    indices,
+                )
+                client_updates[result_client_id] = update
+                client_train_losses[result_client_id] = train_loss
+                client_quant_stats[result_client_id] = quant_stats
+        else:
+            with ThreadPoolExecutor(max_workers=client_workers) as executor:
+                for batch_start in range(0, args.num_clients, client_workers):
+                    futures = []
+                    batch = list(enumerate(client_indices[batch_start : batch_start + client_workers], batch_start))
+                    for worker_id, (client_id, indices) in enumerate(batch):
+                        futures.append(
+                            executor.submit(
+                                train_client_with_model,
+                                local_models[worker_id],
+                                client_id,
+                                indices,
+                            )
+                        )
+                    for future in as_completed(futures):
+                        result_client_id, update, train_loss, quant_stats = future.result()
+                        client_updates[result_client_id] = update
+                        client_train_losses[result_client_id] = train_loss
+                        client_quant_stats[result_client_id] = quant_stats
+
+        if any(update is None for update in client_updates):
+            raise RuntimeError("At least one client did not produce an update")
+        if any(loss is None for loss in client_train_losses):
+            raise RuntimeError("At least one client did not produce a train loss")
+        if any(stats is None for stats in client_quant_stats):
+            raise RuntimeError("At least one client did not produce quantization stats")
+        round_client_updates = [update for update in client_updates if update is not None]
+        round_client_train_losses = [loss for loss in client_train_losses if loss is not None]
+        round_quant_raw_stats: Dict[str, float] = {}
+        communication_bits = 0.0
+        communication_bytes = 0.0
+        fp32_communication_bits = 0.0
+        for quant_stats in client_quant_stats:
+            if quant_stats is None:
+                continue
+            merge_raw_quant_stats(round_quant_raw_stats, quant_stats)
+            communication_bits += quant_stats["communication_bits"]
+            communication_bytes += quant_stats["communication_bytes"]
+            fp32_communication_bits += quant_stats["communication_bits"] * quant_stats["compression_ratio_vs_fp32"]
+        round_quant_stats = summarize_quant_stats(round_quant_raw_stats)
+        round_quant_stats["communication_bits"] = communication_bits
+        round_quant_stats["communication_bytes"] = communication_bytes
+        round_quant_stats["compression_ratio_vs_fp32"] = (
+            fp32_communication_bits / communication_bits if communication_bits else 1.0
+        )
+
+        next_state = aggregate_updates(round_client_updates, client_sizes, global_state)
         model.load_state_dict(next_state)
         ensure_fp32_state(model.state_dict())
 
         weighted_train_loss = sum(
-            loss * size for loss, size in zip(client_train_losses, client_sizes)
+            loss * size for loss, size in zip(round_client_train_losses, client_sizes)
         ) / sum(client_sizes)
         val_loss, val_accuracy = evaluate(model, val_loader, criterion, device)
         round_metric = metric_row(
@@ -735,6 +995,9 @@ def main() -> None:
             val_accuracy=val_accuracy,
             round_time=time.time() - round_start,
             lr=args.lr,
+            quant_bits=args.quant_bits,
+            rounding=args.rounding,
+            quant_stats=round_quant_stats,
         )
         metrics.append(round_metric)
         write_metrics(metrics, output_dir)
@@ -763,6 +1026,7 @@ def main() -> None:
         output_dir=output_dir,
         latest=True,
     )
+    write_summary(metrics, output_dir, args)
     print(f"Done. Metrics and checkpoints saved to {output_dir}", flush=True)
 
 
