@@ -1,0 +1,160 @@
+[Mon Jul 13 18:17:08 UTC 2026] starting qgm b10 gm=0.0001
+
+
+
+Wandb: None
+
+exp_path: ./exp/tiny_imagenet/vgg16/attack/cp_qgm/nodef/04_quantized_gradient_consistency_fia_nearest_qgm_relative_l2_gm0p0001_nfi16_it1000_b10_uia
+
+Reading gradient data from /root/CPA/quantized_update_cpa/outputs/04_quantized_gradient_consistency_fia_nearest_qgm_relative_l2_gm0p0001_nfi16_it1000_b10/tiny_imagenet/vgg16/updates/128.pickle
+
+===Starting Cocktail Party Attack on batch: 0 with batch_size: 128 and n_iter=5000===
+
+batch: 0  iter: 0  loss: 108.206  loss_ne: 0.0  loss_decor: 17.245  loss_nv: 101.716  loss_l1: 0.717  cs: 0.2150000035762787  time: 30
+batch: 0  iter: 1000  loss: 100.848  loss_ne: 0.0  loss_decor: 17.625  loss_nv: 34.557  loss_l1: 0.588  cs: 0.6380000114440918  time: 1
+batch: 0  iter: 2000  loss: 100.616  loss_ne: 0.0  loss_decor: 17.62  loss_nv: 33.389  loss_l1: 0.578  cs: 0.6620000004768372  time: 1
+batch: 0  iter: 3000  loss: 100.573  loss_ne: 0.0  loss_decor: 17.617  loss_nv: 33.244  loss_l1: 0.576  cs: 0.6650000214576721  time: 1
+batch: 0  iter: 4000  loss: 100.563  loss_ne: 0.0  loss_decor: 17.617  loss_nv: 33.181  loss_l1: 0.576  cs: 0.6669999957084656  time: 1
+batch: 0  iter: 4999  loss: 100.551  loss_ne: 0.0  loss_decor: 17.618  loss_nv: 33.091  loss_l1: 0.575  cs: 0.671999990940094  time: 1
+
+===Starting Feature Inversion on batch: 0 with batch_size: 128 and n_iter=1000===
+
+batch: 0  iter: 0  loss: 0.976  loss_fi: 0.71  loss_tv: 2.212  loss_gm: 448.765  psnr: 8.934  ssim: 0.018  lpips: 0.762  time: 4
+batch: 0  iter: 500  loss: 0.334  loss_fi: 0.194  loss_tv: 1.316  loss_gm: 82.945  psnr: 9.862  ssim: 0.032  lpips: 0.7  time: 30
+batch: 0  iter: 999  loss: 0.264  loss_fi: 0.158  loss_tv: 1.061  loss_gm: 0.659  psnr: 10.233  ssim: 0.04  lpips: 0.692  time: 30
+
+===Starting Cocktail Party Attack on batch: 1 with batch_size: 128 and n_iter=5000===
+
+batch: 1  iter: 0  loss: 108.108  loss_ne: 0.0  loss_decor: 17.245  loss_nv: 100.336  loss_l1: 0.733  cs: 0.2329999953508377  time: 43
+batch: 1  iter: 1000  loss: 100.541  loss_ne: 0.0  loss_decor: 17.624  loss_nv: 31.194  loss_l1: 0.616  cs: 0.6679999828338623  time: 1
+batch: 1  iter: 2000  loss: 100.294  loss_ne: 0.0  loss_decor: 17.616  loss_nv: 30.049  loss_l1: 0.605  cs: 0.6970000267028809  time: 1
+batch: 1  iter: 3000  loss: 100.245  loss_ne: 0.0  loss_decor: 17.615  loss_nv: 29.809  loss_l1: 0.602  cs: 0.7039999961853027  time: 1
+batch: 1  iter: 4000  loss: 100.218  loss_ne: 0.0  loss_decor: 17.615  loss_nv: 29.637  loss_l1: 0.601  cs: 0.7070000171661377  time: 1
+batch: 1  iter: 4999  loss: 100.2  loss_ne: 0.0  loss_decor: 17.615  loss_nv: 29.536  loss_l1: 0.6  cs: 0.7129999995231628  time: 1
+
+===Starting Feature Inversion on batch: 1 with batch_size: 128 and n_iter=1000===
+
+batch: 1  iter: 0  loss: 0.965  loss_fi: 0.692  loss_tv: 2.209  loss_gm: 518.904  psnr: 8.572  ssim: 0.017  lpips: 0.733  time: 3
+batch: 1  iter: 500  loss: 0.384  loss_fi: 0.22  loss_tv: 1.498  loss_gm: 146.242  psnr: 9.305  ssim: 0.025  lpips: 0.685  time: 30
+batch: 1  iter: 999  loss: 0.285  loss_fi: 0.159  loss_tv: 1.264  loss_gm: 0.825  psnr: 9.655  ssim: 0.029  lpips: 0.671  time: 30
+
+===Starting Cocktail Party Attack on batch: 2 with batch_size: 128 and n_iter=5000===
+
+batch: 2  iter: 0  loss: 108.116  loss_ne: 0.0  loss_decor: 17.245  loss_nv: 100.659  loss_l1: 0.726  cs: 0.22599999606609344  time: 34
+batch: 2  iter: 1000  loss: 100.645  loss_ne: 0.0  loss_decor: 17.62  loss_nv: 32.866  loss_l1: 0.597  cs: 0.6549999713897705  time: 2
+batch: 2  iter: 2000  loss: 100.425  loss_ne: 0.0  loss_decor: 17.618  loss_nv: 31.607  loss_l1: 0.588  cs: 0.6800000071525574  time: 2
+batch: 2  iter: 3000  loss: 100.396  loss_ne: 0.0  loss_decor: 17.617  loss_nv: 31.466  loss_l1: 0.587  cs: 0.6869999766349792  time: 2
+batch: 2  iter: 4000  loss: 100.371  loss_ne: 0.0  loss_decor: 17.615  loss_nv: 31.418  loss_l1: 0.585  cs: 0.6890000104904175  time: 2
+batch: 2  iter: 4999  loss: 100.361  loss_ne: 0.0  loss_decor: 17.614  loss_nv: 31.441  loss_l1: 0.584  cs: 0.6909999847412109  time: 1
+
+===Starting Feature Inversion on batch: 2 with batch_size: 128 and n_iter=1000===
+
+batch: 2  iter: 0  loss: 0.999  loss_fi: 0.716  loss_tv: 2.209  loss_gm: 612.96  psnr: 9.009  ssim: 0.013  lpips: 0.711  time: 3
+batch: 2  iter: 500  loss: 0.403  loss_fi: 0.235  loss_tv: 1.529  loss_gm: 143.146  psnr: 9.614  ssim: 0.015  lpips: 0.674  time: 30
+batch: 2  iter: 999  loss: 0.294  loss_fi: 0.165  loss_tv: 1.295  loss_gm: 1.086  psnr: 9.944  ssim: 0.017  lpips: 0.659  time: 30
+
+===Starting Cocktail Party Attack on batch: 3 with batch_size: 128 and n_iter=5000===
+
+batch: 3  iter: 0  loss: 108.219  loss_ne: 0.0  loss_decor: 17.245  loss_nv: 102.536  loss_l1: 0.698  cs: 0.19900000095367432  time: 39
+batch: 3  iter: 1000  loss: 101.065  loss_ne: 0.0  loss_decor: 17.63  loss_nv: 36.891  loss_l1: 0.566  cs: 0.597000002861023  time: 2
+batch: 3  iter: 2000  loss: 100.789  loss_ne: 0.0  loss_decor: 17.621  loss_nv: 35.612  loss_l1: 0.554  cs: 0.6240000128746033  time: 2
+batch: 3  iter: 3000  loss: 100.713  loss_ne: 0.0  loss_decor: 17.62  loss_nv: 35.193  loss_l1: 0.551  cs: 0.6330000162124634  time: 1
+batch: 3  iter: 4000  loss: 100.696  loss_ne: 0.0  loss_decor: 17.618  loss_nv: 35.158  loss_l1: 0.55  cs: 0.6340000033378601  time: 1
+batch: 3  iter: 4999  loss: 100.682  loss_ne: 0.0  loss_decor: 17.618  loss_nv: 35.117  loss_l1: 0.549  cs: 0.6349999904632568  time: 1
+
+===Starting Feature Inversion on batch: 3 with batch_size: 128 and n_iter=1000===
+
+batch: 3  iter: 0  loss: 0.975  loss_fi: 0.695  loss_tv: 2.214  loss_gm: 587.276  psnr: 8.985  ssim: 0.013  lpips: 0.726  time: 2
+batch: 3  iter: 500  loss: 0.361  loss_fi: 0.215  loss_tv: 1.423  loss_gm: 38.615  psnr: 9.776  ssim: 0.019  lpips: 0.701  time: 30
+batch: 3  iter: 999  loss: 0.3  loss_fi: 0.182  loss_tv: 1.177  loss_gm: 0.663  psnr: 10.116  ssim: 0.024  lpips: 0.698  time: 30
+
+===Starting Cocktail Party Attack on batch: 4 with batch_size: 128 and n_iter=5000===
+
+batch: 4  iter: 0  loss: 108.205  loss_ne: 0.0  loss_decor: 17.245  loss_nv: 102.753  loss_l1: 0.69  cs: 0.20000000298023224  time: 38
+batch: 4  iter: 1000  loss: 101.166  loss_ne: 0.0  loss_decor: 17.625  loss_nv: 38.002  loss_l1: 0.563  cs: 0.5529999732971191  time: 2
+batch: 4  iter: 2000  loss: 100.867  loss_ne: 0.0  loss_decor: 17.616  loss_nv: 36.548  loss_l1: 0.55  cs: 0.5879999995231628  time: 2
+batch: 4  iter: 3000  loss: 100.819  loss_ne: 0.0  loss_decor: 17.616  loss_nv: 36.25  loss_l1: 0.548  cs: 0.593999981880188  time: 2
+batch: 4  iter: 4000  loss: 100.782  loss_ne: 0.0  loss_decor: 17.616  loss_nv: 36.045  loss_l1: 0.547  cs: 0.5989999771118164  time: 1
+batch: 4  iter: 4999  loss: 100.759  loss_ne: 0.0  loss_decor: 17.615  loss_nv: 35.918  loss_l1: 0.546  cs: 0.6029999852180481  time: 1
+
+===Starting Feature Inversion on batch: 4 with batch_size: 128 and n_iter=1000===
+
+batch: 4  iter: 0  loss: 1.001  loss_fi: 0.713  loss_tv: 2.208  loss_gm: 669.604  psnr: 8.905  ssim: 0.012  lpips: 0.731  time: 3
+batch: 4  iter: 500  loss: 0.443  loss_fi: 0.276  loss_tv: 1.582  loss_gm: 88.21  psnr: 9.418  ssim: 0.015  lpips: 0.707  time: 30
+batch: 4  iter: 999  loss: 0.338  loss_fi: 0.202  loss_tv: 1.357  loss_gm: 0.684  psnr: 9.721  ssim: 0.018  lpips: 0.695  time: 30
+
+===Starting Cocktail Party Attack on batch: 5 with batch_size: 128 and n_iter=5000===
+
+batch: 5  iter: 0  loss: 108.25  loss_ne: 0.0  loss_decor: 17.245  loss_nv: 102.082  loss_l1: 0.716  cs: 0.21400000154972076  time: 35
+batch: 5  iter: 1000  loss: 100.757  loss_ne: 0.0  loss_decor: 17.623  loss_nv: 34.33  loss_l1: 0.579  cs: 0.6290000081062317  time: 1
+batch: 5  iter: 2000  loss: 100.533  loss_ne: 0.0  loss_decor: 17.615  loss_nv: 33.308  loss_l1: 0.569  cs: 0.6589999794960022  time: 1
+batch: 5  iter: 3000  loss: 100.501  loss_ne: 0.0  loss_decor: 17.613  loss_nv: 33.167  loss_l1: 0.568  cs: 0.6610000133514404  time: 1
+batch: 5  iter: 4000  loss: 100.491  loss_ne: 0.0  loss_decor: 17.613  loss_nv: 33.12  loss_l1: 0.568  cs: 0.6629999876022339  time: 1
+batch: 5  iter: 4999  loss: 100.486  loss_ne: 0.0  loss_decor: 17.613  loss_nv: 33.06  loss_l1: 0.567  cs: 0.6650000214576721  time: 1
+
+===Starting Feature Inversion on batch: 5 with batch_size: 128 and n_iter=1000===
+
+batch: 5  iter: 0  loss: 0.989  loss_fi: 0.713  loss_tv: 2.206  loss_gm: 557.413  psnr: 8.327  ssim: 0.014  lpips: 0.749  time: 3
+batch: 5  iter: 500  loss: 0.412  loss_fi: 0.244  loss_tv: 1.574  loss_gm: 114.091  psnr: 8.798  ssim: 0.02  lpips: 0.715  time: 30
+batch: 5  iter: 999  loss: 0.306  loss_fi: 0.171  loss_tv: 1.348  loss_gm: 0.744  psnr: 9.073  ssim: 0.024  lpips: 0.698  time: 30
+
+===Starting Cocktail Party Attack on batch: 6 with batch_size: 128 and n_iter=5000===
+
+batch: 6  iter: 0  loss: 108.116  loss_ne: 0.0  loss_decor: 17.245  loss_nv: 100.777  loss_l1: 0.723  cs: 0.21899999678134918  time: 34
+batch: 6  iter: 1000  loss: 100.845  loss_ne: 0.0  loss_decor: 17.628  loss_nv: 34.177  loss_l1: 0.594  cs: 0.6299999952316284  time: 2
+batch: 6  iter: 2000  loss: 100.546  loss_ne: 0.0  loss_decor: 17.622  loss_nv: 32.636  loss_l1: 0.581  cs: 0.6790000200271606  time: 1
+batch: 6  iter: 3000  loss: 100.475  loss_ne: 0.0  loss_decor: 17.619  loss_nv: 32.328  loss_l1: 0.579  cs: 0.6930000185966492  time: 1
+batch: 6  iter: 4000  loss: 100.451  loss_ne: 0.0  loss_decor: 17.617  loss_nv: 32.256  loss_l1: 0.578  cs: 0.6940000057220459  time: 1
+batch: 6  iter: 4999  loss: 100.446  loss_ne: 0.0  loss_decor: 17.617  loss_nv: 32.214  loss_l1: 0.577  cs: 0.6959999799728394  time: 1
+
+===Starting Feature Inversion on batch: 6 with batch_size: 128 and n_iter=1000===
+
+batch: 6  iter: 0  loss: 1.007  loss_fi: 0.72  loss_tv: 2.212  loss_gm: 664.54  psnr: 8.238  ssim: 0.013  lpips: 0.761  time: 3
+batch: 6  iter: 500  loss: 0.466  loss_fi: 0.291  loss_tv: 1.528  loss_gm: 221.775  psnr: 8.801  ssim: 0.021  lpips: 0.708  time: 30
+batch: 6  iter: 999  loss: 0.311  loss_fi: 0.182  loss_tv: 1.295  loss_gm: 3.312  psnr: 9.051  ssim: 0.025  lpips: 0.689  time: 30
+
+===Starting Cocktail Party Attack on batch: 7 with batch_size: 128 and n_iter=5000===
+
+batch: 7  iter: 0  loss: 108.23  loss_ne: 0.0  loss_decor: 17.245  loss_nv: 103.807  loss_l1: 0.667  cs: 0.1899999976158142  time: 54
+batch: 7  iter: 1000  loss: 101.097  loss_ne: 0.0  loss_decor: 17.621  loss_nv: 39.01  loss_l1: 0.527  cs: 0.5149999856948853  time: 1
+batch: 7  iter: 2000  loss: 100.839  loss_ne: 0.0  loss_decor: 17.608  loss_nv: 37.892  loss_l1: 0.518  cs: 0.5360000133514404  time: 1
+batch: 7  iter: 3000  loss: 100.783  loss_ne: 0.0  loss_decor: 17.607  loss_nv: 37.603  loss_l1: 0.515  cs: 0.5460000038146973  time: 1
+batch: 7  iter: 4000  loss: 100.769  loss_ne: 0.0  loss_decor: 17.608  loss_nv: 37.492  loss_l1: 0.514  cs: 0.5490000247955322  time: 1
+batch: 7  iter: 4999  loss: 100.76  loss_ne: 0.0  loss_decor: 17.608  loss_nv: 37.425  loss_l1: 0.514  cs: 0.5509999990463257  time: 1
+
+===Starting Feature Inversion on batch: 7 with batch_size: 128 and n_iter=1000===
+
+batch: 7  iter: 0  loss: 1.009  loss_fi: 0.732  loss_tv: 2.214  loss_gm: 558.72  psnr: 9.161  ssim: 0.014  lpips: 0.737  time: 3
+batch: 7  iter: 500  loss: 0.391  loss_fi: 0.241  loss_tv: 1.422  loss_gm: 76.516  psnr: 9.969  ssim: 0.023  lpips: 0.7  time: 30
+batch: 7  iter: 999  loss: 0.311  loss_fi: 0.194  loss_tv: 1.168  loss_gm: 0.694  psnr: 10.354  ssim: 0.028  lpips: 0.692  time: 30
+
+===Starting Cocktail Party Attack on batch: 8 with batch_size: 128 and n_iter=5000===
+
+batch: 8  iter: 0  loss: 108.266  loss_ne: 0.0  loss_decor: 17.245  loss_nv: 102.408  loss_l1: 0.711  cs: 0.2070000022649765  time: 36
+batch: 8  iter: 1000  loss: 101.2  loss_ne: 0.0  loss_decor: 17.631  loss_nv: 37.032  loss_l1: 0.589  cs: 0.6069999933242798  time: 2
+batch: 8  iter: 2000  loss: 100.875  loss_ne: 0.0  loss_decor: 17.624  loss_nv: 35.321  loss_l1: 0.575  cs: 0.6489999890327454  time: 1
+batch: 8  iter: 3000  loss: 100.811  loss_ne: 0.0  loss_decor: 17.625  loss_nv: 34.937  loss_l1: 0.571  cs: 0.6579999923706055  time: 1
+batch: 8  iter: 4000  loss: 100.793  loss_ne: 0.0  loss_decor: 17.622  loss_nv: 34.939  loss_l1: 0.571  cs: 0.6570000052452087  time: 2
+batch: 8  iter: 4999  loss: 100.777  loss_ne: 0.0  loss_decor: 17.623  loss_nv: 34.816  loss_l1: 0.57  cs: 0.652999997138977  time: 2
+
+===Starting Feature Inversion on batch: 8 with batch_size: 128 and n_iter=1000===
+
+batch: 8  iter: 0  loss: 0.969  loss_fi: 0.701  loss_tv: 2.217  loss_gm: 457.196  psnr: 8.958  ssim: 0.014  lpips: 0.747  time: 3
+batch: 8  iter: 500  loss: 0.373  loss_fi: 0.216  loss_tv: 1.447  loss_gm: 125.036  psnr: 9.753  ssim: 0.022  lpips: 0.698  time: 30
+batch: 8  iter: 999  loss: 0.275  loss_fi: 0.154  loss_tv: 1.205  loss_gm: 0.746  psnr: 10.107  ssim: 0.028  lpips: 0.685  time: 31
+
+===Starting Cocktail Party Attack on batch: 9 with batch_size: 128 and n_iter=5000===
+
+batch: 9  iter: 0  loss: 108.229  loss_ne: 0.0  loss_decor: 17.245  loss_nv: 101.777  loss_l1: 0.72  cs: 0.21699999272823334  time: 33
+batch: 9  iter: 1000  loss: 100.927  loss_ne: 0.0  loss_decor: 17.627  loss_nv: 35.12  loss_l1: 0.588  cs: 0.6669999957084656  time: 2
+batch: 9  iter: 2000  loss: 100.656  loss_ne: 0.0  loss_decor: 17.622  loss_nv: 33.7  loss_l1: 0.576  cs: 0.6970000267028809  time: 2
+batch: 9  iter: 3000  loss: 100.602  loss_ne: 0.0  loss_decor: 17.621  loss_nv: 33.398  loss_l1: 0.574  cs: 0.7059999704360962  time: 2
+batch: 9  iter: 4000  loss: 100.575  loss_ne: 0.0  loss_decor: 17.62  loss_nv: 33.293  loss_l1: 0.572  cs: 0.7099999785423279  time: 2
+batch: 9  iter: 4999  loss: 100.569  loss_ne: 0.0  loss_decor: 17.62  loss_nv: 33.266  loss_l1: 0.572  cs: 0.7120000123977661  time: 2
+
+===Starting Feature Inversion on batch: 9 with batch_size: 128 and n_iter=1000===
+
+batch: 9  iter: 0  loss: 0.999  loss_fi: 0.732  loss_tv: 2.212  loss_gm: 459.181  psnr: 8.116  ssim: 0.012  lpips: 0.76  time: 3
+batch: 9  iter: 500  loss: 0.456  loss_fi: 0.276  loss_tv: 1.565  loss_gm: 235.735  psnr: 8.616  ssim: 0.02  lpips: 0.733  time: 30
+batch: 9  iter: 999  loss: 0.314  loss_fi: 0.179  loss_tv: 1.342  loss_gm: 0.898  psnr: 8.873  ssim: 0.024  lpips: 0.714  time: 31
+[Mon Jul 13 18:36:08 UTC 2026] finished qgm b10 exit=0

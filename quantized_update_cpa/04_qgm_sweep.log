@@ -1,0 +1,77 @@
+[Mon Jul 13 18:00:29 UTC 2026] starting qgm gm sweep
+[Mon Jul 13 18:00:29 UTC 2026] starting gm=0.0001
+
+
+
+Wandb: None
+
+exp_path: ./exp/tiny_imagenet/vgg16/attack/cp_qgm/nodef/04_quantized_gradient_consistency_fia_nearest_qgm_relative_l2_gm0p0001_nfi16_it1000_uia
+
+Reading gradient data from /root/CPA/quantized_update_cpa/outputs/04_quantized_gradient_consistency_fia_nearest_qgm_relative_l2_gm0p0001_nfi16_it1000/tiny_imagenet/vgg16/updates/128.pickle
+
+===Starting Cocktail Party Attack on batch: 0 with batch_size: 128 and n_iter=5000===
+
+batch: 0  iter: 0  loss: 108.206  loss_ne: 0.0  loss_decor: 17.245  loss_nv: 101.716  loss_l1: 0.717  cs: 0.2150000035762787  time: 32
+batch: 0  iter: 1000  loss: 100.848  loss_ne: 0.0  loss_decor: 17.625  loss_nv: 34.557  loss_l1: 0.588  cs: 0.6380000114440918  time: 2
+batch: 0  iter: 2000  loss: 100.616  loss_ne: 0.0  loss_decor: 17.62  loss_nv: 33.389  loss_l1: 0.578  cs: 0.6620000004768372  time: 2
+batch: 0  iter: 3000  loss: 100.573  loss_ne: 0.0  loss_decor: 17.617  loss_nv: 33.244  loss_l1: 0.576  cs: 0.6650000214576721  time: 2
+batch: 0  iter: 4000  loss: 100.563  loss_ne: 0.0  loss_decor: 17.617  loss_nv: 33.181  loss_l1: 0.576  cs: 0.6669999957084656  time: 2
+batch: 0  iter: 4999  loss: 100.551  loss_ne: 0.0  loss_decor: 17.618  loss_nv: 33.091  loss_l1: 0.575  cs: 0.671999990940094  time: 2
+
+===Starting Feature Inversion on batch: 0 with batch_size: 128 and n_iter=1000===
+
+batch: 0  iter: 0  loss: 0.976  loss_fi: 0.71  loss_tv: 2.212  loss_gm: 448.755  psnr: 8.934  ssim: 0.018  lpips: 0.762  time: 3
+batch: 0  iter: 500  loss: 0.36  loss_fi: 0.216  loss_tv: 1.339  loss_gm: 93.326  psnr: 9.815  ssim: 0.031  lpips: 0.709  time: 31
+batch: 0  iter: 999  loss: 0.271  loss_fi: 0.162  loss_tv: 1.087  loss_gm: 0.675  psnr: 10.184  ssim: 0.038  lpips: 0.7  time: 30
+[Mon Jul 13 18:02:29 UTC 2026] finished gm=0.0001 exit=0
+[Mon Jul 13 18:02:29 UTC 2026] starting gm=0.01
+
+
+
+Wandb: None
+
+exp_path: ./exp/tiny_imagenet/vgg16/attack/cp_qgm/nodef/04_quantized_gradient_consistency_fia_nearest_qgm_relative_l2_gm0p01_nfi16_it1000_uia
+
+Reading gradient data from /root/CPA/quantized_update_cpa/outputs/04_quantized_gradient_consistency_fia_nearest_qgm_relative_l2_gm0p01_nfi16_it1000/tiny_imagenet/vgg16/updates/128.pickle
+
+===Starting Cocktail Party Attack on batch: 0 with batch_size: 128 and n_iter=5000===
+
+batch: 0  iter: 0  loss: 108.206  loss_ne: 0.0  loss_decor: 17.245  loss_nv: 101.716  loss_l1: 0.717  cs: 0.2150000035762787  time: 34
+batch: 0  iter: 1000  loss: 100.848  loss_ne: 0.0  loss_decor: 17.625  loss_nv: 34.557  loss_l1: 0.588  cs: 0.6380000114440918  time: 1
+batch: 0  iter: 2000  loss: 100.616  loss_ne: 0.0  loss_decor: 17.62  loss_nv: 33.389  loss_l1: 0.578  cs: 0.6620000004768372  time: 1
+batch: 0  iter: 3000  loss: 100.573  loss_ne: 0.0  loss_decor: 17.617  loss_nv: 33.244  loss_l1: 0.576  cs: 0.6650000214576721  time: 1
+batch: 0  iter: 4000  loss: 100.563  loss_ne: 0.0  loss_decor: 17.617  loss_nv: 33.181  loss_l1: 0.576  cs: 0.6669999957084656  time: 1
+batch: 0  iter: 4999  loss: 100.551  loss_ne: 0.0  loss_decor: 17.618  loss_nv: 33.091  loss_l1: 0.575  cs: 0.671999990940094  time: 1
+
+===Starting Feature Inversion on batch: 0 with batch_size: 128 and n_iter=1000===
+
+batch: 0  iter: 0  loss: 5.419  loss_fi: 0.71  loss_tv: 2.212  loss_gm: 448.776  psnr: 8.933  ssim: 0.018  lpips: 0.762  time: 4
+batch: 0  iter: 500  loss: 1.945  loss_fi: 0.665  loss_tv: 2.273  loss_gm: 105.322  psnr: 8.608  ssim: 0.018  lpips: 0.76  time: 30
+batch: 0  iter: 999  loss: 1.32  loss_fi: 0.657  loss_tv: 2.257  loss_gm: 43.699  psnr: 8.642  ssim: 0.018  lpips: 0.758  time: 30
+[Mon Jul 13 18:04:29 UTC 2026] finished gm=0.01 exit=0
+[Mon Jul 13 18:04:29 UTC 2026] starting gm=0.1
+
+
+
+Wandb: None
+
+exp_path: ./exp/tiny_imagenet/vgg16/attack/cp_qgm/nodef/04_quantized_gradient_consistency_fia_nearest_qgm_relative_l2_gm0p1_nfi16_it1000_uia
+
+Reading gradient data from /root/CPA/quantized_update_cpa/outputs/04_quantized_gradient_consistency_fia_nearest_qgm_relative_l2_gm0p1_nfi16_it1000/tiny_imagenet/vgg16/updates/128.pickle
+
+===Starting Cocktail Party Attack on batch: 0 with batch_size: 128 and n_iter=5000===
+
+batch: 0  iter: 0  loss: 108.206  loss_ne: 0.0  loss_decor: 17.245  loss_nv: 101.716  loss_l1: 0.717  cs: 0.2150000035762787  time: 32
+batch: 0  iter: 1000  loss: 100.848  loss_ne: 0.0  loss_decor: 17.625  loss_nv: 34.557  loss_l1: 0.588  cs: 0.6380000114440918  time: 2
+batch: 0  iter: 2000  loss: 100.616  loss_ne: 0.0  loss_decor: 17.62  loss_nv: 33.389  loss_l1: 0.578  cs: 0.6620000004768372  time: 1
+batch: 0  iter: 3000  loss: 100.573  loss_ne: 0.0  loss_decor: 17.617  loss_nv: 33.244  loss_l1: 0.576  cs: 0.6650000214576721  time: 1
+batch: 0  iter: 4000  loss: 100.563  loss_ne: 0.0  loss_decor: 17.617  loss_nv: 33.181  loss_l1: 0.576  cs: 0.6669999957084656  time: 1
+batch: 0  iter: 4999  loss: 100.551  loss_ne: 0.0  loss_decor: 17.618  loss_nv: 33.091  loss_l1: 0.575  cs: 0.671999990940094  time: 1
+
+===Starting Feature Inversion on batch: 0 with batch_size: 128 and n_iter=1000===
+
+batch: 0  iter: 0  loss: 45.808  loss_fi: 0.71  loss_tv: 2.212  loss_gm: 448.765  psnr: 8.934  ssim: 0.018  lpips: 0.762  time: 4
+batch: 0  iter: 500  loss: 9.789  loss_fi: 0.671  loss_tv: 2.288  loss_gm: 88.892  psnr: 8.596  ssim: 0.019  lpips: 0.762  time: 31
+batch: 0  iter: 999  loss: 4.986  loss_fi: 0.668  loss_tv: 2.278  loss_gm: 40.899  psnr: 8.623  ssim: 0.019  lpips: 0.76  time: 30
+[Mon Jul 13 18:06:29 UTC 2026] finished gm=0.1 exit=0
+[Mon Jul 13 18:06:29 UTC 2026] qgm gm sweep done

@@ -1,0 +1,103 @@
+/opt/conda/envs/cpa/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/opt/conda/envs/cpa/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+
+
+
+Wandb: None
+
+exp_path: ./exp/tiny_imagenet/vgg16/attack/cp_direct/nodef/04_quant_aware_ica_objective_cpa_nearest_qas_uia
+
+Reading gradient data from /root/CPA/quantized_update_cpa/outputs/04_quant_aware_ica_objective_cpa_nearest_qas/tiny_imagenet/vgg16/updates/128.pickle
+QAS objective: min ||D(Q(A S)) - Y_q||^2 + lambda R(S), rows_per_step=512
+
+===Starting Cocktail Party Attack on batch: 0 with batch_size: 128 and n_iter=5000===
+
+batch: 0  iter: 0  loss: 0.695  loss_ne: -0.0  loss_decor: 0.0  loss_nv: 0.002  loss_l1: 0.0  loss_qcons: 0.07  loss_ind: 0.0  loss_a_decor: 0.0  cs: 0.27000001072883606  time: 2
+batch: 0  iter: 1000  loss: 0.232  loss_ne: -0.0  loss_decor: 0.0  loss_nv: 0.002  loss_l1: 0.0  loss_qcons: 0.023  loss_ind: 0.0  loss_a_decor: 0.0  cs: 0.19300000369548798  time: 5
+batch: 0  iter: 2000  loss: 0.203  loss_ne: -0.0  loss_decor: 0.001  loss_nv: 0.002  loss_l1: 0.0  loss_qcons: 0.02  loss_ind: 0.0  loss_a_decor: 0.001  cs: 0.20000000298023224  time: 5
+batch: 0  iter: 3000  loss: 0.206  loss_ne: -0.0  loss_decor: 0.001  loss_nv: 0.002  loss_l1: 0.0  loss_qcons: 0.021  loss_ind: 0.0  loss_a_decor: 0.001  cs: 0.20600000023841858  time: 5
+batch: 0  iter: 4000  loss: 0.187  loss_ne: -0.0  loss_decor: 0.001  loss_nv: 0.002  loss_l1: 0.0  loss_qcons: 0.019  loss_ind: 0.001  loss_a_decor: 0.001  cs: 0.21400000154972076  time: 5
+batch: 0  iter: 4999  loss: 0.186  loss_ne: -0.0  loss_decor: 0.002  loss_nv: 0.002  loss_l1: 0.0  loss_qcons: 0.019  loss_ind: 0.001  loss_a_decor: 0.002  cs: 0.21799999475479126  time: 5
+
+===Starting Cocktail Party Attack on batch: 1 with batch_size: 128 and n_iter=5000===
+
+batch: 1  iter: 0  loss: 0.811  loss_ne: -0.0  loss_decor: 0.0  loss_nv: 0.002  loss_l1: 0.0  loss_qcons: 0.081  loss_ind: 0.0  loss_a_decor: 0.0  cs: 0.26499998569488525  time: 2
+batch: 1  iter: 1000  loss: 0.254  loss_ne: -0.0  loss_decor: 0.0  loss_nv: 0.002  loss_l1: 0.0  loss_qcons: 0.025  loss_ind: 0.0  loss_a_decor: 0.0  cs: 0.20900000631809235  time: 5
+batch: 1  iter: 2000  loss: 0.24  loss_ne: -0.0  loss_decor: 0.001  loss_nv: 0.002  loss_l1: 0.0  loss_qcons: 0.024  loss_ind: 0.0  loss_a_decor: 0.001  cs: 0.21699999272823334  time: 5
+batch: 1  iter: 3000  loss: 0.258  loss_ne: -0.0  loss_decor: 0.001  loss_nv: 0.002  loss_l1: 0.0  loss_qcons: 0.026  loss_ind: 0.0  loss_a_decor: 0.001  cs: 0.22499999403953552  time: 5
+batch: 1  iter: 4000  loss: 0.261  loss_ne: -0.0  loss_decor: 0.001  loss_nv: 0.002  loss_l1: 0.0  loss_qcons: 0.026  loss_ind: 0.0  loss_a_decor: 0.001  cs: 0.2280000001192093  time: 5
+batch: 1  iter: 4999  loss: 0.259  loss_ne: -0.0  loss_decor: 0.002  loss_nv: 0.002  loss_l1: 0.0  loss_qcons: 0.026  loss_ind: 0.001  loss_a_decor: 0.002  cs: 0.23499999940395355  time: 5
+
+===Starting Cocktail Party Attack on batch: 2 with batch_size: 128 and n_iter=5000===
+
+batch: 2  iter: 0  loss: 1.054  loss_ne: -0.0  loss_decor: 0.0  loss_nv: 0.002  loss_l1: 0.0  loss_qcons: 0.105  loss_ind: 0.0  loss_a_decor: 0.0  cs: 0.2809999883174896  time: 2
+batch: 2  iter: 1000  loss: 0.271  loss_ne: -0.0  loss_decor: 0.0  loss_nv: 0.002  loss_l1: 0.0  loss_qcons: 0.027  loss_ind: 0.0  loss_a_decor: 0.0  cs: 0.20200000703334808  time: 5
+batch: 2  iter: 2000  loss: 0.251  loss_ne: -0.0  loss_decor: 0.001  loss_nv: 0.002  loss_l1: 0.0  loss_qcons: 0.025  loss_ind: 0.0  loss_a_decor: 0.001  cs: 0.21199999749660492  time: 5
+batch: 2  iter: 3000  loss: 0.24  loss_ne: -0.0  loss_decor: 0.001  loss_nv: 0.002  loss_l1: 0.0  loss_qcons: 0.024  loss_ind: 0.0  loss_a_decor: 0.001  cs: 0.21899999678134918  time: 5
+batch: 2  iter: 4000  loss: 0.248  loss_ne: -0.0  loss_decor: 0.002  loss_nv: 0.002  loss_l1: 0.0  loss_qcons: 0.025  loss_ind: 0.001  loss_a_decor: 0.002  cs: 0.2240000069141388  time: 5
+batch: 2  iter: 4999  loss: 0.256  loss_ne: -0.0  loss_decor: 0.002  loss_nv: 0.002  loss_l1: 0.0  loss_qcons: 0.026  loss_ind: 0.001  loss_a_decor: 0.002  cs: 0.2290000021457672  time: 5
+
+===Starting Cocktail Party Attack on batch: 3 with batch_size: 128 and n_iter=5000===
+
+batch: 3  iter: 0  loss: 0.567  loss_ne: -0.0  loss_decor: 0.0  loss_nv: 0.002  loss_l1: 0.0  loss_qcons: 0.057  loss_ind: 0.0  loss_a_decor: 0.0  cs: 0.24799999594688416  time: 2
+batch: 3  iter: 1000  loss: 0.162  loss_ne: -0.0  loss_decor: 0.0  loss_nv: 0.002  loss_l1: 0.0  loss_qcons: 0.016  loss_ind: 0.0  loss_a_decor: 0.0  cs: 0.17800000309944153  time: 5
+batch: 3  iter: 2000  loss: 0.177  loss_ne: -0.0  loss_decor: 0.001  loss_nv: 0.002  loss_l1: 0.0  loss_qcons: 0.018  loss_ind: 0.0  loss_a_decor: 0.001  cs: 0.1860000044107437  time: 5
+batch: 3  iter: 3000  loss: 0.151  loss_ne: -0.0  loss_decor: 0.001  loss_nv: 0.002  loss_l1: 0.0  loss_qcons: 0.015  loss_ind: 0.0  loss_a_decor: 0.001  cs: 0.1940000057220459  time: 5
+batch: 3  iter: 4000  loss: 0.151  loss_ne: -0.0  loss_decor: 0.001  loss_nv: 0.002  loss_l1: 0.0  loss_qcons: 0.015  loss_ind: 0.0  loss_a_decor: 0.001  cs: 0.19699999690055847  time: 5
+batch: 3  iter: 4999  loss: 0.154  loss_ne: -0.0  loss_decor: 0.002  loss_nv: 0.002  loss_l1: 0.0  loss_qcons: 0.015  loss_ind: 0.0  loss_a_decor: 0.002  cs: 0.2029999941587448  time: 5
+
+===Starting Cocktail Party Attack on batch: 4 with batch_size: 128 and n_iter=5000===
+
+batch: 4  iter: 0  loss: 0.477  loss_ne: -0.0  loss_decor: 0.0  loss_nv: 0.002  loss_l1: 0.0  loss_qcons: 0.048  loss_ind: 0.0  loss_a_decor: 0.0  cs: 0.23899999260902405  time: 2
+batch: 4  iter: 1000  loss: 0.149  loss_ne: -0.0  loss_decor: 0.0  loss_nv: 0.002  loss_l1: 0.0  loss_qcons: 0.015  loss_ind: 0.0  loss_a_decor: 0.0  cs: 0.18000000715255737  time: 5
+batch: 4  iter: 2000  loss: 0.132  loss_ne: -0.0  loss_decor: 0.001  loss_nv: 0.002  loss_l1: 0.0  loss_qcons: 0.013  loss_ind: 0.0  loss_a_decor: 0.001  cs: 0.1889999955892563  time: 5
+batch: 4  iter: 3000  loss: 0.125  loss_ne: -0.0  loss_decor: 0.001  loss_nv: 0.002  loss_l1: 0.0  loss_qcons: 0.012  loss_ind: 0.0  loss_a_decor: 0.001  cs: 0.19499999284744263  time: 5
+batch: 4  iter: 4000  loss: 0.15  loss_ne: -0.0  loss_decor: 0.002  loss_nv: 0.002  loss_l1: 0.0  loss_qcons: 0.015  loss_ind: 0.0  loss_a_decor: 0.002  cs: 0.19900000095367432  time: 5
+batch: 4  iter: 4999  loss: 0.138  loss_ne: -0.0  loss_decor: 0.002  loss_nv: 0.002  loss_l1: 0.0  loss_qcons: 0.014  loss_ind: 0.001  loss_a_decor: 0.002  cs: 0.20600000023841858  time: 5
+
+===Starting Cocktail Party Attack on batch: 5 with batch_size: 128 and n_iter=5000===
+
+batch: 5  iter: 0  loss: 0.679  loss_ne: -0.0  loss_decor: 0.0  loss_nv: 0.002  loss_l1: 0.0  loss_qcons: 0.068  loss_ind: 0.0  loss_a_decor: 0.0  cs: 0.24400000274181366  time: 2
+batch: 5  iter: 1000  loss: 0.224  loss_ne: -0.0  loss_decor: 0.0  loss_nv: 0.002  loss_l1: 0.0  loss_qcons: 0.022  loss_ind: 0.0  loss_a_decor: 0.0  cs: 0.1940000057220459  time: 5
+batch: 5  iter: 2000  loss: 0.208  loss_ne: -0.0  loss_decor: 0.001  loss_nv: 0.002  loss_l1: 0.0  loss_qcons: 0.021  loss_ind: 0.0  loss_a_decor: 0.001  cs: 0.20200000703334808  time: 5
+batch: 5  iter: 3000  loss: 0.217  loss_ne: -0.0  loss_decor: 0.001  loss_nv: 0.002  loss_l1: 0.0  loss_qcons: 0.022  loss_ind: 0.0  loss_a_decor: 0.001  cs: 0.2070000022649765  time: 5
+batch: 5  iter: 4000  loss: 0.193  loss_ne: -0.0  loss_decor: 0.001  loss_nv: 0.002  loss_l1: 0.0  loss_qcons: 0.019  loss_ind: 0.0  loss_a_decor: 0.001  cs: 0.21199999749660492  time: 5
+batch: 5  iter: 4999  loss: 0.204  loss_ne: -0.0  loss_decor: 0.002  loss_nv: 0.002  loss_l1: 0.0  loss_qcons: 0.02  loss_ind: 0.001  loss_a_decor: 0.002  cs: 0.2150000035762787  time: 5
+
+===Starting Cocktail Party Attack on batch: 6 with batch_size: 128 and n_iter=5000===
+
+batch: 6  iter: 0  loss: 0.679  loss_ne: -0.0  loss_decor: 0.0  loss_nv: 0.002  loss_l1: 0.0  loss_qcons: 0.068  loss_ind: 0.0  loss_a_decor: 0.0  cs: 0.2529999911785126  time: 2
+batch: 6  iter: 1000  loss: 0.259  loss_ne: -0.0  loss_decor: 0.0  loss_nv: 0.002  loss_l1: 0.0  loss_qcons: 0.026  loss_ind: 0.0  loss_a_decor: 0.0  cs: 0.19499999284744263  time: 6
+batch: 6  iter: 2000  loss: 0.238  loss_ne: -0.0  loss_decor: 0.001  loss_nv: 0.002  loss_l1: 0.0  loss_qcons: 0.024  loss_ind: 0.0  loss_a_decor: 0.001  cs: 0.2029999941587448  time: 6
+batch: 6  iter: 3000  loss: 0.223  loss_ne: -0.0  loss_decor: 0.001  loss_nv: 0.002  loss_l1: 0.0  loss_qcons: 0.022  loss_ind: 0.0  loss_a_decor: 0.001  cs: 0.210999995470047  time: 6
+batch: 6  iter: 4000  loss: 0.205  loss_ne: -0.0  loss_decor: 0.002  loss_nv: 0.002  loss_l1: 0.0  loss_qcons: 0.02  loss_ind: 0.0  loss_a_decor: 0.002  cs: 0.21699999272823334  time: 6
+batch: 6  iter: 4999  loss: 0.231  loss_ne: -0.0  loss_decor: 0.002  loss_nv: 0.002  loss_l1: 0.0  loss_qcons: 0.023  loss_ind: 0.001  loss_a_decor: 0.002  cs: 0.22200000286102295  time: 6
+
+===Starting Cocktail Party Attack on batch: 7 with batch_size: 128 and n_iter=5000===
+
+batch: 7  iter: 0  loss: 0.313  loss_ne: -0.0  loss_decor: 0.0  loss_nv: 0.002  loss_l1: 0.0  loss_qcons: 0.031  loss_ind: 0.0  loss_a_decor: 0.0  cs: 0.23000000417232513  time: 2
+batch: 7  iter: 1000  loss: 0.106  loss_ne: -0.0  loss_decor: 0.0  loss_nv: 0.002  loss_l1: 0.0  loss_qcons: 0.011  loss_ind: 0.0  loss_a_decor: 0.0  cs: 0.1679999977350235  time: 5
+batch: 7  iter: 2000  loss: 0.099  loss_ne: -0.0  loss_decor: 0.001  loss_nv: 0.002  loss_l1: 0.0  loss_qcons: 0.01  loss_ind: 0.0  loss_a_decor: 0.001  cs: 0.17499999701976776  time: 5
+batch: 7  iter: 3000  loss: 0.111  loss_ne: -0.0  loss_decor: 0.001  loss_nv: 0.003  loss_l1: 0.0  loss_qcons: 0.011  loss_ind: 0.001  loss_a_decor: 0.001  cs: 0.17800000309944153  time: 5
+batch: 7  iter: 4000  loss: 0.092  loss_ne: -0.0  loss_decor: 0.002  loss_nv: 0.002  loss_l1: 0.0  loss_qcons: 0.009  loss_ind: 0.0  loss_a_decor: 0.002  cs: 0.18799999356269836  time: 5
+batch: 7  iter: 4999  loss: 0.1  loss_ne: -0.0  loss_decor: 0.002  loss_nv: 0.002  loss_l1: 0.0  loss_qcons: 0.01  loss_ind: 0.0  loss_a_decor: 0.002  cs: 0.19200000166893005  time: 5
+
+===Starting Cocktail Party Attack on batch: 8 with batch_size: 128 and n_iter=5000===
+
+batch: 8  iter: 0  loss: 0.667  loss_ne: -0.0  loss_decor: 0.0  loss_nv: 0.002  loss_l1: 0.0  loss_qcons: 0.067  loss_ind: 0.0  loss_a_decor: 0.0  cs: 0.2619999945163727  time: 2
+batch: 8  iter: 1000  loss: 0.221  loss_ne: -0.0  loss_decor: 0.0  loss_nv: 0.002  loss_l1: 0.0  loss_qcons: 0.022  loss_ind: 0.0  loss_a_decor: 0.0  cs: 0.1860000044107437  time: 5
+batch: 8  iter: 2000  loss: 0.186  loss_ne: -0.0  loss_decor: 0.001  loss_nv: 0.002  loss_l1: 0.0  loss_qcons: 0.019  loss_ind: 0.0  loss_a_decor: 0.001  cs: 0.1940000057220459  time: 5
+batch: 8  iter: 3000  loss: 0.187  loss_ne: -0.0  loss_decor: 0.001  loss_nv: 0.002  loss_l1: 0.0  loss_qcons: 0.019  loss_ind: 0.0  loss_a_decor: 0.001  cs: 0.20100000500679016  time: 6
+batch: 8  iter: 4000  loss: 0.187  loss_ne: -0.0  loss_decor: 0.001  loss_nv: 0.002  loss_l1: 0.0  loss_qcons: 0.019  loss_ind: 0.0  loss_a_decor: 0.001  cs: 0.20600000023841858  time: 5
+batch: 8  iter: 4999  loss: 0.188  loss_ne: -0.0  loss_decor: 0.002  loss_nv: 0.002  loss_l1: 0.0  loss_qcons: 0.019  loss_ind: 0.001  loss_a_decor: 0.002  cs: 0.21199999749660492  time: 5
+
+===Starting Cocktail Party Attack on batch: 9 with batch_size: 128 and n_iter=5000===
+
+batch: 9  iter: 0  loss: 0.796  loss_ne: -0.0  loss_decor: 0.0  loss_nv: 0.002  loss_l1: 0.0  loss_qcons: 0.08  loss_ind: 0.0  loss_a_decor: 0.0  cs: 0.25999999046325684  time: 2
+batch: 9  iter: 1000  loss: 0.281  loss_ne: -0.0  loss_decor: 0.0  loss_nv: 0.002  loss_l1: 0.0  loss_qcons: 0.028  loss_ind: 0.0  loss_a_decor: 0.0  cs: 0.19300000369548798  time: 6
+batch: 9  iter: 2000  loss: 0.239  loss_ne: -0.0  loss_decor: 0.0  loss_nv: 0.002  loss_l1: 0.0  loss_qcons: 0.024  loss_ind: 0.0  loss_a_decor: 0.0  cs: 0.19900000095367432  time: 6
+batch: 9  iter: 3000  loss: 0.236  loss_ne: -0.0  loss_decor: 0.001  loss_nv: 0.002  loss_l1: 0.0  loss_qcons: 0.024  loss_ind: 0.0  loss_a_decor: 0.001  cs: 0.20600000023841858  time: 6
+batch: 9  iter: 4000  loss: 0.236  loss_ne: -0.0  loss_decor: 0.001  loss_nv: 0.002  loss_l1: 0.0  loss_qcons: 0.024  loss_ind: 0.0  loss_a_decor: 0.001  cs: 0.20999999344348907  time: 5
+batch: 9  iter: 4999  loss: 0.252  loss_ne: -0.0  loss_decor: 0.002  loss_nv: 0.002  loss_l1: 0.0  loss_qcons: 0.025  loss_ind: 0.001  loss_a_decor: 0.002  cs: 0.2150000035762787  time: 5

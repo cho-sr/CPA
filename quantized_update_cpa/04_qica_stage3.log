@@ -1,0 +1,16 @@
+/opt/conda/envs/cpa/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/opt/conda/envs/cpa/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+
+
+
+Wandb: None
+
+exp_path: ./exp/tiny_imagenet/vgg16/attack/cp_direct/nodef/04_quant_aware_ica_update_cpa_nearest_qica_uia
+
+Reading gradient data from /root/CPA/quantized_update_cpa/outputs/04_quant_aware_ica_update_cpa_nearest_qica/tiny_imagenet/vgg16/updates/128.pickle
+
+===Starting Cocktail Party Attack on batch: 0 with batch_size: 128 and n_iter=5000===
+
+batch: 0  iter: 0  loss: 108.218  loss_ne: 0.0  loss_decor: 17.245  loss_nv: 101.79  loss_l1: 0.718  loss_qica_residual: 0.0  cs: 0.20999999344348907  time: 22

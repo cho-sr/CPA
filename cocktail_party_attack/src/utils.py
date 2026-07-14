@@ -20,6 +20,7 @@ import logging
 import sys
 from datasets import ds_mean, ds_std
 import pickle
+import tempfile
 
 exp_path_base = "./exp"
 submitit_logdir = "./exp/submititlogs"
@@ -49,8 +50,25 @@ def get_updates_file(ds, model, n_samples):
 
 
 def write_pickle(data, pkl_file):
-    with open(pkl_file, "wb") as handle:
-        data = pickle.dump(data, handle, protocol=pickle.HIGHEST_PROTOCOL)
+    pkl_dir = os.path.dirname(os.path.abspath(pkl_file)) or "."
+    os.makedirs(pkl_dir, exist_ok=True)
+    fd, tmp_file = tempfile.mkstemp(
+        prefix=f".{os.path.basename(pkl_file)}.",
+        suffix=".tmp",
+        dir=pkl_dir,
+    )
+    try:
+        with os.fdopen(fd, "wb") as handle:
+            pickle.dump(data, handle, protocol=pickle.HIGHEST_PROTOCOL)
+            handle.flush()
+            os.fsync(handle.fileno())
+        os.replace(tmp_file, pkl_file)
+    except Exception:
+        try:
+            os.unlink(tmp_file)
+        except OSError:
+            pass
+        raise
 
 
 def subsample(input_list, n, n_sample):

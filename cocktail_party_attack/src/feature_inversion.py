@@ -13,7 +13,7 @@ from gradient_inversion_utils import CosineDistance
 
 
 class FeatureInversion:
-    def __init__(self, Z, model, args, grads, labels):
+    def __init__(self, Z, model, args, grads, labels, quant_stats=None):
         self.args = args
         self.device = get_device()
         self.cosine_similarity = torch.nn.CosineSimilarity(dim=-1, eps=1e-10)
@@ -31,6 +31,7 @@ class FeatureInversion:
         self.mean = torch.tensor(ds_mean[self.ds], device=self.device).view(1, 3, 1, 1)
         self.std = torch.tensor(ds_std[self.ds], device=self.device).view(1, 3, 1, 1)
         self.grads = grads
+        self.quant_stats = quant_stats
         self.labels = labels
         self.Y_hat = None
         self.cosine_distance = CosineDistance()
@@ -130,6 +131,81 @@ class GradientMatching(FeatureInversion):
         return S_hat
 
 
+class QuantizedGradientMatching(GradientMatching):
+    def _quantize_dequantize_ste(self, tensor, target, tensor_idx):
+        bits = getattr(self.args, "quant_bits", 4)
+        qmax = (2 ** (bits - 1)) - 1
+        qmin = -qmax
+
+        scale = None
+        per_tensor = None
+        if self.quant_stats is not None:
+            per_tensor = self.quant_stats.get("per_tensor")
+        if per_tensor is not None and tensor_idx < len(per_tensor):
+            scale = per_tensor[tensor_idx].get("scale")
+        if scale is None or scale <= 0:
+            max_abs = target.detach().abs().max()
+            scale = max_abs / qmax if max_abs > 0 else torch.tensor(1.0, device=self.device)
+        else:
+            scale = torch.tensor(scale, dtype=tensor.dtype, device=tensor.device)
+
+        quantized = torch.round(tensor / scale).clamp(qmin, qmax) * scale
+        return tensor + (quantized - tensor).detach()
+
+    def _quantized_consistency_loss(self, grad_hat):
+        quantized_grad_hat = [
+            self._quantize_dequantize_ste(grad, target, idx)
+            for idx, (grad, target) in enumerate(zip(grad_hat, self.grads))
+        ]
+        metric = getattr(self.args, "qgm_metric", "relative_l2")
+        if metric == "cosine":
+            return self.cosine_distance(quantized_grad_hat, self.grads)
+        if metric != "relative_l2":
+            raise ValueError(f"Unknown qgm_metric: {metric}")
+
+        loss = torch.tensor(0.0, device=self.device)
+        denom = torch.tensor(0.0, device=self.device)
+        for trial, target in zip(quantized_grad_hat, self.grads):
+            loss = loss + torch.sum((trial - target) ** 2)
+            denom = denom + torch.sum(target.detach() ** 2)
+        return loss / denom.clamp_min(torch.finfo(loss.dtype).eps)
+
+    def step(self):
+        loss_fi = loss_tv = torch.tensor(0.0, device=self.device)
+        # Box Image
+        self.S_hat.data = torch.max(
+            torch.min(self.S_hat, (1 - self.mean) / self.std),
+            -self.mean / self.std,
+        )
+        self.opt.zero_grad()
+        pred, z_hat = self.model(self.S_hat, return_z=True)
+        loss_hat = self.criterion(pred, self.Y_hat)
+        grad_hat = torch.autograd.grad(
+            loss_hat, self.model.parameters(), create_graph=True
+        )
+        loss_gm = self._quantized_consistency_loss(grad_hat)
+
+        if self.fi > 0:
+            loss_fi = (1 - self.cosine_similarity(self.Z, z_hat)).mean()
+
+        if self.tv > 0:
+            loss_tv = self.total_variation(self.S_hat)
+
+        loss = self.fi * loss_fi + self.tv * loss_tv + self.gm * loss_gm
+
+        loss.backward()
+        self.opt.step()
+        if self.sch:
+            self.sch.step()
+
+        return {
+            "loss": loss.detach().cpu().item(),
+            "loss_fi": loss_fi.detach().cpu().item(),
+            "loss_gm": loss_gm.detach().cpu().item(),
+            "loss_tv": loss_tv.detach().cpu().item(),
+        }
+
+
 class Direct(FeatureInversion):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
@@ -198,14 +274,18 @@ class Direct(FeatureInversion):
         return S_hat
 
 
-fi_method_dict = {"direct": Direct, "gm": GradientMatching}
+fi_method_dict = {
+    "direct": Direct,
+    "gm": GradientMatching,
+    "qgm": QuantizedGradientMatching,
+}
 
 
-def get_fi(fi_method, z, model, args, grads, labels, attack_log):
+def get_fi(fi_method, z, model, args, grads, labels, attack_log, quant_stats=None):
     if fi_method not in fi_method_dict.keys():
         raise ValueError(f"Unknown feature inversion method: {fi_method}")
     else:
-        fi = fi_method_dict[fi_method](z, model, args, grads, labels)
+        fi = fi_method_dict[fi_method](z, model, args, grads, labels, quant_stats)
 
     if attack_log.restore_required:
         fi.set_attack_state(attack_log.attack_state)

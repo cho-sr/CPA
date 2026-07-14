@@ -1,0 +1,41 @@
+method,batch,cs
+FP32 baseline,0,0.9434136748313904
+FP32 baseline,1,0.9471240043640137
+FP32 baseline,2,0.9347854256629944
+FP32 baseline,3,0.9388089179992676
+FP32 baseline,4,0.9371027946472168
+FP32 baseline,5,0.9419417977333069
+FP32 baseline,6,0.9431858658790588
+FP32 baseline,7,0.9344666004180908
+FP32 baseline,8,0.9418081641197205
+FP32 baseline,9,0.9427811503410339
+Naive int4 + FastICA,0,0.719692051410675
+Naive int4 + FastICA,1,0.7193977236747742
+Naive int4 + FastICA,2,0.6682276725769043
+Naive int4 + FastICA,3,0.594734251499176
+Naive int4 + FastICA,4,0.603836178779602
+Naive int4 + FastICA,5,0.6719255447387695
+Naive int4 + FastICA,6,0.7090446352958679
+Naive int4 + FastICA,7,0.515647292137146
+Naive int4 + FastICA,8,0.6727386116981506
+Naive int4 + FastICA,9,0.7462117671966553
+Randomized ensemble avg,0,0.46964794769883156
+Randomized ensemble avg,1,0.43858722783625126
+Randomized ensemble avg,2,0.44754689931869507
+Randomized ensemble avg,3,0.4272508881986141
+Randomized ensemble avg,4,0.4468991756439209
+Randomized ensemble avg,5,0.4250882212072611
+Randomized ensemble avg,6,0.4541150312870741
+Randomized ensemble avg,7,0.42397517524659634
+Randomized ensemble avg,8,0.4405838679522276
+Randomized ensemble avg,9,0.43822850473225117
+QAS objective scale-fixed,0,0.21827122569084167
+QAS objective scale-fixed,1,0.23462846875190735
+QAS objective scale-fixed,2,0.22922639548778534
+QAS objective scale-fixed,3,0.20252251625061035
+QAS objective scale-fixed,4,0.20632635056972504
+QAS objective scale-fixed,5,0.21495990455150604
+QAS objective scale-fixed,6,0.22159433364868164
+QAS objective scale-fixed,7,0.19225367903709412
+QAS objective scale-fixed,8,0.2122752070426941
+QAS objective scale-fixed,9,0.21492625772953033

@@ -1,0 +1,67 @@
+[Mon Jul 13 07:41:34 UTC 2026] starting completed stage 2 randomized dequant ensemble FIA
+/opt/conda/envs/cpa/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/opt/conda/envs/cpa/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+batch 0: ensemble cs=0.469648 align=0.681506
+/opt/conda/envs/cpa/lib/python3.10/site-packages/torchmetrics/utilities/prints.py:70: FutureWarning: Importing `peak_signal_noise_ratio` from `torchmetrics.functional` was deprecated and will be removed in 2.0. Import `peak_signal_noise_ratio` from `torchmetrics.image` instead.
+  _future_warning(
+/opt/conda/envs/cpa/lib/python3.10/site-packages/torchmetrics/utilities/prints.py:70: FutureWarning: Importing `spectral_angle_mapper` from `torchmetrics.functional` was deprecated and will be removed in 2.0. Import `spectral_angle_mapper` from `torchmetrics.image` instead.
+  _future_warning(
+batch 0: ensemble FIA psnr=11.661004 ssim=0.106214 lpips=0.749370
+batch 1: ensemble cs=0.438587 align=0.672471
+/opt/conda/envs/cpa/lib/python3.10/site-packages/torchmetrics/utilities/prints.py:70: FutureWarning: Importing `peak_signal_noise_ratio` from `torchmetrics.functional` was deprecated and will be removed in 2.0. Import `peak_signal_noise_ratio` from `torchmetrics.image` instead.
+  _future_warning(
+/opt/conda/envs/cpa/lib/python3.10/site-packages/torchmetrics/utilities/prints.py:70: FutureWarning: Importing `spectral_angle_mapper` from `torchmetrics.functional` was deprecated and will be removed in 2.0. Import `spectral_angle_mapper` from `torchmetrics.image` instead.
+  _future_warning(
+batch 1: ensemble FIA psnr=11.159682 ssim=0.085708 lpips=0.745276
+batch 2: ensemble cs=0.447547 align=0.672315
+/opt/conda/envs/cpa/lib/python3.10/site-packages/torchmetrics/utilities/prints.py:70: FutureWarning: Importing `peak_signal_noise_ratio` from `torchmetrics.functional` was deprecated and will be removed in 2.0. Import `peak_signal_noise_ratio` from `torchmetrics.image` instead.
+  _future_warning(
+/opt/conda/envs/cpa/lib/python3.10/site-packages/torchmetrics/utilities/prints.py:70: FutureWarning: Importing `spectral_angle_mapper` from `torchmetrics.functional` was deprecated and will be removed in 2.0. Import `spectral_angle_mapper` from `torchmetrics.image` instead.
+  _future_warning(
+batch 2: ensemble FIA psnr=11.645713 ssim=0.083661 lpips=0.729825
+batch 3: ensemble cs=0.427251 align=0.673023
+/opt/conda/envs/cpa/lib/python3.10/site-packages/torchmetrics/utilities/prints.py:70: FutureWarning: Importing `peak_signal_noise_ratio` from `torchmetrics.functional` was deprecated and will be removed in 2.0. Import `peak_signal_noise_ratio` from `torchmetrics.image` instead.
+  _future_warning(
+/opt/conda/envs/cpa/lib/python3.10/site-packages/torchmetrics/utilities/prints.py:70: FutureWarning: Importing `spectral_angle_mapper` from `torchmetrics.functional` was deprecated and will be removed in 2.0. Import `spectral_angle_mapper` from `torchmetrics.image` instead.
+  _future_warning(
+batch 3: ensemble FIA psnr=11.579076 ssim=0.087122 lpips=0.754827
+batch 4: ensemble cs=0.446899 align=0.676456
+/opt/conda/envs/cpa/lib/python3.10/site-packages/torchmetrics/utilities/prints.py:70: FutureWarning: Importing `peak_signal_noise_ratio` from `torchmetrics.functional` was deprecated and will be removed in 2.0. Import `peak_signal_noise_ratio` from `torchmetrics.image` instead.
+  _future_warning(
+/opt/conda/envs/cpa/lib/python3.10/site-packages/torchmetrics/utilities/prints.py:70: FutureWarning: Importing `spectral_angle_mapper` from `torchmetrics.functional` was deprecated and will be removed in 2.0. Import `spectral_angle_mapper` from `torchmetrics.image` instead.
+  _future_warning(
+batch 4: ensemble FIA psnr=11.494377 ssim=0.095809 lpips=0.743562
+batch 5: ensemble cs=0.425088 align=0.673366
+/opt/conda/envs/cpa/lib/python3.10/site-packages/torchmetrics/utilities/prints.py:70: FutureWarning: Importing `peak_signal_noise_ratio` from `torchmetrics.functional` was deprecated and will be removed in 2.0. Import `peak_signal_noise_ratio` from `torchmetrics.image` instead.
+  _future_warning(
+/opt/conda/envs/cpa/lib/python3.10/site-packages/torchmetrics/utilities/prints.py:70: FutureWarning: Importing `spectral_angle_mapper` from `torchmetrics.functional` was deprecated and will be removed in 2.0. Import `spectral_angle_mapper` from `torchmetrics.image` instead.
+  _future_warning(
+batch 5: ensemble FIA psnr=10.615743 ssim=0.100486 lpips=0.765673
+batch 6: ensemble cs=0.454115 align=0.678579
+/opt/conda/envs/cpa/lib/python3.10/site-packages/torchmetrics/utilities/prints.py:70: FutureWarning: Importing `peak_signal_noise_ratio` from `torchmetrics.functional` was deprecated and will be removed in 2.0. Import `peak_signal_noise_ratio` from `torchmetrics.image` instead.
+  _future_warning(
+/opt/conda/envs/cpa/lib/python3.10/site-packages/torchmetrics/utilities/prints.py:70: FutureWarning: Importing `spectral_angle_mapper` from `torchmetrics.functional` was deprecated and will be removed in 2.0. Import `spectral_angle_mapper` from `torchmetrics.image` instead.
+  _future_warning(
+batch 6: ensemble FIA psnr=10.306580 ssim=0.099535 lpips=0.739933
+batch 7: ensemble cs=0.423975 align=0.673628
+/opt/conda/envs/cpa/lib/python3.10/site-packages/torchmetrics/utilities/prints.py:70: FutureWarning: Importing `peak_signal_noise_ratio` from `torchmetrics.functional` was deprecated and will be removed in 2.0. Import `peak_signal_noise_ratio` from `torchmetrics.image` instead.
+  _future_warning(
+/opt/conda/envs/cpa/lib/python3.10/site-packages/torchmetrics/utilities/prints.py:70: FutureWarning: Importing `spectral_angle_mapper` from `torchmetrics.functional` was deprecated and will be removed in 2.0. Import `spectral_angle_mapper` from `torchmetrics.image` instead.
+  _future_warning(
+batch 7: ensemble FIA psnr=11.906060 ssim=0.085003 lpips=0.740120
+batch 8: ensemble cs=0.440584 align=0.672943
+/opt/conda/envs/cpa/lib/python3.10/site-packages/torchmetrics/utilities/prints.py:70: FutureWarning: Importing `peak_signal_noise_ratio` from `torchmetrics.functional` was deprecated and will be removed in 2.0. Import `peak_signal_noise_ratio` from `torchmetrics.image` instead.
+  _future_warning(
+/opt/conda/envs/cpa/lib/python3.10/site-packages/torchmetrics/utilities/prints.py:70: FutureWarning: Importing `spectral_angle_mapper` from `torchmetrics.functional` was deprecated and will be removed in 2.0. Import `spectral_angle_mapper` from `torchmetrics.image` instead.
+  _future_warning(
+batch 8: ensemble FIA psnr=11.767436 ssim=0.122387 lpips=0.744697
+batch 9: ensemble cs=0.438228 align=0.672522
+/opt/conda/envs/cpa/lib/python3.10/site-packages/torchmetrics/utilities/prints.py:70: FutureWarning: Importing `peak_signal_noise_ratio` from `torchmetrics.functional` was deprecated and will be removed in 2.0. Import `peak_signal_noise_ratio` from `torchmetrics.image` instead.
+  _future_warning(
+/opt/conda/envs/cpa/lib/python3.10/site-packages/torchmetrics/utilities/prints.py:70: FutureWarning: Importing `spectral_angle_mapper` from `torchmetrics.functional` was deprecated and will be removed in 2.0. Import `spectral_angle_mapper` from `torchmetrics.image` instead.
+  _future_warning(
+batch 9: ensemble FIA psnr=10.118234 ssim=0.109781 lpips=0.744412
+Saved ensemble FIA results to exp/tiny_imagenet/vgg16/attack/cp_direct/nodef/03_randomized_dequant_ensemble_cpa_nearest_ensemble_avg_uia
+[Mon Jul 13 07:47:39 UTC 2026] completed stage 2 randomized dequant ensemble FIA

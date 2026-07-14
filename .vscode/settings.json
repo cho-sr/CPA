@@ -1,0 +1,24 @@
+{
+  "files.watcherExclude": {
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/datasets/**": true,
+    "**/exp/**": true,
+    "**/quantized_update_cpa/outputs/**": true,
+    "**/fedavg_fp32/outputs*/**": true,
+    "**/__pycache__/**": true,
+    "**/*.pkl": true,
+    "**/*.pickle": true,
+    "**/*.pt": true
+  },
+  "search.exclude": {
+    "**/datasets/**": true,
+    "**/exp/**": true,
+    "**/quantized_update_cpa/outputs/**": true,
+    "**/fedavg_fp32/outputs*/**": true,
+    "**/__pycache__/**": true,
+    "**/*.pkl": true,
+    "**/*.pickle": true,
+    "**/*.pt": true
+  }
+}

@@ -78,6 +78,7 @@ def quantize_dequantize_update(
             generator=generator,
         )
         quantized_update[name] = quantized
+        tensor_stats = {"name": name, **tensor_stats}
         stats.append(tensor_stats)
         flat_original.append(tensor.detach().reshape(-1).float())
         flat_quantized.append(quantized.detach().reshape(-1).float())
@@ -101,5 +102,6 @@ def quantize_dequantize_update(
         "quant_scale_min": min(s["scale"] for s in stats),
         "quant_scale_max": max(s["scale"] for s in stats),
         "quant_saturation_ratio": sum(s["saturation_ratio"] for s in stats) / len(stats),
+        "per_tensor": stats,
     }
     return quantized_update, quant_stats

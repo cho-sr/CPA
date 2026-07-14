@@ -82,6 +82,9 @@ def attack(args):
         )
         labels = torch.tensor(grad_data["y"][batch], device=device)
         grads = [torch.tensor(g, device=device) for g in grad_data["grad"][batch]]
+        quant_stats = None
+        if "quant_stats" in grad_data and batch < len(grad_data["quant_stats"]):
+            quant_stats = grad_data["quant_stats"][batch]
 
         attack_log.update_batch(batch, inp, emb, grads)
 
@@ -135,6 +138,7 @@ def attack(args):
                 grads,
                 labels,
                 attack_log=attack_log,
+                quant_stats=quant_stats,
             )
             pbar = get_pbar(range(fi.start_iter, args.n_iter_fi), disable=True)
             for iter_fi in pbar:

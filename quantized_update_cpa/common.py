@@ -6,15 +6,29 @@ from __future__ import annotations
 import argparse
 import copy
 import logging
+import os
 import sys
 import types
 from collections import OrderedDict
 from pathlib import Path
 from typing import Dict, List, Optional, Sequence, Tuple
 
+for thread_env_var in (
+    "OMP_NUM_THREADS",
+    "MKL_NUM_THREADS",
+    "OPENBLAS_NUM_THREADS",
+    "NUMEXPR_NUM_THREADS",
+    "VECLIB_MAXIMUM_THREADS",
+    "TORCH_NUM_THREADS",
+):
+    os.environ.setdefault(thread_env_var, "1")
+
 import torch
 import torch.nn as nn
 from torch.utils.data import DataLoader, TensorDataset
+
+torch.set_num_threads(1)
+torch.set_num_interop_threads(1)
 
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
@@ -314,7 +328,20 @@ def add_attack_args(parser: argparse.ArgumentParser) -> None:
     parser.add_argument("--n_sample_fi", type=int, default=16)
     parser.add_argument("--gm", type=float, default=1.0)
     parser.add_argument("--fi", type=float, default=1.0)
-    parser.add_argument("--fi_method", type=str, default="direct", choices=["direct", "gm"])
+    parser.add_argument(
+        "--fi_method",
+        type=str,
+        default="direct",
+        choices=["direct", "gm", "qgm"],
+    )
+    parser.add_argument("--quant_bits", type=int, default=4)
+    parser.add_argument(
+        "--qgm_metric",
+        type=str,
+        default="relative_l2",
+        choices=["relative_l2", "cosine"],
+        help="Consistency metric for quantized-gradient matching FIA.",
+    )
     parser.add_argument("--use_labels", action="store_true")
     parser.add_argument("--ideal_emb_rec", action="store_true")
     parser.add_argument(
@@ -364,6 +391,8 @@ def make_attack_namespace(
         lr_N=1e-6,
         sch="none",
         fi_method=args.fi_method,
+        quant_bits=args.quant_bits,
+        qgm_metric=args.qgm_metric,
         n_iter_fi=args.n_iter_fi,
         n_log_fi=args.n_log_fi,
         opt_fi="adam",

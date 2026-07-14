@@ -1,0 +1,46 @@
+Collecting tiny_imagenet vgg16 FedAvg updates: n_samples=128 n_rounds=10 local_epochs=10 local_batch_size=128 quant_bits=4
+/opt/conda/envs/cpa/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/opt/conda/envs/cpa/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Collected round 1/10
+Collected round 2/10
+Collected round 3/10
+Collected round 4/10
+Collected round 5/10
+Collected round 6/10
+Collected round 7/10
+Collected round 8/10
+Collected round 9/10
+Collected round 10/10
+Saved update pickle: /root/CPA/quantized_update_cpa/outputs/04_quantized_gradient_consistency_fia_nearest_qgm/tiny_imagenet/vgg16/updates/128.pickle
+
+
+
+
+
+Wandb: None
+
+Wandb: None
+
+exp_path: ./exp/tiny_imagenet/vgg16/attack/cp_qgm/nodef/04_quantized_gradient_consistency_fia_nearest_qgm_uia
+
+exp_path: ./exp/tiny_imagenet/vgg16/attack/cp_qgm/nodef/04_quantized_gradient_consistency_fia_nearest_qgm_uia
+
+Reading gradient data from /root/CPA/quantized_update_cpa/outputs/04_quantized_gradient_consistency_fia_nearest_qgm/tiny_imagenet/vgg16/updates/128.pickle
+
+Reading gradient data from /root/CPA/quantized_update_cpa/outputs/04_quantized_gradient_consistency_fia_nearest_qgm/tiny_imagenet/vgg16/updates/128.pickle
+
+===Starting Cocktail Party Attack on batch: 0 with batch_size: 128 and n_iter=5000===
+
+
+===Starting Cocktail Party Attack on batch: 0 with batch_size: 128 and n_iter=5000===
+
+
+libgomp: 
+libgomp: 
+libgomp: 
+libgomp: Thread creation failed: Resource temporarily unavailable
+Thread creation failed: Resource temporarily unavailable
+Thread creation failed: Resource temporarily unavailable
+Thread creation failed: Resource temporarily unavailable
