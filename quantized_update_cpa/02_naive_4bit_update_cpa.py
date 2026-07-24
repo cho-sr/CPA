@@ -1,17 +1,19 @@
 #!/usr/bin/env python3
-"""Stage 2: naive 4-bit dequantized FedAvg local-update CPA."""
+"""02: Naive symmetric int4 dequantized FedAvg-update CPA."""
 
 from __future__ import annotations
 
 import argparse
+from pathlib import Path
 
+from author_runner import run_author_cpa_with_update_file
 from common import (
+    OUTPUT_ROOT,
     add_attack_args,
     add_collect_args,
-    collect_fedavg_update_pickle,
-    output_pickle_path,
-    resolve_local_batch_size,
-    run_attack_with_update_file,
+    derive_quantized_update_pickle,
+    ensure_shared_fp32_update,
+    run_tag,
 )
 
 
@@ -21,55 +23,46 @@ EXPERIMENT_NAME = "02_naive_int4_update_cpa"
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
         description=(
-            "Collect FedAvg local updates, apply 4-bit fake quantization, "
-            "and optionally run CPA."
+            "Derive per-parameter symmetric int4 updates from the shared FP32 "
+            "FedAvg artifact, then run the public author CPA classes."
         )
     )
     add_collect_args(parser)
-    parser.add_argument(
-        "--rounding",
-        type=str,
-        default="nearest",
-        choices=["nearest", "stochastic"],
-        help="Rounding mode for 4-bit update fake quantization.",
-    )
+    parser.add_argument("--rounding", type=str, default="nearest", choices=["nearest"])
     add_attack_args(parser)
     return parser.parse_args()
 
 
-def main() -> None:
-    args = parse_args()
-    experiment_name = f"{EXPERIMENT_NAME}_{args.rounding}"
-    output_file = output_pickle_path(
-        experiment_name,
-        args.ds,
-        args.model,
-        args.n_samples,
+def int4_update_path(args: argparse.Namespace, fp32_update_file: Path) -> Path:
+    fp32_hash_tag = fp32_update_file.parent.name
+    return (
+        OUTPUT_ROOT
+        / EXPERIMENT_NAME
+        / args.ds
+        / args.model
+        / "updates"
+        / fp32_hash_tag
+        / "int4_nearest.pickle"
     )
 
-    if not args.reuse_existing or not output_file.exists():
-        collect_fedavg_update_pickle(
-            ds=args.ds,
-            model_name=args.model,
-            h_dim=args.h_dim,
-            n_samples=args.n_samples,
-            n_rounds=args.n_rounds,
-            local_epochs=args.local_epochs,
-            local_batch_size=resolve_local_batch_size(args),
-            lr=args.local_lr,
-            quant_bits=4,
-            rounding=args.rounding,
-            output_file=output_file,
-            seed=args.seed,
-            global_checkpoint=args.global_checkpoint,
-        )
 
+def main() -> None:
+    args = parse_args()
+    fp32_update_file = ensure_shared_fp32_update(args)
+    int4_update_file = derive_quantized_update_pickle(
+        fp32_update_file=fp32_update_file,
+        output_file=int4_update_path(args, fp32_update_file),
+        rounding=args.rounding,
+    )
     if args.run_attack:
-        run_attack_with_update_file(
+        run_author_cpa_with_update_file(
             args,
-            exp_name=experiment_name,
-            update_file=output_file,
+            exp_name=f"{EXPERIMENT_NAME}_nearest_{run_tag(args)}",
+            update_file=int4_update_file,
+            method="Naive symmetric int4 dequantized FedAvg-update CPA",
         )
+    else:
+        print(f"int4 update artifact: {int4_update_file}")
 
 
 if __name__ == "__main__":

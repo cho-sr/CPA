@@ -53,6 +53,7 @@ def attack(args):
         grads_file = get_updates_file(args.ds, args.model, args.batch_size)
 
     grad_data = read_pickle(grads_file)
+    fedavg_metadata = grad_data.get("metadata")
     device = get_device()
 
     # === Model ===
@@ -121,9 +122,16 @@ def attack(args):
                     rec_emb = rec_gi_reord.abs()
                 attack_log.rec_emb = rec_emb
 
-            inp, emb, rec_emb = subsample(
-                [inp, emb, rec_emb], n=args.batch_size, n_sample=args.n_sample_fi
-            )
+            if args.fi_method == "qgm":
+                if rec_emb.shape[0] != args.batch_size:
+                    raise ValueError(
+                        "QGM requires all client samples; recovered embedding count "
+                        f"is {rec_emb.shape[0]}, expected {args.batch_size}."
+                    )
+            else:
+                inp, emb, rec_emb = subsample(
+                    [inp, emb, rec_emb], n=args.batch_size, n_sample=args.n_sample_fi
+                )
             eval_fi = get_eval(
                 inp, emb, model.model_type, ds_type_dict[args.ds], args.attack, fi=True
             )
@@ -139,6 +147,7 @@ def attack(args):
                 labels,
                 attack_log=attack_log,
                 quant_stats=quant_stats,
+                fedavg_metadata=fedavg_metadata,
             )
             pbar = get_pbar(range(fi.start_iter, args.n_iter_fi), disable=True)
             for iter_fi in pbar:
