@@ -16,7 +16,10 @@ __pycache__/
 fedavg_fp32/outputs/
 fedavg_fp32/outputs_*/
 quantized_update_cpa/outputs/
+quantized_update_cpa/outputs_v2/
 
 # Raw attack result dumps kept locally
 /02_naive_int4_update_cpa_nearest_uia/
 /exp/
+/datasets/
+/wandb/
