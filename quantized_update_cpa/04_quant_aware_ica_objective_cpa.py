@@ -1,125 +1,79 @@
 #!/usr/bin/env python3
-"""Stage 3: quantization-aware ICA objective with Q(A S) consistency."""
+"""04: Quantization-aware ICA objective ablations."""
 
 from __future__ import annotations
 
 import argparse
+from pathlib import Path
 
 from common import (
+    OUTPUT_ROOT,
     add_attack_args,
     add_collect_args,
-    collect_fedavg_update_pickle,
-    output_pickle_path,
-    resolve_local_batch_size,
+    derive_quantized_update_pickle,
+    ensure_shared_fp32_update,
 )
-from qas_attack import run_quant_aware_as_attack_with_update_file
+from quant_aware_ica import ABLATIONS, run_quant_aware_ica
 
 
-EXPERIMENT_NAME = "04_quant_aware_ica_objective_cpa"
+EXPERIMENT_NAME = "04_quantization_aware_ica"
 
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
         description=(
-            "Collect 4-bit dequantized FedAvg updates and optimize a "
-            "quantization-aware ICA objective: min_{A,S} ||D(Q(A S)) - Y_q||^2 + R(S)."
+            "Run a separate quantization-aware ICA proposal: whitened observation "
+            "+ unmixing W, bin-distance quantization consistency, standardized "
+            "source negentropy, and Q/NE ablations."
         )
     )
     add_collect_args(parser)
+    parser.add_argument("--rounding", type=str, default="nearest", choices=["nearest"])
+    parser.add_argument("--qica_ablation", type=str, default="all", choices=["all", *ABLATIONS.keys()])
+    parser.add_argument("--qica_n_iter", type=int, default=1000)
+    parser.add_argument("--qica_n_log", type=int, default=100)
+    parser.add_argument("--qica_lr", type=float, default=1e-3)
+    parser.add_argument("--qica_q_weight", type=float, default=1.0)
+    parser.add_argument("--qica_columns_per_step", type=int, default=8192)
+    parser.add_argument("--qica_eps", type=float, default=1e-6)
     parser.add_argument(
-        "--rounding",
-        type=str,
-        default="nearest",
-        choices=["nearest", "stochastic"],
-        help="Rounding mode for 4-bit update fake quantization.",
+        "--qica_train_observation",
+        action=argparse.BooleanOptionalAction,
+        default=True,
+        help="Allow the attack-layer observation candidate to move inside observed quantization bins.",
     )
     parser.add_argument(
-        "--qas_rows_per_step",
-        type=int,
-        default=512,
-        help="Number of attack-layer rows sampled per Q(A S) consistency step.",
-    )
-    parser.add_argument(
-        "--qas_qcons",
-        type=float,
-        default=10.0,
-        help="Weight for normalized quantized-gradient consistency.",
-    )
-    parser.add_argument(
-        "--qas_lr",
-        type=float,
-        default=1e-5,
-        help="Learning rate for the quantization-aware A,S objective.",
-    )
-    parser.add_argument(
-        "--qas_ind",
-        type=float,
-        default=1.0,
-        help="Weight for source independence penalty.",
-    )
-    parser.add_argument(
-        "--qas_ne",
-        type=float,
-        default=0.01,
-        help="Weight for non-Gaussianity reward.",
-    )
-    parser.add_argument(
-        "--qas_l1",
-        type=float,
-        default=0.001,
-        help="Weight for source sparsity prior.",
-    )
-    parser.add_argument(
-        "--qas_nv",
-        type=float,
-        default=0.001,
-        help="Weight for sign-ambiguity/non-negativity prior.",
-    )
-    parser.add_argument(
-        "--qas_a_decor",
-        type=float,
-        default=0.1,
-        help="Weight for mixing-column decorrelation.",
+        "--run_fia",
+        action="store_true",
+        help="After 04 source recovery, run a separate author Direct FIA stage.",
     )
     add_attack_args(parser)
     return parser.parse_args()
 
 
-def main() -> None:
-    args = parse_args()
-    args.quant_bits = 4
-    args.attack_lr = args.qas_lr
-    experiment_name = f"{EXPERIMENT_NAME}_{args.rounding}_qas"
-    output_file = output_pickle_path(
-        experiment_name,
-        args.ds,
-        args.model,
-        args.n_samples,
+def int4_update_path(args: argparse.Namespace, fp32_update_file: Path) -> Path:
+    return (
+        OUTPUT_ROOT
+        / "02_naive_int4_update_cpa"
+        / args.ds
+        / args.model
+        / "updates"
+        / fp32_update_file.parent.name
+        / "int4_nearest.pickle"
     )
 
-    if not args.reuse_existing or not output_file.exists():
-        collect_fedavg_update_pickle(
-            ds=args.ds,
-            model_name=args.model,
-            h_dim=args.h_dim,
-            n_samples=args.n_samples,
-            n_rounds=args.n_rounds,
-            local_epochs=args.local_epochs,
-            local_batch_size=resolve_local_batch_size(args),
-            lr=args.local_lr,
-            quant_bits=4,
-            rounding=args.rounding,
-            output_file=output_file,
-            seed=args.seed,
-            global_checkpoint=args.global_checkpoint,
-        )
 
-    if args.run_attack:
-        run_quant_aware_as_attack_with_update_file(
-            args,
-            exp_name=experiment_name,
-            update_file=output_file,
-        )
+def main() -> None:
+    args = parse_args()
+    fp32_update_file = ensure_shared_fp32_update(args)
+    int4_update_file = derive_quantized_update_pickle(
+        fp32_update_file=fp32_update_file,
+        output_file=int4_update_path(args, fp32_update_file),
+        rounding=args.rounding,
+    )
+    output_dirs = run_quant_aware_ica(args, update_file=int4_update_file)
+    for path in output_dirs:
+        print(f"04 output: {path}")
 
 
 if __name__ == "__main__":

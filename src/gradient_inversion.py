@@ -6,8 +6,6 @@
 # This source code is licensed under the license found in the
 # LICENSE file in the root directory of this source tree.
 
-import math
-
 import torch
 import torch.nn.functional as F
 from utils import (
@@ -23,18 +21,6 @@ from gradient_inversion_utils import CosineDistance
 from datasets import xshape_dict, ds_type_dict, ds_mean, ds_std, nclasses_dict
 from abc import abstractmethod
 from os.path import exists
-
-
-# E[log(cosh(V))] for V ~ N(0, 1).  The value was computed once with
-# deterministic numerical quadrature.  Keeping it fixed avoids introducing
-# Monte-Carlo noise into the ICA objective.
-_GAUSSIAN_LOG_COSH = 0.374567207491438
-
-
-def _stable_log_cosh(x):
-    """Compute log(cosh(x)) without overflowing for large |x|."""
-    x_abs = x.abs()
-    return x_abs + F.softplus(-2.0 * x_abs) - math.log(2.0)
 
 
 class GradientInversionAttack:
@@ -124,38 +110,16 @@ class CocktailPartyAttack(GradientInversionAttack):
         x_mu = x.mean(dim=-1, keepdims=True)
         return x - x_mu, x_mu
 
-    def _negentropy_loss(self, sources):
-        """Return the negative log-cosh negentropy contrast.
-
-        ICA's log-cosh approximation is
-
-            J(y) ∝ (E[G(y)] - E[G(v)])**2,  v ~ N(0, 1),
-
-        and is only valid after each candidate source has zero mean and unit
-        variance.  The attack minimizes this method's return value, hence the
-        leading minus sign maximizes the estimated negentropy.
-        """
-        centered = sources - sources.mean(dim=-1, keepdim=True)
-        variance_floor = max(torch.finfo(sources.dtype).eps, 1e-12)
-        scale = centered.square().mean(dim=-1, keepdim=True).clamp_min(
-            variance_floor
-        ).sqrt()
-        standardized = centered / scale
-
-        source_expectation = _stable_log_cosh(standardized).mean(dim=-1)
-        gaussian_expectation = source_expectation.new_tensor(_GAUSSIAN_LOG_COSH)
-        contrast = (source_expectation - gaussian_expectation).square()
-        return -contrast.mean()
-
     def whiten(self, x):
         cov = torch.matmul(x, x.T) / (x.shape[1] - 1)
-        eig_vals, eig_vecs = torch.linalg.eig(cov)
+        eig_vals, eig_vecs = torch.linalg.eigh(cov.detach().cpu())
         topk_indices = torch.topk(eig_vals.float().abs(), self.n_comp)[1]
 
-        U = eig_vecs.float()
         lamb = eig_vals.float()[topk_indices].abs()
-        lamb_inv_sqrt = torch.diag(1 / (torch.sqrt(lamb) + self.eps)).float()
-        W = torch.matmul(lamb_inv_sqrt, U.T[topk_indices]).float()
+        lamb_inv_sqrt = torch.diag(
+            1 / (torch.sqrt(lamb) + self.eps.detach().cpu())
+        ).float()
+        W = torch.matmul(lamb_inv_sqrt, eig_vecs.float().T[topk_indices]).to(x.device)
         x_w = torch.matmul(W, x)
         return x_w, W
 
@@ -181,15 +145,23 @@ class CocktailPartyAttack(GradientInversionAttack):
         self.opt.zero_grad()
         W_hat_norm = self.W_hat / (self.W_hat.norm(dim=-1, keepdim=True) + self.eps)
 
-        # Negentropy is evaluated on the centered/whitened candidate sources.
+        # Neg Entropy Loss
         X_w = self.X_w
         S_hat = torch.matmul(W_hat_norm, X_w)
+        
 
-        if not torch.isfinite(S_hat).all():
-            raise ValueError("S_hat has non-finite values")
+        if torch.isnan(S_hat).any():
+            raise ValueError(f"S_hat has NaN")
 
         if self.ne > 0:
-            loss_ne = self._negentropy_loss(S_hat)
+            loss_ne = -(
+                (
+                    (1 / self.a)
+                    * torch.log(torch.cosh(self.a * S_hat) + self.eps).mean(dim=-1)
+                )
+                ** 2
+            ).mean()
+            loss_ne = torch.tensor(0.0, device=self.device)
 
         # Undo centering, whitening
         S_hat = S_hat + torch.matmul(torch.matmul(W_hat_norm, self.W_w), self.X_mu)
@@ -212,7 +184,7 @@ class CocktailPartyAttack(GradientInversionAttack):
             loss_l1 = torch.abs(S_hat).mean()
 
         loss = (
-            (self.ne * loss_ne)
+            loss_ne
             + (self.decor * loss_decor)
             + (self.tv * loss_tv)
             + (self.nv * loss_nv)

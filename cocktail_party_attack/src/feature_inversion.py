@@ -6,14 +6,30 @@
 # This source code is licensed under the license found in the
 # LICENSE file in the root directory of this source tree.
 
+from collections import OrderedDict
+
 from utils import get_device, get_opt, get_sch, normalize
 import torch
 from datasets import ds_mean, ds_std, nclasses_dict, xshape_dict
 from gradient_inversion_utils import CosineDistance
 
+try:
+    from torch.func import functional_call
+except ImportError:  # PyTorch < 2.0
+    from torch.nn.utils.stateless import functional_call
+
 
 class FeatureInversion:
-    def __init__(self, Z, model, args, grads, labels, quant_stats=None):
+    def __init__(
+        self,
+        Z,
+        model,
+        args,
+        grads,
+        labels,
+        quant_stats=None,
+        fedavg_metadata=None,
+    ):
         self.args = args
         self.device = get_device()
         self.cosine_similarity = torch.nn.CosineSimilarity(dim=-1, eps=1e-10)
@@ -32,6 +48,7 @@ class FeatureInversion:
         self.std = torch.tensor(ds_std[self.ds], device=self.device).view(1, 3, 1, 1)
         self.grads = grads
         self.quant_stats = quant_stats
+        self.fedavg_metadata = fedavg_metadata
         self.labels = labels
         self.Y_hat = None
         self.cosine_distance = CosineDistance()
@@ -132,6 +149,88 @@ class GradientMatching(FeatureInversion):
 
 
 class QuantizedGradientMatching(GradientMatching):
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        if self.fedavg_metadata is None:
+            raise ValueError(
+                "QGM requires FedAvg metadata containing n_samples, local_epochs, "
+                "local_batch_size, and lr. Recollect the update with the current collector."
+            )
+
+        required = {"n_samples", "local_epochs", "local_batch_size", "lr"}
+        missing = sorted(required.difference(self.fedavg_metadata))
+        if missing:
+            raise ValueError(f"QGM FedAvg metadata is missing: {', '.join(missing)}")
+
+        self.fedavg_n_samples = int(self.fedavg_metadata["n_samples"])
+        self.local_epochs = int(self.fedavg_metadata["local_epochs"])
+        self.local_batch_size = int(self.fedavg_metadata["local_batch_size"])
+        self.local_lr = float(self.fedavg_metadata["lr"])
+
+        if self.n != self.fedavg_n_samples:
+            raise ValueError(
+                "QGM must reconstruct the complete client batch: "
+                f"received {self.n} samples, update used {self.fedavg_n_samples}."
+            )
+        if self.local_batch_size != self.fedavg_n_samples:
+            raise ValueError(
+                "Exact QGM currently supports full-batch local SGD only. "
+                f"The update used local_batch_size={self.local_batch_size} for "
+                f"n_samples={self.fedavg_n_samples}; recollect with "
+                "--local_batch_size equal to --n_samples."
+            )
+        if self.local_epochs <= 0:
+            raise ValueError("QGM requires local_epochs > 0")
+        if self.local_lr <= 0:
+            raise ValueError("QGM requires local learning rate > 0")
+        if len(self.grads) != len(list(self.model.parameters())):
+            raise ValueError(
+                "Observed update tensor count does not match the global model parameters"
+            )
+
+    def _functional_model(self, params, inputs):
+        state = OrderedDict(params)
+        state.update(
+            (name, buffer.detach()) for name, buffer in self.model.named_buffers()
+        )
+        return functional_call(self.model, state, (inputs,))
+
+    def _unroll_local_sgd_update(self):
+        """Differentiably reproduce delta_w = w_local - w_global.
+
+        The current collector defaults to one full-client batch per local epoch.
+        Exact minibatch replay requires the sampled batch schedule, so non-full-batch
+        updates are rejected in ``__init__`` rather than silently approximated.
+        """
+        initial_params = OrderedDict(
+            (name, param.detach().requires_grad_(True))
+            for name, param in self.model.named_parameters()
+        )
+        local_params = initial_params
+
+        was_training = self.model.training
+        self.model.train()
+        try:
+            for _ in range(self.local_epochs):
+                pred = self._functional_model(local_params, self.S_hat)
+                local_loss = self.criterion(pred, self.Y_hat)
+                local_grads = torch.autograd.grad(
+                    local_loss,
+                    tuple(local_params.values()),
+                    create_graph=True,
+                )
+                local_params = OrderedDict(
+                    (name, param - self.local_lr * grad)
+                    for (name, param), grad in zip(local_params.items(), local_grads)
+                )
+        finally:
+            self.model.train(was_training)
+
+        return [
+            local_params[name] - initial_params[name]
+            for name in initial_params
+        ]
+
     def _quantize_dequantize_ste(self, tensor, target, tensor_idx):
         bits = getattr(self.args, "quant_bits", 4)
         qmax = (2 ** (bits - 1)) - 1
@@ -178,12 +277,9 @@ class QuantizedGradientMatching(GradientMatching):
             -self.mean / self.std,
         )
         self.opt.zero_grad()
-        pred, z_hat = self.model(self.S_hat, return_z=True)
-        loss_hat = self.criterion(pred, self.Y_hat)
-        grad_hat = torch.autograd.grad(
-            loss_hat, self.model.parameters(), create_graph=True
-        )
-        loss_gm = self._quantized_consistency_loss(grad_hat)
+        _, z_hat = self.model(self.S_hat, return_z=True)
+        update_hat = self._unroll_local_sgd_update()
+        loss_gm = self._quantized_consistency_loss(update_hat)
 
         if self.fi > 0:
             loss_fi = (1 - self.cosine_similarity(self.Z, z_hat)).mean()
@@ -281,11 +377,29 @@ fi_method_dict = {
 }
 
 
-def get_fi(fi_method, z, model, args, grads, labels, attack_log, quant_stats=None):
+def get_fi(
+    fi_method,
+    z,
+    model,
+    args,
+    grads,
+    labels,
+    attack_log,
+    quant_stats=None,
+    fedavg_metadata=None,
+):
     if fi_method not in fi_method_dict.keys():
         raise ValueError(f"Unknown feature inversion method: {fi_method}")
     else:
-        fi = fi_method_dict[fi_method](z, model, args, grads, labels, quant_stats)
+        fi = fi_method_dict[fi_method](
+            z,
+            model,
+            args,
+            grads,
+            labels,
+            quant_stats,
+            fedavg_metadata,
+        )
 
     if attack_log.restore_required:
         fi.set_attack_state(attack_log.attack_state)
