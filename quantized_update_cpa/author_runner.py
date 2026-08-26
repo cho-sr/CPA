@@ -67,12 +67,68 @@ def _save_pickle(path: Path, value: Any) -> None:
 def _load_checkpoint(path: Path) -> Optional[dict[str, Any]]:
     if not path.exists():
         return None
-    return torch.load(path, map_location="cpu")
+    return torch.load(path, map_location=author_utils.get_device())
 
 
 def _save_checkpoint(path: Path, *, iteration: int, state: Mapping[str, Any]) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     torch.save({"iteration": iteration, "state": dict(state)}, path)
+
+
+class MicroBatchDirect(Direct):
+    """Direct FIA with memory-only chunked model forwards."""
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        chunk_size = getattr(self.args, "fia_micro_batch_size", None)
+        self.fia_micro_batch_size = self.n if chunk_size is None else int(chunk_size)
+        if self.fia_micro_batch_size < 1:
+            raise ValueError("fia_micro_batch_size must be >= 1")
+        self.fia_micro_batch_size = min(self.fia_micro_batch_size, self.n)
+
+    def step(self):
+        loss_gm = torch.tensor(0.0, device=self.device)
+        loss_fi_value = torch.tensor(0.0, device=self.device)
+        loss_tv_value = torch.tensor(0.0, device=self.device)
+
+        self.S_hat.data = torch.max(
+            torch.min(self.S_hat, (1 - self.mean) / self.std),
+            -self.mean / self.std,
+        )
+        self.opt.zero_grad()
+
+        if self.fi > 0:
+            for start in range(0, self.n, self.fia_micro_batch_size):
+                end = min(start + self.fia_micro_batch_size, self.n)
+                _, z_hat = self.model(self.S_hat[start:end], return_z=True)
+                chunk_loss_fi = (1 - self.cosine_similarity(self.Z[start:end], z_hat)).mean()
+                weight = (end - start) / self.n
+                (self.fi * chunk_loss_fi * weight).backward()
+                loss_fi_value = loss_fi_value + chunk_loss_fi.detach() * weight
+
+        if self.tv > 0:
+            loss_tv = self.total_variation(self.S_hat)
+            (self.tv * loss_tv).backward()
+            loss_tv_value = loss_tv.detach()
+
+        self.opt.step()
+        if self.sch:
+            self.sch.step()
+
+        loss_value = self.fi * loss_fi_value + self.tv * loss_tv_value
+        return {
+            "loss": loss_value.detach().cpu().item(),
+            "loss_fi": loss_fi_value.detach().cpu().item(),
+            "loss_gm": loss_gm.detach().cpu().item(),
+            "loss_tv": loss_tv_value.detach().cpu().item(),
+        }
+
+
+def _make_direct_fia(z: torch.Tensor, model, attack_args, grads, labels):
+    chunk_size = getattr(attack_args, "fia_micro_batch_size", None)
+    if chunk_size is not None and int(chunk_size) < int(z.shape[0]):
+        return MicroBatchDirect(z, model, attack_args, grads, labels)
+    return Direct(z, model, attack_args, grads, labels)
 
 
 def _set_author_output_root() -> None:
@@ -85,6 +141,7 @@ def _prepare_exp_path(
     *,
     exp_name: str,
     update_file: Path,
+    update_data: Optional[Mapping[str, Any]] = None,
     evaluated_samples: int,
     method: str,
     extra_manifest: Optional[Mapping[str, Any]] = None,
@@ -101,6 +158,9 @@ def _prepare_exp_path(
         "oracle_removed_from_attack_pipeline": True,
         "attack_pipeline_ground_truth_inputs": "none; labels only when an explicit known-label threat model is enabled",
     }
+    if getattr(attack_args, "fia_micro_batch_size", None) is not None:
+        extra["fia_micro_batch_size"] = int(attack_args.fia_micro_batch_size)
+        extra["feature_inversion_runner"] = "Direct FIA with memory-only chunked model forwards"
     if extra_manifest:
         extra.update(dict(extra_manifest))
     manifest = update_experiment_manifest(
@@ -110,6 +170,7 @@ def _prepare_exp_path(
         args=args,
         evaluated_samples=evaluated_samples,
         extra=extra,
+        update_data=update_data,
     )
     manifest_file = exp_path / "manifest.json"
     if getattr(args, "fresh_start", False):
@@ -172,6 +233,7 @@ def run_author_cpa_with_update_file(
         args,
         exp_name=exp_name,
         update_file=update_file,
+        update_data=data,
         evaluated_samples=evaluated_samples,
         method=method,
         extra_manifest={
@@ -197,9 +259,15 @@ def run_author_cpa_with_update_file(
     if getattr(args, "fresh_start", False) and log_path.exists():
         log_path.unlink()
 
+    print(
+        f"[attack] start exp={exp_path.name} batches={n_batches} "
+        f"cpa_iter={attack_args.n_iter} fia_iter={attack_args.n_iter_fi}",
+        flush=True,
+    )
     rec_entries = []
     eval_entries = []
     for batch in range(n_batches):
+        print(f"[attack] exp={exp_path.name} batch {batch + 1}/{n_batches} CPA start", flush=True)
         grads = _tensor_list(data["grad"][batch], device=device)
         labels = _labels_for_attack(args.n_samples, device, data["y"][batch] if args.use_labels else None)
 
@@ -215,6 +283,11 @@ def run_author_cpa_with_update_file(
             if (iter_idx % attack_args.n_log == 0) or (iter_idx == attack_args.n_iter - 1):
                 _write_jsonl(log_path, {"phase": "gi", "batch": batch, "iter": iter_idx, **loss_dict})
                 _save_checkpoint(gi_ckpt, iteration=iter_idx + 1, state=gi.get_attack_state())
+                print(
+                    f"[attack] exp={exp_path.name} batch {batch + 1}/{n_batches} "
+                    f"CPA iter {iter_idx + 1}/{attack_args.n_iter} loss={loss_dict.get('loss')}",
+                    flush=True,
+                )
 
         rec_gi = gi.get_rec().detach()
         rec_emb = rec_gi.abs() if getattr(model, "model_type", None) == "conv" else torch.empty(0, device=device)
@@ -223,7 +296,12 @@ def run_author_cpa_with_update_file(
         if getattr(model, "model_type", None) == "conv" and attack_args.n_iter_fi > 0:
             n_fi = min(attack_args.n_sample_fi, rec_emb.shape[0])
             rec_emb_fi = rec_emb[:n_fi].detach()
-            fi = Direct(rec_emb_fi, model, attack_args, grads, labels)
+            fi = _make_direct_fia(rec_emb_fi, model, attack_args, grads, labels)
+            print(
+                f"[attack] exp={exp_path.name} batch {batch + 1}/{n_batches} "
+                f"Direct-FIA start samples={n_fi}",
+                flush=True,
+            )
             fi_ckpt = exp_path / f"batch_{batch:03d}_fi.pt"
             ckpt = _load_checkpoint(fi_ckpt)
             if ckpt is not None:
@@ -235,6 +313,12 @@ def run_author_cpa_with_update_file(
                 if (iter_fi % attack_args.n_log_fi == 0) or (iter_fi == attack_args.n_iter_fi - 1):
                     _write_jsonl(log_path, {"phase": "fi", "batch": batch, "iter": iter_fi, **loss_dict_fi})
                     _save_checkpoint(fi_ckpt, iteration=iter_fi + 1, state=fi.get_attack_state())
+                    print(
+                        f"[attack] exp={exp_path.name} batch {batch + 1}/{n_batches} "
+                        f"Direct-FIA iter {iter_fi + 1}/{attack_args.n_iter_fi} "
+                        f"loss={loss_dict_fi.get('loss')}",
+                        flush=True,
+                    )
             rec_fi = fi.get_rec().detach()
 
         batch_entry = {
@@ -285,6 +369,7 @@ def run_direct_fia_from_embeddings(
         args,
         exp_name=exp_name,
         update_file=update_file,
+        update_data=data,
         evaluated_samples=evaluated_samples,
         method=method,
         extra_manifest={
@@ -308,15 +393,21 @@ def run_direct_fia_from_embeddings(
     validate_parameter_mapping(data["param_names"], data["grad"][0], model)
 
     log_path = exp_path / "losses.jsonl"
+    print(
+        f"[aggregate-fia] start exp={exp_path.name} batches={n_batches} "
+        f"fia_iter={attack_args.n_iter_fi}",
+        flush=True,
+    )
     rec_entries = []
     eval_entries = []
     for batch in range(n_batches):
+        print(f"[aggregate-fia] exp={exp_path.name} batch {batch + 1}/{n_batches} start", flush=True)
         grads = _tensor_list(data["grad"][batch], device=device)
         labels = _labels_for_attack(args.n_samples, device, None)
         rec_emb = torch.as_tensor(recovered_embeddings[batch], device=device, dtype=torch.float32)
         n_fi = min(attack_args.n_sample_fi, rec_emb.shape[0])
         rec_emb_fi = rec_emb[:n_fi].detach()
-        fi = Direct(rec_emb_fi, model, attack_args, grads, labels)
+        fi = _make_direct_fia(rec_emb_fi, model, attack_args, grads, labels)
         fi_ckpt = exp_path / f"batch_{batch:03d}_fi.pt"
         ckpt = _load_checkpoint(fi_ckpt)
         if ckpt is not None:
@@ -327,6 +418,11 @@ def run_direct_fia_from_embeddings(
             if (iter_fi % attack_args.n_log_fi == 0) or (iter_fi == attack_args.n_iter_fi - 1):
                 _write_jsonl(log_path, {"phase": "fi", "batch": batch, "iter": iter_fi, **loss_dict_fi})
                 _save_checkpoint(fi_ckpt, iteration=iter_fi + 1, state=fi.get_attack_state())
+                print(
+                    f"[aggregate-fia] exp={exp_path.name} batch {batch + 1}/{n_batches} "
+                    f"iter {iter_fi + 1}/{attack_args.n_iter_fi} loss={loss_dict_fi.get('loss')}",
+                    flush=True,
+                )
         rec_fi = fi.get_rec().detach()
         rec_entries.append(
             {

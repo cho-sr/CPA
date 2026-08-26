@@ -11,6 +11,10 @@ __pycache__/
 *.ckpt
 *.pkl
 *.pickle
+*.npy
+*.npz
+*.log
+*.started
 
 # Generated training and collection outputs
 fedavg_fp32/outputs/
@@ -23,3 +27,9 @@ quantized_update_cpa/outputs_v2/
 /exp/
 /datasets/
 /wandb/
+
+# Large sparse/CoRA raw observation dumps
+**/attack_layer_observations_shards/
+**/single_client_updates/
+**/fedavg_single_client_updates/
+**/round_updates/

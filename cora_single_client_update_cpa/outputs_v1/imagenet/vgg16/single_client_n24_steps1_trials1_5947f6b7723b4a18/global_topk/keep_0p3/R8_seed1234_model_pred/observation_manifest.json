@@ -1,0 +1,13 @@
+{
+  "desparse_sampler": "retained_rescaled",
+  "ensemble_size": 8,
+  "keep_ratio": 0.3,
+  "noise_seed": 1234,
+  "observation": "one_client_compressed_update",
+  "observation_file": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\cora_single_client_update_cpa\\outputs_v1\\single_client_updates\\imagenet\\vgg16\\single_client_n24_steps1_trials1_5947f6b7723b4a18\\global_topk\\keep_0p3_attack_layer_observation.pickle",
+  "observation_hash": "f7ea6a58fe3a10b6081a8f35c940a2bdf4b2ab9fbc8271a4b94bcc628e9656fc",
+  "schema_version": 1,
+  "source_file": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\cora_single_client_update_cpa\\outputs_v1\\single_client_updates\\imagenet\\vgg16\\single_client_n24_steps1_trials1_5947f6b7723b4a18\\global_topk\\keep_0p3.pickle",
+  "source_hash": "2a1d65becd1e72fd898c60b97da32ac36d8cbd2daffd433a575a7c0b394de561",
+  "tau_policy": "topk_threshold"
+}

@@ -1,0 +1,11 @@
+python sparsified_fedavg_utility\run_sparse_fedavg_utility.py `
+  --ds imagenet `
+  --model vgg16 `
+  --num_clients 3 `
+  --rounds 20 `
+  --samples_per_client 8 `
+  --local_epochs 10 `
+  --local_batch_size 8 `
+  --keep_ratios 100 80 50 `
+  --eval_split test `
+  --eval_every 1

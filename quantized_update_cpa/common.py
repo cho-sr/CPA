@@ -61,10 +61,9 @@ for _path in (FEDAVG_SRC, CPA_SRC):
     sys.path.insert(0, _path_str)
 
 import datasets as cpa_datasets  # noqa: E402
-from datasets import get_dataloaders, nclasses_dict  # noqa: E402
+from datasets import get_dataloaders  # noqa: E402
 from models import get_model  # noqa: E402
 from utils import exp_path_base, get_device, write_pickle  # noqa: E402
-from vgg16 import vgg16  # noqa: E402
 
 cpa_datasets.ds_root = str(DATASET_ROOT)
 
@@ -164,15 +163,6 @@ def _checkpoint_state_dict(checkpoint_path: Optional[Path]) -> Optional[Dict[str
     return checkpoint
 
 
-def _checkpoint_num_classes(state_dict: Optional[Dict[str, torch.Tensor]]) -> Optional[int]:
-    if state_dict is None:
-        return None
-    for name in ("classifier.6.weight", "module.classifier.6.weight"):
-        if name in state_dict:
-            return int(state_dict[name].shape[0])
-    return None
-
-
 def checkpoint_manifest(checkpoint_path: Optional[Path]) -> Dict[str, Optional[str]]:
     if checkpoint_path is None:
         return {"path": None, "sha256": None}
@@ -192,23 +182,13 @@ def build_experiment_model(
     if checkpoint_path is None and seed is not None:
         torch.manual_seed(seed)
     state_dict = _checkpoint_state_dict(checkpoint_path)
-    checkpoint_classes = _checkpoint_num_classes(state_dict)
-    if model_name == "vgg16" and ds != "imagenet":
-        model = vgg16(pretrained=True)
-        final_layer = model.classifier[-1]
-        if not isinstance(final_layer, nn.Linear):
-            raise TypeError(f"Expected VGG16 classifier[-1], found {type(final_layer)}")
-        out_features = checkpoint_classes or nclasses_dict[ds]
-        if final_layer.out_features != out_features:
-            model.classifier[-1] = nn.Linear(final_layer.in_features, out_features)
-    else:
-        model = get_model(
-            model_name=model_name,
-            ds=ds,
-            h_dim=h_dim,
-            load_path=None,
-            dataparallel=False,
-        )
+    model = get_model(
+        model_name=model_name,
+        ds=ds,
+        h_dim=h_dim,
+        load_path=None,
+        dataparallel=False,
+    )
     if state_dict is not None:
         model.load_state_dict(state_dict, strict=True)
     return model.to(device=device, dtype=torch.float32)
@@ -297,6 +277,7 @@ def collector_config(
     attack_trials: int,
     local_epochs: int,
     local_batch_size: int,
+    micro_batch_size: int,
     lr: float,
     seed: int,
     checkpoint_path: Optional[Path],
@@ -314,6 +295,7 @@ def collector_config(
         "local_epochs": local_epochs,
         "local_steps": local_steps,
         "local_batch_size": local_batch_size,
+        "micro_batch_size": micro_batch_size,
         "optimizer": "SGD",
         "lr": lr,
         "momentum": 0.0,
@@ -343,6 +325,7 @@ def collect_fedavg_update_pickle(
     n_samples: int,
     local_epochs: int,
     local_batch_size: int,
+    micro_batch_size: int,
     lr: float,
     quant_bits: int,
     rounding: str,
@@ -369,6 +352,8 @@ def collect_fedavg_update_pickle(
         require_nearest_rounding(rounding)
     if attack_trials < 1:
         raise ValueError("attack_trials must be >= 1")
+    if micro_batch_size < 1 or micro_batch_size > local_batch_size:
+        raise ValueError("micro_batch_size must be in [1, local_batch_size]")
 
     config = collector_config(
         ds=ds,
@@ -378,6 +363,7 @@ def collect_fedavg_update_pickle(
         attack_trials=attack_trials,
         local_epochs=local_epochs,
         local_batch_size=local_batch_size,
+        micro_batch_size=micro_batch_size,
         lr=lr,
         seed=seed,
         checkpoint_path=global_checkpoint,
@@ -431,6 +417,11 @@ def collect_fedavg_update_pickle(
             "dequantized_before_attack": quant_bits != 32,
             "trial_semantics": "independent_batches_from_same_w0",
             "multi_step_cpa_factorization": "empirical_baseline_approximation",
+            "gradient_accumulation": {
+                "enabled": micro_batch_size < local_batch_size,
+                "micro_batch_size": micro_batch_size,
+                "logical_batch_size": local_batch_size,
+            },
         },
     }
 
@@ -439,8 +430,11 @@ def collect_fedavg_update_pickle(
         data["y"].append(y_cpu.numpy())
         with torch.no_grad():
             if getattr(global_model, "model_type", None) == "conv":
-                _, z = global_model(x_cpu.to(device), return_z=True)
-                data["z"].append(z.detach().cpu().numpy())
+                z_chunks = []
+                for start in range(0, len(x_cpu), micro_batch_size):
+                    _, z_chunk = global_model(x_cpu[start : start + micro_batch_size].to(device), return_z=True)
+                    z_chunks.append(z_chunk.detach().cpu())
+                data["z"].append(torch.cat(z_chunks, dim=0).numpy())
 
         local_model = copy.deepcopy(global_model).to(device)
         local_model.train()
@@ -450,8 +444,13 @@ def collect_fedavg_update_pickle(
         for _epoch in range(local_epochs):
             for x_batch, y_batch in local_loader:
                 optimizer.zero_grad(set_to_none=True)
-                loss = criterion(local_model(x_batch.to(device)), y_batch.to(device))
-                loss.backward()
+                logical_batch_size = len(x_batch)
+                for start in range(0, logical_batch_size, micro_batch_size):
+                    x_micro = x_batch[start : start + micro_batch_size].to(device)
+                    y_micro = y_batch[start : start + micro_batch_size].to(device)
+                    loss = criterion(local_model(x_micro), y_micro)
+                    loss = loss * (len(x_micro) / logical_batch_size)
+                    loss.backward()
                 optimizer.step()
 
         update = _named_update_dict(local_model, global_model)
@@ -491,6 +490,7 @@ def ensure_shared_fp32_update(args: argparse.Namespace) -> Path:
         attack_trials=args.attack_trials,
         local_epochs=args.local_epochs,
         local_batch_size=resolve_local_batch_size(args),
+        micro_batch_size=resolve_micro_batch_size(args),
         lr=args.local_lr,
         seed=args.seed,
         checkpoint_path=args.global_checkpoint,
@@ -504,6 +504,7 @@ def ensure_shared_fp32_update(args: argparse.Namespace) -> Path:
         attack_trials=args.attack_trials,
         local_epochs=args.local_epochs,
         local_batch_size=resolve_local_batch_size(args),
+        micro_batch_size=resolve_micro_batch_size(args),
         lr=args.local_lr,
         quant_bits=32,
         rounding="nearest",
@@ -591,8 +592,9 @@ def run_tag(args: argparse.Namespace, *, include_fia: bool = True) -> str:
 def update_experiment_manifest(
     *, experiment_id: str, method: str, update_file: Path, args: argparse.Namespace,
     evaluated_samples: int, extra: Optional[Mapping[str, Any]] = None,
+    update_data: Optional[Mapping[str, Any]] = None,
 ) -> Dict[str, Any]:
-    data = read_pickle(update_file)
+    data = update_data if update_data is not None else read_pickle(update_file)
     metadata = data["metadata"]
     manifest: Dict[str, Any] = {
         "schema_version": 2,
@@ -642,6 +644,12 @@ def add_collect_args(parser: argparse.ArgumentParser) -> None:
     )
     parser.add_argument("--local_epochs", type=int, default=10)
     parser.add_argument("--local_batch_size", type=int, default=None)
+    parser.add_argument(
+        "--micro_batch_size",
+        type=int,
+        default=None,
+        help="Memory-only micro-batch size for accumulating each logical local batch.",
+    )
     parser.add_argument("--local_lr", type=float, default=1e-3)
     parser.add_argument("--global_checkpoint", type=Path, default=None)
     parser.add_argument("--seed", type=int, default=42)
@@ -664,6 +672,12 @@ def add_attack_args(parser: argparse.ArgumentParser) -> None:
     parser.add_argument("--n_log_fi", type=int, default=2000)
     parser.add_argument("--lr_fi", type=float, default=1e-1)
     parser.add_argument("--n_sample_fi", type=int, default=16)
+    parser.add_argument(
+        "--fia_micro_batch_size",
+        type=int,
+        default=None,
+        help="Memory-only micro-batch size for Direct FIA forward/backward.",
+    )
     parser.add_argument("--fi", type=float, default=1.0)
     parser.add_argument("--fi_method", type=str, default="direct", choices=["direct", "gm"])
     parser.add_argument("--use_labels", action="store_true")
@@ -681,6 +695,7 @@ def make_attack_namespace(args: argparse.Namespace, *, exp_name: str) -> argpars
         n_log=args.attack_n_log, opt="adam", lr=args.attack_lr, lr_N=1e-6, sch="none",
         fi_method=args.fi_method, n_iter_fi=args.n_iter_fi, n_log_fi=args.n_log_fi,
         opt_fi="adam", lr_fi=args.lr_fi, sch_fi="cosine", n_sample_fi=n_sample_fi,
+        fia_micro_batch_size=args.fia_micro_batch_size,
         gm=0.0, fi=args.fi, fl_alg="fedavg", C=1.0, sigma=0.0, defense="nodef",
         exp_name=exp_name, project=args.project, fresh_start=args.fresh_start, dry_run=True,
         submitit=False, n_gpu=1, timeout=600, wait=False, disable_pbar=True,
@@ -690,6 +705,14 @@ def make_attack_namespace(args: argparse.Namespace, *, exp_name: str) -> argpars
 
 def resolve_local_batch_size(args: argparse.Namespace) -> int:
     return args.local_batch_size or args.n_samples
+
+
+def resolve_micro_batch_size(args: argparse.Namespace) -> int:
+    local_batch_size = resolve_local_batch_size(args)
+    micro_batch_size = args.micro_batch_size or local_batch_size
+    if micro_batch_size < 1 or micro_batch_size > local_batch_size:
+        raise ValueError("micro_batch_size must be in [1, local_batch_size]")
+    return micro_batch_size
 
 
 def _install_optional_dependency_stubs() -> None:
