@@ -2,8 +2,8 @@
 
 The sparse experiments are intentionally separated from ``quantized_update_cpa``
 so in-progress quantization files are not modified.  The immutable author CPA
-snapshot is read from ``official_cpa/src`` because the repository root ``src/``
-is not present in this workspace.
+snapshot is read from the local ``official_cpa/src`` checkout when present, with
+a fallback to the tracked ``cocktail_party_attack/src`` snapshot.
 """
 
 from __future__ import annotations
@@ -47,7 +47,12 @@ except RuntimeError:
 
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
-CPA_SRC = REPO_ROOT / "official_cpa" / "src"
+CPA_SRC_CANDIDATES = (
+    REPO_ROOT / "official_cpa" / "src",
+    REPO_ROOT / "cocktail_party_attack" / "src",
+    REPO_ROOT / "src",
+)
+CPA_SRC = next((candidate for candidate in CPA_SRC_CANDIDATES if candidate.is_dir()), CPA_SRC_CANDIDATES[0])
 OUTPUT_ROOT = Path(__file__).resolve().parent / "outputs_v1"
 SHARED_UPDATE_ROOT = OUTPUT_ROOT / "shared_updates"
 AUTHOR_RUN_ROOT = OUTPUT_ROOT / "author_runs"
@@ -56,7 +61,8 @@ AUTO_VGG16_IMAGENET_COLLECT_MICRO_BATCH_SIZE = 4
 AUTO_VGG16_IMAGENET_FIA_MICRO_BATCH_SIZE = 2
 
 if not CPA_SRC.is_dir():
-    raise FileNotFoundError(f"Author CPA snapshot not found: {CPA_SRC}")
+    searched = ", ".join(str(candidate) for candidate in CPA_SRC_CANDIDATES)
+    raise FileNotFoundError(f"Author CPA snapshot not found. Searched: {searched}")
 
 _cpa_src_str = str(CPA_SRC)
 if _cpa_src_str in sys.path:
