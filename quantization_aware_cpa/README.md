@@ -1,14 +1,19 @@
 # Quantization-Aware CPA
 
 Fresh implementation for the quantization consistency milestones in the pasted
-spec. The code stops at Milestone 1 by default.
+spec. The default run is Stage 1 diagnostics; Stage 2 currently includes only
+the `A_oracle` hinge solver path.
 
 ## Layout
 
 - `qacpa/quantizer.py`: per-row affine quantizer plus cell checks.
 - `qacpa/victim.py`: VGG16/ImageNet victim batch collection and caching.
 - `qacpa/stage1.py`: covariance debiasing, PCA whitening, and FastICA.
+- `qacpa/stage2.py`: hinge-only projected-gradient consistency solver.
 - `qacpa/diagnostics.py`: `rho`, `gamma`, and condition-number diagnostics.
+- `qacpa/cmp_sweep.py`: MP threshold sweep diagnostics.
+- `qacpa/feas_decomp.py`: LP-only feasibility decomposition.
+- `qacpa/run_stage2_oracle.py`: Stage 2 `A_oracle` baseline runner.
 - `tests/`: Milestone 0 gates as tests.
 
 ## Run
@@ -17,6 +22,9 @@ From this folder:
 
 ```powershell
 python -m qacpa.run --config configs/spike.yaml
+python -m qacpa.cmp_sweep --config configs/spike.yaml
+python -m qacpa.feas_decomp --config configs/spike.yaml
+python -m qacpa.run_stage2_oracle --config configs/spike.yaml --n-batches 5
 ```
 
 Expected first config:

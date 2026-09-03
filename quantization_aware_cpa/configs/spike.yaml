@@ -30,6 +30,12 @@ diagnostics:
   lp_method: highs
   lp_feasibility_tol: 1.0e-7
 
+stage2:
+  max_iter: 250
+  chunk_size: 4096
+  stop_tolerance: 1.0e-10
+  check_every: 25
+
 paths:
   cache_dir: cache
   results_jsonl: results/runs.jsonl

@@ -22,8 +22,9 @@ Do not rebuild what is already verified. Do not assume anything else works.
 | LP feasibility / `gamma` diagnostics | **works** |
 | Stage 1 (debias + ICA) | **BUGGY — see §2** |
 | Milestone -1 (CPA ICA port, fp32 repro) | **NOT DONE — see §1** |
-| **Stage 2 solver** | **does not exist** |
-| `bplus`, `naive`, `debias`, `A_oracle`, `gma` | **do not exist** |
+| **Stage 2 solver** | **implemented for hinge-only embedding solve** |
+| `A_oracle` | **implemented and run for 5 batches (`v3_A_oracle`)** |
+| `bplus`, `naive`, `debias`, `A`, `gma` | **do not exist** |
 | Stage 3 | does not exist (intentional) |
 
 ### The three existing rows in `results/runs.jsonl` are void
@@ -330,8 +331,14 @@ metrics cannot separate "Stage 2 failed" from "FIA failed."
 
 ### Diagnostics
 `rho`, `gamma` (+ feasible fraction), `mean_axis_extent`, `cond_A_hat`,
-`cond_A_true`, all requested `B` eigenvalues, `B_eff`, `mp_edge`, debias diagonal
-summary, `||a_i||` per source, per-source loss and label.
+`cond_A_true`, `cond_A_true_matched`, all requested `B` eigenvalues, `B_eff`,
+`mp_edge`, debias diagonal summary, `||a_i||` per source, per-source loss and
+label.
+Define `mean_axis_extent` as the mean over feasible sampled columns and axes of
+`(max_i(k) - min_i(k)) / max(||s_hat[:, k]||_2, 1e-12)`. Define the gamma
+denominator as `normalized_ica_rmse =
+sqrt(mean_{i,k}(((s_hat[i,k] - s_true[i,k]) / max(||s_hat[:,k]||_2, 1e-12))^2))`,
+and log `gamma = mean_axis_extent / normalized_ica_rmse`.
 Compute LP diagnostics on 512 sampled columns; for `B > 64` use 32 random
 directions instead of `2B` axis directions.
 

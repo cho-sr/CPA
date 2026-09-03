@@ -101,7 +101,8 @@ def main() -> None:
         print(
             "batch={batch} rho={rho:.6f} gamma={gamma:.6g} "
             "feasible={feasible:.3f} B_eff={beff}/{B} recovered={recovered}/{beff} ({overB}/{B}) "
-            "cond_A_hat={cond_hat:.6g} cond_A_true={cond_true:.6g} cos={cosines}".format(
+            "cond_A_hat={cond_hat:.6g} cond_A_true={cond_true:.6g} "
+            "cond_A_true_matched={cond_true_matched:.6g} cos={cosines}".format(
                 batch=batch_index,
                 rho=diagnostics.rho,
                 gamma=diagnostics.gamma,
@@ -112,6 +113,7 @@ def main() -> None:
                 overB=diagnostics.n_sources_recovered,
                 cond_hat=diagnostics.cond_A_hat,
                 cond_true=diagnostics.cond_A_true,
+                cond_true_matched=diagnostics.cond_A_true_matched,
                 cosines=format_float_list(diagnostics.source_cos_per_source),
             ),
             flush=True,
@@ -190,9 +192,12 @@ def make_result_row(
             "rho": diagnostics.rho,
             "gamma": diagnostics.gamma,
             "mean_axis_extent": diagnostics.mean_axis_extent,
+            "mean_axis_extent_normalized_by": diagnostics.mean_axis_extent_normalized_by,
             "ica_rmse": diagnostics.ica_rmse,
+            "normalized_ica_rmse": diagnostics.normalized_ica_rmse,
             "cond_A_hat": diagnostics.cond_A_hat,
             "cond_A_true": diagnostics.cond_A_true,
+            "cond_A_true_matched": diagnostics.cond_A_true_matched,
             "a_hat_norm_per_source": diagnostics.a_hat_norm_per_source,
             "a_true_norm_per_source": diagnostics.a_true_norm_per_source,
             "a_true_norm_matched": diagnostics.a_true_norm_matched,
