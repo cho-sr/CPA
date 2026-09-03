@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "qacpa"
+version = "0.1.0"
+description = "Quantization-aware Cocktail Party Attack milestone pipeline"
+requires-python = ">=3.10"
+dependencies = [
+  "numpy",
+  "pytest",
+  "pyyaml",
+  "scikit-learn",
+  "scipy",
+  "torch",
+  "torchvision",
+  "tqdm",
+]
+
+[tool.setuptools]
+packages = ["qacpa"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = [
+  "integration: requires ImageNet data and torchvision VGG16 weights",
+]

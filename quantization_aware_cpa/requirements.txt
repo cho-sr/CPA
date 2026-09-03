@@ -1,0 +1,8 @@
+numpy
+pytest
+pyyaml
+scikit-learn
+scipy
+torch
+torchvision
+tqdm

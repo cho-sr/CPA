@@ -1,0 +1,35 @@
+seed: 0
+run_tag: v3_mptrunc
+device: auto
+milestone: 1
+
+data:
+  root: ../datasets/imagenet
+  split: val
+  batch_size: 8
+  n_batches: 3
+  num_workers: 0
+  require_distinct_labels: true
+
+quantization:
+  bits: 4
+  rounding: stochastic
+
+stage1:
+  n_components: 8
+  debias: true
+  fastica_max_iter: 1000
+  fastica_tol: 1.0e-4
+  fastica_fun: logcosh
+  fastica_algorithm: parallel
+  mp_truncation: true
+  c_mp: 1.5
+
+diagnostics:
+  gamma_columns: 512
+  lp_method: highs
+  lp_feasibility_tol: 1.0e-7
+
+paths:
+  cache_dir: cache
+  results_jsonl: results/runs.jsonl
