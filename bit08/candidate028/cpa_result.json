@@ -1,0 +1,99 @@
+{
+  "log": [
+    {
+      "iter": 0,
+      "loss": 741.1598510742188,
+      "loss_ne": 0.0,
+      "loss_decor": 137.959228515625,
+      "loss_tv": 0.0,
+      "loss_nv": 59.75751495361328,
+      "loss_l1": 0.441480815410614,
+      "time_sec": 0.30566125000768807
+    },
+    {
+      "iter": 4999,
+      "loss": 735.1087036132812,
+      "loss_ne": 0.0,
+      "loss_decor": 138.03952026367188,
+      "loss_tv": 0.0,
+      "loss_nv": 14.941837310791016,
+      "loss_l1": 0.31134819984436035,
+      "time_sec": 34.48601330899692
+    },
+    {
+      "iter": 9999,
+      "loss": 735.1065673828125,
+      "loss_ne": 0.0,
+      "loss_decor": 138.03890991210938,
+      "loss_tv": 0.0,
+      "loss_nv": 14.948474884033203,
+      "loss_l1": 0.3113979697227478,
+      "time_sec": 69.44002843499766
+    },
+    {
+      "iter": 14999,
+      "loss": 735.107177734375,
+      "loss_ne": 0.0,
+      "loss_decor": 138.03927612304688,
+      "loss_tv": 0.0,
+      "loss_nv": 14.94017505645752,
+      "loss_l1": 0.31135663390159607,
+      "time_sec": 104.62242055800743
+    },
+    {
+      "iter": 19999,
+      "loss": 735.107421875,
+      "loss_ne": 0.0,
+      "loss_decor": 138.03939819335938,
+      "loss_tv": 0.0,
+      "loss_nv": 14.940526008605957,
+      "loss_l1": 0.31126317381858826,
+      "time_sec": 139.75294695800403
+    },
+    {
+      "iter": 24999,
+      "loss": 735.1068115234375,
+      "loss_ne": 0.0,
+      "loss_decor": 138.0390167236328,
+      "loss_tv": 0.0,
+      "loss_nv": 14.947087287902832,
+      "loss_l1": 0.31137222051620483,
+      "time_sec": 174.9680520920083
+    }
+  ],
+  "wall_time_sec": 193.1886513359932,
+  "setup_wall_time_sec": 18.21253880999575,
+  "optimizer_wall_time_sec": 174.97611252599745,
+  "source_hashes": {
+    "/root/same80/CPA/official_cpa/src/datasets.py": "f9e7b47733b5acb4b73e6914a3f100b5187766bbed78a12d17b69c39eec1b6d1",
+    "/root/same80/CPA/official_cpa/src/utils.py": "565f1bf1a47f387d042b35bb24f677d1ff0d3ec5d979e2876c31ed114179b9fe",
+    "/root/same80/CPA/official_cpa/src/gradient_inversion_utils.py": "668d77788dc8d81c181c8c0a9fbe8533c6fbea22ba46fe7f5e15b0a431300e5f",
+    "/root/same80/CPA/official_cpa/src/gradient_inversion.py": "c598e1ee7b4079f741060d10c8dfd14711e393a97384c63cf32be77a458b1873",
+    "/root/same80/CPA/official_cpa/src/feature_inversion.py": "dc73880427e3eaf1f873d295f17f1d48d301882f634ee5df36ddeea8e56c4dec",
+    "/root/same80/CPA/official_cpa/src/vgg16.py": "8114eca8cde553dace5f777aedd21b70851c570d473e597b005cb6be4b248d36",
+    "/root/same80/CPA/quantization_aware_cpa/qacpa/upstream_naive.py": "8f29b885d86f4121eda5c55e17486a3a48bd8db08b2f83890fe7726730d1ee92",
+    "/root/same80/CPA/quantization_aware_cpa/qacpa/seed.py": "769366fcc2cf3e144d8caa86f73a55dcb0b6be615a45dab8b6e117399150c558"
+  },
+  "settings": {
+    "n_components": 16,
+    "seed": 0,
+    "device": "cuda:0",
+    "n_iter": 25000,
+    "lr": 0.001,
+    "opt": "adam",
+    "sch": "none",
+    "decor": 5.3,
+    "T": 7.7,
+    "ne": 1.0,
+    "nv": 0.13,
+    "l1": 5.0,
+    "tv": 0.1,
+    "log_every": 5000,
+    "whitening": "upstream cov/(d-1), torch.linalg.eig, top abs eigenvalues",
+    "backend": "official_cpa/src/gradient_inversion.py:CocktailPartyAttack",
+    "debias": false,
+    "mp_truncation": false,
+    "mixing_matrix_computed": false
+  },
+  "cache_path": "/root/same80/CPA/quantization_aware_cpa/results/same16_bits84_full100_fedavg20/bit08/candidate028/cpa_work/upstream_cpa_5tf4t_nt/imagenet/vgg16/attack/cp_direct/observed/private_uia/w_16_0.pkl"
+}

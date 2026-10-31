@@ -1,0 +1,7 @@
+{
+  "status": "PASSED",
+  "iterations_compared": 1000,
+  "comparison": "exact structured JSON values",
+  "mismatch": null,
+  "old_log_sha256": "c20f6a62b2e5161c63fc89fcfcbe9e2dee3221eb3956262c8dc7c6a7cf8d9d2f"
+}

@@ -1,0 +1,13 @@
+{
+  "task_id": "CPA_SIGNED_INT8_RANDOMIZED8_SCREEN3_FIA_20260917",
+  "wait_pid": 23720,
+  "process_created_ms": 1789639010634,
+  "executor_thread": "01a0a799-f1ce-7b31-8c46-b4ddef40aeab",
+  "state": "NOTIFICATION_QUEUED",
+  "model_calls_while_waiting": 0,
+  "registered_at": "2026-09-17T09:56:50.741544+00:00",
+  "process_exit_code": 1,
+  "ended_at": "2026-09-17T11:56:51.121542+00:00",
+  "queue_exit_status": 0,
+  "notified_at": "2026-09-17T11:56:51.365598+00:00"
+}

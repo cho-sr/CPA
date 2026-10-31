@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "run_tag": "m6_round_spectrum_decomposition",
+  "source_files": {
+    "aggregate_summary_csv": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\quantization_aware_cpa\\results\\m6_round_dependence\\aggregate_summary.csv",
+    "round_lambda_vectors_csv": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\quantization_aware_cpa\\results\\m6_round_dependence\\round_lambda_vectors.csv"
+  },
+  "changes_round0_to_round100": {
+    "training_loss_ratio": 0.3364839129379066,
+    "measurement_loss_ratio": 0.9723755339536436,
+    "sigma2_ratio": 1.0309039566473936,
+    "mp_edge_ratio": 1.0309039566473939,
+    "lambda_max_ratio": 1.0513403210143915,
+    "lambda_max_over_mp_edge_ratio": 1.0198237325943134,
+    "B_eff_pred_delta": -1.0,
+    "spearman_delta": 0.005132018565881524
+  },
+  "verdict": "No shrinking-scale cancellation is observed: sigma2, mp_edge, and lambda_max rise mildly while their ratio is nearly preserved. Because the measurement loss changes only slightly, hold the learning-stage-insensitivity paragraph.",
+  "artifacts": {
+    "round_spectrum_decomposition_csv": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\quantization_aware_cpa\\results\\m6_round_spectrum_decomposition\\round_spectrum_decomposition.csv",
+    "round_spectrum_decomposition_png": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\quantization_aware_cpa\\results\\m6_round_spectrum_decomposition\\round_spectrum_decomposition.png"
+  }
+}

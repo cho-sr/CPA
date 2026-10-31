@@ -1,0 +1,201 @@
+{
+  "matching": "Hungarian_pixel_MSE_once_for_all_metrics",
+  "n_images": 16,
+  "all_images_included": true,
+  "candidate_selection": "none_single_supplied_artifact",
+  "per_image": [
+    {
+      "candidate_index": 0,
+      "truth_index": 7,
+      "mse": 0.1082261197882406,
+      "psnr_db": 9.656679119565903,
+      "perfect_pixel_match": false,
+      "ssim": 0.1497172967403756,
+      "lpips": 0.5264855623245239
+    },
+    {
+      "candidate_index": 1,
+      "truth_index": 1,
+      "mse": 0.06585464867164906,
+      "psnr_db": 11.814135628254016,
+      "perfect_pixel_match": false,
+      "ssim": 0.2586236094929107,
+      "lpips": 0.3853464722633362
+    },
+    {
+      "candidate_index": 2,
+      "truth_index": 6,
+      "mse": 0.06364916720164224,
+      "psnr_db": 11.962072743684946,
+      "perfect_pixel_match": false,
+      "ssim": 0.17168119610655264,
+      "lpips": 0.4670805037021637
+    },
+    {
+      "candidate_index": 3,
+      "truth_index": 15,
+      "mse": 0.04501931344373075,
+      "psnr_db": 13.46601132389093,
+      "perfect_pixel_match": false,
+      "ssim": 0.48914796949365363,
+      "lpips": 0.4247150719165802
+    },
+    {
+      "candidate_index": 4,
+      "truth_index": 5,
+      "mse": 0.08855758234892773,
+      "psnr_db": 10.52774248349433,
+      "perfect_pixel_match": false,
+      "ssim": 0.45708950539524046,
+      "lpips": 0.4459191560745239
+    },
+    {
+      "candidate_index": 5,
+      "truth_index": 13,
+      "mse": 0.07265025317429684,
+      "psnr_db": 11.387628679178041,
+      "perfect_pixel_match": false,
+      "ssim": 0.31880884068178245,
+      "lpips": 0.4996910095214844
+    },
+    {
+      "candidate_index": 6,
+      "truth_index": 9,
+      "mse": 0.044098394821068476,
+      "psnr_db": 13.555772185376,
+      "perfect_pixel_match": false,
+      "ssim": 0.22650526955389993,
+      "lpips": 0.4273858964443207
+    },
+    {
+      "candidate_index": 7,
+      "truth_index": 0,
+      "mse": 0.053035555100186156,
+      "psnr_db": 12.75432881216265,
+      "perfect_pixel_match": false,
+      "ssim": 0.2646341254090152,
+      "lpips": 0.7956525087356567
+    },
+    {
+      "candidate_index": 8,
+      "truth_index": 2,
+      "mse": 0.06414079549208615,
+      "psnr_db": 11.928656581325384,
+      "perfect_pixel_match": false,
+      "ssim": 0.31785862827351474,
+      "lpips": 0.48353347182273865
+    },
+    {
+      "candidate_index": 9,
+      "truth_index": 8,
+      "mse": 0.030777756309809008,
+      "psnr_db": 15.117630433019977,
+      "perfect_pixel_match": false,
+      "ssim": 0.5972197025046042,
+      "lpips": 0.37915560603141785
+    },
+    {
+      "candidate_index": 10,
+      "truth_index": 10,
+      "mse": 0.06104079543084826,
+      "psnr_db": 12.143798156662607,
+      "perfect_pixel_match": false,
+      "ssim": 0.2504616355471844,
+      "lpips": 0.5404706001281738
+    },
+    {
+      "candidate_index": 11,
+      "truth_index": 12,
+      "mse": 0.02983700124784625,
+      "psnr_db": 15.252448275450911,
+      "perfect_pixel_match": false,
+      "ssim": 0.46016156089212845,
+      "lpips": 0.4697284698486328
+    },
+    {
+      "candidate_index": 12,
+      "truth_index": 11,
+      "mse": 0.0628492800166117,
+      "psnr_db": 12.016996931029812,
+      "perfect_pixel_match": false,
+      "ssim": 0.20029648098739478,
+      "lpips": 0.8037412762641907
+    },
+    {
+      "candidate_index": 13,
+      "truth_index": 3,
+      "mse": 0.21484634117239731,
+      "psnr_db": 6.678720379408338,
+      "perfect_pixel_match": false,
+      "ssim": 0.3062421630378775,
+      "lpips": 0.7582705616950989
+    },
+    {
+      "candidate_index": 14,
+      "truth_index": 14,
+      "mse": 0.05114076564973136,
+      "psnr_db": 12.91232774257195,
+      "perfect_pixel_match": false,
+      "ssim": 0.13978323874653195,
+      "lpips": 0.769493579864502
+    },
+    {
+      "candidate_index": 15,
+      "truth_index": 4,
+      "mse": 0.06755262115851302,
+      "psnr_db": 11.703577949381305,
+      "perfect_pixel_match": false,
+      "ssim": 0.12052422575063484,
+      "lpips": 0.8221806883811951
+    }
+  ],
+  "metric_dtype": "float64",
+  "truth_denormalization_tolerance_abs": 9.5367431640625e-07,
+  "truth_denormalization_clipped_values": 77691,
+  "perfect_pixel_matches": 0,
+  "psnr_null_meaning": "positive_infinity_for_perfect_pixel_match",
+  "mean_psnr_null_meaning": "positive_infinity_if_any_image_is_a_perfect_pixel_match",
+  "mean_mse": 0.07020477443922407,
+  "mean_psnr_db": 12.054907964028569,
+  "mean_ssim": 0.29554721553833135,
+  "lpips": "computed_offline_vgg",
+  "reconstruction_success": "no_threshold_registered",
+  "mean_lpips": 0.5624281521886587,
+  "lpips_provenance": {
+    "implementation": "torchmetrics.image.lpip.LearnedPerceptualImagePatchSimilarity",
+    "net_type": "vgg",
+    "normalize_argument": false,
+    "device": "cpu",
+    "dtype": "float32",
+    "versions": {
+      "torch": "2.13.0+cu132",
+      "torchvision": "0.28.0+cu132",
+      "torchmetrics": "1.9.0"
+    },
+    "input_normalization": "FP32 RGB [0,1] to [-1,1] using (pixels - 0.5) * 2",
+    "weights": {
+      "backbone": {
+        "path": "C:\\Users\\조상제\\.cache\\torch\\hub\\checkpoints\\vgg16-397923af.pth",
+        "sha256": "397923af8e79cdbb6a7127f12361acd7a2f83e06b05044ddf496e83de57a5bf0"
+      },
+      "calibration": {
+        "path": "C:\\miniconda\\envs\\DLG\\Lib\\site-packages\\torchmetrics\\functional\\image\\lpips_models\\vgg.pth",
+        "sha256": "a78928a0af1e5f0fcb1f3b9e8f8c3a2a5a3de244d830ad5c1feddc79b8432868"
+      }
+    },
+    "downloads_allowed": false
+  },
+  "private_keys_materialized": [
+    "labels",
+    "x",
+    "z"
+  ],
+  "private_fields_consumed": [
+    "x"
+  ],
+  "labels_consumed": false,
+  "feature_truth_consumed": false,
+  "private_truth_sha256": "724bbacbe316cc28dac086db9cfaf6507f4c1af31144fd610cc480985aab72e2",
+  "observation_bits": 8,
+  "same_update_as_int4": true
+}

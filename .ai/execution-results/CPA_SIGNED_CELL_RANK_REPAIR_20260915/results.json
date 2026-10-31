@@ -1,0 +1,94 @@
+{
+  "task_id": "CPA_SIGNED_CELL_RANK_REPAIR_20260915",
+  "plan_version": 1,
+  "status": "COMPLETED",
+  "full_experiment_status": "FULL_EXPERIMENT_NOT_RUN",
+  "runtime": {
+    "model": "gpt-5.6-luna",
+    "reasoning_effort": "xhigh",
+    "thread_id": "01a09e4d-51f3-7121-84e2-03a7a9ac3039",
+    "pid": 18272,
+    "settings_evidence": "current session saved turn_settings_applied gpt-5.6-luna/xhigh"
+  },
+  "handoff": {
+    "pre_claim_snapshot_sha256": "da1b04b625b213c6a4893bcb1f8ebf39e3c95ee26c193b4649ce3ddd9b52d569",
+    "task_version_verified": true,
+    "pre_claim_state": "READY_UNCLAIMED",
+    "claim_state": "RUNNING",
+    "claimed_by": "01a09e4d-51f3-7121-84e2-03a7a9ac3039",
+    "completion_state": "COMPLETED",
+    "completed_by": "01a09e4d-51f3-7121-84e2-03a7a9ac3039",
+    "result_report": ".ai/execution-results/CPA_SIGNED_CELL_RANK_REPAIR_20260915/report.md"
+  },
+  "repairs": {
+    "R1_canonical_hash": "COMPLETED",
+    "R2_figure_layout_numeric_preservation": "COMPLETED",
+    "R3_consecutive_movement_logs": "COMPLETED",
+    "R4_stage_statuses": "COMPLETED",
+    "R5_integration_configuration_guards": "COMPLETED"
+  },
+  "pre_fix_defect_probes": {
+    "status": "RETAINED",
+    "script": ".ai/execution-results/CPA_SIGNED_CELL_RANK_REPAIR_20260915/defect_reproduction.py",
+    "stdout": ".ai/execution-results/CPA_SIGNED_CELL_RANK_REPAIR_20260915/defect_reproduction.stdout.log",
+    "observations": [
+      "old compact (4,9) indexing raises IndexError at required column 11",
+      "core tensor hash and upstream canonical hash differ for one identical FP32 tensor",
+      "lagging two-step movement differs from consecutive movement"
+    ]
+  },
+  "tests": [
+    {
+      "command": "C:/miniconda/envs/DLG/python.exe -m pytest quantization_aware_cpa/tests/test_signed_cell_rank.py quantization_aware_cpa/tests/test_signed_cell_rank_pipeline.py -q --basetemp C:/Users/조상제/Desktop/CPA/.tmp_pytest_signed_cell_rank_repair",
+      "status": "PASS",
+      "passed": 14,
+      "duration_seconds": 7.11,
+      "scope": "synthetic CPU, matplotlib Agg, mocked CPA/FIA/LPIPS"
+    },
+    {
+      "command": "C:/miniconda/envs/DLG/python.exe -m pytest quantized_update_cpa/tests/test_cell_utils.py quantization_aware_cpa/tests/test_upstream_naive.py quantization_aware_cpa/tests/test_signed_baseline_provenance.py -q --basetemp C:/Users/조상제/Desktop/CPA/.tmp_pytest_repair_existing",
+      "status": "PASS",
+      "passed": 109,
+      "duration_seconds": 5.99,
+      "scope": "existing codec, original adapter, and baseline provenance contracts"
+    },
+    {
+      "command": "C:/miniconda/envs/DLG/python.exe -c <AST parse of five edited Python files>",
+      "status": "PASS",
+      "passed": 1,
+      "scope": "syntax.stdout.log"
+    },
+    {
+      "command": "C:/miniconda/envs/DLG/python.exe baseline_settings_check.py",
+      "status": "PASS",
+      "scope": "existing naive CPA/FIA result and manifest exact settings"
+    }
+  ],
+  "protected_source_hashes": {
+    "comparison": ".ai/execution-results/CPA_SIGNED_CELL_RANK_REPAIR_20260915/protected_hashes.json",
+    "match_parent_protected_source_hashes_current": true
+  },
+  "changed_files": [
+    "quantization_aware_cpa/qacpa/signed_cell_rank.py",
+    "quantization_aware_cpa/qacpa/signed_cell_rank_runner.py",
+    "quantization_aware_cpa/qacpa/signed_cell_rank_evaluation.py",
+    "quantization_aware_cpa/tests/test_signed_cell_rank.py",
+    "quantization_aware_cpa/tests/test_signed_cell_rank_pipeline.py",
+    "quantization_aware_cpa/docs/signed_cell_rank_comparison.md",
+    ".ai/execution-results/CPA_SIGNED_CELL_RANK_REPAIR_20260915/report.md",
+    ".ai/execution-results/CPA_SIGNED_CELL_RANK_REPAIR_20260915/results.json"
+  ],
+  "planner_final_delivery": {
+    "state": "FINAL_RESULT_HANDOFF_UNCONFIRMED",
+    "authorized_one_time": true,
+    "peer_id": "01a09ac2-0e8d-7f90-94a8-c45be99f4343",
+    "peer_pid": 12728,
+    "attempted": false,
+    "reason": "stale Planner binding; handoff forbids retry or replacement"
+  },
+  "limitations": [
+    "No real observation or real private evaluation was loaded",
+    "No GPU, VGG, real CPA/FIA, LPIPS, training, reconstruction, download, or full experiment was run",
+    "No scientific performance, convergence, or image-quality claim is made"
+  ]
+}

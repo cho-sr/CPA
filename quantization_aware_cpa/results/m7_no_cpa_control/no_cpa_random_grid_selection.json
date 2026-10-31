@@ -1,0 +1,24 @@
+{
+  "seed": 42,
+  "global_indices": [
+    14,
+    3,
+    23,
+    38,
+    20,
+    29,
+    2,
+    32,
+    37,
+    25,
+    39,
+    7
+  ],
+  "selection": "not cherry-picked",
+  "depends_on_lpips": false,
+  "available_columns": [
+    "original",
+    "fp32 no-CPA",
+    "4-bit no-CPA"
+  ]
+}

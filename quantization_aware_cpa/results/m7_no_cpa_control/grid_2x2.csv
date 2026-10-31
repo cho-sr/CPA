@@ -1,0 +1,5 @@
+precision,cpa,display_label,n_images,lpips_mean,success_count,success_denominator,status,metric_source
+fp32,present,fp32 CPA (36 ICA + 4 truth-fill),40,0.444815556704998,2,40,complete,reused_historical
+fp32,absent,fp32 no-CPA (naive control),40,0.7568199418485164,1,40,complete,new_FIA_control
+4bit,present,4-bit CPA (unmodified) + naive dequant,40,0.5439403489232063,20,40,complete,reused_historical
+4bit,absent,4-bit no-CPA (naive control),40,0.7538226298987866,1,40,complete,new_FIA_control

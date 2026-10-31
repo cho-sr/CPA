@@ -1,0 +1,27 @@
+{
+  "task_id": "CPA_SIGNED_COMBINATION_ICA_EXPERIMENT_20260916",
+  "implementation_task_id": "CPA_SIGNED_COMBINATION_ICA_IMPLEMENTATION_20260916",
+  "stage": "INVERT",
+  "command": [
+    "C:/miniconda/envs/DLG/python.exe",
+    "-m",
+    "qacpa.signed_combination_ica_runner",
+    "invert",
+    "--device",
+    "cuda",
+    "--source-root",
+    "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_combination_ica_B16_T10_20260916",
+    "--output",
+    "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_combination_ica_B16_T10_20260916/direct_fia"
+  ],
+  "cwd": "C:/Users/조상제/Desktop/CPA",
+  "started_at_utc": "2026-09-16T15:23:32.981946+00:00",
+  "status": "COMPLETED",
+  "exit_status": 0,
+  "hard_cap_seconds": 2700,
+  "model_calls_while_running": 0,
+  "pid": 3224,
+  "process_created_ms": 1789572212984,
+  "finished_at_utc": "2026-09-16T15:59:00.282740+00:00",
+  "wall_seconds": 2160.4076502999524
+}

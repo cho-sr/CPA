@@ -1,0 +1,27 @@
+{
+  "status": "PASSED",
+  "source_sha256": "e154da571d323019f3642767299121355650ef6dbb842ca5cdc08e330413e826",
+  "S_hat_sha256": "cc8baffaf76fe0efb934a8be5c4009a605e95c8f8dd8a73341d4e68a37d05d0e",
+  "target_z_sha256": "6b4800b0d99a4ca6456c79e10ec5983f9d0b6c095b83a1be9cd29604b378e170",
+  "config": {
+    "fast_max_iter": 200,
+    "fast_tolerance": 1e-06,
+    "refinement_iterations": 4000,
+    "refinement_lr": 0.001,
+    "refinement_momentum": 0.0,
+    "refinement_weight_decay": 0.0,
+    "negentropy_weight": 0.0935827857091549,
+    "decorrelation_weight": 0.2513674104161625,
+    "sign_weight": 0.05811961446881231,
+    "l1_weight": 17.94138146247377,
+    "eps": 1e-10,
+    "rank_floor": 1e-12
+  },
+  "prefix_check": {
+    "status": "PASSED",
+    "iterations_compared": 1000,
+    "comparison": "exact structured JSON values",
+    "mismatch": null,
+    "old_log_sha256": "c20f6a62b2e5161c63fc89fcfcbe9e2dee3221eb3956262c8dc7c6a7cf8d9d2f"
+  }
+}

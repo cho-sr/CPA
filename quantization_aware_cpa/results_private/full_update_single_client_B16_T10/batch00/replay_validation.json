@@ -1,0 +1,2053 @@
+{
+  "status": "exact_match",
+  "diagnostic": "private_sender_forward_replay_prefix_validation",
+  "uses_private_truth": true,
+  "raw_updates_saved": false,
+  "reconstruction_success": "not_evaluated",
+  "config_sha256": "a96e5bb69979f511ab93b4da885e4a1b37d4bdb6ca032c08c68b7340cc258ab6",
+  "checkpoint_sha256": "397923af8e79cdbb6a7127f12361acd7a2f83e06b05044ddf496e83de57a5bf0",
+  "truth_sha256": "9430257f1142c81f12a6610bb13f6458c50c26221538019e4140246367c26eb4",
+  "observation_manifest_sha256": "9256f2c1a1ac702ac9670c25a843020c879053ce357ea898993e2d8168327205",
+  "contract_sha256": "64d52bedd1e261d99483b992ebecac0a6fd1b56bc59a523e0e857ca33a9c6a1a",
+  "image_shape": [
+    16,
+    3,
+    224,
+    224
+  ],
+  "local_steps": 10,
+  "parameter_tensors": 32,
+  "device": "cuda",
+  "torch_version": "2.13.0+cu132",
+  "determinism": {
+    "matmul_tf32": false,
+    "cudnn_tf32": false,
+    "cudnn_benchmark": false,
+    "cudnn_deterministic": true,
+    "deterministic_algorithms": true,
+    "CUBLAS_WORKSPACE_CONFIG": ":4096:8"
+  },
+  "comparison": "raw final-minus-initial deltas; torch.equal for every parameter",
+  "error_steps_reference": "final transmitted row radius, h=2r/15; zero-radius absolute error separate",
+  "replay_create_graph": false,
+  "replay_checkpoint_forward": false,
+  "prefixes": [
+    {
+      "prefix": 1,
+      "exact_all_tensors": true,
+      "per_tensor": {
+        "features.0.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.0.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.2.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.2.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.5.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.5.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.7.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.7.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.10.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.10.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.12.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.12.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.14.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.14.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.17.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.17.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.19.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.19.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.21.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.21.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.24.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.24.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.26.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.26.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.28.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.28.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "classifier.0.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "classifier.0.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "classifier.3.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "classifier.3.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "classifier.6.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "classifier.6.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        }
+      },
+      "max_absolute_error": 0.0,
+      "max_positive_radius_error_steps": 0.0,
+      "max_zero_radius_error_abs": 0.0
+    },
+    {
+      "prefix": 2,
+      "exact_all_tensors": true,
+      "per_tensor": {
+        "features.0.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.0.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.2.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.2.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.5.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.5.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.7.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.7.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.10.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.10.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.12.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.12.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.14.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.14.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.17.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.17.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.19.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.19.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.21.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.21.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.24.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.24.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.26.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.26.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.28.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.28.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "classifier.0.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "classifier.0.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "classifier.3.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "classifier.3.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "classifier.6.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "classifier.6.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        }
+      },
+      "max_absolute_error": 0.0,
+      "max_positive_radius_error_steps": 0.0,
+      "max_zero_radius_error_abs": 0.0
+    },
+    {
+      "prefix": 3,
+      "exact_all_tensors": true,
+      "per_tensor": {
+        "features.0.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.0.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.2.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.2.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.5.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.5.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.7.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.7.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.10.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.10.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.12.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.12.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.14.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.14.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.17.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.17.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.19.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.19.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.21.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.21.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.24.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.24.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.26.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.26.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.28.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.28.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "classifier.0.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "classifier.0.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "classifier.3.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "classifier.3.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "classifier.6.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "classifier.6.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        }
+      },
+      "max_absolute_error": 0.0,
+      "max_positive_radius_error_steps": 0.0,
+      "max_zero_radius_error_abs": 0.0
+    },
+    {
+      "prefix": 4,
+      "exact_all_tensors": true,
+      "per_tensor": {
+        "features.0.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.0.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.2.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.2.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.5.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.5.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.7.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.7.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.10.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.10.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.12.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.12.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.14.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.14.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.17.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.17.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.19.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.19.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.21.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.21.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.24.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.24.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.26.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.26.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.28.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.28.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "classifier.0.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "classifier.0.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "classifier.3.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "classifier.3.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "classifier.6.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "classifier.6.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        }
+      },
+      "max_absolute_error": 0.0,
+      "max_positive_radius_error_steps": 0.0,
+      "max_zero_radius_error_abs": 0.0
+    },
+    {
+      "prefix": 5,
+      "exact_all_tensors": true,
+      "per_tensor": {
+        "features.0.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.0.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.2.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.2.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.5.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.5.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.7.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.7.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.10.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.10.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.12.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.12.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.14.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.14.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.17.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.17.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.19.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.19.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.21.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.21.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.24.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.24.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.26.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.26.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.28.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.28.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "classifier.0.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "classifier.0.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "classifier.3.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "classifier.3.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "classifier.6.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "classifier.6.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        }
+      },
+      "max_absolute_error": 0.0,
+      "max_positive_radius_error_steps": 0.0,
+      "max_zero_radius_error_abs": 0.0
+    },
+    {
+      "prefix": 6,
+      "exact_all_tensors": true,
+      "per_tensor": {
+        "features.0.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.0.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.2.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.2.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.5.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.5.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.7.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.7.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.10.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.10.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.12.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.12.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.14.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.14.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.17.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.17.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.19.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.19.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.21.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.21.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.24.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.24.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.26.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.26.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.28.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.28.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "classifier.0.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "classifier.0.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "classifier.3.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "classifier.3.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "classifier.6.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "classifier.6.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        }
+      },
+      "max_absolute_error": 0.0,
+      "max_positive_radius_error_steps": 0.0,
+      "max_zero_radius_error_abs": 0.0
+    },
+    {
+      "prefix": 7,
+      "exact_all_tensors": true,
+      "per_tensor": {
+        "features.0.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.0.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.2.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.2.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.5.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.5.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.7.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.7.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.10.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.10.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.12.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.12.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.14.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.14.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.17.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.17.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.19.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.19.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.21.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.21.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.24.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.24.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.26.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.26.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.28.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.28.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "classifier.0.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "classifier.0.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "classifier.3.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "classifier.3.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "classifier.6.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "classifier.6.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        }
+      },
+      "max_absolute_error": 0.0,
+      "max_positive_radius_error_steps": 0.0,
+      "max_zero_radius_error_abs": 0.0
+    },
+    {
+      "prefix": 8,
+      "exact_all_tensors": true,
+      "per_tensor": {
+        "features.0.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.0.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.2.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.2.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.5.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.5.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.7.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.7.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.10.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.10.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.12.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.12.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.14.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.14.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.17.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.17.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.19.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.19.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.21.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.21.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.24.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.24.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.26.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.26.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.28.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.28.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "classifier.0.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "classifier.0.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "classifier.3.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "classifier.3.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "classifier.6.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "classifier.6.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        }
+      },
+      "max_absolute_error": 0.0,
+      "max_positive_radius_error_steps": 0.0,
+      "max_zero_radius_error_abs": 0.0
+    },
+    {
+      "prefix": 9,
+      "exact_all_tensors": true,
+      "per_tensor": {
+        "features.0.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.0.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.2.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.2.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.5.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.5.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.7.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.7.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.10.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.10.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.12.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.12.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.14.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.14.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.17.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.17.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.19.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.19.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.21.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.21.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.24.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.24.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.26.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.26.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.28.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.28.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "classifier.0.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "classifier.0.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "classifier.3.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "classifier.3.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "classifier.6.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "classifier.6.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        }
+      },
+      "max_absolute_error": 0.0,
+      "max_positive_radius_error_steps": 0.0,
+      "max_zero_radius_error_abs": 0.0
+    },
+    {
+      "prefix": 10,
+      "exact_all_tensors": true,
+      "per_tensor": {
+        "features.0.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.0.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.2.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.2.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.5.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.5.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.7.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.7.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.10.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.10.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.12.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.12.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.14.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.14.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.17.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.17.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.19.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.19.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.21.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.21.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.24.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.24.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.26.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.26.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.28.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "features.28.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "classifier.0.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "classifier.0.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "classifier.3.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "classifier.3.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "classifier.6.weight": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        },
+        "classifier.6.bias": {
+          "exact_torch_equal": true,
+          "max_absolute_error": 0.0,
+          "max_positive_radius_error_steps": 0.0,
+          "max_zero_radius_error_abs": 0.0
+        }
+      },
+      "max_absolute_error": 0.0,
+      "max_positive_radius_error_steps": 0.0,
+      "max_zero_radius_error_abs": 0.0
+    }
+  ],
+  "wall_time_sec": 11.64444810000714,
+  "all_prefixes_exact": true,
+  "max_absolute_error": 0.0,
+  "max_positive_radius_error_steps": 0.0,
+  "max_zero_radius_error_abs": 0.0,
+  "peak_cuda_allocated_bytes": 4960883712,
+  "peak_cuda_reserved_bytes": 6549405696
+}

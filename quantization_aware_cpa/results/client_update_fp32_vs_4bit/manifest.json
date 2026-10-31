@@ -1,0 +1,33 @@
+{
+  "scope": "CPA + FIA on client updates: 4-bit observation model versus paired FP32 only",
+  "client_size": 16,
+  "local_steps": 10,
+  "independent_updates": 5,
+  "images_per_condition": 80,
+  "metrics": {
+    "FP32": {
+      "lpips": 0.45459726378321647,
+      "psnr": 22.40604360103607,
+      "ssim": 0.3426545349881053,
+      "measured_embedding_recovery_count": 79
+    },
+    "4-bit observation model": {
+      "lpips": 0.5585835408419371,
+      "psnr": 21.926350831985474,
+      "ssim": 0.29755455916747453,
+      "measured_embedding_recovery_count": 53
+    }
+  },
+  "source_csv_sha256": {
+    "FP32": "72dafc60ccb29acca4568bc0da7b77d48574ecafece7fe51898b173822c2f2ef",
+    "4-bit observation model": "02aa55e6c81fb2c0799db511585c72ce536df7a1f7f2ef80c95a2154da7b5011"
+  },
+  "output_sha256": {
+    "client_update_fp32_vs_4bit.png": "bb1779e7f22dd250d6504ec010239d18884d11faddd63c5fd9c764e026f16a02",
+    "client_update_fp32_vs_4bit.pdf": "886f22933f078ab637822385c34f58b3d1e9694a0373439ba81f69be39a6d547",
+    "client_update_fp32_vs_4bit.svg": "38deab20a45410a3fe2d9e9d81d2d44b4c02544b9c7a6aa26cbf498c5a5fae48",
+    "caption.md": "66875a6132da46d722bc8bb26d7fb4916e86709d63fdf1144e95b0aaeecd0e41",
+    "per_image_metrics.csv": "ec4deb740a7af6854220cf15873df1b92f6cf78890997341882bcd7f43eb8193",
+    "metric_summary.csv": "1827b1f0ace625a074007313fcbdfdc109633627d6fdd5ce60a77ff3c48db606"
+  }
+}

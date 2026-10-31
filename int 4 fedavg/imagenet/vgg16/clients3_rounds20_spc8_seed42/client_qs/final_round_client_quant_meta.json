@@ -1,0 +1,1800 @@
+{
+  "aggregation_weights": [
+    0.3333333333333333,
+    0.3333333333333333,
+    0.3333333333333333
+  ],
+  "artifact_type": "final_round_client_qs",
+  "attack_layer": {
+    "index": 26,
+    "name": "classifier.0.weight"
+  },
+  "bin_policy_for_randomized": "bounded exact bins: q=7 [6.5s,7s], q=-7 [-7s,-6.5s]",
+  "clients": [
+    {
+      "aggregation_weight": 0.3333333333333333,
+      "client_id": 0,
+      "quant_stats": {
+        "client_id": 0,
+        "levels": 15,
+        "qmax": 7,
+        "qmin": -7,
+        "quant_bits": 4,
+        "quant_cosine_similarity": 0.8593452034481237,
+        "quant_mse": 1.6824676844949577e-14,
+        "quant_relative_l2": 0.5411021609376958,
+        "quant_saturation_ratio": 6.577162215366906e-07,
+        "quant_scale_max": 8.63256173033733e-06,
+        "quant_scale_mean": 1.4438202377009546e-06,
+        "quant_scale_min": 5.481498632775583e-08,
+        "quantization": "signed_symmetric_int4",
+        "round": 20,
+        "rounding": "nearest",
+        "scale_scope": "per_client_per_parameter_tensor",
+        "zero_point": null
+      },
+      "tensors": [
+        {
+          "dtype": "int8",
+          "key": "client000_param00",
+          "max_abs": 3.680586814880371e-05,
+          "mse": 2.326272919151296e-12,
+          "name": "features.0.weight",
+          "param_index": 0,
+          "qmax": 7,
+          "qmin": -7,
+          "relative_l2": 0.18006402575909186,
+          "saturation_ratio": 0.0052083334885537624,
+          "scale": 5.257981229078723e-06,
+          "shape": [
+            64,
+            3,
+            3,
+            3
+          ]
+        },
+        {
+          "dtype": "int8",
+          "key": "client000_param01",
+          "max_abs": 1.9073486328125e-05,
+          "mse": 7.32136790429494e-13,
+          "name": "features.0.bias",
+          "param_index": 1,
+          "qmax": 7,
+          "qmin": -7,
+          "relative_l2": 0.1372403765983142,
+          "saturation_ratio": 0.015625,
+          "scale": 2.7247838261246216e-06,
+          "shape": [
+            64
+          ]
+        },
+        {
+          "dtype": "int8",
+          "key": "client000_param02",
+          "max_abs": 1.919269561767578e-05,
+          "mse": 4.934715830406944e-13,
+          "name": "features.2.weight",
+          "param_index": 2,
+          "qmax": 7,
+          "qmin": -7,
+          "relative_l2": 0.3185319989483224,
+          "saturation_ratio": 0.00010850694525288418,
+          "scale": 2.7418136596679688e-06,
+          "shape": [
+            64,
+            64,
+            3,
+            3
+          ]
+        },
+        {
+          "dtype": "int8",
+          "key": "client000_param03",
+          "max_abs": 1.9103288650512695e-05,
+          "mse": 6.435372525669114e-13,
+          "name": "features.2.bias",
+          "param_index": 3,
+          "qmax": 7,
+          "qmin": -7,
+          "relative_l2": 0.14603698968491127,
+          "saturation_ratio": 0.03125,
+          "scale": 2.7290411708236206e-06,
+          "shape": [
+            64
+          ]
+        },
+        {
+          "dtype": "int8",
+          "key": "client000_param04",
+          "max_abs": 1.4200806617736816e-05,
+          "mse": 3.203255562035502e-13,
+          "name": "features.5.weight",
+          "param_index": 4,
+          "qmax": 7,
+          "qmin": -7,
+          "relative_l2": 0.3720041266010195,
+          "saturation_ratio": 8.138021075865254e-05,
+          "scale": 2.028686594712781e-06,
+          "shape": [
+            128,
+            64,
+            3,
+            3
+          ]
+        },
+        {
+          "dtype": "int8",
+          "key": "client000_param05",
+          "max_abs": 5.081295967102051e-06,
+          "mse": 4.310525596401896e-14,
+          "name": "features.5.bias",
+          "param_index": 5,
+          "qmax": 7,
+          "qmin": -7,
+          "relative_l2": 0.1306147283056539,
+          "saturation_ratio": 0.0078125,
+          "scale": 7.258994401126984e-07,
+          "shape": [
+            128
+          ]
+        },
+        {
+          "dtype": "int8",
+          "key": "client000_param06",
+          "max_abs": 1.2069940567016602e-05,
+          "mse": 2.288011119301449e-13,
+          "name": "features.7.weight",
+          "param_index": 6,
+          "qmax": 7,
+          "qmin": -7,
+          "relative_l2": 0.38947423060004344,
+          "saturation_ratio": 4.069010537932627e-05,
+          "scale": 1.7242772401004913e-06,
+          "shape": [
+            128,
+            128,
+            3,
+            3
+          ]
+        },
+        {
+          "dtype": "int8",
+          "key": "client000_param07",
+          "max_abs": 6.616115570068359e-06,
+          "mse": 6.937007392127104e-14,
+          "name": "features.7.bias",
+          "param_index": 7,
+          "qmax": 7,
+          "qmin": -7,
+          "relative_l2": 0.19465106019646478,
+          "saturation_ratio": 0.0078125,
+          "scale": 9.451593427911575e-07,
+          "shape": [
+            128
+          ]
+        },
+        {
+          "dtype": "int8",
+          "key": "client000_param08",
+          "max_abs": 9.819865226745605e-06,
+          "mse": 1.5654869858001193e-13,
+          "name": "features.10.weight",
+          "param_index": 8,
+          "qmax": 7,
+          "qmin": -7,
+          "relative_l2": 0.40468362537550767,
+          "saturation_ratio": 3.3908420391526306e-06,
+          "scale": 1.402837938258017e-06,
+          "shape": [
+            256,
+            128,
+            3,
+            3
+          ]
+        },
+        {
+          "dtype": "int8",
+          "key": "client000_param09",
+          "max_abs": 2.123415470123291e-06,
+          "mse": 8.20749006681231e-15,
+          "name": "features.10.bias",
+          "param_index": 9,
+          "qmax": 7,
+          "qmin": -7,
+          "relative_l2": 0.18072534823395148,
+          "saturation_ratio": 0.0078125,
+          "scale": 3.0334507528095855e-07,
+          "shape": [
+            256
+          ]
+        },
+        {
+          "dtype": "int8",
+          "key": "client000_param10",
+          "max_abs": 7.495284080505371e-06,
+          "mse": 8.648244639709713e-14,
+          "name": "features.12.weight",
+          "param_index": 10,
+          "qmax": 7,
+          "qmin": -7,
+          "relative_l2": 0.4415909860612891,
+          "saturation_ratio": 1.6954210195763153e-06,
+          "scale": 1.070754819920694e-06,
+          "shape": [
+            256,
+            256,
+            3,
+            3
+          ]
+        },
+        {
+          "dtype": "int8",
+          "key": "client000_param11",
+          "max_abs": 1.3709068298339844e-06,
+          "mse": 3.4525602913589156e-15,
+          "name": "features.12.bias",
+          "param_index": 11,
+          "qmax": 7,
+          "qmin": -7,
+          "relative_l2": 0.15792566034021233,
+          "saturation_ratio": 0.01171875,
+          "scale": 1.9584383892379265e-07,
+          "shape": [
+            256
+          ]
+        },
+        {
+          "dtype": "int8",
+          "key": "client000_param12",
+          "max_abs": 8.493661880493164e-06,
+          "mse": 1.0842332529477823e-13,
+          "name": "features.14.weight",
+          "param_index": 12,
+          "qmax": 7,
+          "qmin": -7,
+          "relative_l2": 0.45964462997324707,
+          "saturation_ratio": 5.086263172415784e-06,
+          "scale": 1.2133803011238342e-06,
+          "shape": [
+            256,
+            256,
+            3,
+            3
+          ]
+        },
+        {
+          "dtype": "int8",
+          "key": "client000_param13",
+          "max_abs": 1.2665987014770508e-06,
+          "mse": 2.6924809936126632e-15,
+          "name": "features.14.bias",
+          "param_index": 13,
+          "qmax": 7,
+          "qmin": -7,
+          "relative_l2": 0.15184703053616816,
+          "saturation_ratio": 0.0078125,
+          "scale": 1.80942677729945e-07,
+          "shape": [
+            256
+          ]
+        },
+        {
+          "dtype": "int8",
+          "key": "client000_param14",
+          "max_abs": 1.0967254638671875e-05,
+          "mse": 1.4734467745065717e-13,
+          "name": "features.17.weight",
+          "param_index": 14,
+          "qmax": 7,
+          "qmin": -7,
+          "relative_l2": 0.6244473512817079,
+          "saturation_ratio": 8.477105097881577e-07,
+          "scale": 1.5667507113903412e-06,
+          "shape": [
+            512,
+            256,
+            3,
+            3
+          ]
+        },
+        {
+          "dtype": "int8",
+          "key": "client000_param15",
+          "max_abs": 7.972121238708496e-07,
+          "mse": 1.0143866464783712e-15,
+          "name": "features.17.bias",
+          "param_index": 15,
+          "qmax": 7,
+          "qmin": -7,
+          "relative_l2": 0.159208569362699,
+          "saturation_ratio": 0.001953125,
+          "scale": 1.1388744525220318e-07,
+          "shape": [
+            512
+          ]
+        },
+        {
+          "dtype": "int8",
+          "key": "client000_param16",
+          "max_abs": 9.725801646709442e-06,
+          "mse": 9.13314321933213e-14,
+          "name": "features.19.weight",
+          "param_index": 16,
+          "qmax": 7,
+          "qmin": -7,
+          "relative_l2": 0.6160417711084798,
+          "saturation_ratio": 8.477105097881577e-07,
+          "scale": 1.3894002677261597e-06,
+          "shape": [
+            512,
+            512,
+            3,
+            3
+          ]
+        },
+        {
+          "dtype": "int8",
+          "key": "client000_param17",
+          "max_abs": 1.9073486328125e-06,
+          "mse": 5.9414732214832424e-15,
+          "name": "features.19.bias",
+          "param_index": 17,
+          "qmax": 7,
+          "qmin": -7,
+          "relative_l2": 0.30114175948471733,
+          "saturation_ratio": 0.001953125,
+          "scale": 2.7247838829680404e-07,
+          "shape": [
+            512
+          ]
+        },
+        {
+          "dtype": "int8",
+          "key": "client000_param18",
+          "max_abs": 8.672475814819336e-06,
+          "mse": 7.587199218624879e-14,
+          "name": "features.21.weight",
+          "param_index": 18,
+          "qmax": 7,
+          "qmin": -7,
+          "relative_l2": 0.5818118302811999,
+          "saturation_ratio": 4.238552548940788e-07,
+          "scale": 1.2389251651256927e-06,
+          "shape": [
+            512,
+            512,
+            3,
+            3
+          ]
+        },
+        {
+          "dtype": "int8",
+          "key": "client000_param19",
+          "max_abs": 1.1324882507324219e-06,
+          "mse": 1.917209948199168e-15,
+          "name": "features.21.bias",
+          "param_index": 19,
+          "qmax": 7,
+          "qmin": -7,
+          "relative_l2": 0.14654652399902127,
+          "saturation_ratio": 0.00390625,
+          "scale": 1.617840297285511e-07,
+          "shape": [
+            512
+          ]
+        },
+        {
+          "dtype": "int8",
+          "key": "client000_param20",
+          "max_abs": 1.0504387319087982e-05,
+          "mse": 1.0692442783800783e-13,
+          "name": "features.24.weight",
+          "param_index": 20,
+          "qmax": 7,
+          "qmin": -7,
+          "relative_l2": 0.5936293727990358,
+          "saturation_ratio": 5.510118171514478e-06,
+          "scale": 1.5006268085926422e-06,
+          "shape": [
+            512,
+            512,
+            3,
+            3
+          ]
+        },
+        {
+          "dtype": "int8",
+          "key": "client000_param21",
+          "max_abs": 2.339482307434082e-06,
+          "mse": 9.827098377125469e-15,
+          "name": "features.24.bias",
+          "param_index": 21,
+          "qmax": 7,
+          "qmin": -7,
+          "relative_l2": 0.2613782540127825,
+          "saturation_ratio": 0.001953125,
+          "scale": 3.3421176226511307e-07,
+          "shape": [
+            512
+          ]
+        },
+        {
+          "dtype": "int8",
+          "key": "client000_param22",
+          "max_abs": 1.2304633855819702e-05,
+          "mse": 1.216948392944296e-13,
+          "name": "features.26.weight",
+          "param_index": 22,
+          "qmax": 7,
+          "qmin": -7,
+          "relative_l2": 0.5936105244930738,
+          "saturation_ratio": 2.1192763597355224e-06,
+          "scale": 1.7578048527866486e-06,
+          "shape": [
+            512,
+            512,
+            3,
+            3
+          ]
+        },
+        {
+          "dtype": "int8",
+          "key": "client000_param23",
+          "max_abs": 2.4139881134033203e-06,
+          "mse": 9.36412202661753e-15,
+          "name": "features.26.bias",
+          "param_index": 23,
+          "qmax": 7,
+          "qmin": -7,
+          "relative_l2": 0.19897827637601784,
+          "saturation_ratio": 0.001953125,
+          "scale": 3.448554366514145e-07,
+          "shape": [
+            512
+          ]
+        },
+        {
+          "dtype": "int8",
+          "key": "client000_param24",
+          "max_abs": 1.4696270227432251e-05,
+          "mse": 1.1107162161467294e-13,
+          "name": "features.28.weight",
+          "param_index": 24,
+          "qmax": 7,
+          "qmin": -7,
+          "relative_l2": 0.6284902023523969,
+          "saturation_ratio": 2.1192763597355224e-06,
+          "scale": 2.099467110383557e-06,
+          "shape": [
+            512,
+            512,
+            3,
+            3
+          ]
+        },
+        {
+          "dtype": "int8",
+          "key": "client000_param25",
+          "max_abs": 5.0067901611328125e-06,
+          "mse": 4.2729454550376536e-14,
+          "name": "features.28.bias",
+          "param_index": 25,
+          "qmax": 7,
+          "qmin": -7,
+          "relative_l2": 0.33249342764492146,
+          "saturation_ratio": 0.001953125,
+          "scale": 7.152557373046875e-07,
+          "shape": [
+            512
+          ]
+        },
+        {
+          "dtype": "int8",
+          "key": "client000_param26",
+          "max_abs": 6.0712918639183044e-06,
+          "mse": 4.750582279454889e-15,
+          "name": "classifier.0.weight",
+          "param_index": 26,
+          "qmax": 7,
+          "qmin": -7,
+          "relative_l2": 0.6518359734391915,
+          "saturation_ratio": 1.9462740752373975e-08,
+          "scale": 8.673274010106979e-07,
+          "shape": [
+            4096,
+            25088
+          ]
+        },
+        {
+          "dtype": "int8",
+          "key": "client000_param27",
+          "max_abs": 3.8370490074157715e-07,
+          "mse": 2.055920751855802e-16,
+          "name": "classifier.0.bias",
+          "param_index": 27,
+          "qmax": 7,
+          "qmin": -7,
+          "relative_l2": 0.18928003602303567,
+          "saturation_ratio": 0.000732421875,
+          "scale": 5.481498632775583e-08,
+          "shape": [
+            4096
+          ]
+        },
+        {
+          "dtype": "int8",
+          "key": "client000_param28",
+          "max_abs": 5.476176738739014e-06,
+          "mse": 8.625951447810247e-15,
+          "name": "classifier.3.weight",
+          "param_index": 28,
+          "qmax": 7,
+          "qmin": -7,
+          "relative_l2": 0.5297343626326325,
+          "saturation_ratio": 2.980232238769531e-07,
+          "scale": 7.82310962677002e-07,
+          "shape": [
+            4096,
+            4096
+          ]
+        },
+        {
+          "dtype": "int8",
+          "key": "client000_param29",
+          "max_abs": 7.525086402893066e-07,
+          "mse": 6.721541014477039e-16,
+          "name": "classifier.3.bias",
+          "param_index": 29,
+          "qmax": 7,
+          "qmin": -7,
+          "relative_l2": 0.22892621947795788,
+          "saturation_ratio": 0.000244140625,
+          "scale": 1.0750123635716591e-07,
+          "shape": [
+            4096
+          ]
+        },
+        {
+          "dtype": "int8",
+          "key": "client000_param30",
+          "max_abs": 6.042793393135071e-05,
+          "mse": 2.059504476681351e-14,
+          "name": "classifier.6.weight",
+          "param_index": 30,
+          "qmax": 7,
+          "qmin": -7,
+          "relative_l2": 0.290309255364267,
+          "saturation_ratio": 7.324218813664629e-07,
+          "scale": 8.63256173033733e-06,
+          "shape": [
+            1000,
+            4096
+          ]
+        },
+        {
+          "dtype": "int8",
+          "key": "client000_param31",
+          "max_abs": 7.12275505065918e-06,
+          "mse": 3.327142381048809e-15,
+          "name": "classifier.6.bias",
+          "param_index": 31,
+          "qmax": 7,
+          "qmin": -7,
+          "relative_l2": 0.1203478335885545,
+          "saturation_ratio": 0.0010000000474974513,
+          "scale": 1.0175364195674774e-06,
+          "shape": [
+            1000
+          ]
+        }
+      ]
+    },
+    {
+      "aggregation_weight": 0.3333333333333333,
+      "client_id": 1,
+      "quant_stats": {
+        "client_id": 1,
+        "levels": 15,
+        "qmax": 7,
+        "qmin": -7,
+        "quant_bits": 4,
+        "quant_cosine_similarity": 0.8474640585035655,
+        "quant_mse": 2.6390110685304806e-14,
+        "quant_relative_l2": 0.5566115264931197,
+        "quant_saturation_ratio": 6.143503185303951e-07,
+        "quant_scale_max": 1.4796586583543103e-05,
+        "quant_scale_mean": 1.986611861459764e-06,
+        "quant_scale_min": 7.663454226758404e-08,
+        "quantization": "signed_symmetric_int4",
+        "round": 20,
+        "rounding": "nearest",
+        "scale_scope": "per_client_per_parameter_tensor",
+        "zero_point": null
+      },
+      "tensors": [
+        {
+          "dtype": "int8",
+          "key": "client001_param00",
+          "max_abs": 2.5019049644470215e-05,
+          "mse": 1.0424605494673566e-12,
+          "name": "features.0.weight",
+          "param_index": 0,
+          "qmax": 7,
+          "qmin": -7,
+          "relative_l2": 0.147902286274621,
+          "saturation_ratio": 0.0086805559694767,
+          "scale": 3.574150014173938e-06,
+          "shape": [
+            64,
+            3,
+            3,
+            3
+          ]
+        },
+        {
+          "dtype": "int8",
+          "key": "client001_param01",
+          "max_abs": 3.8951635360717773e-05,
+          "mse": 2.576466383991116e-12,
+          "name": "features.0.bias",
+          "param_index": 1,
+          "qmax": 7,
+          "qmin": -7,
+          "relative_l2": 0.13335525920037666,
+          "saturation_ratio": 0.015625,
+          "scale": 5.564519142353674e-06,
+          "shape": [
+            64
+          ]
+        },
+        {
+          "dtype": "int8",
+          "key": "client001_param02",
+          "max_abs": 2.4050474166870117e-05,
+          "mse": 7.173507544150976e-13,
+          "name": "features.2.weight",
+          "param_index": 2,
+          "qmax": 7,
+          "qmin": -7,
+          "relative_l2": 0.4012094851435658,
+          "saturation_ratio": 5.425347262644209e-05,
+          "scale": 3.4357819913566345e-06,
+          "shape": [
+            64,
+            64,
+            3,
+            3
+          ]
+        },
+        {
+          "dtype": "int8",
+          "key": "client001_param03",
+          "max_abs": 1.817941665649414e-05,
+          "mse": 5.313808746319759e-13,
+          "name": "features.2.bias",
+          "param_index": 3,
+          "qmax": 7,
+          "qmin": -7,
+          "relative_l2": 0.1494458126795856,
+          "saturation_ratio": 0.015625,
+          "scale": 2.5970596198021667e-06,
+          "shape": [
+            64
+          ]
+        },
+        {
+          "dtype": "int8",
+          "key": "client001_param04",
+          "max_abs": 1.2911856174468994e-05,
+          "mse": 2.638638728809835e-13,
+          "name": "features.5.weight",
+          "param_index": 4,
+          "qmax": 7,
+          "qmin": -7,
+          "relative_l2": 0.32208668201622,
+          "saturation_ratio": 0.00010850694525288418,
+          "scale": 1.8445508658260223e-06,
+          "shape": [
+            128,
+            64,
+            3,
+            3
+          ]
+        },
+        {
+          "dtype": "int8",
+          "key": "client001_param05",
+          "max_abs": 5.684792995452881e-06,
+          "mse": 4.921780824150741e-14,
+          "name": "features.5.bias",
+          "param_index": 5,
+          "qmax": 7,
+          "qmin": -7,
+          "relative_l2": 0.12589062683998598,
+          "saturation_ratio": 0.015625,
+          "scale": 8.121132850646973e-07,
+          "shape": [
+            128
+          ]
+        },
+        {
+          "dtype": "int8",
+          "key": "client001_param06",
+          "max_abs": 1.3887882232666016e-05,
+          "mse": 2.9249572478579685e-13,
+          "name": "features.7.weight",
+          "param_index": 6,
+          "qmax": 7,
+          "qmin": -7,
+          "relative_l2": 0.3630241207218015,
+          "saturation_ratio": 2.0345052689663135e-05,
+          "scale": 1.983983111131238e-06,
+          "shape": [
+            128,
+            128,
+            3,
+            3
+          ]
+        },
+        {
+          "dtype": "int8",
+          "key": "client001_param07",
+          "max_abs": 6.735324859619141e-06,
+          "mse": 7.613945959177373e-14,
+          "name": "features.7.bias",
+          "param_index": 7,
+          "qmax": 7,
+          "qmin": -7,
+          "relative_l2": 0.17047091891440158,
+          "saturation_ratio": 0.0078125,
+          "scale": 9.621892331779236e-07,
+          "shape": [
+            128
+          ]
+        },
+        {
+          "dtype": "int8",
+          "key": "client001_param08",
+          "max_abs": 1.1593103408813477e-05,
+          "mse": 2.06558873015276e-13,
+          "name": "features.10.weight",
+          "param_index": 8,
+          "qmax": 7,
+          "qmin": -7,
+          "relative_l2": 0.3912530950850972,
+          "saturation_ratio": 1.0172526344831567e-05,
+          "scale": 1.656157678553427e-06,
+          "shape": [
+            256,
+            128,
+            3,
+            3
+          ]
+        },
+        {
+          "dtype": "int8",
+          "key": "client001_param09",
+          "max_abs": 2.0638108253479004e-06,
+          "mse": 7.040082577368595e-15,
+          "name": "features.10.bias",
+          "param_index": 9,
+          "qmax": 7,
+          "qmin": -7,
+          "relative_l2": 0.12361176727593692,
+          "saturation_ratio": 0.0078125,
+          "scale": 2.948301300875755e-07,
+          "shape": [
+            256
+          ]
+        },
+        {
+          "dtype": "int8",
+          "key": "client001_param10",
+          "max_abs": 9.067356586456299e-06,
+          "mse": 1.244632772617265e-13,
+          "name": "features.12.weight",
+          "param_index": 10,
+          "qmax": 7,
+          "qmin": -7,
+          "relative_l2": 0.4251995512307628,
+          "saturation_ratio": 1.3563368156610522e-05,
+          "scale": 1.2953366876899963e-06,
+          "shape": [
+            256,
+            256,
+            3,
+            3
+          ]
+        },
+        {
+          "dtype": "int8",
+          "key": "client001_param11",
+          "max_abs": 2.04332172870636e-06,
+          "mse": 6.956281796248465e-15,
+          "name": "features.12.bias",
+          "param_index": 11,
+          "qmax": 7,
+          "qmin": -7,
+          "relative_l2": 0.1760710670658403,
+          "saturation_ratio": 0.00390625,
+          "scale": 2.9190309192017594e-07,
+          "shape": [
+            256
+          ]
+        },
+        {
+          "dtype": "int8",
+          "key": "client001_param12",
+          "max_abs": 1.5616416931152344e-05,
+          "mse": 2.8498234829076193e-13,
+          "name": "features.14.weight",
+          "param_index": 12,
+          "qmax": 7,
+          "qmin": -7,
+          "relative_l2": 0.6514350794850684,
+          "saturation_ratio": 1.6954210195763153e-06,
+          "scale": 2.230916607004474e-06,
+          "shape": [
+            256,
+            256,
+            3,
+            3
+          ]
+        },
+        {
+          "dtype": "int8",
+          "key": "client001_param13",
+          "max_abs": 1.6242265701293945e-06,
+          "mse": 3.878131031641394e-15,
+          "name": "features.14.bias",
+          "param_index": 13,
+          "qmax": 7,
+          "qmin": -7,
+          "relative_l2": 0.15107695440568142,
+          "saturation_ratio": 0.00390625,
+          "scale": 2.3203236310109787e-07,
+          "shape": [
+            256
+          ]
+        },
+        {
+          "dtype": "int8",
+          "key": "client001_param14",
+          "max_abs": 1.043081283569336e-05,
+          "mse": 1.3962143555510152e-13,
+          "name": "features.17.weight",
+          "param_index": 14,
+          "qmax": 7,
+          "qmin": -7,
+          "relative_l2": 0.5063588711405065,
+          "saturation_ratio": 8.477105097881577e-07,
+          "scale": 1.4901161193847656e-06,
+          "shape": [
+            512,
+            256,
+            3,
+            3
+          ]
+        },
+        {
+          "dtype": "int8",
+          "key": "client001_param15",
+          "max_abs": 1.0281801223754883e-06,
+          "mse": 1.588749735374382e-15,
+          "name": "features.17.bias",
+          "param_index": 15,
+          "qmax": 7,
+          "qmin": -7,
+          "relative_l2": 0.1501189642566843,
+          "saturation_ratio": 0.001953125,
+          "scale": 1.4688286853470345e-07,
+          "shape": [
+            512
+          ]
+        },
+        {
+          "dtype": "int8",
+          "key": "client001_param16",
+          "max_abs": 1.1038035154342651e-05,
+          "mse": 1.151495107791346e-13,
+          "name": "features.19.weight",
+          "param_index": 16,
+          "qmax": 7,
+          "qmin": -7,
+          "relative_l2": 0.5717828229691087,
+          "saturation_ratio": 1.271565793103946e-06,
+          "scale": 1.5768621324241394e-06,
+          "shape": [
+            512,
+            512,
+            3,
+            3
+          ]
+        },
+        {
+          "dtype": "int8",
+          "key": "client001_param17",
+          "max_abs": 1.2218952178955078e-06,
+          "mse": 2.3550950652270666e-15,
+          "name": "features.19.bias",
+          "param_index": 17,
+          "qmax": 7,
+          "qmin": -7,
+          "relative_l2": 0.15844046532200093,
+          "saturation_ratio": 0.00390625,
+          "scale": 1.7455646172948036e-07,
+          "shape": [
+            512
+          ]
+        },
+        {
+          "dtype": "int8",
+          "key": "client001_param18",
+          "max_abs": 1.3848766684532166e-05,
+          "mse": 1.2958685532816884e-13,
+          "name": "features.21.weight",
+          "param_index": 18,
+          "qmax": 7,
+          "qmin": -7,
+          "relative_l2": 0.6216676037725252,
+          "saturation_ratio": 1.6954210195763153e-06,
+          "scale": 1.978395175683545e-06,
+          "shape": [
+            512,
+            512,
+            3,
+            3
+          ]
+        },
+        {
+          "dtype": "int8",
+          "key": "client001_param19",
+          "max_abs": 2.108979970216751e-06,
+          "mse": 8.092170766208374e-15,
+          "name": "features.21.bias",
+          "param_index": 19,
+          "qmax": 7,
+          "qmin": -7,
+          "relative_l2": 0.2411798243439728,
+          "saturation_ratio": 0.001953125,
+          "scale": 3.012828528881073e-07,
+          "shape": [
+            512
+          ]
+        },
+        {
+          "dtype": "int8",
+          "key": "client001_param20",
+          "max_abs": 1.4452263712882996e-05,
+          "mse": 1.4567204261909137e-13,
+          "name": "features.24.weight",
+          "param_index": 20,
+          "qmax": 7,
+          "qmin": -7,
+          "relative_l2": 0.6251257669853492,
+          "saturation_ratio": 4.238552548940788e-07,
+          "scale": 2.0646091343223816e-06,
+          "shape": [
+            512,
+            512,
+            3,
+            3
+          ]
+        },
+        {
+          "dtype": "int8",
+          "key": "client001_param21",
+          "max_abs": 2.1457672119140625e-06,
+          "mse": 7.520094878028186e-15,
+          "name": "features.24.bias",
+          "param_index": 21,
+          "qmax": 7,
+          "qmin": -7,
+          "relative_l2": 0.17515323040163622,
+          "saturation_ratio": 0.00390625,
+          "scale": 3.0653816907033615e-07,
+          "shape": [
+            512
+          ]
+        },
+        {
+          "dtype": "int8",
+          "key": "client001_param22",
+          "max_abs": 2.1845800802111626e-05,
+          "mse": 2.1526043871782856e-13,
+          "name": "features.26.weight",
+          "param_index": 22,
+          "qmax": 7,
+          "qmin": -7,
+          "relative_l2": 0.707407800016405,
+          "saturation_ratio": 1.6954210195763153e-06,
+          "scale": 3.120828750979854e-06,
+          "shape": [
+            512,
+            512,
+            3,
+            3
+          ]
+        },
+        {
+          "dtype": "int8",
+          "key": "client001_param23",
+          "max_abs": 2.8014183044433594e-06,
+          "mse": 1.2831843572457587e-14,
+          "name": "features.26.bias",
+          "param_index": 23,
+          "qmax": 7,
+          "qmin": -7,
+          "relative_l2": 0.18958075642292876,
+          "saturation_ratio": 0.001953125,
+          "scale": 4.002026230409683e-07,
+          "shape": [
+            512
+          ]
+        },
+        {
+          "dtype": "int8",
+          "key": "client001_param24",
+          "max_abs": 3.910530358552933e-05,
+          "mse": 2.39545073591844e-13,
+          "name": "features.28.weight",
+          "param_index": 24,
+          "qmax": 7,
+          "qmin": -7,
+          "relative_l2": 0.8012594777738887,
+          "saturation_ratio": 8.477105097881577e-07,
+          "scale": 5.5864720707177185e-06,
+          "shape": [
+            512,
+            512,
+            3,
+            3
+          ]
+        },
+        {
+          "dtype": "int8",
+          "key": "client001_param25",
+          "max_abs": 4.559755325317383e-06,
+          "mse": 3.289956604672281e-14,
+          "name": "features.28.bias",
+          "param_index": 25,
+          "qmax": 7,
+          "qmin": -7,
+          "relative_l2": 0.2497130404974986,
+          "saturation_ratio": 0.00390625,
+          "scale": 6.513936341434601e-07,
+          "shape": [
+            512
+          ]
+        },
+        {
+          "dtype": "int8",
+          "key": "client001_param26",
+          "max_abs": 7.169321179389954e-06,
+          "mse": 5.749651901660959e-15,
+          "name": "classifier.0.weight",
+          "param_index": 26,
+          "qmax": 7,
+          "qmin": -7,
+          "relative_l2": 0.6715118324439192,
+          "saturation_ratio": 3.892548150474795e-08,
+          "scale": 1.02418869118992e-06,
+          "shape": [
+            4096,
+            25088
+          ]
+        },
+        {
+          "dtype": "int8",
+          "key": "client001_param27",
+          "max_abs": 5.364418029785156e-07,
+          "mse": 4.260266822361179e-16,
+          "name": "classifier.0.bias",
+          "param_index": 27,
+          "qmax": 7,
+          "qmin": -7,
+          "relative_l2": 0.21014015839805494,
+          "saturation_ratio": 0.000244140625,
+          "scale": 7.663454226758404e-08,
+          "shape": [
+            4096
+          ]
+        },
+        {
+          "dtype": "int8",
+          "key": "client001_param28",
+          "max_abs": 8.858740329742432e-06,
+          "mse": 1.8466212716936048e-14,
+          "name": "classifier.3.weight",
+          "param_index": 28,
+          "qmax": 7,
+          "qmin": -7,
+          "relative_l2": 0.5761031389521986,
+          "saturation_ratio": 1.1920928955078125e-07,
+          "scale": 1.265534365302301e-06,
+          "shape": [
+            4096,
+            4096
+          ]
+        },
+        {
+          "dtype": "int8",
+          "key": "client001_param29",
+          "max_abs": 9.015202522277832e-07,
+          "mse": 9.563273025044172e-16,
+          "name": "classifier.3.bias",
+          "param_index": 29,
+          "qmax": 7,
+          "qmin": -7,
+          "relative_l2": 0.19572033192668722,
+          "saturation_ratio": 0.000732421875,
+          "scale": 1.287886135514782e-07,
+          "shape": [
+            4096
+          ]
+        },
+        {
+          "dtype": "int8",
+          "key": "client001_param30",
+          "max_abs": 0.00010357610881328583,
+          "mse": 4.841201398098072e-14,
+          "name": "classifier.6.weight",
+          "param_index": 30,
+          "qmax": 7,
+          "qmin": -7,
+          "relative_l2": 0.2800918350380096,
+          "saturation_ratio": 2.4414063659605745e-07,
+          "scale": 1.4796586583543103e-05,
+          "shape": [
+            1000,
+            4096
+          ]
+        },
+        {
+          "dtype": "int8",
+          "key": "client001_param31",
+          "max_abs": 1.1943280696868896e-05,
+          "mse": 6.520657278019648e-15,
+          "name": "classifier.6.bias",
+          "param_index": 31,
+          "qmax": 7,
+          "qmin": -7,
+          "relative_l2": 0.09471350448409342,
+          "saturation_ratio": 0.0010000000474974513,
+          "scale": 1.7061829566955566e-06,
+          "shape": [
+            1000
+          ]
+        }
+      ]
+    },
+    {
+      "aggregation_weight": 0.3333333333333333,
+      "client_id": 2,
+      "quant_stats": {
+        "client_id": 2,
+        "levels": 15,
+        "qmax": 7,
+        "qmin": -7,
+        "quant_bits": 4,
+        "quant_cosine_similarity": 0.865431909075579,
+        "quant_mse": 1.1862677298632223e-14,
+        "quant_relative_l2": 0.5277238153189858,
+        "quant_saturation_ratio": 7.083097730100686e-07,
+        "quant_scale_max": 1.1664948033285327e-05,
+        "quant_scale_mean": 1.3147717672357118e-06,
+        "quant_scale_min": 4.237517714500427e-08,
+        "quantization": "signed_symmetric_int4",
+        "round": 20,
+        "rounding": "nearest",
+        "scale_scope": "per_client_per_parameter_tensor",
+        "zero_point": null
+      },
+      "tensors": [
+        {
+          "dtype": "int8",
+          "key": "client002_param00",
+          "max_abs": 2.7477741241455078e-05,
+          "mse": 1.3108270898772907e-12,
+          "name": "features.0.weight",
+          "param_index": 0,
+          "qmax": 7,
+          "qmin": -7,
+          "relative_l2": 0.21511940607015392,
+          "saturation_ratio": 0.0017361111240461469,
+          "scale": 3.925391411030432e-06,
+          "shape": [
+            64,
+            3,
+            3,
+            3
+          ]
+        },
+        {
+          "dtype": "int8",
+          "key": "client002_param01",
+          "max_abs": 1.8537044525146484e-05,
+          "mse": 6.546284781611122e-13,
+          "name": "features.0.bias",
+          "param_index": 1,
+          "qmax": 7,
+          "qmin": -7,
+          "relative_l2": 0.12356575539494943,
+          "saturation_ratio": 0.03125,
+          "scale": 2.6481491204322083e-06,
+          "shape": [
+            64
+          ]
+        },
+        {
+          "dtype": "int8",
+          "key": "client002_param02",
+          "max_abs": 1.4483928680419922e-05,
+          "mse": 3.0077050032649585e-13,
+          "name": "features.2.weight",
+          "param_index": 2,
+          "qmax": 7,
+          "qmin": -7,
+          "relative_l2": 0.3209259149554481,
+          "saturation_ratio": 5.425347262644209e-05,
+          "scale": 2.0691327335953247e-06,
+          "shape": [
+            64,
+            64,
+            3,
+            3
+          ]
+        },
+        {
+          "dtype": "int8",
+          "key": "client002_param03",
+          "max_abs": 1.4205463230609894e-05,
+          "mse": 3.3748757911553073e-13,
+          "name": "features.2.bias",
+          "param_index": 3,
+          "qmax": 7,
+          "qmin": -7,
+          "relative_l2": 0.1470119081431904,
+          "saturation_ratio": 0.015625,
+          "scale": 2.0293518900871277e-06,
+          "shape": [
+            64
+          ]
+        },
+        {
+          "dtype": "int8",
+          "key": "client002_param04",
+          "max_abs": 9.029638022184372e-06,
+          "mse": 1.330990439391e-13,
+          "name": "features.5.weight",
+          "param_index": 4,
+          "qmax": 7,
+          "qmin": -7,
+          "relative_l2": 0.2979836664980877,
+          "saturation_ratio": 0.00017632378148846328,
+          "scale": 1.2899482726425049e-06,
+          "shape": [
+            128,
+            64,
+            3,
+            3
+          ]
+        },
+        {
+          "dtype": "int8",
+          "key": "client002_param05",
+          "max_abs": 5.086883902549744e-06,
+          "mse": 3.875569095789129e-14,
+          "name": "features.5.bias",
+          "param_index": 5,
+          "qmax": 7,
+          "qmin": -7,
+          "relative_l2": 0.17658536510795955,
+          "saturation_ratio": 0.0078125,
+          "scale": 7.266976922437607e-07,
+          "shape": [
+            128
+          ]
+        },
+        {
+          "dtype": "int8",
+          "key": "client002_param06",
+          "max_abs": 1.0088086128234863e-05,
+          "mse": 1.6147127761036625e-13,
+          "name": "features.7.weight",
+          "param_index": 6,
+          "qmax": 7,
+          "qmin": -7,
+          "relative_l2": 0.3694583148569049,
+          "saturation_ratio": 2.7126736313221045e-05,
+          "scale": 1.4411551774173859e-06,
+          "shape": [
+            128,
+            128,
+            3,
+            3
+          ]
+        },
+        {
+          "dtype": "int8",
+          "key": "client002_param07",
+          "max_abs": 5.0067901611328125e-06,
+          "mse": 4.532391985594825e-14,
+          "name": "features.7.bias",
+          "param_index": 7,
+          "qmax": 7,
+          "qmin": -7,
+          "relative_l2": 0.18599618877104776,
+          "saturation_ratio": 0.015625,
+          "scale": 7.152557373046875e-07,
+          "shape": [
+            128
+          ]
+        },
+        {
+          "dtype": "int8",
+          "key": "client002_param08",
+          "max_abs": 7.320195436477661e-06,
+          "mse": 8.89660644536821e-14,
+          "name": "features.10.weight",
+          "param_index": 8,
+          "qmax": 7,
+          "qmin": -7,
+          "relative_l2": 0.3658082743884563,
+          "saturation_ratio": 6.781684078305261e-06,
+          "scale": 1.045742237693048e-06,
+          "shape": [
+            256,
+            128,
+            3,
+            3
+          ]
+        },
+        {
+          "dtype": "int8",
+          "key": "client002_param09",
+          "max_abs": 1.296401023864746e-06,
+          "mse": 2.829898960293991e-15,
+          "name": "features.10.bias",
+          "param_index": 9,
+          "qmax": 7,
+          "qmin": -7,
+          "relative_l2": 0.15340376494250121,
+          "saturation_ratio": 0.0078125,
+          "scale": 1.852001503266365e-07,
+          "shape": [
+            256
+          ]
+        },
+        {
+          "dtype": "int8",
+          "key": "client002_param10",
+          "max_abs": 5.541369318962097e-06,
+          "mse": 4.9165981495367166e-14,
+          "name": "features.12.weight",
+          "param_index": 10,
+          "qmax": 7,
+          "qmin": -7,
+          "relative_l2": 0.38085419715043944,
+          "saturation_ratio": 8.47710543894209e-06,
+          "scale": 7.916241884231567e-07,
+          "shape": [
+            256,
+            256,
+            3,
+            3
+          ]
+        },
+        {
+          "dtype": "int8",
+          "key": "client002_param11",
+          "max_abs": 7.599592208862305e-07,
+          "mse": 9.366865142817213e-16,
+          "name": "features.12.bias",
+          "param_index": 11,
+          "qmax": 7,
+          "qmin": -7,
+          "relative_l2": 0.11384284459643072,
+          "saturation_ratio": 0.01953125,
+          "scale": 1.0856560095362511e-07,
+          "shape": [
+            256
+          ]
+        },
+        {
+          "dtype": "int8",
+          "key": "client002_param12",
+          "max_abs": 7.9423189163208e-06,
+          "mse": 9.092995212884992e-14,
+          "name": "features.14.weight",
+          "param_index": 12,
+          "qmax": 7,
+          "qmin": -7,
+          "relative_l2": 0.4916397773869583,
+          "saturation_ratio": 1.6954210195763153e-06,
+          "scale": 1.1346170367687591e-06,
+          "shape": [
+            256,
+            256,
+            3,
+            3
+          ]
+        },
+        {
+          "dtype": "int8",
+          "key": "client002_param13",
+          "max_abs": 8.344650268554688e-07,
+          "mse": 1.056595357031237e-15,
+          "name": "features.14.bias",
+          "param_index": 13,
+          "qmax": 7,
+          "qmin": -7,
+          "relative_l2": 0.12928817726069589,
+          "saturation_ratio": 0.0078125,
+          "scale": 1.1920928955078125e-07,
+          "shape": [
+            256
+          ]
+        },
+        {
+          "dtype": "int8",
+          "key": "client002_param14",
+          "max_abs": 7.184222340583801e-06,
+          "mse": 7.144175538576553e-14,
+          "name": "features.17.weight",
+          "param_index": 14,
+          "qmax": 7,
+          "qmin": -7,
+          "relative_l2": 0.48796019437660554,
+          "saturation_ratio": 8.477105097881577e-07,
+          "scale": 1.0263174772262573e-06,
+          "shape": [
+            512,
+            256,
+            3,
+            3
+          ]
+        },
+        {
+          "dtype": "int8",
+          "key": "client002_param15",
+          "max_abs": 6.034970283508301e-07,
+          "mse": 5.304938761291713e-16,
+          "name": "features.17.bias",
+          "param_index": 15,
+          "qmax": 7,
+          "qmin": -7,
+          "relative_l2": 0.15363824187530045,
+          "saturation_ratio": 0.001953125,
+          "scale": 8.621385916285362e-08,
+          "shape": [
+            512
+          ]
+        },
+        {
+          "dtype": "int8",
+          "key": "client002_param16",
+          "max_abs": 7.3355622589588165e-06,
+          "mse": 5.5191251356920576e-14,
+          "name": "features.19.weight",
+          "param_index": 16,
+          "qmax": 7,
+          "qmin": -7,
+          "relative_l2": 0.554499901724493,
+          "saturation_ratio": 1.271565793103946e-06,
+          "scale": 1.0479374168426148e-06,
+          "shape": [
+            512,
+            512,
+            3,
+            3
+          ]
+        },
+        {
+          "dtype": "int8",
+          "key": "client002_param17",
+          "max_abs": 6.705522537231445e-07,
+          "mse": 7.476529008935582e-16,
+          "name": "features.19.bias",
+          "param_index": 17,
+          "qmax": 7,
+          "qmin": -7,
+          "relative_l2": 0.15077095489981052,
+          "saturation_ratio": 0.001953125,
+          "scale": 9.579317605812321e-08,
+          "shape": [
+            512
+          ]
+        },
+        {
+          "dtype": "int8",
+          "key": "client002_param18",
+          "max_abs": 9.253621101379395e-06,
+          "mse": 6.740713793467684e-14,
+          "name": "features.21.weight",
+          "param_index": 18,
+          "qmax": 7,
+          "qmin": -7,
+          "relative_l2": 0.6326824591373443,
+          "saturation_ratio": 1.6954210195763153e-06,
+          "scale": 1.3219458878666046e-06,
+          "shape": [
+            512,
+            512,
+            3,
+            3
+          ]
+        },
+        {
+          "dtype": "int8",
+          "key": "client002_param19",
+          "max_abs": 1.0710209608078003e-06,
+          "mse": 1.595193009125027e-15,
+          "name": "features.21.bias",
+          "param_index": 19,
+          "qmax": 7,
+          "qmin": -7,
+          "relative_l2": 0.17456090329382457,
+          "saturation_ratio": 0.001953125,
+          "scale": 1.5300300049148063e-07,
+          "shape": [
+            512
+          ]
+        },
+        {
+          "dtype": "int8",
+          "key": "client002_param20",
+          "max_abs": 9.845942258834839e-06,
+          "mse": 7.706435557213053e-14,
+          "name": "features.24.weight",
+          "param_index": 20,
+          "qmax": 7,
+          "qmin": -7,
+          "relative_l2": 0.5884281990236485,
+          "saturation_ratio": 1.6954210195763153e-06,
+          "scale": 1.4065632285564789e-06,
+          "shape": [
+            512,
+            512,
+            3,
+            3
+          ]
+        },
+        {
+          "dtype": "int8",
+          "key": "client002_param21",
+          "max_abs": 1.1771917343139648e-06,
+          "mse": 2.109077733828844e-15,
+          "name": "features.24.bias",
+          "param_index": 21,
+          "qmax": 7,
+          "qmin": -7,
+          "relative_l2": 0.16165585488895615,
+          "saturation_ratio": 0.00390625,
+          "scale": 1.6817024572901573e-07,
+          "shape": [
+            512
+          ]
+        },
+        {
+          "dtype": "int8",
+          "key": "client002_param22",
+          "max_abs": 1.3950280845165253e-05,
+          "mse": 1.0676230347314884e-13,
+          "name": "features.26.weight",
+          "param_index": 22,
+          "qmax": 7,
+          "qmin": -7,
+          "relative_l2": 0.684664063385417,
+          "saturation_ratio": 1.271565793103946e-06,
+          "scale": 1.9928972960769897e-06,
+          "shape": [
+            512,
+            512,
+            3,
+            3
+          ]
+        },
+        {
+          "dtype": "int8",
+          "key": "client002_param23",
+          "max_abs": 1.9371509552001953e-06,
+          "mse": 6.2886428039261e-15,
+          "name": "features.26.bias",
+          "param_index": 23,
+          "qmax": 7,
+          "qmin": -7,
+          "relative_l2": 0.23040849791669804,
+          "saturation_ratio": 0.001953125,
+          "scale": 2.7673584668264084e-07,
+          "shape": [
+            512
+          ]
+        },
+        {
+          "dtype": "int8",
+          "key": "client002_param24",
+          "max_abs": 1.1418014764785767e-05,
+          "mse": 6.250323729841628e-14,
+          "name": "features.28.weight",
+          "param_index": 24,
+          "qmax": 7,
+          "qmin": -7,
+          "relative_l2": 0.622413597633427,
+          "saturation_ratio": 3.814697265625e-06,
+          "scale": 1.6311449826389435e-06,
+          "shape": [
+            512,
+            512,
+            3,
+            3
+          ]
+        },
+        {
+          "dtype": "int8",
+          "key": "client002_param25",
+          "max_abs": 2.0265579223632812e-06,
+          "mse": 6.581148268084954e-15,
+          "name": "features.28.bias",
+          "param_index": 25,
+          "qmax": 7,
+          "qmin": -7,
+          "relative_l2": 0.21991120932322142,
+          "saturation_ratio": 0.001953125,
+          "scale": 2.895082786835701e-07,
+          "shape": [
+            512
+          ]
+        },
+        {
+          "dtype": "int8",
+          "key": "client002_param26",
+          "max_abs": 5.452893674373627e-06,
+          "mse": 3.076354518880904e-15,
+          "name": "classifier.0.weight",
+          "param_index": 26,
+          "qmax": 7,
+          "qmin": -7,
+          "relative_l2": 0.6225852487803787,
+          "saturation_ratio": 5.8388224033478764e-08,
+          "scale": 7.789848268657806e-07,
+          "shape": [
+            4096,
+            25088
+          ]
+        },
+        {
+          "dtype": "int8",
+          "key": "client002_param27",
+          "max_abs": 2.966262400150299e-07,
+          "mse": 1.0503481184683222e-16,
+          "name": "classifier.0.bias",
+          "param_index": 27,
+          "qmax": 7,
+          "qmin": -7,
+          "relative_l2": 0.1778204154734978,
+          "saturation_ratio": 0.000732421875,
+          "scale": 4.237517714500427e-08,
+          "shape": [
+            4096
+          ]
+        },
+        {
+          "dtype": "int8",
+          "key": "client002_param28",
+          "max_abs": 5.451962351799011e-06,
+          "mse": 6.127179265938117e-15,
+          "name": "classifier.3.weight",
+          "param_index": 28,
+          "qmax": 7,
+          "qmin": -7,
+          "relative_l2": 0.5244475601094174,
+          "saturation_ratio": 4.76837158203125e-07,
+          "scale": 7.788517564222275e-07,
+          "shape": [
+            4096,
+            4096
+          ]
+        },
+        {
+          "dtype": "int8",
+          "key": "client002_param29",
+          "max_abs": 4.731118679046631e-07,
+          "mse": 2.3122707734797836e-16,
+          "name": "classifier.3.bias",
+          "param_index": 29,
+          "qmax": 7,
+          "qmin": -7,
+          "relative_l2": 0.16089769937872964,
+          "saturation_ratio": 0.000244140625,
+          "scale": 6.758740767054405e-08,
+          "shape": [
+            4096
+          ]
+        },
+        {
+          "dtype": "int8",
+          "key": "client002_param30",
+          "max_abs": 8.16546380519867e-05,
+          "mse": 2.728185559408569e-14,
+          "name": "classifier.6.weight",
+          "param_index": 30,
+          "qmax": 7,
+          "qmin": -7,
+          "relative_l2": 0.33062512835061897,
+          "saturation_ratio": 4.882812731921149e-07,
+          "scale": 1.1664948033285327e-05,
+          "shape": [
+            1000,
+            4096
+          ]
+        },
+        {
+          "dtype": "int8",
+          "key": "client002_param31",
+          "max_abs": 7.095746695995331e-06,
+          "mse": 1.822840055981656e-15,
+          "name": "classifier.6.bias",
+          "param_index": 31,
+          "qmax": 7,
+          "qmin": -7,
+          "relative_l2": 0.09081718678755703,
+          "saturation_ratio": 0.0020000000949949026,
+          "scale": 1.0136781156688812e-06,
+          "shape": [
+            1000
+          ]
+        }
+      ]
+    }
+  ],
+  "code_file": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\int 4 fedavg\\imagenet\\vgg16\\clients3_rounds20_spc8_seed42\\client_qs\\final_round_client_codes.npz",
+  "codes_sha256": "7097c9f91472094f0aa90df3f173c54c83c984bf4f1290c46f5a59b1ccabfa01",
+  "context_file": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\int 4 fedavg\\imagenet\\vgg16\\clients3_rounds20_spc8_seed42\\client_qs\\final_round_context.pkl",
+  "context_sha256": "fd20de5f9118ec3b7e8313276247d88560705b8aae7053955cf92043b1955848",
+  "not_source": "final aggregate pickle",
+  "param_names": [
+    "features.0.weight",
+    "features.0.bias",
+    "features.2.weight",
+    "features.2.bias",
+    "features.5.weight",
+    "features.5.bias",
+    "features.7.weight",
+    "features.7.bias",
+    "features.10.weight",
+    "features.10.bias",
+    "features.12.weight",
+    "features.12.bias",
+    "features.14.weight",
+    "features.14.bias",
+    "features.17.weight",
+    "features.17.bias",
+    "features.19.weight",
+    "features.19.bias",
+    "features.21.weight",
+    "features.21.bias",
+    "features.24.weight",
+    "features.24.bias",
+    "features.26.weight",
+    "features.26.bias",
+    "features.28.weight",
+    "features.28.bias",
+    "classifier.0.weight",
+    "classifier.0.bias",
+    "classifier.3.weight",
+    "classifier.3.bias",
+    "classifier.6.weight",
+    "classifier.6.bias"
+  ],
+  "qmax": 7,
+  "qmin": -7,
+  "quant_bits": 4,
+  "rounding": "nearest",
+  "scale_definition": "scale=max_abs/7; scale=0 when max_abs=0",
+  "schema_version": 1,
+  "source": "client q,s before final-round server aggregation",
+  "source_model_state_file": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\int 4 fedavg\\imagenet\\vgg16\\clients3_rounds20_spc8_seed42\\client_qs\\final_round_global_model_before.pt",
+  "source_model_state_sha256": "a402d9d575a847ad045a5ea12634745c37924851096f0530bde806aaae1daf2d"
+}

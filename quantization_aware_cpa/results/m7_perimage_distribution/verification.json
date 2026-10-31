@@ -1,0 +1,31 @@
+{
+  "status": "passed",
+  "pair_rows_verified": 3120,
+  "distribution_rows_verified": 3516,
+  "seed_permutations_verified": 60,
+  "strict_cutoff": 0.570428904891014,
+  "nonfixed_shuffle_successes": 0,
+  "output_sha256": {
+    "results\\m7_shuffle_control\\gia_4bit_pairwise_lpips.npy": "5426a3bc50c3c4060057324568b8e54ff3d0d6254c5b7665ab2e17d94e5529a0",
+    "results\\m7_shuffle_control\\gia_fp32_pairwise_lpips.npy": "25f246294ff73815ca7ca32aae29baba5d10ed7a7fceb2360d3bc1b5b02bbdc3",
+    "results\\m7_shuffle_control\\gpu_complete.json": "c87dca9511ad18a06840c086f31319cf11600cb49e2b60094cf9c4261cc920e2",
+    "results\\m7_shuffle_control\\per_image_metrics.csv": "62aa1e763c63a8e17c4258e5e9f580e6f9985ce654364eab93d95e30c8239ee0",
+    "results\\m7_shuffle_control\\per_seed_summary.csv": "1fd40fda02e35dc3f9d1850b99dde023566a583da78ba940ca19a3b7617a1fb6",
+    "results\\m7_shuffle_control\\report.md": "ad765f7b7a6d5e13f77f07674a1a1ecbc226419c8aece46b67ef9096c8f5724d",
+    "results\\m7_shuffle_control\\summary.csv": "cc5665c565f75687dcb4a64ce4f23bdc073cc92d767727bcc30f4836bbef08a1",
+    "results\\m7_shuffle_control\\summary.json": "f42ec96c7973cb4376a05f450a1c45cd947e2c684202a55aa09e538759389716",
+    "results\\m7_shuffle_control\\uia_fp32_matrix_provenance.json": "578efcc280cdd29b369a01f9ce21515a1aea68662df766844c68d17939c04402",
+    "results\\m7_shuffle_control\\uia_fp32_pairwise_lpips.npy": "51cdc4bb8b68b73ac8c20f199f963f5afddfa6ac84c26368ee69553b287cc1ae",
+    "results\\m7_perimage_distribution\\gia_4bit_modality_sensitivity.pdf": "3255c6e50b1834afe36334a95be09b7bb9b1ea8fdb0c5608d6a49e12381ca79d",
+    "results\\m7_perimage_distribution\\gia_4bit_modality_sensitivity.png": "544e80c0972ca82e7704289db1320aff55db8a3ad86a24de97be3d2a728cf98f",
+    "results\\m7_perimage_distribution\\lpips_histogram_overlay.pdf": "677bc9d8104d0bf2ea6559c8e704a3e89c949f0f2f4ba1ecd9297890c7108cf8",
+    "results\\m7_perimage_distribution\\lpips_histogram_overlay.png": "2c682714aa673596e649fea477299693c44438cde13d532695825c7b0da30e75",
+    "results\\m7_perimage_distribution\\modality_sensitivity.json": "27e095426e4787d9eb2841e4ec6a5ab666e9a0cd06dbb7c642890c0211b33921",
+    "results\\m7_perimage_distribution\\per_image_metrics.csv": "28ba5fc7e3c2b037871108cc21caf3c0421d60b450c862dbbd59fcf27e6801d5",
+    "results\\m7_perimage_distribution\\report.md": "3c008c3c7261e83881d63967e8f8f8ffb0c20cff8075e6f3749c61c924bd648a",
+    "results\\m7_perimage_distribution\\shuffled_per_seed_success_counts.csv": "2623a9b785705387d60f7ee17fc38e4e3aa4132dffe020e6f46b6c5436530104",
+    "results\\m7_perimage_distribution\\success_counts.csv": "34424d59bedfc0e17f5de0ce97fcdf121237a8dac621832ddcb3787dba137720",
+    "results\\m7_perimage_distribution\\summary.json": "f5a74f9809f3d0f4c29163f57a2543ad7c75a929637b5fa2fc57b305043c07b6",
+    "results\\m7_perimage_distribution\\threshold.json": "e45706253f5afa8f7c1e616583f109fb8dce3b7368f27144b1af9fdd2e7cad04"
+  }
+}

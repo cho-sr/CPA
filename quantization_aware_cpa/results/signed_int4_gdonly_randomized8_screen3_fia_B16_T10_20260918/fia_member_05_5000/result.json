@@ -1,0 +1,124 @@
+{
+  "status": "COMPLETED",
+  "arm": "member_05_5000",
+  "stage": "INVERT",
+  "completed_iterations": 5000,
+  "total_schedule_iterations": 25000,
+  "checkpoint": "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int4_gdonly_randomized8_screen3_fia_B16_T10_20260918/fia_member_05_5000/checkpoint_5000.pt",
+  "checkpoint_sha256": "b0110e39e31d2247eb8d711af785a92699f4ff925ac56859974924109ee8e677",
+  "prefix_checkpoint": null,
+  "prefix_checkpoint_sha256": null,
+  "candidate": "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int4_gdonly_randomized8_screen3_fia_B16_T10_20260918/fia_member_05_5000/candidate.pt",
+  "candidate_sha256": "caeee7eb625f27abef21cc6da4de2c7046f4b0ec3469becb95fca5e90ec21685",
+  "prefix_candidate": null,
+  "prefix_candidate_sha256": null,
+  "candidate_tensor_sha256": "296b7c6df48a8cd6b53e628c0edd1608132011240244192ef3d36efdd80dea81",
+  "target_z_sha256": "2b59e4afe7f069aba0b9f80195abfec81d25442ec752179f3621c3347c1e6b93",
+  "source_sha256": "2bedce148bd0e8a24b692fd4bcdb059caf9b85e3bf38853b5a28b4c64c163322",
+  "initial_image_sha256": "6f6ec493923b7081284f0fc405f76f60b583cc41a5977393751f96bb21147e59",
+  "parent_checkpoint_sha256": null,
+  "log": [
+    {
+      "iter": 1,
+      "loss": 1.0965830087661743,
+      "loss_fi": 0.8758973479270935,
+      "loss_gm": 0.0,
+      "loss_tv": 2.2068567276000977,
+      "time_sec": 0.07891019992530346
+    },
+    {
+      "iter": 5000,
+      "loss": 0.2008395940065384,
+      "loss_fi": 0.15120765566825867,
+      "loss_gm": 0.0,
+      "loss_tv": 0.49631932377815247,
+      "time_sec": 396.5594541999744
+    }
+  ],
+  "fia_config": {
+    "n_iter": 25000,
+    "lr": 0.1,
+    "tv": 0.1,
+    "fi": 1.0,
+    "optimizer": "adam",
+    "scheduler": "cosine",
+    "log_every": 5000
+  },
+  "runtime": {
+    "seed": 42,
+    "device": "cuda",
+    "target_z_sha256": "2b59e4afe7f069aba0b9f80195abfec81d25442ec752179f3621c3347c1e6b93",
+    "initial_image_sha256": "6f6ec493923b7081284f0fc405f76f60b583cc41a5977393751f96bb21147e59",
+    "target_shape": [
+      16,
+      25088
+    ],
+    "settings": {
+      "n_iter": 25000,
+      "lr": 0.1,
+      "tv": 0.1,
+      "fi": 1.0,
+      "optimizer": "adam",
+      "scheduler": "cosine",
+      "log_every": 5000,
+      "seed": 42,
+      "device": "cuda",
+      "backend": "official_cpa/src/feature_inversion.py:Direct",
+      "upstream_source_hashes": {
+        "C:\\Users\\조상제\\Desktop\\CPA\\official_cpa\\src\\datasets.py": "f9e7b47733b5acb4b73e6914a3f100b5187766bbed78a12d17b69c39eec1b6d1",
+        "C:\\Users\\조상제\\Desktop\\CPA\\official_cpa\\src\\utils.py": "565f1bf1a47f387d042b35bb24f677d1ff0d3ec5d979e2876c31ed114179b9fe",
+        "C:\\Users\\조상제\\Desktop\\CPA\\official_cpa\\src\\gradient_inversion_utils.py": "668d77788dc8d81c181c8c0a9fbe8533c6fbea22ba46fe7f5e15b0a431300e5f",
+        "C:\\Users\\조상제\\Desktop\\CPA\\official_cpa\\src\\gradient_inversion.py": "c598e1ee7b4079f741060d10c8dfd14711e393a97384c63cf32be77a458b1873",
+        "C:\\Users\\조상제\\Desktop\\CPA\\official_cpa\\src\\feature_inversion.py": "dc73880427e3eaf1f873d295f17f1d48d301882f634ee5df36ddeea8e56c4dec",
+        "C:\\Users\\조상제\\Desktop\\CPA\\official_cpa\\src\\vgg16.py": "8114eca8cde553dace5f777aedd21b70851c570d473e597b005cb6be4b248d36",
+        "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\qacpa\\upstream_naive.py": "8f29b885d86f4121eda5c55e17486a3a48bd8db08b2f83890fe7726730d1ee92",
+        "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\qacpa\\seed.py": "769366fcc2cf3e144d8caa86f73a55dcb0b6be615a45dab8b6e117399150c558"
+      },
+      "schedule_semantics": "constructed_with_T_max_25000_outer_stop_only"
+    },
+    "source_hashes": {
+      "C:\\Users\\조상제\\Desktop\\CPA\\official_cpa\\src\\datasets.py": "f9e7b47733b5acb4b73e6914a3f100b5187766bbed78a12d17b69c39eec1b6d1",
+      "C:\\Users\\조상제\\Desktop\\CPA\\official_cpa\\src\\utils.py": "565f1bf1a47f387d042b35bb24f677d1ff0d3ec5d979e2876c31ed114179b9fe",
+      "C:\\Users\\조상제\\Desktop\\CPA\\official_cpa\\src\\gradient_inversion_utils.py": "668d77788dc8d81c181c8c0a9fbe8533c6fbea22ba46fe7f5e15b0a431300e5f",
+      "C:\\Users\\조상제\\Desktop\\CPA\\official_cpa\\src\\gradient_inversion.py": "c598e1ee7b4079f741060d10c8dfd14711e393a97384c63cf32be77a458b1873",
+      "C:\\Users\\조상제\\Desktop\\CPA\\official_cpa\\src\\feature_inversion.py": "dc73880427e3eaf1f873d295f17f1d48d301882f634ee5df36ddeea8e56c4dec",
+      "C:\\Users\\조상제\\Desktop\\CPA\\official_cpa\\src\\vgg16.py": "8114eca8cde553dace5f777aedd21b70851c570d473e597b005cb6be4b248d36",
+      "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\qacpa\\upstream_naive.py": "8f29b885d86f4121eda5c55e17486a3a48bd8db08b2f83890fe7726730d1ee92",
+      "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\qacpa\\seed.py": "769366fcc2cf3e144d8caa86f73a55dcb0b6be615a45dab8b6e117399150c558"
+    },
+    "setup_wall_seconds": 0.6011962000047788,
+    "schedule_T_max": 25000
+  },
+  "wall_seconds": 396.5598497999599,
+  "allocated_cuda_bytes": 166110208,
+  "score": {
+    "feature_cosine_distances": [
+      0.113686203956604,
+      0.07964622974395752,
+      0.13111674785614014,
+      0.19977813959121704,
+      0.1780949831008911,
+      0.08543294668197632,
+      0.18115949630737305,
+      0.15786361694335938,
+      0.14523756504058838,
+      0.10513442754745483,
+      0.10971403121948242,
+      0.15240752696990967,
+      0.20043838024139404,
+      0.14249134063720703,
+      0.18221443891525269,
+      0.23430407047271729
+    ],
+    "feature_cosine_distance_mean": 0.1499200165271759,
+    "tv_normalized": 0.4986415505409241,
+    "score": 0.19978417456150055,
+    "raw_image_sha256_before": "89ca6cc2a39cdea765e25817a9423e7f0a8e673acace39b2ba770ff1aec56c99",
+    "raw_image_sha256_after": "89ca6cc2a39cdea765e25817a9423e7f0a8e673acace39b2ba770ff1aec56c99",
+    "raw_state_unchanged": true,
+    "score_semantics": "post_update_clone_feature_cosine_distance_plus_0.1_normalized_TV",
+    "checkpoint_sha256": "b0110e39e31d2247eb8d711af785a92699f4ff925ac56859974924109ee8e677",
+    "candidate_sha256": "caeee7eb625f27abef21cc6da4de2c7046f4b0ec3469becb95fca5e90ec21685",
+    "completed_iterations": 5000
+  }
+}

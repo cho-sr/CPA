@@ -1,0 +1,75 @@
+{
+  "training": {
+    "optimizer": "SGD",
+    "lr": 0.001,
+    "momentum": 0.0,
+    "weight_decay": 0.0,
+    "foreach": false,
+    "reduction": "mean",
+    "batch_size": 2,
+    "epoch": 3,
+    "steps": 3,
+    "seed": 42,
+    "conv_frozen": true,
+    "all_six_fc_parameters_trainable": true,
+    "dropout": 0.0,
+    "model_eval": true,
+    "delta_convention": "theta_after_step3_minus_theta_start"
+  },
+  "truth_file_sha256": "724bbacbe316cc28dac086db9cfaf6507f4c1af31144fd610cc480985aab72e2",
+  "feature_source": "flatten(avgpool(features(x))), no_grad",
+  "saved_feature_max_abs_difference": 0.00018805265426635742,
+  "training_losses": [
+    0.9448493123054504,
+    0.17030535638332367,
+    0.07654015719890594
+  ],
+  "ordinary_vs_fc_replay": {
+    "classifier.0.bias": {
+      "torch_equal": true,
+      "shape": [
+        4096
+      ],
+      "max_abs_difference": 0.0
+    },
+    "classifier.0.weight": {
+      "torch_equal": true,
+      "shape": [
+        4096,
+        25088
+      ],
+      "max_abs_difference": 0.0
+    },
+    "classifier.3.bias": {
+      "torch_equal": true,
+      "shape": [
+        4096
+      ],
+      "max_abs_difference": 0.0
+    },
+    "classifier.3.weight": {
+      "torch_equal": true,
+      "shape": [
+        4096,
+        4096
+      ],
+      "max_abs_difference": 0.0
+    },
+    "classifier.6.bias": {
+      "torch_equal": true,
+      "shape": [
+        1000
+      ],
+      "max_abs_difference": 0.0
+    },
+    "classifier.6.weight": {
+      "torch_equal": true,
+      "shape": [
+        1000,
+        4096
+      ],
+      "max_abs_difference": 0.0
+    }
+  },
+  "all_six_updates_torch_equal": true
+}

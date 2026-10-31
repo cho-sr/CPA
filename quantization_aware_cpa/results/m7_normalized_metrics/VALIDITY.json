@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "decision_date": "2026-09-09",
+  "scientific_validity": "partially_invalid",
+  "scope": "All floor-referenced distances and normalized ratios are invalid. Independent raw CPA/prior/shuffle LPIPS values remain observations.",
+  "invalid_source_id": "m7_no_cpa_control",
+  "registry": "../result_validity.json"
+}

@@ -1,0 +1,78 @@
+{
+  "format": "public_deterministic_fc1_mp_diagnostic_v1",
+  "scope": "public_packet_spectrum_only",
+  "expected_manifest_sha256": "946f848bd8df76b8c276c2d7babafc66c823b1162f664a818e47e09560671364",
+  "layer": "classifier.0.weight",
+  "expected_shape": [
+    4096,
+    25088
+  ],
+  "device": "cpu",
+  "dtype": "float64",
+  "threads": 8,
+  "feature_chunk": 1024,
+  "matrix_rule": "M_ij = q_ij - mean_j(q_ij), the row-centered ideal decoded update divided by h_i",
+  "normalization_note": "Uses public symbols directly; does not add an intermediate FP32 center-decoding roundoff",
+  "floor_rule": "torch lower median of positive radius.double()*(2/15) across all six public packets",
+  "expected_floor": 4.0987196067969e-06,
+  "partitions": [
+    "positive_all",
+    "at_or_above_floor",
+    "below_floor"
+  ],
+  "zero_radius_rule": "Report count; exclude only from normalized spectral estimates, preserve original packet constraints",
+  "covariance_denominator": "d-1",
+  "beta_rule": "partition m/(d-1), unchanged by excluding 16 eigenvalues from fitting",
+  "covariance_method": "CPU float64 column-chunk Gram minus d*outer(row_means,row_means), reuse principal submatrices",
+  "eigensolver": "scipy.linalg.eigh driver evr",
+  "exclude_top": 16,
+  "min_bulk": 32,
+  "quantile_rank_rule": "Original ascending index j uses p=(j+0.5)/m; top16 removed without rescaling remaining CDF",
+  "primary_fit_range": [
+    0.2,
+    0.8
+  ],
+  "sensitivity_fit_ranges": [
+    [
+      0.1,
+      0.9
+    ],
+    [
+      0.3,
+      0.7
+    ]
+  ],
+  "fit_scale_rule": "median of observed eigenvalue / unit-variance MP quantile at each retained original probability",
+  "mp_quantile_method": "theta grid 65537 points, cumulative trapezoid of (2/pi)*sin(theta)^2/(1+beta-2*sqrt(beta)*cos(theta)), normalize numerical mass, monotone interpolation",
+  "negative_eigenvalue_tolerance": "100*eps_float64*max(m,d)*max(abs(raw_eigenvalues)); retain raw negatives in output; clip only tolerated negatives for fit",
+  "min_positive_fit_fraction": 0.9,
+  "degenerate_scale_rule": "sigma2 <= negative_eigenvalue_tolerance",
+  "fit_error_metrics": [
+    "relative_residual_rms",
+    "relative_residual_p50",
+    "relative_residual_p90"
+  ],
+  "no_fit_fallback": "No replacement by zero, h^2/12, or legacy c_mp; report null and explicit reason",
+  "subspace_components": 16,
+  "subspace_rule": "Right singular vectors in original feature coordinates, only eigenvalues above numerical tolerance; keep all 16 attack targets unchanged",
+  "subspace_metrics": [
+    "orthogonality_error",
+    "eigen_residual",
+    "pairwise_principal_cosines",
+    "projector_overlap"
+  ],
+  "memory_sampling_seconds": 0.05,
+  "reporting": "All partitions, raw spectra, fitted scales/edges, fit-window sensitivity, row counts, public radius statistics, runtime and process memory",
+  "interpretation": "Fit availability is not model acceptance. MP resemblance does not establish iid noise, recoverable image count, or defense strength. No automatic downstream experiment.",
+  "forbidden": [
+    "private_truth_inputs",
+    "new_observations",
+    "training",
+    "CPA",
+    "FIA",
+    "H_metric",
+    "image_reconstruction",
+    "label_changes",
+    "three_arm_comparison"
+  ]
+}

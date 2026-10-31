@@ -1,0 +1,14 @@
+{
+  "status": "COMPLETED",
+  "public_gate": "PASSED",
+  "candidate_count": 13,
+  "parent_artifacts_preserved": true,
+  "original_failure_evidence": ".ai/execution-results/CPA_SIGNED_INT8_SCREEN3_REPAIR_CONTINUE_20260918/wrapper_failure_execution_summary.json",
+  "public_registration": "quantization_aware_cpa/results/signed_int8_randomized8_screen3_repair_B16_T10_20260918/registration.json",
+  "private_comparison": "quantization_aware_cpa/results_private/signed_int8_screen3_repair_B16_T10_20260918/evaluation_final_20260918/comparison.json",
+  "private_truth_sha256": "724bbacbe316cc28dac086db9cfaf6507f4c1af31144fd610cc480985aab72e2",
+  "private_truth_consumed": "x only",
+  "labels_consumed": false,
+  "true_updates_consumed_by_attack": false,
+  "actual_image_cell_feasibility": "NOT_EVALUATED"
+}

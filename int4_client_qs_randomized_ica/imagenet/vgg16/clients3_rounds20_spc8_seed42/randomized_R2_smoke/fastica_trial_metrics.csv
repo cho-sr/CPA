@@ -1,0 +1,3 @@
+trial,dequantization_seed,fastica_random_state,trial_varying_randomness,n_iter,converged,mixing_shape,components_shape
+0,1234,42,dequantization_noise_only,32,True,"[4096, 24]","[24, 4096]"
+1,1001237,42,dequantization_noise_only,32,True,"[4096, 24]","[24, 4096]"

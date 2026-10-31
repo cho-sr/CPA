@@ -1,0 +1,9 @@
+trial,dequantization_seed,fastica_random_state,trial_varying_randomness,n_iter,converged,mixing_shape,components_shape
+0,1234,42,dequantization_noise_only,15,True,"[4096, 24]","[24, 4096]"
+1,1001237,42,dequantization_noise_only,14,True,"[4096, 24]","[24, 4096]"
+2,2001240,42,dequantization_noise_only,20,True,"[4096, 24]","[24, 4096]"
+3,3001243,42,dequantization_noise_only,18,True,"[4096, 24]","[24, 4096]"
+4,4001246,42,dequantization_noise_only,19,True,"[4096, 24]","[24, 4096]"
+5,5001249,42,dequantization_noise_only,14,True,"[4096, 24]","[24, 4096]"
+6,6001252,42,dequantization_noise_only,18,True,"[4096, 24]","[24, 4096]"
+7,7001255,42,dequantization_noise_only,21,True,"[4096, 24]","[24, 4096]"

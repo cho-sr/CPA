@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "decision_date": "2026-09-09",
+  "scientific_validity": "partially_invalid",
+  "scope": "fig02, existing combined fig03 (invalid panel b reference rows), and fig05 are withdrawn. fig01 and fig04 are independent; fig04 is outside the current requested graph scope.",
+  "invalid_source_id": "m7_no_cpa_control",
+  "registry": "../result_validity.json"
+}

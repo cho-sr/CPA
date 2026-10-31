@@ -1,0 +1,14 @@
+{
+    "task_id":  "CPA_SIGNED_INT8_RANDOMIZED8_SCREEN3_FIA_20260917",
+    "wrapper_pid":  23720,
+    "wrapper_created_ms":  1789639010634,
+    "wrapper_process_name":  "python",
+    "wrapper_start_verified_once":  true,
+    "callback_pid":  2120,
+    "callback_process_name":  "python",
+    "callback":  ".ai/execution-results/CPA_SIGNED_INT8_RANDOMIZED8_SCREEN3_FIA_20260917/completion_callback.py",
+    "hidden":  true,
+    "persistent":  true,
+    "model_calls_while_waiting":  0,
+    "launched_at_utc":  "2026-09-17T09:56:50.6785291Z"
+}

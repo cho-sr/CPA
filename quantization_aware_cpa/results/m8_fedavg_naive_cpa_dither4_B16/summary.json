@@ -1,0 +1,110 @@
+{
+  "run_tag": "m8_fedavg_naive_cpa_dither4_B16",
+  "status": "complete",
+  "n_images": 80,
+  "config": {
+    "schema_version": 1,
+    "run_tag": "m8_fedavg_naive_cpa_dither4_B16",
+    "device": "cuda",
+    "seed": 0,
+    "source_output": "results/m7_uia_4bit_B16",
+    "output_dir": "results/m8_fedavg_naive_cpa_dither4_B16",
+    "n": 16,
+    "T": 10,
+    "batch_indices": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "n_images": 80,
+    "observation": "cached quantized.pt Y_hat from actual (W_initial-W_final)/lr",
+    "quantization": "same cached per-row 4-bit-interval dither observation; not an integer 4-bit codec",
+    "implementation": "direct local official_cpa CocktailPartyAttack and Direct class calls",
+    "ls_A": false,
+    "debias": false,
+    "mp_truncation": false,
+    "mp_diagnostic": false,
+    "stage2": false,
+    "refine_A": false,
+    "new_training": false,
+    "oracle_fills": false,
+    "source_adapter": "abs(S_hat) in estimated source order; no truth scaling or matching before FIA",
+    "evaluation": "full16 Hungarian absolute-cosine correspondence after FIA; no image selection",
+    "stage1": {
+      "cpa_ica_max_iter": 25000,
+      "cpa_ica_lr": 0.001,
+      "cpa_ica_optimizer": "adam",
+      "cpa_ica_scheduler": "none",
+      "cpa_ica_decor": 5.3,
+      "cpa_ica_T": 7.7,
+      "cpa_ica_ne": 1.0,
+      "cpa_ica_nv": 0.13,
+      "cpa_ica_l1": 5.0,
+      "cpa_ica_tv": 0.1,
+      "cpa_ica_log_every": 5000
+    },
+    "fia": {
+      "n_iter": 25000,
+      "log_every": 5000,
+      "lr": 0.1,
+      "tv": 0.1,
+      "fi": 1.0,
+      "optimizer": "adam",
+      "scheduler": "cosine",
+      "seed": 42
+    },
+    "grid": {
+      "seed": 42,
+      "n": 12
+    }
+  },
+  "identity": {
+    "config_sha256": "908c8592fa7d6e96407eff9373cf8ed40f1717cef9bd02fffe6c00f95d1ff099",
+    "code_sha256": {
+      "quantization_aware_cpa\\qacpa\\run_m8_fedavg_naive.py": "0ea71db00a7e20e9ee9309215fbfa47c84f83290f9ca7027e3bec09ca2ea65f3",
+      "quantization_aware_cpa\\qacpa\\upstream_naive.py": "8f29b885d86f4121eda5c55e17486a3a48bd8db08b2f83890fe7726730d1ee92",
+      "quantization_aware_cpa\\qacpa\\seed.py": "769366fcc2cf3e144d8caa86f73a55dcb0b6be615a45dab8b6e117399150c558",
+      "quantization_aware_cpa\\qacpa\\fia.py": "42a55ce6a4895785b10573f507658434e597f1138de3d45621f466702c7f5cb0",
+      "quantization_aware_cpa\\scripts\\launch_m8_fedavg_naive.ps1": "59c028614f912fe457da10bfffd302c4349e027d01dab44d84a3a5d0e4ecef29",
+      "official_cpa\\src\\attack.py": "d2984fcab6708d1c28bec7c36c7792d40b01b7b4bd150316263f6f8bbd6b3816",
+      "official_cpa\\src\\collect_grads.py": "4d39b5e4bcbebe36dd8131d6c4a5ec0456e7e9de51f7301c0b5079a04aa436e6",
+      "official_cpa\\src\\collect_updates.py": "78a07e3f872231cb582c828eb315bb3c04976bc2f36fdecae5bdb6c17d7f6177",
+      "official_cpa\\src\\datasets.py": "f9e7b47733b5acb4b73e6914a3f100b5187766bbed78a12d17b69c39eec1b6d1",
+      "official_cpa\\src\\eval_utils.py": "042e6263905b32044290e2e1e4d93c54ebcb8e813509c27cf76bdd23b00ec349",
+      "official_cpa\\src\\feature_inversion.py": "dc73880427e3eaf1f873d295f17f1d48d301882f634ee5df36ddeea8e56c4dec",
+      "official_cpa\\src\\gradient_inversion.py": "c598e1ee7b4079f741060d10c8dfd14711e393a97384c63cf32be77a458b1873",
+      "official_cpa\\src\\gradient_inversion_utils.py": "668d77788dc8d81c181c8c0a9fbe8533c6fbea22ba46fe7f5e15b0a431300e5f",
+      "official_cpa\\src\\log_utils.py": "70ced512bcd2de0e6e52d34a5cb9ca34ae7877a0b220b044fce12e48c422cd80",
+      "official_cpa\\src\\models.py": "f684ca948a8ba8020d82cba3d2bdc5df731dd51d9807e38c5be37a3feab4ee56",
+      "official_cpa\\src\\report_m6_attack_results.py": "ce40db9745aebc515c5d52a031d3a4b2806e74edf9068ab26291094ba6455fa4",
+      "official_cpa\\src\\train.py": "a054cbe9c855b05bba9c808a59524c019b6549dde04c432a6e1906448d125bf1",
+      "official_cpa\\src\\utils.py": "565f1bf1a47f387d042b35bb24f677d1ff0d3ec5d979e2876c31ed114179b9fe",
+      "official_cpa\\src\\vgg16.py": "8114eca8cde553dace5f777aedd21b70851c570d473e597b005cb6be4b248d36"
+    },
+    "source_summary_sha256": "9674322f7eda0f9afb8fe586f034e87101138e1b491f0bd04954f80474a0a22c"
+  },
+  "metrics": {
+    "lpips_mean": 0.5561207078397274,
+    "psnr_mean": 21.936943936347962,
+    "ssim_mean": 0.2980232951231301,
+    "embedding_cos09": 53
+  },
+  "oracle_fills": 0,
+  "ls_A": false,
+  "completed_at_utc": "2026-09-09T16:40:17.186510+00:00",
+  "runtime_sec": {
+    "cpa": 204.0967523000436,
+    "fia": 9685.462404100108
+  },
+  "output_hashes": {
+    "per_image_metrics.csv": "e2c977977fa8fe305cb781118d1b68f005d4843db5d42c7de8d9356041ffbaed",
+    "paired_old_ported_comparison.csv": "5164a3d67778001b4cf97e33ddc874ac223bec0d3ff68ad666e6a43782711240",
+    "per_batch_summary.csv": "e02d6c3a62da53c40738f5368e5be999c56b67399ad3b3a9fb58a9d51f7352bc",
+    "all80_rec.pt": "64c5dd6ba47e79bef81d45d6c67806c4c4dff1c7c891120ed0a054dd8773c2ad",
+    "all80_reconstruction_landscape.png": "91d884597eadc53fcde8340b11d54b9a6d9787f5c9bd6515035e5e81d45ef3ec",
+    "random12_not_cherry_picked.png": "6a67af9fbd8cc48225700a3eaaaa07034ac7e449df80e7170961436c9c0ffad8",
+    "report.md": "914efec2ed5e2ff814108979a39681478f2ee737ad8e3ee8dca83a64c8bb73aa"
+  }
+}

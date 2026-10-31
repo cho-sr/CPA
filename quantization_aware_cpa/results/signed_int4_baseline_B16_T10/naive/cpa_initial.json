@@ -1,0 +1,28 @@
+{
+  "tensor_sha256": "39d31560b996434e5d4bcb88aac9a2fe0bdeb7e77673c03b88f42a1e928e69a8",
+  "shape": [
+    16,
+    16
+  ],
+  "runtime": {
+    "python": "3.11.14 | packaged by Anaconda, Inc. | (main, Oct 21 2025, 18:30:03) [MSC v.1929 64 bit (AMD64)]",
+    "torch": "2.13.0+cu132",
+    "numpy": "2.4.4",
+    "torchvision": "0.28.0+cu132",
+    "cuda": "13.2",
+    "cudnn": 92000,
+    "cudnn_enabled": true,
+    "cudnn_benchmark": false,
+    "cudnn_deterministic": true,
+    "deterministic_algorithms": true,
+    "deterministic_warn_only": true,
+    "matmul_tf32": false,
+    "cudnn_tf32": false,
+    "cublas_workspace_config": ":4096:8",
+    "threads": 1,
+    "gpu": "NVIDIA GeForce RTX 5060 Ti",
+    "cuda_peak_allocated": 1258441216,
+    "cuda_peak_reserved": 1447034880
+  },
+  "seed": 42
+}

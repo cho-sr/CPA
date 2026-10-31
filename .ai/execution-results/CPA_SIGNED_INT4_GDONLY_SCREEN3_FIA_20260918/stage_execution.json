@@ -1,0 +1,14 @@
+{
+  "task_id": "CPA_SIGNED_INT4_GDONLY_SCREEN3_FIA_20260918",
+  "status": "FAILED",
+  "pid": 24724,
+  "started_at": "2026-09-18T10:42:48.582832+00:00",
+  "runtime": "C:\\miniconda\\envs\\DLG\\python.exe",
+  "public_root": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\signed_int4_gdonly_randomized8_screen3_fia_B16_T10_20260918",
+  "private_root": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results_private\\signed_int4_gdonly_randomized8_screen3_fia_B16_T10_20260918",
+  "exit_status": 1,
+  "model_calls": 0,
+  "ended_at": "2026-09-18T13:37:38.152026+00:00",
+  "error_type": "TypeError",
+  "error": "Cannot handle this data type: (1, 1, 224), |u1"
+}

@@ -1,0 +1,474 @@
+[
+  {
+    "aggregate_update_l2": 0.039491325952816035,
+    "client_train_losses": [
+      0.15124525185674428,
+      0.19057101979851723,
+      0.17454981580376625
+    ],
+    "quant_bit_counts": {
+      "4": 2,
+      "8": 1
+    },
+    "quant_bits_by_client": [
+      8,
+      4,
+      4
+    ],
+    "quant_cosine_similarity_mean": 0.8912140714804365,
+    "quant_mse_mean": 7.348214818455848e-12,
+    "quant_relative_l2_mean": 0.40384725682473227,
+    "quant_saturation_ratio_mean": 4.722065186608077e-07,
+    "round": 1,
+    "round_time": 7.01716947555542,
+    "weighted_train_loss": 0.17212202915300925
+  },
+  {
+    "aggregate_update_l2": 0.027332756630809425,
+    "client_train_losses": [
+      0.06980139799416066,
+      0.10950352251529694,
+      0.08728538751602173
+    ],
+    "quant_bit_counts": {
+      "4": 3
+    },
+    "quant_bits_by_client": [
+      4,
+      4,
+      4
+    ],
+    "quant_cosine_similarity_mean": 0.8262315575676525,
+    "quant_mse_mean": 5.212912985300121e-12,
+    "quant_relative_l2_mean": 0.5855680546724528,
+    "quant_saturation_ratio_mean": 7.637217649621144e-07,
+    "round": 2,
+    "round_time": 6.824931859970093,
+    "weighted_train_loss": 0.08886343600849311
+  },
+  {
+    "aggregate_update_l2": 0.020145862631408683,
+    "client_train_losses": [
+      0.04506064597517252,
+      0.07099347747862339,
+      0.049097254686057565
+    ],
+    "quant_bit_counts": {
+      "4": 2,
+      "8": 1
+    },
+    "quant_bits_by_client": [
+      4,
+      8,
+      4
+    ],
+    "quant_cosine_similarity_mean": 0.8830383223806173,
+    "quant_mse_mean": 1.7045042038789967e-12,
+    "quant_relative_l2_mean": 0.4136434131115887,
+    "quant_saturation_ratio_mean": 5.396645930427303e-07,
+    "round": 3,
+    "round_time": 6.955007076263428,
+    "weighted_train_loss": 0.05505045937995116
+  },
+  {
+    "aggregate_update_l2": 0.01454928206380685,
+    "client_train_losses": [
+      0.03229766804724932,
+      0.04688574988394976,
+      0.031642388366162774
+    ],
+    "quant_bit_counts": {
+      "4": 3
+    },
+    "quant_bits_by_client": [
+      4,
+      4,
+      4
+    ],
+    "quant_cosine_similarity_mean": 0.8326672600996279,
+    "quant_mse_mean": 1.426566407871968e-12,
+    "quant_relative_l2_mean": 0.5780369398950665,
+    "quant_saturation_ratio_mean": 6.866268252999939e-07,
+    "round": 4,
+    "round_time": 6.945475816726685,
+    "weighted_train_loss": 0.03694193543245395
+  },
+  {
+    "aggregate_update_l2": 0.011327002645155413,
+    "client_train_losses": [
+      0.024688466172665357,
+      0.035482336208224295,
+      0.02257160674780607
+    ],
+    "quant_bit_counts": {
+      "8": 3
+    },
+    "quant_bits_by_client": [
+      8,
+      8,
+      8
+    ],
+    "quant_cosine_similarity_mean": 0.9984189677065052,
+    "quant_mse_mean": 8.189820264593296e-15,
+    "quant_relative_l2_mean": 0.055901654112417425,
+    "quant_saturation_ratio_mean": 2.43330908237263e-07,
+    "round": 5,
+    "round_time": 7.026717662811279,
+    "weighted_train_loss": 0.027580803042898575
+  },
+  {
+    "aggregate_update_l2": 0.008501466244908943,
+    "client_train_losses": [
+      0.018335870280861855,
+      0.02645706869661808,
+      0.01625628164038062
+    ],
+    "quant_bit_counts": {
+      "4": 3
+    },
+    "quant_bits_by_client": [
+      4,
+      4,
+      4
+    ],
+    "quant_cosine_similarity_mean": 0.8436271973578862,
+    "quant_mse_mean": 4.551599242664e-13,
+    "quant_relative_l2_mean": 0.5628721991803144,
+    "quant_saturation_ratio_mean": 7.492664629839811e-07,
+    "round": 6,
+    "round_time": 6.898232460021973,
+    "weighted_train_loss": 0.02034974020595352
+  },
+  {
+    "aggregate_update_l2": 0.006943839443110182,
+    "client_train_losses": [
+      0.0149562893435359,
+      0.021559998951852323,
+      0.012822885811328889
+    ],
+    "quant_bit_counts": {
+      "4": 2,
+      "8": 1
+    },
+    "quant_bits_by_client": [
+      4,
+      4,
+      8
+    ],
+    "quant_cosine_similarity_mean": 0.8927064564409841,
+    "quant_mse_mean": 2.228562894053306e-13,
+    "quant_relative_l2_mean": 0.3958985326899305,
+    "quant_saturation_ratio_mean": 5.5893832887147e-07,
+    "round": 7,
+    "round_time": 7.050014495849609,
+    "weighted_train_loss": 0.016446391368905702
+  },
+  {
+    "aggregate_update_l2": 0.005794634514313892,
+    "client_train_losses": [
+      0.012450238037854434,
+      0.017942480742931366,
+      0.010207409132272005
+    ],
+    "quant_bit_counts": {
+      "4": 2,
+      "8": 1
+    },
+    "quant_bits_by_client": [
+      4,
+      4,
+      8
+    ],
+    "quant_cosine_similarity_mean": 0.8952012695163359,
+    "quant_mse_mean": 1.5524530397781969e-13,
+    "quant_relative_l2_mean": 0.39196849068129175,
+    "quant_saturation_ratio_mean": 5.324369409183221e-07,
+    "round": 8,
+    "round_time": 6.9116010665893555,
+    "weighted_train_loss": 0.013533375971019267
+  },
+  {
+    "aggregate_update_l2": 0.004967289778003985,
+    "client_train_losses": [
+      0.01056754132732749,
+      0.015216631349176168,
+      0.008375018043443561
+    ],
+    "quant_bit_counts": {
+      "4": 3
+    },
+    "quant_bits_by_client": [
+      4,
+      4,
+      4
+    ],
+    "quant_cosine_similarity_mean": 0.8521549076702719,
+    "quant_mse_mean": 1.46314949362702e-13,
+    "quant_relative_l2_mean": 0.5500354992671291,
+    "quant_saturation_ratio_mean": 6.432609208935935e-07,
+    "round": 9,
+    "round_time": 7.012790679931641,
+    "weighted_train_loss": 0.011386396906649074
+  },
+  {
+    "aggregate_update_l2": 0.0043000108581638784,
+    "client_train_losses": [
+      0.009121280629187822,
+      0.013128547836095095,
+      0.00716164680197835
+    ],
+    "quant_bit_counts": {
+      "4": 1,
+      "8": 2
+    },
+    "quant_bits_by_client": [
+      8,
+      4,
+      8
+    ],
+    "quant_cosine_similarity_mean": 0.9477202847131524,
+    "quant_mse_mean": 5.0944295263341e-14,
+    "quant_relative_l2_mean": 0.21675859508555753,
+    "quant_saturation_ratio_mean": 3.878839247359775e-07,
+    "round": 10,
+    "round_time": 6.980262994766235,
+    "weighted_train_loss": 0.009803825089087089
+  },
+  {
+    "aggregate_update_l2": 0.0037851187930544776,
+    "client_train_losses": [
+      0.007832245947793127,
+      0.011447807494550943,
+      0.0061133102048188444
+    ],
+    "quant_bit_counts": {
+      "8": 3
+    },
+    "quant_bits_by_client": [
+      8,
+      8,
+      8
+    ],
+    "quant_cosine_similarity_mean": 0.9987650956560449,
+    "quant_mse_mean": 7.275917438015213e-16,
+    "quant_relative_l2_mean": 0.049362462324113114,
+    "quant_saturation_ratio_mean": 2.4333090825521305e-07,
+    "round": 11,
+    "round_time": 6.917477130889893,
+    "weighted_train_loss": 0.008464454549054305
+  },
+  {
+    "aggregate_update_l2": 0.0033147882842406934,
+    "client_train_losses": [
+      0.006810626387596131,
+      0.009915688913315535,
+      0.005281831044703722
+    ],
+    "quant_bit_counts": {
+      "4": 2,
+      "8": 1
+    },
+    "quant_bits_by_client": [
+      4,
+      4,
+      8
+    ],
+    "quant_cosine_similarity_mean": 0.9004242752579686,
+    "quant_mse_mean": 4.9243480087556945e-14,
+    "quant_relative_l2_mean": 0.3831209460117746,
+    "quant_saturation_ratio_mean": 5.131632054979465e-07,
+    "round": 12,
+    "round_time": 6.919267892837524,
+    "weighted_train_loss": 0.007336048781871797
+  },
+  {
+    "aggregate_update_l2": 0.002995807448494427,
+    "client_train_losses": [
+      0.006091699749231338,
+      0.008869763324037194,
+      0.004643194191157818
+    ],
+    "quant_bit_counts": {
+      "4": 3
+    },
+    "quant_bits_by_client": [
+      4,
+      4,
+      4
+    ],
+    "quant_cosine_similarity_mean": 0.8562139030540757,
+    "quant_mse_mean": 5.105100830465113e-14,
+    "quant_relative_l2_mean": 0.5432588249204549,
+    "quant_saturation_ratio_mean": 6.071226651337761e-07,
+    "round": 13,
+    "round_time": 6.945716857910156,
+    "weighted_train_loss": 0.006534885754808783
+  },
+  {
+    "aggregate_update_l2": 0.0027030154645929258,
+    "client_train_losses": [
+      0.005501251155510545,
+      0.008004452474415303,
+      0.00417460328899324
+    ],
+    "quant_bit_counts": {
+      "4": 1,
+      "8": 2
+    },
+    "quant_bits_by_client": [
+      8,
+      4,
+      8
+    ],
+    "quant_cosine_similarity_mean": 0.9481531319749926,
+    "quant_mse_mean": 2.0386549926593998e-14,
+    "quant_relative_l2_mean": 0.21574058253620196,
+    "quant_saturation_ratio_mean": 3.5897332295166886e-07,
+    "round": 14,
+    "round_time": 6.917218446731567,
+    "weighted_train_loss": 0.005893435639639695
+  },
+  {
+    "aggregate_update_l2": 0.002470498456687792,
+    "client_train_losses": [
+      0.00494470838457346,
+      0.007261946331709623,
+      0.0037404127651825547
+    ],
+    "quant_bit_counts": {
+      "4": 2,
+      "8": 1
+    },
+    "quant_bits_by_client": [
+      8,
+      4,
+      4
+    ],
+    "quant_cosine_similarity_mean": 0.9036981546871589,
+    "quant_mse_mean": 2.4518578891371474e-14,
+    "quant_relative_l2_mean": 0.37628946070356317,
+    "quant_saturation_ratio_mean": 4.794341691405412e-07,
+    "round": 15,
+    "round_time": 6.822958469390869,
+    "weighted_train_loss": 0.005315689160488545
+  },
+  {
+    "aggregate_update_l2": 0.0022939871969680577,
+    "client_train_losses": [
+      0.004483351483941078,
+      0.00663274647668004,
+      0.0034121712436899544
+    ],
+    "quant_bit_counts": {
+      "4": 2,
+      "8": 1
+    },
+    "quant_bits_by_client": [
+      4,
+      8,
+      4
+    ],
+    "quant_cosine_similarity_mean": 0.9080045925081056,
+    "quant_mse_mean": 1.489555013270472e-14,
+    "quant_relative_l2_mean": 0.37445717803743966,
+    "quant_saturation_ratio_mean": 5.059355559718101e-07,
+    "round": 16,
+    "round_time": 6.865143775939941,
+    "weighted_train_loss": 0.004842756401437024
+  },
+  {
+    "aggregate_update_l2": 0.0021095404378110253,
+    "client_train_losses": [
+      0.004119194415397942,
+      0.0060231210198253395,
+      0.0031254212372004986
+    ],
+    "quant_bit_counts": {
+      "4": 3
+    },
+    "quant_bits_by_client": [
+      4,
+      4,
+      4
+    ],
+    "quant_cosine_similarity_mean": 0.8570842086647117,
+    "quant_mse_mean": 2.4752875538108796e-14,
+    "quant_relative_l2_mean": 0.54207793564002,
+    "quant_saturation_ratio_mean": 6.191687485127626e-07,
+    "round": 17,
+    "round_time": 6.856195688247681,
+    "weighted_train_loss": 0.0044225788908079265
+  },
+  {
+    "aggregate_update_l2": 0.0019657849367711016,
+    "client_train_losses": [
+      0.0038144014310091735,
+      0.005569073045626283,
+      0.0028853710973635316
+    ],
+    "quant_bit_counts": {
+      "4": 2,
+      "8": 1
+    },
+    "quant_bits_by_client": [
+      4,
+      8,
+      4
+    ],
+    "quant_cosine_similarity_mean": 0.907658623358353,
+    "quant_mse_mean": 1.1008882742167857e-14,
+    "quant_relative_l2_mean": 0.37486738050933727,
+    "quant_saturation_ratio_mean": 5.300277233759855e-07,
+    "round": 18,
+    "round_time": 7.028231143951416,
+    "weighted_train_loss": 0.004089615191332996
+  },
+  {
+    "aggregate_update_l2": 0.0018219378014425118,
+    "client_train_losses": [
+      0.0035396834602579473,
+      0.005116882687434554,
+      0.0026700949994847177
+    ],
+    "quant_bit_counts": {
+      "4": 1,
+      "8": 2
+    },
+    "quant_bits_by_client": [
+      4,
+      8,
+      8
+    ],
+    "quant_cosine_similarity_mean": 0.9522736187205788,
+    "quant_mse_mean": 5.582175255282706e-15,
+    "quant_relative_l2_mean": 0.21383554529180895,
+    "quant_saturation_ratio_mean": 3.999300092435743e-07,
+    "round": 19,
+    "round_time": 6.907514333724976,
+    "weighted_train_loss": 0.00377555371572574
+  },
+  {
+    "aggregate_update_l2": 0.0016941558370902677,
+    "client_train_losses": [
+      0.003298859857022762,
+      0.004722455004230142,
+      0.0024653315311297776
+    ],
+    "quant_bit_counts": {
+      "4": 1,
+      "8": 2
+    },
+    "quant_bits_by_client": [
+      4,
+      8,
+      8
+    ],
+    "quant_cosine_similarity_mean": 0.9522102811711025,
+    "quant_mse_mean": 4.879233938366976e-15,
+    "quant_relative_l2_mean": 0.21388923644100258,
+    "quant_saturation_ratio_mean": 3.975207922891023e-07,
+    "round": 20,
+    "round_time": 7.175743103027344,
+    "weighted_train_loss": 0.0034955487974608936
+  }
+]

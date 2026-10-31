@@ -1,0 +1,37 @@
+{
+  "artifact_hashes": {
+    "codes_sha256": "7097c9f91472094f0aa90df3f173c54c83c984bf4f1290c46f5a59b1ccabfa01",
+    "context_sha256": "fd20de5f9118ec3b7e8313276247d88560705b8aae7053955cf92043b1955848",
+    "quant_meta_sha256": "ca54cddb42d400f6066af929d257c039d3ca8e25bf18d909130e21bbb7d2f732"
+  },
+  "client_ids": [
+    0
+  ],
+  "client_qs_dir": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\int 4 fedavg\\imagenet\\vgg16\\clients3_rounds20_spc8_seed42\\client_qs",
+  "device": "cuda",
+  "formula": "q_weight * L_bin(theta_T(x,y)-theta_0, observed_int4_bins) + tv_weight * TV(x)",
+  "init_pixels": "random",
+  "label_mode": "known",
+  "local_sgd": {
+    "full_batch": true,
+    "lr": 0.001,
+    "steps": 10
+  },
+  "loss_scope": "attack_layer",
+  "lr": 0.01,
+  "method": "direct_q_update_to_xy_quant_aware_cpa",
+  "model": {
+    "checkpoint_path": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\int 4 fedavg\\imagenet\\vgg16\\clients3_rounds20_spc8_seed42\\client_qs\\final_round_global_model_before.pt",
+    "checkpoint_sha256": "a402d9d575a847ad045a5ea12634745c37924851096f0530bde806aaae1daf2d"
+  },
+  "n_iter": 0,
+  "n_log": 1,
+  "note": "No dequantized gradient or QICA embedding is used as a reconstruction target.",
+  "q_weight": 1.0,
+  "run_dir": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\int 4 fedavg\\imagenet\\vgg16\\clients3_rounds20_spc8_seed42",
+  "seed": 42,
+  "selected_param_names": [
+    "classifier.0.weight"
+  ],
+  "tv_weight": 0.0001
+}

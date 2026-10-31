@@ -1,0 +1,56 @@
+{
+  "identity": {
+    "config_sha256": "44304ce71c0d1f07f411bc2a447468f290f0efc4f95f6dd0058bf15d33f87dc3",
+    "code_sha256": {
+      "quantization_aware_cpa\\qacpa\\run_topk_ratios_same80.py": "88e2c53b60925ff89aa65ceebdec387c958e02b3e409670b7fbb4f800804b008",
+      "quantization_aware_cpa\\qacpa\\report_topk_ratios_same80.py": "3e8b47816ce0ab5b33ce0591aa67e33df09f2e75c58a078b7c647267cba43ba0",
+      "quantization_aware_cpa\\qacpa\\topk_ratio_codec.py": "a26fe23f0e9232a12412fb4795c2b689f806ef49abb2785109988316e7f57489",
+      "quantization_aware_cpa\\qacpa\\queue_topk_ratios_same80.py": "c375520842d84b667bff60f69970baabd2241a307f722af716dc9910abdd9906",
+      "quantization_aware_cpa\\qacpa\\run_topk50_same80.py": "0cb7a89273343d4ea485452145791ff6f25a014b7382bfec3aa0c6dc41c8451a",
+      "quantization_aware_cpa\\qacpa\\report_topk50_same80.py": "7dacc93fb6f79943b487f5c8a98ed70bae87ae80245cd9d61e956fd72fc8e9ea",
+      "quantization_aware_cpa\\qacpa\\run_m10_packed4.py": "fcdcd2dd08985aaa5d6a9c31aee9ae414e97ee9c610501a0af8f3fc9438f0aa4",
+      "quantization_aware_cpa\\qacpa\\report_m10_packed4.py": "09a8b62ed2a65c51e423fe982cfdb2b20782372abe0cb43a1bed4c864d58265e",
+      "quantization_aware_cpa\\qacpa\\sparsification_codec.py": "a75c9aa431bdc80d604c9e9f4c514512cfb4f3e3eb205dce397c191ca475765d",
+      "quantization_aware_cpa\\qacpa\\run_m6_uia_fp32_fia.py": "e00319498504257c91697918bf61e7794ee1fe75a48bdb2483c768f596f1bae6",
+      "quantization_aware_cpa\\qacpa\\run_m8_fedavg_naive.py": "0ea71db00a7e20e9ee9309215fbfa47c84f83290f9ca7027e3bec09ca2ea65f3",
+      "quantization_aware_cpa\\qacpa\\upstream_naive.py": "8f29b885d86f4121eda5c55e17486a3a48bd8db08b2f83890fe7726730d1ee92",
+      "quantization_aware_cpa\\qacpa\\uia.py": "fe19894d8a340e6bdfc56b83c26da516f2414a87c1cbe3fbe3e4620fcdd580c3",
+      "quantization_aware_cpa\\qacpa\\victim.py": "fdd40fd5c5062761872dc3bdd8dd4e750ccc188ce0050baf6330fad7e080874b",
+      "quantization_aware_cpa\\qacpa\\fia.py": "42a55ce6a4895785b10573f507658434e597f1138de3d45621f466702c7f5cb0",
+      "quantization_aware_cpa\\qacpa\\seed.py": "769366fcc2cf3e144d8caa86f73a55dcb0b6be615a45dab8b6e117399150c558",
+      "official_cpa\\src\\attack.py": "d2984fcab6708d1c28bec7c36c7792d40b01b7b4bd150316263f6f8bbd6b3816",
+      "official_cpa\\src\\collect_grads.py": "4d39b5e4bcbebe36dd8131d6c4a5ec0456e7e9de51f7301c0b5079a04aa436e6",
+      "official_cpa\\src\\collect_updates.py": "78a07e3f872231cb582c828eb315bb3c04976bc2f36fdecae5bdb6c17d7f6177",
+      "official_cpa\\src\\datasets.py": "f9e7b47733b5acb4b73e6914a3f100b5187766bbed78a12d17b69c39eec1b6d1",
+      "official_cpa\\src\\eval_utils.py": "042e6263905b32044290e2e1e4d93c54ebcb8e813509c27cf76bdd23b00ec349",
+      "official_cpa\\src\\feature_inversion.py": "dc73880427e3eaf1f873d295f17f1d48d301882f634ee5df36ddeea8e56c4dec",
+      "official_cpa\\src\\gradient_inversion.py": "c598e1ee7b4079f741060d10c8dfd14711e393a97384c63cf32be77a458b1873",
+      "official_cpa\\src\\gradient_inversion_utils.py": "668d77788dc8d81c181c8c0a9fbe8533c6fbea22ba46fe7f5e15b0a431300e5f",
+      "official_cpa\\src\\log_utils.py": "70ced512bcd2de0e6e52d34a5cb9ca34ae7877a0b220b044fce12e48c422cd80",
+      "official_cpa\\src\\models.py": "f684ca948a8ba8020d82cba3d2bdc5df731dd51d9807e38c5be37a3feab4ee56",
+      "official_cpa\\src\\report_m6_attack_results.py": "ce40db9745aebc515c5d52a031d3a4b2806e74edf9068ab26291094ba6455fa4",
+      "official_cpa\\src\\train.py": "a054cbe9c855b05bba9c808a59524c019b6549dde04c432a6e1906448d125bf1",
+      "official_cpa\\src\\utils.py": "565f1bf1a47f387d042b35bb24f677d1ff0d3ec5d979e2876c31ed114179b9fe",
+      "official_cpa\\src\\vgg16.py": "8114eca8cde553dace5f777aedd21b70851c570d473e597b005cb6be4b248d36",
+      "quantization_aware_cpa\\scripts\\run_topk50_same80.bat": "e33ce0bc688075b6608c0cd10507dabb757179ba02985881e721162ad046a933",
+      "quantization_aware_cpa\\scripts\\run_topk30_20_10_same80.bat": "4ff9c8ee0013341338acdeec779aae37ed8b5ce4791a59b9a0f4353a3956bdda"
+    },
+    "paired_packed4_summary_sha256": "f1eb62014f9581fe9bbc458babc76d5af604f48d3a8f87e7e3550465f0498f5f",
+    "paired_topk50_summary_sha256": "f7f9d067c3fc8e6763822166459ca1f2a2f5037255070617f71ed6a54b3c8972",
+    "source_summary_sha256": "1f85b5750c6171e0259160c48731dc7646fb3f7a5b9c59b8c06b0478bd2f4ad0",
+    "historical_summary_sha256": "a3ab0e90b2b08ce889fd5a327b139a64ad6bb863892ee0c5dac9dcbe7c06a197",
+    "design_sha256": "f923a99c0f29543e24b3a2ab7a89dd7b37fe02e95d3ff1163dba935d0e160350",
+    "weights_sha256": "397923af8e79cdbb6a7127f12361acd7a2f83e06b05044ddf496e83de57a5bf0",
+    "versions": {
+      "torch": "2.13.0+cu132",
+      "numpy": "2.4.4"
+    }
+  },
+  "batch_index": 2,
+  "source_observation_sha256": "3ddcd6ef311c0f97dc7a461636973fcb8a1b160e10b5b6b9acf8d2c1b15548c2",
+  "output_hashes": {
+    "observation.bin": "3e95fd0a6e2301fd862f0e8b9886bafa35431108559258438bcb4b6616a01904",
+    "communication.json": "1407fcc9910dd5a160ec58d74e0cccf5e9838fa009845ac87171f7a04c9500b5",
+    "sparsification_diagnostics.json": "fb454ab125916972300b4dcecda6fbb22c9c510ddabaa0a0801feb033b24f6ba"
+  }
+}

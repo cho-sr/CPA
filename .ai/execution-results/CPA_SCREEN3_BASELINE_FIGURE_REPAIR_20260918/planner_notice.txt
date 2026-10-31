@@ -1,0 +1,15 @@
+[CPA baseline figure repair completion | CPA_SCREEN3_BASELINE_FIGURE_REPAIR_20260918]
+
+The isolated CPU reporting repair completed for available frozen evaluations. Root cause: the old contact-sheet helper displayed truth in the first column, labeled it with the first candidate name, and skipped that candidate. No shared source, registration, candidate, metric, matching, optimizer, or active parent handoff was modified.
+
+Corrected PNGs:
+- INT8 final 5-column: quantization_aware_cpa/results_private/signed_int8_screen3_repair_B16_T10_20260918/evaluation_final_20260918/figures_with_baseline_20260918/contact_sheet_b8_25000_with_baseline.png
+- INT8 screen 10-column: quantization_aware_cpa/results_private/signed_int8_screen3_repair_B16_T10_20260918/evaluation_final_20260918/figures_with_baseline_20260918/contact_sheet_b8_5000_with_baseline.png
+- INT7 final 5-column: quantization_aware_cpa/results_private/signed_int7_randomized8_screen3_fia_B16_T10_20260918_sweep/evaluation_recovery_20260918/figures_with_baseline_20260918/contact_sheet_b7_25000_with_baseline.png
+- INT7 screen 10-column: quantization_aware_cpa/results_private/signed_int7_randomized8_screen3_fia_B16_T10_20260918_sweep/evaluation_recovery_20260918/figures_with_baseline_20260918/contact_sheet_b7_5000_with_baseline.png
+- INT6 final 5-column: quantization_aware_cpa/results_private/signed_int6_randomized8_screen3_fia_B16_T10_20260918_sweep/evaluation_recovery_20260918/figures_with_baseline_20260918/contact_sheet_b6_25000_with_baseline.png
+- INT6 screen 10-column: quantization_aware_cpa/results_private/signed_int6_randomized8_screen3_fia_B16_T10_20260918_sweep/evaluation_recovery_20260918/figures_with_baseline_20260918/contact_sheet_b6_5000_with_baseline.png
+
+Validation: synthetic renderer coverage passed 3 tests; actual 6-bit PNG visually confirms Ground truth | same-bit baseline | public rank1/2/3 with original member IDs, 16 rows. Public candidates and hashes were authenticated before x-only plotting; existing per-image Hungarian correspondence and metrics were reused without recomputation.
+
+Sidecar report and hashes: .ai/execution-results/CPA_SCREEN3_BASELINE_FIGURE_REPAIR_20260918/report.md and available_manifest.json. INT5 and INT4 corrected figures remain pending until the active CPA_SIGNED_BITS7654_RECOVERY_20260918 sweep produces authenticated completed evaluations. Originating user thread: 01a0a7ab-fa58-7d22-ac52-3247b1dd2255. Please show this result once and end without starting work or polling.

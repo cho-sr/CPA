@@ -1,0 +1,32 @@
+{
+  "codec_id": "topk_global_bitmap_fp32_v1",
+  "shape": [
+    4096,
+    25088
+  ],
+  "elements": 102760448,
+  "kept_elements": 20552089,
+  "keep_fraction": 0.19999999416117764,
+  "value_bits": 32,
+  "value_bytes": 82208356,
+  "bitmap_bytes": 12845056,
+  "header_bytes": 32,
+  "packet_bytes": 95053444,
+  "fp32_reference_packet_bytes": 411041824,
+  "scope": "global within attacked classifier.0.weight tensor",
+  "selection_rule": "absolute magnitude descending, flat index ascending for ties",
+  "retained_fp32_bits_exact": true,
+  "discarded_values_zero": true,
+  "minimum_retained_abs": 0.0007175840437412262,
+  "maximum_discarded_abs": 0.0007175840437412262,
+  "decoded_nonzero_elements": 20552089,
+  "decoded_nonzero_fraction": 0.19999999416117764,
+  "retained_energy_fraction": 0.9996468589874241,
+  "relative_l2_error": 0.018792046524443926,
+  "quantization": false,
+  "rescaling": false,
+  "error_feedback": false,
+  "update_collection_sec": 0.0,
+  "new_update_collection": false,
+  "update_factor_rel_l2": 6.437602860387415e-05
+}

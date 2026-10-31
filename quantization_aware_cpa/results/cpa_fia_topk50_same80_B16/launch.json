@@ -1,0 +1,7 @@
+﻿{
+    "cmd_process_id":  8996,
+    "started_at_utc":  "2026-09-11T01:48:49.9974686Z",
+    "command":  "cmd.exe /d /c scripts\\run_topk50_same80.bat",
+    "stdout":  "run.stdout.log",
+    "stderr":  "run.stderr.log"
+}

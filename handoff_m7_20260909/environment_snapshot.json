@@ -1,0 +1,518 @@
+{
+  "captured_at": "2026-09-09T20:53:58+0900",
+  "python": "3.11.14 | packaged by Anaconda, Inc. | (main, Oct 21 2025, 18:30:03) [MSC v.1929 64 bit (AMD64)]",
+  "executable": "C:\\miniconda\\envs\\DLG\\python.exe",
+  "platform": "Windows-10-10.0.19045-SP0",
+  "torch_cuda_build": "13.2",
+  "registered_versions": {
+    "torch": "2.13.0+cu132",
+    "numpy": "2.4.4",
+    "python": "3.11.14 | packaged by Anaconda, Inc. | (main, Oct 21 2025, 18:30:03) [MSC v.1929 64 bit (AMD64)]"
+  },
+  "distributions": [
+    {
+      "name": "annotated-doc",
+      "version": "0.0.4"
+    },
+    {
+      "name": "annotated-types",
+      "version": "0.7.0"
+    },
+    {
+      "name": "anyio",
+      "version": "4.12.1"
+    },
+    {
+      "name": "APScheduler",
+      "version": "3.11.3"
+    },
+    {
+      "name": "babel",
+      "version": "2.18.0"
+    },
+    {
+      "name": "boto3",
+      "version": "1.42.73"
+    },
+    {
+      "name": "botocore",
+      "version": "1.42.73"
+    },
+    {
+      "name": "certifi",
+      "version": "2026.2.25"
+    },
+    {
+      "name": "charset-normalizer",
+      "version": "3.4.6"
+    },
+    {
+      "name": "click",
+      "version": "8.5.0"
+    },
+    {
+      "name": "cloudpickle",
+      "version": "3.1.2"
+    },
+    {
+      "name": "colorama",
+      "version": "0.4.6"
+    },
+    {
+      "name": "contourpy",
+      "version": "1.3.3"
+    },
+    {
+      "name": "cycler",
+      "version": "0.12.1"
+    },
+    {
+      "name": "fastapi",
+      "version": "0.141.1"
+    },
+    {
+      "name": "filelock",
+      "version": "3.29.0"
+    },
+    {
+      "name": "fonttools",
+      "version": "4.61.1"
+    },
+    {
+      "name": "fsspec",
+      "version": "2026.4.0"
+    },
+    {
+      "name": "gitdb",
+      "version": "4.0.12"
+    },
+    {
+      "name": "GitPython",
+      "version": "3.1.50"
+    },
+    {
+      "name": "google-measurement-protocol",
+      "version": "1.1.0"
+    },
+    {
+      "name": "greenlet",
+      "version": "3.5.5"
+    },
+    {
+      "name": "h11",
+      "version": "0.16.0"
+    },
+    {
+      "name": "hf-xet",
+      "version": "1.6.0"
+    },
+    {
+      "name": "httpcore",
+      "version": "1.0.9"
+    },
+    {
+      "name": "httpx",
+      "version": "0.28.1"
+    },
+    {
+      "name": "huggingface_hub",
+      "version": "1.29.0"
+    },
+    {
+      "name": "idna",
+      "version": "3.11"
+    },
+    {
+      "name": "iniconfig",
+      "version": "2.3.0"
+    },
+    {
+      "name": "investscope",
+      "version": "0.1.0"
+    },
+    {
+      "name": "Jinja2",
+      "version": "3.1.6"
+    },
+    {
+      "name": "jmespath",
+      "version": "1.1.0"
+    },
+    {
+      "name": "joblib",
+      "version": "1.5.3"
+    },
+    {
+      "name": "kiwisolver",
+      "version": "1.4.9"
+    },
+    {
+      "name": "lap",
+      "version": "0.5.13"
+    },
+    {
+      "name": "lightning-utilities",
+      "version": "0.15.3"
+    },
+    {
+      "name": "lpips",
+      "version": "0.1.4"
+    },
+    {
+      "name": "markdown-it-py",
+      "version": "4.0.0"
+    },
+    {
+      "name": "MarkupSafe",
+      "version": "3.0.3"
+    },
+    {
+      "name": "matplotlib",
+      "version": "3.10.8"
+    },
+    {
+      "name": "mdurl",
+      "version": "0.1.2"
+    },
+    {
+      "name": "mpmath",
+      "version": "1.3.0"
+    },
+    {
+      "name": "narwhals",
+      "version": "2.24.0"
+    },
+    {
+      "name": "networkx",
+      "version": "3.6.1"
+    },
+    {
+      "name": "numpy",
+      "version": "2.4.4"
+    },
+    {
+      "name": "nvidia-ml-py",
+      "version": "13.590.48"
+    },
+    {
+      "name": "nvitop",
+      "version": "1.6.2"
+    },
+    {
+      "name": "opacus",
+      "version": "1.5.4"
+    },
+    {
+      "name": "opencv-python",
+      "version": "4.13.0.92"
+    },
+    {
+      "name": "opt_einsum",
+      "version": "3.4.0"
+    },
+    {
+      "name": "packaging",
+      "version": "25.0"
+    },
+    {
+      "name": "pandas",
+      "version": "3.0.3"
+    },
+    {
+      "name": "pillow",
+      "version": "12.2.0"
+    },
+    {
+      "name": "pip",
+      "version": "26.0.1"
+    },
+    {
+      "name": "platformdirs",
+      "version": "4.10.0"
+    },
+    {
+      "name": "pluggy",
+      "version": "1.6.0"
+    },
+    {
+      "name": "polars",
+      "version": "1.39.3"
+    },
+    {
+      "name": "polars-runtime-32",
+      "version": "1.39.3"
+    },
+    {
+      "name": "prices",
+      "version": "1.1.1"
+    },
+    {
+      "name": "protobuf",
+      "version": "7.35.1"
+    },
+    {
+      "name": "psutil",
+      "version": "7.2.2"
+    },
+    {
+      "name": "psycopg",
+      "version": "3.3.4"
+    },
+    {
+      "name": "psycopg-binary",
+      "version": "3.3.4"
+    },
+    {
+      "name": "pycocoevalcap",
+      "version": "1.2"
+    },
+    {
+      "name": "pycocotools",
+      "version": "2.0.11"
+    },
+    {
+      "name": "pydantic",
+      "version": "2.13.4"
+    },
+    {
+      "name": "pydantic-settings",
+      "version": "2.15.0"
+    },
+    {
+      "name": "pydantic_core",
+      "version": "2.46.4"
+    },
+    {
+      "name": "Pygments",
+      "version": "2.19.2"
+    },
+    {
+      "name": "PyJWT",
+      "version": "2.13.0"
+    },
+    {
+      "name": "pyparsing",
+      "version": "3.3.2"
+    },
+    {
+      "name": "pypdf",
+      "version": "6.16.2"
+    },
+    {
+      "name": "pytest",
+      "version": "9.1.1"
+    },
+    {
+      "name": "python-dateutil",
+      "version": "2.9.0.post0"
+    },
+    {
+      "name": "python-dotenv",
+      "version": "1.2.3"
+    },
+    {
+      "name": "PyYAML",
+      "version": "6.0.3"
+    },
+    {
+      "name": "redis",
+      "version": "5.3.1"
+    },
+    {
+      "name": "requests",
+      "version": "2.32.5"
+    },
+    {
+      "name": "rich",
+      "version": "14.3.3"
+    },
+    {
+      "name": "s3transfer",
+      "version": "0.16.0"
+    },
+    {
+      "name": "scikit-learn",
+      "version": "1.9.0"
+    },
+    {
+      "name": "scikit-video",
+      "version": "1.1.11"
+    },
+    {
+      "name": "scipy",
+      "version": "1.17.1"
+    },
+    {
+      "name": "sentry-sdk",
+      "version": "2.64.0"
+    },
+    {
+      "name": "setuptools",
+      "version": "78.1.0"
+    },
+    {
+      "name": "shellingham",
+      "version": "1.5.4"
+    },
+    {
+      "name": "six",
+      "version": "1.17.0"
+    },
+    {
+      "name": "smmap",
+      "version": "5.0.3"
+    },
+    {
+      "name": "SoccerNet",
+      "version": "0.1.62"
+    },
+    {
+      "name": "SQLAlchemy",
+      "version": "2.0.52"
+    },
+    {
+      "name": "sskit",
+      "version": "0.3.0"
+    },
+    {
+      "name": "sskit",
+      "version": "0.3.0"
+    },
+    {
+      "name": "starlette",
+      "version": "1.6.0"
+    },
+    {
+      "name": "structlog",
+      "version": "25.5.0"
+    },
+    {
+      "name": "submitit",
+      "version": "1.5.4"
+    },
+    {
+      "name": "sympy",
+      "version": "1.14.0"
+    },
+    {
+      "name": "tenacity",
+      "version": "9.1.4"
+    },
+    {
+      "name": "threadpoolctl",
+      "version": "3.6.0"
+    },
+    {
+      "name": "torch",
+      "version": "2.13.0+cu132"
+    },
+    {
+      "name": "torchmetrics",
+      "version": "1.9.0"
+    },
+    {
+      "name": "torchtext",
+      "version": "0.18.0"
+    },
+    {
+      "name": "torchvision",
+      "version": "0.28.0+cu132"
+    },
+    {
+      "name": "tqdm",
+      "version": "4.67.3"
+    },
+    {
+      "name": "typer",
+      "version": "0.24.1"
+    },
+    {
+      "name": "typing-inspection",
+      "version": "0.4.2"
+    },
+    {
+      "name": "typing_extensions",
+      "version": "4.15.0"
+    },
+    {
+      "name": "tzdata",
+      "version": "2026.2"
+    },
+    {
+      "name": "tzlocal",
+      "version": "5.4.4"
+    },
+    {
+      "name": "ultralytics",
+      "version": "8.4.24"
+    },
+    {
+      "name": "ultralytics-thop",
+      "version": "2.0.18"
+    },
+    {
+      "name": "urllib3",
+      "version": "2.6.3"
+    },
+    {
+      "name": "uvicorn",
+      "version": "0.52.4"
+    },
+    {
+      "name": "wandb",
+      "version": "0.28.0"
+    },
+    {
+      "name": "websockets",
+      "version": "16.1.1"
+    },
+    {
+      "name": "wheel",
+      "version": "0.46.3"
+    },
+    {
+      "name": "windows-curses",
+      "version": "2.4.1"
+    }
+  ],
+  "static_import_roots": [
+    "PIL",
+    "__future__",
+    "argparse",
+    "ast",
+    "collections",
+    "copy",
+    "csv",
+    "dataclasses",
+    "datetime",
+    "fcntl",
+    "hashlib",
+    "itertools",
+    "json",
+    "math",
+    "matplotlib",
+    "msvcrt",
+    "numpy",
+    "os",
+    "pandas",
+    "pathlib",
+    "random",
+    "re",
+    "scipy",
+    "shutil",
+    "sklearn",
+    "statistics",
+    "subprocess",
+    "sys",
+    "time",
+    "torch",
+    "torchmetrics",
+    "torchvision",
+    "traceback",
+    "typing",
+    "warnings",
+    "yaml"
+  ],
+  "unresolved_local_imports": [],
+  "note": "현재 설치 환경의 읽기 전용 스냅샷. 실행 당시 전체 환경과 동일함은 미확인. GPU 초기화/모델 실행 없음."
+}

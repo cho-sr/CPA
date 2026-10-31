@@ -1,0 +1,144 @@
+{
+  "archived_sender_validation_sha256": "6e78ec5ff2376b01c23a3606fa18b3d9e60d1209f55504211aaf811919d2e244",
+  "bits": 5,
+  "checkpoint_sha256": "397923af8e79cdbb6a7127f12361acd7a2f83e06b05044ddf496e83de57a5bf0",
+  "codec": {
+    "bits": 5,
+    "code_dtype": "int8",
+    "code_operation": "round(float32(G/s)).clamp(-15,15).int8",
+    "codec": "signed_symmetric_bits5_qplus15_nearest_even_cpu_fp32_v1",
+    "device": "cpu",
+    "edge_policy": "largest_finite_fp32_absmax_rounding_to_observed_scale",
+    "input_dtype": "float32",
+    "logical_code_bits": 5,
+    "physical_code_storage": "int8",
+    "qmax": 15,
+    "qmin": -15,
+    "rounding": "nearest_even",
+    "scale_dtype": "float32",
+    "scale_operation": "float32(max_abs/15)",
+    "scale_scope": "per_parameter_tensor_absmax_scalar",
+    "zero_tensor": "q=0,s=1"
+  },
+  "evaluation_truth_sha256": "724bbacbe316cc28dac086db9cfaf6507f4c1af31144fd610cc480985aab72e2",
+  "images_consumed": false,
+  "labels_consumed": false,
+  "layers": {
+    "classifier.0.bias": {
+      "code_bytes": 4096,
+      "file": "fc_00.sb5",
+      "file_bytes": 4116,
+      "header_bytes_excluding_scale": 16,
+      "logical_code_bits": 5,
+      "numel": 4096,
+      "physical_code_storage": "int8",
+      "q_dtype": "int8",
+      "s_dtype": "float32",
+      "s_shape": [],
+      "scale_bytes": 4,
+      "sha256": "f2f63398ea766e0ee653d0b69d4807448af258510d7fc11353c3c159920243fa",
+      "shape": [
+        4096
+      ]
+    },
+    "classifier.0.weight": {
+      "code_bytes": 102760448,
+      "file": "fc_01.sb5",
+      "file_bytes": 102760468,
+      "header_bytes_excluding_scale": 16,
+      "logical_code_bits": 5,
+      "numel": 102760448,
+      "physical_code_storage": "int8",
+      "q_dtype": "int8",
+      "s_dtype": "float32",
+      "s_shape": [],
+      "scale_bytes": 4,
+      "sha256": "ca6facc31da8dfb4acad00e5cdb678bf31ce114085293794161664a782c95107",
+      "shape": [
+        4096,
+        25088
+      ]
+    },
+    "classifier.3.bias": {
+      "code_bytes": 4096,
+      "file": "fc_02.sb5",
+      "file_bytes": 4116,
+      "header_bytes_excluding_scale": 16,
+      "logical_code_bits": 5,
+      "numel": 4096,
+      "physical_code_storage": "int8",
+      "q_dtype": "int8",
+      "s_dtype": "float32",
+      "s_shape": [],
+      "scale_bytes": 4,
+      "sha256": "881da9e1f690ee3a94ab792fb67993f1d3f58c0e29f84c1de3cde424b22f3b44",
+      "shape": [
+        4096
+      ]
+    },
+    "classifier.3.weight": {
+      "code_bytes": 16777216,
+      "file": "fc_03.sb5",
+      "file_bytes": 16777236,
+      "header_bytes_excluding_scale": 16,
+      "logical_code_bits": 5,
+      "numel": 16777216,
+      "physical_code_storage": "int8",
+      "q_dtype": "int8",
+      "s_dtype": "float32",
+      "s_shape": [],
+      "scale_bytes": 4,
+      "sha256": "b8671614e7fe1f508a575948cf2e2bdc21d8f3d1f7d1ff0dfcbc807b8b3a1906",
+      "shape": [
+        4096,
+        4096
+      ]
+    },
+    "classifier.6.bias": {
+      "code_bytes": 1000,
+      "file": "fc_04.sb5",
+      "file_bytes": 1020,
+      "header_bytes_excluding_scale": 16,
+      "logical_code_bits": 5,
+      "numel": 1000,
+      "physical_code_storage": "int8",
+      "q_dtype": "int8",
+      "s_dtype": "float32",
+      "s_shape": [],
+      "scale_bytes": 4,
+      "sha256": "f584f2e69a70275f88aa1d29baa10ed343404793a63685577953bba81ad76b43",
+      "shape": [
+        1000
+      ]
+    },
+    "classifier.6.weight": {
+      "code_bytes": 4096000,
+      "file": "fc_05.sb5",
+      "file_bytes": 4096020,
+      "header_bytes_excluding_scale": 16,
+      "logical_code_bits": 5,
+      "numel": 4096000,
+      "physical_code_storage": "int8",
+      "q_dtype": "int8",
+      "s_dtype": "float32",
+      "s_shape": [],
+      "scale_bytes": 4,
+      "sha256": "ad7400314295c40f6e9c1dc5857b1e710d1b6d83402ec6ee5d822b0b7125512c",
+      "shape": [
+        1000,
+        4096
+      ]
+    }
+  },
+  "logical_bits": 5,
+  "physical_code_storage": "int8",
+  "private_provenance_output": "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results_private/signed_int5_randomized8_screen3_fia_B16_T10_20260918_sweep/sender",
+  "public_manifest_sha256": "089c434e14932a21ca478238dd76ee19dc5b28fa2163dba6d5c354059f70b3a3",
+  "public_output": "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int5_randomized8_screen3_fia_B16_T10_20260918_sweep/observation",
+  "raw_features_saved": false,
+  "raw_updates_saved_in_public": false,
+  "raw_updates_sha256": "ef9aefc66ab9fcfd0b023fdfc064dbadc27567bd3ef3508bc14ebda9af28ba4c",
+  "stage": "SENDER",
+  "status": "COMPLETED",
+  "true_updates_consumed": true
+}

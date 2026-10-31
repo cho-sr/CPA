@@ -1,0 +1,55 @@
+{
+  "identity_sha256": "7ea9a287c193f955aa7b40b4915bf4d108eb8c7ee41c1c3f7e1bb81d00e6bf37",
+  "output_hashes": {
+    "input.json": "e755eb30fb40ae722fe357858b57e2eeb4ff6bfe0026bd77fffdbd8a6e9612cf",
+    "sources.pt": "a1b83a6096895c07e47cf0ff5cc85568328310457a58b4a8ae053ece6aca79e8",
+    "cpa_result.json": "187bfa4d5c2fcb0aedb1269a4b5fc88965434c341d9c2d6af0e611abebbcd23f",
+    "fia/rec_25000.pt": "d66cdf5920e7d0c5a05fe5281125d29940d66432c6df7eeb076f61ae114325e7",
+    "fia/final_result.json": "620e865e852ac79ce71c0b89fa14641fb3559ea0eaa9b5fe093b5476cb1558cd",
+    "fia/checkpoint_25000.pt": "b40e114e85317563996bad4b8e923c6ed1ed0548a3d0034ac9d54d154c65e6ff",
+    "fia/fia_checkpoint.pt.reviewed_recovery.json": "4f9c5b2016393c933632b2bf99f1970130b3409ff99da99beff160c81fdf5187",
+    "fia/checkpoint_25000.pt.reviewed_recovery.json": "b0da1295e32c21caf5f9bc73dc5e26782835f9ca9a221fbb443de5029133f86c"
+  },
+  "status": "COMPLETED",
+  "bits": 8,
+  "batch_index": 0,
+  "naive_trajectories": 1,
+  "source_sha256": "b68761d8dfb21dd1442a21622efb380aa2616dcaf571621488f253efa33e31e2",
+  "final_rec_sha256": "d66cdf5920e7d0c5a05fe5281125d29940d66432c6df7eeb076f61ae114325e7",
+  "cpa_result_sha256": "187bfa4d5c2fcb0aedb1269a4b5fc88965434c341d9c2d6af0e611abebbcd23f",
+  "fia_result_sha256": "620e865e852ac79ce71c0b89fa14641fb3559ea0eaa9b5fe093b5476cb1558cd",
+  "settings": {
+    "cpa": {
+      "n_components": 16,
+      "cpa_ica_max_iter": 25000,
+      "cpa_ica_lr": 0.001,
+      "cpa_ica_optimizer": "adam",
+      "cpa_ica_scheduler": "none",
+      "cpa_ica_decor": 5.3,
+      "cpa_ica_T": 7.7,
+      "cpa_ica_ne": 1.0,
+      "cpa_ica_nv": 0.13,
+      "cpa_ica_l1": 5.0,
+      "cpa_ica_tv": 0.1,
+      "cpa_ica_log_every": 5000,
+      "debias": false,
+      "mp_truncation": false,
+      "refine_A": false,
+      "stage2": false
+    },
+    "fia": {
+      "n_iter": 25000,
+      "screen_steps": 5000,
+      "continuation_steps": 20000,
+      "lr": 0.1,
+      "optimizer": "adam",
+      "scheduler": "cosine",
+      "tv": 0.1,
+      "fi": 1.0,
+      "seed": 42,
+      "cosine_horizon": 25000,
+      "log_every": 5000
+    }
+  },
+  "private_data_used": false
+}

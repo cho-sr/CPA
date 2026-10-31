@@ -1,0 +1,10 @@
+{
+  "task_id": "CPA_SIGNED_INT8_RANDOMIZED8_SCREEN3_FIA_20260917",
+  "status": "PARTIAL",
+  "summary_sha256": "8dd7d863ac847fcc8f5f77085269e527588de8f8a6095723d463a779c38a5990",
+  "final_audit_sha256": "a29a40e1c730e7224bbbe8819e45fc6aabc1c83bae69b49e75c04fca9f09531b",
+  "public_registration_sha256": "d974ad6075bdf3dbb5607ec914d992957a26d537a83483e98f70c370242ea3fb",
+  "public_observation_manifest_sha256": "9c9dc415742db59681a3b2266eca80712c0643cfb834debe30f3e8bd6e289b9b",
+  "protected_evidence_preserved": true,
+  "no_rerun_or_new_arm": true
+}

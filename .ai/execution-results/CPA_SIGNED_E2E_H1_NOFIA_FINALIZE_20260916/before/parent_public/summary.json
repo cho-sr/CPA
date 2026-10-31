@@ -1,0 +1,31 @@
+{
+  "task_id": "CPA_SIGNED_E2E_H1_NOFIA_20260916",
+  "plan_version": 1,
+  "status": "FAILED",
+  "stage": "PUBLIC_NOFIA_RUNNER",
+  "error_type": "ExperimentError",
+  "error": "archived B_H1_high endpoint profile mismatch",
+  "completed_wall_seconds": 155.46602060005534,
+  "stages": {
+    "model_and_public_preflight": {
+      "wall_seconds": 0.9711927999742329,
+      "total_seconds": 2.9954183000372723
+    },
+    "full_size_numeric_check": {
+      "wall_seconds": 4.263293900061399,
+      "total_seconds": 7.258759699994698
+    },
+    "initial_h1_calibration": {
+      "wall_seconds": 1.5795205000322312,
+      "total_seconds": 8.838321799994446
+    },
+    "one_new_arm": {
+      "wall_seconds": 140.72214199998416,
+      "total_seconds": 149.65286030003335
+    },
+    "public_endpoint_replay": {
+      "wall_seconds": 5.813113100011833,
+      "total_seconds": 155.46600660006516
+    }
+  }
+}

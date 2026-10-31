@@ -1,0 +1,25 @@
+source,table,model,dataset,attack,metric,batch_size,value,n_batches_averaged,note
+Kariyappa et al. ICML 2023,Table 2,vgg16,imagenet,GMA,lpips,32,0.536,5,prior work baseline
+Kariyappa et al. ICML 2023,Table 2,vgg16,imagenet,GMA,lpips,64,0.594,5,prior work baseline
+Kariyappa et al. ICML 2023,Table 2,vgg16,imagenet,GMA,lpips,128,0.609,5,prior work baseline
+Kariyappa et al. ICML 2023,Table 2,vgg16,imagenet,GMA,lpips,256,0.652,5,prior work baseline
+Kariyappa et al. ICML 2023,Table 2,vgg16,imagenet,GMA,lpips,512,,5,OOM
+Kariyappa et al. ICML 2023,Table 2,vgg16,imagenet,GMA,lpips,1024,,5,OOM
+Kariyappa et al. ICML 2023,Table 2,vgg16,imagenet,CPA+FIA,lpips,32,0.483,5,headline CPA result
+Kariyappa et al. ICML 2023,Table 2,vgg16,imagenet,CPA+FIA,lpips,64,0.493,5,headline CPA result
+Kariyappa et al. ICML 2023,Table 2,vgg16,imagenet,CPA+FIA,lpips,128,0.479,5,headline CPA result
+Kariyappa et al. ICML 2023,Table 2,vgg16,imagenet,CPA+FIA,lpips,256,0.495,5,headline CPA result
+Kariyappa et al. ICML 2023,Table 2,vgg16,imagenet,CPA+FIA,lpips,512,0.507,5,headline CPA result
+Kariyappa et al. ICML 2023,Table 2,vgg16,imagenet,CPA+FIA,lpips,1024,0.509,5,headline CPA result
+Kariyappa et al. ICML 2023,Table 2,vgg16,imagenet,CPA+FIA+GMA,lpips,32,0.392,5,CPA combined with gradient matching
+Kariyappa et al. ICML 2023,Table 2,vgg16,imagenet,CPA+FIA+GMA,lpips,64,0.430,5,CPA combined with gradient matching
+Kariyappa et al. ICML 2023,Table 2,vgg16,imagenet,CPA+FIA+GMA,lpips,128,0.423,5,CPA combined with gradient matching
+Kariyappa et al. ICML 2023,Table 2,vgg16,imagenet,CPA+FIA+GMA,lpips,256,0.469,5,CPA combined with gradient matching
+Kariyappa et al. ICML 2023,Table 2,vgg16,imagenet,CPA+FIA+GMA,lpips,512,,5,OOM
+Kariyappa et al. ICML 2023,Table 2,vgg16,imagenet,CPA+FIA+GMA,lpips,1024,,5,OOM
+Kariyappa et al. ICML 2023,Figure 7,vgg16,imagenet,CPA,emb_cs,32,,5,"distribution plot only; y-axis 0.900-1.000, most values near 1"
+Kariyappa et al. ICML 2023,Figure 7,vgg16,imagenet,CPA,emb_cs,64,,5,"distribution plot only; degrades slightly with batch size"
+Kariyappa et al. ICML 2023,Figure 7,vgg16,imagenet,CPA,emb_cs,128,,5,distribution plot only
+Kariyappa et al. ICML 2023,Figure 7,vgg16,imagenet,CPA,emb_cs,256,,5,distribution plot only
+Kariyappa et al. ICML 2023,Figure 7,vgg16,imagenet,CPA,emb_cs,512,,5,distribution plot only
+Kariyappa et al. ICML 2023,Figure 7,vgg16,imagenet,CPA,emb_cs,1024,,5,distribution plot only

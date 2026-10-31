@@ -1,0 +1,20 @@
+[
+  {
+    "round": 1,
+    "keep_ratio": 0.5,
+    "train_loss": 0.1089303195476532,
+    "val_loss": 0.8878774832119234,
+    "val_accuracy": 1.0,
+    "val_top1": 1.0,
+    "val_top5": 1.0,
+    "eval_samples": 2,
+    "aggregate_update_l2": 0.012210038019724999,
+    "sparse_mask_fraction_mean": 0.5,
+    "sparse_nonzero_fraction_mean": 0.12030622630884515,
+    "sparse_relative_l2_mean": 0.0,
+    "sparse_cosine_similarity_to_fp32_mean": 1.0,
+    "sparse_energy_retained_mean": 1.0,
+    "topk_threshold_abs_mean": 0.0,
+    "round_time": 23.68220090866089
+  }
+]

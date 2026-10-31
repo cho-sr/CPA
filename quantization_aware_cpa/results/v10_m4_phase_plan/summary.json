@@ -1,0 +1,14 @@
+{
+  "phase_A_jobs": 32,
+  "phase_A_quantized_jobs": 28,
+  "phase_A_fp32_jobs": 4,
+  "phase_A_manifest": "results\\v10_m4_phase_plan\\phase_A_manifest.csv",
+  "phase_A_cmd": "results\\v10_m4_phase_plan\\run_phase_A.cmd",
+  "phase_B_template": "results\\v10_m4_phase_plan\\phase_B_template.csv",
+  "notes": [
+    "Phase A excludes deterministic rounding except future spot checks.",
+    "Phase A uses one seed and stochastic rounding; Phase B fills boundary cells with five seeds.",
+    "B=512 is emitted for both distinct and non-distinct labels to isolate duplicate-label effects.",
+    "Each quantized job runs naive,A,A_oracle together; count method rows separately if needed."
+  ]
+}

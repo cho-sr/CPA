@@ -1,0 +1,12 @@
+{
+  "kind": "bounded_review_of_running_task_not_new_execution_handoff",
+  "task_id": "CPA_SIGNED_BASELINE_B16_T10_20260914",
+  "plan_version": 1,
+  "to": "01a09e4d-51f3-7121-84e2-03a7a9ac3039",
+  "runtime_verified": "gpt-6-astra/high at 2026-09-14T08:19:21Z using executor_bridge --status",
+  "review_path": ".ai/execution-results/CPA_SIGNED_BASELINE_B16_T10_20260914/planner_review_01.md",
+  "state": "QUEUED",
+  "receipt": "Queued message 01a09f00-3d90-75b3-bfba-104a4abd03d2 for thread 01a09e4d-51f3-7121-84e2-03a7a9ac3039.",
+  "execution_scope_changed": false,
+  "duplicate_job_dispatched": false
+}

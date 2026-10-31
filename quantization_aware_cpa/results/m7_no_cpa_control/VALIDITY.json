@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "decision_date": "2026-09-09",
+  "scientific_validity": "invalid",
+  "scope": "All no-CPA conditions and every dependent comparison, threshold, count, claim and figure are withdrawn.",
+  "invalid_source_id": "m7_no_cpa_control",
+  "registry": "../result_validity.json"
+}

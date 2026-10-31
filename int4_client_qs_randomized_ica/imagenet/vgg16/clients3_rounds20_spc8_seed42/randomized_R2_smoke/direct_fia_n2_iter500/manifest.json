@@ -1,0 +1,36 @@
+{
+  "attack_inputs": {
+    "checkpoint_path": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\int4_client_qs_randomized_ica\\imagenet\\vgg16\\clients3_rounds20_spc8_seed42\\client_qs\\final_round_global_model_before.pt",
+    "checkpoint_sha256": "a402d9d575a847ad045a5ea12634745c37924851096f0530bde806aaae1daf2d",
+    "embedding_branch": "randomized",
+    "embedding_path": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\int4_client_qs_randomized_ica\\imagenet\\vgg16\\clients3_rounds20_spc8_seed42\\randomized_R2_smoke\\final_embeddings.npy",
+    "embedding_sha256": "548fecf2ba20eef3584e7b9fc72cc0dded35092683d1ba9cac18c610f6216ba2"
+  },
+  "eval_inputs": {
+    "context_access_policy": "read only after FIA optimization completes",
+    "context_path": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\int4_client_qs_randomized_ica\\imagenet\\vgg16\\clients3_rounds20_spc8_seed42\\client_qs\\final_round_context.pkl"
+  },
+  "feature_info": {
+    "embedding_dim": 25088,
+    "expected_feature_dim": 25088,
+    "fia_feature": "classifier.0 input / flattened VGG feature before classifier.0",
+    "ica_layer": "classifier.0.weight"
+  },
+  "schema_version": 1,
+  "settings": {
+    "fi": 1.0,
+    "fia_batch_size": 1,
+    "lr_fi": 0.1,
+    "n_iter_fi": 500,
+    "n_log_fi": 100,
+    "n_sample": 2,
+    "opt_fi": "adam",
+    "sch_fi": "cosine",
+    "seed": 42,
+    "sign_policy": "use_saved_blind_global_sign",
+    "try_both_signs": false,
+    "tv": 0.1
+  },
+  "stage": "direct_fia_from_client_qs_fastica_embeddings",
+  "true_z_policy": "not read until final evaluation after FIA"
+}

@@ -1,0 +1,15 @@
+{
+  "sampler": "uniform_tau_pcg64_v1",
+  "seed": 100417,
+  "tau": 0.00433996319770813,
+  "tau_source": "min(abs(transmitted FP32 values))",
+  "random_min": -0.004339962732046843,
+  "random_max": 0.004339962732046843,
+  "retained_fp32_bits_exact": true,
+  "dropped_count": 92484404,
+  "fp32_boundary_rule": "clip rounded endpoints to nextafter(tau,0)",
+  "rng_chunk_elements": 1048576,
+  "packet_sha256": "879682e953428a8993091bc6ea8f51afd0dcdf683f2d20fabdf92a0fe71c808d",
+  "filled_tensor_sha256": "98cfb2d3da9f89e4d52fdad90eb7c328853fac34a1e2d42d3a415bd7df4ced1a",
+  "extra_transmitted_bytes": 0
+}

@@ -1,0 +1,100 @@
+{
+  "outputs": [
+    {
+      "keep_percent": 30,
+      "n_images": 80,
+      "file": "zero_fill_topk30_mean_metrics_16x9.png",
+      "size": [
+        3840,
+        2160
+      ],
+      "sha256": "826d96a15df104b6e3792f554bbaeebccc58aeef31d29a18d90ab05d6efc3e0b",
+      "metrics": [
+        {
+          "metric": "lpips",
+          "mean": 0.5098320577293635,
+          "display": "0.509832",
+          "box": [
+            190,
+            840,
+            1290,
+            1600
+          ]
+        },
+        {
+          "metric": "psnr",
+          "mean": 22.13713161945343,
+          "display": "22.1371",
+          "box": [
+            1370,
+            840,
+            2470,
+            1600
+          ]
+        },
+        {
+          "metric": "ssim",
+          "mean": 0.3140844308771193,
+          "display": "0.314084",
+          "box": [
+            2550,
+            840,
+            3650,
+            1600
+          ]
+        }
+      ],
+      "source_summary": "results\\cpa_fia_topk30_same80_B16\\summary.json",
+      "summary_sha256": "2fb13b3280ca9fe43d84fe53f1a134c4ae2c9290fc385d3ed031f8ec19eb8b94",
+      "csv_sha256": "c22d1f3beaed678af3d4a6d66490e0beae5ed9c38912e38d3d4cb1c626fb406c"
+    },
+    {
+      "keep_percent": 10,
+      "n_images": 80,
+      "file": "zero_fill_topk10_mean_metrics_16x9.png",
+      "size": [
+        3840,
+        2160
+      ],
+      "sha256": "fc96c6323803476f0cc9b4c74a5c4a44180d9aaadfb09b5db2354426e452f8c1",
+      "metrics": [
+        {
+          "metric": "lpips",
+          "mean": 0.6323260389268398,
+          "display": "0.632326",
+          "box": [
+            190,
+            840,
+            1290,
+            1600
+          ]
+        },
+        {
+          "metric": "psnr",
+          "mean": 21.53053867816925,
+          "display": "21.5305",
+          "box": [
+            1370,
+            840,
+            2470,
+            1600
+          ]
+        },
+        {
+          "metric": "ssim",
+          "mean": 0.263121826434508,
+          "display": "0.263122",
+          "box": [
+            2550,
+            840,
+            3650,
+            1600
+          ]
+        }
+      ],
+      "source_summary": "results\\cpa_fia_topk10_same80_B16\\summary.json",
+      "summary_sha256": "45732e0b38c31dfc6c478f37e6962bbc7d330395f4a1993674dab47631d686c0",
+      "csv_sha256": "198f59ef1b84db5aa1437ea55397b61628be08b4aac90cb8fc10203e5a992e48"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "task_id": "CPA_SIGNED_INT8_SCREEN3_REPAIR_CONTINUE_20260918",
+  "status": "FAILED",
+  "wrapper_pid": 9068,
+  "started_at_epoch": 1789663302.8817945,
+  "cap_seconds": 5399.606889200048,
+  "parent_artifacts_preserved": true,
+  "private_loaded": false,
+  "stages": [
+    {
+      "name": "continuation",
+      "pid": 14720,
+      "exit_code": 0,
+      "timed_out": false,
+      "started_at_monotonic": 688524.0557788,
+      "wall_seconds": 3788.8108596999664,
+      "stdout": "C:/Users/조상제/Desktop/CPA/.ai/execution-results/CPA_SIGNED_INT8_SCREEN3_REPAIR_CONTINUE_20260918/continuation.stdout.log",
+      "stderr": "C:/Users/조상제/Desktop/CPA/.ai/execution-results/CPA_SIGNED_INT8_SCREEN3_REPAIR_CONTINUE_20260918/continuation.stderr.log",
+      "remaining_budget_after_seconds": 1609.072696300107
+    },
+    {
+      "name": "private_evaluation",
+      "pid": 10568,
+      "exit_code": 1,
+      "timed_out": false,
+      "started_at_monotonic": 692312.8956609,
+      "wall_seconds": 6.71539289993234,
+      "stdout": "C:/Users/조상제/Desktop/CPA/.ai/execution-results/CPA_SIGNED_INT8_SCREEN3_REPAIR_CONTINUE_20260918/private_evaluation.stdout.log",
+      "stderr": "C:/Users/조상제/Desktop/CPA/.ai/execution-results/CPA_SIGNED_INT8_SCREEN3_REPAIR_CONTINUE_20260918/private_evaluation.stderr.log",
+      "remaining_budget_after_seconds": 1602.3311350001022
+    }
+  ],
+  "scientific_quality": "NOT_EVALUATED",
+  "actual_image_cell_feasibility": "NOT_EVALUATED",
+  "remaining_optimizer_steps": {
+    "member01_export": 0,
+    "member07": 20000,
+    "member05": 20000
+  },
+  "ready_validation": {
+    "status": "READY_VALIDATED",
+    "task_id": "CPA_SIGNED_INT8_SCREEN3_REPAIR_CONTINUE_20260918",
+    "parent_registration_sha256": "d974ad6075bdf3dbb5607ec914d992957a26d537a83483e98f70c370242ea3fb",
+    "parent_selection_sha256": "9c6a24bd73d0d9fb4ea752316b3a77e05779b6ae4152c090c229ca2b1d2a8683",
+    "parent_fia_source_sha256": "ab36aef2990fc7c0c11f4a0abcd1bc162e6a5896c91e7bbb3e71176c55849a95",
+    "parent_runner_source_sha256": "2b718a7203ca47e2b09773bdb344b7ee8b074ca5429d37a7cf58dced1f6b23e2",
+    "inherited_manifest_sha256": "331e55e45e7c59c8fccbf667caedb19b8ca480b181b2db802ad02de4d802831c",
+    "inherited_source_count": 9,
+    "inherited_candidate_count": 10,
+    "frozen_selection": [
+      1,
+      7,
+      5
+    ],
+    "private_loaded": false,
+    "remaining_budget_seconds": 5399.606889200048
+  },
+  "error_type": "RuntimeError",
+  "error": "private_evaluation failed with exit code 1",
+  "finished_at_epoch": 1789667100.1591218,
+  "wall_seconds": 3797.277489400003
+}

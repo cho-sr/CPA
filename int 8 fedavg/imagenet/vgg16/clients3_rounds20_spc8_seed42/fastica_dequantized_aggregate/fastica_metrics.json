@@ -1,0 +1,101 @@
+{
+  "input_pickle": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\int 8 fedavg\\imagenet\\vgg16\\clients3_rounds20_spc8_seed42\\round_020_int8_dequant_aggregate_cpa.pickle",
+  "output_dir": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\int 8 fedavg\\imagenet\\vgg16\\clients3_rounds20_spc8_seed42\\fastica_dequantized_aggregate",
+  "dequant_check": {
+    "passed": true,
+    "checks": {
+      "signal_is_int8_dequantized": true,
+      "quant_bits_is_8": true,
+      "rounding_is_nearest": true,
+      "server_input_is_dequantized": true,
+      "scale_scope_is_client_tensor": true
+    },
+    "interpretation": "This is a naive dequantized int8 FedAvg aggregate update"
+  },
+  "attack_layer_index": 26,
+  "attack_layer_name": "classifier.0.weight",
+  "attack_matrix_shape": [
+    4096,
+    25088
+  ],
+  "n_components": 24,
+  "blind_embedding_shape": [
+    24,
+    25088
+  ],
+  "fastica": {
+    "max_iter": 1000,
+    "tol": 0.0001,
+    "random_state": 42,
+    "whiten": "unit-variance",
+    "fun": "logcosh",
+    "n_iter": 17,
+    "converged": true,
+    "mixing_shape": [
+      4096,
+      24
+    ],
+    "components_shape": [
+      24,
+      4096
+    ]
+  },
+  "oracle_matching": {
+    "mean_cosine": 0.7988583339062768,
+    "min_cosine": 0.14384461310804372,
+    "max_cosine": 0.9707751691738521,
+    "median_cosine": 0.9554749622533809,
+    "recovered_order_for_true_index": [
+      17,
+      8,
+      18,
+      15,
+      1,
+      2,
+      5,
+      13,
+      20,
+      12,
+      16,
+      0,
+      22,
+      6,
+      19,
+      23,
+      10,
+      14,
+      7,
+      21,
+      3,
+      4,
+      11,
+      9
+    ],
+    "matched_cosines": [
+      0.9636174676080471,
+      0.9558841251431577,
+      0.955065799363604,
+      0.8762293257126709,
+      0.9565144413395867,
+      0.9574508984175316,
+      0.9466151274717586,
+      0.9707751691738521,
+      0.1800342366266571,
+      0.9621797787981878,
+      0.9657577596877859,
+      0.9611039091148256,
+      0.9679263055519439,
+      0.9621670267518521,
+      0.14777223039179654,
+      0.9501525005957525,
+      0.9546059108692767,
+      0.3914084045425824,
+      0.9643533699771104,
+      0.95004517326952,
+      0.9601186096399545,
+      0.14384461310804372,
+      0.17394766088539995,
+      0.9550301697097455
+    ]
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "identity": {
+    "registration_sha256": "675f8ad66b533ee4f92a469f9cf1ccda6de4586dbfd46ed25896a5be0544b9fe",
+    "bits": 8,
+    "candidate_id": 62,
+    "kind": "random",
+    "sample_seed": 61001417,
+    "cpa_seed": 0,
+    "fia_seed": 42,
+    "cpa_steps": 25000,
+    "fia_steps": 25000,
+    "fia_horizon": 25000,
+    "smoke": false
+  },
+  "audit": {
+    "seed": 61001417,
+    "chunk_rows": 32,
+    "generator": "torch.Generator(cpu)",
+    "sampler": "uniform_fp64_interpolation_cast_fp32_inclusive_INT8_cells",
+    "codec_metadata": {
+      "codec": "signed_symmetric_bits8_qplus127_nearest_even_cpu_fp32_v1",
+      "bits": 8,
+      "qmin": -127,
+      "qmax": 127,
+      "scale_scope": "per_tensor_absmax_scalar_fp32",
+      "scale_operation": "float32(max_abs/127)",
+      "code_operation": "round(float32(G/s)).clamp(-127,127).int8",
+      "rounding": "nearest_even",
+      "logical_code_bits": 8,
+      "physical_code_storage": "int8",
+      "zero_tensor": "q=0,s=1",
+      "edge_policy": "largest_finite_fp32_absmax_rounding_to_observed_scale"
+    },
+    "anchor": {
+      "flat_index": 6861718,
+      "row": 273,
+      "column": 12694,
+      "q": -127,
+      "value": -0.050204917788505554,
+      "cap": 0.050204917788505554
+    },
+    "scale": 0.0003953143022954464,
+    "scale_reproduced": true,
+    "code_consistency": {
+      "all_equal": true,
+      "mismatch_count": 0,
+      "numel": 102760448,
+      "mismatch_fraction": 0.0
+    },
+    "tensor_sha256": "200692b6d4bc59b04903e5a058ecfda4cd6fd80276beb15ba45757116693912d",
+    "bits": 8,
+    "zero_tensor_convention": "q=0,s=1 -> deterministic all-zero candidate"
+  }
+}

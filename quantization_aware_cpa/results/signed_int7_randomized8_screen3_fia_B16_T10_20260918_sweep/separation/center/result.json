@@ -1,0 +1,67 @@
+{
+  "task_id": "CPA_SIGNED_BITS7654_SCREEN3_20260918_B7",
+  "status": "COMPLETED",
+  "index": "center",
+  "separation_call": 1,
+  "input_sha256": "42c96f0c62f42b2805dbe25dbb807677e03add622941f10e5330f404a7fb4df3",
+  "S_hat_sha256": "ebdd2a6d9aef7c961ca3c994a219f205e0d6f0b482b7812fc2f706e730087e3f",
+  "target_z_sha256": "255f82ef762a7b77da45dc7c0584fcc121a5dde2c720458ba64a577ccd503ea0",
+  "fastica": {
+    "algorithm": "parallel_symmetric_fixed_point_logcosh_alpha1",
+    "corrected_derivative_broadcast": "a[:,None] * W",
+    "converged": true,
+    "iterations": 126,
+    "residual": 9.5367431640625e-07,
+    "max_iter": 200,
+    "tolerance": 1e-06
+  },
+  "refinement": {
+    "optimizer": "SGD",
+    "iterations": 4000,
+    "lr": 0.001,
+    "momentum": 0.0,
+    "weight_decay": 0.0,
+    "scheduler": null,
+    "active_terms": [
+      "negentropy",
+      "decorrelation",
+      "sign",
+      "l1"
+    ],
+    "weights": {
+      "negentropy": 0.0935827857091549,
+      "decorrelation": 0.2513674104161625,
+      "sign": 0.05811961446881231,
+      "l1": 17.94138146247377
+    },
+    "stable_logcosh": true
+  },
+  "whitening": {
+    "algorithm": "row_centered_covariance_torch.linalg.eig_top_abs_eigenvalues",
+    "computed_once_on": "cpu",
+    "shared_between_stages": true,
+    "mu_shape": [
+      4096,
+      1
+    ],
+    "K_shape": [
+      16,
+      4096
+    ],
+    "Xw_shape": [
+      16,
+      25088
+    ],
+    "requested_device": "cpu",
+    "dtype": "float32",
+    "rank_floor": 1e-12
+  },
+  "final_losses": {
+    "negentropy": -0.03890460729598999,
+    "decorrelation": 0.46135658025741577,
+    "sign": 16.75872039794922,
+    "l1": 0.286556214094162,
+    "total": 6.227553844451904
+  },
+  "private_data_used": false
+}

@@ -1,0 +1,9 @@
+{
+  "task_id": "CPA_PAPER_SPARSE_SAME80_K503020_R20_20260921",
+  "plan_version": 3,
+  "amendment_id": "CPA_PAPER_SPARSE_SAME16_R8_AMENDMENT_20260921",
+  "config_sha256": "f4c0e3f3254d4c6719eec4a563e62dac9c19839fe197c524746bdf8405fa639d",
+  "input_manifest_sha256": "d2ad849b9037db7ca8e0e0c912adddb066a05cb24bea9a21ca36abe47fe20896",
+  "packet_audit_sha256": "0df7d89e7bf49e6c3ef1ea9b35ced75d2e4c7fde02e5094ad519ccdded94ca05",
+  "frozen_at_utc": "2026-09-20T23:41:02.996362+00:00"
+}

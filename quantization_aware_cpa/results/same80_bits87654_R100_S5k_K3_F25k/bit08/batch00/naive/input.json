@@ -1,0 +1,10 @@
+{
+  "bits": 8,
+  "batch_index": 0,
+  "input": "observed_codes_times_observed_scale",
+  "sample_sha256": "c645643ecaf69de40504299dba7966fa1cf9562139d20d2c44ff55e47115501d",
+  "sampler": "none_center_baseline",
+  "code_consistency": true,
+  "scale_exact": true,
+  "seed": 0
+}

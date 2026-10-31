@@ -1,0 +1,19 @@
+[CPA recovery final result | CPA_SIGNED_BITS7654_RECOVERY_20260918]
+
+Status: COMPLETED_ARTIFACTS_VERIFIED. Originating user thread: 01a0a7ab-fa58-7d22-ac52-3247b1dd2255.
+
+The one-time wrapper callback reported process exit 0. Actual artifact audit verified all authorized bits 7, 6, 5 and 4: each has 125,000 public FIA updates (bit7 reused saved computation with zero new optimizer steps), a PUBLIC_GATE_PASSED gate, 13 authenticated frozen candidates, and a COMPLETED/EVALUATED private-x-only comparison. Selections are bit7 [0,5,3], bit6 [1,3,4], bit5 [5,7,6], bit4 [6,5,0]. Actual-image cell feasibility remains NOT_EVALUATED.
+
+The raw execution_summary.json retains the late wrapper error `RecoveryError: bit 6 registration bytes changed`; that evidence is preserved. It did not invalidate the saved completed stages. No optimizer trajectory, arm, seed, tuning or private rerun was performed.
+
+Corrected baseline-inclusive contact sheets were completed for bits 5 and 4 from saved candidates and stored matching; the combined figure manifest now covers bits 8,7,6,5,4. Existing sources, candidates, metrics, registrations and parent failure evidence remain preserved.
+
+Report: .ai/execution-results/CPA_SIGNED_BITS7654_RECOVERY_20260918/report.md
+Final audit: .ai/execution-results/CPA_SIGNED_BITS7654_RECOVERY_20260918/final_audit.json
+Evaluation roots:
+- quantization_aware_cpa/results_private/signed_int7_randomized8_screen3_fia_B16_T10_20260918_sweep/evaluation_recovery_20260918
+- quantization_aware_cpa/results_private/signed_int6_randomized8_screen3_fia_B16_T10_20260918_sweep/evaluation_recovery_20260918
+- quantization_aware_cpa/results_private/signed_int5_randomized8_screen3_fia_B16_T10_20260918_sweep/evaluation_recovery_20260918
+- quantization_aware_cpa/results_private/signed_int4_randomized8_screen3_fia_B16_T10_20260918_sweep/evaluation_recovery_20260918
+
+The deferred INT4 original GD-only successor is now marked PARENT_COMPLETED_READY_FOR_ACTIVATION_NO_LAUNCH. No successor research was started in this callback. Please show this result once and end without polling or starting work.

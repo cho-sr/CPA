@@ -1,0 +1,9 @@
+﻿{
+    "task_id":  "CPA_SIGNED_BITS7654_RECOVERY_20260918",
+    "planner_thread":  "01a0a799-d62c-7ab0-9c2a-628acf6d2c95",
+    "status":  "QUEUED",
+    "queue_exit_code":  0,
+    "stdout":  "Queued message 01a0b3f3-58fe-7363-8776-73906228d466 for thread 01a0a799-d62c-7ab0-9c2a-628acf6d2c95.",
+    "report":  "C:\\Users\\조상제\\Desktop\\CPA\\.ai\\execution-results\\CPA_SIGNED_BITS7654_RECOVERY_20260918\\report.md",
+    "final_audit":  "C:\\Users\\조상제\\Desktop\\CPA\\.ai\\execution-results\\CPA_SIGNED_BITS7654_RECOVERY_20260918\\final_audit.json"
+}

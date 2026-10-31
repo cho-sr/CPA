@@ -1,0 +1,117 @@
+{
+  "batches": [
+    {
+      "batch": 0,
+      "embedding": {
+        "max_cs": 0.950606850617391,
+        "mean_cs": 0.8067111700649086,
+        "metric": "Oracle permutation-aligned cosine similarity, evaluation only",
+        "min_cs": 0.1331447098158076,
+        "per_sample_cs": [
+          0.9355056264677587,
+          0.8522144015466069,
+          0.9324517680292529,
+          0.1331447098158076,
+          0.9151910673285818,
+          0.887951644107161,
+          0.8466232926067085,
+          0.950606850617391
+        ],
+        "recovered_cols": [
+          2,
+          6,
+          1,
+          7,
+          4,
+          5,
+          0,
+          3
+        ],
+        "signs": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "truth_rows": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      },
+      "image": {
+        "evaluated_images": 8,
+        "lpips_mean": 0.7397524937987328,
+        "mse_mean": 0.05028641480021179,
+        "psnr_mean": 13.245229959487915,
+        "reconstruction_success_rate": 0.0,
+        "ssim_mean": 0.33717914670705795,
+        "success_lpips_threshold": 0.5
+      },
+      "metric_note": "Oracle metrics are evaluation only and are not fed back to CPA/FIA."
+    }
+  ],
+  "image_metric_dependencies": {
+    "lpips_available": true,
+    "lpips_error": null,
+    "ssim_available": true,
+    "ssim_error": null,
+    "success_lpips_threshold": 0.5
+  },
+  "metric_summary": [
+    {
+      "max": 0.8292031288146973,
+      "mean": 0.7397524937987328,
+      "metric": "lpips",
+      "min": 0.6172369718551636,
+      "n": 8,
+      "std": 0.07701799244086346,
+      "threshold": null
+    },
+    {
+      "max": 15.779119491577148,
+      "mean": 13.245229959487915,
+      "metric": "psnr",
+      "min": 10.994820594787598,
+      "n": 8,
+      "std": 1.5312641807170555,
+      "threshold": null
+    },
+    {
+      "max": 0.4930822551250458,
+      "mean": 0.33717914670705795,
+      "metric": "ssim",
+      "min": 0.1110127717256546,
+      "n": 8,
+      "std": 0.12470601131897129,
+      "threshold": null
+    },
+    {
+      "max": 0.950606850617391,
+      "mean": 0.8067111700649086,
+      "metric": "embedding_cosine_similarity",
+      "min": 0.1331447098158076,
+      "n": 8,
+      "std": 0.25710597950181896,
+      "threshold": null
+    },
+    {
+      "max": 0.0,
+      "mean": 0.0,
+      "metric": "reconstruction_success_rate",
+      "min": 0.0,
+      "n": 8,
+      "std": 0.0,
+      "threshold": 0.5
+    }
+  ]
+}

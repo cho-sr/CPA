@@ -1,0 +1,13 @@
+{
+  "task_id": "CPA_SIGNED_E2E_H1_NOFIA_20260916",
+  "wait_pid": 20948,
+  "process_created_ms": 1789547600682,
+  "executor_thread": "01a0a799-f1ce-7b31-8c46-b4ddef40aeab",
+  "state": "NOTIFICATION_QUEUED",
+  "model_calls_while_waiting": 0,
+  "registered_at": "2026-09-16T08:33:20.776881+00:00",
+  "process_exit_code": 1,
+  "ended_at": "2026-09-16T08:36:10.010440+00:00",
+  "queue_exit_status": 0,
+  "notified_at": "2026-09-16T08:36:10.257502+00:00"
+}

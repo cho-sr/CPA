@@ -1,0 +1,13 @@
+{
+  "keep_ratio": 1.0,
+  "final_accuracy": 0.6974,
+  "final_top5": 0.8966,
+  "best_accuracy": 0.6974,
+  "best_top5": 0.8966,
+  "best_round": 20,
+  "final_val_loss": 1.372842122411728,
+  "final_train_loss": 0.003031543339602649,
+  "average_sparse_relative_l2": 0.0,
+  "average_sparse_cosine_similarity_to_fp32": 1.0,
+  "average_sparse_energy_retained": 1.0
+}

@@ -1,0 +1,14 @@
+{
+  "task_id": "CPA_SIGNED_INT8_SCREEN3_REPAIR_CONTINUE_20260918",
+  "wrapper_pid": 9068,
+  "process_created_ms": 1789663302825,
+  "started_epoch": 1789663302.8287826,
+  "command": [
+    "C:\\miniconda\\envs\\DLG\\python.exe",
+    "-B",
+    "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\.ai\\execution-results\\CPA_SIGNED_INT8_SCREEN3_REPAIR_CONTINUE_20260918\\run_repair.py"
+  ],
+  "status": "LAUNCHED",
+  "hidden": true,
+  "parent_artifacts_preserved": true
+}

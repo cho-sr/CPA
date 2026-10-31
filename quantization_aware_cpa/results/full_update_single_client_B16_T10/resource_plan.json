@@ -1,0 +1,12 @@
+{
+  "scope": "implementation_resource_gate_and_three_iteration_pilot",
+  "training_conditions_changed_for_memory": false,
+  "outer_iterations_per_pilot_arm": 3,
+  "arms": ["cell", "center"],
+  "maximum_projected_optimization_seconds_per_arm": 600,
+  "projection": "measured_single_outer_gradient_seconds * 3; excludes initialization and final hard-label validation",
+  "rule": "Only run the pilot if a finite nonzero outer image gradient completes and projected optimization per arm is <=600 seconds. Longer recovery studies require a separately registered budget.",
+  "registered_after": "full_unroll_allocator_failures",
+  "registered_before": "reverse_recompute_resource_probe",
+  "recovery_success_threshold": "not_registered"
+}

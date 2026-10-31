@@ -1,0 +1,87 @@
+{
+  "purpose": "Document rendering from completed artifacts only",
+  "new_attack_steps": 0,
+  "metrics_recomputed": false,
+  "matching_recomputed": false,
+  "example_indices": [
+    0,
+    1
+  ],
+  "selection": "first two registered identities, independent of quality",
+  "quantization_saved_candidate_indices": {
+    "8:center_25000": [
+      13,
+      1
+    ],
+    "8:rank1_member_01_25000": [
+      13,
+      1
+    ],
+    "7:center_25000": [
+      7,
+      1
+    ],
+    "7:rank1_member_00_25000": [
+      7,
+      1
+    ],
+    "6:center_25000": [
+      10,
+      1
+    ],
+    "6:rank1_member_01_25000": [
+      13,
+      1
+    ],
+    "5:center_25000": [
+      14,
+      11
+    ],
+    "5:rank1_member_05_25000": [
+      9,
+      1
+    ],
+    "4:center_25000": [
+      2,
+      12
+    ],
+    "4:rank1_member_06_25000": [
+      7,
+      8
+    ]
+  },
+  "sparsification": "all80_rec tensors already aligned by saved evaluation",
+  "missing": "CIFAR-100 results; protocol-matched same80/B16/T10/R20 random sparse filling at keep 50/30/20 percent. Older 50/30 percent CoRA results exist under different protocols; see PAPER_SPARSIFICATION_RESULT_AUDIT_20260921.md.",
+  "rendering": "stored RGB, standard ImageNet unnormalization for originals, no enhancement or cropping",
+  "sources_sha256": {
+    "quantization_aware_cpa\\results_private\\signed_int8_screen3_repair_B16_T10_20260918\\evaluation_final_20260918\\comparison.json": "a548a78058069fe828c6d32076b90e0afcb07a49e77fa16a380bcf61c7185c35",
+    "quantization_aware_cpa\\results_private\\signed_int4_baseline_B16_T10\\observation\\evaluation_truth.pt": "724bbacbe316cc28dac086db9cfaf6507f4c1af31144fd610cc480985aab72e2",
+    "quantization_aware_cpa\\results\\signed_int8_randomized8_screen3_fia_B16_T10_20260917\\fia_center_25000\\candidate.pt": "696d18fc23e23ea62834a6c0af849e6549ef47994e4c63fee54c53351d85a0db",
+    "quantization_aware_cpa\\results\\signed_int8_randomized8_screen3_repair_B16_T10_20260918\\fia_member_01_25000\\candidate.pt": "2c2d591957bee5a842af4701c8bfb503c6c9f68e74302fca12eab835cc678411",
+    "quantization_aware_cpa\\results_private\\signed_int7_randomized8_screen3_fia_B16_T10_20260918_sweep\\evaluation_recovery_20260918\\comparison.json": "71b178bbcc3a88deb992af1e3b1613bc2ff0ac419a84bdcbc3c4a2febfc64e86",
+    "quantization_aware_cpa\\results\\signed_int7_randomized8_screen3_fia_B16_T10_20260918_sweep\\fia_center_25000\\candidate.pt": "191dcdeb54269a465aa56a27405d0f47d2ac06d4461ea92806df5b52e56e8472",
+    "quantization_aware_cpa\\results\\signed_int7_randomized8_screen3_fia_B16_T10_20260918_sweep\\fia_member_00_25000\\candidate.pt": "82d34c84e72ad636df1660a45891e97b367c0f7d6d5a2cc19b8dac2af732d601",
+    "quantization_aware_cpa\\results_private\\signed_int6_randomized8_screen3_fia_B16_T10_20260918_sweep\\evaluation_recovery_20260918\\comparison.json": "9d44ec6a1eaefefc16151c5463bf365ed72575ab7ff7953e0cbde2ab10fb4b0d",
+    "quantization_aware_cpa\\results\\signed_int6_randomized8_screen3_fia_B16_T10_20260918_sweep\\fia_center_25000\\candidate.pt": "340d4f162f9632386fce07d8352bf1b08ba126cce718909b28f2274adb9b4075",
+    "quantization_aware_cpa\\results\\signed_int6_randomized8_screen3_fia_B16_T10_20260918_sweep\\fia_member_01_25000\\candidate.pt": "06742e96994ee455aaca62bea394e7df748997fa44c815f41f08fad31f86feb2",
+    "quantization_aware_cpa\\results_private\\signed_int5_randomized8_screen3_fia_B16_T10_20260918_sweep\\evaluation_recovery_20260918\\comparison.json": "bee134ec832db6139f074959b936ffb1f5f935242e91261d9a6bffc91c06533a",
+    "quantization_aware_cpa\\results\\signed_int5_randomized8_screen3_fia_B16_T10_20260918_sweep\\fia_center_25000\\candidate.pt": "a81bdf0ad6a57a57ccc49bb3185b59b6de005d698e4dd47008f27f3860b4013a",
+    "quantization_aware_cpa\\results\\signed_int5_randomized8_screen3_fia_B16_T10_20260918_sweep\\fia_member_05_25000\\candidate.pt": "1b8310dccf236d3eec3dc77f8a44390e129ce579d47382e435fe336c7555ff3f",
+    "quantization_aware_cpa\\results_private\\signed_int4_randomized8_screen3_fia_B16_T10_20260918_sweep\\evaluation_recovery_20260918\\comparison.json": "fac6c5c1716674a23d1a069355626c9125dbd6fd710a6b82c65aa1d1eb0e3fb2",
+    "quantization_aware_cpa\\results\\signed_int4_randomized8_screen3_fia_B16_T10_20260918_sweep\\fia_center_25000\\candidate.pt": "e515a797ef2d04487637957aeb60b8936fc78d469e101fc1aa3971771c157693",
+    "quantization_aware_cpa\\results\\signed_int4_randomized8_screen3_fia_B16_T10_20260918_sweep\\fia_member_06_25000\\candidate.pt": "24a43fdba5a67936bc1f6f80972d60efc16d6d7f4ca19bae0b97743d3909d313",
+    "quantization_aware_cpa\\results\\m6_uia_fp32_B16_fia\\batch00\\inputs.pt": "24995487511a3e9d8d4665fdcd704f7a0f792249a9ba79880638d13bc4740141",
+    "quantization_aware_cpa\\results\\cpa_fia_topk30_20_10_same80_B16\\comparison_metrics.csv": "e8858dd4183fc2c0ffa19d60d91663ca61a54e44e6f53488f3e5c448b61c3325",
+    "quantization_aware_cpa\\results\\cpa_fia_random_topk10_same80_R20_S5k_K3_F25k\\comparison_metrics.csv": "ebf8d5c8ecd8ff6ea419b1768932781e093cc45f97e40df5be94bdbe914f2303",
+    "quantization_aware_cpa\\results\\cpa_fia_topk50_same80_B16\\per_image_metrics.csv": "9b83648bc8994d9825e74650e87dc736c6d2ab32b78c7e477450d0551e49a63a",
+    "quantization_aware_cpa\\results\\cpa_fia_topk50_same80_B16\\all80_rec.pt": "41ea325b50eecca102145a30568a9e7374fd367a86bc4d1a3214a4571e0eb2d8",
+    "quantization_aware_cpa\\results\\cpa_fia_topk30_same80_B16\\per_image_metrics.csv": "c22d1f3beaed678af3d4a6d66490e0beae5ed9c38912e38d3d4cb1c626fb406c",
+    "quantization_aware_cpa\\results\\cpa_fia_topk30_same80_B16\\all80_rec.pt": "7159259bb1f78a35f9fc5a275a83fba3a3534caee7f60512ed28dfdafe52bc93",
+    "quantization_aware_cpa\\results\\cpa_fia_topk20_same80_B16\\per_image_metrics.csv": "5e07d1708799512ee1a1f1be525c20c03d8599b79ab60740cd9e6f385c5ee2bf",
+    "quantization_aware_cpa\\results\\cpa_fia_topk20_same80_B16\\all80_rec.pt": "2d64baa64f6e87dfca07944f63a178caeb8e7f5c6a0b54c0a4cf4c54e41c94b1",
+    "quantization_aware_cpa\\results\\cpa_fia_topk10_same80_B16\\per_image_metrics.csv": "198f59ef1b84db5aa1437ea55397b61628be08b4aac90cb8fc10203e5a992e48",
+    "quantization_aware_cpa\\results\\cpa_fia_topk10_same80_B16\\all80_rec.pt": "996d42cde6abc112af9998a9bc1c85dec3d429efe8498c53f8ae22b82c08df3f",
+    "quantization_aware_cpa\\results\\cpa_fia_random_topk10_same80_R20_S5k_K3_F25k\\per_image_metrics.csv": "af19b38ba31cc1158441c73e9e0457b5b89a760c2cd2d1897ac3cb940e34a20e",
+    "quantization_aware_cpa\\results\\cpa_fia_random_topk10_same80_R20_S5k_K3_F25k\\all80_rec.pt": "63afac3244337a9614ae98b353b4343f501465d3b402942c2fa4500f62a0395f"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "task_id": "CPA_SIGNED_INT8_SCREEN3_REPAIR_CONTINUE_20260918",
+  "stage": "repair_continue",
+  "callback_pid": 9808,
+  "wait_pid": 9068,
+  "expected_created_ms": 1789663302825,
+  "started_epoch": 1789663323.0949008,
+  "status": "REGISTERED",
+  "hidden": true,
+  "model_calls_while_waiting": 0
+}

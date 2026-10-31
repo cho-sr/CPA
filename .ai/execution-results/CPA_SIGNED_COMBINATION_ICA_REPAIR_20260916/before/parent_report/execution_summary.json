@@ -1,0 +1,97 @@
+{
+  "task_id": "CPA_SIGNED_COMBINATION_ICA_IMPLEMENTATION_20260916",
+  "plan_version": 1,
+  "status": "COMPLETED",
+  "stage": "IMPLEMENTATION_AND_FOCUSED_SYNTHETIC_VALIDATION",
+  "scientific_quality": "NOT_EVALUATED",
+  "research_runs": 0,
+  "private_tensors_loaded": 0,
+  "generator_models_used": 0,
+  "real_b16_t10_separation_run": false,
+  "real_direct_fia_run": false,
+  "real_image_replay_run": false,
+  "private_evaluation_run": false,
+  "research_output_root_created": false,
+  "implementation": {
+    "method": "INT4_combination_ica",
+    "stages": [
+      "FastICA parallel symmetric initialization",
+      "active prior-based plain SGD refinement"
+    ],
+    "fastica": {
+      "max_iter": 200,
+      "tolerance": 1e-06,
+      "initialization": "identity_then_symmetric_decorrelation",
+      "first_step_convergence_accepted": true,
+      "row_broadcast": "a[:,None] * W"
+    },
+    "whitening": {
+      "backend": "torch.linalg.eig",
+      "covariance_denominator": "d-1",
+      "computed_on": "CPU",
+      "shared_between_stages": true
+    },
+    "refinement": {
+      "optimizer": "SGD",
+      "iterations": 1000,
+      "lr": 0.001,
+      "momentum": 0.0,
+      "weight_decay": 0.0,
+      "scheduler": null,
+      "negentropy": 0.0935827857091549,
+      "decorrelation": 0.2513674104161625,
+      "sign": 0.05811961446881231,
+      "l1": 17.94138146247377,
+      "stable_logcosh": true
+    },
+    "output": {
+      "signed": "S_hat in native estimated order",
+      "target": "exact abs(S_hat)",
+      "dtype": "float32",
+      "device": "CPU artifact"
+    },
+    "public_integration": {
+      "direct_fia": "unchanged qacpa.upstream_naive.run_upstream_fia bridge",
+      "actual_update": "unchanged qacpa.signed_e2e_runner.run_arm bridge",
+      "fc_tensors": 6,
+      "fc_local_steps": 10,
+      "image_steps": 100,
+      "h1_assignment": "recomputed from current candidate public logits and positive bias-code coverage"
+    }
+  },
+  "validation": {
+    "focused_command": "C:/miniconda/envs/DLG/python.exe -m pytest -q tests/test_signed_combination_ica.py tests/test_signed_combination_ica_pipeline.py tests/test_signed_e2e_cells.py",
+    "focused_result": "20 passed",
+    "upstream_contract_command": "C:/miniconda/envs/DLG/python.exe -m pytest -q tests/test_upstream_naive.py",
+    "upstream_contract_result": "5 passed, 1 warning",
+    "py_compile": "passed",
+    "cli_help": "passed",
+    "logs": [
+      "focused_tests.log",
+      "upstream_contract_tests.log",
+      "py_compile.log",
+      "cli_help.log"
+    ],
+    "warning": "existing official_cpa gradient_inversion.py complex-to-real cast warning in the unchanged upstream contract test"
+  },
+  "integrity_report": "source_integrity.json",
+  "changed_files": [
+    "quantization_aware_cpa/qacpa/signed_combination_ica.py",
+    "quantization_aware_cpa/qacpa/signed_combination_ica_runner.py",
+    "quantization_aware_cpa/qacpa/ICA_GA_MIT_NOTICE.txt",
+    "quantization_aware_cpa/tests/test_signed_combination_ica.py",
+    "quantization_aware_cpa/tests/test_signed_combination_ica_pipeline.py",
+    "quantization_aware_cpa/docs/signed_combination_ica.md"
+  ],
+  "future_commands": [
+    "Set-Location C:\\Users\\<user>\\Desktop\\CPA; $env:PYTHONPATH = 'C:\\Users\\<user>\\Desktop\\CPA\\quantization_aware_cpa;C:\\Users\\<user>\\Desktop\\CPA'; $python = 'C:\\miniconda\\envs\\DLG\\python.exe'; & $python -m qacpa.signed_combination_ica_runner separate --output quantization_aware_cpa/results/signed_combination_ica_B16_T10_20260916",
+    "& $python -m qacpa.signed_combination_ica_runner invert --source-root quantization_aware_cpa/results/signed_combination_ica_B16_T10_20260916 --output quantization_aware_cpa/results/signed_combination_ica_B16_T10_20260916/direct_fia",
+    "& $python -m qacpa.signed_combination_ica_runner refine --source-root quantization_aware_cpa/results/signed_combination_ica_B16_T10_20260916 --candidate-root quantization_aware_cpa/results/signed_combination_ica_B16_T10_20260916/direct_fia --output quantization_aware_cpa/results/signed_combination_ica_B16_T10_20260916/actual_update_refinement"
+  ],
+  "limitations": [
+    "No claim of image reconstruction improvement or scientific quality is made.",
+    "The full public matrix whitening and CUDA stages remain future execution stages requiring separate authorization.",
+    "FastICA/GD defaults are adopted source defaults and were not tuned for the INT4 packet."
+  ],
+  "completed_at_utc": "2026-09-16T13:08:49.199544+00:00"
+}

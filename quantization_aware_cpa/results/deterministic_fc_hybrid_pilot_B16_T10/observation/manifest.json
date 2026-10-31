@@ -1,0 +1,280 @@
+{
+  "format": "frozen_conv_all_fc_single_client_deterministic_uint4_v1",
+  "codec": "uniform_affine_uint4_nearest_even_v1",
+  "model": "vgg16",
+  "training_scope": "fc_only_conv_frozen",
+  "observation_scope": "all_classifier_parameters",
+  "observation_source": "single_client",
+  "image_shape": [
+    16,
+    3,
+    224,
+    224
+  ],
+  "num_classes": 1000,
+  "normalization": "imagenet",
+  "dropout_probability": 0.0,
+  "bits": 4,
+  "delta_convention": "final_minus_initial",
+  "row_layout": "weights_output_rows_bias_single_row",
+  "training": {
+    "optimizer": "sgd",
+    "steps": 10,
+    "lr": 0.001,
+    "momentum": 0.0,
+    "weight_decay": 0.0,
+    "batch_order": [
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ]
+    ]
+  },
+  "permissions": {
+    "packet_includes_public_radii": true,
+    "starting_checkpoint_public": true,
+    "training_rules_public": true,
+    "labels": "private",
+    "bandwidth_accounting": "4bit_codes_plus_reported_metadata"
+  },
+  "checkpoint_sha256": "397923af8e79cdbb6a7127f12361acd7a2f83e06b05044ddf496e83de57a5bf0",
+  "layers": {
+    "classifier.0.bias": {
+      "shape": [
+        4096
+      ],
+      "packet": "packet_00.bin",
+      "sha256": "b4aebd66320edc7a84df93dec290667ce1c48e566dca6ca1c4221991638a4162",
+      "packet_bytes": 2084
+    },
+    "classifier.0.weight": {
+      "shape": [
+        4096,
+        25088
+      ],
+      "packet": "packet_01.bin",
+      "sha256": "c213bdd96e7926af4e450d7a586deb7429e28f2ae355045d9c5373fa5ccd37cc",
+      "packet_bytes": 51396640
+    },
+    "classifier.3.bias": {
+      "shape": [
+        4096
+      ],
+      "packet": "packet_02.bin",
+      "sha256": "fb3075b8296d0c9c529f0d5e6e897b1a151f2d5e5eff3a62d992a07321c78ce7",
+      "packet_bytes": 2084
+    },
+    "classifier.3.weight": {
+      "shape": [
+        4096,
+        4096
+      ],
+      "packet": "packet_03.bin",
+      "sha256": "9e0b4433d8e2a47ec16f692ad9fa6e4b0ad062459a56c44d0f31f873a5fa25ac",
+      "packet_bytes": 8405024
+    },
+    "classifier.6.bias": {
+      "shape": [
+        1000
+      ],
+      "packet": "packet_04.bin",
+      "sha256": "ac09d2b949c9f1c6bd8341ceaf76d1d43c99456f838ba009ae9e0d5f360fd589",
+      "packet_bytes": 536
+    },
+    "classifier.6.weight": {
+      "shape": [
+        1000,
+        4096
+      ],
+      "packet": "packet_05.bin",
+      "sha256": "ac1f9b0a32d04ed4e7e1b834ad44d3636c385fa8c5daaeb191dc50e768989033",
+      "packet_bytes": 2052032
+    }
+  },
+  "communication": {
+    "elements": 123642856,
+    "code_bytes": 61821428,
+    "radius_bytes": 36780,
+    "packet_header_bytes": 192,
+    "parameter_tensors": 6,
+    "layer_packet_bytes": 61858400,
+    "manifest_bytes": 4631,
+    "total_public_bytes": 61863031
+  }
+}

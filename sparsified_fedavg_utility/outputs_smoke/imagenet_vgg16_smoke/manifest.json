@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "runner": "sparsified_fedavg_utility/run_sparse_fedavg_utility.py",
+  "ds": "imagenet",
+  "model": "vgg16",
+  "keep_ratios": [
+    1.0,
+    0.5
+  ],
+  "output_dir": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\sparsified_fedavg_utility\\outputs_smoke\\imagenet_vgg16_smoke",
+  "private_split": "test",
+  "eval_split": "test",
+  "eval_samples": 2,
+  "num_clients": 1,
+  "rounds": 1,
+  "samples_per_client": 1,
+  "local_epochs": 1,
+  "local_batch_size": 1,
+  "lr": 0.001,
+  "seed": 42,
+  "device": "cuda"
+}

@@ -1,0 +1,124 @@
+{
+  "status": "COMPLETED",
+  "arm": "member_03_5000",
+  "stage": "INVERT",
+  "completed_iterations": 5000,
+  "total_schedule_iterations": 25000,
+  "checkpoint": "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int8_randomized8_screen3_fia_B16_T10_20260917/fia_member_03_5000/checkpoint_5000.pt",
+  "checkpoint_sha256": "7b486947edb31f0322e0bfa4fe48bbf195ecf874a4343f4f9d0cd6cd2195ebf3",
+  "prefix_checkpoint": null,
+  "prefix_checkpoint_sha256": null,
+  "candidate": "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int8_randomized8_screen3_fia_B16_T10_20260917/fia_member_03_5000/candidate.pt",
+  "candidate_sha256": "01bb24d89d60ee68d1a6b95cd2201cdc4bb5be4ec1d5cac4fdd492150ef0501b",
+  "prefix_candidate": null,
+  "prefix_candidate_sha256": null,
+  "candidate_tensor_sha256": "1dfe10aa379bd14bfc932d905e5f69cb8c25491890c13bc75a9e6cde609457cd",
+  "target_z_sha256": "6358fd599203f9baef7b9278c0c2f5751a6d86e2273bc9c46406a2cf7c8547fa",
+  "source_sha256": "7bf3496272cfa7d98ab8ec177bc23a151cc2616330f6940a62096045ba06d1b4",
+  "initial_image_sha256": "6f6ec493923b7081284f0fc405f76f60b583cc41a5977393751f96bb21147e59",
+  "parent_checkpoint_sha256": null,
+  "log": [
+    {
+      "iter": 1,
+      "loss": 1.1284860372543335,
+      "loss_fi": 0.9078003168106079,
+      "loss_gm": 0.0,
+      "loss_tv": 2.2068567276000977,
+      "time_sec": 0.07876730000134557
+    },
+    {
+      "iter": 5000,
+      "loss": 0.07608559727668762,
+      "loss_fi": 0.04268870875239372,
+      "loss_gm": 0.0,
+      "loss_tv": 0.3339689075946808,
+      "time_sec": 394.46235180005897
+    }
+  ],
+  "fia_config": {
+    "n_iter": 25000,
+    "lr": 0.1,
+    "tv": 0.1,
+    "fi": 1.0,
+    "optimizer": "adam",
+    "scheduler": "cosine",
+    "log_every": 5000
+  },
+  "runtime": {
+    "seed": 42,
+    "device": "cuda",
+    "target_z_sha256": "6358fd599203f9baef7b9278c0c2f5751a6d86e2273bc9c46406a2cf7c8547fa",
+    "initial_image_sha256": "6f6ec493923b7081284f0fc405f76f60b583cc41a5977393751f96bb21147e59",
+    "target_shape": [
+      16,
+      25088
+    ],
+    "settings": {
+      "n_iter": 25000,
+      "lr": 0.1,
+      "tv": 0.1,
+      "fi": 1.0,
+      "optimizer": "adam",
+      "scheduler": "cosine",
+      "log_every": 5000,
+      "seed": 42,
+      "device": "cuda",
+      "backend": "official_cpa/src/feature_inversion.py:Direct",
+      "upstream_source_hashes": {
+        "C:\\Users\\조상제\\Desktop\\CPA\\official_cpa\\src\\datasets.py": "f9e7b47733b5acb4b73e6914a3f100b5187766bbed78a12d17b69c39eec1b6d1",
+        "C:\\Users\\조상제\\Desktop\\CPA\\official_cpa\\src\\utils.py": "565f1bf1a47f387d042b35bb24f677d1ff0d3ec5d979e2876c31ed114179b9fe",
+        "C:\\Users\\조상제\\Desktop\\CPA\\official_cpa\\src\\gradient_inversion_utils.py": "668d77788dc8d81c181c8c0a9fbe8533c6fbea22ba46fe7f5e15b0a431300e5f",
+        "C:\\Users\\조상제\\Desktop\\CPA\\official_cpa\\src\\gradient_inversion.py": "c598e1ee7b4079f741060d10c8dfd14711e393a97384c63cf32be77a458b1873",
+        "C:\\Users\\조상제\\Desktop\\CPA\\official_cpa\\src\\feature_inversion.py": "dc73880427e3eaf1f873d295f17f1d48d301882f634ee5df36ddeea8e56c4dec",
+        "C:\\Users\\조상제\\Desktop\\CPA\\official_cpa\\src\\vgg16.py": "8114eca8cde553dace5f777aedd21b70851c570d473e597b005cb6be4b248d36",
+        "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\qacpa\\upstream_naive.py": "8f29b885d86f4121eda5c55e17486a3a48bd8db08b2f83890fe7726730d1ee92",
+        "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\qacpa\\seed.py": "769366fcc2cf3e144d8caa86f73a55dcb0b6be615a45dab8b6e117399150c558"
+      },
+      "schedule_semantics": "constructed_with_T_max_25000_outer_stop_only"
+    },
+    "source_hashes": {
+      "C:\\Users\\조상제\\Desktop\\CPA\\official_cpa\\src\\datasets.py": "f9e7b47733b5acb4b73e6914a3f100b5187766bbed78a12d17b69c39eec1b6d1",
+      "C:\\Users\\조상제\\Desktop\\CPA\\official_cpa\\src\\utils.py": "565f1bf1a47f387d042b35bb24f677d1ff0d3ec5d979e2876c31ed114179b9fe",
+      "C:\\Users\\조상제\\Desktop\\CPA\\official_cpa\\src\\gradient_inversion_utils.py": "668d77788dc8d81c181c8c0a9fbe8533c6fbea22ba46fe7f5e15b0a431300e5f",
+      "C:\\Users\\조상제\\Desktop\\CPA\\official_cpa\\src\\gradient_inversion.py": "c598e1ee7b4079f741060d10c8dfd14711e393a97384c63cf32be77a458b1873",
+      "C:\\Users\\조상제\\Desktop\\CPA\\official_cpa\\src\\feature_inversion.py": "dc73880427e3eaf1f873d295f17f1d48d301882f634ee5df36ddeea8e56c4dec",
+      "C:\\Users\\조상제\\Desktop\\CPA\\official_cpa\\src\\vgg16.py": "8114eca8cde553dace5f777aedd21b70851c570d473e597b005cb6be4b248d36",
+      "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\qacpa\\upstream_naive.py": "8f29b885d86f4121eda5c55e17486a3a48bd8db08b2f83890fe7726730d1ee92",
+      "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\qacpa\\seed.py": "769366fcc2cf3e144d8caa86f73a55dcb0b6be615a45dab8b6e117399150c558"
+    },
+    "setup_wall_seconds": 0.5990529999835417,
+    "schedule_T_max": 25000
+  },
+  "wall_seconds": 394.46242320002057,
+  "allocated_cuda_bytes": 100410368,
+  "score": {
+    "feature_cosine_distances": [
+      0.017905712127685547,
+      0.006186008453369141,
+      0.005680441856384277,
+      0.013193368911743164,
+      0.005164384841918945,
+      0.005780220031738281,
+      0.010977685451507568,
+      0.01622217893600464,
+      0.006431102752685547,
+      0.010088026523590088,
+      0.0109025239944458,
+      0.006547272205352783,
+      0.029582619667053223,
+      0.13429474830627441,
+      0.11855697631835938,
+      0.2854173183441162
+    ],
+    "feature_cosine_distance_mean": 0.04268316179513931,
+    "tv_normalized": 0.3343619704246521,
+    "score": 0.07611936330795288,
+    "raw_image_sha256_before": "fb5f8556721cf1b7e7240a7e6214d596d885cc9e9150f04d6756c96998667d25",
+    "raw_image_sha256_after": "fb5f8556721cf1b7e7240a7e6214d596d885cc9e9150f04d6756c96998667d25",
+    "raw_state_unchanged": true,
+    "score_semantics": "post_update_clone_feature_cosine_distance_plus_0.1_normalized_TV",
+    "checkpoint_sha256": "7b486947edb31f0322e0bfa4fe48bbf195ecf874a4343f4f9d0cd6cd2195ebf3",
+    "candidate_sha256": "01bb24d89d60ee68d1a6b95cd2201cdc4bb5be4ec1d5cac4fdd492150ef0501b",
+    "completed_iterations": 5000
+  }
+}

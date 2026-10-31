@@ -1,0 +1,91 @@
+{
+  "task_id": "CPA_SIGNED_COMBINATION_ICA_REPAIR_20260916",
+  "plan_version": 1,
+  "status": "COMPLETED",
+  "stage": "IMPLEMENTATION_REPAIR_AND_FOCUSED_SYNTHETIC_INTEGRATION_VALIDATION",
+  "method": "INT4_combination_ica",
+  "scientific_quality": "NOT_EVALUATED",
+  "research_runs": 0,
+  "private_tensors_loaded": 0,
+  "generator_models_used": 0,
+  "real_b16_t10_separation_run": false,
+  "real_direct_fia_run": false,
+  "real_image_replay_run": false,
+  "private_evaluation_run": false,
+  "research_output_root_created": false,
+  "repair": {
+    "feature_shape": [
+      16,
+      25088
+    ],
+    "target_contract": "target_z equals abs(S_hat) exactly in native estimated order",
+    "canonical_separator_config_bound": true,
+    "canonical_fia_config_bound": true,
+    "runtime_setup_recorded": true,
+    "stage_integrity_pre_post": [
+      "SEPARATE",
+      "INVERT",
+      "REFINE"
+    ],
+    "refine_arm": "B_H1_combination_ica",
+    "top_level_method": "INT4_combination_ica",
+    "label_hypothesis": "coverage-based public H1 assignment recomputed from the new candidate and frozen before optimization",
+    "endpoint_profiles": [
+      "start_profile.json",
+      "final_profile.json"
+    ],
+    "preflight_persisted_before_optimization": true,
+    "feasibility_is_separate_from_software_status": true,
+    "historical_run_arm_unchanged": true,
+    "historical_sources_and_results_preserved": true
+  },
+  "synthetic_validation": {
+    "focused_command": "C:/miniconda/envs/DLG/python.exe -m pytest -q tests/test_signed_combination_ica.py tests/test_signed_combination_ica_pipeline.py tests/test_signed_e2e_cells.py",
+    "focused_result": "31 passed",
+    "upstream_contract_command": "C:/miniconda/envs/DLG/python.exe -m pytest -q tests/test_upstream_naive.py",
+    "upstream_contract_result": "5 passed, 1 warning",
+    "py_compile": "passed",
+    "cli_help": "passed",
+    "logs": [
+      "focused_tests.log",
+      "upstream_contract_tests.log",
+      "py_compile.log",
+      "cli_help.log"
+    ],
+    "coverage": [
+      "real source writer/loader round trip with 16x25088 FP32 tensors and exact abs target",
+      "real synthetic separate-to-invert orchestration with mocked packet/ICA/FIA boundaries",
+      "real synthetic refine orchestration with mocked model/device/replay/refiner boundaries",
+      "both mocked exact-feasible and exact-infeasible endpoint reports",
+      "preflight/start evidence retained after downstream failure",
+      "source/candidate/public/protected/shared integrity mismatch rejection",
+      "method/stage/status/config/schema/hash/output-collision rejection"
+    ],
+    "warning": "pre-existing complex-to-real cast warning in unchanged official_cpa gradient_inversion.py upstream contract test"
+  },
+  "exact_feasibility": {
+    "production_artifact_evaluated": false,
+    "mock_feasible_flow_preserved": true,
+    "mock_infeasible_flow_preserved": true,
+    "software_completion_can_remain_completed_when_exact_feasible_is_false": true,
+    "scientific_claim": "NOT_EVALUATED"
+  },
+  "preservation": {
+    "pre_repair_archive": "before/",
+    "parent_completed_report_archive": "before/parent_report/",
+    "parent_completed_handoff_archive": "before/parent_handoff.md",
+    "historical_output_root_overwritten": false
+  },
+  "future_research": {
+    "commands": [
+      "Set-Location (Join-Path $env:USERPROFILE 'Desktop\\CPA')",
+      "$env:PYTHONPATH = \"$(Get-Location)\\quantization_aware_cpa;$(Get-Location)\"",
+      "& C:/miniconda/envs/DLG/python.exe -m qacpa.signed_combination_ica_runner separate --output quantization_aware_cpa/results/signed_combination_ica_B16_T10_20260916",
+      "& C:/miniconda/envs/DLG/python.exe -m qacpa.signed_combination_ica_runner invert --source-root quantization_aware_cpa/results/signed_combination_ica_B16_T10_20260916 --output quantization_aware_cpa/results/signed_combination_ica_B16_T10_20260916/direct_fia",
+      "& C:/miniconda/envs/DLG/python.exe -m qacpa.signed_combination_ica_runner refine --source-root quantization_aware_cpa/results/signed_combination_ica_B16_T10_20260916 --candidate-root quantization_aware_cpa/results/signed_combination_ica_B16_T10_20260916/direct_fia --output quantization_aware_cpa/results/signed_combination_ica_B16_T10_20260916/actual_update_refinement"
+    ],
+    "automatic_run_after_repair": false
+  },
+  "source_integrity": "source_integrity.json",
+  "completed_at_utc": "2026-09-16T14:00:48.070085+00:00"
+}

@@ -1,0 +1,123 @@
+{
+  "retained_summary": [
+    {
+      "scope": "all",
+      "batch": "",
+      "n_retained": 30,
+      "A_cos_mean": 0.9961840271949768,
+      "A_cos_min": 0.983098030090332,
+      "A_oracle_cos_mean": 0.9990364491939545,
+      "A_oracle_cos_min": 0.9955968856811523,
+      "delta_mean": 0.002852421998977661,
+      "delta_min": -0.001574695110321045,
+      "delta_max": 0.01583421230316162,
+      "oracle_gt_A_count": 28,
+      "A_lt_0_99_count": 3,
+      "oracle_lt_0_99_count": 0
+    },
+    {
+      "scope": "batch",
+      "batch": 0,
+      "n_retained": 6,
+      "A_cos_mean": 0.9964759747187296,
+      "A_cos_min": 0.9881029725074768,
+      "A_oracle_cos_mean": 0.9987901647885641,
+      "A_oracle_cos_min": 0.9979523420333862,
+      "delta_mean": 0.002314190069834391,
+      "delta_min": -3.236532211303711e-05,
+      "delta_max": 0.010316550731658936,
+      "oracle_gt_A_count": 5,
+      "A_lt_0_99_count": 1,
+      "oracle_lt_0_99_count": 0
+    },
+    {
+      "scope": "batch",
+      "batch": 1,
+      "n_retained": 6,
+      "A_cos_mean": 0.990039606889089,
+      "A_cos_min": 0.983098030090332,
+      "A_oracle_cos_mean": 0.9990834097067515,
+      "A_oracle_cos_min": 0.9987993240356445,
+      "delta_mean": 0.009043802817662558,
+      "delta_min": 0.005950212478637695,
+      "delta_max": 0.01583421230316162,
+      "oracle_gt_A_count": 6,
+      "A_lt_0_99_count": 2,
+      "oracle_lt_0_99_count": 0
+    },
+    {
+      "scope": "batch",
+      "batch": 2,
+      "n_retained": 7,
+      "A_cos_mean": 0.9983424203736442,
+      "A_cos_min": 0.9971715807914734,
+      "A_oracle_cos_mean": 0.9988579324313572,
+      "A_oracle_cos_min": 0.9955968856811523,
+      "delta_mean": 0.0005155120577130999,
+      "delta_min": -0.001574695110321045,
+      "delta_max": 0.0019949674606323242,
+      "oracle_gt_A_count": 6,
+      "A_lt_0_99_count": 0,
+      "oracle_lt_0_99_count": 0
+    },
+    {
+      "scope": "batch",
+      "batch": 3,
+      "n_retained": 6,
+      "A_cos_mean": 0.9979524115721384,
+      "A_cos_min": 0.9946874976158142,
+      "A_oracle_cos_mean": 0.9990314145882925,
+      "A_oracle_cos_min": 0.9962489604949951,
+      "delta_mean": 0.0010790030161539714,
+      "delta_min": 0.0006770491600036621,
+      "delta_max": 0.0015614628791809082,
+      "oracle_gt_A_count": 6,
+      "A_lt_0_99_count": 0,
+      "oracle_lt_0_99_count": 0
+    },
+    {
+      "scope": "batch",
+      "batch": 4,
+      "n_retained": 5,
+      "A_cos_mean": 0.9980631828308105,
+      "A_cos_min": 0.9967361688613892,
+      "A_oracle_cos_mean": 0.999531602859497,
+      "A_oracle_cos_min": 0.9993788003921509,
+      "delta_mean": 0.0014684200286865234,
+      "delta_min": 0.00017762184143066406,
+      "delta_max": 0.0027397871017456055,
+      "oracle_gt_A_count": 5,
+      "A_lt_0_99_count": 0,
+      "oracle_lt_0_99_count": 0
+    }
+  ],
+  "lpips_gap_recovery_correlation": [
+    {
+      "scope": "batch_only",
+      "n_batches": 5,
+      "pearson_gap_recovery": -0.3049771778101928,
+      "pearson_gap_recovery_pvalue": 0.617797408664483,
+      "spearman_gap_recovery": 0.49999999999999994,
+      "spearman_gap_recovery_pvalue": 0.3910022189557703,
+      "pearson_naive_recovery": -0.401923938933609,
+      "pearson_naive_recovery_pvalue": 0.502387478199255,
+      "spearman_naive_recovery": -0.39999999999999997,
+      "spearman_naive_recovery_pvalue": 0.5046315754686912,
+      "pearson_cond_recovery": -0.14654988911862712,
+      "pearson_cond_recovery_pvalue": 0.814076960264795,
+      "spearman_cond_recovery": 0.7999999999999999,
+      "spearman_cond_recovery_pvalue": 0.10408803866182788,
+      "gap_values": "0.0828102678 0.11227037 0.0850816667 0.0843841247 0.131077532",
+      "recovery_values": "-0.0901074676 -0.084411641 0.455510187 -0.0555248171 -0.0301233248",
+      "naive_lpips_values": "0.551112279 0.533482987 0.51776306 0.521328632 0.596014787",
+      "cond_A_true_values": "161.43808 92.5982285 3130.80908 2953.77612 114545.359"
+    }
+  ],
+  "outputs": {
+    "retained_cosines": "results\\v8_pre_refine_diagnostics\\retained_A_vs_A_oracle_cosines.csv",
+    "retained_summary": "results\\v8_pre_refine_diagnostics\\retained_A_vs_A_oracle_summary.csv",
+    "gap_correlation": "results\\v8_pre_refine_diagnostics\\lpips_gap_recovery_correlation.csv",
+    "batch_lpips_gap_recovery": "results\\v8_pre_refine_diagnostics\\batch_lpips_gap_recovery_table.csv",
+    "full_n_spearman": "results\\v8_pre_refine_diagnostics\\full_n_spearman_by_batch.csv"
+  }
+}

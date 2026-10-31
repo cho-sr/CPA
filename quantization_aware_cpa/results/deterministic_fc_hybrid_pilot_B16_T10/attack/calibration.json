@@ -1,0 +1,13 @@
+{
+  "method": "initial_public_image_gradient_norm_ratio_fixed_after_calibration",
+  "scale_floor": 4.0987196067969e-06,
+  "floor_rule": "median_positive_public_quantization_step",
+  "lambda_F": 1.0,
+  "lambda_TV": 1.1169759484351267,
+  "lambda_q_and_radius": 0.0010545856074191738,
+  "warmup_lambda_TV": 0.7947556474447005,
+  "initial_FIA_gradient_norm": 0.012446089647710323,
+  "initial_observation_gradient_norm": 2.9504692554473877,
+  "initial_TV_gradient_norm": 0.0011142665753141046,
+  "initial_observation_loss": 37.23734685347698
+}

@@ -1,0 +1,21 @@
+{
+  "attack": {
+    "iterations": 3,
+    "seed": 42,
+    "image_lr": 0.1,
+    "label_lr": 0.1,
+    "tv_weight": 0.0001,
+    "radius_weight": 1.0,
+    "checkpoint_forward": true,
+    "saved_tensors_on_cpu": false,
+    "log_every": 1,
+    "fit_tolerance_steps": 1e-06,
+    "gradient_strategy": "recompute_reverse"
+  },
+  "mode": "cell",
+  "probe_only": true,
+  "method": "direct_image_optimization_without_CPA",
+  "observation_manifest_sha256": "9256f2c1a1ac702ac9670c25a843020c879053ce357ea898993e2d8168327205",
+  "contract_sha256": "64d52bedd1e261d99483b992ebecac0a6fd1b56bc59a523e0e857ca33a9c6a1a",
+  "checkpoint_sha256": "397923af8e79cdbb6a7127f12361acd7a2f83e06b05044ddf496e83de57a5bf0"
+}

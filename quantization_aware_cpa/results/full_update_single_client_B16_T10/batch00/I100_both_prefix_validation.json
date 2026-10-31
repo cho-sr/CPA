@@ -1,0 +1,12 @@
+{
+  "cell": {
+    "first_three_numeric_logs_exact": true,
+    "recorded_fingerprints_match": true,
+    "only_changed_attack_setting": "iterations3->100"
+  },
+  "center": {
+    "first_three_numeric_logs_exact": true,
+    "recorded_fingerprints_match": true,
+    "only_changed_attack_setting": "iterations3->100"
+  }
+}

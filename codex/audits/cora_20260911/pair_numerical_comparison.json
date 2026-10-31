@@ -1,0 +1,28 @@
+{
+  "keep80": {
+    "old_shared_dense_hash": "b5a99e7d173bf10cdc8e7f0348bb0edffac086bc5e1e552af7c08f8be395f255",
+    "current_sparse_hash": "b5a99e7d173bf10cdc8e7f0348bb0edffac086bc5e1e552af7c08f8be395f255",
+    "full_update_numerically_equal": true,
+    "checkpoint_sha_equal": true,
+    "fc1_comparison": {
+      "numerically_equal": true,
+      "different_elements": 0,
+      "max_abs_error": 0.0,
+      "relative_l2": 0.0
+    }
+  },
+  "keep10": {
+    "cora_vs_zero_fill_fc1": {
+      "numerically_equal": false,
+      "different_elements": 3683060,
+      "max_abs_error": 2.977438271045685e-06,
+      "relative_l2": 0.05158788969975921
+    },
+    "sample_indices_equal": true,
+    "checkpoint_sha_equal": false,
+    "micro_batch_sizes": [
+      24,
+      4
+    ]
+  }
+}

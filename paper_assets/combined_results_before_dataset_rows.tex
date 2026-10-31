@@ -1,0 +1,44 @@
+% Generated from existing result JSON/CSV by build_comparison_panels.py.
+\begin{table*}[t]
+\centering
+\caption{Combined result layout for ImageNet and CIFAR-100.
+Naive is center decoding for quantization and zero filling for sparsification.
+ImageNet quantization uses \cora{}; sparse random filling uses a separate
+CPA backend and update-consistency selector (Section~\ref{sec:sparse}).
+Compare each randomized row with its matched naive control within the same
+block. Dashes denote unreported results, including all reserved CIFAR-100 cells.}
+\label{tab:compression}
+\label{tab:bits}
+\small
+\setlength{\tabcolsep}{5pt}
+\begin{tabular}{llrrr rrr}
+\toprule
+ & & \multicolumn{3}{c}{ImageNet} & \multicolumn{3}{c}{CIFAR-100 (pending)}\\
+\cmidrule(lr){3-5}\cmidrule(lr){6-8}
+Setting & Method & PSNR $\uparrow$ & SSIM $\uparrow$ & LPIPS $\downarrow$
+ & PSNR $\uparrow$ & SSIM $\uparrow$ & LPIPS $\downarrow$\\
+\midrule
+\multicolumn{8}{l}{\textit{Quantization: signed, per-tensor}}\\
+8-bit & Naive & 12.0569 & 0.2924 & 0.5594 & --- & --- & ---\\
+8-bit & \cora{} & 12.0568 & 0.3070 & 0.5558 & --- & --- & ---\\
+7-bit & Naive & 11.7955 & 0.2764 & 0.6118 & --- & --- & ---\\
+7-bit & \cora{} & 11.8314 & 0.2827 & 0.6332 & --- & --- & ---\\
+6-bit & Naive & 11.6397 & 0.2596 & 0.6961 & --- & --- & ---\\
+6-bit & \cora{} & 11.6675 & 0.2690 & 0.6659 & --- & --- & ---\\
+5-bit & Naive & 11.5524 & 0.2620 & 0.7826 & --- & --- & ---\\
+5-bit & \cora{} & 11.5458 & 0.2558 & 0.7490 & --- & --- & ---\\
+4-bit & Naive & 11.5197 & 0.2921 & 0.8071 & --- & --- & ---\\
+4-bit & \cora{} & 11.5028 & 0.2576 & 0.8085 & --- & --- & ---\\
+\midrule
+\multicolumn{8}{l}{\textit{Sparsification: magnitude top-$k$, retained fraction}}\\
+50\% keep & Naive & 22.2878 & 0.3344 & 0.4864 & --- & --- & ---\\
+50\% keep & Random fill & --- & --- & --- & --- & --- & ---\\
+30\% keep & Naive & 22.1371 & 0.3141 & 0.5098 & --- & --- & ---\\
+30\% keep & Random fill & --- & --- & --- & --- & --- & ---\\
+20\% keep & Naive & 21.8720 & 0.2906 & 0.5536 & --- & --- & ---\\
+20\% keep & Random fill & --- & --- & --- & --- & --- & ---\\
+10\% keep & Naive & 21.5305 & 0.2631 & 0.6323 & --- & --- & ---\\
+10\% keep & Random fill & 21.5104 & 0.2610 & 0.6300 & --- & --- & ---\\
+\bottomrule
+\end{tabular}
+\end{table*}

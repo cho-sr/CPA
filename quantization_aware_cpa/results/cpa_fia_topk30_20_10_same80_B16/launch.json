@@ -1,0 +1,14 @@
+{
+    "cmd_pid":  11168,
+    "launched_at_utc":  "2026-09-11T05:39:15.2225351Z",
+    "command":  "cmd.exe /d /c scripts\\run_topk30_20_10_same80.bat",
+    "working_directory":  "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa",
+    "keep_percents":  [
+                          30,
+                          20,
+                          10
+                      ],
+    "n_batches_total":  15,
+    "state":  "launched",
+    "expected_runtime_hours":  "8-9 based on completed Top-k50 run"
+}

@@ -1,0 +1,47 @@
+{
+  "attack_trials": 1,
+  "dequantization_scope": "attack_layer",
+  "ds": "imagenet",
+  "ensemble_size": 2,
+  "h_dim": 256,
+  "local_batch_size": 2,
+  "local_epochs": 1,
+  "local_lr": 0.001,
+  "member_ranking_file": "consistency_member_ranking.csv",
+  "method": "CoRA-style fixed-bit randomized dequantization consistency ranking",
+  "missing_value_policy": "sample continuous residual inside quantization bin",
+  "missing_value_sampler": "uniform",
+  "model": "vgg16",
+  "model_checkpoint_for_attack_and_ranking": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\mixed_bit_fedavg\\outputs_smoke\\fixed4_single_client_obs\\client_qs\\final_round_global_model_before.pt",
+  "n_samples": 2,
+  "noise_seed": 4321,
+  "oracle_inputs_used_for_ranking": false,
+  "quant_bits": 4,
+  "ranking_label_mode": "model_pred",
+  "ranking_observation": "one_client_fixed_bit_quantized_update_from_fedavg_round",
+  "ranking_score": "mean relative L2 between recomputed quantized/dequantized attack layer and observed dequantized attack layer",
+  "ranking_stage": "fia_screen",
+  "schema_version": 1,
+  "screen_fia_iter": 1,
+  "screen_top_k": 1,
+  "screened_ensemble_size": 2,
+  "seed_plan": [
+    {
+      "cpa_seed": "fixed_from_args_seed",
+      "dequantization_seed": 4321,
+      "member": 0,
+      "trial_varying_randomness": "quantization_bin_noise_only"
+    },
+    {
+      "cpa_seed": "fixed_from_args_seed",
+      "dequantization_seed": 1004324,
+      "member": 1,
+      "trial_varying_randomness": "quantization_bin_noise_only"
+    }
+  ],
+  "selected_member": 1,
+  "selected_member_run_path": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\mixed_bit_fedavg\\outputs_v1\\author_runs\\imagenet\\vgg16\\attack\\cp_direct\\nodef\\random_dequant_int4_client0_n2_steps1_trials1_R2_seed4321_attack_layer_fia2_m001_uia",
+  "source_quantized_update_file": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\mixed_bit_fedavg\\outputs_smoke\\fixed4_single_client_obs\\round_001_client000_int4_dequant_update_cpa.pickle",
+  "source_quantized_update_hash": "d8d57be1e8194d4d0612ef2e1ab110a37b06318207a212c74309d0b205773dfc",
+  "update_file": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\mixed_bit_fedavg\\outputs_smoke\\fixed4_single_client_obs\\round_001_client000_int4_dequant_update_cpa.pickle"
+}

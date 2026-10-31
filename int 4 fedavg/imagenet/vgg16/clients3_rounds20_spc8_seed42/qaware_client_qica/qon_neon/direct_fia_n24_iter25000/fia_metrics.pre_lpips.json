@@ -1,0 +1,200 @@
+{
+  "checkpoint_path": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\int 4 fedavg\\imagenet\\vgg16\\clients3_rounds20_spc8_seed42\\client_qs\\final_round_global_model_before.pt",
+  "checkpoint_sha256": "a402d9d575a847ad045a5ea12634745c37924851096f0530bde806aaae1daf2d",
+  "context_path": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\int 4 fedavg\\imagenet\\vgg16\\clients3_rounds20_spc8_seed42\\client_qs\\final_round_context.pkl",
+  "device": "cuda",
+  "embedding_branch": "randomized",
+  "embedding_match": {
+    "matched_signed_cosines": [
+      0.12656362849413033,
+      0.14380436236361774,
+      0.1377603505831313,
+      0.12308424496999809,
+      0.15153780051695684,
+      0.15294894967606798,
+      0.16025235490316433,
+      0.11753021439034433,
+      0.16248473112046183,
+      0.12264619428555892,
+      0.1437455478770616,
+      0.12564554345347398,
+      0.11936640109822524,
+      0.12972514646099803,
+      0.12931509964776675,
+      0.14927876209546911,
+      0.14697857087553728,
+      0.15110967805802042,
+      0.12532484943797775,
+      0.1553856997494522,
+      0.13102736923173147,
+      0.11894756032045334,
+      0.16297400963300426,
+      0.14705595113293068
+    ],
+    "max_abs_cosine": 0.16297400963300426,
+    "mean_abs_cosine": 0.13893720918231392,
+    "median_abs_cosine": 0.14075294923009646,
+    "min_abs_cosine": 0.11753021439034433,
+    "policy": "oracle_hungarian_abs_cosine_eval_only",
+    "recovered_order_for_true_index": [
+      20,
+      5,
+      7,
+      17,
+      4,
+      19,
+      12,
+      14,
+      2,
+      22,
+      0,
+      6,
+      15,
+      18,
+      23,
+      10,
+      21,
+      11,
+      1,
+      13,
+      9,
+      16,
+      3,
+      8
+    ],
+    "signs_for_eval_only": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "true_z_used_only_after_fia": true
+  },
+  "embedding_path": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\int 4 fedavg\\imagenet\\vgg16\\clients3_rounds20_spc8_seed42\\qaware_client_qica\\qon_neon\\final_embeddings.npy",
+  "embedding_sha256": "9a898b11b5e665ff73077286c16175701d149f7e7b87c541e2bbf144dc05b19b",
+  "feature_info": {
+    "embedding_dim": 25088,
+    "expected_feature_dim": 25088,
+    "fia_feature": "classifier.0 input / flattened VGG feature before classifier.0",
+    "ica_layer": "classifier.0.weight"
+  },
+  "fi": 1.0,
+  "fia_batch_size": 4,
+  "lr_fi": 0.1,
+  "metrics_summary": {
+    "psnr_max": 13.721442222595215,
+    "psnr_mean": 11.151731133460999,
+    "psnr_min": 8.339407920837402,
+    "ssim_error": null,
+    "ssim_max": 0.2157222479581833,
+    "ssim_mean": 0.13743595142538348,
+    "ssim_min": 0.05929030850529671
+  },
+  "model_info": {
+    "model_source": "final_round_global_model_before",
+    "model_state_path": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\int 4 fedavg\\imagenet\\vgg16\\clients3_rounds20_spc8_seed42\\client_qs\\final_round_global_model_before.pt",
+    "model_state_sha256": "a402d9d575a847ad045a5ea12634745c37924851096f0530bde806aaae1daf2d"
+  },
+  "n_iter_fi": 25000,
+  "n_log_fi": 500,
+  "n_sample": 24,
+  "opt_fi": "adam",
+  "output_dir": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\int 4 fedavg\\imagenet\\vgg16\\clients3_rounds20_spc8_seed42\\qaware_client_qica\\qon_neon\\direct_fia_n24_iter25000",
+  "run_dir": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\int 4 fedavg\\imagenet\\vgg16\\clients3_rounds20_spc8_seed42",
+  "sch_fi": "cosine",
+  "sign_selection": {
+    "chunks": [
+      {
+        "candidate_blind_losses": {
+          "+": 0.4415283724665642
+        },
+        "chunk_end": 4,
+        "chunk_start": 0,
+        "selected_blind_loss": 0.4415283724665642,
+        "selected_sign_variant": "+",
+        "signs_parallelized": false,
+        "tried_both_signs": false
+      },
+      {
+        "candidate_blind_losses": {
+          "+": 0.44529031217098236
+        },
+        "chunk_end": 8,
+        "chunk_start": 4,
+        "selected_blind_loss": 0.44529031217098236,
+        "selected_sign_variant": "+",
+        "signs_parallelized": false,
+        "tried_both_signs": false
+      },
+      {
+        "candidate_blind_losses": {
+          "+": 0.44648005813360214
+        },
+        "chunk_end": 12,
+        "chunk_start": 8,
+        "selected_blind_loss": 0.44648005813360214,
+        "selected_sign_variant": "+",
+        "signs_parallelized": false,
+        "tried_both_signs": false
+      },
+      {
+        "candidate_blind_losses": {
+          "+": 0.4498724564909935
+        },
+        "chunk_end": 16,
+        "chunk_start": 12,
+        "selected_blind_loss": 0.4498724564909935,
+        "selected_sign_variant": "+",
+        "signs_parallelized": false,
+        "tried_both_signs": false
+      },
+      {
+        "candidate_blind_losses": {
+          "+": 0.45816826075315475
+        },
+        "chunk_end": 20,
+        "chunk_start": 16,
+        "selected_blind_loss": 0.45816826075315475,
+        "selected_sign_variant": "+",
+        "signs_parallelized": false,
+        "tried_both_signs": false
+      },
+      {
+        "candidate_blind_losses": {
+          "+": 0.4579874724149704
+        },
+        "chunk_end": 24,
+        "chunk_start": 20,
+        "selected_blind_loss": 0.4579874724149704,
+        "selected_sign_variant": "+",
+        "signs_parallelized": false,
+        "tried_both_signs": false
+      }
+    ],
+    "fia_batch_size": 4,
+    "policy": "use_saved_blind_global_sign",
+    "signs_parallelized": false
+  },
+  "true_z_policy": "used only after FIA for eval-order matching and metrics",
+  "tv": 0.1
+}

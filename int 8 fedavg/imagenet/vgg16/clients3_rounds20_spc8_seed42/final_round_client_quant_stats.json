@@ -1,0 +1,1025 @@
+[
+  {
+    "quant_bits": 8,
+    "rounding": "nearest",
+    "quantization": "signed_symmetric_int8",
+    "scale_scope": "per_client_per_parameter_tensor",
+    "zero_point": null,
+    "qmin": -127,
+    "qmax": 127,
+    "levels": 255,
+    "quant_mse": 7.556880150346798e-17,
+    "quant_relative_l2": 0.045114192875111106,
+    "quant_cosine_similarity": 0.9989837930177895,
+    "quant_scale_mean": 6.533987468443359e-08,
+    "quant_scale_min": 2.405305510322364e-09,
+    "quant_scale_max": 3.898648230915569e-07,
+    "quant_saturation_ratio": 2.3851247445396933e-07,
+    "per_tensor": [
+      {
+        "name": "features.0.weight",
+        "scale": 2.581303419901815e-07,
+        "max_abs": 3.2782554626464844e-05,
+        "mse": 5.596839341968558e-15,
+        "relative_l2": 0.010021617125195479,
+        "saturation_ratio": 0.0011574074160307646,
+        "qmin": -127,
+        "qmax": 127
+      },
+      {
+        "name": "features.0.bias",
+        "scale": 1.2014794492642977e-07,
+        "max_abs": 1.52587890625e-05,
+        "mse": 1.0655291194050466e-15,
+        "relative_l2": 0.006136586592973106,
+        "saturation_ratio": 0.015625,
+        "qmin": -127,
+        "qmax": 127
+      },
+      {
+        "name": "features.2.weight",
+        "scale": 1.203826087703419e-07,
+        "max_abs": 1.5288591384887695e-05,
+        "mse": 1.1968675306361496e-15,
+        "relative_l2": 0.019220174512101118,
+        "saturation_ratio": 2.7126736313221045e-05,
+        "qmin": -127,
+        "qmax": 127
+      },
+      {
+        "name": "features.2.bias",
+        "scale": 1.2255324577381543e-07,
+        "max_abs": 1.5564262866973877e-05,
+        "mse": 1.1212681224991158e-15,
+        "relative_l2": 0.0073378165218882,
+        "saturation_ratio": 0.015625,
+        "qmin": -127,
+        "qmax": 127
+      },
+      {
+        "name": "features.5.weight",
+        "scale": 9.456957172915281e-08,
+        "max_abs": 1.2010335922241211e-05,
+        "mse": 7.513234946417918e-16,
+        "relative_l2": 0.02172171447921919,
+        "saturation_ratio": 1.3563368156610522e-05,
+        "qmin": -127,
+        "qmax": 127
+      },
+      {
+        "name": "features.5.bias",
+        "scale": 3.332228004637727e-08,
+        "max_abs": 4.231929779052734e-06,
+        "mse": 8.846418718568813e-17,
+        "relative_l2": 0.006996997548381815,
+        "saturation_ratio": 0.0078125,
+        "qmin": -127,
+        "qmax": 127
+      },
+      {
+        "name": "features.7.weight",
+        "scale": 7.415381020337009e-08,
+        "max_abs": 9.417533874511719e-06,
+        "mse": 4.572211380904337e-16,
+        "relative_l2": 0.021129937098347817,
+        "saturation_ratio": 6.781684078305261e-06,
+        "qmin": -127,
+        "qmax": 127
+      },
+      {
+        "name": "features.7.bias",
+        "scale": 4.317816859611412e-08,
+        "max_abs": 5.4836273193359375e-06,
+        "mse": 1.5304506281367959e-16,
+        "relative_l2": 0.010974765273947204,
+        "saturation_ratio": 0.0078125,
+        "qmin": -127,
+        "qmax": 127
+      },
+      {
+        "name": "features.10.weight",
+        "scale": 6.212728465015971e-08,
+        "max_abs": 7.890164852142334e-06,
+        "mse": 3.2257132213811893e-16,
+        "relative_l2": 0.02247672999563941,
+        "saturation_ratio": 3.3908420391526306e-06,
+        "qmin": -127,
+        "qmax": 127
+      },
+      {
+        "name": "features.10.bias",
+        "scale": 1.4255835623089297e-08,
+        "max_abs": 1.8104910850524902e-06,
+        "mse": 1.7697540786100603e-17,
+        "relative_l2": 0.010161986742563975,
+        "saturation_ratio": 0.00390625,
+        "qmin": -127,
+        "qmax": 127
+      },
+      {
+        "name": "features.12.weight",
+        "scale": 4.652212837186198e-08,
+        "max_abs": 5.908310413360596e-06,
+        "mse": 1.800222416205614e-16,
+        "relative_l2": 0.024658286422668516,
+        "saturation_ratio": 1.6954210195763153e-06,
+        "qmin": -127,
+        "qmax": 127
+      },
+      {
+        "name": "features.12.bias",
+        "scale": 9.03456243150913e-09,
+        "max_abs": 1.1473894119262695e-06,
+        "mse": 6.290105130208918e-18,
+        "relative_l2": 0.008054178652950111,
+        "saturation_ratio": 0.00390625,
+        "qmin": -127,
+        "qmax": 127
+      },
+      {
+        "name": "features.14.weight",
+        "scale": 5.4236707569543796e-08,
+        "max_abs": 6.888061761856079e-06,
+        "mse": 2.449247294823434e-16,
+        "relative_l2": 0.026596031735801353,
+        "saturation_ratio": 1.6954210195763153e-06,
+        "qmin": -127,
+        "qmax": 127
+      },
+      {
+        "name": "features.14.bias",
+        "scale": 8.330570011594318e-09,
+        "max_abs": 1.0579824447631836e-06,
+        "mse": 4.489388771372324e-18,
+        "relative_l2": 0.007340934748858088,
+        "saturation_ratio": 0.00390625,
+        "qmin": -127,
+        "qmax": 127
+      },
+      {
+        "name": "features.17.weight",
+        "scale": 6.640989624884241e-08,
+        "max_abs": 8.434057235717773e-06,
+        "mse": 3.6699471797504603e-16,
+        "relative_l2": 0.03830389525331722,
+        "saturation_ratio": 8.477105097881577e-07,
+        "qmin": -127,
+        "qmax": 127
+      },
+      {
+        "name": "features.17.bias",
+        "scale": 5.103940825534892e-09,
+        "max_abs": 6.48200511932373e-07,
+        "mse": 1.9054452826016265e-18,
+        "relative_l2": 0.008275377845036751,
+        "saturation_ratio": 0.001953125,
+        "qmin": -127,
+        "qmax": 127
+      },
+      {
+        "name": "features.19.weight",
+        "scale": 6.164879096104414e-08,
+        "max_abs": 7.829396054148674e-06,
+        "mse": 3.1566045090755e-16,
+        "relative_l2": 0.045286805029523446,
+        "saturation_ratio": 4.238552548940788e-07,
+        "qmin": -127,
+        "qmax": 127
+      },
+      {
+        "name": "features.19.bias",
+        "scale": 1.2437189944591864e-08,
+        "max_abs": 1.5795230865478516e-06,
+        "mse": 7.497510478260214e-18,
+        "relative_l2": 0.0128813713096354,
+        "saturation_ratio": 0.001953125,
+        "qmin": -127,
+        "qmax": 127
+      },
+      {
+        "name": "features.21.weight",
+        "scale": 4.922076612956516e-08,
+        "max_abs": 6.251037120819092e-06,
+        "mse": 2.011719249240189e-16,
+        "relative_l2": 0.037470885926509045,
+        "saturation_ratio": 4.238552548940788e-07,
+        "qmin": -127,
+        "qmax": 127
+      },
+      {
+        "name": "features.21.bias",
+        "scale": 7.333248674967763e-09,
+        "max_abs": 9.313225746154785e-07,
+        "mse": 3.9888758447869005e-18,
+        "relative_l2": 0.0080837587888702,
+        "saturation_ratio": 0.001953125,
+        "qmin": -127,
+        "qmax": 127
+      },
+      {
+        "name": "features.24.weight",
+        "scale": 7.124984335860063e-08,
+        "max_abs": 9.04873013496399e-06,
+        "mse": 4.225234686686524e-16,
+        "relative_l2": 0.047107595142862266,
+        "saturation_ratio": 4.238552548940788e-07,
+        "qmin": -127,
+        "qmax": 127
+      },
+      {
+        "name": "features.24.bias",
+        "scale": 1.4901161193847656e-08,
+        "max_abs": 1.8924474716186523e-06,
+        "mse": 1.3707963492154257e-17,
+        "relative_l2": 0.011898702344922137,
+        "saturation_ratio": 0.001953125,
+        "qmin": -127,
+        "qmax": 127
+      },
+      {
+        "name": "features.26.weight",
+        "scale": 8.274837881572239e-08,
+        "max_abs": 1.050904393196106e-05,
+        "mse": 5.615121167785054e-16,
+        "relative_l2": 0.05079235614215762,
+        "saturation_ratio": 4.238552548940788e-07,
+        "qmin": -127,
+        "qmax": 127
+      },
+      {
+        "name": "features.26.bias",
+        "scale": 1.5253156959715852e-08,
+        "max_abs": 1.9371509552001953e-06,
+        "mse": 1.7147808131526436e-17,
+        "relative_l2": 0.010363421899323037,
+        "saturation_ratio": 0.001953125,
+        "qmin": -127,
+        "qmax": 127
+      },
+      {
+        "name": "features.28.weight",
+        "scale": 9.568422854044911e-08,
+        "max_abs": 1.2151896953582764e-05,
+        "mse": 6.847545635710588e-16,
+        "relative_l2": 0.062224027572090286,
+        "saturation_ratio": 4.238552548940788e-07,
+        "qmin": -127,
+        "qmax": 127
+      },
+      {
+        "name": "features.28.bias",
+        "scale": 3.191429698290449e-08,
+        "max_abs": 4.0531158447265625e-06,
+        "mse": 7.675529341376732e-17,
+        "relative_l2": 0.017282885235978998,
+        "saturation_ratio": 0.001953125,
+        "qmin": -127,
+        "qmax": 127
+      },
+      {
+        "name": "classifier.0.weight",
+        "scale": 3.867555165015801e-08,
+        "max_abs": 4.911795258522034e-06,
+        "mse": 2.938321856932477e-17,
+        "relative_l2": 0.06509539943252841,
+        "saturation_ratio": 9.731370376186987e-09,
+        "qmin": -127,
+        "qmax": 127
+      },
+      {
+        "name": "classifier.0.bias",
+        "scale": 2.405305510322364e-09,
+        "max_abs": 3.0547380447387695e-07,
+        "mse": 4.0017092934967193e-19,
+        "relative_l2": 0.010378553824897267,
+        "saturation_ratio": 0.000244140625,
+        "qmin": -127,
+        "qmax": 127
+      },
+      {
+        "name": "classifier.3.weight",
+        "scale": 3.4964930506475866e-08,
+        "max_abs": 4.4405460357666016e-06,
+        "mse": 3.2025845897097166e-17,
+        "relative_l2": 0.0401954705703007,
+        "saturation_ratio": 5.960464477539063e-08,
+        "qmin": -127,
+        "qmax": 127
+      },
+      {
+        "name": "classifier.3.bias",
+        "scale": 4.751945059666696e-09,
+        "max_abs": 6.034970283508301e-07,
+        "mse": 1.1616013590045147e-18,
+        "relative_l2": 0.011805860548474798,
+        "saturation_ratio": 0.000244140625,
+        "qmin": -127,
+        "qmax": 127
+      },
+      {
+        "name": "classifier.6.weight",
+        "scale": 3.898648230915569e-07,
+        "max_abs": 4.95128333568573e-05,
+        "mse": 1.9205798518391604e-16,
+        "relative_l2": 0.03451574975215262,
+        "saturation_ratio": 2.4414063659605745e-07,
+        "qmin": -127,
+        "qmax": 127
+      },
+      {
+        "name": "classifier.6.bias",
+        "scale": 4.5363474754367417e-08,
+        "max_abs": 5.76116144657135e-06,
+        "mse": 2.514155570743689e-17,
+        "relative_l2": 0.013014075993424691,
+        "saturation_ratio": 0.0010000000474974513,
+        "qmin": -127,
+        "qmax": 127
+      }
+    ],
+    "round": 20,
+    "client_id": 0
+  },
+  {
+    "quant_bits": 8,
+    "rounding": "nearest",
+    "quantization": "signed_symmetric_int8",
+    "scale_scope": "per_client_per_parameter_tensor",
+    "zero_point": null,
+    "qmin": -127,
+    "qmax": 127,
+    "levels": 255,
+    "quant_mse": 1.7506728346346696e-16,
+    "quant_relative_l2": 0.056069355013014355,
+    "quant_cosine_similarity": 0.9984312601340584,
+    "quant_scale_mean": 8.775331923616125e-08,
+    "quant_scale_min": 3.549292415527816e-09,
+    "quant_scale_max": 6.530257792292105e-07,
+    "quant_saturation_ratio": 2.312848236982535e-07,
+    "per_tensor": [
+      {
+        "name": "features.0.weight",
+        "scale": 1.7551397490933596e-07,
+        "max_abs": 2.2290274500846863e-05,
+        "mse": 2.561604066322758e-15,
+        "relative_l2": 0.009127227533520542,
+        "saturation_ratio": 0.0005787037080153823,
+        "qmin": -127,
+        "qmax": 127
+      },
+      {
+        "name": "features.0.bias",
+        "scale": 2.0908558440169145e-07,
+        "max_abs": 2.6553869247436523e-05,
+        "mse": 4.002498761704375e-15,
+        "relative_l2": 0.006831315167309779,
+        "saturation_ratio": 0.015625,
+        "qmin": -127,
+        "qmax": 127
+      },
+      {
+        "name": "features.2.weight",
+        "scale": 1.447876627480582e-07,
+        "max_abs": 1.8388032913208008e-05,
+        "mse": 1.7474457226150228e-15,
+        "relative_l2": 0.024512191945858096,
+        "saturation_ratio": 2.7126736313221045e-05,
+        "qmin": -127,
+        "qmax": 127
+      },
+      {
+        "name": "features.2.bias",
+        "scale": 1.0653743487409884e-07,
+        "max_abs": 1.3530254364013672e-05,
+        "mse": 1.0876974539423493e-15,
+        "relative_l2": 0.008567514003813797,
+        "saturation_ratio": 0.015625,
+        "qmin": -127,
+        "qmax": 127
+      },
+      {
+        "name": "features.5.weight",
+        "scale": 8.5359012302888e-08,
+        "max_abs": 1.084059476852417e-05,
+        "mse": 6.056348629765432e-16,
+        "relative_l2": 0.019242553730244704,
+        "saturation_ratio": 1.3563368156610522e-05,
+        "qmin": -127,
+        "qmax": 127
+      },
+      {
+        "name": "features.5.bias",
+        "scale": 3.6490245491904716e-08,
+        "max_abs": 4.634261131286621e-06,
+        "mse": 1.0236753156570803e-16,
+        "relative_l2": 0.007193182118283963,
+        "saturation_ratio": 0.0078125,
+        "qmin": -127,
+        "qmax": 127
+      },
+      {
+        "name": "features.7.weight",
+        "scale": 8.706032872396463e-08,
+        "max_abs": 1.1056661605834961e-05,
+        "mse": 6.308524925952684e-16,
+        "relative_l2": 0.020991207592713095,
+        "saturation_ratio": 6.781684078305261e-06,
+        "qmin": -127,
+        "qmax": 127
+      },
+      {
+        "name": "features.7.bias",
+        "scale": 4.1770185532641335e-08,
+        "max_abs": 5.304813385009766e-06,
+        "mse": 1.4108028568234917e-16,
+        "relative_l2": 0.009170482433520347,
+        "saturation_ratio": 0.0078125,
+        "qmin": -127,
+        "qmax": 127
+      },
+      {
+        "name": "features.10.weight",
+        "scale": 7.826042747183237e-08,
+        "max_abs": 9.939074516296387e-06,
+        "mse": 5.078357800831582e-16,
+        "relative_l2": 0.024180162677081722,
+        "saturation_ratio": 3.3908420391526306e-06,
+        "qmin": -127,
+        "qmax": 127
+      },
+      {
+        "name": "features.10.bias",
+        "scale": 1.2906517632416126e-08,
+        "max_abs": 1.6391277313232422e-06,
+        "mse": 1.3404649596420863e-17,
+        "relative_l2": 0.006726824450776658,
+        "saturation_ratio": 0.00390625,
+        "qmin": -127,
+        "qmax": 127
+      },
+      {
+        "name": "features.12.weight",
+        "scale": 6.265527474624832e-08,
+        "max_abs": 7.957220077514648e-06,
+        "mse": 3.274313383738413e-16,
+        "relative_l2": 0.027511260094692434,
+        "saturation_ratio": 1.6954210195763153e-06,
+        "qmin": -127,
+        "qmax": 127
+      },
+      {
+        "name": "features.12.bias",
+        "scale": 1.2055860310056232e-08,
+        "max_abs": 1.5310943126678467e-06,
+        "mse": 1.1335061901786664e-17,
+        "relative_l2": 0.009099970828781794,
+        "saturation_ratio": 0.00390625,
+        "qmin": -127,
+        "qmax": 127
+      },
+      {
+        "name": "features.14.weight",
+        "scale": 9.762020880543787e-08,
+        "max_abs": 1.239776611328125e-05,
+        "mse": 7.935437577829105e-16,
+        "relative_l2": 0.04302617779871023,
+        "saturation_ratio": 1.6954210195763153e-06,
+        "qmin": -127,
+        "qmax": 127
+      },
+      {
+        "name": "features.14.bias",
+        "scale": 1.0677210227072464e-08,
+        "max_abs": 1.3560056686401367e-06,
+        "mse": 8.125259499487932e-18,
+        "relative_l2": 0.008634940176184271,
+        "saturation_ratio": 0.00390625,
+        "qmin": -127,
+        "qmax": 127
+      },
+      {
+        "name": "features.17.weight",
+        "scale": 6.594056856101815e-08,
+        "max_abs": 8.374452590942383e-06,
+        "mse": 3.617984531879567e-16,
+        "relative_l2": 0.03221122991036103,
+        "saturation_ratio": 8.477105097881577e-07,
+        "qmin": -127,
+        "qmax": 127
+      },
+      {
+        "name": "features.17.bias",
+        "scale": 6.218594972295932e-09,
+        "max_abs": 7.897615432739258e-07,
+        "mse": 1.953451743426907e-18,
+        "relative_l2": 0.00657439114546305,
+        "saturation_ratio": 0.001953125,
+        "qmin": -127,
+        "qmax": 127
+      },
+      {
+        "name": "features.19.weight",
+        "scale": 7.814309554987631e-08,
+        "max_abs": 9.924173355102539e-06,
+        "mse": 5.068097878971035e-16,
+        "relative_l2": 0.04668102618197758,
+        "saturation_ratio": 4.238552548940788e-07,
+        "qmin": -127,
+        "qmax": 127
+      },
+      {
+        "name": "features.19.bias",
+        "scale": 7.861242323770057e-09,
+        "max_abs": 9.98377799987793e-07,
+        "mse": 4.479177226710357e-18,
+        "relative_l2": 0.008525579808367843,
+        "saturation_ratio": 0.001953125,
+        "qmin": -127,
+        "qmax": 127
+      },
+      {
+        "name": "features.21.weight",
+        "scale": 9.352825003361431e-08,
+        "max_abs": 1.1878088116645813e-05,
+        "mse": 7.098455617641696e-16,
+        "relative_l2": 0.05731309710490061,
+        "saturation_ratio": 4.238552548940788e-07,
+        "qmin": -127,
+        "qmax": 127
+      },
+      {
+        "name": "features.21.bias",
+        "scale": 1.1993527948561677e-08,
+        "max_abs": 1.5231780707836151e-06,
+        "mse": 1.1680393263915302e-17,
+        "relative_l2": 0.01127874470967152,
+        "saturation_ratio": 0.001953125,
+        "qmin": -127,
+        "qmax": 127
+      },
+      {
+        "name": "features.24.weight",
+        "scale": 9.647622079000939e-08,
+        "max_abs": 1.2252479791641235e-05,
+        "mse": 7.539647316008745e-16,
+        "relative_l2": 0.05569505408097802,
+        "saturation_ratio": 4.238552548940788e-07,
+        "qmin": -127,
+        "qmax": 127
+      },
+      {
+        "name": "features.24.bias",
+        "scale": 1.3610509164152518e-08,
+        "max_abs": 1.7285346984863281e-06,
+        "mse": 1.3157529388420646e-17,
+        "relative_l2": 0.008681501083540625,
+        "saturation_ratio": 0.001953125,
+        "qmin": -127,
+        "qmax": 127
+      },
+      {
+        "name": "features.26.weight",
+        "scale": 1.3313513136381516e-07,
+        "max_abs": 1.6908161342144012e-05,
+        "mse": 1.3896086542918306e-15,
+        "relative_l2": 0.0700335083859969,
+        "saturation_ratio": 4.238552548940788e-07,
+        "qmin": -127,
+        "qmax": 127
+      },
+      {
+        "name": "features.26.bias",
+        "scale": 1.9007780238666783e-08,
+        "max_abs": 2.4139881134033203e-06,
+        "mse": 2.5926738838278273e-17,
+        "relative_l2": 0.010046692351576158,
+        "saturation_ratio": 0.001953125,
+        "qmin": -127,
+        "qmax": 127
+      },
+      {
+        "name": "features.28.weight",
+        "scale": 2.5287241101068503e-07,
+        "max_abs": 3.2114796340465546e-05,
+        "mse": 3.835530074247871e-15,
+        "relative_l2": 0.1265745073671976,
+        "saturation_ratio": 4.238552548940788e-07,
+        "qmin": -127,
+        "qmax": 127
+      },
+      {
+        "name": "features.28.bias",
+        "scale": 3.4026275130827344e-08,
+        "max_abs": 4.32133674621582e-06,
+        "mse": 8.763139497985954e-17,
+        "relative_l2": 0.015299179354478352,
+        "saturation_ratio": 0.001953125,
+        "qmin": -127,
+        "qmax": 127
+      },
+      {
+        "name": "classifier.0.weight",
+        "scale": 4.777611550821348e-08,
+        "max_abs": 6.0675665736198425e-06,
+        "mse": 4.111054530154066e-17,
+        "relative_l2": 0.07082881506050816,
+        "saturation_ratio": 9.731370376186987e-09,
+        "qmin": -127,
+        "qmax": 127
+      },
+      {
+        "name": "classifier.0.bias",
+        "scale": 3.549292415527816e-09,
+        "max_abs": 4.507601261138916e-07,
+        "mse": 9.279220087776718e-19,
+        "relative_l2": 0.011837644140863314,
+        "saturation_ratio": 0.000244140625,
+        "qmin": -127,
+        "qmax": 127
+      },
+      {
+        "name": "classifier.3.weight",
+        "scale": 4.314516743875174e-08,
+        "max_abs": 5.479436367750168e-06,
+        "mse": 4.2541912138492014e-17,
+        "relative_l2": 0.03433368686922804,
+        "saturation_ratio": 5.960464477539063e-08,
+        "qmin": -127,
+        "qmax": 127
+      },
+      {
+        "name": "classifier.3.bias",
+        "scale": 5.954597703805575e-09,
+        "max_abs": 7.562339305877686e-07,
+        "mse": 2.228226046870844e-18,
+        "relative_l2": 0.011535048237025855,
+        "saturation_ratio": 0.000244140625,
+        "qmin": -127,
+        "qmax": 127
+      },
+      {
+        "name": "classifier.6.weight",
+        "scale": 6.530257792292105e-07,
+        "max_abs": 8.293427526950836e-05,
+        "mse": 2.1043442596097028e-16,
+        "relative_l2": 0.022410691972833092,
+        "saturation_ratio": 2.4414063659605745e-07,
+        "qmin": -127,
+        "qmax": 127
+      },
+      {
+        "name": "classifier.6.bias",
+        "scale": 8.106172799671185e-08,
+        "max_abs": 1.02948397397995e-05,
+        "mse": 3.0434530763623347e-17,
+        "relative_l2": 0.00797930854300536,
+        "saturation_ratio": 0.0010000000474974513,
+        "qmin": -127,
+        "qmax": 127
+      }
+    ],
+    "round": 20,
+    "client_id": 1
+  },
+  {
+    "quant_bits": 8,
+    "rounding": "nearest",
+    "quantization": "signed_symmetric_int8",
+    "scale_scope": "per_client_per_parameter_tensor",
+    "zero_point": null,
+    "qmin": -127,
+    "qmax": 127,
+    "levels": 255,
+    "quant_mse": 6.173559519466743e-17,
+    "quant_relative_l2": 0.045495938477033225,
+    "quant_cosine_similarity": 0.9989663350236009,
+    "quant_scale_mean": 6.235494261902508e-08,
+    "quant_scale_min": 1.9428525455111867e-09,
+    "quant_scale_max": 5.80030643959617e-07,
+    "quant_saturation_ratio": 2.385124744001191e-07,
+    "per_tensor": [
+      {
+        "name": "features.0.weight",
+        "scale": 1.8632317733136006e-07,
+        "max_abs": 2.3663043975830078e-05,
+        "mse": 2.9206880612590805e-15,
+        "relative_l2": 0.011411005848968021,
+        "saturation_ratio": 0.0005787037080153823,
+        "qmin": -127,
+        "qmax": 127
+      },
+      {
+        "name": "features.0.bias",
+        "scale": 1.2671853255596943e-07,
+        "max_abs": 1.609325408935547e-05,
+        "mse": 1.3525688917135053e-15,
+        "relative_l2": 0.0066410917471091,
+        "saturation_ratio": 0.015625,
+        "qmin": -127,
+        "qmax": 127
+      },
+      {
+        "name": "features.2.weight",
+        "scale": 9.580156046240518e-08,
+        "max_abs": 1.2166798114776611e-05,
+        "mse": 7.658759912494802e-16,
+        "relative_l2": 0.01956027673940075,
+        "saturation_ratio": 2.7126736313221045e-05,
+        "qmin": -127,
+        "qmax": 127
+      },
+      {
+        "name": "features.2.bias",
+        "scale": 9.959284597016449e-08,
+        "max_abs": 1.2648291885852814e-05,
+        "mse": 7.703753008574837e-16,
+        "relative_l2": 0.00821220296639599,
+        "saturation_ratio": 0.015625,
+        "qmin": -127,
+        "qmax": 127
+      },
+      {
+        "name": "features.5.weight",
+        "scale": 6.148195552668767e-08,
+        "max_abs": 7.808208465576172e-06,
+        "mse": 3.1345757702736435e-16,
+        "relative_l2": 0.017679844855659557,
+        "saturation_ratio": 1.3563368156610522e-05,
+        "qmin": -127,
+        "qmax": 127
+      },
+      {
+        "name": "features.5.bias",
+        "scale": 3.2662288873552825e-08,
+        "max_abs": 4.148110747337341e-06,
+        "mse": 9.047957635222663e-17,
+        "relative_l2": 0.010127520159719487,
+        "saturation_ratio": 0.0078125,
+        "qmin": -127,
+        "qmax": 127
+      },
+      {
+        "name": "features.7.weight",
+        "scale": 6.558857279514996e-08,
+        "max_abs": 8.32974910736084e-06,
+        "mse": 3.587946861274491e-16,
+        "relative_l2": 0.02082126247727324,
+        "saturation_ratio": 6.781684078305261e-06,
+        "qmin": -127,
+        "qmax": 127
+      },
+      {
+        "name": "features.7.bias",
+        "scale": 3.437827089669554e-08,
+        "max_abs": 4.366040229797363e-06,
+        "mse": 8.40241529727444e-17,
+        "relative_l2": 0.009343829530012894,
+        "saturation_ratio": 0.0078125,
+        "qmin": -127,
+        "qmax": 127
+      },
+      {
+        "name": "features.10.weight",
+        "scale": 4.5290143191323295e-08,
+        "max_abs": 5.751848220825195e-06,
+        "mse": 1.711042552353945e-16,
+        "relative_l2": 0.019608492120979294,
+        "saturation_ratio": 3.3908420391526306e-06,
+        "qmin": -127,
+        "qmax": 127
+      },
+      {
+        "name": "features.10.bias",
+        "scale": 8.565234743684869e-09,
+        "max_abs": 1.087784767150879e-06,
+        "mse": 5.77913043682623e-18,
+        "relative_l2": 0.00822672369484021,
+        "saturation_ratio": 0.00390625,
+        "qmin": -127,
+        "qmax": 127
+      },
+      {
+        "name": "features.12.weight",
+        "scale": 3.5932917086256566e-08,
+        "max_abs": 4.563480615615845e-06,
+        "mse": 1.0625931855663983e-16,
+        "relative_l2": 0.02176298286145134,
+        "saturation_ratio": 1.6954210195763153e-06,
+        "qmin": -127,
+        "qmax": 127
+      },
+      {
+        "name": "features.12.bias",
+        "scale": 5.162607230602134e-09,
+        "max_abs": 6.556510925292969e-07,
+        "mse": 2.1659538224063205e-18,
+        "relative_l2": 0.006454942709592889,
+        "saturation_ratio": 0.0078125,
+        "qmin": -127,
+        "qmax": 127
+      },
+      {
+        "name": "features.14.weight",
+        "scale": 4.822344124022493e-08,
+        "max_abs": 6.124377250671387e-06,
+        "mse": 1.9356643961931553e-16,
+        "relative_l2": 0.027505877623970623,
+        "saturation_ratio": 1.6954210195763153e-06,
+        "qmin": -127,
+        "qmax": 127
+      },
+      {
+        "name": "features.14.bias",
+        "scale": 5.246939327463451e-09,
+        "max_abs": 6.663613021373749e-07,
+        "mse": 2.185282138189541e-18,
+        "relative_l2": 0.006851494811095241,
+        "saturation_ratio": 0.00390625,
+        "qmin": -127,
+        "qmax": 127
+      },
+      {
+        "name": "features.17.weight",
+        "scale": 4.4732818338388824e-08,
+        "max_abs": 5.681067705154419e-06,
+        "mse": 1.6666987305566739e-16,
+        "relative_l2": 0.028497999386327022,
+        "saturation_ratio": 8.477105097881577e-07,
+        "qmin": -127,
+        "qmax": 127
+      },
+      {
+        "name": "features.17.bias",
+        "scale": 3.9306211618850284e-09,
+        "max_abs": 4.991888999938965e-07,
+        "mse": 9.53567399501383e-19,
+        "relative_l2": 0.007462701007106098,
+        "saturation_ratio": 0.001953125,
+        "qmin": -127,
+        "qmax": 127
+      },
+      {
+        "name": "features.19.weight",
+        "scale": 4.5451475472191305e-08,
+        "max_abs": 5.772337317466736e-06,
+        "mse": 1.7100889344274944e-16,
+        "relative_l2": 0.03754630471849185,
+        "saturation_ratio": 4.238552548940788e-07,
+        "qmin": -127,
+        "qmax": 127
+      },
+      {
+        "name": "features.19.bias",
+        "scale": 4.341283332820467e-09,
+        "max_abs": 5.513429641723633e-07,
+        "mse": 1.2594350085808818e-18,
+        "relative_l2": 0.007258370905443356,
+        "saturation_ratio": 0.001953125,
+        "qmin": -127,
+        "qmax": 127
+      },
+      {
+        "name": "features.21.weight",
+        "scale": 6.35206021115664e-08,
+        "max_abs": 8.067116141319275e-06,
+        "mse": 3.295995309605755e-16,
+        "relative_l2": 0.05392899988844063,
+        "saturation_ratio": 4.238552548940788e-07,
+        "qmin": -127,
+        "qmax": 127
+      },
+      {
+        "name": "features.21.bias",
+        "scale": 6.453258816208063e-09,
+        "max_abs": 8.195638656616211e-07,
+        "mse": 3.0658320302741836e-18,
+        "relative_l2": 0.009004366801960992,
+        "saturation_ratio": 0.001953125,
+        "qmin": -127,
+        "qmax": 127
+      },
+      {
+        "name": "features.24.weight",
+        "scale": 6.200995272820364e-08,
+        "max_abs": 7.875263690948486e-06,
+        "mse": 3.1391297487997843e-16,
+        "relative_l2": 0.04598444416188491,
+        "saturation_ratio": 4.238552548940788e-07,
+        "qmin": -127,
+        "qmax": 127
+      },
+      {
+        "name": "features.24.bias",
+        "scale": 7.3039156944787464e-09,
+        "max_abs": 9.275972843170166e-07,
+        "mse": 3.860004414073589e-18,
+        "relative_l2": 0.008289617326317432,
+        "saturation_ratio": 0.001953125,
+        "qmin": -127,
+        "qmax": 127
+      },
+      {
+        "name": "features.26.weight",
+        "scale": 9.54202334924048e-08,
+        "max_abs": 1.2118369340896606e-05,
+        "mse": 7.19227533974888e-16,
+        "relative_l2": 0.06827654408172366,
+        "saturation_ratio": 4.238552548940788e-07,
+        "qmin": -127,
+        "qmax": 127
+      },
+      {
+        "name": "features.26.bias",
+        "scale": 1.2906517632416126e-08,
+        "max_abs": 1.6391277313232422e-06,
+        "mse": 1.3582059158298174e-17,
+        "relative_l2": 0.012841865033348986,
+        "saturation_ratio": 0.001953125,
+        "qmin": -127,
+        "qmax": 127
+      },
+      {
+        "name": "features.28.weight",
+        "scale": 7.509796517979339e-08,
+        "max_abs": 9.537441655993462e-06,
+        "mse": 4.096199569797242e-16,
+        "relative_l2": 0.060932839997428496,
+        "saturation_ratio": 4.238552548940788e-07,
+        "qmin": -127,
+        "qmax": 127
+      },
+      {
+        "name": "features.28.bias",
+        "scale": 1.4079837740155199e-08,
+        "max_abs": 1.7881393432617188e-06,
+        "mse": 1.6172496014877413e-17,
+        "relative_l2": 0.012849203467320361,
+        "saturation_ratio": 0.001953125,
+        "qmin": -127,
+        "qmax": 127
+      },
+      {
+        "name": "classifier.0.weight",
+        "scale": 3.606858456350892e-08,
+        "max_abs": 4.580710083246231e-06,
+        "mse": 1.9269952012471967e-17,
+        "relative_l2": 0.05932528618693022,
+        "saturation_ratio": 9.731370376186987e-09,
+        "qmin": -127,
+        "qmax": 127
+      },
+      {
+        "name": "classifier.0.bias",
+        "scale": 1.9428525455111867e-09,
+        "max_abs": 2.4674227461218834e-07,
+        "mse": 2.246328377588684e-19,
+        "relative_l2": 0.009790494118601388,
+        "saturation_ratio": 0.000244140625,
+        "qmin": -127,
+        "qmax": 127
+      },
+      {
+        "name": "classifier.3.weight",
+        "scale": 3.841705620288849e-08,
+        "max_abs": 4.878966137766838e-06,
+        "mse": 3.0828763349500225e-17,
+        "relative_l2": 0.04363110830643088,
+        "saturation_ratio": 5.960464477539063e-08,
+        "qmin": -127,
+        "qmax": 127
+      },
+      {
+        "name": "classifier.3.bias",
+        "scale": 3.0799645056589497e-09,
+        "max_abs": 3.91155481338501e-07,
+        "mse": 3.386049878812982e-19,
+        "relative_l2": 0.007288063567188917,
+        "saturation_ratio": 0.000244140625,
+        "qmin": -127,
+        "qmax": 127
+      },
+      {
+        "name": "classifier.6.weight",
+        "scale": 5.80030643959617e-07,
+        "max_abs": 7.366389036178589e-05,
+        "mse": 2.260209434976762e-16,
+        "relative_l2": 0.03410900727090366,
+        "saturation_ratio": 2.4414063659605745e-07,
+        "qmin": -127,
+        "qmax": 127
+      },
+      {
+        "name": "classifier.6.bias",
+        "scale": 4.9602093099565536e-08,
+        "max_abs": 6.299465894699097e-06,
+        "mse": 1.421298754416319e-17,
+        "relative_l2": 0.009426186825864631,
+        "saturation_ratio": 0.0010000000474974513,
+        "qmin": -127,
+        "qmax": 127
+      }
+    ],
+    "round": 20,
+    "client_id": 2
+  }
+]

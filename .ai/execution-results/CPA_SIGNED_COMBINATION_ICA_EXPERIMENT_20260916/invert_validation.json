@@ -1,0 +1,536 @@
+{
+  "registration": {
+    "task_id": "CPA_SIGNED_COMBINATION_ICA_IMPLEMENTATION_20260916",
+    "plan_version": 1,
+    "status": "COMPLETED",
+    "method": "INT4_combination_ica",
+    "stage": "INVERT",
+    "registered_before_execution": true,
+    "source_root": "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_combination_ica_B16_T10_20260916",
+    "source_artifact_sha256": "408099e99bb6ad1d8b721ff518c040ec9bec332827f0f36d3b9715ffeb4af5a2",
+    "target_z_sha256": "38057e1436066133280aa06dbdea087bea4cf3abe19e01c16e0d52307ba732f8",
+    "input_hashes": {
+      "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int4_baseline_B16_T10/observation/manifest.json": "9b4891765e6fc7e4adb1e3e11c158b3d4a2c3430d3397e1f1466ddafe2e1cd69",
+      "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int4_baseline_B16_T10/observation/fc_00.sgn4": "697c24316428133714e9fad5831429adced101d90c921746b4802b0914079a70",
+      "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int4_baseline_B16_T10/observation/fc_01.sgn4": "005da86bee21afa8bee1dda0a4cba492510c73b021b64114f030f3d9f52343a6",
+      "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int4_baseline_B16_T10/observation/fc_02.sgn4": "b6bc983225a97a481832f4d028bf1f41a087f84e4810df01f69ce397d1875baf",
+      "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int4_baseline_B16_T10/observation/fc_03.sgn4": "d8220d804ac511d93e307dfab6ed41d30718eb571d5e4725a62351bc5e5b0936",
+      "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int4_baseline_B16_T10/observation/fc_04.sgn4": "12b8748b134e8a7c67bfa87c94b9b5de4f76128af7bf82fac196528b5b6c7996",
+      "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int4_baseline_B16_T10/observation/fc_05.sgn4": "af6acbb5c356a9b9884823886383c8020093f6cf724dd6605a115df1afdcfdc7",
+      "C:/Users/조상제/.cache/torch/hub/checkpoints/vgg16-397923af.pth": "397923af8e79cdbb6a7127f12361acd7a2f83e06b05044ddf496e83de57a5bf0"
+    },
+    "checkpoint_sha256": "397923af8e79cdbb6a7127f12361acd7a2f83e06b05044ddf496e83de57a5bf0",
+    "fia_config": {
+      "n_iter": 25000,
+      "lr": 0.1,
+      "tv": 0.1,
+      "fi": 1.0,
+      "optimizer": "adam",
+      "scheduler": "cosine",
+      "log_every": 5000
+    },
+    "runtime_pre_adapter": {
+      "phase": "INVERT_PRE_DIRECT_FIA",
+      "device": "cuda",
+      "torch": "2.13.0+cu132",
+      "cuda": "13.2",
+      "cuda_available": true,
+      "dtype": "float32",
+      "deterministic_algorithms": true,
+      "deterministic_warn_only": false,
+      "matmul_tf32": false,
+      "cudnn_tf32": false,
+      "cudnn_benchmark": false,
+      "cudnn_deterministic": true,
+      "cublas_workspace_config": ":4096:8",
+      "threads": 1
+    },
+    "integrity_before": {
+      "public_input_hashes": {
+        "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int4_baseline_B16_T10/observation/manifest.json": "9b4891765e6fc7e4adb1e3e11c158b3d4a2c3430d3397e1f1466ddafe2e1cd69",
+        "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int4_baseline_B16_T10/observation/fc_00.sgn4": "697c24316428133714e9fad5831429adced101d90c921746b4802b0914079a70",
+        "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int4_baseline_B16_T10/observation/fc_01.sgn4": "005da86bee21afa8bee1dda0a4cba492510c73b021b64114f030f3d9f52343a6",
+        "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int4_baseline_B16_T10/observation/fc_02.sgn4": "b6bc983225a97a481832f4d028bf1f41a087f84e4810df01f69ce397d1875baf",
+        "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int4_baseline_B16_T10/observation/fc_03.sgn4": "d8220d804ac511d93e307dfab6ed41d30718eb571d5e4725a62351bc5e5b0936",
+        "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int4_baseline_B16_T10/observation/fc_04.sgn4": "12b8748b134e8a7c67bfa87c94b9b5de4f76128af7bf82fac196528b5b6c7996",
+        "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int4_baseline_B16_T10/observation/fc_05.sgn4": "af6acbb5c356a9b9884823886383c8020093f6cf724dd6605a115df1afdcfdc7",
+        "C:/Users/조상제/.cache/torch/hub/checkpoints/vgg16-397923af.pth": "397923af8e79cdbb6a7127f12361acd7a2f83e06b05044ddf496e83de57a5bf0"
+      },
+      "artifact_hashes": {
+        "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_combination_ica_B16_T10_20260916/registration.json": "70f48861153e5155c5d9fe1c4a20851dc8b4ca3ee9317dbef362148bf6d3d484",
+        "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_combination_ica_B16_T10_20260916/result.json": "80946a388a649ebb8a99bfcbdb9301659788d89e1cb7562c441dca43f6b4e36e",
+        "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_combination_ica_B16_T10_20260916/sources.pt": "408099e99bb6ad1d8b721ff518c040ec9bec332827f0f36d3b9715ffeb4af5a2"
+      },
+      "protected_source_hashes": {
+        "quantization_aware_cpa\\qacpa\\fc_replay.py": "bfe6b9671752edef941c56f80960ddea962b7e0ea44831f3c798887f41d4e49a",
+        "quantization_aware_cpa\\qacpa\\full_update_replay.py": "e45e9830bdcf2046de1c0e1ebe4579392c764065eb991826b9c6abd926af2e1c",
+        "quantization_aware_cpa\\qacpa\\full_update_adjoint.py": "882efe5424f4c57660d1c4c15a2af06c4b31180ffb84f7f9bbd191f31d7cbade",
+        "quantization_aware_cpa\\qacpa\\full_update_pipeline.py": "bdb9b0a10ecc77db1a8e6dbd089e43352aad5feabe6ef4298715a7805a3468c9",
+        "quantization_aware_cpa\\qacpa\\deterministic_hybrid_setup.py": "ca040e2e88f900b8490402bb18fc132f7c8a17e1b45d5662673ad6b56fbc958a",
+        "quantization_aware_cpa\\qacpa\\signed_baseline_observation.py": "2c18135e86e80c8f666033d5ea9d0c3495869ee60809fed04e295f28fa92cda2",
+        "quantization_aware_cpa\\qacpa\\signed_cell_rank.py": "7ae6deb49738914f4cd1f9328397400d89835ede4cd6a462b2ea260a77ae4acb",
+        "quantization_aware_cpa\\qacpa\\signed_cell_rank_evaluation.py": "c163aaa54bd8d5ebfc1528f49cafe2a830de72a9d7fe38583391b7ddaf4a65ef",
+        "quantization_aware_cpa\\qacpa\\upstream_naive.py": "8f29b885d86f4121eda5c55e17486a3a48bd8db08b2f83890fe7726730d1ee92",
+        "quantized_update_cpa\\cell_utils.py": "6725bce108a8e795680342231696c70f1d2bc8b01a727022c605e40aa841d361",
+        "official_cpa\\src\\gradient_inversion.py": "c598e1ee7b4079f741060d10c8dfd14711e393a97384c63cf32be77a458b1873",
+        "official_cpa\\src\\feature_inversion.py": "dc73880427e3eaf1f873d295f17f1d48d301882f634ee5df36ddeea8e56c4dec",
+        "official_cpa\\src\\vgg16.py": "8114eca8cde553dace5f777aedd21b70851c570d473e597b005cb6be4b248d36"
+      },
+      "shared_source_hashes": {
+        "quantization_aware_cpa\\qacpa\\signed_e2e_cells.py": "d69a6fd4a79eecf128c085079559cfd1808e1d7fa05794dce0fe72877d8b6db2",
+        "quantization_aware_cpa\\qacpa\\signed_e2e_runner.py": "2c68298f3fe6b38e5040231c2f21a250a07761e5fe93f3a259226360483253df",
+        "quantization_aware_cpa\\qacpa\\fc_replay.py": "bfe6b9671752edef941c56f80960ddea962b7e0ea44831f3c798887f41d4e49a",
+        "quantization_aware_cpa\\qacpa\\full_update_replay.py": "e45e9830bdcf2046de1c0e1ebe4579392c764065eb991826b9c6abd926af2e1c",
+        "quantization_aware_cpa\\qacpa\\full_update_adjoint.py": "882efe5424f4c57660d1c4c15a2af06c4b31180ffb84f7f9bbd191f31d7cbade"
+      }
+    },
+    "private_data_used": false,
+    "generator_used": false,
+    "quality": "NOT_EVALUATED",
+    "candidate_sha256": "4efc29ad08b1ea8b0cee6991de6f185839708c2c72aaafb4fedfb307b5e680ce",
+    "runtime_post_adapter": {
+      "phase": "INVERT_POST_DIRECT_FIA",
+      "device": "cuda",
+      "torch": "2.13.0+cu132",
+      "cuda": "13.2",
+      "cuda_available": true,
+      "dtype": "float32",
+      "deterministic_algorithms": true,
+      "deterministic_warn_only": true,
+      "matmul_tf32": false,
+      "cudnn_tf32": false,
+      "cudnn_benchmark": true,
+      "cudnn_deterministic": true,
+      "cublas_workspace_config": ":4096:8",
+      "threads": 1
+    },
+    "integrity": {
+      "before": {
+        "public_input_hashes": {
+          "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int4_baseline_B16_T10/observation/manifest.json": "9b4891765e6fc7e4adb1e3e11c158b3d4a2c3430d3397e1f1466ddafe2e1cd69",
+          "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int4_baseline_B16_T10/observation/fc_00.sgn4": "697c24316428133714e9fad5831429adced101d90c921746b4802b0914079a70",
+          "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int4_baseline_B16_T10/observation/fc_01.sgn4": "005da86bee21afa8bee1dda0a4cba492510c73b021b64114f030f3d9f52343a6",
+          "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int4_baseline_B16_T10/observation/fc_02.sgn4": "b6bc983225a97a481832f4d028bf1f41a087f84e4810df01f69ce397d1875baf",
+          "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int4_baseline_B16_T10/observation/fc_03.sgn4": "d8220d804ac511d93e307dfab6ed41d30718eb571d5e4725a62351bc5e5b0936",
+          "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int4_baseline_B16_T10/observation/fc_04.sgn4": "12b8748b134e8a7c67bfa87c94b9b5de4f76128af7bf82fac196528b5b6c7996",
+          "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int4_baseline_B16_T10/observation/fc_05.sgn4": "af6acbb5c356a9b9884823886383c8020093f6cf724dd6605a115df1afdcfdc7",
+          "C:/Users/조상제/.cache/torch/hub/checkpoints/vgg16-397923af.pth": "397923af8e79cdbb6a7127f12361acd7a2f83e06b05044ddf496e83de57a5bf0"
+        },
+        "artifact_hashes": {
+          "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_combination_ica_B16_T10_20260916/registration.json": "70f48861153e5155c5d9fe1c4a20851dc8b4ca3ee9317dbef362148bf6d3d484",
+          "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_combination_ica_B16_T10_20260916/result.json": "80946a388a649ebb8a99bfcbdb9301659788d89e1cb7562c441dca43f6b4e36e",
+          "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_combination_ica_B16_T10_20260916/sources.pt": "408099e99bb6ad1d8b721ff518c040ec9bec332827f0f36d3b9715ffeb4af5a2"
+        },
+        "protected_source_hashes": {
+          "quantization_aware_cpa\\qacpa\\fc_replay.py": "bfe6b9671752edef941c56f80960ddea962b7e0ea44831f3c798887f41d4e49a",
+          "quantization_aware_cpa\\qacpa\\full_update_replay.py": "e45e9830bdcf2046de1c0e1ebe4579392c764065eb991826b9c6abd926af2e1c",
+          "quantization_aware_cpa\\qacpa\\full_update_adjoint.py": "882efe5424f4c57660d1c4c15a2af06c4b31180ffb84f7f9bbd191f31d7cbade",
+          "quantization_aware_cpa\\qacpa\\full_update_pipeline.py": "bdb9b0a10ecc77db1a8e6dbd089e43352aad5feabe6ef4298715a7805a3468c9",
+          "quantization_aware_cpa\\qacpa\\deterministic_hybrid_setup.py": "ca040e2e88f900b8490402bb18fc132f7c8a17e1b45d5662673ad6b56fbc958a",
+          "quantization_aware_cpa\\qacpa\\signed_baseline_observation.py": "2c18135e86e80c8f666033d5ea9d0c3495869ee60809fed04e295f28fa92cda2",
+          "quantization_aware_cpa\\qacpa\\signed_cell_rank.py": "7ae6deb49738914f4cd1f9328397400d89835ede4cd6a462b2ea260a77ae4acb",
+          "quantization_aware_cpa\\qacpa\\signed_cell_rank_evaluation.py": "c163aaa54bd8d5ebfc1528f49cafe2a830de72a9d7fe38583391b7ddaf4a65ef",
+          "quantization_aware_cpa\\qacpa\\upstream_naive.py": "8f29b885d86f4121eda5c55e17486a3a48bd8db08b2f83890fe7726730d1ee92",
+          "quantized_update_cpa\\cell_utils.py": "6725bce108a8e795680342231696c70f1d2bc8b01a727022c605e40aa841d361",
+          "official_cpa\\src\\gradient_inversion.py": "c598e1ee7b4079f741060d10c8dfd14711e393a97384c63cf32be77a458b1873",
+          "official_cpa\\src\\feature_inversion.py": "dc73880427e3eaf1f873d295f17f1d48d301882f634ee5df36ddeea8e56c4dec",
+          "official_cpa\\src\\vgg16.py": "8114eca8cde553dace5f777aedd21b70851c570d473e597b005cb6be4b248d36"
+        },
+        "shared_source_hashes": {
+          "quantization_aware_cpa\\qacpa\\signed_e2e_cells.py": "d69a6fd4a79eecf128c085079559cfd1808e1d7fa05794dce0fe72877d8b6db2",
+          "quantization_aware_cpa\\qacpa\\signed_e2e_runner.py": "2c68298f3fe6b38e5040231c2f21a250a07761e5fe93f3a259226360483253df",
+          "quantization_aware_cpa\\qacpa\\fc_replay.py": "bfe6b9671752edef941c56f80960ddea962b7e0ea44831f3c798887f41d4e49a",
+          "quantization_aware_cpa\\qacpa\\full_update_replay.py": "e45e9830bdcf2046de1c0e1ebe4579392c764065eb991826b9c6abd926af2e1c",
+          "quantization_aware_cpa\\qacpa\\full_update_adjoint.py": "882efe5424f4c57660d1c4c15a2af06c4b31180ffb84f7f9bbd191f31d7cbade"
+        }
+      },
+      "after": {
+        "public_input_hashes": {
+          "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int4_baseline_B16_T10/observation/manifest.json": "9b4891765e6fc7e4adb1e3e11c158b3d4a2c3430d3397e1f1466ddafe2e1cd69",
+          "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int4_baseline_B16_T10/observation/fc_00.sgn4": "697c24316428133714e9fad5831429adced101d90c921746b4802b0914079a70",
+          "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int4_baseline_B16_T10/observation/fc_01.sgn4": "005da86bee21afa8bee1dda0a4cba492510c73b021b64114f030f3d9f52343a6",
+          "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int4_baseline_B16_T10/observation/fc_02.sgn4": "b6bc983225a97a481832f4d028bf1f41a087f84e4810df01f69ce397d1875baf",
+          "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int4_baseline_B16_T10/observation/fc_03.sgn4": "d8220d804ac511d93e307dfab6ed41d30718eb571d5e4725a62351bc5e5b0936",
+          "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int4_baseline_B16_T10/observation/fc_04.sgn4": "12b8748b134e8a7c67bfa87c94b9b5de4f76128af7bf82fac196528b5b6c7996",
+          "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int4_baseline_B16_T10/observation/fc_05.sgn4": "af6acbb5c356a9b9884823886383c8020093f6cf724dd6605a115df1afdcfdc7",
+          "C:/Users/조상제/.cache/torch/hub/checkpoints/vgg16-397923af.pth": "397923af8e79cdbb6a7127f12361acd7a2f83e06b05044ddf496e83de57a5bf0"
+        },
+        "artifact_hashes": {
+          "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_combination_ica_B16_T10_20260916/registration.json": "70f48861153e5155c5d9fe1c4a20851dc8b4ca3ee9317dbef362148bf6d3d484",
+          "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_combination_ica_B16_T10_20260916/result.json": "80946a388a649ebb8a99bfcbdb9301659788d89e1cb7562c441dca43f6b4e36e",
+          "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_combination_ica_B16_T10_20260916/sources.pt": "408099e99bb6ad1d8b721ff518c040ec9bec332827f0f36d3b9715ffeb4af5a2"
+        },
+        "protected_source_hashes": {
+          "quantization_aware_cpa\\qacpa\\fc_replay.py": "bfe6b9671752edef941c56f80960ddea962b7e0ea44831f3c798887f41d4e49a",
+          "quantization_aware_cpa\\qacpa\\full_update_replay.py": "e45e9830bdcf2046de1c0e1ebe4579392c764065eb991826b9c6abd926af2e1c",
+          "quantization_aware_cpa\\qacpa\\full_update_adjoint.py": "882efe5424f4c57660d1c4c15a2af06c4b31180ffb84f7f9bbd191f31d7cbade",
+          "quantization_aware_cpa\\qacpa\\full_update_pipeline.py": "bdb9b0a10ecc77db1a8e6dbd089e43352aad5feabe6ef4298715a7805a3468c9",
+          "quantization_aware_cpa\\qacpa\\deterministic_hybrid_setup.py": "ca040e2e88f900b8490402bb18fc132f7c8a17e1b45d5662673ad6b56fbc958a",
+          "quantization_aware_cpa\\qacpa\\signed_baseline_observation.py": "2c18135e86e80c8f666033d5ea9d0c3495869ee60809fed04e295f28fa92cda2",
+          "quantization_aware_cpa\\qacpa\\signed_cell_rank.py": "7ae6deb49738914f4cd1f9328397400d89835ede4cd6a462b2ea260a77ae4acb",
+          "quantization_aware_cpa\\qacpa\\signed_cell_rank_evaluation.py": "c163aaa54bd8d5ebfc1528f49cafe2a830de72a9d7fe38583391b7ddaf4a65ef",
+          "quantization_aware_cpa\\qacpa\\upstream_naive.py": "8f29b885d86f4121eda5c55e17486a3a48bd8db08b2f83890fe7726730d1ee92",
+          "quantized_update_cpa\\cell_utils.py": "6725bce108a8e795680342231696c70f1d2bc8b01a727022c605e40aa841d361",
+          "official_cpa\\src\\gradient_inversion.py": "c598e1ee7b4079f741060d10c8dfd14711e393a97384c63cf32be77a458b1873",
+          "official_cpa\\src\\feature_inversion.py": "dc73880427e3eaf1f873d295f17f1d48d301882f634ee5df36ddeea8e56c4dec",
+          "official_cpa\\src\\vgg16.py": "8114eca8cde553dace5f777aedd21b70851c570d473e597b005cb6be4b248d36"
+        },
+        "shared_source_hashes": {
+          "quantization_aware_cpa\\qacpa\\signed_e2e_cells.py": "d69a6fd4a79eecf128c085079559cfd1808e1d7fa05794dce0fe72877d8b6db2",
+          "quantization_aware_cpa\\qacpa\\signed_e2e_runner.py": "2c68298f3fe6b38e5040231c2f21a250a07761e5fe93f3a259226360483253df",
+          "quantization_aware_cpa\\qacpa\\fc_replay.py": "bfe6b9671752edef941c56f80960ddea962b7e0ea44831f3c798887f41d4e49a",
+          "quantization_aware_cpa\\qacpa\\full_update_replay.py": "e45e9830bdcf2046de1c0e1ebe4579392c764065eb991826b9c6abd926af2e1c",
+          "quantization_aware_cpa\\qacpa\\full_update_adjoint.py": "882efe5424f4c57660d1c4c15a2af06c4b31180ffb84f7f9bbd191f31d7cbade"
+        }
+      },
+      "unchanged": true
+    }
+  },
+  "result": {
+    "task_id": "CPA_SIGNED_COMBINATION_ICA_IMPLEMENTATION_20260916",
+    "plan_version": 1,
+    "status": "COMPLETED",
+    "method": "INT4_combination_ica",
+    "stage": "INVERT",
+    "quality": "NOT_EVALUATED",
+    "source_artifact_sha256": "408099e99bb6ad1d8b721ff518c040ec9bec332827f0f36d3b9715ffeb4af5a2",
+    "checkpoint_sha256": "397923af8e79cdbb6a7127f12361acd7a2f83e06b05044ddf496e83de57a5bf0",
+    "fia_config": {
+      "n_iter": 25000,
+      "lr": 0.1,
+      "tv": 0.1,
+      "fi": 1.0,
+      "optimizer": "adam",
+      "scheduler": "cosine",
+      "log_every": 5000
+    },
+    "candidate_sha256": "4efc29ad08b1ea8b0cee6991de6f185839708c2c72aaafb4fedfb307b5e680ce",
+    "target_z_sha256": "38057e1436066133280aa06dbdea087bea4cf3abe19e01c16e0d52307ba732f8",
+    "runtime_pre_adapter": {
+      "phase": "INVERT_PRE_DIRECT_FIA",
+      "device": "cuda",
+      "torch": "2.13.0+cu132",
+      "cuda": "13.2",
+      "cuda_available": true,
+      "dtype": "float32",
+      "deterministic_algorithms": true,
+      "deterministic_warn_only": false,
+      "matmul_tf32": false,
+      "cudnn_tf32": false,
+      "cudnn_benchmark": false,
+      "cudnn_deterministic": true,
+      "cublas_workspace_config": ":4096:8",
+      "threads": 1
+    },
+    "runtime_post_adapter": {
+      "phase": "INVERT_POST_DIRECT_FIA",
+      "device": "cuda",
+      "torch": "2.13.0+cu132",
+      "cuda": "13.2",
+      "cuda_available": true,
+      "dtype": "float32",
+      "deterministic_algorithms": true,
+      "deterministic_warn_only": true,
+      "matmul_tf32": false,
+      "cudnn_tf32": false,
+      "cudnn_benchmark": true,
+      "cudnn_deterministic": true,
+      "cublas_workspace_config": ":4096:8",
+      "threads": 1
+    },
+    "integrity": {
+      "before": {
+        "public_input_hashes": {
+          "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int4_baseline_B16_T10/observation/manifest.json": "9b4891765e6fc7e4adb1e3e11c158b3d4a2c3430d3397e1f1466ddafe2e1cd69",
+          "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int4_baseline_B16_T10/observation/fc_00.sgn4": "697c24316428133714e9fad5831429adced101d90c921746b4802b0914079a70",
+          "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int4_baseline_B16_T10/observation/fc_01.sgn4": "005da86bee21afa8bee1dda0a4cba492510c73b021b64114f030f3d9f52343a6",
+          "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int4_baseline_B16_T10/observation/fc_02.sgn4": "b6bc983225a97a481832f4d028bf1f41a087f84e4810df01f69ce397d1875baf",
+          "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int4_baseline_B16_T10/observation/fc_03.sgn4": "d8220d804ac511d93e307dfab6ed41d30718eb571d5e4725a62351bc5e5b0936",
+          "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int4_baseline_B16_T10/observation/fc_04.sgn4": "12b8748b134e8a7c67bfa87c94b9b5de4f76128af7bf82fac196528b5b6c7996",
+          "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int4_baseline_B16_T10/observation/fc_05.sgn4": "af6acbb5c356a9b9884823886383c8020093f6cf724dd6605a115df1afdcfdc7",
+          "C:/Users/조상제/.cache/torch/hub/checkpoints/vgg16-397923af.pth": "397923af8e79cdbb6a7127f12361acd7a2f83e06b05044ddf496e83de57a5bf0"
+        },
+        "artifact_hashes": {
+          "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_combination_ica_B16_T10_20260916/registration.json": "70f48861153e5155c5d9fe1c4a20851dc8b4ca3ee9317dbef362148bf6d3d484",
+          "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_combination_ica_B16_T10_20260916/result.json": "80946a388a649ebb8a99bfcbdb9301659788d89e1cb7562c441dca43f6b4e36e",
+          "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_combination_ica_B16_T10_20260916/sources.pt": "408099e99bb6ad1d8b721ff518c040ec9bec332827f0f36d3b9715ffeb4af5a2"
+        },
+        "protected_source_hashes": {
+          "quantization_aware_cpa\\qacpa\\fc_replay.py": "bfe6b9671752edef941c56f80960ddea962b7e0ea44831f3c798887f41d4e49a",
+          "quantization_aware_cpa\\qacpa\\full_update_replay.py": "e45e9830bdcf2046de1c0e1ebe4579392c764065eb991826b9c6abd926af2e1c",
+          "quantization_aware_cpa\\qacpa\\full_update_adjoint.py": "882efe5424f4c57660d1c4c15a2af06c4b31180ffb84f7f9bbd191f31d7cbade",
+          "quantization_aware_cpa\\qacpa\\full_update_pipeline.py": "bdb9b0a10ecc77db1a8e6dbd089e43352aad5feabe6ef4298715a7805a3468c9",
+          "quantization_aware_cpa\\qacpa\\deterministic_hybrid_setup.py": "ca040e2e88f900b8490402bb18fc132f7c8a17e1b45d5662673ad6b56fbc958a",
+          "quantization_aware_cpa\\qacpa\\signed_baseline_observation.py": "2c18135e86e80c8f666033d5ea9d0c3495869ee60809fed04e295f28fa92cda2",
+          "quantization_aware_cpa\\qacpa\\signed_cell_rank.py": "7ae6deb49738914f4cd1f9328397400d89835ede4cd6a462b2ea260a77ae4acb",
+          "quantization_aware_cpa\\qacpa\\signed_cell_rank_evaluation.py": "c163aaa54bd8d5ebfc1528f49cafe2a830de72a9d7fe38583391b7ddaf4a65ef",
+          "quantization_aware_cpa\\qacpa\\upstream_naive.py": "8f29b885d86f4121eda5c55e17486a3a48bd8db08b2f83890fe7726730d1ee92",
+          "quantized_update_cpa\\cell_utils.py": "6725bce108a8e795680342231696c70f1d2bc8b01a727022c605e40aa841d361",
+          "official_cpa\\src\\gradient_inversion.py": "c598e1ee7b4079f741060d10c8dfd14711e393a97384c63cf32be77a458b1873",
+          "official_cpa\\src\\feature_inversion.py": "dc73880427e3eaf1f873d295f17f1d48d301882f634ee5df36ddeea8e56c4dec",
+          "official_cpa\\src\\vgg16.py": "8114eca8cde553dace5f777aedd21b70851c570d473e597b005cb6be4b248d36"
+        },
+        "shared_source_hashes": {
+          "quantization_aware_cpa\\qacpa\\signed_e2e_cells.py": "d69a6fd4a79eecf128c085079559cfd1808e1d7fa05794dce0fe72877d8b6db2",
+          "quantization_aware_cpa\\qacpa\\signed_e2e_runner.py": "2c68298f3fe6b38e5040231c2f21a250a07761e5fe93f3a259226360483253df",
+          "quantization_aware_cpa\\qacpa\\fc_replay.py": "bfe6b9671752edef941c56f80960ddea962b7e0ea44831f3c798887f41d4e49a",
+          "quantization_aware_cpa\\qacpa\\full_update_replay.py": "e45e9830bdcf2046de1c0e1ebe4579392c764065eb991826b9c6abd926af2e1c",
+          "quantization_aware_cpa\\qacpa\\full_update_adjoint.py": "882efe5424f4c57660d1c4c15a2af06c4b31180ffb84f7f9bbd191f31d7cbade"
+        }
+      },
+      "after": {
+        "public_input_hashes": {
+          "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int4_baseline_B16_T10/observation/manifest.json": "9b4891765e6fc7e4adb1e3e11c158b3d4a2c3430d3397e1f1466ddafe2e1cd69",
+          "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int4_baseline_B16_T10/observation/fc_00.sgn4": "697c24316428133714e9fad5831429adced101d90c921746b4802b0914079a70",
+          "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int4_baseline_B16_T10/observation/fc_01.sgn4": "005da86bee21afa8bee1dda0a4cba492510c73b021b64114f030f3d9f52343a6",
+          "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int4_baseline_B16_T10/observation/fc_02.sgn4": "b6bc983225a97a481832f4d028bf1f41a087f84e4810df01f69ce397d1875baf",
+          "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int4_baseline_B16_T10/observation/fc_03.sgn4": "d8220d804ac511d93e307dfab6ed41d30718eb571d5e4725a62351bc5e5b0936",
+          "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int4_baseline_B16_T10/observation/fc_04.sgn4": "12b8748b134e8a7c67bfa87c94b9b5de4f76128af7bf82fac196528b5b6c7996",
+          "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int4_baseline_B16_T10/observation/fc_05.sgn4": "af6acbb5c356a9b9884823886383c8020093f6cf724dd6605a115df1afdcfdc7",
+          "C:/Users/조상제/.cache/torch/hub/checkpoints/vgg16-397923af.pth": "397923af8e79cdbb6a7127f12361acd7a2f83e06b05044ddf496e83de57a5bf0"
+        },
+        "artifact_hashes": {
+          "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_combination_ica_B16_T10_20260916/registration.json": "70f48861153e5155c5d9fe1c4a20851dc8b4ca3ee9317dbef362148bf6d3d484",
+          "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_combination_ica_B16_T10_20260916/result.json": "80946a388a649ebb8a99bfcbdb9301659788d89e1cb7562c441dca43f6b4e36e",
+          "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_combination_ica_B16_T10_20260916/sources.pt": "408099e99bb6ad1d8b721ff518c040ec9bec332827f0f36d3b9715ffeb4af5a2"
+        },
+        "protected_source_hashes": {
+          "quantization_aware_cpa\\qacpa\\fc_replay.py": "bfe6b9671752edef941c56f80960ddea962b7e0ea44831f3c798887f41d4e49a",
+          "quantization_aware_cpa\\qacpa\\full_update_replay.py": "e45e9830bdcf2046de1c0e1ebe4579392c764065eb991826b9c6abd926af2e1c",
+          "quantization_aware_cpa\\qacpa\\full_update_adjoint.py": "882efe5424f4c57660d1c4c15a2af06c4b31180ffb84f7f9bbd191f31d7cbade",
+          "quantization_aware_cpa\\qacpa\\full_update_pipeline.py": "bdb9b0a10ecc77db1a8e6dbd089e43352aad5feabe6ef4298715a7805a3468c9",
+          "quantization_aware_cpa\\qacpa\\deterministic_hybrid_setup.py": "ca040e2e88f900b8490402bb18fc132f7c8a17e1b45d5662673ad6b56fbc958a",
+          "quantization_aware_cpa\\qacpa\\signed_baseline_observation.py": "2c18135e86e80c8f666033d5ea9d0c3495869ee60809fed04e295f28fa92cda2",
+          "quantization_aware_cpa\\qacpa\\signed_cell_rank.py": "7ae6deb49738914f4cd1f9328397400d89835ede4cd6a462b2ea260a77ae4acb",
+          "quantization_aware_cpa\\qacpa\\signed_cell_rank_evaluation.py": "c163aaa54bd8d5ebfc1528f49cafe2a830de72a9d7fe38583391b7ddaf4a65ef",
+          "quantization_aware_cpa\\qacpa\\upstream_naive.py": "8f29b885d86f4121eda5c55e17486a3a48bd8db08b2f83890fe7726730d1ee92",
+          "quantized_update_cpa\\cell_utils.py": "6725bce108a8e795680342231696c70f1d2bc8b01a727022c605e40aa841d361",
+          "official_cpa\\src\\gradient_inversion.py": "c598e1ee7b4079f741060d10c8dfd14711e393a97384c63cf32be77a458b1873",
+          "official_cpa\\src\\feature_inversion.py": "dc73880427e3eaf1f873d295f17f1d48d301882f634ee5df36ddeea8e56c4dec",
+          "official_cpa\\src\\vgg16.py": "8114eca8cde553dace5f777aedd21b70851c570d473e597b005cb6be4b248d36"
+        },
+        "shared_source_hashes": {
+          "quantization_aware_cpa\\qacpa\\signed_e2e_cells.py": "d69a6fd4a79eecf128c085079559cfd1808e1d7fa05794dce0fe72877d8b6db2",
+          "quantization_aware_cpa\\qacpa\\signed_e2e_runner.py": "2c68298f3fe6b38e5040231c2f21a250a07761e5fe93f3a259226360483253df",
+          "quantization_aware_cpa\\qacpa\\fc_replay.py": "bfe6b9671752edef941c56f80960ddea962b7e0ea44831f3c798887f41d4e49a",
+          "quantization_aware_cpa\\qacpa\\full_update_replay.py": "e45e9830bdcf2046de1c0e1ebe4579392c764065eb991826b9c6abd926af2e1c",
+          "quantization_aware_cpa\\qacpa\\full_update_adjoint.py": "882efe5424f4c57660d1c4c15a2af06c4b31180ffb84f7f9bbd191f31d7cbade"
+        }
+      },
+      "unchanged": true
+    },
+    "direct_fia": {
+      "log": [
+        {
+          "iter": 0,
+          "loss": 1.1806316375732422,
+          "loss_fi": 0.9599459767341614,
+          "loss_gm": 0.0,
+          "loss_tv": 2.2068567276000977,
+          "time_sec": 4.599447600077838
+        },
+        {
+          "iter": 4999,
+          "loss": 0.1448436677455902,
+          "loss_fi": 0.08894549310207367,
+          "loss_gm": 0.0,
+          "loss_tv": 0.5589817762374878,
+          "time_sec": 427.3880407999968
+        },
+        {
+          "iter": 9999,
+          "loss": 0.12438888847827911,
+          "loss_fi": 0.07878867536783218,
+          "loss_gm": 0.0,
+          "loss_tv": 0.4560021758079529,
+          "time_sec": 852.9450430000434
+        },
+        {
+          "iter": 14999,
+          "loss": 0.1006241962313652,
+          "loss_fi": 0.07533669471740723,
+          "loss_gm": 0.0,
+          "loss_tv": 0.25287503004074097,
+          "time_sec": 1278.197586699971
+        },
+        {
+          "iter": 19999,
+          "loss": 0.08061397820711136,
+          "loss_fi": 0.07009942829608917,
+          "loss_gm": 0.0,
+          "loss_tv": 0.10514549911022186,
+          "time_sec": 1704.7412183000706
+        },
+        {
+          "iter": 24999,
+          "loss": 0.0746084600687027,
+          "loss_fi": 0.06910340487957001,
+          "loss_gm": 0.0,
+          "loss_tv": 0.05505054444074631,
+          "time_sec": 2118.7567101999884
+        }
+      ],
+      "wall_time_sec": 2120.8910431000404,
+      "setup_wall_time_sec": 2.1138252000091597,
+      "optimizer_wall_time_sec": 2118.7772179000312,
+      "source_hashes": {
+        "C:\\Users\\조상제\\Desktop\\CPA\\official_cpa\\src\\datasets.py": "f9e7b47733b5acb4b73e6914a3f100b5187766bbed78a12d17b69c39eec1b6d1",
+        "C:\\Users\\조상제\\Desktop\\CPA\\official_cpa\\src\\utils.py": "565f1bf1a47f387d042b35bb24f677d1ff0d3ec5d979e2876c31ed114179b9fe",
+        "C:\\Users\\조상제\\Desktop\\CPA\\official_cpa\\src\\gradient_inversion_utils.py": "668d77788dc8d81c181c8c0a9fbe8533c6fbea22ba46fe7f5e15b0a431300e5f",
+        "C:\\Users\\조상제\\Desktop\\CPA\\official_cpa\\src\\gradient_inversion.py": "c598e1ee7b4079f741060d10c8dfd14711e393a97384c63cf32be77a458b1873",
+        "C:\\Users\\조상제\\Desktop\\CPA\\official_cpa\\src\\feature_inversion.py": "dc73880427e3eaf1f873d295f17f1d48d301882f634ee5df36ddeea8e56c4dec",
+        "C:\\Users\\조상제\\Desktop\\CPA\\official_cpa\\src\\vgg16.py": "8114eca8cde553dace5f777aedd21b70851c570d473e597b005cb6be4b248d36",
+        "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\qacpa\\upstream_naive.py": "8f29b885d86f4121eda5c55e17486a3a48bd8db08b2f83890fe7726730d1ee92",
+        "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\qacpa\\seed.py": "769366fcc2cf3e144d8caa86f73a55dcb0b6be615a45dab8b6e117399150c558"
+      },
+      "settings": {
+        "seed": 42,
+        "device": "cuda",
+        "n_iter": 25000,
+        "lr": 0.1,
+        "tv": 0.1,
+        "fi": 1.0,
+        "optimizer": "adam",
+        "scheduler": "cosine",
+        "log_every": 5000,
+        "backend": "official_cpa/src/feature_inversion.py:Direct",
+        "feature_adapter": "VGG16 IMAGENET1K_V1 features/avgpool; unused classifier skipped",
+        "evaluation_inputs": false,
+        "cudnn_benchmark": true,
+        "cudnn_deterministic": true
+      }
+    },
+    "timing": {
+      "wall_seconds": 2122.55177260004
+    },
+    "private_data_used": false,
+    "generator_used": false
+  },
+  "candidate_sha256": "4efc29ad08b1ea8b0cee6991de6f185839708c2c72aaafb4fedfb307b5e680ce",
+  "candidate_shape": [
+    16,
+    3,
+    224,
+    224
+  ],
+  "source_registration": {
+    "task_id": "CPA_SIGNED_COMBINATION_ICA_IMPLEMENTATION_20260916",
+    "plan_version": 1,
+    "status": "COMPLETED",
+    "method": "INT4_combination_ica",
+    "stage": "SEPARATE",
+    "registered_before_execution": true,
+    "public_observation": "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int4_baseline_B16_T10/observation",
+    "checkpoint": "C:/Users/조상제/.cache/torch/hub/checkpoints/vgg16-397923af.pth",
+    "checkpoint_sha256": "397923af8e79cdbb6a7127f12361acd7a2f83e06b05044ddf496e83de57a5bf0",
+    "packet_hashes": {
+      "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int4_baseline_B16_T10/observation/manifest.json": "9b4891765e6fc7e4adb1e3e11c158b3d4a2c3430d3397e1f1466ddafe2e1cd69",
+      "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int4_baseline_B16_T10/observation/fc_00.sgn4": "697c24316428133714e9fad5831429adced101d90c921746b4802b0914079a70",
+      "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int4_baseline_B16_T10/observation/fc_01.sgn4": "005da86bee21afa8bee1dda0a4cba492510c73b021b64114f030f3d9f52343a6",
+      "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int4_baseline_B16_T10/observation/fc_02.sgn4": "b6bc983225a97a481832f4d028bf1f41a087f84e4810df01f69ce397d1875baf",
+      "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int4_baseline_B16_T10/observation/fc_03.sgn4": "d8220d804ac511d93e307dfab6ed41d30718eb571d5e4725a62351bc5e5b0936",
+      "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int4_baseline_B16_T10/observation/fc_04.sgn4": "12b8748b134e8a7c67bfa87c94b9b5de4f76128af7bf82fac196528b5b6c7996",
+      "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int4_baseline_B16_T10/observation/fc_05.sgn4": "af6acbb5c356a9b9884823886383c8020093f6cf724dd6605a115df1afdcfdc7"
+    },
+    "input_hashes": {
+      "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int4_baseline_B16_T10/observation/manifest.json": "9b4891765e6fc7e4adb1e3e11c158b3d4a2c3430d3397e1f1466ddafe2e1cd69",
+      "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int4_baseline_B16_T10/observation/fc_00.sgn4": "697c24316428133714e9fad5831429adced101d90c921746b4802b0914079a70",
+      "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int4_baseline_B16_T10/observation/fc_01.sgn4": "005da86bee21afa8bee1dda0a4cba492510c73b021b64114f030f3d9f52343a6",
+      "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int4_baseline_B16_T10/observation/fc_02.sgn4": "b6bc983225a97a481832f4d028bf1f41a087f84e4810df01f69ce397d1875baf",
+      "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int4_baseline_B16_T10/observation/fc_03.sgn4": "d8220d804ac511d93e307dfab6ed41d30718eb571d5e4725a62351bc5e5b0936",
+      "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int4_baseline_B16_T10/observation/fc_04.sgn4": "12b8748b134e8a7c67bfa87c94b9b5de4f76128af7bf82fac196528b5b6c7996",
+      "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int4_baseline_B16_T10/observation/fc_05.sgn4": "af6acbb5c356a9b9884823886383c8020093f6cf724dd6605a115df1afdcfdc7",
+      "C:/Users/조상제/.cache/torch/hub/checkpoints/vgg16-397923af.pth": "397923af8e79cdbb6a7127f12361acd7a2f83e06b05044ddf496e83de57a5bf0"
+    },
+    "adapted_source_hashes": {
+      "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/qacpa/signed_combination_ica_runner.py": "a7ca10cb59f59c76e50c3c20a564ca6d13ee1795385fade62b302a44854a124f",
+      "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/qacpa/signed_combination_ica.py": "1c7482e1ed77ca4641cd8822ebb6046c5150e794c3838aacc3e3d575f3d992d6"
+    },
+    "shared_source_hashes": {
+      "quantization_aware_cpa\\qacpa\\signed_e2e_cells.py": "d69a6fd4a79eecf128c085079559cfd1808e1d7fa05794dce0fe72877d8b6db2",
+      "quantization_aware_cpa\\qacpa\\signed_e2e_runner.py": "2c68298f3fe6b38e5040231c2f21a250a07761e5fe93f3a259226360483253df",
+      "quantization_aware_cpa\\qacpa\\fc_replay.py": "bfe6b9671752edef941c56f80960ddea962b7e0ea44831f3c798887f41d4e49a",
+      "quantization_aware_cpa\\qacpa\\full_update_replay.py": "e45e9830bdcf2046de1c0e1ebe4579392c764065eb991826b9c6abd926af2e1c",
+      "quantization_aware_cpa\\qacpa\\full_update_adjoint.py": "882efe5424f4c57660d1c4c15a2af06c4b31180ffb84f7f9bbd191f31d7cbade"
+    },
+    "config": {
+      "fast_max_iter": 200,
+      "fast_tolerance": 1e-06,
+      "refinement_iterations": 1000,
+      "refinement_lr": 0.001,
+      "refinement_momentum": 0.0,
+      "refinement_weight_decay": 0.0,
+      "negentropy_weight": 0.0935827857091549,
+      "decorrelation_weight": 0.2513674104161625,
+      "sign_weight": 0.05811961446881231,
+      "l1_weight": 17.94138146247377,
+      "eps": 1e-10,
+      "rank_floor": 1e-12
+    },
+    "runtime": {
+      "phase": "SEPARATE",
+      "device": "cpu",
+      "torch": "2.13.0+cu132",
+      "cuda": "13.2",
+      "cuda_available": true,
+      "dtype": "float32",
+      "deterministic_algorithms": true,
+      "deterministic_warn_only": false,
+      "matmul_tf32": false,
+      "cudnn_tf32": false,
+      "cudnn_benchmark": false,
+      "cudnn_deterministic": true,
+      "cublas_workspace_config": ":4096:8",
+      "threads": 1
+    },
+    "source_count": 16,
+    "source_shape": [
+      16,
+      25088
+    ],
+    "native_estimated_order": true,
+    "private_data_used": false,
+    "generator_used": false,
+    "quality": "NOT_EVALUATED",
+    "integrity_before": {
+      "public_input_hashes": {
+        "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int4_baseline_B16_T10/observation/manifest.json": "9b4891765e6fc7e4adb1e3e11c158b3d4a2c3430d3397e1f1466ddafe2e1cd69",
+        "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int4_baseline_B16_T10/observation/fc_00.sgn4": "697c24316428133714e9fad5831429adced101d90c921746b4802b0914079a70",
+        "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int4_baseline_B16_T10/observation/fc_01.sgn4": "005da86bee21afa8bee1dda0a4cba492510c73b021b64114f030f3d9f52343a6",
+        "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int4_baseline_B16_T10/observation/fc_02.sgn4": "b6bc983225a97a481832f4d028bf1f41a087f84e4810df01f69ce397d1875baf",
+        "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int4_baseline_B16_T10/observation/fc_03.sgn4": "d8220d804ac511d93e307dfab6ed41d30718eb571d5e4725a62351bc5e5b0936",
+        "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int4_baseline_B16_T10/observation/fc_04.sgn4": "12b8748b134e8a7c67bfa87c94b9b5de4f76128af7bf82fac196528b5b6c7996",
+        "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int4_baseline_B16_T10/observation/fc_05.sgn4": "af6acbb5c356a9b9884823886383c8020093f6cf724dd6605a115df1afdcfdc7",
+        "C:/Users/조상제/.cache/torch/hub/checkpoints/vgg16-397923af.pth": "397923af8e79cdbb6a7127f12361acd7a2f83e06b05044ddf496e83de57a5bf0"
+      },
+      "artifact_hashes": {},
+      "protected_source_hashes": {
+        "quantization_aware_cpa\\qacpa\\fc_replay.py": "bfe6b9671752edef941c56f80960ddea962b7e0ea44831f3c798887f41d4e49a",
+        "quantization_aware_cpa\\qacpa\\full_update_replay.py": "e45e9830bdcf2046de1c0e1ebe4579392c764065eb991826b9c6abd926af2e1c",
+        "quantization_aware_cpa\\qacpa\\full_update_adjoint.py": "882efe5424f4c57660d1c4c15a2af06c4b31180ffb84f7f9bbd191f31d7cbade",
+        "quantization_aware_cpa\\qacpa\\full_update_pipeline.py": "bdb9b0a10ecc77db1a8e6dbd089e43352aad5feabe6ef4298715a7805a3468c9",
+        "quantization_aware_cpa\\qacpa\\deterministic_hybrid_setup.py": "ca040e2e88f900b8490402bb18fc132f7c8a17e1b45d5662673ad6b56fbc958a",
+        "quantization_aware_cpa\\qacpa\\signed_baseline_observation.py": "2c18135e86e80c8f666033d5ea9d0c3495869ee60809fed04e295f28fa92cda2",
+        "quantization_aware_cpa\\qacpa\\signed_cell_rank.py": "7ae6deb49738914f4cd1f9328397400d89835ede4cd6a462b2ea260a77ae4acb",
+        "quantization_aware_cpa\\qacpa\\signed_cell_rank_evaluation.py": "c163aaa54bd8d5ebfc1528f49cafe2a830de72a9d7fe38583391b7ddaf4a65ef",
+        "quantization_aware_cpa\\qacpa\\upstream_naive.py": "8f29b885d86f4121eda5c55e17486a3a48bd8db08b2f83890fe7726730d1ee92",
+        "quantized_update_cpa\\cell_utils.py": "6725bce108a8e795680342231696c70f1d2bc8b01a727022c605e40aa841d361",
+        "official_cpa\\src\\gradient_inversion.py": "c598e1ee7b4079f741060d10c8dfd14711e393a97384c63cf32be77a458b1873",
+        "official_cpa\\src\\feature_inversion.py": "dc73880427e3eaf1f873d295f17f1d48d301882f634ee5df36ddeea8e56c4dec",
+        "official_cpa\\src\\vgg16.py": "8114eca8cde553dace5f777aedd21b70851c570d473e597b005cb6be4b248d36"
+      },
+      "shared_source_hashes": {
+        "quantization_aware_cpa\\qacpa\\signed_e2e_cells.py": "d69a6fd4a79eecf128c085079559cfd1808e1d7fa05794dce0fe72877d8b6db2",
+        "quantization_aware_cpa\\qacpa\\signed_e2e_runner.py": "2c68298f3fe6b38e5040231c2f21a250a07761e5fe93f3a259226360483253df",
+        "quantization_aware_cpa\\qacpa\\fc_replay.py": "bfe6b9671752edef941c56f80960ddea962b7e0ea44831f3c798887f41d4e49a",
+        "quantization_aware_cpa\\qacpa\\full_update_replay.py": "e45e9830bdcf2046de1c0e1ebe4579392c764065eb991826b9c6abd926af2e1c",
+        "quantization_aware_cpa\\qacpa\\full_update_adjoint.py": "882efe5424f4c57660d1c4c15a2af06c4b31180ffb84f7f9bbd191f31d7cbade"
+      }
+    },
+    "output_hashes": {
+      "sources.pt": "408099e99bb6ad1d8b721ff518c040ec9bec332827f0f36d3b9715ffeb4af5a2",
+      "S_hat": "21b7e95c0b30028fb5084b448f09664e1380a60b49d6c8e7868b0e8d78d2815b",
+      "target_z": "38057e1436066133280aa06dbdea087bea4cf3abe19e01c16e0d52307ba732f8"
+    }
+  }
+}

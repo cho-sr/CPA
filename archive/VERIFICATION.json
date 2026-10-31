@@ -1,0 +1,60 @@
+{
+  "date": "2026-10-31",
+  "verification_scope": "Archival integrity and static structure only; no research code or scientific tests executed.",
+  "selected_files": 6122,
+  "selected_bytes": 277303840,
+  "selected_hash_errors": [],
+  "static_parsing": {
+    "json": 4120,
+    "python": 541,
+    "toml": 1
+  },
+  "static_parse_errors": [
+    {
+      "path": ".ai/execution-results/CPA_SIGNED_COMBINATION_ICA_EXPERIMENT_20260916/final_audit.json",
+      "error": "JSONDecodeError",
+      "line": 598
+    },
+    {
+      "path": ".ai/execution-results/CPA_SIGNED_COMBINATION_ICA_REVIEW_20260917/before/parent_and_comparison/parent_final_audit.json",
+      "error": "JSONDecodeError",
+      "line": 598
+    },
+    {
+      "path": "quantization_aware_cpa/qacpa/run_pc_vs_pt_small_batch.py",
+      "error": "SyntaxError",
+      "line": 43
+    },
+    {
+      "path": "quantization_aware_cpa/results/paper_sparse_same80_keep50_30_20_R20_20260921/execution_record.json",
+      "error": "JSONDecodeError",
+      "line": 77
+    },
+    {
+      "path": "quantization_aware_cpa/results/paper_sparse_same80_keep50_30_20_R20_20260921/stage_execution.json",
+      "error": "JSONDecodeError",
+      "line": 77
+    },
+    {
+      "path": "quantization_aware_cpa/results/paper_sparse_same80_keep50_30_20_R20_20260921/v1_supersession.json",
+      "error": "JSONDecodeError",
+      "line": 69
+    }
+  ],
+  "static_parse_policy": "Known pre-existing source issues are preserved and documented with file hashes; no research repairs performed.",
+  "unexpected_static_parse_errors": [],
+  "current_manuscript_dependencies": [
+    "paper_assets/combined_results.tex",
+    "paper_assets/quantization_cifar100_imagenet.pdf",
+    "paper_assets/sparsification_cifar100_imagenet.pdf"
+  ],
+  "missing_current_manuscript_dependencies": [],
+  "credential_pattern_findings": [],
+  "original_workspace_preserved": {
+    "head": true,
+    "branch": true,
+    "index": true,
+    "staged_diff": true,
+    "tracked_diff": true
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "task_id": "CPA_SIGNED_INT4_GDONLY_SCREEN3_FIA_20260918",
+  "status": "FAILED",
+  "error_type": "TypeError",
+  "error": "Cannot handle this data type: (1, 1, 224), |u1",
+  "traceback": "Traceback (most recent call last):\n  File \"C:\\miniconda\\envs\\DLG\\Lib\\site-packages\\PIL\\Image.py\", line 3427, in fromarray\n    typemode, rawmode, color_modes = _fromarray_typemap[typekey]\n                                     ~~~~~~~~~~~~~~~~~~^^^^^^^^^\nKeyError: ((1, 1, 224), '|u1')\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"C:\\Users\\조상제\\Desktop\\CPA\\.ai\\execution-results\\CPA_SIGNED_INT4_GDONLY_SCREEN3_FIA_20260918\\run_pipeline.py\", line 51, in main\n    summary = pipeline.run_all(PUBLIC, PRIVATE)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\qacpa\\signed_int4_gdonly_screen3.py\", line 649, in run_all\n    evaluation = evaluate(public_root, private_root)\n                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\qacpa\\signed_int4_gdonly_screen3.py\", line 616, in evaluate\n    slides = _slides(output / \"slide_png\", final_columns, candidates, truth_x, reports, \"INT4 original CPA GD-only\")\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\qacpa\\signed_int4_gdonly_screen3.py\", line 517, in _slides\n    image = Image.fromarray(img).resize((cell_w, cell_h), Image.Resampling.BILINEAR)\n            ^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\miniconda\\envs\\DLG\\Lib\\site-packages\\PIL\\Image.py\", line 3431, in fromarray\n    raise TypeError(msg) from e\nTypeError: Cannot handle this data type: (1, 1, 224), |u1\n",
+  "failed_at": "2026-09-18T13:37:38.150025+00:00",
+  "public_root": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\signed_int4_gdonly_randomized8_screen3_fia_B16_T10_20260918",
+  "private_root": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results_private\\signed_int4_gdonly_randomized8_screen3_fia_B16_T10_20260918",
+  "model_calls": 0
+}

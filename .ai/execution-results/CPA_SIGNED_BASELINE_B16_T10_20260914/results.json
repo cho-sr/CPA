@@ -1,0 +1,572 @@
+{
+  "task_id": "CPA_SIGNED_BASELINE_B16_T10_20260914",
+  "plan_version": 1,
+  "status": "COMPLETED",
+  "claim": {
+    "task_id": "CPA_SIGNED_BASELINE_B16_T10_20260914",
+    "plan_version": 1,
+    "session_id": "01a09e4d-51f3-7121-84e2-03a7a9ac3039",
+    "cli_pid": 18272,
+    "snapshot_sha256": "7b478361f9bd8d0c972e97124412759e11a2e08e4443cf149da56dd1e2dbf13c",
+    "model": "gpt-6-astra",
+    "effort": "high",
+    "evidence": "current turn_context and parent codex.exe PID 18272",
+    "started_at_utc": "2026-09-14T08:09:03.763936+00:00"
+  },
+  "completed_at_utc": "2026-09-14T09:33:54.548840+00:00",
+  "tests": {
+    "tests": 158,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "executions": {
+    "tests": {
+      "stage": "tests",
+      "status": "COMPLETED",
+      "command_argv": [
+        "C:\\miniconda\\envs\\DLG\\python.exe",
+        "-B",
+        "-m",
+        "pytest",
+        "-q",
+        "quantization_aware_cpa/tests/test_signed_baseline.py",
+        "quantization_aware_cpa/tests/test_full_update_evaluation.py",
+        "quantized_update_cpa/tests/test_cell_utils.py",
+        "-o",
+        "cache_dir=C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\.ai\\execution-results\\CPA_SIGNED_BASELINE_B16_T10_20260914\\pytest-cache",
+        "--basetemp=C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\.ai\\execution-results\\CPA_SIGNED_BASELINE_B16_T10_20260914\\pytest-tmp",
+        "--junitxml=C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\.ai\\execution-results\\CPA_SIGNED_BASELINE_B16_T10_20260914\\pytest.xml"
+      ],
+      "cwd": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA",
+      "source_hashes": {
+        "quantization_aware_cpa\\qacpa\\signed_baseline.py": "a2a6b3e3c7909fb15ab44d49839e6bb0759e44832e223d16f0f2c24e0e45e467",
+        "quantization_aware_cpa\\qacpa\\signed_baseline_evaluation.py": "62f583afddf9f325971a241c7fbb74ccb0926a3cbe251fd27bc00485e89e380f",
+        "quantization_aware_cpa\\qacpa\\signed_baseline_observation.py": "2c18135e86e80c8f666033d5ea9d0c3495869ee60809fed04e295f28fa92cda2",
+        "quantization_aware_cpa\\qacpa\\full_update_evaluation.py": "bb67a12bbdd165f75eab69a6cabc7e85e3b1446596e8ac171285c954df6adada"
+      },
+      "log": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\.ai\\execution-results\\CPA_SIGNED_BASELINE_B16_T10_20260914\\tests_attempt_1.log",
+      "attempt": 1,
+      "started_at_utc": "2026-09-14T08:19:14.952594+00:00",
+      "pid": 21020,
+      "exit_status": 0,
+      "wall_seconds": 8.198369799996726,
+      "ended_at_utc": "2026-09-14T08:19:23.151505+00:00"
+    },
+    "collect": {
+      "stage": "collect",
+      "status": "COMPLETED",
+      "command_argv": [
+        "C:\\miniconda\\envs\\DLG\\python.exe",
+        "-B",
+        "-m",
+        "qacpa.signed_baseline",
+        "collect",
+        "--truth-source",
+        "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\quantization_aware_cpa\\results_private\\deterministic_fc_hybrid_pilot_B16_T10\\evaluation_truth.pt",
+        "--checkpoint",
+        "C:\\Users\\\uc870\uc0c1\uc81c\\.cache\\torch\\hub\\checkpoints\\vgg16-397923af.pth",
+        "--public-output",
+        "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\quantization_aware_cpa\\results\\signed_int4_baseline_B16_T10\\observation",
+        "--private-output",
+        "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\quantization_aware_cpa\\results_private\\signed_int4_baseline_B16_T10\\observation"
+      ],
+      "cwd": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA",
+      "source_hashes": {
+        "quantization_aware_cpa\\qacpa\\signed_baseline.py": "a2a6b3e3c7909fb15ab44d49839e6bb0759e44832e223d16f0f2c24e0e45e467",
+        "quantization_aware_cpa\\qacpa\\signed_baseline_evaluation.py": "62f583afddf9f325971a241c7fbb74ccb0926a3cbe251fd27bc00485e89e380f",
+        "quantization_aware_cpa\\qacpa\\signed_baseline_observation.py": "2c18135e86e80c8f666033d5ea9d0c3495869ee60809fed04e295f28fa92cda2",
+        "quantization_aware_cpa\\qacpa\\full_update_evaluation.py": "bb67a12bbdd165f75eab69a6cabc7e85e3b1446596e8ac171285c954df6adada"
+      },
+      "log": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\.ai\\execution-results\\CPA_SIGNED_BASELINE_B16_T10_20260914\\collect_attempt_1.log",
+      "attempt": 1,
+      "started_at_utc": "2026-09-14T08:19:45.867671+00:00",
+      "pid": 6372,
+      "exit_status": 0,
+      "wall_seconds": 13.710816400009207,
+      "ended_at_utc": "2026-09-14T08:19:59.579772+00:00"
+    },
+    "naive": {
+      "stage": "naive",
+      "status": "COMPLETED",
+      "command_argv": [
+        "C:\\miniconda\\envs\\DLG\\python.exe",
+        "-B",
+        "-m",
+        "qacpa.signed_baseline",
+        "naive",
+        "--public-observation",
+        "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\quantization_aware_cpa\\results\\signed_int4_baseline_B16_T10\\observation",
+        "--checkpoint",
+        "C:\\Users\\\uc870\uc0c1\uc81c\\.cache\\torch\\hub\\checkpoints\\vgg16-397923af.pth",
+        "--output",
+        "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\quantization_aware_cpa\\results\\signed_int4_baseline_B16_T10\\naive"
+      ],
+      "cwd": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA",
+      "source_hashes": {
+        "quantization_aware_cpa\\qacpa\\signed_baseline.py": "a2a6b3e3c7909fb15ab44d49839e6bb0759e44832e223d16f0f2c24e0e45e467",
+        "quantization_aware_cpa\\qacpa\\signed_baseline_evaluation.py": "62f583afddf9f325971a241c7fbb74ccb0926a3cbe251fd27bc00485e89e380f",
+        "quantization_aware_cpa\\qacpa\\signed_baseline_observation.py": "2c18135e86e80c8f666033d5ea9d0c3495869ee60809fed04e295f28fa92cda2",
+        "quantization_aware_cpa\\qacpa\\full_update_evaluation.py": "bb67a12bbdd165f75eab69a6cabc7e85e3b1446596e8ac171285c954df6adada"
+      },
+      "log": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\.ai\\execution-results\\CPA_SIGNED_BASELINE_B16_T10_20260914\\naive_attempt_1.log",
+      "attempt": 1,
+      "started_at_utc": "2026-09-14T08:20:22.907438+00:00",
+      "pid": 3680,
+      "exit_status": 0,
+      "wall_seconds": 2144.442747700028,
+      "ended_at_utc": "2026-09-14T08:56:07.351383+00:00"
+    },
+    "reference": {
+      "stage": "reference",
+      "status": "COMPLETED",
+      "command_argv": [
+        "C:\\miniconda\\envs\\DLG\\python.exe",
+        "-B",
+        "-m",
+        "qacpa.signed_baseline",
+        "reference",
+        "--raw-updates",
+        "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\quantization_aware_cpa\\results_private\\signed_int4_baseline_B16_T10\\observation\\raw_updates.pt",
+        "--checkpoint",
+        "C:\\Users\\\uc870\uc0c1\uc81c\\.cache\\torch\\hub\\checkpoints\\vgg16-397923af.pth",
+        "--output",
+        "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\quantization_aware_cpa\\results_private\\signed_int4_baseline_B16_T10\\reference"
+      ],
+      "cwd": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA",
+      "source_hashes": {
+        "quantization_aware_cpa\\qacpa\\signed_baseline.py": "a2a6b3e3c7909fb15ab44d49839e6bb0759e44832e223d16f0f2c24e0e45e467",
+        "quantization_aware_cpa\\qacpa\\signed_baseline_evaluation.py": "62f583afddf9f325971a241c7fbb74ccb0926a3cbe251fd27bc00485e89e380f",
+        "quantization_aware_cpa\\qacpa\\signed_baseline_observation.py": "2c18135e86e80c8f666033d5ea9d0c3495869ee60809fed04e295f28fa92cda2",
+        "quantization_aware_cpa\\qacpa\\full_update_evaluation.py": "bb67a12bbdd165f75eab69a6cabc7e85e3b1446596e8ac171285c954df6adada"
+      },
+      "log": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\.ai\\execution-results\\CPA_SIGNED_BASELINE_B16_T10_20260914\\reference_attempt_1.log",
+      "attempt": 1,
+      "started_at_utc": "2026-09-14T08:56:22.532484+00:00",
+      "pid": 8576,
+      "exit_status": 0,
+      "wall_seconds": 2162.102980500029,
+      "ended_at_utc": "2026-09-14T09:32:24.637091+00:00"
+    },
+    "evaluate": {
+      "stage": "evaluate",
+      "status": "COMPLETED",
+      "command_argv": [
+        "C:\\miniconda\\envs\\DLG\\python.exe",
+        "-B",
+        "-m",
+        "qacpa.signed_baseline",
+        "evaluate",
+        "--naive",
+        "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\quantization_aware_cpa\\results\\signed_int4_baseline_B16_T10\\naive",
+        "--reference",
+        "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\quantization_aware_cpa\\results_private\\signed_int4_baseline_B16_T10\\reference",
+        "--private-observation",
+        "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\quantization_aware_cpa\\results_private\\signed_int4_baseline_B16_T10\\observation",
+        "--public-observation",
+        "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\quantization_aware_cpa\\results\\signed_int4_baseline_B16_T10\\observation",
+        "--output",
+        "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\quantization_aware_cpa\\results_private\\signed_int4_baseline_B16_T10\\evaluation"
+      ],
+      "cwd": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA",
+      "source_hashes": {
+        "quantization_aware_cpa\\qacpa\\signed_baseline.py": "a2a6b3e3c7909fb15ab44d49839e6bb0759e44832e223d16f0f2c24e0e45e467",
+        "quantization_aware_cpa\\qacpa\\signed_baseline_evaluation.py": "6cbb63f980bb7349bbf58b3c4fc541dfb3edf7a86af994cf06666155cd034add",
+        "quantization_aware_cpa\\qacpa\\signed_baseline_observation.py": "2c18135e86e80c8f666033d5ea9d0c3495869ee60809fed04e295f28fa92cda2",
+        "quantization_aware_cpa\\qacpa\\full_update_evaluation.py": "bb67a12bbdd165f75eab69a6cabc7e85e3b1446596e8ac171285c954df6adada"
+      },
+      "log": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\.ai\\execution-results\\CPA_SIGNED_BASELINE_B16_T10_20260914\\evaluate_attempt_1.log",
+      "attempt": 1,
+      "started_at_utc": "2026-09-14T09:33:09.050565+00:00",
+      "pid": 13864,
+      "exit_status": 0,
+      "wall_seconds": 17.968184600002132,
+      "ended_at_utc": "2026-09-14T09:33:27.019407+00:00"
+    }
+  },
+  "communication": {
+    "code_bytes": 61821428,
+    "header_bytes_excluding_scale": 96,
+    "manifest_bytes": 6139,
+    "packet_file_bytes": 61821548,
+    "scale_bytes": 24,
+    "total_file_bytes": 61827687
+  },
+  "offline_review_01": {
+    "review": "planner_review_01.md",
+    "scope": "offline provenance and output guards only",
+    "old_evaluation_sha256": "62f583afddf9f325971a241c7fbb74ccb0926a3cbe251fd27bc00485e89e380f",
+    "core_sha256": "a2a6b3e3c7909fb15ab44d49839e6bb0759e44832e223d16f0f2c24e0e45e467",
+    "new_evaluation_sha256": "6cbb63f980bb7349bbf58b3c4fc541dfb3edf7a86af994cf06666155cd034add",
+    "focused_tests": {
+      "exit_status": 0,
+      "passed": 25,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "pytest_seconds": 2.119,
+      "xml": "review01-pytest.xml",
+      "test_source_sha256": "68a21cedf41b31b50abf76070c5b70a1fedaf11b65a4ee2c88bda12ce2aa6e0f"
+    },
+    "applied_at_utc": "2026-09-14T09:11:42.542248+00:00",
+    "collection_or_arm_reexecution": false,
+    "handoff_changed": false
+  },
+  "provenance_validation": {
+    "status": "PASS",
+    "raw_updates_sha256": "ef9aefc66ab9fcfd0b023fdfc064dbadc27567bd3ef3508bc14ebda9af28ba4c",
+    "public_manifest_sha256": "9b4891765e6fc7e4adb1e3e11c158b3d4a2c3430d3397e1f1466ddafe2e1cd69",
+    "distinct_arm_identities": true,
+    "registered_settings_and_sources_valid": true,
+    "private_output_isolated": true,
+    "paths": {
+      "naive": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\quantization_aware_cpa\\results\\signed_int4_baseline_B16_T10\\naive",
+      "reference": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\quantization_aware_cpa\\results_private\\signed_int4_baseline_B16_T10\\reference",
+      "private_observation": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\quantization_aware_cpa\\results_private\\signed_int4_baseline_B16_T10\\observation",
+      "public_observation": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\quantization_aware_cpa\\results\\signed_int4_baseline_B16_T10\\observation",
+      "output": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\quantization_aware_cpa\\results_private\\signed_int4_baseline_B16_T10\\evaluation"
+    }
+  },
+  "all_raw_deltas_torch_equal": true,
+  "arm_settings_equal": true,
+  "fia_initializations_equal": true,
+  "image_means": {
+    "naive": {
+      "mean_psnr_db": 11.517332145631135,
+      "mean_ssim": 0.2848939897083067,
+      "mean_lpips": 0.8229246027767658,
+      "mean_mse": 0.07810934683437974
+    },
+    "reference": {
+      "mean_psnr_db": 12.391145458190616,
+      "mean_ssim": 0.3468838648868412,
+      "mean_lpips": 0.4596484303474426,
+      "mean_mse": 0.06559046470766662
+    }
+  },
+  "embedding_mean_cosine": {
+    "naive": 0.31160516232475394,
+    "reference": 0.9952736717591482
+  },
+  "naive_minus_reference": {
+    "mean_psnr_db": -0.8738133125594807,
+    "mean_ssim": -0.06198987517853449,
+    "mean_lpips": 0.3632761724293232,
+    "mean_mse": 0.012518882126713121
+  },
+  "paired_differences_path": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\quantization_aware_cpa\\results_private\\signed_int4_baseline_B16_T10\\evaluation\\comparison.json",
+  "runtime": {
+    "naive": {
+      "python": "3.11.14 | packaged by Anaconda, Inc. | (main, Oct 21 2025, 18:30:03) [MSC v.1929 64 bit (AMD64)]",
+      "torch": "2.13.0+cu132",
+      "numpy": "2.4.4",
+      "torchvision": "0.28.0+cu132",
+      "cuda": "13.2",
+      "cudnn": 92000,
+      "cudnn_enabled": true,
+      "cudnn_benchmark": true,
+      "cudnn_deterministic": true,
+      "deterministic_algorithms": true,
+      "deterministic_warn_only": true,
+      "matmul_tf32": false,
+      "cudnn_tf32": false,
+      "cublas_workspace_config": ":4096:8",
+      "threads": 1,
+      "gpu": "NVIDIA GeForce RTX 5060 Ti",
+      "cuda_peak_allocated": 3593020928,
+      "cuda_peak_reserved": 3959422976
+    },
+    "reference": {
+      "python": "3.11.14 | packaged by Anaconda, Inc. | (main, Oct 21 2025, 18:30:03) [MSC v.1929 64 bit (AMD64)]",
+      "torch": "2.13.0+cu132",
+      "numpy": "2.4.4",
+      "torchvision": "0.28.0+cu132",
+      "cuda": "13.2",
+      "cudnn": 92000,
+      "cudnn_enabled": true,
+      "cudnn_benchmark": true,
+      "cudnn_deterministic": true,
+      "deterministic_algorithms": true,
+      "deterministic_warn_only": true,
+      "matmul_tf32": false,
+      "cudnn_tf32": false,
+      "cublas_workspace_config": ":4096:8",
+      "threads": 1,
+      "gpu": "NVIDIA GeForce RTX 5060 Ti",
+      "cuda_peak_allocated": 3593020928,
+      "cuda_peak_reserved": 3959422976
+    }
+  },
+  "protected_sources_before": {
+    "quantized_update_cpa/quantization.py": "ae0f812c7de3de07cce3796c701475d6fc3e0a822f7d6dd8ab951d34201e3ceb",
+    "quantized_update_cpa/cell_utils.py": "6725bce108a8e795680342231696c70f1d2bc8b01a727022c605e40aa841d361",
+    "quantization_aware_cpa/qacpa/upstream_naive.py": "8f29b885d86f4121eda5c55e17486a3a48bd8db08b2f83890fe7726730d1ee92",
+    "quantization_aware_cpa/qacpa/deterministic_hybrid_setup.py": "ca040e2e88f900b8490402bb18fc132f7c8a17e1b45d5662673ad6b56fbc958a",
+    "quantization_aware_cpa/qacpa/fc_replay.py": "bfe6b9671752edef941c56f80960ddea962b7e0ea44831f3c798887f41d4e49a",
+    "quantization_aware_cpa/qacpa/full_update_evaluation.py": "0ca0c01115bedc4d5b09d9bac8791bbc18b5cca29f43c5812a345f391c61ef08",
+    "quantization_aware_cpa/qacpa/full_update_pipeline.py": "bdb9b0a10ecc77db1a8e6dbd089e43352aad5feabe6ef4298715a7805a3468c9",
+    "quantization_aware_cpa/qacpa/report_full_update_iterations.py": "10b7de25713b39fb3f453f530cc5bb54e37d834b26a7430ceb52239b40e052d0",
+    ".ai/STATE.md": "7d28f690b6364b791e14c4ab8164ec708cc88201485e956081594a5278c6e446",
+    ".ai/RELAY.md": "003e78b6a78a5b967644e709b8dfedc1cba8a97a76bb289baef18428612426e2",
+    "official_cpa\\src\\attack.py": "d2984fcab6708d1c28bec7c36c7792d40b01b7b4bd150316263f6f8bbd6b3816",
+    "official_cpa\\src\\collect_grads.py": "4d39b5e4bcbebe36dd8131d6c4a5ec0456e7e9de51f7301c0b5079a04aa436e6",
+    "official_cpa\\src\\collect_updates.py": "78a07e3f872231cb582c828eb315bb3c04976bc2f36fdecae5bdb6c17d7f6177",
+    "official_cpa\\src\\datasets.py": "f9e7b47733b5acb4b73e6914a3f100b5187766bbed78a12d17b69c39eec1b6d1",
+    "official_cpa\\src\\eval_utils.py": "042e6263905b32044290e2e1e4d93c54ebcb8e813509c27cf76bdd23b00ec349",
+    "official_cpa\\src\\feature_inversion.py": "dc73880427e3eaf1f873d295f17f1d48d301882f634ee5df36ddeea8e56c4dec",
+    "official_cpa\\src\\gradient_inversion.py": "c598e1ee7b4079f741060d10c8dfd14711e393a97384c63cf32be77a458b1873",
+    "official_cpa\\src\\gradient_inversion_utils.py": "668d77788dc8d81c181c8c0a9fbe8533c6fbea22ba46fe7f5e15b0a431300e5f",
+    "official_cpa\\src\\log_utils.py": "70ced512bcd2de0e6e52d34a5cb9ca34ae7877a0b220b044fce12e48c422cd80",
+    "official_cpa\\src\\models.py": "f684ca948a8ba8020d82cba3d2bdc5df731dd51d9807e38c5be37a3feab4ee56",
+    "official_cpa\\src\\report_m6_attack_results.py": "ce40db9745aebc515c5d52a031d3a4b2806e74edf9068ab26291094ba6455fa4",
+    "official_cpa\\src\\train.py": "a054cbe9c855b05bba9c808a59524c019b6549dde04c432a6e1906448d125bf1",
+    "official_cpa\\src\\utils.py": "565f1bf1a47f387d042b35bb24f677d1ff0d3ec5d979e2876c31ed114179b9fe",
+    "official_cpa\\src\\vgg16.py": "8114eca8cde553dace5f777aedd21b70851c570d473e597b005cb6be4b248d36"
+  },
+  "protected_sources_after": {
+    "quantized_update_cpa/quantization.py": "ae0f812c7de3de07cce3796c701475d6fc3e0a822f7d6dd8ab951d34201e3ceb",
+    "quantized_update_cpa/cell_utils.py": "6725bce108a8e795680342231696c70f1d2bc8b01a727022c605e40aa841d361",
+    "quantization_aware_cpa/qacpa/upstream_naive.py": "8f29b885d86f4121eda5c55e17486a3a48bd8db08b2f83890fe7726730d1ee92",
+    "quantization_aware_cpa/qacpa/deterministic_hybrid_setup.py": "ca040e2e88f900b8490402bb18fc132f7c8a17e1b45d5662673ad6b56fbc958a",
+    "quantization_aware_cpa/qacpa/fc_replay.py": "bfe6b9671752edef941c56f80960ddea962b7e0ea44831f3c798887f41d4e49a",
+    "quantization_aware_cpa/qacpa/full_update_evaluation.py": "bb67a12bbdd165f75eab69a6cabc7e85e3b1446596e8ac171285c954df6adada",
+    "quantization_aware_cpa/qacpa/full_update_pipeline.py": "bdb9b0a10ecc77db1a8e6dbd089e43352aad5feabe6ef4298715a7805a3468c9",
+    "quantization_aware_cpa/qacpa/report_full_update_iterations.py": "10b7de25713b39fb3f453f530cc5bb54e37d834b26a7430ceb52239b40e052d0",
+    ".ai/STATE.md": "7d28f690b6364b791e14c4ab8164ec708cc88201485e956081594a5278c6e446",
+    ".ai/RELAY.md": "003e78b6a78a5b967644e709b8dfedc1cba8a97a76bb289baef18428612426e2",
+    "official_cpa\\src\\attack.py": "d2984fcab6708d1c28bec7c36c7792d40b01b7b4bd150316263f6f8bbd6b3816",
+    "official_cpa\\src\\collect_grads.py": "4d39b5e4bcbebe36dd8131d6c4a5ec0456e7e9de51f7301c0b5079a04aa436e6",
+    "official_cpa\\src\\collect_updates.py": "78a07e3f872231cb582c828eb315bb3c04976bc2f36fdecae5bdb6c17d7f6177",
+    "official_cpa\\src\\datasets.py": "f9e7b47733b5acb4b73e6914a3f100b5187766bbed78a12d17b69c39eec1b6d1",
+    "official_cpa\\src\\eval_utils.py": "042e6263905b32044290e2e1e4d93c54ebcb8e813509c27cf76bdd23b00ec349",
+    "official_cpa\\src\\feature_inversion.py": "dc73880427e3eaf1f873d295f17f1d48d301882f634ee5df36ddeea8e56c4dec",
+    "official_cpa\\src\\gradient_inversion.py": "c598e1ee7b4079f741060d10c8dfd14711e393a97384c63cf32be77a458b1873",
+    "official_cpa\\src\\gradient_inversion_utils.py": "668d77788dc8d81c181c8c0a9fbe8533c6fbea22ba46fe7f5e15b0a431300e5f",
+    "official_cpa\\src\\log_utils.py": "70ced512bcd2de0e6e52d34a5cb9ca34ae7877a0b220b044fce12e48c422cd80",
+    "official_cpa\\src\\models.py": "f684ca948a8ba8020d82cba3d2bdc5df731dd51d9807e38c5be37a3feab4ee56",
+    "official_cpa\\src\\report_m6_attack_results.py": "ce40db9745aebc515c5d52a031d3a4b2806e74edf9068ab26291094ba6455fa4",
+    "official_cpa\\src\\train.py": "a054cbe9c855b05bba9c808a59524c019b6549dde04c432a6e1906448d125bf1",
+    "official_cpa\\src\\utils.py": "565f1bf1a47f387d042b35bb24f677d1ff0d3ec5d979e2876c31ed114179b9fe",
+    "official_cpa\\src\\vgg16.py": "8114eca8cde553dace5f777aedd21b70851c570d473e597b005cb6be4b248d36"
+  },
+  "authorized_shared_helper_change": [
+    "quantization_aware_cpa/qacpa/full_update_evaluation.py"
+  ],
+  "all_other_protected_hashes_equal": true,
+  "artifacts": {
+    "quantization_aware_cpa\\results\\signed_int4_baseline_B16_T10\\naive\\candidate.pt": {
+      "bytes": 9635433,
+      "sha256": "fe683f68013896a407a38130ee54ef9dc799a9ca1abf7c4f08efeefea7d91751"
+    },
+    "quantization_aware_cpa\\results\\signed_int4_baseline_B16_T10\\naive\\cpa_initial.json": {
+      "bytes": 818,
+      "sha256": "5be72676f8198b25d59b0be2c189a83941160064257125a9071eae8afff18326"
+    },
+    "quantization_aware_cpa\\results\\signed_int4_baseline_B16_T10\\naive\\cpa_progress.json": {
+      "bytes": 458,
+      "sha256": "3de78fe4be813c3b6c9359e5abc0928c717b901a393c56549e9ab0c7bb3d248c"
+    },
+    "quantization_aware_cpa\\results\\signed_int4_baseline_B16_T10\\naive\\cpa_result.json": {
+      "bytes": 3825,
+      "sha256": "32a4af0ddaa699869b75c0c01fb56732e85cabc1a755970dbe68b323a17717aa"
+    },
+    "quantization_aware_cpa\\results\\signed_int4_baseline_B16_T10\\naive\\fia_initial.json": {
+      "bytes": 836,
+      "sha256": "1c537388d5846db8950ea1aef684739d6366b1955075ab6158060258e8a2fd4a"
+    },
+    "quantization_aware_cpa\\results\\signed_int4_baseline_B16_T10\\naive\\fia_progress.json": {
+      "bytes": 403,
+      "sha256": "58158699504335d625b92a0973f0d8d8f8a8719a22c6303dd7ef7daa86f35b37"
+    },
+    "quantization_aware_cpa\\results\\signed_int4_baseline_B16_T10\\naive\\fia_result.json": {
+      "bytes": 3174,
+      "sha256": "d14a76c62f51a50f8eb541d8ab4b9680383ddda75b70a155a918f6d51027b582"
+    },
+    "quantization_aware_cpa\\results\\signed_int4_baseline_B16_T10\\naive\\raw_metrics.json": {
+      "bytes": 3781,
+      "sha256": "430a218d5dbc1b327462fe3f75e2b19f69a4001f879b6b73d73af0e0b13a4bbf"
+    },
+    "quantization_aware_cpa\\results\\signed_int4_baseline_B16_T10\\naive\\registered_arm.json": {
+      "bytes": 2428,
+      "sha256": "729d2a30e0d0a0d69695a739540fe44c1167e91303ccdeb68e918844adcba0c7"
+    },
+    "quantization_aware_cpa\\results\\signed_int4_baseline_B16_T10\\naive\\result.json": {
+      "bytes": 2115,
+      "sha256": "701654f38122d79ef3887d40072558ffe30fa6d11371706b8bca619af3f11156"
+    },
+    "quantization_aware_cpa\\results\\signed_int4_baseline_B16_T10\\naive\\sources.pt": {
+      "bytes": 3213093,
+      "sha256": "c033e0df9304a6e0dcb19491bb43c3ac80cabed52566409e0f76dbe74194d7eb"
+    },
+    "quantization_aware_cpa\\results\\signed_int4_baseline_B16_T10\\naive\\cpa\\cpa_checkpoint.pt": {
+      "bytes": 6365,
+      "sha256": "db0a973fc67241fcd9e7ca88c62c7ae8798aef0880e135e93dd3f0e6145f12c9"
+    },
+    "quantization_aware_cpa\\results\\signed_int4_baseline_B16_T10\\naive\\cpa\\cpa_manifest.json": {
+      "bytes": 2197,
+      "sha256": "ee41b9ae33763363a9d31d36b76f2ebc49a2be55d0ecc073577d592f05921689"
+    },
+    "quantization_aware_cpa\\results\\signed_int4_baseline_B16_T10\\naive\\cpa\\upstream_cpa_r5g69tqh\\imagenet\\vgg16\\attack\\cp_direct\\observed\\private_uia\\w_16_0.pkl": {
+      "bytes": 1868507,
+      "sha256": "9653c0d6584b5c664d8f87bde21281eaa0247ac4414b9c1779cd9201bafba705"
+    },
+    "quantization_aware_cpa\\results\\signed_int4_baseline_B16_T10\\naive\\fia\\fia_checkpoint.pt": {
+      "bytes": 28904797,
+      "sha256": "2652481417524ec62af903b1a30812bb89e6972337403ced21319eb19c567a48"
+    },
+    "quantization_aware_cpa\\results\\signed_int4_baseline_B16_T10\\naive\\fia\\fia_manifest.json": {
+      "bytes": 2113,
+      "sha256": "8102df5784f61f0123ae1e0f3748a8e6ee88165f369466780d2d17750027ccb0"
+    },
+    "quantization_aware_cpa\\results\\signed_int4_baseline_B16_T10\\observation\\fc_00.sgn4": {
+      "bytes": 2068,
+      "sha256": "697c24316428133714e9fad5831429adced101d90c921746b4802b0914079a70"
+    },
+    "quantization_aware_cpa\\results\\signed_int4_baseline_B16_T10\\observation\\fc_01.sgn4": {
+      "bytes": 51380244,
+      "sha256": "005da86bee21afa8bee1dda0a4cba492510c73b021b64114f030f3d9f52343a6"
+    },
+    "quantization_aware_cpa\\results\\signed_int4_baseline_B16_T10\\observation\\fc_02.sgn4": {
+      "bytes": 2068,
+      "sha256": "b6bc983225a97a481832f4d028bf1f41a087f84e4810df01f69ce397d1875baf"
+    },
+    "quantization_aware_cpa\\results\\signed_int4_baseline_B16_T10\\observation\\fc_03.sgn4": {
+      "bytes": 8388628,
+      "sha256": "d8220d804ac511d93e307dfab6ed41d30718eb571d5e4725a62351bc5e5b0936"
+    },
+    "quantization_aware_cpa\\results\\signed_int4_baseline_B16_T10\\observation\\fc_04.sgn4": {
+      "bytes": 520,
+      "sha256": "12b8748b134e8a7c67bfa87c94b9b5de4f76128af7bf82fac196528b5b6c7996"
+    },
+    "quantization_aware_cpa\\results\\signed_int4_baseline_B16_T10\\observation\\fc_05.sgn4": {
+      "bytes": 2048020,
+      "sha256": "af6acbb5c356a9b9884823886383c8020093f6cf724dd6605a115df1afdcfdc7"
+    },
+    "quantization_aware_cpa\\results\\signed_int4_baseline_B16_T10\\observation\\manifest.json": {
+      "bytes": 6139,
+      "sha256": "9b4891765e6fc7e4adb1e3e11c158b3d4a2c3430d3397e1f1466ddafe2e1cd69"
+    },
+    "quantization_aware_cpa\\results_private\\signed_int4_baseline_B16_T10\\evaluation\\all16_compact.png": {
+      "bytes": 2655365,
+      "sha256": "9c58f92fd4a9f10586631a7aff04ca3ffaae9be2cd9274d2796241e8a77e0b1d"
+    },
+    "quantization_aware_cpa\\results_private\\signed_int4_baseline_B16_T10\\evaluation\\all16_comparison.png": {
+      "bytes": 3510936,
+      "sha256": "18f2915b0f6de501cebd38ad56b1da65bed5d06fff8186e2c9a3889e1ba0fc44"
+    },
+    "quantization_aware_cpa\\results_private\\signed_int4_baseline_B16_T10\\evaluation\\comparison.json": {
+      "bytes": 35574,
+      "sha256": "8cf7e0bc4b2ffd83732e0f2bcf1368e9921c6f35c43d5c10050c6b549a2a2234"
+    },
+    "quantization_aware_cpa\\results_private\\signed_int4_baseline_B16_T10\\evaluation\\report.md": {
+      "bytes": 1089,
+      "sha256": "6b67c2b61bcfa2a4d0a7c04c8bcda2b1e7e68a19f1a26a2cfeb8f62852b2aa21"
+    },
+    "quantization_aware_cpa\\results_private\\signed_int4_baseline_B16_T10\\observation\\evaluation_truth.pt": {
+      "bytes": 11241569,
+      "sha256": "724bbacbe316cc28dac086db9cfaf6507f4c1af31144fd610cc480985aab72e2"
+    },
+    "quantization_aware_cpa\\results_private\\signed_int4_baseline_B16_T10\\observation\\raw_updates.pt": {
+      "bytes": 494574229,
+      "sha256": "ef9aefc66ab9fcfd0b023fdfc064dbadc27567bd3ef3508bc14ebda9af28ba4c"
+    },
+    "quantization_aware_cpa\\results_private\\signed_int4_baseline_B16_T10\\observation\\sender_validation.json": {
+      "bytes": 8808,
+      "sha256": "6e78ec5ff2376b01c23a3606fa18b3d9e60d1209f55504211aaf811919d2e244"
+    },
+    "quantization_aware_cpa\\results_private\\signed_int4_baseline_B16_T10\\reference\\candidate.pt": {
+      "bytes": 9635433,
+      "sha256": "dfd8981d6a928a3dc4412796bd0305a9a3a0ed54dc7b07d1a2c2a5b47e8bbd49"
+    },
+    "quantization_aware_cpa\\results_private\\signed_int4_baseline_B16_T10\\reference\\cpa_initial.json": {
+      "bytes": 818,
+      "sha256": "5be72676f8198b25d59b0be2c189a83941160064257125a9071eae8afff18326"
+    },
+    "quantization_aware_cpa\\results_private\\signed_int4_baseline_B16_T10\\reference\\cpa_progress.json": {
+      "bytes": 461,
+      "sha256": "3cf5d26a8f2fa5538daaa8a84c60e4df3f377b7a6a242772e6a636a1ba10020b"
+    },
+    "quantization_aware_cpa\\results_private\\signed_int4_baseline_B16_T10\\reference\\cpa_result.json": {
+      "bytes": 3854,
+      "sha256": "35553b1d37db12d38ca590f8fac63b241815c1422324296cde00666d2f29d31e"
+    },
+    "quantization_aware_cpa\\results_private\\signed_int4_baseline_B16_T10\\reference\\fia_initial.json": {
+      "bytes": 836,
+      "sha256": "1c537388d5846db8950ea1aef684739d6366b1955075ab6158060258e8a2fd4a"
+    },
+    "quantization_aware_cpa\\results_private\\signed_int4_baseline_B16_T10\\reference\\fia_progress.json": {
+      "bytes": 408,
+      "sha256": "c9e288f2eca22f93c54997e50b6bc93189500e0641fcdeb440a194b277c634e3"
+    },
+    "quantization_aware_cpa\\results_private\\signed_int4_baseline_B16_T10\\reference\\fia_result.json": {
+      "bytes": 3182,
+      "sha256": "351e2c67d678462dd5e58ec21ea8a70fdace6f69f22f74d8e58f7c69944b8c40"
+    },
+    "quantization_aware_cpa\\results_private\\signed_int4_baseline_B16_T10\\reference\\raw_metrics.json": {
+      "bytes": 2844,
+      "sha256": "3c76d94eacbdecd74f44a548ff6698244c9ef41db11d67b4531ad006311b8015"
+    },
+    "quantization_aware_cpa\\results_private\\signed_int4_baseline_B16_T10\\reference\\registered_arm.json": {
+      "bytes": 2367,
+      "sha256": "2ab25d428a92c63886853e54d43a39625bd431b82d6a059f4d7deecc786ffd19"
+    },
+    "quantization_aware_cpa\\results_private\\signed_int4_baseline_B16_T10\\reference\\result.json": {
+      "bytes": 2053,
+      "sha256": "4c5b3aff8f728a0235bdfc2ac50c8ec371b734957809a5733f9abdf0ddf3d351"
+    },
+    "quantization_aware_cpa\\results_private\\signed_int4_baseline_B16_T10\\reference\\sources.pt": {
+      "bytes": 3213093,
+      "sha256": "ae05b24ed453f799d6c26e71ff4ead64f8544fd733404ecef5732a9498d94f47"
+    },
+    "quantization_aware_cpa\\results_private\\signed_int4_baseline_B16_T10\\reference\\cpa\\cpa_checkpoint.pt": {
+      "bytes": 6365,
+      "sha256": "885ba61085ce25f37381618615fdd452ab5a0652a0ba375f3b3382f066184b56"
+    },
+    "quantization_aware_cpa\\results_private\\signed_int4_baseline_B16_T10\\reference\\cpa\\cpa_manifest.json": {
+      "bytes": 2209,
+      "sha256": "8cf1f57e994a55e3ce3307872c12878f00c57bd9d6a512a8bbad9c9ffa18589a"
+    },
+    "quantization_aware_cpa\\results_private\\signed_int4_baseline_B16_T10\\reference\\cpa\\upstream_cpa_060j6dps\\imagenet\\vgg16\\attack\\cp_direct\\observed\\private_uia\\w_16_0.pkl": {
+      "bytes": 1868507,
+      "sha256": "e07b5f280eb5729389ebea155bf837b1f72ee59f07b5b0c83cfc256c72c4551b"
+    },
+    "quantization_aware_cpa\\results_private\\signed_int4_baseline_B16_T10\\reference\\fia\\fia_checkpoint.pt": {
+      "bytes": 28904797,
+      "sha256": "a66ca4ca3f5bda8404c8682fa8364c1ff4e0d3aa0a73a32624a49bffcb63de7c"
+    },
+    "quantization_aware_cpa\\results_private\\signed_int4_baseline_B16_T10\\reference\\fia\\fia_manifest.json": {
+      "bytes": 2125,
+      "sha256": "0137e01391738ea63b91a195653fadb44715fcfeec21b4517e91751c25809c41"
+    }
+  },
+  "limitations": [
+    "single batch/seed; no success threshold or generalization",
+    "FP32 Reference has raw precompression information unavailable to INT4 attacker",
+    "upstream negentropy overwritten to zero, unchanged",
+    "adaptive_avg_pool2d_backward_cuda nondeterministic warning with warn_only=True; no full determinism claim",
+    "code/bin/scale metrics describe observed/raw matrices, not reconstructed image-update replay"
+  ],
+  "scope_exclusions_preserved": [
+    "quantization-aware CPA",
+    "ensemble",
+    "MP",
+    "FIA update-consistency loss",
+    "oracle candidate selection",
+    "additional seed/batch/arm",
+    "GT-label attack"
+  ],
+  "planner_final_delivery": {
+    "state": "FAILED",
+    "peer": {
+      "id": "01a09ac2-0e8d-7f90-94a8-c45be99f4343",
+      "pid": 12728,
+      "started": "/Date(1789302803223)/"
+    },
+    "executable": "C:\\Users\\\uc870\uc0c1\uc81c\\.codex\\packages\\standalone\\releases\\0.154.0-x86_64-pc-windows-msvc\\bin\\codex.exe",
+    "attempted_at_utc": "2026-09-14T09:35:01.495296+00:00",
+    "authorized_one_time": true,
+    "exit_code": 1,
+    "receipt": "",
+    "stderr": "Error: failed to queue session message: thread/queue/add failed: failed to read thread: invalid thread-store request: no rollout found for thread id 01a09ac2-0e8d-7f90-94a8-c45be99f4343 (code -32603)"
+  }
+}

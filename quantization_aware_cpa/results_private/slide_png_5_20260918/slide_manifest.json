@@ -1,0 +1,210 @@
+{
+  "task_id": "CPA_SCREEN3_SLIDE_PNG_5_20260918",
+  "status": "COMPLETED",
+  "bit": 5,
+  "dimensions": [
+    3840,
+    2160
+  ],
+  "dpi": 240,
+  "optimizer_steps": 0,
+  "model_inference": false,
+  "metrics_recomputed": false,
+  "matching_recomputed": false,
+  "private_x_only": true,
+  "labels_consumed": false,
+  "private_meta": {
+    "path": "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results_private/signed_int4_baseline_B16_T10/observation/evaluation_truth.pt",
+    "sha256": "724bbacbe316cc28dac086db9cfaf6507f4c1af31144fd610cc480985aab72e2",
+    "bundle_keys_present": [
+      "labels",
+      "x",
+      "z"
+    ],
+    "consumed_field": "x only",
+    "labels_consumed": false,
+    "true_updates_consumed": false
+  },
+  "comparison_path": "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results_private/signed_int5_randomized8_screen3_fia_B16_T10_20260918_sweep/evaluation_recovery_20260918/comparison.json",
+  "comparison_sha256": "bee134ec832db6139f074959b936ffb1f5f935242e91261d9a6bffc91c06533a",
+  "public_gate_status": "PUBLIC_GATE_PASSED",
+  "public_candidate_count": 13,
+  "public_roots": [
+    "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int5_randomized8_screen3_fia_B16_T10_20260918_sweep"
+  ],
+  "frozen_selection": [
+    5,
+    7,
+    6
+  ],
+  "roles": [
+    "Ground truth",
+    "Naive dequantization baseline",
+    "Public rank 1 | member 05",
+    "Public rank 2 | member 07",
+    "Public rank 3 | member 06"
+  ],
+  "candidate_names": [
+    "center_25000",
+    "rank1_member_05_25000",
+    "rank2_member_07_25000",
+    "rank3_member_06_25000"
+  ],
+  "candidate_hashes": {
+    "center_25000": "a81bdf0ad6a57a57ccc49bb3185b59b6de005d698e4dd47008f27f3860b4013a",
+    "rank1_member_05_25000": "1b8310dccf236d3eec3dc77f8a44390e129ce579d47382e435fe336c7555ff3f",
+    "rank2_member_07_25000": "2a65df73d7dd6ac5da6c9c333e35420d223ad536758b3301a88413bcd42f7219",
+    "rank3_member_06_25000": "b7927384a73ab85554f2a6d5a0d3fea99bf4dc667f7b6225552962c8383d2aa7"
+  },
+  "overview": {
+    "file": "int5_25000_overview.png",
+    "sha256": "2445734dd85966443bc3522472fceb3e1831687b703162eb0dda303cda4211e8",
+    "dimensions": [
+      3840,
+      2160
+    ],
+    "row_range": [
+      1,
+      16
+    ],
+    "roles": [
+      "Ground truth",
+      "Naive dequantization baseline",
+      "Public rank 1 | member 05",
+      "Public rank 2 | member 07",
+      "Public rank 3 | member 06"
+    ],
+    "candidate_names": [
+      "center_25000",
+      "rank1_member_05_25000",
+      "rank2_member_07_25000",
+      "rank3_member_06_25000"
+    ],
+    "matching_reused": true,
+    "metrics_recomputed": false
+  },
+  "detail_pages": [
+    {
+      "file": "int5_25000_page01.png",
+      "sha256": "27c45b149d1cd250b0ca3131280e8b7146d84d4db2acb1f2102dfea1710b6b36",
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "row_range": [
+        1,
+        4
+      ],
+      "roles": [
+        "Ground truth",
+        "Naive dequantization baseline",
+        "Public rank 1 | member 05",
+        "Public rank 2 | member 07",
+        "Public rank 3 | member 06"
+      ],
+      "candidate_names": [
+        "center_25000",
+        "rank1_member_05_25000",
+        "rank2_member_07_25000",
+        "rank3_member_06_25000"
+      ],
+      "matching_reused": true,
+      "metrics_recomputed": false
+    },
+    {
+      "file": "int5_25000_page02.png",
+      "sha256": "7cf95c2eea545b3cc7fb4ab28ea686e9ea4ee60a4bc270974647cf436a9072b3",
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "row_range": [
+        5,
+        8
+      ],
+      "roles": [
+        "Ground truth",
+        "Naive dequantization baseline",
+        "Public rank 1 | member 05",
+        "Public rank 2 | member 07",
+        "Public rank 3 | member 06"
+      ],
+      "candidate_names": [
+        "center_25000",
+        "rank1_member_05_25000",
+        "rank2_member_07_25000",
+        "rank3_member_06_25000"
+      ],
+      "matching_reused": true,
+      "metrics_recomputed": false
+    },
+    {
+      "file": "int5_25000_page03.png",
+      "sha256": "89522b2e85a005189859a255577ee87276c6e6ca2fc035546554a6c8d57b2f9a",
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "row_range": [
+        9,
+        12
+      ],
+      "roles": [
+        "Ground truth",
+        "Naive dequantization baseline",
+        "Public rank 1 | member 05",
+        "Public rank 2 | member 07",
+        "Public rank 3 | member 06"
+      ],
+      "candidate_names": [
+        "center_25000",
+        "rank1_member_05_25000",
+        "rank2_member_07_25000",
+        "rank3_member_06_25000"
+      ],
+      "matching_reused": true,
+      "metrics_recomputed": false
+    },
+    {
+      "file": "int5_25000_page04.png",
+      "sha256": "302758ff2304583a8566ad9eb53da6098301317376d7b6cc67332dcbdf916a09",
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "row_range": [
+        13,
+        16
+      ],
+      "roles": [
+        "Ground truth",
+        "Naive dequantization baseline",
+        "Public rank 1 | member 05",
+        "Public rank 2 | member 07",
+        "Public rank 3 | member 06"
+      ],
+      "candidate_names": [
+        "center_25000",
+        "rank1_member_05_25000",
+        "rank2_member_07_25000",
+        "rank3_member_06_25000"
+      ],
+      "matching_reused": true,
+      "metrics_recomputed": false
+    }
+  ],
+  "zip": {
+    "file": "slide_png_5_20260918.zip",
+    "sha256": "9b90034953a079234b409c2984ade1b29e5ac13b505b74942329d2f3f791d8b7",
+    "members": [
+      "int5_25000_overview.png",
+      "int5_25000_page01.png",
+      "int5_25000_page02.png",
+      "int5_25000_page03.png",
+      "int5_25000_page04.png",
+      "index.md"
+    ]
+  },
+  "original_files_preserved": true,
+  "active_parent_handoff_modified": false
+}

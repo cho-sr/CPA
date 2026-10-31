@@ -1,0 +1,90 @@
+{
+  "task_id": "CPA_SINGLE_CLIENT_FP32_INT8_FAST4000_GD4000_FIA25000_20261006",
+  "same_update": true,
+  "rows": [
+    {
+      "bits": 32,
+      "status": "FAILED_BEFORE_ICA",
+      "existing_result": false,
+      "failure_stage": "WHITENING",
+      "error": "observation has insufficient usable covariance rank for source_count",
+      "fast_iterations": 0,
+      "gd_iterations": 0,
+      "fia_iterations": 0,
+      "mean_psnr_db": null,
+      "mean_ssim": null,
+      "mean_lpips": null,
+      "mean_mse": null,
+      "attack_seconds": null,
+      "image": null,
+      "metrics_available": false
+    },
+    {
+      "bits": 8,
+      "status": "COMPLETED",
+      "existing_result": false,
+      "mean_psnr_db": 12.054907964028569,
+      "mean_ssim": 0.29554721553833135,
+      "mean_lpips": 0.5624281521886587,
+      "mean_mse": 0.07020477443922407,
+      "attack_seconds": 2100.292516000103,
+      "fast_iterations": 4000,
+      "gd_iterations": 4000,
+      "fia_iterations": 25000,
+      "image": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results_private\\single_client_fp32_int8_fast4000_gd4000_fia25000_20261006\\int8\\comparison.png"
+    },
+    {
+      "bits": 4,
+      "status": "COMPLETED",
+      "existing_result": true,
+      "mean_psnr_db": 11.547458908305556,
+      "mean_ssim": 0.28777022336629543,
+      "mean_lpips": 0.8056373074650764,
+      "mean_mse": 0.07783511607048568,
+      "attack_seconds": 2049.116165699903,
+      "fast_iterations": 4000,
+      "gd_iterations": 4000,
+      "fia_iterations": 25000,
+      "image": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results_private\\single_client_int4_fast4000_gd4000_fia25000_20261006\\comparison.png"
+    }
+  ],
+  "states": {
+    "fp32": {
+      "attack_exit_status": 1
+    },
+    "int8": {
+      "attack_exit_status": 0,
+      "evaluation_exit_status": 0
+    }
+  },
+  "int4_reused_without_rerun": true,
+  "success_threshold": "NOT_REGISTERED",
+  "status": "PARTIAL_COMPLETION",
+  "fp32_failure": {
+    "bits": 32,
+    "status": "FAILED_BEFORE_ICA",
+    "existing_result": false,
+    "failure_stage": "WHITENING",
+    "error": "observation has insufficient usable covariance rank for source_count",
+    "fast_iterations": 0,
+    "gd_iterations": 0,
+    "fia_iterations": 0,
+    "mean_psnr_db": null,
+    "mean_ssim": null,
+    "mean_lpips": null,
+    "mean_mse": null,
+    "attack_seconds": null,
+    "image": null,
+    "metrics_available": false
+  },
+  "observed_eight_minus_four": {
+    "mean_psnr_db": 0.5074490557230131,
+    "mean_ssim": 0.007776992172035924,
+    "mean_lpips": -0.24320915527641773,
+    "mean_mse": -0.007630341631261611
+  },
+  "interpretation": "Visual review: INT8 recovers recognizable outlines in some images, including the child, people holding a fish, lobster, dog and tree scene, but images remain faint and several outputs are dominated by colored textures. The cached INT4 image has poorer recognizable structure. This is a qualitative observation on one batch/seed; no quantitative success cutoff was registered.",
+  "fp32_vs_int8_quality_comparison": "NOT_AVAILABLE",
+  "optimization_restarts": 0,
+  "reporting_only_update": true
+}

@@ -7,6 +7,7 @@ import torch.nn.functional as F
 
 
 ROUNDINGS = {"stochastic", "deterministic"}
+SCALE_GRANULARITIES = {"per_row", "per_tensor", "per_bucket"}
 
 
 @dataclass(frozen=True)
@@ -15,6 +16,8 @@ class QuantizedObservation:
     delta: torch.Tensor
     bits: int
     rounding: str
+    scale_granularity: str = "per_row"
+    bucket_size: int | None = None
 
 
 def quantize(
@@ -23,8 +26,10 @@ def quantize(
     rounding: str,
     *,
     generator: torch.Generator | None = None,
+    scale_granularity: str = "per_row",
+    bucket_size: int | None = None,
 ) -> QuantizedObservation:
-    """Per-row symmetric quantization observation.
+    """Symmetric quantization observation.
 
     For deterministic rounding, `Y_hat` is the nearest grid dequantization.
     For stochastic rounding, `Y_hat` is a subtractive-dithered observation with
@@ -37,11 +42,16 @@ def quantize(
         raise ValueError("bits must be >= 2")
     if rounding not in ROUNDINGS:
         raise ValueError(f"rounding must be one of {sorted(ROUNDINGS)}, got {rounding!r}")
+    if scale_granularity not in SCALE_GRANULARITIES:
+        raise ValueError(
+            f"scale_granularity must be one of {sorted(SCALE_GRANULARITIES)}, "
+            f"got {scale_granularity!r}"
+        )
 
     Y_float = Y.detach()
     levels = 2**int(bits) - 1
     qmax = levels // 2
-    r = Y_float.abs().amax(dim=1, keepdim=True)
+    r = _scale_radius(Y_float, scale_granularity=scale_granularity, bucket_size=bucket_size)
     delta = 2.0 * r / float(levels)
     nonzero = delta > 0
     delta_safe = torch.where(nonzero, delta, torch.ones_like(delta))
@@ -63,7 +73,37 @@ def quantize(
         Y_hat = torch.where(nonzero, Y_float + noise, torch.zeros_like(Y_float))
 
     Y_hat = _project_observation_into_cell(Y_float, Y_hat, delta)
-    return QuantizedObservation(Y_hat=Y_hat.to(dtype=Y.dtype), delta=delta.squeeze(1).to(dtype=Y.dtype), bits=bits, rounding=rounding)
+    return QuantizedObservation(
+        Y_hat=Y_hat.to(dtype=Y.dtype),
+        delta=delta.squeeze(1).to(dtype=Y.dtype),
+        bits=bits,
+        rounding=rounding,
+        scale_granularity=scale_granularity,
+        bucket_size=None if scale_granularity != "per_bucket" else int(bucket_size or 256),
+    )
+
+
+def _scale_radius(
+    Y: torch.Tensor,
+    *,
+    scale_granularity: str,
+    bucket_size: int | None,
+) -> torch.Tensor:
+    if scale_granularity == "per_row":
+        return Y.abs().amax(dim=1, keepdim=True)
+    if scale_granularity == "per_tensor":
+        return Y.abs().amax().reshape(1, 1).expand(Y.shape[0], 1)
+    if scale_granularity == "per_bucket":
+        size = int(256 if bucket_size is None else bucket_size)
+        if size <= 0:
+            raise ValueError(f"bucket_size must be positive for per_bucket, got {bucket_size}")
+        radii = []
+        for start in range(0, Y.shape[0], size):
+            stop = min(start + size, Y.shape[0])
+            value = Y[start:stop].abs().amax().reshape(1, 1)
+            radii.append(value.expand(stop - start, 1))
+        return torch.cat(radii, dim=0)
+    raise ValueError(f"unknown scale_granularity={scale_granularity!r}")
 
 
 def _project_observation_into_cell(

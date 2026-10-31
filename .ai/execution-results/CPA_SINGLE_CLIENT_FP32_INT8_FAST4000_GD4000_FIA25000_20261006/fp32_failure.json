@@ -1,0 +1,8 @@
+{
+  "task_id": "CPA_SINGLE_CLIENT_FP32_INT8_FAST4000_GD4000_FIA25000_20261006",
+  "command": "attack",
+  "arm": "fp32",
+  "type": "ICAError",
+  "error": "observation has insufficient usable covariance rank for source_count",
+  "optimization_restart": false
+}

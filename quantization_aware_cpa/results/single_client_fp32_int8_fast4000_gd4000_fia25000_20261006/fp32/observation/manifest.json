@@ -1,0 +1,268 @@
+{
+  "format": "unquantized_cpu_fp32_update_v1",
+  "bits": 32,
+  "quantization": "none",
+  "observation_source": "single_client_single_local_update_archived_raw_update",
+  "checkpoint_sha256": "397923af8e79cdbb6a7127f12361acd7a2f83e06b05044ddf496e83de57a5bf0",
+  "training": {
+    "scope": "conv_frozen_all_six_fc_parameters",
+    "steps": 10,
+    "optimizer": "sgd",
+    "lr": 0.001,
+    "momentum": 0.0,
+    "weight_decay": 0.0,
+    "foreach": false,
+    "cross_entropy_reduction": "mean",
+    "seed": 42,
+    "dropout": 0.0,
+    "model_eval": true,
+    "batch_order": [
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ]
+    ]
+  },
+  "batch_id": "batch00",
+  "labels": "private",
+  "new_local_training": false,
+  "layers": {
+    "classifier.0.weight": {
+      "shape": [
+        4096,
+        25088
+      ],
+      "file": "updates.pt",
+      "sha256": "ef9aefc66ab9fcfd0b023fdfc064dbadc27567bd3ef3508bc14ebda9af28ba4c",
+      "dtype": "float32",
+      "value_bytes": 411041792
+    },
+    "classifier.0.bias": {
+      "shape": [
+        4096
+      ],
+      "file": "updates.pt",
+      "sha256": "ef9aefc66ab9fcfd0b023fdfc064dbadc27567bd3ef3508bc14ebda9af28ba4c",
+      "dtype": "float32",
+      "value_bytes": 16384
+    },
+    "classifier.3.weight": {
+      "shape": [
+        4096,
+        4096
+      ],
+      "file": "updates.pt",
+      "sha256": "ef9aefc66ab9fcfd0b023fdfc064dbadc27567bd3ef3508bc14ebda9af28ba4c",
+      "dtype": "float32",
+      "value_bytes": 67108864
+    },
+    "classifier.3.bias": {
+      "shape": [
+        4096
+      ],
+      "file": "updates.pt",
+      "sha256": "ef9aefc66ab9fcfd0b023fdfc064dbadc27567bd3ef3508bc14ebda9af28ba4c",
+      "dtype": "float32",
+      "value_bytes": 16384
+    },
+    "classifier.6.weight": {
+      "shape": [
+        1000,
+        4096
+      ],
+      "file": "updates.pt",
+      "sha256": "ef9aefc66ab9fcfd0b023fdfc064dbadc27567bd3ef3508bc14ebda9af28ba4c",
+      "dtype": "float32",
+      "value_bytes": 16384000
+    },
+    "classifier.6.bias": {
+      "shape": [
+        1000
+      ],
+      "file": "updates.pt",
+      "sha256": "ef9aefc66ab9fcfd0b023fdfc064dbadc27567bd3ef3508bc14ebda9af28ba4c",
+      "dtype": "float32",
+      "value_bytes": 4000
+    }
+  },
+  "communication": {
+    "value_bytes": 494571424,
+    "physical_update_file_bytes": 494574229
+  }
+}

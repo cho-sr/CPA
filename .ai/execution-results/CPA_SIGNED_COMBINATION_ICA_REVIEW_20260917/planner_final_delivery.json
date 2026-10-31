@@ -1,0 +1,9 @@
+﻿{
+    "task_id":  "CPA_SIGNED_COMBINATION_ICA_REVIEW_20260917",
+    "destination_thread":  "01a0a799-d62c-7ab0-9c2a-628acf6d2c95",
+    "destination_pid":  24972,
+    "command":  "codex queue --thread \u003cPlanner\u003e --message \u003cplanner_final_notice.txt\u003e",
+    "exit_status":  0,
+    "output":  "Queued message 01a0ab24-75c6-7391-83bc-975eca136fc8 for thread 01a0a799-d62c-7ab0-9c2a-628acf6d2c95.",
+    "sent_at_utc":  "2026-09-16T16:54:48.6041115Z"
+}

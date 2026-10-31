@@ -1,0 +1,12 @@
+﻿{
+    "task_id":  "CPA_SIGNED_COMBINATION_ICA_EXPERIMENT_20260916",
+    "callback":  ".ai/completion_notify.py",
+    "callback_pid":  5520,
+    "wait_pid":  24572,
+    "expected_created_ms":  1789572178610,
+    "stage":  "real_experiment",
+    "execution_record":  ".ai/execution-results/CPA_SIGNED_COMBINATION_ICA_EXPERIMENT_20260916/stage_execution.json",
+    "hidden":  true,
+    "model_calls_while_waiting":  0,
+    "corrected_target":  "wrapper process, not child stage"
+}

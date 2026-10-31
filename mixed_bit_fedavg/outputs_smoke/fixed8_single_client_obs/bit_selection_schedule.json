@@ -1,0 +1,12 @@
+[
+  {
+    "client_id": 0,
+    "quant_bits": 8,
+    "round": 1
+  },
+  {
+    "client_id": 1,
+    "quant_bits": 8,
+    "round": 1
+  }
+]

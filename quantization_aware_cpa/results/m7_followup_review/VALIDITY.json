@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "decision_date": "2026-09-09",
+  "scientific_validity": "partially_invalid",
+  "scope": "No-CPA-referenced normalization, thresholds/counts and CPA-contribution claims are invalid; the old review cannot restore them.",
+  "invalid_source_id": "m7_no_cpa_control",
+  "registry": "../result_validity.json"
+}

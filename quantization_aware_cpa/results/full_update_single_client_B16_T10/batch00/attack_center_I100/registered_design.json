@@ -1,0 +1,39 @@
+{
+  "attack": {
+    "iterations": 100,
+    "seed": 42,
+    "image_lr": 0.1,
+    "label_lr": 0.1,
+    "tv_weight": 0.0001,
+    "radius_weight": 1.0,
+    "checkpoint_forward": true,
+    "saved_tensors_on_cpu": false,
+    "log_every": 1,
+    "fit_tolerance_steps": 1e-06,
+    "gradient_strategy": "recompute_reverse"
+  },
+  "mode": "center",
+  "probe_only": false,
+  "method": "direct_image_optimization_without_CPA",
+  "implementation_sha256": {
+    "full_update_adjoint.py": "882efe5424f4c57660d1c4c15a2af06c4b31180ffb84f7f9bbd191f31d7cbade",
+    "full_update_evaluation.py": "0ca0c01115bedc4d5b09d9bac8791bbc18b5cca29f43c5812a345f391c61ef08",
+    "full_update_observation.py": "e72a8f68f202e1775ef7e3fe55c6b643c3f8f276c6c68fff4c2973abe7fbc88c",
+    "full_update_pipeline.py": "bdb9b0a10ecc77db1a8e6dbd089e43352aad5feabe6ef4298715a7805a3468c9",
+    "full_update_replay.py": "e45e9830bdcf2046de1c0e1ebe4579392c764065eb991826b9c6abd926af2e1c"
+  },
+  "runtime": {
+    "torch_version": "2.13.0+cu132",
+    "cuda_version": "13.2",
+    "device": "cuda",
+    "gpu_name": "NVIDIA GeForce RTX 5060 Ti",
+    "deterministic_algorithms": true,
+    "cudnn_deterministic": true,
+    "matmul_tf32": false,
+    "cudnn_tf32": false,
+    "spatial_pool": "checked_identity_for_7x7_to_7x7"
+  },
+  "observation_manifest_sha256": "9256f2c1a1ac702ac9670c25a843020c879053ce357ea898993e2d8168327205",
+  "contract_sha256": "64d52bedd1e261d99483b992ebecac0a6fd1b56bc59a523e0e857ca33a9c6a1a",
+  "checkpoint_sha256": "397923af8e79cdbb6a7127f12361acd7a2f83e06b05044ddf496e83de57a5bf0"
+}

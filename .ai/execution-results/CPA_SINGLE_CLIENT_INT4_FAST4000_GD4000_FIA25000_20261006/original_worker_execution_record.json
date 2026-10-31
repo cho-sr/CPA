@@ -1,0 +1,7 @@
+{
+  "task_id": "CPA_SINGLE_CLIENT_INT4_FAST4000_GD4000_FIA25000_20261006",
+  "status": "FAILED",
+  "exit_status": 1,
+  "error": "Frozen-image evaluation exited 1; preserve completed attack",
+  "pid": 18052
+}

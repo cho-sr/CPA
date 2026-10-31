@@ -1,0 +1,4 @@
+condition,n,T,n_images,lpips_mean,psnr_mean,ssim_mean,embedding_cos09,note
+UIA fp32,16,10,80,0.45459726378321647,22.40604360103607,0.3426545349881053,79,paired same80 actual updates
+UIA 4-bit,16,10,80,0.5585835408419371,21.926350831985474,0.29755455916747453,53,paired same80 actual updates
+GIA 4-bit,8,1,40,0.5439403489232063,21.536452102661134,0.30697718551382425,29,historical40; different batch protocol; contextual comparison

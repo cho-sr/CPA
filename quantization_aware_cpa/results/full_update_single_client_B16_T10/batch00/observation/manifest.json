@@ -1,0 +1,562 @@
+{
+  "format": "full_vgg16_single_client_uint4_v1",
+  "contract": {
+    "schema_version": 1,
+    "model": "vgg16",
+    "training_scope": "conv_and_fc",
+    "observation_scope": "all_parameters",
+    "observation_source": "single_client",
+    "bits": 4,
+    "codec": "uniform_affine_uint4_stochastic_v1",
+    "delta_convention": "final_minus_initial",
+    "row_layout": "weights_output_rows_bias_single_row",
+    "num_classes": 1000,
+    "normalization": "imagenet",
+    "dropout_probability": 0.0,
+    "image_shape": [
+      16,
+      3,
+      224,
+      224
+    ],
+    "permissions": {
+      "packet_includes_public_radii": true,
+      "bandwidth_accounting": "4bit_codes_plus_reported_metadata",
+      "starting_checkpoint_public": true,
+      "training_rules_public": true,
+      "labels": "private"
+    },
+    "training": {
+      "optimizer": "sgd",
+      "lr": 0.001,
+      "steps": 10,
+      "batch_order": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ]
+      ],
+      "momentum": 0.0,
+      "weight_decay": 0.0
+    }
+  },
+  "contract_sha256": "64d52bedd1e261d99483b992ebecac0a6fd1b56bc59a523e0e857ca33a9c6a1a",
+  "checkpoint_sha256": "397923af8e79cdbb6a7127f12361acd7a2f83e06b05044ddf496e83de57a5bf0",
+  "layers": [
+    {
+      "name": "features.0.weight",
+      "shape": [
+        64,
+        3,
+        3,
+        3
+      ],
+      "file": "layers/000.bin",
+      "sha256": "303bb2fc7083932d65172a226f2aacff50e3fb1d2235e677203fa82d81376408",
+      "packet_bytes": 1152
+    },
+    {
+      "name": "features.0.bias",
+      "shape": [
+        64
+      ],
+      "file": "layers/001.bin",
+      "sha256": "df67b4d371cd24c26f326fa221f3396d3f603d583773ec822c8aa214cff34f00",
+      "packet_bytes": 68
+    },
+    {
+      "name": "features.2.weight",
+      "shape": [
+        64,
+        64,
+        3,
+        3
+      ],
+      "file": "layers/002.bin",
+      "sha256": "20eaad360083c22cf50ac9afc9eca040a97d9a9ac4ae2f3fee175e7c400e9a5b",
+      "packet_bytes": 18720
+    },
+    {
+      "name": "features.2.bias",
+      "shape": [
+        64
+      ],
+      "file": "layers/003.bin",
+      "sha256": "30a36834a35ccd35d1a0cbe06d18f21b1ff0def00f9496b08215725fed0df634",
+      "packet_bytes": 68
+    },
+    {
+      "name": "features.5.weight",
+      "shape": [
+        128,
+        64,
+        3,
+        3
+      ],
+      "file": "layers/004.bin",
+      "sha256": "be859a7cdce9cfbd8f82b0b179d1a36f45bc7ed1d96f56156876f1075653f775",
+      "packet_bytes": 37408
+    },
+    {
+      "name": "features.5.bias",
+      "shape": [
+        128
+      ],
+      "file": "layers/005.bin",
+      "sha256": "299613b412fbc79f6fa0b293a9e52ea01318cd16a6b54cd76dd49f3e288fb82d",
+      "packet_bytes": 100
+    },
+    {
+      "name": "features.7.weight",
+      "shape": [
+        128,
+        128,
+        3,
+        3
+      ],
+      "file": "layers/006.bin",
+      "sha256": "8f681239fcfe4d704d97b80c74cddef41f37170c1e94d5531e1bc470ad95851e",
+      "packet_bytes": 74272
+    },
+    {
+      "name": "features.7.bias",
+      "shape": [
+        128
+      ],
+      "file": "layers/007.bin",
+      "sha256": "75f9b8b0388499544f823f27b8850b340e8b38f5b484253f32f6bf624264b0f3",
+      "packet_bytes": 100
+    },
+    {
+      "name": "features.10.weight",
+      "shape": [
+        256,
+        128,
+        3,
+        3
+      ],
+      "file": "layers/008.bin",
+      "sha256": "065a272be58081ac4f8323eb94ba86adafeec77d4310cfcd4a10aa7e6a084e3a",
+      "packet_bytes": 148512
+    },
+    {
+      "name": "features.10.bias",
+      "shape": [
+        256
+      ],
+      "file": "layers/009.bin",
+      "sha256": "d93c5b12c31572bb9773c1d2edc40f2cd84c6956ef3d59b81f514baf5e901f87",
+      "packet_bytes": 164
+    },
+    {
+      "name": "features.12.weight",
+      "shape": [
+        256,
+        256,
+        3,
+        3
+      ],
+      "file": "layers/010.bin",
+      "sha256": "e1b529a27f5c33f65f2f8e86846b304a7744c13e5dade5b42d1e56c2ff4d58ae",
+      "packet_bytes": 295968
+    },
+    {
+      "name": "features.12.bias",
+      "shape": [
+        256
+      ],
+      "file": "layers/011.bin",
+      "sha256": "5a91d21348bf3cfde4c2277fa62153a3093dad7ccd6fe0591de82cd301776122",
+      "packet_bytes": 164
+    },
+    {
+      "name": "features.14.weight",
+      "shape": [
+        256,
+        256,
+        3,
+        3
+      ],
+      "file": "layers/012.bin",
+      "sha256": "b9fbe44d976eefd3d2754f0ec464d6b0871e7b55ec68b940f6ffcea39cbfd855",
+      "packet_bytes": 295968
+    },
+    {
+      "name": "features.14.bias",
+      "shape": [
+        256
+      ],
+      "file": "layers/013.bin",
+      "sha256": "f642689d24ed7c6fa81f1a7699f75601b7538d7ad44365466595b3e5025988fd",
+      "packet_bytes": 164
+    },
+    {
+      "name": "features.17.weight",
+      "shape": [
+        512,
+        256,
+        3,
+        3
+      ],
+      "file": "layers/014.bin",
+      "sha256": "c02de26d7935dfcd2c7aa1098ade1e4ae057a36d6cc219605d6fcdd767715f6e",
+      "packet_bytes": 591904
+    },
+    {
+      "name": "features.17.bias",
+      "shape": [
+        512
+      ],
+      "file": "layers/015.bin",
+      "sha256": "5f8b31b4884a9b87d63f84a2cba3533749b5d4c8841605a3763ee75c27d35890",
+      "packet_bytes": 292
+    },
+    {
+      "name": "features.19.weight",
+      "shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "file": "layers/016.bin",
+      "sha256": "6c21c395cf1bfab8c128c769d8ab160e38d42e5c97ac037d30c0de9197bb7d46",
+      "packet_bytes": 1181728
+    },
+    {
+      "name": "features.19.bias",
+      "shape": [
+        512
+      ],
+      "file": "layers/017.bin",
+      "sha256": "365edffb2d67a13a05f57251ca162e32f1b57f77f4b694afd47e463db5a69af3",
+      "packet_bytes": 292
+    },
+    {
+      "name": "features.21.weight",
+      "shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "file": "layers/018.bin",
+      "sha256": "3040a2d0692df484ba360298014c0f65ece8bb12a725c396af92b305f93e1dbc",
+      "packet_bytes": 1181728
+    },
+    {
+      "name": "features.21.bias",
+      "shape": [
+        512
+      ],
+      "file": "layers/019.bin",
+      "sha256": "6b051ac3481d529f4a60bb60d725175fcbabb375a1de0c007149b4eed866047b",
+      "packet_bytes": 292
+    },
+    {
+      "name": "features.24.weight",
+      "shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "file": "layers/020.bin",
+      "sha256": "3303a80bd77e0c1de91234a534eee9a68f1d06d1f96eae4e9dd76fc8edd8f4f8",
+      "packet_bytes": 1181728
+    },
+    {
+      "name": "features.24.bias",
+      "shape": [
+        512
+      ],
+      "file": "layers/021.bin",
+      "sha256": "76743ef14e703d6cefdcdd59c1b0752f40b4dd5d8c750082b3ea70558df22997",
+      "packet_bytes": 292
+    },
+    {
+      "name": "features.26.weight",
+      "shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "file": "layers/022.bin",
+      "sha256": "8d7353409150d8eb9b4abcea7ba7b6029cabfc4b6ce4888a91fc37241fe1fa33",
+      "packet_bytes": 1181728
+    },
+    {
+      "name": "features.26.bias",
+      "shape": [
+        512
+      ],
+      "file": "layers/023.bin",
+      "sha256": "f196777262929c88c567cba8b7705c588234857d1003283fc697117ddc1886ae",
+      "packet_bytes": 292
+    },
+    {
+      "name": "features.28.weight",
+      "shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "file": "layers/024.bin",
+      "sha256": "bc726c325d5d59079754c0ca866209b5ad4a39a4fefe54aa523a5ccd3268233d",
+      "packet_bytes": 1181728
+    },
+    {
+      "name": "features.28.bias",
+      "shape": [
+        512
+      ],
+      "file": "layers/025.bin",
+      "sha256": "72748dc096089eadf5abbc1926eb40a75244d441caeda78ceb0f286a96aa418c",
+      "packet_bytes": 292
+    },
+    {
+      "name": "classifier.0.weight",
+      "shape": [
+        4096,
+        25088
+      ],
+      "file": "layers/026.bin",
+      "sha256": "3c81d766994006145779dccf15b84654fa72cee90a891e65f012b72b9b7d291b",
+      "packet_bytes": 51396640
+    },
+    {
+      "name": "classifier.0.bias",
+      "shape": [
+        4096
+      ],
+      "file": "layers/027.bin",
+      "sha256": "cab83f60ecb7ada5f0cb689e3c86922d63f57869fe06c0d403fd57fbb564a553",
+      "packet_bytes": 2084
+    },
+    {
+      "name": "classifier.3.weight",
+      "shape": [
+        4096,
+        4096
+      ],
+      "file": "layers/028.bin",
+      "sha256": "c863f723e4d66c543b888f00e8394938eb7907caf790a352a781858e7696d615",
+      "packet_bytes": 8405024
+    },
+    {
+      "name": "classifier.3.bias",
+      "shape": [
+        4096
+      ],
+      "file": "layers/029.bin",
+      "sha256": "1dc3f4b3cfc80334fdb98d0da144cf538d2b0972b99328603e7db7ef3f5494f3",
+      "packet_bytes": 2084
+    },
+    {
+      "name": "classifier.6.weight",
+      "shape": [
+        1000,
+        4096
+      ],
+      "file": "layers/030.bin",
+      "sha256": "82aee33c90feb3d00da8208ce34b3135d663faba6d840c80299ea39a2b4ee2fe",
+      "packet_bytes": 2052032
+    },
+    {
+      "name": "classifier.6.bias",
+      "shape": [
+        1000
+      ],
+      "file": "layers/031.bin",
+      "sha256": "71b6531fc3cc924980474b57bf04ed71de63ff52ca6dc64cee172c9f9442dd2b",
+      "packet_bytes": 536
+    }
+  ],
+  "communication": {
+    "elements": 138357544,
+    "code_bytes": 69178772,
+    "radius_bytes": 53728,
+    "packet_header_bytes": 1024,
+    "layer_packet_bytes": 69233524,
+    "manifest_bytes_accounting": "count actual manifest.json bytes separately"
+  },
+  "public_labels": null
+}

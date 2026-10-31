@@ -1,0 +1,6 @@
+{
+  "task_id": "CPA_SIGNED_INT8_SCREEN3_REPAIR_CONTINUE_20260918",
+  "status": "FAILED",
+  "error_type": "RepairEvaluationError",
+  "error": "private truth schema changed or labels would be loaded"
+}

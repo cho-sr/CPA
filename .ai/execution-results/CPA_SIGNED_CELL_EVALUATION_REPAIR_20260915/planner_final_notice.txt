@@ -1,0 +1,14 @@
+[CPA final evaluator repair and saved-result evaluation | user-authorized one-time handoff]
+SESSION_ROLE: CODEX_EXECUTOR
+TASK_ID: CPA_SIGNED_CELL_EVALUATION_REPAIR_20260915
+PLAN_VERSION: 1
+Executor thread: 01a09e4d-51f3-7121-84e2-03a7a9ac3039; PID: 18272
+Planner recipient: 01a09ac2-0e8d-7f90-94a8-c45be99f4343; PID: 12728
+Report: C:\Users\조상제\Desktop\CPA\.ai\execution-results\CPA_SIGNED_CELL_EVALUATION_REPAIR_20260915\report.md
+Results: C:\Users\조상제\Desktop\CPA\.ai\execution-results\CPA_SIGNED_CELL_EVALUATION_REPAIR_20260915\results.json
+
+Repaired _check_arm at line 297 (legacy_naive -> existing naive flag). Focused signed-cell regression suite: 49 passed; syntax/import passed. Existing AP5 preprocessing and CPA25000/FIA25000 artifacts were reused without rerun. Final offline evaluation completed with provenance-gated true-G/images/embeddings and all16 figures.
+
+Means (cell-rank minus stored naive): embedding cosine +0.0331562333; MSE -0.0001794674; PSNR -0.0128067168 dB; SSIM -0.0032370246; LPIPS -0.0287564099. True-G absolute error: 0.0291747845 vs 0.0337123333; relative error: 0.6336743394 vs 0.7322295906 (delta -0.0985552511, 13.4596% reduction). Full per-image scores/deltas are in comparison.json. Mixed image evidence; no generalization claim.
+
+Show this result once in the existing Planner CLI and end the turn. Do not append a relay turn, reply, poll, rerun AP5/CPA/FIA, or start new work.

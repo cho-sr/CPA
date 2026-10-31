@@ -1,0 +1,7482 @@
+{
+  "rendering": "Verified existing RGB tiles; isotropic Lanczos resize only; no image synthesis or color adjustment",
+  "all80_originals_identical_across_percentages": true,
+  "outputs": [
+    {
+      "keep_percent": 50,
+      "file": "topk50_original_vs_reconstruction_16x9.png",
+      "sha256": "02af2919ef9517b612c506bd9d183e1efadbac7ff0fe4823349e350cabd319dd",
+      "size": [
+        3840,
+        2160
+      ],
+      "n_images": 80,
+      "n_panels": 160,
+      "global_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79
+      ],
+      "mean_metrics": {
+        "lpips": 0.48638302832841873,
+        "ssim": 0.3344356938265264,
+        "psnr": 22.28775908946991
+      },
+      "tile_size": 174,
+      "placements": [
+        {
+          "global_index": 0,
+          "panel": "Original",
+          "box": [
+            68,
+            308,
+            242,
+            482
+          ],
+          "rgb_sha256": "c1d465c714332db041afe2eab46b927745824d0041eb223441511c2fe95b2d2e"
+        },
+        {
+          "global_index": 0,
+          "panel": "Reconstruction",
+          "box": [
+            250,
+            308,
+            424,
+            482
+          ],
+          "rgb_sha256": "708b4e5c7566881703c17ac0e1424ee3516e27c39b3329dced6609ea246f91e1"
+        },
+        {
+          "global_index": 1,
+          "panel": "Original",
+          "box": [
+            440,
+            308,
+            614,
+            482
+          ],
+          "rgb_sha256": "f75facee2c342154bc4ad9f5e1b0cfb04af35165d1bfda112ba359cfde50cfa4"
+        },
+        {
+          "global_index": 1,
+          "panel": "Reconstruction",
+          "box": [
+            622,
+            308,
+            796,
+            482
+          ],
+          "rgb_sha256": "a0b2c15d51075f1e64c8fcb20d3e1b58fe4751bdd4ad6cfe3b3dd59242a314a4"
+        },
+        {
+          "global_index": 2,
+          "panel": "Original",
+          "box": [
+            812,
+            308,
+            986,
+            482
+          ],
+          "rgb_sha256": "88f950c2aca98b34966ec29a4733ccc6f6dec4e4bf631336f441e879977f8058"
+        },
+        {
+          "global_index": 2,
+          "panel": "Reconstruction",
+          "box": [
+            994,
+            308,
+            1168,
+            482
+          ],
+          "rgb_sha256": "69f2f95bd7ebdbc1417dbf2c9626f9a0313659587db2514faa9fcedba428567b"
+        },
+        {
+          "global_index": 3,
+          "panel": "Original",
+          "box": [
+            1184,
+            308,
+            1358,
+            482
+          ],
+          "rgb_sha256": "9de2dc85dbcfd4dc9d5eebf898b3c6339939f351af4e7523a7e87cc376166485"
+        },
+        {
+          "global_index": 3,
+          "panel": "Reconstruction",
+          "box": [
+            1366,
+            308,
+            1540,
+            482
+          ],
+          "rgb_sha256": "43c9a7f347dd65dd040e4187cecfb0109623c8a33e828c5e4748833cb74a45cd"
+        },
+        {
+          "global_index": 4,
+          "panel": "Original",
+          "box": [
+            1556,
+            308,
+            1730,
+            482
+          ],
+          "rgb_sha256": "6e8ed4689d0b7e64a12803afc889e0f9beda4841ae6740e3e44b95d5519e26dd"
+        },
+        {
+          "global_index": 4,
+          "panel": "Reconstruction",
+          "box": [
+            1738,
+            308,
+            1912,
+            482
+          ],
+          "rgb_sha256": "9493e288e91878b4bda9c9026c44f51509994901731cd8fcad41d70ed79a1efb"
+        },
+        {
+          "global_index": 5,
+          "panel": "Original",
+          "box": [
+            1928,
+            308,
+            2102,
+            482
+          ],
+          "rgb_sha256": "06e73470f00cb2c5880bf90c3783908a2634bb85f37cfb574473655db7b28af6"
+        },
+        {
+          "global_index": 5,
+          "panel": "Reconstruction",
+          "box": [
+            2110,
+            308,
+            2284,
+            482
+          ],
+          "rgb_sha256": "abecfeb74cabbe99cc966a729e2a2aa6217869cce25b9b0dcbadf82bda0d7974"
+        },
+        {
+          "global_index": 6,
+          "panel": "Original",
+          "box": [
+            2300,
+            308,
+            2474,
+            482
+          ],
+          "rgb_sha256": "a2143f2185963d97c27b6afedb32a593624fa025f7d918f742cde493655e8ded"
+        },
+        {
+          "global_index": 6,
+          "panel": "Reconstruction",
+          "box": [
+            2482,
+            308,
+            2656,
+            482
+          ],
+          "rgb_sha256": "9b7eccb56c06da975f2af3c02c6b29b23a19d1bcd3260cc4f9b749c50a9e19a5"
+        },
+        {
+          "global_index": 7,
+          "panel": "Original",
+          "box": [
+            2672,
+            308,
+            2846,
+            482
+          ],
+          "rgb_sha256": "67d51e0bd996109e1f128424a04b0795151c22946d78df1fb4b7d218d5a6e26b"
+        },
+        {
+          "global_index": 7,
+          "panel": "Reconstruction",
+          "box": [
+            2854,
+            308,
+            3028,
+            482
+          ],
+          "rgb_sha256": "46d0d087c10d8fb43165e75f2828c58025773d3f8b20af8abd08eafda68abcdc"
+        },
+        {
+          "global_index": 8,
+          "panel": "Original",
+          "box": [
+            3044,
+            308,
+            3218,
+            482
+          ],
+          "rgb_sha256": "a505ab8218c3007d28c6e0522128d20eea84b19c5388991216c5650440d2d0a9"
+        },
+        {
+          "global_index": 8,
+          "panel": "Reconstruction",
+          "box": [
+            3226,
+            308,
+            3400,
+            482
+          ],
+          "rgb_sha256": "c277ebd9aebf807b7dd47591d365df535f7f390d721c84304d368e5de136690e"
+        },
+        {
+          "global_index": 9,
+          "panel": "Original",
+          "box": [
+            3416,
+            308,
+            3590,
+            482
+          ],
+          "rgb_sha256": "470ca9a71ae5a6a5e2973c58471be184e7bb9797b186b1ac482bcaac0d26d000"
+        },
+        {
+          "global_index": 9,
+          "panel": "Reconstruction",
+          "box": [
+            3598,
+            308,
+            3772,
+            482
+          ],
+          "rgb_sha256": "8cbcaaecf7a7f51cf9479585fc9e19e1811579710c210c7e39c9c7ef59597e91"
+        },
+        {
+          "global_index": 10,
+          "panel": "Original",
+          "box": [
+            68,
+            538,
+            242,
+            712
+          ],
+          "rgb_sha256": "20074598fae032a885b67058a2e5ad5218452cc36816dbd68598ebe486c4a429"
+        },
+        {
+          "global_index": 10,
+          "panel": "Reconstruction",
+          "box": [
+            250,
+            538,
+            424,
+            712
+          ],
+          "rgb_sha256": "6691d6a6e30154f4f8bf1df18add9a79cf6216ec7c5683644473d2916879e35e"
+        },
+        {
+          "global_index": 11,
+          "panel": "Original",
+          "box": [
+            440,
+            538,
+            614,
+            712
+          ],
+          "rgb_sha256": "9d589fa4f74a8e8319cf8acfdefea41176039985b6fec245d3c59dcf1f993594"
+        },
+        {
+          "global_index": 11,
+          "panel": "Reconstruction",
+          "box": [
+            622,
+            538,
+            796,
+            712
+          ],
+          "rgb_sha256": "000d54bd5e4de0a94d4a918758e7edb2eda87c7d0242a80ff28822aaa2005b93"
+        },
+        {
+          "global_index": 12,
+          "panel": "Original",
+          "box": [
+            812,
+            538,
+            986,
+            712
+          ],
+          "rgb_sha256": "056619a91c586eda35a3f999c5a23065cf1e8bbc35989688ebbb87726404788a"
+        },
+        {
+          "global_index": 12,
+          "panel": "Reconstruction",
+          "box": [
+            994,
+            538,
+            1168,
+            712
+          ],
+          "rgb_sha256": "b1e92dbf3bd3b4e02aaf63b0e52bd329ca202af34f62a8562d45d68184e8817e"
+        },
+        {
+          "global_index": 13,
+          "panel": "Original",
+          "box": [
+            1184,
+            538,
+            1358,
+            712
+          ],
+          "rgb_sha256": "0109274903e6be7fdc8c03e550161ee4bed11ad154e5f7769fd4edbfe935db22"
+        },
+        {
+          "global_index": 13,
+          "panel": "Reconstruction",
+          "box": [
+            1366,
+            538,
+            1540,
+            712
+          ],
+          "rgb_sha256": "45a9911d5d4de6cbb226670062a07f282c09105e4957ce9203d1a77649422b15"
+        },
+        {
+          "global_index": 14,
+          "panel": "Original",
+          "box": [
+            1556,
+            538,
+            1730,
+            712
+          ],
+          "rgb_sha256": "07faf470fdf6c21ca66c5d07d2e0d778863ebe1648321acaea3bb542d14c3355"
+        },
+        {
+          "global_index": 14,
+          "panel": "Reconstruction",
+          "box": [
+            1738,
+            538,
+            1912,
+            712
+          ],
+          "rgb_sha256": "736b4016ce4e5d2521bf984e86dfdd1060e1c9858580355f52e242d8517f287c"
+        },
+        {
+          "global_index": 15,
+          "panel": "Original",
+          "box": [
+            1928,
+            538,
+            2102,
+            712
+          ],
+          "rgb_sha256": "9d39e18d5a034368fe0104993a230f3d79d743950d2e0a85abbce43451e45d30"
+        },
+        {
+          "global_index": 15,
+          "panel": "Reconstruction",
+          "box": [
+            2110,
+            538,
+            2284,
+            712
+          ],
+          "rgb_sha256": "bbfebb7fcc1dfdf87082a417732e06179ad5753f9feced6de985e79c23d558aa"
+        },
+        {
+          "global_index": 16,
+          "panel": "Original",
+          "box": [
+            2300,
+            538,
+            2474,
+            712
+          ],
+          "rgb_sha256": "7a5316a406bb7e289939821f58c200d22ad1b672493fe8dbac08f95c56f6961b"
+        },
+        {
+          "global_index": 16,
+          "panel": "Reconstruction",
+          "box": [
+            2482,
+            538,
+            2656,
+            712
+          ],
+          "rgb_sha256": "809eb5c3ff17a1a2e41cb2517da480ea259ec95463cb289443b123065cedb32c"
+        },
+        {
+          "global_index": 17,
+          "panel": "Original",
+          "box": [
+            2672,
+            538,
+            2846,
+            712
+          ],
+          "rgb_sha256": "9693a34e84385f89bba78e5ae00736d55a008fe558db1ddcad96bd96a5837dcc"
+        },
+        {
+          "global_index": 17,
+          "panel": "Reconstruction",
+          "box": [
+            2854,
+            538,
+            3028,
+            712
+          ],
+          "rgb_sha256": "7da5650e475192aa24b9d4160d781063594db7a8b380c0643bcdb46c6327fa49"
+        },
+        {
+          "global_index": 18,
+          "panel": "Original",
+          "box": [
+            3044,
+            538,
+            3218,
+            712
+          ],
+          "rgb_sha256": "c02945e163b6854dac6e6c5346b0099d4c643c0db75fa5052af2090518b1efec"
+        },
+        {
+          "global_index": 18,
+          "panel": "Reconstruction",
+          "box": [
+            3226,
+            538,
+            3400,
+            712
+          ],
+          "rgb_sha256": "aa6d85dd3a16f060a5f459f89a8d326f07b4303b8cd57a15a931ca0845b6a544"
+        },
+        {
+          "global_index": 19,
+          "panel": "Original",
+          "box": [
+            3416,
+            538,
+            3590,
+            712
+          ],
+          "rgb_sha256": "c98de3ba52130fda07d6f4058680d875ad632563123de138dd32d93149f8b2dd"
+        },
+        {
+          "global_index": 19,
+          "panel": "Reconstruction",
+          "box": [
+            3598,
+            538,
+            3772,
+            712
+          ],
+          "rgb_sha256": "7808d2ab09d20c5b0f0986c25fef8ac9c59991cdf2dfeeb5ca0814b2c75f7ce9"
+        },
+        {
+          "global_index": 20,
+          "panel": "Original",
+          "box": [
+            68,
+            768,
+            242,
+            942
+          ],
+          "rgb_sha256": "7d3b4101999f62b254b03768b6745d480bfcbcfe7b3001ce35d6f2f460a6e726"
+        },
+        {
+          "global_index": 20,
+          "panel": "Reconstruction",
+          "box": [
+            250,
+            768,
+            424,
+            942
+          ],
+          "rgb_sha256": "0cb970ed50ddc5b95095964eed6b992b35aac431d10a8d3325f3fbd85127626f"
+        },
+        {
+          "global_index": 21,
+          "panel": "Original",
+          "box": [
+            440,
+            768,
+            614,
+            942
+          ],
+          "rgb_sha256": "72e882a5f2d5d458e3f4884a0eb8935306e016ec8f5c926794b0c45729725961"
+        },
+        {
+          "global_index": 21,
+          "panel": "Reconstruction",
+          "box": [
+            622,
+            768,
+            796,
+            942
+          ],
+          "rgb_sha256": "55f37bbea699e9d599becf78764661e5f03cb3953b593dc1bb1df5562be3efe0"
+        },
+        {
+          "global_index": 22,
+          "panel": "Original",
+          "box": [
+            812,
+            768,
+            986,
+            942
+          ],
+          "rgb_sha256": "41fda723d6495bdd82f51564ea9fc1169e487b820ff805695b962e8006957621"
+        },
+        {
+          "global_index": 22,
+          "panel": "Reconstruction",
+          "box": [
+            994,
+            768,
+            1168,
+            942
+          ],
+          "rgb_sha256": "06f59bc76a69546f97e194a038b9b58980786ebf3f16850c307bb0acc5ab17fb"
+        },
+        {
+          "global_index": 23,
+          "panel": "Original",
+          "box": [
+            1184,
+            768,
+            1358,
+            942
+          ],
+          "rgb_sha256": "20b618b694ee62d529ea3ab3959312ee55eb5dc3f375ea95a79f9f902aa837ac"
+        },
+        {
+          "global_index": 23,
+          "panel": "Reconstruction",
+          "box": [
+            1366,
+            768,
+            1540,
+            942
+          ],
+          "rgb_sha256": "021ee9a0ae35483b660993410201cb12c2ce91518c71369719c33972660693d4"
+        },
+        {
+          "global_index": 24,
+          "panel": "Original",
+          "box": [
+            1556,
+            768,
+            1730,
+            942
+          ],
+          "rgb_sha256": "5ceb5391c3f69faa697a75f59db0415ffc5cc802ed6f96852afccc3e6318f88a"
+        },
+        {
+          "global_index": 24,
+          "panel": "Reconstruction",
+          "box": [
+            1738,
+            768,
+            1912,
+            942
+          ],
+          "rgb_sha256": "05b43123ba36fd9a6966ca9976c2e6e70a2a02da695d21fb0d59c9f1d8b351ac"
+        },
+        {
+          "global_index": 25,
+          "panel": "Original",
+          "box": [
+            1928,
+            768,
+            2102,
+            942
+          ],
+          "rgb_sha256": "1f921860d98dd3d272ce7f250b2462d17fbb3ee17b617954c3b85297f4f8ed2e"
+        },
+        {
+          "global_index": 25,
+          "panel": "Reconstruction",
+          "box": [
+            2110,
+            768,
+            2284,
+            942
+          ],
+          "rgb_sha256": "bf95ec2cc91f72addb12b9a6ca52224aa0f28f4830c793d18a2070aeeb1a19ad"
+        },
+        {
+          "global_index": 26,
+          "panel": "Original",
+          "box": [
+            2300,
+            768,
+            2474,
+            942
+          ],
+          "rgb_sha256": "bb452aa32b33c0994f9d3ebf01e824a0dbe68bf57d1e0b599bf22152aebafb81"
+        },
+        {
+          "global_index": 26,
+          "panel": "Reconstruction",
+          "box": [
+            2482,
+            768,
+            2656,
+            942
+          ],
+          "rgb_sha256": "14ee7b41a4b6eb57518eb81ce151c7807c79db9bbac755774fa04a93e58d24ff"
+        },
+        {
+          "global_index": 27,
+          "panel": "Original",
+          "box": [
+            2672,
+            768,
+            2846,
+            942
+          ],
+          "rgb_sha256": "c3bfc873a6fc583c8de311b02224d54a8365bc21abec98e58767ca2a1c966afc"
+        },
+        {
+          "global_index": 27,
+          "panel": "Reconstruction",
+          "box": [
+            2854,
+            768,
+            3028,
+            942
+          ],
+          "rgb_sha256": "d19f0b2b1001e7290ad611b57594fe2a9531da63a65733d1d2f4cbdefef76e3d"
+        },
+        {
+          "global_index": 28,
+          "panel": "Original",
+          "box": [
+            3044,
+            768,
+            3218,
+            942
+          ],
+          "rgb_sha256": "8ecf83fe84c57bce0fdce07598541caedabd09aa46835544cad7d2038a31e332"
+        },
+        {
+          "global_index": 28,
+          "panel": "Reconstruction",
+          "box": [
+            3226,
+            768,
+            3400,
+            942
+          ],
+          "rgb_sha256": "e1b3ed06495f65fc948c0bbd586d5e7658f06651a5a34aa61e485e02c1fb18e8"
+        },
+        {
+          "global_index": 29,
+          "panel": "Original",
+          "box": [
+            3416,
+            768,
+            3590,
+            942
+          ],
+          "rgb_sha256": "698b813fb17e26f298fc4b66849733b638df2783cfd2a32384bdd8bd65192701"
+        },
+        {
+          "global_index": 29,
+          "panel": "Reconstruction",
+          "box": [
+            3598,
+            768,
+            3772,
+            942
+          ],
+          "rgb_sha256": "4f042eb9b67fdcde0bee9bffa8e54529ba883c63ed9f9dd8cc6918f2ccc14c03"
+        },
+        {
+          "global_index": 30,
+          "panel": "Original",
+          "box": [
+            68,
+            998,
+            242,
+            1172
+          ],
+          "rgb_sha256": "56184ac63ed48fceea7fd708f7a975d8505aaa486f145542ddfe63342d7db17a"
+        },
+        {
+          "global_index": 30,
+          "panel": "Reconstruction",
+          "box": [
+            250,
+            998,
+            424,
+            1172
+          ],
+          "rgb_sha256": "5b1ab2030db703eb53582079a138ac2cc54d4e4a3783f7abb6b3776201817a3f"
+        },
+        {
+          "global_index": 31,
+          "panel": "Original",
+          "box": [
+            440,
+            998,
+            614,
+            1172
+          ],
+          "rgb_sha256": "ef4b7069dca832f70c60fd94bd430b2906d4de9406e761c205f8e71259aabdca"
+        },
+        {
+          "global_index": 31,
+          "panel": "Reconstruction",
+          "box": [
+            622,
+            998,
+            796,
+            1172
+          ],
+          "rgb_sha256": "99b7514522a00f05af883d7bc8fabb684b52775978c9956dfb2ba701f405cd81"
+        },
+        {
+          "global_index": 32,
+          "panel": "Original",
+          "box": [
+            812,
+            998,
+            986,
+            1172
+          ],
+          "rgb_sha256": "19f40becb8004e9e03a54e1ca4b492018ab1f7749a4531fc464089925ab65efb"
+        },
+        {
+          "global_index": 32,
+          "panel": "Reconstruction",
+          "box": [
+            994,
+            998,
+            1168,
+            1172
+          ],
+          "rgb_sha256": "2485fc75ba4a38ab2dbf5b2484a5767ed40f5534fa5e6e165db4252160ea0818"
+        },
+        {
+          "global_index": 33,
+          "panel": "Original",
+          "box": [
+            1184,
+            998,
+            1358,
+            1172
+          ],
+          "rgb_sha256": "fba8dc780a8ce9a3700b8677cf590ff301764587ec7237f5c02cb512f90b953e"
+        },
+        {
+          "global_index": 33,
+          "panel": "Reconstruction",
+          "box": [
+            1366,
+            998,
+            1540,
+            1172
+          ],
+          "rgb_sha256": "d5c5ce4687d534342ba79fbd0d84b19d7e42345c672c420571f599320d1e4970"
+        },
+        {
+          "global_index": 34,
+          "panel": "Original",
+          "box": [
+            1556,
+            998,
+            1730,
+            1172
+          ],
+          "rgb_sha256": "c51ca81e90e30d2f0b5ee6fb1987ffee28ca44f3523a8bafa06642fb816ab35c"
+        },
+        {
+          "global_index": 34,
+          "panel": "Reconstruction",
+          "box": [
+            1738,
+            998,
+            1912,
+            1172
+          ],
+          "rgb_sha256": "d7666a74506e7ed4735e493afbd6ee0d4ab49587405c563de08bfd20c2e0ae54"
+        },
+        {
+          "global_index": 35,
+          "panel": "Original",
+          "box": [
+            1928,
+            998,
+            2102,
+            1172
+          ],
+          "rgb_sha256": "d234d34ce4c76310561a2fb2345d4f246a6cb25b6bddb5af5f92d3655a059fbf"
+        },
+        {
+          "global_index": 35,
+          "panel": "Reconstruction",
+          "box": [
+            2110,
+            998,
+            2284,
+            1172
+          ],
+          "rgb_sha256": "af49b36108f1ed3273e15c858bd28bace4001f431c702371f30b8bc81f39ec2f"
+        },
+        {
+          "global_index": 36,
+          "panel": "Original",
+          "box": [
+            2300,
+            998,
+            2474,
+            1172
+          ],
+          "rgb_sha256": "93be6a24393ee7f7c4478900bfa32f2eeaf25cd76ef748051827d8f13bc9b431"
+        },
+        {
+          "global_index": 36,
+          "panel": "Reconstruction",
+          "box": [
+            2482,
+            998,
+            2656,
+            1172
+          ],
+          "rgb_sha256": "2d62f34d23d5ab024c1ff065f61ff6fc60faa7674a7649ae6d7eae89ff27ade4"
+        },
+        {
+          "global_index": 37,
+          "panel": "Original",
+          "box": [
+            2672,
+            998,
+            2846,
+            1172
+          ],
+          "rgb_sha256": "f3b5e738121ffd9a776d9327ec10bc7e4c78c28b05a6711a78e5e3140c91a737"
+        },
+        {
+          "global_index": 37,
+          "panel": "Reconstruction",
+          "box": [
+            2854,
+            998,
+            3028,
+            1172
+          ],
+          "rgb_sha256": "5f059b7b0e58314f46c376639ce0169b921acb23b9d5b4c0e546c6701c6a2d18"
+        },
+        {
+          "global_index": 38,
+          "panel": "Original",
+          "box": [
+            3044,
+            998,
+            3218,
+            1172
+          ],
+          "rgb_sha256": "87d50392fda2cd3eddaddea62b71a2aa074beddb3d7fddab8b77717d695b6d3b"
+        },
+        {
+          "global_index": 38,
+          "panel": "Reconstruction",
+          "box": [
+            3226,
+            998,
+            3400,
+            1172
+          ],
+          "rgb_sha256": "8c70ca226f2372e0124ae8139bdf087c14c771347ff8022fd7247641080ee78a"
+        },
+        {
+          "global_index": 39,
+          "panel": "Original",
+          "box": [
+            3416,
+            998,
+            3590,
+            1172
+          ],
+          "rgb_sha256": "6f46de06ed8bc25cf267be831432f82614394ff1dc4e0febcf6a058ecb42dd73"
+        },
+        {
+          "global_index": 39,
+          "panel": "Reconstruction",
+          "box": [
+            3598,
+            998,
+            3772,
+            1172
+          ],
+          "rgb_sha256": "0c7e1e45c468301307b0739e3895fa3bc2492b41fcf0044f506c04c1a085cd49"
+        },
+        {
+          "global_index": 40,
+          "panel": "Original",
+          "box": [
+            68,
+            1228,
+            242,
+            1402
+          ],
+          "rgb_sha256": "310be474891248e2b84935a650b5339fe34595b0852a0f0e1dc016815cecff37"
+        },
+        {
+          "global_index": 40,
+          "panel": "Reconstruction",
+          "box": [
+            250,
+            1228,
+            424,
+            1402
+          ],
+          "rgb_sha256": "27d88d7926c50ca6bb21fc61e2dc1db512b1a88a747135851005c329789411f5"
+        },
+        {
+          "global_index": 41,
+          "panel": "Original",
+          "box": [
+            440,
+            1228,
+            614,
+            1402
+          ],
+          "rgb_sha256": "5501eae9a863e938375d3c022aadce38b63347be560b365b0fc27412e92a2b59"
+        },
+        {
+          "global_index": 41,
+          "panel": "Reconstruction",
+          "box": [
+            622,
+            1228,
+            796,
+            1402
+          ],
+          "rgb_sha256": "415ee928d3ec9a4ef0946365b74ee6ce1848bcac2cfbc79dc1832301f421522c"
+        },
+        {
+          "global_index": 42,
+          "panel": "Original",
+          "box": [
+            812,
+            1228,
+            986,
+            1402
+          ],
+          "rgb_sha256": "231cccb998b15df314e5eea7ad5ecce81ba48dbf12564ecd86f926812dc2dac7"
+        },
+        {
+          "global_index": 42,
+          "panel": "Reconstruction",
+          "box": [
+            994,
+            1228,
+            1168,
+            1402
+          ],
+          "rgb_sha256": "514e3c118c1424eee9076b7e1704c531b731567475cb53a9e7d867e4d469bb5d"
+        },
+        {
+          "global_index": 43,
+          "panel": "Original",
+          "box": [
+            1184,
+            1228,
+            1358,
+            1402
+          ],
+          "rgb_sha256": "b942364967968ce00c5d5c189ae8c7b05e43788b0cb7869184731a589253e81c"
+        },
+        {
+          "global_index": 43,
+          "panel": "Reconstruction",
+          "box": [
+            1366,
+            1228,
+            1540,
+            1402
+          ],
+          "rgb_sha256": "8ae792a13b35314c046833e2ea3076dc20fb1a322013a254946ef3a0e0486f1a"
+        },
+        {
+          "global_index": 44,
+          "panel": "Original",
+          "box": [
+            1556,
+            1228,
+            1730,
+            1402
+          ],
+          "rgb_sha256": "c9e072413110b939f2df878a502f0df7fa39f7d79b189c73145202d028a72658"
+        },
+        {
+          "global_index": 44,
+          "panel": "Reconstruction",
+          "box": [
+            1738,
+            1228,
+            1912,
+            1402
+          ],
+          "rgb_sha256": "f34d8ada9d9980b634ac51a1075b601d3e1b136ca271c0b41769753636077ffa"
+        },
+        {
+          "global_index": 45,
+          "panel": "Original",
+          "box": [
+            1928,
+            1228,
+            2102,
+            1402
+          ],
+          "rgb_sha256": "484c37219a2cb576e0ab853ea0a2feeb8ef33389ed63c2b10c6c7fd2427c048e"
+        },
+        {
+          "global_index": 45,
+          "panel": "Reconstruction",
+          "box": [
+            2110,
+            1228,
+            2284,
+            1402
+          ],
+          "rgb_sha256": "9b10c4acd4aa31d34c853836230c82826c7910a6c75be410e2bf43c685859544"
+        },
+        {
+          "global_index": 46,
+          "panel": "Original",
+          "box": [
+            2300,
+            1228,
+            2474,
+            1402
+          ],
+          "rgb_sha256": "fbabb88bd605572a32d5cedd9b3852fa651bef63f906dc90c7905e8731d220e8"
+        },
+        {
+          "global_index": 46,
+          "panel": "Reconstruction",
+          "box": [
+            2482,
+            1228,
+            2656,
+            1402
+          ],
+          "rgb_sha256": "6a0923a2e39f52aaf106fb02a30812d60f1d8c7170a8bb152afe18cc56b6b0c6"
+        },
+        {
+          "global_index": 47,
+          "panel": "Original",
+          "box": [
+            2672,
+            1228,
+            2846,
+            1402
+          ],
+          "rgb_sha256": "0de00e4bfb8a7f80e4a0f2707929aa07bce7d3c4af8d696ec3def61690144748"
+        },
+        {
+          "global_index": 47,
+          "panel": "Reconstruction",
+          "box": [
+            2854,
+            1228,
+            3028,
+            1402
+          ],
+          "rgb_sha256": "bbc5d3261e1e306294a14ac6813615a3b92264916b8540cfd47602f5bc474a22"
+        },
+        {
+          "global_index": 48,
+          "panel": "Original",
+          "box": [
+            3044,
+            1228,
+            3218,
+            1402
+          ],
+          "rgb_sha256": "da67eea44c90ab3fdf649fce3fb9b9137bf5a011e66ed1f6f70c7fbf132a5bfd"
+        },
+        {
+          "global_index": 48,
+          "panel": "Reconstruction",
+          "box": [
+            3226,
+            1228,
+            3400,
+            1402
+          ],
+          "rgb_sha256": "d44becf5c3d94990a841a38592eedd0568e1db16e9b442d57e01f22f9773a27f"
+        },
+        {
+          "global_index": 49,
+          "panel": "Original",
+          "box": [
+            3416,
+            1228,
+            3590,
+            1402
+          ],
+          "rgb_sha256": "c9c1f37a4517a9afb3e1ec4c6b929c2ebbdc86142101182ed50a373334455022"
+        },
+        {
+          "global_index": 49,
+          "panel": "Reconstruction",
+          "box": [
+            3598,
+            1228,
+            3772,
+            1402
+          ],
+          "rgb_sha256": "6935396f04f54c6b46f93950fbe8cb1eb77c460e1e5d343f3de92ebac1a8b95d"
+        },
+        {
+          "global_index": 50,
+          "panel": "Original",
+          "box": [
+            68,
+            1458,
+            242,
+            1632
+          ],
+          "rgb_sha256": "b7372f492022ccf3f3b581147b21b25d5a804eb24265d78a55ee2d134029c2c4"
+        },
+        {
+          "global_index": 50,
+          "panel": "Reconstruction",
+          "box": [
+            250,
+            1458,
+            424,
+            1632
+          ],
+          "rgb_sha256": "71fed182e82a0768aedb21ce2a05ebe9f6aa374ddecd02679d593083a6d00b39"
+        },
+        {
+          "global_index": 51,
+          "panel": "Original",
+          "box": [
+            440,
+            1458,
+            614,
+            1632
+          ],
+          "rgb_sha256": "bbe068d3790ae5c67cdcedf4535a55340d79695e1c8b5b618613c0e9b763d1c8"
+        },
+        {
+          "global_index": 51,
+          "panel": "Reconstruction",
+          "box": [
+            622,
+            1458,
+            796,
+            1632
+          ],
+          "rgb_sha256": "c1b9c5e4337fb7bcece385508b2e57f828801c4e0828e00a9c71bd293c28b941"
+        },
+        {
+          "global_index": 52,
+          "panel": "Original",
+          "box": [
+            812,
+            1458,
+            986,
+            1632
+          ],
+          "rgb_sha256": "10f67502714efd96c01e692d5bcc2617b6542599baca3ef0f93a987b73501fab"
+        },
+        {
+          "global_index": 52,
+          "panel": "Reconstruction",
+          "box": [
+            994,
+            1458,
+            1168,
+            1632
+          ],
+          "rgb_sha256": "70cd4771712a43ecdda653c32375afb069bbf5ce2343bd77c7b854e4c1bda431"
+        },
+        {
+          "global_index": 53,
+          "panel": "Original",
+          "box": [
+            1184,
+            1458,
+            1358,
+            1632
+          ],
+          "rgb_sha256": "facdf1a7efd3d93a866de94ec2d5ca1306114fe917ce61875437c49c18f92916"
+        },
+        {
+          "global_index": 53,
+          "panel": "Reconstruction",
+          "box": [
+            1366,
+            1458,
+            1540,
+            1632
+          ],
+          "rgb_sha256": "09161029a150e2a8da0f4ca23b7e7a4c272d57e1d867263812e090a7edeee500"
+        },
+        {
+          "global_index": 54,
+          "panel": "Original",
+          "box": [
+            1556,
+            1458,
+            1730,
+            1632
+          ],
+          "rgb_sha256": "2b5da5caa4d063501871c409360d252b7fea0b97cac272b33c98994419857ff3"
+        },
+        {
+          "global_index": 54,
+          "panel": "Reconstruction",
+          "box": [
+            1738,
+            1458,
+            1912,
+            1632
+          ],
+          "rgb_sha256": "1cd96bcd24ca444dd9ec5f096d5b4cc3e2f51309f188214258d66b923e48d55b"
+        },
+        {
+          "global_index": 55,
+          "panel": "Original",
+          "box": [
+            1928,
+            1458,
+            2102,
+            1632
+          ],
+          "rgb_sha256": "6d4f3233f5970f2cb6ac3d73ebbbd9bfe93b1cacd1cb1cc657c39679bd9a7717"
+        },
+        {
+          "global_index": 55,
+          "panel": "Reconstruction",
+          "box": [
+            2110,
+            1458,
+            2284,
+            1632
+          ],
+          "rgb_sha256": "e474d4ab1d47e0a731a0ddc45caca7683ff0efa17d896f83ecd81df3e97faf58"
+        },
+        {
+          "global_index": 56,
+          "panel": "Original",
+          "box": [
+            2300,
+            1458,
+            2474,
+            1632
+          ],
+          "rgb_sha256": "8d63d6d981bf7718f2ccde52c97a0699ae587a574a7bc7bb412bed533f5d4a1c"
+        },
+        {
+          "global_index": 56,
+          "panel": "Reconstruction",
+          "box": [
+            2482,
+            1458,
+            2656,
+            1632
+          ],
+          "rgb_sha256": "2e8b2b2345f7c2b2d99e509d47cfa5cc8ab73f8a98dccd9200c18ac7f9947040"
+        },
+        {
+          "global_index": 57,
+          "panel": "Original",
+          "box": [
+            2672,
+            1458,
+            2846,
+            1632
+          ],
+          "rgb_sha256": "4583b2e927a971f21143362b270fcaa4e84e3a8116423054530306fcd0067ea4"
+        },
+        {
+          "global_index": 57,
+          "panel": "Reconstruction",
+          "box": [
+            2854,
+            1458,
+            3028,
+            1632
+          ],
+          "rgb_sha256": "f4a29449aa824e3815e6fa8c3bf56def73d8eafabb46e4d21216fff0717fadaf"
+        },
+        {
+          "global_index": 58,
+          "panel": "Original",
+          "box": [
+            3044,
+            1458,
+            3218,
+            1632
+          ],
+          "rgb_sha256": "cc0f29760cfd9440a5ac77ebfb76db16fd6950d2f80a216bf58b67de771f42ea"
+        },
+        {
+          "global_index": 58,
+          "panel": "Reconstruction",
+          "box": [
+            3226,
+            1458,
+            3400,
+            1632
+          ],
+          "rgb_sha256": "645401a9ee6791041b7ba8645ec7d63e0d56dc8f52727012b71fd728a2d05382"
+        },
+        {
+          "global_index": 59,
+          "panel": "Original",
+          "box": [
+            3416,
+            1458,
+            3590,
+            1632
+          ],
+          "rgb_sha256": "ab9ebaaec2a63ba9d96ad5ab004ad7c51e101f6ddabd3a38bb5d198e27d7de45"
+        },
+        {
+          "global_index": 59,
+          "panel": "Reconstruction",
+          "box": [
+            3598,
+            1458,
+            3772,
+            1632
+          ],
+          "rgb_sha256": "e7eb509ef22ad61415950a9f5058aeeb86063b39173f38c1bc649158e998afef"
+        },
+        {
+          "global_index": 60,
+          "panel": "Original",
+          "box": [
+            68,
+            1688,
+            242,
+            1862
+          ],
+          "rgb_sha256": "c88c405b9621c15bdc80c341b14770853e480828b0c3c6857208599a6e7b519c"
+        },
+        {
+          "global_index": 60,
+          "panel": "Reconstruction",
+          "box": [
+            250,
+            1688,
+            424,
+            1862
+          ],
+          "rgb_sha256": "e90119a0b03ac560f2b6fd4a5664bd3b79f7588cb7d39e5758c0a8519b0eaea3"
+        },
+        {
+          "global_index": 61,
+          "panel": "Original",
+          "box": [
+            440,
+            1688,
+            614,
+            1862
+          ],
+          "rgb_sha256": "7cdc4c18e9ad70f76c9d7e2132e448b6da68d611a58d956648f932421a955bda"
+        },
+        {
+          "global_index": 61,
+          "panel": "Reconstruction",
+          "box": [
+            622,
+            1688,
+            796,
+            1862
+          ],
+          "rgb_sha256": "a6d62f57656da68c827e54a33298f3bdbfdd93a89f0a0d1730d671fbb2cd4a78"
+        },
+        {
+          "global_index": 62,
+          "panel": "Original",
+          "box": [
+            812,
+            1688,
+            986,
+            1862
+          ],
+          "rgb_sha256": "9f06dd7ba4a93ab24f84ab7073eff008b51d17ed8f04e0c698f0adcad0827ed8"
+        },
+        {
+          "global_index": 62,
+          "panel": "Reconstruction",
+          "box": [
+            994,
+            1688,
+            1168,
+            1862
+          ],
+          "rgb_sha256": "23f6ba90fe248ce30b259d2df3c43f5eab772dbb4184a335909a6d71f1796413"
+        },
+        {
+          "global_index": 63,
+          "panel": "Original",
+          "box": [
+            1184,
+            1688,
+            1358,
+            1862
+          ],
+          "rgb_sha256": "7f27e81b563c202d296ad65c8bdbc1422d2e4b9c46e7af64ef5ece9573219415"
+        },
+        {
+          "global_index": 63,
+          "panel": "Reconstruction",
+          "box": [
+            1366,
+            1688,
+            1540,
+            1862
+          ],
+          "rgb_sha256": "54bdd2e6660317e9a15533b9eca162337df742674637cbdb97c0064e09e90488"
+        },
+        {
+          "global_index": 64,
+          "panel": "Original",
+          "box": [
+            1556,
+            1688,
+            1730,
+            1862
+          ],
+          "rgb_sha256": "1fe9c79061ec6d21683d48ab1a2fc7822bfb8eb15efffef7e869c30a392a3312"
+        },
+        {
+          "global_index": 64,
+          "panel": "Reconstruction",
+          "box": [
+            1738,
+            1688,
+            1912,
+            1862
+          ],
+          "rgb_sha256": "533d7a0e22b44eef2fd8c70970a9e32dac27c4447c04d89138e7b8dc078902c7"
+        },
+        {
+          "global_index": 65,
+          "panel": "Original",
+          "box": [
+            1928,
+            1688,
+            2102,
+            1862
+          ],
+          "rgb_sha256": "2e74722ba1b5c90952790ede9137565c3c566bbaf560e9b44165751753fff0a9"
+        },
+        {
+          "global_index": 65,
+          "panel": "Reconstruction",
+          "box": [
+            2110,
+            1688,
+            2284,
+            1862
+          ],
+          "rgb_sha256": "e8b1ba95111772985e00cd71c6646a3b9d21071296e5cbd8096eab5f4e2e7a4a"
+        },
+        {
+          "global_index": 66,
+          "panel": "Original",
+          "box": [
+            2300,
+            1688,
+            2474,
+            1862
+          ],
+          "rgb_sha256": "74d9e3365d4a174495ae3ea7bd817434fdb9415213231250491bc6a896c87330"
+        },
+        {
+          "global_index": 66,
+          "panel": "Reconstruction",
+          "box": [
+            2482,
+            1688,
+            2656,
+            1862
+          ],
+          "rgb_sha256": "b063c4a6e394ac086e04e177166b49f9e89102ffc3a81a542754ad806233fed8"
+        },
+        {
+          "global_index": 67,
+          "panel": "Original",
+          "box": [
+            2672,
+            1688,
+            2846,
+            1862
+          ],
+          "rgb_sha256": "62d1deaa0b5112b72680521cec596ed4f3b93ba1aab4542f4c962a7f0dbe8520"
+        },
+        {
+          "global_index": 67,
+          "panel": "Reconstruction",
+          "box": [
+            2854,
+            1688,
+            3028,
+            1862
+          ],
+          "rgb_sha256": "8599928684ce662e5bb1a2fe7926de5efbb28e61009562c1ffeb9609b1330622"
+        },
+        {
+          "global_index": 68,
+          "panel": "Original",
+          "box": [
+            3044,
+            1688,
+            3218,
+            1862
+          ],
+          "rgb_sha256": "4390c5409a61a6f5202577237116d15cab91b35ee4a6dae3023eb1a23b7351ae"
+        },
+        {
+          "global_index": 68,
+          "panel": "Reconstruction",
+          "box": [
+            3226,
+            1688,
+            3400,
+            1862
+          ],
+          "rgb_sha256": "c7b0dfd2c9ce6c02f87876a85ccf83237d251b42102db5be13d741853a711fc1"
+        },
+        {
+          "global_index": 69,
+          "panel": "Original",
+          "box": [
+            3416,
+            1688,
+            3590,
+            1862
+          ],
+          "rgb_sha256": "f8cf898dfa1c5c672429734ccd481cc99a640e8cfdbd9b463cead8b4bca9993f"
+        },
+        {
+          "global_index": 69,
+          "panel": "Reconstruction",
+          "box": [
+            3598,
+            1688,
+            3772,
+            1862
+          ],
+          "rgb_sha256": "5d04fec4130bba367ef06c0eb7f3a6f7f6f879c0f7f85422881713af6a9ced60"
+        },
+        {
+          "global_index": 70,
+          "panel": "Original",
+          "box": [
+            68,
+            1918,
+            242,
+            2092
+          ],
+          "rgb_sha256": "dd194d8c7e9a18c71f5a2d6094b5fc120780bbcebde846e7cec978ef962a346b"
+        },
+        {
+          "global_index": 70,
+          "panel": "Reconstruction",
+          "box": [
+            250,
+            1918,
+            424,
+            2092
+          ],
+          "rgb_sha256": "24f44484d461158756be6bf62ff6781c750582a230f54ee1888b47e33e795b2b"
+        },
+        {
+          "global_index": 71,
+          "panel": "Original",
+          "box": [
+            440,
+            1918,
+            614,
+            2092
+          ],
+          "rgb_sha256": "f9f8d14a7e7f65edd2aa7b5ba174b9d50b238e45faf8d2f36bfcc1c78d0d2c15"
+        },
+        {
+          "global_index": 71,
+          "panel": "Reconstruction",
+          "box": [
+            622,
+            1918,
+            796,
+            2092
+          ],
+          "rgb_sha256": "3ad1086964f3b5226f9157b41e8796255a3a2f43bbd98e91961bc257ccf20298"
+        },
+        {
+          "global_index": 72,
+          "panel": "Original",
+          "box": [
+            812,
+            1918,
+            986,
+            2092
+          ],
+          "rgb_sha256": "4b7867bdb8ab94f981ff3637383a21bb8f503fcfdf288f808fc466a204007e32"
+        },
+        {
+          "global_index": 72,
+          "panel": "Reconstruction",
+          "box": [
+            994,
+            1918,
+            1168,
+            2092
+          ],
+          "rgb_sha256": "17f36a27061144463a753fb32454d201c7d7ab327b947ce5b29f7224097499ed"
+        },
+        {
+          "global_index": 73,
+          "panel": "Original",
+          "box": [
+            1184,
+            1918,
+            1358,
+            2092
+          ],
+          "rgb_sha256": "82647fc18ca7bc1b2ba916e762eac370196ca4f669d6bc54f0fc77e43915dfc1"
+        },
+        {
+          "global_index": 73,
+          "panel": "Reconstruction",
+          "box": [
+            1366,
+            1918,
+            1540,
+            2092
+          ],
+          "rgb_sha256": "2a2d0daf6f1f9297625f82ce48791b66fd35523e1218d11e03693c303510a423"
+        },
+        {
+          "global_index": 74,
+          "panel": "Original",
+          "box": [
+            1556,
+            1918,
+            1730,
+            2092
+          ],
+          "rgb_sha256": "7df4950f46e4db336e04e8f98eccd6b031bd4afe150046e32fdbfc5740245441"
+        },
+        {
+          "global_index": 74,
+          "panel": "Reconstruction",
+          "box": [
+            1738,
+            1918,
+            1912,
+            2092
+          ],
+          "rgb_sha256": "1e772a888131c3047ebd382e87c10eec57cc43318dc301967b1b76ea19e567c6"
+        },
+        {
+          "global_index": 75,
+          "panel": "Original",
+          "box": [
+            1928,
+            1918,
+            2102,
+            2092
+          ],
+          "rgb_sha256": "c9bad1f96e836e620f764d22ff66ce844064eeae7f7b21996c79fd8b0dc36b9b"
+        },
+        {
+          "global_index": 75,
+          "panel": "Reconstruction",
+          "box": [
+            2110,
+            1918,
+            2284,
+            2092
+          ],
+          "rgb_sha256": "50d49e1681b09d0fbf939f8a595307d493b4d9996560f2bd3c935ca8716af4a8"
+        },
+        {
+          "global_index": 76,
+          "panel": "Original",
+          "box": [
+            2300,
+            1918,
+            2474,
+            2092
+          ],
+          "rgb_sha256": "9751181a67d53277233bd16c8a1b3cf00f7c407ede214b686e5c558a0b44a69f"
+        },
+        {
+          "global_index": 76,
+          "panel": "Reconstruction",
+          "box": [
+            2482,
+            1918,
+            2656,
+            2092
+          ],
+          "rgb_sha256": "3d2aaed96636d5ddf376a9cb32b755a692b5db848ae8beb0571d718956c3af73"
+        },
+        {
+          "global_index": 77,
+          "panel": "Original",
+          "box": [
+            2672,
+            1918,
+            2846,
+            2092
+          ],
+          "rgb_sha256": "091d138c4ebef401260cd1597dce80c8fe609ae14c972d04e7df852bef8e8311"
+        },
+        {
+          "global_index": 77,
+          "panel": "Reconstruction",
+          "box": [
+            2854,
+            1918,
+            3028,
+            2092
+          ],
+          "rgb_sha256": "52c5a508b7bf5261e83cefda8f3b715f9e5d46ad0bea39a6910982d024545234"
+        },
+        {
+          "global_index": 78,
+          "panel": "Original",
+          "box": [
+            3044,
+            1918,
+            3218,
+            2092
+          ],
+          "rgb_sha256": "9e2f2430ac7db7a6a59ad6d695f67d03eaa2023c66ee6b2e70e7b7bd58821e09"
+        },
+        {
+          "global_index": 78,
+          "panel": "Reconstruction",
+          "box": [
+            3226,
+            1918,
+            3400,
+            2092
+          ],
+          "rgb_sha256": "90b2d2fbba181d975c2dc2db394962d1842df5e30a21293f85a7fe6febf7325a"
+        },
+        {
+          "global_index": 79,
+          "panel": "Original",
+          "box": [
+            3416,
+            1918,
+            3590,
+            2092
+          ],
+          "rgb_sha256": "231094fb26f3dc7b8285d82dc569835a38639d8c10739ae7cbe14b3694ea1877"
+        },
+        {
+          "global_index": 79,
+          "panel": "Reconstruction",
+          "box": [
+            3598,
+            1918,
+            3772,
+            2092
+          ],
+          "rgb_sha256": "1f331dca96d1582c58a08cb5bc90578ffcf8596c75e3f39a9cbe57b418202a1a"
+        }
+      ],
+      "run_tag": "cpa_fia_topk50_same80_B16",
+      "source_folder": "results\\cpa_fia_topk50_same80_B16",
+      "summary_sha256": "f7f9d067c3fc8e6763822166459ca1f2a2f5037255070617f71ed6a54b3c8972",
+      "source_hashes": {
+        "per_image_metrics.csv": "9b83648bc8994d9825e74650e87dc736c6d2ab32b78c7e477450d0551e49a63a",
+        "figure_manifest.json": "52e4af56da2a7fe329d727e021c7f2abcdd3c4e923c42578a3f9a253bac0f5cc",
+        "all80_reconstruction_landscape.png": "d44bd64890a3a070966ebff875c7f07eb80029a31816ea568703967bcfa700e6"
+      }
+    },
+    {
+      "keep_percent": 30,
+      "file": "topk30_original_vs_reconstruction_16x9.png",
+      "sha256": "1d5172e90475d753b51c6abfb072dd566846c7cbf7ccff4e44fc803830dcfd1f",
+      "size": [
+        3840,
+        2160
+      ],
+      "n_images": 80,
+      "n_panels": 160,
+      "global_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79
+      ],
+      "mean_metrics": {
+        "lpips": 0.5098320577293635,
+        "ssim": 0.3140844308771193,
+        "psnr": 22.13713161945343
+      },
+      "tile_size": 174,
+      "placements": [
+        {
+          "global_index": 0,
+          "panel": "Original",
+          "box": [
+            68,
+            308,
+            242,
+            482
+          ],
+          "rgb_sha256": "c1d465c714332db041afe2eab46b927745824d0041eb223441511c2fe95b2d2e"
+        },
+        {
+          "global_index": 0,
+          "panel": "Reconstruction",
+          "box": [
+            250,
+            308,
+            424,
+            482
+          ],
+          "rgb_sha256": "4b5714b09c7dfb71cfbcfd088b56664c9d8a1b8daff8595d7e34b3f34a5faa2e"
+        },
+        {
+          "global_index": 1,
+          "panel": "Original",
+          "box": [
+            440,
+            308,
+            614,
+            482
+          ],
+          "rgb_sha256": "f75facee2c342154bc4ad9f5e1b0cfb04af35165d1bfda112ba359cfde50cfa4"
+        },
+        {
+          "global_index": 1,
+          "panel": "Reconstruction",
+          "box": [
+            622,
+            308,
+            796,
+            482
+          ],
+          "rgb_sha256": "36e28012ac5d2cd343e1d1659e5c311b84a1ac58b7602fbb76257e8310d53dd2"
+        },
+        {
+          "global_index": 2,
+          "panel": "Original",
+          "box": [
+            812,
+            308,
+            986,
+            482
+          ],
+          "rgb_sha256": "88f950c2aca98b34966ec29a4733ccc6f6dec4e4bf631336f441e879977f8058"
+        },
+        {
+          "global_index": 2,
+          "panel": "Reconstruction",
+          "box": [
+            994,
+            308,
+            1168,
+            482
+          ],
+          "rgb_sha256": "60d5f7125395d486dbad6472133db2287f54e9d52a5b51a6bbb2713ef4e5184b"
+        },
+        {
+          "global_index": 3,
+          "panel": "Original",
+          "box": [
+            1184,
+            308,
+            1358,
+            482
+          ],
+          "rgb_sha256": "9de2dc85dbcfd4dc9d5eebf898b3c6339939f351af4e7523a7e87cc376166485"
+        },
+        {
+          "global_index": 3,
+          "panel": "Reconstruction",
+          "box": [
+            1366,
+            308,
+            1540,
+            482
+          ],
+          "rgb_sha256": "6eda1a1c3cc4818f9598c1b28d5dc1a87858ce6bdbbb7281dca57955e8421a60"
+        },
+        {
+          "global_index": 4,
+          "panel": "Original",
+          "box": [
+            1556,
+            308,
+            1730,
+            482
+          ],
+          "rgb_sha256": "6e8ed4689d0b7e64a12803afc889e0f9beda4841ae6740e3e44b95d5519e26dd"
+        },
+        {
+          "global_index": 4,
+          "panel": "Reconstruction",
+          "box": [
+            1738,
+            308,
+            1912,
+            482
+          ],
+          "rgb_sha256": "7b18ea8d2ff1a0e129e5ded88d642c116c58c96a4a0a7e1afee3c960ac1afc57"
+        },
+        {
+          "global_index": 5,
+          "panel": "Original",
+          "box": [
+            1928,
+            308,
+            2102,
+            482
+          ],
+          "rgb_sha256": "06e73470f00cb2c5880bf90c3783908a2634bb85f37cfb574473655db7b28af6"
+        },
+        {
+          "global_index": 5,
+          "panel": "Reconstruction",
+          "box": [
+            2110,
+            308,
+            2284,
+            482
+          ],
+          "rgb_sha256": "efd9cd3ce0972fab3a2df4fb487883e880f319c3e55c6950f5b199b97c10e893"
+        },
+        {
+          "global_index": 6,
+          "panel": "Original",
+          "box": [
+            2300,
+            308,
+            2474,
+            482
+          ],
+          "rgb_sha256": "a2143f2185963d97c27b6afedb32a593624fa025f7d918f742cde493655e8ded"
+        },
+        {
+          "global_index": 6,
+          "panel": "Reconstruction",
+          "box": [
+            2482,
+            308,
+            2656,
+            482
+          ],
+          "rgb_sha256": "a5aa783bbfb221ce35c9a7cc5b728206169ab0552230d97dc5b289dbafe3cf0e"
+        },
+        {
+          "global_index": 7,
+          "panel": "Original",
+          "box": [
+            2672,
+            308,
+            2846,
+            482
+          ],
+          "rgb_sha256": "67d51e0bd996109e1f128424a04b0795151c22946d78df1fb4b7d218d5a6e26b"
+        },
+        {
+          "global_index": 7,
+          "panel": "Reconstruction",
+          "box": [
+            2854,
+            308,
+            3028,
+            482
+          ],
+          "rgb_sha256": "3622af43f960afbcdf8b768143d111582d5d71283d2ee36e1d1360501d63b082"
+        },
+        {
+          "global_index": 8,
+          "panel": "Original",
+          "box": [
+            3044,
+            308,
+            3218,
+            482
+          ],
+          "rgb_sha256": "a505ab8218c3007d28c6e0522128d20eea84b19c5388991216c5650440d2d0a9"
+        },
+        {
+          "global_index": 8,
+          "panel": "Reconstruction",
+          "box": [
+            3226,
+            308,
+            3400,
+            482
+          ],
+          "rgb_sha256": "011e966620c59e64eaf14d8eb6fec887a8c5b3629a663ea53f48bcb692a7474a"
+        },
+        {
+          "global_index": 9,
+          "panel": "Original",
+          "box": [
+            3416,
+            308,
+            3590,
+            482
+          ],
+          "rgb_sha256": "470ca9a71ae5a6a5e2973c58471be184e7bb9797b186b1ac482bcaac0d26d000"
+        },
+        {
+          "global_index": 9,
+          "panel": "Reconstruction",
+          "box": [
+            3598,
+            308,
+            3772,
+            482
+          ],
+          "rgb_sha256": "3d71ebdab61795e6235261d099719f990b60b58e0c13635afbf8edb789b9151d"
+        },
+        {
+          "global_index": 10,
+          "panel": "Original",
+          "box": [
+            68,
+            538,
+            242,
+            712
+          ],
+          "rgb_sha256": "20074598fae032a885b67058a2e5ad5218452cc36816dbd68598ebe486c4a429"
+        },
+        {
+          "global_index": 10,
+          "panel": "Reconstruction",
+          "box": [
+            250,
+            538,
+            424,
+            712
+          ],
+          "rgb_sha256": "73665da50b4d6905b020594347222eea627743076cebfea85d2790357aa48810"
+        },
+        {
+          "global_index": 11,
+          "panel": "Original",
+          "box": [
+            440,
+            538,
+            614,
+            712
+          ],
+          "rgb_sha256": "9d589fa4f74a8e8319cf8acfdefea41176039985b6fec245d3c59dcf1f993594"
+        },
+        {
+          "global_index": 11,
+          "panel": "Reconstruction",
+          "box": [
+            622,
+            538,
+            796,
+            712
+          ],
+          "rgb_sha256": "ea1f2cca74229e25567781c1157c41e9ac598a2c94c8d6876aa7b7ee10b5de22"
+        },
+        {
+          "global_index": 12,
+          "panel": "Original",
+          "box": [
+            812,
+            538,
+            986,
+            712
+          ],
+          "rgb_sha256": "056619a91c586eda35a3f999c5a23065cf1e8bbc35989688ebbb87726404788a"
+        },
+        {
+          "global_index": 12,
+          "panel": "Reconstruction",
+          "box": [
+            994,
+            538,
+            1168,
+            712
+          ],
+          "rgb_sha256": "2348a00fb204eb843a913df04bba23166a0244042a2baa1484736a8d91e5db18"
+        },
+        {
+          "global_index": 13,
+          "panel": "Original",
+          "box": [
+            1184,
+            538,
+            1358,
+            712
+          ],
+          "rgb_sha256": "0109274903e6be7fdc8c03e550161ee4bed11ad154e5f7769fd4edbfe935db22"
+        },
+        {
+          "global_index": 13,
+          "panel": "Reconstruction",
+          "box": [
+            1366,
+            538,
+            1540,
+            712
+          ],
+          "rgb_sha256": "81b13ca9116e34d9825efe55a8c5c8ef1e23839c849df7fc65a7ffbb7cd08c80"
+        },
+        {
+          "global_index": 14,
+          "panel": "Original",
+          "box": [
+            1556,
+            538,
+            1730,
+            712
+          ],
+          "rgb_sha256": "07faf470fdf6c21ca66c5d07d2e0d778863ebe1648321acaea3bb542d14c3355"
+        },
+        {
+          "global_index": 14,
+          "panel": "Reconstruction",
+          "box": [
+            1738,
+            538,
+            1912,
+            712
+          ],
+          "rgb_sha256": "8a97da271a785f4ea5600a3cccff92a4cb19013f5b29157339c0bd346ef58435"
+        },
+        {
+          "global_index": 15,
+          "panel": "Original",
+          "box": [
+            1928,
+            538,
+            2102,
+            712
+          ],
+          "rgb_sha256": "9d39e18d5a034368fe0104993a230f3d79d743950d2e0a85abbce43451e45d30"
+        },
+        {
+          "global_index": 15,
+          "panel": "Reconstruction",
+          "box": [
+            2110,
+            538,
+            2284,
+            712
+          ],
+          "rgb_sha256": "edda0e432cb6a63b73914218fc812ac03db27bb3e51a00fbaf0b7dd7526d42da"
+        },
+        {
+          "global_index": 16,
+          "panel": "Original",
+          "box": [
+            2300,
+            538,
+            2474,
+            712
+          ],
+          "rgb_sha256": "7a5316a406bb7e289939821f58c200d22ad1b672493fe8dbac08f95c56f6961b"
+        },
+        {
+          "global_index": 16,
+          "panel": "Reconstruction",
+          "box": [
+            2482,
+            538,
+            2656,
+            712
+          ],
+          "rgb_sha256": "255b00e51e60eab716e3eeebf37290545d75ec4cd3492e2de598ac9af56dcbf5"
+        },
+        {
+          "global_index": 17,
+          "panel": "Original",
+          "box": [
+            2672,
+            538,
+            2846,
+            712
+          ],
+          "rgb_sha256": "9693a34e84385f89bba78e5ae00736d55a008fe558db1ddcad96bd96a5837dcc"
+        },
+        {
+          "global_index": 17,
+          "panel": "Reconstruction",
+          "box": [
+            2854,
+            538,
+            3028,
+            712
+          ],
+          "rgb_sha256": "b8b0305d6b371a14befab23e43eabe1cfbbcea49ba012ead94601e4007a4f0b9"
+        },
+        {
+          "global_index": 18,
+          "panel": "Original",
+          "box": [
+            3044,
+            538,
+            3218,
+            712
+          ],
+          "rgb_sha256": "c02945e163b6854dac6e6c5346b0099d4c643c0db75fa5052af2090518b1efec"
+        },
+        {
+          "global_index": 18,
+          "panel": "Reconstruction",
+          "box": [
+            3226,
+            538,
+            3400,
+            712
+          ],
+          "rgb_sha256": "4a84d15fe10bcf7aa348230ff29a3036925c1ce8da2858edc328fc4f554c29d7"
+        },
+        {
+          "global_index": 19,
+          "panel": "Original",
+          "box": [
+            3416,
+            538,
+            3590,
+            712
+          ],
+          "rgb_sha256": "c98de3ba52130fda07d6f4058680d875ad632563123de138dd32d93149f8b2dd"
+        },
+        {
+          "global_index": 19,
+          "panel": "Reconstruction",
+          "box": [
+            3598,
+            538,
+            3772,
+            712
+          ],
+          "rgb_sha256": "160a9e8e7a54b2037a9f3329a0bbc75b91a778d385d16cf93bb44e7795a8930b"
+        },
+        {
+          "global_index": 20,
+          "panel": "Original",
+          "box": [
+            68,
+            768,
+            242,
+            942
+          ],
+          "rgb_sha256": "7d3b4101999f62b254b03768b6745d480bfcbcfe7b3001ce35d6f2f460a6e726"
+        },
+        {
+          "global_index": 20,
+          "panel": "Reconstruction",
+          "box": [
+            250,
+            768,
+            424,
+            942
+          ],
+          "rgb_sha256": "a41e239900fe17ee9e3baaf19d5f7bd5a7e13e42d957b133271351e67aff2c3f"
+        },
+        {
+          "global_index": 21,
+          "panel": "Original",
+          "box": [
+            440,
+            768,
+            614,
+            942
+          ],
+          "rgb_sha256": "72e882a5f2d5d458e3f4884a0eb8935306e016ec8f5c926794b0c45729725961"
+        },
+        {
+          "global_index": 21,
+          "panel": "Reconstruction",
+          "box": [
+            622,
+            768,
+            796,
+            942
+          ],
+          "rgb_sha256": "d529b48f1386aa91d6feac5c2aa2fc163a6834e17540dbec4831983304315d44"
+        },
+        {
+          "global_index": 22,
+          "panel": "Original",
+          "box": [
+            812,
+            768,
+            986,
+            942
+          ],
+          "rgb_sha256": "41fda723d6495bdd82f51564ea9fc1169e487b820ff805695b962e8006957621"
+        },
+        {
+          "global_index": 22,
+          "panel": "Reconstruction",
+          "box": [
+            994,
+            768,
+            1168,
+            942
+          ],
+          "rgb_sha256": "3ff5a5c4630a67cc6f0a5f98c12db635eb5afca8536ce5ce62949b008ec942bc"
+        },
+        {
+          "global_index": 23,
+          "panel": "Original",
+          "box": [
+            1184,
+            768,
+            1358,
+            942
+          ],
+          "rgb_sha256": "20b618b694ee62d529ea3ab3959312ee55eb5dc3f375ea95a79f9f902aa837ac"
+        },
+        {
+          "global_index": 23,
+          "panel": "Reconstruction",
+          "box": [
+            1366,
+            768,
+            1540,
+            942
+          ],
+          "rgb_sha256": "a21381a42b5d8ec520db80422a537cc76e7b2e801dd17fb86e9ba336d1c17258"
+        },
+        {
+          "global_index": 24,
+          "panel": "Original",
+          "box": [
+            1556,
+            768,
+            1730,
+            942
+          ],
+          "rgb_sha256": "5ceb5391c3f69faa697a75f59db0415ffc5cc802ed6f96852afccc3e6318f88a"
+        },
+        {
+          "global_index": 24,
+          "panel": "Reconstruction",
+          "box": [
+            1738,
+            768,
+            1912,
+            942
+          ],
+          "rgb_sha256": "31c907fe393664b106d06f68eda45f761994a4792f77d3af4b8e05f2c10265fa"
+        },
+        {
+          "global_index": 25,
+          "panel": "Original",
+          "box": [
+            1928,
+            768,
+            2102,
+            942
+          ],
+          "rgb_sha256": "1f921860d98dd3d272ce7f250b2462d17fbb3ee17b617954c3b85297f4f8ed2e"
+        },
+        {
+          "global_index": 25,
+          "panel": "Reconstruction",
+          "box": [
+            2110,
+            768,
+            2284,
+            942
+          ],
+          "rgb_sha256": "49493541fb9c502fc90c5f047c4d9848d8317353b0a2747483d3a7e55931f867"
+        },
+        {
+          "global_index": 26,
+          "panel": "Original",
+          "box": [
+            2300,
+            768,
+            2474,
+            942
+          ],
+          "rgb_sha256": "bb452aa32b33c0994f9d3ebf01e824a0dbe68bf57d1e0b599bf22152aebafb81"
+        },
+        {
+          "global_index": 26,
+          "panel": "Reconstruction",
+          "box": [
+            2482,
+            768,
+            2656,
+            942
+          ],
+          "rgb_sha256": "532a6d6febbe05dd1c03e6401cbd67808b0e1a3dbb43bbdb521c70f18613d605"
+        },
+        {
+          "global_index": 27,
+          "panel": "Original",
+          "box": [
+            2672,
+            768,
+            2846,
+            942
+          ],
+          "rgb_sha256": "c3bfc873a6fc583c8de311b02224d54a8365bc21abec98e58767ca2a1c966afc"
+        },
+        {
+          "global_index": 27,
+          "panel": "Reconstruction",
+          "box": [
+            2854,
+            768,
+            3028,
+            942
+          ],
+          "rgb_sha256": "6f74263c8a230f7db57c7ac0877dfafa7fa148f4d1c0271198b3335825107da8"
+        },
+        {
+          "global_index": 28,
+          "panel": "Original",
+          "box": [
+            3044,
+            768,
+            3218,
+            942
+          ],
+          "rgb_sha256": "8ecf83fe84c57bce0fdce07598541caedabd09aa46835544cad7d2038a31e332"
+        },
+        {
+          "global_index": 28,
+          "panel": "Reconstruction",
+          "box": [
+            3226,
+            768,
+            3400,
+            942
+          ],
+          "rgb_sha256": "673c9eb61bd893eee11f24dcbb8e113729d4b7155b7403ff3101dac6bc43ad55"
+        },
+        {
+          "global_index": 29,
+          "panel": "Original",
+          "box": [
+            3416,
+            768,
+            3590,
+            942
+          ],
+          "rgb_sha256": "698b813fb17e26f298fc4b66849733b638df2783cfd2a32384bdd8bd65192701"
+        },
+        {
+          "global_index": 29,
+          "panel": "Reconstruction",
+          "box": [
+            3598,
+            768,
+            3772,
+            942
+          ],
+          "rgb_sha256": "fc9e791e5ed7d8a0e4c2f4c2b96d809a89745ff2f4774939f90e60fc72659ad2"
+        },
+        {
+          "global_index": 30,
+          "panel": "Original",
+          "box": [
+            68,
+            998,
+            242,
+            1172
+          ],
+          "rgb_sha256": "56184ac63ed48fceea7fd708f7a975d8505aaa486f145542ddfe63342d7db17a"
+        },
+        {
+          "global_index": 30,
+          "panel": "Reconstruction",
+          "box": [
+            250,
+            998,
+            424,
+            1172
+          ],
+          "rgb_sha256": "4458edf611d0bb8eec1ae1f66f7227a82523328f433c8b1b0f3594bc93171187"
+        },
+        {
+          "global_index": 31,
+          "panel": "Original",
+          "box": [
+            440,
+            998,
+            614,
+            1172
+          ],
+          "rgb_sha256": "ef4b7069dca832f70c60fd94bd430b2906d4de9406e761c205f8e71259aabdca"
+        },
+        {
+          "global_index": 31,
+          "panel": "Reconstruction",
+          "box": [
+            622,
+            998,
+            796,
+            1172
+          ],
+          "rgb_sha256": "c524572f48f90e309634d0db5d862394139c5a8d202378ab7cf3235c2874584a"
+        },
+        {
+          "global_index": 32,
+          "panel": "Original",
+          "box": [
+            812,
+            998,
+            986,
+            1172
+          ],
+          "rgb_sha256": "19f40becb8004e9e03a54e1ca4b492018ab1f7749a4531fc464089925ab65efb"
+        },
+        {
+          "global_index": 32,
+          "panel": "Reconstruction",
+          "box": [
+            994,
+            998,
+            1168,
+            1172
+          ],
+          "rgb_sha256": "05708dd5dddaab6ee2df5375b91b8a56f7805c9eb5385c21789bfadd785ee632"
+        },
+        {
+          "global_index": 33,
+          "panel": "Original",
+          "box": [
+            1184,
+            998,
+            1358,
+            1172
+          ],
+          "rgb_sha256": "fba8dc780a8ce9a3700b8677cf590ff301764587ec7237f5c02cb512f90b953e"
+        },
+        {
+          "global_index": 33,
+          "panel": "Reconstruction",
+          "box": [
+            1366,
+            998,
+            1540,
+            1172
+          ],
+          "rgb_sha256": "d33b0003f4e9ce93977ec5dc79a097e212369b5cf968d01b373fca942e8379df"
+        },
+        {
+          "global_index": 34,
+          "panel": "Original",
+          "box": [
+            1556,
+            998,
+            1730,
+            1172
+          ],
+          "rgb_sha256": "c51ca81e90e30d2f0b5ee6fb1987ffee28ca44f3523a8bafa06642fb816ab35c"
+        },
+        {
+          "global_index": 34,
+          "panel": "Reconstruction",
+          "box": [
+            1738,
+            998,
+            1912,
+            1172
+          ],
+          "rgb_sha256": "d80e6249de3a4f78b0b0ea8ce22a515005b82cd664e47138ea65c6b791f0804a"
+        },
+        {
+          "global_index": 35,
+          "panel": "Original",
+          "box": [
+            1928,
+            998,
+            2102,
+            1172
+          ],
+          "rgb_sha256": "d234d34ce4c76310561a2fb2345d4f246a6cb25b6bddb5af5f92d3655a059fbf"
+        },
+        {
+          "global_index": 35,
+          "panel": "Reconstruction",
+          "box": [
+            2110,
+            998,
+            2284,
+            1172
+          ],
+          "rgb_sha256": "8fdadfeb5df41df92024ccb302cbfdc4af7df9a5e427dc730293daf285612331"
+        },
+        {
+          "global_index": 36,
+          "panel": "Original",
+          "box": [
+            2300,
+            998,
+            2474,
+            1172
+          ],
+          "rgb_sha256": "93be6a24393ee7f7c4478900bfa32f2eeaf25cd76ef748051827d8f13bc9b431"
+        },
+        {
+          "global_index": 36,
+          "panel": "Reconstruction",
+          "box": [
+            2482,
+            998,
+            2656,
+            1172
+          ],
+          "rgb_sha256": "1aa9a8feae1929d910735f5c8e622f2aef385fa40ca8aa0ad080c3289856f683"
+        },
+        {
+          "global_index": 37,
+          "panel": "Original",
+          "box": [
+            2672,
+            998,
+            2846,
+            1172
+          ],
+          "rgb_sha256": "f3b5e738121ffd9a776d9327ec10bc7e4c78c28b05a6711a78e5e3140c91a737"
+        },
+        {
+          "global_index": 37,
+          "panel": "Reconstruction",
+          "box": [
+            2854,
+            998,
+            3028,
+            1172
+          ],
+          "rgb_sha256": "de80ac2450ef33221c0192bfe313bae51b38f969ea7919eb6deadeba629729a2"
+        },
+        {
+          "global_index": 38,
+          "panel": "Original",
+          "box": [
+            3044,
+            998,
+            3218,
+            1172
+          ],
+          "rgb_sha256": "87d50392fda2cd3eddaddea62b71a2aa074beddb3d7fddab8b77717d695b6d3b"
+        },
+        {
+          "global_index": 38,
+          "panel": "Reconstruction",
+          "box": [
+            3226,
+            998,
+            3400,
+            1172
+          ],
+          "rgb_sha256": "d55406f8d072571a1862e00ab48f9ec0fffc2ec8ccc064e7628caae145727733"
+        },
+        {
+          "global_index": 39,
+          "panel": "Original",
+          "box": [
+            3416,
+            998,
+            3590,
+            1172
+          ],
+          "rgb_sha256": "6f46de06ed8bc25cf267be831432f82614394ff1dc4e0febcf6a058ecb42dd73"
+        },
+        {
+          "global_index": 39,
+          "panel": "Reconstruction",
+          "box": [
+            3598,
+            998,
+            3772,
+            1172
+          ],
+          "rgb_sha256": "9c0ef39e6318f93687b8531372e9db37305afb6143b8cf79e3275dca3f9002af"
+        },
+        {
+          "global_index": 40,
+          "panel": "Original",
+          "box": [
+            68,
+            1228,
+            242,
+            1402
+          ],
+          "rgb_sha256": "310be474891248e2b84935a650b5339fe34595b0852a0f0e1dc016815cecff37"
+        },
+        {
+          "global_index": 40,
+          "panel": "Reconstruction",
+          "box": [
+            250,
+            1228,
+            424,
+            1402
+          ],
+          "rgb_sha256": "94e9051a4652cc684e6e762c0aa128ee0007e00fa40dfc887ee11d615c2d9459"
+        },
+        {
+          "global_index": 41,
+          "panel": "Original",
+          "box": [
+            440,
+            1228,
+            614,
+            1402
+          ],
+          "rgb_sha256": "5501eae9a863e938375d3c022aadce38b63347be560b365b0fc27412e92a2b59"
+        },
+        {
+          "global_index": 41,
+          "panel": "Reconstruction",
+          "box": [
+            622,
+            1228,
+            796,
+            1402
+          ],
+          "rgb_sha256": "23d8c6a404b99680bfe07c935fbcefaf4067339e61526c92967fe1d195ba9359"
+        },
+        {
+          "global_index": 42,
+          "panel": "Original",
+          "box": [
+            812,
+            1228,
+            986,
+            1402
+          ],
+          "rgb_sha256": "231cccb998b15df314e5eea7ad5ecce81ba48dbf12564ecd86f926812dc2dac7"
+        },
+        {
+          "global_index": 42,
+          "panel": "Reconstruction",
+          "box": [
+            994,
+            1228,
+            1168,
+            1402
+          ],
+          "rgb_sha256": "748f73e55ef1d0d8d32bd11275c820f3509c2f89c8645078ce903aff919e5a4a"
+        },
+        {
+          "global_index": 43,
+          "panel": "Original",
+          "box": [
+            1184,
+            1228,
+            1358,
+            1402
+          ],
+          "rgb_sha256": "b942364967968ce00c5d5c189ae8c7b05e43788b0cb7869184731a589253e81c"
+        },
+        {
+          "global_index": 43,
+          "panel": "Reconstruction",
+          "box": [
+            1366,
+            1228,
+            1540,
+            1402
+          ],
+          "rgb_sha256": "d60cc9074b51981ec5b6a725a7f58ad5c0420bfb61ac3c031b1063d78cab604d"
+        },
+        {
+          "global_index": 44,
+          "panel": "Original",
+          "box": [
+            1556,
+            1228,
+            1730,
+            1402
+          ],
+          "rgb_sha256": "c9e072413110b939f2df878a502f0df7fa39f7d79b189c73145202d028a72658"
+        },
+        {
+          "global_index": 44,
+          "panel": "Reconstruction",
+          "box": [
+            1738,
+            1228,
+            1912,
+            1402
+          ],
+          "rgb_sha256": "36f689a97238308bd7693f10e9a2428d20bc285263e7816f971cb6eae4ec4577"
+        },
+        {
+          "global_index": 45,
+          "panel": "Original",
+          "box": [
+            1928,
+            1228,
+            2102,
+            1402
+          ],
+          "rgb_sha256": "484c37219a2cb576e0ab853ea0a2feeb8ef33389ed63c2b10c6c7fd2427c048e"
+        },
+        {
+          "global_index": 45,
+          "panel": "Reconstruction",
+          "box": [
+            2110,
+            1228,
+            2284,
+            1402
+          ],
+          "rgb_sha256": "dbbb4903da13e618f3657b4a9171ed8ca64eb6bc5cef07d642299c0c8096d0c6"
+        },
+        {
+          "global_index": 46,
+          "panel": "Original",
+          "box": [
+            2300,
+            1228,
+            2474,
+            1402
+          ],
+          "rgb_sha256": "fbabb88bd605572a32d5cedd9b3852fa651bef63f906dc90c7905e8731d220e8"
+        },
+        {
+          "global_index": 46,
+          "panel": "Reconstruction",
+          "box": [
+            2482,
+            1228,
+            2656,
+            1402
+          ],
+          "rgb_sha256": "947914a219b3d8d3eae306f02c2df2ac0750dfc1e5a1fdbf029a5ebf1030e85a"
+        },
+        {
+          "global_index": 47,
+          "panel": "Original",
+          "box": [
+            2672,
+            1228,
+            2846,
+            1402
+          ],
+          "rgb_sha256": "0de00e4bfb8a7f80e4a0f2707929aa07bce7d3c4af8d696ec3def61690144748"
+        },
+        {
+          "global_index": 47,
+          "panel": "Reconstruction",
+          "box": [
+            2854,
+            1228,
+            3028,
+            1402
+          ],
+          "rgb_sha256": "27b4ceabb7809e3c5531062de6fa05abff29b1eda75848e68a3819572f747b14"
+        },
+        {
+          "global_index": 48,
+          "panel": "Original",
+          "box": [
+            3044,
+            1228,
+            3218,
+            1402
+          ],
+          "rgb_sha256": "da67eea44c90ab3fdf649fce3fb9b9137bf5a011e66ed1f6f70c7fbf132a5bfd"
+        },
+        {
+          "global_index": 48,
+          "panel": "Reconstruction",
+          "box": [
+            3226,
+            1228,
+            3400,
+            1402
+          ],
+          "rgb_sha256": "2eb38182771baf8e093cc4a6af67e8d970084997d264706d6075c7844e85f8fa"
+        },
+        {
+          "global_index": 49,
+          "panel": "Original",
+          "box": [
+            3416,
+            1228,
+            3590,
+            1402
+          ],
+          "rgb_sha256": "c9c1f37a4517a9afb3e1ec4c6b929c2ebbdc86142101182ed50a373334455022"
+        },
+        {
+          "global_index": 49,
+          "panel": "Reconstruction",
+          "box": [
+            3598,
+            1228,
+            3772,
+            1402
+          ],
+          "rgb_sha256": "998bfa620d8386579420926b934e885b2f64a7d6bc0b492273103d41459b165a"
+        },
+        {
+          "global_index": 50,
+          "panel": "Original",
+          "box": [
+            68,
+            1458,
+            242,
+            1632
+          ],
+          "rgb_sha256": "b7372f492022ccf3f3b581147b21b25d5a804eb24265d78a55ee2d134029c2c4"
+        },
+        {
+          "global_index": 50,
+          "panel": "Reconstruction",
+          "box": [
+            250,
+            1458,
+            424,
+            1632
+          ],
+          "rgb_sha256": "eec2ea2ec80097051a3adb982cb717e950521bb78c07442aa376ab3f94e599d6"
+        },
+        {
+          "global_index": 51,
+          "panel": "Original",
+          "box": [
+            440,
+            1458,
+            614,
+            1632
+          ],
+          "rgb_sha256": "bbe068d3790ae5c67cdcedf4535a55340d79695e1c8b5b618613c0e9b763d1c8"
+        },
+        {
+          "global_index": 51,
+          "panel": "Reconstruction",
+          "box": [
+            622,
+            1458,
+            796,
+            1632
+          ],
+          "rgb_sha256": "cf7fcbb187cb5fae669d4c08f80244cd0c4d6e8dd100f77fcd7037a217e6bcb0"
+        },
+        {
+          "global_index": 52,
+          "panel": "Original",
+          "box": [
+            812,
+            1458,
+            986,
+            1632
+          ],
+          "rgb_sha256": "10f67502714efd96c01e692d5bcc2617b6542599baca3ef0f93a987b73501fab"
+        },
+        {
+          "global_index": 52,
+          "panel": "Reconstruction",
+          "box": [
+            994,
+            1458,
+            1168,
+            1632
+          ],
+          "rgb_sha256": "680ef165a642592b1780d400b23f64bf4be3ca1bf86d98efce6d0363c056daef"
+        },
+        {
+          "global_index": 53,
+          "panel": "Original",
+          "box": [
+            1184,
+            1458,
+            1358,
+            1632
+          ],
+          "rgb_sha256": "facdf1a7efd3d93a866de94ec2d5ca1306114fe917ce61875437c49c18f92916"
+        },
+        {
+          "global_index": 53,
+          "panel": "Reconstruction",
+          "box": [
+            1366,
+            1458,
+            1540,
+            1632
+          ],
+          "rgb_sha256": "b46ee539e2711be964b76bc46af52d798d0e03740d463b24600d64c28d98e207"
+        },
+        {
+          "global_index": 54,
+          "panel": "Original",
+          "box": [
+            1556,
+            1458,
+            1730,
+            1632
+          ],
+          "rgb_sha256": "2b5da5caa4d063501871c409360d252b7fea0b97cac272b33c98994419857ff3"
+        },
+        {
+          "global_index": 54,
+          "panel": "Reconstruction",
+          "box": [
+            1738,
+            1458,
+            1912,
+            1632
+          ],
+          "rgb_sha256": "74a0841fb7834a4ea43adb8dc037feb76846f343eaae102c6f2cc858bb81a299"
+        },
+        {
+          "global_index": 55,
+          "panel": "Original",
+          "box": [
+            1928,
+            1458,
+            2102,
+            1632
+          ],
+          "rgb_sha256": "6d4f3233f5970f2cb6ac3d73ebbbd9bfe93b1cacd1cb1cc657c39679bd9a7717"
+        },
+        {
+          "global_index": 55,
+          "panel": "Reconstruction",
+          "box": [
+            2110,
+            1458,
+            2284,
+            1632
+          ],
+          "rgb_sha256": "7fde95a2046a6b9a09a1f7c40fd8526d5c70888cfabcfd5732d8220de761ff67"
+        },
+        {
+          "global_index": 56,
+          "panel": "Original",
+          "box": [
+            2300,
+            1458,
+            2474,
+            1632
+          ],
+          "rgb_sha256": "8d63d6d981bf7718f2ccde52c97a0699ae587a574a7bc7bb412bed533f5d4a1c"
+        },
+        {
+          "global_index": 56,
+          "panel": "Reconstruction",
+          "box": [
+            2482,
+            1458,
+            2656,
+            1632
+          ],
+          "rgb_sha256": "905f9d9ad52b39ae1181a0a7279f881cf87e4d913f709caea7c8d915cb244c39"
+        },
+        {
+          "global_index": 57,
+          "panel": "Original",
+          "box": [
+            2672,
+            1458,
+            2846,
+            1632
+          ],
+          "rgb_sha256": "4583b2e927a971f21143362b270fcaa4e84e3a8116423054530306fcd0067ea4"
+        },
+        {
+          "global_index": 57,
+          "panel": "Reconstruction",
+          "box": [
+            2854,
+            1458,
+            3028,
+            1632
+          ],
+          "rgb_sha256": "905494f5c3d122d00854019133826ea772635693784296215aa379d0e44a6dfe"
+        },
+        {
+          "global_index": 58,
+          "panel": "Original",
+          "box": [
+            3044,
+            1458,
+            3218,
+            1632
+          ],
+          "rgb_sha256": "cc0f29760cfd9440a5ac77ebfb76db16fd6950d2f80a216bf58b67de771f42ea"
+        },
+        {
+          "global_index": 58,
+          "panel": "Reconstruction",
+          "box": [
+            3226,
+            1458,
+            3400,
+            1632
+          ],
+          "rgb_sha256": "573b3066871fd45540b32d83b5a9a6b10ebfc3a3acc0dccd19021164dcd45109"
+        },
+        {
+          "global_index": 59,
+          "panel": "Original",
+          "box": [
+            3416,
+            1458,
+            3590,
+            1632
+          ],
+          "rgb_sha256": "ab9ebaaec2a63ba9d96ad5ab004ad7c51e101f6ddabd3a38bb5d198e27d7de45"
+        },
+        {
+          "global_index": 59,
+          "panel": "Reconstruction",
+          "box": [
+            3598,
+            1458,
+            3772,
+            1632
+          ],
+          "rgb_sha256": "c66d95cc295e2a5642ab3f63714bd1b4ff3bcf8ccf97c713c8bf120decf925a3"
+        },
+        {
+          "global_index": 60,
+          "panel": "Original",
+          "box": [
+            68,
+            1688,
+            242,
+            1862
+          ],
+          "rgb_sha256": "c88c405b9621c15bdc80c341b14770853e480828b0c3c6857208599a6e7b519c"
+        },
+        {
+          "global_index": 60,
+          "panel": "Reconstruction",
+          "box": [
+            250,
+            1688,
+            424,
+            1862
+          ],
+          "rgb_sha256": "d08642372d02531a45168207381817d8b870f6f738380a121fb2593d25c3fece"
+        },
+        {
+          "global_index": 61,
+          "panel": "Original",
+          "box": [
+            440,
+            1688,
+            614,
+            1862
+          ],
+          "rgb_sha256": "7cdc4c18e9ad70f76c9d7e2132e448b6da68d611a58d956648f932421a955bda"
+        },
+        {
+          "global_index": 61,
+          "panel": "Reconstruction",
+          "box": [
+            622,
+            1688,
+            796,
+            1862
+          ],
+          "rgb_sha256": "e12692157e6159398d3ac9effd3c169b925144e6d4c96824d4963dcd8b90d29f"
+        },
+        {
+          "global_index": 62,
+          "panel": "Original",
+          "box": [
+            812,
+            1688,
+            986,
+            1862
+          ],
+          "rgb_sha256": "9f06dd7ba4a93ab24f84ab7073eff008b51d17ed8f04e0c698f0adcad0827ed8"
+        },
+        {
+          "global_index": 62,
+          "panel": "Reconstruction",
+          "box": [
+            994,
+            1688,
+            1168,
+            1862
+          ],
+          "rgb_sha256": "c3fa4c2d91cb4f4c51bd0de10deec0f6f2ff600da26e6e37f3585006a81f3ab3"
+        },
+        {
+          "global_index": 63,
+          "panel": "Original",
+          "box": [
+            1184,
+            1688,
+            1358,
+            1862
+          ],
+          "rgb_sha256": "7f27e81b563c202d296ad65c8bdbc1422d2e4b9c46e7af64ef5ece9573219415"
+        },
+        {
+          "global_index": 63,
+          "panel": "Reconstruction",
+          "box": [
+            1366,
+            1688,
+            1540,
+            1862
+          ],
+          "rgb_sha256": "f1cef44cef720377eb9c2171dbb1425efcb4cf61a0a65ed6853e3384bee4d705"
+        },
+        {
+          "global_index": 64,
+          "panel": "Original",
+          "box": [
+            1556,
+            1688,
+            1730,
+            1862
+          ],
+          "rgb_sha256": "1fe9c79061ec6d21683d48ab1a2fc7822bfb8eb15efffef7e869c30a392a3312"
+        },
+        {
+          "global_index": 64,
+          "panel": "Reconstruction",
+          "box": [
+            1738,
+            1688,
+            1912,
+            1862
+          ],
+          "rgb_sha256": "bd140469a6cd03348ce35d149451d37e715f955d3c98f69f0377735b83b0ead8"
+        },
+        {
+          "global_index": 65,
+          "panel": "Original",
+          "box": [
+            1928,
+            1688,
+            2102,
+            1862
+          ],
+          "rgb_sha256": "2e74722ba1b5c90952790ede9137565c3c566bbaf560e9b44165751753fff0a9"
+        },
+        {
+          "global_index": 65,
+          "panel": "Reconstruction",
+          "box": [
+            2110,
+            1688,
+            2284,
+            1862
+          ],
+          "rgb_sha256": "68e0b21a3b0a01b6cbf13d3de4913f6bc64cf492ab819f44f877547247d741cc"
+        },
+        {
+          "global_index": 66,
+          "panel": "Original",
+          "box": [
+            2300,
+            1688,
+            2474,
+            1862
+          ],
+          "rgb_sha256": "74d9e3365d4a174495ae3ea7bd817434fdb9415213231250491bc6a896c87330"
+        },
+        {
+          "global_index": 66,
+          "panel": "Reconstruction",
+          "box": [
+            2482,
+            1688,
+            2656,
+            1862
+          ],
+          "rgb_sha256": "7186c2d76742629b2c04f97c0a6b7e4bec71d7006d409c21503d4a9e1cd54c49"
+        },
+        {
+          "global_index": 67,
+          "panel": "Original",
+          "box": [
+            2672,
+            1688,
+            2846,
+            1862
+          ],
+          "rgb_sha256": "62d1deaa0b5112b72680521cec596ed4f3b93ba1aab4542f4c962a7f0dbe8520"
+        },
+        {
+          "global_index": 67,
+          "panel": "Reconstruction",
+          "box": [
+            2854,
+            1688,
+            3028,
+            1862
+          ],
+          "rgb_sha256": "e0d950465840f8cae96dc23513e5194e25fe169e6536a2b15e2bab9ac473d2a3"
+        },
+        {
+          "global_index": 68,
+          "panel": "Original",
+          "box": [
+            3044,
+            1688,
+            3218,
+            1862
+          ],
+          "rgb_sha256": "4390c5409a61a6f5202577237116d15cab91b35ee4a6dae3023eb1a23b7351ae"
+        },
+        {
+          "global_index": 68,
+          "panel": "Reconstruction",
+          "box": [
+            3226,
+            1688,
+            3400,
+            1862
+          ],
+          "rgb_sha256": "9978cd446e027cc1dfdd3885387088d4f90ad4eafebc191cd843021bc4c7caf9"
+        },
+        {
+          "global_index": 69,
+          "panel": "Original",
+          "box": [
+            3416,
+            1688,
+            3590,
+            1862
+          ],
+          "rgb_sha256": "f8cf898dfa1c5c672429734ccd481cc99a640e8cfdbd9b463cead8b4bca9993f"
+        },
+        {
+          "global_index": 69,
+          "panel": "Reconstruction",
+          "box": [
+            3598,
+            1688,
+            3772,
+            1862
+          ],
+          "rgb_sha256": "ed266d09d0b431e523f6ca186aab8f4993423b6ebcf1e68b43e73a3060d52df7"
+        },
+        {
+          "global_index": 70,
+          "panel": "Original",
+          "box": [
+            68,
+            1918,
+            242,
+            2092
+          ],
+          "rgb_sha256": "dd194d8c7e9a18c71f5a2d6094b5fc120780bbcebde846e7cec978ef962a346b"
+        },
+        {
+          "global_index": 70,
+          "panel": "Reconstruction",
+          "box": [
+            250,
+            1918,
+            424,
+            2092
+          ],
+          "rgb_sha256": "f88c73a8dfc2bd1e34213ad59be6d5b54ccca19ade634c1182e68d766fa344b2"
+        },
+        {
+          "global_index": 71,
+          "panel": "Original",
+          "box": [
+            440,
+            1918,
+            614,
+            2092
+          ],
+          "rgb_sha256": "f9f8d14a7e7f65edd2aa7b5ba174b9d50b238e45faf8d2f36bfcc1c78d0d2c15"
+        },
+        {
+          "global_index": 71,
+          "panel": "Reconstruction",
+          "box": [
+            622,
+            1918,
+            796,
+            2092
+          ],
+          "rgb_sha256": "4175f2807f90b0b08d3ca330f71aa3cd360481cf3b8f4ef87f65f61184510981"
+        },
+        {
+          "global_index": 72,
+          "panel": "Original",
+          "box": [
+            812,
+            1918,
+            986,
+            2092
+          ],
+          "rgb_sha256": "4b7867bdb8ab94f981ff3637383a21bb8f503fcfdf288f808fc466a204007e32"
+        },
+        {
+          "global_index": 72,
+          "panel": "Reconstruction",
+          "box": [
+            994,
+            1918,
+            1168,
+            2092
+          ],
+          "rgb_sha256": "c3bc35cb4f60fe61aa06601533acd052fa819e4da6537dc73ddd1c4fca0a4478"
+        },
+        {
+          "global_index": 73,
+          "panel": "Original",
+          "box": [
+            1184,
+            1918,
+            1358,
+            2092
+          ],
+          "rgb_sha256": "82647fc18ca7bc1b2ba916e762eac370196ca4f669d6bc54f0fc77e43915dfc1"
+        },
+        {
+          "global_index": 73,
+          "panel": "Reconstruction",
+          "box": [
+            1366,
+            1918,
+            1540,
+            2092
+          ],
+          "rgb_sha256": "6fc816044f05ef5f14ccf4bb839e539f22cd67094ede4ac0d3137273ad72eea1"
+        },
+        {
+          "global_index": 74,
+          "panel": "Original",
+          "box": [
+            1556,
+            1918,
+            1730,
+            2092
+          ],
+          "rgb_sha256": "7df4950f46e4db336e04e8f98eccd6b031bd4afe150046e32fdbfc5740245441"
+        },
+        {
+          "global_index": 74,
+          "panel": "Reconstruction",
+          "box": [
+            1738,
+            1918,
+            1912,
+            2092
+          ],
+          "rgb_sha256": "ede25c37f28ce35fd97352a5fef120c90788c86fd2704e2bebd8e0f442e0c85b"
+        },
+        {
+          "global_index": 75,
+          "panel": "Original",
+          "box": [
+            1928,
+            1918,
+            2102,
+            2092
+          ],
+          "rgb_sha256": "c9bad1f96e836e620f764d22ff66ce844064eeae7f7b21996c79fd8b0dc36b9b"
+        },
+        {
+          "global_index": 75,
+          "panel": "Reconstruction",
+          "box": [
+            2110,
+            1918,
+            2284,
+            2092
+          ],
+          "rgb_sha256": "6e1e497a307668a31fb4a3de5175dc01de91cee16f2af3d970b418b975a9e21b"
+        },
+        {
+          "global_index": 76,
+          "panel": "Original",
+          "box": [
+            2300,
+            1918,
+            2474,
+            2092
+          ],
+          "rgb_sha256": "9751181a67d53277233bd16c8a1b3cf00f7c407ede214b686e5c558a0b44a69f"
+        },
+        {
+          "global_index": 76,
+          "panel": "Reconstruction",
+          "box": [
+            2482,
+            1918,
+            2656,
+            2092
+          ],
+          "rgb_sha256": "e94711544c8a32f9fb235605db6a61633123c1fcf1ca65a21c81d49f08904861"
+        },
+        {
+          "global_index": 77,
+          "panel": "Original",
+          "box": [
+            2672,
+            1918,
+            2846,
+            2092
+          ],
+          "rgb_sha256": "091d138c4ebef401260cd1597dce80c8fe609ae14c972d04e7df852bef8e8311"
+        },
+        {
+          "global_index": 77,
+          "panel": "Reconstruction",
+          "box": [
+            2854,
+            1918,
+            3028,
+            2092
+          ],
+          "rgb_sha256": "ad3a43cb1492184d8002f02ecc5ba11bb543280a8f2df2a3b72490fbc518aee1"
+        },
+        {
+          "global_index": 78,
+          "panel": "Original",
+          "box": [
+            3044,
+            1918,
+            3218,
+            2092
+          ],
+          "rgb_sha256": "9e2f2430ac7db7a6a59ad6d695f67d03eaa2023c66ee6b2e70e7b7bd58821e09"
+        },
+        {
+          "global_index": 78,
+          "panel": "Reconstruction",
+          "box": [
+            3226,
+            1918,
+            3400,
+            2092
+          ],
+          "rgb_sha256": "bacf4dd3a2e409acc706ef84830c43ec16375579d36306cba4283003b41faf51"
+        },
+        {
+          "global_index": 79,
+          "panel": "Original",
+          "box": [
+            3416,
+            1918,
+            3590,
+            2092
+          ],
+          "rgb_sha256": "231094fb26f3dc7b8285d82dc569835a38639d8c10739ae7cbe14b3694ea1877"
+        },
+        {
+          "global_index": 79,
+          "panel": "Reconstruction",
+          "box": [
+            3598,
+            1918,
+            3772,
+            2092
+          ],
+          "rgb_sha256": "44b75cf32f33e65510262e4852f8197331362fe008a8da2eeb311cb19e0e5b03"
+        }
+      ],
+      "run_tag": "cpa_fia_topk30_same80_B16",
+      "source_folder": "results\\cpa_fia_topk30_same80_B16",
+      "summary_sha256": "2fb13b3280ca9fe43d84fe53f1a134c4ae2c9290fc385d3ed031f8ec19eb8b94",
+      "source_hashes": {
+        "per_image_metrics.csv": "c22d1f3beaed678af3d4a6d66490e0beae5ed9c38912e38d3d4cb1c626fb406c",
+        "figure_manifest.json": "49d8bb42ab6fc2204aeb2d98fa84d9bf820df6698f1e8231cc55f14a1ff731d4",
+        "all80_reconstruction_landscape.png": "0760f742eecb2251bc8011ee9a82a202ac5758bd0f717f60d4d2a06521fc189e"
+      }
+    },
+    {
+      "keep_percent": 20,
+      "file": "topk20_original_vs_reconstruction_16x9.png",
+      "sha256": "876e520536546105269d2085694cde15d5095a8c90788ac8d2ce19eb286c67df",
+      "size": [
+        3840,
+        2160
+      ],
+      "n_images": 80,
+      "n_panels": 160,
+      "global_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79
+      ],
+      "mean_metrics": {
+        "lpips": 0.5536050621420145,
+        "ssim": 0.290601612534374,
+        "psnr": 21.8719979763031
+      },
+      "tile_size": 174,
+      "placements": [
+        {
+          "global_index": 0,
+          "panel": "Original",
+          "box": [
+            68,
+            308,
+            242,
+            482
+          ],
+          "rgb_sha256": "c1d465c714332db041afe2eab46b927745824d0041eb223441511c2fe95b2d2e"
+        },
+        {
+          "global_index": 0,
+          "panel": "Reconstruction",
+          "box": [
+            250,
+            308,
+            424,
+            482
+          ],
+          "rgb_sha256": "9553d740b15f183df8faab051307099c58698a6e60fc1b01128307de3eb7faa3"
+        },
+        {
+          "global_index": 1,
+          "panel": "Original",
+          "box": [
+            440,
+            308,
+            614,
+            482
+          ],
+          "rgb_sha256": "f75facee2c342154bc4ad9f5e1b0cfb04af35165d1bfda112ba359cfde50cfa4"
+        },
+        {
+          "global_index": 1,
+          "panel": "Reconstruction",
+          "box": [
+            622,
+            308,
+            796,
+            482
+          ],
+          "rgb_sha256": "adf946b5746ba24378f1d9c94f63013700ee0dbf43954dd098868af51cfa8779"
+        },
+        {
+          "global_index": 2,
+          "panel": "Original",
+          "box": [
+            812,
+            308,
+            986,
+            482
+          ],
+          "rgb_sha256": "88f950c2aca98b34966ec29a4733ccc6f6dec4e4bf631336f441e879977f8058"
+        },
+        {
+          "global_index": 2,
+          "panel": "Reconstruction",
+          "box": [
+            994,
+            308,
+            1168,
+            482
+          ],
+          "rgb_sha256": "f1c303af01c18ea6d736b189ea13c025167c73876795437bdbcfce502eb79972"
+        },
+        {
+          "global_index": 3,
+          "panel": "Original",
+          "box": [
+            1184,
+            308,
+            1358,
+            482
+          ],
+          "rgb_sha256": "9de2dc85dbcfd4dc9d5eebf898b3c6339939f351af4e7523a7e87cc376166485"
+        },
+        {
+          "global_index": 3,
+          "panel": "Reconstruction",
+          "box": [
+            1366,
+            308,
+            1540,
+            482
+          ],
+          "rgb_sha256": "950a173f2890c75715170850f321045660da6c376d8cbfb8395d1bd596bff32b"
+        },
+        {
+          "global_index": 4,
+          "panel": "Original",
+          "box": [
+            1556,
+            308,
+            1730,
+            482
+          ],
+          "rgb_sha256": "6e8ed4689d0b7e64a12803afc889e0f9beda4841ae6740e3e44b95d5519e26dd"
+        },
+        {
+          "global_index": 4,
+          "panel": "Reconstruction",
+          "box": [
+            1738,
+            308,
+            1912,
+            482
+          ],
+          "rgb_sha256": "2f4f8cea9b91667fef2b1314aed50589bf383840518122f25df16575170f56cf"
+        },
+        {
+          "global_index": 5,
+          "panel": "Original",
+          "box": [
+            1928,
+            308,
+            2102,
+            482
+          ],
+          "rgb_sha256": "06e73470f00cb2c5880bf90c3783908a2634bb85f37cfb574473655db7b28af6"
+        },
+        {
+          "global_index": 5,
+          "panel": "Reconstruction",
+          "box": [
+            2110,
+            308,
+            2284,
+            482
+          ],
+          "rgb_sha256": "c9e0871d4061e53cebc887a06efcb877cd995329d4995fa389fedec59635e986"
+        },
+        {
+          "global_index": 6,
+          "panel": "Original",
+          "box": [
+            2300,
+            308,
+            2474,
+            482
+          ],
+          "rgb_sha256": "a2143f2185963d97c27b6afedb32a593624fa025f7d918f742cde493655e8ded"
+        },
+        {
+          "global_index": 6,
+          "panel": "Reconstruction",
+          "box": [
+            2482,
+            308,
+            2656,
+            482
+          ],
+          "rgb_sha256": "9740f54027fb23801d18ba3811b7dbf7ccac3a47cfff96e947c2a50eb498113f"
+        },
+        {
+          "global_index": 7,
+          "panel": "Original",
+          "box": [
+            2672,
+            308,
+            2846,
+            482
+          ],
+          "rgb_sha256": "67d51e0bd996109e1f128424a04b0795151c22946d78df1fb4b7d218d5a6e26b"
+        },
+        {
+          "global_index": 7,
+          "panel": "Reconstruction",
+          "box": [
+            2854,
+            308,
+            3028,
+            482
+          ],
+          "rgb_sha256": "a7f0b18faabf71cd49fe4139783e006202abe9a7707e8545b3751db6b88d4102"
+        },
+        {
+          "global_index": 8,
+          "panel": "Original",
+          "box": [
+            3044,
+            308,
+            3218,
+            482
+          ],
+          "rgb_sha256": "a505ab8218c3007d28c6e0522128d20eea84b19c5388991216c5650440d2d0a9"
+        },
+        {
+          "global_index": 8,
+          "panel": "Reconstruction",
+          "box": [
+            3226,
+            308,
+            3400,
+            482
+          ],
+          "rgb_sha256": "78deb3555157821138556020d7677d92e51cadeed92bf1f7764cfcffcdf451fe"
+        },
+        {
+          "global_index": 9,
+          "panel": "Original",
+          "box": [
+            3416,
+            308,
+            3590,
+            482
+          ],
+          "rgb_sha256": "470ca9a71ae5a6a5e2973c58471be184e7bb9797b186b1ac482bcaac0d26d000"
+        },
+        {
+          "global_index": 9,
+          "panel": "Reconstruction",
+          "box": [
+            3598,
+            308,
+            3772,
+            482
+          ],
+          "rgb_sha256": "0b7dffa69c3aa57f6451b61aeb54137f1cdbec8c05250477ff81a0cfedfa21da"
+        },
+        {
+          "global_index": 10,
+          "panel": "Original",
+          "box": [
+            68,
+            538,
+            242,
+            712
+          ],
+          "rgb_sha256": "20074598fae032a885b67058a2e5ad5218452cc36816dbd68598ebe486c4a429"
+        },
+        {
+          "global_index": 10,
+          "panel": "Reconstruction",
+          "box": [
+            250,
+            538,
+            424,
+            712
+          ],
+          "rgb_sha256": "95a2935f7837d4f4c6a0c15e16cd653bf2d31824aa4cf51e7ed9f5edf3354e4a"
+        },
+        {
+          "global_index": 11,
+          "panel": "Original",
+          "box": [
+            440,
+            538,
+            614,
+            712
+          ],
+          "rgb_sha256": "9d589fa4f74a8e8319cf8acfdefea41176039985b6fec245d3c59dcf1f993594"
+        },
+        {
+          "global_index": 11,
+          "panel": "Reconstruction",
+          "box": [
+            622,
+            538,
+            796,
+            712
+          ],
+          "rgb_sha256": "e7a24d5a19a31e608cbb8d4b76dc072bf0623957f80f7918b6dfb5c5b4eb9985"
+        },
+        {
+          "global_index": 12,
+          "panel": "Original",
+          "box": [
+            812,
+            538,
+            986,
+            712
+          ],
+          "rgb_sha256": "056619a91c586eda35a3f999c5a23065cf1e8bbc35989688ebbb87726404788a"
+        },
+        {
+          "global_index": 12,
+          "panel": "Reconstruction",
+          "box": [
+            994,
+            538,
+            1168,
+            712
+          ],
+          "rgb_sha256": "20a727baa586f23e472e5ba5a3d1b438e063f0211cc3622dfed4d069d0a9a6d6"
+        },
+        {
+          "global_index": 13,
+          "panel": "Original",
+          "box": [
+            1184,
+            538,
+            1358,
+            712
+          ],
+          "rgb_sha256": "0109274903e6be7fdc8c03e550161ee4bed11ad154e5f7769fd4edbfe935db22"
+        },
+        {
+          "global_index": 13,
+          "panel": "Reconstruction",
+          "box": [
+            1366,
+            538,
+            1540,
+            712
+          ],
+          "rgb_sha256": "5a55a7372b5c944a2d3b007101624e70864865dd21ba8def786682b8a8393c3e"
+        },
+        {
+          "global_index": 14,
+          "panel": "Original",
+          "box": [
+            1556,
+            538,
+            1730,
+            712
+          ],
+          "rgb_sha256": "07faf470fdf6c21ca66c5d07d2e0d778863ebe1648321acaea3bb542d14c3355"
+        },
+        {
+          "global_index": 14,
+          "panel": "Reconstruction",
+          "box": [
+            1738,
+            538,
+            1912,
+            712
+          ],
+          "rgb_sha256": "007e8e15db656cd7f7df51efbf0e0b3713531a11e8cae7df8f50fa48d2aa461e"
+        },
+        {
+          "global_index": 15,
+          "panel": "Original",
+          "box": [
+            1928,
+            538,
+            2102,
+            712
+          ],
+          "rgb_sha256": "9d39e18d5a034368fe0104993a230f3d79d743950d2e0a85abbce43451e45d30"
+        },
+        {
+          "global_index": 15,
+          "panel": "Reconstruction",
+          "box": [
+            2110,
+            538,
+            2284,
+            712
+          ],
+          "rgb_sha256": "2ff70393e9f0a72000e9895f244c2cb7710efce943efb0c13eefb5a2cccd2bb8"
+        },
+        {
+          "global_index": 16,
+          "panel": "Original",
+          "box": [
+            2300,
+            538,
+            2474,
+            712
+          ],
+          "rgb_sha256": "7a5316a406bb7e289939821f58c200d22ad1b672493fe8dbac08f95c56f6961b"
+        },
+        {
+          "global_index": 16,
+          "panel": "Reconstruction",
+          "box": [
+            2482,
+            538,
+            2656,
+            712
+          ],
+          "rgb_sha256": "b676571a91a4cbdbfe94ca75ff6476ebc70897b40abccd69589e55dcb2e2fc1a"
+        },
+        {
+          "global_index": 17,
+          "panel": "Original",
+          "box": [
+            2672,
+            538,
+            2846,
+            712
+          ],
+          "rgb_sha256": "9693a34e84385f89bba78e5ae00736d55a008fe558db1ddcad96bd96a5837dcc"
+        },
+        {
+          "global_index": 17,
+          "panel": "Reconstruction",
+          "box": [
+            2854,
+            538,
+            3028,
+            712
+          ],
+          "rgb_sha256": "d7a39edf19776d760cf8bcb4c5794956822d5818535f20030f54c8dcc01374ed"
+        },
+        {
+          "global_index": 18,
+          "panel": "Original",
+          "box": [
+            3044,
+            538,
+            3218,
+            712
+          ],
+          "rgb_sha256": "c02945e163b6854dac6e6c5346b0099d4c643c0db75fa5052af2090518b1efec"
+        },
+        {
+          "global_index": 18,
+          "panel": "Reconstruction",
+          "box": [
+            3226,
+            538,
+            3400,
+            712
+          ],
+          "rgb_sha256": "140aec63b1ce43f33a44d2199d0b201a0eb6a44a8ffe83f9cec59ea05b2c0506"
+        },
+        {
+          "global_index": 19,
+          "panel": "Original",
+          "box": [
+            3416,
+            538,
+            3590,
+            712
+          ],
+          "rgb_sha256": "c98de3ba52130fda07d6f4058680d875ad632563123de138dd32d93149f8b2dd"
+        },
+        {
+          "global_index": 19,
+          "panel": "Reconstruction",
+          "box": [
+            3598,
+            538,
+            3772,
+            712
+          ],
+          "rgb_sha256": "3f000598e57be4d6048d2f03675e504df5aa1b632be296ab26f8192e3ee88fcd"
+        },
+        {
+          "global_index": 20,
+          "panel": "Original",
+          "box": [
+            68,
+            768,
+            242,
+            942
+          ],
+          "rgb_sha256": "7d3b4101999f62b254b03768b6745d480bfcbcfe7b3001ce35d6f2f460a6e726"
+        },
+        {
+          "global_index": 20,
+          "panel": "Reconstruction",
+          "box": [
+            250,
+            768,
+            424,
+            942
+          ],
+          "rgb_sha256": "6decc84c6af13547d70f133f3fb178b0196fcd52240f5c5b1e7faddbc58741fd"
+        },
+        {
+          "global_index": 21,
+          "panel": "Original",
+          "box": [
+            440,
+            768,
+            614,
+            942
+          ],
+          "rgb_sha256": "72e882a5f2d5d458e3f4884a0eb8935306e016ec8f5c926794b0c45729725961"
+        },
+        {
+          "global_index": 21,
+          "panel": "Reconstruction",
+          "box": [
+            622,
+            768,
+            796,
+            942
+          ],
+          "rgb_sha256": "4be4b4b7a3eaa7333c8518f2dc96dcb5e8e47f061b0fd699cb9dbef244dcc5e0"
+        },
+        {
+          "global_index": 22,
+          "panel": "Original",
+          "box": [
+            812,
+            768,
+            986,
+            942
+          ],
+          "rgb_sha256": "41fda723d6495bdd82f51564ea9fc1169e487b820ff805695b962e8006957621"
+        },
+        {
+          "global_index": 22,
+          "panel": "Reconstruction",
+          "box": [
+            994,
+            768,
+            1168,
+            942
+          ],
+          "rgb_sha256": "3d2cadbc00ee38498603a207a1725cc08ca254d3d14d05cc90ca42b73d114736"
+        },
+        {
+          "global_index": 23,
+          "panel": "Original",
+          "box": [
+            1184,
+            768,
+            1358,
+            942
+          ],
+          "rgb_sha256": "20b618b694ee62d529ea3ab3959312ee55eb5dc3f375ea95a79f9f902aa837ac"
+        },
+        {
+          "global_index": 23,
+          "panel": "Reconstruction",
+          "box": [
+            1366,
+            768,
+            1540,
+            942
+          ],
+          "rgb_sha256": "c71c2f57500bc5fa577469cbf6980cd0d30e49c97f527b843e87bc97a2a0dcf1"
+        },
+        {
+          "global_index": 24,
+          "panel": "Original",
+          "box": [
+            1556,
+            768,
+            1730,
+            942
+          ],
+          "rgb_sha256": "5ceb5391c3f69faa697a75f59db0415ffc5cc802ed6f96852afccc3e6318f88a"
+        },
+        {
+          "global_index": 24,
+          "panel": "Reconstruction",
+          "box": [
+            1738,
+            768,
+            1912,
+            942
+          ],
+          "rgb_sha256": "6f114359d2ddd553a5947ae000ec62d3801c01f09b1bfe75a9dc3765919187de"
+        },
+        {
+          "global_index": 25,
+          "panel": "Original",
+          "box": [
+            1928,
+            768,
+            2102,
+            942
+          ],
+          "rgb_sha256": "1f921860d98dd3d272ce7f250b2462d17fbb3ee17b617954c3b85297f4f8ed2e"
+        },
+        {
+          "global_index": 25,
+          "panel": "Reconstruction",
+          "box": [
+            2110,
+            768,
+            2284,
+            942
+          ],
+          "rgb_sha256": "c1c2bb7fabe90f029f7cd288e968f4bd3e2a10544cccf52726afcbdb5a635616"
+        },
+        {
+          "global_index": 26,
+          "panel": "Original",
+          "box": [
+            2300,
+            768,
+            2474,
+            942
+          ],
+          "rgb_sha256": "bb452aa32b33c0994f9d3ebf01e824a0dbe68bf57d1e0b599bf22152aebafb81"
+        },
+        {
+          "global_index": 26,
+          "panel": "Reconstruction",
+          "box": [
+            2482,
+            768,
+            2656,
+            942
+          ],
+          "rgb_sha256": "744f3e67ebe911ae2e4923d1d62a2685c2a8f57e4ac7b47eaf368461d9984dcd"
+        },
+        {
+          "global_index": 27,
+          "panel": "Original",
+          "box": [
+            2672,
+            768,
+            2846,
+            942
+          ],
+          "rgb_sha256": "c3bfc873a6fc583c8de311b02224d54a8365bc21abec98e58767ca2a1c966afc"
+        },
+        {
+          "global_index": 27,
+          "panel": "Reconstruction",
+          "box": [
+            2854,
+            768,
+            3028,
+            942
+          ],
+          "rgb_sha256": "9a673b8720ed0460046df0de8cbea0ae738cf2ec3c8c05ee81c1a0adc6083e01"
+        },
+        {
+          "global_index": 28,
+          "panel": "Original",
+          "box": [
+            3044,
+            768,
+            3218,
+            942
+          ],
+          "rgb_sha256": "8ecf83fe84c57bce0fdce07598541caedabd09aa46835544cad7d2038a31e332"
+        },
+        {
+          "global_index": 28,
+          "panel": "Reconstruction",
+          "box": [
+            3226,
+            768,
+            3400,
+            942
+          ],
+          "rgb_sha256": "e5bdd7a1d0ffd551e972c9896433084987fdbeda96b82bfc3b30447e5f292883"
+        },
+        {
+          "global_index": 29,
+          "panel": "Original",
+          "box": [
+            3416,
+            768,
+            3590,
+            942
+          ],
+          "rgb_sha256": "698b813fb17e26f298fc4b66849733b638df2783cfd2a32384bdd8bd65192701"
+        },
+        {
+          "global_index": 29,
+          "panel": "Reconstruction",
+          "box": [
+            3598,
+            768,
+            3772,
+            942
+          ],
+          "rgb_sha256": "b0d04337ad75f6a9cc132b605e33e4f97c1087eb9137a9b0792aee539b642428"
+        },
+        {
+          "global_index": 30,
+          "panel": "Original",
+          "box": [
+            68,
+            998,
+            242,
+            1172
+          ],
+          "rgb_sha256": "56184ac63ed48fceea7fd708f7a975d8505aaa486f145542ddfe63342d7db17a"
+        },
+        {
+          "global_index": 30,
+          "panel": "Reconstruction",
+          "box": [
+            250,
+            998,
+            424,
+            1172
+          ],
+          "rgb_sha256": "5dd09ee5d5e86a1de511ed879d6b43d343069ecd3f26b8b64c772f5a4fd84e6e"
+        },
+        {
+          "global_index": 31,
+          "panel": "Original",
+          "box": [
+            440,
+            998,
+            614,
+            1172
+          ],
+          "rgb_sha256": "ef4b7069dca832f70c60fd94bd430b2906d4de9406e761c205f8e71259aabdca"
+        },
+        {
+          "global_index": 31,
+          "panel": "Reconstruction",
+          "box": [
+            622,
+            998,
+            796,
+            1172
+          ],
+          "rgb_sha256": "4bdd06734eb3fbc7f9094be2e7719849989aa781de0a9a2528ed6470a4632d21"
+        },
+        {
+          "global_index": 32,
+          "panel": "Original",
+          "box": [
+            812,
+            998,
+            986,
+            1172
+          ],
+          "rgb_sha256": "19f40becb8004e9e03a54e1ca4b492018ab1f7749a4531fc464089925ab65efb"
+        },
+        {
+          "global_index": 32,
+          "panel": "Reconstruction",
+          "box": [
+            994,
+            998,
+            1168,
+            1172
+          ],
+          "rgb_sha256": "6f45fa033d49d7da02d9d6d3d75a71dfc00e10e94bb0fc863930c5a1e610e349"
+        },
+        {
+          "global_index": 33,
+          "panel": "Original",
+          "box": [
+            1184,
+            998,
+            1358,
+            1172
+          ],
+          "rgb_sha256": "fba8dc780a8ce9a3700b8677cf590ff301764587ec7237f5c02cb512f90b953e"
+        },
+        {
+          "global_index": 33,
+          "panel": "Reconstruction",
+          "box": [
+            1366,
+            998,
+            1540,
+            1172
+          ],
+          "rgb_sha256": "60213953c1c7439bf8b1fdc2ee2ed5106420300fbd4d7f983f2a6e6edbb0a109"
+        },
+        {
+          "global_index": 34,
+          "panel": "Original",
+          "box": [
+            1556,
+            998,
+            1730,
+            1172
+          ],
+          "rgb_sha256": "c51ca81e90e30d2f0b5ee6fb1987ffee28ca44f3523a8bafa06642fb816ab35c"
+        },
+        {
+          "global_index": 34,
+          "panel": "Reconstruction",
+          "box": [
+            1738,
+            998,
+            1912,
+            1172
+          ],
+          "rgb_sha256": "a211f4118e127bdde77665646d076e2f0c855b58b3a124f45134f9696de38637"
+        },
+        {
+          "global_index": 35,
+          "panel": "Original",
+          "box": [
+            1928,
+            998,
+            2102,
+            1172
+          ],
+          "rgb_sha256": "d234d34ce4c76310561a2fb2345d4f246a6cb25b6bddb5af5f92d3655a059fbf"
+        },
+        {
+          "global_index": 35,
+          "panel": "Reconstruction",
+          "box": [
+            2110,
+            998,
+            2284,
+            1172
+          ],
+          "rgb_sha256": "92dc1f8298189ea1e3e83aa0ba95ac16f3525a4f5b361b2a1d984ee4a63ba9c2"
+        },
+        {
+          "global_index": 36,
+          "panel": "Original",
+          "box": [
+            2300,
+            998,
+            2474,
+            1172
+          ],
+          "rgb_sha256": "93be6a24393ee7f7c4478900bfa32f2eeaf25cd76ef748051827d8f13bc9b431"
+        },
+        {
+          "global_index": 36,
+          "panel": "Reconstruction",
+          "box": [
+            2482,
+            998,
+            2656,
+            1172
+          ],
+          "rgb_sha256": "7fd6bdae1d6fafe0c0bb27f940c73795e53c90a3c6e6e15c7f9314f515c86135"
+        },
+        {
+          "global_index": 37,
+          "panel": "Original",
+          "box": [
+            2672,
+            998,
+            2846,
+            1172
+          ],
+          "rgb_sha256": "f3b5e738121ffd9a776d9327ec10bc7e4c78c28b05a6711a78e5e3140c91a737"
+        },
+        {
+          "global_index": 37,
+          "panel": "Reconstruction",
+          "box": [
+            2854,
+            998,
+            3028,
+            1172
+          ],
+          "rgb_sha256": "68743eba59622c1ba3d6ee099e1aeb0169b8053bfd566847df5427534c8d6a29"
+        },
+        {
+          "global_index": 38,
+          "panel": "Original",
+          "box": [
+            3044,
+            998,
+            3218,
+            1172
+          ],
+          "rgb_sha256": "87d50392fda2cd3eddaddea62b71a2aa074beddb3d7fddab8b77717d695b6d3b"
+        },
+        {
+          "global_index": 38,
+          "panel": "Reconstruction",
+          "box": [
+            3226,
+            998,
+            3400,
+            1172
+          ],
+          "rgb_sha256": "9294e15f1bf5f25c95d80f15c58e8bf65028a79802978a19b72d987b979f5c4c"
+        },
+        {
+          "global_index": 39,
+          "panel": "Original",
+          "box": [
+            3416,
+            998,
+            3590,
+            1172
+          ],
+          "rgb_sha256": "6f46de06ed8bc25cf267be831432f82614394ff1dc4e0febcf6a058ecb42dd73"
+        },
+        {
+          "global_index": 39,
+          "panel": "Reconstruction",
+          "box": [
+            3598,
+            998,
+            3772,
+            1172
+          ],
+          "rgb_sha256": "9801096fc237228845a5e8db453d75f3c5b038c81cac35ceb94563bc494f6041"
+        },
+        {
+          "global_index": 40,
+          "panel": "Original",
+          "box": [
+            68,
+            1228,
+            242,
+            1402
+          ],
+          "rgb_sha256": "310be474891248e2b84935a650b5339fe34595b0852a0f0e1dc016815cecff37"
+        },
+        {
+          "global_index": 40,
+          "panel": "Reconstruction",
+          "box": [
+            250,
+            1228,
+            424,
+            1402
+          ],
+          "rgb_sha256": "4fc30d5bd2f79e6ea42efcd14841364856a1a77081ac62510c9e316b2f493ff1"
+        },
+        {
+          "global_index": 41,
+          "panel": "Original",
+          "box": [
+            440,
+            1228,
+            614,
+            1402
+          ],
+          "rgb_sha256": "5501eae9a863e938375d3c022aadce38b63347be560b365b0fc27412e92a2b59"
+        },
+        {
+          "global_index": 41,
+          "panel": "Reconstruction",
+          "box": [
+            622,
+            1228,
+            796,
+            1402
+          ],
+          "rgb_sha256": "434fbd7f8e25cce41d2a2fff9f96311292ee869d7919740edc8ab00a188b201d"
+        },
+        {
+          "global_index": 42,
+          "panel": "Original",
+          "box": [
+            812,
+            1228,
+            986,
+            1402
+          ],
+          "rgb_sha256": "231cccb998b15df314e5eea7ad5ecce81ba48dbf12564ecd86f926812dc2dac7"
+        },
+        {
+          "global_index": 42,
+          "panel": "Reconstruction",
+          "box": [
+            994,
+            1228,
+            1168,
+            1402
+          ],
+          "rgb_sha256": "e91c5cdd4daa52117725c557814b65aa62fd5605d421baff70e1b185571c728b"
+        },
+        {
+          "global_index": 43,
+          "panel": "Original",
+          "box": [
+            1184,
+            1228,
+            1358,
+            1402
+          ],
+          "rgb_sha256": "b942364967968ce00c5d5c189ae8c7b05e43788b0cb7869184731a589253e81c"
+        },
+        {
+          "global_index": 43,
+          "panel": "Reconstruction",
+          "box": [
+            1366,
+            1228,
+            1540,
+            1402
+          ],
+          "rgb_sha256": "e179a6879218a57b2f00eb7ea50abf494d45be877c97a5ce30d114ad6e645abb"
+        },
+        {
+          "global_index": 44,
+          "panel": "Original",
+          "box": [
+            1556,
+            1228,
+            1730,
+            1402
+          ],
+          "rgb_sha256": "c9e072413110b939f2df878a502f0df7fa39f7d79b189c73145202d028a72658"
+        },
+        {
+          "global_index": 44,
+          "panel": "Reconstruction",
+          "box": [
+            1738,
+            1228,
+            1912,
+            1402
+          ],
+          "rgb_sha256": "2a0185d42255c40924823420b04aeaee104a3f3980286b22996e2a88e354ed74"
+        },
+        {
+          "global_index": 45,
+          "panel": "Original",
+          "box": [
+            1928,
+            1228,
+            2102,
+            1402
+          ],
+          "rgb_sha256": "484c37219a2cb576e0ab853ea0a2feeb8ef33389ed63c2b10c6c7fd2427c048e"
+        },
+        {
+          "global_index": 45,
+          "panel": "Reconstruction",
+          "box": [
+            2110,
+            1228,
+            2284,
+            1402
+          ],
+          "rgb_sha256": "e7df2bde8973e5384155fea0e8f4073645cad019844247895819e91163a2e583"
+        },
+        {
+          "global_index": 46,
+          "panel": "Original",
+          "box": [
+            2300,
+            1228,
+            2474,
+            1402
+          ],
+          "rgb_sha256": "fbabb88bd605572a32d5cedd9b3852fa651bef63f906dc90c7905e8731d220e8"
+        },
+        {
+          "global_index": 46,
+          "panel": "Reconstruction",
+          "box": [
+            2482,
+            1228,
+            2656,
+            1402
+          ],
+          "rgb_sha256": "35b9c404a2b5978a68aaf8bf42176bb88f207cb998aeabc5aa07373ddd7c4238"
+        },
+        {
+          "global_index": 47,
+          "panel": "Original",
+          "box": [
+            2672,
+            1228,
+            2846,
+            1402
+          ],
+          "rgb_sha256": "0de00e4bfb8a7f80e4a0f2707929aa07bce7d3c4af8d696ec3def61690144748"
+        },
+        {
+          "global_index": 47,
+          "panel": "Reconstruction",
+          "box": [
+            2854,
+            1228,
+            3028,
+            1402
+          ],
+          "rgb_sha256": "33b35bc71821b612ab5674c9265ef4ec1f2782073b6a7c6522d1c71ba9152442"
+        },
+        {
+          "global_index": 48,
+          "panel": "Original",
+          "box": [
+            3044,
+            1228,
+            3218,
+            1402
+          ],
+          "rgb_sha256": "da67eea44c90ab3fdf649fce3fb9b9137bf5a011e66ed1f6f70c7fbf132a5bfd"
+        },
+        {
+          "global_index": 48,
+          "panel": "Reconstruction",
+          "box": [
+            3226,
+            1228,
+            3400,
+            1402
+          ],
+          "rgb_sha256": "fbc358e8a3cbd5e2146de2aed449b66a7c64a540b5f646e2a7365e5214924414"
+        },
+        {
+          "global_index": 49,
+          "panel": "Original",
+          "box": [
+            3416,
+            1228,
+            3590,
+            1402
+          ],
+          "rgb_sha256": "c9c1f37a4517a9afb3e1ec4c6b929c2ebbdc86142101182ed50a373334455022"
+        },
+        {
+          "global_index": 49,
+          "panel": "Reconstruction",
+          "box": [
+            3598,
+            1228,
+            3772,
+            1402
+          ],
+          "rgb_sha256": "f587156ef677adff93ed1386dfb610b92a7dc431105b662b8223d974df9b5d9e"
+        },
+        {
+          "global_index": 50,
+          "panel": "Original",
+          "box": [
+            68,
+            1458,
+            242,
+            1632
+          ],
+          "rgb_sha256": "b7372f492022ccf3f3b581147b21b25d5a804eb24265d78a55ee2d134029c2c4"
+        },
+        {
+          "global_index": 50,
+          "panel": "Reconstruction",
+          "box": [
+            250,
+            1458,
+            424,
+            1632
+          ],
+          "rgb_sha256": "d30d9a811822251e63ea8509bfadc9361c506e87918b9f46ce0509087f7379b4"
+        },
+        {
+          "global_index": 51,
+          "panel": "Original",
+          "box": [
+            440,
+            1458,
+            614,
+            1632
+          ],
+          "rgb_sha256": "bbe068d3790ae5c67cdcedf4535a55340d79695e1c8b5b618613c0e9b763d1c8"
+        },
+        {
+          "global_index": 51,
+          "panel": "Reconstruction",
+          "box": [
+            622,
+            1458,
+            796,
+            1632
+          ],
+          "rgb_sha256": "597b826c7debe85309f049d7c9147d9ed26141f3b37bedb1382db8e8f6ba87c2"
+        },
+        {
+          "global_index": 52,
+          "panel": "Original",
+          "box": [
+            812,
+            1458,
+            986,
+            1632
+          ],
+          "rgb_sha256": "10f67502714efd96c01e692d5bcc2617b6542599baca3ef0f93a987b73501fab"
+        },
+        {
+          "global_index": 52,
+          "panel": "Reconstruction",
+          "box": [
+            994,
+            1458,
+            1168,
+            1632
+          ],
+          "rgb_sha256": "b26435aadc7e312653ee47cdb284fe99753893cebaf39884ad83a635ac76e523"
+        },
+        {
+          "global_index": 53,
+          "panel": "Original",
+          "box": [
+            1184,
+            1458,
+            1358,
+            1632
+          ],
+          "rgb_sha256": "facdf1a7efd3d93a866de94ec2d5ca1306114fe917ce61875437c49c18f92916"
+        },
+        {
+          "global_index": 53,
+          "panel": "Reconstruction",
+          "box": [
+            1366,
+            1458,
+            1540,
+            1632
+          ],
+          "rgb_sha256": "958753333e920ae0c4fcfafbec356f9e1a7f904b5a6f621c88bfead34910e10b"
+        },
+        {
+          "global_index": 54,
+          "panel": "Original",
+          "box": [
+            1556,
+            1458,
+            1730,
+            1632
+          ],
+          "rgb_sha256": "2b5da5caa4d063501871c409360d252b7fea0b97cac272b33c98994419857ff3"
+        },
+        {
+          "global_index": 54,
+          "panel": "Reconstruction",
+          "box": [
+            1738,
+            1458,
+            1912,
+            1632
+          ],
+          "rgb_sha256": "64af9a2260df6b7dc1cf60f66d97cbd13769756d6adc46faeaa20903baba9834"
+        },
+        {
+          "global_index": 55,
+          "panel": "Original",
+          "box": [
+            1928,
+            1458,
+            2102,
+            1632
+          ],
+          "rgb_sha256": "6d4f3233f5970f2cb6ac3d73ebbbd9bfe93b1cacd1cb1cc657c39679bd9a7717"
+        },
+        {
+          "global_index": 55,
+          "panel": "Reconstruction",
+          "box": [
+            2110,
+            1458,
+            2284,
+            1632
+          ],
+          "rgb_sha256": "3bce1c3b4a04db187384c1b7ffbedff3685c8966307f3af2e99941467736ee86"
+        },
+        {
+          "global_index": 56,
+          "panel": "Original",
+          "box": [
+            2300,
+            1458,
+            2474,
+            1632
+          ],
+          "rgb_sha256": "8d63d6d981bf7718f2ccde52c97a0699ae587a574a7bc7bb412bed533f5d4a1c"
+        },
+        {
+          "global_index": 56,
+          "panel": "Reconstruction",
+          "box": [
+            2482,
+            1458,
+            2656,
+            1632
+          ],
+          "rgb_sha256": "fad03c8a783f98a0e69e16d315ac414088b07310b5b2380ff84b842295090318"
+        },
+        {
+          "global_index": 57,
+          "panel": "Original",
+          "box": [
+            2672,
+            1458,
+            2846,
+            1632
+          ],
+          "rgb_sha256": "4583b2e927a971f21143362b270fcaa4e84e3a8116423054530306fcd0067ea4"
+        },
+        {
+          "global_index": 57,
+          "panel": "Reconstruction",
+          "box": [
+            2854,
+            1458,
+            3028,
+            1632
+          ],
+          "rgb_sha256": "0ff28639bf58ac041b6b6a622088a361c1a85edfc0a5f8c5f54f55c603484d88"
+        },
+        {
+          "global_index": 58,
+          "panel": "Original",
+          "box": [
+            3044,
+            1458,
+            3218,
+            1632
+          ],
+          "rgb_sha256": "cc0f29760cfd9440a5ac77ebfb76db16fd6950d2f80a216bf58b67de771f42ea"
+        },
+        {
+          "global_index": 58,
+          "panel": "Reconstruction",
+          "box": [
+            3226,
+            1458,
+            3400,
+            1632
+          ],
+          "rgb_sha256": "055bdb3e189ba306f7f1a63fa0e26e2a76a89958ec875e7ff43cadee1bbfaab4"
+        },
+        {
+          "global_index": 59,
+          "panel": "Original",
+          "box": [
+            3416,
+            1458,
+            3590,
+            1632
+          ],
+          "rgb_sha256": "ab9ebaaec2a63ba9d96ad5ab004ad7c51e101f6ddabd3a38bb5d198e27d7de45"
+        },
+        {
+          "global_index": 59,
+          "panel": "Reconstruction",
+          "box": [
+            3598,
+            1458,
+            3772,
+            1632
+          ],
+          "rgb_sha256": "7379d328df51edc093018d2d87db7f9e349e942006babd99a14a7aef9631f8d8"
+        },
+        {
+          "global_index": 60,
+          "panel": "Original",
+          "box": [
+            68,
+            1688,
+            242,
+            1862
+          ],
+          "rgb_sha256": "c88c405b9621c15bdc80c341b14770853e480828b0c3c6857208599a6e7b519c"
+        },
+        {
+          "global_index": 60,
+          "panel": "Reconstruction",
+          "box": [
+            250,
+            1688,
+            424,
+            1862
+          ],
+          "rgb_sha256": "9901e359e4264db4afb7b6c37ac1325a4d7a67cee772cb4bd70d9d3ba3602e35"
+        },
+        {
+          "global_index": 61,
+          "panel": "Original",
+          "box": [
+            440,
+            1688,
+            614,
+            1862
+          ],
+          "rgb_sha256": "7cdc4c18e9ad70f76c9d7e2132e448b6da68d611a58d956648f932421a955bda"
+        },
+        {
+          "global_index": 61,
+          "panel": "Reconstruction",
+          "box": [
+            622,
+            1688,
+            796,
+            1862
+          ],
+          "rgb_sha256": "b69ac5a0eeb69d6abfe0c1564d46d7aa2a687edfba8db37a0f242cf021cbf2b5"
+        },
+        {
+          "global_index": 62,
+          "panel": "Original",
+          "box": [
+            812,
+            1688,
+            986,
+            1862
+          ],
+          "rgb_sha256": "9f06dd7ba4a93ab24f84ab7073eff008b51d17ed8f04e0c698f0adcad0827ed8"
+        },
+        {
+          "global_index": 62,
+          "panel": "Reconstruction",
+          "box": [
+            994,
+            1688,
+            1168,
+            1862
+          ],
+          "rgb_sha256": "1dc3f981a56e514d5f30ad1ccdb411546730351d90379cdab8fe7c6518895e11"
+        },
+        {
+          "global_index": 63,
+          "panel": "Original",
+          "box": [
+            1184,
+            1688,
+            1358,
+            1862
+          ],
+          "rgb_sha256": "7f27e81b563c202d296ad65c8bdbc1422d2e4b9c46e7af64ef5ece9573219415"
+        },
+        {
+          "global_index": 63,
+          "panel": "Reconstruction",
+          "box": [
+            1366,
+            1688,
+            1540,
+            1862
+          ],
+          "rgb_sha256": "0917aa78c8f9ecc0ba977ce0ba708a62a1f5d2edf32391ee679e9a6e3c3442a8"
+        },
+        {
+          "global_index": 64,
+          "panel": "Original",
+          "box": [
+            1556,
+            1688,
+            1730,
+            1862
+          ],
+          "rgb_sha256": "1fe9c79061ec6d21683d48ab1a2fc7822bfb8eb15efffef7e869c30a392a3312"
+        },
+        {
+          "global_index": 64,
+          "panel": "Reconstruction",
+          "box": [
+            1738,
+            1688,
+            1912,
+            1862
+          ],
+          "rgb_sha256": "3f98a50628ce160b7b5a8cf98e4071fae31fb14c19e242af03e31a6a28b27b31"
+        },
+        {
+          "global_index": 65,
+          "panel": "Original",
+          "box": [
+            1928,
+            1688,
+            2102,
+            1862
+          ],
+          "rgb_sha256": "2e74722ba1b5c90952790ede9137565c3c566bbaf560e9b44165751753fff0a9"
+        },
+        {
+          "global_index": 65,
+          "panel": "Reconstruction",
+          "box": [
+            2110,
+            1688,
+            2284,
+            1862
+          ],
+          "rgb_sha256": "5bfb6ea723c13516056721d37b0a1b38f408940e9208bc13d53d0819ecb98f82"
+        },
+        {
+          "global_index": 66,
+          "panel": "Original",
+          "box": [
+            2300,
+            1688,
+            2474,
+            1862
+          ],
+          "rgb_sha256": "74d9e3365d4a174495ae3ea7bd817434fdb9415213231250491bc6a896c87330"
+        },
+        {
+          "global_index": 66,
+          "panel": "Reconstruction",
+          "box": [
+            2482,
+            1688,
+            2656,
+            1862
+          ],
+          "rgb_sha256": "95349e94e308199d3a82ab0f96c29b311179cef3eb8b227cede5cce661263ebe"
+        },
+        {
+          "global_index": 67,
+          "panel": "Original",
+          "box": [
+            2672,
+            1688,
+            2846,
+            1862
+          ],
+          "rgb_sha256": "62d1deaa0b5112b72680521cec596ed4f3b93ba1aab4542f4c962a7f0dbe8520"
+        },
+        {
+          "global_index": 67,
+          "panel": "Reconstruction",
+          "box": [
+            2854,
+            1688,
+            3028,
+            1862
+          ],
+          "rgb_sha256": "2a3cc37e877eb17e316c6b2c120950206a54ae0ee01121212b31669672657e81"
+        },
+        {
+          "global_index": 68,
+          "panel": "Original",
+          "box": [
+            3044,
+            1688,
+            3218,
+            1862
+          ],
+          "rgb_sha256": "4390c5409a61a6f5202577237116d15cab91b35ee4a6dae3023eb1a23b7351ae"
+        },
+        {
+          "global_index": 68,
+          "panel": "Reconstruction",
+          "box": [
+            3226,
+            1688,
+            3400,
+            1862
+          ],
+          "rgb_sha256": "2b9fa4da7b0960429085414fb519f8edfec7ca4d741663ba1ba41cb6bf36daae"
+        },
+        {
+          "global_index": 69,
+          "panel": "Original",
+          "box": [
+            3416,
+            1688,
+            3590,
+            1862
+          ],
+          "rgb_sha256": "f8cf898dfa1c5c672429734ccd481cc99a640e8cfdbd9b463cead8b4bca9993f"
+        },
+        {
+          "global_index": 69,
+          "panel": "Reconstruction",
+          "box": [
+            3598,
+            1688,
+            3772,
+            1862
+          ],
+          "rgb_sha256": "a57c7f472456ee65817150883c6f3dc19b2e01422d8d00c53a6d72bbe380ec24"
+        },
+        {
+          "global_index": 70,
+          "panel": "Original",
+          "box": [
+            68,
+            1918,
+            242,
+            2092
+          ],
+          "rgb_sha256": "dd194d8c7e9a18c71f5a2d6094b5fc120780bbcebde846e7cec978ef962a346b"
+        },
+        {
+          "global_index": 70,
+          "panel": "Reconstruction",
+          "box": [
+            250,
+            1918,
+            424,
+            2092
+          ],
+          "rgb_sha256": "f151c6dfff4b4ea45e695a64edaeffed5889a742aabb8202fdb89fff87d4a8ee"
+        },
+        {
+          "global_index": 71,
+          "panel": "Original",
+          "box": [
+            440,
+            1918,
+            614,
+            2092
+          ],
+          "rgb_sha256": "f9f8d14a7e7f65edd2aa7b5ba174b9d50b238e45faf8d2f36bfcc1c78d0d2c15"
+        },
+        {
+          "global_index": 71,
+          "panel": "Reconstruction",
+          "box": [
+            622,
+            1918,
+            796,
+            2092
+          ],
+          "rgb_sha256": "3e018fa021b5eec61321c9dbc95a25c97007101eff7ccd554e0df6d74a8458b2"
+        },
+        {
+          "global_index": 72,
+          "panel": "Original",
+          "box": [
+            812,
+            1918,
+            986,
+            2092
+          ],
+          "rgb_sha256": "4b7867bdb8ab94f981ff3637383a21bb8f503fcfdf288f808fc466a204007e32"
+        },
+        {
+          "global_index": 72,
+          "panel": "Reconstruction",
+          "box": [
+            994,
+            1918,
+            1168,
+            2092
+          ],
+          "rgb_sha256": "f7251dace98be82ea5701986923212213d053ea284c45a95793acca83d78b82f"
+        },
+        {
+          "global_index": 73,
+          "panel": "Original",
+          "box": [
+            1184,
+            1918,
+            1358,
+            2092
+          ],
+          "rgb_sha256": "82647fc18ca7bc1b2ba916e762eac370196ca4f669d6bc54f0fc77e43915dfc1"
+        },
+        {
+          "global_index": 73,
+          "panel": "Reconstruction",
+          "box": [
+            1366,
+            1918,
+            1540,
+            2092
+          ],
+          "rgb_sha256": "7050f8063efecc813e1becf0d5e234cd78cb4bf06bde08affcba1e89d2de0a48"
+        },
+        {
+          "global_index": 74,
+          "panel": "Original",
+          "box": [
+            1556,
+            1918,
+            1730,
+            2092
+          ],
+          "rgb_sha256": "7df4950f46e4db336e04e8f98eccd6b031bd4afe150046e32fdbfc5740245441"
+        },
+        {
+          "global_index": 74,
+          "panel": "Reconstruction",
+          "box": [
+            1738,
+            1918,
+            1912,
+            2092
+          ],
+          "rgb_sha256": "85668929b7afc8f446cfcf6e62220b245021b710d8e515e851e7ec6e72df1aaf"
+        },
+        {
+          "global_index": 75,
+          "panel": "Original",
+          "box": [
+            1928,
+            1918,
+            2102,
+            2092
+          ],
+          "rgb_sha256": "c9bad1f96e836e620f764d22ff66ce844064eeae7f7b21996c79fd8b0dc36b9b"
+        },
+        {
+          "global_index": 75,
+          "panel": "Reconstruction",
+          "box": [
+            2110,
+            1918,
+            2284,
+            2092
+          ],
+          "rgb_sha256": "3dcd8512c9dc83184984214ed3428c5a7537f0ca4c606c3855443df27c9fcfe4"
+        },
+        {
+          "global_index": 76,
+          "panel": "Original",
+          "box": [
+            2300,
+            1918,
+            2474,
+            2092
+          ],
+          "rgb_sha256": "9751181a67d53277233bd16c8a1b3cf00f7c407ede214b686e5c558a0b44a69f"
+        },
+        {
+          "global_index": 76,
+          "panel": "Reconstruction",
+          "box": [
+            2482,
+            1918,
+            2656,
+            2092
+          ],
+          "rgb_sha256": "66217fe7111130e7c2f53ffd122e596023e5b51d8db9653b633d55dc8a21e251"
+        },
+        {
+          "global_index": 77,
+          "panel": "Original",
+          "box": [
+            2672,
+            1918,
+            2846,
+            2092
+          ],
+          "rgb_sha256": "091d138c4ebef401260cd1597dce80c8fe609ae14c972d04e7df852bef8e8311"
+        },
+        {
+          "global_index": 77,
+          "panel": "Reconstruction",
+          "box": [
+            2854,
+            1918,
+            3028,
+            2092
+          ],
+          "rgb_sha256": "144c397ca42c2f97b1554a203af0a6808c6a23ba6e0a85669335a98c93400266"
+        },
+        {
+          "global_index": 78,
+          "panel": "Original",
+          "box": [
+            3044,
+            1918,
+            3218,
+            2092
+          ],
+          "rgb_sha256": "9e2f2430ac7db7a6a59ad6d695f67d03eaa2023c66ee6b2e70e7b7bd58821e09"
+        },
+        {
+          "global_index": 78,
+          "panel": "Reconstruction",
+          "box": [
+            3226,
+            1918,
+            3400,
+            2092
+          ],
+          "rgb_sha256": "27314c0e4d5c463d1eca073003f38d927b162820fe484412aea38ba910aee283"
+        },
+        {
+          "global_index": 79,
+          "panel": "Original",
+          "box": [
+            3416,
+            1918,
+            3590,
+            2092
+          ],
+          "rgb_sha256": "231094fb26f3dc7b8285d82dc569835a38639d8c10739ae7cbe14b3694ea1877"
+        },
+        {
+          "global_index": 79,
+          "panel": "Reconstruction",
+          "box": [
+            3598,
+            1918,
+            3772,
+            2092
+          ],
+          "rgb_sha256": "52cd7b6ca70364371ee0ad14adc4194f1e40679172921dcc9acbb467852b3098"
+        }
+      ],
+      "run_tag": "cpa_fia_topk20_same80_B16",
+      "source_folder": "results\\cpa_fia_topk20_same80_B16",
+      "summary_sha256": "b1042e7aa78f1c5dd20e4e4057087830e70ccbadcc0bae8cecbea3178e2fc840",
+      "source_hashes": {
+        "per_image_metrics.csv": "5e07d1708799512ee1a1f1be525c20c03d8599b79ab60740cd9e6f385c5ee2bf",
+        "figure_manifest.json": "c6aa38a3066157e78dc359f63abcaa11990cd8255428b8dfb1bbea5770b2b941",
+        "all80_reconstruction_landscape.png": "c9af0e642bedb465e10adcbeef321c17e8fbc8b09cd224ffac7f3d3b1b263248"
+      }
+    },
+    {
+      "keep_percent": 10,
+      "file": "topk10_original_vs_reconstruction_16x9.png",
+      "sha256": "9d9da238d46da2457a8f1a87b2776ef29c6d674e2bda3938019af8ec2af22aab",
+      "size": [
+        3840,
+        2160
+      ],
+      "n_images": 80,
+      "n_panels": 160,
+      "global_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79
+      ],
+      "mean_metrics": {
+        "lpips": 0.6323260389268398,
+        "ssim": 0.263121826434508,
+        "psnr": 21.53053867816925
+      },
+      "tile_size": 174,
+      "placements": [
+        {
+          "global_index": 0,
+          "panel": "Original",
+          "box": [
+            68,
+            308,
+            242,
+            482
+          ],
+          "rgb_sha256": "c1d465c714332db041afe2eab46b927745824d0041eb223441511c2fe95b2d2e"
+        },
+        {
+          "global_index": 0,
+          "panel": "Reconstruction",
+          "box": [
+            250,
+            308,
+            424,
+            482
+          ],
+          "rgb_sha256": "c06ff992ea6de7efca8b0d707639214c8980dcfab884af8ea093e9cf02dcf100"
+        },
+        {
+          "global_index": 1,
+          "panel": "Original",
+          "box": [
+            440,
+            308,
+            614,
+            482
+          ],
+          "rgb_sha256": "f75facee2c342154bc4ad9f5e1b0cfb04af35165d1bfda112ba359cfde50cfa4"
+        },
+        {
+          "global_index": 1,
+          "panel": "Reconstruction",
+          "box": [
+            622,
+            308,
+            796,
+            482
+          ],
+          "rgb_sha256": "8bb9a25f8d5a549696e70a91189549a1a8b34f8fa93ae05b7f208778b4e7141c"
+        },
+        {
+          "global_index": 2,
+          "panel": "Original",
+          "box": [
+            812,
+            308,
+            986,
+            482
+          ],
+          "rgb_sha256": "88f950c2aca98b34966ec29a4733ccc6f6dec4e4bf631336f441e879977f8058"
+        },
+        {
+          "global_index": 2,
+          "panel": "Reconstruction",
+          "box": [
+            994,
+            308,
+            1168,
+            482
+          ],
+          "rgb_sha256": "6d1cf9e59ca68186a18a520bcbea0c6f462ebd6bafdabef3bb58d8177418e0d4"
+        },
+        {
+          "global_index": 3,
+          "panel": "Original",
+          "box": [
+            1184,
+            308,
+            1358,
+            482
+          ],
+          "rgb_sha256": "9de2dc85dbcfd4dc9d5eebf898b3c6339939f351af4e7523a7e87cc376166485"
+        },
+        {
+          "global_index": 3,
+          "panel": "Reconstruction",
+          "box": [
+            1366,
+            308,
+            1540,
+            482
+          ],
+          "rgb_sha256": "66563dd919b9d1e041ad60dbc3785b8e8a92cf0f9b87a2cdb159fcc27ba89c9c"
+        },
+        {
+          "global_index": 4,
+          "panel": "Original",
+          "box": [
+            1556,
+            308,
+            1730,
+            482
+          ],
+          "rgb_sha256": "6e8ed4689d0b7e64a12803afc889e0f9beda4841ae6740e3e44b95d5519e26dd"
+        },
+        {
+          "global_index": 4,
+          "panel": "Reconstruction",
+          "box": [
+            1738,
+            308,
+            1912,
+            482
+          ],
+          "rgb_sha256": "ff9570bf665f3c102de6107c7ec683532e10adf1fb17af7dc3f929f59ffdf760"
+        },
+        {
+          "global_index": 5,
+          "panel": "Original",
+          "box": [
+            1928,
+            308,
+            2102,
+            482
+          ],
+          "rgb_sha256": "06e73470f00cb2c5880bf90c3783908a2634bb85f37cfb574473655db7b28af6"
+        },
+        {
+          "global_index": 5,
+          "panel": "Reconstruction",
+          "box": [
+            2110,
+            308,
+            2284,
+            482
+          ],
+          "rgb_sha256": "e5dfff4cde1b2d3c2a89977697b37f2fce6c4e77f9bdd6ae0a7c843dcb295930"
+        },
+        {
+          "global_index": 6,
+          "panel": "Original",
+          "box": [
+            2300,
+            308,
+            2474,
+            482
+          ],
+          "rgb_sha256": "a2143f2185963d97c27b6afedb32a593624fa025f7d918f742cde493655e8ded"
+        },
+        {
+          "global_index": 6,
+          "panel": "Reconstruction",
+          "box": [
+            2482,
+            308,
+            2656,
+            482
+          ],
+          "rgb_sha256": "369bec1fa16aa8a3fb1e4b66264eeea1e0bbb1571cbb3e6bbbadf62a2acd5e29"
+        },
+        {
+          "global_index": 7,
+          "panel": "Original",
+          "box": [
+            2672,
+            308,
+            2846,
+            482
+          ],
+          "rgb_sha256": "67d51e0bd996109e1f128424a04b0795151c22946d78df1fb4b7d218d5a6e26b"
+        },
+        {
+          "global_index": 7,
+          "panel": "Reconstruction",
+          "box": [
+            2854,
+            308,
+            3028,
+            482
+          ],
+          "rgb_sha256": "54005e20cc5c6b8a3c3ff8c3e2241cd1c835f80870cb1ceb2693bcbd64cdebe2"
+        },
+        {
+          "global_index": 8,
+          "panel": "Original",
+          "box": [
+            3044,
+            308,
+            3218,
+            482
+          ],
+          "rgb_sha256": "a505ab8218c3007d28c6e0522128d20eea84b19c5388991216c5650440d2d0a9"
+        },
+        {
+          "global_index": 8,
+          "panel": "Reconstruction",
+          "box": [
+            3226,
+            308,
+            3400,
+            482
+          ],
+          "rgb_sha256": "5bc1f3eb3244484129bea297b3b40bbe6f13950941c3e1b4c4419bb5cfddb75a"
+        },
+        {
+          "global_index": 9,
+          "panel": "Original",
+          "box": [
+            3416,
+            308,
+            3590,
+            482
+          ],
+          "rgb_sha256": "470ca9a71ae5a6a5e2973c58471be184e7bb9797b186b1ac482bcaac0d26d000"
+        },
+        {
+          "global_index": 9,
+          "panel": "Reconstruction",
+          "box": [
+            3598,
+            308,
+            3772,
+            482
+          ],
+          "rgb_sha256": "ff31fa7e8623095d73ddf4fb916b4b8b787f9232f435dc3e214628032d485e5c"
+        },
+        {
+          "global_index": 10,
+          "panel": "Original",
+          "box": [
+            68,
+            538,
+            242,
+            712
+          ],
+          "rgb_sha256": "20074598fae032a885b67058a2e5ad5218452cc36816dbd68598ebe486c4a429"
+        },
+        {
+          "global_index": 10,
+          "panel": "Reconstruction",
+          "box": [
+            250,
+            538,
+            424,
+            712
+          ],
+          "rgb_sha256": "cfd197b66b63e960255a12699934554f2af5b0b6930cce144ea4c8b9a302c32c"
+        },
+        {
+          "global_index": 11,
+          "panel": "Original",
+          "box": [
+            440,
+            538,
+            614,
+            712
+          ],
+          "rgb_sha256": "9d589fa4f74a8e8319cf8acfdefea41176039985b6fec245d3c59dcf1f993594"
+        },
+        {
+          "global_index": 11,
+          "panel": "Reconstruction",
+          "box": [
+            622,
+            538,
+            796,
+            712
+          ],
+          "rgb_sha256": "005ef0e8699b9d73abfbe1f908a79fe058e49cc43c74efe1eddda9306edc1dc7"
+        },
+        {
+          "global_index": 12,
+          "panel": "Original",
+          "box": [
+            812,
+            538,
+            986,
+            712
+          ],
+          "rgb_sha256": "056619a91c586eda35a3f999c5a23065cf1e8bbc35989688ebbb87726404788a"
+        },
+        {
+          "global_index": 12,
+          "panel": "Reconstruction",
+          "box": [
+            994,
+            538,
+            1168,
+            712
+          ],
+          "rgb_sha256": "dac68fb945f347156745a2450f872be93f0e8852e90340ac64a10f9c01b4fd34"
+        },
+        {
+          "global_index": 13,
+          "panel": "Original",
+          "box": [
+            1184,
+            538,
+            1358,
+            712
+          ],
+          "rgb_sha256": "0109274903e6be7fdc8c03e550161ee4bed11ad154e5f7769fd4edbfe935db22"
+        },
+        {
+          "global_index": 13,
+          "panel": "Reconstruction",
+          "box": [
+            1366,
+            538,
+            1540,
+            712
+          ],
+          "rgb_sha256": "b12fb74e1e3acddb71497a2adad1a1f4ae3c24d604446e5ce555409d74a37873"
+        },
+        {
+          "global_index": 14,
+          "panel": "Original",
+          "box": [
+            1556,
+            538,
+            1730,
+            712
+          ],
+          "rgb_sha256": "07faf470fdf6c21ca66c5d07d2e0d778863ebe1648321acaea3bb542d14c3355"
+        },
+        {
+          "global_index": 14,
+          "panel": "Reconstruction",
+          "box": [
+            1738,
+            538,
+            1912,
+            712
+          ],
+          "rgb_sha256": "b238ab0e48c8a5b6598c229bdd96bca2cf7ea492c9890b4877926af47ff0c2c5"
+        },
+        {
+          "global_index": 15,
+          "panel": "Original",
+          "box": [
+            1928,
+            538,
+            2102,
+            712
+          ],
+          "rgb_sha256": "9d39e18d5a034368fe0104993a230f3d79d743950d2e0a85abbce43451e45d30"
+        },
+        {
+          "global_index": 15,
+          "panel": "Reconstruction",
+          "box": [
+            2110,
+            538,
+            2284,
+            712
+          ],
+          "rgb_sha256": "6b830ff2969114ebc99fc2a950e3468064723c86d41078d8c5dd9a19136e67b8"
+        },
+        {
+          "global_index": 16,
+          "panel": "Original",
+          "box": [
+            2300,
+            538,
+            2474,
+            712
+          ],
+          "rgb_sha256": "7a5316a406bb7e289939821f58c200d22ad1b672493fe8dbac08f95c56f6961b"
+        },
+        {
+          "global_index": 16,
+          "panel": "Reconstruction",
+          "box": [
+            2482,
+            538,
+            2656,
+            712
+          ],
+          "rgb_sha256": "00d76100ecb5f1da2092b9ce5410a06114bea53d8eeb7f8ceb5eb2574b441ff2"
+        },
+        {
+          "global_index": 17,
+          "panel": "Original",
+          "box": [
+            2672,
+            538,
+            2846,
+            712
+          ],
+          "rgb_sha256": "9693a34e84385f89bba78e5ae00736d55a008fe558db1ddcad96bd96a5837dcc"
+        },
+        {
+          "global_index": 17,
+          "panel": "Reconstruction",
+          "box": [
+            2854,
+            538,
+            3028,
+            712
+          ],
+          "rgb_sha256": "ca7a7e69a81cfcbc47bdd70a3f989f267edb8ab26cce156885a8f1fc58c8c1cf"
+        },
+        {
+          "global_index": 18,
+          "panel": "Original",
+          "box": [
+            3044,
+            538,
+            3218,
+            712
+          ],
+          "rgb_sha256": "c02945e163b6854dac6e6c5346b0099d4c643c0db75fa5052af2090518b1efec"
+        },
+        {
+          "global_index": 18,
+          "panel": "Reconstruction",
+          "box": [
+            3226,
+            538,
+            3400,
+            712
+          ],
+          "rgb_sha256": "941cd852cf5214a26277420e560b40b1eef2726de4dc3e9ed664f2a534b2c550"
+        },
+        {
+          "global_index": 19,
+          "panel": "Original",
+          "box": [
+            3416,
+            538,
+            3590,
+            712
+          ],
+          "rgb_sha256": "c98de3ba52130fda07d6f4058680d875ad632563123de138dd32d93149f8b2dd"
+        },
+        {
+          "global_index": 19,
+          "panel": "Reconstruction",
+          "box": [
+            3598,
+            538,
+            3772,
+            712
+          ],
+          "rgb_sha256": "0f63593b06597280bfe3c7a3f8de7ef5e52b02733002820d47761d496080cb6f"
+        },
+        {
+          "global_index": 20,
+          "panel": "Original",
+          "box": [
+            68,
+            768,
+            242,
+            942
+          ],
+          "rgb_sha256": "7d3b4101999f62b254b03768b6745d480bfcbcfe7b3001ce35d6f2f460a6e726"
+        },
+        {
+          "global_index": 20,
+          "panel": "Reconstruction",
+          "box": [
+            250,
+            768,
+            424,
+            942
+          ],
+          "rgb_sha256": "dbdddecf75320a4438ba5be51a600c477eb890fa1aa115fd7beb3a4352f2d521"
+        },
+        {
+          "global_index": 21,
+          "panel": "Original",
+          "box": [
+            440,
+            768,
+            614,
+            942
+          ],
+          "rgb_sha256": "72e882a5f2d5d458e3f4884a0eb8935306e016ec8f5c926794b0c45729725961"
+        },
+        {
+          "global_index": 21,
+          "panel": "Reconstruction",
+          "box": [
+            622,
+            768,
+            796,
+            942
+          ],
+          "rgb_sha256": "66aa235ed63052a6eacb4fd414653ae91242097b1062ca8818046bcbc6885f33"
+        },
+        {
+          "global_index": 22,
+          "panel": "Original",
+          "box": [
+            812,
+            768,
+            986,
+            942
+          ],
+          "rgb_sha256": "41fda723d6495bdd82f51564ea9fc1169e487b820ff805695b962e8006957621"
+        },
+        {
+          "global_index": 22,
+          "panel": "Reconstruction",
+          "box": [
+            994,
+            768,
+            1168,
+            942
+          ],
+          "rgb_sha256": "c039ea9a53e7d2e20d05ad0581e9d9b4a95e84aa8a9d74af3a89d245292bdbcf"
+        },
+        {
+          "global_index": 23,
+          "panel": "Original",
+          "box": [
+            1184,
+            768,
+            1358,
+            942
+          ],
+          "rgb_sha256": "20b618b694ee62d529ea3ab3959312ee55eb5dc3f375ea95a79f9f902aa837ac"
+        },
+        {
+          "global_index": 23,
+          "panel": "Reconstruction",
+          "box": [
+            1366,
+            768,
+            1540,
+            942
+          ],
+          "rgb_sha256": "e7a0b6970369b30949b75d7dfc79bc39e884bd9a0b988578dba1b9a9d10179de"
+        },
+        {
+          "global_index": 24,
+          "panel": "Original",
+          "box": [
+            1556,
+            768,
+            1730,
+            942
+          ],
+          "rgb_sha256": "5ceb5391c3f69faa697a75f59db0415ffc5cc802ed6f96852afccc3e6318f88a"
+        },
+        {
+          "global_index": 24,
+          "panel": "Reconstruction",
+          "box": [
+            1738,
+            768,
+            1912,
+            942
+          ],
+          "rgb_sha256": "ead1321d2e50dcfe7aa02559662bd7f1a75f1fac824e63f4e0d097c604e79317"
+        },
+        {
+          "global_index": 25,
+          "panel": "Original",
+          "box": [
+            1928,
+            768,
+            2102,
+            942
+          ],
+          "rgb_sha256": "1f921860d98dd3d272ce7f250b2462d17fbb3ee17b617954c3b85297f4f8ed2e"
+        },
+        {
+          "global_index": 25,
+          "panel": "Reconstruction",
+          "box": [
+            2110,
+            768,
+            2284,
+            942
+          ],
+          "rgb_sha256": "9f177c9d5621d859de150387882559afef854fb5479dd87937f04e3ca2f674fd"
+        },
+        {
+          "global_index": 26,
+          "panel": "Original",
+          "box": [
+            2300,
+            768,
+            2474,
+            942
+          ],
+          "rgb_sha256": "bb452aa32b33c0994f9d3ebf01e824a0dbe68bf57d1e0b599bf22152aebafb81"
+        },
+        {
+          "global_index": 26,
+          "panel": "Reconstruction",
+          "box": [
+            2482,
+            768,
+            2656,
+            942
+          ],
+          "rgb_sha256": "bcfcc1e8d0c646b001a165949f1d1aaef9cfc377fb8d18484df2b604cd35c58d"
+        },
+        {
+          "global_index": 27,
+          "panel": "Original",
+          "box": [
+            2672,
+            768,
+            2846,
+            942
+          ],
+          "rgb_sha256": "c3bfc873a6fc583c8de311b02224d54a8365bc21abec98e58767ca2a1c966afc"
+        },
+        {
+          "global_index": 27,
+          "panel": "Reconstruction",
+          "box": [
+            2854,
+            768,
+            3028,
+            942
+          ],
+          "rgb_sha256": "3bd1a8b0e4bbcf8dcd680b173b32cd4743ab016cc23c1938a1b49dae841bee8d"
+        },
+        {
+          "global_index": 28,
+          "panel": "Original",
+          "box": [
+            3044,
+            768,
+            3218,
+            942
+          ],
+          "rgb_sha256": "8ecf83fe84c57bce0fdce07598541caedabd09aa46835544cad7d2038a31e332"
+        },
+        {
+          "global_index": 28,
+          "panel": "Reconstruction",
+          "box": [
+            3226,
+            768,
+            3400,
+            942
+          ],
+          "rgb_sha256": "fd1abb45dc2711fcd94a720880f3497e3b7d32a9d72fb04229260c0714af6f71"
+        },
+        {
+          "global_index": 29,
+          "panel": "Original",
+          "box": [
+            3416,
+            768,
+            3590,
+            942
+          ],
+          "rgb_sha256": "698b813fb17e26f298fc4b66849733b638df2783cfd2a32384bdd8bd65192701"
+        },
+        {
+          "global_index": 29,
+          "panel": "Reconstruction",
+          "box": [
+            3598,
+            768,
+            3772,
+            942
+          ],
+          "rgb_sha256": "65bc12bcd6be52601e24ea08647aabf757f3aa37e15b9965df80ee957baa3bcc"
+        },
+        {
+          "global_index": 30,
+          "panel": "Original",
+          "box": [
+            68,
+            998,
+            242,
+            1172
+          ],
+          "rgb_sha256": "56184ac63ed48fceea7fd708f7a975d8505aaa486f145542ddfe63342d7db17a"
+        },
+        {
+          "global_index": 30,
+          "panel": "Reconstruction",
+          "box": [
+            250,
+            998,
+            424,
+            1172
+          ],
+          "rgb_sha256": "263b161cc295884ca148ef184a53d35098031d73daf9ab106fdffa2f519bf4fa"
+        },
+        {
+          "global_index": 31,
+          "panel": "Original",
+          "box": [
+            440,
+            998,
+            614,
+            1172
+          ],
+          "rgb_sha256": "ef4b7069dca832f70c60fd94bd430b2906d4de9406e761c205f8e71259aabdca"
+        },
+        {
+          "global_index": 31,
+          "panel": "Reconstruction",
+          "box": [
+            622,
+            998,
+            796,
+            1172
+          ],
+          "rgb_sha256": "044b9ecc0e7081780c27868348dea6d884f1db78eda92bfae70c9ca1bc266e21"
+        },
+        {
+          "global_index": 32,
+          "panel": "Original",
+          "box": [
+            812,
+            998,
+            986,
+            1172
+          ],
+          "rgb_sha256": "19f40becb8004e9e03a54e1ca4b492018ab1f7749a4531fc464089925ab65efb"
+        },
+        {
+          "global_index": 32,
+          "panel": "Reconstruction",
+          "box": [
+            994,
+            998,
+            1168,
+            1172
+          ],
+          "rgb_sha256": "42e8b3a52b9914dc414b0199658411c25943716474a06bcec694cc80f64fb7f1"
+        },
+        {
+          "global_index": 33,
+          "panel": "Original",
+          "box": [
+            1184,
+            998,
+            1358,
+            1172
+          ],
+          "rgb_sha256": "fba8dc780a8ce9a3700b8677cf590ff301764587ec7237f5c02cb512f90b953e"
+        },
+        {
+          "global_index": 33,
+          "panel": "Reconstruction",
+          "box": [
+            1366,
+            998,
+            1540,
+            1172
+          ],
+          "rgb_sha256": "750e0cb878ae6ebfb133abac895ce7b8437498e89d1ecec22e665ea34744733e"
+        },
+        {
+          "global_index": 34,
+          "panel": "Original",
+          "box": [
+            1556,
+            998,
+            1730,
+            1172
+          ],
+          "rgb_sha256": "c51ca81e90e30d2f0b5ee6fb1987ffee28ca44f3523a8bafa06642fb816ab35c"
+        },
+        {
+          "global_index": 34,
+          "panel": "Reconstruction",
+          "box": [
+            1738,
+            998,
+            1912,
+            1172
+          ],
+          "rgb_sha256": "a7a9134c58a4a05a546a33589e59982915449ed4a4debe64d2b8eb95333b7e55"
+        },
+        {
+          "global_index": 35,
+          "panel": "Original",
+          "box": [
+            1928,
+            998,
+            2102,
+            1172
+          ],
+          "rgb_sha256": "d234d34ce4c76310561a2fb2345d4f246a6cb25b6bddb5af5f92d3655a059fbf"
+        },
+        {
+          "global_index": 35,
+          "panel": "Reconstruction",
+          "box": [
+            2110,
+            998,
+            2284,
+            1172
+          ],
+          "rgb_sha256": "7634074e014e9f0f2ef5682b23ec13ead1ad3153d410582e5392d636fa7d49f5"
+        },
+        {
+          "global_index": 36,
+          "panel": "Original",
+          "box": [
+            2300,
+            998,
+            2474,
+            1172
+          ],
+          "rgb_sha256": "93be6a24393ee7f7c4478900bfa32f2eeaf25cd76ef748051827d8f13bc9b431"
+        },
+        {
+          "global_index": 36,
+          "panel": "Reconstruction",
+          "box": [
+            2482,
+            998,
+            2656,
+            1172
+          ],
+          "rgb_sha256": "48372821fa08227c881ff3ddad77f5af9d6f03e01ae7ef7f0d2efc2d81712249"
+        },
+        {
+          "global_index": 37,
+          "panel": "Original",
+          "box": [
+            2672,
+            998,
+            2846,
+            1172
+          ],
+          "rgb_sha256": "f3b5e738121ffd9a776d9327ec10bc7e4c78c28b05a6711a78e5e3140c91a737"
+        },
+        {
+          "global_index": 37,
+          "panel": "Reconstruction",
+          "box": [
+            2854,
+            998,
+            3028,
+            1172
+          ],
+          "rgb_sha256": "473846aa2b1ffbd95df05c3df5544af4bd02279db8f6d9d9528fef5f8d18a415"
+        },
+        {
+          "global_index": 38,
+          "panel": "Original",
+          "box": [
+            3044,
+            998,
+            3218,
+            1172
+          ],
+          "rgb_sha256": "87d50392fda2cd3eddaddea62b71a2aa074beddb3d7fddab8b77717d695b6d3b"
+        },
+        {
+          "global_index": 38,
+          "panel": "Reconstruction",
+          "box": [
+            3226,
+            998,
+            3400,
+            1172
+          ],
+          "rgb_sha256": "e5ddded0a2cdf3fe5449b163f0aced4b188e6aa570d85a036165a02d6d1e620e"
+        },
+        {
+          "global_index": 39,
+          "panel": "Original",
+          "box": [
+            3416,
+            998,
+            3590,
+            1172
+          ],
+          "rgb_sha256": "6f46de06ed8bc25cf267be831432f82614394ff1dc4e0febcf6a058ecb42dd73"
+        },
+        {
+          "global_index": 39,
+          "panel": "Reconstruction",
+          "box": [
+            3598,
+            998,
+            3772,
+            1172
+          ],
+          "rgb_sha256": "c56e4d6221f81cfd59a0ab4132f984dda9763fcc08acc2c23e35bb406e0fff4b"
+        },
+        {
+          "global_index": 40,
+          "panel": "Original",
+          "box": [
+            68,
+            1228,
+            242,
+            1402
+          ],
+          "rgb_sha256": "310be474891248e2b84935a650b5339fe34595b0852a0f0e1dc016815cecff37"
+        },
+        {
+          "global_index": 40,
+          "panel": "Reconstruction",
+          "box": [
+            250,
+            1228,
+            424,
+            1402
+          ],
+          "rgb_sha256": "68aee4f4fce5f796f02f69d386fe733efe4a6984884898f9af21ee5bbe78bb02"
+        },
+        {
+          "global_index": 41,
+          "panel": "Original",
+          "box": [
+            440,
+            1228,
+            614,
+            1402
+          ],
+          "rgb_sha256": "5501eae9a863e938375d3c022aadce38b63347be560b365b0fc27412e92a2b59"
+        },
+        {
+          "global_index": 41,
+          "panel": "Reconstruction",
+          "box": [
+            622,
+            1228,
+            796,
+            1402
+          ],
+          "rgb_sha256": "5cd352d95c2d36cb3b115bea51cbd90308f24ee19b2f04c286edab22e77ba79e"
+        },
+        {
+          "global_index": 42,
+          "panel": "Original",
+          "box": [
+            812,
+            1228,
+            986,
+            1402
+          ],
+          "rgb_sha256": "231cccb998b15df314e5eea7ad5ecce81ba48dbf12564ecd86f926812dc2dac7"
+        },
+        {
+          "global_index": 42,
+          "panel": "Reconstruction",
+          "box": [
+            994,
+            1228,
+            1168,
+            1402
+          ],
+          "rgb_sha256": "4f0ade2dbe7c2b40df5b4edc524f91c8269d9f7f4125502f37f01630d7cd3a74"
+        },
+        {
+          "global_index": 43,
+          "panel": "Original",
+          "box": [
+            1184,
+            1228,
+            1358,
+            1402
+          ],
+          "rgb_sha256": "b942364967968ce00c5d5c189ae8c7b05e43788b0cb7869184731a589253e81c"
+        },
+        {
+          "global_index": 43,
+          "panel": "Reconstruction",
+          "box": [
+            1366,
+            1228,
+            1540,
+            1402
+          ],
+          "rgb_sha256": "1bfc4c3460b7c818a0f11110aa864199007f1148f02f0de162b3d7e48fc785c6"
+        },
+        {
+          "global_index": 44,
+          "panel": "Original",
+          "box": [
+            1556,
+            1228,
+            1730,
+            1402
+          ],
+          "rgb_sha256": "c9e072413110b939f2df878a502f0df7fa39f7d79b189c73145202d028a72658"
+        },
+        {
+          "global_index": 44,
+          "panel": "Reconstruction",
+          "box": [
+            1738,
+            1228,
+            1912,
+            1402
+          ],
+          "rgb_sha256": "ed30d1842bfacd182e593e4ef7b35ae43d62c29ead6ffc912a3f496b312e5dff"
+        },
+        {
+          "global_index": 45,
+          "panel": "Original",
+          "box": [
+            1928,
+            1228,
+            2102,
+            1402
+          ],
+          "rgb_sha256": "484c37219a2cb576e0ab853ea0a2feeb8ef33389ed63c2b10c6c7fd2427c048e"
+        },
+        {
+          "global_index": 45,
+          "panel": "Reconstruction",
+          "box": [
+            2110,
+            1228,
+            2284,
+            1402
+          ],
+          "rgb_sha256": "6a3d684b7dfe671730f2bd9692c6555ac942e5e84da55d3fab104189377237ca"
+        },
+        {
+          "global_index": 46,
+          "panel": "Original",
+          "box": [
+            2300,
+            1228,
+            2474,
+            1402
+          ],
+          "rgb_sha256": "fbabb88bd605572a32d5cedd9b3852fa651bef63f906dc90c7905e8731d220e8"
+        },
+        {
+          "global_index": 46,
+          "panel": "Reconstruction",
+          "box": [
+            2482,
+            1228,
+            2656,
+            1402
+          ],
+          "rgb_sha256": "54cb9d3fa6350deb102f932c118e93b3e1216f8050cd6968b4d9351c197f67d5"
+        },
+        {
+          "global_index": 47,
+          "panel": "Original",
+          "box": [
+            2672,
+            1228,
+            2846,
+            1402
+          ],
+          "rgb_sha256": "0de00e4bfb8a7f80e4a0f2707929aa07bce7d3c4af8d696ec3def61690144748"
+        },
+        {
+          "global_index": 47,
+          "panel": "Reconstruction",
+          "box": [
+            2854,
+            1228,
+            3028,
+            1402
+          ],
+          "rgb_sha256": "20a4b6ee7d25cfc44670b3fad5568af8ec9e2805a55c1f753fbe2abd92702a63"
+        },
+        {
+          "global_index": 48,
+          "panel": "Original",
+          "box": [
+            3044,
+            1228,
+            3218,
+            1402
+          ],
+          "rgb_sha256": "da67eea44c90ab3fdf649fce3fb9b9137bf5a011e66ed1f6f70c7fbf132a5bfd"
+        },
+        {
+          "global_index": 48,
+          "panel": "Reconstruction",
+          "box": [
+            3226,
+            1228,
+            3400,
+            1402
+          ],
+          "rgb_sha256": "636f1a178aa947df1358181d413f6e02f82d7dd507bde484152fb7ad19054246"
+        },
+        {
+          "global_index": 49,
+          "panel": "Original",
+          "box": [
+            3416,
+            1228,
+            3590,
+            1402
+          ],
+          "rgb_sha256": "c9c1f37a4517a9afb3e1ec4c6b929c2ebbdc86142101182ed50a373334455022"
+        },
+        {
+          "global_index": 49,
+          "panel": "Reconstruction",
+          "box": [
+            3598,
+            1228,
+            3772,
+            1402
+          ],
+          "rgb_sha256": "f50fbaad32424451c5877f577204c17b86684bcfa265dc57a27d9c10936da8a2"
+        },
+        {
+          "global_index": 50,
+          "panel": "Original",
+          "box": [
+            68,
+            1458,
+            242,
+            1632
+          ],
+          "rgb_sha256": "b7372f492022ccf3f3b581147b21b25d5a804eb24265d78a55ee2d134029c2c4"
+        },
+        {
+          "global_index": 50,
+          "panel": "Reconstruction",
+          "box": [
+            250,
+            1458,
+            424,
+            1632
+          ],
+          "rgb_sha256": "53ff922857ab707acf2519697521f381367f81c0e7315f5bdda223677a090676"
+        },
+        {
+          "global_index": 51,
+          "panel": "Original",
+          "box": [
+            440,
+            1458,
+            614,
+            1632
+          ],
+          "rgb_sha256": "bbe068d3790ae5c67cdcedf4535a55340d79695e1c8b5b618613c0e9b763d1c8"
+        },
+        {
+          "global_index": 51,
+          "panel": "Reconstruction",
+          "box": [
+            622,
+            1458,
+            796,
+            1632
+          ],
+          "rgb_sha256": "8214bbfb51616384cfbd174d318a787c7e7c0d9e599c1c9c7a3e7e335400e81d"
+        },
+        {
+          "global_index": 52,
+          "panel": "Original",
+          "box": [
+            812,
+            1458,
+            986,
+            1632
+          ],
+          "rgb_sha256": "10f67502714efd96c01e692d5bcc2617b6542599baca3ef0f93a987b73501fab"
+        },
+        {
+          "global_index": 52,
+          "panel": "Reconstruction",
+          "box": [
+            994,
+            1458,
+            1168,
+            1632
+          ],
+          "rgb_sha256": "43e3ecb1b8c2858dc08c7a967405adda02adb19eea4b8ba37497f4da23b6d8dd"
+        },
+        {
+          "global_index": 53,
+          "panel": "Original",
+          "box": [
+            1184,
+            1458,
+            1358,
+            1632
+          ],
+          "rgb_sha256": "facdf1a7efd3d93a866de94ec2d5ca1306114fe917ce61875437c49c18f92916"
+        },
+        {
+          "global_index": 53,
+          "panel": "Reconstruction",
+          "box": [
+            1366,
+            1458,
+            1540,
+            1632
+          ],
+          "rgb_sha256": "211cec45dbbc58f753d9a51f8670fb015e949d41acaacea4d5a2985410403628"
+        },
+        {
+          "global_index": 54,
+          "panel": "Original",
+          "box": [
+            1556,
+            1458,
+            1730,
+            1632
+          ],
+          "rgb_sha256": "2b5da5caa4d063501871c409360d252b7fea0b97cac272b33c98994419857ff3"
+        },
+        {
+          "global_index": 54,
+          "panel": "Reconstruction",
+          "box": [
+            1738,
+            1458,
+            1912,
+            1632
+          ],
+          "rgb_sha256": "85a353fc58699574925f486281a000127a50ba7b9b59f06cc81471e72865eac7"
+        },
+        {
+          "global_index": 55,
+          "panel": "Original",
+          "box": [
+            1928,
+            1458,
+            2102,
+            1632
+          ],
+          "rgb_sha256": "6d4f3233f5970f2cb6ac3d73ebbbd9bfe93b1cacd1cb1cc657c39679bd9a7717"
+        },
+        {
+          "global_index": 55,
+          "panel": "Reconstruction",
+          "box": [
+            2110,
+            1458,
+            2284,
+            1632
+          ],
+          "rgb_sha256": "5790f9cc7b46a01945ff85ae76eec246c0964c8e55319d95bf7e28a41b2e3188"
+        },
+        {
+          "global_index": 56,
+          "panel": "Original",
+          "box": [
+            2300,
+            1458,
+            2474,
+            1632
+          ],
+          "rgb_sha256": "8d63d6d981bf7718f2ccde52c97a0699ae587a574a7bc7bb412bed533f5d4a1c"
+        },
+        {
+          "global_index": 56,
+          "panel": "Reconstruction",
+          "box": [
+            2482,
+            1458,
+            2656,
+            1632
+          ],
+          "rgb_sha256": "38dadfdbc8ae0b966d17c81db52d81b6405cfde34dc8259704d8ab69e8de4eed"
+        },
+        {
+          "global_index": 57,
+          "panel": "Original",
+          "box": [
+            2672,
+            1458,
+            2846,
+            1632
+          ],
+          "rgb_sha256": "4583b2e927a971f21143362b270fcaa4e84e3a8116423054530306fcd0067ea4"
+        },
+        {
+          "global_index": 57,
+          "panel": "Reconstruction",
+          "box": [
+            2854,
+            1458,
+            3028,
+            1632
+          ],
+          "rgb_sha256": "5c65c8744503e5d73a6d1cc5c9aabcf8880b7c3d8253fa5fcf52bb5df9a2f86f"
+        },
+        {
+          "global_index": 58,
+          "panel": "Original",
+          "box": [
+            3044,
+            1458,
+            3218,
+            1632
+          ],
+          "rgb_sha256": "cc0f29760cfd9440a5ac77ebfb76db16fd6950d2f80a216bf58b67de771f42ea"
+        },
+        {
+          "global_index": 58,
+          "panel": "Reconstruction",
+          "box": [
+            3226,
+            1458,
+            3400,
+            1632
+          ],
+          "rgb_sha256": "c73ea160650f17d0cbaa1a794b8e4f9f35005af9116efe437ce2407d7431fbb3"
+        },
+        {
+          "global_index": 59,
+          "panel": "Original",
+          "box": [
+            3416,
+            1458,
+            3590,
+            1632
+          ],
+          "rgb_sha256": "ab9ebaaec2a63ba9d96ad5ab004ad7c51e101f6ddabd3a38bb5d198e27d7de45"
+        },
+        {
+          "global_index": 59,
+          "panel": "Reconstruction",
+          "box": [
+            3598,
+            1458,
+            3772,
+            1632
+          ],
+          "rgb_sha256": "a7abc3484e484338fa9beee5e284e918aa1e87eb9a675c31a5a0214332037256"
+        },
+        {
+          "global_index": 60,
+          "panel": "Original",
+          "box": [
+            68,
+            1688,
+            242,
+            1862
+          ],
+          "rgb_sha256": "c88c405b9621c15bdc80c341b14770853e480828b0c3c6857208599a6e7b519c"
+        },
+        {
+          "global_index": 60,
+          "panel": "Reconstruction",
+          "box": [
+            250,
+            1688,
+            424,
+            1862
+          ],
+          "rgb_sha256": "ef87dd7b61493c9b313d9083af251876b50fc321089738f35c45bd858e88bec5"
+        },
+        {
+          "global_index": 61,
+          "panel": "Original",
+          "box": [
+            440,
+            1688,
+            614,
+            1862
+          ],
+          "rgb_sha256": "7cdc4c18e9ad70f76c9d7e2132e448b6da68d611a58d956648f932421a955bda"
+        },
+        {
+          "global_index": 61,
+          "panel": "Reconstruction",
+          "box": [
+            622,
+            1688,
+            796,
+            1862
+          ],
+          "rgb_sha256": "6a4282fee284c81122e052bfc5825709901212637a7e364258811d7c717e74a5"
+        },
+        {
+          "global_index": 62,
+          "panel": "Original",
+          "box": [
+            812,
+            1688,
+            986,
+            1862
+          ],
+          "rgb_sha256": "9f06dd7ba4a93ab24f84ab7073eff008b51d17ed8f04e0c698f0adcad0827ed8"
+        },
+        {
+          "global_index": 62,
+          "panel": "Reconstruction",
+          "box": [
+            994,
+            1688,
+            1168,
+            1862
+          ],
+          "rgb_sha256": "ea3f22d790b25d47a63d1b11e76a2806c9117ae8c38575d9050eee9087541298"
+        },
+        {
+          "global_index": 63,
+          "panel": "Original",
+          "box": [
+            1184,
+            1688,
+            1358,
+            1862
+          ],
+          "rgb_sha256": "7f27e81b563c202d296ad65c8bdbc1422d2e4b9c46e7af64ef5ece9573219415"
+        },
+        {
+          "global_index": 63,
+          "panel": "Reconstruction",
+          "box": [
+            1366,
+            1688,
+            1540,
+            1862
+          ],
+          "rgb_sha256": "3aa2505827382f63d0fd97e7a7fb2932615c8669aaa2e951afafd5ec1bd07b91"
+        },
+        {
+          "global_index": 64,
+          "panel": "Original",
+          "box": [
+            1556,
+            1688,
+            1730,
+            1862
+          ],
+          "rgb_sha256": "1fe9c79061ec6d21683d48ab1a2fc7822bfb8eb15efffef7e869c30a392a3312"
+        },
+        {
+          "global_index": 64,
+          "panel": "Reconstruction",
+          "box": [
+            1738,
+            1688,
+            1912,
+            1862
+          ],
+          "rgb_sha256": "40d4a5d688c9d2b2d7e33a63f9a3b11402f128a074c12360d5a8dd25a0414ee3"
+        },
+        {
+          "global_index": 65,
+          "panel": "Original",
+          "box": [
+            1928,
+            1688,
+            2102,
+            1862
+          ],
+          "rgb_sha256": "2e74722ba1b5c90952790ede9137565c3c566bbaf560e9b44165751753fff0a9"
+        },
+        {
+          "global_index": 65,
+          "panel": "Reconstruction",
+          "box": [
+            2110,
+            1688,
+            2284,
+            1862
+          ],
+          "rgb_sha256": "4a60bac7e5af2fc05c6a0de62860f6b8a64b6cf9a323410f1adba4274502ba64"
+        },
+        {
+          "global_index": 66,
+          "panel": "Original",
+          "box": [
+            2300,
+            1688,
+            2474,
+            1862
+          ],
+          "rgb_sha256": "74d9e3365d4a174495ae3ea7bd817434fdb9415213231250491bc6a896c87330"
+        },
+        {
+          "global_index": 66,
+          "panel": "Reconstruction",
+          "box": [
+            2482,
+            1688,
+            2656,
+            1862
+          ],
+          "rgb_sha256": "b2a27674626b61a5566dd0711824700efe2027cf105153e5b085d4ab35b17ce1"
+        },
+        {
+          "global_index": 67,
+          "panel": "Original",
+          "box": [
+            2672,
+            1688,
+            2846,
+            1862
+          ],
+          "rgb_sha256": "62d1deaa0b5112b72680521cec596ed4f3b93ba1aab4542f4c962a7f0dbe8520"
+        },
+        {
+          "global_index": 67,
+          "panel": "Reconstruction",
+          "box": [
+            2854,
+            1688,
+            3028,
+            1862
+          ],
+          "rgb_sha256": "e3760c7c04c03d9bc7584dba08d585d9368afdeb30425153a27b709abbb0fef3"
+        },
+        {
+          "global_index": 68,
+          "panel": "Original",
+          "box": [
+            3044,
+            1688,
+            3218,
+            1862
+          ],
+          "rgb_sha256": "4390c5409a61a6f5202577237116d15cab91b35ee4a6dae3023eb1a23b7351ae"
+        },
+        {
+          "global_index": 68,
+          "panel": "Reconstruction",
+          "box": [
+            3226,
+            1688,
+            3400,
+            1862
+          ],
+          "rgb_sha256": "27b49861a000dbe59a551e102d6a15673c2e418eec6a5d95024d14353a5be070"
+        },
+        {
+          "global_index": 69,
+          "panel": "Original",
+          "box": [
+            3416,
+            1688,
+            3590,
+            1862
+          ],
+          "rgb_sha256": "f8cf898dfa1c5c672429734ccd481cc99a640e8cfdbd9b463cead8b4bca9993f"
+        },
+        {
+          "global_index": 69,
+          "panel": "Reconstruction",
+          "box": [
+            3598,
+            1688,
+            3772,
+            1862
+          ],
+          "rgb_sha256": "dc6ff735461e161a28d7d7cc94f895343f4af1d0b16b215308fb3b60cbc38d57"
+        },
+        {
+          "global_index": 70,
+          "panel": "Original",
+          "box": [
+            68,
+            1918,
+            242,
+            2092
+          ],
+          "rgb_sha256": "dd194d8c7e9a18c71f5a2d6094b5fc120780bbcebde846e7cec978ef962a346b"
+        },
+        {
+          "global_index": 70,
+          "panel": "Reconstruction",
+          "box": [
+            250,
+            1918,
+            424,
+            2092
+          ],
+          "rgb_sha256": "ea77646e2c1cad338bad3bcda5b8104e2ed39d074e163a9e0fa24e0e7aa99726"
+        },
+        {
+          "global_index": 71,
+          "panel": "Original",
+          "box": [
+            440,
+            1918,
+            614,
+            2092
+          ],
+          "rgb_sha256": "f9f8d14a7e7f65edd2aa7b5ba174b9d50b238e45faf8d2f36bfcc1c78d0d2c15"
+        },
+        {
+          "global_index": 71,
+          "panel": "Reconstruction",
+          "box": [
+            622,
+            1918,
+            796,
+            2092
+          ],
+          "rgb_sha256": "94525dd903a8e2b84ab12a1086521e7ee13d40f89ed75a08eaab42d577ea6a60"
+        },
+        {
+          "global_index": 72,
+          "panel": "Original",
+          "box": [
+            812,
+            1918,
+            986,
+            2092
+          ],
+          "rgb_sha256": "4b7867bdb8ab94f981ff3637383a21bb8f503fcfdf288f808fc466a204007e32"
+        },
+        {
+          "global_index": 72,
+          "panel": "Reconstruction",
+          "box": [
+            994,
+            1918,
+            1168,
+            2092
+          ],
+          "rgb_sha256": "a2f3558af18fbf60df9b2de746f4d6d01584944c575c2efcf9245cd46feb677d"
+        },
+        {
+          "global_index": 73,
+          "panel": "Original",
+          "box": [
+            1184,
+            1918,
+            1358,
+            2092
+          ],
+          "rgb_sha256": "82647fc18ca7bc1b2ba916e762eac370196ca4f669d6bc54f0fc77e43915dfc1"
+        },
+        {
+          "global_index": 73,
+          "panel": "Reconstruction",
+          "box": [
+            1366,
+            1918,
+            1540,
+            2092
+          ],
+          "rgb_sha256": "6f726da2364fb8452bc7d729295207a7d20c6208c698f4d4c51fde9f7f19b391"
+        },
+        {
+          "global_index": 74,
+          "panel": "Original",
+          "box": [
+            1556,
+            1918,
+            1730,
+            2092
+          ],
+          "rgb_sha256": "7df4950f46e4db336e04e8f98eccd6b031bd4afe150046e32fdbfc5740245441"
+        },
+        {
+          "global_index": 74,
+          "panel": "Reconstruction",
+          "box": [
+            1738,
+            1918,
+            1912,
+            2092
+          ],
+          "rgb_sha256": "42a253059b2f9f7eaf11665b2ca7713bbea49c8917d634ea459f6c0cb7006d73"
+        },
+        {
+          "global_index": 75,
+          "panel": "Original",
+          "box": [
+            1928,
+            1918,
+            2102,
+            2092
+          ],
+          "rgb_sha256": "c9bad1f96e836e620f764d22ff66ce844064eeae7f7b21996c79fd8b0dc36b9b"
+        },
+        {
+          "global_index": 75,
+          "panel": "Reconstruction",
+          "box": [
+            2110,
+            1918,
+            2284,
+            2092
+          ],
+          "rgb_sha256": "b9aff11930794310c542aea5cd341bd07b94d7a46ffef6617cce54d418eb4a7a"
+        },
+        {
+          "global_index": 76,
+          "panel": "Original",
+          "box": [
+            2300,
+            1918,
+            2474,
+            2092
+          ],
+          "rgb_sha256": "9751181a67d53277233bd16c8a1b3cf00f7c407ede214b686e5c558a0b44a69f"
+        },
+        {
+          "global_index": 76,
+          "panel": "Reconstruction",
+          "box": [
+            2482,
+            1918,
+            2656,
+            2092
+          ],
+          "rgb_sha256": "0768f959f4958b6f2072c9b06394d34d3edc0f918d26302d7129b34357bf8199"
+        },
+        {
+          "global_index": 77,
+          "panel": "Original",
+          "box": [
+            2672,
+            1918,
+            2846,
+            2092
+          ],
+          "rgb_sha256": "091d138c4ebef401260cd1597dce80c8fe609ae14c972d04e7df852bef8e8311"
+        },
+        {
+          "global_index": 77,
+          "panel": "Reconstruction",
+          "box": [
+            2854,
+            1918,
+            3028,
+            2092
+          ],
+          "rgb_sha256": "a1632ea28166c3ceef19c02addfcf08a71b330353f2bb545518b0b925a62e5b0"
+        },
+        {
+          "global_index": 78,
+          "panel": "Original",
+          "box": [
+            3044,
+            1918,
+            3218,
+            2092
+          ],
+          "rgb_sha256": "9e2f2430ac7db7a6a59ad6d695f67d03eaa2023c66ee6b2e70e7b7bd58821e09"
+        },
+        {
+          "global_index": 78,
+          "panel": "Reconstruction",
+          "box": [
+            3226,
+            1918,
+            3400,
+            2092
+          ],
+          "rgb_sha256": "daab2db58b61588235471b88cd72a62241b61fec7f5f4a4afd2414d580ef0801"
+        },
+        {
+          "global_index": 79,
+          "panel": "Original",
+          "box": [
+            3416,
+            1918,
+            3590,
+            2092
+          ],
+          "rgb_sha256": "231094fb26f3dc7b8285d82dc569835a38639d8c10739ae7cbe14b3694ea1877"
+        },
+        {
+          "global_index": 79,
+          "panel": "Reconstruction",
+          "box": [
+            3598,
+            1918,
+            3772,
+            2092
+          ],
+          "rgb_sha256": "f8c510131ec1d83fb4ff61860f9cd022d994e0aee067db4004554e9b44d890ce"
+        }
+      ],
+      "run_tag": "cpa_fia_topk10_same80_B16",
+      "source_folder": "results\\cpa_fia_topk10_same80_B16",
+      "summary_sha256": "45732e0b38c31dfc6c478f37e6962bbc7d330395f4a1993674dab47631d686c0",
+      "source_hashes": {
+        "per_image_metrics.csv": "198f59ef1b84db5aa1437ea55397b61628be08b4aac90cb8fc10203e5a992e48",
+        "figure_manifest.json": "ec269f89c8b569b761ab4250c17b88875720f50d1e7cd618a23feb9edbcbc237",
+        "all80_reconstruction_landscape.png": "b763cd70b80ea57541979b01648d9b0daebe8bf40e01fd4bccbd02e19d5ec202"
+      }
+    }
+  ]
+}

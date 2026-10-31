@@ -58,7 +58,7 @@ def read_pickle(path: Path) -> Any:
 
 
 def keep_ratio_from_name(name: str) -> float:
-    match = re.search(r"keep([0-9p]+)_n", name)
+    match = re.search(r"(?:keep|_k)([0-9p]+)(?:_|$)", name)
     if not match:
         raise ValueError(f"Cannot parse keep ratio from {name}")
     return float(match.group(1).replace("p", "."))

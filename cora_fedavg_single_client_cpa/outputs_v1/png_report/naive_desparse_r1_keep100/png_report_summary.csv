@@ -1,0 +1,2 @@
+keep_ratio,sparse_cosine_similarity_to_fp32,sparse_relative_l2,lpips,psnr,ssim,embedding_cosine_similarity,reconstruction_success_rate,png_dir,run_dir
+1.0,1.0,0.0,0.784581700960795,11.842321832974752,0.32750572574635345,0.9032810069091295,0.041666666666666664,cora_fedavg_single_client_cpa\outputs_v1\png_report\naive_desparse_r1_keep100\keep_1p00,sparsified_update_cpa\outputs_v1\author_runs\imagenet\vgg16\attack\cp_direct\nodef\cora_shared_naive_desparse_r1_k1_R1_s1234_m000_uia

@@ -1,0 +1,18 @@
+{
+  "required_missing": [],
+  "unverified": [
+    {
+      "item": "별도 초기 classifier 체크포인트",
+      "status": "미확인 / 사용 근거 없음; 코드와 저장 해시는 VGG16 전체 체크포인트 사용을 가리킴"
+    },
+    {
+      "item": "실행 당시 전체 pip/conda 환경",
+      "status": "미확인; 저장된 torch/numpy/python 버전과 현재 환경 스냅샷 제공"
+    }
+  ],
+  "intentionally_not_packaged": [
+    "__pycache__, .pyc, 실행 잠금 파일",
+    "원본 ImageNet 전체 및 80 JPEG (inputs.pt에 정규화된 80장 포함)",
+    "legacy victim/UIA feature caches (절대경로 참고용; observation.pt와 inputs.pt를 직접 사용할 대조군에 불필요)"
+  ]
+}

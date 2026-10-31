@@ -1,0 +1,547 @@
+{
+  "purpose": "Manuscript asset composition only",
+  "selection": {
+    "display_ordinals_one_based": [
+      11,
+      24
+    ],
+    "display_indices_zero_based": [
+      10,
+      23
+    ],
+    "batch_and_column": [
+      {
+        "batch": 1,
+        "column_one_based": 3
+      },
+      {
+        "batch": 2,
+        "column_one_based": 8
+      }
+    ],
+    "scope": "24 displayed examples, all five bit widths visually inspected",
+    "rule": "User-selected examples 11 and 24 after visual inspection; low-bit qualitative comparison, not a quantitative or preregistered selection",
+    "supersedes": "The initial editorial proposal of example03; example03 assets are preserved but not used in the manuscript",
+    "quantitative_optimum_claimed": false,
+    "dataset_sample_id": null,
+    "class_label": null,
+    "not_representative_of_full_set": true
+  },
+  "bits": [
+    8,
+    7,
+    6,
+    5,
+    4
+  ],
+  "cifar_tiles": [
+    {
+      "display_ordinal_one_based": 11,
+      "bits": 8,
+      "method": "original",
+      "source": "cifar100_png/bits8_24.png",
+      "crop_xyxy": [
+        324,
+        383,
+        404,
+        463
+      ],
+      "rgb_sha256": "eec5fa6d19550116c7a93fb73fb05f6142244ac0382ba86f8e0c6fd83036c465"
+    },
+    {
+      "display_ordinal_one_based": 11,
+      "bits": 8,
+      "method": "naive",
+      "source": "cifar100_png/bits8_24.png",
+      "crop_xyxy": [
+        324,
+        469,
+        404,
+        549
+      ],
+      "rgb_sha256": "224dfe4603a13b24048c9693cad986c92a673bb5b44f39c009185e15a860d203"
+    },
+    {
+      "display_ordinal_one_based": 11,
+      "bits": 8,
+      "method": "random_R8",
+      "source": "cifar100_png/bits8_24.png",
+      "crop_xyxy": [
+        324,
+        555,
+        404,
+        635
+      ],
+      "rgb_sha256": "5cf75301f20dfcbc43f1073515400e402af743f9390a0b08bbd31d46a6c110d7"
+    },
+    {
+      "display_ordinal_one_based": 24,
+      "bits": 8,
+      "method": "original",
+      "source": "cifar100_png/bits8_24.png",
+      "crop_xyxy": [
+        744,
+        677,
+        824,
+        757
+      ],
+      "rgb_sha256": "9db6cbc915d315ba2d8fa60e3833d0ab1333da70548628b35104e5431267301c"
+    },
+    {
+      "display_ordinal_one_based": 24,
+      "bits": 8,
+      "method": "naive",
+      "source": "cifar100_png/bits8_24.png",
+      "crop_xyxy": [
+        744,
+        763,
+        824,
+        843
+      ],
+      "rgb_sha256": "c9416ec6d36e93471d318491528d152818c198a314ffbee37c63a3ab2ee0f3e1"
+    },
+    {
+      "display_ordinal_one_based": 24,
+      "bits": 8,
+      "method": "random_R8",
+      "source": "cifar100_png/bits8_24.png",
+      "crop_xyxy": [
+        744,
+        849,
+        824,
+        929
+      ],
+      "rgb_sha256": "36fc9c4940cb9276022500c76211aecd76fe75f9eb53714166ad7278cd2a8899"
+    },
+    {
+      "display_ordinal_one_based": 11,
+      "bits": 7,
+      "method": "original",
+      "source": "cifar100_png/bits7_24.png",
+      "crop_xyxy": [
+        324,
+        383,
+        404,
+        463
+      ],
+      "rgb_sha256": "eec5fa6d19550116c7a93fb73fb05f6142244ac0382ba86f8e0c6fd83036c465"
+    },
+    {
+      "display_ordinal_one_based": 11,
+      "bits": 7,
+      "method": "naive",
+      "source": "cifar100_png/bits7_24.png",
+      "crop_xyxy": [
+        324,
+        469,
+        404,
+        549
+      ],
+      "rgb_sha256": "a3b6f1d9e98e912b3a8b0a786a66d134255630f00c8fd401ab8cade96116a165"
+    },
+    {
+      "display_ordinal_one_based": 11,
+      "bits": 7,
+      "method": "random_R8",
+      "source": "cifar100_png/bits7_24.png",
+      "crop_xyxy": [
+        324,
+        555,
+        404,
+        635
+      ],
+      "rgb_sha256": "c89026afe9984f6d12c66c6b492890034d5fe3df79c4b258781525cf9467a9b5"
+    },
+    {
+      "display_ordinal_one_based": 24,
+      "bits": 7,
+      "method": "original",
+      "source": "cifar100_png/bits7_24.png",
+      "crop_xyxy": [
+        744,
+        677,
+        824,
+        757
+      ],
+      "rgb_sha256": "9db6cbc915d315ba2d8fa60e3833d0ab1333da70548628b35104e5431267301c"
+    },
+    {
+      "display_ordinal_one_based": 24,
+      "bits": 7,
+      "method": "naive",
+      "source": "cifar100_png/bits7_24.png",
+      "crop_xyxy": [
+        744,
+        763,
+        824,
+        843
+      ],
+      "rgb_sha256": "8a0752ebf188384f7870717c0cf0e0b50f047a4a1ca59103b993e932b07b7ea8"
+    },
+    {
+      "display_ordinal_one_based": 24,
+      "bits": 7,
+      "method": "random_R8",
+      "source": "cifar100_png/bits7_24.png",
+      "crop_xyxy": [
+        744,
+        849,
+        824,
+        929
+      ],
+      "rgb_sha256": "53bd6146f9fda3587cdb8d8970d09c67236fe069ccec1926d08d0d9ad71440b9"
+    },
+    {
+      "display_ordinal_one_based": 11,
+      "bits": 6,
+      "method": "original",
+      "source": "cifar100_png/bits6_24.png",
+      "crop_xyxy": [
+        324,
+        383,
+        404,
+        463
+      ],
+      "rgb_sha256": "eec5fa6d19550116c7a93fb73fb05f6142244ac0382ba86f8e0c6fd83036c465"
+    },
+    {
+      "display_ordinal_one_based": 11,
+      "bits": 6,
+      "method": "naive",
+      "source": "cifar100_png/bits6_24.png",
+      "crop_xyxy": [
+        324,
+        469,
+        404,
+        549
+      ],
+      "rgb_sha256": "0d2114bba265cba9393aee947fc6e19b7fefc834de6eb2a4bb599adbf91561ad"
+    },
+    {
+      "display_ordinal_one_based": 11,
+      "bits": 6,
+      "method": "random_R8",
+      "source": "cifar100_png/bits6_24.png",
+      "crop_xyxy": [
+        324,
+        555,
+        404,
+        635
+      ],
+      "rgb_sha256": "e5887d5aafb2783bdda422c6874c8382ea9076644ae6aeb96a090a5604b8ca36"
+    },
+    {
+      "display_ordinal_one_based": 24,
+      "bits": 6,
+      "method": "original",
+      "source": "cifar100_png/bits6_24.png",
+      "crop_xyxy": [
+        744,
+        677,
+        824,
+        757
+      ],
+      "rgb_sha256": "9db6cbc915d315ba2d8fa60e3833d0ab1333da70548628b35104e5431267301c"
+    },
+    {
+      "display_ordinal_one_based": 24,
+      "bits": 6,
+      "method": "naive",
+      "source": "cifar100_png/bits6_24.png",
+      "crop_xyxy": [
+        744,
+        763,
+        824,
+        843
+      ],
+      "rgb_sha256": "4ae8951bf0c7c913fdf85b0b6b8e9969e298881b588c48cf057fd3b641d49a8a"
+    },
+    {
+      "display_ordinal_one_based": 24,
+      "bits": 6,
+      "method": "random_R8",
+      "source": "cifar100_png/bits6_24.png",
+      "crop_xyxy": [
+        744,
+        849,
+        824,
+        929
+      ],
+      "rgb_sha256": "5538da841034eb339c1ac82b3a7c4a25b980e955d79e6231c2f17e3a1dc7df8a"
+    },
+    {
+      "display_ordinal_one_based": 11,
+      "bits": 5,
+      "method": "original",
+      "source": "cifar100_png/bits5_24.png",
+      "crop_xyxy": [
+        324,
+        383,
+        404,
+        463
+      ],
+      "rgb_sha256": "eec5fa6d19550116c7a93fb73fb05f6142244ac0382ba86f8e0c6fd83036c465"
+    },
+    {
+      "display_ordinal_one_based": 11,
+      "bits": 5,
+      "method": "naive",
+      "source": "cifar100_png/bits5_24.png",
+      "crop_xyxy": [
+        324,
+        469,
+        404,
+        549
+      ],
+      "rgb_sha256": "be530918c28790fb9ec06961b3f839e9ca1d606b155b8ae9b42170d59264705b"
+    },
+    {
+      "display_ordinal_one_based": 11,
+      "bits": 5,
+      "method": "random_R8",
+      "source": "cifar100_png/bits5_24.png",
+      "crop_xyxy": [
+        324,
+        555,
+        404,
+        635
+      ],
+      "rgb_sha256": "a52ecc74e584d4f6b1e696d9dbbecbc8a7032254e6a7de22961087af73ce4b1c"
+    },
+    {
+      "display_ordinal_one_based": 24,
+      "bits": 5,
+      "method": "original",
+      "source": "cifar100_png/bits5_24.png",
+      "crop_xyxy": [
+        744,
+        677,
+        824,
+        757
+      ],
+      "rgb_sha256": "9db6cbc915d315ba2d8fa60e3833d0ab1333da70548628b35104e5431267301c"
+    },
+    {
+      "display_ordinal_one_based": 24,
+      "bits": 5,
+      "method": "naive",
+      "source": "cifar100_png/bits5_24.png",
+      "crop_xyxy": [
+        744,
+        763,
+        824,
+        843
+      ],
+      "rgb_sha256": "1ba4e93360e068f6b2eb86740d23cc6dee9ec8f338ffb717dfa6fc5d779c26a4"
+    },
+    {
+      "display_ordinal_one_based": 24,
+      "bits": 5,
+      "method": "random_R8",
+      "source": "cifar100_png/bits5_24.png",
+      "crop_xyxy": [
+        744,
+        849,
+        824,
+        929
+      ],
+      "rgb_sha256": "b657bc91540e6bd6637cfb9d0ea56b4d49da9957e14e3c42a8a617aa1466f130"
+    },
+    {
+      "display_ordinal_one_based": 11,
+      "bits": 4,
+      "method": "original",
+      "source": "cifar100_png/bits4_24.png",
+      "crop_xyxy": [
+        324,
+        383,
+        404,
+        463
+      ],
+      "rgb_sha256": "eec5fa6d19550116c7a93fb73fb05f6142244ac0382ba86f8e0c6fd83036c465"
+    },
+    {
+      "display_ordinal_one_based": 11,
+      "bits": 4,
+      "method": "naive",
+      "source": "cifar100_png/bits4_24.png",
+      "crop_xyxy": [
+        324,
+        469,
+        404,
+        549
+      ],
+      "rgb_sha256": "9a401c7362091025ea37c242150a5af50095430590dceaf8cfa9f834b89e9c36"
+    },
+    {
+      "display_ordinal_one_based": 11,
+      "bits": 4,
+      "method": "random_R8",
+      "source": "cifar100_png/bits4_24.png",
+      "crop_xyxy": [
+        324,
+        555,
+        404,
+        635
+      ],
+      "rgb_sha256": "6838f2e9b1d7fff604e2a3bd0e4bf1c5b50a0bcb882a94949e64b7ce26b93492"
+    },
+    {
+      "display_ordinal_one_based": 24,
+      "bits": 4,
+      "method": "original",
+      "source": "cifar100_png/bits4_24.png",
+      "crop_xyxy": [
+        744,
+        677,
+        824,
+        757
+      ],
+      "rgb_sha256": "9db6cbc915d315ba2d8fa60e3833d0ab1333da70548628b35104e5431267301c"
+    },
+    {
+      "display_ordinal_one_based": 24,
+      "bits": 4,
+      "method": "naive",
+      "source": "cifar100_png/bits4_24.png",
+      "crop_xyxy": [
+        744,
+        763,
+        824,
+        843
+      ],
+      "rgb_sha256": "969ece42b142e3808f7ba541729b67703f52b118b851a92f09c67fbdf7bab970"
+    },
+    {
+      "display_ordinal_one_based": 24,
+      "bits": 4,
+      "method": "random_R8",
+      "source": "cifar100_png/bits4_24.png",
+      "crop_xyxy": [
+        744,
+        849,
+        824,
+        929
+      ],
+      "rgb_sha256": "c6fa87474910187396fc3a76afd46addb1ccd12c49f7e51f4abdf07dee60b22b"
+    }
+  ],
+  "layout": {
+    "width_mm": 86,
+    "dataset_titles": [],
+    "image_numbers_shown": false,
+    "annotations_in_caption": [
+      "datasets",
+      "methods",
+      "original column",
+      "selection"
+    ],
+    "method_pairing": "Original, then Naive/Random adjacent columns for each condition",
+    "generated_formats": [
+      "png"
+    ],
+    "pdf_updated": false
+  },
+  "validation": {
+    "full_vs_batch_tile_equalities": 360,
+    "all_24_originals_identical_across_bits": true,
+    "exported_tile_pixels_unchanged": true,
+    "imagenet_saved_assignments_unchanged": true
+  },
+  "imagenet_indices": [
+    0,
+    1
+  ],
+  "imagenet_saved_assignments": {
+    "8:center_25000": [
+      13,
+      1
+    ],
+    "8:rank1_member_01_25000": [
+      13,
+      1
+    ],
+    "7:center_25000": [
+      7,
+      1
+    ],
+    "7:rank1_member_00_25000": [
+      7,
+      1
+    ],
+    "6:center_25000": [
+      10,
+      1
+    ],
+    "6:rank1_member_01_25000": [
+      13,
+      1
+    ],
+    "5:center_25000": [
+      14,
+      11
+    ],
+    "5:rank1_member_05_25000": [
+      9,
+      1
+    ],
+    "4:center_25000": [
+      2,
+      12
+    ],
+    "4:rank1_member_06_25000": [
+      7,
+      8
+    ]
+  },
+  "provenance_limit": "CIFAR images are supplied rendered PNGs; underlying checkpoints, per-image metrics and matching records are not in this folder. Displayed pairing is preserved, not independently recomputed.",
+  "new_attack_steps": 0,
+  "metrics_recomputed": false,
+  "matching_recomputed": false,
+  "random_candidate_reselected": false,
+  "rendering": "Whole 80x80 CIFAR tiles extracted losslessly; no image-content crop, color correction, enhancement, interpolation smoothing, or averaging. Existing ImageNet RGB and saved assignments reused.",
+  "sources_sha256": {
+    "cifar100_png/index.json": "f2638644987772fdf90f2cdf670a24e823d1753bf2a2a1a2c01ae69405cd5bc9",
+    "cifar100_png/bits8_24.png": "fc888ab07dfc1a6b0281395718942a64ec207d8ac967d08dbfed3260eabcf78a",
+    "cifar100_png/bits8_batch00.png": "5a72517cb98b8bb4c8a3f403c372c2aebf7a5a0aa7dc61f45f26e37aecabdb67",
+    "cifar100_png/bits8_batch01.png": "b135c7ad186b166d1254a3c1b46ee33a2bea0e206d6ba89f2ccf2985d7eebc03",
+    "cifar100_png/bits8_batch02.png": "b02e37d2d80f7ebcf2d1c2778d7962326a07d34af40aef3c42bc1650b6bfb211",
+    "cifar100_png/bits7_24.png": "6693ea23222bb505a074953d9fa759572b5c838b02fc9559e920e72a95d371f6",
+    "cifar100_png/bits7_batch00.png": "a34869b9bd9b6ef79ff4b52033a7b80a304cff23f0d9e86462724eb84fc58a01",
+    "cifar100_png/bits7_batch01.png": "df10abd1b5fb2b4a71fefc9d58e4d26c0d0e8b957e848ffe59241a409777a09b",
+    "cifar100_png/bits7_batch02.png": "7718040d17f9e29347c2148156c730d058fdeff939a691c1a60126b04b488eb6",
+    "cifar100_png/bits6_24.png": "ee797f67a9526862db437e08989741d5ac83fe8e18ec9b01b2e5fc4c1136d9ea",
+    "cifar100_png/bits6_batch00.png": "4e9f68ec3b31dffa46d6a5c6e8354c2361009d101cdc9624c97b5b0e4efa8f50",
+    "cifar100_png/bits6_batch01.png": "8a1aa830af3559f490032f19f49bfcd09e8f0f8f8372de98c2d3988e2d220a88",
+    "cifar100_png/bits6_batch02.png": "099934e3a5e70f28e6123654a0c5ec45ed562fb66e121eb07ac1ef5841a447f8",
+    "cifar100_png/bits5_24.png": "63e01414221a2872c9d71e79863384b09c89ee93f871daf927654d66f765af09",
+    "cifar100_png/bits5_batch00.png": "314a23ea1980e70f26809d8709a4e5dd4af5739c233060795bea81cab4b344b1",
+    "cifar100_png/bits5_batch01.png": "33c6bdbcda435d2582f93f4ac03360654e5a69cfb053ac24ed47fa910f668084",
+    "cifar100_png/bits5_batch02.png": "b63f5f6948856d8fa07837c4999c7bf9184496c9588c0ed93ba52bb7584e96c2",
+    "cifar100_png/bits4_24.png": "1291cfd806e77bacb954567d34ec42a4c3ab0f152e87b534580964bce8183420",
+    "cifar100_png/bits4_batch00.png": "e2e1749094578a013052ce4a39ae604651aa42dfcd0b08ab3ac68bea24a44a1d",
+    "cifar100_png/bits4_batch01.png": "70b12a54e2107e52b34383033cc9d3a2382dd93a7ace3acc13cd90af2bdcd250",
+    "cifar100_png/bits4_batch02.png": "f2c1257746a0af55bb38368bbaba74129443f201aa8ad3f71326535b962ec240",
+    "quantization_aware_cpa/results_private/signed_int8_screen3_repair_B16_T10_20260918/evaluation_final_20260918/comparison.json": "a548a78058069fe828c6d32076b90e0afcb07a49e77fa16a380bcf61c7185c35",
+    "quantization_aware_cpa/results_private/signed_int4_baseline_B16_T10/observation/evaluation_truth.pt": "724bbacbe316cc28dac086db9cfaf6507f4c1af31144fd610cc480985aab72e2",
+    "quantization_aware_cpa/results/signed_int8_randomized8_screen3_fia_B16_T10_20260917/fia_center_25000/candidate.pt": "696d18fc23e23ea62834a6c0af849e6549ef47994e4c63fee54c53351d85a0db",
+    "quantization_aware_cpa/results/signed_int8_randomized8_screen3_repair_B16_T10_20260918/fia_member_01_25000/candidate.pt": "2c2d591957bee5a842af4701c8bfb503c6c9f68e74302fca12eab835cc678411",
+    "quantization_aware_cpa/results_private/signed_int7_randomized8_screen3_fia_B16_T10_20260918_sweep/evaluation_recovery_20260918/comparison.json": "71b178bbcc3a88deb992af1e3b1613bc2ff0ac419a84bdcbc3c4a2febfc64e86",
+    "quantization_aware_cpa/results/signed_int7_randomized8_screen3_fia_B16_T10_20260918_sweep/fia_center_25000/candidate.pt": "191dcdeb54269a465aa56a27405d0f47d2ac06d4461ea92806df5b52e56e8472",
+    "quantization_aware_cpa/results/signed_int7_randomized8_screen3_fia_B16_T10_20260918_sweep/fia_member_00_25000/candidate.pt": "82d34c84e72ad636df1660a45891e97b367c0f7d6d5a2cc19b8dac2af732d601",
+    "quantization_aware_cpa/results_private/signed_int6_randomized8_screen3_fia_B16_T10_20260918_sweep/evaluation_recovery_20260918/comparison.json": "9d44ec6a1eaefefc16151c5463bf365ed72575ab7ff7953e0cbde2ab10fb4b0d",
+    "quantization_aware_cpa/results/signed_int6_randomized8_screen3_fia_B16_T10_20260918_sweep/fia_center_25000/candidate.pt": "340d4f162f9632386fce07d8352bf1b08ba126cce718909b28f2274adb9b4075",
+    "quantization_aware_cpa/results/signed_int6_randomized8_screen3_fia_B16_T10_20260918_sweep/fia_member_01_25000/candidate.pt": "06742e96994ee455aaca62bea394e7df748997fa44c815f41f08fad31f86feb2",
+    "quantization_aware_cpa/results_private/signed_int5_randomized8_screen3_fia_B16_T10_20260918_sweep/evaluation_recovery_20260918/comparison.json": "bee134ec832db6139f074959b936ffb1f5f935242e91261d9a6bffc91c06533a",
+    "quantization_aware_cpa/results/signed_int5_randomized8_screen3_fia_B16_T10_20260918_sweep/fia_center_25000/candidate.pt": "a81bdf0ad6a57a57ccc49bb3185b59b6de005d698e4dd47008f27f3860b4013a",
+    "quantization_aware_cpa/results/signed_int5_randomized8_screen3_fia_B16_T10_20260918_sweep/fia_member_05_25000/candidate.pt": "1b8310dccf236d3eec3dc77f8a44390e129ce579d47382e435fe336c7555ff3f",
+    "quantization_aware_cpa/results_private/signed_int4_randomized8_screen3_fia_B16_T10_20260918_sweep/evaluation_recovery_20260918/comparison.json": "fac6c5c1716674a23d1a069355626c9125dbd6fd710a6b82c65aa1d1eb0e3fb2",
+    "quantization_aware_cpa/results/signed_int4_randomized8_screen3_fia_B16_T10_20260918_sweep/fia_center_25000/candidate.pt": "e515a797ef2d04487637957aeb60b8936fc78d469e101fc1aa3971771c157693",
+    "quantization_aware_cpa/results/signed_int4_randomized8_screen3_fia_B16_T10_20260918_sweep/fia_member_06_25000/candidate.pt": "24a43fdba5a67936bc1f6f80972d60efc16d6d7f4ca19bae0b97743d3909d313",
+    "paper_assets/comparison_manifest.json": "d99a0b0794d69415ba63dc28cde51bb99d90751aecefccd1598d2ec6ba06ca21"
+  },
+  "outputs_sha256": {
+    "paper_assets/cifar100_quantization_selected_examples11_24.png": "ee17e64426447f84cf69915d19d41e431e037fbe047a3f141bb2cc4858329764",
+    "paper_assets/quantization_cifar100_imagenet.png": "1ec7755f0d005c615368a7a9a0168e8717222b50b876524c74e4525dc928a1a5"
+  }
+}

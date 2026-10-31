@@ -1,0 +1,27 @@
+{
+  "codec": "topk_global_bitmap_fp32_v1",
+  "value_bits": 32,
+  "keep_fraction": 0.2,
+  "shape": [
+    4096,
+    25088
+  ],
+  "n_values": 102760448,
+  "kept_elements": 20552089,
+  "fp32_payload_bytes": 411041792,
+  "fp32_packet_bytes": 411041824,
+  "value_bytes": 82208356,
+  "bitmap_bytes": 12845056,
+  "header_bytes": 32,
+  "packet_bytes": 95053444,
+  "compression_ratio": 4.324323314366179,
+  "saved_percent": 76.87499459908975,
+  "scope": "attacked classifier.0.weight packet only",
+  "codec_wall_time_sec": 3.682921500003431,
+  "transmitted_tensor_convention": "Y=(W_initial-W_final)/lr",
+  "server_weight_delta": "-0.001*decoded_Y",
+  "sha256": "637327bdd2a0e90c77e6378419ac7080e5bf3e4d4449c27e4fb903b8307bdbff",
+  "source_reconstruction_only_from_packet": true,
+  "quantization": false,
+  "error_feedback": false
+}

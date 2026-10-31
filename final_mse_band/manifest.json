@@ -1,0 +1,15 @@
+{
+  "source_tables": [
+    "metric_winners_v2/metric_winners_v2/tables/bit04_all100_metrics.csv",
+    "metric_winners_v2/metric_winners_v2/tables/bit08_all100_metrics.csv"
+  ],
+  "metric": "final 16-image mean MSE",
+  "step": 25000,
+  "center": "candidate000",
+  "band": "pointwise min and max of candidates001..099 at each measured bit width",
+  "measured_bit_widths": [
+    4,
+    8
+  ],
+  "intermediate_steps_available": false
+}

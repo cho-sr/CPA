@@ -1,0 +1,2 @@
+member,score,mean_relative_l2_to_observed_client_update,batches,source_run_path,ranking_observation
+0,-5.699431254523492,5.699431254523492,1,C:\Users\조상제\Desktop\CPA\sparsified_update_cpa\outputs_v1\author_runs\imagenet\vgg16\attack\cp_direct\nodef\cora_shared_sfp32smoke24_k1_R1_s1234_m000_uia,one_client_compressed_update_from_fedavg_round

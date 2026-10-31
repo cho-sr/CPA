@@ -21,6 +21,26 @@ def test_quantizer_invariant_all_required_modes_and_bits() -> None:
     assert all(check.passed for check in checks)
 
 
+def test_quantizer_scale_granularity_invariants() -> None:
+    generator = torch.Generator(device="cpu")
+    generator.manual_seed(10)
+    Y = torch.randn(11, 23, generator=generator)
+    for granularity in ("per_row", "per_tensor", "per_bucket"):
+        qobs = quantize(
+            Y,
+            bits=4,
+            rounding="deterministic",
+            generator=generator,
+            scale_granularity=granularity,
+            bucket_size=4,
+        )
+        assert qobs.scale_granularity == granularity
+        assert qobs.delta.shape == (11,)
+        assert torch.all((Y - qobs.Y_hat).abs() <= qobs.delta[:, None] / 2.0 + 1.0e-6)
+    per_tensor = quantize(Y, bits=4, rounding="deterministic", scale_granularity="per_tensor")
+    assert torch.unique(per_tensor.delta).numel() == 1
+
+
 def test_oracle_hinge_zero_for_synthetic_factorization() -> None:
     generator = torch.Generator(device="cpu")
     generator.manual_seed(1)
@@ -47,7 +67,6 @@ def test_factorization_gate_synthetic() -> None:
 
 
 def test_bits16_debiased_stage1_matches_naive_solution() -> None:
-    pytest.importorskip("sklearn")
     check = high_bits_convergence_gate(seed=3)
     assert check.passed
     assert check.details["relative_l2"] <= 1.0e-3

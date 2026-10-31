@@ -1,0 +1,27 @@
+{
+  "captured_utc": "2026-09-15T05:30:00+09:00",
+  "pre_edit": {
+    "quantization_aware_cpa/qacpa/signed_cell_rank_evaluation.py": "db719026ee65b4e1c808da9f6abbaef9bb29d17da5d35f5e36aa816cbb36e7b8",
+    "quantization_aware_cpa/tests/test_signed_cell_rank_pipeline.py": "f2ee91a27e40f9edb6d9b424ae3f5a1177adf0282f7511c13bdcfcdd240c6d86",
+    "quantization_aware_cpa/tests/test_signed_cell_rank_validation.py": "4417f9a4c395ad8bc91f51248e4374aeccc67001c288c26e3587825ed413c3a7",
+    "quantization_aware_cpa/qacpa/signed_cell_rank.py": "7ae6deb49738914f4cd1f9328397400d89835ede4cd6a462b2ea260a77ae4acb",
+    "quantization_aware_cpa/results/signed_cell_rank_B16_T10/cell_rank_ap5/result.json": "b07f5144f49f42d97020b93b32506afc2a9e0441e3632ec54c3b665147b4526e",
+    "quantization_aware_cpa/results/signed_cell_rank_B16_T10/cell_rank_ap5/candidate.pt": "700beaa7b7da8565da68bb782ea67738542695334d09a2910e29f83bf29ab9d6",
+    "quantization_aware_cpa/results/signed_cell_rank_B16_T10/preprocess_ap5/preprocessing_result.json": "cf0c2eafbd0844deb2ada6b37f9f04daf0e6fa028d11fb6b72cdd0a1ed549e8f"
+  },
+  "post_edit": {
+    "quantization_aware_cpa/qacpa/signed_cell_rank_evaluation.py": "c163aaa54bd8d5ebfc1528f49cafe2a830de72a9d7fe38583391b7ddaf4a65ef",
+    "quantization_aware_cpa/tests/test_signed_cell_rank_pipeline.py": "2d79a2f92bc4b51b8424cef8b8bc85125f0876f6e423fec082a030b9db8ed0a8",
+    "quantization_aware_cpa/tests/test_signed_cell_rank_validation.py": "4417f9a4c395ad8bc91f51248e4374aeccc67001c288c26e3587825ed413c3a7",
+    "quantization_aware_cpa/qacpa/signed_cell_rank.py": "7ae6deb49738914f4cd1f9328397400d89835ede4cd6a462b2ea260a77ae4acb",
+    "quantization_aware_cpa/results/signed_cell_rank_B16_T10/cell_rank_ap5/result.json": "b07f5144f49f42d97020b93b32506afc2a9e0441e3632ec54c3b665147b4526e",
+    "quantization_aware_cpa/results/signed_cell_rank_B16_T10/cell_rank_ap5/candidate.pt": "700beaa7b7da8565da68bb782ea67738542695334d09a2910e29f83bf29ab9d6",
+    "quantization_aware_cpa/results/signed_cell_rank_B16_T10/preprocess_ap5/preprocessing_result.json": "cf0c2eafbd0844deb2ada6b37f9f04daf0e6fa028d11fb6b72cdd0a1ed549e8f"
+  },
+  "execution": {
+    "evaluation_wrapper_pid": 9300,
+    "evaluation_wrapper_creation_utc_epoch_ms": 1789447345521,
+    "completion_callback_pid": 20692,
+    "output_preexisting_before_run": false
+  }
+}

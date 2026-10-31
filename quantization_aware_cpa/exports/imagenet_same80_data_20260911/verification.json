@@ -1,0 +1,13 @@
+{
+  "zip": "imagenet_same80.zip",
+  "zip_bytes": 10281572,
+  "zip_sha256": "529e9797c5ab89f6a6ac0b88a2202d0a4893017955efed934445c12ae2719810",
+  "n_original_jpegs": 80,
+  "n_batches": 5,
+  "jpeg_bytes": 10330135,
+  "all_archive_entries_sha256_verified": true,
+  "all80_preprocessed_inputs_bit_exact": true,
+  "portable_loader_verified": true,
+  "portable_loader_batch_count": 5,
+  "portable_loader_original_labels_preserved": true
+}

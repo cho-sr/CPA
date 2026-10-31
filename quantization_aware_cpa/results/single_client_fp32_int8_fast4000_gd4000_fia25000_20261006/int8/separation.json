@@ -1,0 +1,19 @@
+{
+  "status": "COMPLETED",
+  "fast_iterations": 4000,
+  "gd_iterations": 4000,
+  "first_converged_iteration": 27,
+  "final_fast_residual": 2.0265579223632812e-06,
+  "fast_early_stop": false,
+  "final_gd_losses": {
+    "negentropy": -0.040283042937517166,
+    "decorrelation": 0.5522124171257019,
+    "sign": 12.93317985534668,
+    "l1": 0.2907557785511017,
+    "total": 6.103270053863525
+  },
+  "target_z_sha256": "823569a3bec1960848a30289418c9c53eaa008241d8d26a9f30025ae0cf1c3cd",
+  "wall_seconds": 45.814285499975085,
+  "native_estimated_order": true,
+  "private_loaded": false
+}

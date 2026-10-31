@@ -1,0 +1,13 @@
+﻿{
+    "state":  "FAILED",
+    "authorized_one_time":  true,
+    "task_id":  "CPA_SIGNED_CELL_RANK_IMPLEMENTATION_20260914",
+    "plan_version":  1,
+    "peer_id":  "01a09ac2-0e8d-7f90-94a8-c45be99f4343",
+    "peer_pid":  12728,
+    "exit_code":  1,
+    "receipt":  "",
+    "stderr":  "codex.exe : Error: failed to queue session message: thread/queue/add failed: failed to read thread: invalid thread-stor\r\ne request: no rollout found for thread id 01a09ac2-0e8d-7f90-94a8-c45be99f4343 (code -32603)\r\n위치 줄:16 문자:11\r\n+ $stdout = \u0026 $exe queue --thread $thread --message $message 2\u003e $stderr ...\r\n+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\r\n    + CategoryInfo          : NotSpecified: (Error: failed t...3 (code -32603):String) [], RemoteException\r\n    + FullyQualifiedErrorId : NativeCommandError",
+    "report":  "C:\\Users\\조상제\\Desktop\\CPA\\.ai\\execution-results\\CPA_SIGNED_CELL_RANK_IMPLEMENTATION_20260914\\report.md",
+    "results":  "C:\\Users\\조상제\\Desktop\\CPA\\.ai\\execution-results\\CPA_SIGNED_CELL_RANK_IMPLEMENTATION_20260914\\results.json"
+}

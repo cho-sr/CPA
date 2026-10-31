@@ -1,0 +1,1284 @@
+{
+  "schema_version": 1,
+  "files": [
+    {
+      "original_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\qacpa\\__init__.py",
+      "relative_path": "quantization_aware_cpa/qacpa/__init__.py",
+      "size_bytes": 108,
+      "sha256": "e1174c602f663e013e8ce5ba19c6d5847df8cae576258a11be12e8f2f4c47d51",
+      "archive": "01_minimal_m7.zip",
+      "mtime_ns": 1788435569666290400,
+      "source_archive": "01_code_config_reports.zip"
+    },
+    {
+      "original_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\qacpa\\alignment.py",
+      "relative_path": "quantization_aware_cpa/qacpa/alignment.py",
+      "size_bytes": 3302,
+      "sha256": "93259800bdf8843acfb1a7ed31beba199db218e61548b3a8d1fb10c4efae7cce",
+      "archive": "01_minimal_m7.zip",
+      "mtime_ns": 1788451130378580300,
+      "source_archive": "01_code_config_reports.zip"
+    },
+    {
+      "original_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\qacpa\\axis_extent.py",
+      "relative_path": "quantization_aware_cpa/qacpa/axis_extent.py",
+      "size_bytes": 4442,
+      "sha256": "ef0c9260fdfcba6f47ff60b563fac26770e87b00c9c5dc1031986e0f42a60692",
+      "archive": "01_minimal_m7.zip",
+      "mtime_ns": 1788462300108362700,
+      "source_archive": "01_code_config_reports.zip"
+    },
+    {
+      "original_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\qacpa\\bplus.py",
+      "relative_path": "quantization_aware_cpa/qacpa/bplus.py",
+      "size_bytes": 3153,
+      "sha256": "d15e97e1ce3d1dd51bc1fb973f7dc6e9dfa9f8756d3cc38c9f731485235b1b70",
+      "archive": "01_minimal_m7.zip",
+      "mtime_ns": 1788482144747102800,
+      "source_archive": "01_code_config_reports.zip"
+    },
+    {
+      "original_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\qacpa\\cache.py",
+      "relative_path": "quantization_aware_cpa/qacpa/cache.py",
+      "size_bytes": 3106,
+      "sha256": "ec020cee2d905588c0d19122966ccd2308ba06644ee77af8de1fd31790c0916c",
+      "archive": "01_minimal_m7.zip",
+      "mtime_ns": 1788749023057883600,
+      "source_archive": "01_code_config_reports.zip"
+    },
+    {
+      "original_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\qacpa\\cmp_sweep.py",
+      "relative_path": "quantization_aware_cpa/qacpa/cmp_sweep.py",
+      "size_bytes": 10321,
+      "sha256": "da303e8a99fd0c389e308ae594348443c95b3374391108d358c1744734a6013b",
+      "archive": "01_minimal_m7.zip",
+      "mtime_ns": 1788500278826822500,
+      "source_archive": "01_code_config_reports.zip"
+    },
+    {
+      "original_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\qacpa\\config.py",
+      "relative_path": "quantization_aware_cpa/qacpa/config.py",
+      "size_bytes": 3687,
+      "sha256": "64a9c766bd4bf75c57bc9adc448f66c61c2ab6938c978700c8b5bab930f9c766",
+      "archive": "01_minimal_m7.zip",
+      "mtime_ns": 1788748510935724500,
+      "source_archive": "01_code_config_reports.zip"
+    },
+    {
+      "original_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\qacpa\\diagnostics.py",
+      "relative_path": "quantization_aware_cpa/qacpa/diagnostics.py",
+      "size_bytes": 15300,
+      "sha256": "262edbeeac92647f216530c1cd4b1a60575d7686d7990b7cfd8d82c35acb4184",
+      "archive": "01_minimal_m7.zip",
+      "mtime_ns": 1788462273080966800,
+      "source_archive": "01_code_config_reports.zip"
+    },
+    {
+      "original_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\qacpa\\errors.py",
+      "relative_path": "quantization_aware_cpa/qacpa/errors.py",
+      "size_bytes": 145,
+      "sha256": "0a48efc4f042322ecfa105b6fb235b14e600d074d242f1a3ccb5bc702c507eeb",
+      "archive": "01_minimal_m7.zip",
+      "mtime_ns": 1788435569667290800,
+      "source_archive": "01_code_config_reports.zip"
+    },
+    {
+      "original_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\qacpa\\feas_decomp.py",
+      "relative_path": "quantization_aware_cpa/qacpa/feas_decomp.py",
+      "size_bytes": 7728,
+      "sha256": "d0feb43bd60a91f8c6bd092d079d77d1a4bba382cac4e8edd1d8f325b3616581",
+      "archive": "01_minimal_m7.zip",
+      "mtime_ns": 1788500108574806600,
+      "source_archive": "01_code_config_reports.zip"
+    },
+    {
+      "original_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\qacpa\\fia.py",
+      "relative_path": "quantization_aware_cpa/qacpa/fia.py",
+      "size_bytes": 6397,
+      "sha256": "42a55ce6a4895785b10573f507658434e597f1138de3d45621f466702c7f5cb0",
+      "archive": "01_minimal_m7.zip",
+      "mtime_ns": 1788562502689108700,
+      "source_archive": "01_code_config_reports.zip"
+    },
+    {
+      "original_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\qacpa\\gates.py",
+      "relative_path": "quantization_aware_cpa/qacpa/gates.py",
+      "size_bytes": 4290,
+      "sha256": "71f24748b4162e32126b8ed9e14b3ee8b2affc005b9e3a85eae88fd0807b16bf",
+      "archive": "01_minimal_m7.zip",
+      "mtime_ns": 1788500117570458400,
+      "source_archive": "01_code_config_reports.zip"
+    },
+    {
+      "original_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\qacpa\\linalg.py",
+      "relative_path": "quantization_aware_cpa/qacpa/linalg.py",
+      "size_bytes": 795,
+      "sha256": "263f13c4afe7ccbe8ac407dbff572605787514ed5022300ec9eb935e57dad5fe",
+      "archive": "01_minimal_m7.zip",
+      "mtime_ns": 1788435649725411500,
+      "source_archive": "01_code_config_reports.zip"
+    },
+    {
+      "original_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\qacpa\\m7_protocol.py",
+      "relative_path": "quantization_aware_cpa/qacpa/m7_protocol.py",
+      "size_bytes": 1300,
+      "sha256": "a444ac00a7a6730e15a7cd66c69a08f87c0e8d9377a5cbfb9f898ddfa028a2ef",
+      "archive": "01_minimal_m7.zip",
+      "mtime_ns": 1788900450635393700,
+      "source_archive": "01_code_config_reports.zip"
+    },
+    {
+      "original_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\qacpa\\m7_recompute.py",
+      "relative_path": "quantization_aware_cpa/qacpa/m7_recompute.py",
+      "size_bytes": 25236,
+      "sha256": "abaa9356b0050d5b7b03f3df3b28427fc2fd1fb903e27f95deb42c66d8644a9c",
+      "archive": "01_minimal_m7.zip",
+      "mtime_ns": 1788900728471956500,
+      "source_archive": "01_code_config_reports.zip"
+    },
+    {
+      "original_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\qacpa\\m7_report.py",
+      "relative_path": "quantization_aware_cpa/qacpa/m7_report.py",
+      "size_bytes": 29792,
+      "sha256": "19a5abf45c4eee25d881e618061b449898b16f9478f4c5a857fa67435d9f3a5f",
+      "archive": "01_minimal_m7.zip",
+      "mtime_ns": 1788900886317080200,
+      "source_archive": "01_code_config_reports.zip"
+    },
+    {
+      "original_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\qacpa\\m7_shuffle_distribution.py",
+      "relative_path": "quantization_aware_cpa/qacpa/m7_shuffle_distribution.py",
+      "size_bytes": 31232,
+      "sha256": "2a55ea2e3d87b54d7e232a3e480ea986ddaefa4a888170415241bc51e7f9aa80",
+      "archive": "01_minimal_m7.zip",
+      "mtime_ns": 1788940671846068800,
+      "source_archive": "01_code_config_reports.zip"
+    },
+    {
+      "original_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\qacpa\\mp_prediction_grid.py",
+      "relative_path": "quantization_aware_cpa/qacpa/mp_prediction_grid.py",
+      "size_bytes": 12814,
+      "sha256": "6bb8564e7991efe59f9d3582dce372309b5464856aa5bec37ede23c01f455fb9",
+      "archive": "01_minimal_m7.zip",
+      "mtime_ns": 1788756435699300500,
+      "source_archive": "01_code_config_reports.zip"
+    },
+    {
+      "original_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\qacpa\\plan_m4_grid.py",
+      "relative_path": "quantization_aware_cpa/qacpa/plan_m4_grid.py",
+      "size_bytes": 9270,
+      "sha256": "5c8fbf382a29250a7119633a57ab7ba01ae9244542aa3598bd6a07643760e7e2",
+      "archive": "01_minimal_m7.zip",
+      "mtime_ns": 1788748737847941200,
+      "source_archive": "01_code_config_reports.zip"
+    },
+    {
+      "original_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\qacpa\\plan_m4_phases.py",
+      "relative_path": "quantization_aware_cpa/qacpa/plan_m4_phases.py",
+      "size_bytes": 10841,
+      "sha256": "7fcb8107cf67a571692abfbd0f7b0582a49069079ee864884727031dc598f651",
+      "archive": "01_minimal_m7.zip",
+      "mtime_ns": 1788753157157694900,
+      "source_archive": "01_code_config_reports.zip"
+    },
+    {
+      "original_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\qacpa\\prepare_google_slide_figures.py",
+      "relative_path": "quantization_aware_cpa/qacpa/prepare_google_slide_figures.py",
+      "size_bytes": 11133,
+      "sha256": "016922e2ad9dfd084cb19f574b2966e9c3bd6410bd52b609528a2c4bb636a155",
+      "archive": "01_minimal_m7.zip",
+      "mtime_ns": 1788900237391373700,
+      "source_archive": "01_code_config_reports.zip"
+    },
+    {
+      "original_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\qacpa\\prepare_v9_paper_figures.py",
+      "relative_path": "quantization_aware_cpa/qacpa/prepare_v9_paper_figures.py",
+      "size_bytes": 5312,
+      "sha256": "97d7cac6c38c4bafe7559b7799d741c7250dde5631eeca033eb46a0e6845df23",
+      "archive": "01_minimal_m7.zip",
+      "mtime_ns": 1788900237390372700,
+      "source_archive": "01_code_config_reports.zip"
+    },
+    {
+      "original_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\qacpa\\quantizer.py",
+      "relative_path": "quantization_aware_cpa/qacpa/quantizer.py",
+      "size_bytes": 5661,
+      "sha256": "4ad7b239e7a060cc8f400a6eb560f1d1fa69863dc0d9fc7049f33a494f02f075",
+      "archive": "01_minimal_m7.zip",
+      "mtime_ns": 1788748510934724300,
+      "source_archive": "01_code_config_reports.zip"
+    },
+    {
+      "original_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\qacpa\\recheck_stage1.py",
+      "relative_path": "quantization_aware_cpa/qacpa/recheck_stage1.py",
+      "size_bytes": 3954,
+      "sha256": "d8bf3d52fb1b8d8aca871e80fdc3122ddf8810e9f04b2838ca0aea66cf1a3b89",
+      "archive": "01_minimal_m7.zip",
+      "mtime_ns": 1788500098022393200,
+      "source_archive": "01_code_config_reports.zip"
+    },
+    {
+      "original_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\qacpa\\refine_a.py",
+      "relative_path": "quantization_aware_cpa/qacpa/refine_a.py",
+      "size_bytes": 6430,
+      "sha256": "56dc0ad6c7bd010b3f595f3f6c4b4fcdf726b00ffaf255fbc9d3c88b93494151",
+      "archive": "01_minimal_m7.zip",
+      "mtime_ns": 1788746689497137200,
+      "source_archive": "01_code_config_reports.zip"
+    },
+    {
+      "original_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\qacpa\\report_existing_log_cleanup.py",
+      "relative_path": "quantization_aware_cpa/qacpa/report_existing_log_cleanup.py",
+      "size_bytes": 26257,
+      "sha256": "ec7351271adc844127ef4989b6351abea6a0cc41f4f7e6cf5d6df1897d40832d",
+      "archive": "01_minimal_m7.zip",
+      "mtime_ns": 1788941216570358000,
+      "source_archive": "01_code_config_reports.zip"
+    },
+    {
+      "original_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\qacpa\\report_m3_fairness.py",
+      "relative_path": "quantization_aware_cpa/qacpa/report_m3_fairness.py",
+      "size_bytes": 4787,
+      "sha256": "1697c11a2b7541bf5eb4db195c13d7950d122c77b304a8dba929781a709de1a5",
+      "archive": "01_minimal_m7.zip",
+      "mtime_ns": 1788683613034666700,
+      "source_archive": "01_code_config_reports.zip"
+    },
+    {
+      "original_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\qacpa\\report_m3_fallback_aggregate.py",
+      "relative_path": "quantization_aware_cpa/qacpa/report_m3_fallback_aggregate.py",
+      "size_bytes": 11161,
+      "sha256": "0fcbce9006c473d47272ed20da06dae9d801a5e627df8cd56a703f2955ffb9b6",
+      "archive": "01_minimal_m7.zip",
+      "mtime_ns": 1788900237390372700,
+      "source_archive": "01_code_config_reports.zip"
+    },
+    {
+      "original_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\qacpa\\report_m3_selection_effect.py",
+      "relative_path": "quantization_aware_cpa/qacpa/report_m3_selection_effect.py",
+      "size_bytes": 5559,
+      "sha256": "042e749bb2d289e477e25c6fc5ff7acc6af234387b310e00bf850c612709d54a",
+      "archive": "01_minimal_m7.zip",
+      "mtime_ns": 1788745303442931400,
+      "source_archive": "01_code_config_reports.zip"
+    },
+    {
+      "original_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\qacpa\\report_m3_spearman.py",
+      "relative_path": "quantization_aware_cpa/qacpa/report_m3_spearman.py",
+      "size_bytes": 7785,
+      "sha256": "41eb409d7a9cdfabd94f38490f1d61cf5c6e791d9addfaac86be159e223202a5",
+      "archive": "01_minimal_m7.zip",
+      "mtime_ns": 1788683866367379100,
+      "source_archive": "01_code_config_reports.zip"
+    },
+    {
+      "original_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\qacpa\\report_m4_phase_A.py",
+      "relative_path": "quantization_aware_cpa/qacpa/report_m4_phase_A.py",
+      "size_bytes": 12708,
+      "sha256": "15ca571e2231740126588ab8ff51630156cdc764ffae5ae6e383860d888d5600",
+      "archive": "01_minimal_m7.zip",
+      "mtime_ns": 1788759456019739800,
+      "source_archive": "01_code_config_reports.zip"
+    },
+    {
+      "original_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\qacpa\\report_m6_diagnostics.py",
+      "relative_path": "quantization_aware_cpa/qacpa/report_m6_diagnostics.py",
+      "size_bytes": 9778,
+      "sha256": "8d63c1f41c5d2c09a34e6e5856d6bc09366e4cadef5399207a1176095f18675e",
+      "archive": "01_minimal_m7.zip",
+      "mtime_ns": 1788850511326263100,
+      "source_archive": "01_code_config_reports.zip"
+    },
+    {
+      "original_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\qacpa\\report_m7_consistency_audit.py",
+      "relative_path": "quantization_aware_cpa/qacpa/report_m7_consistency_audit.py",
+      "size_bytes": 23625,
+      "sha256": "4e2463c9c0e8d950b7eda566b612882af24a481d5a9eb990422bbceee9580ac6",
+      "archive": "01_minimal_m7.zip",
+      "mtime_ns": 1788940624052980100,
+      "source_archive": "01_code_config_reports.zip"
+    },
+    {
+      "original_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\qacpa\\report_m7_followup_review.py",
+      "relative_path": "quantization_aware_cpa/qacpa/report_m7_followup_review.py",
+      "size_bytes": 20866,
+      "sha256": "9f38ae11d517562f272f2adcbcef5902b80d4a4ff72fe60ada43bbd441b41284",
+      "archive": "01_minimal_m7.zip",
+      "mtime_ns": 1788941028674740400,
+      "source_archive": "01_code_config_reports.zip"
+    },
+    {
+      "original_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\qacpa\\report_m7_normalized_metrics.py",
+      "relative_path": "quantization_aware_cpa/qacpa/report_m7_normalized_metrics.py",
+      "size_bytes": 9858,
+      "sha256": "7af1f06731b789012ffc87719b062f9cdff97995028913279ebca2304cc1c418",
+      "archive": "01_minimal_m7.zip",
+      "mtime_ns": 1788940507561343500,
+      "source_archive": "01_code_config_reports.zip"
+    },
+    {
+      "original_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\qacpa\\report_m7_png.py",
+      "relative_path": "quantization_aware_cpa/qacpa/report_m7_png.py",
+      "size_bytes": 11682,
+      "sha256": "c4fa40295eb7f49b5e69fa08cb37aa964195a729af368f457daadd770f7711c9",
+      "archive": "01_minimal_m7.zip",
+      "mtime_ns": 1788917034974336500,
+      "source_archive": "01_code_config_reports.zip"
+    },
+    {
+      "original_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\qacpa\\report_uia_m5_summary.py",
+      "relative_path": "quantization_aware_cpa/qacpa/report_uia_m5_summary.py",
+      "size_bytes": 8182,
+      "sha256": "88b3c17e7738216623656f9980f3e7998f4fe8ee4bbdee7c2afc9480868fc898",
+      "archive": "01_minimal_m7.zip",
+      "mtime_ns": 1788771380835442900,
+      "source_archive": "01_code_config_reports.zip"
+    },
+    {
+      "original_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\qacpa\\report_uia_spectrum.py",
+      "relative_path": "quantization_aware_cpa/qacpa/report_uia_spectrum.py",
+      "size_bytes": 5238,
+      "sha256": "870a37dc12bc42e63fd0399d308080004bc9e889b4f7a02fc536c381dfb0efc3",
+      "archive": "01_minimal_m7.zip",
+      "mtime_ns": 1788765003036524500,
+      "source_archive": "01_code_config_reports.zip"
+    },
+    {
+      "original_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\qacpa\\report_uia_T_robustness.py",
+      "relative_path": "quantization_aware_cpa/qacpa/report_uia_T_robustness.py",
+      "size_bytes": 6615,
+      "sha256": "d3e5408446e4590033eb2894f94995ea681bf5578361adcc7f372cc5ff0ddef1",
+      "archive": "01_minimal_m7.zip",
+      "mtime_ns": 1788766716993219300,
+      "source_archive": "01_code_config_reports.zip"
+    },
+    {
+      "original_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\qacpa\\report_v10_debias_fallback.py",
+      "relative_path": "quantization_aware_cpa/qacpa/report_v10_debias_fallback.py",
+      "size_bytes": 10532,
+      "sha256": "a58910dca65d52d5469653b67c9d31e494952864c977b13b560f1de0f0ac5c1e",
+      "archive": "01_minimal_m7.zip",
+      "mtime_ns": 1788752987079788200,
+      "source_archive": "01_code_config_reports.zip"
+    },
+    {
+      "original_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\qacpa\\report_v10_source_diagnostics.py",
+      "relative_path": "quantization_aware_cpa/qacpa/report_v10_source_diagnostics.py",
+      "size_bytes": 9274,
+      "sha256": "0e93edcbcaf85af3658ce25cf67ef44b3a659bb19578dfa421fd1f009a748f92",
+      "archive": "01_minimal_m7.zip",
+      "mtime_ns": 1788753038944159100,
+      "source_archive": "01_code_config_reports.zip"
+    },
+    {
+      "original_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\qacpa\\report_v8_pre_refine.py",
+      "relative_path": "quantization_aware_cpa/qacpa/report_v8_pre_refine.py",
+      "size_bytes": 9934,
+      "sha256": "c01a2808aeb1f1d60bf042532a4211f405328f97270252fdbecd8b62f9605da7",
+      "archive": "01_minimal_m7.zip",
+      "mtime_ns": 1788747587651841500,
+      "source_archive": "01_code_config_reports.zip"
+    },
+    {
+      "original_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\qacpa\\report_v8_refine_A.py",
+      "relative_path": "quantization_aware_cpa/qacpa/report_v8_refine_A.py",
+      "size_bytes": 7172,
+      "sha256": "233c235f9c6b62f4fffcc3816874184a848d63883d4bf269fc7d1c7dbf2b1068",
+      "archive": "01_minimal_m7.zip",
+      "mtime_ns": 1788747534260688900,
+      "source_archive": "01_code_config_reports.zip"
+    },
+    {
+      "original_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\qacpa\\report_v9_stage2_saturation.py",
+      "relative_path": "quantization_aware_cpa/qacpa/report_v9_stage2_saturation.py",
+      "size_bytes": 16517,
+      "sha256": "e0da0927517133a20a7d776542556d7c712ffe04ef4e1ae8fa1addac96e8dfbc",
+      "archive": "01_minimal_m7.zip",
+      "mtime_ns": 1788900237391373700,
+      "source_archive": "01_code_config_reports.zip"
+    },
+    {
+      "original_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\qacpa\\run.py",
+      "relative_path": "quantization_aware_cpa/qacpa/run.py",
+      "size_bytes": 11803,
+      "sha256": "70ec66509e1c0f9efc3c8ea3ecf06db5cd7af090e77ea6be2db71656b5f7f62d",
+      "archive": "01_minimal_m7.zip",
+      "mtime_ns": 1788500041447490600,
+      "source_archive": "01_code_config_reports.zip"
+    },
+    {
+      "original_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\qacpa\\run_bplus.py",
+      "relative_path": "quantization_aware_cpa/qacpa/run_bplus.py",
+      "size_bytes": 12516,
+      "sha256": "7b3e304ceb18615279bd0c80b162eb2b2d803c96a171df53bb1ea3c2521ca942",
+      "archive": "01_minimal_m7.zip",
+      "mtime_ns": 1788537255846206000,
+      "source_archive": "01_code_config_reports.zip"
+    },
+    {
+      "original_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\qacpa\\run_m3_diag_rank_split_fia.py",
+      "relative_path": "quantization_aware_cpa/qacpa/run_m3_diag_rank_split_fia.py",
+      "size_bytes": 14517,
+      "sha256": "ef0583e199c2e0abbefdd56397a0c0cdc232eb9d882d3daa0480431692e4ddb8",
+      "archive": "01_minimal_m7.zip",
+      "mtime_ns": 1788683709852355200,
+      "source_archive": "01_code_config_reports.zip"
+    },
+    {
+      "original_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\qacpa\\run_m3_fallback_fia.py",
+      "relative_path": "quantization_aware_cpa/qacpa/run_m3_fallback_fia.py",
+      "size_bytes": 11840,
+      "sha256": "36effcd2bbff6d9fb7ab4820e802ef4d3358e8780616a5f43650f213f79da1cc",
+      "archive": "01_minimal_m7.zip",
+      "mtime_ns": 1788752927877139100,
+      "source_archive": "01_code_config_reports.zip"
+    },
+    {
+      "original_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\qacpa\\run_m3_fia_4bit.py",
+      "relative_path": "quantization_aware_cpa/qacpa/run_m3_fia_4bit.py",
+      "size_bytes": 29713,
+      "sha256": "092aad8642d7ee5432fd85c6876e88ec97ff32fbbf25e363259219b4f44d489d",
+      "archive": "01_minimal_m7.zip",
+      "mtime_ns": 1788759307796431600,
+      "source_archive": "01_code_config_reports.zip"
+    },
+    {
+      "original_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\qacpa\\run_m3_fp32_truth_fia.py",
+      "relative_path": "quantization_aware_cpa/qacpa/run_m3_fp32_truth_fia.py",
+      "size_bytes": 7111,
+      "sha256": "3f19d86ce9075607faf0872dd4297269aea8c74e8754dc7e632fa1a7d0944ce4",
+      "archive": "01_minimal_m7.zip",
+      "mtime_ns": 1788745415402198900,
+      "source_archive": "01_code_config_reports.zip"
+    },
+    {
+      "original_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\qacpa\\run_m4_phase_A.py",
+      "relative_path": "quantization_aware_cpa/qacpa/run_m4_phase_A.py",
+      "size_bytes": 3570,
+      "sha256": "c486b3790f78a3f935aed67b1e5f944b323b0a556d8deaaae2f4fd5541467403",
+      "archive": "01_minimal_m7.zip",
+      "mtime_ns": 1788759372569526400,
+      "source_archive": "01_code_config_reports.zip"
+    },
+    {
+      "original_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\qacpa\\run_m6_uia_fp32_fia.py",
+      "relative_path": "quantization_aware_cpa/qacpa/run_m6_uia_fp32_fia.py",
+      "size_bytes": 39958,
+      "sha256": "e00319498504257c91697918bf61e7794ee1fe75a48bdb2483c768f596f1bae6",
+      "archive": "01_minimal_m7.zip",
+      "mtime_ns": 1788902121443482000,
+      "source_archive": "01_code_config_reports.zip"
+    },
+    {
+      "original_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\qacpa\\run_m7_controls.py",
+      "relative_path": "quantization_aware_cpa/qacpa/run_m7_controls.py",
+      "size_bytes": 17328,
+      "sha256": "db65002a1ee5568e37ce92741500ffa8afc0510a0edfb57f481c091c6c4ad269",
+      "archive": "01_minimal_m7.zip",
+      "mtime_ns": 1788900569644247300,
+      "source_archive": "01_code_config_reports.zip"
+    },
+    {
+      "original_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\qacpa\\run_m7_uia_4bit.py",
+      "relative_path": "quantization_aware_cpa/qacpa/run_m7_uia_4bit.py",
+      "size_bytes": 34443,
+      "sha256": "3a771235d024f3d0eb407843632dd22805c7813f7836a86784cac10838742820",
+      "archive": "01_minimal_m7.zip",
+      "mtime_ns": 1788940799466799500,
+      "source_archive": "01_code_config_reports.zip"
+    },
+    {
+      "original_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\qacpa\\run_rank_split.py",
+      "relative_path": "quantization_aware_cpa/qacpa/run_rank_split.py",
+      "size_bytes": 25587,
+      "sha256": "c287d62e0a20e83edf04219afa225f39bcb988fcc8c41961956c6f5b2feb24f2",
+      "archive": "01_minimal_m7.zip",
+      "mtime_ns": 1788570587116554000,
+      "source_archive": "01_code_config_reports.zip"
+    },
+    {
+      "original_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\qacpa\\run_rank_split_diag.py",
+      "relative_path": "quantization_aware_cpa/qacpa/run_rank_split_diag.py",
+      "size_bytes": 12518,
+      "sha256": "b8daf22b4954709e20a735b372453f148517a4ab9f53c079de6e1de27e449092",
+      "archive": "01_minimal_m7.zip",
+      "mtime_ns": 1788569999171591800,
+      "source_archive": "01_code_config_reports.zip"
+    },
+    {
+      "original_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\qacpa\\run_round_dependence.py",
+      "relative_path": "quantization_aware_cpa/qacpa/run_round_dependence.py",
+      "size_bytes": 34554,
+      "sha256": "cec3e9c7223eb39ed52dadec5523a3fb971f79c9999b0a2da5bb69fa013fc1d9",
+      "archive": "01_minimal_m7.zip",
+      "mtime_ns": 1788887635990332600,
+      "source_archive": "01_code_config_reports.zip"
+    },
+    {
+      "original_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\qacpa\\run_stage2_A.py",
+      "relative_path": "quantization_aware_cpa/qacpa/run_stage2_A.py",
+      "size_bytes": 18525,
+      "sha256": "4df05d394f41af553b02314917ca8c051e02a598d9efec1f70925320ad4e8284",
+      "archive": "01_minimal_m7.zip",
+      "mtime_ns": 1788746732782481800,
+      "source_archive": "01_code_config_reports.zip"
+    },
+    {
+      "original_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\qacpa\\run_stage2_oracle.py",
+      "relative_path": "quantization_aware_cpa/qacpa/run_stage2_oracle.py",
+      "size_bytes": 19251,
+      "sha256": "63da04ced001406ac101e41bdb7e9306c89853209029b73c282f8d1635160b32",
+      "archive": "01_minimal_m7.zip",
+      "mtime_ns": 1788537242253938500,
+      "source_archive": "01_code_config_reports.zip"
+    },
+    {
+      "original_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\qacpa\\run_uia_beff_validation.py",
+      "relative_path": "quantization_aware_cpa/qacpa/run_uia_beff_validation.py",
+      "size_bytes": 19358,
+      "sha256": "dd5e77b767d239882eaa88c07ea22c4419f6e452f77294e344c4f72e39f05476",
+      "archive": "01_minimal_m7.zip",
+      "mtime_ns": 1788895994082272000,
+      "source_archive": "01_code_config_reports.zip"
+    },
+    {
+      "original_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\qacpa\\run_uia_spectrum.py",
+      "relative_path": "quantization_aware_cpa/qacpa/run_uia_spectrum.py",
+      "size_bytes": 22269,
+      "sha256": "777b57de9bbda1fb38026d454cb79880a78a6d3bffac8aec675f84a593542b07",
+      "archive": "01_minimal_m7.zip",
+      "mtime_ns": 1788765541812293100,
+      "source_archive": "01_code_config_reports.zip"
+    },
+    {
+      "original_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\qacpa\\seed.py",
+      "relative_path": "quantization_aware_cpa/qacpa/seed.py",
+      "size_bytes": 792,
+      "sha256": "769366fcc2cf3e144d8caa86f73a55dcb0b6be615a45dab8b6e117399150c558",
+      "archive": "01_minimal_m7.zip",
+      "mtime_ns": 1788436036392567400,
+      "source_archive": "01_code_config_reports.zip"
+    },
+    {
+      "original_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\qacpa\\stage1.py",
+      "relative_path": "quantization_aware_cpa/qacpa/stage1.py",
+      "size_bytes": 16120,
+      "sha256": "f6423da5c14e610676e8d1a3c113238b39511dd1c99a6d66adb59b9cf754607b",
+      "archive": "01_minimal_m7.zip",
+      "mtime_ns": 1788767942585075300,
+      "source_archive": "01_code_config_reports.zip"
+    },
+    {
+      "original_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\qacpa\\stage2.py",
+      "relative_path": "quantization_aware_cpa/qacpa/stage2.py",
+      "size_bytes": 17395,
+      "sha256": "bdf3035aabf970e9399bf73130d1627f87430a67cfde88b85343496a8961c98b",
+      "archive": "01_minimal_m7.zip",
+      "mtime_ns": 1788570430004735300,
+      "source_archive": "01_code_config_reports.zip"
+    },
+    {
+      "original_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\qacpa\\uia.py",
+      "relative_path": "quantization_aware_cpa/qacpa/uia.py",
+      "size_bytes": 14894,
+      "sha256": "fe19894d8a340e6bdfc56b83c26da516f2414a87c1cbe3fbe3e4620fcdd580c3",
+      "archive": "01_minimal_m7.zip",
+      "mtime_ns": 1788765395850770500,
+      "source_archive": "01_code_config_reports.zip"
+    },
+    {
+      "original_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\qacpa\\victim.py",
+      "relative_path": "quantization_aware_cpa/qacpa/victim.py",
+      "size_bytes": 11374,
+      "sha256": "fdd40fd5c5062761872dc3bdd8dd4e750ccc188ce0050baf6330fad7e080874b",
+      "archive": "01_minimal_m7.zip",
+      "mtime_ns": 1788756361584531600,
+      "source_archive": "01_code_config_reports.zip"
+    },
+    {
+      "original_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\configs\\m6_uia_fp32_B16_fia.json",
+      "relative_path": "quantization_aware_cpa/configs/m6_uia_fp32_B16_fia.json",
+      "size_bytes": 4908,
+      "sha256": "deaf2865732e28d02351b40cd1920f3561b1ea7088805fa00b6c3030fec3ff4e",
+      "archive": "01_minimal_m7.zip",
+      "mtime_ns": 1788901350871475300,
+      "source_archive": "01_code_config_reports.zip"
+    },
+    {
+      "original_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\configs\\m6_uia_fp32_B16_fia.lock.json",
+      "relative_path": "quantization_aware_cpa/configs/m6_uia_fp32_B16_fia.lock.json",
+      "size_bytes": 261,
+      "sha256": "3e27bf310c472d013b67ab66e720d309b0b924f82428d92312e512091a536645",
+      "archive": "01_minimal_m7.zip",
+      "mtime_ns": 1788901351087614600,
+      "source_archive": "01_code_config_reports.zip"
+    },
+    {
+      "original_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\configs\\m7_uia_4bit_B16.json",
+      "relative_path": "quantization_aware_cpa/configs/m7_uia_4bit_B16.json",
+      "size_bytes": 4028,
+      "sha256": "39cc98aa436159365c4bbdb91e6ac9822a742be1e0c985a6ea282bf3c28ac156",
+      "archive": "01_minimal_m7.zip",
+      "mtime_ns": 1788940740370991800,
+      "source_archive": "01_code_config_reports.zip"
+    },
+    {
+      "original_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\configs\\m7_uia_4bit_B16.lock.json",
+      "relative_path": "quantization_aware_cpa/configs/m7_uia_4bit_B16.lock.json",
+      "size_bytes": 278,
+      "sha256": "65643b4b23d58d8012e1130de6c200de639502d69741e09c743bfa6726b03527",
+      "archive": "01_minimal_m7.zip",
+      "mtime_ns": 1788940815166098100,
+      "source_archive": "01_code_config_reports.zip"
+    },
+    {
+      "original_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\configs\\spike.yaml",
+      "relative_path": "quantization_aware_cpa/configs/spike.yaml",
+      "size_bytes": 1191,
+      "sha256": "0695547b23f291da42d5145ad4ecc618b4a1129e8d85e1d9cb25a25dff2beca7",
+      "archive": "01_minimal_m7.zip",
+      "mtime_ns": 1788748964834552500,
+      "source_archive": "01_code_config_reports.zip"
+    },
+    {
+      "original_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\scripts\\launch_m7_uia_4bit.ps1",
+      "relative_path": "quantization_aware_cpa/scripts/launch_m7_uia_4bit.ps1",
+      "size_bytes": 1311,
+      "sha256": "2dddceeb755cd246f73155d74dcccbd0063b2410b7010338e7179279254c314e",
+      "archive": "01_minimal_m7.zip",
+      "mtime_ns": 1788940662602726400,
+      "source_archive": "01_code_config_reports.zip"
+    },
+    {
+      "original_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\scripts\\queue_m6_uia_after_m7.ps1",
+      "relative_path": "quantization_aware_cpa/scripts/queue_m6_uia_after_m7.ps1",
+      "size_bytes": 8227,
+      "sha256": "08ae4f09b408fbc58f71211d7bab43aa2676f66bd417bce216773f18257d6e62",
+      "archive": "01_minimal_m7.zip",
+      "mtime_ns": 1788901792316880300,
+      "source_archive": "01_code_config_reports.zip"
+    },
+    {
+      "original_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\scripts\\render_m7_all80_landscape.py",
+      "relative_path": "quantization_aware_cpa/scripts/render_m7_all80_landscape.py",
+      "size_bytes": 4404,
+      "sha256": "323526fdaa1b6fe80f30bd944ea9197d1a808ff30e11216e83a0a21143e7ebc0",
+      "archive": "01_minimal_m7.zip",
+      "mtime_ns": 1788954146972870000,
+      "source_archive": "01_code_config_reports.zip"
+    },
+    {
+      "original_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\scripts\\run_m6_nightly_jobs.ps1",
+      "relative_path": "quantization_aware_cpa/scripts/run_m6_nightly_jobs.ps1",
+      "size_bytes": 3660,
+      "sha256": "0fed55e6ad98b03acf23ea321aeb1ed5d6990de4eb7be9ca53b7bf72b51a0084",
+      "archive": "01_minimal_m7.zip",
+      "mtime_ns": 1788900160703795900,
+      "source_archive": "01_code_config_reports.zip"
+    },
+    {
+      "original_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\scripts\\run_m7_controls.ps1",
+      "relative_path": "quantization_aware_cpa/scripts/run_m7_controls.ps1",
+      "size_bytes": 1383,
+      "sha256": "58205a9fbbbc3252dd942db4654b53c18944c1b8e0c45f205785c19dc0f25fab",
+      "archive": "01_minimal_m7.zip",
+      "mtime_ns": 1788900693119570300,
+      "source_archive": "01_code_config_reports.zip"
+    },
+    {
+      "original_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\README.md",
+      "relative_path": "quantization_aware_cpa/README.md",
+      "size_bytes": 7110,
+      "sha256": "83f9bbcc4039c9d6d912fb232541dda7b905fb10d1bdc14508eb295417b4fa14",
+      "archive": "01_minimal_m7.zip",
+      "mtime_ns": 1788940625574308600,
+      "source_archive": "01_code_config_reports.zip"
+    },
+    {
+      "original_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\requirements.txt",
+      "relative_path": "quantization_aware_cpa/requirements.txt",
+      "size_bytes": 62,
+      "sha256": "e56ce9455ca818aaba9cb1786a7937e6a29fe549c2b9d59e89e7aa58e0a11ea3",
+      "archive": "01_minimal_m7.zip",
+      "mtime_ns": 1788435944341057900,
+      "source_archive": "01_code_config_reports.zip"
+    },
+    {
+      "original_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\pyproject.toml",
+      "relative_path": "quantization_aware_cpa/pyproject.toml",
+      "size_bytes": 566,
+      "sha256": "60c89540630e86b8c40563b745d7bf6c56d10ed85215b9078e51011908f63ac9",
+      "archive": "01_minimal_m7.zip",
+      "mtime_ns": 1788562428596840000,
+      "source_archive": "01_code_config_reports.zip"
+    },
+    {
+      "original_path": "C:\\Users\\조상제\\Desktop\\CPA\\codex\\docs\\M7_FOLLOWUP_ANALYSIS_PROTOCOL.json",
+      "relative_path": "codex/docs/M7_FOLLOWUP_ANALYSIS_PROTOCOL.json",
+      "size_bytes": 4551,
+      "sha256": "24a25980e58356591943559e29474bb777494f426b0834ca6d68f76aa2daae67",
+      "archive": "01_minimal_m7.zip",
+      "mtime_ns": 1788940174328244200,
+      "source_archive": "01_code_config_reports.zip"
+    },
+    {
+      "original_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\v7_m3_fallback_5batch\\per_image_metrics_aggregated.csv",
+      "relative_path": "quantization_aware_cpa/results/v7_m3_fallback_5batch/per_image_metrics_aggregated.csv",
+      "size_bytes": 70562,
+      "sha256": "7d33efb9def3f2f955c19fe3d89a97e6f4e422e2c2637ce0153d292bf23a12bd",
+      "archive": "01_minimal_m7.zip",
+      "mtime_ns": 1788746085677127000,
+      "source_archive": "01_code_config_reports.zip"
+    },
+    {
+      "original_path": "C:\\Users\\조상제\\Desktop\\CPA\\codex\\docs\\UIA_PUBLISHED_PROTOCOL.md",
+      "relative_path": "codex/docs/UIA_PUBLISHED_PROTOCOL.md",
+      "size_bytes": 16051,
+      "sha256": "1b53f6faa0497ac48846a18b6e1132e2c7f94bc416b45147912537be4b5e3b74",
+      "archive": "01_minimal_m7.zip",
+      "mtime_ns": 1788940625573256600,
+      "source_archive": "01_code_config_reports.zip"
+    },
+    {
+      "original_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_uia_4bit_B16\\input_manifest.json",
+      "relative_path": "quantization_aware_cpa/results/m7_uia_4bit_B16/input_manifest.json",
+      "size_bytes": 36356,
+      "sha256": "2846b9fd4f9d80255b7739e050220b1b709e001543b4cc6b1b5a8962b075ca80",
+      "archive": "01_minimal_m7.zip",
+      "mtime_ns": 1788940815158779500,
+      "source_archive": "01_code_config_reports.zip"
+    },
+    {
+      "original_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_uia_4bit_B16\\per_image_metrics.csv",
+      "relative_path": "quantization_aware_cpa/results/m7_uia_4bit_B16/per_image_metrics.csv",
+      "size_bytes": 25574,
+      "sha256": "02aa55e6c81fb2c0799db511585c72ce536df7a1f7f2ef80c95a2154da7b5011",
+      "archive": "01_minimal_m7.zip",
+      "mtime_ns": 1788950883255680000,
+      "source_archive": "01_code_config_reports.zip"
+    },
+    {
+      "original_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_uia_4bit_B16\\report.md",
+      "relative_path": "quantization_aware_cpa/results/m7_uia_4bit_B16/report.md",
+      "size_bytes": 1960,
+      "sha256": "e5681a356e5043af5b4e6a880569aead896650f5cdbe570670ae51123b88c95e",
+      "archive": "01_minimal_m7.zip",
+      "mtime_ns": 1788950883963459700,
+      "source_archive": "01_code_config_reports.zip"
+    },
+    {
+      "original_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_uia_4bit_B16\\source_cosines.csv",
+      "relative_path": "quantization_aware_cpa/results/m7_uia_4bit_B16/source_cosines.csv",
+      "size_bytes": 4496,
+      "sha256": "14967ef8da7f0e1843ab3c7262370a7060bee1938b868ac1b92312227a7397d2",
+      "archive": "01_minimal_m7.zip",
+      "mtime_ns": 1788950883256681100,
+      "source_archive": "01_code_config_reports.zip"
+    },
+    {
+      "original_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_uia_4bit_B16\\summary.json",
+      "relative_path": "quantization_aware_cpa/results/m7_uia_4bit_B16/summary.json",
+      "size_bytes": 79777,
+      "sha256": "9674322f7eda0f9afb8fe586f034e87101138e1b491f0bd04954f80474a0a22c",
+      "archive": "01_minimal_m7.zip",
+      "mtime_ns": 1788950884025400200,
+      "source_archive": "01_code_config_reports.zip"
+    },
+    {
+      "original_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m6_uia_fp32_B16_fia\\input_manifest.json",
+      "relative_path": "quantization_aware_cpa/results/m6_uia_fp32_B16_fia/input_manifest.json",
+      "size_bytes": 4744,
+      "sha256": "98cc90b7b072562e6aee2bfad55d42330fb7934089ae7d5e9f73b3340765c289",
+      "archive": "01_minimal_m7.zip",
+      "mtime_ns": 1788914296698761600,
+      "source_archive": "01_code_config_reports.zip"
+    },
+    {
+      "original_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m6_uia_fp32_B16_fia\\per_image_metrics.csv",
+      "relative_path": "quantization_aware_cpa/results/m6_uia_fp32_B16_fia/per_image_metrics.csv",
+      "size_bytes": 26020,
+      "sha256": "72dafc60ccb29acca4568bc0da7b77d48574ecafece7fe51898b173822c2f2ef",
+      "archive": "01_minimal_m7.zip",
+      "mtime_ns": 1788924063096674900,
+      "source_archive": "01_code_config_reports.zip"
+    },
+    {
+      "original_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m6_uia_fp32_B16_fia\\report.md",
+      "relative_path": "quantization_aware_cpa/results/m6_uia_fp32_B16_fia/report.md",
+      "size_bytes": 1654,
+      "sha256": "7899b853b623f22bf6d30cda361b4357d922c70475dc2124d2938792ae5b854e",
+      "archive": "01_minimal_m7.zip",
+      "mtime_ns": 1788924064107615200,
+      "source_archive": "01_code_config_reports.zip"
+    },
+    {
+      "original_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m6_uia_fp32_B16_fia\\source_cosines.csv",
+      "relative_path": "quantization_aware_cpa/results/m6_uia_fp32_B16_fia/source_cosines.csv",
+      "size_bytes": 5100,
+      "sha256": "9b1925f7909c08cefa0591fd7c0fbcadae3f435f753bae4ae485db369aa8671d",
+      "archive": "01_minimal_m7.zip",
+      "mtime_ns": 1788924063097676100,
+      "source_archive": "01_code_config_reports.zip"
+    },
+    {
+      "original_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m6_uia_fp32_B16_fia\\summary.json",
+      "relative_path": "quantization_aware_cpa/results/m6_uia_fp32_B16_fia/summary.json",
+      "size_bytes": 38184,
+      "sha256": "1f85b5750c6171e0259160c48731dc7646fb3f7a5b9c59b8c06b0478bd2f4ad0",
+      "archive": "01_minimal_m7.zip",
+      "mtime_ns": 1788924064604618300,
+      "source_archive": "01_code_config_reports.zip"
+    },
+    {
+      "original_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_uia_4bit_B16\\batch00\\inputs.pt",
+      "relative_path": "quantization_aware_cpa/results/m7_uia_4bit_B16/batch00/inputs.pt",
+      "size_bytes": 11244389,
+      "sha256": "24995487511a3e9d8d4665fdcd704f7a0f792249a9ba79880638d13bc4740141",
+      "archive": "01_minimal_m7.zip",
+      "mtime_ns": 1788941086396364300,
+      "source_archive": "02_batch00_m7_m6.zip"
+    },
+    {
+      "original_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_uia_4bit_B16\\batch00\\inputs.meta.json",
+      "relative_path": "quantization_aware_cpa/results/m7_uia_4bit_B16/batch00/inputs.meta.json",
+      "size_bytes": 8374,
+      "sha256": "e974222ff1f26138059c240e1d4cd10c42958fca3fed7900a1734ac32f8bd721",
+      "archive": "01_minimal_m7.zip",
+      "mtime_ns": 1788941086413368300,
+      "source_archive": "02_batch00_m7_m6.zip"
+    },
+    {
+      "original_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_uia_4bit_B16\\batch00\\summary.json",
+      "relative_path": "quantization_aware_cpa/results/m7_uia_4bit_B16/batch00/summary.json",
+      "size_bytes": 11814,
+      "sha256": "9e33222b82ae7165123fcf137c9d3b8df12a28123292cce4a8bbabe23d3a954d",
+      "archive": "01_minimal_m7.zip",
+      "mtime_ns": 1788943045356340600,
+      "source_archive": "02_batch00_m7_m6.zip"
+    },
+    {
+      "original_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_uia_4bit_B16\\batch00\\rec.pt",
+      "relative_path": "quantization_aware_cpa/results/m7_uia_4bit_B16/batch00/rec.pt",
+      "size_bytes": 9635369,
+      "sha256": "d08fde2a925f1feb1a113987ec54654199fc2f62fbb4f5a42d84f100780acc49",
+      "archive": "01_minimal_m7.zip",
+      "mtime_ns": 1788943044511880400,
+      "source_archive": "02_batch00_m7_m6.zip"
+    },
+    {
+      "original_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_uia_4bit_B16\\batch00\\source_cosines.csv",
+      "relative_path": "quantization_aware_cpa/results/m7_uia_4bit_B16/batch00/source_cosines.csv",
+      "size_bytes": 3503,
+      "sha256": "6298a56fca8ff000fe20be1d7c16fce4e96b54cec6a906817acdd50026dc7d4a",
+      "archive": "01_minimal_m7.zip",
+      "mtime_ns": 1788943044506315000,
+      "source_archive": "02_batch00_m7_m6.zip"
+    },
+    {
+      "original_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_uia_4bit_B16\\batch00\\quantized.pt",
+      "relative_path": "quantization_aware_cpa/results/m7_uia_4bit_B16/batch00/quantized.pt",
+      "size_bytes": 411060325,
+      "sha256": "1ef1fd892d029d0f2653b886bbdcc497373b0e12cab1da9ab43490fb5d40e5a0",
+      "archive": "01_minimal_m7.zip",
+      "mtime_ns": 1788941088995708900,
+      "source_archive": "02_batch00_m7_m6.zip"
+    },
+    {
+      "original_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_uia_4bit_B16\\batch00\\quantized.meta.json",
+      "relative_path": "quantization_aware_cpa/results/m7_uia_4bit_B16/batch00/quantized.meta.json",
+      "size_bytes": 8379,
+      "sha256": "233f7e3e2b58d5fd8f6f472898216a9bf5437017cb31040403e4c634e8d1edfc",
+      "archive": "01_minimal_m7.zip",
+      "mtime_ns": 1788941089245665700,
+      "source_archive": "02_batch00_m7_m6.zip"
+    },
+    {
+      "original_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_uia_4bit_B16\\batch00\\fia_log.json",
+      "relative_path": "quantization_aware_cpa/results/m7_uia_4bit_B16/batch00/fia_log.json",
+      "size_bytes": 1229,
+      "sha256": "593885c5676fc23c93d32c528f00c5361d3f3bac382985763d3c429a43af5412",
+      "archive": "01_minimal_m7.zip",
+      "mtime_ns": 1788943044511880400,
+      "source_archive": "02_batch00_m7_m6.zip"
+    },
+    {
+      "original_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_uia_4bit_B16\\batch00\\per_image_metrics.csv",
+      "relative_path": "quantization_aware_cpa/results/m7_uia_4bit_B16/batch00/per_image_metrics.csv",
+      "size_bytes": 5323,
+      "sha256": "4005c3edf4f2808681ae7333a7743d8414c8d91b467e73ee83547d279183acf2",
+      "archive": "01_minimal_m7.zip",
+      "mtime_ns": 1788943044505315200,
+      "source_archive": "02_batch00_m7_m6.zip"
+    },
+    {
+      "original_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_uia_4bit_B16\\batch01\\inputs.pt",
+      "relative_path": "quantization_aware_cpa/results/m7_uia_4bit_B16/batch01/inputs.pt",
+      "size_bytes": 11244389,
+      "sha256": "2f8db846205dda931162ca171282b8372a41bf8d3061c66bb6c83f65c7f20088",
+      "archive": "01_minimal_m7.zip",
+      "mtime_ns": 1788943047154914600,
+      "source_archive": "03_batch01_m7_m6.zip"
+    },
+    {
+      "original_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_uia_4bit_B16\\batch01\\inputs.meta.json",
+      "relative_path": "quantization_aware_cpa/results/m7_uia_4bit_B16/batch01/inputs.meta.json",
+      "size_bytes": 8374,
+      "sha256": "05caeb6009e43531ae145979d534acfa7873b0d351adc391f59dc084acf20641",
+      "archive": "01_minimal_m7.zip",
+      "mtime_ns": 1788943047168940000,
+      "source_archive": "03_batch01_m7_m6.zip"
+    },
+    {
+      "original_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_uia_4bit_B16\\batch01\\summary.json",
+      "relative_path": "quantization_aware_cpa/results/m7_uia_4bit_B16/batch01/summary.json",
+      "size_bytes": 11806,
+      "sha256": "e54587ebc67bcd49f4282edcd70bc569fc0315e7872d8f69b3e64c140cdc6fd1",
+      "archive": "01_minimal_m7.zip",
+      "mtime_ns": 1788944998565090800,
+      "source_archive": "03_batch01_m7_m6.zip"
+    },
+    {
+      "original_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_uia_4bit_B16\\batch01\\rec.pt",
+      "relative_path": "quantization_aware_cpa/results/m7_uia_4bit_B16/batch01/rec.pt",
+      "size_bytes": 9635369,
+      "sha256": "06f8e12843759af78f905d45198504def22496fc7bbedc0be774212c5279c712",
+      "archive": "01_minimal_m7.zip",
+      "mtime_ns": 1788944997624887400,
+      "source_archive": "03_batch01_m7_m6.zip"
+    },
+    {
+      "original_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_uia_4bit_B16\\batch01\\source_cosines.csv",
+      "relative_path": "quantization_aware_cpa/results/m7_uia_4bit_B16/batch01/source_cosines.csv",
+      "size_bytes": 3518,
+      "sha256": "2d169216e00edeca3c863890c2e08d04bcc2ddf7afb8395209f007af9303abb8",
+      "archive": "01_minimal_m7.zip",
+      "mtime_ns": 1788944997618886100,
+      "source_archive": "03_batch01_m7_m6.zip"
+    },
+    {
+      "original_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_uia_4bit_B16\\batch01\\quantized.pt",
+      "relative_path": "quantization_aware_cpa/results/m7_uia_4bit_B16/batch01/quantized.pt",
+      "size_bytes": 411060325,
+      "sha256": "8eac91d2ac96246c1e90ea298443b8d321bab549b90bcc34421ac055ca05f64c",
+      "archive": "01_minimal_m7.zip",
+      "mtime_ns": 1788943049986110700,
+      "source_archive": "03_batch01_m7_m6.zip"
+    },
+    {
+      "original_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_uia_4bit_B16\\batch01\\quantized.meta.json",
+      "relative_path": "quantization_aware_cpa/results/m7_uia_4bit_B16/batch01/quantized.meta.json",
+      "size_bytes": 8379,
+      "sha256": "0b155c4d035a8558dddd0a5c8159ff50bbb52b392904970c908650c43316e32e",
+      "archive": "01_minimal_m7.zip",
+      "mtime_ns": 1788943050248056500,
+      "source_archive": "03_batch01_m7_m6.zip"
+    },
+    {
+      "original_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_uia_4bit_B16\\batch01\\fia_log.json",
+      "relative_path": "quantization_aware_cpa/results/m7_uia_4bit_B16/batch01/fia_log.json",
+      "size_bytes": 1231,
+      "sha256": "e4d4927db2e7fd6c5b651df72653dc36836146f6be48bfd868a6026212c736f9",
+      "archive": "01_minimal_m7.zip",
+      "mtime_ns": 1788944997624887400,
+      "source_archive": "03_batch01_m7_m6.zip"
+    },
+    {
+      "original_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_uia_4bit_B16\\batch01\\per_image_metrics.csv",
+      "relative_path": "quantization_aware_cpa/results/m7_uia_4bit_B16/batch01/per_image_metrics.csv",
+      "size_bytes": 5333,
+      "sha256": "49c2b614d14b0ddb57068690c20013846c24805081bf9fe8e3de65f0be756f4e",
+      "archive": "01_minimal_m7.zip",
+      "mtime_ns": 1788944997617899300,
+      "source_archive": "03_batch01_m7_m6.zip"
+    },
+    {
+      "original_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_uia_4bit_B16\\batch02\\inputs.pt",
+      "relative_path": "quantization_aware_cpa/results/m7_uia_4bit_B16/batch02/inputs.pt",
+      "size_bytes": 11244389,
+      "sha256": "1f1c898c93b7e0fcf4c00fecbb88fce2f913b4d4ed298aa21479a851c3284db3",
+      "archive": "01_minimal_m7.zip",
+      "mtime_ns": 1788945000359845100,
+      "source_archive": "04_batch02_m7_m6.zip"
+    },
+    {
+      "original_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_uia_4bit_B16\\batch02\\inputs.meta.json",
+      "relative_path": "quantization_aware_cpa/results/m7_uia_4bit_B16/batch02/inputs.meta.json",
+      "size_bytes": 8374,
+      "sha256": "466476e3065c5af5086fb2c2e08732dbcf369f9682c5571407817301844012cf",
+      "archive": "01_minimal_m7.zip",
+      "mtime_ns": 1788945000374369200,
+      "source_archive": "04_batch02_m7_m6.zip"
+    },
+    {
+      "original_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_uia_4bit_B16\\batch02\\summary.json",
+      "relative_path": "quantization_aware_cpa/results/m7_uia_4bit_B16/batch02/summary.json",
+      "size_bytes": 11812,
+      "sha256": "d8a3f84b3eeb04868974db2dbdf30208d5605fafac32fd78cbfab2f3bbc0463b",
+      "archive": "01_minimal_m7.zip",
+      "mtime_ns": 1788946966942598400,
+      "source_archive": "04_batch02_m7_m6.zip"
+    },
+    {
+      "original_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_uia_4bit_B16\\batch02\\rec.pt",
+      "relative_path": "quantization_aware_cpa/results/m7_uia_4bit_B16/batch02/rec.pt",
+      "size_bytes": 9635369,
+      "sha256": "5046f664ad2fd29d04e0353c8bfc856b3620d1608e27e0f8227eec1c8ce98d7f",
+      "archive": "01_minimal_m7.zip",
+      "mtime_ns": 1788946966529220600,
+      "source_archive": "04_batch02_m7_m6.zip"
+    },
+    {
+      "original_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_uia_4bit_B16\\batch02\\source_cosines.csv",
+      "relative_path": "quantization_aware_cpa/results/m7_uia_4bit_B16/batch02/source_cosines.csv",
+      "size_bytes": 3522,
+      "sha256": "fae72d4dd24f241ee956d1e6ccca8634748b3087e4eed2b16d88f1d9936d79da",
+      "archive": "01_minimal_m7.zip",
+      "mtime_ns": 1788946966524219600,
+      "source_archive": "04_batch02_m7_m6.zip"
+    },
+    {
+      "original_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_uia_4bit_B16\\batch02\\quantized.pt",
+      "relative_path": "quantization_aware_cpa/results/m7_uia_4bit_B16/batch02/quantized.pt",
+      "size_bytes": 411060325,
+      "sha256": "bf8c68cb0a4100f5a9dc26dfcaea50ceb3587cd0422e5723ed98295dc6fe1048",
+      "archive": "01_minimal_m7.zip",
+      "mtime_ns": 1788945004003732400,
+      "source_archive": "04_batch02_m7_m6.zip"
+    },
+    {
+      "original_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_uia_4bit_B16\\batch02\\quantized.meta.json",
+      "relative_path": "quantization_aware_cpa/results/m7_uia_4bit_B16/batch02/quantized.meta.json",
+      "size_bytes": 8379,
+      "sha256": "a379590de040722c355a3e41f6d2d4c068106af686539a8081162426846cb535",
+      "archive": "01_minimal_m7.zip",
+      "mtime_ns": 1788945004282270900,
+      "source_archive": "04_batch02_m7_m6.zip"
+    },
+    {
+      "original_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_uia_4bit_B16\\batch02\\fia_log.json",
+      "relative_path": "quantization_aware_cpa/results/m7_uia_4bit_B16/batch02/fia_log.json",
+      "size_bytes": 1233,
+      "sha256": "267ebd1a68fa521a20242db2ccdcb00d2da43c9bd8f56ae045db31e47978d0dd",
+      "archive": "01_minimal_m7.zip",
+      "mtime_ns": 1788946966530221000,
+      "source_archive": "04_batch02_m7_m6.zip"
+    },
+    {
+      "original_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_uia_4bit_B16\\batch02\\per_image_metrics.csv",
+      "relative_path": "quantization_aware_cpa/results/m7_uia_4bit_B16/batch02/per_image_metrics.csv",
+      "size_bytes": 5347,
+      "sha256": "0570ce3b821a9b3a646ae3493b8d2338a7b9a625c5c6542a378417fbd594cae9",
+      "archive": "01_minimal_m7.zip",
+      "mtime_ns": 1788946966523219400,
+      "source_archive": "04_batch02_m7_m6.zip"
+    },
+    {
+      "original_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_uia_4bit_B16\\batch03\\inputs.pt",
+      "relative_path": "quantization_aware_cpa/results/m7_uia_4bit_B16/batch03/inputs.pt",
+      "size_bytes": 11244389,
+      "sha256": "ebdbd1774a320767a40f22c698260b4e3a9ac7ad4b69c2a92b987fe4318d570a",
+      "archive": "01_minimal_m7.zip",
+      "mtime_ns": 1788946968794403200,
+      "source_archive": "05_batch03_m7_m6.zip"
+    },
+    {
+      "original_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_uia_4bit_B16\\batch03\\inputs.meta.json",
+      "relative_path": "quantization_aware_cpa/results/m7_uia_4bit_B16/batch03/inputs.meta.json",
+      "size_bytes": 8374,
+      "sha256": "78c40c0817fa09efb96f14cb4a8bb54a59307be674dcd7bc238248b3f1dbaf1c",
+      "archive": "01_minimal_m7.zip",
+      "mtime_ns": 1788946968808406500,
+      "source_archive": "05_batch03_m7_m6.zip"
+    },
+    {
+      "original_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_uia_4bit_B16\\batch03\\summary.json",
+      "relative_path": "quantization_aware_cpa/results/m7_uia_4bit_B16/batch03/summary.json",
+      "size_bytes": 11808,
+      "sha256": "ca83ec0d849333e7ce6d72e6442caf991f042e5bfed5a0ccb03cf3a15c75c608",
+      "archive": "01_minimal_m7.zip",
+      "mtime_ns": 1788948927396992300,
+      "source_archive": "05_batch03_m7_m6.zip"
+    },
+    {
+      "original_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_uia_4bit_B16\\batch03\\rec.pt",
+      "relative_path": "quantization_aware_cpa/results/m7_uia_4bit_B16/batch03/rec.pt",
+      "size_bytes": 9635369,
+      "sha256": "9fcbee1ef0cbadbb389c99076c4a75e6728ecfcca1f58572b6de5da44338701e",
+      "archive": "01_minimal_m7.zip",
+      "mtime_ns": 1788948926971240100,
+      "source_archive": "05_batch03_m7_m6.zip"
+    },
+    {
+      "original_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_uia_4bit_B16\\batch03\\source_cosines.csv",
+      "relative_path": "quantization_aware_cpa/results/m7_uia_4bit_B16/batch03/source_cosines.csv",
+      "size_bytes": 3520,
+      "sha256": "f17c6b54537f5d67358ac845a3ffc1afcde94d83037370f2462348189125868d",
+      "archive": "01_minimal_m7.zip",
+      "mtime_ns": 1788948926966239300,
+      "source_archive": "05_batch03_m7_m6.zip"
+    },
+    {
+      "original_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_uia_4bit_B16\\batch03\\quantized.pt",
+      "relative_path": "quantization_aware_cpa/results/m7_uia_4bit_B16/batch03/quantized.pt",
+      "size_bytes": 411060325,
+      "sha256": "1a3d6a537651e6d921e59d25be75c05bb78905a71de26bb8ae0308769d25d9ad",
+      "archive": "01_minimal_m7.zip",
+      "mtime_ns": 1788946971639731000,
+      "source_archive": "05_batch03_m7_m6.zip"
+    },
+    {
+      "original_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_uia_4bit_B16\\batch03\\quantized.meta.json",
+      "relative_path": "quantization_aware_cpa/results/m7_uia_4bit_B16/batch03/quantized.meta.json",
+      "size_bytes": 8379,
+      "sha256": "708c0e9aa44175082b07c2631b3dab1b02d0115db17df8c62541ac9cac732e47",
+      "archive": "01_minimal_m7.zip",
+      "mtime_ns": 1788946971895560600,
+      "source_archive": "05_batch03_m7_m6.zip"
+    },
+    {
+      "original_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_uia_4bit_B16\\batch03\\fia_log.json",
+      "relative_path": "quantization_aware_cpa/results/m7_uia_4bit_B16/batch03/fia_log.json",
+      "size_bytes": 1226,
+      "sha256": "14ce7647a51b3996575ec8cbc27ab3c8238f16dc552e8be4e7a08065f7af1fbd",
+      "archive": "01_minimal_m7.zip",
+      "mtime_ns": 1788948926972240500,
+      "source_archive": "05_batch03_m7_m6.zip"
+    },
+    {
+      "original_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_uia_4bit_B16\\batch03\\per_image_metrics.csv",
+      "relative_path": "quantization_aware_cpa/results/m7_uia_4bit_B16/batch03/per_image_metrics.csv",
+      "size_bytes": 5345,
+      "sha256": "505968fb994841d9ecf7707eb5951ef522fb99f84a29cfb340acd050facaf5b7",
+      "archive": "01_minimal_m7.zip",
+      "mtime_ns": 1788948926965239400,
+      "source_archive": "05_batch03_m7_m6.zip"
+    },
+    {
+      "original_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_uia_4bit_B16\\batch04\\inputs.pt",
+      "relative_path": "quantization_aware_cpa/results/m7_uia_4bit_B16/batch04/inputs.pt",
+      "size_bytes": 11244389,
+      "sha256": "6c30802ecdeb7c679e28f47b00e59f016464a3e850cca23fd5a396448ceae20f",
+      "archive": "01_minimal_m7.zip",
+      "mtime_ns": 1788948929175254600,
+      "source_archive": "06_batch04_m7_m6.zip"
+    },
+    {
+      "original_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_uia_4bit_B16\\batch04\\inputs.meta.json",
+      "relative_path": "quantization_aware_cpa/results/m7_uia_4bit_B16/batch04/inputs.meta.json",
+      "size_bytes": 8374,
+      "sha256": "cbf457b893b39a6d53d81fa3643efc512cf90db03ffaf9eace45228e724229c2",
+      "archive": "01_minimal_m7.zip",
+      "mtime_ns": 1788948929190257900,
+      "source_archive": "06_batch04_m7_m6.zip"
+    },
+    {
+      "original_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_uia_4bit_B16\\batch04\\summary.json",
+      "relative_path": "quantization_aware_cpa/results/m7_uia_4bit_B16/batch04/summary.json",
+      "size_bytes": 11804,
+      "sha256": "12ba830279a09fecf3566235766b65c269c59d6952b27f6c4a237988e9e1a301",
+      "archive": "01_minimal_m7.zip",
+      "mtime_ns": 1788950879780188900,
+      "source_archive": "06_batch04_m7_m6.zip"
+    },
+    {
+      "original_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_uia_4bit_B16\\batch04\\rec.pt",
+      "relative_path": "quantization_aware_cpa/results/m7_uia_4bit_B16/batch04/rec.pt",
+      "size_bytes": 9635369,
+      "sha256": "7a1a3e71f7bdf7b3e17dc4e5e08c945e492e2f8f2fe663aa2d20b922865ac959",
+      "archive": "01_minimal_m7.zip",
+      "mtime_ns": 1788950879357275300,
+      "source_archive": "06_batch04_m7_m6.zip"
+    },
+    {
+      "original_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_uia_4bit_B16\\batch04\\source_cosines.csv",
+      "relative_path": "quantization_aware_cpa/results/m7_uia_4bit_B16/batch04/source_cosines.csv",
+      "size_bytes": 3526,
+      "sha256": "e6ad6304f59cebbe61efa81bc18757c121cd622d0c8650e137328931194872c6",
+      "archive": "01_minimal_m7.zip",
+      "mtime_ns": 1788950879352274000,
+      "source_archive": "06_batch04_m7_m6.zip"
+    },
+    {
+      "original_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_uia_4bit_B16\\batch04\\quantized.pt",
+      "relative_path": "quantization_aware_cpa/results/m7_uia_4bit_B16/batch04/quantized.pt",
+      "size_bytes": 411060325,
+      "sha256": "37a4b2b32e6015b35f5999ca650e1d13b5edb71b5e92c6f0a93bf8a3faa95589",
+      "archive": "01_minimal_m7.zip",
+      "mtime_ns": 1788948931942605400,
+      "source_archive": "06_batch04_m7_m6.zip"
+    },
+    {
+      "original_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_uia_4bit_B16\\batch04\\quantized.meta.json",
+      "relative_path": "quantization_aware_cpa/results/m7_uia_4bit_B16/batch04/quantized.meta.json",
+      "size_bytes": 8379,
+      "sha256": "a3b82252825cf84196f5ba833ce930e69b74e28a196ebe4061bdc40a7fe41d1c",
+      "archive": "01_minimal_m7.zip",
+      "mtime_ns": 1788948932221520100,
+      "source_archive": "06_batch04_m7_m6.zip"
+    },
+    {
+      "original_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_uia_4bit_B16\\batch04\\fia_log.json",
+      "relative_path": "quantization_aware_cpa/results/m7_uia_4bit_B16/batch04/fia_log.json",
+      "size_bytes": 1229,
+      "sha256": "7d9956f79d40bf4457f6abe225ae2a7172a5740b3901a0718332682da70d773f",
+      "archive": "01_minimal_m7.zip",
+      "mtime_ns": 1788950879357275300,
+      "source_archive": "06_batch04_m7_m6.zip"
+    },
+    {
+      "original_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_uia_4bit_B16\\batch04\\per_image_metrics.csv",
+      "relative_path": "quantization_aware_cpa/results/m7_uia_4bit_B16/batch04/per_image_metrics.csv",
+      "size_bytes": 5354,
+      "sha256": "6840eda77628b754d76284dd96ca738f9903636b7be1914a155dc6a88106387d",
+      "archive": "01_minimal_m7.zip",
+      "mtime_ns": 1788950879351272900,
+      "source_archive": "06_batch04_m7_m6.zip"
+    },
+    {
+      "original_path": "C:\\Users\\조상제\\Desktop\\CPA\\handoff_m7_minimal_20260909\\README_KO.md",
+      "relative_path": "minimal_handoff_docs/README_KO.md",
+      "size_bytes": 3969,
+      "sha256": "33d9c714d49910b284a5f46636ecaace5fd7f16a15a3afe338b46e9a5f794918",
+      "archive": "01_minimal_m7.zip",
+      "generated": true
+    },
+    {
+      "original_path": "C:\\Users\\조상제\\Desktop\\CPA\\handoff_m7_minimal_20260909\\tensor_inventory.json",
+      "relative_path": "minimal_handoff_docs/tensor_inventory.json",
+      "size_bytes": 14735,
+      "sha256": "064c4cebd7dc4a37b21214d1f3fe95271978c5b8db18a95f5fa8faf5adbf9a13",
+      "archive": "01_minimal_m7.zip",
+      "generated": true
+    },
+    {
+      "original_path": "C:\\Users\\조상제\\Desktop\\CPA\\handoff_m7_minimal_20260909\\build_minimal.py",
+      "relative_path": "minimal_handoff_docs/build_minimal.py",
+      "size_bytes": 5139,
+      "sha256": "a4de22a95da805d18a8eeb6df8425246e7d5c54e4b2e7ac979b4828f16b17b20",
+      "archive": "01_minimal_m7.zip",
+      "generated": true
+    },
+    {
+      "original_path": "C:\\Users\\조상제\\Desktop\\CPA\\handoff_m7_20260909\\REPORT_KO.md",
+      "relative_path": "minimal_handoff_docs/FULL_ARCHIVE_REPORT_KO.md",
+      "size_bytes": 17317,
+      "sha256": "0e8f9449e39bc38786f0099cb624e479bae99aff48f193c9aff0d790c1c57ed6",
+      "archive": "01_minimal_m7.zip"
+    },
+    {
+      "original_path": "C:\\Users\\조상제\\Desktop\\CPA\\handoff_m7_20260909\\environment_snapshot.json",
+      "relative_path": "minimal_handoff_docs/environment_snapshot.json",
+      "size_bytes": 9367,
+      "sha256": "fdde8339646617706af3711c4c28519c1a7a84c1f79f21882b828c797d214059",
+      "archive": "01_minimal_m7.zip"
+    },
+    {
+      "original_path": "C:\\Users\\조상제\\Desktop\\CPA\\handoff_m7_20260909\\requirements_environment_snapshot.txt",
+      "relative_path": "minimal_handoff_docs/requirements_environment_snapshot.txt",
+      "size_bytes": 2226,
+      "sha256": "b43630fc2bd4e6e1f90612483bd052c0447533141321e9ee5b6d70ed8436bd01",
+      "archive": "01_minimal_m7.zip"
+    }
+  ],
+  "note": "Selected transfer subset. Model and M6 observation tensors deliberately excluded; see README_KO.md. Manifest itself excluded from self-hashing."
+}

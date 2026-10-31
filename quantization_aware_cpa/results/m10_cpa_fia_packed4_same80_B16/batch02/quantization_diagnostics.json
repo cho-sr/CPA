@@ -1,0 +1,21 @@
+{
+  "relative_l2": 1.0147441659475505,
+  "mse": 7.5664513212081645e-06,
+  "max_abs": 0.021472983993589878,
+  "empirical_error_mean": 2.827299754149431e-07,
+  "cosine": 0.701929561493885,
+  "zero_fraction": 0.5841349776910276,
+  "zero_scale_rows": 80,
+  "endpoint_fraction_nonzero_rows": 7.850851060045532e-05,
+  "range_overflow_clipping": 0,
+  "code_min": 0,
+  "code_max": 15,
+  "code_range_fields": "codec alphabet bounds, not measured extrema",
+  "roundtrip_verified": true,
+  "decoder_original_input_required": false,
+  "legacy_half_delta_gate_used": false,
+  "quantization_seed": 2000006,
+  "update_collection_sec": 0.0,
+  "new_update_collection": false,
+  "update_factor_rel_l2": 0.00012553512351587415
+}

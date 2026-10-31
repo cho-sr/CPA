@@ -1,0 +1,49 @@
+{
+  "feature_grad_enabled_equals_no_grad": true,
+  "terminal_deltas_torch_equal": true,
+  "adjoint_cell_loss": 41.317195892333984,
+  "per_tensor": {
+    "classifier.0.bias": {
+      "torch_equal": true,
+      "max_abs_difference": 0.0,
+      "max_difference_in_s": 0.0,
+      "fixed_s_code_mismatch_count": 0
+    },
+    "classifier.0.weight": {
+      "torch_equal": true,
+      "max_abs_difference": 0.0,
+      "max_difference_in_s": 0.0,
+      "fixed_s_code_mismatch_count": 0
+    },
+    "classifier.3.bias": {
+      "torch_equal": true,
+      "max_abs_difference": 0.0,
+      "max_difference_in_s": 0.0,
+      "fixed_s_code_mismatch_count": 0
+    },
+    "classifier.3.weight": {
+      "torch_equal": true,
+      "max_abs_difference": 0.0,
+      "max_difference_in_s": 0.0,
+      "fixed_s_code_mismatch_count": 0
+    },
+    "classifier.6.bias": {
+      "torch_equal": true,
+      "max_abs_difference": 0.0,
+      "max_difference_in_s": 0.0,
+      "fixed_s_code_mismatch_count": 0
+    },
+    "classifier.6.weight": {
+      "torch_equal": true,
+      "max_abs_difference": 0.0,
+      "max_difference_in_s": 0.0,
+      "fixed_s_code_mismatch_count": 0
+    }
+  },
+  "resource": {
+    "label": "full_size_numeric_check",
+    "allocated_bytes": 4411379712,
+    "reserved_bytes": 4546625536,
+    "cap_bytes": 12884901888
+  }
+}

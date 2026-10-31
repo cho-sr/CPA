@@ -1,0 +1,78 @@
+{
+  "scope": "full_vgg16_single_client_B16_T10_batch00_resource_gate_and_three_iteration_pilot",
+  "public_context": "uint4_codes_and_radii_plus_starting_checkpoint_and_training_rules",
+  "private_images_and_labels": true,
+  "training_conditions_automatically_reduced": false,
+  "method": "direct_image_optimization_without_CPA",
+  "parameter_tensors": 32,
+  "communication": {
+    "elements": 138357544,
+    "code_bytes": 69178772,
+    "radius_bytes": 53728,
+    "packet_header_bytes": 1024,
+    "layer_packet_bytes": 69233524,
+    "manifest_bytes_accounting": "count actual manifest.json bytes separately"
+  },
+  "manifest_bytes": 12206,
+  "probe": {
+    "status": "outer_gradient_probe_complete",
+    "iterations": 1,
+    "optimization_time_sec": 15.512354800011963,
+    "image_gradient_nonzero": true,
+    "reconstruction_success": "not_evaluated",
+    "mode": "cell",
+    "label_optimization": "soft_relaxation",
+    "wall_time_sec": 15.512381399981678,
+    "peak_cuda_allocated_bytes": 5936897024,
+    "peak_cuda_reserved_bytes": 8050966528
+  },
+  "projected_three_iteration_optimization_sec": 46.53706440003589,
+  "matched_arm_design": {
+    "attack": true,
+    "implementation_sha256": true,
+    "runtime": true,
+    "observation_manifest_sha256": true,
+    "contract_sha256": true,
+    "checkpoint_sha256": true,
+    "method": true
+  },
+  "replay_validation": {
+    "status": "exact_match",
+    "all_prefixes_exact": true,
+    "max_absolute_error": 0.0,
+    "max_positive_radius_error_steps": 0.0,
+    "max_zero_radius_error_abs": 0.0
+  },
+  "arms": {
+    "cell": {
+      "iterations": 3,
+      "wall_time_sec": 47.786926899978425,
+      "peak_cuda_allocated_bytes": 5955634176,
+      "hard_label_closure_fit": false,
+      "positive_radius_bin_violation_rate": 0.22413447433223346,
+      "mean_psnr_db": 7.487900392431286,
+      "mean_ssim": 0.008082798984951511,
+      "label_accuracy": 0.0,
+      "first_soft_label_loss": 16899640.472650465,
+      "last_soft_label_loss": 8002904.222072357
+    },
+    "center": {
+      "iterations": 3,
+      "wall_time_sec": 48.04576959996484,
+      "peak_cuda_allocated_bytes": 5955634176,
+      "hard_label_closure_fit": false,
+      "positive_radius_bin_violation_rate": 0.22711525248807618,
+      "mean_psnr_db": 7.488563256115765,
+      "mean_ssim": 0.008088749370245701,
+      "label_accuracy": 0.0,
+      "first_soft_label_loss": 16899663.7288195,
+      "last_soft_label_loss": 8053205.043762023
+    }
+  },
+  "tests": {
+    "passed": 281,
+    "command": "python -B -m pytest tests/test_full_update_observation.py tests/test_full_update_replay.py tests/test_full_update_adjoint.py tests/test_full_update_pipeline.py tests/test_full_update_cli.py tests/test_full_update_evaluation.py tests/test_full_update_determinism.py tests/test_validate_full_update_replay.py tests/test_communication_codec.py -q -p no:cacheprovider"
+  },
+  "interpretation": "Implementation and resource gate passed. Both three-iteration final hard-label candidates fail observation closure fit. No reconstruction success or performance superiority established.",
+  "remaining_user_decision": "Long-run outer-iteration and total wall-clock budget; no changes to model/batch/local-step/bitwidth/public-context proposed."
+}

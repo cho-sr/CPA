@@ -1,0 +1,104 @@
+{
+  "task_id": "CPA_SIGNED_BITS7654_SCREEN3_20260918",
+  "status": "RUNNING",
+  "wrapper_pid": 26424,
+  "started_at_epoch": 1789668364.1167855,
+  "bits": [
+    7,
+    6,
+    5,
+    4
+  ],
+  "per_bit_cap_seconds": 12600.0,
+  "aggregate_cap_seconds": 50400.0,
+  "stages": [],
+  "bit_status": {
+    "7": "RUNNING",
+    "6": "READY",
+    "5": "READY",
+    "4": "READY"
+  },
+  "bit_results": {},
+  "private_data_loaded": false,
+  "scientific_quality": "NOT_EVALUATED",
+  "actual_image_cell_feasibility": "NOT_EVALUATED",
+  "parent_completed_before_launch": true,
+  "registrations": [
+    {
+      "bits": 7,
+      "task_id": "CPA_SIGNED_BITS7654_SCREEN3_20260918_B7",
+      "public_root": "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int7_randomized8_screen3_fia_B16_T10_20260918_sweep",
+      "private_root": "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results_private/signed_int7_randomized8_screen3_fia_B16_T10_20260918_sweep",
+      "code_hashes": {
+        "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/qacpa/signed_bits_screen3_runner.py": "0ab6bdac5e121b1713e7124bc8dcc958e9b962d6eb667676389823e87d4ff984",
+        "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/qacpa/signed_bits_observation.py": "ff503552b445884fcacecd612d61b3a80bbd98b498afb55a64ac4b5e4270db91",
+        "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/qacpa/signed_bits_randomized.py": "6c67753d4fa3675879ee083e6a0fc8f9dcc34321bba464e2f9c5c8be48784102",
+        "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/qacpa/signed_bits_screen3_evaluation.py": "811b2d45b0b5c98b46d018b11e0ff80dec8314364968cba9f43b266d76b51120",
+        "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/qacpa/signed_int8_screen3_fia.py": "5c9604e865974898b07d9f8b34c3f4d1c919d8cbbd1ebe323ced9e27ddddec7c",
+        "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/qacpa/signed_combination_ica.py": "1c7482e1ed77ca4641cd8822ebb6046c5150e794c3838aacc3e3d575f3d992d6",
+        "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/qacpa/upstream_naive.py": "8f29b885d86f4121eda5c55e17486a3a48bd8db08b2f83890fe7726730d1ee92"
+      },
+      "registered": true
+    },
+    {
+      "bits": 6,
+      "task_id": "CPA_SIGNED_BITS7654_SCREEN3_20260918_B6",
+      "public_root": "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int6_randomized8_screen3_fia_B16_T10_20260918_sweep",
+      "private_root": "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results_private/signed_int6_randomized8_screen3_fia_B16_T10_20260918_sweep",
+      "code_hashes": {
+        "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/qacpa/signed_bits_screen3_runner.py": "0ab6bdac5e121b1713e7124bc8dcc958e9b962d6eb667676389823e87d4ff984",
+        "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/qacpa/signed_bits_observation.py": "ff503552b445884fcacecd612d61b3a80bbd98b498afb55a64ac4b5e4270db91",
+        "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/qacpa/signed_bits_randomized.py": "6c67753d4fa3675879ee083e6a0fc8f9dcc34321bba464e2f9c5c8be48784102",
+        "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/qacpa/signed_bits_screen3_evaluation.py": "811b2d45b0b5c98b46d018b11e0ff80dec8314364968cba9f43b266d76b51120",
+        "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/qacpa/signed_int8_screen3_fia.py": "5c9604e865974898b07d9f8b34c3f4d1c919d8cbbd1ebe323ced9e27ddddec7c",
+        "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/qacpa/signed_combination_ica.py": "1c7482e1ed77ca4641cd8822ebb6046c5150e794c3838aacc3e3d575f3d992d6",
+        "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/qacpa/upstream_naive.py": "8f29b885d86f4121eda5c55e17486a3a48bd8db08b2f83890fe7726730d1ee92"
+      },
+      "registered": true
+    },
+    {
+      "bits": 5,
+      "task_id": "CPA_SIGNED_BITS7654_SCREEN3_20260918_B5",
+      "public_root": "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int5_randomized8_screen3_fia_B16_T10_20260918_sweep",
+      "private_root": "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results_private/signed_int5_randomized8_screen3_fia_B16_T10_20260918_sweep",
+      "code_hashes": {
+        "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/qacpa/signed_bits_screen3_runner.py": "0ab6bdac5e121b1713e7124bc8dcc958e9b962d6eb667676389823e87d4ff984",
+        "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/qacpa/signed_bits_observation.py": "ff503552b445884fcacecd612d61b3a80bbd98b498afb55a64ac4b5e4270db91",
+        "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/qacpa/signed_bits_randomized.py": "6c67753d4fa3675879ee083e6a0fc8f9dcc34321bba464e2f9c5c8be48784102",
+        "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/qacpa/signed_bits_screen3_evaluation.py": "811b2d45b0b5c98b46d018b11e0ff80dec8314364968cba9f43b266d76b51120",
+        "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/qacpa/signed_int8_screen3_fia.py": "5c9604e865974898b07d9f8b34c3f4d1c919d8cbbd1ebe323ced9e27ddddec7c",
+        "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/qacpa/signed_combination_ica.py": "1c7482e1ed77ca4641cd8822ebb6046c5150e794c3838aacc3e3d575f3d992d6",
+        "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/qacpa/upstream_naive.py": "8f29b885d86f4121eda5c55e17486a3a48bd8db08b2f83890fe7726730d1ee92"
+      },
+      "registered": true
+    },
+    {
+      "bits": 4,
+      "task_id": "CPA_SIGNED_BITS7654_SCREEN3_20260918_B4",
+      "public_root": "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int4_randomized8_screen3_fia_B16_T10_20260918_sweep",
+      "private_root": "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results_private/signed_int4_randomized8_screen3_fia_B16_T10_20260918_sweep",
+      "code_hashes": {
+        "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/qacpa/signed_bits_screen3_runner.py": "0ab6bdac5e121b1713e7124bc8dcc958e9b962d6eb667676389823e87d4ff984",
+        "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/qacpa/signed_bits_observation.py": "ff503552b445884fcacecd612d61b3a80bbd98b498afb55a64ac4b5e4270db91",
+        "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/qacpa/signed_bits_randomized.py": "6c67753d4fa3675879ee083e6a0fc8f9dcc34321bba464e2f9c5c8be48784102",
+        "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/qacpa/signed_bits_screen3_evaluation.py": "811b2d45b0b5c98b46d018b11e0ff80dec8314364968cba9f43b266d76b51120",
+        "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/qacpa/signed_int8_screen3_fia.py": "5c9604e865974898b07d9f8b34c3f4d1c919d8cbbd1ebe323ced9e27ddddec7c",
+        "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/qacpa/signed_combination_ica.py": "1c7482e1ed77ca4641cd8822ebb6046c5150e794c3838aacc3e3d575f3d992d6",
+        "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/qacpa/upstream_naive.py": "8f29b885d86f4121eda5c55e17486a3a48bd8db08b2f83890fe7726730d1ee92"
+      },
+      "registered": true
+    }
+  ],
+  "startup_receipt": {
+    "status": "READY_VALIDATED",
+    "bits": [
+      7,
+      6,
+      5,
+      4
+    ],
+    "all_four_registered_before_private_loading": true,
+    "private_data_loaded": false,
+    "cuda_cap_bytes": 12884901888
+  }
+}

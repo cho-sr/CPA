@@ -1,0 +1,65 @@
+{
+  "R": 8,
+  "alignment": "blind medoid permutation/sign/least-squares-scale alignment",
+  "branch": "randomized",
+  "dequantization": "uniform inside exact bounded quantization bins per client, then FedAvg",
+  "fastica_random_state": 42,
+  "global_sign": "blind positive-energy rule after medoid average",
+  "noise_seed": 1234,
+  "q_s_codes_sha256": "1ac878ebbd215e9fd20a2a7b46137868a60169e3c4e9655efe03c0f2e1e546b4",
+  "q_s_meta_sha256": "5d8f9e3c6adeb4a613cf54ba7489cdd8f7343bde1d44a21a75f66207dd325ce8",
+  "schema_version": 1,
+  "seed_plan": [
+    {
+      "dequantization_seed": 1234,
+      "fastica_random_state": 42,
+      "trial": 0,
+      "trial_varying_randomness": "dequantization_noise_only"
+    },
+    {
+      "dequantization_seed": 1001237,
+      "fastica_random_state": 42,
+      "trial": 1,
+      "trial_varying_randomness": "dequantization_noise_only"
+    },
+    {
+      "dequantization_seed": 2001240,
+      "fastica_random_state": 42,
+      "trial": 2,
+      "trial_varying_randomness": "dequantization_noise_only"
+    },
+    {
+      "dequantization_seed": 3001243,
+      "fastica_random_state": 42,
+      "trial": 3,
+      "trial_varying_randomness": "dequantization_noise_only"
+    },
+    {
+      "dequantization_seed": 4001246,
+      "fastica_random_state": 42,
+      "trial": 4,
+      "trial_varying_randomness": "dequantization_noise_only"
+    },
+    {
+      "dequantization_seed": 5001249,
+      "fastica_random_state": 42,
+      "trial": 5,
+      "trial_varying_randomness": "dequantization_noise_only"
+    },
+    {
+      "dequantization_seed": 6001252,
+      "fastica_random_state": 42,
+      "trial": 6,
+      "trial_varying_randomness": "dequantization_noise_only"
+    },
+    {
+      "dequantization_seed": 7001255,
+      "fastica_random_state": 42,
+      "trial": 7,
+      "trial_varying_randomness": "dequantization_noise_only"
+    }
+  ],
+  "smoke": false,
+  "source": "same final-round client q,s artifact",
+  "true_z_policy": "not used for recovery, alignment, or final embedding generation; final eval only"
+}

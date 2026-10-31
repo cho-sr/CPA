@@ -1,0 +1,22 @@
+{
+    "task_id":  "CPA_SIGNED_ICA4000_FIA_20260917",
+    "status":  "PASSED",
+    "tests":  [
+                  "quantization_aware_cpa/tests/test_signed_ica4000_fia.py: 7 passed",
+                  "py_compile: passed",
+                  "signed_ica4000_fia_runner --help: passed",
+                  "signed_ica4000_fia_evaluation --help: passed",
+                  "archived-control/public-input preflight: passed"
+              ],
+    "old_control_artifact_count":  7,
+    "public_input_count":  8,
+    "config_difference":  {
+                              "refinement_iterations":  [
+                                                            1000,
+                                                            4000
+                                                        ]
+                          },
+    "new_public_exists":  false,
+    "new_private_exists":  false,
+    "real_computation_started":  false
+}

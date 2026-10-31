@@ -38,6 +38,7 @@ if str(SPARSE_CPA_ROOT) not in sys.path:
     sys.path.insert(0, str(SPARSE_CPA_ROOT))
 
 from author_runner import run_author_cpa_with_update_file  # noqa: E402
+from cora_ica import require_negentropy_run  # noqa: E402
 from common import (  # noqa: E402
     AUTHOR_SOURCE_HASH,
     checkpoint_manifest,
@@ -1078,6 +1079,7 @@ def main() -> None:
                 and not bool(getattr(args, "fresh_start", False))
                 and (existing_run_path / "reconstructions.pkl").exists()
             ):
+                require_negentropy_run(existing_run_path, args.ne)
                 print(
                     f"[round-member] reuse completed member {member_idx + 1}/{args.ensemble_size}: "
                     f"{existing_run_path}",
@@ -1101,6 +1103,7 @@ def main() -> None:
             if args.run_attack:
                 run_path = run_author_cpa_with_update_file(
                     args,
+                    enable_negentropy=True,
                     exp_name=exp_name,
                     update_file=source_file,
                     update_data=member_data,

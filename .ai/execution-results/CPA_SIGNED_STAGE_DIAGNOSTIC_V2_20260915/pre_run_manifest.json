@@ -1,0 +1,36 @@
+{
+  "task_id": "CPA_SIGNED_STAGE_DIAGNOSTIC_V2_20260915",
+  "plan_version": 1,
+  "method_plan_version": 2,
+  "status": "PREPARED",
+  "handoff_snapshot_sha256": "58550263e10c997aa93ebb8e6ddcb250b9e35948d6eda05f2b7fdc8b6fc9e979",
+  "method_plan_sha256": "d24c271ae8461bdad3061c957b53f247cf852c7ba1bbf1d63933205511f0d14d",
+  "inputs_sha256": {
+    "handoff": "c90b6be1e358101f1b635159ec0092198aeb2188c9cc23fb44e7d064cb428ec2",
+    "method_plan": "d24c271ae8461bdad3061c957b53f247cf852c7ba1bbf1d63933205511f0d14d",
+    "naive_candidate": "fe683f68013896a407a38130ee54ef9dc799a9ca1abf7c4f08efeefea7d91751",
+    "cell_candidate": "700beaa7b7da8565da68bb782ea67738542695334d09a2910e29f83bf29ab9d6",
+    "naive_sources": "c033e0df9304a6e0dcb19491bb43c3ac80cabed52566409e0f76dbe74194d7eb",
+    "cell_sources": "48e763c0539d77f44343dd6330c13ca27b181db587601e00e86076a3f278ff0f",
+    "comparison": "ecd1e3df7c6f452157f51e3389baea64b24a0915dce17dbddf8a1a6f5908a4d7",
+    "public_manifest": "9b4891765e6fc7e4adb1e3e11c158b3d4a2c3430d3397e1f1466ddafe2e1cd69",
+    "evaluation_truth": "724bbacbe316cc28dac086db9cfaf6507f4c1af31144fd610cc480985aab72e2",
+    "checkpoint": "397923af8e79cdbb6a7127f12361acd7a2f83e06b05044ddf496e83de57a5bf0"
+  },
+  "config": {
+    "device": "cuda",
+    "eval_microbatch": 1,
+    "max_evaluation_seconds": 600,
+    "max_cuda_allocated_gib": 6,
+    "candidate_count": 32,
+    "maps": "frozen comparison.json"
+  },
+  "policy": {
+    "forward_only": true,
+    "autograd": false,
+    "labels_consumed": false,
+    "selection_used": false,
+    "rerun_cpa_fia": false
+  },
+  "prepared_at_utc": "2026-09-15T09:24:59.884936+00:00"
+}

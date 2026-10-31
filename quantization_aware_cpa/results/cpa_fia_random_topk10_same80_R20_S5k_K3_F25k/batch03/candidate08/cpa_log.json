@@ -1,0 +1,99 @@
+{
+  "log": [
+    {
+      "iter": 0,
+      "loss": 738.9345703125,
+      "loss_ne": 0.0,
+      "loss_decor": 137.959228515625,
+      "loss_tv": 0.0,
+      "loss_nv": 43.18555450439453,
+      "loss_l1": 0.4272907078266144,
+      "time_sec": 0.0022264000144787133
+    },
+    {
+      "iter": 4999,
+      "loss": 735.47314453125,
+      "loss_ne": 0.0,
+      "loss_decor": 137.99853515625,
+      "loss_tv": 0.0,
+      "loss_nv": 17.954898834228516,
+      "loss_l1": 0.3493582606315613,
+      "time_sec": 7.500040699989768
+    },
+    {
+      "iter": 9999,
+      "loss": 735.4725952148438,
+      "loss_ne": 0.0,
+      "loss_decor": 137.99867248535156,
+      "loss_tv": 0.0,
+      "loss_nv": 17.945987701416016,
+      "loss_l1": 0.3493210971355438,
+      "time_sec": 14.980326299992157
+    },
+    {
+      "iter": 14999,
+      "loss": 735.4734497070312,
+      "loss_ne": 0.0,
+      "loss_decor": 137.99908447265625,
+      "loss_tv": 0.0,
+      "loss_nv": 17.934650421142578,
+      "loss_l1": 0.3493475615978241,
+      "time_sec": 22.45165669999551
+    },
+    {
+      "iter": 19999,
+      "loss": 735.4722900390625,
+      "loss_ne": 0.0,
+      "loss_decor": 137.99853515625,
+      "loss_tv": 0.0,
+      "loss_nv": 17.948501586914062,
+      "loss_l1": 0.34934478998184204,
+      "time_sec": 29.922081900003832
+    },
+    {
+      "iter": 24999,
+      "loss": 735.4716186523438,
+      "loss_ne": 0.0,
+      "loss_decor": 137.99844360351562,
+      "loss_tv": 0.0,
+      "loss_nv": 17.947998046875,
+      "loss_l1": 0.34931680560112,
+      "time_sec": 37.38833119999617
+    }
+  ],
+  "wall_time_sec": 38.990554299991345,
+  "setup_wall_time_sec": 1.6005166999821085,
+  "optimizer_wall_time_sec": 37.39003760000924,
+  "source_hashes": {
+    "C:\\Users\\조상제\\Desktop\\CPA\\official_cpa\\src\\datasets.py": "f9e7b47733b5acb4b73e6914a3f100b5187766bbed78a12d17b69c39eec1b6d1",
+    "C:\\Users\\조상제\\Desktop\\CPA\\official_cpa\\src\\utils.py": "565f1bf1a47f387d042b35bb24f677d1ff0d3ec5d979e2876c31ed114179b9fe",
+    "C:\\Users\\조상제\\Desktop\\CPA\\official_cpa\\src\\gradient_inversion_utils.py": "668d77788dc8d81c181c8c0a9fbe8533c6fbea22ba46fe7f5e15b0a431300e5f",
+    "C:\\Users\\조상제\\Desktop\\CPA\\official_cpa\\src\\gradient_inversion.py": "c598e1ee7b4079f741060d10c8dfd14711e393a97384c63cf32be77a458b1873",
+    "C:\\Users\\조상제\\Desktop\\CPA\\official_cpa\\src\\feature_inversion.py": "dc73880427e3eaf1f873d295f17f1d48d301882f634ee5df36ddeea8e56c4dec",
+    "C:\\Users\\조상제\\Desktop\\CPA\\official_cpa\\src\\vgg16.py": "8114eca8cde553dace5f777aedd21b70851c570d473e597b005cb6be4b248d36",
+    "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\qacpa\\upstream_naive.py": "8f29b885d86f4121eda5c55e17486a3a48bd8db08b2f83890fe7726730d1ee92",
+    "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\qacpa\\seed.py": "769366fcc2cf3e144d8caa86f73a55dcb0b6be615a45dab8b6e117399150c558"
+  },
+  "settings": {
+    "n_components": 16,
+    "seed": 3,
+    "device": "cuda",
+    "n_iter": 25000,
+    "lr": 0.001,
+    "opt": "adam",
+    "sch": "none",
+    "decor": 5.3,
+    "T": 7.7,
+    "ne": 1.0,
+    "nv": 0.13,
+    "l1": 5.0,
+    "tv": 0.1,
+    "log_every": 5000,
+    "whitening": "upstream cov/(d-1), torch.linalg.eig, top abs eigenvalues",
+    "backend": "official_cpa/src/gradient_inversion.py:CocktailPartyAttack",
+    "debias": false,
+    "mp_truncation": false,
+    "mixing_matrix_computed": false
+  },
+  "cache_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\cpa_fia_random_topk10_same80_R20_S5k_K3_F25k\\batch03\\candidate08\\cpa\\upstream_cpa_4sysy12z/imagenet/vgg16/attack/cp_direct/observed/private_uia/w_16_0.pkl"
+}

@@ -1,0 +1,54 @@
+{
+  "task_id": "CPA_PAPER_SPARSE_SAME80_K503020_R20_20260921",
+  "plan_version": 4,
+  "amendment_id": "CPA_PAPER_SPARSE_FRESH16_R8_AMENDMENT_20260921",
+  "n_images": 16,
+  "batch_indices": [
+    0
+  ],
+  "candidate_ids": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "wrapper_pid": 13636,
+  "python": "C:\\miniconda\\envs\\DLG\\python.exe",
+  "project": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa",
+  "workspace": "C:\\Users\\조상제\\Desktop\\CPA",
+  "output_root": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\paper_sparse_fresh16_keep50_30_20_R8_20260921",
+  "private_output_root": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results_private\\paper_sparse_fresh16_keep50_30_20_R8_20260921",
+  "config": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\configs\\cpa_fia_fresh16_R8_S5k_K3_F25k.json",
+  "command": "C:\\miniconda\\envs\\DLG\\python.exe -u -m qacpa.run_paper_sparse_fresh16_r8 --config C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\configs\\cpa_fia_fresh16_R8_S5k_K3_F25k.json --phase run",
+  "status": "STOPPED_BY_USER_FOR_SSH",
+  "full_experiment_status": "INCOMPLETE_STOPPED_BY_USER",
+  "started_utc": "2026-09-21T01:32:37.685266+00:00",
+  "serial": true,
+  "fresh_update_collection": true,
+  "supersedes": [
+    ".ai/execution-handoffs/CPA_PAPER_SPARSE_SAME80_K503020_R20_20260921_V1_CLAIMED_ARCHIVE_20260921.md",
+    ".ai/execution-handoffs/CPA_PAPER_SPARSE_SAME80_K503020_R20_20260921_V2_R8_CLAIMED_ARCHIVE_20260921.md",
+    ".ai/execution-handoffs/CPA_PAPER_SPARSE_SAME80_K503020_R20_20260921_V3_FAILED_ARCHIVE_20260921.md"
+  ],
+  "stages": [
+    {
+      "name": "fresh16_v4_full_experiment",
+      "command": "C:\\miniconda\\envs\\DLG\\python.exe -u -m qacpa.run_paper_sparse_fresh16_r8 --config C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\configs\\cpa_fia_fresh16_R8_S5k_K3_F25k.json --phase run",
+      "status": "STOPPED_BY_USER",
+      "started_utc": "2026-09-21T01:32:37.689266+00:00",
+      "stdout": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\paper_sparse_fresh16_keep50_30_20_R8_20260921\\fresh16.stdout.log",
+      "stderr": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\paper_sparse_fresh16_keep50_30_20_R8_20260921\\fresh16.stderr.log",
+      "exit_code": 15,
+      "ended_utc": "2026-09-21T01:49:57.506091+00:00"
+    }
+  ],
+  "current_stage": "fresh16_v4_full_experiment",
+  "user_stop_receipt": "quantization_aware_cpa/results/paper_sparse_fresh16_keep50_30_20_R8_20260921/user_stop_for_ssh_20260921.json",
+  "stopped_by_user_utc": "2026-09-21T01:49:57.506091+00:00",
+  "local_restart_allowed": false,
+  "exit_status": 15
+}

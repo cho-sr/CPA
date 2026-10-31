@@ -1,0 +1,336 @@
+{
+  "run_tag": "m10_cpa_fia_packed4_best10",
+  "status": "complete",
+  "n_images": 10,
+  "git_sha": "437013a234e92e882fb6744a64995b0ab812841c",
+  "schema_version": 1,
+  "config": {
+    "schema_version": 1,
+    "run_tag": "m10_cpa_fia_packed4_best10",
+    "device": "cuda",
+    "seed": 0,
+    "n": 10,
+    "T": 10,
+    "n_images": 10,
+    "batch_indices": [
+      0
+    ],
+    "output_dir": "results/m10_cpa_fia_packed4_best10",
+    "source_output": "results/m10_cpa_fia_packed4_best10/input_source",
+    "source_fp32_output": "results/m6_uia_fp32_B16_fia",
+    "selection_reference": "results/m8_fedavg_naive_cpa_dither4_B16",
+    "selection": "historical M8 LPIPS ascending then global_index ascending, first10; fixed before new results",
+    "selection_scope": "selected exploratory best10 of historical80; new batch/update; historical n16 scores identify samples only",
+    "codec": "uniform_affine_uint4_stochastic_v1",
+    "codec_seed": 0,
+    "observation": "actual (W_initial-W_after10)/lr on selected n10; receiver decodes real packed4 packet",
+    "new_training": true,
+    "new_update_collection": true,
+    "new_training_reason": "User restricted client data itself to10; stored n16 updates cannot isolate these10. Reuse cached chosen image features, same FC SGD schedule.",
+    "local_training": {
+      "lr": 0.001,
+      "steps": 10,
+      "optimizer": "sgd",
+      "momentum": 0.0,
+      "weight_decay": 0.0,
+      "classifier_dropout": false,
+      "seed": 0
+    },
+    "model": {
+      "name": "vgg16",
+      "weights": "IMAGENET1K_V1",
+      "attacked_checkpoint_round": 0,
+      "conv_frozen": true,
+      "updated_layers": "all classifier parameters",
+      "attack_layer": "classifier.0.weight"
+    },
+    "stage1": {
+      "cpa_ica_max_iter": 25000,
+      "cpa_ica_lr": 0.001,
+      "cpa_ica_optimizer": "adam",
+      "cpa_ica_scheduler": "none",
+      "cpa_ica_decor": 5.3,
+      "cpa_ica_T": 7.7,
+      "cpa_ica_ne": 1.0,
+      "cpa_ica_nv": 0.13,
+      "cpa_ica_l1": 5.0,
+      "cpa_ica_tv": 0.1,
+      "cpa_ica_log_every": 5000
+    },
+    "fia": {
+      "n_iter": 25000,
+      "log_every": 5000,
+      "lr": 0.1,
+      "tv": 0.1,
+      "fi": 1.0,
+      "optimizer": "adam",
+      "scheduler": "cosine",
+      "seed": 42
+    },
+    "ls_A": false,
+    "debias": false,
+    "mp_truncation": false,
+    "mp_diagnostic": false,
+    "stage2": false,
+    "refine_A": false,
+    "oracle_fills": false,
+    "fp32_attack": false,
+    "raw_row_attack": false,
+    "source_adapter": "abs(S_hat) in estimated source order",
+    "evaluation": "post-FIA signed-source absolute-cosine Hungarian; all10; no truth scaling or source substitution",
+    "grid": {
+      "n": 10,
+      "selection": "all selected10 in frozen order"
+    },
+    "compression_scope": "attacked classifier.0.weight packet only",
+    "expected_packet_bytes": 51396640,
+    "execution_scope_authorization": "CPA+FIA 4bit only; user then requested best10 historical images; no additional attack arms",
+    "results_jsonl": "results/runs.jsonl"
+  },
+  "identity": {
+    "config_sha256": "9315f2c6878a0e9e3ca8701ec605f7f63dc564b258c6203d5d93437ac98f8703",
+    "code_sha256": {
+      "quantization_aware_cpa\\qacpa\\run_m10_packed4.py": "fcdcd2dd08985aaa5d6a9c31aee9ae414e97ee9c610501a0af8f3fc9438f0aa4",
+      "quantization_aware_cpa\\qacpa\\communication_codec.py": "7ea86955bf7d5516699111de76ffbe41d7b1a5e58167e5d1a8507a590b669d33",
+      "quantization_aware_cpa\\qacpa\\report_m10_packed4.py": "09a8b62ed2a65c51e423fe982cfdb2b20782372abe0cb43a1bed4c864d58265e",
+      "quantization_aware_cpa\\qacpa\\upstream_naive.py": "8f29b885d86f4121eda5c55e17486a3a48bd8db08b2f83890fe7726730d1ee92",
+      "quantization_aware_cpa\\qacpa\\uia.py": "fe19894d8a340e6bdfc56b83c26da516f2414a87c1cbe3fbe3e4620fcdd580c3",
+      "quantization_aware_cpa\\qacpa\\victim.py": "fdd40fd5c5062761872dc3bdd8dd4e750ccc188ce0050baf6330fad7e080874b",
+      "quantization_aware_cpa\\qacpa\\seed.py": "769366fcc2cf3e144d8caa86f73a55dcb0b6be615a45dab8b6e117399150c558",
+      "quantization_aware_cpa\\qacpa\\fia.py": "42a55ce6a4895785b10573f507658434e597f1138de3d45621f466702c7f5cb0",
+      "quantization_aware_cpa\\qacpa\\run_m8_fedavg_naive.py": "0ea71db00a7e20e9ee9309215fbfa47c84f83290f9ca7027e3bec09ca2ea65f3",
+      "quantization_aware_cpa\\qacpa\\run_m6_uia_fp32_fia.py": "e00319498504257c91697918bf61e7794ee1fe75a48bdb2483c768f596f1bae6",
+      "official_cpa\\src\\attack.py": "d2984fcab6708d1c28bec7c36c7792d40b01b7b4bd150316263f6f8bbd6b3816",
+      "official_cpa\\src\\collect_grads.py": "4d39b5e4bcbebe36dd8131d6c4a5ec0456e7e9de51f7301c0b5079a04aa436e6",
+      "official_cpa\\src\\collect_updates.py": "78a07e3f872231cb582c828eb315bb3c04976bc2f36fdecae5bdb6c17d7f6177",
+      "official_cpa\\src\\datasets.py": "f9e7b47733b5acb4b73e6914a3f100b5187766bbed78a12d17b69c39eec1b6d1",
+      "official_cpa\\src\\eval_utils.py": "042e6263905b32044290e2e1e4d93c54ebcb8e813509c27cf76bdd23b00ec349",
+      "official_cpa\\src\\feature_inversion.py": "dc73880427e3eaf1f873d295f17f1d48d301882f634ee5df36ddeea8e56c4dec",
+      "official_cpa\\src\\gradient_inversion.py": "c598e1ee7b4079f741060d10c8dfd14711e393a97384c63cf32be77a458b1873",
+      "official_cpa\\src\\gradient_inversion_utils.py": "668d77788dc8d81c181c8c0a9fbe8533c6fbea22ba46fe7f5e15b0a431300e5f",
+      "official_cpa\\src\\log_utils.py": "70ced512bcd2de0e6e52d34a5cb9ca34ae7877a0b220b044fce12e48c422cd80",
+      "official_cpa\\src\\models.py": "f684ca948a8ba8020d82cba3d2bdc5df731dd51d9807e38c5be37a3feab4ee56",
+      "official_cpa\\src\\report_m6_attack_results.py": "ce40db9745aebc515c5d52a031d3a4b2806e74edf9068ab26291094ba6455fa4",
+      "official_cpa\\src\\train.py": "a054cbe9c855b05bba9c808a59524c019b6549dde04c432a6e1906448d125bf1",
+      "official_cpa\\src\\utils.py": "565f1bf1a47f387d042b35bb24f677d1ff0d3ec5d979e2876c31ed114179b9fe",
+      "official_cpa\\src\\vgg16.py": "8114eca8cde553dace5f777aedd21b70851c570d473e597b005cb6be4b248d36",
+      "quantization_aware_cpa\\scripts\\launch_m10_packed4.ps1": "eb2c8872f5bab635b2069a22b2a223d6081a6b4ef6937d2a6f51988d530d17f9"
+    },
+    "selection_csv_sha256": "e2c977977fa8fe305cb781118d1b68f005d4843db5d42c7de8d9356041ffbaed",
+    "weights_sha256": "397923af8e79cdbb6a7127f12361acd7a2f83e06b05044ddf496e83de57a5bf0",
+    "versions": {
+      "torch": "2.13.0+cu132",
+      "numpy": "2.4.4",
+      "python": "3.11.14 | packaged by Anaconda, Inc. | (main, Oct 21 2025, 18:30:03) [MSC v.1929 64 bit (AMD64)]"
+    }
+  },
+  "metrics": {
+    "lpips_mean": 0.45364950895309447,
+    "psnr_mean": 22.146160507202147,
+    "ssim_mean": 0.37600632309913634,
+    "source_abs_cosine_mean": 0.8967264503240585,
+    "embedding_cos09": 9,
+    "source_cos_per_source": [
+      0.034411340951919556,
+      0.9830443263053894,
+      0.9881657361984253,
+      0.9951382875442505,
+      0.9961603283882141,
+      0.9985933303833008,
+      0.9934262037277222,
+      0.986933708190918,
+      0.9977598786354065,
+      0.9936313629150391
+    ]
+  },
+  "selection_label": "Historical M8 lowest-LPIPS 10 of 80; selected exploratory sample",
+  "selection": {
+    "method": "historical M8 LPIPS ascending, then global_index ascending; first10",
+    "historical_global_indices": [
+      46,
+      8,
+      58,
+      39,
+      1,
+      17,
+      63,
+      9,
+      53,
+      70
+    ],
+    "source_csv_sha256": "e2c977977fa8fe305cb781118d1b68f005d4843db5d42c7de8d9356041ffbaed",
+    "scope": "selected exploratory sample; new n10 update; no paired historical n16 claim"
+  },
+  "per_victim_batch": [
+    {
+      "batch_index": 0,
+      "n_images": 10,
+      "lpips_mean": 0.45364950895309447,
+      "psnr_mean": 22.146160507202147,
+      "ssim_mean": 0.37600632309913634,
+      "source_abs_cosine_mean": 0.8967264503240585,
+      "embedding_cos09": 9,
+      "source_cos_per_source": [
+        0.034411340951919556,
+        0.9830443263053894,
+        0.9881657361984253,
+        0.9951382875442505,
+        0.9961603283882141,
+        0.9985933303833008,
+        0.9934262037277222,
+        0.986933708190918,
+        0.9977598786354065,
+        0.9936313629150391
+      ],
+      "runtime_sec": {
+        "update_collection": 1.5785381000023335,
+        "codec": 2.5143792999951984,
+        "cpa": 41.29639219999808,
+        "fia": 1271.8678675000046,
+        "invocation": 1316.359378699999
+      }
+    }
+  ],
+  "communication": {
+    "fp32_payload_bytes": 411041792,
+    "fp32_packet_bytes": 411041824,
+    "packed_payload_bytes": 51380224,
+    "scale_bytes": 16384,
+    "header_bytes": 32,
+    "packet_bytes": 51396640,
+    "scope": "attacked classifier.0.weight packet only",
+    "packet_compression_ratio": 7.997445436121894,
+    "packet_reduction_fraction": 0.8749600721896369
+  },
+  "communication_per_batch": [
+    {
+      "batch_index": 0,
+      "codec": "uniform_affine_uint4_stochastic_v1",
+      "bits": 4,
+      "shape": [
+        4096,
+        25088
+      ],
+      "n_values": 102760448,
+      "fp32_payload_bytes": 411041792,
+      "fp32_packet_bytes": 411041824,
+      "packed_payload_bytes": 51380224,
+      "scale_bytes": 16384,
+      "header_bytes": 32,
+      "packet_bytes": 51396640,
+      "compression_ratio": 7.997445436121894,
+      "saved_percent": 87.49600721896368,
+      "scope": "attacked classifier.0.weight packet only",
+      "codec_wall_time_sec": 2.5143792999951984,
+      "transmitted_tensor_convention": "Y=(W_initial-W_final)/lr",
+      "server_weight_delta": "-0.001*decoded_Y",
+      "sha256": "e3f6f7066fdb8a7922fce3f8fa9f8ba93376f6ce6ee38903b74b626c291706d3",
+      "source_reconstruction_only_from_packet": true,
+      "packet_compression_ratio": 7.997445436121894,
+      "packet_reduction_fraction": 0.8749600721896369,
+      "fp32_data_to_packet_ratio": 7.997444813513101
+    }
+  ],
+  "quantization_diagnostics_per_batch": [
+    {
+      "batch_index": 0,
+      "relative_l2": 0.9905171654947552,
+      "mse": 5.386539682333963e-05,
+      "max_abs": 0.06370823457837105,
+      "empirical_error_mean": -7.610659575739257e-07,
+      "cosine": 0.7104180481848564,
+      "zero_fraction": 0.7065543057967205,
+      "zero_scale_rows": 375,
+      "endpoint_fraction_nonzero_rows": 8.752850273406863e-05,
+      "range_overflow_clipping": 0,
+      "code_min": 0,
+      "code_max": 15,
+      "code_range_fields": "codec alphabet bounds, not measured extrema",
+      "roundtrip_verified": true,
+      "decoder_original_input_required": false,
+      "legacy_half_delta_gate_used": false,
+      "quantization_seed": 0,
+      "update_collection_sec": 1.5785381000023335,
+      "update_factor_rel_l2": 2.932994357252028e-05
+    }
+  ],
+  "metric_distributions": [
+    {
+      "metric": "lpips",
+      "n": 10,
+      "mean": 0.45364950895309447,
+      "sample_std": 0.13428778383571785,
+      "min": 0.3826366662979126,
+      "p25": 0.39670230448246,
+      "median": 0.4167379140853882,
+      "p75": 0.42790380865335464,
+      "max": 0.832035481929779
+    },
+    {
+      "metric": "psnr",
+      "n": 10,
+      "mean": 22.146160507202147,
+      "sample_std": 1.169181280689501,
+      "min": 20.27842140197754,
+      "p25": 21.46840524673462,
+      "median": 22.088561058044434,
+      "p75": 22.584943771362305,
+      "max": 24.55537986755371
+    },
+    {
+      "metric": "ssim",
+      "n": 10,
+      "mean": 0.37600632309913634,
+      "sample_std": 0.10871154973248089,
+      "min": 0.22795382142066956,
+      "p25": 0.3111018165946007,
+      "median": 0.3535818010568619,
+      "p75": 0.4478892907500267,
+      "max": 0.5849264860153198
+    },
+    {
+      "metric": "source_abs_cosine",
+      "n": 10,
+      "mean": 0.8967264503240585,
+      "sample_std": 0.3030281653635441,
+      "min": 0.034411340951919556,
+      "p25": 0.9872417151927948,
+      "median": 0.9935287833213806,
+      "p75": 0.9959048181772232,
+      "max": 0.9985933303833008
+    }
+  ],
+  "runtime_sec": {
+    "codec": 2.5143792999951984,
+    "cpa": 41.29639219999808,
+    "fia": 1271.8678675000046,
+    "invocation": 1316.359378699999,
+    "update_collection": 1.5785381000023335
+  },
+  "wall_time_sec": 1316.359378699999,
+  "oracle_fills": 0,
+  "cpa": true,
+  "ls_A": false,
+  "debias": false,
+  "mp_truncation": false,
+  "stage2": false,
+  "diagnostics_not_applicable": [
+    "MP noise model",
+    "Stage2 feasibility",
+    "gamma",
+    "LS mixing matrix"
+  ],
+  "completed_at_utc": "2026-09-10T08:37:13.562056+00:00",
+  "output_hashes": {
+    "per_image_metrics.csv": "d6409c9be245ec7bb4eb26044533928bcaae34249e4031e971197be47ddce295",
+    "per_batch_metrics.csv": "2e7d60111f79ec3f39c353b3161306083e4230cdbce9e6d7d343ef6bbb89082c",
+    "communication.csv": "0e5d2a8bfa47983cae614e60ff123897913d3c76561146484b39f5078a649b89",
+    "quantization_diagnostics.csv": "066b0b4f12bb682a6d6685752c4771e53ffd031f8eb333857fe4a0a1c156ddb9",
+    "metric_distributions.csv": "86e24486f7a85f03357542d8f7c9225422ec530deae47e76e61370b2b3bd3e30",
+    "all10_rec.pt": "1e4b9014ef1b36d52ac8fa9f4e4e59dfd343a95232628e76e4c2e6d8a4a47469",
+    "all10_reconstruction_landscape.png": "f20f638ae3e7532bcaa7925556122f17d23f745f7b62c0a71298eefdc97f6a92",
+    "figure_manifest.json": "9a51f6429f0086807e092ea60c3a9d0ad2a1e902516e2cd6c273d9dc150a96d6",
+    "metric_distributions.png": "f5dfb584687b9e0dbe438112ad3478062ccd2304ebebd57cd2458f2d029ebb00",
+    "report.md": "838438e895270307c2aea9694e3a91210f390bbec6d32397590f8b6dc1573607"
+  }
+}

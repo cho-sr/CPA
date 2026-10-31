@@ -1,0 +1,27 @@
+{
+  "task_id": "CPA_SIGNED_INT8_RANDOMIZED8_FIA_20260917",
+  "wrapper_status": "PARTIAL",
+  "scientific_quality": "NOT_EVALUATED",
+  "failure_stage": "SENDER_DISPATCH",
+  "failure_type": "TypeError",
+  "failure": "collect() got an unexpected keyword argument 'command'",
+  "root_cause": "signed_int8_observation.main passed argparse's command selector into collect(**vars(args))",
+  "register_completed": true,
+  "sender_entered_collect": false,
+  "raw_update_deserialized": false,
+  "true_updates_consumed": false,
+  "public_observation_written": false,
+  "separation_calls": 0,
+  "fia_runs": 0,
+  "private_evaluation_started": false,
+  "metrics_available": false,
+  "focused_validation": {
+    "tests": "6/6 passed",
+    "py_compile": "passed",
+    "cli_help": "passed"
+  },
+  "no_restart_or_extra_arm": true,
+  "preserved_execution_summary": ".ai/execution-results/CPA_SIGNED_INT8_RANDOMIZED8_FIA_20260917/execution_summary.json",
+  "sender_log": ".ai/execution-results/CPA_SIGNED_INT8_RANDOMIZED8_FIA_20260917/02_sender.log",
+  "report": ".ai/execution-results/CPA_SIGNED_INT8_RANDOMIZED8_FIA_20260917/report.md"
+}

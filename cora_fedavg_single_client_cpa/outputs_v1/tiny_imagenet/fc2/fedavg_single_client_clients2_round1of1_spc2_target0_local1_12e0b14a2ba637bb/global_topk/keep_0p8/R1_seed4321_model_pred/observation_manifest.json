@@ -1,0 +1,15 @@
+{
+  "attacker_observes_round_aggregate": false,
+  "desparse_sampler": "retained_rescaled",
+  "ensemble_size": 1,
+  "keep_ratio": 0.8,
+  "model_checkpoint_for_attack": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\cora_fedavg_single_client_cpa\\outputs_v1\\fedavg_single_client_updates\\tiny_imagenet\\fc2\\fedavg_single_client_clients2_round1of1_spc2_target0_local1_12e0b14a2ba637bb\\global_topk\\keep_0p8.fedavg_round_before.pt",
+  "noise_seed": 4321,
+  "observation": "one_client_compressed_update_from_fedavg_round",
+  "observation_file": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\cora_fedavg_single_client_cpa\\outputs_v1\\fedavg_single_client_updates\\tiny_imagenet\\fc2\\fedavg_single_client_clients2_round1of1_spc2_target0_local1_12e0b14a2ba637bb\\global_topk\\keep_0p8_attack_layer_observation.pickle",
+  "observation_hash": "da80432dea0b5031226bcff364bdd19c84d2c0b84311d4a25ece5dd1ad75d3f5",
+  "schema_version": 1,
+  "source_file": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\cora_fedavg_single_client_cpa\\outputs_v1\\fedavg_single_client_updates\\tiny_imagenet\\fc2\\fedavg_single_client_clients2_round1of1_spc2_target0_local1_12e0b14a2ba637bb\\global_topk\\keep_0p8.pickle",
+  "source_hash": "94e82d7425c12ceb45ca6f2e3249b5ec20aa4f2ef7fc88f4e8a3e372e1d125de",
+  "tau_policy": "topk_threshold"
+}

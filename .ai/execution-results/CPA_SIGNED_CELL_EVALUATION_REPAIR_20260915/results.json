@@ -1,0 +1,161 @@
+{
+  "task_id": "CPA_SIGNED_CELL_EVALUATION_REPAIR_20260915",
+  "plan_version": 1,
+  "status": "COMPLETED",
+  "full_experiment_status": "FULL_EXPERIMENT_COMPLETED",
+  "scope": "Evaluator repair, focused regression tests, and offline evaluation of saved AP5/CPA/FIA artifacts only",
+  "runtime": {
+    "model": "gpt-5.6-luna",
+    "reasoning_effort": "xhigh",
+    "python": "C:/miniconda/envs/DLG/python.exe",
+    "executor_thread": "01a09e4d-51f3-7121-84e2-03a7a9ac3039",
+    "executor_pid": 18272
+  },
+  "handoff": {
+    "pre_claim_snapshot_sha256": "7dbb5e5da4b6b1b81b021e5dbcb7ca088641aa3876d5d81981367b391e27191c",
+    "pre_claim_state": "READY_UNCLAIMED",
+    "claim_state": "RUNNING",
+    "final_state": "COMPLETED",
+    "claimed_by": "01a09e4d-51f3-7121-84e2-03a7a9ac3039",
+    "completed_by": "01a09e4d-51f3-7121-84e2-03a7a9ac3039",
+    "report": ".ai/execution-results/CPA_SIGNED_CELL_EVALUATION_REPAIR_20260915/report.md"
+  },
+  "repair": {
+    "file": "quantization_aware_cpa/qacpa/signed_cell_rank_evaluation.py",
+    "line": 297,
+    "change": "elif legacy_naive -> elif naive",
+    "scientific_semantics_changed": false,
+    "pre_fix_hash": "db719026ee65b4e1c808da9f6abbaef9bb29d17da5d35f5e36aa816cbb36e7b8",
+    "post_fix_hash": "c163aaa54bd8d5ebfc1528f49cafe2a830de72a9d7fe38583391b7ddaf4a65ef",
+    "pre_fix_traceback": ".ai/execution-results/CPA_SIGNED_CELL_EVALUATION_REPAIR_20260915/pre_fix_traceback.log"
+  },
+  "tests": [
+    {
+      "name": "signed_cell_focused_regression",
+      "command": "PYTHONPATH=C:/Users/조상제/Desktop/CPA/quantization_aware_cpa;C:/Users/조상제/Desktop/CPA C:/miniconda/envs/DLG/python.exe -m pytest quantization_aware_cpa/tests/test_signed_cell_rank.py quantization_aware_cpa/tests/test_signed_cell_rank_pipeline.py quantization_aware_cpa/tests/test_signed_cell_rank_validation.py -q --basetemp C:/Users/조상제/Desktop/CPA/.tmp_pytest_signed_cell_evaluation_repair_03",
+      "status": "PASS",
+      "passed": 49,
+      "failed": 0,
+      "duration_seconds": 9.61,
+      "exit_code": 0,
+      "stdout": ".ai/execution-results/CPA_SIGNED_CELL_EVALUATION_REPAIR_20260915/tests_focused_03.stdout.log",
+      "stderr": ".ai/execution-results/CPA_SIGNED_CELL_EVALUATION_REPAIR_20260915/tests_focused_03.stderr.log"
+    },
+    {
+      "name": "syntax_compilation",
+      "status": "PASS",
+      "exit_code": 0,
+      "stdout": ".ai/execution-results/CPA_SIGNED_CELL_EVALUATION_REPAIR_20260915/syntax.stdout.log"
+    },
+    {
+      "name": "import_check",
+      "status": "PASS",
+      "exit_code": 0,
+      "stdout": ".ai/execution-results/CPA_SIGNED_CELL_EVALUATION_REPAIR_20260915/import.stdout.log"
+    }
+  ],
+  "reused_stages": {
+    "preprocess_ap5": {
+      "status": "COMPLETED",
+      "output": "quantization_aware_cpa/results/signed_cell_rank_B16_T10/preprocess_ap5",
+      "rerun": false
+    },
+    "attack_cpa25000_fia25000": {
+      "status": "COMPLETED",
+      "output": "quantization_aware_cpa/results/signed_cell_rank_B16_T10/cell_rank_ap5",
+      "rerun": false
+    }
+  },
+  "offline_evaluation": {
+    "status": "COMPLETED",
+    "exit_code": 0,
+    "duration_seconds": 20.328,
+    "execution_record": ".ai/execution-results/CPA_SIGNED_CELL_EVALUATION_REPAIR_20260915/evaluation_execution.json",
+    "output": "quantization_aware_cpa/results_private/signed_cell_rank_B16_T10/evaluation_ap5",
+    "comparison_json": "quantization_aware_cpa/results_private/signed_cell_rank_B16_T10/evaluation_ap5/comparison.json",
+    "figures": [
+      "quantization_aware_cpa/results_private/signed_cell_rank_B16_T10/evaluation_ap5/all16_comparison.png",
+      "quantization_aware_cpa/results_private/signed_cell_rank_B16_T10/evaluation_ap5/all16_compact.png"
+    ],
+    "all_images_included": true,
+    "labels_consumed": false,
+    "private_true_g_loaded_after_validation": true
+  },
+  "metrics": {
+    "naive": {
+      "embedding_cosine": 0.31160516232475394,
+      "mse": 0.07810934683437974,
+      "psnr_db": 11.517332145631135,
+      "ssim": 0.2848939897083067,
+      "lpips": 0.8229246027767658,
+      "true_g_absolute_l2": 0.03371233328273856,
+      "true_g_reference_l2": 0.046040659538687155,
+      "true_g_relative_l2": 0.732229590551601
+    },
+    "cell_rank": {
+      "embedding_cosine": 0.3447613956630307,
+      "mse": 0.07792987947221378,
+      "psnr_db": 11.504525428879344,
+      "ssim": 0.2816569651558574,
+      "lpips": 0.7941681928932667,
+      "true_g_absolute_l2": 0.02917478452002653,
+      "true_g_reference_l2": 0.046040659538687155,
+      "true_g_relative_l2": 0.6336743394284235
+    },
+    "cell_rank_minus_naive": {
+      "embedding_cosine": 0.033156233338276775,
+      "mse": -0.00017946736216596648,
+      "psnr_db": -0.01280671675179157,
+      "ssim": -0.0032370245524492858,
+      "lpips": -0.028756409883499146,
+      "true_g_absolute_l2": -0.004537548762712028,
+      "true_g_relative_l2": -0.09855525112317742,
+      "true_g_relative_reduction_fraction": 0.13459610536762667
+    },
+    "per_image_scores_and_deltas": "quantization_aware_cpa/results_private/signed_cell_rank_B16_T10/evaluation_ap5/comparison.json"
+  },
+  "provenance": {
+    "public_manifest_sha256": "9b4891765e6fc7e4adb1e3e11c158b3d4a2c3430d3397e1f1466ddafe2e1cd69",
+    "checkpoint_sha256": "397923af8e79cdbb6a7127f12361acd7a2f83e06b05044ddf496e83de57a5bf0",
+    "raw_updates_sha256": "ef9aefc66ab9fcfd0b023fdfc064dbadc27567bd3ef3508bc14ebda9af28ba4c",
+    "evaluation_truth_sha256": "724bbacbe316cc28dac086db9cfaf6507f4c1af31144fd610cc480985aab72e2",
+    "initialization_sha256": "6f6ec493923b7081284f0fc405f76f60b583cc41a5977393751f96bb21147e59",
+    "cell_v_file_sha256": "7b4850a13dc725017eab7da451019b1a2c3e90bd6d58d8d4a0db3181fcd010cf",
+    "cell_v_tensor_sha256": "1b6790c2a17319c0f4069ed9f4325e5536ccbed02230d9abcc60536fe9181326",
+    "cell_candidate_sha256": "700beaa7b7da8565da68bb782ea67738542695334d09a2910e29f83bf29ab9d6",
+    "offline_private_loaded": true,
+    "selection_used_for_metrics": false
+  },
+  "diagnostics": {
+    "rank": 16,
+    "ap_iterations": 5,
+    "centered": false,
+    "rank_backend": "gram_eigh",
+    "finite": true,
+    "exact_code_ratio": 1.0,
+    "bounded_cell_violation_count": 0,
+    "movement_from_v0_relative_l2": 0.3459331105004968,
+    "final_v_minus_m_l2": 0.002805809723213315,
+    "scale_relative_error_metric_only": 0.07142846108198095,
+    "peak_cuda_allocated_bytes": 3593577984,
+    "peak_cuda_reserved_bytes": 3841982464
+  },
+  "integrity": {
+    "protected_match": true,
+    "signed_cell_rank_sha256": "7ae6deb49738914f4cd1f9328397400d89835ede4cd6a462b2ea260a77ae4acb",
+    "hash_evidence": ".ai/execution-results/CPA_SIGNED_CELL_EVALUATION_REPAIR_20260915/pre_edit_hashes.json"
+  },
+  "planner_binding": {
+    "thread_id": "01a09ac2-0e8d-7f90-94a8-c45be99f4343",
+    "pid": 12728,
+    "process_verified": true,
+    "final_delivery": "CONFIRMED",
+    "receipt": "Queued message 01a0a364-4c2a-7d53-bfd9-f72b71785712 for thread 01a09ac2-0e8d-7f90-94a8-c45be99f4343.",
+    "notice": ".ai/execution-results/CPA_SIGNED_CELL_EVALUATION_REPAIR_20260915/planner_final_notice.txt"
+  },
+  "limitations": [
+    "One B16/T10 batch and seed 42",
+    "Embedding cosine is an evaluation-only oracle metric",
+    "No generalization or universal recovery claim"
+  ]
+}

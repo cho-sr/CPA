@@ -1,0 +1,124 @@
+{
+  "raw_metrics": {
+    "cpa_objective": {
+      "value": {
+        "iter": 24999,
+        "loss": 735.4362182617188,
+        "loss_ne": 0.0,
+        "loss_decor": 138.04287719726562,
+        "loss_tv": 0.0,
+        "loss_nv": 23.45525550842285,
+        "loss_l1": 0.15195249021053314,
+        "time_sec": 40.50202060001902
+      },
+      "status": "COMPUTED",
+      "reason": null,
+      "definition": "Original upstream last pre-update loss log; NE is overwritten to zero"
+    },
+    "mi": {
+      "value": null,
+      "status": "NOT_COMPUTED",
+      "reason": "Not executed",
+      "definition": null
+    },
+    "negentropy": {
+      "value": null,
+      "status": "NOT_COMPUTED",
+      "reason": "Upstream overwrites loss_ne to zero; actual source negentropy not computed",
+      "definition": null
+    },
+    "sparsity": {
+      "value": {
+        "mean_abs": 0.15195250511169434,
+        "exact_zero_fraction": 0.14479531347751617
+      },
+      "status": "COMPUTED",
+      "reason": null,
+      "definition": "Final signed S_hat raw L1 mean and exact zero fraction"
+    },
+    "sign_consistency": {
+      "value": {
+        "minority_sign_l2_mean": 23.455963134765625
+      },
+      "status": "COMPUTED",
+      "reason": null,
+      "definition": "Final signed S_hat min(positive L2, negative L2), per-row mean; no oracle"
+    },
+    "source_diversity": {
+      "value": {
+        "pairwise_cosine_mean": 0.0003785196167882532,
+        "pairwise_abs_cosine_mean": 0.018930936232209206,
+        "pairwise_abs_cosine_max": 0.10654756426811218
+      },
+      "status": "COMPUTED",
+      "reason": null,
+      "definition": "Final signed S_hat off-diagonal row cosine; not mutual information"
+    },
+    "quantization_consistency": {
+      "value": {
+        "numel": 102760448,
+        "code_mismatch_count": 0,
+        "code_mismatch_fraction": 0.0,
+        "bounded_cell_violation_count": 0,
+        "bounded_cell_violation_fraction": 0.0,
+        "scale": {
+          "candidate_scale": 5.416279236669652e-05,
+          "observed_scale": 5.416279236669652e-05,
+          "absolute_error": 0.0,
+          "relative_error": 0.0,
+          "exact_equal": true,
+          "candidate_supported": true,
+          "reason": null
+        },
+        "scope": "supplied_matrix_only; no reconstructed_image_update_replay"
+      },
+      "status": "COMPUTED",
+      "reason": null,
+      "definition": "Decoded FC1 input at public fixed s; not reconstructed image update"
+    },
+    "scale_consistency": {
+      "value": {
+        "candidate_scale": 5.416279236669652e-05,
+        "observed_scale": 5.416279236669652e-05,
+        "absolute_error": 0.0,
+        "relative_error": 0.0,
+        "exact_equal": true,
+        "candidate_supported": true,
+        "reason": null
+      },
+      "status": "COMPUTED",
+      "reason": null,
+      "definition": "Decoded FC1 reference scale versus observed s; diagnostic"
+    }
+  },
+  "evaluation_metrics": {
+    "embedding_oracle": {
+      "cosine": {
+        "value": null,
+        "status": "NOT_COMPUTED",
+        "reason": "Oracle evaluation not executed",
+        "definition": null
+      }
+    },
+    "image_oracle": {
+      "lpips": {
+        "value": null,
+        "status": "NOT_COMPUTED",
+        "reason": "Oracle evaluation not executed",
+        "definition": null
+      },
+      "psnr": {
+        "value": null,
+        "status": "NOT_COMPUTED",
+        "reason": "Oracle evaluation not executed",
+        "definition": null
+      },
+      "ssim": {
+        "value": null,
+        "status": "NOT_COMPUTED",
+        "reason": "Oracle evaluation not executed",
+        "definition": null
+      }
+    }
+  }
+}

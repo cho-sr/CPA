@@ -1,0 +1,107 @@
+{
+  "schema": "CPA_SAME80_REPAIR_VALIDATION_V1",
+  "task_id": "CPA_SAME80_BITS87654_R100_SCREEN3_20260926",
+  "plan_version": 1,
+  "amendment_id": "CPA_SAME80_SCORE_REPAIR_20260926",
+  "authorization_handoff_sha256": "56fb37ce5f3bc06dc646782880b177ecd213bb49d1d75dedc87c9df258a738e5",
+  "validated_at_utc": "2026-09-26T13:36:41.097464+00:00",
+  "status": "VALIDATED_FOR_REVIEWED_FOLLOWUP_TRANSITION",
+  "scientific_conditions_unchanged": true,
+  "code_changes": {
+    "registered_runner": {
+      "path": "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/qacpa/run_same80_bits_r100.py",
+      "before_sha256": "b4a8e0fd9f26adde6fe103744226d9e3b191c1acfc2cc0a165127656fa94ae5e",
+      "after_sha256": "c7842302a3c8319633fc23a56a44b058b8cf7d6f86c264fcfb0438682cab0124",
+      "only_registered_code_path_changed": true
+    },
+    "supervisor_adapter": {
+      "path": ".ai/cpa_same80_supervisor.py",
+      "before_sha256": "b2c6a9234ada2049edd368253edc3a46c35e59d84254c30fa82c17c897620f6c",
+      "after_sha256": "75ca6814fe81e075b2c6afcd17e6c3006ebd0410bcc24dc3ec8e30a1f13fff15"
+    }
+  },
+  "focused_validation": {
+    "command": "C:/miniconda/envs/DLG/python.exe -B -m pytest -q tests/test_same80_bits_r100.py ..\\.ai\\tests\\test_cpa_same80_supervisor.py",
+    "result": "34 passed",
+    "coverage": [
+      "recovery attestation hash returned for new and existing records",
+      "actual staged checkpoint scoring and unchanged pixels",
+      "zero-optimizer-step reuse",
+      "checkpoint source and attempt ledger immutability",
+      "reviewed transition allowlists",
+      "follow-up transition requires exact prior launch and archived provenance",
+      "duplicate-worker exclusion"
+    ],
+    "syntax": "4 focused Python files compiled successfully with DLG Python -S -B"
+  },
+  "current_failure_provenance": {
+    "worker_status_path": "quantization_aware_cpa/results_private/same80_bits87654_R100_S5k_K3_F25k/worker_status.json",
+    "worker_status_sha256": "75261a788e6a5d99d6ec24eabd4c3f5d667281619229be4094f3534ea6f8c7f2",
+    "worker_pid": 11808,
+    "worker_created_ms": 1790429319044,
+    "exit_code": 1,
+    "stage_execution_path": "quantization_aware_cpa/results/same80_bits87654_R100_S5k_K3_F25k/stage_execution.json",
+    "stage_execution_sha256": "5c66714d0d40651701ec795168302f4d4d69b08a67469293389ba8b31a0a789c",
+    "phase_child_pid": 6268,
+    "error": "KeyError: 'attestation_sha256'"
+  },
+  "followup_repair_chain": {
+    "prior_transition_sha256": "0a7d49f34803409a262242488ebfe3253edf0c8044beb1d8d41411c53a4c0893",
+    "prior_transition_archive_path": ".ai/relay-runs/supervisors/CPA_SAME80_BITS87654_R100_SCREEN3_20260926/reviewed_repair_transition_attempt02.json",
+    "prior_worker_pid": 11808,
+    "prior_worker_created_ms": 1790429319044,
+    "prior_failure_provenance": {
+      "worker_status_path": "quantization_aware_cpa/results_private/same80_bits87654_R100_S5k_K3_F25k/worker_status.json",
+      "worker_status_sha256": "8c2550f4fc82c44ec622afbd846c8be954e92a62561c77aa6fc5020ff756ab6b",
+      "worker_pid": 14680,
+      "worker_created_ms": 1790420245093,
+      "exit_code": 1,
+      "stage_execution_path": "quantization_aware_cpa/results/same80_bits87654_R100_S5k_K3_F25k/stage_execution.json",
+      "stage_execution_sha256": "b635a64e5cb0e6d65ff94188b6c80dbec26157407c20ae13a10c13a7c676e603",
+      "phase_child_pid": 22048,
+      "error": "AttributeError: module 'qacpa.staged_fia' has no attribute '_device_state'"
+    }
+  },
+  "prior_repair_transition_archive_sha256": "0a7d49f34803409a262242488ebfe3253edf0c8044beb1d8d41411c53a4c0893",
+  "checkpoint_provenance": {
+    "task_id": "CPA_SAME80_BITS87654_R100_SCREEN3_20260926",
+    "plan_version": 1,
+    "authorization_handoff_sha256": "56fb37ce5f3bc06dc646782880b177ecd213bb49d1d75dedc87c9df258a738e5",
+    "registration_identity_sha256": "0dbbb8a40b3527374355ce728a4f4265b1debe94a3a938ef79c35edcbd49a581",
+    "stage_identity_sha256": "465704b1867229bf0c4e64eb83a4f9f1e0b87759ebda2a4beccd2b1b2d4f35ef",
+    "source_sha256": "572e882afdacd41002f22f91a1eec68f77dd3af16f8000a93a8be2527aec8e8c",
+    "sources_file_sha256": "a1b83a6096895c07e47cf0ff5cc85568328310457a58b4a8ae053ece6aca79e8",
+    "sources_tensor_sha256": "b68761d8dfb21dd1442a21622efb380aa2616dcaf571621488f253efa33e31e2",
+    "cpa_record_sha256": "187bfa4d5c2fcb0aedb1269a4b5fc88965434c341d9c2d6af0e611abebbcd23f",
+    "fia_manifest_sha256": "9ae62189a3b119f9ac0a462b55dd865dd177179816617ef040b8ac2cadb51ef4",
+    "attempt_ledger_sha256": "bad6ff9763e2e39feb70bb685eae8ff5d5b2a22847b0a93a10245b6dfb7c5bea",
+    "attempt_number": 1,
+    "completed_iterations": 25000,
+    "horizon": 25000,
+    "checkpoint_sha256": "b40e114e85317563996bad4b8e923c6ed1ed0548a3d0034ac9d54d154c65e6ff",
+    "checkpoint_image_sha256": "069720cb271ef4ed991eb6cbd67fd82344ac916be41ad4b984d85230e951f1e8",
+    "checkpoint_wall_time_sec": 1922.509845099994
+  },
+  "registration": {
+    "registration_sha256": "9d445f925aa43e2cd00a8464e5345a72e489d51a3bd5ffd36956aaa1c8cda235",
+    "supervisor_identity_sha256": "992f13929816b69302b08644eb5f5b953a18c0ca265a4f1986fe4a524bad3e57",
+    "runner_identity_sha256": "0dbbb8a40b3527374355ce728a4f4265b1debe94a3a938ef79c35edcbd49a581",
+    "config_sha256": "ceadcebaeb2a50c52a0035e3cebf086ccc044b218e79463ff0c197fbdb79727b"
+  },
+  "pretransition_process_check": {
+    "research_processes": [],
+    "prior_wrapper_pid_absent": 11808,
+    "watchdog_pid": 4132,
+    "watchdog_created_ms": 1790429281641,
+    "no_live_task_lock_owner": true
+  },
+  "checkpoint_recovery_policy": {
+    "actual_optimizer_steps_in_previous_recovery": 0,
+    "optimizer_steps_during_next_recovery": 0,
+    "original_checkpoint_bytes_preserved": true,
+    "original_completion_ledger_bytes_preserved": true,
+    "missing_peak_memory": "unavailable; no value synthesized",
+    "next_regular_candidate_for_forward_resource_measurement": "bit08/batch01 Naive"
+  },
+  "prior_failed_attempt_archive": "repair_attempt_02.json"
+}

@@ -1,0 +1,148 @@
+{
+  "positive_bias_code_classes_ascending": [
+    124,
+    160,
+    231,
+    290,
+    389,
+    507,
+    549,
+    621,
+    657,
+    658,
+    969,
+    975
+  ],
+  "positive_bias_code_count": 12,
+  "rule": "positive signed bias code is one-way evidence only; no absence or multiplicity claim",
+  "h0": {
+    "name": "H0",
+    "rule": "public starting classifier argmax; first index wins exact ties",
+    "labels": [
+      781,
+      655,
+      452,
+      781,
+      843,
+      657,
+      237,
+      761,
+      655,
+      389,
+      658,
+      761,
+      621,
+      658,
+      969,
+      620
+    ]
+  },
+  "status": "COMPLETED",
+  "scipy_version": "1.17.1",
+  "assignment": [
+    {
+      "row": 0,
+      "column": 5,
+      "reward": 1.038015604019165
+    },
+    {
+      "row": 1,
+      "column": 13,
+      "reward": 1.6813147068023682
+    },
+    {
+      "row": 2,
+      "column": 14,
+      "reward": 1.4190154075622559
+    },
+    {
+      "row": 3,
+      "column": 6,
+      "reward": 0.6949857473373413
+    },
+    {
+      "row": 4,
+      "column": 2,
+      "reward": 0.5515892505645752
+    },
+    {
+      "row": 5,
+      "column": 8,
+      "reward": 1.9879752397537231
+    },
+    {
+      "row": 6,
+      "column": 1,
+      "reward": 0.3424714505672455
+    },
+    {
+      "row": 7,
+      "column": 12,
+      "reward": 1.6817833185195923
+    },
+    {
+      "row": 8,
+      "column": 11,
+      "reward": 0.2987949550151825
+    },
+    {
+      "row": 9,
+      "column": 4,
+      "reward": 2.5803382396698
+    },
+    {
+      "row": 10,
+      "column": 9,
+      "reward": 1.3360852003097534
+    },
+    {
+      "row": 11,
+      "column": 15,
+      "reward": 1.4430845975875854
+    },
+    {
+      "row": 12,
+      "column": 7,
+      "reward": 1.3466202020645142
+    },
+    {
+      "row": 13,
+      "column": 0,
+      "reward": -0.0020761657506227493
+    },
+    {
+      "row": 14,
+      "column": 10,
+      "reward": 1.7214710712432861
+    },
+    {
+      "row": 15,
+      "column": 3,
+      "reward": 0.16287142038345337
+    }
+  ],
+  "h1": {
+    "name": "H1",
+    "rule": "mandatory positive-code classes plus free slots using public logits",
+    "labels": [
+      507,
+      655,
+      452,
+      549,
+      231,
+      657,
+      160,
+      761,
+      975,
+      389,
+      658,
+      761,
+      621,
+      124,
+      969,
+      290
+    ]
+  },
+  "h1_equals_h0": false,
+  "labels_are_hypotheses": true
+}

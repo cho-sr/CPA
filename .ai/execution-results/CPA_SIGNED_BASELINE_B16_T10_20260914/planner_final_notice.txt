@@ -1,0 +1,13 @@
+[CPA Executor final result | user-authorized ONE handoff]
+TASK_ID: CPA_SIGNED_BASELINE_B16_T10_20260914; PLAN_VERSION: 1; STATUS: COMPLETED.
+Existing high executor finished the approved job. Collection once with all six FC ordinary-SGD/replay deltas exactly equal; INT4 naive and FP32 Reference each completed official CPA 25000 and Direct FIA 25000. All stage exit codes 0. Both final all16 candidates are hash-fixed; no arm was rerun.
+FP32 Reference: PSNR 12.391145 dB, SSIM 0.346884, VGG LPIPS 0.459648.
+INT4 naive: PSNR 11.517332 dB, SSIM 0.284894, VGG LPIPS 0.822925.
+Naive minus reference: {"mean_psnr_db": -0.8738133125594807, "mean_ssim": -0.06198987517853449, "mean_lpips": 0.3632761724293232, "mean_mse": 0.012518882126713121}.
+Single batch/seed only: naive is worse on these three image means; no general success threshold/significance claim. FP32 Reference is a privileged precompression reference. Both arms share identical FIA initial hashes and numeric settings; upstream adaptive_avg_pool2d_backward_cuda nondeterminism warning remains recorded, no complete-determinism claim.
+Planner review 01 was applied before offline evaluation: distinct arm identities, actual sender/input hash binding, checkpoint/seed/config/source checks, and private-only output guards PASS. Initial 158 CPU tests plus 25 focused review tests PASS. No codec/math/budget/handoff-plan changes. Original official/codec/affine/STATE/RELAY sources preserved; existing image evaluator only adds a default-preserving labels-free option.
+Report: C:\Users\조상제\Desktop\CPA\.ai\execution-results\CPA_SIGNED_BASELINE_B16_T10_20260914\report.md
+Results/hashes/commands: C:\Users\조상제\Desktop\CPA\.ai\execution-results\CPA_SIGNED_BASELINE_B16_T10_20260914\results.json
+Evaluation metrics and paired all16 differences: C:\Users\조상제\Desktop\CPA\quantization_aware_cpa\results_private\signed_int4_baseline_B16_T10\evaluation\comparison.json
+All16 figure: C:\Users\조상제\Desktop\CPA\quantization_aware_cpa\results_private\signed_int4_baseline_B16_T10\evaluation\all16_compact.png
+Show this result once to the user and END YOUR TURN. Do not poll, launch further work/experiments, restart an arm, or reply with another monitoring loop. No reply to high is required.

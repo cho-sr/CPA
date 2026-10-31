@@ -1,0 +1,23 @@
+[
+  {
+    "aggregate_update_l2": 0.013943363387038278,
+    "client_train_losses": [
+      0.30815204977989197,
+      0.07038909941911697
+    ],
+    "quant_bit_counts": {
+      "8": 2
+    },
+    "quant_bits_by_client": [
+      8,
+      8
+    ],
+    "quant_cosine_similarity_mean": 0.9986794453831048,
+    "quant_mse_mean": 8.676550860046948e-15,
+    "quant_relative_l2_mean": 0.051152526824640124,
+    "quant_saturation_ratio_mean": 2.385124744539693e-07,
+    "round": 1,
+    "round_time": 4.0425965785980225,
+    "weighted_train_loss": 0.18927057459950447
+  }
+]

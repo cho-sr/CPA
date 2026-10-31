@@ -1,0 +1,9 @@
+{
+  "task_id": "CPA_SIGNED_BITS7654_SCREEN3_20260918",
+  "stage": "bits7654",
+  "callback_pid": 17164,
+  "wait_pid": 26424,
+  "expected_created_ms": 1789668364080,
+  "callback": "C:/Users/\uc870\uc0c1\uc81c/Desktop/CPA/.ai/completion_notify.py",
+  "model_calls_while_waiting": 0
+}

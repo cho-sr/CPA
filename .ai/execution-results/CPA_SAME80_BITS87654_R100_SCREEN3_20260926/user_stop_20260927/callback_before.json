@@ -1,0 +1,11 @@
+{
+  "task_id": "CPA_SAME80_BITS87654_R100_SCREEN3_20260926",
+  "stage": "worker_exit_repair03",
+  "wait_pid": 7548,
+  "process_created_ms": 1790429867410,
+  "notification_thread": "01a0dcd1-66a4-7b52-a6c7-0e9d0a5c096e",
+  "execution_record": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results_private\\same80_bits87654_R100_S5k_K3_F25k\\worker_status.json",
+  "registered_at": "2026-09-26T13:41:57.405263+00:00",
+  "state": "WAITING_FOR_PROCESS_EXIT",
+  "model_calls_while_waiting": 0
+}

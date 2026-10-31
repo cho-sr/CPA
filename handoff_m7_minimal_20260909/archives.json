@@ -1,0 +1,10 @@
+{
+  "archive": "C:\\Users\\조상제\\Desktop\\CPA\\handoff_m7_minimal_20260909\\01_minimal_m7.zip",
+  "size_bytes": 1912955881,
+  "sha256": "0836afa058a2d5fc0c3c95a6e97c5a7676be81a92f16d711942a1018f0bc01d1",
+  "file_count": 145,
+  "all_archived_entry_sha256_verified": true,
+  "optional_model_archive": "C:\\Users\\조상제\\Desktop\\CPA\\handoff_m7_20260909\\07_model_weights.zip",
+  "model_download_url": "https://download.pytorch.org/models/vgg16-397923af.pth",
+  "model_required_sha256": "397923af8e79cdbb6a7127f12361acd7a2f83e06b05044ddf496e83de57a5bf0"
+}

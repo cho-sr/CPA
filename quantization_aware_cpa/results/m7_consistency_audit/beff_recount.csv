@@ -1,0 +1,7 @@
+﻿subset,condition_count,exact_count,mean_abs_error,max_abs_error,n_values,T_values,bits_values,seeds,batch_indices,granularities
+all granularities; all T,96,81,0.21875,2,"[16, 32, 64]","[1, 10]","[2, 3, 4, 8]","[0, 1, 2]",[0],"[""per_bucket"", ""per_row"", ""per_tensor""]"
+all granularities; T=1,48,39,0.22916666666666666,2,"[16, 32, 64]",[1],"[2, 3, 4, 8]","[0, 1, 2]",[0],"[""per_bucket"", ""per_row"", ""per_tensor""]"
+all granularities; T=10,48,42,0.20833333333333334,2,"[16, 32, 64]",[10],"[2, 3, 4, 8]","[0, 1, 2]",[0],"[""per_bucket"", ""per_row"", ""per_tensor""]"
+core per-row; all T,72,62,0.18055555555555555,2,"[16, 32, 64]","[1, 10]","[2, 3, 4, 8]","[0, 1, 2]",[0],"[""per_row""]"
+core per-row; T=1,36,30,0.19444444444444445,2,"[16, 32, 64]",[1],"[2, 3, 4, 8]","[0, 1, 2]",[0],"[""per_row""]"
+core per-row; T=10,36,32,0.16666666666666666,2,"[16, 32, 64]",[10],"[2, 3, 4, 8]","[0, 1, 2]",[0],"[""per_row""]"

@@ -1,0 +1,162 @@
+[
+  {
+    "keep_ratio": 0.1,
+    "method": "CoRA",
+    "selected_member": 0,
+    "run_path": "C:\\Users\\조상제\\Desktop\\CPA\\sparsified_update_cpa\\outputs_v1\\author_runs\\imagenet\\vgg16\\attack\\cp_direct\\nodef\\cora_fedavg_single_client_cpa_keep0p1_n24_steps1_trials1_R8_seed1234_m000_uia",
+    "seed": 1234,
+    "retained_observed_values_bit_exact": true,
+    "maximum_generated_dropped_abs": 2.6089145421792637e-07,
+    "tau": 4.041939973831177e-07,
+    "candidate_matches_recorded_update_tensor_hash": true,
+    "computed_update_tensor_hash": "99c9b851a02f159f6d73a80f242a60ae4a7b24969dc032c90d6b5db8e44a9638",
+    "recorded_update_tensor_hash": "99c9b851a02f159f6d73a80f242a60ae4a7b24969dc032c90d6b5db8e44a9638",
+    "reconstructed_count": 24,
+    "checkpoint": {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\cora_fedavg_single_client_cpa\\outputs_v1\\fedavg_single_client_updates\\imagenet\\vgg16\\fedavg_single_client_clients3_round20of20_spc24_target0_local1_5441531bedd12a66\\global_topk\\keep_0p1.fedavg_round_before.pt",
+      "sha256": "d15a24791b62c237c1f6ab9e264057184c983aee049930bb38eef76573e2dd91"
+    },
+    "sample_indices_hash": "0f2bf88518768bfc21a12255682050bae117cbd14410fc71f2a9757c5d3d4d4a",
+    "author_source_hash": "29c93e49aa2a92cd5687275b12a52a3bfdb977580e70c657ed132b674d956926"
+  },
+  {
+    "keep_ratio": 0.1,
+    "method": "zero_fill",
+    "selected_member": 0,
+    "run_path": "C:\\Users\\조상제\\Desktop\\CPA\\sparsified_update_cpa\\outputs_v1\\author_runs\\imagenet\\vgg16\\attack\\cp_direct\\nodef\\cora_fedavg_single_client_cpa_zf_keep10_e920_keep0p1_n24_steps1_trials1_R1_seed1234_m000_uia",
+    "seed": 1234,
+    "retained_observed_values_bit_exact": true,
+    "maximum_generated_dropped_abs": 0.0,
+    "tau": 4.043104127049446e-07,
+    "candidate_matches_recorded_update_tensor_hash": true,
+    "computed_update_tensor_hash": "e5b7acaa21751fba77696ff241349b717a33aabfccfdcb373baac0a4291d418c",
+    "recorded_update_tensor_hash": "e5b7acaa21751fba77696ff241349b717a33aabfccfdcb373baac0a4291d418c",
+    "reconstructed_count": 24,
+    "checkpoint": {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\cora_fedavg_single_client_cpa\\outputs_v1\\fedavg_single_client_updates\\imagenet\\vgg16\\fedavg_single_client_clients3_round20of20_spc24_target0_local1_e920201510be97a8\\global_topk\\keep_0p1.fedavg_round_before.pt",
+      "sha256": "4daba0870eed8d3179ca2e93a48867fcfefed69b0aeb959aa4eee1f956a63037"
+    },
+    "sample_indices_hash": "0f2bf88518768bfc21a12255682050bae117cbd14410fc71f2a9757c5d3d4d4a",
+    "author_source_hash": "29c93e49aa2a92cd5687275b12a52a3bfdb977580e70c657ed132b674d956926"
+  },
+  {
+    "keep_ratio": 0.3,
+    "method": "zero_fill",
+    "selected_member": 0,
+    "run_path": "C:\\Users\\조상제\\Desktop\\CPA\\sparsified_update_cpa\\outputs_v1\\author_runs\\imagenet\\vgg16\\attack\\cp_direct\\nodef\\cora_fedavg_single_client_cpa_cora_obs_zero_fill_keep80_50_30_keep0p3_n24_steps1_trials1_R1_seed1234_m000_uia",
+    "seed": 1234,
+    "retained_observed_values_bit_exact": true,
+    "maximum_generated_dropped_abs": 0.0,
+    "tau": 6.693881005048752e-08,
+    "candidate_matches_recorded_update_tensor_hash": true,
+    "computed_update_tensor_hash": "c10f7e070cb8a2892c401366602e748a03647f223585688b713a265619810be3",
+    "recorded_update_tensor_hash": "c10f7e070cb8a2892c401366602e748a03647f223585688b713a265619810be3",
+    "reconstructed_count": 24,
+    "checkpoint": {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\cora_fedavg_single_client_cpa\\outputs_v1\\fedavg_single_client_updates\\imagenet\\vgg16\\fedavg_single_client_clients3_round20of20_spc24_target0_local1_e920201510be97a8\\global_topk\\keep_0p3.fedavg_round_before.pt",
+      "sha256": "9fdb59e3aaba376a6fc68ba1f7d0b1184f1c63304390067a9c266ca9d16008c8"
+    },
+    "sample_indices_hash": "0f2bf88518768bfc21a12255682050bae117cbd14410fc71f2a9757c5d3d4d4a",
+    "author_source_hash": "29c93e49aa2a92cd5687275b12a52a3bfdb977580e70c657ed132b674d956926"
+  },
+  {
+    "keep_ratio": 0.3,
+    "method": "CoRA",
+    "selected_member": 4,
+    "run_path": "C:\\Users\\조상제\\Desktop\\CPA\\sparsified_update_cpa\\outputs_v1\\author_runs\\imagenet\\vgg16\\attack\\cp_direct\\nodef\\cora_fedavg_single_client_cpa_keep0p3_n24_steps1_trials1_R8_seed1234_m004_uia",
+    "seed": 4001246,
+    "retained_observed_values_bit_exact": true,
+    "maximum_generated_dropped_abs": 3.733141440420695e-08,
+    "tau": 6.693881005048752e-08,
+    "candidate_matches_recorded_update_tensor_hash": true,
+    "computed_update_tensor_hash": "4fbc0092e42c6074bce3aa664a09d1e53c9c278e9d8985518c7ccb7f86057dec",
+    "recorded_update_tensor_hash": "4fbc0092e42c6074bce3aa664a09d1e53c9c278e9d8985518c7ccb7f86057dec",
+    "reconstructed_count": 24,
+    "checkpoint": {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\cora_fedavg_single_client_cpa\\outputs_v1\\fedavg_single_client_updates\\imagenet\\vgg16\\fedavg_single_client_clients3_round20of20_spc24_target0_local1_e920201510be97a8\\global_topk\\keep_0p3.fedavg_round_before.pt",
+      "sha256": "9fdb59e3aaba376a6fc68ba1f7d0b1184f1c63304390067a9c266ca9d16008c8"
+    },
+    "sample_indices_hash": "0f2bf88518768bfc21a12255682050bae117cbd14410fc71f2a9757c5d3d4d4a",
+    "author_source_hash": "29c93e49aa2a92cd5687275b12a52a3bfdb977580e70c657ed132b674d956926"
+  },
+  {
+    "keep_ratio": 0.5,
+    "method": "zero_fill",
+    "selected_member": 0,
+    "run_path": "C:\\Users\\조상제\\Desktop\\CPA\\sparsified_update_cpa\\outputs_v1\\author_runs\\imagenet\\vgg16\\attack\\cp_direct\\nodef\\cora_fedavg_single_client_cpa_cora_obs_zero_fill_keep80_50_30_keep0p5_n24_steps1_trials1_R1_seed1234_m000_uia",
+    "seed": 1234,
+    "retained_observed_values_bit_exact": true,
+    "maximum_generated_dropped_abs": 0.0,
+    "tau": 3.725290298461914e-09,
+    "candidate_matches_recorded_update_tensor_hash": true,
+    "computed_update_tensor_hash": "36c5b65f7fcaaf3ca077e8f31d06989baee40dac486c0874bd517003940d4793",
+    "recorded_update_tensor_hash": "36c5b65f7fcaaf3ca077e8f31d06989baee40dac486c0874bd517003940d4793",
+    "reconstructed_count": 24,
+    "checkpoint": {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\cora_fedavg_single_client_cpa\\outputs_v1\\fedavg_single_client_updates\\imagenet\\vgg16\\fedavg_single_client_clients3_round20of20_spc24_target0_local1_e920201510be97a8\\global_topk\\keep_0p5.fedavg_round_before.pt",
+      "sha256": "40ea70acf2d99483684c89c3af7345858f955cff22c95bffa2efe16a907c4684"
+    },
+    "sample_indices_hash": "0f2bf88518768bfc21a12255682050bae117cbd14410fc71f2a9757c5d3d4d4a",
+    "author_source_hash": "29c93e49aa2a92cd5687275b12a52a3bfdb977580e70c657ed132b674d956926"
+  },
+  {
+    "keep_ratio": 0.5,
+    "method": "CoRA",
+    "selected_member": 0,
+    "run_path": "C:\\Users\\조상제\\Desktop\\CPA\\sparsified_update_cpa\\outputs_v1\\author_runs\\imagenet\\vgg16\\attack\\cp_direct\\nodef\\cora_fedavg_single_client_cpa_keep0p5_n24_steps1_trials1_R8_seed1234_m000_uia",
+    "seed": 1234,
+    "retained_observed_values_bit_exact": true,
+    "maximum_generated_dropped_abs": 1.8252450662004094e-09,
+    "tau": 3.725290298461914e-09,
+    "candidate_matches_recorded_update_tensor_hash": true,
+    "computed_update_tensor_hash": "ddee4dc6f53db1c1db9ee01a3316424bc616adb9d5b0f8ad26a1c7a94b97759d",
+    "recorded_update_tensor_hash": "ddee4dc6f53db1c1db9ee01a3316424bc616adb9d5b0f8ad26a1c7a94b97759d",
+    "reconstructed_count": 24,
+    "checkpoint": {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\cora_fedavg_single_client_cpa\\outputs_v1\\fedavg_single_client_updates\\imagenet\\vgg16\\fedavg_single_client_clients3_round20of20_spc24_target0_local1_e920201510be97a8\\global_topk\\keep_0p5.fedavg_round_before.pt",
+      "sha256": "40ea70acf2d99483684c89c3af7345858f955cff22c95bffa2efe16a907c4684"
+    },
+    "sample_indices_hash": "0f2bf88518768bfc21a12255682050bae117cbd14410fc71f2a9757c5d3d4d4a",
+    "author_source_hash": "29c93e49aa2a92cd5687275b12a52a3bfdb977580e70c657ed132b674d956926"
+  },
+  {
+    "keep_ratio": 0.8,
+    "method": "zero_fill",
+    "selected_member": 0,
+    "run_path": "C:\\Users\\조상제\\Desktop\\CPA\\sparsified_update_cpa\\outputs_v1\\author_runs\\imagenet\\vgg16\\attack\\cp_direct\\nodef\\cora_fedavg_single_client_cpa_cora_obs_zero_fill_keep80_50_30_keep0p8_n24_steps1_trials1_R1_seed1234_m000_uia",
+    "seed": 1234,
+    "retained_observed_values_bit_exact": true,
+    "maximum_generated_dropped_abs": 0.0,
+    "tau": 0.0,
+    "candidate_matches_recorded_update_tensor_hash": true,
+    "computed_update_tensor_hash": "f6b36908f142eace1cdd72ccc30dec2e500c3b7fb4fcb2dd4172ec873b352cf8",
+    "recorded_update_tensor_hash": "f6b36908f142eace1cdd72ccc30dec2e500c3b7fb4fcb2dd4172ec873b352cf8",
+    "reconstructed_count": 24,
+    "checkpoint": {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\cora_fedavg_single_client_cpa\\outputs_v1\\fedavg_single_client_updates\\imagenet\\vgg16\\fedavg_single_client_clients3_round20of20_spc24_target0_local1_e920201510be97a8\\global_topk\\keep_0p8.fedavg_round_before.pt",
+      "sha256": "0ffa50ca749de226533ec33cfb4b05fe45962ecb7ae768256bb54a47c4cec93a"
+    },
+    "sample_indices_hash": "0f2bf88518768bfc21a12255682050bae117cbd14410fc71f2a9757c5d3d4d4a",
+    "author_source_hash": "29c93e49aa2a92cd5687275b12a52a3bfdb977580e70c657ed132b674d956926"
+  },
+  {
+    "keep_ratio": 0.8,
+    "method": "CoRA",
+    "selected_member": 6,
+    "run_path": "C:\\Users\\조상제\\Desktop\\CPA\\sparsified_update_cpa\\outputs_v1\\author_runs\\imagenet\\vgg16\\attack\\cp_direct\\nodef\\cora_fedavg_single_client_cpa_keep0p8_n24_steps1_trials1_R8_seed1234_m006_uia",
+    "seed": 6001252,
+    "retained_observed_values_bit_exact": true,
+    "maximum_generated_dropped_abs": 0.0,
+    "tau": 0.0,
+    "candidate_matches_recorded_update_tensor_hash": true,
+    "computed_update_tensor_hash": "ddab464e24bb7a82400371fde446c0b14677c344e7bff535c49ab926b7c1b5a3",
+    "recorded_update_tensor_hash": "ddab464e24bb7a82400371fde446c0b14677c344e7bff535c49ab926b7c1b5a3",
+    "reconstructed_count": 24,
+    "checkpoint": {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\cora_fedavg_single_client_cpa\\outputs_v1\\fedavg_single_client_updates\\imagenet\\vgg16\\fedavg_single_client_clients3_round20of20_spc24_target0_local1_e920201510be97a8\\global_topk\\keep_0p8.fedavg_round_before.pt",
+      "sha256": "0ffa50ca749de226533ec33cfb4b05fe45962ecb7ae768256bb54a47c4cec93a"
+    },
+    "sample_indices_hash": "0f2bf88518768bfc21a12255682050bae117cbd14410fc71f2a9757c5d3d4d4a",
+    "author_source_hash": "29c93e49aa2a92cd5687275b12a52a3bfdb977580e70c657ed132b674d956926"
+  }
+]

@@ -1,0 +1,5 @@
+[CPA authorized screen process completion]
+TASK_ID: CPA_SIGNED_E2E_CELL_SCREEN_20260916
+Wrapper PID: 12380; process exit: 0
+Report directory: C:\Users\조상제\Desktop\CPA\.ai\execution-results\CPA_SIGNED_E2E_CELL_SCREEN_20260916
+This was one OS process-exit callback with zero model calls while waiting. Read the actual execution_summary.json and runner/evaluation logs. If the wrapper completed, verify artifacts, update the claimed handoff with the truthful final status, and send exactly one result notice to the existing Planner thread. Do not rerun, add arms, tune, or poll.

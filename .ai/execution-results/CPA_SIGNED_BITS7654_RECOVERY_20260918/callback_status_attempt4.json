@@ -1,0 +1,34 @@
+{
+  "task_id": "CPA_SIGNED_BITS7654_RECOVERY_20260918",
+  "state": "NOTIFICATION_QUEUED",
+  "wrapper_pid": 25160,
+  "wrapper_created_ms": 1789703008341,
+  "attempt": 4,
+  "callback_pid": 25904,
+  "executor": {
+    "thread": "01a0a799-f1ce-7b31-8c46-b4ddef40aeab",
+    "pid": 14236,
+    "started_ms": 1789518279030,
+    "model": "gpt-5.6-luna",
+    "reasoning_effort": "xhigh",
+    "cwd": "\\\\?\\C:\\Users\\조상제\\Desktop\\CPA"
+  },
+  "registered_at": "2026-09-18T03:43:28.458483+00:00",
+  "model_calls_while_waiting": 0,
+  "process_exit_code": 0,
+  "ended_at": "2026-09-18T09:48:44.964334+00:00",
+  "recorded_status": "COMPLETED",
+  "recorded_bit_status": {
+    "7": "COMPLETED",
+    "6": "COMPLETED",
+    "5": "COMPLETED",
+    "4": "COMPLETED"
+  },
+  "notification_started_at": "2026-09-18T09:48:44.965334+00:00",
+  "delivery": {
+    "exit_code": 0,
+    "stdout": "Queued message 01a0b3eb-1d5c-7581-b9b9-59e612247711 for thread 01a0a799-f1ce-7b31-8c46-b4ddef40aeab.\n",
+    "stderr": ""
+  },
+  "notified_at": "2026-09-18T09:48:45.327419+00:00"
+}

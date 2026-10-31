@@ -1,0 +1,15 @@
+{
+  "protocol": "C:\\Users\\조상제\\Desktop\\CPA\\codex\\docs\\M7_FOLLOWUP_ANALYSIS_PROTOCOL.json",
+  "protocol_sha256": "24a25980e58356591943559e29474bb777494f426b0834ca6d68f76aa2daae67",
+  "code": {
+    "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\qacpa\\m7_shuffle_distribution.py",
+    "sha256": "2a55ea2e3d87b54d7e232a3e480ea986ddaefa4a888170415241bc51e7f9aa80"
+  },
+  "started_at_utc": "2026-09-09T07:57:55.968178+00:00",
+  "completed_at_utc": "2026-09-09T07:57:56.324184+00:00",
+  "validation": {
+    "max_abs_error_diagonal_vs_original": 1.5497207641601562e-06,
+    "max_abs_error_diagonal_vs_direct_single_pair": 0.0,
+    "tolerance": 1e-05
+  }
+}

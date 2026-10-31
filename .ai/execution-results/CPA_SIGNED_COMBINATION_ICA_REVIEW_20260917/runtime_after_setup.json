@@ -1,0 +1,39 @@
+{
+  "label": "after_configure_runtime",
+  "timestamp_utc": "2026-09-16T16:51:26.629381+00:00",
+  "pid": 25444,
+  "python": "3.11.14 | packaged by Anaconda, Inc. | (main, Oct 21 2025, 18:30:03) [MSC v.1929 64 bit (AMD64)]",
+  "executable": "C:\\miniconda\\envs\\DLG\\python.exe",
+  "platform": "Windows-10-10.0.19045-SP0",
+  "processor": "AMD64 Family 26 Model 68 Stepping 0, AuthenticAMD",
+  "torch": "2.13.0+cu132",
+  "torchvision": "0.28.0+cu132",
+  "torchmetrics": "1.9.0",
+  "environment": {
+    "CUBLAS_WORKSPACE_CONFIG": ":4096:8",
+    "CUDA_VISIBLE_DEVICES": null,
+    "OMP_NUM_THREADS": null,
+    "MKL_NUM_THREADS": null,
+    "MKL_THREADING_LAYER": null,
+    "PYTHONHASHSEED": null
+  },
+  "torch_num_threads": 1,
+  "torch_num_interop_threads": 8,
+  "deterministic_algorithms": true,
+  "deterministic_warn_only": false,
+  "cuda_is_available": true,
+  "cuda_is_initialized": true,
+  "cuda_device_count": 1,
+  "cuda_device_name": "NVIDIA GeForce RTX 5060 Ti",
+  "cpu_backends": {
+    "mkldnn": true,
+    "mkl": true,
+    "openmp": true
+  },
+  "backend_flags": {
+    "matmul_tf32": false,
+    "cudnn_tf32": false,
+    "cudnn_benchmark": false,
+    "cudnn_deterministic": true
+  }
+}

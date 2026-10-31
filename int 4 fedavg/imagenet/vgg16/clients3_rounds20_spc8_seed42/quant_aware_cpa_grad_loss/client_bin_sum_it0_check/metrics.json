@@ -1,0 +1,32 @@
+{
+  "final_q": {
+    "agg_consistency": "client_bin_sum",
+    "agg_cosine_to_center": -0.0020666278433054686,
+    "agg_max_abs_error_to_center": 0.0008620978333055973,
+    "agg_mean_abs_error_to_center": 2.6030845674540615e-06,
+    "agg_mse_to_center": 2.528187936778892e-10,
+    "agg_rel_l2_to_center": 258.33514404296875,
+    "bin_satisfaction": 0.8623189926147461,
+    "loss_q": 2.505366469840453e-10,
+    "mean_bin_violation": 2.5288234155596e-06,
+    "sampled_rows": 128.0,
+    "source_elements": 102760448.0,
+    "total_q_elements": 3211264.0,
+    "within_bin_elements": 2769134.0
+  },
+  "last_logged": null,
+  "lpips_error": null,
+  "lpips_max": null,
+  "lpips_mean": null,
+  "lpips_min": null,
+  "mse_max": 3.520108222961426,
+  "mse_mean": 1.6931080768505733,
+  "mse_min": 0.6382377743721008,
+  "psnr_max": 1.9501750469207764,
+  "psnr_mean": -1.9321106442560751,
+  "psnr_min": -5.465560436248779,
+  "ssim_error": null,
+  "ssim_max": null,
+  "ssim_mean": null,
+  "ssim_min": null
+}

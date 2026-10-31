@@ -1,0 +1,83 @@
+{
+  "status": "RUNNING",
+  "bits": 8,
+  "batch_index": 0,
+  "processed_candidate_ids": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "top3": [
+    {
+      "candidate_index": 1,
+      "screen_score": 0.07513080537319183,
+      "checkpoint_sha256": "284be271c9d2488f81fd49937d3d09a49cfb9d1203d73ca1ca45e0def4fc4d12"
+    },
+    {
+      "candidate_index": 3,
+      "screen_score": 0.07662887871265411,
+      "checkpoint_sha256": "759f032aa89bd96deba222b72e64d4db002db3cdd24b8e517eeadc2c6feede9c"
+    },
+    {
+      "candidate_index": 9,
+      "screen_score": 0.07669496536254883,
+      "checkpoint_sha256": "891b8e72020675738a163dd5f2ce32d4f476054a614f05af25bc94a6b1113f0e"
+    }
+  ],
+  "all_scores": [
+    {
+      "candidate_index": 0,
+      "screen_score": 0.07699555903673172
+    },
+    {
+      "candidate_index": 1,
+      "screen_score": 0.07513080537319183
+    },
+    {
+      "candidate_index": 2,
+      "screen_score": 0.07912926375865936
+    },
+    {
+      "candidate_index": 3,
+      "screen_score": 0.07662887871265411
+    },
+    {
+      "candidate_index": 4,
+      "screen_score": 0.07885843515396118
+    },
+    {
+      "candidate_index": 5,
+      "screen_score": 0.0787428617477417
+    },
+    {
+      "candidate_index": 6,
+      "screen_score": 0.07702071964740753
+    },
+    {
+      "candidate_index": 7,
+      "screen_score": 0.07783685624599457
+    },
+    {
+      "candidate_index": 8,
+      "screen_score": 0.07693302631378174
+    },
+    {
+      "candidate_index": 9,
+      "screen_score": 0.07669496536254883
+    },
+    {
+      "candidate_index": 10,
+      "screen_score": 0.07775746285915375
+    }
+  ],
+  "private_data_used": false,
+  "updated_at_utc": "2026-09-26T16:08:10.908335+00:00"
+}

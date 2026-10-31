@@ -1,0 +1,57 @@
+{
+  "created_at_utc": "2026-09-11T01:48:37.320403+00:00",
+  "scope": "all five FC1 packets",
+  "conclusion": "All five original updates contain fewer than 50% nonzero entries. Exact global Top-k 50% drops only zero coordinates; decoded observations are numerically identical to the saved actual FP32 updates. This is a lossless sparse representation for these five observations, not a nonzero-value pruning test.",
+  "batches": [
+    {
+      "batch_index": 0,
+      "original_nonzero_fraction": 0.3821710956339933,
+      "kept_coordinates": 51380224,
+      "relative_l2_error": 0.0,
+      "retained_energy_fraction": 1.0,
+      "packet_bytes": 218365984,
+      "packet_sha256": "9bd2646bb1d9f185b503a036f678d30dce389dae990add706795a4b03d15dec7",
+      "diagnostics_sha256": "1f0294374e3ebe1c1ccc928a378a6e37ba778ca19670afde7011c9dc1f65653c"
+    },
+    {
+      "batch_index": 1,
+      "original_nonzero_fraction": 0.3917487689426967,
+      "kept_coordinates": 51380224,
+      "relative_l2_error": 0.0,
+      "retained_energy_fraction": 1.0,
+      "packet_bytes": 218365984,
+      "packet_sha256": "07e6351061c39a4f29bc7f2e7d1e12bc6cf6dc06d54dc5282fdcdc83484f8f89",
+      "diagnostics_sha256": "60bc69175747c3370abde60220af29582d70aca51205dd68f7d47ad450df3f8d"
+    },
+    {
+      "batch_index": 2,
+      "original_nonzero_fraction": 0.41586502230897243,
+      "kept_coordinates": 51380224,
+      "relative_l2_error": 0.0,
+      "retained_energy_fraction": 1.0,
+      "packet_bytes": 218365984,
+      "packet_sha256": "b10a7b75c91385712381fbd3f6c7531f3642565eee7d57da91e578794451cc25",
+      "diagnostics_sha256": "58de9ce9f137e95bc2fcd27d2b3d47e336f8f222e6a12dc6b84882f5241f4c78"
+    },
+    {
+      "batch_index": 3,
+      "original_nonzero_fraction": 0.42094787286252394,
+      "kept_coordinates": 51380224,
+      "relative_l2_error": 0.0,
+      "retained_energy_fraction": 1.0,
+      "packet_bytes": 218365984,
+      "packet_sha256": "e13244a629a48405448cc91923d05342c1f858bbf38744c7fe972ccdfa50e36a",
+      "diagnostics_sha256": "fb60fa42158d2e98fbef9c98fd4f5055848e767b7b8412bd8cff955048de1d4e"
+    },
+    {
+      "batch_index": 4,
+      "original_nonzero_fraction": 0.38743772312086455,
+      "kept_coordinates": 51380224,
+      "relative_l2_error": 0.0,
+      "retained_energy_fraction": 1.0,
+      "packet_bytes": 218365984,
+      "packet_sha256": "0ec4ac4958a7f570233cd71199c3f80d0822c4d276fcc1c6bf03eb46c6124dad",
+      "diagnostics_sha256": "9b3c781f02d5964d14016ea30fdb246583d15b10989f49687346bb29860af7c5"
+    }
+  ]
+}

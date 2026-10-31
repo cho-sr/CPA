@@ -1,0 +1,12 @@
+{
+    "task_id":  "CPA_SIGNED_INT8_RANDOMIZED8_SCREEN3_FIA_20260917",
+    "transition_status":  "COMPLETED_PARTIAL",
+    "executor_thread_id":  "01a0a799-f1ce-7b31-8c46-b4ddef40aeab",
+    "planner_thread_id":  "01a0a799-d62c-7ab0-9c2a-628acf6d2c95",
+    "prior_active_handoff_sha256":  "67015d84390bd0485ddd23ab41e4807b90b5644d2115a4714714bfac4bb487f4",
+    "final_active_handoff_sha256":  "a5137d1e8426a745f1e66e22359cb0ed32ca2aae70364a0cd152baf2d566a958",
+    "execution_summary":  ".ai/execution-results/CPA_SIGNED_INT8_RANDOMIZED8_SCREEN3_FIA_20260917/execution_summary.json",
+    "final_audit":  ".ai/execution-results/CPA_SIGNED_INT8_RANDOMIZED8_SCREEN3_FIA_20260917/final_audit.json",
+    "no_rerun":  true,
+    "timestamp_utc":  "2026-09-17T12:00:11.3365629Z"
+}

@@ -1,0 +1,12 @@
+{
+  "run_tag": "cpa_fia_random_topk20_same80_R20_S5k_K3_F25k",
+  "pid": 22108,
+  "updated_at_utc": "2026-09-20T22:40:01.299975+00:00",
+  "task_id": "CPA_PAPER_SPARSE_SAME80_K503020_R20_20260921",
+  "plan_version": 1,
+  "keep_percent": 20,
+  "state": "prepared",
+  "n_images": 80,
+  "packets": 5,
+  "attack_started": false
+}

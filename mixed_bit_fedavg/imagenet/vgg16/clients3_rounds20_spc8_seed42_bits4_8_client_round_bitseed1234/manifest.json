@@ -1,0 +1,461 @@
+{
+  "aggregate_requantized": false,
+  "aggregation": "weighted_mean_by_client_sample_count",
+  "aggregation_weights": [
+    0.3333333333333333,
+    0.3333333333333333,
+    0.3333333333333333
+  ],
+  "attack_layer_index": 26,
+  "attack_layer_name": "classifier.0.weight",
+  "bit_selection_counts": {
+    "4": 38,
+    "8": 22
+  },
+  "bit_selection_granularity": "client_round",
+  "bit_selection_schedule": [
+    {
+      "client_id": 0,
+      "quant_bits": 8,
+      "round": 1
+    },
+    {
+      "client_id": 1,
+      "quant_bits": 4,
+      "round": 1
+    },
+    {
+      "client_id": 2,
+      "quant_bits": 4,
+      "round": 1
+    },
+    {
+      "client_id": 0,
+      "quant_bits": 4,
+      "round": 2
+    },
+    {
+      "client_id": 1,
+      "quant_bits": 4,
+      "round": 2
+    },
+    {
+      "client_id": 2,
+      "quant_bits": 4,
+      "round": 2
+    },
+    {
+      "client_id": 0,
+      "quant_bits": 4,
+      "round": 3
+    },
+    {
+      "client_id": 1,
+      "quant_bits": 8,
+      "round": 3
+    },
+    {
+      "client_id": 2,
+      "quant_bits": 4,
+      "round": 3
+    },
+    {
+      "client_id": 0,
+      "quant_bits": 4,
+      "round": 4
+    },
+    {
+      "client_id": 1,
+      "quant_bits": 4,
+      "round": 4
+    },
+    {
+      "client_id": 2,
+      "quant_bits": 4,
+      "round": 4
+    },
+    {
+      "client_id": 0,
+      "quant_bits": 8,
+      "round": 5
+    },
+    {
+      "client_id": 1,
+      "quant_bits": 8,
+      "round": 5
+    },
+    {
+      "client_id": 2,
+      "quant_bits": 8,
+      "round": 5
+    },
+    {
+      "client_id": 0,
+      "quant_bits": 4,
+      "round": 6
+    },
+    {
+      "client_id": 1,
+      "quant_bits": 4,
+      "round": 6
+    },
+    {
+      "client_id": 2,
+      "quant_bits": 4,
+      "round": 6
+    },
+    {
+      "client_id": 0,
+      "quant_bits": 4,
+      "round": 7
+    },
+    {
+      "client_id": 1,
+      "quant_bits": 4,
+      "round": 7
+    },
+    {
+      "client_id": 2,
+      "quant_bits": 8,
+      "round": 7
+    },
+    {
+      "client_id": 0,
+      "quant_bits": 4,
+      "round": 8
+    },
+    {
+      "client_id": 1,
+      "quant_bits": 4,
+      "round": 8
+    },
+    {
+      "client_id": 2,
+      "quant_bits": 8,
+      "round": 8
+    },
+    {
+      "client_id": 0,
+      "quant_bits": 4,
+      "round": 9
+    },
+    {
+      "client_id": 1,
+      "quant_bits": 4,
+      "round": 9
+    },
+    {
+      "client_id": 2,
+      "quant_bits": 4,
+      "round": 9
+    },
+    {
+      "client_id": 0,
+      "quant_bits": 8,
+      "round": 10
+    },
+    {
+      "client_id": 1,
+      "quant_bits": 4,
+      "round": 10
+    },
+    {
+      "client_id": 2,
+      "quant_bits": 8,
+      "round": 10
+    },
+    {
+      "client_id": 0,
+      "quant_bits": 8,
+      "round": 11
+    },
+    {
+      "client_id": 1,
+      "quant_bits": 8,
+      "round": 11
+    },
+    {
+      "client_id": 2,
+      "quant_bits": 8,
+      "round": 11
+    },
+    {
+      "client_id": 0,
+      "quant_bits": 4,
+      "round": 12
+    },
+    {
+      "client_id": 1,
+      "quant_bits": 4,
+      "round": 12
+    },
+    {
+      "client_id": 2,
+      "quant_bits": 8,
+      "round": 12
+    },
+    {
+      "client_id": 0,
+      "quant_bits": 4,
+      "round": 13
+    },
+    {
+      "client_id": 1,
+      "quant_bits": 4,
+      "round": 13
+    },
+    {
+      "client_id": 2,
+      "quant_bits": 4,
+      "round": 13
+    },
+    {
+      "client_id": 0,
+      "quant_bits": 8,
+      "round": 14
+    },
+    {
+      "client_id": 1,
+      "quant_bits": 4,
+      "round": 14
+    },
+    {
+      "client_id": 2,
+      "quant_bits": 8,
+      "round": 14
+    },
+    {
+      "client_id": 0,
+      "quant_bits": 8,
+      "round": 15
+    },
+    {
+      "client_id": 1,
+      "quant_bits": 4,
+      "round": 15
+    },
+    {
+      "client_id": 2,
+      "quant_bits": 4,
+      "round": 15
+    },
+    {
+      "client_id": 0,
+      "quant_bits": 4,
+      "round": 16
+    },
+    {
+      "client_id": 1,
+      "quant_bits": 8,
+      "round": 16
+    },
+    {
+      "client_id": 2,
+      "quant_bits": 4,
+      "round": 16
+    },
+    {
+      "client_id": 0,
+      "quant_bits": 4,
+      "round": 17
+    },
+    {
+      "client_id": 1,
+      "quant_bits": 4,
+      "round": 17
+    },
+    {
+      "client_id": 2,
+      "quant_bits": 4,
+      "round": 17
+    },
+    {
+      "client_id": 0,
+      "quant_bits": 4,
+      "round": 18
+    },
+    {
+      "client_id": 1,
+      "quant_bits": 8,
+      "round": 18
+    },
+    {
+      "client_id": 2,
+      "quant_bits": 4,
+      "round": 18
+    },
+    {
+      "client_id": 0,
+      "quant_bits": 4,
+      "round": 19
+    },
+    {
+      "client_id": 1,
+      "quant_bits": 8,
+      "round": 19
+    },
+    {
+      "client_id": 2,
+      "quant_bits": 8,
+      "round": 19
+    },
+    {
+      "client_id": 0,
+      "quant_bits": 4,
+      "round": 20
+    },
+    {
+      "client_id": 1,
+      "quant_bits": 8,
+      "round": 20
+    },
+    {
+      "client_id": 2,
+      "quant_bits": 8,
+      "round": 20
+    }
+  ],
+  "bit_selection_seed": 1234,
+  "client_original_indices": [
+    [
+      37542,
+      44491,
+      216,
+      43688,
+      41558,
+      32245,
+      27206,
+      10863
+    ],
+    [
+      2190,
+      31849,
+      25408,
+      33504,
+      27102,
+      21934,
+      40181,
+      47682
+    ],
+    [
+      45747,
+      17004,
+      43777,
+      7433,
+      45129,
+      37684,
+      14817,
+      38215
+    ]
+  ],
+  "client_qs": {
+    "code_file": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\mixed_bit_fedavg\\imagenet\\vgg16\\clients3_rounds20_spc8_seed42_bits4_8_client_round_bitseed1234\\client_qs\\final_round_client_codes.npz",
+    "codes_sha256": "b78b6616eed4d6ac7b57c279670a701633ff33cc4b4969f3dcc87b4284015c9c",
+    "context_file": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\mixed_bit_fedavg\\imagenet\\vgg16\\clients3_rounds20_spc8_seed42_bits4_8_client_round_bitseed1234\\client_qs\\final_round_context.pkl",
+    "context_sha256": "77f44a32914de4c270ea2f05ec7cc1aff600d23c9faccfc3fc5bdca87b39f142",
+    "quant_meta_file": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\mixed_bit_fedavg\\imagenet\\vgg16\\clients3_rounds20_spc8_seed42_bits4_8_client_round_bitseed1234\\client_qs\\final_round_client_quant_meta.json",
+    "source_model_state_file": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\mixed_bit_fedavg\\imagenet\\vgg16\\clients3_rounds20_spc8_seed42_bits4_8_client_round_bitseed1234\\client_qs\\final_round_global_model_before.pt",
+    "source_model_state_sha256": "8f40509c8935e41332ae17a38ae14d6ddbcf26c37e111660e4498d07f8127b17"
+  },
+  "client_sampling": "all_clients_each_round",
+  "client_subset_indices": [
+    [
+      37542,
+      44491,
+      216,
+      43688,
+      41558,
+      32245,
+      27206,
+      10863
+    ],
+    [
+      2190,
+      31849,
+      25408,
+      33504,
+      27102,
+      21934,
+      40181,
+      47682
+    ],
+    [
+      45747,
+      17004,
+      43777,
+      7433,
+      45129,
+      37684,
+      14817,
+      38215
+    ]
+  ],
+  "client_update_quantized_before_server_aggregation": true,
+  "device": "cuda",
+  "ds": "imagenet",
+  "local_batch_size": 8,
+  "local_epochs": 10,
+  "lr": 0.001,
+  "mixed_quant_bits": [
+    4,
+    8
+  ],
+  "model": "vgg16",
+  "n_samples": 24,
+  "num_clients": 3,
+  "optimizer": "SGD",
+  "param_names": [
+    "features.0.weight",
+    "features.0.bias",
+    "features.2.weight",
+    "features.2.bias",
+    "features.5.weight",
+    "features.5.bias",
+    "features.7.weight",
+    "features.7.bias",
+    "features.10.weight",
+    "features.10.bias",
+    "features.12.weight",
+    "features.12.bias",
+    "features.14.weight",
+    "features.14.bias",
+    "features.17.weight",
+    "features.17.bias",
+    "features.19.weight",
+    "features.19.bias",
+    "features.21.weight",
+    "features.21.bias",
+    "features.24.weight",
+    "features.24.bias",
+    "features.26.weight",
+    "features.26.bias",
+    "features.28.weight",
+    "features.28.bias",
+    "classifier.0.weight",
+    "classifier.0.bias",
+    "classifier.3.weight",
+    "classifier.3.bias",
+    "classifier.6.weight",
+    "classifier.6.bias"
+  ],
+  "private_split": "test",
+  "quant_bits": "mixed",
+  "quant_bits_choices": [
+    4,
+    8
+  ],
+  "quantization": "random_mixed_signed_symmetric_int4_int8",
+  "rounding": "nearest",
+  "rounds": 20,
+  "samples_per_client": 8,
+  "saved_rounds": [
+    20
+  ],
+  "scale_scope": "per_client_per_parameter_tensor",
+  "schema_version": 1,
+  "seed": 42,
+  "server_aggregation_input": "dequantized_client_updates",
+  "signal": "mixed_bit_fedavg_server_dequantized_aggregate_update",
+  "store_scope": "attack_layer",
+  "update_definition": "client_delta_w = w_client - w_global_before_round; each client update is randomly quantized to signed symmetric int4 or int8 before server dequantization and weighted aggregation"
+}

@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "signal": "sparsified_fedavg_utility",
+  "update_definition": "delta_obs_k = S_r(theta_k_local - theta_global_before_round)",
+  "sparsification_scope": "full_client_update_before_server_aggregation",
+  "sparsification_policy": "global_topk",
+  "keep_ratio": 0.5,
+  "ds": "imagenet",
+  "model": "vgg16",
+  "num_clients": 1,
+  "rounds": 1,
+  "samples_per_client": 1,
+  "n_samples": 1,
+  "local_epochs": 1,
+  "local_batch_size": 1,
+  "lr": 0.001,
+  "optimizer": "SGD",
+  "aggregation": "weighted_mean_by_client_sample_count",
+  "client_sampling": "all_clients_each_round",
+  "private_split": "test",
+  "eval_split": "test",
+  "eval_samples": 2,
+  "eval_every": 1,
+  "seed": 42,
+  "device": "cuda",
+  "param_names": [
+    "features.0.weight",
+    "features.0.bias",
+    "features.2.weight",
+    "features.2.bias",
+    "features.5.weight",
+    "features.5.bias",
+    "features.7.weight",
+    "features.7.bias",
+    "features.10.weight",
+    "features.10.bias",
+    "features.12.weight",
+    "features.12.bias",
+    "features.14.weight",
+    "features.14.bias",
+    "features.17.weight",
+    "features.17.bias",
+    "features.19.weight",
+    "features.19.bias",
+    "features.21.weight",
+    "features.21.bias",
+    "features.24.weight",
+    "features.24.bias",
+    "features.26.weight",
+    "features.26.bias",
+    "features.28.weight",
+    "features.28.bias",
+    "classifier.0.weight",
+    "classifier.0.bias",
+    "classifier.3.weight",
+    "classifier.3.bias",
+    "classifier.6.weight",
+    "classifier.6.bias"
+  ],
+  "client_subset_indices": [
+    [
+      37542
+    ]
+  ],
+  "client_original_indices": [
+    [
+      37542
+    ]
+  ],
+  "aggregation_weights": [
+    1.0
+  ]
+}

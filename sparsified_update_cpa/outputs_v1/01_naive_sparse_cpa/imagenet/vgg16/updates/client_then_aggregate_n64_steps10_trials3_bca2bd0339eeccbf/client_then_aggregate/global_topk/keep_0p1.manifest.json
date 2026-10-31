@@ -1,0 +1,31 @@
+{
+  "aggregation_weights": "uniform_mean",
+  "attack_trials": 3,
+  "author_source_hash": "29c93e49aa2a92cd5687275b12a52a3bfdb977580e70c657ed132b674d956926",
+  "checkpoint": {
+    "path": null,
+    "sha256": null
+  },
+  "client_granularity": "one_sample_per_client",
+  "clients_per_trial": 64,
+  "ds": "imagenet",
+  "h_dim": 256,
+  "keep_ratio": 0.1,
+  "local_batch_size": 1,
+  "local_epochs": 10,
+  "local_steps": 10,
+  "lr": 0.001,
+  "method": "client_then_aggregate_sparse_collector",
+  "micro_batch_size": 1,
+  "model": "vgg16",
+  "momentum": 0.0,
+  "n_samples": 64,
+  "observed_zero_policy": "zeros_are_treated_as_true_observed_update_values",
+  "optimizer": "SGD",
+  "schema_version": 3,
+  "seed": 42,
+  "signal": "client_then_aggregate_sparse_fedavg_update",
+  "sparse_policy": "global_topk",
+  "update_definition": "delta_obs = mean_k S_r(delta_w_k), one sample per client",
+  "weight_decay": 0.0
+}

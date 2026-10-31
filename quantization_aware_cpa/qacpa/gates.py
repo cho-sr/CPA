@@ -95,6 +95,8 @@ def high_bits_convergence_gate(*, seed: int = 0) -> GateCheck:
         seed=seed,
         max_iter=500,
         tol=1.0e-5,
+        ica_method="cpa",
+        cpa_ica_max_iter=500,
     )
     ours = estimate_mixing_and_sources(
         qobs.Y_hat,
@@ -105,6 +107,8 @@ def high_bits_convergence_gate(*, seed: int = 0) -> GateCheck:
         seed=seed,
         max_iter=500,
         tol=1.0e-5,
+        ica_method="cpa",
+        cpa_ica_max_iter=500,
     )
     rel = relative_l2(ours.Y_recon, naive.Y_recon)
     if rel > 1.0e-3:

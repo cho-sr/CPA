@@ -1,0 +1,17 @@
+{
+  "task_id": "CPA_SIGNED_E2E_H1_NOFIA_FINALIZE_20260916",
+  "status": "COMPLETED",
+  "finalizer_exit": 0,
+  "evaluation_exit": 0,
+  "report": "C:/Users/조상제/Desktop/CPA/.ai/execution-results/CPA_SIGNED_E2E_H1_NOFIA_FINALIZE_20260916/report.md",
+  "public_summary": "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_e2e_h1_nofia_B16_T10_20260916/finalized_summary.json",
+  "private_comparison": "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results_private/signed_e2e_h1_nofia_B16_T10_20260916/comparison.json",
+  "new_optimizer_steps": 0,
+  "planner_notice_delivery": {
+    "thread": "01a0a799-d62c-7ab0-9c2a-628acf6d2c95",
+    "message_id": "01a0a977-0196-75b3-aec4-8fee2cb6318f",
+    "queue_exit_code": 0,
+    "sent_once": true,
+    "notice": ".ai/execution-results/CPA_SIGNED_E2E_H1_NOFIA_FINALIZE_20260916/planner_notice.txt"
+  }
+}

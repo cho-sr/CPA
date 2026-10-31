@@ -10,20 +10,34 @@ data:
   n_batches: 3
   num_workers: 0
   require_distinct_labels: true
+  microbatch_size: 8
 
 quantization:
   bits: 4
   rounding: stochastic
+  scale_granularity: per_row
+  bucket_size: 256
 
 stage1:
   n_components: 8
   debias: true
+  ica_method: cpa
   fastica_max_iter: 1000
   fastica_tol: 1.0e-4
   fastica_fun: logcosh
   fastica_algorithm: parallel
+  cpa_ica_max_iter: 25000
+  cpa_ica_lr: 1.0e-3
+  cpa_ica_optimizer: adam
+  cpa_ica_decor: 5.3
+  cpa_ica_T: 7.7
+  cpa_ica_ne: 1.0
+  cpa_ica_nv: 0.13
+  cpa_ica_l1: 5.0
+  cpa_ica_tv: 0.1
+  cpa_ica_log_every: 0
   mp_truncation: true
-  c_mp: 1.5
+  c_mp: 3.0
 
 diagnostics:
   gamma_columns: 512
@@ -35,6 +49,21 @@ stage2:
   chunk_size: 4096
   stop_tolerance: 1.0e-10
   check_every: 25
+  mu: 1.0e3
+  eps: 1.0e-3
+  phase1_acceleration: true
+  lam_R: 300.0
+
+bplus:
+  radius_scale: 1.0
+  step_size: 1.0
+
+rank_split:
+  keep_update_scale: 0.05
+  extra_update_scale: 1.0
+  extra_debias: false
+  extra_ica_method: cpa
+  extra_cpa_ica_max_iter: 5000
 
 paths:
   cache_dir: cache

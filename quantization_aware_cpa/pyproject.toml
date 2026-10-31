@@ -14,8 +14,10 @@ dependencies = [
   "scikit-learn",
   "scipy",
   "torch",
+  "torchmetrics",
   "torchvision",
   "tqdm",
+  "pillow",
 ]
 
 [tool.setuptools]

@@ -1,0 +1,10 @@
+﻿{
+    "task_id":  "CPA_SIGNED_COMBINATION_ICA_REVIEW_20260917",
+    "pid":  25444,
+    "process_created_ms":  1789577479510,
+    "process_name":  "python.exe",
+    "command_line":  "\"C:\\miniconda\\envs\\DLG\\python.exe\" -B .ai/execution-results/CPA_SIGNED_COMBINATION_ICA_REVIEW_20260917/run_review_20260917.py ",
+    "stdout":  "C:\\Users\\조상제\\Desktop\\CPA\\.ai\\execution-results\\CPA_SIGNED_COMBINATION_ICA_REVIEW_20260917\\review_wrapper_stdout.log",
+    "stderr":  "C:\\Users\\조상제\\Desktop\\CPA\\.ai\\execution-results\\CPA_SIGNED_COMBINATION_ICA_REVIEW_20260917\\review_wrapper_stderr.log",
+    "launched_at_utc":  "2026-09-16T16:51:19.6611583Z"
+}

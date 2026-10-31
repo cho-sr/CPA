@@ -1,0 +1,19 @@
+{
+  "checks": {
+    "run_deterministic_hybrid.py": true,
+    "deterministic_hybrid_setup.py": true,
+    "deterministic_observation.py": true,
+    "fc_replay.py": true,
+    "full_update_replay.py": true,
+    "full_update_adjoint.py": true,
+    "full_update_pipeline.py": true,
+    "plan": true,
+    "observation": true,
+    "cpa_target": true,
+    "all_50_iterations": true,
+    "same_initial_public_metrics": true,
+    "all16_evaluated": true
+  },
+  "all_passed": true,
+  "report_module_sha256": "6f85ddf8c65339584b46215a5046d7a35fea5946392ebd2a5eed7016702ee91a"
+}

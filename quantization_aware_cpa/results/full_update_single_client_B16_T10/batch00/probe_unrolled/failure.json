@@ -1,0 +1,13 @@
+{
+  "status": "stopped_after_repeated_allocator_oom",
+  "error_type": "CUDA_allocator_OOM_log",
+  "message": "CUDA allocator repeatedly failed allocating 926941184 bytes with free=0. Process explicitly stopped after these observed allocation failures. No completed outer gradient.",
+  "requested_allocation_bytes": 926941184,
+  "nvidia_smi_used_mib": 15977,
+  "nvidia_smi_free_mib": 74,
+  "conditions_automatically_reduced": false,
+  "reconstruction_success": "not_established",
+  "wall_time_until_stop_sec": 129.99463629722595,
+  "peak_cuda_allocated_bytes": null,
+  "peak_cuda_reserved_bytes": null
+}

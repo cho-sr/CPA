@@ -1,0 +1,127 @@
+{
+  "task_id": "CPA_PAPER_SPARSE_SAME80_K503020_R20_20260921",
+  "amendment_id": "CPA_PAPER_SPARSE_SAME80_K503020_R8_AMENDMENT_20260921",
+  "base_plan_version": 1,
+  "replacement_plan_version": 2,
+  "status": "SUPERSEDED_BY_V3",
+  "recorded_at_utc": "2026-09-20T23:18:22.571491+00:00",
+  "amendment_receipt": "C:\\Users\\조상제\\Desktop\\CPA\\.ai\\execution-handoffs\\CPA_PAPER_SPARSE_SAME80_K503020_R8_AMENDMENT_20260921.md",
+  "amendment_receipt_sha256": "a914130bde9d2c05fe5194822748d00f34d2a540f1ae92fcba673bb9cb0e2aa8",
+  "v1_handoff_archive": "C:\\Users\\조상제\\Desktop\\CPA\\.ai\\execution-handoffs\\CPA_PAPER_SPARSE_SAME80_K503020_R20_20260921_V1_CLAIMED_ARCHIVE_20260921.md",
+  "v1_handoff_archive_sha256": "ba63f85795c8ba8b4cbdceea2018dad809a4e090613f04430504862dddea9014",
+  "v1_supersession": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\paper_sparse_same80_keep50_30_20_R20_20260921\\v1_supersession.json",
+  "v1_old_callback": "C:\\Users\\조상제\\Desktop\\CPA\\.ai\\relay-runs\\completions\\CPA_PAPER_SPARSE_SAME80_K503020_R20_20260921\\paper_sparse_sweep\\status.json",
+  "replacement_output_root": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\paper_sparse_same80_keep50_30_20_R8_20260921",
+  "candidate_ids": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "fractions": [
+    50,
+    30,
+    20
+  ],
+  "focused_tests": "65 passed",
+  "migrations": {
+    "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\cpa_fia_random_topk50_same80_R8_S5k_K3_F25k": {
+      "sha256": "09bd5f72f282a0f214e4ff6908662fb7f687c6c00cb10ed813e9229c5aa7f092",
+      "imported": [
+        {
+          "batch_index": 0,
+          "candidate": 0,
+          "status": "imported_cpa_and_completed_screen",
+          "provenance": {
+            "old_directory": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\cpa_fia_random_topk50_same80_R20_S5k_K3_F25k\\batch00\\candidate00",
+            "old_cpa_marker_sha256": "a97a4f74b9abb6df5c9b4991d2e9509f5a55b662d147d13ffe1a28a6525113c1",
+            "old_sources_sha256": "db2a458b331936120466694a391e5d94fab83395307bd40f9cd878960996c1ab",
+            "old_fill_audit_sha256": "e618b256e551933e0aa28062fe66f7270830dbe50d94b425c3d8ad900594b3d0",
+            "old_cpa_manifest_sha256": "0a91dd2d706aae8cf433b09c8aa8c8019fd8525e7992b52cb21edea012c6e666",
+            "candidate": 0,
+            "batch_index": 0,
+            "seed": 100000,
+            "old_fia_manifest_sha256": "acd7819e9e652d62d6323ea1537a5aded8e3999d0468cf49b86fa8e4b1ad3846",
+            "old_fia_checkpoint_sha256": "5ca4013a7882361932df0048408be0913a0c0cf6ac5ab35a86fc5ae684901489",
+            "checkpoint": {
+              "completed_iterations": 5000,
+              "horizon": 25000
+            },
+            "old_screen_marker_sha256": "2360f8af1ed855050a77f3a08793b04ace2f186d672ef3c54270117917f3f353",
+            "old_screen_rec_sha256": "6ca7efb17f4a05028f95753be14cd093a8701fd1659ca5f4e8ba4133a4cf66f5",
+            "old_screen_log_sha256": "3db37b6b79aa1404102497e25101d5b7fc9365d3cc8c4c2770f033a43baff013"
+          },
+          "new_cpa_marker_sha256": "34bcb36227fba15966ce42dd6a92f416b062161036b9c5a6b0d746ff4ddfefa0",
+          "new_checkpoint_sha256": "5ca4013a7882361932df0048408be0913a0c0cf6ac5ab35a86fc5ae684901489",
+          "new_screen_marker_sha256": "15f9f46f6ab9a4815ecfe5a0c69ab4562ace166185f4a6943eb92e600331e5b0"
+        },
+        {
+          "batch_index": 0,
+          "candidate": 1,
+          "status": "imported_cpa_and_completed_screen",
+          "provenance": {
+            "old_directory": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\cpa_fia_random_topk50_same80_R20_S5k_K3_F25k\\batch00\\candidate01",
+            "old_cpa_marker_sha256": "fcf58dee2dfc03064cd433b7f216bffdb0ef4fb8c3c6694bbe7db2f8cc5e3dc7",
+            "old_sources_sha256": "db2a458b331936120466694a391e5d94fab83395307bd40f9cd878960996c1ab",
+            "old_fill_audit_sha256": "96533677f19c4e0c13fd0f9c6048895f7fb32ab0087ee0e92474ae1f86bdbcb5",
+            "old_cpa_manifest_sha256": "a234fdf8a7815f47773bc9a068f47de2629cf6c8e6f5d0ae997e372a712884b7",
+            "candidate": 1,
+            "batch_index": 0,
+            "seed": 100001,
+            "old_fia_manifest_sha256": "4b3d489ad2f28488f360d5906eb7c5c185c8462d88c0e31d31e82944dcf62a4c",
+            "old_fia_checkpoint_sha256": "43d30256b5e6213c2b15c1f23100c21cfc8c77664b2fba85bd01014e6d8e2198",
+            "checkpoint": {
+              "completed_iterations": 5000,
+              "horizon": 25000
+            },
+            "old_screen_marker_sha256": "d4ca1aca1b3d866ce4712871167d9c92ecbf33713649cc86d673539062c236d8",
+            "old_screen_rec_sha256": "6ca7efb17f4a05028f95753be14cd093a8701fd1659ca5f4e8ba4133a4cf66f5",
+            "old_screen_log_sha256": "2736526e5b4ed25464a1f5fc9fb43560539421a6cfada5f12d86669117a81b07"
+          },
+          "new_cpa_marker_sha256": "182f3e764f7dc188b824e88bd297051ac7ae0c3af0fe27da52405bfcd8ca371c",
+          "new_checkpoint_sha256": "43d30256b5e6213c2b15c1f23100c21cfc8c77664b2fba85bd01014e6d8e2198",
+          "new_screen_marker_sha256": "96c6ae5c7fcb28c907bb443f10376c28727a0836fe9c7a92c5f9fa3da1082561"
+        },
+        {
+          "batch_index": 0,
+          "candidate": 2,
+          "status": "imported_cpa_and_partial_screen_checkpoint",
+          "provenance": {
+            "old_directory": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\cpa_fia_random_topk50_same80_R20_S5k_K3_F25k\\batch00\\candidate02",
+            "old_cpa_marker_sha256": "d528ccb35d2a04a104395549e7f737182fdf1cfd2223954808aae99c464a64dc",
+            "old_sources_sha256": "db2a458b331936120466694a391e5d94fab83395307bd40f9cd878960996c1ab",
+            "old_fill_audit_sha256": "d47957685cc394615bd636603668bee940114453835fd6c7765ec04fa7245943",
+            "old_cpa_manifest_sha256": "f1da2be4ff840563ec67f0de1c00ace132517444ec038289c90a04a041698a57",
+            "candidate": 2,
+            "batch_index": 0,
+            "seed": 100002,
+            "old_fia_manifest_sha256": "f7178711eda03a1270eef185e1d98964c0e29788cc851f0ab610ea7621705ab2",
+            "old_fia_checkpoint_sha256": "217527322c680d6a8e3066a8e68c7602cf6feaaa16d7fa258ed94a941f04e6b5",
+            "checkpoint": {
+              "completed_iterations": 1,
+              "horizon": 25000
+            }
+          },
+          "new_cpa_marker_sha256": "78c68c6c3ca5031ca32c81e7442353a0430e5f4f12eb933ceac5ab526ebac829",
+          "new_checkpoint_sha256": "217527322c680d6a8e3066a8e68c7602cf6feaaa16d7fa258ed94a941f04e6b5",
+          "new_screen_marker_sha256": null
+        }
+      ]
+    },
+    "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\cpa_fia_random_topk30_same80_R8_S5k_K3_F25k": {
+      "sha256": "ec14c87e27469d66869e1033044b9b8e8c36d83f17e10687c03e46cbed54b4ab",
+      "imported": []
+    },
+    "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\cpa_fia_random_topk20_same80_R8_S5k_K3_F25k": {
+      "sha256": "75a0552cf78c3579b7cfec212b607175fe9d05b2ddbfee355b00311e949edfb5",
+      "imported": []
+    }
+  },
+  "superseded_at_utc": "2026-09-20T23:26:00.585501+00:00",
+  "v2_wrapper_exit_code": 15,
+  "v2_callback_status_path": "C:\\Users\\조상제\\Desktop\\CPA\\.ai\\relay-runs\\completions\\CPA_PAPER_SPARSE_SAME80_K503020_R20_20260921\\paper_sparse_sweep_r8\\status.json"
+}

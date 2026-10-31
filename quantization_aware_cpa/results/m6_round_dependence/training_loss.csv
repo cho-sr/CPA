@@ -1,0 +1,6 @@
+run_tag,round,training_loss_mean,measurement_probe_loss_mean,training_schedule,train_split,measurement_split,lr,train_batch_size,n_measurement,n_train_batches,n_measurement_batches
+m6_round_dependence,0,0.727583646774292,1.1856019496917725,cycled_train_split_batches_fc_only,train,val,0.001,32,32,5,5
+m6_round_dependence,5,0.688073992729187,1.1832733154296875,cycled_train_split_batches_fc_only,train,val,0.001,32,32,5,5
+m6_round_dependence,20,0.5817571878433228,1.1767799854278564,cycled_train_split_batches_fc_only,train,val,0.001,32,32,5,5
+m6_round_dependence,50,0.417121559381485,1.165872573852539,cycled_train_split_batches_fc_only,train,val,0.001,32,32,5,5
+m6_round_dependence,100,0.24482019245624542,1.1528503894805908,cycled_train_split_batches_fc_only,train,val,0.001,32,32,5,5

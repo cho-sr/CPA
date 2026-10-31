@@ -1,0 +1,148 @@
+{
+  "schema_version": 1,
+  "run_tag": "m7_consistency_audit",
+  "completed_at_utc": "2026-09-09T07:57:05.992783+00:00",
+  "protocol_sha256": "24a25980e58356591943559e29474bb777494f426b0834ca6d68f76aa2daae67",
+  "protocol_locked_at_utc": "2026-09-09T07:51:25.473636+00:00",
+  "spearman_main": [
+    {
+      "condition": "GIA fp32 CPA, pure36",
+      "n_images": 36,
+      "lpips_mean": 0.4464729486240281,
+      "spearman_rho": 0.03088803088803089,
+      "pvalue_two_sided": 0.8580710885452416,
+      "pvalue_method": "scipy.stats.spearmanr asymptotic two-sided; descriptive image-level audit"
+    },
+    {
+      "condition": "GIA 4-bit CPA + dequant, all40",
+      "n_images": 40,
+      "lpips_mean": 0.5439403489232063,
+      "spearman_rho": -0.5906191369606004,
+      "pvalue_two_sided": 6.02093714008584e-05,
+      "pvalue_method": "scipy.stats.spearmanr asymptotic two-sided; descriptive image-level audit"
+    }
+  ],
+  "spearman_provenance_checks": {
+    "direct_original_csv_vs_v6_v7_equal": true,
+    "excluded_truth_fill_indices": [
+      22,
+      24,
+      32,
+      36
+    ],
+    "main_fp32_images": 36,
+    "main_4bit_images": 40,
+    "no_new_loss_or_LPIPS_measurement": true
+  },
+  "beff_recount": [
+    {
+      "subset": "all granularities; all T",
+      "condition_count": 96,
+      "exact_count": 81,
+      "mean_abs_error": 0.21875,
+      "max_abs_error": 2,
+      "n_values": "[16, 32, 64]",
+      "T_values": "[1, 10]",
+      "bits_values": "[2, 3, 4, 8]",
+      "seeds": "[0, 1, 2]",
+      "batch_indices": "[0]",
+      "granularities": "[\"per_bucket\", \"per_row\", \"per_tensor\"]"
+    },
+    {
+      "subset": "all granularities; T=1",
+      "condition_count": 48,
+      "exact_count": 39,
+      "mean_abs_error": 0.22916666666666666,
+      "max_abs_error": 2,
+      "n_values": "[16, 32, 64]",
+      "T_values": "[1]",
+      "bits_values": "[2, 3, 4, 8]",
+      "seeds": "[0, 1, 2]",
+      "batch_indices": "[0]",
+      "granularities": "[\"per_bucket\", \"per_row\", \"per_tensor\"]"
+    },
+    {
+      "subset": "all granularities; T=10",
+      "condition_count": 48,
+      "exact_count": 42,
+      "mean_abs_error": 0.20833333333333334,
+      "max_abs_error": 2,
+      "n_values": "[16, 32, 64]",
+      "T_values": "[10]",
+      "bits_values": "[2, 3, 4, 8]",
+      "seeds": "[0, 1, 2]",
+      "batch_indices": "[0]",
+      "granularities": "[\"per_bucket\", \"per_row\", \"per_tensor\"]"
+    },
+    {
+      "subset": "core per-row; all T",
+      "condition_count": 72,
+      "exact_count": 62,
+      "mean_abs_error": 0.18055555555555555,
+      "max_abs_error": 2,
+      "n_values": "[16, 32, 64]",
+      "T_values": "[1, 10]",
+      "bits_values": "[2, 3, 4, 8]",
+      "seeds": "[0, 1, 2]",
+      "batch_indices": "[0]",
+      "granularities": "[\"per_row\"]"
+    },
+    {
+      "subset": "core per-row; T=1",
+      "condition_count": 36,
+      "exact_count": 30,
+      "mean_abs_error": 0.19444444444444445,
+      "max_abs_error": 2,
+      "n_values": "[16, 32, 64]",
+      "T_values": "[1]",
+      "bits_values": "[2, 3, 4, 8]",
+      "seeds": "[0, 1, 2]",
+      "batch_indices": "[0]",
+      "granularities": "[\"per_row\"]"
+    },
+    {
+      "subset": "core per-row; T=10",
+      "condition_count": 36,
+      "exact_count": 32,
+      "mean_abs_error": 0.16666666666666666,
+      "max_abs_error": 2,
+      "n_values": "[16, 32, 64]",
+      "T_values": "[10]",
+      "bits_values": "[2, 3, 4, 8]",
+      "seeds": "[0, 1, 2]",
+      "batch_indices": "[0]",
+      "granularities": "[\"per_row\"]"
+    }
+  ],
+  "n32_prediction_reconciliation": {
+    "m6_round0_by_batch": [
+      24,
+      25,
+      22,
+      21,
+      14
+    ],
+    "m6_round0_five_batch_mean": 21.2,
+    "matched_scientific_axes_predictions": {
+      "m5_uia_spectrum": 24,
+      "m5_uia_beff_validation": 24,
+      "m6_round_dependence": 24
+    },
+    "quantization_seeds": {
+      "m5_uia_spectrum": 0,
+      "m5_uia_beff_validation": 294949,
+      "m6_round_dependence": 293536
+    },
+    "same_quantized_input_realization": false,
+    "m5_spectrum_m6_original32_image_paths_equal": true,
+    "comparison_type": "prediction versus prediction; no measured count used in this reconciliation",
+    "note": "24 is seed0/batch0/T1; 21.2 averages five batches. Quantizer seed schedules differ, so equal predictions are not a byte-identical-input reproducibility check. The M6 spectrum is T1; saved T10 dumps are separate."
+  },
+  "historical_spearman_values": "spearman_history.csv only; not a main comparison",
+  "execution": "existing CSV/JSON analysis only; no training, model inference, tensor loading, ICA or FIA",
+  "versions": {
+    "numpy": "2.4.4",
+    "scipy": "1.17.1",
+    "matplotlib": "3.10.8"
+  }
+}

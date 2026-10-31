@@ -1,0 +1,4 @@
+subset,condition_count,exact_count,exact_fraction,mean_abs_error,max_abs_error
+T=1 (= FedSGD),48,39,0.8125,0.22916666666666666,2
+T=10 (= FedAvg),48,42,0.875,0.20833333333333334,2
+overall,96,81,0.84375,0.21875,2

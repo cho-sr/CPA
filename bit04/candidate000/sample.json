@@ -1,0 +1,20 @@
+{
+  "identity": {
+    "registration_sha256": "675f8ad66b533ee4f92a469f9cf1ccda6de4586dbfd46ed25896a5be0544b9fe",
+    "bits": 4,
+    "candidate_id": 0,
+    "kind": "center",
+    "sample_seed": null,
+    "cpa_seed": 0,
+    "fia_seed": 42,
+    "cpa_steps": 25000,
+    "fia_steps": 25000,
+    "fia_horizon": 25000,
+    "smoke": false
+  },
+  "audit": {
+    "kind": "center",
+    "definition": "q * scale",
+    "matrix_sha256": "b110ec38d89ad0ed17a94f958367f00efb7885d0b2e138df9950a909963a50c0"
+  }
+}

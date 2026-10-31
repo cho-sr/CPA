@@ -1,0 +1,5 @@
+[User-authorized one-time experiment completion]
+TASK_ID: CPA_SINGLE_CLIENT_INT4_FAST4000_GD4000_FIA25000_20261006
+SESSION_ROLE: CODEX_EXECUTOR, explicitly assigned to this conversation by the user.
+Worker exit code: 1. Record: C:\Users\조상제\Desktop\CPA\.ai\execution-results\CPA_SINGLE_CLIENT_INT4_FAST4000_GD4000_FIA25000_20261006\execution_record.json
+Read that record and the completed report or failure artifact. Verify saved exact FastICA4000/GDICA4000/FIA25000 counts and report the result to the user in this conversation. Do not send to the historical Luna/Planner bindings, restart an optimization, run new experiments or poll. The wrapper already performs authorized frozen-image evaluation/reporting after attack. Complete only any necessary reporting repair without rerunning completed optimization.

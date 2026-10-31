@@ -1,0 +1,514 @@
+{
+  "matching": "saved CPA source -> original feature embedding-cosine Hungarian (FIA image i comes from source i); post-hoc experiment view",
+  "summary": {
+    "fp32": {
+      "psnr_db": 12.291501009006218,
+      "ssim": 0.3437602573147202,
+      "lpips": 0.498425817117095,
+      "embedding_cosine": 0.9993182497181216,
+      "pairs_same_as_pixel_mse_matching": 16
+    },
+    "int4_per_tensor": {
+      "psnr_db": 11.46100162538062,
+      "ssim": 0.2960783316330476,
+      "lpips": 0.7800539843738079,
+      "embedding_cosine": 0.6093034616573987,
+      "pairs_same_as_pixel_mse_matching": 3
+    },
+    "int4_per_channel": {
+      "psnr_db": 11.636799122126023,
+      "ssim": 0.2986395625449354,
+      "lpips": 0.6470838822424412,
+      "embedding_cosine": 0.8192547297886067,
+      "pairs_same_as_pixel_mse_matching": 11
+    }
+  },
+  "per_image": {
+    "fp32": [
+      {
+        "truth_index": 0,
+        "candidate_index": 13,
+        "embedding_cosine": 0.9999993234891984,
+        "psnr_db": 13.463312989702814,
+        "ssim": 0.3160157200541693,
+        "lpips": 0.5244442224502563,
+        "pixel_mse_match_candidate": 13,
+        "same_as_pixel_match": true
+      },
+      {
+        "truth_index": 1,
+        "candidate_index": 0,
+        "embedding_cosine": 0.9999990978419543,
+        "psnr_db": 11.416032559870853,
+        "ssim": 0.24951633462651626,
+        "lpips": 0.4876863956451416,
+        "pixel_mse_match_candidate": 0,
+        "same_as_pixel_match": true
+      },
+      {
+        "truth_index": 2,
+        "candidate_index": 6,
+        "embedding_cosine": 0.9989090253938385,
+        "psnr_db": 11.886610042551668,
+        "ssim": 0.3207103689290516,
+        "lpips": 0.5076321959495544,
+        "pixel_mse_match_candidate": 6,
+        "same_as_pixel_match": true
+      },
+      {
+        "truth_index": 3,
+        "candidate_index": 8,
+        "embedding_cosine": 0.9998073034435644,
+        "psnr_db": 6.9984458878333555,
+        "ssim": 0.6202091216544534,
+        "lpips": 0.5893540382385254,
+        "pixel_mse_match_candidate": 8,
+        "same_as_pixel_match": true
+      },
+      {
+        "truth_index": 4,
+        "candidate_index": 10,
+        "embedding_cosine": 0.9970201589255394,
+        "psnr_db": 13.1104327530589,
+        "ssim": 0.42486767671048487,
+        "lpips": 0.5255177617073059,
+        "pixel_mse_match_candidate": 10,
+        "same_as_pixel_match": true
+      },
+      {
+        "truth_index": 5,
+        "candidate_index": 9,
+        "embedding_cosine": 0.9989068246898464,
+        "psnr_db": 10.410571933877282,
+        "ssim": 0.4522739787908409,
+        "lpips": 0.47926750779151917,
+        "pixel_mse_match_candidate": 9,
+        "same_as_pixel_match": true
+      },
+      {
+        "truth_index": 6,
+        "candidate_index": 2,
+        "embedding_cosine": 0.9998685442756466,
+        "psnr_db": 11.715199325241539,
+        "ssim": 0.1635548896893033,
+        "lpips": 0.5063069462776184,
+        "pixel_mse_match_candidate": 2,
+        "same_as_pixel_match": true
+      },
+      {
+        "truth_index": 7,
+        "candidate_index": 4,
+        "embedding_cosine": 0.9998938274643921,
+        "psnr_db": 9.560034065401583,
+        "ssim": 0.13870508799736592,
+        "lpips": 0.6081850528717041,
+        "pixel_mse_match_candidate": 4,
+        "same_as_pixel_match": true
+      },
+      {
+        "truth_index": 8,
+        "candidate_index": 1,
+        "embedding_cosine": 0.999735052888792,
+        "psnr_db": 14.978599041682587,
+        "ssim": 0.5919942103672872,
+        "lpips": 0.39148759841918945,
+        "pixel_mse_match_candidate": 1,
+        "same_as_pixel_match": true
+      },
+      {
+        "truth_index": 9,
+        "candidate_index": 7,
+        "embedding_cosine": 0.9975021979831397,
+        "psnr_db": 13.590362306195873,
+        "ssim": 0.22939707784986874,
+        "lpips": 0.4413793385028839,
+        "pixel_mse_match_candidate": 7,
+        "same_as_pixel_match": true
+      },
+      {
+        "truth_index": 10,
+        "candidate_index": 5,
+        "embedding_cosine": 0.9999994358744173,
+        "psnr_db": 12.38140147321494,
+        "ssim": 0.25130273715998547,
+        "lpips": 0.5579981803894043,
+        "pixel_mse_match_candidate": 5,
+        "same_as_pixel_match": true
+      },
+      {
+        "truth_index": 11,
+        "candidate_index": 14,
+        "embedding_cosine": 0.9997464945011635,
+        "psnr_db": 12.69174644722073,
+        "ssim": 0.23054878640529358,
+        "lpips": 0.4939621686935425,
+        "pixel_mse_match_candidate": 14,
+        "same_as_pixel_match": true
+      },
+      {
+        "truth_index": 12,
+        "candidate_index": 12,
+        "embedding_cosine": 0.9987843252899361,
+        "psnr_db": 15.359274130266558,
+        "ssim": 0.465333209963933,
+        "lpips": 0.45972469449043274,
+        "pixel_mse_match_candidate": 12,
+        "same_as_pixel_match": true
+      },
+      {
+        "truth_index": 13,
+        "candidate_index": 11,
+        "embedding_cosine": 0.9997948411898263,
+        "psnr_db": 11.488279667928602,
+        "ssim": 0.31939500401817417,
+        "lpips": 0.5029497742652893,
+        "pixel_mse_match_candidate": 11,
+        "same_as_pixel_match": true
+      },
+      {
+        "truth_index": 14,
+        "candidate_index": 15,
+        "embedding_cosine": 0.9995933573712724,
+        "psnr_db": 14.264477921502394,
+        "ssim": 0.2479185549868014,
+        "lpips": 0.4459826648235321,
+        "pixel_mse_match_candidate": 15,
+        "same_as_pixel_match": true
+      },
+      {
+        "truth_index": 15,
+        "candidate_index": 3,
+        "embedding_cosine": 0.9995321848674174,
+        "psnr_db": 13.349235598549814,
+        "ssim": 0.47842135783199463,
+        "lpips": 0.45293453335762024,
+        "pixel_mse_match_candidate": 3,
+        "same_as_pixel_match": true
+      }
+    ],
+    "int4_per_tensor": [
+      {
+        "truth_index": 0,
+        "candidate_index": 15,
+        "embedding_cosine": 0.058946090495960175,
+        "psnr_db": 12.806391266028172,
+        "ssim": 0.24470116004596998,
+        "lpips": 0.7909482717514038,
+        "pixel_mse_match_candidate": 10,
+        "same_as_pixel_match": false
+      },
+      {
+        "truth_index": 1,
+        "candidate_index": 0,
+        "embedding_cosine": 0.8638093619293354,
+        "psnr_db": 11.086321449768713,
+        "ssim": 0.24029220463484224,
+        "lpips": 0.7442007064819336,
+        "pixel_mse_match_candidate": 13,
+        "same_as_pixel_match": false
+      },
+      {
+        "truth_index": 2,
+        "candidate_index": 6,
+        "embedding_cosine": 0.9302315882313067,
+        "psnr_db": 11.32152284554465,
+        "ssim": 0.278970958679206,
+        "lpips": 0.8045850396156311,
+        "pixel_mse_match_candidate": 11,
+        "same_as_pixel_match": false
+      },
+      {
+        "truth_index": 3,
+        "candidate_index": 9,
+        "embedding_cosine": 0.7986610597899776,
+        "psnr_db": 6.895438356959112,
+        "ssim": 0.5700915962308248,
+        "lpips": 0.7777068614959717,
+        "pixel_mse_match_candidate": 9,
+        "same_as_pixel_match": true
+      },
+      {
+        "truth_index": 4,
+        "candidate_index": 14,
+        "embedding_cosine": 0.8077565565075404,
+        "psnr_db": 12.352661952800759,
+        "ssim": 0.39531210980571124,
+        "lpips": 0.8381913900375366,
+        "pixel_mse_match_candidate": 2,
+        "same_as_pixel_match": false
+      },
+      {
+        "truth_index": 5,
+        "candidate_index": 8,
+        "embedding_cosine": 0.8510489916255046,
+        "psnr_db": 9.345080113292966,
+        "ssim": 0.4157006970983897,
+        "lpips": 0.786879301071167,
+        "pixel_mse_match_candidate": 8,
+        "same_as_pixel_match": true
+      },
+      {
+        "truth_index": 6,
+        "candidate_index": 2,
+        "embedding_cosine": 0.8069445954277017,
+        "psnr_db": 11.42950578686584,
+        "ssim": 0.158148129210318,
+        "lpips": 0.7585355043411255,
+        "pixel_mse_match_candidate": 3,
+        "same_as_pixel_match": false
+      },
+      {
+        "truth_index": 7,
+        "candidate_index": 4,
+        "embedding_cosine": 0.8081976080904929,
+        "psnr_db": 9.176748981076571,
+        "ssim": 0.1395864415481098,
+        "lpips": 0.7626060843467712,
+        "pixel_mse_match_candidate": 7,
+        "same_as_pixel_match": false
+      },
+      {
+        "truth_index": 8,
+        "candidate_index": 1,
+        "embedding_cosine": 0.8386578165891306,
+        "psnr_db": 13.841948589835733,
+        "ssim": 0.530266559975216,
+        "lpips": 0.817741870880127,
+        "pixel_mse_match_candidate": 6,
+        "same_as_pixel_match": false
+      },
+      {
+        "truth_index": 9,
+        "candidate_index": 7,
+        "embedding_cosine": 0.8926949891905189,
+        "psnr_db": 13.114296303078085,
+        "ssim": 0.215463454037602,
+        "lpips": 0.7328490018844604,
+        "pixel_mse_match_candidate": 4,
+        "same_as_pixel_match": false
+      },
+      {
+        "truth_index": 10,
+        "candidate_index": 5,
+        "embedding_cosine": 0.924517513373,
+        "psnr_db": 11.781813671433925,
+        "ssim": 0.24460763210408976,
+        "lpips": 0.7161422967910767,
+        "pixel_mse_match_candidate": 5,
+        "same_as_pixel_match": true
+      },
+      {
+        "truth_index": 11,
+        "candidate_index": 10,
+        "embedding_cosine": 0.10987101198762275,
+        "psnr_db": 11.314313588698013,
+        "ssim": 0.15631135635028054,
+        "lpips": 0.7943866848945618,
+        "pixel_mse_match_candidate": 14,
+        "same_as_pixel_match": false
+      },
+      {
+        "truth_index": 12,
+        "candidate_index": 12,
+        "embedding_cosine": 0.0770681438581877,
+        "psnr_db": 13.611348875205742,
+        "ssim": 0.3272015800976896,
+        "lpips": 0.8275865316390991,
+        "pixel_mse_match_candidate": 0,
+        "same_as_pixel_match": false
+      },
+      {
+        "truth_index": 13,
+        "candidate_index": 13,
+        "embedding_cosine": 0.09093469002036218,
+        "psnr_db": 10.133692913412862,
+        "ssim": 0.18509666183173104,
+        "lpips": 0.8155063986778259,
+        "pixel_mse_match_candidate": 12,
+        "same_as_pixel_match": false
+      },
+      {
+        "truth_index": 14,
+        "candidate_index": 11,
+        "embedding_cosine": 0.07913418417987043,
+        "psnr_db": 13.35432801310157,
+        "ssim": 0.19538475942897804,
+        "lpips": 0.7845154404640198,
+        "pixel_mse_match_candidate": 1,
+        "same_as_pixel_match": false
+      },
+      {
+        "truth_index": 15,
+        "candidate_index": 3,
+        "embedding_cosine": 0.8103811852218648,
+        "psnr_db": 11.810613298987194,
+        "ssim": 0.44011800504980275,
+        "lpips": 0.7284823656082153,
+        "pixel_mse_match_candidate": 15,
+        "same_as_pixel_match": false
+      }
+    ],
+    "int4_per_channel": [
+      {
+        "truth_index": 0,
+        "candidate_index": 15,
+        "embedding_cosine": 0.15026365161084015,
+        "psnr_db": 12.02808473721163,
+        "ssim": 0.15391225552123808,
+        "lpips": 0.7760518789291382,
+        "pixel_mse_match_candidate": 13,
+        "same_as_pixel_match": false
+      },
+      {
+        "truth_index": 1,
+        "candidate_index": 0,
+        "embedding_cosine": 0.987917746904491,
+        "psnr_db": 11.308466399838093,
+        "ssim": 0.2397542061709432,
+        "lpips": 0.5687633752822876,
+        "pixel_mse_match_candidate": 0,
+        "same_as_pixel_match": true
+      },
+      {
+        "truth_index": 2,
+        "candidate_index": 6,
+        "embedding_cosine": 0.9870339420201251,
+        "psnr_db": 11.510303822332093,
+        "ssim": 0.3014349420599415,
+        "lpips": 0.6162932515144348,
+        "pixel_mse_match_candidate": 15,
+        "same_as_pixel_match": false
+      },
+      {
+        "truth_index": 3,
+        "candidate_index": 8,
+        "embedding_cosine": 0.989134737843623,
+        "psnr_db": 6.921663051083229,
+        "ssim": 0.6009111437868541,
+        "lpips": 0.6118196845054626,
+        "pixel_mse_match_candidate": 8,
+        "same_as_pixel_match": true
+      },
+      {
+        "truth_index": 4,
+        "candidate_index": 10,
+        "embedding_cosine": 0.975685266251525,
+        "psnr_db": 12.623569011588096,
+        "ssim": 0.3823089031794078,
+        "lpips": 0.7148234844207764,
+        "pixel_mse_match_candidate": 10,
+        "same_as_pixel_match": true
+      },
+      {
+        "truth_index": 5,
+        "candidate_index": 9,
+        "embedding_cosine": 0.9881942537360877,
+        "psnr_db": 9.998969978061375,
+        "ssim": 0.43803655939402253,
+        "lpips": 0.5836449861526489,
+        "pixel_mse_match_candidate": 9,
+        "same_as_pixel_match": true
+      },
+      {
+        "truth_index": 6,
+        "candidate_index": 2,
+        "embedding_cosine": 0.97075069199405,
+        "psnr_db": 11.592878726686042,
+        "ssim": 0.15414063859851887,
+        "lpips": 0.586900532245636,
+        "pixel_mse_match_candidate": 2,
+        "same_as_pixel_match": true
+      },
+      {
+        "truth_index": 7,
+        "candidate_index": 4,
+        "embedding_cosine": 0.9937984691636993,
+        "psnr_db": 9.341481910744807,
+        "ssim": 0.12656735073985073,
+        "lpips": 0.633233904838562,
+        "pixel_mse_match_candidate": 7,
+        "same_as_pixel_match": false
+      },
+      {
+        "truth_index": 8,
+        "candidate_index": 1,
+        "embedding_cosine": 0.971056218512761,
+        "psnr_db": 14.230922678533007,
+        "ssim": 0.5335179416053061,
+        "lpips": 0.6207738518714905,
+        "pixel_mse_match_candidate": 1,
+        "same_as_pixel_match": true
+      },
+      {
+        "truth_index": 9,
+        "candidate_index": 7,
+        "embedding_cosine": 0.9838223899266536,
+        "psnr_db": 13.32619798571034,
+        "ssim": 0.21583088603151762,
+        "lpips": 0.5489098429679871,
+        "pixel_mse_match_candidate": 4,
+        "same_as_pixel_match": false
+      },
+      {
+        "truth_index": 10,
+        "candidate_index": 5,
+        "embedding_cosine": 0.9852556601311776,
+        "psnr_db": 12.116268366255696,
+        "ssim": 0.24869494092878008,
+        "lpips": 0.6068323254585266,
+        "pixel_mse_match_candidate": 5,
+        "same_as_pixel_match": true
+      },
+      {
+        "truth_index": 11,
+        "candidate_index": 13,
+        "embedding_cosine": 0.12851724061370307,
+        "psnr_db": 10.894853005237115,
+        "ssim": 0.11554208666683465,
+        "lpips": 0.8047901391983032,
+        "pixel_mse_match_candidate": 6,
+        "same_as_pixel_match": false
+      },
+      {
+        "truth_index": 12,
+        "candidate_index": 12,
+        "embedding_cosine": 0.9766321312518036,
+        "psnr_db": 14.276452882981474,
+        "ssim": 0.41843567354526584,
+        "lpips": 0.6771437525749207,
+        "pixel_mse_match_candidate": 12,
+        "same_as_pixel_match": true
+      },
+      {
+        "truth_index": 13,
+        "candidate_index": 11,
+        "embedding_cosine": 0.9764223023800686,
+        "psnr_db": 11.056665014825438,
+        "ssim": 0.2984300893376849,
+        "lpips": 0.5886139869689941,
+        "pixel_mse_match_candidate": 11,
+        "same_as_pixel_match": true
+      },
+      {
+        "truth_index": 14,
+        "candidate_index": 14,
+        "embedding_cosine": 0.07587142765338603,
+        "psnr_db": 12.83087656381974,
+        "ssim": 0.137101613917649,
+        "lpips": 0.7904573082923889,
+        "pixel_mse_match_candidate": 14,
+        "same_as_pixel_match": true
+      },
+      {
+        "truth_index": 15,
+        "candidate_index": 3,
+        "embedding_cosine": 0.967719546623711,
+        "psnr_db": 12.13113181910818,
+        "ssim": 0.4136137692351514,
+        "lpips": 0.6242898106575012,
+        "pixel_mse_match_candidate": 3,
+        "same_as_pixel_match": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,123 @@
+{
+  "per_tensor": {
+    "classifier.0.bias": {
+      "name": "classifier.0.bias",
+      "numel": 4096,
+      "fixed_s": 3.0104336019576294e-06,
+      "code_mismatch_count": 3827,
+      "code_mismatch_fraction": 0.934326171875,
+      "bounded_cell_violation_count": 3830,
+      "bounded_cell_violation_fraction": 0.93505859375,
+      "mean_violation_in_s": 7.560761096326178,
+      "max_violation_in_s": 53.742411250369805,
+      "cell_penalty": 117.04870264625693,
+      "candidate_scale": 2.4617782401037402e-05
+    },
+    "classifier.0.weight": {
+      "name": "classifier.0.weight",
+      "numel": 102760448,
+      "fixed_s": 5.416279236669652e-05,
+      "code_mismatch_count": 776226,
+      "code_mismatch_fraction": 0.007553742856395488,
+      "bounded_cell_violation_count": 776226,
+      "bounded_cell_violation_fraction": 0.007553742856395488,
+      "mean_violation_in_s": 0.003150093658042107,
+      "max_violation_in_s": 6.564163255957505,
+      "cell_penalty": 0.0022583478916676897,
+      "candidate_scale": 4.806196739082225e-05
+    },
+    "classifier.3.bias": {
+      "name": "classifier.3.bias",
+      "numel": 4096,
+      "fixed_s": 6.22868537902832e-06,
+      "code_mismatch_count": 3561,
+      "code_mismatch_fraction": 0.869384765625,
+      "bounded_cell_violation_count": 3562,
+      "bounded_cell_violation_fraction": 0.86962890625,
+      "mean_violation_in_s": 3.0583373956988305,
+      "max_violation_in_s": 23.958732057416267,
+      "cell_penalty": 19.43017333430019,
+      "candidate_scale": 2.26534903049469e-05
+    },
+    "classifier.3.weight": {
+      "name": "classifier.3.weight",
+      "numel": 16777216,
+      "fixed_s": 4.05922946811188e-05,
+      "code_mismatch_count": 436041,
+      "code_mismatch_fraction": 0.025990068912506104,
+      "bounded_cell_violation_count": 436041,
+      "bounded_cell_violation_fraction": 0.025990068912506104,
+      "mean_violation_in_s": 0.012794938994936573,
+      "max_violation_in_s": 5.620667642057103,
+      "cell_penalty": 0.009463366892665366,
+      "candidate_scale": 8.783369594311807e-06
+    },
+    "classifier.6.bias": {
+      "name": "classifier.6.bias",
+      "numel": 1000,
+      "fixed_s": 7.289834320545197e-05,
+      "code_mismatch_count": 27,
+      "code_mismatch_fraction": 0.027,
+      "bounded_cell_violation_count": 28,
+      "bounded_cell_violation_fraction": 0.028,
+      "mean_violation_in_s": 0.10371638760555868,
+      "max_violation_in_s": 18.372754682269974,
+      "cell_penalty": 0.8434814509227871,
+      "candidate_scale": 0.000175713692442514
+    },
+    "classifier.6.weight": {
+      "name": "classifier.6.weight",
+      "numel": 4096000,
+      "fixed_s": 0.000340950267855078,
+      "code_mismatch_count": 5525,
+      "code_mismatch_fraction": 0.001348876953125,
+      "bounded_cell_violation_count": 5525,
+      "bounded_cell_violation_fraction": 0.001348876953125,
+      "mean_violation_in_s": 0.0008739361962999219,
+      "max_violation_in_s": 5.730812272374422,
+      "cell_penalty": 0.000984056921753433,
+      "candidate_scale": 0.00010026299423770979
+    }
+  },
+  "overall_numel": 123642856,
+  "overall_code_mismatch_count": 1225207,
+  "overall_code_mismatch_fraction": 0.0099092421482079,
+  "overall_bounded_cell_violation_count": 1225212,
+  "overall_bounded_cell_violation_fraction": 0.009909282587260844,
+  "cell_loss_equal_tensor_mean": 22.889177200530998,
+  "exact_feasible": false,
+  "feature_norm_mean": 21.549190521240234,
+  "feature_norm_min": 11.17577838897705,
+  "feature_norm_max": 37.37336730957031,
+  "scale_diagnostics": {
+    "classifier.0.bias": {
+      "fixed_s": 3.0104336019576294e-06,
+      "candidate_scale": 2.4617782401037402e-05
+    },
+    "classifier.0.weight": {
+      "fixed_s": 5.416279236669652e-05,
+      "candidate_scale": 4.806196739082225e-05
+    },
+    "classifier.3.bias": {
+      "fixed_s": 6.22868537902832e-06,
+      "candidate_scale": 2.26534903049469e-05
+    },
+    "classifier.3.weight": {
+      "fixed_s": 4.05922946811188e-05,
+      "candidate_scale": 8.783369594311807e-06
+    },
+    "classifier.6.bias": {
+      "fixed_s": 7.289834320545197e-05,
+      "candidate_scale": 0.000175713692442514
+    },
+    "classifier.6.weight": {
+      "fixed_s": 0.000340950267855078,
+      "candidate_scale": 0.00010026299423770979
+    }
+  },
+  "feasibility": {
+    "exact_code_and_bounded_cell": false,
+    "overall_code_mismatch_count": 1225207,
+    "overall_bounded_cell_violation_count": 1225212
+  }
+}

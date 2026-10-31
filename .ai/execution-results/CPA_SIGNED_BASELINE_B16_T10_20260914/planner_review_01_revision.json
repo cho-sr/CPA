@@ -1,0 +1,20 @@
+{
+  "review": "planner_review_01.md",
+  "scope": "offline provenance and output guards only",
+  "old_evaluation_sha256": "62f583afddf9f325971a241c7fbb74ccb0926a3cbe251fd27bc00485e89e380f",
+  "core_sha256": "a2a6b3e3c7909fb15ab44d49839e6bb0759e44832e223d16f0f2c24e0e45e467",
+  "new_evaluation_sha256": "6cbb63f980bb7349bbf58b3c4fc541dfb3edf7a86af994cf06666155cd034add",
+  "focused_tests": {
+    "exit_status": 0,
+    "passed": 25,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "pytest_seconds": 2.119,
+    "xml": "review01-pytest.xml",
+    "test_source_sha256": "68a21cedf41b31b50abf76070c5b70a1fedaf11b65a4ee2c88bda12ce2aa6e0f"
+  },
+  "applied_at_utc": "2026-09-14T09:11:42.542248+00:00",
+  "collection_or_arm_reexecution": false,
+  "handoff_changed": false
+}

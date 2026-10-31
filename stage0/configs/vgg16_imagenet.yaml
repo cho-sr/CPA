@@ -1,0 +1,59 @@
+# Stage 0 baseline: CPA headline config, VGG-16 / ImageNet
+#
+# Upstream README command this reproduces verbatim:
+#   python src/attack.py --attack=cp --batch_size=256 --nv=0.13 --l1=5 --T=7.7 \
+#       --decor=5.3 --fi=1 --tv=0.1 --fi_method=direct --n_sample_fi=16 \
+#       --ds=imagenet --model=vgg16
+#
+# No training step: torchvision VGG16_Weights.IMAGENET1K_V1 (pretrained=True in
+# models.model_class_dict), so `model.pt` is never loaded.
+#
+# Attacked layer: classifier[0].weight, i.e. Linear(25088, 4096)
+#   -> attack_index = 26, X shape [4096, 25088]
+#   -> n_obs = 4096, so batch_size <= 4096 is not the binding constraint here
+#   -> sources are post-avgpool ReLU features z, NOT images; images come from
+#      the Direct feature-inversion stage.
+#
+# Note on --tv: because --nv > 0, gradient_inversion.py:174 skips the TV prior in
+# the GI stage; tv=0.1 is consumed by the feature-inversion stage instead.
+# See stage0/notes/cpa_code_reading.md section 1.
+#
+# `src: official` = byte-identical upstream tree, in which the negentropy term
+# is zeroed at gradient_inversion.py:163.  Run the same config with
+# `--src negentropy` for the paper's log-cosh contrast.
+
+src: official
+
+common:
+  model: vgg16
+  ds: imagenet
+  h_dim: 256          # unused by vgg16 but part of the upstream signature
+
+collect_grads:
+  batch_sizes: "8,16,32,64,128,256"
+  n_batch: 10
+  seed: 42
+  grad_scope: attack_layer   # only grads[26] is read by CPA + Direct FIA
+  num_workers: 8
+
+attack:
+  attack: cp
+  fl_alg: fedsgd
+  batch_size: 256     # headline; override with --set batch_size=<n>
+  # --- gradient inversion (CPA) ---
+  decor: 5.3
+  T: 7.7
+  nv: 0.13
+  l1: 5
+  tv: 0.1             # -> feature inversion, not GI (nv > 0)
+  # upstream defaults kept: ne=1 (no effect in `official`), lr=1e-3, opt=adam,
+  # sch=none, n_iter=25000, n_log=1000
+  # --- feature inversion ---
+  fi_method: direct
+  fi: 1
+  n_sample_fi: 16     # FIA reconstructs 16 of the batch_size samples
+  # upstream defaults kept: n_iter_fi=25000, n_log_fi=2000, lr_fi=0.1,
+  # opt_fi=adam, sch_fi=cosine
+  n_batch: 10
+  dry_run: true
+  disable_pbar: true

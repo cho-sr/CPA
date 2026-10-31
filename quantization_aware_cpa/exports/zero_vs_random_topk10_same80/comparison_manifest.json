@@ -1,0 +1,4597 @@
+{
+  "scope": "Top-k10 same80 zero-fill vs uniform-random fill; completed artifacts only",
+  "n_images": 80,
+  "means": [
+    {
+      "metric": "lpips",
+      "zero_fill": 0.6323260389268398,
+      "random_fill": 0.6299886766821146,
+      "random_minus_zero": -0.0023373622447252496,
+      "relative_change_percent": -0.36964510408145357,
+      "random_better_images": 47,
+      "ties": 0,
+      "n_images": 80
+    },
+    {
+      "metric": "ssim",
+      "zero_fill": 0.263121826434508,
+      "random_fill": 0.2610037789214402,
+      "random_minus_zero": -0.0021180475130677667,
+      "relative_change_percent": -0.8049683835692577,
+      "random_better_images": 39,
+      "ties": 0,
+      "n_images": 80
+    },
+    {
+      "metric": "psnr",
+      "zero_fill": 21.53053867816925,
+      "random_fill": 21.510399985313416,
+      "random_minus_zero": -0.02013869285583425,
+      "relative_change_percent": -0.09353548072744575,
+      "random_better_images": 44,
+      "ties": 0,
+      "n_images": 80
+    }
+  ],
+  "per_batch": [
+    {
+      "batch_index": 0,
+      "n_images": 16,
+      "lpips_zero": 0.608500674366951,
+      "lpips_random": 0.6052548922598362,
+      "ssim_zero": 0.285472447052598,
+      "ssim_random": 0.28347100876271725,
+      "psnr_zero": 21.191675782203674,
+      "psnr_random": 21.204543471336365
+    },
+    {
+      "batch_index": 1,
+      "n_images": 16,
+      "lpips_zero": 0.6508807148784399,
+      "lpips_random": 0.6473522912710905,
+      "ssim_zero": 0.22865657065995038,
+      "ssim_random": 0.22880640695802867,
+      "psnr_zero": 20.810834646224976,
+      "psnr_random": 20.829517364501953
+    },
+    {
+      "batch_index": 2,
+      "n_images": 16,
+      "lpips_zero": 0.6111969389021397,
+      "lpips_random": 0.6093876529484987,
+      "ssim_zero": 0.30475640250369906,
+      "ssim_random": 0.30406603775918484,
+      "psnr_zero": 22.70730710029602,
+      "psnr_random": 22.677499771118164
+    },
+    {
+      "batch_index": 3,
+      "n_images": 16,
+      "lpips_zero": 0.6381458509713411,
+      "lpips_random": 0.6365918610244989,
+      "ssim_zero": 0.2806852087378502,
+      "ssim_random": 0.27360023837536573,
+      "psnr_zero": 21.57073485851288,
+      "psnr_random": 21.480302095413208
+    },
+    {
+      "batch_index": 4,
+      "n_images": 16,
+      "lpips_zero": 0.6529060155153275,
+      "lpips_random": 0.6513566859066486,
+      "ssim_zero": 0.2160385032184422,
+      "ssim_random": 0.21507520275190473,
+      "psnr_zero": 21.372141003608704,
+      "psnr_random": 21.360137224197388
+    }
+  ],
+  "source_provenance": [
+    {
+      "run_tag": "cpa_fia_topk10_same80_B16",
+      "summary_sha256": "45732e0b38c31dfc6c478f37e6962bbc7d330395f4a1993674dab47631d686c0",
+      "inputs": {
+        "all80_rec.pt": "996d42cde6abc112af9998a9bc1c85dec3d429efe8498c53f8ae22b82c08df3f",
+        "per_image_metrics.csv": "198f59ef1b84db5aa1437ea55397b61628be08b4aac90cb8fc10203e5a992e48"
+      }
+    },
+    {
+      "run_tag": "cpa_fia_random_topk10_same80_R20_S5k_K3_F25k",
+      "summary_sha256": "08b4079b87f3e2968fdf6865fb412a8e611cf6660bc4bdf9d5b2d0f6293ac8be",
+      "inputs": {
+        "all80_rec.pt": "63afac3244337a9614ae98b353b4343f501465d3b402942c2fa4500f62a0395f",
+        "per_image_metrics.csv": "af19b38ba31cc1158441c73e9e0457b5b89a760c2cd2d1897ac3cb940e34a20e"
+      }
+    }
+  ],
+  "identical_received_packets": true,
+  "packet_bytes_per_client": 53949264,
+  "budget_per_batch": {
+    "zero": {
+      "cpa_iterations": 25000,
+      "fia_iterations": 25000
+    },
+    "random": {
+      "cpa_runs": 20,
+      "cpa_iterations_total": 500000,
+      "fia_iterations_total": 160000,
+      "ranking_replays": 23
+    }
+  },
+  "runtime": {
+    "zero_sum_batch_invocation_sec": 9893.111060300027,
+    "random_elapsed_sec": 67663.097794,
+    "note": "Different scopes: zero sums batch invocations; random includes report and any resume downtime"
+  },
+  "figures": [
+    {
+      "file": "zero_vs_random_topk10_metrics_16x9.png",
+      "size": [
+        3840,
+        2160
+      ],
+      "sha256": "a7ec2cdef9a07e18046f3b15b8f014a8e37153ed22bebf494703089b521ed511"
+    },
+    {
+      "file": "zero_vs_random_topk10_all80_16x9.png",
+      "size": [
+        3840,
+        2160
+      ],
+      "sha256": "32badf2c85ff4887e167a38eefd0a2d6144bfab7c275aa546083e58d0621da41",
+      "placements": [
+        {
+          "global_index": 0,
+          "panel": "Zero fill",
+          "box": [
+            68,
+            285,
+            242,
+            459
+          ],
+          "rgb_sha256": "c06ff992ea6de7efca8b0d707639214c8980dcfab884af8ea093e9cf02dcf100"
+        },
+        {
+          "global_index": 0,
+          "panel": "Random fill",
+          "box": [
+            250,
+            285,
+            424,
+            459
+          ],
+          "rgb_sha256": "406f6b54e9cde28a2b456ffd53917bae04766066b9bf096e54af91bfbd132b8c"
+        },
+        {
+          "global_index": 1,
+          "panel": "Zero fill",
+          "box": [
+            440,
+            285,
+            614,
+            459
+          ],
+          "rgb_sha256": "8bb9a25f8d5a549696e70a91189549a1a8b34f8fa93ae05b7f208778b4e7141c"
+        },
+        {
+          "global_index": 1,
+          "panel": "Random fill",
+          "box": [
+            622,
+            285,
+            796,
+            459
+          ],
+          "rgb_sha256": "3f2fec346605e414877ba39d66001a535969b67b19602fa2d0573e37dbc968b7"
+        },
+        {
+          "global_index": 2,
+          "panel": "Zero fill",
+          "box": [
+            812,
+            285,
+            986,
+            459
+          ],
+          "rgb_sha256": "6d1cf9e59ca68186a18a520bcbea0c6f462ebd6bafdabef3bb58d8177418e0d4"
+        },
+        {
+          "global_index": 2,
+          "panel": "Random fill",
+          "box": [
+            994,
+            285,
+            1168,
+            459
+          ],
+          "rgb_sha256": "de33af428ba1c91559c2982567f232606378bfae5e0b4da07930855b59c5b284"
+        },
+        {
+          "global_index": 3,
+          "panel": "Zero fill",
+          "box": [
+            1184,
+            285,
+            1358,
+            459
+          ],
+          "rgb_sha256": "66563dd919b9d1e041ad60dbc3785b8e8a92cf0f9b87a2cdb159fcc27ba89c9c"
+        },
+        {
+          "global_index": 3,
+          "panel": "Random fill",
+          "box": [
+            1366,
+            285,
+            1540,
+            459
+          ],
+          "rgb_sha256": "8720e7fdddc5aae68ef246e7236add8fae882b38fe3547e5dad7cd1fd2d90a0a"
+        },
+        {
+          "global_index": 4,
+          "panel": "Zero fill",
+          "box": [
+            1556,
+            285,
+            1730,
+            459
+          ],
+          "rgb_sha256": "ff9570bf665f3c102de6107c7ec683532e10adf1fb17af7dc3f929f59ffdf760"
+        },
+        {
+          "global_index": 4,
+          "panel": "Random fill",
+          "box": [
+            1738,
+            285,
+            1912,
+            459
+          ],
+          "rgb_sha256": "ac047e91e08526f139c128140b049a07bf514472fab1261c44e2428e26a110e0"
+        },
+        {
+          "global_index": 5,
+          "panel": "Zero fill",
+          "box": [
+            1928,
+            285,
+            2102,
+            459
+          ],
+          "rgb_sha256": "e5dfff4cde1b2d3c2a89977697b37f2fce6c4e77f9bdd6ae0a7c843dcb295930"
+        },
+        {
+          "global_index": 5,
+          "panel": "Random fill",
+          "box": [
+            2110,
+            285,
+            2284,
+            459
+          ],
+          "rgb_sha256": "21ec46bf2c44cbd63944dcec0bed0f1492e261c26232de7645f2d7eece5601fb"
+        },
+        {
+          "global_index": 6,
+          "panel": "Zero fill",
+          "box": [
+            2300,
+            285,
+            2474,
+            459
+          ],
+          "rgb_sha256": "369bec1fa16aa8a3fb1e4b66264eeea1e0bbb1571cbb3e6bbbadf62a2acd5e29"
+        },
+        {
+          "global_index": 6,
+          "panel": "Random fill",
+          "box": [
+            2482,
+            285,
+            2656,
+            459
+          ],
+          "rgb_sha256": "5bdcf9e9130763f46fc5fe721527f62985a07310930992aa14afe99275105e7b"
+        },
+        {
+          "global_index": 7,
+          "panel": "Zero fill",
+          "box": [
+            2672,
+            285,
+            2846,
+            459
+          ],
+          "rgb_sha256": "54005e20cc5c6b8a3c3ff8c3e2241cd1c835f80870cb1ceb2693bcbd64cdebe2"
+        },
+        {
+          "global_index": 7,
+          "panel": "Random fill",
+          "box": [
+            2854,
+            285,
+            3028,
+            459
+          ],
+          "rgb_sha256": "be97853bbf6d0a59104cf9cae31e12132cf87d23cec797cd182c11135cfe84c9"
+        },
+        {
+          "global_index": 8,
+          "panel": "Zero fill",
+          "box": [
+            3044,
+            285,
+            3218,
+            459
+          ],
+          "rgb_sha256": "5bc1f3eb3244484129bea297b3b40bbe6f13950941c3e1b4c4419bb5cfddb75a"
+        },
+        {
+          "global_index": 8,
+          "panel": "Random fill",
+          "box": [
+            3226,
+            285,
+            3400,
+            459
+          ],
+          "rgb_sha256": "e0bb9f7d933ffe4dd5b0c082ea048997aabac5ba55dca9d09d481938ee39dc8a"
+        },
+        {
+          "global_index": 9,
+          "panel": "Zero fill",
+          "box": [
+            3416,
+            285,
+            3590,
+            459
+          ],
+          "rgb_sha256": "ff31fa7e8623095d73ddf4fb916b4b8b787f9232f435dc3e214628032d485e5c"
+        },
+        {
+          "global_index": 9,
+          "panel": "Random fill",
+          "box": [
+            3598,
+            285,
+            3772,
+            459
+          ],
+          "rgb_sha256": "f0be8c221817d48d6744740d579a9704498f8488e19ed581dae0a7d942ad9c4e"
+        },
+        {
+          "global_index": 10,
+          "panel": "Zero fill",
+          "box": [
+            68,
+            514,
+            242,
+            688
+          ],
+          "rgb_sha256": "cfd197b66b63e960255a12699934554f2af5b0b6930cce144ea4c8b9a302c32c"
+        },
+        {
+          "global_index": 10,
+          "panel": "Random fill",
+          "box": [
+            250,
+            514,
+            424,
+            688
+          ],
+          "rgb_sha256": "054831e9cc982f3557a61d5a19e9cc5597a1186481184d7e69f5eb29fde91814"
+        },
+        {
+          "global_index": 11,
+          "panel": "Zero fill",
+          "box": [
+            440,
+            514,
+            614,
+            688
+          ],
+          "rgb_sha256": "005ef0e8699b9d73abfbe1f908a79fe058e49cc43c74efe1eddda9306edc1dc7"
+        },
+        {
+          "global_index": 11,
+          "panel": "Random fill",
+          "box": [
+            622,
+            514,
+            796,
+            688
+          ],
+          "rgb_sha256": "72067d0d81f5a45c4ed2841b42847e13a17fda1dbbb9ae91910d0c988707fb0a"
+        },
+        {
+          "global_index": 12,
+          "panel": "Zero fill",
+          "box": [
+            812,
+            514,
+            986,
+            688
+          ],
+          "rgb_sha256": "dac68fb945f347156745a2450f872be93f0e8852e90340ac64a10f9c01b4fd34"
+        },
+        {
+          "global_index": 12,
+          "panel": "Random fill",
+          "box": [
+            994,
+            514,
+            1168,
+            688
+          ],
+          "rgb_sha256": "d7ac404432c1357836f597222fc8426430650e6e0a028ae3ea1d0270cbb3387f"
+        },
+        {
+          "global_index": 13,
+          "panel": "Zero fill",
+          "box": [
+            1184,
+            514,
+            1358,
+            688
+          ],
+          "rgb_sha256": "b12fb74e1e3acddb71497a2adad1a1f4ae3c24d604446e5ce555409d74a37873"
+        },
+        {
+          "global_index": 13,
+          "panel": "Random fill",
+          "box": [
+            1366,
+            514,
+            1540,
+            688
+          ],
+          "rgb_sha256": "e9074e177207607ea9cd6d153b10fa9cb441ad8fe529a9bd86a43dfa70c3b54f"
+        },
+        {
+          "global_index": 14,
+          "panel": "Zero fill",
+          "box": [
+            1556,
+            514,
+            1730,
+            688
+          ],
+          "rgb_sha256": "b238ab0e48c8a5b6598c229bdd96bca2cf7ea492c9890b4877926af47ff0c2c5"
+        },
+        {
+          "global_index": 14,
+          "panel": "Random fill",
+          "box": [
+            1738,
+            514,
+            1912,
+            688
+          ],
+          "rgb_sha256": "6b73d34dbf07bdc8f213064bee61d5242eb93615f7c7581d9ccec19f8b893cb7"
+        },
+        {
+          "global_index": 15,
+          "panel": "Zero fill",
+          "box": [
+            1928,
+            514,
+            2102,
+            688
+          ],
+          "rgb_sha256": "6b830ff2969114ebc99fc2a950e3468064723c86d41078d8c5dd9a19136e67b8"
+        },
+        {
+          "global_index": 15,
+          "panel": "Random fill",
+          "box": [
+            2110,
+            514,
+            2284,
+            688
+          ],
+          "rgb_sha256": "f6c74728bb6c9bf2def45a0075746a5ead51f12b10f601bdd3d3819c008d70d0"
+        },
+        {
+          "global_index": 16,
+          "panel": "Zero fill",
+          "box": [
+            2300,
+            514,
+            2474,
+            688
+          ],
+          "rgb_sha256": "00d76100ecb5f1da2092b9ce5410a06114bea53d8eeb7f8ceb5eb2574b441ff2"
+        },
+        {
+          "global_index": 16,
+          "panel": "Random fill",
+          "box": [
+            2482,
+            514,
+            2656,
+            688
+          ],
+          "rgb_sha256": "19de20c7513e23c5aba5d106d10e0d82148b45364dfe1ea024cd418e1b2a47cc"
+        },
+        {
+          "global_index": 17,
+          "panel": "Zero fill",
+          "box": [
+            2672,
+            514,
+            2846,
+            688
+          ],
+          "rgb_sha256": "ca7a7e69a81cfcbc47bdd70a3f989f267edb8ab26cce156885a8f1fc58c8c1cf"
+        },
+        {
+          "global_index": 17,
+          "panel": "Random fill",
+          "box": [
+            2854,
+            514,
+            3028,
+            688
+          ],
+          "rgb_sha256": "61911076da6ef229bcbd2792e43c592816b52285afee8285db2bebfdbd153855"
+        },
+        {
+          "global_index": 18,
+          "panel": "Zero fill",
+          "box": [
+            3044,
+            514,
+            3218,
+            688
+          ],
+          "rgb_sha256": "941cd852cf5214a26277420e560b40b1eef2726de4dc3e9ed664f2a534b2c550"
+        },
+        {
+          "global_index": 18,
+          "panel": "Random fill",
+          "box": [
+            3226,
+            514,
+            3400,
+            688
+          ],
+          "rgb_sha256": "7c3beade6b20c54fe2ac4e30762ffeabf3b51c257f65a7a8f7939496fe1f95de"
+        },
+        {
+          "global_index": 19,
+          "panel": "Zero fill",
+          "box": [
+            3416,
+            514,
+            3590,
+            688
+          ],
+          "rgb_sha256": "0f63593b06597280bfe3c7a3f8de7ef5e52b02733002820d47761d496080cb6f"
+        },
+        {
+          "global_index": 19,
+          "panel": "Random fill",
+          "box": [
+            3598,
+            514,
+            3772,
+            688
+          ],
+          "rgb_sha256": "c7634267004b057d413db99f26a4cb923f67ed676cf1088fe59f92b2e40f7dcb"
+        },
+        {
+          "global_index": 20,
+          "panel": "Zero fill",
+          "box": [
+            68,
+            743,
+            242,
+            917
+          ],
+          "rgb_sha256": "dbdddecf75320a4438ba5be51a600c477eb890fa1aa115fd7beb3a4352f2d521"
+        },
+        {
+          "global_index": 20,
+          "panel": "Random fill",
+          "box": [
+            250,
+            743,
+            424,
+            917
+          ],
+          "rgb_sha256": "0e5546774efb5b3de7ce67dbfbb52ab24bde4f371a1c8e4492fae11ee31c81d2"
+        },
+        {
+          "global_index": 21,
+          "panel": "Zero fill",
+          "box": [
+            440,
+            743,
+            614,
+            917
+          ],
+          "rgb_sha256": "66aa235ed63052a6eacb4fd414653ae91242097b1062ca8818046bcbc6885f33"
+        },
+        {
+          "global_index": 21,
+          "panel": "Random fill",
+          "box": [
+            622,
+            743,
+            796,
+            917
+          ],
+          "rgb_sha256": "19a6f021cfa01c6b3a1d18d16cd666b2c85e1564d987e94a8fc296dc68d62cba"
+        },
+        {
+          "global_index": 22,
+          "panel": "Zero fill",
+          "box": [
+            812,
+            743,
+            986,
+            917
+          ],
+          "rgb_sha256": "c039ea9a53e7d2e20d05ad0581e9d9b4a95e84aa8a9d74af3a89d245292bdbcf"
+        },
+        {
+          "global_index": 22,
+          "panel": "Random fill",
+          "box": [
+            994,
+            743,
+            1168,
+            917
+          ],
+          "rgb_sha256": "6c55dfb716e48beab608d3e1ccebc60c63da9fe8c4046b1dc04ece3a71f68d4c"
+        },
+        {
+          "global_index": 23,
+          "panel": "Zero fill",
+          "box": [
+            1184,
+            743,
+            1358,
+            917
+          ],
+          "rgb_sha256": "e7a0b6970369b30949b75d7dfc79bc39e884bd9a0b988578dba1b9a9d10179de"
+        },
+        {
+          "global_index": 23,
+          "panel": "Random fill",
+          "box": [
+            1366,
+            743,
+            1540,
+            917
+          ],
+          "rgb_sha256": "e46724c2c1ed63b2ecc31e390d5ad2a4c152078e48c92ed2f6221b9ca5ca855c"
+        },
+        {
+          "global_index": 24,
+          "panel": "Zero fill",
+          "box": [
+            1556,
+            743,
+            1730,
+            917
+          ],
+          "rgb_sha256": "ead1321d2e50dcfe7aa02559662bd7f1a75f1fac824e63f4e0d097c604e79317"
+        },
+        {
+          "global_index": 24,
+          "panel": "Random fill",
+          "box": [
+            1738,
+            743,
+            1912,
+            917
+          ],
+          "rgb_sha256": "83f80bbdd87ccff8abbb4f12c3b800611badfa0a80fe30593d517059e989ae52"
+        },
+        {
+          "global_index": 25,
+          "panel": "Zero fill",
+          "box": [
+            1928,
+            743,
+            2102,
+            917
+          ],
+          "rgb_sha256": "9f177c9d5621d859de150387882559afef854fb5479dd87937f04e3ca2f674fd"
+        },
+        {
+          "global_index": 25,
+          "panel": "Random fill",
+          "box": [
+            2110,
+            743,
+            2284,
+            917
+          ],
+          "rgb_sha256": "f05f5568251c26c166f5747f8464da1664e9e30eda1c4d5a8fdec80b27ae6364"
+        },
+        {
+          "global_index": 26,
+          "panel": "Zero fill",
+          "box": [
+            2300,
+            743,
+            2474,
+            917
+          ],
+          "rgb_sha256": "bcfcc1e8d0c646b001a165949f1d1aaef9cfc377fb8d18484df2b604cd35c58d"
+        },
+        {
+          "global_index": 26,
+          "panel": "Random fill",
+          "box": [
+            2482,
+            743,
+            2656,
+            917
+          ],
+          "rgb_sha256": "8466ad278c854c9ff7b8bcb455b1f3792de965141fe6bc686acf2343dbd2a1da"
+        },
+        {
+          "global_index": 27,
+          "panel": "Zero fill",
+          "box": [
+            2672,
+            743,
+            2846,
+            917
+          ],
+          "rgb_sha256": "3bd1a8b0e4bbcf8dcd680b173b32cd4743ab016cc23c1938a1b49dae841bee8d"
+        },
+        {
+          "global_index": 27,
+          "panel": "Random fill",
+          "box": [
+            2854,
+            743,
+            3028,
+            917
+          ],
+          "rgb_sha256": "fb7f48096b2e3b2d7ea4afeacd4d52edb70009f58b247c6e5a55e5db9929e454"
+        },
+        {
+          "global_index": 28,
+          "panel": "Zero fill",
+          "box": [
+            3044,
+            743,
+            3218,
+            917
+          ],
+          "rgb_sha256": "fd1abb45dc2711fcd94a720880f3497e3b7d32a9d72fb04229260c0714af6f71"
+        },
+        {
+          "global_index": 28,
+          "panel": "Random fill",
+          "box": [
+            3226,
+            743,
+            3400,
+            917
+          ],
+          "rgb_sha256": "2fd142f09be6ebd86266c9f874e6e2038c44a83953ad518690f634556cf0ad45"
+        },
+        {
+          "global_index": 29,
+          "panel": "Zero fill",
+          "box": [
+            3416,
+            743,
+            3590,
+            917
+          ],
+          "rgb_sha256": "65bc12bcd6be52601e24ea08647aabf757f3aa37e15b9965df80ee957baa3bcc"
+        },
+        {
+          "global_index": 29,
+          "panel": "Random fill",
+          "box": [
+            3598,
+            743,
+            3772,
+            917
+          ],
+          "rgb_sha256": "d7523bc1e3b0f961361ba5e9f3a6726af0cc05362d3607a3df595c1985da3453"
+        },
+        {
+          "global_index": 30,
+          "panel": "Zero fill",
+          "box": [
+            68,
+            972,
+            242,
+            1146
+          ],
+          "rgb_sha256": "263b161cc295884ca148ef184a53d35098031d73daf9ab106fdffa2f519bf4fa"
+        },
+        {
+          "global_index": 30,
+          "panel": "Random fill",
+          "box": [
+            250,
+            972,
+            424,
+            1146
+          ],
+          "rgb_sha256": "db98cf07b0076aef002f4a06a4db17aaa2cbc33c9148387c09411e540f750198"
+        },
+        {
+          "global_index": 31,
+          "panel": "Zero fill",
+          "box": [
+            440,
+            972,
+            614,
+            1146
+          ],
+          "rgb_sha256": "044b9ecc0e7081780c27868348dea6d884f1db78eda92bfae70c9ca1bc266e21"
+        },
+        {
+          "global_index": 31,
+          "panel": "Random fill",
+          "box": [
+            622,
+            972,
+            796,
+            1146
+          ],
+          "rgb_sha256": "0cfcca639f322c74a24bb967ac3b215196720cb136af7d43444904d4365ef68c"
+        },
+        {
+          "global_index": 32,
+          "panel": "Zero fill",
+          "box": [
+            812,
+            972,
+            986,
+            1146
+          ],
+          "rgb_sha256": "42e8b3a52b9914dc414b0199658411c25943716474a06bcec694cc80f64fb7f1"
+        },
+        {
+          "global_index": 32,
+          "panel": "Random fill",
+          "box": [
+            994,
+            972,
+            1168,
+            1146
+          ],
+          "rgb_sha256": "821cdfe59b48f11b3dfc7c9075c2755c3dc5b76b5fa80a3b9a6f071916547183"
+        },
+        {
+          "global_index": 33,
+          "panel": "Zero fill",
+          "box": [
+            1184,
+            972,
+            1358,
+            1146
+          ],
+          "rgb_sha256": "750e0cb878ae6ebfb133abac895ce7b8437498e89d1ecec22e665ea34744733e"
+        },
+        {
+          "global_index": 33,
+          "panel": "Random fill",
+          "box": [
+            1366,
+            972,
+            1540,
+            1146
+          ],
+          "rgb_sha256": "ea676cf7874c5a5abaec1841f9a4feb1591cd22357be466693eeb0a6ab82d3ff"
+        },
+        {
+          "global_index": 34,
+          "panel": "Zero fill",
+          "box": [
+            1556,
+            972,
+            1730,
+            1146
+          ],
+          "rgb_sha256": "a7a9134c58a4a05a546a33589e59982915449ed4a4debe64d2b8eb95333b7e55"
+        },
+        {
+          "global_index": 34,
+          "panel": "Random fill",
+          "box": [
+            1738,
+            972,
+            1912,
+            1146
+          ],
+          "rgb_sha256": "eab748707ae44be7711a203ba8c2fa7a3ee15fe37e7e0b96aebf78024fab3aba"
+        },
+        {
+          "global_index": 35,
+          "panel": "Zero fill",
+          "box": [
+            1928,
+            972,
+            2102,
+            1146
+          ],
+          "rgb_sha256": "7634074e014e9f0f2ef5682b23ec13ead1ad3153d410582e5392d636fa7d49f5"
+        },
+        {
+          "global_index": 35,
+          "panel": "Random fill",
+          "box": [
+            2110,
+            972,
+            2284,
+            1146
+          ],
+          "rgb_sha256": "2a26fd1a02ee4f2b6fc63110379162f643245cb9e8279886eab2071b90946465"
+        },
+        {
+          "global_index": 36,
+          "panel": "Zero fill",
+          "box": [
+            2300,
+            972,
+            2474,
+            1146
+          ],
+          "rgb_sha256": "48372821fa08227c881ff3ddad77f5af9d6f03e01ae7ef7f0d2efc2d81712249"
+        },
+        {
+          "global_index": 36,
+          "panel": "Random fill",
+          "box": [
+            2482,
+            972,
+            2656,
+            1146
+          ],
+          "rgb_sha256": "f21c7b8c230c788da70bd85796febf1c7b5892bdd03777fb84a8ad9df4bce404"
+        },
+        {
+          "global_index": 37,
+          "panel": "Zero fill",
+          "box": [
+            2672,
+            972,
+            2846,
+            1146
+          ],
+          "rgb_sha256": "473846aa2b1ffbd95df05c3df5544af4bd02279db8f6d9d9528fef5f8d18a415"
+        },
+        {
+          "global_index": 37,
+          "panel": "Random fill",
+          "box": [
+            2854,
+            972,
+            3028,
+            1146
+          ],
+          "rgb_sha256": "24b64c255281bf0171fb88a21afa335dfdca317137181e55df417fcbf62baff4"
+        },
+        {
+          "global_index": 38,
+          "panel": "Zero fill",
+          "box": [
+            3044,
+            972,
+            3218,
+            1146
+          ],
+          "rgb_sha256": "e5ddded0a2cdf3fe5449b163f0aced4b188e6aa570d85a036165a02d6d1e620e"
+        },
+        {
+          "global_index": 38,
+          "panel": "Random fill",
+          "box": [
+            3226,
+            972,
+            3400,
+            1146
+          ],
+          "rgb_sha256": "25f0db3d99042ef50c069f01866cf7a89c0dee99870a3a12d0fec09d1d35b73c"
+        },
+        {
+          "global_index": 39,
+          "panel": "Zero fill",
+          "box": [
+            3416,
+            972,
+            3590,
+            1146
+          ],
+          "rgb_sha256": "c56e4d6221f81cfd59a0ab4132f984dda9763fcc08acc2c23e35bb406e0fff4b"
+        },
+        {
+          "global_index": 39,
+          "panel": "Random fill",
+          "box": [
+            3598,
+            972,
+            3772,
+            1146
+          ],
+          "rgb_sha256": "a4e3ebc695593b0a5f2ea5f891537964c1f13e6bf286f631027630a1bd3e7bad"
+        },
+        {
+          "global_index": 40,
+          "panel": "Zero fill",
+          "box": [
+            68,
+            1201,
+            242,
+            1375
+          ],
+          "rgb_sha256": "68aee4f4fce5f796f02f69d386fe733efe4a6984884898f9af21ee5bbe78bb02"
+        },
+        {
+          "global_index": 40,
+          "panel": "Random fill",
+          "box": [
+            250,
+            1201,
+            424,
+            1375
+          ],
+          "rgb_sha256": "d8cef8847164f8abf0840ca7f9f7d9e67c34ad829ef02d4b2ec7370c236e3117"
+        },
+        {
+          "global_index": 41,
+          "panel": "Zero fill",
+          "box": [
+            440,
+            1201,
+            614,
+            1375
+          ],
+          "rgb_sha256": "5cd352d95c2d36cb3b115bea51cbd90308f24ee19b2f04c286edab22e77ba79e"
+        },
+        {
+          "global_index": 41,
+          "panel": "Random fill",
+          "box": [
+            622,
+            1201,
+            796,
+            1375
+          ],
+          "rgb_sha256": "b1dfcadabab84d174f1009b89de419bd1fa1c3a6fda01b6b40a118fd6c7a09b8"
+        },
+        {
+          "global_index": 42,
+          "panel": "Zero fill",
+          "box": [
+            812,
+            1201,
+            986,
+            1375
+          ],
+          "rgb_sha256": "4f0ade2dbe7c2b40df5b4edc524f91c8269d9f7f4125502f37f01630d7cd3a74"
+        },
+        {
+          "global_index": 42,
+          "panel": "Random fill",
+          "box": [
+            994,
+            1201,
+            1168,
+            1375
+          ],
+          "rgb_sha256": "71097743104be209aebb6d63658f9e72dc0ef813e534acb27879585d576053bd"
+        },
+        {
+          "global_index": 43,
+          "panel": "Zero fill",
+          "box": [
+            1184,
+            1201,
+            1358,
+            1375
+          ],
+          "rgb_sha256": "1bfc4c3460b7c818a0f11110aa864199007f1148f02f0de162b3d7e48fc785c6"
+        },
+        {
+          "global_index": 43,
+          "panel": "Random fill",
+          "box": [
+            1366,
+            1201,
+            1540,
+            1375
+          ],
+          "rgb_sha256": "f31b66cefeb1972461d3cf7170f445063072acf360cdcfc754c12e67122c1810"
+        },
+        {
+          "global_index": 44,
+          "panel": "Zero fill",
+          "box": [
+            1556,
+            1201,
+            1730,
+            1375
+          ],
+          "rgb_sha256": "ed30d1842bfacd182e593e4ef7b35ae43d62c29ead6ffc912a3f496b312e5dff"
+        },
+        {
+          "global_index": 44,
+          "panel": "Random fill",
+          "box": [
+            1738,
+            1201,
+            1912,
+            1375
+          ],
+          "rgb_sha256": "063e527569946549bbd3eee48b3f7f5a1388b184df84d9bfbfe6d9a4ee2af6d8"
+        },
+        {
+          "global_index": 45,
+          "panel": "Zero fill",
+          "box": [
+            1928,
+            1201,
+            2102,
+            1375
+          ],
+          "rgb_sha256": "6a3d684b7dfe671730f2bd9692c6555ac942e5e84da55d3fab104189377237ca"
+        },
+        {
+          "global_index": 45,
+          "panel": "Random fill",
+          "box": [
+            2110,
+            1201,
+            2284,
+            1375
+          ],
+          "rgb_sha256": "a17eaba0a45448215b1c40c20b8fa7a71db08bf31f02882f2f1642f338dbfba5"
+        },
+        {
+          "global_index": 46,
+          "panel": "Zero fill",
+          "box": [
+            2300,
+            1201,
+            2474,
+            1375
+          ],
+          "rgb_sha256": "54cb9d3fa6350deb102f932c118e93b3e1216f8050cd6968b4d9351c197f67d5"
+        },
+        {
+          "global_index": 46,
+          "panel": "Random fill",
+          "box": [
+            2482,
+            1201,
+            2656,
+            1375
+          ],
+          "rgb_sha256": "e7c2e246368f62736a94d78b8b09bf9ab40aae577ae9bdb6deb5ef71f2171a26"
+        },
+        {
+          "global_index": 47,
+          "panel": "Zero fill",
+          "box": [
+            2672,
+            1201,
+            2846,
+            1375
+          ],
+          "rgb_sha256": "20a4b6ee7d25cfc44670b3fad5568af8ec9e2805a55c1f753fbe2abd92702a63"
+        },
+        {
+          "global_index": 47,
+          "panel": "Random fill",
+          "box": [
+            2854,
+            1201,
+            3028,
+            1375
+          ],
+          "rgb_sha256": "1e23e2afec7621adf0a0b9abf42ce7bc81afae19d9a77c1b9b68011dd60aaa78"
+        },
+        {
+          "global_index": 48,
+          "panel": "Zero fill",
+          "box": [
+            3044,
+            1201,
+            3218,
+            1375
+          ],
+          "rgb_sha256": "636f1a178aa947df1358181d413f6e02f82d7dd507bde484152fb7ad19054246"
+        },
+        {
+          "global_index": 48,
+          "panel": "Random fill",
+          "box": [
+            3226,
+            1201,
+            3400,
+            1375
+          ],
+          "rgb_sha256": "89676c8781bdad9e3c46768d71f6b6cf9da582c607072e95cdadb05f952db460"
+        },
+        {
+          "global_index": 49,
+          "panel": "Zero fill",
+          "box": [
+            3416,
+            1201,
+            3590,
+            1375
+          ],
+          "rgb_sha256": "f50fbaad32424451c5877f577204c17b86684bcfa265dc57a27d9c10936da8a2"
+        },
+        {
+          "global_index": 49,
+          "panel": "Random fill",
+          "box": [
+            3598,
+            1201,
+            3772,
+            1375
+          ],
+          "rgb_sha256": "925788aea2706c92844ea8223cf161452f7287560404f9fded5ca1b5bad40ed2"
+        },
+        {
+          "global_index": 50,
+          "panel": "Zero fill",
+          "box": [
+            68,
+            1430,
+            242,
+            1604
+          ],
+          "rgb_sha256": "53ff922857ab707acf2519697521f381367f81c0e7315f5bdda223677a090676"
+        },
+        {
+          "global_index": 50,
+          "panel": "Random fill",
+          "box": [
+            250,
+            1430,
+            424,
+            1604
+          ],
+          "rgb_sha256": "b12c757fedd4e2c2af8b393bf772a90920543f5a8daf62f5857c1d913dc39a3e"
+        },
+        {
+          "global_index": 51,
+          "panel": "Zero fill",
+          "box": [
+            440,
+            1430,
+            614,
+            1604
+          ],
+          "rgb_sha256": "8214bbfb51616384cfbd174d318a787c7e7c0d9e599c1c9c7a3e7e335400e81d"
+        },
+        {
+          "global_index": 51,
+          "panel": "Random fill",
+          "box": [
+            622,
+            1430,
+            796,
+            1604
+          ],
+          "rgb_sha256": "2b3bef256cc61b969289fc5ffbe2f317e47a56fdc282ed523b3f3406159b5e9b"
+        },
+        {
+          "global_index": 52,
+          "panel": "Zero fill",
+          "box": [
+            812,
+            1430,
+            986,
+            1604
+          ],
+          "rgb_sha256": "43e3ecb1b8c2858dc08c7a967405adda02adb19eea4b8ba37497f4da23b6d8dd"
+        },
+        {
+          "global_index": 52,
+          "panel": "Random fill",
+          "box": [
+            994,
+            1430,
+            1168,
+            1604
+          ],
+          "rgb_sha256": "5c1cbb5d9884f48c13841e24ca7c1330201104494be8d05ced19cb18e72ba97f"
+        },
+        {
+          "global_index": 53,
+          "panel": "Zero fill",
+          "box": [
+            1184,
+            1430,
+            1358,
+            1604
+          ],
+          "rgb_sha256": "211cec45dbbc58f753d9a51f8670fb015e949d41acaacea4d5a2985410403628"
+        },
+        {
+          "global_index": 53,
+          "panel": "Random fill",
+          "box": [
+            1366,
+            1430,
+            1540,
+            1604
+          ],
+          "rgb_sha256": "ae130bb2a9992b477d2862b058f7555c7e7c26c7ef2ad4100e8dd34f8e9a6a4c"
+        },
+        {
+          "global_index": 54,
+          "panel": "Zero fill",
+          "box": [
+            1556,
+            1430,
+            1730,
+            1604
+          ],
+          "rgb_sha256": "85a353fc58699574925f486281a000127a50ba7b9b59f06cc81471e72865eac7"
+        },
+        {
+          "global_index": 54,
+          "panel": "Random fill",
+          "box": [
+            1738,
+            1430,
+            1912,
+            1604
+          ],
+          "rgb_sha256": "21d42c68ae222b6f5257d170262457fa42e7d685b65bfc1ffb97daee47788460"
+        },
+        {
+          "global_index": 55,
+          "panel": "Zero fill",
+          "box": [
+            1928,
+            1430,
+            2102,
+            1604
+          ],
+          "rgb_sha256": "5790f9cc7b46a01945ff85ae76eec246c0964c8e55319d95bf7e28a41b2e3188"
+        },
+        {
+          "global_index": 55,
+          "panel": "Random fill",
+          "box": [
+            2110,
+            1430,
+            2284,
+            1604
+          ],
+          "rgb_sha256": "644e1a45994c0e962aeb83b2898aa32f926dbd7bee088ab53983d752ca758766"
+        },
+        {
+          "global_index": 56,
+          "panel": "Zero fill",
+          "box": [
+            2300,
+            1430,
+            2474,
+            1604
+          ],
+          "rgb_sha256": "38dadfdbc8ae0b966d17c81db52d81b6405cfde34dc8259704d8ab69e8de4eed"
+        },
+        {
+          "global_index": 56,
+          "panel": "Random fill",
+          "box": [
+            2482,
+            1430,
+            2656,
+            1604
+          ],
+          "rgb_sha256": "99e7bc9a7b3f24bf8e83ee3e7606d0dc9f7e0711b03d967dd5087630d0045bdc"
+        },
+        {
+          "global_index": 57,
+          "panel": "Zero fill",
+          "box": [
+            2672,
+            1430,
+            2846,
+            1604
+          ],
+          "rgb_sha256": "5c65c8744503e5d73a6d1cc5c9aabcf8880b7c3d8253fa5fcf52bb5df9a2f86f"
+        },
+        {
+          "global_index": 57,
+          "panel": "Random fill",
+          "box": [
+            2854,
+            1430,
+            3028,
+            1604
+          ],
+          "rgb_sha256": "416dddb04b1880bb2d3362ffab9a8a3aa724662469389809c37ca305b2b4b5ba"
+        },
+        {
+          "global_index": 58,
+          "panel": "Zero fill",
+          "box": [
+            3044,
+            1430,
+            3218,
+            1604
+          ],
+          "rgb_sha256": "c73ea160650f17d0cbaa1a794b8e4f9f35005af9116efe437ce2407d7431fbb3"
+        },
+        {
+          "global_index": 58,
+          "panel": "Random fill",
+          "box": [
+            3226,
+            1430,
+            3400,
+            1604
+          ],
+          "rgb_sha256": "c9dffba087084fadce87e401205ad3a63d1e86b22e71dc2c10cf7898c171b6d4"
+        },
+        {
+          "global_index": 59,
+          "panel": "Zero fill",
+          "box": [
+            3416,
+            1430,
+            3590,
+            1604
+          ],
+          "rgb_sha256": "a7abc3484e484338fa9beee5e284e918aa1e87eb9a675c31a5a0214332037256"
+        },
+        {
+          "global_index": 59,
+          "panel": "Random fill",
+          "box": [
+            3598,
+            1430,
+            3772,
+            1604
+          ],
+          "rgb_sha256": "35347456dba309d6654e9c14267951717492a88850bafd80e6fb0c7dfd8bc670"
+        },
+        {
+          "global_index": 60,
+          "panel": "Zero fill",
+          "box": [
+            68,
+            1659,
+            242,
+            1833
+          ],
+          "rgb_sha256": "ef87dd7b61493c9b313d9083af251876b50fc321089738f35c45bd858e88bec5"
+        },
+        {
+          "global_index": 60,
+          "panel": "Random fill",
+          "box": [
+            250,
+            1659,
+            424,
+            1833
+          ],
+          "rgb_sha256": "32ae007379ee0ed2d2fd0680a71e0faa2584462d44104789c30a570529676a6e"
+        },
+        {
+          "global_index": 61,
+          "panel": "Zero fill",
+          "box": [
+            440,
+            1659,
+            614,
+            1833
+          ],
+          "rgb_sha256": "6a4282fee284c81122e052bfc5825709901212637a7e364258811d7c717e74a5"
+        },
+        {
+          "global_index": 61,
+          "panel": "Random fill",
+          "box": [
+            622,
+            1659,
+            796,
+            1833
+          ],
+          "rgb_sha256": "9dd94c1677a04ce976b86e154b420311aa8af2ed411ac77c05c0e09a1d5fc1e9"
+        },
+        {
+          "global_index": 62,
+          "panel": "Zero fill",
+          "box": [
+            812,
+            1659,
+            986,
+            1833
+          ],
+          "rgb_sha256": "ea3f22d790b25d47a63d1b11e76a2806c9117ae8c38575d9050eee9087541298"
+        },
+        {
+          "global_index": 62,
+          "panel": "Random fill",
+          "box": [
+            994,
+            1659,
+            1168,
+            1833
+          ],
+          "rgb_sha256": "b6a21e2e6d491aaf238b68d1b10968488aee037778b12a055447404bbaad593c"
+        },
+        {
+          "global_index": 63,
+          "panel": "Zero fill",
+          "box": [
+            1184,
+            1659,
+            1358,
+            1833
+          ],
+          "rgb_sha256": "3aa2505827382f63d0fd97e7a7fb2932615c8669aaa2e951afafd5ec1bd07b91"
+        },
+        {
+          "global_index": 63,
+          "panel": "Random fill",
+          "box": [
+            1366,
+            1659,
+            1540,
+            1833
+          ],
+          "rgb_sha256": "0a004d479360d91bacb74f7d6f8fdf082b4755d5f7b594243a689c6eede9c6da"
+        },
+        {
+          "global_index": 64,
+          "panel": "Zero fill",
+          "box": [
+            1556,
+            1659,
+            1730,
+            1833
+          ],
+          "rgb_sha256": "40d4a5d688c9d2b2d7e33a63f9a3b11402f128a074c12360d5a8dd25a0414ee3"
+        },
+        {
+          "global_index": 64,
+          "panel": "Random fill",
+          "box": [
+            1738,
+            1659,
+            1912,
+            1833
+          ],
+          "rgb_sha256": "1270b3bec86331be0d4eceefd2e750982fb9540ec3a312dd7f1385a7bec23f21"
+        },
+        {
+          "global_index": 65,
+          "panel": "Zero fill",
+          "box": [
+            1928,
+            1659,
+            2102,
+            1833
+          ],
+          "rgb_sha256": "4a60bac7e5af2fc05c6a0de62860f6b8a64b6cf9a323410f1adba4274502ba64"
+        },
+        {
+          "global_index": 65,
+          "panel": "Random fill",
+          "box": [
+            2110,
+            1659,
+            2284,
+            1833
+          ],
+          "rgb_sha256": "6af2b56e7214246c8e59cda6789d8bbd6ce60afc19c4b6bf0687625b67962bc8"
+        },
+        {
+          "global_index": 66,
+          "panel": "Zero fill",
+          "box": [
+            2300,
+            1659,
+            2474,
+            1833
+          ],
+          "rgb_sha256": "b2a27674626b61a5566dd0711824700efe2027cf105153e5b085d4ab35b17ce1"
+        },
+        {
+          "global_index": 66,
+          "panel": "Random fill",
+          "box": [
+            2482,
+            1659,
+            2656,
+            1833
+          ],
+          "rgb_sha256": "4588b908d51718e528085d9b0e5c842e4f02aa0a5f49850c9fdfe7c1a01cf66d"
+        },
+        {
+          "global_index": 67,
+          "panel": "Zero fill",
+          "box": [
+            2672,
+            1659,
+            2846,
+            1833
+          ],
+          "rgb_sha256": "e3760c7c04c03d9bc7584dba08d585d9368afdeb30425153a27b709abbb0fef3"
+        },
+        {
+          "global_index": 67,
+          "panel": "Random fill",
+          "box": [
+            2854,
+            1659,
+            3028,
+            1833
+          ],
+          "rgb_sha256": "9ef87e9848980fccb905cecdd3f69e3e717f1f9f5d8d8b961590ce3da7bdb693"
+        },
+        {
+          "global_index": 68,
+          "panel": "Zero fill",
+          "box": [
+            3044,
+            1659,
+            3218,
+            1833
+          ],
+          "rgb_sha256": "27b49861a000dbe59a551e102d6a15673c2e418eec6a5d95024d14353a5be070"
+        },
+        {
+          "global_index": 68,
+          "panel": "Random fill",
+          "box": [
+            3226,
+            1659,
+            3400,
+            1833
+          ],
+          "rgb_sha256": "2346fcb41515718cbe7010443a470463d6b7c39528a05a37b15d9fd7eab3afec"
+        },
+        {
+          "global_index": 69,
+          "panel": "Zero fill",
+          "box": [
+            3416,
+            1659,
+            3590,
+            1833
+          ],
+          "rgb_sha256": "dc6ff735461e161a28d7d7cc94f895343f4af1d0b16b215308fb3b60cbc38d57"
+        },
+        {
+          "global_index": 69,
+          "panel": "Random fill",
+          "box": [
+            3598,
+            1659,
+            3772,
+            1833
+          ],
+          "rgb_sha256": "9261c4c126cab3cd2f56773bc60230046a5628e375ece7c4d7f0c0dacf368f2c"
+        },
+        {
+          "global_index": 70,
+          "panel": "Zero fill",
+          "box": [
+            68,
+            1888,
+            242,
+            2062
+          ],
+          "rgb_sha256": "ea77646e2c1cad338bad3bcda5b8104e2ed39d074e163a9e0fa24e0e7aa99726"
+        },
+        {
+          "global_index": 70,
+          "panel": "Random fill",
+          "box": [
+            250,
+            1888,
+            424,
+            2062
+          ],
+          "rgb_sha256": "c362f0297e292f250f25efd10e7a0b1eb4a9d29f9eecd9c52c1c2baca9bbdbcd"
+        },
+        {
+          "global_index": 71,
+          "panel": "Zero fill",
+          "box": [
+            440,
+            1888,
+            614,
+            2062
+          ],
+          "rgb_sha256": "94525dd903a8e2b84ab12a1086521e7ee13d40f89ed75a08eaab42d577ea6a60"
+        },
+        {
+          "global_index": 71,
+          "panel": "Random fill",
+          "box": [
+            622,
+            1888,
+            796,
+            2062
+          ],
+          "rgb_sha256": "2961c5216d46a0f0e22abdef18be5ada1038ad81609f950a62f84354003f3599"
+        },
+        {
+          "global_index": 72,
+          "panel": "Zero fill",
+          "box": [
+            812,
+            1888,
+            986,
+            2062
+          ],
+          "rgb_sha256": "a2f3558af18fbf60df9b2de746f4d6d01584944c575c2efcf9245cd46feb677d"
+        },
+        {
+          "global_index": 72,
+          "panel": "Random fill",
+          "box": [
+            994,
+            1888,
+            1168,
+            2062
+          ],
+          "rgb_sha256": "4697d11132adfba3f45d7afc3ba807151ef7568412ae77e069474b5b9a980daf"
+        },
+        {
+          "global_index": 73,
+          "panel": "Zero fill",
+          "box": [
+            1184,
+            1888,
+            1358,
+            2062
+          ],
+          "rgb_sha256": "6f726da2364fb8452bc7d729295207a7d20c6208c698f4d4c51fde9f7f19b391"
+        },
+        {
+          "global_index": 73,
+          "panel": "Random fill",
+          "box": [
+            1366,
+            1888,
+            1540,
+            2062
+          ],
+          "rgb_sha256": "05a21783064194947fae8d20d9316888efd81092a44e6dccab6cd9403e3b4e14"
+        },
+        {
+          "global_index": 74,
+          "panel": "Zero fill",
+          "box": [
+            1556,
+            1888,
+            1730,
+            2062
+          ],
+          "rgb_sha256": "42a253059b2f9f7eaf11665b2ca7713bbea49c8917d634ea459f6c0cb7006d73"
+        },
+        {
+          "global_index": 74,
+          "panel": "Random fill",
+          "box": [
+            1738,
+            1888,
+            1912,
+            2062
+          ],
+          "rgb_sha256": "2eb0372c8bd3dc4abde5436c1413234f0810448821875df57648337ffd7062ee"
+        },
+        {
+          "global_index": 75,
+          "panel": "Zero fill",
+          "box": [
+            1928,
+            1888,
+            2102,
+            2062
+          ],
+          "rgb_sha256": "b9aff11930794310c542aea5cd341bd07b94d7a46ffef6617cce54d418eb4a7a"
+        },
+        {
+          "global_index": 75,
+          "panel": "Random fill",
+          "box": [
+            2110,
+            1888,
+            2284,
+            2062
+          ],
+          "rgb_sha256": "83a55e6172a918d660fe96d00a352f0e501a76455ee244b8d0f1c30cc6bc0ce8"
+        },
+        {
+          "global_index": 76,
+          "panel": "Zero fill",
+          "box": [
+            2300,
+            1888,
+            2474,
+            2062
+          ],
+          "rgb_sha256": "0768f959f4958b6f2072c9b06394d34d3edc0f918d26302d7129b34357bf8199"
+        },
+        {
+          "global_index": 76,
+          "panel": "Random fill",
+          "box": [
+            2482,
+            1888,
+            2656,
+            2062
+          ],
+          "rgb_sha256": "eb5e8e4856638cb2a4243f46ba576b52b9939c3df8dfb06b4f953dfe5113538b"
+        },
+        {
+          "global_index": 77,
+          "panel": "Zero fill",
+          "box": [
+            2672,
+            1888,
+            2846,
+            2062
+          ],
+          "rgb_sha256": "a1632ea28166c3ceef19c02addfcf08a71b330353f2bb545518b0b925a62e5b0"
+        },
+        {
+          "global_index": 77,
+          "panel": "Random fill",
+          "box": [
+            2854,
+            1888,
+            3028,
+            2062
+          ],
+          "rgb_sha256": "703d6f2299563b6bf79a29e22247b3bc38c91d413553919faca263aefbc41fd4"
+        },
+        {
+          "global_index": 78,
+          "panel": "Zero fill",
+          "box": [
+            3044,
+            1888,
+            3218,
+            2062
+          ],
+          "rgb_sha256": "daab2db58b61588235471b88cd72a62241b61fec7f5f4a4afd2414d580ef0801"
+        },
+        {
+          "global_index": 78,
+          "panel": "Random fill",
+          "box": [
+            3226,
+            1888,
+            3400,
+            2062
+          ],
+          "rgb_sha256": "36581ccffcc05ed34f4ce239516b1829e1058a3a2a17cecf1568ac68301efe6d"
+        },
+        {
+          "global_index": 79,
+          "panel": "Zero fill",
+          "box": [
+            3416,
+            1888,
+            3590,
+            2062
+          ],
+          "rgb_sha256": "f8c510131ec1d83fb4ff61860f9cd022d994e0aee067db4004554e9b44d890ce"
+        },
+        {
+          "global_index": 79,
+          "panel": "Random fill",
+          "box": [
+            3598,
+            1888,
+            3772,
+            2062
+          ],
+          "rgb_sha256": "dcaf8d5de6c4db6d0e0715eea2b16e7a9a97ebb0ede5f25f3a0bd31aa7568ef0"
+        }
+      ]
+    },
+    {
+      "file": "batch00_original_zero_random_16x9.png",
+      "size": [
+        3840,
+        2160
+      ],
+      "sha256": "eb8e9dc5e4c811493a514a3ed50381e9822939a667d1a7a11dcd3f5a535df042",
+      "placements": [
+        {
+          "global_index": 0,
+          "panel": "Original",
+          "box": [
+            76,
+            324,
+            364,
+            612
+          ],
+          "rgb_sha256": "ff7a57cb8c2cea230514c514b3ba3b207780ce2cb9667de915fff1995626e33a"
+        },
+        {
+          "global_index": 0,
+          "panel": "Zero fill",
+          "box": [
+            378,
+            324,
+            666,
+            612
+          ],
+          "rgb_sha256": "943ec550e2ea4a0f4ff2b777183fcd1b72fb9a6006fbf70cfe878415080dd8b4"
+        },
+        {
+          "global_index": 0,
+          "panel": "Random fill",
+          "box": [
+            680,
+            324,
+            968,
+            612
+          ],
+          "rgb_sha256": "1890b809d1bbded6cabe4ca196ba3270c89a24641272caf4d65e29b52be3ca97"
+        },
+        {
+          "global_index": 1,
+          "panel": "Original",
+          "box": [
+            1008,
+            324,
+            1296,
+            612
+          ],
+          "rgb_sha256": "2fee6f6c45036a1ee772b673fa5b4da615df3b099e7e8ace88c160f2e2e6d083"
+        },
+        {
+          "global_index": 1,
+          "panel": "Zero fill",
+          "box": [
+            1310,
+            324,
+            1598,
+            612
+          ],
+          "rgb_sha256": "f3e8b045ef92a9117aa779d36b5fa9d87f0ead05a40d948436f5566dc0e8a77a"
+        },
+        {
+          "global_index": 1,
+          "panel": "Random fill",
+          "box": [
+            1612,
+            324,
+            1900,
+            612
+          ],
+          "rgb_sha256": "feacf9386256b76245920d530651c45e443a6bf1c553a01bceab25a59e22950d"
+        },
+        {
+          "global_index": 2,
+          "panel": "Original",
+          "box": [
+            1940,
+            324,
+            2228,
+            612
+          ],
+          "rgb_sha256": "c6052614f23133a6093041ff4362f40cdb70434830942773cde6a9d17b9142bf"
+        },
+        {
+          "global_index": 2,
+          "panel": "Zero fill",
+          "box": [
+            2242,
+            324,
+            2530,
+            612
+          ],
+          "rgb_sha256": "30a0c1b52344723d561b52932fdbf4e6233894c05a87dd023ea8f701146a174d"
+        },
+        {
+          "global_index": 2,
+          "panel": "Random fill",
+          "box": [
+            2544,
+            324,
+            2832,
+            612
+          ],
+          "rgb_sha256": "f9fd0ec13ae136bdeeb3d7fdba23049f8555decc647c47156694a7b89f555b1d"
+        },
+        {
+          "global_index": 3,
+          "panel": "Original",
+          "box": [
+            2872,
+            324,
+            3160,
+            612
+          ],
+          "rgb_sha256": "7c058959d030258b452c4ff56d623c487be1b0c8fe7893109bc27d3b28fb0833"
+        },
+        {
+          "global_index": 3,
+          "panel": "Zero fill",
+          "box": [
+            3174,
+            324,
+            3462,
+            612
+          ],
+          "rgb_sha256": "d9a895c1bd3f3951ca164f6c16b3385a7a5150bab7af40d7d26dae49acceefae"
+        },
+        {
+          "global_index": 3,
+          "panel": "Random fill",
+          "box": [
+            3476,
+            324,
+            3764,
+            612
+          ],
+          "rgb_sha256": "e0532f14a566714644ccc40cf4acbd4f3071c19ea0e48b1dc3d31733ec48f63f"
+        },
+        {
+          "global_index": 4,
+          "panel": "Original",
+          "box": [
+            76,
+            776,
+            364,
+            1064
+          ],
+          "rgb_sha256": "44ab2bc5bde37984465f8759316861dc389e633dd641985fa0b89194dcfc64b0"
+        },
+        {
+          "global_index": 4,
+          "panel": "Zero fill",
+          "box": [
+            378,
+            776,
+            666,
+            1064
+          ],
+          "rgb_sha256": "efc3ebdd7bcb5ae223b7134a817e217f3bbe2ac951ee56b20390d71478903510"
+        },
+        {
+          "global_index": 4,
+          "panel": "Random fill",
+          "box": [
+            680,
+            776,
+            968,
+            1064
+          ],
+          "rgb_sha256": "9abf0cb01f6538833594e3ccbf5ede0c4dd7db883ab7156143b993ddf9d8bb2b"
+        },
+        {
+          "global_index": 5,
+          "panel": "Original",
+          "box": [
+            1008,
+            776,
+            1296,
+            1064
+          ],
+          "rgb_sha256": "d2e6a19b100398d3b2df6a450408068236e7684342c5a170c1eac1820b2e0d6a"
+        },
+        {
+          "global_index": 5,
+          "panel": "Zero fill",
+          "box": [
+            1310,
+            776,
+            1598,
+            1064
+          ],
+          "rgb_sha256": "4b095db1bef523203e569b32766b84cdb2fdf94964b8da53cddae27fb56e5dec"
+        },
+        {
+          "global_index": 5,
+          "panel": "Random fill",
+          "box": [
+            1612,
+            776,
+            1900,
+            1064
+          ],
+          "rgb_sha256": "00f9b02d6238cc11ed2d72a6fb4bf61faec9ccae98ca042c598c73aadcbc925a"
+        },
+        {
+          "global_index": 6,
+          "panel": "Original",
+          "box": [
+            1940,
+            776,
+            2228,
+            1064
+          ],
+          "rgb_sha256": "1639bd994d54bc5f588694a0e0a2ee09efe6617158484d07c972c9bc5429aef8"
+        },
+        {
+          "global_index": 6,
+          "panel": "Zero fill",
+          "box": [
+            2242,
+            776,
+            2530,
+            1064
+          ],
+          "rgb_sha256": "24330a0630b6e8b11833ba797ffdd1908ee28e8710c2f7086b8557e6f0e80d37"
+        },
+        {
+          "global_index": 6,
+          "panel": "Random fill",
+          "box": [
+            2544,
+            776,
+            2832,
+            1064
+          ],
+          "rgb_sha256": "4328ff1a563870bc5155e2e77935b8374f27efbf1d3107f162bc8430e5f38e9a"
+        },
+        {
+          "global_index": 7,
+          "panel": "Original",
+          "box": [
+            2872,
+            776,
+            3160,
+            1064
+          ],
+          "rgb_sha256": "4b6abbf1c1b4a160385e50c94bf629ebf5c1ba7699c8f1535aca0443483b3edf"
+        },
+        {
+          "global_index": 7,
+          "panel": "Zero fill",
+          "box": [
+            3174,
+            776,
+            3462,
+            1064
+          ],
+          "rgb_sha256": "d5082efc5840f60f613273d6158dd826de88aada2760e8fbe7c0723f717178e7"
+        },
+        {
+          "global_index": 7,
+          "panel": "Random fill",
+          "box": [
+            3476,
+            776,
+            3764,
+            1064
+          ],
+          "rgb_sha256": "96071cb7333abc518fe85d32c9fefeb4a7d97897ed426ee3d74f7928cc659494"
+        },
+        {
+          "global_index": 8,
+          "panel": "Original",
+          "box": [
+            76,
+            1228,
+            364,
+            1516
+          ],
+          "rgb_sha256": "5a86666256ec8a21660e3e253cd30503e449789aef1fa75f5a32b169bb30b7a8"
+        },
+        {
+          "global_index": 8,
+          "panel": "Zero fill",
+          "box": [
+            378,
+            1228,
+            666,
+            1516
+          ],
+          "rgb_sha256": "42c67c617649f46fc4a6030671551e9a2068cbfb849cec35362802e0268e523c"
+        },
+        {
+          "global_index": 8,
+          "panel": "Random fill",
+          "box": [
+            680,
+            1228,
+            968,
+            1516
+          ],
+          "rgb_sha256": "a884aba4d78b89540913a265b3311a0696e7c918a552e8ddfa23cc4e3935cfef"
+        },
+        {
+          "global_index": 9,
+          "panel": "Original",
+          "box": [
+            1008,
+            1228,
+            1296,
+            1516
+          ],
+          "rgb_sha256": "ec930cf92c7e3f349d0f85fde6871adfb1951a777c27c540db6b341f1029c9f0"
+        },
+        {
+          "global_index": 9,
+          "panel": "Zero fill",
+          "box": [
+            1310,
+            1228,
+            1598,
+            1516
+          ],
+          "rgb_sha256": "e44be4c3847a115a0de763e551b5ad4c0748762229477bf3f45546a14ce82961"
+        },
+        {
+          "global_index": 9,
+          "panel": "Random fill",
+          "box": [
+            1612,
+            1228,
+            1900,
+            1516
+          ],
+          "rgb_sha256": "3c0bc69541880d2c1f8a5ce2ae0c466dec2c47b27a4c8b8b2ee5fffc61933a54"
+        },
+        {
+          "global_index": 10,
+          "panel": "Original",
+          "box": [
+            1940,
+            1228,
+            2228,
+            1516
+          ],
+          "rgb_sha256": "79e4a0655840ea5b30b6fb2416f0ab473ff11c31bc009cd9f2a2f71da348ccde"
+        },
+        {
+          "global_index": 10,
+          "panel": "Zero fill",
+          "box": [
+            2242,
+            1228,
+            2530,
+            1516
+          ],
+          "rgb_sha256": "0121473fcb3181022753b96e1d778d5d7f653ee6de0c3abd4bfbe20273b63273"
+        },
+        {
+          "global_index": 10,
+          "panel": "Random fill",
+          "box": [
+            2544,
+            1228,
+            2832,
+            1516
+          ],
+          "rgb_sha256": "7b5bd810aa97a0447425a3b0815538614ab479d463ce2f54442697c7f8981061"
+        },
+        {
+          "global_index": 11,
+          "panel": "Original",
+          "box": [
+            2872,
+            1228,
+            3160,
+            1516
+          ],
+          "rgb_sha256": "ea9492886cfe304702dba8be0a82aa3ae5b9d398930484d11cc1e8c16910ee3d"
+        },
+        {
+          "global_index": 11,
+          "panel": "Zero fill",
+          "box": [
+            3174,
+            1228,
+            3462,
+            1516
+          ],
+          "rgb_sha256": "fdeefd34388df0cf36e6e0c7b7bc264e137ba71aeba1b5348f3b3ae54b671ec2"
+        },
+        {
+          "global_index": 11,
+          "panel": "Random fill",
+          "box": [
+            3476,
+            1228,
+            3764,
+            1516
+          ],
+          "rgb_sha256": "cd59455547e10a48d5fe07f6cb84afa59849e1cc7e23eeff60421cfc70e09d8e"
+        },
+        {
+          "global_index": 12,
+          "panel": "Original",
+          "box": [
+            76,
+            1680,
+            364,
+            1968
+          ],
+          "rgb_sha256": "a0dcff707e182ab7c50a8acc7ab3eb3879a37863eadd01bd505e12ef982ffac3"
+        },
+        {
+          "global_index": 12,
+          "panel": "Zero fill",
+          "box": [
+            378,
+            1680,
+            666,
+            1968
+          ],
+          "rgb_sha256": "d19e25962f08f560824f5c064097360a723ce8891cd47dcde6e2431352db9ab4"
+        },
+        {
+          "global_index": 12,
+          "panel": "Random fill",
+          "box": [
+            680,
+            1680,
+            968,
+            1968
+          ],
+          "rgb_sha256": "56ed799f38a28e660fc272918a4a82e1e585a23bf07110366900a1a1ce6b5f97"
+        },
+        {
+          "global_index": 13,
+          "panel": "Original",
+          "box": [
+            1008,
+            1680,
+            1296,
+            1968
+          ],
+          "rgb_sha256": "11eacc80635cb2875d8a6d7b0b3b2122e9131f67ab34b7d55dfc25399fb373dd"
+        },
+        {
+          "global_index": 13,
+          "panel": "Zero fill",
+          "box": [
+            1310,
+            1680,
+            1598,
+            1968
+          ],
+          "rgb_sha256": "3c22818375d987cdb21ebbc8ea133796d06b64acc17bd31029ea7f0c35a20168"
+        },
+        {
+          "global_index": 13,
+          "panel": "Random fill",
+          "box": [
+            1612,
+            1680,
+            1900,
+            1968
+          ],
+          "rgb_sha256": "42031cfb62ee06f89a2df1454fc2ec7e8b768c4547faf24c1e4be92fdc82865e"
+        },
+        {
+          "global_index": 14,
+          "panel": "Original",
+          "box": [
+            1940,
+            1680,
+            2228,
+            1968
+          ],
+          "rgb_sha256": "1dddb04d215f05a4604740996fce81b0d9295791dced62133f18671ae8ffba6f"
+        },
+        {
+          "global_index": 14,
+          "panel": "Zero fill",
+          "box": [
+            2242,
+            1680,
+            2530,
+            1968
+          ],
+          "rgb_sha256": "f916a55ed4113a22a6f3dcf7f8fec033ed2e96a5c70487367341be11473d5705"
+        },
+        {
+          "global_index": 14,
+          "panel": "Random fill",
+          "box": [
+            2544,
+            1680,
+            2832,
+            1968
+          ],
+          "rgb_sha256": "5e81a790691afa9c36e5e5835f2dd34179a6ebcb1155b919be946901765ef5a6"
+        },
+        {
+          "global_index": 15,
+          "panel": "Original",
+          "box": [
+            2872,
+            1680,
+            3160,
+            1968
+          ],
+          "rgb_sha256": "3bf7e54292053b626d34176e8096335a2b60e317983e3cca993c0ea4f03e438d"
+        },
+        {
+          "global_index": 15,
+          "panel": "Zero fill",
+          "box": [
+            3174,
+            1680,
+            3462,
+            1968
+          ],
+          "rgb_sha256": "b75c3581c2349f85b9682d910d15e4aaa3d1d0526d08c8f49a1c8ea3983f74c0"
+        },
+        {
+          "global_index": 15,
+          "panel": "Random fill",
+          "box": [
+            3476,
+            1680,
+            3764,
+            1968
+          ],
+          "rgb_sha256": "3bb8cb1317195b9c113f9cbcc322408300a3aa88bdd140e2c24a7363e9d90884"
+        }
+      ]
+    },
+    {
+      "file": "batch01_original_zero_random_16x9.png",
+      "size": [
+        3840,
+        2160
+      ],
+      "sha256": "c8e1aa7015a0d6c3b9c5309cf031dec81e1b5ee3bfad17cdc6f167cbf9c08017",
+      "placements": [
+        {
+          "global_index": 16,
+          "panel": "Original",
+          "box": [
+            76,
+            324,
+            364,
+            612
+          ],
+          "rgb_sha256": "487aad0373ff00aefe225b06ab73db9a8f99afe85e3ab766110573da767a799d"
+        },
+        {
+          "global_index": 16,
+          "panel": "Zero fill",
+          "box": [
+            378,
+            324,
+            666,
+            612
+          ],
+          "rgb_sha256": "f5cb5b320107c11ddaf8b546cbaf084577e3ce5cb670591aed6c8322f30ef2eb"
+        },
+        {
+          "global_index": 16,
+          "panel": "Random fill",
+          "box": [
+            680,
+            324,
+            968,
+            612
+          ],
+          "rgb_sha256": "01229a69250fa2b301c99af5ab84a8de8feb2179e9baa3c47c1237b570f1658d"
+        },
+        {
+          "global_index": 17,
+          "panel": "Original",
+          "box": [
+            1008,
+            324,
+            1296,
+            612
+          ],
+          "rgb_sha256": "db424cbd415d489fa7310005f34a30776e349183855a6f468e0f2f15d1ccb10b"
+        },
+        {
+          "global_index": 17,
+          "panel": "Zero fill",
+          "box": [
+            1310,
+            324,
+            1598,
+            612
+          ],
+          "rgb_sha256": "6e2c9aafcc5aaa9ed76b3aab8cc521a4f0520ec66ccacca3bafd6db15fe49464"
+        },
+        {
+          "global_index": 17,
+          "panel": "Random fill",
+          "box": [
+            1612,
+            324,
+            1900,
+            612
+          ],
+          "rgb_sha256": "0e4a830f3a04da1d905078ae15e98fd27780dd7666cd44af802ea659608ed8c2"
+        },
+        {
+          "global_index": 18,
+          "panel": "Original",
+          "box": [
+            1940,
+            324,
+            2228,
+            612
+          ],
+          "rgb_sha256": "d46663954fa59c6ebc7826cf574a74e61436c217f217e4b9e30b6101a653613a"
+        },
+        {
+          "global_index": 18,
+          "panel": "Zero fill",
+          "box": [
+            2242,
+            324,
+            2530,
+            612
+          ],
+          "rgb_sha256": "a9e5a59f1ebd761b31769aa2fdbcd6f6859be1cbe9cb5c3e88e0d24777c2a830"
+        },
+        {
+          "global_index": 18,
+          "panel": "Random fill",
+          "box": [
+            2544,
+            324,
+            2832,
+            612
+          ],
+          "rgb_sha256": "5943723bf7575a014e452f0a478cb86083308baddcd94bde0af8ac05a5b7c1e0"
+        },
+        {
+          "global_index": 19,
+          "panel": "Original",
+          "box": [
+            2872,
+            324,
+            3160,
+            612
+          ],
+          "rgb_sha256": "22445d97f2b8d6ff348520e98656c2679346b2d8c310d9e34abadb03b32245a1"
+        },
+        {
+          "global_index": 19,
+          "panel": "Zero fill",
+          "box": [
+            3174,
+            324,
+            3462,
+            612
+          ],
+          "rgb_sha256": "58f35930f447ffd441ccfa1465bd2613acd85b169f379f0c81fd0a3050005c55"
+        },
+        {
+          "global_index": 19,
+          "panel": "Random fill",
+          "box": [
+            3476,
+            324,
+            3764,
+            612
+          ],
+          "rgb_sha256": "96bad4ac3c4a9b9c19de40915183c0705e34c6fe524eb72276cf1d986ca00eb8"
+        },
+        {
+          "global_index": 20,
+          "panel": "Original",
+          "box": [
+            76,
+            776,
+            364,
+            1064
+          ],
+          "rgb_sha256": "ec76efa06d463f60d13ec2fcbfaa4be2e3a370973868b87ecffe26742ef5d4f1"
+        },
+        {
+          "global_index": 20,
+          "panel": "Zero fill",
+          "box": [
+            378,
+            776,
+            666,
+            1064
+          ],
+          "rgb_sha256": "0f9d385a38224c47d37471807ecdb507a972ac5691199f882c47018f77a42818"
+        },
+        {
+          "global_index": 20,
+          "panel": "Random fill",
+          "box": [
+            680,
+            776,
+            968,
+            1064
+          ],
+          "rgb_sha256": "9022d09c6768ba5bb3177b89e0d55416eeb8d7b3fcf50356858ba6ba088b0aef"
+        },
+        {
+          "global_index": 21,
+          "panel": "Original",
+          "box": [
+            1008,
+            776,
+            1296,
+            1064
+          ],
+          "rgb_sha256": "8eeb1a9215d8fde56ecd21e3d1b9cce6b2cd9c35381d247336884d6a50b37851"
+        },
+        {
+          "global_index": 21,
+          "panel": "Zero fill",
+          "box": [
+            1310,
+            776,
+            1598,
+            1064
+          ],
+          "rgb_sha256": "541e489f287e660e5f1408220c8f826889d11cee6e4491a44fcb786caff5c334"
+        },
+        {
+          "global_index": 21,
+          "panel": "Random fill",
+          "box": [
+            1612,
+            776,
+            1900,
+            1064
+          ],
+          "rgb_sha256": "29aac6f004d48dbb930b5ac4c1d362e31b927a3980fa859be524ef82d013dd05"
+        },
+        {
+          "global_index": 22,
+          "panel": "Original",
+          "box": [
+            1940,
+            776,
+            2228,
+            1064
+          ],
+          "rgb_sha256": "f3931eb6e15db74d392009f614c7a2b33655ce8a45c9852eb2ebc952bf3cc3eb"
+        },
+        {
+          "global_index": 22,
+          "panel": "Zero fill",
+          "box": [
+            2242,
+            776,
+            2530,
+            1064
+          ],
+          "rgb_sha256": "a89b933afb122e65e8fa5f90be3aff32b948f4f03f2e88e42b5bed2eee117336"
+        },
+        {
+          "global_index": 22,
+          "panel": "Random fill",
+          "box": [
+            2544,
+            776,
+            2832,
+            1064
+          ],
+          "rgb_sha256": "b6f0f8ebee7e81acbc0c276f2ea00301a5e3b6ed653de30b76c8efae333d8acd"
+        },
+        {
+          "global_index": 23,
+          "panel": "Original",
+          "box": [
+            2872,
+            776,
+            3160,
+            1064
+          ],
+          "rgb_sha256": "24310e46ce10c1367e0c768e61798a869b8dcb3b3c811260cfab5fecebb4e108"
+        },
+        {
+          "global_index": 23,
+          "panel": "Zero fill",
+          "box": [
+            3174,
+            776,
+            3462,
+            1064
+          ],
+          "rgb_sha256": "f228afbb79052d2b17f3bfe765e2b54077a6394ea5ce6bdaea21580edef22f53"
+        },
+        {
+          "global_index": 23,
+          "panel": "Random fill",
+          "box": [
+            3476,
+            776,
+            3764,
+            1064
+          ],
+          "rgb_sha256": "2e9c1a85da389da1e41e3ff95aba57edc74f629c06a4c130ca33143f20b84ca6"
+        },
+        {
+          "global_index": 24,
+          "panel": "Original",
+          "box": [
+            76,
+            1228,
+            364,
+            1516
+          ],
+          "rgb_sha256": "24d1fabf5e8ccead9c63a584da241b157df21d457e833b2c5931bbeddab44cb1"
+        },
+        {
+          "global_index": 24,
+          "panel": "Zero fill",
+          "box": [
+            378,
+            1228,
+            666,
+            1516
+          ],
+          "rgb_sha256": "4aa360ed4eca83445169fd5eec4d78e481e8a595f2dd97bb371606c57647ab4c"
+        },
+        {
+          "global_index": 24,
+          "panel": "Random fill",
+          "box": [
+            680,
+            1228,
+            968,
+            1516
+          ],
+          "rgb_sha256": "9a8c92208171275cce53b2245cbb672fe6210452e4cf909903d26e21258c125c"
+        },
+        {
+          "global_index": 25,
+          "panel": "Original",
+          "box": [
+            1008,
+            1228,
+            1296,
+            1516
+          ],
+          "rgb_sha256": "f9668e5814bcf2fa4fc0a08676802b93933828b5c1f6195fe4154e4a0690de1a"
+        },
+        {
+          "global_index": 25,
+          "panel": "Zero fill",
+          "box": [
+            1310,
+            1228,
+            1598,
+            1516
+          ],
+          "rgb_sha256": "c9640586eb9bf6de01ef8ac25457421a4606f2d679517fe189f6eb68fc042a84"
+        },
+        {
+          "global_index": 25,
+          "panel": "Random fill",
+          "box": [
+            1612,
+            1228,
+            1900,
+            1516
+          ],
+          "rgb_sha256": "c1e2b69f6c48029feafd6b63b8fc47aca1e1887516763dad4646aaec7a550d86"
+        },
+        {
+          "global_index": 26,
+          "panel": "Original",
+          "box": [
+            1940,
+            1228,
+            2228,
+            1516
+          ],
+          "rgb_sha256": "720f1344397b95e10ae2ef5a532969f48a83816deab235d62214c0751002c4cf"
+        },
+        {
+          "global_index": 26,
+          "panel": "Zero fill",
+          "box": [
+            2242,
+            1228,
+            2530,
+            1516
+          ],
+          "rgb_sha256": "f8a11b033d5f2e18d0f8ab6102d60037104a5b790de547bc25006c0fefc23bde"
+        },
+        {
+          "global_index": 26,
+          "panel": "Random fill",
+          "box": [
+            2544,
+            1228,
+            2832,
+            1516
+          ],
+          "rgb_sha256": "017fcb07db2a4c756c207f13a1d81676e383d8188360091985c0d277d9bff4e6"
+        },
+        {
+          "global_index": 27,
+          "panel": "Original",
+          "box": [
+            2872,
+            1228,
+            3160,
+            1516
+          ],
+          "rgb_sha256": "38bc5c3bcf308442b99b0d739ebaa40a4555cd2693646dfebb1f067201f849b1"
+        },
+        {
+          "global_index": 27,
+          "panel": "Zero fill",
+          "box": [
+            3174,
+            1228,
+            3462,
+            1516
+          ],
+          "rgb_sha256": "8c38a2cb217a9935878a82cd775ec88b706e550646415292e32f0fc972375170"
+        },
+        {
+          "global_index": 27,
+          "panel": "Random fill",
+          "box": [
+            3476,
+            1228,
+            3764,
+            1516
+          ],
+          "rgb_sha256": "209326e3516432c343279e3d38f1663b0cc4d18400bf7e85060fdbea0a45f7cb"
+        },
+        {
+          "global_index": 28,
+          "panel": "Original",
+          "box": [
+            76,
+            1680,
+            364,
+            1968
+          ],
+          "rgb_sha256": "7f9c3f37b37280f1d22c2c758e0ef5cae238d24d4d8d8a4697a286ccf24b81ed"
+        },
+        {
+          "global_index": 28,
+          "panel": "Zero fill",
+          "box": [
+            378,
+            1680,
+            666,
+            1968
+          ],
+          "rgb_sha256": "3c47422be5d58ba62c7313cadef5a57a01ced9d8a020d5ef202078b71dfaab35"
+        },
+        {
+          "global_index": 28,
+          "panel": "Random fill",
+          "box": [
+            680,
+            1680,
+            968,
+            1968
+          ],
+          "rgb_sha256": "a83e8f5fb044d05db15667fabe0895f6f2b52ba6782996cce836d0291b854be3"
+        },
+        {
+          "global_index": 29,
+          "panel": "Original",
+          "box": [
+            1008,
+            1680,
+            1296,
+            1968
+          ],
+          "rgb_sha256": "9550aa96f7b13d03f5bd19a8a2aea684f27c36d60c438d907a8dc5efc60182a2"
+        },
+        {
+          "global_index": 29,
+          "panel": "Zero fill",
+          "box": [
+            1310,
+            1680,
+            1598,
+            1968
+          ],
+          "rgb_sha256": "63dc0bd2e90c20e70456127f1c56c282d8eaeb9d9e5305abcdbadb43b7114b57"
+        },
+        {
+          "global_index": 29,
+          "panel": "Random fill",
+          "box": [
+            1612,
+            1680,
+            1900,
+            1968
+          ],
+          "rgb_sha256": "4072df9c593a64181edf87a1bc45c8d349caff1f2fd74f5e766eee971a05778d"
+        },
+        {
+          "global_index": 30,
+          "panel": "Original",
+          "box": [
+            1940,
+            1680,
+            2228,
+            1968
+          ],
+          "rgb_sha256": "3ab3dc4826f943aa40a20166adf9e8495555a05b8eacb3dde47b136adde8bd32"
+        },
+        {
+          "global_index": 30,
+          "panel": "Zero fill",
+          "box": [
+            2242,
+            1680,
+            2530,
+            1968
+          ],
+          "rgb_sha256": "937520f5f04f5fff138e9cebf7dbea1ba9e34a9f3bc62122d6d075d0ff009f7b"
+        },
+        {
+          "global_index": 30,
+          "panel": "Random fill",
+          "box": [
+            2544,
+            1680,
+            2832,
+            1968
+          ],
+          "rgb_sha256": "ee1e4c16f36d6c16bbb715360ee866d7666c52d62ed6a518f043e49b12e0ae3c"
+        },
+        {
+          "global_index": 31,
+          "panel": "Original",
+          "box": [
+            2872,
+            1680,
+            3160,
+            1968
+          ],
+          "rgb_sha256": "a47ff84a750f0b7da819cbd8a5f0fc636db9d57fbb7abc4c3d38be206ac51265"
+        },
+        {
+          "global_index": 31,
+          "panel": "Zero fill",
+          "box": [
+            3174,
+            1680,
+            3462,
+            1968
+          ],
+          "rgb_sha256": "0cecf8801b4ab503805c085980c8855e35dc8a3a64b9f0712dad96fa1785d85b"
+        },
+        {
+          "global_index": 31,
+          "panel": "Random fill",
+          "box": [
+            3476,
+            1680,
+            3764,
+            1968
+          ],
+          "rgb_sha256": "03bffbb07134ed096874c719d05843bf8b57de0a4cbdcc814f8919f746a05b81"
+        }
+      ]
+    },
+    {
+      "file": "batch02_original_zero_random_16x9.png",
+      "size": [
+        3840,
+        2160
+      ],
+      "sha256": "e6e0f80e1075805d6a35de7d059ed71386f75c64d7f2571aadfe0d08f8ef6b0b",
+      "placements": [
+        {
+          "global_index": 32,
+          "panel": "Original",
+          "box": [
+            76,
+            324,
+            364,
+            612
+          ],
+          "rgb_sha256": "01028f4025143c3fbdbcb1581433a9a91f4ea976d25b4ff91b70c3cc4fb80c46"
+        },
+        {
+          "global_index": 32,
+          "panel": "Zero fill",
+          "box": [
+            378,
+            324,
+            666,
+            612
+          ],
+          "rgb_sha256": "52222e1bd3b93bbf69940de8aa4a5276ea1c6c65b5bd88dffa90953a0b94fc00"
+        },
+        {
+          "global_index": 32,
+          "panel": "Random fill",
+          "box": [
+            680,
+            324,
+            968,
+            612
+          ],
+          "rgb_sha256": "2535118d469f886e058155b59b1b112dfae2a6f906b56774b3711b043308450a"
+        },
+        {
+          "global_index": 33,
+          "panel": "Original",
+          "box": [
+            1008,
+            324,
+            1296,
+            612
+          ],
+          "rgb_sha256": "6c83f316f5f4562011901ff16de06210e0d5d7a999a9f32ddd36d103c6185786"
+        },
+        {
+          "global_index": 33,
+          "panel": "Zero fill",
+          "box": [
+            1310,
+            324,
+            1598,
+            612
+          ],
+          "rgb_sha256": "7174514cd6f0f80fdcffff43c95c7913b37eea3aee35e603aed8994d0cbaac8d"
+        },
+        {
+          "global_index": 33,
+          "panel": "Random fill",
+          "box": [
+            1612,
+            324,
+            1900,
+            612
+          ],
+          "rgb_sha256": "25b967b00ffcb54a2c2a35864289b8e57e56ea106211be81978f574cf1ac7505"
+        },
+        {
+          "global_index": 34,
+          "panel": "Original",
+          "box": [
+            1940,
+            324,
+            2228,
+            612
+          ],
+          "rgb_sha256": "bc06eda9199474a6a8cea3c51a7a59ae0f7866ef3dbc4f9d58cd8dd1dc256ac5"
+        },
+        {
+          "global_index": 34,
+          "panel": "Zero fill",
+          "box": [
+            2242,
+            324,
+            2530,
+            612
+          ],
+          "rgb_sha256": "5ca647526cef02074035a87e50058af5cf4992e2ca0e1fd988dbc58254d33352"
+        },
+        {
+          "global_index": 34,
+          "panel": "Random fill",
+          "box": [
+            2544,
+            324,
+            2832,
+            612
+          ],
+          "rgb_sha256": "567b5e64fea00f164271b0cc25d67d26c560f464772d053149c930b549ede84c"
+        },
+        {
+          "global_index": 35,
+          "panel": "Original",
+          "box": [
+            2872,
+            324,
+            3160,
+            612
+          ],
+          "rgb_sha256": "a63c90d5951e60077a2234b26be0f4a51423bb4983a43173bacd097ea92519ae"
+        },
+        {
+          "global_index": 35,
+          "panel": "Zero fill",
+          "box": [
+            3174,
+            324,
+            3462,
+            612
+          ],
+          "rgb_sha256": "97f10e345f1fe7cebe80758ae04beb17b87c29129e473d1c3e0d2d4b14432fc1"
+        },
+        {
+          "global_index": 35,
+          "panel": "Random fill",
+          "box": [
+            3476,
+            324,
+            3764,
+            612
+          ],
+          "rgb_sha256": "bc401b59c2a0440cbd9431cbf95c5cb6b6133349a02dfd909cb92bbc92503a7a"
+        },
+        {
+          "global_index": 36,
+          "panel": "Original",
+          "box": [
+            76,
+            776,
+            364,
+            1064
+          ],
+          "rgb_sha256": "5d55f6f4313c20fd85ce397754e16a9c97f19e5dea572507ff3c5d89ec796ebd"
+        },
+        {
+          "global_index": 36,
+          "panel": "Zero fill",
+          "box": [
+            378,
+            776,
+            666,
+            1064
+          ],
+          "rgb_sha256": "33592b08de1c86ac4970e253c20f82e098fb4b51583b34f228416b340b9cf10e"
+        },
+        {
+          "global_index": 36,
+          "panel": "Random fill",
+          "box": [
+            680,
+            776,
+            968,
+            1064
+          ],
+          "rgb_sha256": "e68fe6feb919e52172cb896b4f305770d5cc54628407afe8dd65a45e79d5a922"
+        },
+        {
+          "global_index": 37,
+          "panel": "Original",
+          "box": [
+            1008,
+            776,
+            1296,
+            1064
+          ],
+          "rgb_sha256": "61141fc8d3c8fcb4283206244317b5141d82db2f9a0736c60680abf443809786"
+        },
+        {
+          "global_index": 37,
+          "panel": "Zero fill",
+          "box": [
+            1310,
+            776,
+            1598,
+            1064
+          ],
+          "rgb_sha256": "e8578231350de783df1724a97314b5d220d65e2d825416d35d0a9046f12b211b"
+        },
+        {
+          "global_index": 37,
+          "panel": "Random fill",
+          "box": [
+            1612,
+            776,
+            1900,
+            1064
+          ],
+          "rgb_sha256": "c0aa1288e9457e7c857b03cd3de15841028e6edc60793310d18b6973fa40a717"
+        },
+        {
+          "global_index": 38,
+          "panel": "Original",
+          "box": [
+            1940,
+            776,
+            2228,
+            1064
+          ],
+          "rgb_sha256": "e2cd3d3216bf7770c848acdb07a38ec262ae229326b899a937a72bf8c0ba52c2"
+        },
+        {
+          "global_index": 38,
+          "panel": "Zero fill",
+          "box": [
+            2242,
+            776,
+            2530,
+            1064
+          ],
+          "rgb_sha256": "c289a50c165b9add593435816a96ea9352afe26e7422c537eacc7b373e406c58"
+        },
+        {
+          "global_index": 38,
+          "panel": "Random fill",
+          "box": [
+            2544,
+            776,
+            2832,
+            1064
+          ],
+          "rgb_sha256": "82b4317667e769e21901cd1e2d3bba3205914e91e8ad55c7dff92c56f557ab6d"
+        },
+        {
+          "global_index": 39,
+          "panel": "Original",
+          "box": [
+            2872,
+            776,
+            3160,
+            1064
+          ],
+          "rgb_sha256": "b318612fbc5412fd8d4f4826c828e227365b19f63bcd325c6f4a7f68b8c1a58d"
+        },
+        {
+          "global_index": 39,
+          "panel": "Zero fill",
+          "box": [
+            3174,
+            776,
+            3462,
+            1064
+          ],
+          "rgb_sha256": "f7415a4c098a549ecd4080f9320b630fc87e6f2d0d491f0fd72a96805e0019fa"
+        },
+        {
+          "global_index": 39,
+          "panel": "Random fill",
+          "box": [
+            3476,
+            776,
+            3764,
+            1064
+          ],
+          "rgb_sha256": "e17e43afbc8703911d02176b8c6fa7d68e68740c9d5f57c4d597503cd532eb50"
+        },
+        {
+          "global_index": 40,
+          "panel": "Original",
+          "box": [
+            76,
+            1228,
+            364,
+            1516
+          ],
+          "rgb_sha256": "cffb3e6bf04935d4243109316fd7a440f52b7bf3c066f0236e31585802089c4f"
+        },
+        {
+          "global_index": 40,
+          "panel": "Zero fill",
+          "box": [
+            378,
+            1228,
+            666,
+            1516
+          ],
+          "rgb_sha256": "537d4f3c366f5060b820022bd4cf9c7cada78347eaae160d9717f0fba82c54f2"
+        },
+        {
+          "global_index": 40,
+          "panel": "Random fill",
+          "box": [
+            680,
+            1228,
+            968,
+            1516
+          ],
+          "rgb_sha256": "1def2ab85e4d575fb5a10ff7b93c90aeb5476160e6dbf726a505d687c8d130d2"
+        },
+        {
+          "global_index": 41,
+          "panel": "Original",
+          "box": [
+            1008,
+            1228,
+            1296,
+            1516
+          ],
+          "rgb_sha256": "14c4e06164545b21d9f7d060134a83691142f3c1a57807c3686016816c950009"
+        },
+        {
+          "global_index": 41,
+          "panel": "Zero fill",
+          "box": [
+            1310,
+            1228,
+            1598,
+            1516
+          ],
+          "rgb_sha256": "afc6427dffc2cb690710fcea61a35de0c566a86f47dc0a6d353c30f972dce3bc"
+        },
+        {
+          "global_index": 41,
+          "panel": "Random fill",
+          "box": [
+            1612,
+            1228,
+            1900,
+            1516
+          ],
+          "rgb_sha256": "6ce6e762908a9c38fa3c4af4f30611bcffdab10d7b6d3ec8b306d5939460728c"
+        },
+        {
+          "global_index": 42,
+          "panel": "Original",
+          "box": [
+            1940,
+            1228,
+            2228,
+            1516
+          ],
+          "rgb_sha256": "16c8cec339bff72518e5e7ecdd48f56d44024b69728b07056e0197716f9a40ca"
+        },
+        {
+          "global_index": 42,
+          "panel": "Zero fill",
+          "box": [
+            2242,
+            1228,
+            2530,
+            1516
+          ],
+          "rgb_sha256": "8ae2c7614b76db82501bd5c8389849aad5030b805381d62484e0d63f40afc28d"
+        },
+        {
+          "global_index": 42,
+          "panel": "Random fill",
+          "box": [
+            2544,
+            1228,
+            2832,
+            1516
+          ],
+          "rgb_sha256": "847cac13fc22b0e6c887edc67c904de2c700a18af0c1f846b99f34d5d0eebba4"
+        },
+        {
+          "global_index": 43,
+          "panel": "Original",
+          "box": [
+            2872,
+            1228,
+            3160,
+            1516
+          ],
+          "rgb_sha256": "13e93fd21d457537ae35cbff568015c739fd192f129f2fc1b440435cf82767cb"
+        },
+        {
+          "global_index": 43,
+          "panel": "Zero fill",
+          "box": [
+            3174,
+            1228,
+            3462,
+            1516
+          ],
+          "rgb_sha256": "93c02f526453144f95aa6854128b47ddb7b7b6c56fcdf19951f793299a75c99d"
+        },
+        {
+          "global_index": 43,
+          "panel": "Random fill",
+          "box": [
+            3476,
+            1228,
+            3764,
+            1516
+          ],
+          "rgb_sha256": "2c188b91635796bf963278941deb940c0633b6e671da979152c46fe5bb1013df"
+        },
+        {
+          "global_index": 44,
+          "panel": "Original",
+          "box": [
+            76,
+            1680,
+            364,
+            1968
+          ],
+          "rgb_sha256": "8f7a5c05bfac23a6b2382ea0429d8c656cc1670cd0b431022ab1a30d342034a0"
+        },
+        {
+          "global_index": 44,
+          "panel": "Zero fill",
+          "box": [
+            378,
+            1680,
+            666,
+            1968
+          ],
+          "rgb_sha256": "ae5b30ac27d085b5095ffcdba8ce49e49786f3191b2d7dde7673a6e983426eef"
+        },
+        {
+          "global_index": 44,
+          "panel": "Random fill",
+          "box": [
+            680,
+            1680,
+            968,
+            1968
+          ],
+          "rgb_sha256": "d7759fc6f568c0257c7593810586ed9f6ab8ce22b7a9625c85a3cc772e3859b2"
+        },
+        {
+          "global_index": 45,
+          "panel": "Original",
+          "box": [
+            1008,
+            1680,
+            1296,
+            1968
+          ],
+          "rgb_sha256": "bd8e8e2a296c97f2b41289bc7b9c997512581dd6886250befa207a3bcfabe190"
+        },
+        {
+          "global_index": 45,
+          "panel": "Zero fill",
+          "box": [
+            1310,
+            1680,
+            1598,
+            1968
+          ],
+          "rgb_sha256": "e2b413b6773aa09a91a1ee785f7a11a745d3ff5b540bd730903bec6d2221a52c"
+        },
+        {
+          "global_index": 45,
+          "panel": "Random fill",
+          "box": [
+            1612,
+            1680,
+            1900,
+            1968
+          ],
+          "rgb_sha256": "56926bb990c7e3fc3742a7d2de3db6cfb983bcc719c24a6c8cabf7b8ffba4985"
+        },
+        {
+          "global_index": 46,
+          "panel": "Original",
+          "box": [
+            1940,
+            1680,
+            2228,
+            1968
+          ],
+          "rgb_sha256": "14c6a016c683138cdadfa8ecade4a8613674653af634773757fdde254b1c5eea"
+        },
+        {
+          "global_index": 46,
+          "panel": "Zero fill",
+          "box": [
+            2242,
+            1680,
+            2530,
+            1968
+          ],
+          "rgb_sha256": "c32e6b99ee949c45f2bb6903f40acfa4d6dfa7090cac3c660de75a338e80babb"
+        },
+        {
+          "global_index": 46,
+          "panel": "Random fill",
+          "box": [
+            2544,
+            1680,
+            2832,
+            1968
+          ],
+          "rgb_sha256": "79a03bc7c96de6ed4be89f8540a05915a09356f38f33c012da6c02c6c2096eb2"
+        },
+        {
+          "global_index": 47,
+          "panel": "Original",
+          "box": [
+            2872,
+            1680,
+            3160,
+            1968
+          ],
+          "rgb_sha256": "265e93e6fb4580f8b55a34c35f93a98ced673ece1d08081e3bf0bd1ad69e1f9b"
+        },
+        {
+          "global_index": 47,
+          "panel": "Zero fill",
+          "box": [
+            3174,
+            1680,
+            3462,
+            1968
+          ],
+          "rgb_sha256": "c77e940fa02df2b760af5cebe97600923db99939795b1572ace94bdb4f4c3f05"
+        },
+        {
+          "global_index": 47,
+          "panel": "Random fill",
+          "box": [
+            3476,
+            1680,
+            3764,
+            1968
+          ],
+          "rgb_sha256": "84242ef01e4a71c2a0a5b5153c26fa301fe996827a699cbc6d8cb3a8d137d3dc"
+        }
+      ]
+    },
+    {
+      "file": "batch03_original_zero_random_16x9.png",
+      "size": [
+        3840,
+        2160
+      ],
+      "sha256": "e88039d2eeb8325207611a06abbaf29a43856644ceb57e797311d694b99e8142",
+      "placements": [
+        {
+          "global_index": 48,
+          "panel": "Original",
+          "box": [
+            76,
+            324,
+            364,
+            612
+          ],
+          "rgb_sha256": "bada6b5c703d39ca89712319d866712c93363e854e553e0a8d6d7eca0dca8d98"
+        },
+        {
+          "global_index": 48,
+          "panel": "Zero fill",
+          "box": [
+            378,
+            324,
+            666,
+            612
+          ],
+          "rgb_sha256": "b2a5575a738e479b7fd98a3dcf8ce37a49791f3bed6d10dcb4c952aff74e741e"
+        },
+        {
+          "global_index": 48,
+          "panel": "Random fill",
+          "box": [
+            680,
+            324,
+            968,
+            612
+          ],
+          "rgb_sha256": "c956fad2956de15176b31add33d9f5fc79c175f71aa37a7ef65e427eade348f0"
+        },
+        {
+          "global_index": 49,
+          "panel": "Original",
+          "box": [
+            1008,
+            324,
+            1296,
+            612
+          ],
+          "rgb_sha256": "b6bd8a8aeed44a440956e6b9d2585cc2c542732abb20115dc82be49f67e18a50"
+        },
+        {
+          "global_index": 49,
+          "panel": "Zero fill",
+          "box": [
+            1310,
+            324,
+            1598,
+            612
+          ],
+          "rgb_sha256": "c7c399a2e876329b81ac929f8d275916cf9db245543735bb185cfe439dfb6d4e"
+        },
+        {
+          "global_index": 49,
+          "panel": "Random fill",
+          "box": [
+            1612,
+            324,
+            1900,
+            612
+          ],
+          "rgb_sha256": "78254d99be9c665c1fa0c49df7942ffd510c1631de24257a1de3c26fcab32532"
+        },
+        {
+          "global_index": 50,
+          "panel": "Original",
+          "box": [
+            1940,
+            324,
+            2228,
+            612
+          ],
+          "rgb_sha256": "a5365baebe58f488191d6d6151cd05836084bc8106521cc41a0155995870ba6a"
+        },
+        {
+          "global_index": 50,
+          "panel": "Zero fill",
+          "box": [
+            2242,
+            324,
+            2530,
+            612
+          ],
+          "rgb_sha256": "887aa7c05c9fdea8bfabdd0019247446de4344fed272d397b1663cb7b9f17aeb"
+        },
+        {
+          "global_index": 50,
+          "panel": "Random fill",
+          "box": [
+            2544,
+            324,
+            2832,
+            612
+          ],
+          "rgb_sha256": "41cb283c8909e3e3e024be051bd66be1eb52ddb23c31bfdb838361d11d8d4188"
+        },
+        {
+          "global_index": 51,
+          "panel": "Original",
+          "box": [
+            2872,
+            324,
+            3160,
+            612
+          ],
+          "rgb_sha256": "04895a1d6511760126514148ad324521b08175be681a36f6524623cb87948b26"
+        },
+        {
+          "global_index": 51,
+          "panel": "Zero fill",
+          "box": [
+            3174,
+            324,
+            3462,
+            612
+          ],
+          "rgb_sha256": "5f1c1ca98a4b6eb982998286576e38807bc9ae61ffabf528272e082b951439ca"
+        },
+        {
+          "global_index": 51,
+          "panel": "Random fill",
+          "box": [
+            3476,
+            324,
+            3764,
+            612
+          ],
+          "rgb_sha256": "90d2f52eec6ecfdd434a3e2f8efe903946cd23f2f4cbd3c1101b05c1709df765"
+        },
+        {
+          "global_index": 52,
+          "panel": "Original",
+          "box": [
+            76,
+            776,
+            364,
+            1064
+          ],
+          "rgb_sha256": "8af354683ee3ac938ce1de3b66ed3a8e71ddb58a77b4a9ea4cb6f26dadd843e0"
+        },
+        {
+          "global_index": 52,
+          "panel": "Zero fill",
+          "box": [
+            378,
+            776,
+            666,
+            1064
+          ],
+          "rgb_sha256": "398f00821cff75c5dbeeca0daaa52a6127a0b64e02f21dfc831d36f9c1582904"
+        },
+        {
+          "global_index": 52,
+          "panel": "Random fill",
+          "box": [
+            680,
+            776,
+            968,
+            1064
+          ],
+          "rgb_sha256": "8733036d9ba10790de50dc268e471d68678a9e01910b7754853f44f4e759d88f"
+        },
+        {
+          "global_index": 53,
+          "panel": "Original",
+          "box": [
+            1008,
+            776,
+            1296,
+            1064
+          ],
+          "rgb_sha256": "b49743c368c5034f6732f8ce8edeb5c1b89462b11b1e232b7cb84f1dccf0f955"
+        },
+        {
+          "global_index": 53,
+          "panel": "Zero fill",
+          "box": [
+            1310,
+            776,
+            1598,
+            1064
+          ],
+          "rgb_sha256": "6b65c46b1b09d2a140f499b67714dc53432ea696b56dacf146a0d20855d53ace"
+        },
+        {
+          "global_index": 53,
+          "panel": "Random fill",
+          "box": [
+            1612,
+            776,
+            1900,
+            1064
+          ],
+          "rgb_sha256": "a03ab900abd33a20b7146eee200bae791bcfdb4611301728bbd88a00ff7a2ebc"
+        },
+        {
+          "global_index": 54,
+          "panel": "Original",
+          "box": [
+            1940,
+            776,
+            2228,
+            1064
+          ],
+          "rgb_sha256": "5f29e7bc941c8361c24f8663900fb1e8c2a2b20ae1403aa0a260b816054be8a1"
+        },
+        {
+          "global_index": 54,
+          "panel": "Zero fill",
+          "box": [
+            2242,
+            776,
+            2530,
+            1064
+          ],
+          "rgb_sha256": "0e347e58a805a3e6ee13412749512a993b9e8468af56bf8d8e1a2bfb1682c53f"
+        },
+        {
+          "global_index": 54,
+          "panel": "Random fill",
+          "box": [
+            2544,
+            776,
+            2832,
+            1064
+          ],
+          "rgb_sha256": "b9fd8e3a1ff428f19e8022e5ed71cd746deae0620db8ab5b2ae6c7fe75faae13"
+        },
+        {
+          "global_index": 55,
+          "panel": "Original",
+          "box": [
+            2872,
+            776,
+            3160,
+            1064
+          ],
+          "rgb_sha256": "60ef52fd5e30a8b9dc649888d81d2375912a2ce0d98bae1398a61673e397ffd3"
+        },
+        {
+          "global_index": 55,
+          "panel": "Zero fill",
+          "box": [
+            3174,
+            776,
+            3462,
+            1064
+          ],
+          "rgb_sha256": "40665a7faed95a3edf4f6f2bd0f3466f439f9cadf26d198997685590f9c593c1"
+        },
+        {
+          "global_index": 55,
+          "panel": "Random fill",
+          "box": [
+            3476,
+            776,
+            3764,
+            1064
+          ],
+          "rgb_sha256": "f16cd19dd83363c6e572b1885b2f02e49f8bef3339360bac6c5d9177088b9821"
+        },
+        {
+          "global_index": 56,
+          "panel": "Original",
+          "box": [
+            76,
+            1228,
+            364,
+            1516
+          ],
+          "rgb_sha256": "afcccf3cdbf305c8c998feb49e3e3814b705f5debe74ace78a1d0be5f96c6429"
+        },
+        {
+          "global_index": 56,
+          "panel": "Zero fill",
+          "box": [
+            378,
+            1228,
+            666,
+            1516
+          ],
+          "rgb_sha256": "f6c88780bedeea2441879e75d8d448322f9f7d3c63b4a3b75246327774252707"
+        },
+        {
+          "global_index": 56,
+          "panel": "Random fill",
+          "box": [
+            680,
+            1228,
+            968,
+            1516
+          ],
+          "rgb_sha256": "2eb9f5695066e45415ff76fda869dabe123598c400844ceb0272ebf1b82df4c6"
+        },
+        {
+          "global_index": 57,
+          "panel": "Original",
+          "box": [
+            1008,
+            1228,
+            1296,
+            1516
+          ],
+          "rgb_sha256": "a0bc1547e588945ac3bdbc6b451d3ff69226a889e9aba64cc42f06c66969ec04"
+        },
+        {
+          "global_index": 57,
+          "panel": "Zero fill",
+          "box": [
+            1310,
+            1228,
+            1598,
+            1516
+          ],
+          "rgb_sha256": "0fa148d10d7a74101c01424575ee9437d5f72deef881a591790dd66cf2a01053"
+        },
+        {
+          "global_index": 57,
+          "panel": "Random fill",
+          "box": [
+            1612,
+            1228,
+            1900,
+            1516
+          ],
+          "rgb_sha256": "e21914156c6710a04100b7a778684032b0a2b7554b4525c7b3296e359815f2b0"
+        },
+        {
+          "global_index": 58,
+          "panel": "Original",
+          "box": [
+            1940,
+            1228,
+            2228,
+            1516
+          ],
+          "rgb_sha256": "ef80a88f1835d1b1ad16be642c1afe789437140b28068df5b28cf9cd9c302f67"
+        },
+        {
+          "global_index": 58,
+          "panel": "Zero fill",
+          "box": [
+            2242,
+            1228,
+            2530,
+            1516
+          ],
+          "rgb_sha256": "58dbf810b21969fe515f06cc9cf8350ac8f36f66dab1709287e57f66a005e1ef"
+        },
+        {
+          "global_index": 58,
+          "panel": "Random fill",
+          "box": [
+            2544,
+            1228,
+            2832,
+            1516
+          ],
+          "rgb_sha256": "b42563ff8dd4b1c749a5668d17a6626cb411ed3c9c0daccef95c4a8292d92edb"
+        },
+        {
+          "global_index": 59,
+          "panel": "Original",
+          "box": [
+            2872,
+            1228,
+            3160,
+            1516
+          ],
+          "rgb_sha256": "dccab4cb06be5d248740e3e8bdf5399270d731bb57f158cef49cf8e667cd057a"
+        },
+        {
+          "global_index": 59,
+          "panel": "Zero fill",
+          "box": [
+            3174,
+            1228,
+            3462,
+            1516
+          ],
+          "rgb_sha256": "c558d41887853417c9b4d0a6b05c1e4d5e01aa08772c1527985c5f6193c1dba1"
+        },
+        {
+          "global_index": 59,
+          "panel": "Random fill",
+          "box": [
+            3476,
+            1228,
+            3764,
+            1516
+          ],
+          "rgb_sha256": "7c492dbc4ef04abeebd45912cb13d78fa66c06d6cf0a10c795228dc75b220ed5"
+        },
+        {
+          "global_index": 60,
+          "panel": "Original",
+          "box": [
+            76,
+            1680,
+            364,
+            1968
+          ],
+          "rgb_sha256": "115489bdec8b448c495dbc07a231adc5c0ceff749ccc4a55d4251a7c6be1ee9d"
+        },
+        {
+          "global_index": 60,
+          "panel": "Zero fill",
+          "box": [
+            378,
+            1680,
+            666,
+            1968
+          ],
+          "rgb_sha256": "ec3530248a8ecd4e5d9d4d8c09776ae363370b3d265180950a6c041087760bc4"
+        },
+        {
+          "global_index": 60,
+          "panel": "Random fill",
+          "box": [
+            680,
+            1680,
+            968,
+            1968
+          ],
+          "rgb_sha256": "4d9a1205bc99afe2187baf7feb74a4ec364f2bc1302547b34cf6b3203e1df453"
+        },
+        {
+          "global_index": 61,
+          "panel": "Original",
+          "box": [
+            1008,
+            1680,
+            1296,
+            1968
+          ],
+          "rgb_sha256": "08787d38d34b0389e5939b09e894bad09bb5bb9992ae5989083804fc103a520a"
+        },
+        {
+          "global_index": 61,
+          "panel": "Zero fill",
+          "box": [
+            1310,
+            1680,
+            1598,
+            1968
+          ],
+          "rgb_sha256": "34b7f77edfd7086d41b1b3b072c51db45b3b36fba87044ddb2226221dfdfdf90"
+        },
+        {
+          "global_index": 61,
+          "panel": "Random fill",
+          "box": [
+            1612,
+            1680,
+            1900,
+            1968
+          ],
+          "rgb_sha256": "41daaff7b39c802c7841ebe5a72fedde1c6f4ceafa07b51b6f5eaf1b29212988"
+        },
+        {
+          "global_index": 62,
+          "panel": "Original",
+          "box": [
+            1940,
+            1680,
+            2228,
+            1968
+          ],
+          "rgb_sha256": "95982cac241d6cb225cb119d7b7a16e0f8d9965639f06449783e183b31a0408e"
+        },
+        {
+          "global_index": 62,
+          "panel": "Zero fill",
+          "box": [
+            2242,
+            1680,
+            2530,
+            1968
+          ],
+          "rgb_sha256": "51bcbea0d6dbd70bd21e02a7a7bc12e9cc852fdb6162d34102e2d9a985e6da67"
+        },
+        {
+          "global_index": 62,
+          "panel": "Random fill",
+          "box": [
+            2544,
+            1680,
+            2832,
+            1968
+          ],
+          "rgb_sha256": "9ef4a57454ac80d3c94b2251c7230e6f920df4a3eff6ca86af8363f76fb3b690"
+        },
+        {
+          "global_index": 63,
+          "panel": "Original",
+          "box": [
+            2872,
+            1680,
+            3160,
+            1968
+          ],
+          "rgb_sha256": "2853963ce5505f3b3f9610dd457d1f682845a62b85c16c27c2e6213cd5c85a91"
+        },
+        {
+          "global_index": 63,
+          "panel": "Zero fill",
+          "box": [
+            3174,
+            1680,
+            3462,
+            1968
+          ],
+          "rgb_sha256": "eb9544b374542a810ba98452be6d7748b7699873fdb45595d10b31967be465b7"
+        },
+        {
+          "global_index": 63,
+          "panel": "Random fill",
+          "box": [
+            3476,
+            1680,
+            3764,
+            1968
+          ],
+          "rgb_sha256": "1a1aeb28ed71669e84a755c00bf5e17db5c99726e0af40e3080b2083db59c955"
+        }
+      ]
+    },
+    {
+      "file": "batch04_original_zero_random_16x9.png",
+      "size": [
+        3840,
+        2160
+      ],
+      "sha256": "b650483cfba47228a31ef25cc4e3976d2bed213ed310151bd8a03396b93e10d1",
+      "placements": [
+        {
+          "global_index": 64,
+          "panel": "Original",
+          "box": [
+            76,
+            324,
+            364,
+            612
+          ],
+          "rgb_sha256": "ad12d0c56e01606f0600ac0e12519fa25a7f7f64d14bcbb967eaab72565eb19d"
+        },
+        {
+          "global_index": 64,
+          "panel": "Zero fill",
+          "box": [
+            378,
+            324,
+            666,
+            612
+          ],
+          "rgb_sha256": "c96207e3184485b504f170f0610714c489ddc60e1b088947bfd3fe8128f72314"
+        },
+        {
+          "global_index": 64,
+          "panel": "Random fill",
+          "box": [
+            680,
+            324,
+            968,
+            612
+          ],
+          "rgb_sha256": "f69a6371fef2943ea576495649d444372790598108fc70032a86ca562534b138"
+        },
+        {
+          "global_index": 65,
+          "panel": "Original",
+          "box": [
+            1008,
+            324,
+            1296,
+            612
+          ],
+          "rgb_sha256": "2347b5a4e1ce15e93563831ef46ecf65581032dfb72c86c6aec53d660502f10f"
+        },
+        {
+          "global_index": 65,
+          "panel": "Zero fill",
+          "box": [
+            1310,
+            324,
+            1598,
+            612
+          ],
+          "rgb_sha256": "d859c76b6a94a55c681200eb45f2058f81b14a39ceb023da843e5d3fbebd69b7"
+        },
+        {
+          "global_index": 65,
+          "panel": "Random fill",
+          "box": [
+            1612,
+            324,
+            1900,
+            612
+          ],
+          "rgb_sha256": "b36c2f841c03c84bf1df6def34e26e072cd6ee095c6f88600924b9acc96b7b99"
+        },
+        {
+          "global_index": 66,
+          "panel": "Original",
+          "box": [
+            1940,
+            324,
+            2228,
+            612
+          ],
+          "rgb_sha256": "48570a101feb201624d3c5054a9a614950fe33f0675b5d55a731c9b8626916b0"
+        },
+        {
+          "global_index": 66,
+          "panel": "Zero fill",
+          "box": [
+            2242,
+            324,
+            2530,
+            612
+          ],
+          "rgb_sha256": "b2cf4866a7c22bd4331e5e3d42c9a8fff27926a62d77f3547042c0e938b0c214"
+        },
+        {
+          "global_index": 66,
+          "panel": "Random fill",
+          "box": [
+            2544,
+            324,
+            2832,
+            612
+          ],
+          "rgb_sha256": "2d9c34054aae3d8e7d1d0ef7d5375594f6474ce9d43b67fbfeca0c6149cd70b2"
+        },
+        {
+          "global_index": 67,
+          "panel": "Original",
+          "box": [
+            2872,
+            324,
+            3160,
+            612
+          ],
+          "rgb_sha256": "4ded3324c0a6478ec38c20519c0e1e1029340f9d7b94edd4abe8375fa4485edb"
+        },
+        {
+          "global_index": 67,
+          "panel": "Zero fill",
+          "box": [
+            3174,
+            324,
+            3462,
+            612
+          ],
+          "rgb_sha256": "d7510d10793ad72722da36b2bf0216bb1a32befb6c63c3438efa7fe794f00103"
+        },
+        {
+          "global_index": 67,
+          "panel": "Random fill",
+          "box": [
+            3476,
+            324,
+            3764,
+            612
+          ],
+          "rgb_sha256": "a9af35c7a02f72e9d024a031d5de0f20f34c9b0ca006f739fb5b42826082d21f"
+        },
+        {
+          "global_index": 68,
+          "panel": "Original",
+          "box": [
+            76,
+            776,
+            364,
+            1064
+          ],
+          "rgb_sha256": "1abd0e9dc93eb09a5a4588ceafc6c2c958b51f2c8897ef210cd97008c4c54a85"
+        },
+        {
+          "global_index": 68,
+          "panel": "Zero fill",
+          "box": [
+            378,
+            776,
+            666,
+            1064
+          ],
+          "rgb_sha256": "7a8fbf25fc2ca45131f1109e37a10f56ccc500e9a31aa33d488a5b9cb4f4614a"
+        },
+        {
+          "global_index": 68,
+          "panel": "Random fill",
+          "box": [
+            680,
+            776,
+            968,
+            1064
+          ],
+          "rgb_sha256": "b300141199c2aa8e57f1eb066af7f9740379d5c11b408ab971f01d24359bf32a"
+        },
+        {
+          "global_index": 69,
+          "panel": "Original",
+          "box": [
+            1008,
+            776,
+            1296,
+            1064
+          ],
+          "rgb_sha256": "54c4c96716bf66b85decfc57bd0f68aa6098cb4477030ae670b0684ceeeaf088"
+        },
+        {
+          "global_index": 69,
+          "panel": "Zero fill",
+          "box": [
+            1310,
+            776,
+            1598,
+            1064
+          ],
+          "rgb_sha256": "5fd961254e7ef35bbc27363dccf018257459c1d97a44bd3cb50b89c03059c719"
+        },
+        {
+          "global_index": 69,
+          "panel": "Random fill",
+          "box": [
+            1612,
+            776,
+            1900,
+            1064
+          ],
+          "rgb_sha256": "5a10912559a0708769aa47d327c3f388c6a2a6723e2fb0e3443ab4dadeb14289"
+        },
+        {
+          "global_index": 70,
+          "panel": "Original",
+          "box": [
+            1940,
+            776,
+            2228,
+            1064
+          ],
+          "rgb_sha256": "b90fdef0f87b0c6bb1a0f684a2856071b8b9b276d2713254c261967d020600fe"
+        },
+        {
+          "global_index": 70,
+          "panel": "Zero fill",
+          "box": [
+            2242,
+            776,
+            2530,
+            1064
+          ],
+          "rgb_sha256": "9bb1585be5363941a185f4e7677373fdb2532080a06301554b284d9e988497e2"
+        },
+        {
+          "global_index": 70,
+          "panel": "Random fill",
+          "box": [
+            2544,
+            776,
+            2832,
+            1064
+          ],
+          "rgb_sha256": "fd45580b8fe1b5ae3c7411cc078e446c125cbf24d338e8b435b17be820cc0491"
+        },
+        {
+          "global_index": 71,
+          "panel": "Original",
+          "box": [
+            2872,
+            776,
+            3160,
+            1064
+          ],
+          "rgb_sha256": "ad2549c2de6bdcd197a995f7602864afe30b445124fa677aed0762e5859bc690"
+        },
+        {
+          "global_index": 71,
+          "panel": "Zero fill",
+          "box": [
+            3174,
+            776,
+            3462,
+            1064
+          ],
+          "rgb_sha256": "f6da0f016b073bc3f748073f001ecf07c4644f845b21866c7cbb29b88ff7cbd5"
+        },
+        {
+          "global_index": 71,
+          "panel": "Random fill",
+          "box": [
+            3476,
+            776,
+            3764,
+            1064
+          ],
+          "rgb_sha256": "f93fbfcb0327c4f81d16b2b924a54fb6b40766127b232ede5f02579c4995f73b"
+        },
+        {
+          "global_index": 72,
+          "panel": "Original",
+          "box": [
+            76,
+            1228,
+            364,
+            1516
+          ],
+          "rgb_sha256": "d775df22c8e7825571d85b01c8c77be24210df5d3e461f0b254aafc1f520686e"
+        },
+        {
+          "global_index": 72,
+          "panel": "Zero fill",
+          "box": [
+            378,
+            1228,
+            666,
+            1516
+          ],
+          "rgb_sha256": "55eb97e405ab356c54f5268b77a64286ec5b9cf65fb5268a7ad747f18538860d"
+        },
+        {
+          "global_index": 72,
+          "panel": "Random fill",
+          "box": [
+            680,
+            1228,
+            968,
+            1516
+          ],
+          "rgb_sha256": "6eb63a44465332615f6cf5b2daac8c566a6cac0a6c941898be7d09e2699821c6"
+        },
+        {
+          "global_index": 73,
+          "panel": "Original",
+          "box": [
+            1008,
+            1228,
+            1296,
+            1516
+          ],
+          "rgb_sha256": "6f84a4277786cae75a28b705e35ecd2dfd76a0c68c5ba8d0f36dc9fa50fee60c"
+        },
+        {
+          "global_index": 73,
+          "panel": "Zero fill",
+          "box": [
+            1310,
+            1228,
+            1598,
+            1516
+          ],
+          "rgb_sha256": "bc5bdec36f1ca78902a6ce9cc434c4f4b2ebe48ae253cc7a19c6eaa9f39375b6"
+        },
+        {
+          "global_index": 73,
+          "panel": "Random fill",
+          "box": [
+            1612,
+            1228,
+            1900,
+            1516
+          ],
+          "rgb_sha256": "fa23dae6c20f9f3fc340d7410d5707d8a88650ff75451e77154b004c84da414a"
+        },
+        {
+          "global_index": 74,
+          "panel": "Original",
+          "box": [
+            1940,
+            1228,
+            2228,
+            1516
+          ],
+          "rgb_sha256": "4c586240dc0965c753beabff11eb5a5c493b3d455d21671e5eacfecaaa8bc059"
+        },
+        {
+          "global_index": 74,
+          "panel": "Zero fill",
+          "box": [
+            2242,
+            1228,
+            2530,
+            1516
+          ],
+          "rgb_sha256": "1659cdb51de940a2b5b6a3b5e2b34d19ab599a96ebc36d34f010d411a4d325fa"
+        },
+        {
+          "global_index": 74,
+          "panel": "Random fill",
+          "box": [
+            2544,
+            1228,
+            2832,
+            1516
+          ],
+          "rgb_sha256": "f8e42ce61e88becba1a3297a8f3db1ff5b267c5b540a4b7c08af5c17d9bcc7c1"
+        },
+        {
+          "global_index": 75,
+          "panel": "Original",
+          "box": [
+            2872,
+            1228,
+            3160,
+            1516
+          ],
+          "rgb_sha256": "e687d3a55c7709972ed18eac04af00c9e2ef89b91edd46a26f8885ae49380823"
+        },
+        {
+          "global_index": 75,
+          "panel": "Zero fill",
+          "box": [
+            3174,
+            1228,
+            3462,
+            1516
+          ],
+          "rgb_sha256": "7a2118398fbd2039fb34855bb19dab20a50904732f842abff523e8a21c7c6a99"
+        },
+        {
+          "global_index": 75,
+          "panel": "Random fill",
+          "box": [
+            3476,
+            1228,
+            3764,
+            1516
+          ],
+          "rgb_sha256": "d9131051a67634236746ae74e87f2f171a341b0dffa1ca11345fa41663bdb538"
+        },
+        {
+          "global_index": 76,
+          "panel": "Original",
+          "box": [
+            76,
+            1680,
+            364,
+            1968
+          ],
+          "rgb_sha256": "2745a2a4191fbae9555b9e3b9ae0090344491f65f42575ab81f6d989afc86b44"
+        },
+        {
+          "global_index": 76,
+          "panel": "Zero fill",
+          "box": [
+            378,
+            1680,
+            666,
+            1968
+          ],
+          "rgb_sha256": "bd8e60fe3c4ca6cb04edb7f0e4cfc9d1c5ed6c5a12e3ea135e5e9e4d00c69970"
+        },
+        {
+          "global_index": 76,
+          "panel": "Random fill",
+          "box": [
+            680,
+            1680,
+            968,
+            1968
+          ],
+          "rgb_sha256": "5dda2213667ec7dbcfeee94ba9f398cb457193ab4af52566de36489614fdd071"
+        },
+        {
+          "global_index": 77,
+          "panel": "Original",
+          "box": [
+            1008,
+            1680,
+            1296,
+            1968
+          ],
+          "rgb_sha256": "4b1e6f82c8964380cb95a3ed59bda5a2d8613ff214da65237a2ceb6bbff4323b"
+        },
+        {
+          "global_index": 77,
+          "panel": "Zero fill",
+          "box": [
+            1310,
+            1680,
+            1598,
+            1968
+          ],
+          "rgb_sha256": "a282ae5e5297a11c3c5bcbb00d2fefb972d040d1c62f4fc902f6307c6cc57695"
+        },
+        {
+          "global_index": 77,
+          "panel": "Random fill",
+          "box": [
+            1612,
+            1680,
+            1900,
+            1968
+          ],
+          "rgb_sha256": "2a25438c6db982c0a4f0a0a453ff3b254b6bdc9323d526ae2f6b39b577533f8d"
+        },
+        {
+          "global_index": 78,
+          "panel": "Original",
+          "box": [
+            1940,
+            1680,
+            2228,
+            1968
+          ],
+          "rgb_sha256": "f3eda4aaba22f186614f88d3a165699f317e76c47cb21d4677475e3f46ac7a3b"
+        },
+        {
+          "global_index": 78,
+          "panel": "Zero fill",
+          "box": [
+            2242,
+            1680,
+            2530,
+            1968
+          ],
+          "rgb_sha256": "be2712ec691516615367c8b7cc3468cf982a0751425772f3a1a831e0f1dceb43"
+        },
+        {
+          "global_index": 78,
+          "panel": "Random fill",
+          "box": [
+            2544,
+            1680,
+            2832,
+            1968
+          ],
+          "rgb_sha256": "54d583757c27198d55897a1ec8a1e066e9009df15a33a52f5380e4203a77a28e"
+        },
+        {
+          "global_index": 79,
+          "panel": "Original",
+          "box": [
+            2872,
+            1680,
+            3160,
+            1968
+          ],
+          "rgb_sha256": "8f4076db10073410d74a2b5d92f82550d655949b3af666ac8dd4876f1e563c7d"
+        },
+        {
+          "global_index": 79,
+          "panel": "Zero fill",
+          "box": [
+            3174,
+            1680,
+            3462,
+            1968
+          ],
+          "rgb_sha256": "3cf7209978781f766152ce62ff2bc951b46ea63516284bf1bf96f6d0af263e07"
+        },
+        {
+          "global_index": 79,
+          "panel": "Random fill",
+          "box": [
+            3476,
+            1680,
+            3764,
+            1968
+          ],
+          "rgb_sha256": "d3b4a699a86d41ca88c06706de1799f5958b616cb7f07d8ebfd89fdab3982283"
+        }
+      ]
+    }
+  ],
+  "no_new_training_or_attack": true,
+  "script_sha256": "5ec08dc4d5dc4608107b0ecea371ef60772d2f701ec4e185c9df455e9d557f43"
+}

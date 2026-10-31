@@ -1,0 +1,11 @@
+{
+  "task_id": "CPA_SIGNED_BASELINE_B16_T10_20260914",
+  "plan_version": 1,
+  "session_id": "01a09e4d-51f3-7121-84e2-03a7a9ac3039",
+  "cli_pid": 18272,
+  "snapshot_sha256": "7b478361f9bd8d0c972e97124412759e11a2e08e4443cf149da56dd1e2dbf13c",
+  "model": "gpt-6-astra",
+  "effort": "high",
+  "evidence": "current turn_context and parent codex.exe PID 18272",
+  "started_at_utc": "2026-09-14T08:09:03.763936+00:00"
+}

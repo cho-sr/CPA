@@ -1,0 +1,126 @@
+{
+  "task_id": "CPA_SIGNED_CELL_RANK_COMPARISON_B16_T10_20260915",
+  "plan_version": 1,
+  "status": "FAILED",
+  "full_experiment_status": "INCOMPLETE_STOPPED_ON_FAILURE",
+  "runtime": {
+    "model": "gpt-5.6-luna",
+    "reasoning_effort": "xhigh",
+    "python": "C:/miniconda/envs/DLG/python.exe",
+    "executor_thread": "01a09e4d-51f3-7121-84e2-03a7a9ac3039",
+    "executor_pid": 18272
+  },
+  "handoff": {
+    "pre_claim_snapshot_sha256": "d4f3e424a4ad290351ef8409bd0cd8592a001369c62d5a7c6f9d8cf866894b8a",
+    "pre_claim_state": "READY_UNCLAIMED",
+    "claim_state": "RUNNING",
+    "final_state": "FAILED",
+    "claimed_by": "01a09e4d-51f3-7121-84e2-03a7a9ac3039",
+    "completed_by": "01a09e4d-51f3-7121-84e2-03a7a9ac3039",
+    "report": ".ai/execution-results/CPA_SIGNED_CELL_RANK_COMPARISON_B16_T10_20260915/report.md"
+  },
+  "wrapper": {
+    "script": ".ai/execution-results/CPA_SIGNED_CELL_RANK_COMPARISON_B16_T10_20260915/run_comparison.py",
+    "pid": 24828,
+    "creation_utc_epoch_ms": 1789414973763,
+    "execution_record": ".ai/execution-results/CPA_SIGNED_CELL_RANK_COMPARISON_B16_T10_20260915/stage_execution.json",
+    "process_exit_code": 1,
+    "completion_callback_pid": 5972,
+    "callback_model_calls_while_waiting": 0
+  },
+  "stages": [
+    {
+      "name": "preprocess_ap5",
+      "status": "COMPLETED",
+      "exit_code": 0,
+      "duration_seconds": 47.188,
+      "stdout": ".ai/execution-results/CPA_SIGNED_CELL_RANK_COMPARISON_B16_T10_20260915/preprocess.stdout.log",
+      "stderr": ".ai/execution-results/CPA_SIGNED_CELL_RANK_COMPARISON_B16_T10_20260915/preprocess.stderr.log",
+      "output": "quantization_aware_cpa/results/signed_cell_rank_B16_T10/preprocess_ap5"
+    },
+    {
+      "name": "attack_cpa25000_fia25000",
+      "status": "COMPLETED",
+      "exit_code": 0,
+      "duration_seconds": 2175.984,
+      "stdout": ".ai/execution-results/CPA_SIGNED_CELL_RANK_COMPARISON_B16_T10_20260915/attack.stdout.log",
+      "stderr": ".ai/execution-results/CPA_SIGNED_CELL_RANK_COMPARISON_B16_T10_20260915/attack.stderr.log",
+      "output": "quantization_aware_cpa/results/signed_cell_rank_B16_T10/cell_rank_ap5",
+      "cpa_iterations": 25000,
+      "fia_iterations": 25000,
+      "peak_cuda_allocated_bytes": 3593577984,
+      "peak_cuda_reserved_bytes": 3841982464
+    },
+    {
+      "name": "final_offline_evaluation",
+      "status": "FAILED",
+      "exit_code": 1,
+      "duration_seconds": 2.485,
+      "stdout": ".ai/execution-results/CPA_SIGNED_CELL_RANK_COMPARISON_B16_T10_20260915/evaluation.stdout.log",
+      "stderr": ".ai/execution-results/CPA_SIGNED_CELL_RANK_COMPARISON_B16_T10_20260915/evaluation.stderr.log",
+      "output": "quantization_aware_cpa/results_private/signed_cell_rank_B16_T10/evaluation_ap5",
+      "output_created": false,
+      "failure": {
+        "type": "NameError",
+        "message": "name 'legacy_naive' is not defined",
+        "file": "quantization_aware_cpa/qacpa/signed_cell_rank_evaluation.py",
+        "line": 297,
+        "private_true_g_loaded": false,
+        "image_embedding_evaluation_started": false
+      }
+    }
+  ],
+  "provenance": {
+    "public_manifest_sha256": "9b4891765e6fc7e4adb1e3e11c158b3d4a2c3430d3397e1f1466ddafe2e1cd69",
+    "checkpoint_sha256": "397923af8e79cdbb6a7127f12361acd7a2f83e06b05044ddf496e83de57a5bf0",
+    "preprocessed_v_file_sha256": "7b4850a13dc725017eab7da451019b1a2c3e90bd6d58d8d4a0db3181fcd010cf",
+    "preprocessed_v_tensor_sha256": "1b6790c2a17319c0f4069ed9f4325e5536ccbed02230d9abcc60536fe9181326",
+    "cell_candidate_sha256": "700beaa7b7da8565da68bb782ea67738542695334d09a2910e29f83bf29ab9d6",
+    "naive_result": "quantization_aware_cpa/results/signed_int4_baseline_B16_T10/naive",
+    "cell_result": "quantization_aware_cpa/results/signed_cell_rank_B16_T10/cell_rank_ap5"
+  },
+  "diagnostics": {
+    "rank": 16,
+    "ap_iterations": 5,
+    "centered": false,
+    "rank_backend": "gram_eigh",
+    "finite": true,
+    "exact_code_ratio": 1.0,
+    "bounded_cell_satisfied": true,
+    "bounded_cell_violation_count": 0,
+    "movement_from_v0_relative_l2": 0.3459331105004968,
+    "movement_from_previous_v_relative_l2": 0.02013763907749731,
+    "pair_residual_vnext_minus_m_l2": 0.002805809723213315,
+    "candidate_scale": 5.0294027460040525e-05,
+    "observed_scale": 5.416279236669652e-05,
+    "scale_relative_error_metric_only": 0.07142846108198095
+  },
+  "offline_metrics": {
+    "embedding_cosine": {"value": null, "status": "NOT_COMPUTED"},
+    "lpips": {"value": null, "status": "NOT_COMPUTED"},
+    "psnr": {"value": null, "status": "NOT_COMPUTED"},
+    "ssim": {"value": null, "status": "NOT_COMPUTED"},
+    "true_g_relative_error": {"value": null, "status": "NOT_COMPUTED"},
+    "private_true_g_loaded": false,
+    "labels_used": false
+  },
+  "integrity": {
+    "protected_match": true,
+    "protected_hash_evidence": ".ai/execution-results/CPA_SIGNED_CELL_RANK_COMPARISON_B16_T10_20260915/protected_hash_check_final.stdout.log",
+    "signed_cell_rank_sha256": "7ae6deb49738914f4cd1f9328397400d89835ede4cd6a462b2ea260a77ae4acb"
+  },
+  "planner_binding": {
+    "thread_id": "01a09ac2-0e8d-7f90-94a8-c45be99f4343",
+    "pid": 12728,
+    "process_verified": true,
+    "final_delivery": "CONFIRMED",
+    "receipt": "Queued message 01a0a196-ea4a-7cd0-ac5c-415086d3fdac for thread 01a09ac2-0e8d-7f90-94a8-c45be99f4343.",
+    "notice": ".ai/execution-results/CPA_SIGNED_CELL_RANK_COMPARISON_B16_T10_20260915/planner_final_notice.txt"
+  },
+  "limitations": [
+    "Final offline evaluator failed before private true-G load due NameError at line 297",
+    "Embedding cosine, LPIPS, PSNR, SSIM and true-G relative error are not computed",
+    "No scientific improvement or regression claim is supported",
+    "No stage was restarted after failure"
+  ]
+}

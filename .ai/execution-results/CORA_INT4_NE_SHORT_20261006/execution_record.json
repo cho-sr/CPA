@@ -1,0 +1,36 @@
+{
+  "task_id": "CORA_INT4_NE_SHORT_20261006",
+  "status": "FAILED",
+  "error": "adaptive_avg_pool2d_backward_cuda does not have a deterministic implementation, but you set 'torch.use_deterministic_algorithms(True)'. You can turn off determinism just for this operation, or you can use the 'warn_only=True' option, if that's acceptable for your application. You can also file an issue at https://github.com/pytorch/pytorch/issues to help us prioritize adding deterministic support for this operation.",
+  "pid": 26080,
+  "completion_verification": "C:\\Users\\조상제\\Desktop\\CPA\\.ai\\execution-results\\CORA_INT4_NE_SHORT_20261006\\completion_verification.json",
+  "report": "C:\\Users\\조상제\\Desktop\\CPA\\.ai\\execution-results\\CORA_INT4_NE_SHORT_20261006\\report.md",
+  "completion": "PARTIAL_SEPARATION_ONLY_VERIFIED",
+  "members": [
+    {
+      "member": 0,
+      "cpa_completed": 500,
+      "fia_completed": 0,
+      "negentropy_active_in_all_saved_logs": true,
+      "first_loss_ne": -0.05212177336215973,
+      "last_loss_ne": -0.042632557451725006,
+      "cpa_optimizer_seconds": 1.214749600039795,
+      "target_shape": [
+        16,
+        25088
+      ],
+      "target_finite": true,
+      "cpa_checkpoint_sha256": "1a4a3376155d0f3df94096a7a75805b26def368a086e327fabc92df563eed96d",
+      "target_sha256": "6ac15c190733028ad6befde576103b16b1b7d6a314e95e3d1419c95ca1ee2a85"
+    },
+    {
+      "member": 1,
+      "cpa_completed": 0,
+      "fia_completed": 0,
+      "status": "NOT_STARTED"
+    }
+  ],
+  "public_selection_completed": false,
+  "private_evaluation_run": false,
+  "reporting_exit_code": 0
+}

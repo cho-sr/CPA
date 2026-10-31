@@ -1,0 +1,25 @@
+{
+  "task_id": "CPA_SIGNED_BITS7654_RECOVERY_20260918",
+  "parent_task_id": "CPA_SIGNED_BITS7654_SCREEN3_20260918",
+  "status": "COMPLETED",
+  "claimed_by": "01a0a799-f1ce-7b31-8c46-b4ddef40aeab",
+  "bit_status": {
+    "7": "COMPLETED",
+    "6": "COMPLETED",
+    "5": "COMPLETED",
+    "4": "COMPLETED"
+  },
+  "private_data_loaded": true,
+  "scientific_quality": "EVALUATED",
+  "actual_image_cell_feasibility": "NOT_EVALUATED",
+  "accounting": {
+    "bit7_base_used_seconds": 11021.525099699968,
+    "aggregate_base_used_seconds": 11024.35411100008,
+    "bit7_recovery_seconds": 118.54876310005784,
+    "fresh_bit_recovery_seconds": 32533.737916999962,
+    "aggregate_recovery_seconds": 32652.28668010002,
+    "bit7_remaining_at_start_seconds": 1578.474900300032,
+    "aggregate_remaining_at_start_seconds": 39375.64588899992
+  },
+  "updated_at_epoch": 1789724924.3131828
+}

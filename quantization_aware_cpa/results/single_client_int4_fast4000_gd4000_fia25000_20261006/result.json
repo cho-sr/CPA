@@ -1,0 +1,20 @@
+{
+  "task_id": "CPA_SINGLE_CLIENT_INT4_FAST4000_GD4000_FIA25000_20261006",
+  "status": "COMPLETED",
+  "quality": "NOT_EVALUATED",
+  "fast_iterations": 4000,
+  "gd_iterations": 4000,
+  "fia_iterations": 25000,
+  "separation_seconds": 45.66163680003956,
+  "fia_seconds": 2002.9238793998957,
+  "attack_seconds": 2049.116165699903,
+  "peak_cuda_allocated_bytes": 3526829568,
+  "artifact_hashes": {
+    "sources.pt": "c161f01bada0eebf1727ab2a7bebcae22808fd9a54d1ab66bc0c8734f748820e",
+    "fastica_log.json": "2010a6a224c26563fe3c9799a24c42ea66b30f95209fa25de61d726a78a0cc46",
+    "gdica_log.json": "e837587bb91d2a5b8a02dbb47dc4922e4e052b91bb951609b17d9db8ae48e0b0",
+    "separation.json": "926bbda7f2d8ed53bf992f9aa1290922caa2b023a2e2c3f8c191c9edfc1c1475",
+    "candidate.pt": "53bf0634d9a1daf029eea0a38c83f5d1ec23d817851f64574688066f9ac5b626",
+    "fia_result.json": "3378f7b74778acbbf1e8985367b34e8cfb2e5e34f3ba77bae975d067d56194be"
+  }
+}

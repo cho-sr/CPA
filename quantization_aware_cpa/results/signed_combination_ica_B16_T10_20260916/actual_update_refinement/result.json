@@ -1,0 +1,710 @@
+{
+  "task_id": "CPA_SIGNED_COMBINATION_ICA_IMPLEMENTATION_20260916",
+  "plan_version": 1,
+  "status": "COMPLETED",
+  "method": "INT4_combination_ica",
+  "stage": "REFINE",
+  "quality": "NOT_EVALUATED",
+  "registration": {
+    "task_id": "CPA_SIGNED_COMBINATION_ICA_IMPLEMENTATION_20260916",
+    "plan_version": 1,
+    "status": "REGISTERED",
+    "method": "INT4_combination_ica",
+    "stage": "REFINE",
+    "registered_before_execution": true,
+    "source_root": "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_combination_ica_B16_T10_20260916",
+    "candidate_root": "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_combination_ica_B16_T10_20260916/direct_fia",
+    "source_artifact_sha256": "408099e99bb6ad1d8b721ff518c040ec9bec332827f0f36d3b9715ffeb4af5a2",
+    "target_z_sha256": "38057e1436066133280aa06dbdea087bea4cf3abe19e01c16e0d52307ba732f8",
+    "candidate_sha256": "4efc29ad08b1ea8b0cee6991de6f185839708c2c72aaafb4fedfb307b5e680ce",
+    "input_hashes": {
+      "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int4_baseline_B16_T10/observation/manifest.json": "9b4891765e6fc7e4adb1e3e11c158b3d4a2c3430d3397e1f1466ddafe2e1cd69",
+      "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int4_baseline_B16_T10/observation/fc_00.sgn4": "697c24316428133714e9fad5831429adced101d90c921746b4802b0914079a70",
+      "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int4_baseline_B16_T10/observation/fc_01.sgn4": "005da86bee21afa8bee1dda0a4cba492510c73b021b64114f030f3d9f52343a6",
+      "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int4_baseline_B16_T10/observation/fc_02.sgn4": "b6bc983225a97a481832f4d028bf1f41a087f84e4810df01f69ce397d1875baf",
+      "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int4_baseline_B16_T10/observation/fc_03.sgn4": "d8220d804ac511d93e307dfab6ed41d30718eb571d5e4725a62351bc5e5b0936",
+      "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int4_baseline_B16_T10/observation/fc_04.sgn4": "12b8748b134e8a7c67bfa87c94b9b5de4f76128af7bf82fac196528b5b6c7996",
+      "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int4_baseline_B16_T10/observation/fc_05.sgn4": "af6acbb5c356a9b9884823886383c8020093f6cf724dd6605a115df1afdcfdc7",
+      "C:/Users/조상제/.cache/torch/hub/checkpoints/vgg16-397923af.pth": "397923af8e79cdbb6a7127f12361acd7a2f83e06b05044ddf496e83de57a5bf0"
+    },
+    "protected_source_hashes": {
+      "quantization_aware_cpa\\qacpa\\fc_replay.py": "bfe6b9671752edef941c56f80960ddea962b7e0ea44831f3c798887f41d4e49a",
+      "quantization_aware_cpa\\qacpa\\full_update_replay.py": "e45e9830bdcf2046de1c0e1ebe4579392c764065eb991826b9c6abd926af2e1c",
+      "quantization_aware_cpa\\qacpa\\full_update_adjoint.py": "882efe5424f4c57660d1c4c15a2af06c4b31180ffb84f7f9bbd191f31d7cbade",
+      "quantization_aware_cpa\\qacpa\\full_update_pipeline.py": "bdb9b0a10ecc77db1a8e6dbd089e43352aad5feabe6ef4298715a7805a3468c9",
+      "quantization_aware_cpa\\qacpa\\deterministic_hybrid_setup.py": "ca040e2e88f900b8490402bb18fc132f7c8a17e1b45d5662673ad6b56fbc958a",
+      "quantization_aware_cpa\\qacpa\\signed_baseline_observation.py": "2c18135e86e80c8f666033d5ea9d0c3495869ee60809fed04e295f28fa92cda2",
+      "quantization_aware_cpa\\qacpa\\signed_cell_rank.py": "7ae6deb49738914f4cd1f9328397400d89835ede4cd6a462b2ea260a77ae4acb",
+      "quantization_aware_cpa\\qacpa\\signed_cell_rank_evaluation.py": "c163aaa54bd8d5ebfc1528f49cafe2a830de72a9d7fe38583391b7ddaf4a65ef",
+      "quantization_aware_cpa\\qacpa\\upstream_naive.py": "8f29b885d86f4121eda5c55e17486a3a48bd8db08b2f83890fe7726730d1ee92",
+      "quantized_update_cpa\\cell_utils.py": "6725bce108a8e795680342231696c70f1d2bc8b01a727022c605e40aa841d361",
+      "official_cpa\\src\\gradient_inversion.py": "c598e1ee7b4079f741060d10c8dfd14711e393a97384c63cf32be77a458b1873",
+      "official_cpa\\src\\feature_inversion.py": "dc73880427e3eaf1f873d295f17f1d48d301882f634ee5df36ddeea8e56c4dec",
+      "official_cpa\\src\\vgg16.py": "8114eca8cde553dace5f777aedd21b70851c570d473e597b005cb6be4b248d36"
+    },
+    "shared_source_hashes": {
+      "quantization_aware_cpa\\qacpa\\signed_e2e_cells.py": "d69a6fd4a79eecf128c085079559cfd1808e1d7fa05794dce0fe72877d8b6db2",
+      "quantization_aware_cpa\\qacpa\\signed_e2e_runner.py": "2c68298f3fe6b38e5040231c2f21a250a07761e5fe93f3a259226360483253df",
+      "quantization_aware_cpa\\qacpa\\fc_replay.py": "bfe6b9671752edef941c56f80960ddea962b7e0ea44831f3c798887f41d4e49a",
+      "quantization_aware_cpa\\qacpa\\full_update_replay.py": "e45e9830bdcf2046de1c0e1ebe4579392c764065eb991826b9c6abd926af2e1c",
+      "quantization_aware_cpa\\qacpa\\full_update_adjoint.py": "882efe5424f4c57660d1c4c15a2af06c4b31180ffb84f7f9bbd191f31d7cbade"
+    },
+    "checkpoint_sha256": "397923af8e79cdbb6a7127f12361acd7a2f83e06b05044ddf496e83de57a5bf0",
+    "runtime": {
+      "phase": "REFINE",
+      "device": "cuda",
+      "torch": "2.13.0+cu132",
+      "cuda": "13.2",
+      "cuda_available": true,
+      "dtype": "float32",
+      "deterministic_algorithms": true,
+      "deterministic_warn_only": false,
+      "matmul_tf32": false,
+      "cudnn_tf32": false,
+      "cudnn_benchmark": false,
+      "cudnn_deterministic": true,
+      "cublas_workspace_config": ":4096:8",
+      "threads": 1
+    },
+    "integrity_before": {
+      "public_input_hashes": {
+        "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int4_baseline_B16_T10/observation/manifest.json": "9b4891765e6fc7e4adb1e3e11c158b3d4a2c3430d3397e1f1466ddafe2e1cd69",
+        "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int4_baseline_B16_T10/observation/fc_00.sgn4": "697c24316428133714e9fad5831429adced101d90c921746b4802b0914079a70",
+        "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int4_baseline_B16_T10/observation/fc_01.sgn4": "005da86bee21afa8bee1dda0a4cba492510c73b021b64114f030f3d9f52343a6",
+        "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int4_baseline_B16_T10/observation/fc_02.sgn4": "b6bc983225a97a481832f4d028bf1f41a087f84e4810df01f69ce397d1875baf",
+        "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int4_baseline_B16_T10/observation/fc_03.sgn4": "d8220d804ac511d93e307dfab6ed41d30718eb571d5e4725a62351bc5e5b0936",
+        "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int4_baseline_B16_T10/observation/fc_04.sgn4": "12b8748b134e8a7c67bfa87c94b9b5de4f76128af7bf82fac196528b5b6c7996",
+        "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int4_baseline_B16_T10/observation/fc_05.sgn4": "af6acbb5c356a9b9884823886383c8020093f6cf724dd6605a115df1afdcfdc7",
+        "C:/Users/조상제/.cache/torch/hub/checkpoints/vgg16-397923af.pth": "397923af8e79cdbb6a7127f12361acd7a2f83e06b05044ddf496e83de57a5bf0"
+      },
+      "artifact_hashes": {
+        "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_combination_ica_B16_T10_20260916/registration.json": "70f48861153e5155c5d9fe1c4a20851dc8b4ca3ee9317dbef362148bf6d3d484",
+        "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_combination_ica_B16_T10_20260916/result.json": "80946a388a649ebb8a99bfcbdb9301659788d89e1cb7562c441dca43f6b4e36e",
+        "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_combination_ica_B16_T10_20260916/sources.pt": "408099e99bb6ad1d8b721ff518c040ec9bec332827f0f36d3b9715ffeb4af5a2",
+        "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_combination_ica_B16_T10_20260916/direct_fia/registration.json": "9b4d66d5c35588df5d9e4e7fae5362643569908177b65514348e32584c239657",
+        "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_combination_ica_B16_T10_20260916/direct_fia/result.json": "91c05c281135ffff7dc2fb40fa14e213675d371f72c528036ac8b3e69515a6da",
+        "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_combination_ica_B16_T10_20260916/direct_fia/candidate.pt": "4efc29ad08b1ea8b0cee6991de6f185839708c2c72aaafb4fedfb307b5e680ce"
+      },
+      "protected_source_hashes": {
+        "quantization_aware_cpa\\qacpa\\fc_replay.py": "bfe6b9671752edef941c56f80960ddea962b7e0ea44831f3c798887f41d4e49a",
+        "quantization_aware_cpa\\qacpa\\full_update_replay.py": "e45e9830bdcf2046de1c0e1ebe4579392c764065eb991826b9c6abd926af2e1c",
+        "quantization_aware_cpa\\qacpa\\full_update_adjoint.py": "882efe5424f4c57660d1c4c15a2af06c4b31180ffb84f7f9bbd191f31d7cbade",
+        "quantization_aware_cpa\\qacpa\\full_update_pipeline.py": "bdb9b0a10ecc77db1a8e6dbd089e43352aad5feabe6ef4298715a7805a3468c9",
+        "quantization_aware_cpa\\qacpa\\deterministic_hybrid_setup.py": "ca040e2e88f900b8490402bb18fc132f7c8a17e1b45d5662673ad6b56fbc958a",
+        "quantization_aware_cpa\\qacpa\\signed_baseline_observation.py": "2c18135e86e80c8f666033d5ea9d0c3495869ee60809fed04e295f28fa92cda2",
+        "quantization_aware_cpa\\qacpa\\signed_cell_rank.py": "7ae6deb49738914f4cd1f9328397400d89835ede4cd6a462b2ea260a77ae4acb",
+        "quantization_aware_cpa\\qacpa\\signed_cell_rank_evaluation.py": "c163aaa54bd8d5ebfc1528f49cafe2a830de72a9d7fe38583391b7ddaf4a65ef",
+        "quantization_aware_cpa\\qacpa\\upstream_naive.py": "8f29b885d86f4121eda5c55e17486a3a48bd8db08b2f83890fe7726730d1ee92",
+        "quantized_update_cpa\\cell_utils.py": "6725bce108a8e795680342231696c70f1d2bc8b01a727022c605e40aa841d361",
+        "official_cpa\\src\\gradient_inversion.py": "c598e1ee7b4079f741060d10c8dfd14711e393a97384c63cf32be77a458b1873",
+        "official_cpa\\src\\feature_inversion.py": "dc73880427e3eaf1f873d295f17f1d48d301882f634ee5df36ddeea8e56c4dec",
+        "official_cpa\\src\\vgg16.py": "8114eca8cde553dace5f777aedd21b70851c570d473e597b005cb6be4b248d36"
+      },
+      "shared_source_hashes": {
+        "quantization_aware_cpa\\qacpa\\signed_e2e_cells.py": "d69a6fd4a79eecf128c085079559cfd1808e1d7fa05794dce0fe72877d8b6db2",
+        "quantization_aware_cpa\\qacpa\\signed_e2e_runner.py": "2c68298f3fe6b38e5040231c2f21a250a07761e5fe93f3a259226360483253df",
+        "quantization_aware_cpa\\qacpa\\fc_replay.py": "bfe6b9671752edef941c56f80960ddea962b7e0ea44831f3c798887f41d4e49a",
+        "quantization_aware_cpa\\qacpa\\full_update_replay.py": "e45e9830bdcf2046de1c0e1ebe4579392c764065eb991826b9c6abd926af2e1c",
+        "quantization_aware_cpa\\qacpa\\full_update_adjoint.py": "882efe5424f4c57660d1c4c15a2af06c4b31180ffb84f7f9bbd191f31d7cbade"
+      }
+    },
+    "arm": "B_H1_combination_ica",
+    "label_hypothesis": {
+      "name": "H1",
+      "rule": "coverage-based H1 from this candidate public logits and positive bias-code classes",
+      "frozen_before_optimization": true
+    },
+    "h1_labels": [
+      507,
+      655,
+      124,
+      549,
+      621,
+      657,
+      452,
+      761,
+      975,
+      389,
+      658,
+      761,
+      231,
+      160,
+      969,
+      290
+    ],
+    "label_evidence": {
+      "positive_bias_code_classes_ascending": [
+        124,
+        160,
+        231,
+        290,
+        389,
+        507,
+        549,
+        621,
+        657,
+        658,
+        969,
+        975
+      ],
+      "positive_bias_code_count": 12,
+      "rule": "positive signed bias code is one-way evidence only; no absence or multiplicity claim",
+      "h0": {
+        "name": "H0",
+        "rule": "public starting classifier argmax; first index wins exact ties",
+        "labels": [
+          487,
+          655,
+          658,
+          620,
+          655,
+          657,
+          452,
+          761,
+          621,
+          389,
+          658,
+          761,
+          843,
+          806,
+          969,
+          620
+        ]
+      },
+      "status": "COMPLETED",
+      "scipy_version": "1.17.1",
+      "assignment": [
+        {
+          "row": 0,
+          "column": 5,
+          "reward": 0.94580078125
+        },
+        {
+          "row": 1,
+          "column": 13,
+          "reward": 1.596116304397583
+        },
+        {
+          "row": 2,
+          "column": 0,
+          "reward": 0.03161799907684326
+        },
+        {
+          "row": 3,
+          "column": 6,
+          "reward": 0.7390525341033936
+        },
+        {
+          "row": 4,
+          "column": 7,
+          "reward": 1.221721887588501
+        },
+        {
+          "row": 5,
+          "column": 8,
+          "reward": 1.8782713413238525
+        },
+        {
+          "row": 6,
+          "column": 12,
+          "reward": 1.3348608016967773
+        },
+        {
+          "row": 7,
+          "column": 15,
+          "reward": 1.7433905601501465
+        },
+        {
+          "row": 8,
+          "column": 11,
+          "reward": 0.34535253047943115
+        },
+        {
+          "row": 9,
+          "column": 4,
+          "reward": 2.555997371673584
+        },
+        {
+          "row": 10,
+          "column": 9,
+          "reward": 1.2398054599761963
+        },
+        {
+          "row": 11,
+          "column": 14,
+          "reward": 1.4885281324386597
+        },
+        {
+          "row": 12,
+          "column": 2,
+          "reward": 0.44376304745674133
+        },
+        {
+          "row": 13,
+          "column": 1,
+          "reward": 0.2457621842622757
+        },
+        {
+          "row": 14,
+          "column": 10,
+          "reward": 1.838193416595459
+        },
+        {
+          "row": 15,
+          "column": 3,
+          "reward": 0.1334080696105957
+        }
+      ],
+      "h1": {
+        "name": "H1",
+        "rule": "mandatory positive-code classes plus free slots using public logits",
+        "labels": [
+          507,
+          655,
+          124,
+          549,
+          621,
+          657,
+          452,
+          761,
+          975,
+          389,
+          658,
+          761,
+          231,
+          160,
+          969,
+          290
+        ]
+      },
+      "h1_equals_h0": false,
+      "labels_are_hypotheses": true
+    },
+    "fia_config": {
+      "n_iter": 25000,
+      "lr": 0.1,
+      "tv": 0.1,
+      "fi": 1.0,
+      "optimizer": "adam",
+      "scheduler": "cosine",
+      "log_every": 5000
+    },
+    "objective": {
+      "feature_weight": 1.0,
+      "tv_weight": 0.1,
+      "cell_weight": 0.24202997768915402,
+      "optimizer": "Adam",
+      "image_steps": 100,
+      "lr_initial": 0.001,
+      "lr_final": 0.0001
+    },
+    "private_data_used": false,
+    "generator_used": false,
+    "quality": "NOT_EVALUATED"
+  },
+  "preflight": {
+    "feature_grad_enabled_equals_no_grad": true,
+    "terminal_deltas_torch_equal": true,
+    "adjoint_cell_loss": 22.889179229736328,
+    "per_tensor": {
+      "classifier.0.bias": {
+        "torch_equal": true,
+        "max_abs_difference": 0.0,
+        "max_difference_in_s": 0.0,
+        "fixed_s_code_mismatch_count": 0
+      },
+      "classifier.0.weight": {
+        "torch_equal": true,
+        "max_abs_difference": 0.0,
+        "max_difference_in_s": 0.0,
+        "fixed_s_code_mismatch_count": 0
+      },
+      "classifier.3.bias": {
+        "torch_equal": true,
+        "max_abs_difference": 0.0,
+        "max_difference_in_s": 0.0,
+        "fixed_s_code_mismatch_count": 0
+      },
+      "classifier.3.weight": {
+        "torch_equal": true,
+        "max_abs_difference": 0.0,
+        "max_difference_in_s": 0.0,
+        "fixed_s_code_mismatch_count": 0
+      },
+      "classifier.6.bias": {
+        "torch_equal": true,
+        "max_abs_difference": 0.0,
+        "max_difference_in_s": 0.0,
+        "fixed_s_code_mismatch_count": 0
+      },
+      "classifier.6.weight": {
+        "torch_equal": true,
+        "max_abs_difference": 0.0,
+        "max_difference_in_s": 0.0,
+        "fixed_s_code_mismatch_count": 0
+      }
+    }
+  },
+  "start_profile": {
+    "per_tensor": {
+      "classifier.0.bias": {
+        "name": "classifier.0.bias",
+        "numel": 4096,
+        "fixed_s": 3.0104336019576294e-06,
+        "code_mismatch_count": 3827,
+        "code_mismatch_fraction": 0.934326171875,
+        "bounded_cell_violation_count": 3830,
+        "bounded_cell_violation_fraction": 0.93505859375,
+        "mean_violation_in_s": 7.560761096326178,
+        "max_violation_in_s": 53.742411250369805,
+        "cell_penalty": 117.04870264625693,
+        "candidate_scale": 2.4617782401037402e-05
+      },
+      "classifier.0.weight": {
+        "name": "classifier.0.weight",
+        "numel": 102760448,
+        "fixed_s": 5.416279236669652e-05,
+        "code_mismatch_count": 776226,
+        "code_mismatch_fraction": 0.007553742856395488,
+        "bounded_cell_violation_count": 776226,
+        "bounded_cell_violation_fraction": 0.007553742856395488,
+        "mean_violation_in_s": 0.003150093658042107,
+        "max_violation_in_s": 6.564163255957505,
+        "cell_penalty": 0.0022583478916676897,
+        "candidate_scale": 4.806196739082225e-05
+      },
+      "classifier.3.bias": {
+        "name": "classifier.3.bias",
+        "numel": 4096,
+        "fixed_s": 6.22868537902832e-06,
+        "code_mismatch_count": 3561,
+        "code_mismatch_fraction": 0.869384765625,
+        "bounded_cell_violation_count": 3562,
+        "bounded_cell_violation_fraction": 0.86962890625,
+        "mean_violation_in_s": 3.0583373956988305,
+        "max_violation_in_s": 23.958732057416267,
+        "cell_penalty": 19.43017333430019,
+        "candidate_scale": 2.26534903049469e-05
+      },
+      "classifier.3.weight": {
+        "name": "classifier.3.weight",
+        "numel": 16777216,
+        "fixed_s": 4.05922946811188e-05,
+        "code_mismatch_count": 436041,
+        "code_mismatch_fraction": 0.025990068912506104,
+        "bounded_cell_violation_count": 436041,
+        "bounded_cell_violation_fraction": 0.025990068912506104,
+        "mean_violation_in_s": 0.012794938994936573,
+        "max_violation_in_s": 5.620667642057103,
+        "cell_penalty": 0.009463366892665366,
+        "candidate_scale": 8.783369594311807e-06
+      },
+      "classifier.6.bias": {
+        "name": "classifier.6.bias",
+        "numel": 1000,
+        "fixed_s": 7.289834320545197e-05,
+        "code_mismatch_count": 27,
+        "code_mismatch_fraction": 0.027,
+        "bounded_cell_violation_count": 28,
+        "bounded_cell_violation_fraction": 0.028,
+        "mean_violation_in_s": 0.10371638760555868,
+        "max_violation_in_s": 18.372754682269974,
+        "cell_penalty": 0.8434814509227871,
+        "candidate_scale": 0.000175713692442514
+      },
+      "classifier.6.weight": {
+        "name": "classifier.6.weight",
+        "numel": 4096000,
+        "fixed_s": 0.000340950267855078,
+        "code_mismatch_count": 5525,
+        "code_mismatch_fraction": 0.001348876953125,
+        "bounded_cell_violation_count": 5525,
+        "bounded_cell_violation_fraction": 0.001348876953125,
+        "mean_violation_in_s": 0.0008739361962999219,
+        "max_violation_in_s": 5.730812272374422,
+        "cell_penalty": 0.000984056921753433,
+        "candidate_scale": 0.00010026299423770979
+      }
+    },
+    "overall_numel": 123642856,
+    "overall_code_mismatch_count": 1225207,
+    "overall_code_mismatch_fraction": 0.0099092421482079,
+    "overall_bounded_cell_violation_count": 1225212,
+    "overall_bounded_cell_violation_fraction": 0.009909282587260844,
+    "cell_loss_equal_tensor_mean": 22.889177200530998,
+    "exact_feasible": false,
+    "feature_norm_mean": 21.549190521240234,
+    "feature_norm_min": 11.17577838897705,
+    "feature_norm_max": 37.37336730957031,
+    "scale_diagnostics": {
+      "classifier.0.bias": {
+        "fixed_s": 3.0104336019576294e-06,
+        "candidate_scale": 2.4617782401037402e-05
+      },
+      "classifier.0.weight": {
+        "fixed_s": 5.416279236669652e-05,
+        "candidate_scale": 4.806196739082225e-05
+      },
+      "classifier.3.bias": {
+        "fixed_s": 6.22868537902832e-06,
+        "candidate_scale": 2.26534903049469e-05
+      },
+      "classifier.3.weight": {
+        "fixed_s": 4.05922946811188e-05,
+        "candidate_scale": 8.783369594311807e-06
+      },
+      "classifier.6.bias": {
+        "fixed_s": 7.289834320545197e-05,
+        "candidate_scale": 0.000175713692442514
+      },
+      "classifier.6.weight": {
+        "fixed_s": 0.000340950267855078,
+        "candidate_scale": 0.00010026299423770979
+      }
+    },
+    "feasibility": {
+      "exact_code_and_bounded_cell": false,
+      "overall_code_mismatch_count": 1225207,
+      "overall_bounded_cell_violation_count": 1225212
+    }
+  },
+  "final_profile": {
+    "per_tensor": {
+      "classifier.0.bias": {
+        "name": "classifier.0.bias",
+        "numel": 4096,
+        "fixed_s": 3.0104336019576294e-06,
+        "code_mismatch_count": 2469,
+        "code_mismatch_fraction": 0.602783203125,
+        "bounded_cell_violation_count": 2469,
+        "bounded_cell_violation_fraction": 0.602783203125,
+        "mean_violation_in_s": 0.493461164199376,
+        "max_violation_in_s": 5.044482764272309,
+        "cell_penalty": 0.7275773229974298,
+        "candidate_scale": 3.0110988973319763e-06
+      },
+      "classifier.0.weight": {
+        "name": "classifier.0.weight",
+        "numel": 102760448,
+        "fixed_s": 5.416279236669652e-05,
+        "code_mismatch_count": 558535,
+        "code_mismatch_fraction": 0.005435311064428213,
+        "bounded_cell_violation_count": 558535,
+        "bounded_cell_violation_fraction": 0.005435311064428213,
+        "mean_violation_in_s": 0.00226187271890901,
+        "max_violation_in_s": 5.583466319365966,
+        "cell_penalty": 0.0012538832548632084,
+        "candidate_scale": 3.37912752002012e-05
+      },
+      "classifier.3.bias": {
+        "name": "classifier.3.bias",
+        "numel": 4096,
+        "fixed_s": 6.22868537902832e-06,
+        "code_mismatch_count": 1909,
+        "code_mismatch_fraction": 0.466064453125,
+        "bounded_cell_violation_count": 1909,
+        "bounded_cell_violation_fraction": 0.466064453125,
+        "mean_violation_in_s": 0.31031996706883874,
+        "max_violation_in_s": 4.90311004784689,
+        "cell_penalty": 0.3986767574595462,
+        "candidate_scale": 3.7582856293738587e-06
+      },
+      "classifier.3.weight": {
+        "name": "classifier.3.weight",
+        "numel": 16777216,
+        "fixed_s": 4.05922946811188e-05,
+        "code_mismatch_count": 426866,
+        "code_mismatch_fraction": 0.025443196296691895,
+        "bounded_cell_violation_count": 426866,
+        "bounded_cell_violation_fraction": 0.025443196296691895,
+        "mean_violation_in_s": 0.010167542083793417,
+        "max_violation_in_s": 4.648358901856752,
+        "cell_penalty": 0.005932498729882744,
+        "candidate_scale": 2.1972427930450067e-05
+      },
+      "classifier.6.bias": {
+        "name": "classifier.6.bias",
+        "numel": 1000,
+        "fixed_s": 7.289834320545197e-05,
+        "code_mismatch_count": 21,
+        "code_mismatch_fraction": 0.021,
+        "bounded_cell_violation_count": 21,
+        "bounded_cell_violation_fraction": 0.021,
+        "mean_violation_in_s": 0.015161101147890741,
+        "max_violation_in_s": 2.448411988655237,
+        "cell_penalty": 0.023266275781221337,
+        "candidate_scale": 4.340628584031947e-05
+      },
+      "classifier.6.weight": {
+        "name": "classifier.6.weight",
+        "numel": 4096000,
+        "fixed_s": 0.000340950267855078,
+        "code_mismatch_count": 5258,
+        "code_mismatch_fraction": 0.00128369140625,
+        "bounded_cell_violation_count": 5258,
+        "bounded_cell_violation_fraction": 0.00128369140625,
+        "mean_violation_in_s": 0.0006112660561502412,
+        "max_violation_in_s": 4.984410875596524,
+        "cell_penalty": 0.0005203040426513979,
+        "candidate_scale": 0.00020579408737830818
+      }
+    },
+    "overall_numel": 123642856,
+    "overall_code_mismatch_count": 995058,
+    "overall_code_mismatch_fraction": 0.008047840628980618,
+    "overall_bounded_cell_violation_count": 995058,
+    "overall_bounded_cell_violation_fraction": 0.008047840628980618,
+    "cell_loss_equal_tensor_mean": 0.19287117371093246,
+    "exact_feasible": false,
+    "feature_norm_mean": 91.98310852050781,
+    "feature_norm_min": 64.88131713867188,
+    "feature_norm_max": 115.97038269042969,
+    "scale_diagnostics": {
+      "classifier.0.bias": {
+        "fixed_s": 3.0104336019576294e-06,
+        "candidate_scale": 3.0110988973319763e-06
+      },
+      "classifier.0.weight": {
+        "fixed_s": 5.416279236669652e-05,
+        "candidate_scale": 3.37912752002012e-05
+      },
+      "classifier.3.bias": {
+        "fixed_s": 6.22868537902832e-06,
+        "candidate_scale": 3.7582856293738587e-06
+      },
+      "classifier.3.weight": {
+        "fixed_s": 4.05922946811188e-05,
+        "candidate_scale": 2.1972427930450067e-05
+      },
+      "classifier.6.bias": {
+        "fixed_s": 7.289834320545197e-05,
+        "candidate_scale": 4.340628584031947e-05
+      },
+      "classifier.6.weight": {
+        "fixed_s": 0.000340950267855078,
+        "candidate_scale": 0.00020579408737830818
+      }
+    },
+    "feasibility": {
+      "exact_code_and_bounded_cell": false,
+      "overall_code_mismatch_count": 995058,
+      "overall_bounded_cell_violation_count": 995058
+    }
+  },
+  "feasibility": {
+    "start_exact_feasible": false,
+    "final_exact_feasible": false,
+    "software_completion": "COMPLETED"
+  },
+  "actual_update_result": {
+    "status": "COMPLETED",
+    "arm": "B_H1_combination_ica",
+    "optimized_label_hypothesis": "H1",
+    "lambda_cell": 0.24202997768915402,
+    "iterations": 100,
+    "optimization_seconds": 132.0574921000516,
+    "peak_cuda_allocated_bytes": 3965342208,
+    "peak_cuda_reserved_bytes": 4286578688,
+    "final_metrics": {
+      "feature_target_cosine_loss": 0.31928735971450806,
+      "tv_normalized": 0.09770317375659943,
+      "feature_norm_mean": 91.98310852050781,
+      "feature_norm_min": 64.88131713867188,
+      "feature_norm_max": 115.97038269042969,
+      "pixel_min": 0.0873253270983696,
+      "pixel_max": 0.9032450318336487,
+      "pixel_mean": 0.4395950734615326,
+      "x0_displacement_l2": 11.010910987854004
+    },
+    "candidate_sha256": "01c3b2b9289c055feb9c1a0bf496855fb7232a0bf406ba05bd161e679535d708"
+  },
+  "integrity": {
+    "before": {
+      "public_input_hashes": {
+        "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int4_baseline_B16_T10/observation/manifest.json": "9b4891765e6fc7e4adb1e3e11c158b3d4a2c3430d3397e1f1466ddafe2e1cd69",
+        "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int4_baseline_B16_T10/observation/fc_00.sgn4": "697c24316428133714e9fad5831429adced101d90c921746b4802b0914079a70",
+        "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int4_baseline_B16_T10/observation/fc_01.sgn4": "005da86bee21afa8bee1dda0a4cba492510c73b021b64114f030f3d9f52343a6",
+        "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int4_baseline_B16_T10/observation/fc_02.sgn4": "b6bc983225a97a481832f4d028bf1f41a087f84e4810df01f69ce397d1875baf",
+        "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int4_baseline_B16_T10/observation/fc_03.sgn4": "d8220d804ac511d93e307dfab6ed41d30718eb571d5e4725a62351bc5e5b0936",
+        "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int4_baseline_B16_T10/observation/fc_04.sgn4": "12b8748b134e8a7c67bfa87c94b9b5de4f76128af7bf82fac196528b5b6c7996",
+        "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int4_baseline_B16_T10/observation/fc_05.sgn4": "af6acbb5c356a9b9884823886383c8020093f6cf724dd6605a115df1afdcfdc7",
+        "C:/Users/조상제/.cache/torch/hub/checkpoints/vgg16-397923af.pth": "397923af8e79cdbb6a7127f12361acd7a2f83e06b05044ddf496e83de57a5bf0"
+      },
+      "artifact_hashes": {
+        "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_combination_ica_B16_T10_20260916/registration.json": "70f48861153e5155c5d9fe1c4a20851dc8b4ca3ee9317dbef362148bf6d3d484",
+        "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_combination_ica_B16_T10_20260916/result.json": "80946a388a649ebb8a99bfcbdb9301659788d89e1cb7562c441dca43f6b4e36e",
+        "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_combination_ica_B16_T10_20260916/sources.pt": "408099e99bb6ad1d8b721ff518c040ec9bec332827f0f36d3b9715ffeb4af5a2",
+        "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_combination_ica_B16_T10_20260916/direct_fia/registration.json": "9b4d66d5c35588df5d9e4e7fae5362643569908177b65514348e32584c239657",
+        "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_combination_ica_B16_T10_20260916/direct_fia/result.json": "91c05c281135ffff7dc2fb40fa14e213675d371f72c528036ac8b3e69515a6da",
+        "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_combination_ica_B16_T10_20260916/direct_fia/candidate.pt": "4efc29ad08b1ea8b0cee6991de6f185839708c2c72aaafb4fedfb307b5e680ce"
+      },
+      "protected_source_hashes": {
+        "quantization_aware_cpa\\qacpa\\fc_replay.py": "bfe6b9671752edef941c56f80960ddea962b7e0ea44831f3c798887f41d4e49a",
+        "quantization_aware_cpa\\qacpa\\full_update_replay.py": "e45e9830bdcf2046de1c0e1ebe4579392c764065eb991826b9c6abd926af2e1c",
+        "quantization_aware_cpa\\qacpa\\full_update_adjoint.py": "882efe5424f4c57660d1c4c15a2af06c4b31180ffb84f7f9bbd191f31d7cbade",
+        "quantization_aware_cpa\\qacpa\\full_update_pipeline.py": "bdb9b0a10ecc77db1a8e6dbd089e43352aad5feabe6ef4298715a7805a3468c9",
+        "quantization_aware_cpa\\qacpa\\deterministic_hybrid_setup.py": "ca040e2e88f900b8490402bb18fc132f7c8a17e1b45d5662673ad6b56fbc958a",
+        "quantization_aware_cpa\\qacpa\\signed_baseline_observation.py": "2c18135e86e80c8f666033d5ea9d0c3495869ee60809fed04e295f28fa92cda2",
+        "quantization_aware_cpa\\qacpa\\signed_cell_rank.py": "7ae6deb49738914f4cd1f9328397400d89835ede4cd6a462b2ea260a77ae4acb",
+        "quantization_aware_cpa\\qacpa\\signed_cell_rank_evaluation.py": "c163aaa54bd8d5ebfc1528f49cafe2a830de72a9d7fe38583391b7ddaf4a65ef",
+        "quantization_aware_cpa\\qacpa\\upstream_naive.py": "8f29b885d86f4121eda5c55e17486a3a48bd8db08b2f83890fe7726730d1ee92",
+        "quantized_update_cpa\\cell_utils.py": "6725bce108a8e795680342231696c70f1d2bc8b01a727022c605e40aa841d361",
+        "official_cpa\\src\\gradient_inversion.py": "c598e1ee7b4079f741060d10c8dfd14711e393a97384c63cf32be77a458b1873",
+        "official_cpa\\src\\feature_inversion.py": "dc73880427e3eaf1f873d295f17f1d48d301882f634ee5df36ddeea8e56c4dec",
+        "official_cpa\\src\\vgg16.py": "8114eca8cde553dace5f777aedd21b70851c570d473e597b005cb6be4b248d36"
+      },
+      "shared_source_hashes": {
+        "quantization_aware_cpa\\qacpa\\signed_e2e_cells.py": "d69a6fd4a79eecf128c085079559cfd1808e1d7fa05794dce0fe72877d8b6db2",
+        "quantization_aware_cpa\\qacpa\\signed_e2e_runner.py": "2c68298f3fe6b38e5040231c2f21a250a07761e5fe93f3a259226360483253df",
+        "quantization_aware_cpa\\qacpa\\fc_replay.py": "bfe6b9671752edef941c56f80960ddea962b7e0ea44831f3c798887f41d4e49a",
+        "quantization_aware_cpa\\qacpa\\full_update_replay.py": "e45e9830bdcf2046de1c0e1ebe4579392c764065eb991826b9c6abd926af2e1c",
+        "quantization_aware_cpa\\qacpa\\full_update_adjoint.py": "882efe5424f4c57660d1c4c15a2af06c4b31180ffb84f7f9bbd191f31d7cbade"
+      }
+    },
+    "after": {
+      "public_input_hashes": {
+        "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int4_baseline_B16_T10/observation/manifest.json": "9b4891765e6fc7e4adb1e3e11c158b3d4a2c3430d3397e1f1466ddafe2e1cd69",
+        "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int4_baseline_B16_T10/observation/fc_00.sgn4": "697c24316428133714e9fad5831429adced101d90c921746b4802b0914079a70",
+        "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int4_baseline_B16_T10/observation/fc_01.sgn4": "005da86bee21afa8bee1dda0a4cba492510c73b021b64114f030f3d9f52343a6",
+        "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int4_baseline_B16_T10/observation/fc_02.sgn4": "b6bc983225a97a481832f4d028bf1f41a087f84e4810df01f69ce397d1875baf",
+        "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int4_baseline_B16_T10/observation/fc_03.sgn4": "d8220d804ac511d93e307dfab6ed41d30718eb571d5e4725a62351bc5e5b0936",
+        "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int4_baseline_B16_T10/observation/fc_04.sgn4": "12b8748b134e8a7c67bfa87c94b9b5de4f76128af7bf82fac196528b5b6c7996",
+        "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int4_baseline_B16_T10/observation/fc_05.sgn4": "af6acbb5c356a9b9884823886383c8020093f6cf724dd6605a115df1afdcfdc7",
+        "C:/Users/조상제/.cache/torch/hub/checkpoints/vgg16-397923af.pth": "397923af8e79cdbb6a7127f12361acd7a2f83e06b05044ddf496e83de57a5bf0"
+      },
+      "artifact_hashes": {
+        "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_combination_ica_B16_T10_20260916/registration.json": "70f48861153e5155c5d9fe1c4a20851dc8b4ca3ee9317dbef362148bf6d3d484",
+        "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_combination_ica_B16_T10_20260916/result.json": "80946a388a649ebb8a99bfcbdb9301659788d89e1cb7562c441dca43f6b4e36e",
+        "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_combination_ica_B16_T10_20260916/sources.pt": "408099e99bb6ad1d8b721ff518c040ec9bec332827f0f36d3b9715ffeb4af5a2",
+        "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_combination_ica_B16_T10_20260916/direct_fia/registration.json": "9b4d66d5c35588df5d9e4e7fae5362643569908177b65514348e32584c239657",
+        "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_combination_ica_B16_T10_20260916/direct_fia/result.json": "91c05c281135ffff7dc2fb40fa14e213675d371f72c528036ac8b3e69515a6da",
+        "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_combination_ica_B16_T10_20260916/direct_fia/candidate.pt": "4efc29ad08b1ea8b0cee6991de6f185839708c2c72aaafb4fedfb307b5e680ce"
+      },
+      "protected_source_hashes": {
+        "quantization_aware_cpa\\qacpa\\fc_replay.py": "bfe6b9671752edef941c56f80960ddea962b7e0ea44831f3c798887f41d4e49a",
+        "quantization_aware_cpa\\qacpa\\full_update_replay.py": "e45e9830bdcf2046de1c0e1ebe4579392c764065eb991826b9c6abd926af2e1c",
+        "quantization_aware_cpa\\qacpa\\full_update_adjoint.py": "882efe5424f4c57660d1c4c15a2af06c4b31180ffb84f7f9bbd191f31d7cbade",
+        "quantization_aware_cpa\\qacpa\\full_update_pipeline.py": "bdb9b0a10ecc77db1a8e6dbd089e43352aad5feabe6ef4298715a7805a3468c9",
+        "quantization_aware_cpa\\qacpa\\deterministic_hybrid_setup.py": "ca040e2e88f900b8490402bb18fc132f7c8a17e1b45d5662673ad6b56fbc958a",
+        "quantization_aware_cpa\\qacpa\\signed_baseline_observation.py": "2c18135e86e80c8f666033d5ea9d0c3495869ee60809fed04e295f28fa92cda2",
+        "quantization_aware_cpa\\qacpa\\signed_cell_rank.py": "7ae6deb49738914f4cd1f9328397400d89835ede4cd6a462b2ea260a77ae4acb",
+        "quantization_aware_cpa\\qacpa\\signed_cell_rank_evaluation.py": "c163aaa54bd8d5ebfc1528f49cafe2a830de72a9d7fe38583391b7ddaf4a65ef",
+        "quantization_aware_cpa\\qacpa\\upstream_naive.py": "8f29b885d86f4121eda5c55e17486a3a48bd8db08b2f83890fe7726730d1ee92",
+        "quantized_update_cpa\\cell_utils.py": "6725bce108a8e795680342231696c70f1d2bc8b01a727022c605e40aa841d361",
+        "official_cpa\\src\\gradient_inversion.py": "c598e1ee7b4079f741060d10c8dfd14711e393a97384c63cf32be77a458b1873",
+        "official_cpa\\src\\feature_inversion.py": "dc73880427e3eaf1f873d295f17f1d48d301882f634ee5df36ddeea8e56c4dec",
+        "official_cpa\\src\\vgg16.py": "8114eca8cde553dace5f777aedd21b70851c570d473e597b005cb6be4b248d36"
+      },
+      "shared_source_hashes": {
+        "quantization_aware_cpa\\qacpa\\signed_e2e_cells.py": "d69a6fd4a79eecf128c085079559cfd1808e1d7fa05794dce0fe72877d8b6db2",
+        "quantization_aware_cpa\\qacpa\\signed_e2e_runner.py": "2c68298f3fe6b38e5040231c2f21a250a07761e5fe93f3a259226360483253df",
+        "quantization_aware_cpa\\qacpa\\fc_replay.py": "bfe6b9671752edef941c56f80960ddea962b7e0ea44831f3c798887f41d4e49a",
+        "quantization_aware_cpa\\qacpa\\full_update_replay.py": "e45e9830bdcf2046de1c0e1ebe4579392c764065eb991826b9c6abd926af2e1c",
+        "quantization_aware_cpa\\qacpa\\full_update_adjoint.py": "882efe5424f4c57660d1c4c15a2af06c4b31180ffb84f7f9bbd191f31d7cbade"
+      }
+    },
+    "unchanged": true
+  },
+  "private_data_used": false,
+  "generator_used": false
+}

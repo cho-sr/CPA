@@ -1,0 +1,28 @@
+{
+  "task_id": "CPA_SCREEN3_BASELINE_FIGURE_REPAIR_20260918",
+  "status": "COMPLETED_AVAILABLE_PENDING_PARENT",
+  "assigned_role": "CODEX_EXECUTOR",
+  "claimed_by": "01a0a799-f1ce-7b31-8c46-b4ddef40aeab",
+  "executor_pid": 14236,
+  "executor_start_ms": 1789518279030,
+  "model": "gpt-5.6-luna",
+  "reasoning_effort": "xhigh",
+  "sidecar_sha256": "ba960e317b6543e9bd38919e7e3654c5b25146552bc00f5f82d77fed127f28c4",
+  "parent_task": "CPA_SIGNED_BITS7654_RECOVERY_20260918",
+  "parent_handoff_preserved": true,
+  "active_parent_not_replaced": true,
+  "claimed_at_epoch": 1789705961.345333,
+  "available_bits": [
+    8,
+    7,
+    6
+  ],
+  "pending_bits": [
+    5,
+    4
+  ],
+  "report": "C:/Users/조상제/Desktop/CPA/.ai/execution-results/CPA_SCREEN3_BASELINE_FIGURE_REPAIR_20260918/report.md",
+  "finished_at_epoch": 1789706202.4714918,
+  "planner_notice_status": "QUEUED",
+  "planner_queue_receipt": "C:/Users/조상제/Desktop/CPA/.ai/execution-results/CPA_SCREEN3_BASELINE_FIGURE_REPAIR_20260918/planner_queue_receipt.json"
+}

@@ -1,0 +1,81 @@
+{
+  "log": [
+    {
+      "iter": 0,
+      "loss": 1.1311595439910889,
+      "loss_fi": 0.9102622866630554,
+      "loss_gm": 0.0,
+      "loss_tv": 2.2089719772338867,
+      "time_sec": 1.7704106810124358
+    },
+    {
+      "iter": 4999,
+      "loss": 0.06218269467353821,
+      "loss_fi": 0.03038136661052704,
+      "loss_gm": 0.0,
+      "loss_tv": 0.3180132806301117,
+      "time_sec": 265.9759880670026
+    },
+    {
+      "iter": 9999,
+      "loss": 0.04971160739660263,
+      "loss_fi": 0.025732841342687607,
+      "loss_gm": 0.0,
+      "loss_tv": 0.23978763818740845,
+      "time_sec": 532.9551321790059
+    },
+    {
+      "iter": 14999,
+      "loss": 0.03891965001821518,
+      "loss_fi": 0.022810030728578568,
+      "loss_gm": 0.0,
+      "loss_tv": 0.16109618544578552,
+      "time_sec": 799.2168389450089
+    },
+    {
+      "iter": 19999,
+      "loss": 0.027668224647641182,
+      "loss_fi": 0.02007336914539337,
+      "loss_gm": 0.0,
+      "loss_tv": 0.0759485512971878,
+      "time_sec": 1066.292239006012
+    },
+    {
+      "iter": 24999,
+      "loss": 0.024992724880576134,
+      "loss_fi": 0.019017521291971207,
+      "loss_gm": 0.0,
+      "loss_tv": 0.05975203216075897,
+      "time_sec": 1332.7535422040091
+    }
+  ],
+  "completed_iterations": 25000,
+  "settings": {
+    "seed": 42,
+    "device": "cuda:0",
+    "n_iter": 25000,
+    "lr": 0.1,
+    "tv": 0.1,
+    "fi": 1.0,
+    "optimizer": "adam",
+    "scheduler": "cosine",
+    "log_every": 5000,
+    "backend": "official_cpa/src/feature_inversion.py:Direct",
+    "driver": "staged_fia_v1; fixed full cosine horizon; original Direct.step",
+    "cudnn_benchmark": true,
+    "cudnn_deterministic": true
+  },
+  "optimizer_wall_time_sec": 1332.8092217660014,
+  "setup_wall_time_sec": 2.2330521429976216,
+  "wall_time_sec": 1335.042273908999,
+  "source_hashes": {
+    "/root/same80/CPA/official_cpa/src/datasets.py": "f9e7b47733b5acb4b73e6914a3f100b5187766bbed78a12d17b69c39eec1b6d1",
+    "/root/same80/CPA/official_cpa/src/utils.py": "565f1bf1a47f387d042b35bb24f677d1ff0d3ec5d979e2876c31ed114179b9fe",
+    "/root/same80/CPA/official_cpa/src/gradient_inversion_utils.py": "668d77788dc8d81c181c8c0a9fbe8533c6fbea22ba46fe7f5e15b0a431300e5f",
+    "/root/same80/CPA/official_cpa/src/gradient_inversion.py": "c598e1ee7b4079f741060d10c8dfd14711e393a97384c63cf32be77a458b1873",
+    "/root/same80/CPA/official_cpa/src/feature_inversion.py": "dc73880427e3eaf1f873d295f17f1d48d301882f634ee5df36ddeea8e56c4dec",
+    "/root/same80/CPA/official_cpa/src/vgg16.py": "8114eca8cde553dace5f777aedd21b70851c570d473e597b005cb6be4b248d36",
+    "/root/same80/CPA/quantization_aware_cpa/qacpa/upstream_naive.py": "8f29b885d86f4121eda5c55e17486a3a48bd8db08b2f83890fe7726730d1ee92",
+    "/root/same80/CPA/quantization_aware_cpa/qacpa/seed.py": "769366fcc2cf3e144d8caa86f73a55dcb0b6be615a45dab8b6e117399150c558"
+  }
+}

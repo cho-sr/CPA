@@ -1,0 +1,15 @@
+{
+  "task_id": "CPA_SIGNED_BITS7654_RECOVERY_20260918",
+  "status": "RUNNING",
+  "assigned_role": "CODEX_EXECUTOR",
+  "claimed_by": "01a0a799-f1ce-7b31-8c46-b4ddef40aeab",
+  "executor_pid": 14236,
+  "executor_start_ms": 1789518279030,
+  "model": "gpt-5.6-luna",
+  "reasoning_effort": "xhigh",
+  "recovery_handoff_sha256": "6f0c1e2de93d1c7b28f19fb74180f012581c45b31748b7fab13d8245669971c0",
+  "parent_active_handoff_archived": "C:/Users/조상제/Desktop/CPA/.ai/execution-results/CPA_SIGNED_BITS7654_RECOVERY_20260918/parent_archive/active_handoff_before_recovery.md",
+  "parent_artifacts_archived": true,
+  "parent_schedule_root_preserved": true,
+  "no_active_parent_wrapper_verified": true
+}

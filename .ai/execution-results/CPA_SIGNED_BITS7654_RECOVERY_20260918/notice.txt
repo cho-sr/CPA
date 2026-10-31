@@ -1,0 +1,5 @@
+[CPA recovery process completion | CPA_SIGNED_BITS7654_RECOVERY_20260918]
+Wrapper PID: 25160; start: 1789703008341; process exit: 0.
+Execution summary: C:\Users\조상제\Desktop\CPA\.ai\execution-results\CPA_SIGNED_BITS7654_RECOVERY_20260918\execution_summary.json
+Recovery report: C:\Users\조상제\Desktop\CPA\.ai\execution-results\CPA_SIGNED_BITS7654_RECOVERY_20260918\report.md
+This was one task-local OS process-exit callback with zero model calls while waiting. Inspect actual stage status and artifacts before concluding success. Preserve completed bit7 125000-update artifacts and any completed lower-bit stages. If the summary is PARTIAL or FAILED, autonomously repair ordinary same-scope gate/export/evaluation/report defects from saved artifacts and continue the authorized 7 -> 6 -> 5 -> 4 sweep; do not restart completed optimizer trajectories, add arms, seeds, methods, tuning or budget. On final validation send exactly one truthful result to Planner thread 01a0a799-d62c-7ab0-9c2a-628acf6d2c95 and end. Originating user thread: 01a0a7ab-fa58-7d22-ac52-3247b1dd2255.

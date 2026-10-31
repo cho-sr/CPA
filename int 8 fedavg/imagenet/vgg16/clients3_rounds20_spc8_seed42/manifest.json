@@ -1,0 +1,162 @@
+{
+  "aggregation": "weighted_mean_by_client_sample_count",
+  "aggregation_weights": [
+    0.3333333333333333,
+    0.3333333333333333,
+    0.3333333333333333
+  ],
+  "attack_layer_index": 26,
+  "attack_layer_name": "classifier.0.weight",
+  "client_original_indices": [
+    [
+      37542,
+      44491,
+      216,
+      43688,
+      41558,
+      32245,
+      27206,
+      10863
+    ],
+    [
+      2190,
+      31849,
+      25408,
+      33504,
+      27102,
+      21934,
+      40181,
+      47682
+    ],
+    [
+      45747,
+      17004,
+      43777,
+      7433,
+      45129,
+      37684,
+      14817,
+      38215
+    ]
+  ],
+  "client_qs": {
+    "code_file": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\int 8 fedavg\\imagenet\\vgg16\\clients3_rounds20_spc8_seed42\\client_qs\\final_round_client_codes.npz",
+    "codes_sha256": "1ac878ebbd215e9fd20a2a7b46137868a60169e3c4e9655efe03c0f2e1e546b4",
+    "context_file": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\int 8 fedavg\\imagenet\\vgg16\\clients3_rounds20_spc8_seed42\\client_qs\\final_round_context.pkl",
+    "context_sha256": "68744963909c23d220a61ef19225b7541a17ceb426e149405af4bc517e26bb6e",
+    "quant_meta_file": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\int 8 fedavg\\imagenet\\vgg16\\clients3_rounds20_spc8_seed42\\client_qs\\final_round_client_quant_meta.json",
+    "source_model_state_file": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\int 8 fedavg\\imagenet\\vgg16\\clients3_rounds20_spc8_seed42\\client_qs\\final_round_global_model_before.pt",
+    "source_model_state_sha256": "168ea5e56213757ae3850f71275207a43714ce16ec29cec89c2f9b32d3151300"
+  },
+  "client_sampling": "all_clients_each_round",
+  "client_subset_indices": [
+    [
+      37542,
+      44491,
+      216,
+      43688,
+      41558,
+      32245,
+      27206,
+      10863
+    ],
+    [
+      2190,
+      31849,
+      25408,
+      33504,
+      27102,
+      21934,
+      40181,
+      47682
+    ],
+    [
+      45747,
+      17004,
+      43777,
+      7433,
+      45129,
+      37684,
+      14817,
+      38215
+    ]
+  ],
+  "device": "cuda",
+  "ds": "imagenet",
+  "experiment": "client_qs_int8_naive_vs_randomized_fastica",
+  "local_batch_size": 8,
+  "local_epochs": 10,
+  "lr": 0.001,
+  "model": "vgg16",
+  "n_samples": 24,
+  "num_clients": 3,
+  "optimizer": "SGD",
+  "param_names": [
+    "features.0.weight",
+    "features.0.bias",
+    "features.2.weight",
+    "features.2.bias",
+    "features.5.weight",
+    "features.5.bias",
+    "features.7.weight",
+    "features.7.bias",
+    "features.10.weight",
+    "features.10.bias",
+    "features.12.weight",
+    "features.12.bias",
+    "features.14.weight",
+    "features.14.bias",
+    "features.17.weight",
+    "features.17.bias",
+    "features.19.weight",
+    "features.19.bias",
+    "features.21.weight",
+    "features.21.bias",
+    "features.24.weight",
+    "features.24.bias",
+    "features.26.weight",
+    "features.26.bias",
+    "features.28.weight",
+    "features.28.bias",
+    "classifier.0.weight",
+    "classifier.0.bias",
+    "classifier.3.weight",
+    "classifier.3.bias",
+    "classifier.6.weight",
+    "classifier.6.bias"
+  ],
+  "private_split": "test",
+  "qmax": 127,
+  "qmin": -127,
+  "quant_bits": 8,
+  "quantization": "signed_symmetric_int8",
+  "rounding": "nearest",
+  "rounds": 20,
+  "samples_per_client": 8,
+  "saved_artifact": "final_round_client_qs_before_server_aggregation",
+  "saved_artifact_not_source": "not a final aggregate pickle",
+  "saved_rounds": [
+    20
+  ],
+  "scale_definition": "scale=max_abs/127; scale=0 when max_abs=0",
+  "schema_version": 1,
+  "seed": 42,
+  "server_aggregation_input": "dequantized_client_updates",
+  "signal": "final_round_client_int8_qs_before_server_aggregation",
+  "stage": "client_qs_collection",
+  "stages": {
+    "fastica_comparison_R8": {
+      "R": 8,
+      "eval_dir": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\int 8 fedavg\\imagenet\\vgg16\\clients3_rounds20_spc8_seed42\\eval",
+      "fastica_random_state": 42,
+      "naive_dir": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\int 8 fedavg\\imagenet\\vgg16\\clients3_rounds20_spc8_seed42\\naive",
+      "noise_seed": 1234,
+      "q_s_codes_sha256": "1ac878ebbd215e9fd20a2a7b46137868a60169e3c4e9655efe03c0f2e1e546b4",
+      "q_s_meta_sha256": "5d8f9e3c6adeb4a613cf54ba7489cdd8f7343bde1d44a21a75f66207dd325ce8",
+      "randomized_dir": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\int 8 fedavg\\imagenet\\vgg16\\clients3_rounds20_spc8_seed42\\randomized_R8",
+      "smoke": false
+    }
+  },
+  "store_scope": "attack_layer",
+  "update_definition": "client_delta_w = w_client_after_local_train - w_global_before_final_round"
+}

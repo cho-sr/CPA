@@ -1,0 +1,33 @@
+{
+  "checkpoint": {
+    "path": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\cora_fedavg_single_client_cpa\\outputs_v1\\fedavg_single_client_updates\\imagenet\\vgg16\\fedavg_single_client_clients3_round20of20_spc24_target0_local1_e920201510be97a8\\global_topk\\keep_0p5.fedavg_round_before.pt",
+    "sha256": "40ea70acf2d99483684c89c3af7345858f955cff22c95bffa2efe16a907c4684"
+  },
+  "control_id": "shared_fp32_4e90ba4a4b9521b9",
+  "dense_source": "reconstructed_from_saved_checkpoint_and_private_batch",
+  "keep_ratio": 0.5,
+  "keep_ratios": [
+    1.0,
+    0.8,
+    0.5,
+    0.3,
+    0.1
+  ],
+  "recorded_source_fp32_update_hash": "4e90ba4a4b9521b9f743188e2dc632729cfa9dd31e2e043e8ce61da1c6f2829a",
+  "recorded_sparse_cosine_similarity_to_fp32": 0.9999995231628418,
+  "recorded_sparse_relative_l2": 0.0009711834718473256,
+  "recorded_sparse_retained_l2_norm_ratio": 0.9999995231628418,
+  "replay_checkpoint": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\cora_fedavg_single_client_cpa\\outputs_v1\\fedavg_single_client_updates\\imagenet\\vgg16\\fedavg_single_client_clients3_round20of20_spc24_target0_local1_e920201510be97a8\\global_topk\\keep_0p5.fedavg_round_before.pt",
+  "replay_sparse_vs_stored": {
+    "cosine_similarity": 1.0,
+    "relative_l2": 0.0
+  },
+  "sample_indices_hash": "0f2bf88518768bfc21a12255682050bae117cbd14410fc71f2a9757c5d3d4d4a",
+  "schema_version": 1,
+  "source_file": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\cora_fedavg_single_client_cpa\\outputs_v1\\fedavg_single_client_updates\\imagenet\\vgg16\\fedavg_single_client_clients3_round20of20_spc24_target0_local1_e920201510be97a8\\global_topk\\keep_0p5.pickle",
+  "source_file_hash": "d9639da9ac8a4f58e0e455af3e8b600fd85018022b11e1432ee7721bf6f8f826",
+  "source_fp32_update_hash": "4e90ba4a4b9521b9f743188e2dc632729cfa9dd31e2e043e8ce61da1c6f2829a",
+  "source_recorded_lossless": false,
+  "tau_policy": "topk_threshold",
+  "update_file": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\cora_fedavg_single_client_cpa\\outputs_v1\\shared_fp32_controls\\imagenet_vgg16_round20_target0_spc24_sharedfp32_from_keep50\\global_topk\\keep_0p5.pickle"
+}

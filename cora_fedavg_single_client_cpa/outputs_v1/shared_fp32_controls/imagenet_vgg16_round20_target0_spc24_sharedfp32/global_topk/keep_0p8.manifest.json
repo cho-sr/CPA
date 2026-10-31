@@ -1,0 +1,26 @@
+{
+  "checkpoint": {
+    "path": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\cora_fedavg_single_client_cpa\\outputs_v1\\fedavg_single_client_updates\\imagenet\\vgg16\\fedavg_single_client_clients3_round20of20_spc24_target0_local1_e920201510be97a8\\global_topk\\keep_0p8.fedavg_round_before.pt",
+    "sha256": "0ffa50ca749de226533ec33cfb4b05fe45962ecb7ae768256bb54a47c4cec93a"
+  },
+  "control_id": "shared_fp32_b5a99e7d173bf10c",
+  "keep_ratio": 0.8,
+  "keep_ratios": [
+    1.0,
+    0.8,
+    0.5,
+    0.3,
+    0.1
+  ],
+  "recorded_sparse_cosine_similarity_to_fp32": 1.0,
+  "recorded_sparse_relative_l2": 0.0,
+  "recorded_sparse_retained_l2_norm_ratio": 1.0,
+  "sample_indices_hash": "0f2bf88518768bfc21a12255682050bae117cbd14410fc71f2a9757c5d3d4d4a",
+  "schema_version": 1,
+  "source_file": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\cora_fedavg_single_client_cpa\\outputs_v1\\fedavg_single_client_updates\\imagenet\\vgg16\\fedavg_single_client_clients3_round20of20_spc24_target0_local1_e920201510be97a8\\global_topk\\keep_0p8.pickle",
+  "source_file_hash": "2e000ba38a3a60c2146af2790976762d72ce0abca874bbee6492c323b29de934",
+  "source_fp32_update_hash": "b5a99e7d173bf10cdc8e7f0348bb0edffac086bc5e1e552af7c08f8be395f255",
+  "source_recorded_lossless": true,
+  "tau_policy": "topk_threshold",
+  "update_file": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\cora_fedavg_single_client_cpa\\outputs_v1\\shared_fp32_controls\\imagenet_vgg16_round20_target0_spc24_sharedfp32\\global_topk\\keep_0p8.pickle"
+}

@@ -1,0 +1,112 @@
+{
+  "task_id": "CPA_SIGNED_CELL_VALIDATION_REPAIR_20260915",
+  "plan_version": 1,
+  "status": "COMPLETED",
+  "full_experiment_status": "FULL_EXPERIMENT_NOT_RUN",
+  "runtime": {
+    "model": "gpt-5.6-luna",
+    "reasoning_effort": "xhigh",
+    "thread_id": "01a09e4d-51f3-7121-84e2-03a7a9ac3039",
+    "pid": 18272,
+    "settings_verified": true
+  },
+  "handoff": {
+    "pre_claim_snapshot_sha256": "87e761304331f456c79d7e80bd47c57ddd621dea901eb446672f8ece33141678",
+    "pre_claim_state": "READY_UNCLAIMED",
+    "claim_state": "RUNNING",
+    "completion_state": "COMPLETED",
+    "claimed_by": "01a09e4d-51f3-7121-84e2-03a7a9ac3039",
+    "completed_by": "01a09e4d-51f3-7121-84e2-03a7a9ac3039",
+    "report": ".ai/execution-results/CPA_SIGNED_CELL_VALIDATION_REPAIR_20260915/report.md"
+  },
+  "repairs": {
+    "V1_initialization_presence_type_sha_runtime": "COMPLETED",
+    "V2_registration_result_declared_arm_cross_check": "COMPLETED",
+    "V3_finalized_offline_true_g_relative_error": "COMPLETED"
+  },
+  "pre_fix_hole_reproduction": {
+    "script": ".ai/execution-results/CPA_SIGNED_CELL_VALIDATION_REPAIR_20260915/pre_fix_hole_reproduction.py",
+    "stdout": ".ai/execution-results/CPA_SIGNED_CELL_VALIDATION_REPAIR_20260915/pre_fix_hole_reproduction.stdout.log",
+    "exit_code": 0,
+    "observations": {
+      "old_missing_runtime_equal": true,
+      "old_bool_int_equal": true,
+      "old_registration_result_partial_check": true,
+      "old_ap0_ap5_declared_contract": null,
+      "old_zero_reference": "ZeroDivisionError",
+      "repaired_zero_status": "UNDEFINED_ZERO_REFERENCE_NORM",
+      "repaired_zero_relative": null
+    }
+  },
+  "tests": [
+    {
+      "name": "focused_signed_cell_validation",
+      "command": "C:/miniconda/envs/DLG/python.exe -m pytest quantization_aware_cpa/tests/test_signed_cell_rank.py quantization_aware_cpa/tests/test_signed_cell_rank_pipeline.py quantization_aware_cpa/tests/test_signed_cell_rank_validation.py -q --basetemp C:/Users/조상제/Desktop/CPA/.tmp_pytest_signed_cell_validation_repair_07",
+      "status": "PASS",
+      "passed": 43,
+      "failed": 0,
+      "duration_seconds": 6.75,
+      "exit_code": 0,
+      "stdout": ".ai/execution-results/CPA_SIGNED_CELL_VALIDATION_REPAIR_20260915/tests_focused_final.stdout.log"
+    },
+    {
+      "name": "existing_codec_adapter_provenance_regression",
+      "command": "C:/miniconda/envs/DLG/python.exe -m pytest quantized_update_cpa/tests/test_cell_utils.py quantization_aware_cpa/tests/test_upstream_naive.py quantization_aware_cpa/tests/test_signed_baseline_provenance.py -q --basetemp C:/Users/조상제/Desktop/CPA/.tmp_pytest_validation_existing_final",
+      "status": "PASS",
+      "passed": 109,
+      "failed": 0,
+      "duration_seconds": 4.83,
+      "exit_code": 0,
+      "stdout": ".ai/execution-results/CPA_SIGNED_CELL_VALIDATION_REPAIR_20260915/tests_existing_final.stdout.log"
+    },
+    {
+      "name": "syntax_compilation",
+      "status": "PASS",
+      "exit_code": 0,
+      "stdout": ".ai/execution-results/CPA_SIGNED_CELL_VALIDATION_REPAIR_20260915/syntax_01.stdout.log"
+    },
+    {
+      "name": "actual_baseline_initialization_runtime",
+      "status": "PASS",
+      "exit_code": 0,
+      "warn_only": true,
+      "stdout": ".ai/execution-results/CPA_SIGNED_CELL_VALIDATION_REPAIR_20260915/baseline_runtime_check_02.stdout.log"
+    },
+    {
+      "name": "protected_hash_check",
+      "status": "PASS",
+      "protected_match": true,
+      "exit_code": 0,
+      "stdout": ".ai/execution-results/CPA_SIGNED_CELL_VALIDATION_REPAIR_20260915/protected_hash_check_final.stdout.log"
+    }
+  ],
+  "protected_source_hashes": {
+    "protected_match": true,
+    "signed_cell_rank_sha256": "7ae6deb49738914f4cd1f9328397400d89835ede4cd6a462b2ea260a77ae4acb",
+    "manifest": ".ai/execution-results/CPA_SIGNED_CELL_VALIDATION_REPAIR_20260915/protected_hashes.json"
+  },
+  "changed_files": [
+    "quantization_aware_cpa/qacpa/signed_cell_rank_evaluation.py",
+    "quantization_aware_cpa/qacpa/signed_cell_rank_runner.py",
+    "quantization_aware_cpa/tests/test_signed_cell_rank_pipeline.py",
+    "quantization_aware_cpa/tests/test_signed_cell_rank_validation.py",
+    "quantization_aware_cpa/docs/signed_cell_rank_comparison.md",
+    ".ai/execution-results/CPA_SIGNED_CELL_VALIDATION_REPAIR_20260915/report.md",
+    ".ai/execution-results/CPA_SIGNED_CELL_VALIDATION_REPAIR_20260915/results.json"
+  ],
+  "planner_binding": {
+    "thread_id": "01a09ac2-0e8d-7f90-94a8-c45be99f4343",
+    "pid": 12728,
+    "process_verified": true,
+    "recent_delivery_verified": true,
+    "final_delivery": "CONFIRMED",
+    "receipt": "Queued message 01a0a161-5e3b-71c3-a6f5-43fd09b1bee0 for thread 01a09ac2-0e8d-7f90-94a8-c45be99f4343.",
+    "notice": ".ai/execution-results/CPA_SIGNED_CELL_VALIDATION_REPAIR_20260915/planner_final_notice.txt"
+  },
+  "limitations": [
+    "FULL_EXPERIMENT_NOT_RUN",
+    "No real observation/private tensor was loaded",
+    "No GPU comparison, reconstruction, or scientific improvement claim",
+    "Synthetic/mock fixtures and existing adapter/provenance regressions only"
+  ]
+}

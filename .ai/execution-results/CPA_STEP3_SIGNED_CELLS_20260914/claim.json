@@ -1,0 +1,15 @@
+{
+  "task_id": "CPA_STEP3_SIGNED_CELLS_20260914",
+  "plan_version": 1,
+  "session_id": "01a09e4d-51f3-7121-84e2-03a7a9ac3039",
+  "started_at_utc": "2026-09-14T06:23:40.345735+00:00",
+  "model": "gpt-6-astra",
+  "effort": "high",
+  "runtime_evidence": "current session JSONL turn_context; cli_version 0.153.4",
+  "seed": 20260914,
+  "source_hashes_before": {
+    "quantized_update_cpa/quantization.py": "ae0f812c7de3de07cce3796c701475d6fc3e0a822f7d6dd8ab951d34201e3ceb",
+    ".ai/STATE.md": "7d28f690b6364b791e14c4ab8164ec708cc88201485e956081594a5278c6e446",
+    ".ai/RELAY.md": "003e78b6a78a5b967644e709b8dfedc1cba8a97a76bb289baef18428612426e2"
+  }
+}

@@ -1,0 +1,10 @@
+[CPA final result | one-time completion handoff]
+TASK_ID: CPA_SIGNED_INT8_RANDOMIZED8_SCREEN3_FIA_20260917
+Status: PARTIAL / FAILED DURING PUBLIC CONTINUATION
+Report: .ai/execution-results/CPA_SIGNED_INT8_RANDOMIZED8_SCREEN3_FIA_20260917/report.md
+Execution summary: .ai/execution-results/CPA_SIGNED_INT8_RANDOMIZED8_SCREEN3_FIA_20260917/execution_summary.json
+Final audit: .ai/execution-results/CPA_SIGNED_INT8_RANDOMIZED8_SCREEN3_FIA_20260917/final_audit.json
+
+Registration, sender INT8 conversion, nine ICA separations, center FIA25000, eight FIA5000 screens and public top3 selection completed. The frozen top3 were members 1, 7 and 5. Member 1 completed its 20,000-step continuation and a bound raw checkpoint at total25000; the child writer then failed before candidate/result export because it incorrectly required a new prefix checkpoint. The saved run executed 85,000 of 125,000 registered FIA updates. Members 7 and 5 continuation and private evaluation were not run. No rerun, extra arm, tuning or private feedback occurred. Sender true-update consumption is reported separately; attack used public inputs only. Actual-image cell feasibility: NOT_EVALUATED.
+
+Please show this result once and end your turn without starting new work.

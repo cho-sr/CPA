@@ -1,0 +1,3 @@
+keep_ratio,final_accuracy,final_top5,best_accuracy,best_top5,best_round,final_val_loss,final_train_loss,average_sparse_relative_l2,average_sparse_cosine_similarity_to_fp32
+1.0,1.0,1.0,1.0,1.0,1,0.8880410995916463,0.1089303195476532,0.0,1.0
+0.5,1.0,1.0,1.0,1.0,1,0.8878774832119234,0.1089303195476532,0.0,1.0

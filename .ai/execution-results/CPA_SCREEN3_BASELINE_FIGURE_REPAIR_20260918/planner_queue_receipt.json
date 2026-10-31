@@ -1,0 +1,10 @@
+{
+  "task_id": "CPA_SCREEN3_BASELINE_FIGURE_REPAIR_20260918",
+  "planner_thread": "01a0a799-d62c-7ab0-9c2a-628acf6d2c95",
+  "status": "QUEUED",
+  "queue_exit_code": 0,
+  "stdout": "Queued message 01a0b2cd-f8bc-7ef3-984d-c2c1d1f70734 for thread 01a0a799-d62c-7ab0-9c2a-628acf6d2c95.\n",
+  "stderr": "",
+  "queued_at_epoch": 1789706238.2031276,
+  "report": "C:/Users/조상제/Desktop/CPA/.ai/execution-results/CPA_SCREEN3_BASELINE_FIGURE_REPAIR_20260918/report.md"
+}

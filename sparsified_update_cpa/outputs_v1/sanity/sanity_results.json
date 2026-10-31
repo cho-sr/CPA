@@ -1,0 +1,384 @@
+{
+  "test_10_blind_medoid_alignment_no_oracle_args": {
+    "detail": {
+      "signature": "(members: 'list[np.ndarray | torch.Tensor]') -> 'tuple[np.ndarray, np.ndarray, dict[str, Any]]'",
+      "stats": {
+        "alignment_mean_abs_cosine": 0.9999999999991145,
+        "alignment_min_abs_cosine": 0.999999999997,
+        "final_embeddings_policy": "blind_medoid_alignment_then_mean_and_positive_energy_sign",
+        "global_sign": {
+          "flipped_count": 2,
+          "policy": "blind_positive_energy_global_sign",
+          "signs": [
+            1.0,
+            -1.0,
+            1.0,
+            -1.0
+          ]
+        },
+        "medoid_index": 1,
+        "medoid_scores": [
+          0.9999999999981144,
+          0.9999999999983438
+        ],
+        "member_alignment": [
+          {
+            "least_squares_scales": [
+              2.9999999999969997,
+              -1.9999999999979998,
+              0.49999999999949996,
+              -3.9999999999959996
+            ],
+            "max_abs_cosine": 0.9999999999987499,
+            "mean_abs_cosine": 0.9999999999982291,
+            "member": 0,
+            "min_abs_cosine": 0.999999999997,
+            "permutation_reference_to_member": [
+              2,
+              0,
+              3,
+              1
+            ]
+          },
+          {
+            "least_squares_scales": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "max_abs_cosine": 1.0,
+            "mean_abs_cosine": 1.0,
+            "member": 1,
+            "min_abs_cosine": 1.0,
+            "permutation_reference_to_member": [
+              0,
+              1,
+              2,
+              3
+            ]
+          }
+        ],
+        "members": 2,
+        "oracle_inputs_used": false,
+        "policy": "blind_medoid_by_member_to_member_abs_cosine"
+      }
+    },
+    "passed": true
+  },
+  "test_1_global_topk_exact_mask_count": {
+    "detail": {
+      "keep_ratio": 0.5,
+      "mask_kept_elements": 4,
+      "missing_value_abs_upper_bound": 3.0,
+      "observed_zero_policy": "zeros_are_treated_as_true_observed_update_values",
+      "per_tensor": [
+        {
+          "mask_fraction": 0.25,
+          "mask_kept_elements": 1,
+          "name": "a",
+          "original_nonzero_elements": 3,
+          "selected_original_zero_elements": 0,
+          "shape": [
+            1,
+            4
+          ],
+          "stored_nonzero_elements": 1,
+          "stored_nonzero_fraction": 0.25,
+          "total_elements": 4
+        },
+        {
+          "mask_fraction": 0.75,
+          "mask_kept_elements": 3,
+          "name": "b",
+          "original_nonzero_elements": 3,
+          "selected_original_zero_elements": 0,
+          "shape": [
+            4
+          ],
+          "stored_nonzero_elements": 3,
+          "stored_nonzero_fraction": 0.75,
+          "total_elements": 4
+        }
+      ],
+      "sparse_cosine_similarity_to_fp32": 0.9721393585205078,
+      "sparse_energy_retained": 0.9450549483299255,
+      "sparse_mask_fraction": 0.5,
+      "sparse_nonzero_fraction": 0.5,
+      "sparse_relative_l2": 0.2344036102294922,
+      "sparse_retained_l2_norm_ratio": 0.9721393585205078,
+      "sparsification_policy": "global_topk",
+      "stored_nonzero_elements": 4,
+      "topk_threshold_abs": 3.0,
+      "total_elements": 8
+    },
+    "passed": true
+  },
+  "test_2_mask_count_authoritative_when_original_zeros_exist": {
+    "detail": {
+      "keep_ratio": 1.0,
+      "mask_kept_elements": 4,
+      "missing_value_abs_upper_bound": 0.0,
+      "observed_zero_policy": "zeros_are_treated_as_true_observed_update_values",
+      "per_tensor": [
+        {
+          "mask_fraction": 1.0,
+          "mask_kept_elements": 4,
+          "name": "a",
+          "original_nonzero_elements": 2,
+          "selected_original_zero_elements": 2,
+          "shape": [
+            4
+          ],
+          "stored_nonzero_elements": 2,
+          "stored_nonzero_fraction": 0.5,
+          "total_elements": 4
+        }
+      ],
+      "sparse_cosine_similarity_to_fp32": 1.0,
+      "sparse_energy_retained": 1.0,
+      "sparse_mask_fraction": 1.0,
+      "sparse_nonzero_fraction": 0.5,
+      "sparse_relative_l2": 0.0,
+      "sparse_retained_l2_norm_ratio": 1.0,
+      "sparsification_policy": "global_topk",
+      "stored_nonzero_elements": 2,
+      "topk_threshold_abs": 0.0,
+      "total_elements": 4
+    },
+    "passed": true
+  },
+  "test_3_sparse_artifact_dense_zero_filled_contract": {
+    "detail": {
+      "dense_arrays": true,
+      "dense_zero_filled": true,
+      "metadata_subset": {
+        "keep_ratio": 0.5,
+        "observed_zero_policy": "zeros_are_treated_as_true_observed_update_values",
+        "source_fp32_update_hash": "c94b44fa0c2c93cde7f0377e50f42c1382e3d778a8c90842a0b53614d90467bb",
+        "sparse_cosine_similarity_to_fp32": 0.9721393585205078,
+        "sparse_nonzero_fraction": 0.5,
+        "sparse_relative_l2": 0.2344036102294922,
+        "sparsification_policy": "global_topk"
+      },
+      "shapes": [
+        [
+          1,
+          4
+        ],
+        [
+          4
+        ]
+      ],
+      "sparse_path": "sparsified_update_cpa\\outputs_v1\\sanity\\synthetic_sparse_keep0p5.pickle"
+    },
+    "passed": true
+  },
+  "test_4_metric_summary_emits_required_metrics": {
+    "detail": [
+      {
+        "max": 0.6,
+        "mean": 0.5,
+        "metric": "lpips",
+        "min": 0.4,
+        "n": 2,
+        "std": 0.09999999999999998,
+        "threshold": null
+      },
+      {
+        "max": 22.0,
+        "mean": 20.0,
+        "metric": "psnr",
+        "min": 18.0,
+        "n": 2,
+        "std": 2.0,
+        "threshold": null
+      },
+      {
+        "max": 0.3,
+        "mean": 0.2,
+        "metric": "ssim",
+        "min": 0.1,
+        "n": 2,
+        "std": 0.09999999999999999,
+        "threshold": null
+      },
+      {
+        "max": 0.9,
+        "mean": 0.8500000000000001,
+        "metric": "embedding_cosine_similarity",
+        "min": 0.8,
+        "n": 2,
+        "std": 0.04999999999999999,
+        "threshold": null
+      },
+      {
+        "max": 1.0,
+        "mean": 0.5,
+        "metric": "reconstruction_success_rate",
+        "min": 0.0,
+        "n": 2,
+        "std": 0.5,
+        "threshold": 0.5
+      }
+    ],
+    "passed": true
+  },
+  "test_5_client_then_aggregate_stats_and_spectrum_contract": {
+    "detail": {
+      "aggregate_level": {
+        "attack_layer": {
+          "cosine_similarity_to_fp32": 0.9746317863464355,
+          "name": "attack.weight",
+          "nonzero_fraction": 0.5,
+          "relative_l2_to_fp32": 0.25482359528541565,
+          "retained_l2_norm_ratio": 0.8528028726577759
+        },
+        "global": {
+          "cosine_similarity_to_fp32": 0.9714827537536621,
+          "nonzero_fraction": 0.375,
+          "relative_l2_to_fp32": 0.26639771461486816,
+          "retained_l2_norm_ratio": 0.8500474691390991
+        }
+      },
+      "client_level": {
+        "attack_layer_mask_fraction": {
+          "max": 0.6666666666666666,
+          "mean": 0.6666666666666666,
+          "min": 0.6666666666666666,
+          "std": 0.0
+        },
+        "attack_layer_nonzero_fraction": {
+          "max": 0.6666666666666666,
+          "mean": 0.6666666666666666,
+          "min": 0.6666666666666666,
+          "std": 0.0
+        },
+        "global_cosine_similarity_to_client_fp32": {
+          "max": 0.9857281446456909,
+          "mean": 0.980814129114151,
+          "min": 0.9759001135826111,
+          "std": 0.004914015531539917
+        },
+        "global_mask_fraction": {
+          "max": 0.5,
+          "mean": 0.5,
+          "min": 0.5,
+          "std": 0.0
+        },
+        "global_nonzero_fraction": {
+          "max": 0.5,
+          "mean": 0.5,
+          "min": 0.5,
+          "std": 0.0
+        },
+        "global_relative_l2": {
+          "max": 0.2182179093360901,
+          "mean": 0.19328152388334274,
+          "min": 0.1683451384305954,
+          "std": 0.024936385452747345
+        },
+        "global_retained_l2_norm_ratio": {
+          "max": 0.9857281446456909,
+          "mean": 0.980814129114151,
+          "min": 0.9759001135826111,
+          "std": 0.004914015531539917
+        },
+        "num_clients": 2
+      },
+      "identity_mask_fractions": [
+        1.0,
+        1.0
+      ],
+      "packed_masks_empty": true,
+      "spectrum_keys": [
+        "bottom_covariance_eigenvalues",
+        "bottom_singular_values",
+        "condition_number",
+        "covariance_eigenvalues_descending",
+        "covariance_eigenvalues_summary",
+        "covariance_shape",
+        "effective_rank",
+        "matrix_shape",
+        "numerical_rank",
+        "rank_tolerance",
+        "row_zero_centered",
+        "singular_values_descending",
+        "singular_values_summary",
+        "top_covariance_eigenvalues",
+        "top_singular_values"
+      ]
+    },
+    "passed": true
+  },
+  "test_6_randomized_desparse_preserves_observed_and_bounds_dropped": {
+    "detail": {
+      "sample": [
+        [
+          10.0,
+          -0.22308948636054993,
+          -2.0
+        ],
+        [
+          -0.15781410038471222,
+          4.0,
+          0.1560472548007965
+        ]
+      ],
+      "tau": 0.25
+    },
+    "passed": true
+  },
+  "test_7_attack_layer_only_topk_matches_full_sparse": {
+    "detail": {
+      "mask": [
+        [
+          false,
+          true,
+          false
+        ],
+        [
+          false,
+          true,
+          false
+        ]
+      ],
+      "tau": 4.0,
+      "values": [
+        -7.0,
+        -5.0
+      ]
+    },
+    "passed": true
+  },
+  "test_8_randomized_desparse_same_seed_reproducible_different_seed_varies": {
+    "detail": {
+      "seed7": [
+        1.0,
+        0.39721378684043884,
+        -3.0,
+        -0.2747928202152252
+      ],
+      "seed8": [
+        1.0,
+        0.4872768521308899,
+        -3.0,
+        0.28854894638061523
+      ]
+    },
+    "passed": true
+  },
+  "test_9_randomized_desparse_keep1_degenerates_to_identity": {
+    "detail": [
+      [
+        1.0,
+        -2.0
+      ],
+      [
+        3.0,
+        -4.0
+      ]
+    ],
+    "passed": true
+  }
+}

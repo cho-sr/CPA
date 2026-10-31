@@ -1,0 +1,12 @@
+source,round,seed,batch_index,n,T,bits,scale_granularity,prediction,measured,aggregation_axis
+m5_uia_beff_validation,0,0,0,32,1,4,per_row,24,24,seeds_on_batch0
+m5_uia_beff_validation,0,1,0,32,1,4,per_row,19,19,seeds_on_batch0
+m5_uia_beff_validation,0,2,0,32,1,4,per_row,19,19,seeds_on_batch0
+m5_uia_beff_validation,0,0,0,32,10,4,per_row,24,24,seeds_on_batch0
+m5_uia_beff_validation,0,1,0,32,10,4,per_row,19,19,seeds_on_batch0
+m5_uia_beff_validation,0,2,0,32,10,4,per_row,19,19,seeds_on_batch0
+m6_round_dependence,0,0,0,32,1,4,per_row,24,,batches_on_seed0
+m6_round_dependence,0,0,1,32,1,4,per_row,25,,batches_on_seed0
+m6_round_dependence,0,0,2,32,1,4,per_row,22,,batches_on_seed0
+m6_round_dependence,0,0,3,32,1,4,per_row,21,,batches_on_seed0
+m6_round_dependence,0,0,4,32,1,4,per_row,14,,batches_on_seed0

@@ -1,0 +1,18 @@
+{
+  "run_tag": "m7_consistency_audit",
+  "outputs": {
+    "spearman_main.csv": "125c174072dbe43e4da4675e9dd49dae794024c0ca6ad5d034ccf067c21062dd",
+    "spearman_history.csv": "e0d6cc0271b595280fb265a373260685ac65d365b82012760945d8bd2d5f02af",
+    "spearman_per_image.csv": "68e836fd4cbc99ac86a75db55a470516e19cc630d01ec6c38e52d097cd35449d",
+    "beff_cells.csv": "8fb3898b53118923f7e757bd2b4461a059c3aff440ee48681fbc67158c632956",
+    "beff_recount.csv": "47599e9846cbc7bb3e214e2d42c2b2dd864f8050bc767295894fb681635a9889",
+    "n32_prediction_cells.csv": "1dbdd6afb2125b069e3fc8604793036ce0fae271adcd449dd7537fa876e137be",
+    "n32_axis_comparison.csv": "3cc12f4c9926d161056ca6022e92f3d135c307ed0bf6109c5c8659d100282d01",
+    "loss_vs_lpips_main.png": "88728db8e73cc14065e70c8ba7ac52b6a367e27f453c1f97ef726f705981b5b6",
+    "predicted_vs_measured_beff_square.png": "db2a60d84a7370c1674453e607a22bae11fe271f401528a5ad1617e7335ff999",
+    "predicted_vs_measured_beff_square.pdf": "f6b3e38e7a73cc94737f577f131edc360e5d1c81b3746be5d56568e464b58357",
+    "report.md": "f229582b172dd5215a18f8fa72a86f932a0de8ce60f34494f40ca8c1cafe5287",
+    "summary.json": "cd0091e5ff15969d8e5955821973987e3c486d177a6e59ea3fd2c70ce5252d2b",
+    "input_manifest.json": "6845101c325ea3bdf323073a225591e6d8bb26b2904e7b0cfab68a01ac2e5ab9"
+  }
+}

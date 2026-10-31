@@ -75,8 +75,16 @@ class VictimBatch:
         )
 
 
-def victim_cache_path(cache_dir: str | Path, *, seed: int, B: int, batch_index: int) -> Path:
-    return Path(cache_dir) / f"victim_seed{seed}_B{B}_batch{batch_index}.pt"
+def victim_cache_path(
+    cache_dir: str | Path,
+    *,
+    seed: int,
+    B: int,
+    batch_index: int,
+    require_distinct_labels: bool = True,
+) -> Path:
+    suffix = "" if require_distinct_labels else "_labelsmixed"
+    return Path(cache_dir) / f"victim_seed{seed}_B{B}_batch{batch_index}{suffix}.pt"
 
 
 def load_or_collect_victim_batch(
@@ -88,8 +96,15 @@ def load_or_collect_victim_batch(
     seed = int(config["seed"])
     data_cfg = config["data"]
     B = int(data_cfg["batch_size"])
+    require_distinct = bool(data_cfg.get("require_distinct_labels", True))
     cache_dir = Path(config["paths"]["cache_dir"])
-    path = victim_cache_path(cache_dir, seed=seed, B=B, batch_index=batch_index)
+    path = victim_cache_path(
+        cache_dir,
+        seed=seed,
+        B=B,
+        batch_index=batch_index,
+        require_distinct_labels=require_distinct,
+    )
     if path.is_file() and not force:
         return VictimBatch.from_cache_dict(torch.load(path, map_location="cpu"))
 
@@ -100,7 +115,8 @@ def load_or_collect_victim_batch(
         B=B,
         seed=seed,
         batch_index=batch_index,
-        require_distinct_labels=bool(data_cfg.get("require_distinct_labels", True)),
+        require_distinct_labels=require_distinct,
+        microbatch_size=int(data_cfg.get("microbatch_size", B)),
         device=resolve_device(str(config.get("device", "auto"))),
     )
     torch.save(batch.as_cache_dict(), path)
@@ -122,9 +138,16 @@ def collect_victim_batch(
     batch_index: int,
     device: torch.device,
     require_distinct_labels: bool = True,
+    microbatch_size: int | None = None,
 ) -> VictimBatch:
     dataset = load_imagenet_dataset(data_root, split)
-    indices = select_distinct_label_indices(dataset, B=B, seed=seed, batch_index=batch_index)
+    indices = select_label_indices(
+        dataset,
+        B=B,
+        seed=seed,
+        batch_index=batch_index,
+        require_distinct_labels=require_distinct_labels,
+    )
     samples = [dataset[int(idx)] for idx in indices]
     x = torch.stack([sample[0] for sample in samples], dim=0)
     labels = torch.tensor([int(sample[1]) for sample in samples], dtype=torch.long)
@@ -136,6 +159,7 @@ def collect_victim_batch(
         x=x,
         labels=labels,
         device=device,
+        microbatch_size=microbatch_size,
     )
     return VictimBatch(
         x=x.cpu().float(),
@@ -196,6 +220,27 @@ def select_distinct_label_indices(dataset, *, B: int, seed: int, batch_index: in
     return selected_indices
 
 
+def select_label_indices(dataset, *, B: int, seed: int, batch_index: int, require_distinct_labels: bool) -> list[int]:
+    targets = getattr(dataset, "targets", None)
+    if targets is None:
+        targets = [int(sample[1]) for sample in dataset.samples]
+
+    by_label: dict[int, list[int]] = defaultdict(list)
+    for idx, target in enumerate(targets):
+        by_label[int(target)].append(int(idx))
+    labels = [label for label, values in by_label.items() if values]
+    if not labels:
+        raise ValueError("dataset contains no labeled samples")
+    if require_distinct_labels:
+        return select_distinct_label_indices(dataset, B=B, seed=seed, batch_index=batch_index)
+
+    all_indices = list(range(len(targets)))
+    rng = random.Random(int(seed))
+    rng.shuffle(all_indices)
+    start = int(batch_index) * int(B)
+    return [all_indices[(start + offset) % len(all_indices)] for offset in range(int(B))]
+
+
 def _sample_path(dataset, idx: int) -> str:
     samples = getattr(dataset, "samples", None) or getattr(dataset, "imgs", None)
     if samples is None:
@@ -208,6 +253,7 @@ def compute_vgg16_attack_layer_factorization(
     x: torch.Tensor,
     labels: torch.Tensor,
     device: torch.device,
+    microbatch_size: int | None = None,
 ) -> tuple[torch.Tensor, torch.Tensor, torch.Tensor, torch.Tensor, float, torch.Tensor]:
     from torchvision.models import VGG16_Weights, vgg16
 
@@ -220,29 +266,49 @@ def compute_vgg16_attack_layer_factorization(
     attacked = model.classifier[0]
     attacked.weight.requires_grad_(True)
 
-    x_dev = x.to(device)
-    labels_dev = labels.to(device)
-    with torch.enable_grad():
-        features = model.features(x_dev)
-        pooled = model.avgpool(features)
-        z = torch.flatten(pooled, 1)
-        hidden = attacked(z)
-        hidden.retain_grad()
-        logits = model.classifier[1:](hidden)
-        per_sample_loss = F.cross_entropy(logits, labels_dev, reduction="none")
-        loss = per_sample_loss.mean()
-        model.zero_grad(set_to_none=True)
-        loss.backward()
+    B = int(x.shape[0])
+    chunk_size = int(B if microbatch_size is None else microbatch_size)
+    if chunk_size <= 0:
+        raise ValueError(f"microbatch_size must be positive, got {microbatch_size}")
+    chunk_size = min(chunk_size, B)
 
-    if attacked.weight.grad is None or hidden.grad is None:
+    z_chunks: list[torch.Tensor] = []
+    a_chunks: list[torch.Tensor] = []
+    logits_chunks: list[torch.Tensor] = []
+    loss_chunks: list[torch.Tensor] = []
+    model.zero_grad(set_to_none=True)
+    with torch.enable_grad():
+        for start in range(0, B, chunk_size):
+            stop = min(start + chunk_size, B)
+            x_dev = x[start:stop].to(device)
+            labels_dev = labels[start:stop].to(device)
+            features = model.features(x_dev)
+            pooled = model.avgpool(features)
+            z = torch.flatten(pooled, 1)
+            hidden = attacked(z)
+            hidden.retain_grad()
+            logits = model.classifier[1:](hidden)
+            per_sample_loss_chunk = F.cross_entropy(logits, labels_dev, reduction="none")
+            loss_chunk = per_sample_loss_chunk.sum() / float(B)
+            loss_chunk.backward()
+            if hidden.grad is None:
+                raise GateFailure("missing attacked-layer hidden gradients")
+            z_chunks.append(z.detach().cpu().float())
+            a_chunks.append(hidden.grad.detach().T.cpu().float())
+            logits_chunks.append(logits.detach().cpu().float())
+            loss_chunks.append(per_sample_loss_chunk.detach().cpu().float())
+
+    if attacked.weight.grad is None:
         raise GateFailure("missing attacked-layer gradients")
 
-    S_true = z.detach().cpu().float().contiguous()
+    S_true = torch.cat(z_chunks, dim=0).contiguous()
     if float(S_true.min()) < -1.0e-7:
         raise GateFailure(f"VGG16 source nonnegativity failed: min={float(S_true.min())}")
 
-    A_true = hidden.grad.detach().T.cpu().float().contiguous()
+    A_true = torch.cat(a_chunks, dim=1).contiguous()
     Y = attacked.weight.grad.detach().cpu().float().contiguous()
+    logits = torch.cat(logits_chunks, dim=0).contiguous()
+    per_sample_loss = torch.cat(loss_chunks, dim=0).contiguous()
     Y_factor = A_true.matmul(S_true)
     if Y.shape != ATTACK_LAYER_SHAPE:
         raise GateFailure(f"unexpected attacked-layer shape: {tuple(Y.shape)}")
@@ -255,7 +321,7 @@ def compute_vgg16_attack_layer_factorization(
         S_true,
         Y,
         logits.detach().cpu().float(),
-        float(loss.detach().cpu()),
+        float(per_sample_loss.mean().detach().cpu()),
         per_sample_loss.detach().cpu().float(),
     )
 

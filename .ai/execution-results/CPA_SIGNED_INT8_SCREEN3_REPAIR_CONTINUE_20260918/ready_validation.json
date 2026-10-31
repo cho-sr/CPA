@@ -1,0 +1,18 @@
+{
+  "status": "READY_VALIDATED",
+  "task_id": "CPA_SIGNED_INT8_SCREEN3_REPAIR_CONTINUE_20260918",
+  "parent_registration_sha256": "d974ad6075bdf3dbb5607ec914d992957a26d537a83483e98f70c370242ea3fb",
+  "parent_selection_sha256": "9c6a24bd73d0d9fb4ea752316b3a77e05779b6ae4152c090c229ca2b1d2a8683",
+  "parent_fia_source_sha256": "ab36aef2990fc7c0c11f4a0abcd1bc162e6a5896c91e7bbb3e71176c55849a95",
+  "parent_runner_source_sha256": "2b718a7203ca47e2b09773bdb344b7ee8b074ca5429d37a7cf58dced1f6b23e2",
+  "inherited_manifest_sha256": "331e55e45e7c59c8fccbf667caedb19b8ca480b181b2db802ad02de4d802831c",
+  "inherited_source_count": 9,
+  "inherited_candidate_count": 10,
+  "frozen_selection": [
+    1,
+    7,
+    5
+  ],
+  "private_loaded": false,
+  "remaining_budget_seconds": 5399.606889200048
+}

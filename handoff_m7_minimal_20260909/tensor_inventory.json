@@ -1,0 +1,672 @@
+[
+  {
+    "relative_path": "quantization_aware_cpa/results/m7_uia_4bit_B16/batch00/inputs.pt",
+    "load_mode": "weights_only=True, map_location=meta",
+    "structure": {
+      "x": {
+        "shape": [
+          16,
+          3,
+          224,
+          224
+        ],
+        "dtype": "torch.float32"
+      },
+      "Z_evaluation_only": {
+        "shape": [
+          16,
+          25088
+        ],
+        "dtype": "torch.float32"
+      },
+      "metadata": {
+        "type": "list",
+        "length": 16,
+        "item_schema": {
+          "global_index": {
+            "type": "int"
+          },
+          "batch_index": {
+            "type": "int"
+          },
+          "source_index": {
+            "type": "int"
+          },
+          "dataset_index": {
+            "type": "int"
+          },
+          "label": {
+            "type": "int"
+          },
+          "image_path": {
+            "type": "str"
+          },
+          "initial_per_sample_loss": {
+            "type": "float"
+          }
+        }
+      },
+      "feature_cache_path": {
+        "type": "str"
+      },
+      "feature_cache_sha256": {
+        "type": "str"
+      },
+      "victim_cache_path": {
+        "type": "str"
+      },
+      "victim_cache_sha256": {
+        "type": "str"
+      },
+      "wall_time_sec": {
+        "type": "float"
+      }
+    }
+  },
+  {
+    "relative_path": "quantization_aware_cpa/results/m7_uia_4bit_B16/batch00/rec.pt",
+    "load_mode": "weights_only=True, map_location=meta",
+    "structure": {
+      "shape": [
+        16,
+        3,
+        224,
+        224
+      ],
+      "dtype": "torch.float32"
+    }
+  },
+  {
+    "relative_path": "quantization_aware_cpa/results/m7_uia_4bit_B16/batch00/quantized.pt",
+    "load_mode": "weights_only=True, map_location=meta",
+    "structure": {
+      "Y_hat": {
+        "shape": [
+          4096,
+          25088
+        ],
+        "dtype": "torch.float32"
+      },
+      "delta": {
+        "shape": [
+          4096
+        ],
+        "dtype": "torch.float32"
+      },
+      "diagnostics": {
+        "quantization_seed": {
+          "type": "int"
+        },
+        "relative_l2": {
+          "type": "float"
+        },
+        "mse": {
+          "type": "float"
+        },
+        "max_abs": {
+          "type": "float"
+        },
+        "empirical_error_mean": {
+          "type": "float"
+        },
+        "theoretical_mean_variance": {
+          "type": "float"
+        },
+        "delta_min": {
+          "type": "float"
+        },
+        "delta_mean": {
+          "type": "float"
+        },
+        "delta_max": {
+          "type": "float"
+        },
+        "zero_scale_rows": {
+          "type": "int"
+        },
+        "cell_membership": {
+          "type": "bool"
+        }
+      },
+      "wall_time_sec": {
+        "type": "float"
+      }
+    }
+  },
+  {
+    "relative_path": "quantization_aware_cpa/results/m7_uia_4bit_B16/batch01/inputs.pt",
+    "load_mode": "weights_only=True, map_location=meta",
+    "structure": {
+      "x": {
+        "shape": [
+          16,
+          3,
+          224,
+          224
+        ],
+        "dtype": "torch.float32"
+      },
+      "Z_evaluation_only": {
+        "shape": [
+          16,
+          25088
+        ],
+        "dtype": "torch.float32"
+      },
+      "metadata": {
+        "type": "list",
+        "length": 16,
+        "item_schema": {
+          "global_index": {
+            "type": "int"
+          },
+          "batch_index": {
+            "type": "int"
+          },
+          "source_index": {
+            "type": "int"
+          },
+          "dataset_index": {
+            "type": "int"
+          },
+          "label": {
+            "type": "int"
+          },
+          "image_path": {
+            "type": "str"
+          },
+          "initial_per_sample_loss": {
+            "type": "float"
+          }
+        }
+      },
+      "feature_cache_path": {
+        "type": "str"
+      },
+      "feature_cache_sha256": {
+        "type": "str"
+      },
+      "victim_cache_path": {
+        "type": "str"
+      },
+      "victim_cache_sha256": {
+        "type": "str"
+      },
+      "wall_time_sec": {
+        "type": "float"
+      }
+    }
+  },
+  {
+    "relative_path": "quantization_aware_cpa/results/m7_uia_4bit_B16/batch01/rec.pt",
+    "load_mode": "weights_only=True, map_location=meta",
+    "structure": {
+      "shape": [
+        16,
+        3,
+        224,
+        224
+      ],
+      "dtype": "torch.float32"
+    }
+  },
+  {
+    "relative_path": "quantization_aware_cpa/results/m7_uia_4bit_B16/batch01/quantized.pt",
+    "load_mode": "weights_only=True, map_location=meta",
+    "structure": {
+      "Y_hat": {
+        "shape": [
+          4096,
+          25088
+        ],
+        "dtype": "torch.float32"
+      },
+      "delta": {
+        "shape": [
+          4096
+        ],
+        "dtype": "torch.float32"
+      },
+      "diagnostics": {
+        "quantization_seed": {
+          "type": "int"
+        },
+        "relative_l2": {
+          "type": "float"
+        },
+        "mse": {
+          "type": "float"
+        },
+        "max_abs": {
+          "type": "float"
+        },
+        "empirical_error_mean": {
+          "type": "float"
+        },
+        "theoretical_mean_variance": {
+          "type": "float"
+        },
+        "delta_min": {
+          "type": "float"
+        },
+        "delta_mean": {
+          "type": "float"
+        },
+        "delta_max": {
+          "type": "float"
+        },
+        "zero_scale_rows": {
+          "type": "int"
+        },
+        "cell_membership": {
+          "type": "bool"
+        }
+      },
+      "wall_time_sec": {
+        "type": "float"
+      }
+    }
+  },
+  {
+    "relative_path": "quantization_aware_cpa/results/m7_uia_4bit_B16/batch02/inputs.pt",
+    "load_mode": "weights_only=True, map_location=meta",
+    "structure": {
+      "x": {
+        "shape": [
+          16,
+          3,
+          224,
+          224
+        ],
+        "dtype": "torch.float32"
+      },
+      "Z_evaluation_only": {
+        "shape": [
+          16,
+          25088
+        ],
+        "dtype": "torch.float32"
+      },
+      "metadata": {
+        "type": "list",
+        "length": 16,
+        "item_schema": {
+          "global_index": {
+            "type": "int"
+          },
+          "batch_index": {
+            "type": "int"
+          },
+          "source_index": {
+            "type": "int"
+          },
+          "dataset_index": {
+            "type": "int"
+          },
+          "label": {
+            "type": "int"
+          },
+          "image_path": {
+            "type": "str"
+          },
+          "initial_per_sample_loss": {
+            "type": "float"
+          }
+        }
+      },
+      "feature_cache_path": {
+        "type": "str"
+      },
+      "feature_cache_sha256": {
+        "type": "str"
+      },
+      "victim_cache_path": {
+        "type": "str"
+      },
+      "victim_cache_sha256": {
+        "type": "str"
+      },
+      "wall_time_sec": {
+        "type": "float"
+      }
+    }
+  },
+  {
+    "relative_path": "quantization_aware_cpa/results/m7_uia_4bit_B16/batch02/rec.pt",
+    "load_mode": "weights_only=True, map_location=meta",
+    "structure": {
+      "shape": [
+        16,
+        3,
+        224,
+        224
+      ],
+      "dtype": "torch.float32"
+    }
+  },
+  {
+    "relative_path": "quantization_aware_cpa/results/m7_uia_4bit_B16/batch02/quantized.pt",
+    "load_mode": "weights_only=True, map_location=meta",
+    "structure": {
+      "Y_hat": {
+        "shape": [
+          4096,
+          25088
+        ],
+        "dtype": "torch.float32"
+      },
+      "delta": {
+        "shape": [
+          4096
+        ],
+        "dtype": "torch.float32"
+      },
+      "diagnostics": {
+        "quantization_seed": {
+          "type": "int"
+        },
+        "relative_l2": {
+          "type": "float"
+        },
+        "mse": {
+          "type": "float"
+        },
+        "max_abs": {
+          "type": "float"
+        },
+        "empirical_error_mean": {
+          "type": "float"
+        },
+        "theoretical_mean_variance": {
+          "type": "float"
+        },
+        "delta_min": {
+          "type": "float"
+        },
+        "delta_mean": {
+          "type": "float"
+        },
+        "delta_max": {
+          "type": "float"
+        },
+        "zero_scale_rows": {
+          "type": "int"
+        },
+        "cell_membership": {
+          "type": "bool"
+        }
+      },
+      "wall_time_sec": {
+        "type": "float"
+      }
+    }
+  },
+  {
+    "relative_path": "quantization_aware_cpa/results/m7_uia_4bit_B16/batch03/inputs.pt",
+    "load_mode": "weights_only=True, map_location=meta",
+    "structure": {
+      "x": {
+        "shape": [
+          16,
+          3,
+          224,
+          224
+        ],
+        "dtype": "torch.float32"
+      },
+      "Z_evaluation_only": {
+        "shape": [
+          16,
+          25088
+        ],
+        "dtype": "torch.float32"
+      },
+      "metadata": {
+        "type": "list",
+        "length": 16,
+        "item_schema": {
+          "global_index": {
+            "type": "int"
+          },
+          "batch_index": {
+            "type": "int"
+          },
+          "source_index": {
+            "type": "int"
+          },
+          "dataset_index": {
+            "type": "int"
+          },
+          "label": {
+            "type": "int"
+          },
+          "image_path": {
+            "type": "str"
+          },
+          "initial_per_sample_loss": {
+            "type": "float"
+          }
+        }
+      },
+      "feature_cache_path": {
+        "type": "str"
+      },
+      "feature_cache_sha256": {
+        "type": "str"
+      },
+      "victim_cache_path": {
+        "type": "str"
+      },
+      "victim_cache_sha256": {
+        "type": "str"
+      },
+      "wall_time_sec": {
+        "type": "float"
+      }
+    }
+  },
+  {
+    "relative_path": "quantization_aware_cpa/results/m7_uia_4bit_B16/batch03/rec.pt",
+    "load_mode": "weights_only=True, map_location=meta",
+    "structure": {
+      "shape": [
+        16,
+        3,
+        224,
+        224
+      ],
+      "dtype": "torch.float32"
+    }
+  },
+  {
+    "relative_path": "quantization_aware_cpa/results/m7_uia_4bit_B16/batch03/quantized.pt",
+    "load_mode": "weights_only=True, map_location=meta",
+    "structure": {
+      "Y_hat": {
+        "shape": [
+          4096,
+          25088
+        ],
+        "dtype": "torch.float32"
+      },
+      "delta": {
+        "shape": [
+          4096
+        ],
+        "dtype": "torch.float32"
+      },
+      "diagnostics": {
+        "quantization_seed": {
+          "type": "int"
+        },
+        "relative_l2": {
+          "type": "float"
+        },
+        "mse": {
+          "type": "float"
+        },
+        "max_abs": {
+          "type": "float"
+        },
+        "empirical_error_mean": {
+          "type": "float"
+        },
+        "theoretical_mean_variance": {
+          "type": "float"
+        },
+        "delta_min": {
+          "type": "float"
+        },
+        "delta_mean": {
+          "type": "float"
+        },
+        "delta_max": {
+          "type": "float"
+        },
+        "zero_scale_rows": {
+          "type": "int"
+        },
+        "cell_membership": {
+          "type": "bool"
+        }
+      },
+      "wall_time_sec": {
+        "type": "float"
+      }
+    }
+  },
+  {
+    "relative_path": "quantization_aware_cpa/results/m7_uia_4bit_B16/batch04/inputs.pt",
+    "load_mode": "weights_only=True, map_location=meta",
+    "structure": {
+      "x": {
+        "shape": [
+          16,
+          3,
+          224,
+          224
+        ],
+        "dtype": "torch.float32"
+      },
+      "Z_evaluation_only": {
+        "shape": [
+          16,
+          25088
+        ],
+        "dtype": "torch.float32"
+      },
+      "metadata": {
+        "type": "list",
+        "length": 16,
+        "item_schema": {
+          "global_index": {
+            "type": "int"
+          },
+          "batch_index": {
+            "type": "int"
+          },
+          "source_index": {
+            "type": "int"
+          },
+          "dataset_index": {
+            "type": "int"
+          },
+          "label": {
+            "type": "int"
+          },
+          "image_path": {
+            "type": "str"
+          },
+          "initial_per_sample_loss": {
+            "type": "float"
+          }
+        }
+      },
+      "feature_cache_path": {
+        "type": "str"
+      },
+      "feature_cache_sha256": {
+        "type": "str"
+      },
+      "victim_cache_path": {
+        "type": "str"
+      },
+      "victim_cache_sha256": {
+        "type": "str"
+      },
+      "wall_time_sec": {
+        "type": "float"
+      }
+    }
+  },
+  {
+    "relative_path": "quantization_aware_cpa/results/m7_uia_4bit_B16/batch04/rec.pt",
+    "load_mode": "weights_only=True, map_location=meta",
+    "structure": {
+      "shape": [
+        16,
+        3,
+        224,
+        224
+      ],
+      "dtype": "torch.float32"
+    }
+  },
+  {
+    "relative_path": "quantization_aware_cpa/results/m7_uia_4bit_B16/batch04/quantized.pt",
+    "load_mode": "weights_only=True, map_location=meta",
+    "structure": {
+      "Y_hat": {
+        "shape": [
+          4096,
+          25088
+        ],
+        "dtype": "torch.float32"
+      },
+      "delta": {
+        "shape": [
+          4096
+        ],
+        "dtype": "torch.float32"
+      },
+      "diagnostics": {
+        "quantization_seed": {
+          "type": "int"
+        },
+        "relative_l2": {
+          "type": "float"
+        },
+        "mse": {
+          "type": "float"
+        },
+        "max_abs": {
+          "type": "float"
+        },
+        "empirical_error_mean": {
+          "type": "float"
+        },
+        "theoretical_mean_variance": {
+          "type": "float"
+        },
+        "delta_min": {
+          "type": "float"
+        },
+        "delta_mean": {
+          "type": "float"
+        },
+        "delta_max": {
+          "type": "float"
+        },
+        "zero_scale_rows": {
+          "type": "int"
+        },
+        "cell_membership": {
+          "type": "bool"
+        }
+      },
+      "wall_time_sec": {
+        "type": "float"
+      }
+    }
+  }
+]

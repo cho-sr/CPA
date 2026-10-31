@@ -1,0 +1,8 @@
+{
+  "task_id": "CPA_PAPER_SPARSE_SAME80_K503020_R20_20260921",
+  "plan_version": 1,
+  "config_sha256": "b3ea3ed9252b294e5baff5a5146ee035e2584221f8c800b5aceaaafb92d9c6b1",
+  "input_manifest_sha256": "96b8001934a6ffd654c9f6683f7339d206673348fd9dd829bb734ed1981a4c69",
+  "packet_audit_sha256": "b21bd5e84f108ec50383ae1ea2d38f5caf8d08bed15e70a64d8827187a514651",
+  "frozen_at_utc": "2026-09-20T22:34:35.846280+00:00"
+}

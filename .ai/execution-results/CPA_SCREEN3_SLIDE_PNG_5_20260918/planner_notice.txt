@@ -1,0 +1,16 @@
+[CPA INT5 slide PNG export completion | CPA_SCREEN3_SLIDE_PNG_5_20260918]
+
+Status: COMPLETED. Originating user thread: 01a0a7ab-fa58-7d22-ac52-3247b1dd2255.
+
+Created exactly five INT5 slide-sized PNGs from the authenticated frozen 25,000-step comparison. Every PNG is 3840x2160. The overview covers examples 01-16; detail pages cover 01-04, 05-08, 09-12 and 13-16.
+
+Overview:
+- quantization_aware_cpa/results_private/slide_png_5_20260918/int5_25000_overview.png
+
+ZIP:
+- quantization_aware_cpa/results_private/slide_png_5_20260918/slide_png_5_20260918.zip
+
+Detail pages and index:
+- quantization_aware_cpa/results_private/slide_png_5_20260918
+
+Roles are Ground truth | same-bit naive dequantization baseline | public rank1 member05 | rank2 member07 | rank3 member06. Public candidates were authenticated before private x-only loading; stored Hungarian correspondence was reused; optimizer/model/metric/matching work was zero. ZIP contains only the five PNGs and index.md. Validation and hashes are in .ai/execution-results/CPA_SCREEN3_SLIDE_PNG_5_20260918/report.md and integrity.json. The active 4-bit sweep and handoff were left intact. Please show this result once and end without starting work or polling.

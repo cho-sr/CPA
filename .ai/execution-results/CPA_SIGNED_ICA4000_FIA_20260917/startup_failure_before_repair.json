@@ -1,0 +1,13 @@
+{
+    "task_id":  "CPA_SIGNED_ICA4000_FIA_20260917",
+    "status":  "FAILED_BEFORE_COMPUTATION",
+    "cause":  "task-local wrapper imported qacpa before binding repository path",
+    "optimizer_started":  false,
+    "fia_started":  false,
+    "public_root_created":  false,
+    "private_root_created":  false,
+    "preserved_logs":  [
+                           "startup_failure_before_repair.stdout.log",
+                           "startup_failure_before_repair.stderr.log"
+                       ]
+}

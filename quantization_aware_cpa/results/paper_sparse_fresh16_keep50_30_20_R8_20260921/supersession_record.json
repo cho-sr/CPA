@@ -1,0 +1,18 @@
+{
+  "task_id": "CPA_PAPER_SPARSE_SAME80_K503020_R20_20260921",
+  "replacement_plan_version": 4,
+  "amendment_id": "CPA_PAPER_SPARSE_FRESH16_R8_AMENDMENT_20260921",
+  "amendment_receipt": ".ai/execution-handoffs/CPA_PAPER_SPARSE_FRESH16_R8_AMENDMENT_20260921.md",
+  "superseded_versions": [
+    1,
+    2,
+    3
+  ],
+  "superseded_handoff_archive": ".ai/execution-handoffs/CPA_PAPER_SPARSE_SAME80_K503020_R20_20260921_V3_FAILED_ARCHIVE_20260921.md",
+  "historical_same80_and_same16_reuse": "audit_only",
+  "old_attack_artifacts_imported": false,
+  "old_callbacks_resumed": false,
+  "old_worker_running_at_registration": false,
+  "new_worker_scope": "one fresh16/R8 serial worker; no batches01..04; no parallel arm",
+  "recorded_at_utc": "2026-09-21T01:32:27.323495+00:00"
+}

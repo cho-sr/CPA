@@ -1,0 +1,17 @@
+[
+  {
+    "job_index": 0,
+    "run_tag": "m4A_B32_bitsfp32_stoch_seed0_scalenone_distinct",
+    "job_kind": "fp32_truth_fia",
+    "B": "32",
+    "bits": "fp32",
+    "rounding": "none",
+    "seed": "0",
+    "scale_granularity": "none",
+    "require_distinct_labels": "True",
+    "status": "completed",
+    "returncode": 0,
+    "wall_time_sec": 1930.2185843999614,
+    "summary_json": "results\\v10_m4_grid\\m4A_B32_bitsfp32_stoch_seed0_scalenone_distinct\\summary.json"
+  }
+]

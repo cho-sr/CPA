@@ -1,0 +1,83 @@
+{
+  "schema_version": 1,
+  "run_tag": "m10_cpa_fia_packed4_best10",
+  "device": "cuda",
+  "seed": 0,
+  "n": 10,
+  "T": 10,
+  "n_images": 10,
+  "batch_indices": [
+    0
+  ],
+  "output_dir": "results/m10_cpa_fia_packed4_best10",
+  "source_output": "results/m10_cpa_fia_packed4_best10/input_source",
+  "source_fp32_output": "results/m6_uia_fp32_B16_fia",
+  "selection_reference": "results/m8_fedavg_naive_cpa_dither4_B16",
+  "selection": "historical M8 LPIPS ascending then global_index ascending, first10; fixed before new results",
+  "selection_scope": "selected exploratory best10 of historical80; new batch/update; historical n16 scores identify samples only",
+  "codec": "uniform_affine_uint4_stochastic_v1",
+  "codec_seed": 0,
+  "observation": "actual (W_initial-W_after10)/lr on selected n10; receiver decodes real packed4 packet",
+  "new_training": true,
+  "new_update_collection": true,
+  "new_training_reason": "User restricted client data itself to10; stored n16 updates cannot isolate these10. Reuse cached chosen image features, same FC SGD schedule.",
+  "local_training": {
+    "lr": 0.001,
+    "steps": 10,
+    "optimizer": "sgd",
+    "momentum": 0.0,
+    "weight_decay": 0.0,
+    "classifier_dropout": false,
+    "seed": 0
+  },
+  "model": {
+    "name": "vgg16",
+    "weights": "IMAGENET1K_V1",
+    "attacked_checkpoint_round": 0,
+    "conv_frozen": true,
+    "updated_layers": "all classifier parameters",
+    "attack_layer": "classifier.0.weight"
+  },
+  "stage1": {
+    "cpa_ica_max_iter": 25000,
+    "cpa_ica_lr": 0.001,
+    "cpa_ica_optimizer": "adam",
+    "cpa_ica_scheduler": "none",
+    "cpa_ica_decor": 5.3,
+    "cpa_ica_T": 7.7,
+    "cpa_ica_ne": 1.0,
+    "cpa_ica_nv": 0.13,
+    "cpa_ica_l1": 5.0,
+    "cpa_ica_tv": 0.1,
+    "cpa_ica_log_every": 5000
+  },
+  "fia": {
+    "n_iter": 25000,
+    "log_every": 5000,
+    "lr": 0.1,
+    "tv": 0.1,
+    "fi": 1.0,
+    "optimizer": "adam",
+    "scheduler": "cosine",
+    "seed": 42
+  },
+  "ls_A": false,
+  "debias": false,
+  "mp_truncation": false,
+  "mp_diagnostic": false,
+  "stage2": false,
+  "refine_A": false,
+  "oracle_fills": false,
+  "fp32_attack": false,
+  "raw_row_attack": false,
+  "source_adapter": "abs(S_hat) in estimated source order",
+  "evaluation": "post-FIA signed-source absolute-cosine Hungarian; all10; no truth scaling or source substitution",
+  "grid": {
+    "n": 10,
+    "selection": "all selected10 in frozen order"
+  },
+  "compression_scope": "attacked classifier.0.weight packet only",
+  "expected_packet_bytes": 51396640,
+  "execution_scope_authorization": "CPA+FIA 4bit only; user then requested best10 historical images; no additional attack arms",
+  "results_jsonl": "results/runs.jsonl"
+}

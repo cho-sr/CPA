@@ -1,0 +1,21 @@
+{
+  "identity": {
+    "registration_sha256": "675f8ad66b533ee4f92a469f9cf1ccda6de4586dbfd46ed25896a5be0544b9fe",
+    "bits": 4,
+    "candidate_id": 45,
+    "kind": "random",
+    "sample_seed": 44001366,
+    "cpa_seed": 0,
+    "fia_seed": 42,
+    "cpa_steps": 25000,
+    "fia_steps": 25000,
+    "fia_horizon": 25000,
+    "smoke": false
+  },
+  "completed_iterations": 25000,
+  "artifacts": {
+    "sources.pt": "383a15f5d0b80d6c7a0da7b7e443b6ba8e219e50a944c01651da50e74447c940",
+    "cpa_result.json": "c969c99efbbc55b10af7d2dd90501c3be74c5d272f2e1cf5aa3a2364bea20afc",
+    "sample.json": "71b7026d84120b72a7abd200b77833c3b9d62b15796492773d0fef0bd9dd5214"
+  }
+}

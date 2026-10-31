@@ -1,0 +1,13 @@
+{
+  "wrapper_pid": 24724,
+  "wrapper_created_ms": 1789728168506,
+  "callback_pid": 27532,
+  "callback_created_ms": 1789728169263,
+  "startup_status": "RUNNING",
+  "startup_stage": "REGISTERED",
+  "launched_at": "2026-09-18T10:43:38.481873+00:00",
+  "startup_receipt": "C:\\Users\\조상제\\Desktop\\CPA\\.ai\\execution-results\\CPA_SIGNED_INT4_GDONLY_SCREEN3_FIA_20260918\\startup_receipt.json",
+  "stage_execution": "C:\\Users\\조상제\\Desktop\\CPA\\.ai\\execution-results\\CPA_SIGNED_INT4_GDONLY_SCREEN3_FIA_20260918\\stage_execution.json",
+  "callback_status": "C:\\Users\\조상제\\Desktop\\CPA\\.ai\\relay-runs\\completions\\CPA_SIGNED_INT4_GDONLY_SCREEN3_FIA_20260918\\real_experiment\\status.json",
+  "launch_record_repair": "PowerShell UTF-8 parser failed after both processes started; recorded with Python UTF-8 without relaunch."
+}

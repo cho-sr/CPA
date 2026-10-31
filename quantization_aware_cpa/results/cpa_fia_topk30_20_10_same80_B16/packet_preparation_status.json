@@ -1,0 +1,33 @@
+{
+  "pid": 8984,
+  "phase": "packet",
+  "state": "packet_ready",
+  "keep_percents": [
+    30,
+    20,
+    10
+  ],
+  "completed_keep_percents": [
+    30,
+    20,
+    10
+  ],
+  "started_at_utc": "2026-09-11T05:35:43.793161+00:00",
+  "n_batches_total": 15,
+  "n_distinct_images": 80,
+  "updated_at_utc": "2026-09-11T05:38:27.774571+00:00",
+  "elapsed_sec": 163.9807598000043,
+  "active_keep_percent": null,
+  "child_pid": null,
+  "command": [
+    "C:\\miniconda\\envs\\DLG\\python.exe",
+    "-u",
+    "-m",
+    "qacpa.run_topk_ratios_same80",
+    "--config",
+    "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\configs\\cpa_fia_topk10_same80_B16.json",
+    "--phase",
+    "packet"
+  ],
+  "completed_at_utc": "2026-09-11T05:38:27.774571+00:00"
+}

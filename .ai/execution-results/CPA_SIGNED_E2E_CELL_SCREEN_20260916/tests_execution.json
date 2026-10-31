@@ -1,0 +1,22 @@
+{
+  "task_id": "CPA_SIGNED_E2E_CELL_SCREEN_20260916",
+  "stage": "focused_and_relevant_tests",
+  "command": [
+    "C:\\miniconda\\envs\\DLG\\python.exe",
+    "-m",
+    "pytest",
+    "quantization_aware_cpa/tests/test_signed_e2e_cells.py",
+    "quantization_aware_cpa/tests/test_fc_replay.py",
+    "quantization_aware_cpa/tests/test_signed_stage_diagnostics.py",
+    "quantization_aware_cpa/tests/test_signed_cell_rank.py",
+    "quantization_aware_cpa/tests/test_signed_cell_rank_pipeline.py",
+    "quantization_aware_cpa/tests/test_signed_cell_rank_validation.py",
+    "-q",
+    "--basetemp",
+    ".tmp_pytest_signed_e2e_cell_screen_20260916"
+  ],
+  "cwd": "C:\\Users\\조상제\\Desktop\\CPA",
+  "started_at_utc": "2026-09-16T07:14:19.915384+00:00",
+  "exit_status": 0,
+  "wall_seconds": 11.407794900005683
+}

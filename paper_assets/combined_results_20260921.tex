@@ -1,0 +1,61 @@
+% Generated from existing metrics; no evaluation performed here.
+% CIFAR-100: cifar100_png/final_metric_means.json (3 batches x 8 images = 24).
+% ImageNet quantization: PAPER_CORA_NOTES_20260921.md source JSONs.
+% All cells rounded (not truncated): PSNR 2 dp, SSIM and LPIPS 3 dp.
+\begin{table}[!t]
+\centering
+\caption{Naive versus randomized decoding (PSNR$\uparrow$, SSIM$\uparrow$,
+LPIPS$\downarrow$). Dashes denote runs not available. Every block uses the
+original CPA separator except ImageNet quantization, which uses FastICA
+initialization with gradient refinement. ImageNet rows cover one batch of 16
+images; CIFAR-100 rows pool three batches of 8. The two CIFAR-100 panels are
+therefore directly comparable; the two ImageNet panels are not.}
+\label{tab:compression}
+\small
+\setlength{\tabcolsep}{0.5pt}
+\renewcommand{\arraystretch}{1.0}
+
+\begin{tabular*}{\columnwidth}{@{\extracolsep{\fill}}lllrrrrr@{}}
+\toprule
+\multicolumn{8}{l}{\textit{(a) Quantization}}\\
+Dataset & Method & Metric & 8-bit & 7-bit & 6-bit & 5-bit & 4-bit\\
+\midrule
+\multirow{6}{*}{CIFAR-100} & \multirow{3}{*}{Naive} & PSNR & 11.49 & 11.07 & 10.22 & 10.65 & 11.27\\
+ &  & SSIM & 0.166 & 0.134 & 0.062 & 0.061 & 0.075\\
+ &  & LPIPS & 0.561 & 0.605 & 0.685 & 0.706 & 0.731\\
+ & \multirow{3}{*}{\cora{}} & PSNR & 11.70 & 11.33 & 10.44 & 10.62 & 10.70\\
+ &  & SSIM & 0.167 & 0.154 & 0.080 & 0.061 & 0.057\\
+ &  & LPIPS & 0.553 & 0.585 & 0.673 & 0.681 & 0.684\\
+\midrule
+\multirow{6}{*}{ImageNet} & \multirow{3}{*}{Naive} & PSNR & 12.06 & 11.80 & 11.64 & 11.55 & 11.52\\
+ &  & SSIM & 0.292 & 0.276 & 0.260 & 0.262 & 0.292\\
+ &  & LPIPS & 0.559 & 0.612 & 0.696 & 0.783 & 0.807\\
+ & \multirow{3}{*}{\cora{}} & PSNR & 12.06 & 11.83 & 11.67 & 11.55 & 11.50\\
+ &  & SSIM & 0.307 & 0.283 & 0.269 & 0.256 & 0.258\\
+ &  & LPIPS & 0.556 & 0.633 & 0.666 & 0.749 & 0.808\\
+\bottomrule
+\end{tabular*}
+
+\par\smallskip
+
+\begin{tabular*}{\columnwidth}{@{\extracolsep{\fill}}lllrrrr@{}}
+\toprule
+\multicolumn{7}{l}{\textit{(b) Sparsification: retained fraction of FC1}}\\
+Dataset & Method & Metric & 50\% & 30\% & 20\% & 10\%\\
+\midrule
+\multirow{6}{*}{CIFAR-100} & \multirow{3}{*}{Naive} & PSNR & 13.70 & 13.45 & 13.21 & 11.29\\
+ &  & SSIM & 0.265 & 0.248 & 0.252 & 0.164\\
+ &  & LPIPS & 0.488 & 0.510 & 0.510 & 0.570\\
+ & \multirow{3}{*}{\cora{}} & PSNR & 13.70 & 13.47 & 13.10 & 11.64\\
+ &  & SSIM & 0.265 & 0.257 & 0.252 & 0.166\\
+ &  & LPIPS & 0.488 & 0.489 & 0.522 & 0.561\\
+\midrule
+\multirow{6}{*}{ImageNet} & \multirow{3}{*}{Naive} & PSNR & 22.29 & 22.14 & 21.87 & 21.53\\
+ &  & SSIM & 0.334 & 0.314 & 0.290 & 0.263\\
+ &  & LPIPS & 0.486 & 0.509 & 0.553 & 0.632\\
+ & \multirow{3}{*}{Random fill} & PSNR & --- & --- & --- & 21.51\\
+ &  & SSIM & --- & --- & --- & 0.261\\
+ &  & LPIPS & --- & --- & --- & 0.630\\
+\bottomrule
+\end{tabular*}
+\end{table}

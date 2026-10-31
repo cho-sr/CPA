@@ -1,0 +1,27 @@
+{
+  "output": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_no_cpa_control\\m7_results_summary.png",
+  "dimensions": [
+    3240,
+    2160
+  ],
+  "preregistration_sha256": "41f402f5449deaadc92f37ec4a76909eafda329d89f11fb7d84b984580251539",
+  "means": {
+    "fp32_cpa": 0.444815556704998,
+    "4bit_cpa": 0.5439403489232063,
+    "fp32_no_cpa": 0.7568199418485164,
+    "4bit_no_cpa": 0.7538226298987866,
+    "prior_only": 0.7737753406167031,
+    "fp32_shuffled": 0.8090492141991854,
+    "4bit_shuffled": 0.7989024382084609,
+    "dataset_mean": 0.8054762572050095,
+    "gray": 0.8291986584663391,
+    "noise": 0.8566403955221176
+  },
+  "sources": {
+    "results\\m7_no_cpa_control\\summary.json": "60a7b8a3be59ac939e725e2dd6f5164848f5423990710af545e0f2c1ca5c5070",
+    "results\\m7_no_cpa_control\\image_success.csv": "1bbf6ee99a12a88fe4eead264550800baa60ba568c9278d1536153b9b7f91d66",
+    "results\\m7_no_cpa_control\\thresholds.json": "b6b105787545889cc844cf59ff13a63a5b8d68703c93e9596986962da001d632",
+    "results\\m7_prior_only\\prior_only\\per_image_metrics.csv": "7bf30747b6aa01df6fe3b6386d8e7f0df6b96ce26c2d4c070fae2fd6ba641077",
+    "results\\m7_recompute_controls\\per_image_metrics.csv": "1bf3b8af8b0cab17a3301535d71666854cac597d84bba980035e721b22c2b35c"
+  }
+}

@@ -1,0 +1,10 @@
+[CPA INT4 GD-only final result]
+TASK_ID: CPA_SIGNED_INT4_GDONLY_SCREEN3_FIA_20260918
+Status: COMPLETED
+Final result: C:\Users\조상제\Desktop\CPA\.ai\execution-results\CPA_SIGNED_INT4_GDONLY_SCREEN3_FIA_20260918\final_result.json
+Report: C:\Users\조상제\Desktop\CPA\.ai\execution-results\CPA_SIGNED_INT4_GDONLY_SCREEN3_FIA_20260918\report.md
+Comparison: C:\Users\조상제\Desktop\CPA\quantization_aware_cpa\results_private\signed_int4_gdonly_randomized8_screen3_fia_B16_T10_20260918\evaluation_repair_20260918\comparison.json
+Slides ZIP: C:\Users\조상제\Desktop\CPA\quantization_aware_cpa\results_private\signed_int4_gdonly_randomized8_screen3_fia_B16_T10_20260918\evaluation_repair_20260918\slide_png_int4_gdonly_20260918.zip
+Public gate: PUBLIC_GATE_PASSED; frozen selection: [2,4,1]; comparison sets: 17; archived control max residual: 0.0 <= 2e-8.
+The original upstream gradient-only CPA completed 9 separations and the registered 125000 FIA updates. No optimizer steps were added during reporting repair. Private evaluation consumed x only; labels and true updates were not consumed. Actual-image cell feasibility: NOT_EVALUATED.
+The first renderer-only failure and strict reporting-repair provenance are preserved in the task result folder. Show this result once and end; do not start follow-up work.

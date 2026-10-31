@@ -1,0 +1,164 @@
+{
+  "matching": "Hungarian_pixel_MSE_once_for_all_metrics",
+  "n_images": 16,
+  "all_images_included": true,
+  "candidate_selection": "none_single_supplied_artifact",
+  "per_image": [
+    {
+      "candidate_index": 0,
+      "truth_index": 2,
+      "mse": 0.2370450513271378,
+      "psnr_db": 6.251691068025245,
+      "perfect_pixel_match": false,
+      "ssim": 0.005212742741113684,
+      "label_correct": false
+    },
+    {
+      "candidate_index": 1,
+      "truth_index": 7,
+      "mse": 0.33895077817067587,
+      "psnr_db": 4.698633646905394,
+      "perfect_pixel_match": false,
+      "ssim": 0.0031379512595252584,
+      "label_correct": false
+    },
+    {
+      "candidate_index": 2,
+      "truth_index": 14,
+      "mse": 0.2188268843422246,
+      "psnr_db": 6.598993230871066,
+      "perfect_pixel_match": false,
+      "ssim": 0.006974613835539036,
+      "label_correct": false
+    },
+    {
+      "candidate_index": 3,
+      "truth_index": 13,
+      "mse": 0.26634875092443994,
+      "psnr_db": 5.745493355523079,
+      "perfect_pixel_match": false,
+      "ssim": 0.004916973138980199,
+      "label_correct": false
+    },
+    {
+      "candidate_index": 4,
+      "truth_index": 5,
+      "mse": 0.2818750787161105,
+      "psnr_db": 5.499433194973694,
+      "perfect_pixel_match": false,
+      "ssim": 0.005746366308052716,
+      "label_correct": false
+    },
+    {
+      "candidate_index": 5,
+      "truth_index": 10,
+      "mse": 0.22717146177950842,
+      "psnr_db": 6.436462274070687,
+      "perfect_pixel_match": false,
+      "ssim": 0.006494164234701065,
+      "label_correct": false
+    },
+    {
+      "candidate_index": 6,
+      "truth_index": 6,
+      "mse": 0.2589712413203697,
+      "psnr_db": 5.867484615146374,
+      "perfect_pixel_match": false,
+      "ssim": 0.005203194344502656,
+      "label_correct": false
+    },
+    {
+      "candidate_index": 7,
+      "truth_index": 3,
+      "mse": 0.3328595677061174,
+      "psnr_db": 4.777389551844385,
+      "perfect_pixel_match": false,
+      "ssim": 0.005533089412220018,
+      "label_correct": false
+    },
+    {
+      "candidate_index": 8,
+      "truth_index": 12,
+      "mse": 0.21412253600176676,
+      "psnr_db": 6.693376216072534,
+      "perfect_pixel_match": false,
+      "ssim": 0.005758253139232103,
+      "label_correct": false
+    },
+    {
+      "candidate_index": 9,
+      "truth_index": 4,
+      "mse": 0.26618546450869895,
+      "psnr_db": 5.7481566357215454,
+      "perfect_pixel_match": false,
+      "ssim": 0.0042355625728476825,
+      "label_correct": false
+    },
+    {
+      "candidate_index": 10,
+      "truth_index": 8,
+      "mse": 0.22341578380670554,
+      "psnr_db": 6.508861482391593,
+      "perfect_pixel_match": false,
+      "ssim": 0.005273821045474595,
+      "label_correct": false
+    },
+    {
+      "candidate_index": 11,
+      "truth_index": 9,
+      "mse": 0.2389231367709465,
+      "psnr_db": 6.217417921278349,
+      "perfect_pixel_match": false,
+      "ssim": 0.006612671148104011,
+      "label_correct": false
+    },
+    {
+      "candidate_index": 12,
+      "truth_index": 1,
+      "mse": 0.22917955601663606,
+      "psnr_db": 6.398241262559755,
+      "perfect_pixel_match": false,
+      "ssim": 0.00745467361527938,
+      "label_correct": false
+    },
+    {
+      "candidate_index": 13,
+      "truth_index": 15,
+      "mse": 0.22984313973963116,
+      "psnr_db": 6.3856845435737695,
+      "perfect_pixel_match": false,
+      "ssim": 0.005856521491230762,
+      "label_correct": false
+    },
+    {
+      "candidate_index": 14,
+      "truth_index": 0,
+      "mse": 0.21772810843672993,
+      "psnr_db": 6.620855004446363,
+      "perfect_pixel_match": false,
+      "ssim": 0.00753268581401011,
+      "label_correct": false
+    },
+    {
+      "candidate_index": 15,
+      "truth_index": 11,
+      "mse": 0.2515209040795569,
+      "psnr_db": 5.994259145876601,
+      "perfect_pixel_match": false,
+      "ssim": 0.004437755487001264,
+      "label_correct": false
+    }
+  ],
+  "metric_dtype": "float64",
+  "truth_denormalization_tolerance_abs": 9.5367431640625e-07,
+  "truth_denormalization_clipped_values": 77691,
+  "perfect_pixel_matches": 0,
+  "psnr_null_meaning": "positive_infinity_for_perfect_pixel_match",
+  "mean_psnr_null_meaning": "positive_infinity_if_any_image_is_a_perfect_pixel_match",
+  "mean_mse": 0.2520604652279535,
+  "mean_psnr_db": 6.027652071830028,
+  "mean_ssim": 0.005648814974238409,
+  "label_accuracy": 0.0,
+  "lpips": "not_computed",
+  "reconstruction_success": "no_threshold_registered"
+}

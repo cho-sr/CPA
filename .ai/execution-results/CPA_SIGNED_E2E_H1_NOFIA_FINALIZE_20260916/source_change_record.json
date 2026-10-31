@@ -1,0 +1,23 @@
+{
+  "before": {
+    "quantization_aware_cpa/qacpa/signed_e2e_nofia_runner.py": "ba803e996e91b1d64c713674514101e2100c1b9ce80a8d989ca7ab03e7442ea4",
+    "quantization_aware_cpa/qacpa/signed_e2e_nofia_evaluation.py": "cacc3c35ea4b54dafcaa17280b73eaaa58252b16851b6f8339e0796bb7135741",
+    "quantization_aware_cpa/tests/test_signed_e2e_nofia.py": "7d27731b53464c63f28b3fd552972df589c33725f2f10a6eca79a23d206fe481"
+  },
+  "after": {
+    "quantization_aware_cpa/qacpa/signed_e2e_nofia_runner.py": "c3da97231e2646f748c0a824cb4e8008c554b7926d717442c1576566a37df13d",
+    "quantization_aware_cpa/qacpa/signed_e2e_nofia_evaluation.py": "d52ff61a66837d553ea7a157f5616ae82702b720158edee2ebd1bc75ce11dfaf",
+    "quantization_aware_cpa/tests/test_signed_e2e_nofia.py": "fc96e38d4ee9ceb2fce4267d2cb87c7fe900134ef97370ffc547486abf21ce0b"
+  },
+  "changed": {
+    "quantization_aware_cpa/qacpa/signed_e2e_nofia_runner.py": true,
+    "quantization_aware_cpa/qacpa/signed_e2e_nofia_evaluation.py": true,
+    "quantization_aware_cpa/tests/test_signed_e2e_nofia.py": true
+  },
+  "semantic_changes": [
+    "structured UTF-8 JSON and recorded input/source hash authentication",
+    "complete canonical profile schema with exact integer/bool/string checks and bounded float reports",
+    "Hungarian correspondence is reused for the comparison figure",
+    "saved-candidate finalization entry point and regression coverage"
+  ]
+}

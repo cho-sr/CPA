@@ -1,0 +1,41 @@
+[
+  {
+    "batch": 0,
+    "checkpoint": "batch_000_fi.pt",
+    "iteration_saved": 25000,
+    "status": "complete",
+    "image_grid": "batch_000_reconstruction_complete.png",
+    "shape": [
+      16,
+      3,
+      64,
+      64
+    ]
+  },
+  {
+    "batch": 1,
+    "checkpoint": "batch_001_fi.pt",
+    "iteration_saved": 25000,
+    "status": "complete",
+    "image_grid": "batch_001_reconstruction_complete.png",
+    "shape": [
+      16,
+      3,
+      64,
+      64
+    ]
+  },
+  {
+    "batch": 2,
+    "checkpoint": "batch_002_fi.pt",
+    "iteration_saved": 2001,
+    "status": "partial_iter_2000",
+    "image_grid": "batch_002_reconstruction_partial_iter_2000.png",
+    "shape": [
+      16,
+      3,
+      64,
+      64
+    ]
+  }
+]

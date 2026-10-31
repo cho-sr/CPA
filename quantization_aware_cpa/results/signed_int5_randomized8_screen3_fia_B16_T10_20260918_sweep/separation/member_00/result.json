@@ -1,0 +1,189 @@
+{
+  "task_id": "CPA_SIGNED_BITS7654_SCREEN3_20260918_B5",
+  "status": "COMPLETED",
+  "index": 0,
+  "separation_call": 2,
+  "input_sha256": "c30570ba2b6388f3738fca1fc9627acb340552cb3c54ee066c87457ba3b25db3",
+  "S_hat_native_sha256": "6a285db5c8089277ab1e319a94d827ffc9e9b1e15874c627d79a8c9d082f2ed8",
+  "S_hat_aligned_sha256": "44e8b2bdb01b343c0420ab304fd8939aa83bb89b670806a9ec6bf6d07ba0380a",
+  "target_z_sha256": "5f71923d60142b1136cc900c6ca63e301cc890bcb46c02aa4a4ef6c92b643bfa",
+  "sample": {
+    "bits": 5,
+    "seed": 1234,
+    "chunk_rows": 32,
+    "generator": "torch.Generator(cpu)",
+    "sampler": "uniform_fp64_interpolation_cast_fp32_inclusive_registered_cells",
+    "codec_metadata": {
+      "codec": "signed_symmetric_bits5_qplus15_nearest_even_cpu_fp32_v1",
+      "bits": 5,
+      "qmin": -15,
+      "qmax": 15,
+      "scale_scope": "per_parameter_tensor_absmax_scalar",
+      "input_dtype": "float32",
+      "scale_dtype": "float32",
+      "code_dtype": "int8",
+      "physical_code_storage": "int8",
+      "logical_code_bits": 5,
+      "device": "cpu",
+      "rounding": "nearest_even",
+      "zero_tensor": "q=0,s=1",
+      "scale_operation": "float32(max_abs/15)",
+      "code_operation": "round(float32(G/s)).clamp(-15,15).int8",
+      "edge_policy": "largest_finite_fp32_absmax_rounding_to_observed_scale"
+    },
+    "anchor": {
+      "flat_index": 6861718,
+      "row": 273,
+      "column": 12694,
+      "q": 15,
+      "value": 0.00037913955748081207,
+      "cap": 0.00037913955748081207
+    },
+    "scale": 2.5275970983784646e-05,
+    "scale_reproduced": true,
+    "code_consistency": {
+      "all_equal": true,
+      "mismatch_count": 0,
+      "numel": 102760448,
+      "mismatch_fraction": 0.0
+    },
+    "tensor_sha256": "c30570ba2b6388f3738fca1fc9627acb340552cb3c54ee066c87457ba3b25db3"
+  },
+  "alignment": {
+    "member_index": 0,
+    "permutation_member_columns": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "signs": [
+      1,
+      -1,
+      -1,
+      1,
+      1,
+      -1,
+      -1,
+      1,
+      -1,
+      1,
+      -1,
+      1,
+      -1,
+      -1,
+      -1,
+      1
+    ],
+    "matched_abs_cosines": [
+      0.9924755880091578,
+      0.9920967456521818,
+      0.9905060808297599,
+      0.991870639907565,
+      0.9882433864772179,
+      0.9770760929605163,
+      0.9715909208987967,
+      0.974480597241767,
+      0.9703788518651194,
+      0.9758087218276018,
+      0.9572237848539183,
+      0.9640146052957266,
+      0.9659868541742517,
+      0.9493795980289832,
+      0.9645268909321433,
+      0.9422046657407541
+    ],
+    "mean_abs_cosine": 0.9729915015434661,
+    "min_abs_cosine": 0.9422046657407541,
+    "max_abs_cosine": 0.9924755880091578,
+    "native_to_reference_norm_ratios": [
+      1.0001312718735051,
+      1.000469070783596,
+      1.0002770690196112,
+      0.9992719520862222,
+      0.9992743991126354,
+      0.9985697973862887,
+      0.9985509073177018,
+      1.0001323550616954,
+      1.000730082592489,
+      0.9997591913321522,
+      0.9994159133820192,
+      1.0016728210741255,
+      1.0013303462478653,
+      0.9980984682292466,
+      0.999589759818454,
+      0.9977467927319629
+    ],
+    "row_norm_rescaling": false
+  },
+  "fastica": {
+    "algorithm": "parallel_symmetric_fixed_point_logcosh_alpha1",
+    "corrected_derivative_broadcast": "a[:,None] * W",
+    "converged": true,
+    "iterations": 123,
+    "residual": 9.5367431640625e-07,
+    "max_iter": 200,
+    "tolerance": 1e-06
+  },
+  "refinement": {
+    "optimizer": "SGD",
+    "iterations": 4000,
+    "lr": 0.001,
+    "momentum": 0.0,
+    "weight_decay": 0.0,
+    "scheduler": null,
+    "active_terms": [
+      "negentropy",
+      "decorrelation",
+      "sign",
+      "l1"
+    ],
+    "weights": {
+      "negentropy": 0.0935827857091549,
+      "decorrelation": 0.2513674104161625,
+      "sign": 0.05811961446881231,
+      "l1": 17.94138146247377
+    },
+    "stable_logcosh": true
+  },
+  "whitening": {
+    "algorithm": "row_centered_covariance_torch.linalg.eig_top_abs_eigenvalues",
+    "computed_once_on": "cpu",
+    "shared_between_stages": true,
+    "mu_shape": [
+      4096,
+      1
+    ],
+    "K_shape": [
+      16,
+      4096
+    ],
+    "Xw_shape": [
+      16,
+      25088
+    ],
+    "requested_device": "cpu",
+    "dtype": "float32",
+    "rank_floor": 1e-12
+  },
+  "final_losses": {
+    "negentropy": -0.03041503019630909,
+    "decorrelation": 1.342317819595337,
+    "sign": 27.889041900634766,
+    "l1": 0.3460058867931366,
+    "total": 8.16329288482666
+  },
+  "private_data_used": false
+}

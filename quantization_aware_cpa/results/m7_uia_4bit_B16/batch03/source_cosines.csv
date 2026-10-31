@@ -1,0 +1,17 @@
+global_index,batch_index,source_index,dataset_index,label,image_path,initial_per_sample_loss,estimated_source_index,source_abs_cosine,fia_abs_target_cosine,measured_recovered_cos09,missing_source,oracle_fill
+48,3,0,29419,588,C:\Users\조상제\Desktop\DLG\cocktail_party_attack\datasets\imagenet\val\n03482405\ILSVRC2012_val_00026275.JPEG,1.6115641593933105,0,0.9992462992668152,0.9992488026618958,1,False,False
+49,3,1,45420,908,C:\Users\조상제\Desktop\DLG\cocktail_party_attack\datasets\imagenet\val\n04592741\ILSVRC2012_val_00020064.JPEG,0.0002181292074965313,10,0.0328180193901062,0.23603710532188416,0,False,False
+50,3,2,48971,979,C:\Users\조상제\Desktop\DLG\cocktail_party_attack\datasets\imagenet\val\n09468604\ILSVRC2012_val_00025327.JPEG,0.08593523502349854,15,0.8771550059318542,0.8783951997756958,0,False,False
+51,3,3,39322,786,C:\Users\조상제\Desktop\DLG\cocktail_party_attack\datasets\imagenet\val\n04179913\ILSVRC2012_val_00016978.JPEG,0.007809345610439777,12,0.024961097165942192,0.25875958800315857,0,False,False
+52,3,4,13473,269,C:\Users\조상제\Desktop\DLG\cocktail_party_attack\datasets\imagenet\val\n02114367\ILSVRC2012_val_00022055.JPEG,0.2516932785511017,9,0.989454984664917,0.989569902420044,1,False,False
+53,3,5,24974,499,C:\Users\조상제\Desktop\DLG\cocktail_party_attack\datasets\imagenet\val\n03041632\ILSVRC2012_val_00022700.JPEG,2.2352890968322754,1,0.9992099404335022,0.9992112517356873,1,False,False
+54,3,6,27175,543,C:\Users\조상제\Desktop\DLG\cocktail_party_attack\datasets\imagenet\val\n03255030\ILSVRC2012_val_00026198.JPEG,2.138169050216675,3,0.9981797337532043,0.9981870055198669,1,False,False
+55,3,7,25876,517,C:\Users\조상제\Desktop\DLG\cocktail_party_attack\datasets\imagenet\val\n03126707\ILSVRC2012_val_00035686.JPEG,0.0005802616360597312,13,0.020340122282505035,0.23364867269992828,0,False,False
+56,3,8,18527,370,C:\Users\조상제\Desktop\DLG\cocktail_party_attack\datasets\imagenet\val\n02484975\ILSVRC2012_val_00022174.JPEG,0.016579000279307365,11,0.012291482649743557,0.19763818383216858,0,False,False
+57,3,9,3078,61,C:\Users\조상제\Desktop\DLG\cocktail_party_attack\datasets\imagenet\val\n01742172\ILSVRC2012_val_00027484.JPEG,0.015857776626944542,14,0.028582515195012093,0.26146334409713745,0,False,False
+58,3,10,7629,152,C:\Users\조상제\Desktop\DLG\cocktail_party_attack\datasets\imagenet\val\n02085782\ILSVRC2012_val_00029262.JPEG,0.6939354538917542,6,0.9959474205970764,0.9959678649902344,1,False,False
+59,3,11,36430,728,C:\Users\조상제\Desktop\DLG\cocktail_party_attack\datasets\imagenet\val\n03958227\ILSVRC2012_val_00031510.JPEG,1.3395335674285889,2,0.998557448387146,0.9985613226890564,1,False,False
+60,3,12,39231,784,C:\Users\조상제\Desktop\DLG\cocktail_party_attack\datasets\imagenet\val\n04154565\ILSVRC2012_val_00029403.JPEG,1.2948276996612549,4,0.9987055659294128,0.9987092018127441,1,False,False
+61,3,13,29232,584,C:\Users\조상제\Desktop\DLG\cocktail_party_attack\datasets\imagenet\val\n03476684\ILSVRC2012_val_00030414.JPEG,0.3348301351070404,8,0.997108519077301,0.9971245527267456,1,False,False
+62,3,14,23283,465,C:\Users\조상제\Desktop\DLG\cocktail_party_attack\datasets\imagenet\val\n02916936\ILSVRC2012_val_00030157.JPEG,1.0459011793136597,5,0.9987604022026062,0.9987645149230957,1,False,False
+63,3,15,21734,434,C:\Users\조상제\Desktop\DLG\cocktail_party_attack\datasets\imagenet\val\n02808304\ILSVRC2012_val_00031759.JPEG,0.42881402373313904,7,0.9979243278503418,0.9979305267333984,1,False,False

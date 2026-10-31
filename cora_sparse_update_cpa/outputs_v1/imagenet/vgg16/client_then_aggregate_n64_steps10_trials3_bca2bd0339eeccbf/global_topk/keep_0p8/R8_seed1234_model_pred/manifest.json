@@ -1,0 +1,55 @@
+{
+  "best_member_summary": {
+    "matched_pairs": 3,
+    "max_relative_l2": 1.1103465602174392,
+    "mean_relative_l2": 1.0836193149213464,
+    "median_relative_l2": 1.0830812138389847,
+    "member": 7,
+    "min_relative_l2": 1.057430170707615,
+    "score": -1.0836193149213464,
+    "source_run_path": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\sparsified_update_cpa\\outputs_v1\\author_runs\\imagenet\\vgg16\\attack\\cp_direct\\nodef\\cora_sparse_cpa_keep0p8_n64_steps10_trials3_fia8_R8_seed1234_m007_uia"
+  },
+  "candidate_generation": {
+    "desparsification_scope": "attack_layer",
+    "fixed_sparse_observation": true,
+    "missing_value_abs_bound_policy": "per_client_global_topk_min_observed_abs_tau",
+    "missing_value_sampler": "retained_rescaled",
+    "policy": "dropped_sparse_coordinates_sampled_uniform_within_client_topk_threshold"
+  },
+  "consistency_ranking": {
+    "compression_operator": "global_topk",
+    "label_mode": "model_pred",
+    "matching": "Hungarian assignment between reconstructed images and observed sparse client attack-layer updates",
+    "max_clients": 8,
+    "max_recon_per_batch": 1,
+    "oracle_inputs_used": false,
+    "recompression": "x_hat -> local SGD update -> same global Top-k sparsification -> attack-layer sparse observation",
+    "score": "negative mean matched relative L2"
+  },
+  "ensemble_size": 8,
+  "independent_restarts": {
+    "attack": "existing CPA wrapped by CoRA",
+    "fia": "Direct FIA per member before ranking",
+    "trial_varying_randomness": "desparsification_noise_only"
+  },
+  "keep_ratio": 0.8,
+  "method": "CoRA sparse wrapper: calibrated candidates, independent CPA+FIA restarts, recompression consistency ranking",
+  "noise_seed": 1234,
+  "schema_version": 1,
+  "selected_member": 7,
+  "selected_source_run_path": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\sparsified_update_cpa\\outputs_v1\\author_runs\\imagenet\\vgg16\\attack\\cp_direct\\nodef\\cora_sparse_cpa_keep0p8_n64_steps10_trials3_fia8_R8_seed1234_m007_uia",
+  "source_client_attack_observation_file": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\sparsified_update_cpa\\outputs_v1\\02_randomized_desparse_ensemble_cpa\\imagenet\\vgg16\\fixed_observations\\client_then_aggregate_n64_steps10_trials3_bca2bd0339eeccbf\\client_then_aggregate\\global_topk\\keep_0p8_attack_layer_observations.pickle",
+  "source_client_attack_observation_hash": "fe6ab9d9f5fcbd8e07388cee004cc274df0435d58a0fdcd2d0512a60825592fb",
+  "source_run_paths": [
+    "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\sparsified_update_cpa\\outputs_v1\\author_runs\\imagenet\\vgg16\\attack\\cp_direct\\nodef\\cora_sparse_cpa_keep0p8_n64_steps10_trials3_fia8_R8_seed1234_m000_uia",
+    "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\sparsified_update_cpa\\outputs_v1\\author_runs\\imagenet\\vgg16\\attack\\cp_direct\\nodef\\cora_sparse_cpa_keep0p8_n64_steps10_trials3_fia8_R8_seed1234_m001_uia",
+    "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\sparsified_update_cpa\\outputs_v1\\author_runs\\imagenet\\vgg16\\attack\\cp_direct\\nodef\\cora_sparse_cpa_keep0p8_n64_steps10_trials3_fia8_R8_seed1234_m002_uia",
+    "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\sparsified_update_cpa\\outputs_v1\\author_runs\\imagenet\\vgg16\\attack\\cp_direct\\nodef\\cora_sparse_cpa_keep0p8_n64_steps10_trials3_fia8_R8_seed1234_m003_uia",
+    "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\sparsified_update_cpa\\outputs_v1\\author_runs\\imagenet\\vgg16\\attack\\cp_direct\\nodef\\cora_sparse_cpa_keep0p8_n64_steps10_trials3_fia8_R8_seed1234_m004_uia",
+    "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\sparsified_update_cpa\\outputs_v1\\author_runs\\imagenet\\vgg16\\attack\\cp_direct\\nodef\\cora_sparse_cpa_keep0p8_n64_steps10_trials3_fia8_R8_seed1234_m005_uia",
+    "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\sparsified_update_cpa\\outputs_v1\\author_runs\\imagenet\\vgg16\\attack\\cp_direct\\nodef\\cora_sparse_cpa_keep0p8_n64_steps10_trials3_fia8_R8_seed1234_m006_uia",
+    "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\sparsified_update_cpa\\outputs_v1\\author_runs\\imagenet\\vgg16\\attack\\cp_direct\\nodef\\cora_sparse_cpa_keep0p8_n64_steps10_trials3_fia8_R8_seed1234_m007_uia"
+  ],
+  "source_sparse_update_file": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\sparsified_update_cpa\\outputs_v1\\01_naive_sparse_cpa\\imagenet\\vgg16\\updates\\client_then_aggregate_n64_steps10_trials3_bca2bd0339eeccbf\\client_then_aggregate\\global_topk\\keep_0p8.pickle",
+  "source_sparse_update_hash": "d96ee9aceffc9548adcd3d7fee5b9d9646afd7dfe977dedc4dddf80ad0cf169c"
+}

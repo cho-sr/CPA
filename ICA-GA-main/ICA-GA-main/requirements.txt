@@ -1,0 +1,10 @@
+torch
+torchvision
+torchmetrics
+matplotlib
+numpy
+scipy
+scikit-learn
+lpips
+json5
+optuna

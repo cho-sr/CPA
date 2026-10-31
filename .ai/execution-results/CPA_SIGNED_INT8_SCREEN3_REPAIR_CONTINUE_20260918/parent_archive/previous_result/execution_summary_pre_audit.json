@@ -1,0 +1,98 @@
+{
+  "task_id": "CPA_SIGNED_INT8_RANDOMIZED8_SCREEN3_FIA_20260917",
+  "status": "PARTIAL",
+  "execution_status": "PARTIAL",
+  "scientific_quality": "NOT_EVALUATED",
+  "started_at": "2026-09-17T09:56:50.708537+00:00",
+  "ended_at": "2026-09-17T11:56:51.101537+00:00",
+  "wall_seconds": 7200.393110799952,
+  "budget_seconds": 12600.0,
+  "stages": [
+    {
+      "stage": "register",
+      "status": "COMPLETED",
+      "started_at": "2026-09-17T09:56:50.708537+00:00",
+      "command": [
+        "C:\\miniconda\\envs\\DLG\\python.exe",
+        "-m",
+        "qacpa.signed_int8_screen3_runner",
+        "register",
+        "--public-root",
+        "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\signed_int8_randomized8_screen3_fia_B16_T10_20260917",
+        "--private-root",
+        "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results_private\\signed_int8_randomized8_screen3_fia_B16_T10_20260917"
+      ],
+      "stdout": "C:/Users/조상제/Desktop/CPA/.ai/execution-results/CPA_SIGNED_INT8_RANDOMIZED8_SCREEN3_FIA_20260917/register.stdout.log",
+      "stderr": "C:/Users/조상제/Desktop/CPA/.ai/execution-results/CPA_SIGNED_INT8_RANDOMIZED8_SCREEN3_FIA_20260917/register.stderr.log",
+      "exit_code": 0,
+      "ended_at": "2026-09-17T09:56:52.524495+00:00",
+      "wall_seconds": 1.815574000007473
+    },
+    {
+      "stage": "sender",
+      "status": "COMPLETED",
+      "started_at": "2026-09-17T09:56:52.525496+00:00",
+      "command": [
+        "C:\\miniconda\\envs\\DLG\\python.exe",
+        "-m",
+        "qacpa.signed_int8_observation",
+        "sender",
+        "--raw-updates",
+        "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results_private\\signed_int4_baseline_B16_T10\\observation\\raw_updates.pt",
+        "--archived-sender-validation",
+        "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results_private\\signed_int4_baseline_B16_T10\\observation\\sender_validation.json",
+        "--evaluation-truth",
+        "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results_private\\signed_int4_baseline_B16_T10\\observation\\evaluation_truth.pt",
+        "--output",
+        "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\signed_int8_randomized8_screen3_fia_B16_T10_20260917\\observation",
+        "--private-output",
+        "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results_private\\signed_int8_randomized8_screen3_fia_B16_T10_20260917\\sender"
+      ],
+      "stdout": "C:/Users/조상제/Desktop/CPA/.ai/execution-results/CPA_SIGNED_INT8_RANDOMIZED8_SCREEN3_FIA_20260917/sender.stdout.log",
+      "stderr": "C:/Users/조상제/Desktop/CPA/.ai/execution-results/CPA_SIGNED_INT8_RANDOMIZED8_SCREEN3_FIA_20260917/sender.stderr.log",
+      "exit_code": 0,
+      "ended_at": "2026-09-17T09:56:56.985071+00:00",
+      "wall_seconds": 4.459244299912825
+    },
+    {
+      "stage": "public_attack",
+      "status": "FAILED",
+      "started_at": "2026-09-17T09:56:56.986071+00:00",
+      "command": [
+        "C:\\miniconda\\envs\\DLG\\python.exe",
+        "-m",
+        "qacpa.signed_int8_screen3_runner",
+        "attack",
+        "--public-root",
+        "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\signed_int8_randomized8_screen3_fia_B16_T10_20260917"
+      ],
+      "stdout": "C:/Users/조상제/Desktop/CPA/.ai/execution-results/CPA_SIGNED_INT8_RANDOMIZED8_SCREEN3_FIA_20260917/public_attack.stdout.log",
+      "stderr": "C:/Users/조상제/Desktop/CPA/.ai/execution-results/CPA_SIGNED_INT8_RANDOMIZED8_SCREEN3_FIA_20260917/public_attack.stderr.log",
+      "exit_code": 1,
+      "ended_at": "2026-09-17T11:56:51.100536+00:00",
+      "wall_seconds": 7194.1142015000805
+    }
+  ],
+  "failure": {
+    "stage": "public_attack",
+    "exit_code": 1,
+    "status": "FAILED",
+    "stderr": "C:/Users/조상제/Desktop/CPA/.ai/execution-results/CPA_SIGNED_INT8_RANDOMIZED8_SCREEN3_FIA_20260917/public_attack.stderr.log"
+  },
+  "public_root": "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int8_randomized8_screen3_fia_B16_T10_20260917",
+  "private_root": "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results_private/signed_int8_randomized8_screen3_fia_B16_T10_20260917",
+  "parent_failure_evidence": "C:/Users/조상제/Desktop/CPA/.ai/execution-results/CPA_SIGNED_INT8_RANDOMIZED8_SCREEN3_FIA_20260917/parent_failure_evidence",
+  "ownership_transition": "C:/Users/조상제/Desktop/CPA/.ai/execution-results/CPA_SIGNED_INT8_RANDOMIZED8_SCREEN3_FIA_20260917/ownership_transition.json",
+  "private_data_policy": {
+    "sender_true_updates_consumed": true,
+    "attack_true_updates_consumed": false,
+    "evaluator_consumed": "x only",
+    "labels_consumed": false
+  },
+  "actual_image_cell_feasibility": "NOT_EVALUATED",
+  "public_registration_sha256": "d974ad6075bdf3dbb5607ec914d992957a26d537a83483e98f70c370242ea3fb",
+  "private_files": [
+    "sender/sender_validation.json",
+    "task_boundary.json"
+  ]
+}

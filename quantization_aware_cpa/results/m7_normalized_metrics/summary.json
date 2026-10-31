@@ -1,0 +1,188 @@
+{
+  "schema_version": 1,
+  "run_tag": "m7_normalized_metrics",
+  "status": "complete",
+  "created_at_utc": "2026-09-09T07:55:07.769220+00:00",
+  "protocol": "C:\\Users\\조상제\\Desktop\\CPA\\codex\\docs\\M7_FOLLOWUP_ANALYSIS_PROTOCOL.json",
+  "protocol_sha256": "24a25980e58356591943559e29474bb777494f426b0834ca6d68f76aa2daae67",
+  "code_sha256": "7af1f06731b789012ffc87719b062f9cdff97995028913279ebca2304cc1c418",
+  "floor": 0.7538226298987866,
+  "fp32_reference": 0.4464729486240281,
+  "reference_n": 36,
+  "excluded_global_indices": [
+    22,
+    24,
+    32,
+    36
+  ],
+  "denominator": 0.3073496812747585,
+  "fourbit_retained_percent": 68.28778221115309,
+  "formula": "(floor-condition)/(floor-fp32_pure36)",
+  "table": [
+    {
+      "run_tag": "m7_normalized_metrics",
+      "condition": "fp32 CPA (pure36)",
+      "n_values": 36,
+      "lpips": 0.4464729486240281,
+      "distance_to_floor": 0.3073496812747585,
+      "retained_ratio": 1.0,
+      "retained_percent": 100.0,
+      "scope": "GIA B8; excludes four oracle supplements",
+      "source": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\v7_m3_fallback_5batch\\per_image_metrics_aggregated.csv"
+    },
+    {
+      "run_tag": "m7_normalized_metrics",
+      "condition": "4-bit CPA",
+      "n_values": 40,
+      "lpips": 0.5439403489232063,
+      "distance_to_floor": 0.20988228097558026,
+      "retained_ratio": 0.6828778221115309,
+      "retained_percent": 68.28778221115309,
+      "scope": "GIA B8 all40; different n from pure36 reference",
+      "source": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\v7_m3_fallback_5batch\\per_image_metrics_aggregated.csv"
+    },
+    {
+      "run_tag": "m7_normalized_metrics",
+      "condition": "GMA fp32 (published)",
+      "n_values": "paper",
+      "lpips": 0.598,
+      "distance_to_floor": 0.1558226298987866,
+      "retained_ratio": 0.5069880965957057,
+      "retained_percent": 50.698809659570564,
+      "scope": "UIA n16 published cross-protocol reference only",
+      "source": "https://proceedings.mlr.press/v202/kariyappa23a/kariyappa23a.pdf#page=11"
+    },
+    {
+      "run_tag": "m7_normalized_metrics",
+      "condition": "prior-only",
+      "n_values": 40,
+      "lpips": 0.7737753406167031,
+      "distance_to_floor": -0.01995271071791649,
+      "retained_ratio": -0.06491859902102698,
+      "retained_percent": -6.491859902102698,
+      "scope": "GIA B8 random-target FIA",
+      "source": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_prior_only\\prior_only\\per_image_metrics.csv"
+    },
+    {
+      "run_tag": "m7_normalized_metrics",
+      "condition": "shuffled fp32 (pure36)",
+      "n_values": 720,
+      "lpips": 0.8084243430445591,
+      "distance_to_floor": -0.05460171314577256,
+      "retained_ratio": -0.17765339114492454,
+      "retained_percent": -17.765339114492456,
+      "scope": "20 permutations of36 existing images; fixed points retained",
+      "source": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_recompute_controls\\fp32_CPA_pairwise_lpips.npy"
+    },
+    {
+      "run_tag": "m7_normalized_metrics",
+      "condition": "shuffled 4-bit",
+      "n_values": 800,
+      "lpips": 0.7989024382084609,
+      "distance_to_floor": -0.045079808309674285,
+      "retained_ratio": -0.14667270231972265,
+      "retained_percent": -14.667270231972266,
+      "scope": "20 permutations of40 existing images; fixed points retained",
+      "source": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_recompute_controls\\four_bit_CPA_pairwise_lpips.npy"
+    },
+    {
+      "run_tag": "m7_normalized_metrics",
+      "condition": "no-CPA 4-bit (floor)",
+      "n_values": 40,
+      "lpips": 0.7538226298987866,
+      "distance_to_floor": 0.0,
+      "retained_ratio": 0.0,
+      "retained_percent": 0.0,
+      "scope": "designated common floor",
+      "source": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_no_cpa_control\\4bit\\per_image_metrics.csv"
+    },
+    {
+      "run_tag": "m7_normalized_metrics",
+      "condition": "no-CPA fp32",
+      "n_values": 40,
+      "lpips": 0.7568199418485164,
+      "distance_to_floor": -0.002997311949729853,
+      "retained_ratio": -0.009752123175460118,
+      "retained_percent": -0.9752123175460118,
+      "scope": "precision sensitivity reference",
+      "source": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_no_cpa_control\\fp32\\per_image_metrics.csv"
+    },
+    {
+      "run_tag": "m7_normalized_metrics",
+      "condition": "constant: full-val mean",
+      "n_values": 40,
+      "lpips": 0.8054762572050095,
+      "distance_to_floor": -0.051653627306222916,
+      "retained_ratio": -0.16806143117502248,
+      "retained_percent": -16.80614311750225,
+      "scope": "GIA40 originals; empirical reference",
+      "source": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_recompute_controls\\per_image_metrics.csv"
+    },
+    {
+      "run_tag": "m7_normalized_metrics",
+      "condition": "constant: gray0.5",
+      "n_values": 40,
+      "lpips": 0.8291986584663391,
+      "distance_to_floor": -0.07537602856755254,
+      "retained_ratio": -0.24524518214863333,
+      "retained_percent": -24.524518214863335,
+      "scope": "GIA40 originals; empirical reference",
+      "source": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_recompute_controls\\per_image_metrics.csv"
+    },
+    {
+      "run_tag": "m7_normalized_metrics",
+      "condition": "constant: uniform noise",
+      "n_values": 40,
+      "lpips": 0.8566403955221176,
+      "distance_to_floor": -0.102817765623331,
+      "retained_ratio": -0.33453024970413414,
+      "retained_percent": -33.453024970413416,
+      "scope": "GIA40 originals; empirical reference",
+      "source": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_recompute_controls\\per_image_metrics.csv"
+    }
+  ],
+  "matched36_sensitivity": {
+    "n": 36,
+    "floor": 0.7519503210981687,
+    "fp32": 0.4464729486240281,
+    "fourbit": 0.5176888704299927,
+    "retained_ratio": 0.7668700590516138,
+    "scope": "supplemental exactly matched36; does not replace requested main pure36 versus4bit40 display"
+  },
+  "rounded_user_inputs_percent": 68.30458835014642,
+  "inputs": {
+    "historical": {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\v7_m3_fallback_5batch\\per_image_metrics_aggregated.csv",
+      "sha256": "7d33efb9def3f2f955c19fe3d89a97e6f4e422e2c2637ce0153d292bf23a12bd"
+    },
+    "no_cpa_4bit": {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_no_cpa_control\\4bit\\per_image_metrics.csv",
+      "sha256": "329b0363f05667423e412df738e50cf8dc815264750b558f98cf277f48a9b026"
+    },
+    "no_cpa_fp32": {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_no_cpa_control\\fp32\\per_image_metrics.csv",
+      "sha256": "4a62ff5ac976296d8cb2bfe19de6bab60b0fa0b40e78ddc6f575d25479211167"
+    },
+    "prior": {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_prior_only\\prior_only\\per_image_metrics.csv",
+      "sha256": "7bf30747b6aa01df6fe3b6386d8e7f0df6b96ce26c2d4c070fae2fd6ba641077"
+    },
+    "controls": {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_recompute_controls\\per_image_metrics.csv",
+      "sha256": "1bf3b8af8b0cab17a3301535d71666854cac597d84bba980035e721b22c2b35c"
+    },
+    "fp32_matrix": {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_recompute_controls\\fp32_CPA_pairwise_lpips.npy",
+      "sha256": "720a519f144052701458b43574a022092fa24506abe04f524546bb06a5cee4b6"
+    },
+    "fourbit_matrix": {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_recompute_controls\\four_bit_CPA_pairwise_lpips.npy",
+      "sha256": "5426a3bc50c3c4060057324568b8e54ff3d0d6254c5b7665ab2e17d94e5529a0"
+    },
+    "matrix_validation": {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_recompute_controls\\summary.json",
+      "sha256": "59e6269e0a01d3841029cba007a56dc8b6c286c26f01ac459324c907e54de714"
+    }
+  },
+  "interpretation": "Floor-referenced normalized LPIPS gap, not a physical or information-theoretic fraction; primary display mixes36/40 samples; published GMA differs in protocol."
+}

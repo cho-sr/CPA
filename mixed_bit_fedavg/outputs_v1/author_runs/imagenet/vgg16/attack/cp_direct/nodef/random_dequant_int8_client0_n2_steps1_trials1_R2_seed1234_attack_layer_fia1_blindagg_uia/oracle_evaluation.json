@@ -1,0 +1,93 @@
+{
+  "batches": [
+    {
+      "batch": 0,
+      "embedding": {
+        "max_cs": 0.9999675757540107,
+        "mean_cs": 0.9996924262046586,
+        "metric": "Oracle permutation-aligned cosine similarity, evaluation only",
+        "min_cs": 0.9994172766553064,
+        "per_sample_cs": [
+          0.9994172766553064,
+          0.9999675757540107
+        ],
+        "recovered_cols": [
+          1,
+          0
+        ],
+        "signs": [
+          1.0,
+          1.0
+        ],
+        "truth_rows": [
+          0,
+          1
+        ]
+      },
+      "image": {
+        "evaluated_images": 1,
+        "lpips_mean": 0.8503947257995605,
+        "mse_mean": 0.07808925211429596,
+        "psnr_mean": 11.074087142944336,
+        "reconstruction_success_rate": 0.0,
+        "ssim_mean": 0.017082149162888527,
+        "success_lpips_threshold": 0.5
+      },
+      "metric_note": "Oracle metrics are evaluation only."
+    }
+  ],
+  "image_metric_dependencies": {
+    "lpips_available": true,
+    "lpips_error": null,
+    "ssim_available": true,
+    "ssim_error": null,
+    "success_lpips_threshold": 0.5
+  },
+  "metric_summary": [
+    {
+      "max": 0.8503947257995605,
+      "mean": 0.8503947257995605,
+      "metric": "lpips",
+      "min": 0.8503947257995605,
+      "n": 1,
+      "std": 0.0,
+      "threshold": null
+    },
+    {
+      "max": 11.074087142944336,
+      "mean": 11.074087142944336,
+      "metric": "psnr",
+      "min": 11.074087142944336,
+      "n": 1,
+      "std": 0.0,
+      "threshold": null
+    },
+    {
+      "max": 0.017082149162888527,
+      "mean": 0.017082149162888527,
+      "metric": "ssim",
+      "min": 0.017082149162888527,
+      "n": 1,
+      "std": 0.0,
+      "threshold": null
+    },
+    {
+      "max": 0.9999675757540107,
+      "mean": 0.9996924262046586,
+      "metric": "embedding_cosine_similarity",
+      "min": 0.9994172766553064,
+      "n": 2,
+      "std": 0.0002751495493521494,
+      "threshold": null
+    },
+    {
+      "max": 0.0,
+      "mean": 0.0,
+      "metric": "reconstruction_success_rate",
+      "min": 0.0,
+      "n": 1,
+      "std": 0.0,
+      "threshold": 0.5
+    }
+  ]
+}

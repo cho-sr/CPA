@@ -1,0 +1,1801 @@
+{
+  "project": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa",
+  "selected_m7": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_uia_4bit_B16",
+  "source_m6": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m6_uia_fp32_B16_fia",
+  "candidates": [
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_consistency_audit",
+      "run_tag": "m7_consistency_audit",
+      "status": "미확인",
+      "n_images": "미확인",
+      "selected": false,
+      "reason": "해당 UIA4bit 원실행이 아닌 후속 분석 또는 별도 대조군",
+      "batch_quantized_files": 0
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_followup_review",
+      "run_tag": null,
+      "status": "미확인",
+      "n_images": "미확인",
+      "selected": false,
+      "reason": "해당 UIA4bit 원실행이 아닌 후속 분석 또는 별도 대조군",
+      "batch_quantized_files": 0
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_no_cpa_control",
+      "run_tag": "m7_no_cpa_control",
+      "status": "미확인",
+      "n_images": "미확인",
+      "selected": false,
+      "reason": "해당 UIA4bit 원실행이 아닌 후속 분석 또는 별도 대조군",
+      "batch_quantized_files": 0
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_normalized_metrics",
+      "run_tag": "m7_normalized_metrics",
+      "status": "complete",
+      "n_images": "미확인",
+      "selected": false,
+      "reason": "해당 UIA4bit 원실행이 아닌 후속 분석 또는 별도 대조군",
+      "batch_quantized_files": 0
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_perimage_distribution",
+      "run_tag": "m7_perimage_distribution",
+      "status": "complete",
+      "n_images": "미확인",
+      "selected": false,
+      "reason": "해당 UIA4bit 원실행이 아닌 후속 분석 또는 별도 대조군",
+      "batch_quantized_files": 0
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_recompute_controls",
+      "run_tag": "m7_recompute_controls",
+      "status": "미확인",
+      "n_images": "미확인",
+      "selected": false,
+      "reason": "해당 UIA4bit 원실행이 아닌 후속 분석 또는 별도 대조군",
+      "batch_quantized_files": 0
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_shuffle_control",
+      "run_tag": "m7_shuffle_control",
+      "status": "complete",
+      "n_images": "미확인",
+      "selected": false,
+      "reason": "해당 UIA4bit 원실행이 아닌 후속 분석 또는 별도 대조군",
+      "batch_quantized_files": 0
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_uia_4bit_B16",
+      "run_tag": "m7_uia_4bit_B16",
+      "status": "complete",
+      "n_images": 80,
+      "selected": true,
+      "reason": "완료된 B16/T10/5batch/80장 UIA4bit 실행",
+      "batch_quantized_files": 5
+    }
+  ],
+  "m7_status": "complete",
+  "m6_status": "complete",
+  "n_images": 80,
+  "metrics_row_count": 80,
+  "manifest_metadata_count": 80,
+  "unique_originals": 80,
+  "config_matches_embedded_summary": true,
+  "batch_evidence": [
+    {
+      "batch": 0,
+      "n_images": 16,
+      "metric_rows": 16,
+      "n": [
+        "16"
+      ],
+      "T": [
+        "10"
+      ],
+      "bits": [
+        "4"
+      ],
+      "unique_labels": 16,
+      "completed_at_utc": "2026-09-09T08:37:24.596003+00:00",
+      "update_collection_executed": false,
+      "quantization_seed": 0
+    },
+    {
+      "batch": 1,
+      "n_images": 16,
+      "metric_rows": 16,
+      "n": [
+        "16"
+      ],
+      "T": [
+        "10"
+      ],
+      "bits": [
+        "4"
+      ],
+      "unique_labels": 16,
+      "completed_at_utc": "2026-09-09T09:09:57.703922+00:00",
+      "update_collection_executed": false,
+      "quantization_seed": 1000003
+    },
+    {
+      "batch": 2,
+      "n_images": 16,
+      "metric_rows": 16,
+      "n": [
+        "16"
+      ],
+      "T": [
+        "10"
+      ],
+      "bits": [
+        "4"
+      ],
+      "unique_labels": 16,
+      "completed_at_utc": "2026-09-09T09:42:46.606993+00:00",
+      "update_collection_executed": false,
+      "quantization_seed": 2000006
+    },
+    {
+      "batch": 3,
+      "n_images": 16,
+      "metric_rows": 16,
+      "n": [
+        "16"
+      ],
+      "T": [
+        "10"
+      ],
+      "bits": [
+        "4"
+      ],
+      "unique_labels": 16,
+      "completed_at_utc": "2026-09-09T10:15:27.046733+00:00",
+      "update_collection_executed": false,
+      "quantization_seed": 3000009
+    },
+    {
+      "batch": 4,
+      "n_images": 16,
+      "metric_rows": 16,
+      "n": [
+        "16"
+      ],
+      "T": [
+        "10"
+      ],
+      "bits": [
+        "4"
+      ],
+      "unique_labels": 16,
+      "completed_at_utc": "2026-09-09T10:47:59.433203+00:00",
+      "update_collection_executed": false,
+      "quantization_seed": 4000012
+    }
+  ],
+  "checks": [
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_uia_4bit_B16\\batch00\\inputs.pt",
+      "reason": "batch summary.output_hashes",
+      "expected_sha256": "24995487511a3e9d8d4665fdcd704f7a0f792249a9ba79880638d13bc4740141",
+      "actual_sha256": "24995487511a3e9d8d4665fdcd704f7a0f792249a9ba79880638d13bc4740141",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_uia_4bit_B16\\batch00\\quantized.pt",
+      "reason": "batch summary.output_hashes",
+      "expected_sha256": "1ef1fd892d029d0f2653b886bbdcc497373b0e12cab1da9ab43490fb5d40e5a0",
+      "actual_sha256": "1ef1fd892d029d0f2653b886bbdcc497373b0e12cab1da9ab43490fb5d40e5a0",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_uia_4bit_B16\\batch00\\mp_prediction.pt",
+      "reason": "batch summary.output_hashes",
+      "expected_sha256": "81a01234f5c103261758070f18db742eda6e606f30e97624f07729461caf11fd",
+      "actual_sha256": "81a01234f5c103261758070f18db742eda6e606f30e97624f07729461caf11fd",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_uia_4bit_B16\\batch00\\stage1.pt",
+      "reason": "batch summary.output_hashes",
+      "expected_sha256": "a6ff30e3d593987be5a65df22613d7cfef5aa78fbca6c6551a228fae25cd02d0",
+      "actual_sha256": "a6ff30e3d593987be5a65df22613d7cfef5aa78fbca6c6551a228fae25cd02d0",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_uia_4bit_B16\\batch00\\fia.pt",
+      "reason": "batch summary.output_hashes",
+      "expected_sha256": "cafb64f99a7ec84552cabc32bd3a93a1701064df5a0ea42e872999e20f31bf18",
+      "actual_sha256": "cafb64f99a7ec84552cabc32bd3a93a1701064df5a0ea42e872999e20f31bf18",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_uia_4bit_B16\\batch00\\rec.pt",
+      "reason": "batch summary.output_hashes",
+      "expected_sha256": "d08fde2a925f1feb1a113987ec54654199fc2f62fbb4f5a42d84f100780acc49",
+      "actual_sha256": "d08fde2a925f1feb1a113987ec54654199fc2f62fbb4f5a42d84f100780acc49",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_uia_4bit_B16\\batch00\\per_image_metrics.csv",
+      "reason": "batch summary.output_hashes",
+      "expected_sha256": "4005c3edf4f2808681ae7333a7743d8414c8d91b467e73ee83547d279183acf2",
+      "actual_sha256": "4005c3edf4f2808681ae7333a7743d8414c8d91b467e73ee83547d279183acf2",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_uia_4bit_B16\\batch00\\source_cosines.csv",
+      "reason": "batch summary.output_hashes",
+      "expected_sha256": "6298a56fca8ff000fe20be1d7c16fce4e96b54cec6a906817acdd50026dc7d4a",
+      "actual_sha256": "6298a56fca8ff000fe20be1d7c16fce4e96b54cec6a906817acdd50026dc7d4a",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_uia_4bit_B16\\batch00\\stage1_diagnostics.json",
+      "reason": "batch summary.output_hashes",
+      "expected_sha256": "d64acdec39af4ff74fb8dcb4d6c40873084cb6f0827c931358c3a02402cd5bba",
+      "actual_sha256": "d64acdec39af4ff74fb8dcb4d6c40873084cb6f0827c931358c3a02402cd5bba",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_uia_4bit_B16\\batch00\\fia_log.json",
+      "reason": "batch summary.output_hashes",
+      "expected_sha256": "593885c5676fc23c93d32c528f00c5361d3f3bac382985763d3c429a43af5412",
+      "actual_sha256": "593885c5676fc23c93d32c528f00c5361d3f3bac382985763d3c429a43af5412",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_uia_4bit_B16\\batch00\\reconstruction_grid.png",
+      "reason": "batch summary.output_hashes",
+      "expected_sha256": "cf9f22fdb562c08b2b67801ed658f7a76cfa665c3fc4a6feb8654afce362c2e0",
+      "actual_sha256": "cf9f22fdb562c08b2b67801ed658f7a76cfa665c3fc4a6feb8654afce362c2e0",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_uia_4bit_B16\\batch00\\fia.pt",
+      "reason": "checkpoint metadata",
+      "expected_sha256": "cafb64f99a7ec84552cabc32bd3a93a1701064df5a0ea42e872999e20f31bf18",
+      "actual_sha256": "cafb64f99a7ec84552cabc32bd3a93a1701064df5a0ea42e872999e20f31bf18",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_uia_4bit_B16\\batch00\\inputs.pt",
+      "reason": "checkpoint metadata",
+      "expected_sha256": "24995487511a3e9d8d4665fdcd704f7a0f792249a9ba79880638d13bc4740141",
+      "actual_sha256": "24995487511a3e9d8d4665fdcd704f7a0f792249a9ba79880638d13bc4740141",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_uia_4bit_B16\\batch00\\mp_prediction.pt",
+      "reason": "checkpoint metadata",
+      "expected_sha256": "81a01234f5c103261758070f18db742eda6e606f30e97624f07729461caf11fd",
+      "actual_sha256": "81a01234f5c103261758070f18db742eda6e606f30e97624f07729461caf11fd",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_uia_4bit_B16\\batch00\\quantized.pt",
+      "reason": "checkpoint metadata",
+      "expected_sha256": "1ef1fd892d029d0f2653b886bbdcc497373b0e12cab1da9ab43490fb5d40e5a0",
+      "actual_sha256": "1ef1fd892d029d0f2653b886bbdcc497373b0e12cab1da9ab43490fb5d40e5a0",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_uia_4bit_B16\\batch00\\stage1.pt",
+      "reason": "checkpoint metadata",
+      "expected_sha256": "a6ff30e3d593987be5a65df22613d7cfef5aa78fbca6c6551a228fae25cd02d0",
+      "actual_sha256": "a6ff30e3d593987be5a65df22613d7cfef5aa78fbca6c6551a228fae25cd02d0",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m6_uia_fp32_B16_fia\\batch00\\rec.pt",
+      "reason": "batch summary.output_hashes",
+      "expected_sha256": "47f891bbe2997d5fa0fcf6f781ffef501db34d045a8a874024a66f0cf1ae10ce",
+      "actual_sha256": "47f891bbe2997d5fa0fcf6f781ffef501db34d045a8a874024a66f0cf1ae10ce",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m6_uia_fp32_B16_fia\\batch00\\per_image_metrics.csv",
+      "reason": "batch summary.output_hashes",
+      "expected_sha256": "cef09bec7027544a0c57726b5bea554aaf013e54d6fba08f816b21463fd2568b",
+      "actual_sha256": "cef09bec7027544a0c57726b5bea554aaf013e54d6fba08f816b21463fd2568b",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m6_uia_fp32_B16_fia\\batch00\\source_cosines.csv",
+      "reason": "batch summary.output_hashes",
+      "expected_sha256": "addb0c02d5ea55d5f3adec416ab4eca55aac5e202e722ae21e23a585aab68aff",
+      "actual_sha256": "addb0c02d5ea55d5f3adec416ab4eca55aac5e202e722ae21e23a585aab68aff",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m6_uia_fp32_B16_fia\\batch00\\fia_log.json",
+      "reason": "batch summary.output_hashes",
+      "expected_sha256": "39c467f3ed60c52a2e8da80cd4d3fa12ba10deac325834393bb0f9be51d23dd1",
+      "actual_sha256": "39c467f3ed60c52a2e8da80cd4d3fa12ba10deac325834393bb0f9be51d23dd1",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m6_uia_fp32_B16_fia\\batch00\\reconstruction_grid.png",
+      "reason": "batch summary.output_hashes",
+      "expected_sha256": "e1a4bc5d48012b9c941faa8ef84c8e36ed814ea6652e389ceb3e4ff56ad8b55c",
+      "actual_sha256": "e1a4bc5d48012b9c941faa8ef84c8e36ed814ea6652e389ceb3e4ff56ad8b55c",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m6_uia_fp32_B16_fia\\batch00\\stage1_diagnostics.json",
+      "reason": "batch summary.output_hashes",
+      "expected_sha256": "9dbe35dd0bdb4919d2f6cd757ef177e7f19e1a797b85fd563111a3da9d8544da",
+      "actual_sha256": "9dbe35dd0bdb4919d2f6cd757ef177e7f19e1a797b85fd563111a3da9d8544da",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m6_uia_fp32_B16_fia\\batch00\\observation.pt",
+      "reason": "batch summary.output_hashes",
+      "expected_sha256": "b4de671b85c76786e311acc32e494a08bd6176b67c9d74b3686d9b771b017e54",
+      "actual_sha256": "b4de671b85c76786e311acc32e494a08bd6176b67c9d74b3686d9b771b017e54",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m6_uia_fp32_B16_fia\\batch00\\stage1.pt",
+      "reason": "batch summary.output_hashes",
+      "expected_sha256": "c5f592c77984455ece725acf69d9386a40ce4d017845e1c3be6a391814c20d66",
+      "actual_sha256": "c5f592c77984455ece725acf69d9386a40ce4d017845e1c3be6a391814c20d66",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m6_uia_fp32_B16_fia\\batch00\\fia.pt",
+      "reason": "batch summary.output_hashes",
+      "expected_sha256": "2d9649ee3bf2a7e1e7c3d2c7a3072212850de842aa9263be7403f9fb3119b08d",
+      "actual_sha256": "2d9649ee3bf2a7e1e7c3d2c7a3072212850de842aa9263be7403f9fb3119b08d",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m6_uia_fp32_B16_fia\\batch00\\inputs.pt",
+      "reason": "batch summary.output_hashes",
+      "expected_sha256": "24995487511a3e9d8d4665fdcd704f7a0f792249a9ba79880638d13bc4740141",
+      "actual_sha256": "24995487511a3e9d8d4665fdcd704f7a0f792249a9ba79880638d13bc4740141",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m6_uia_fp32_B16_fia\\batch00\\fia.pt",
+      "reason": "checkpoint metadata",
+      "expected_sha256": "2d9649ee3bf2a7e1e7c3d2c7a3072212850de842aa9263be7403f9fb3119b08d",
+      "actual_sha256": "2d9649ee3bf2a7e1e7c3d2c7a3072212850de842aa9263be7403f9fb3119b08d",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m6_uia_fp32_B16_fia\\batch00\\inputs.pt",
+      "reason": "checkpoint metadata",
+      "expected_sha256": "24995487511a3e9d8d4665fdcd704f7a0f792249a9ba79880638d13bc4740141",
+      "actual_sha256": "24995487511a3e9d8d4665fdcd704f7a0f792249a9ba79880638d13bc4740141",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m6_uia_fp32_B16_fia\\batch00\\observation.pt",
+      "reason": "checkpoint metadata",
+      "expected_sha256": "b4de671b85c76786e311acc32e494a08bd6176b67c9d74b3686d9b771b017e54",
+      "actual_sha256": "b4de671b85c76786e311acc32e494a08bd6176b67c9d74b3686d9b771b017e54",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m6_uia_fp32_B16_fia\\batch00\\stage1.pt",
+      "reason": "checkpoint metadata",
+      "expected_sha256": "c5f592c77984455ece725acf69d9386a40ce4d017845e1c3be6a391814c20d66",
+      "actual_sha256": "c5f592c77984455ece725acf69d9386a40ce4d017845e1c3be6a391814c20d66",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_uia_4bit_B16\\batch01\\inputs.pt",
+      "reason": "batch summary.output_hashes",
+      "expected_sha256": "2f8db846205dda931162ca171282b8372a41bf8d3061c66bb6c83f65c7f20088",
+      "actual_sha256": "2f8db846205dda931162ca171282b8372a41bf8d3061c66bb6c83f65c7f20088",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_uia_4bit_B16\\batch01\\quantized.pt",
+      "reason": "batch summary.output_hashes",
+      "expected_sha256": "8eac91d2ac96246c1e90ea298443b8d321bab549b90bcc34421ac055ca05f64c",
+      "actual_sha256": "8eac91d2ac96246c1e90ea298443b8d321bab549b90bcc34421ac055ca05f64c",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_uia_4bit_B16\\batch01\\mp_prediction.pt",
+      "reason": "batch summary.output_hashes",
+      "expected_sha256": "c408df1cc6fc53ce47fbbed0ccc3d2e68182a28bc5fd6e789f5a6135b1b7de28",
+      "actual_sha256": "c408df1cc6fc53ce47fbbed0ccc3d2e68182a28bc5fd6e789f5a6135b1b7de28",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_uia_4bit_B16\\batch01\\stage1.pt",
+      "reason": "batch summary.output_hashes",
+      "expected_sha256": "7ba5f1be5a41b0331b70575a34a086a014f5fd41178fb231577b318c04001ef1",
+      "actual_sha256": "7ba5f1be5a41b0331b70575a34a086a014f5fd41178fb231577b318c04001ef1",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_uia_4bit_B16\\batch01\\fia.pt",
+      "reason": "batch summary.output_hashes",
+      "expected_sha256": "5bbdd305e6540a37c967bfe4e74f5edcd332cc6c8348fe431cb69af3bf1b393e",
+      "actual_sha256": "5bbdd305e6540a37c967bfe4e74f5edcd332cc6c8348fe431cb69af3bf1b393e",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_uia_4bit_B16\\batch01\\rec.pt",
+      "reason": "batch summary.output_hashes",
+      "expected_sha256": "06f8e12843759af78f905d45198504def22496fc7bbedc0be774212c5279c712",
+      "actual_sha256": "06f8e12843759af78f905d45198504def22496fc7bbedc0be774212c5279c712",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_uia_4bit_B16\\batch01\\per_image_metrics.csv",
+      "reason": "batch summary.output_hashes",
+      "expected_sha256": "49c2b614d14b0ddb57068690c20013846c24805081bf9fe8e3de65f0be756f4e",
+      "actual_sha256": "49c2b614d14b0ddb57068690c20013846c24805081bf9fe8e3de65f0be756f4e",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_uia_4bit_B16\\batch01\\source_cosines.csv",
+      "reason": "batch summary.output_hashes",
+      "expected_sha256": "2d169216e00edeca3c863890c2e08d04bcc2ddf7afb8395209f007af9303abb8",
+      "actual_sha256": "2d169216e00edeca3c863890c2e08d04bcc2ddf7afb8395209f007af9303abb8",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_uia_4bit_B16\\batch01\\stage1_diagnostics.json",
+      "reason": "batch summary.output_hashes",
+      "expected_sha256": "f9d038c017e688b02d71815677d2765fe9f54f7ff17282a4bd8d618c8b94e0d6",
+      "actual_sha256": "f9d038c017e688b02d71815677d2765fe9f54f7ff17282a4bd8d618c8b94e0d6",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_uia_4bit_B16\\batch01\\fia_log.json",
+      "reason": "batch summary.output_hashes",
+      "expected_sha256": "e4d4927db2e7fd6c5b651df72653dc36836146f6be48bfd868a6026212c736f9",
+      "actual_sha256": "e4d4927db2e7fd6c5b651df72653dc36836146f6be48bfd868a6026212c736f9",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_uia_4bit_B16\\batch01\\reconstruction_grid.png",
+      "reason": "batch summary.output_hashes",
+      "expected_sha256": "1766d5e3033fe01629ab887664ead8db3a22ccafa94cc2010306c70241dfe4a5",
+      "actual_sha256": "1766d5e3033fe01629ab887664ead8db3a22ccafa94cc2010306c70241dfe4a5",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_uia_4bit_B16\\batch01\\fia.pt",
+      "reason": "checkpoint metadata",
+      "expected_sha256": "5bbdd305e6540a37c967bfe4e74f5edcd332cc6c8348fe431cb69af3bf1b393e",
+      "actual_sha256": "5bbdd305e6540a37c967bfe4e74f5edcd332cc6c8348fe431cb69af3bf1b393e",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_uia_4bit_B16\\batch01\\inputs.pt",
+      "reason": "checkpoint metadata",
+      "expected_sha256": "2f8db846205dda931162ca171282b8372a41bf8d3061c66bb6c83f65c7f20088",
+      "actual_sha256": "2f8db846205dda931162ca171282b8372a41bf8d3061c66bb6c83f65c7f20088",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_uia_4bit_B16\\batch01\\mp_prediction.pt",
+      "reason": "checkpoint metadata",
+      "expected_sha256": "c408df1cc6fc53ce47fbbed0ccc3d2e68182a28bc5fd6e789f5a6135b1b7de28",
+      "actual_sha256": "c408df1cc6fc53ce47fbbed0ccc3d2e68182a28bc5fd6e789f5a6135b1b7de28",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_uia_4bit_B16\\batch01\\quantized.pt",
+      "reason": "checkpoint metadata",
+      "expected_sha256": "8eac91d2ac96246c1e90ea298443b8d321bab549b90bcc34421ac055ca05f64c",
+      "actual_sha256": "8eac91d2ac96246c1e90ea298443b8d321bab549b90bcc34421ac055ca05f64c",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_uia_4bit_B16\\batch01\\stage1.pt",
+      "reason": "checkpoint metadata",
+      "expected_sha256": "7ba5f1be5a41b0331b70575a34a086a014f5fd41178fb231577b318c04001ef1",
+      "actual_sha256": "7ba5f1be5a41b0331b70575a34a086a014f5fd41178fb231577b318c04001ef1",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m6_uia_fp32_B16_fia\\batch01\\rec.pt",
+      "reason": "batch summary.output_hashes",
+      "expected_sha256": "d006bd56d0e1356b9482184c49262cc8652258810b4babde8c76925d5a3a7836",
+      "actual_sha256": "d006bd56d0e1356b9482184c49262cc8652258810b4babde8c76925d5a3a7836",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m6_uia_fp32_B16_fia\\batch01\\per_image_metrics.csv",
+      "reason": "batch summary.output_hashes",
+      "expected_sha256": "5948f5d1fadb2bcdc0e1cf0116a4461e1ab397e68cebeb020f37d7a6e75205f0",
+      "actual_sha256": "5948f5d1fadb2bcdc0e1cf0116a4461e1ab397e68cebeb020f37d7a6e75205f0",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m6_uia_fp32_B16_fia\\batch01\\source_cosines.csv",
+      "reason": "batch summary.output_hashes",
+      "expected_sha256": "90a9c2af2042d683177e3005f0c09fc25fcc40e04eb42273f32c6529e9535fb3",
+      "actual_sha256": "90a9c2af2042d683177e3005f0c09fc25fcc40e04eb42273f32c6529e9535fb3",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m6_uia_fp32_B16_fia\\batch01\\fia_log.json",
+      "reason": "batch summary.output_hashes",
+      "expected_sha256": "4ac16811fea65cec3c3e7f6198af67ef59ed1daef9ce79a82b889729ade2c90d",
+      "actual_sha256": "4ac16811fea65cec3c3e7f6198af67ef59ed1daef9ce79a82b889729ade2c90d",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m6_uia_fp32_B16_fia\\batch01\\reconstruction_grid.png",
+      "reason": "batch summary.output_hashes",
+      "expected_sha256": "0c65186d1591be2749f17fc72b30f59bee2f22adb2a10abdfee5414f7e1f53b3",
+      "actual_sha256": "0c65186d1591be2749f17fc72b30f59bee2f22adb2a10abdfee5414f7e1f53b3",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m6_uia_fp32_B16_fia\\batch01\\stage1_diagnostics.json",
+      "reason": "batch summary.output_hashes",
+      "expected_sha256": "91e7010c4b445e48137a130e592c1ceb2b56150eba5e523dfb0d4b12d939aa1b",
+      "actual_sha256": "91e7010c4b445e48137a130e592c1ceb2b56150eba5e523dfb0d4b12d939aa1b",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m6_uia_fp32_B16_fia\\batch01\\observation.pt",
+      "reason": "batch summary.output_hashes",
+      "expected_sha256": "39168d7b8239e8521fbbb213031565340680daacfb8ff6ba1bee2aa4aaef1165",
+      "actual_sha256": "39168d7b8239e8521fbbb213031565340680daacfb8ff6ba1bee2aa4aaef1165",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m6_uia_fp32_B16_fia\\batch01\\stage1.pt",
+      "reason": "batch summary.output_hashes",
+      "expected_sha256": "3508c3ccd6c9b014ddd3972afc19637f2d66a2b627b73a056204170af18b1d02",
+      "actual_sha256": "3508c3ccd6c9b014ddd3972afc19637f2d66a2b627b73a056204170af18b1d02",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m6_uia_fp32_B16_fia\\batch01\\fia.pt",
+      "reason": "batch summary.output_hashes",
+      "expected_sha256": "ca6d751814a453503038337221e94b677c315954407d69d3f3a33e770ced669a",
+      "actual_sha256": "ca6d751814a453503038337221e94b677c315954407d69d3f3a33e770ced669a",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m6_uia_fp32_B16_fia\\batch01\\inputs.pt",
+      "reason": "batch summary.output_hashes",
+      "expected_sha256": "2f8db846205dda931162ca171282b8372a41bf8d3061c66bb6c83f65c7f20088",
+      "actual_sha256": "2f8db846205dda931162ca171282b8372a41bf8d3061c66bb6c83f65c7f20088",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m6_uia_fp32_B16_fia\\batch01\\fia.pt",
+      "reason": "checkpoint metadata",
+      "expected_sha256": "ca6d751814a453503038337221e94b677c315954407d69d3f3a33e770ced669a",
+      "actual_sha256": "ca6d751814a453503038337221e94b677c315954407d69d3f3a33e770ced669a",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m6_uia_fp32_B16_fia\\batch01\\inputs.pt",
+      "reason": "checkpoint metadata",
+      "expected_sha256": "2f8db846205dda931162ca171282b8372a41bf8d3061c66bb6c83f65c7f20088",
+      "actual_sha256": "2f8db846205dda931162ca171282b8372a41bf8d3061c66bb6c83f65c7f20088",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m6_uia_fp32_B16_fia\\batch01\\observation.pt",
+      "reason": "checkpoint metadata",
+      "expected_sha256": "39168d7b8239e8521fbbb213031565340680daacfb8ff6ba1bee2aa4aaef1165",
+      "actual_sha256": "39168d7b8239e8521fbbb213031565340680daacfb8ff6ba1bee2aa4aaef1165",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m6_uia_fp32_B16_fia\\batch01\\stage1.pt",
+      "reason": "checkpoint metadata",
+      "expected_sha256": "3508c3ccd6c9b014ddd3972afc19637f2d66a2b627b73a056204170af18b1d02",
+      "actual_sha256": "3508c3ccd6c9b014ddd3972afc19637f2d66a2b627b73a056204170af18b1d02",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_uia_4bit_B16\\batch02\\inputs.pt",
+      "reason": "batch summary.output_hashes",
+      "expected_sha256": "1f1c898c93b7e0fcf4c00fecbb88fce2f913b4d4ed298aa21479a851c3284db3",
+      "actual_sha256": "1f1c898c93b7e0fcf4c00fecbb88fce2f913b4d4ed298aa21479a851c3284db3",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_uia_4bit_B16\\batch02\\quantized.pt",
+      "reason": "batch summary.output_hashes",
+      "expected_sha256": "bf8c68cb0a4100f5a9dc26dfcaea50ceb3587cd0422e5723ed98295dc6fe1048",
+      "actual_sha256": "bf8c68cb0a4100f5a9dc26dfcaea50ceb3587cd0422e5723ed98295dc6fe1048",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_uia_4bit_B16\\batch02\\mp_prediction.pt",
+      "reason": "batch summary.output_hashes",
+      "expected_sha256": "310f1ec5996638466a883a03d79cd5e5e00266b22a9524ded3f5cee7033c7b25",
+      "actual_sha256": "310f1ec5996638466a883a03d79cd5e5e00266b22a9524ded3f5cee7033c7b25",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_uia_4bit_B16\\batch02\\stage1.pt",
+      "reason": "batch summary.output_hashes",
+      "expected_sha256": "c0a2afb10f49d3563f1d89378b88a39486cef84338db163c3649fc07a68ad298",
+      "actual_sha256": "c0a2afb10f49d3563f1d89378b88a39486cef84338db163c3649fc07a68ad298",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_uia_4bit_B16\\batch02\\fia.pt",
+      "reason": "batch summary.output_hashes",
+      "expected_sha256": "bd9df01f182472161a8a67ee9a26fbd9dd8972d05a568c7b66823085e307c513",
+      "actual_sha256": "bd9df01f182472161a8a67ee9a26fbd9dd8972d05a568c7b66823085e307c513",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_uia_4bit_B16\\batch02\\rec.pt",
+      "reason": "batch summary.output_hashes",
+      "expected_sha256": "5046f664ad2fd29d04e0353c8bfc856b3620d1608e27e0f8227eec1c8ce98d7f",
+      "actual_sha256": "5046f664ad2fd29d04e0353c8bfc856b3620d1608e27e0f8227eec1c8ce98d7f",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_uia_4bit_B16\\batch02\\per_image_metrics.csv",
+      "reason": "batch summary.output_hashes",
+      "expected_sha256": "0570ce3b821a9b3a646ae3493b8d2338a7b9a625c5c6542a378417fbd594cae9",
+      "actual_sha256": "0570ce3b821a9b3a646ae3493b8d2338a7b9a625c5c6542a378417fbd594cae9",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_uia_4bit_B16\\batch02\\source_cosines.csv",
+      "reason": "batch summary.output_hashes",
+      "expected_sha256": "fae72d4dd24f241ee956d1e6ccca8634748b3087e4eed2b16d88f1d9936d79da",
+      "actual_sha256": "fae72d4dd24f241ee956d1e6ccca8634748b3087e4eed2b16d88f1d9936d79da",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_uia_4bit_B16\\batch02\\stage1_diagnostics.json",
+      "reason": "batch summary.output_hashes",
+      "expected_sha256": "0bfa67e592c30054c22195b81b759bc8c2899c64839858f2282e8c1b3ba788cf",
+      "actual_sha256": "0bfa67e592c30054c22195b81b759bc8c2899c64839858f2282e8c1b3ba788cf",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_uia_4bit_B16\\batch02\\fia_log.json",
+      "reason": "batch summary.output_hashes",
+      "expected_sha256": "267ebd1a68fa521a20242db2ccdcb00d2da43c9bd8f56ae045db31e47978d0dd",
+      "actual_sha256": "267ebd1a68fa521a20242db2ccdcb00d2da43c9bd8f56ae045db31e47978d0dd",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_uia_4bit_B16\\batch02\\reconstruction_grid.png",
+      "reason": "batch summary.output_hashes",
+      "expected_sha256": "aa95bb7fea03041f0357744cf81440ef2e28fbfd92b499ef833693319fc1b135",
+      "actual_sha256": "aa95bb7fea03041f0357744cf81440ef2e28fbfd92b499ef833693319fc1b135",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_uia_4bit_B16\\batch02\\fia.pt",
+      "reason": "checkpoint metadata",
+      "expected_sha256": "bd9df01f182472161a8a67ee9a26fbd9dd8972d05a568c7b66823085e307c513",
+      "actual_sha256": "bd9df01f182472161a8a67ee9a26fbd9dd8972d05a568c7b66823085e307c513",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_uia_4bit_B16\\batch02\\inputs.pt",
+      "reason": "checkpoint metadata",
+      "expected_sha256": "1f1c898c93b7e0fcf4c00fecbb88fce2f913b4d4ed298aa21479a851c3284db3",
+      "actual_sha256": "1f1c898c93b7e0fcf4c00fecbb88fce2f913b4d4ed298aa21479a851c3284db3",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_uia_4bit_B16\\batch02\\mp_prediction.pt",
+      "reason": "checkpoint metadata",
+      "expected_sha256": "310f1ec5996638466a883a03d79cd5e5e00266b22a9524ded3f5cee7033c7b25",
+      "actual_sha256": "310f1ec5996638466a883a03d79cd5e5e00266b22a9524ded3f5cee7033c7b25",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_uia_4bit_B16\\batch02\\quantized.pt",
+      "reason": "checkpoint metadata",
+      "expected_sha256": "bf8c68cb0a4100f5a9dc26dfcaea50ceb3587cd0422e5723ed98295dc6fe1048",
+      "actual_sha256": "bf8c68cb0a4100f5a9dc26dfcaea50ceb3587cd0422e5723ed98295dc6fe1048",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_uia_4bit_B16\\batch02\\stage1.pt",
+      "reason": "checkpoint metadata",
+      "expected_sha256": "c0a2afb10f49d3563f1d89378b88a39486cef84338db163c3649fc07a68ad298",
+      "actual_sha256": "c0a2afb10f49d3563f1d89378b88a39486cef84338db163c3649fc07a68ad298",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m6_uia_fp32_B16_fia\\batch02\\rec.pt",
+      "reason": "batch summary.output_hashes",
+      "expected_sha256": "6994a936ac4e1fbe96effcf07ee705aa8c2f78c4fb64179ef0664e08696ab2da",
+      "actual_sha256": "6994a936ac4e1fbe96effcf07ee705aa8c2f78c4fb64179ef0664e08696ab2da",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m6_uia_fp32_B16_fia\\batch02\\per_image_metrics.csv",
+      "reason": "batch summary.output_hashes",
+      "expected_sha256": "2ce9fce15198bb49b4bf3eca56188b2689478019b170c92223c30a474ef01e77",
+      "actual_sha256": "2ce9fce15198bb49b4bf3eca56188b2689478019b170c92223c30a474ef01e77",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m6_uia_fp32_B16_fia\\batch02\\source_cosines.csv",
+      "reason": "batch summary.output_hashes",
+      "expected_sha256": "dfa7fb6afe4b63af8a16da6e634eec79be0b3e82a865fbc28064899045758a55",
+      "actual_sha256": "dfa7fb6afe4b63af8a16da6e634eec79be0b3e82a865fbc28064899045758a55",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m6_uia_fp32_B16_fia\\batch02\\fia_log.json",
+      "reason": "batch summary.output_hashes",
+      "expected_sha256": "298b97defd622a4e2071fcccd5d34209bda0370ffc3e9ed82365d130c9669724",
+      "actual_sha256": "298b97defd622a4e2071fcccd5d34209bda0370ffc3e9ed82365d130c9669724",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m6_uia_fp32_B16_fia\\batch02\\reconstruction_grid.png",
+      "reason": "batch summary.output_hashes",
+      "expected_sha256": "b520656e9d210f0f384f641e10b36695242e9baead617c9128bcc3b8b8b791e3",
+      "actual_sha256": "b520656e9d210f0f384f641e10b36695242e9baead617c9128bcc3b8b8b791e3",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m6_uia_fp32_B16_fia\\batch02\\stage1_diagnostics.json",
+      "reason": "batch summary.output_hashes",
+      "expected_sha256": "0ff24a4d53baf1c1e0a43d7521a939db42e8666111da442b02c036f2ff9e02a1",
+      "actual_sha256": "0ff24a4d53baf1c1e0a43d7521a939db42e8666111da442b02c036f2ff9e02a1",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m6_uia_fp32_B16_fia\\batch02\\observation.pt",
+      "reason": "batch summary.output_hashes",
+      "expected_sha256": "3ddcd6ef311c0f97dc7a461636973fcb8a1b160e10b5b6b9acf8d2c1b15548c2",
+      "actual_sha256": "3ddcd6ef311c0f97dc7a461636973fcb8a1b160e10b5b6b9acf8d2c1b15548c2",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m6_uia_fp32_B16_fia\\batch02\\stage1.pt",
+      "reason": "batch summary.output_hashes",
+      "expected_sha256": "cbdfbbfb391d744978e62d2a98f4b3bdef1bc9e3b3d5546470d1b05893e6526b",
+      "actual_sha256": "cbdfbbfb391d744978e62d2a98f4b3bdef1bc9e3b3d5546470d1b05893e6526b",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m6_uia_fp32_B16_fia\\batch02\\fia.pt",
+      "reason": "batch summary.output_hashes",
+      "expected_sha256": "cc04abf985e63159ad9ed65a060d62f2ea76aa75dc9c454d1cad6158600a59b0",
+      "actual_sha256": "cc04abf985e63159ad9ed65a060d62f2ea76aa75dc9c454d1cad6158600a59b0",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m6_uia_fp32_B16_fia\\batch02\\inputs.pt",
+      "reason": "batch summary.output_hashes",
+      "expected_sha256": "1f1c898c93b7e0fcf4c00fecbb88fce2f913b4d4ed298aa21479a851c3284db3",
+      "actual_sha256": "1f1c898c93b7e0fcf4c00fecbb88fce2f913b4d4ed298aa21479a851c3284db3",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m6_uia_fp32_B16_fia\\batch02\\fia.pt",
+      "reason": "checkpoint metadata",
+      "expected_sha256": "cc04abf985e63159ad9ed65a060d62f2ea76aa75dc9c454d1cad6158600a59b0",
+      "actual_sha256": "cc04abf985e63159ad9ed65a060d62f2ea76aa75dc9c454d1cad6158600a59b0",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m6_uia_fp32_B16_fia\\batch02\\inputs.pt",
+      "reason": "checkpoint metadata",
+      "expected_sha256": "1f1c898c93b7e0fcf4c00fecbb88fce2f913b4d4ed298aa21479a851c3284db3",
+      "actual_sha256": "1f1c898c93b7e0fcf4c00fecbb88fce2f913b4d4ed298aa21479a851c3284db3",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m6_uia_fp32_B16_fia\\batch02\\observation.pt",
+      "reason": "checkpoint metadata",
+      "expected_sha256": "3ddcd6ef311c0f97dc7a461636973fcb8a1b160e10b5b6b9acf8d2c1b15548c2",
+      "actual_sha256": "3ddcd6ef311c0f97dc7a461636973fcb8a1b160e10b5b6b9acf8d2c1b15548c2",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m6_uia_fp32_B16_fia\\batch02\\stage1.pt",
+      "reason": "checkpoint metadata",
+      "expected_sha256": "cbdfbbfb391d744978e62d2a98f4b3bdef1bc9e3b3d5546470d1b05893e6526b",
+      "actual_sha256": "cbdfbbfb391d744978e62d2a98f4b3bdef1bc9e3b3d5546470d1b05893e6526b",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_uia_4bit_B16\\batch03\\inputs.pt",
+      "reason": "batch summary.output_hashes",
+      "expected_sha256": "ebdbd1774a320767a40f22c698260b4e3a9ac7ad4b69c2a92b987fe4318d570a",
+      "actual_sha256": "ebdbd1774a320767a40f22c698260b4e3a9ac7ad4b69c2a92b987fe4318d570a",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_uia_4bit_B16\\batch03\\quantized.pt",
+      "reason": "batch summary.output_hashes",
+      "expected_sha256": "1a3d6a537651e6d921e59d25be75c05bb78905a71de26bb8ae0308769d25d9ad",
+      "actual_sha256": "1a3d6a537651e6d921e59d25be75c05bb78905a71de26bb8ae0308769d25d9ad",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_uia_4bit_B16\\batch03\\mp_prediction.pt",
+      "reason": "batch summary.output_hashes",
+      "expected_sha256": "f1ba2e8bfb9d3ac8249a2ffb05fb656805ecc530153f7c53590256e2f14dced5",
+      "actual_sha256": "f1ba2e8bfb9d3ac8249a2ffb05fb656805ecc530153f7c53590256e2f14dced5",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_uia_4bit_B16\\batch03\\stage1.pt",
+      "reason": "batch summary.output_hashes",
+      "expected_sha256": "9cf682f3022f0b5b605b4adc463d6b2d2508ac329a5c554c33f7988a3efa1e78",
+      "actual_sha256": "9cf682f3022f0b5b605b4adc463d6b2d2508ac329a5c554c33f7988a3efa1e78",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_uia_4bit_B16\\batch03\\fia.pt",
+      "reason": "batch summary.output_hashes",
+      "expected_sha256": "65766c31ac3d1884081c3f1b8671323d9735c88b1f05112a3530f365a5215c75",
+      "actual_sha256": "65766c31ac3d1884081c3f1b8671323d9735c88b1f05112a3530f365a5215c75",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_uia_4bit_B16\\batch03\\rec.pt",
+      "reason": "batch summary.output_hashes",
+      "expected_sha256": "9fcbee1ef0cbadbb389c99076c4a75e6728ecfcca1f58572b6de5da44338701e",
+      "actual_sha256": "9fcbee1ef0cbadbb389c99076c4a75e6728ecfcca1f58572b6de5da44338701e",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_uia_4bit_B16\\batch03\\per_image_metrics.csv",
+      "reason": "batch summary.output_hashes",
+      "expected_sha256": "505968fb994841d9ecf7707eb5951ef522fb99f84a29cfb340acd050facaf5b7",
+      "actual_sha256": "505968fb994841d9ecf7707eb5951ef522fb99f84a29cfb340acd050facaf5b7",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_uia_4bit_B16\\batch03\\source_cosines.csv",
+      "reason": "batch summary.output_hashes",
+      "expected_sha256": "f17c6b54537f5d67358ac845a3ffc1afcde94d83037370f2462348189125868d",
+      "actual_sha256": "f17c6b54537f5d67358ac845a3ffc1afcde94d83037370f2462348189125868d",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_uia_4bit_B16\\batch03\\stage1_diagnostics.json",
+      "reason": "batch summary.output_hashes",
+      "expected_sha256": "365064305d4cbb4c349719662e88ef6a0707996327ed6e7274a1640f28911c34",
+      "actual_sha256": "365064305d4cbb4c349719662e88ef6a0707996327ed6e7274a1640f28911c34",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_uia_4bit_B16\\batch03\\fia_log.json",
+      "reason": "batch summary.output_hashes",
+      "expected_sha256": "14ce7647a51b3996575ec8cbc27ab3c8238f16dc552e8be4e7a08065f7af1fbd",
+      "actual_sha256": "14ce7647a51b3996575ec8cbc27ab3c8238f16dc552e8be4e7a08065f7af1fbd",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_uia_4bit_B16\\batch03\\reconstruction_grid.png",
+      "reason": "batch summary.output_hashes",
+      "expected_sha256": "55a2b37316c493b2f1cb0ea95a7aaf6775ab067f41d5d9f8f305cc0d510c3182",
+      "actual_sha256": "55a2b37316c493b2f1cb0ea95a7aaf6775ab067f41d5d9f8f305cc0d510c3182",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_uia_4bit_B16\\batch03\\fia.pt",
+      "reason": "checkpoint metadata",
+      "expected_sha256": "65766c31ac3d1884081c3f1b8671323d9735c88b1f05112a3530f365a5215c75",
+      "actual_sha256": "65766c31ac3d1884081c3f1b8671323d9735c88b1f05112a3530f365a5215c75",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_uia_4bit_B16\\batch03\\inputs.pt",
+      "reason": "checkpoint metadata",
+      "expected_sha256": "ebdbd1774a320767a40f22c698260b4e3a9ac7ad4b69c2a92b987fe4318d570a",
+      "actual_sha256": "ebdbd1774a320767a40f22c698260b4e3a9ac7ad4b69c2a92b987fe4318d570a",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_uia_4bit_B16\\batch03\\mp_prediction.pt",
+      "reason": "checkpoint metadata",
+      "expected_sha256": "f1ba2e8bfb9d3ac8249a2ffb05fb656805ecc530153f7c53590256e2f14dced5",
+      "actual_sha256": "f1ba2e8bfb9d3ac8249a2ffb05fb656805ecc530153f7c53590256e2f14dced5",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_uia_4bit_B16\\batch03\\quantized.pt",
+      "reason": "checkpoint metadata",
+      "expected_sha256": "1a3d6a537651e6d921e59d25be75c05bb78905a71de26bb8ae0308769d25d9ad",
+      "actual_sha256": "1a3d6a537651e6d921e59d25be75c05bb78905a71de26bb8ae0308769d25d9ad",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_uia_4bit_B16\\batch03\\stage1.pt",
+      "reason": "checkpoint metadata",
+      "expected_sha256": "9cf682f3022f0b5b605b4adc463d6b2d2508ac329a5c554c33f7988a3efa1e78",
+      "actual_sha256": "9cf682f3022f0b5b605b4adc463d6b2d2508ac329a5c554c33f7988a3efa1e78",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m6_uia_fp32_B16_fia\\batch03\\rec.pt",
+      "reason": "batch summary.output_hashes",
+      "expected_sha256": "18266d5e465fcd49b5f7128147a8689b25e75d6654307fea1594e45925297590",
+      "actual_sha256": "18266d5e465fcd49b5f7128147a8689b25e75d6654307fea1594e45925297590",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m6_uia_fp32_B16_fia\\batch03\\per_image_metrics.csv",
+      "reason": "batch summary.output_hashes",
+      "expected_sha256": "d9c460e7c1a5f4943771b76b3c81c90f763e70c2e51c29afba2f7dd76bf3a82b",
+      "actual_sha256": "d9c460e7c1a5f4943771b76b3c81c90f763e70c2e51c29afba2f7dd76bf3a82b",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m6_uia_fp32_B16_fia\\batch03\\source_cosines.csv",
+      "reason": "batch summary.output_hashes",
+      "expected_sha256": "3b1802116261812d995c8822d12f5af330312fb8577120b6a971e3d49ef2d024",
+      "actual_sha256": "3b1802116261812d995c8822d12f5af330312fb8577120b6a971e3d49ef2d024",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m6_uia_fp32_B16_fia\\batch03\\fia_log.json",
+      "reason": "batch summary.output_hashes",
+      "expected_sha256": "a2c5e145bc3d722285343d6ede54cb0673877d59fdf6fbf69ebf675a2b2bd3fc",
+      "actual_sha256": "a2c5e145bc3d722285343d6ede54cb0673877d59fdf6fbf69ebf675a2b2bd3fc",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m6_uia_fp32_B16_fia\\batch03\\reconstruction_grid.png",
+      "reason": "batch summary.output_hashes",
+      "expected_sha256": "2eed569bbfd02206ca6f40e521cde6eb0e36cb905ac505fe81202912b6678823",
+      "actual_sha256": "2eed569bbfd02206ca6f40e521cde6eb0e36cb905ac505fe81202912b6678823",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m6_uia_fp32_B16_fia\\batch03\\stage1_diagnostics.json",
+      "reason": "batch summary.output_hashes",
+      "expected_sha256": "e0b60715069d12e1c5bce0e24d974669483491607b4402b5834467605bf14af6",
+      "actual_sha256": "e0b60715069d12e1c5bce0e24d974669483491607b4402b5834467605bf14af6",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m6_uia_fp32_B16_fia\\batch03\\observation.pt",
+      "reason": "batch summary.output_hashes",
+      "expected_sha256": "cda34d3f8bed30feab5ccb03ea183488bca0ea87aab3004a76558566bd4e75a1",
+      "actual_sha256": "cda34d3f8bed30feab5ccb03ea183488bca0ea87aab3004a76558566bd4e75a1",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m6_uia_fp32_B16_fia\\batch03\\stage1.pt",
+      "reason": "batch summary.output_hashes",
+      "expected_sha256": "ec6dcd401bb0b77272633d97687199fc4e1c88869816025117fd16210e1cae0b",
+      "actual_sha256": "ec6dcd401bb0b77272633d97687199fc4e1c88869816025117fd16210e1cae0b",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m6_uia_fp32_B16_fia\\batch03\\fia.pt",
+      "reason": "batch summary.output_hashes",
+      "expected_sha256": "153be62937632e65a1f0e36611e6f08d48c0355d880094c2b1b4ec0ba9f2d3bc",
+      "actual_sha256": "153be62937632e65a1f0e36611e6f08d48c0355d880094c2b1b4ec0ba9f2d3bc",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m6_uia_fp32_B16_fia\\batch03\\inputs.pt",
+      "reason": "batch summary.output_hashes",
+      "expected_sha256": "ebdbd1774a320767a40f22c698260b4e3a9ac7ad4b69c2a92b987fe4318d570a",
+      "actual_sha256": "ebdbd1774a320767a40f22c698260b4e3a9ac7ad4b69c2a92b987fe4318d570a",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m6_uia_fp32_B16_fia\\batch03\\fia.pt",
+      "reason": "checkpoint metadata",
+      "expected_sha256": "153be62937632e65a1f0e36611e6f08d48c0355d880094c2b1b4ec0ba9f2d3bc",
+      "actual_sha256": "153be62937632e65a1f0e36611e6f08d48c0355d880094c2b1b4ec0ba9f2d3bc",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m6_uia_fp32_B16_fia\\batch03\\inputs.pt",
+      "reason": "checkpoint metadata",
+      "expected_sha256": "ebdbd1774a320767a40f22c698260b4e3a9ac7ad4b69c2a92b987fe4318d570a",
+      "actual_sha256": "ebdbd1774a320767a40f22c698260b4e3a9ac7ad4b69c2a92b987fe4318d570a",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m6_uia_fp32_B16_fia\\batch03\\observation.pt",
+      "reason": "checkpoint metadata",
+      "expected_sha256": "cda34d3f8bed30feab5ccb03ea183488bca0ea87aab3004a76558566bd4e75a1",
+      "actual_sha256": "cda34d3f8bed30feab5ccb03ea183488bca0ea87aab3004a76558566bd4e75a1",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m6_uia_fp32_B16_fia\\batch03\\stage1.pt",
+      "reason": "checkpoint metadata",
+      "expected_sha256": "ec6dcd401bb0b77272633d97687199fc4e1c88869816025117fd16210e1cae0b",
+      "actual_sha256": "ec6dcd401bb0b77272633d97687199fc4e1c88869816025117fd16210e1cae0b",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_uia_4bit_B16\\batch04\\inputs.pt",
+      "reason": "batch summary.output_hashes",
+      "expected_sha256": "6c30802ecdeb7c679e28f47b00e59f016464a3e850cca23fd5a396448ceae20f",
+      "actual_sha256": "6c30802ecdeb7c679e28f47b00e59f016464a3e850cca23fd5a396448ceae20f",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_uia_4bit_B16\\batch04\\quantized.pt",
+      "reason": "batch summary.output_hashes",
+      "expected_sha256": "37a4b2b32e6015b35f5999ca650e1d13b5edb71b5e92c6f0a93bf8a3faa95589",
+      "actual_sha256": "37a4b2b32e6015b35f5999ca650e1d13b5edb71b5e92c6f0a93bf8a3faa95589",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_uia_4bit_B16\\batch04\\mp_prediction.pt",
+      "reason": "batch summary.output_hashes",
+      "expected_sha256": "461b13fba94eaef5aa087ff37945d8bd0b8eaf424ec57719721d2999a5296c73",
+      "actual_sha256": "461b13fba94eaef5aa087ff37945d8bd0b8eaf424ec57719721d2999a5296c73",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_uia_4bit_B16\\batch04\\stage1.pt",
+      "reason": "batch summary.output_hashes",
+      "expected_sha256": "77635ef464bc5abb8141daf925e8a544bbeb69c8afa19862620ed946eaf6d533",
+      "actual_sha256": "77635ef464bc5abb8141daf925e8a544bbeb69c8afa19862620ed946eaf6d533",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_uia_4bit_B16\\batch04\\fia.pt",
+      "reason": "batch summary.output_hashes",
+      "expected_sha256": "7fb92970bcb0a8c5196da92812da6060cac17e8375e04f40c1f5700f9ce9fe8d",
+      "actual_sha256": "7fb92970bcb0a8c5196da92812da6060cac17e8375e04f40c1f5700f9ce9fe8d",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_uia_4bit_B16\\batch04\\rec.pt",
+      "reason": "batch summary.output_hashes",
+      "expected_sha256": "7a1a3e71f7bdf7b3e17dc4e5e08c945e492e2f8f2fe663aa2d20b922865ac959",
+      "actual_sha256": "7a1a3e71f7bdf7b3e17dc4e5e08c945e492e2f8f2fe663aa2d20b922865ac959",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_uia_4bit_B16\\batch04\\per_image_metrics.csv",
+      "reason": "batch summary.output_hashes",
+      "expected_sha256": "6840eda77628b754d76284dd96ca738f9903636b7be1914a155dc6a88106387d",
+      "actual_sha256": "6840eda77628b754d76284dd96ca738f9903636b7be1914a155dc6a88106387d",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_uia_4bit_B16\\batch04\\source_cosines.csv",
+      "reason": "batch summary.output_hashes",
+      "expected_sha256": "e6ad6304f59cebbe61efa81bc18757c121cd622d0c8650e137328931194872c6",
+      "actual_sha256": "e6ad6304f59cebbe61efa81bc18757c121cd622d0c8650e137328931194872c6",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_uia_4bit_B16\\batch04\\stage1_diagnostics.json",
+      "reason": "batch summary.output_hashes",
+      "expected_sha256": "618a2bce78bc47dbcb0acb1247c6411c76799a19166deba6ef22ebd4db6eb684",
+      "actual_sha256": "618a2bce78bc47dbcb0acb1247c6411c76799a19166deba6ef22ebd4db6eb684",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_uia_4bit_B16\\batch04\\fia_log.json",
+      "reason": "batch summary.output_hashes",
+      "expected_sha256": "7d9956f79d40bf4457f6abe225ae2a7172a5740b3901a0718332682da70d773f",
+      "actual_sha256": "7d9956f79d40bf4457f6abe225ae2a7172a5740b3901a0718332682da70d773f",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_uia_4bit_B16\\batch04\\reconstruction_grid.png",
+      "reason": "batch summary.output_hashes",
+      "expected_sha256": "701205c2dd251e930da2aabaf63b2318ae4da84dd587440ffafa90b0c5afef20",
+      "actual_sha256": "701205c2dd251e930da2aabaf63b2318ae4da84dd587440ffafa90b0c5afef20",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_uia_4bit_B16\\batch04\\fia.pt",
+      "reason": "checkpoint metadata",
+      "expected_sha256": "7fb92970bcb0a8c5196da92812da6060cac17e8375e04f40c1f5700f9ce9fe8d",
+      "actual_sha256": "7fb92970bcb0a8c5196da92812da6060cac17e8375e04f40c1f5700f9ce9fe8d",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_uia_4bit_B16\\batch04\\inputs.pt",
+      "reason": "checkpoint metadata",
+      "expected_sha256": "6c30802ecdeb7c679e28f47b00e59f016464a3e850cca23fd5a396448ceae20f",
+      "actual_sha256": "6c30802ecdeb7c679e28f47b00e59f016464a3e850cca23fd5a396448ceae20f",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_uia_4bit_B16\\batch04\\mp_prediction.pt",
+      "reason": "checkpoint metadata",
+      "expected_sha256": "461b13fba94eaef5aa087ff37945d8bd0b8eaf424ec57719721d2999a5296c73",
+      "actual_sha256": "461b13fba94eaef5aa087ff37945d8bd0b8eaf424ec57719721d2999a5296c73",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_uia_4bit_B16\\batch04\\quantized.pt",
+      "reason": "checkpoint metadata",
+      "expected_sha256": "37a4b2b32e6015b35f5999ca650e1d13b5edb71b5e92c6f0a93bf8a3faa95589",
+      "actual_sha256": "37a4b2b32e6015b35f5999ca650e1d13b5edb71b5e92c6f0a93bf8a3faa95589",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_uia_4bit_B16\\batch04\\stage1.pt",
+      "reason": "checkpoint metadata",
+      "expected_sha256": "77635ef464bc5abb8141daf925e8a544bbeb69c8afa19862620ed946eaf6d533",
+      "actual_sha256": "77635ef464bc5abb8141daf925e8a544bbeb69c8afa19862620ed946eaf6d533",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m6_uia_fp32_B16_fia\\batch04\\rec.pt",
+      "reason": "batch summary.output_hashes",
+      "expected_sha256": "47853a1cb3887043c188887c7e50107c2f0430fc9e2f5c953af2be8fef219f52",
+      "actual_sha256": "47853a1cb3887043c188887c7e50107c2f0430fc9e2f5c953af2be8fef219f52",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m6_uia_fp32_B16_fia\\batch04\\per_image_metrics.csv",
+      "reason": "batch summary.output_hashes",
+      "expected_sha256": "43b39f78a30bdfa88c867470bac11be72ee9b3f4ca01c877efcdf83ffa504b7e",
+      "actual_sha256": "43b39f78a30bdfa88c867470bac11be72ee9b3f4ca01c877efcdf83ffa504b7e",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m6_uia_fp32_B16_fia\\batch04\\source_cosines.csv",
+      "reason": "batch summary.output_hashes",
+      "expected_sha256": "811b80924f681402df582ddc860da89e5beecfe84cb19d6f0711e612a9ca7c2a",
+      "actual_sha256": "811b80924f681402df582ddc860da89e5beecfe84cb19d6f0711e612a9ca7c2a",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m6_uia_fp32_B16_fia\\batch04\\fia_log.json",
+      "reason": "batch summary.output_hashes",
+      "expected_sha256": "576dee6b70255029f5d7e78c9d57a629ad0fae4cb3c3145f9df1e91c490bca07",
+      "actual_sha256": "576dee6b70255029f5d7e78c9d57a629ad0fae4cb3c3145f9df1e91c490bca07",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m6_uia_fp32_B16_fia\\batch04\\reconstruction_grid.png",
+      "reason": "batch summary.output_hashes",
+      "expected_sha256": "73425603f29aa29c56fb76646a0e8d73cc2436189dfac7d58df9edc0f942a8f8",
+      "actual_sha256": "73425603f29aa29c56fb76646a0e8d73cc2436189dfac7d58df9edc0f942a8f8",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m6_uia_fp32_B16_fia\\batch04\\stage1_diagnostics.json",
+      "reason": "batch summary.output_hashes",
+      "expected_sha256": "35b04f1783b815acebb9a5acd5c02665e6830d85ca59ed3ff79e7569ffba5613",
+      "actual_sha256": "35b04f1783b815acebb9a5acd5c02665e6830d85ca59ed3ff79e7569ffba5613",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m6_uia_fp32_B16_fia\\batch04\\observation.pt",
+      "reason": "batch summary.output_hashes",
+      "expected_sha256": "2d7d22f8364fc119d5c660f8bd0d1db583a64788fb3c66f02e7779ece1bb2e0b",
+      "actual_sha256": "2d7d22f8364fc119d5c660f8bd0d1db583a64788fb3c66f02e7779ece1bb2e0b",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m6_uia_fp32_B16_fia\\batch04\\stage1.pt",
+      "reason": "batch summary.output_hashes",
+      "expected_sha256": "8cecef081c5458f738a4270d7e6df96043e2b5caf8068b779cd2e884375b8c6e",
+      "actual_sha256": "8cecef081c5458f738a4270d7e6df96043e2b5caf8068b779cd2e884375b8c6e",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m6_uia_fp32_B16_fia\\batch04\\fia.pt",
+      "reason": "batch summary.output_hashes",
+      "expected_sha256": "c7319e4e8836c2eab03a139eb385d99a78d367db01a16cd4bf75f6604f0526be",
+      "actual_sha256": "c7319e4e8836c2eab03a139eb385d99a78d367db01a16cd4bf75f6604f0526be",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m6_uia_fp32_B16_fia\\batch04\\inputs.pt",
+      "reason": "batch summary.output_hashes",
+      "expected_sha256": "6c30802ecdeb7c679e28f47b00e59f016464a3e850cca23fd5a396448ceae20f",
+      "actual_sha256": "6c30802ecdeb7c679e28f47b00e59f016464a3e850cca23fd5a396448ceae20f",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m6_uia_fp32_B16_fia\\batch04\\fia.pt",
+      "reason": "checkpoint metadata",
+      "expected_sha256": "c7319e4e8836c2eab03a139eb385d99a78d367db01a16cd4bf75f6604f0526be",
+      "actual_sha256": "c7319e4e8836c2eab03a139eb385d99a78d367db01a16cd4bf75f6604f0526be",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m6_uia_fp32_B16_fia\\batch04\\inputs.pt",
+      "reason": "checkpoint metadata",
+      "expected_sha256": "6c30802ecdeb7c679e28f47b00e59f016464a3e850cca23fd5a396448ceae20f",
+      "actual_sha256": "6c30802ecdeb7c679e28f47b00e59f016464a3e850cca23fd5a396448ceae20f",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m6_uia_fp32_B16_fia\\batch04\\observation.pt",
+      "reason": "checkpoint metadata",
+      "expected_sha256": "2d7d22f8364fc119d5c660f8bd0d1db583a64788fb3c66f02e7779ece1bb2e0b",
+      "actual_sha256": "2d7d22f8364fc119d5c660f8bd0d1db583a64788fb3c66f02e7779ece1bb2e0b",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m6_uia_fp32_B16_fia\\batch04\\stage1.pt",
+      "reason": "checkpoint metadata",
+      "expected_sha256": "8cecef081c5458f738a4270d7e6df96043e2b5caf8068b779cd2e884375b8c6e",
+      "actual_sha256": "8cecef081c5458f738a4270d7e6df96043e2b5caf8068b779cd2e884375b8c6e",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\qacpa\\run_m7_uia_4bit.py",
+      "reason": "M7 registered code",
+      "expected_sha256": "3a771235d024f3d0eb407843632dd22805c7813f7836a86784cac10838742820",
+      "actual_sha256": "3a771235d024f3d0eb407843632dd22805c7813f7836a86784cac10838742820",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\qacpa\\run_m6_uia_fp32_fia.py",
+      "reason": "M7 registered code",
+      "expected_sha256": "e00319498504257c91697918bf61e7794ee1fe75a48bdb2483c768f596f1bae6",
+      "actual_sha256": "e00319498504257c91697918bf61e7794ee1fe75a48bdb2483c768f596f1bae6",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\qacpa\\stage1.py",
+      "reason": "M7 registered code",
+      "expected_sha256": "f6423da5c14e610676e8d1a3c113238b39511dd1c99a6d66adb59b9cf754607b",
+      "actual_sha256": "f6423da5c14e610676e8d1a3c113238b39511dd1c99a6d66adb59b9cf754607b",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\qacpa\\fia.py",
+      "reason": "M7 registered code",
+      "expected_sha256": "42a55ce6a4895785b10573f507658434e597f1138de3d45621f466702c7f5cb0",
+      "actual_sha256": "42a55ce6a4895785b10573f507658434e597f1138de3d45621f466702c7f5cb0",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\qacpa\\uia.py",
+      "reason": "M7 registered code",
+      "expected_sha256": "fe19894d8a340e6bdfc56b83c26da516f2414a87c1cbe3fbe3e4620fcdd580c3",
+      "actual_sha256": "fe19894d8a340e6bdfc56b83c26da516f2414a87c1cbe3fbe3e4620fcdd580c3",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\qacpa\\quantizer.py",
+      "reason": "M7 registered code",
+      "expected_sha256": "4ad7b239e7a060cc8f400a6eb560f1d1fa69863dc0d9fc7049f33a494f02f075",
+      "actual_sha256": "4ad7b239e7a060cc8f400a6eb560f1d1fa69863dc0d9fc7049f33a494f02f075",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\qacpa\\alignment.py",
+      "reason": "M7 registered code",
+      "expected_sha256": "93259800bdf8843acfb1a7ed31beba199db218e61548b3a8d1fb10c4efae7cce",
+      "actual_sha256": "93259800bdf8843acfb1a7ed31beba199db218e61548b3a8d1fb10c4efae7cce",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\qacpa\\seed.py",
+      "reason": "M7 registered code",
+      "expected_sha256": "769366fcc2cf3e144d8caa86f73a55dcb0b6be615a45dab8b6e117399150c558",
+      "actual_sha256": "769366fcc2cf3e144d8caa86f73a55dcb0b6be615a45dab8b6e117399150c558",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\qacpa\\linalg.py",
+      "reason": "M7 registered code",
+      "expected_sha256": "263f13c4afe7ccbe8ac407dbff572605787514ed5022300ec9eb935e57dad5fe",
+      "actual_sha256": "263f13c4afe7ccbe8ac407dbff572605787514ed5022300ec9eb935e57dad5fe",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\scripts\\launch_m7_uia_4bit.ps1",
+      "reason": "M7 registered code",
+      "expected_sha256": "2dddceeb755cd246f73155d74dcccbd0063b2410b7010338e7179279254c314e",
+      "actual_sha256": "2dddceeb755cd246f73155d74dcccbd0063b2410b7010338e7179279254c314e",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\qacpa\\run_m6_uia_fp32_fia.py",
+      "reason": "M6 registered code",
+      "expected_sha256": "e00319498504257c91697918bf61e7794ee1fe75a48bdb2483c768f596f1bae6",
+      "actual_sha256": "e00319498504257c91697918bf61e7794ee1fe75a48bdb2483c768f596f1bae6",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\qacpa\\uia.py",
+      "reason": "M6 registered code",
+      "expected_sha256": "fe19894d8a340e6bdfc56b83c26da516f2414a87c1cbe3fbe3e4620fcdd580c3",
+      "actual_sha256": "fe19894d8a340e6bdfc56b83c26da516f2414a87c1cbe3fbe3e4620fcdd580c3",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\qacpa\\victim.py",
+      "reason": "M6 registered code",
+      "expected_sha256": "fdd40fd5c5062761872dc3bdd8dd4e750ccc188ce0050baf6330fad7e080874b",
+      "actual_sha256": "fdd40fd5c5062761872dc3bdd8dd4e750ccc188ce0050baf6330fad7e080874b",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\qacpa\\stage1.py",
+      "reason": "M6 registered code",
+      "expected_sha256": "f6423da5c14e610676e8d1a3c113238b39511dd1c99a6d66adb59b9cf754607b",
+      "actual_sha256": "f6423da5c14e610676e8d1a3c113238b39511dd1c99a6d66adb59b9cf754607b",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\qacpa\\fia.py",
+      "reason": "M6 registered code",
+      "expected_sha256": "42a55ce6a4895785b10573f507658434e597f1138de3d45621f466702c7f5cb0",
+      "actual_sha256": "42a55ce6a4895785b10573f507658434e597f1138de3d45621f466702c7f5cb0",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\qacpa\\alignment.py",
+      "reason": "M6 registered code",
+      "expected_sha256": "93259800bdf8843acfb1a7ed31beba199db218e61548b3a8d1fb10c4efae7cce",
+      "actual_sha256": "93259800bdf8843acfb1a7ed31beba199db218e61548b3a8d1fb10c4efae7cce",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\qacpa\\seed.py",
+      "reason": "M6 registered code",
+      "expected_sha256": "769366fcc2cf3e144d8caa86f73a55dcb0b6be615a45dab8b6e117399150c558",
+      "actual_sha256": "769366fcc2cf3e144d8caa86f73a55dcb0b6be615a45dab8b6e117399150c558",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m6_uia_fp32_B16_fia\\summary.json",
+      "reason": "M7 registered input",
+      "expected_sha256": "1f85b5750c6171e0259160c48731dc7646fb3f7a5b9c59b8c06b0478bd2f4ad0",
+      "actual_sha256": "1f85b5750c6171e0259160c48731dc7646fb3f7a5b9c59b8c06b0478bd2f4ad0",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m6_uia_fp32_B16_fia\\per_image_metrics.csv",
+      "reason": "M7 registered input",
+      "expected_sha256": "72dafc60ccb29acca4568bc0da7b77d48574ecafece7fe51898b173822c2f2ef",
+      "actual_sha256": "72dafc60ccb29acca4568bc0da7b77d48574ecafece7fe51898b173822c2f2ef",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\configs\\m6_uia_fp32_B16_fia.json",
+      "reason": "M7 registered input",
+      "expected_sha256": "deaf2865732e28d02351b40cd1920f3561b1ea7088805fa00b6c3030fec3ff4e",
+      "actual_sha256": "deaf2865732e28d02351b40cd1920f3561b1ea7088805fa00b6c3030fec3ff4e",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\v7_m3_fallback_5batch\\per_image_metrics_aggregated.csv",
+      "reason": "M7 registered input",
+      "expected_sha256": "7d33efb9def3f2f955c19fe3d89a97e6f4e422e2c2637ce0153d292bf23a12bd",
+      "actual_sha256": "7d33efb9def3f2f955c19fe3d89a97e6f4e422e2c2637ce0153d292bf23a12bd",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\codex\\docs\\M7_FOLLOWUP_ANALYSIS_PROTOCOL.json",
+      "reason": "M7 registered input",
+      "expected_sha256": "24a25980e58356591943559e29474bb777494f426b0834ca6d68f76aa2daae67",
+      "actual_sha256": "24a25980e58356591943559e29474bb777494f426b0834ca6d68f76aa2daae67",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m6_uia_fp32_B16_fia\\batch00\\inputs.pt",
+      "reason": "M7 registered input",
+      "expected_sha256": "24995487511a3e9d8d4665fdcd704f7a0f792249a9ba79880638d13bc4740141",
+      "actual_sha256": "24995487511a3e9d8d4665fdcd704f7a0f792249a9ba79880638d13bc4740141",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m6_uia_fp32_B16_fia\\batch00\\inputs.meta.json",
+      "reason": "M7 registered input",
+      "expected_sha256": "9b05f45cdaed0f7fffbf273cd466fbb881de26b1649a30b4fff8946b63526f18",
+      "actual_sha256": "9b05f45cdaed0f7fffbf273cd466fbb881de26b1649a30b4fff8946b63526f18",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m6_uia_fp32_B16_fia\\batch00\\observation.pt",
+      "reason": "M7 registered input",
+      "expected_sha256": "b4de671b85c76786e311acc32e494a08bd6176b67c9d74b3686d9b771b017e54",
+      "actual_sha256": "b4de671b85c76786e311acc32e494a08bd6176b67c9d74b3686d9b771b017e54",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m6_uia_fp32_B16_fia\\batch00\\observation.meta.json",
+      "reason": "M7 registered input",
+      "expected_sha256": "3f92e87c963fd8ea21ccd5293f717c4957c75faa15e52fc35df8def0c32e1a41",
+      "actual_sha256": "3f92e87c963fd8ea21ccd5293f717c4957c75faa15e52fc35df8def0c32e1a41",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m6_uia_fp32_B16_fia\\batch00\\rec.pt",
+      "reason": "M7 registered input",
+      "expected_sha256": "47f891bbe2997d5fa0fcf6f781ffef501db34d045a8a874024a66f0cf1ae10ce",
+      "actual_sha256": "47f891bbe2997d5fa0fcf6f781ffef501db34d045a8a874024a66f0cf1ae10ce",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m6_uia_fp32_B16_fia\\batch00\\summary.json",
+      "reason": "M7 registered input",
+      "expected_sha256": "b21f7a9d9012d17a061341ac55797b874f4a92eda2684235065613a1468e8d47",
+      "actual_sha256": "b21f7a9d9012d17a061341ac55797b874f4a92eda2684235065613a1468e8d47",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m6_uia_fp32_B16_fia\\batch01\\inputs.pt",
+      "reason": "M7 registered input",
+      "expected_sha256": "2f8db846205dda931162ca171282b8372a41bf8d3061c66bb6c83f65c7f20088",
+      "actual_sha256": "2f8db846205dda931162ca171282b8372a41bf8d3061c66bb6c83f65c7f20088",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m6_uia_fp32_B16_fia\\batch01\\inputs.meta.json",
+      "reason": "M7 registered input",
+      "expected_sha256": "2eb526f25ebff4414087e8e0fc28ad9d7e47154ede05a3edb6aceef45d7fc4dc",
+      "actual_sha256": "2eb526f25ebff4414087e8e0fc28ad9d7e47154ede05a3edb6aceef45d7fc4dc",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m6_uia_fp32_B16_fia\\batch01\\observation.pt",
+      "reason": "M7 registered input",
+      "expected_sha256": "39168d7b8239e8521fbbb213031565340680daacfb8ff6ba1bee2aa4aaef1165",
+      "actual_sha256": "39168d7b8239e8521fbbb213031565340680daacfb8ff6ba1bee2aa4aaef1165",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m6_uia_fp32_B16_fia\\batch01\\observation.meta.json",
+      "reason": "M7 registered input",
+      "expected_sha256": "e5e40897a0f12b20bd733979fd605099de02bd1377aaccc55869f2392e43ff78",
+      "actual_sha256": "e5e40897a0f12b20bd733979fd605099de02bd1377aaccc55869f2392e43ff78",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m6_uia_fp32_B16_fia\\batch01\\rec.pt",
+      "reason": "M7 registered input",
+      "expected_sha256": "d006bd56d0e1356b9482184c49262cc8652258810b4babde8c76925d5a3a7836",
+      "actual_sha256": "d006bd56d0e1356b9482184c49262cc8652258810b4babde8c76925d5a3a7836",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m6_uia_fp32_B16_fia\\batch01\\summary.json",
+      "reason": "M7 registered input",
+      "expected_sha256": "5c411885fed8c5a6b3ca5fd8c5e48aebc7c2c57ed03ba8dc082c2625c494dcae",
+      "actual_sha256": "5c411885fed8c5a6b3ca5fd8c5e48aebc7c2c57ed03ba8dc082c2625c494dcae",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m6_uia_fp32_B16_fia\\batch02\\inputs.pt",
+      "reason": "M7 registered input",
+      "expected_sha256": "1f1c898c93b7e0fcf4c00fecbb88fce2f913b4d4ed298aa21479a851c3284db3",
+      "actual_sha256": "1f1c898c93b7e0fcf4c00fecbb88fce2f913b4d4ed298aa21479a851c3284db3",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m6_uia_fp32_B16_fia\\batch02\\inputs.meta.json",
+      "reason": "M7 registered input",
+      "expected_sha256": "dee7ea0f7d1f9aed04fe46994a19ea1d4bac88f692153cc000eb99cd4c4d837b",
+      "actual_sha256": "dee7ea0f7d1f9aed04fe46994a19ea1d4bac88f692153cc000eb99cd4c4d837b",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m6_uia_fp32_B16_fia\\batch02\\observation.pt",
+      "reason": "M7 registered input",
+      "expected_sha256": "3ddcd6ef311c0f97dc7a461636973fcb8a1b160e10b5b6b9acf8d2c1b15548c2",
+      "actual_sha256": "3ddcd6ef311c0f97dc7a461636973fcb8a1b160e10b5b6b9acf8d2c1b15548c2",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m6_uia_fp32_B16_fia\\batch02\\observation.meta.json",
+      "reason": "M7 registered input",
+      "expected_sha256": "328c103f48f51869fdfdc6c56cdb56cd57f31bf0b2f0b634eea0f795678a5e15",
+      "actual_sha256": "328c103f48f51869fdfdc6c56cdb56cd57f31bf0b2f0b634eea0f795678a5e15",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m6_uia_fp32_B16_fia\\batch02\\rec.pt",
+      "reason": "M7 registered input",
+      "expected_sha256": "6994a936ac4e1fbe96effcf07ee705aa8c2f78c4fb64179ef0664e08696ab2da",
+      "actual_sha256": "6994a936ac4e1fbe96effcf07ee705aa8c2f78c4fb64179ef0664e08696ab2da",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m6_uia_fp32_B16_fia\\batch02\\summary.json",
+      "reason": "M7 registered input",
+      "expected_sha256": "38dbc35a8e152c303274a73c58d25749602ef614a4661ff0b309f5185d10e665",
+      "actual_sha256": "38dbc35a8e152c303274a73c58d25749602ef614a4661ff0b309f5185d10e665",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m6_uia_fp32_B16_fia\\batch03\\inputs.pt",
+      "reason": "M7 registered input",
+      "expected_sha256": "ebdbd1774a320767a40f22c698260b4e3a9ac7ad4b69c2a92b987fe4318d570a",
+      "actual_sha256": "ebdbd1774a320767a40f22c698260b4e3a9ac7ad4b69c2a92b987fe4318d570a",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m6_uia_fp32_B16_fia\\batch03\\inputs.meta.json",
+      "reason": "M7 registered input",
+      "expected_sha256": "b5f018aff020ed8cb6779f95d9933b6ac1ecfd661fec5b3af937b0d643a23569",
+      "actual_sha256": "b5f018aff020ed8cb6779f95d9933b6ac1ecfd661fec5b3af937b0d643a23569",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m6_uia_fp32_B16_fia\\batch03\\observation.pt",
+      "reason": "M7 registered input",
+      "expected_sha256": "cda34d3f8bed30feab5ccb03ea183488bca0ea87aab3004a76558566bd4e75a1",
+      "actual_sha256": "cda34d3f8bed30feab5ccb03ea183488bca0ea87aab3004a76558566bd4e75a1",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m6_uia_fp32_B16_fia\\batch03\\observation.meta.json",
+      "reason": "M7 registered input",
+      "expected_sha256": "880e2bd7cb599b191a960fe17adf35e34f7b4426ba451de98b5a37878e42d9b0",
+      "actual_sha256": "880e2bd7cb599b191a960fe17adf35e34f7b4426ba451de98b5a37878e42d9b0",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m6_uia_fp32_B16_fia\\batch03\\rec.pt",
+      "reason": "M7 registered input",
+      "expected_sha256": "18266d5e465fcd49b5f7128147a8689b25e75d6654307fea1594e45925297590",
+      "actual_sha256": "18266d5e465fcd49b5f7128147a8689b25e75d6654307fea1594e45925297590",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m6_uia_fp32_B16_fia\\batch03\\summary.json",
+      "reason": "M7 registered input",
+      "expected_sha256": "67a35cee65672688a438035cb53b05e368625a4a2ffae15458aca00e322245f6",
+      "actual_sha256": "67a35cee65672688a438035cb53b05e368625a4a2ffae15458aca00e322245f6",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m6_uia_fp32_B16_fia\\batch04\\inputs.pt",
+      "reason": "M7 registered input",
+      "expected_sha256": "6c30802ecdeb7c679e28f47b00e59f016464a3e850cca23fd5a396448ceae20f",
+      "actual_sha256": "6c30802ecdeb7c679e28f47b00e59f016464a3e850cca23fd5a396448ceae20f",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m6_uia_fp32_B16_fia\\batch04\\inputs.meta.json",
+      "reason": "M7 registered input",
+      "expected_sha256": "ed2061f0fcda483b541eda0d35b73326e649767a575a0e75c0f7f250cd00985d",
+      "actual_sha256": "ed2061f0fcda483b541eda0d35b73326e649767a575a0e75c0f7f250cd00985d",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m6_uia_fp32_B16_fia\\batch04\\observation.pt",
+      "reason": "M7 registered input",
+      "expected_sha256": "2d7d22f8364fc119d5c660f8bd0d1db583a64788fb3c66f02e7779ece1bb2e0b",
+      "actual_sha256": "2d7d22f8364fc119d5c660f8bd0d1db583a64788fb3c66f02e7779ece1bb2e0b",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m6_uia_fp32_B16_fia\\batch04\\observation.meta.json",
+      "reason": "M7 registered input",
+      "expected_sha256": "03683ecbd0cd4b2890a961c625ec590114b01517ec9cbf1103305e2b6611f527",
+      "actual_sha256": "03683ecbd0cd4b2890a961c625ec590114b01517ec9cbf1103305e2b6611f527",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m6_uia_fp32_B16_fia\\batch04\\rec.pt",
+      "reason": "M7 registered input",
+      "expected_sha256": "47853a1cb3887043c188887c7e50107c2f0430fc9e2f5c953af2be8fef219f52",
+      "actual_sha256": "47853a1cb3887043c188887c7e50107c2f0430fc9e2f5c953af2be8fef219f52",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m6_uia_fp32_B16_fia\\batch04\\summary.json",
+      "reason": "M7 registered input",
+      "expected_sha256": "3a741858d15ff06fc4942509e045e220c2560115aae8628b315d0c5950ea7887",
+      "actual_sha256": "3a741858d15ff06fc4942509e045e220c2560115aae8628b315d0c5950ea7887",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_uia_4bit_B16\\per_image_metrics.csv",
+      "reason": "run summary.output_hashes",
+      "expected_sha256": "02aa55e6c81fb2c0799db511585c72ce536df7a1f7f2ef80c95a2154da7b5011",
+      "actual_sha256": "02aa55e6c81fb2c0799db511585c72ce536df7a1f7f2ef80c95a2154da7b5011",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_uia_4bit_B16\\source_cosines.csv",
+      "reason": "run summary.output_hashes",
+      "expected_sha256": "14967ef8da7f0e1843ab3c7262370a7060bee1938b868ac1b92312227a7397d2",
+      "actual_sha256": "14967ef8da7f0e1843ab3c7262370a7060bee1938b868ac1b92312227a7397d2",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_uia_4bit_B16\\paired_fp32_4bit_metrics.csv",
+      "reason": "run summary.output_hashes",
+      "expected_sha256": "5c2f2cbcc45dba4ff152add4e2ba003fafad56eea32c69582561d3515e9e8ec2",
+      "actual_sha256": "5c2f2cbcc45dba4ff152add4e2ba003fafad56eea32c69582561d3515e9e8ec2",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_uia_4bit_B16\\three_condition_comparison.csv",
+      "reason": "run summary.output_hashes",
+      "expected_sha256": "01aec75017f9d5f4a76851762f1285443db5e74167a239bfc0afd4b1dddfe67b",
+      "actual_sha256": "01aec75017f9d5f4a76851762f1285443db5e74167a239bfc0afd4b1dddfe67b",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_uia_4bit_B16\\per_batch_summary.csv",
+      "reason": "run summary.output_hashes",
+      "expected_sha256": "c69678b73e306d2f348d8a8cc7344347d69fdf19364cd1edf438101b51ef2059",
+      "actual_sha256": "c69678b73e306d2f348d8a8cc7344347d69fdf19364cd1edf438101b51ef2059",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_uia_4bit_B16\\random_grid_selection.csv",
+      "reason": "run summary.output_hashes",
+      "expected_sha256": "a199f75434f5bc6f9cbb14955cc6ceee36de3a9a66fa0386f87cbfd20f622fa6",
+      "actual_sha256": "a199f75434f5bc6f9cbb14955cc6ceee36de3a9a66fa0386f87cbfd20f622fa6",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_uia_4bit_B16\\reconstruction_grid_not_cherry_picked.png",
+      "reason": "run summary.output_hashes",
+      "expected_sha256": "0248bbe2b4e2a9ca89bde343683a6d0433b936caa622a9a9096703cf6cb1c5ed",
+      "actual_sha256": "0248bbe2b4e2a9ca89bde343683a6d0433b936caa622a9a9096703cf6cb1c5ed",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_uia_4bit_B16\\all80_reconstruction_grid.png",
+      "reason": "run summary.output_hashes",
+      "expected_sha256": "c576d1aa39ba756952b38eccf12cc5425f40b05e1b0fa71ea94f011ef0720436",
+      "actual_sha256": "c576d1aa39ba756952b38eccf12cc5425f40b05e1b0fa71ea94f011ef0720436",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_uia_4bit_B16\\lpips_source_cosine_histograms.png",
+      "reason": "run summary.output_hashes",
+      "expected_sha256": "2b6f30e3b37bbb5c3637f7fca1b6173acc24d91258042fa0f550deae87304695",
+      "actual_sha256": "2b6f30e3b37bbb5c3637f7fca1b6173acc24d91258042fa0f550deae87304695",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_uia_4bit_B16\\report.md",
+      "reason": "run summary.output_hashes",
+      "expected_sha256": "e5681a356e5043af5b4e6a880569aead896650f5cdbe570670ae51123b88c95e",
+      "actual_sha256": "e5681a356e5043af5b4e6a880569aead896650f5cdbe570670ae51123b88c95e",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m6_uia_fp32_B16_fia\\per_image_metrics.csv",
+      "reason": "run summary.output_hashes",
+      "expected_sha256": "72dafc60ccb29acca4568bc0da7b77d48574ecafece7fe51898b173822c2f2ef",
+      "actual_sha256": "72dafc60ccb29acca4568bc0da7b77d48574ecafece7fe51898b173822c2f2ef",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m6_uia_fp32_B16_fia\\source_cosines.csv",
+      "reason": "run summary.output_hashes",
+      "expected_sha256": "9b1925f7909c08cefa0591fd7c0fbcadae3f435f753bae4ae485db369aa8671d",
+      "actual_sha256": "9b1925f7909c08cefa0591fd7c0fbcadae3f435f753bae4ae485db369aa8671d",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m6_uia_fp32_B16_fia\\per_batch_summary.csv",
+      "reason": "run summary.output_hashes",
+      "expected_sha256": "a7baf596e11692f365b4aed8bc9e880105e0e737e90fde9a1ffc297d4f26ba7f",
+      "actual_sha256": "a7baf596e11692f365b4aed8bc9e880105e0e737e90fde9a1ffc297d4f26ba7f",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m6_uia_fp32_B16_fia\\lpips_source_cosine_histograms.png",
+      "reason": "run summary.output_hashes",
+      "expected_sha256": "2e3c53846fe0035bf77fbe1be8e72a1fc11b7785eb18fd992f16ae91a55afc1e",
+      "actual_sha256": "2e3c53846fe0035bf77fbe1be8e72a1fc11b7785eb18fd992f16ae91a55afc1e",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m6_uia_fp32_B16_fia\\per_batch_table.png",
+      "reason": "run summary.output_hashes",
+      "expected_sha256": "30446bc214297f3dc2fb0c080a5868826064422e365bc2c82d0c1f9ce724cb9b",
+      "actual_sha256": "30446bc214297f3dc2fb0c080a5868826064422e365bc2c82d0c1f9ce724cb9b",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m6_uia_fp32_B16_fia\\all80_reconstruction_grid.png",
+      "reason": "run summary.output_hashes",
+      "expected_sha256": "cbf42db1eb4b064eb75fe7b8256a73449044d1affbc7b29337d63033dc6a6d6b",
+      "actual_sha256": "cbf42db1eb4b064eb75fe7b8256a73449044d1affbc7b29337d63033dc6a6d6b",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m6_uia_fp32_B16_fia\\report.md",
+      "reason": "run summary.output_hashes",
+      "expected_sha256": "7899b853b623f22bf6d30cda361b4357d922c70475dc2124d2938792ae5b854e",
+      "actual_sha256": "7899b853b623f22bf6d30cda361b4357d922c70475dc2124d2938792ae5b854e",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\.cache\\torch\\hub\\checkpoints\\vgg16-397923af.pth",
+      "reason": "M7 initial model identity",
+      "expected_sha256": "397923af8e79cdbb6a7127f12361acd7a2f83e06b05044ddf496e83de57a5bf0",
+      "actual_sha256": "397923af8e79cdbb6a7127f12361acd7a2f83e06b05044ddf496e83de57a5bf0",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\configs\\m7_uia_4bit_B16.json",
+      "reason": "M7 config identity",
+      "expected_sha256": "39cc98aa436159365c4bbdb91e6ac9822a742be1e0c985a6ea282bf3c28ac156",
+      "actual_sha256": "39cc98aa436159365c4bbdb91e6ac9822a742be1e0c985a6ea282bf3c28ac156",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\..\\codex\\docs\\M7_FOLLOWUP_ANALYSIS_PROTOCOL.json",
+      "reason": "M7 followup identity",
+      "expected_sha256": "24a25980e58356591943559e29474bb777494f426b0834ca6d68f76aa2daae67",
+      "actual_sha256": "24a25980e58356591943559e29474bb777494f426b0834ca6d68f76aa2daae67",
+      "match": true
+    }
+  ],
+  "failed_checks": [],
+  "model": "C:\\Users\\조상제\\.cache\\torch\\hub\\checkpoints\\vgg16-397923af.pth",
+  "model_sha256": "397923af8e79cdbb6a7127f12361acd7a2f83e06b05044ddf496e83de57a5bf0",
+  "external_cache_references": [
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\cache\\uia_features_seed0_n16_batch0.pt",
+      "exists": true,
+      "packaged": false,
+      "role": "legacy cache; inputs.pt에 필요한 이미지와 평가용 임베딩이 있음"
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\cache\\victim_seed0_B16_batch0.pt",
+      "exists": true,
+      "packaged": false,
+      "role": "legacy cache; inputs.pt에 필요한 이미지와 평가용 임베딩이 있음"
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\cache\\uia_features_seed0_n16_batch1.pt",
+      "exists": true,
+      "packaged": false,
+      "role": "legacy cache; inputs.pt에 필요한 이미지와 평가용 임베딩이 있음"
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\cache\\victim_seed0_B16_batch1.pt",
+      "exists": true,
+      "packaged": false,
+      "role": "legacy cache; inputs.pt에 필요한 이미지와 평가용 임베딩이 있음"
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\cache\\uia_features_seed0_n16_batch2.pt",
+      "exists": true,
+      "packaged": false,
+      "role": "legacy cache; inputs.pt에 필요한 이미지와 평가용 임베딩이 있음"
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\cache\\victim_seed0_B16_batch2.pt",
+      "exists": true,
+      "packaged": false,
+      "role": "legacy cache; inputs.pt에 필요한 이미지와 평가용 임베딩이 있음"
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\cache\\uia_features_seed0_n16_batch3.pt",
+      "exists": true,
+      "packaged": false,
+      "role": "legacy cache; inputs.pt에 필요한 이미지와 평가용 임베딩이 있음"
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\cache\\victim_seed0_B16_batch3.pt",
+      "exists": true,
+      "packaged": false,
+      "role": "legacy cache; inputs.pt에 필요한 이미지와 평가용 임베딩이 있음"
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\cache\\uia_features_seed0_n16_batch4.pt",
+      "exists": true,
+      "packaged": false,
+      "role": "legacy cache; inputs.pt에 필요한 이미지와 평가용 임베딩이 있음"
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\cache\\victim_seed0_B16_batch4.pt",
+      "exists": true,
+      "packaged": false,
+      "role": "legacy cache; inputs.pt에 필요한 이미지와 평가용 임베딩이 있음"
+    }
+  ],
+  "raw_originals_present_count": 80,
+  "scope": "기존 파일 읽기/해시/텐서 메타데이터 확인 및 압축만 수행. qacpa import, 학습, 양자화, ICA, FIA, 지표 재계산 없음."
+}

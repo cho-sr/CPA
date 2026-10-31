@@ -1,0 +1,23 @@
+{
+  "protocol": "C:\\Users\\조상제\\Desktop\\CPA\\codex\\docs\\M7_FOLLOWUP_ANALYSIS_PROTOCOL.json",
+  "protocol_sha256": "24a25980e58356591943559e29474bb777494f426b0834ca6d68f76aa2daae67",
+  "code": {
+    "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\qacpa\\m7_shuffle_distribution.py",
+    "sha256": "ea4af07bbcdb6a379195af2147c3e8a1ac0dcbabd17e7f415a51cbfd863a28f7"
+  },
+  "started_at_utc": "2026-09-09T07:55:07.722208+00:00",
+  "run_tag": "m7_perimage_distribution",
+  "fixed_at_utc": "2026-09-09T07:55:07.723209+00:00",
+  "reference": "all 40 GIA 4-bit no-CPA images",
+  "reference_source": {
+    "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_no_cpa_control\\4bit\\per_image_metrics.csv",
+    "sha256": "329b0363f05667423e412df738e50cf8dc815264750b558f98cf277f48a9b026"
+  },
+  "quantile": 0.05,
+  "quantile_method": "numpy.quantile(method='linear')",
+  "threshold": 0.570428904891014,
+  "comparison": "strict LPIPS < threshold",
+  "candidate_metrics_consulted": false,
+  "reason": "An empirical lower-tail control cutoff without LPIPS ratio assumptions; common cutoff permits descriptive comparisons.",
+  "limitations": "In-sample control calibration; no individual-image significance. UIA counts use exploratory threshold transfer."
+}

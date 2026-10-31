@@ -1,0 +1,99 @@
+{
+  "log": [
+    {
+      "iter": 0,
+      "loss": 741.6746826171875,
+      "loss_ne": 0.0,
+      "loss_decor": 137.959228515625,
+      "loss_tv": 0.0,
+      "loss_nv": 72.21723937988281,
+      "loss_l1": 0.2204934060573578,
+      "time_sec": 0.3899212999967858
+    },
+    {
+      "iter": 4999,
+      "loss": 735.4381103515625,
+      "loss_ne": 0.0,
+      "loss_decor": 138.0437774658203,
+      "loss_tv": 0.0,
+      "loss_nv": 23.433170318603516,
+      "loss_l1": 0.15195168554782867,
+      "time_sec": 8.397340800031088
+    },
+    {
+      "iter": 9999,
+      "loss": 735.4382934570312,
+      "loss_ne": 0.0,
+      "loss_decor": 138.0437774658203,
+      "loss_tv": 0.0,
+      "loss_nv": 23.43465805053711,
+      "loss_l1": 0.1519559770822525,
+      "time_sec": 16.32940770004643
+    },
+    {
+      "iter": 14999,
+      "loss": 735.4358520507812,
+      "loss_ne": 0.0,
+      "loss_decor": 138.04327392578125,
+      "loss_tv": 0.0,
+      "loss_nv": 23.435680389404297,
+      "loss_l1": 0.15196587145328522,
+      "time_sec": 24.442215600050986
+    },
+    {
+      "iter": 19999,
+      "loss": 735.4375,
+      "loss_ne": 0.0,
+      "loss_decor": 138.04356384277344,
+      "loss_tv": 0.0,
+      "loss_nv": 23.43694496154785,
+      "loss_l1": 0.15195198357105255,
+      "time_sec": 32.54984809999587
+    },
+    {
+      "iter": 24999,
+      "loss": 735.4362182617188,
+      "loss_ne": 0.0,
+      "loss_decor": 138.04287719726562,
+      "loss_tv": 0.0,
+      "loss_nv": 23.45525550842285,
+      "loss_l1": 0.15195249021053314,
+      "time_sec": 40.50202060001902
+    }
+  ],
+  "wall_time_sec": 43.16538960003527,
+  "setup_wall_time_sec": 2.662274800008163,
+  "optimizer_wall_time_sec": 40.503114800027106,
+  "source_hashes": {
+    "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\official_cpa\\src\\datasets.py": "f9e7b47733b5acb4b73e6914a3f100b5187766bbed78a12d17b69c39eec1b6d1",
+    "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\official_cpa\\src\\utils.py": "565f1bf1a47f387d042b35bb24f677d1ff0d3ec5d979e2876c31ed114179b9fe",
+    "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\official_cpa\\src\\gradient_inversion_utils.py": "668d77788dc8d81c181c8c0a9fbe8533c6fbea22ba46fe7f5e15b0a431300e5f",
+    "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\official_cpa\\src\\gradient_inversion.py": "c598e1ee7b4079f741060d10c8dfd14711e393a97384c63cf32be77a458b1873",
+    "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\official_cpa\\src\\feature_inversion.py": "dc73880427e3eaf1f873d295f17f1d48d301882f634ee5df36ddeea8e56c4dec",
+    "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\official_cpa\\src\\vgg16.py": "8114eca8cde553dace5f777aedd21b70851c570d473e597b005cb6be4b248d36",
+    "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\quantization_aware_cpa\\qacpa\\upstream_naive.py": "8f29b885d86f4121eda5c55e17486a3a48bd8db08b2f83890fe7726730d1ee92",
+    "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\quantization_aware_cpa\\qacpa\\seed.py": "769366fcc2cf3e144d8caa86f73a55dcb0b6be615a45dab8b6e117399150c558"
+  },
+  "settings": {
+    "n_components": 16,
+    "seed": 42,
+    "device": "cuda",
+    "n_iter": 25000,
+    "lr": 0.001,
+    "opt": "adam",
+    "sch": "none",
+    "decor": 5.3,
+    "T": 7.7,
+    "ne": 1.0,
+    "nv": 0.13,
+    "l1": 5.0,
+    "tv": 0.1,
+    "log_every": 5000,
+    "whitening": "upstream cov/(d-1), torch.linalg.eig, top abs eigenvalues",
+    "backend": "official_cpa/src/gradient_inversion.py:CocktailPartyAttack",
+    "debias": false,
+    "mp_truncation": false,
+    "mixing_matrix_computed": false
+  },
+  "cache_path": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\quantization_aware_cpa\\results\\signed_int4_baseline_B16_T10\\naive\\cpa\\upstream_cpa_r5g69tqh/imagenet/vgg16/attack/cp_direct/observed/private_uia/w_16_0.pkl"
+}

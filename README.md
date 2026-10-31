@@ -1,4 +1,40 @@
-# Cocktail Party Attack
+# CPA / CoRA research archive
+
+Selected source code, experiment configurations, manuscript sources, result summaries,
+and provenance from the CPA workspace, archived on **2026-10-31**. Large datasets,
+model weights, observations, reconstruction tensors, optimizer checkpoints, and
+temporary files are retained locally and are not part of this upload.
+
+| Start here | Contents |
+| --- | --- |
+| [Manuscript source](test_cora.tex) / [PDF](test_cora.pdf) | Current target of the project's manuscript build script |
+| [Paper assets](paper_assets/) | Figure/table builders, assets, selection manifests, and manuscript history |
+| [Quantization-aware CPA](quantization_aware_cpa/) | CPA/FIA implementations, configurations, documentation, and tests |
+| [Quantized-update experiments](README_EXPERIMENTS.md) | Definitions and reproduction notes for experiments 01-05 |
+| [Sparse-update experiments](sparsified_update_cpa/) | Sparsification and randomized reconstruction code |
+| [Archive guide](archive/README.md) | Included/excluded assets, result status, and reproduction limits |
+| [File manifest](archive/UPLOAD_MANIFEST.json) | Selected-file inventory, sizes, and SHA-256 hashes |
+
+The `cora_*`, `mixed_bit_fedavg`, `fedavg_fp32`, and other experiment folders retain
+their historical source and scalar result records. The original CPA/FIA source is
+preserved in `src/`, `official_cpa/src/`, and `cocktail_party_attack/src/` as applicable
+to each historical experiment. Keep their license notices.
+
+**Result validity:** historical protocols differ, and some results were explicitly
+withdrawn. Read [the invalidation record](codex/docs/NO_CPA_CONTROL_INVALIDATION_20260909.md)
+and [the machine-readable validity registry](quantization_aware_cpa/results/result_validity.json)
+before interpreting old figures or manuscripts. The
+`same80_bits87654_R100_S5k_K3_F25k` run was **stopped by the user**; its saved records
+do not establish completion. This upload does not rerun or revalidate research.
+
+Reproduction requires separately retained input tensors, dataset access, matching
+model weights, and an appropriate environment. Historical absolute paths and
+hash-bound execution contracts may require careful relocation. The manuscript
+build script expects a local portable Tectonic installation under `.tools/`.
+
+The original upstream README is also available as [README_UPSTREAM.md](README_UPSTREAM.md).
+
+## Original upstream instructions
 
 Implementation of the ICML 2023 paper [Cocktail Party Attack: Breaking Aggregation-Based Privacy in Federated Learning Using Independent Component Analysis](https://proceedings.mlr.press/v202/kariyappa23a.html).
 

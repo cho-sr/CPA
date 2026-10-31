@@ -1,0 +1,414 @@
+{
+  "task_id": "CPA_SIGNED_BITS7654_RECOVERY_20260918",
+  "status": "COMPLETED",
+  "scientific_quality": "EVALUATED",
+  "bits": [
+    7,
+    6,
+    5,
+    4
+  ],
+  "bit_status": {
+    "7": "COMPLETED",
+    "6": "COMPLETED",
+    "5": "COMPLETED",
+    "4": "COMPLETED"
+  },
+  "bit_results": {
+    "7": {
+      "evaluation_status": "COMPLETED",
+      "scientific_quality": "EVALUATED",
+      "candidate_count": 13,
+      "mean_metrics": {
+        "center_5000": {
+          "mean_mse": 0.08491366309739198,
+          "mean_psnr_db": 11.081098752684698,
+          "mean_ssim": 0.14130410051407152,
+          "mean_lpips": 0.6168439872562885
+        },
+        "member_00_5000": {
+          "mean_mse": 0.084576967754405,
+          "mean_psnr_db": 11.165660330309858,
+          "mean_ssim": 0.1534002427494406,
+          "mean_lpips": 0.6008807010948658
+        },
+        "member_01_5000": {
+          "mean_mse": 0.08563599791953441,
+          "mean_psnr_db": 11.074135424222664,
+          "mean_ssim": 0.14279776162351154,
+          "mean_lpips": 0.6324480157345533
+        },
+        "member_02_5000": {
+          "mean_mse": 0.08516169071391035,
+          "mean_psnr_db": 11.091294842780117,
+          "mean_ssim": 0.1445016110034102,
+          "mean_lpips": 0.614996824413538
+        },
+        "member_03_5000": {
+          "mean_mse": 0.08493876958347404,
+          "mean_psnr_db": 11.1157497148817,
+          "mean_ssim": 0.1457476592287519,
+          "mean_lpips": 0.6229349505156279
+        },
+        "member_04_5000": {
+          "mean_mse": 0.08456602562684287,
+          "mean_psnr_db": 11.095037737225589,
+          "mean_ssim": 0.14354853246405766,
+          "mean_lpips": 0.617440851405263
+        },
+        "member_05_5000": {
+          "mean_mse": 0.08452725034864247,
+          "mean_psnr_db": 11.104863672613398,
+          "mean_ssim": 0.14533739999687778,
+          "mean_lpips": 0.6173201967030764
+        },
+        "member_06_5000": {
+          "mean_mse": 0.08406966571021939,
+          "mean_psnr_db": 11.189457525186743,
+          "mean_ssim": 0.15190886440870907,
+          "mean_lpips": 0.5984382890164852
+        },
+        "member_07_5000": {
+          "mean_mse": 0.08442110966348876,
+          "mean_psnr_db": 11.1452313923152,
+          "mean_ssim": 0.14601060077371528,
+          "mean_lpips": 0.6006152108311653
+        },
+        "center_25000": {
+          "mean_mse": 0.07300155613422421,
+          "mean_psnr_db": 11.795458399934107,
+          "mean_ssim": 0.276422813596087,
+          "mean_lpips": 0.6118270941078663
+        },
+        "rank1_member_00_25000": {
+          "mean_mse": 0.07264175614768305,
+          "mean_psnr_db": 11.83136624338533,
+          "mean_ssim": 0.2827499308738006,
+          "mean_lpips": 0.6331724599003792
+        },
+        "rank2_member_05_25000": {
+          "mean_mse": 0.07274173050730852,
+          "mean_psnr_db": 11.805827049418683,
+          "mean_ssim": 0.29288812388352703,
+          "mean_lpips": 0.6098512094467878
+        },
+        "rank3_member_03_25000": {
+          "mean_mse": 0.07352816257809447,
+          "mean_psnr_db": 11.748867267513681,
+          "mean_ssim": 0.29078154922091853,
+          "mean_lpips": 0.6503420695662498
+        }
+      },
+      "primary_contrast_rank1_minus_center25000": {
+        "mean_mse": -0.0003597999865411622,
+        "mean_psnr_db": 0.03590784345122344,
+        "mean_ssim": 0.006327117277713623,
+        "mean_lpips": 0.021345365792512894
+      },
+      "evaluation_output": "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results_private/signed_int7_randomized8_screen3_fia_B16_T10_20260918_sweep/evaluation_recovery_20260918",
+      "figure_artifacts": [
+        "contact_sheet_b7_5000.png",
+        "contact_sheet_b7_25000.png"
+      ]
+    },
+    "6": {
+      "evaluation_status": "COMPLETED",
+      "scientific_quality": "EVALUATED",
+      "candidate_count": 13,
+      "mean_metrics": {
+        "center_5000": {
+          "mean_mse": 0.08927231853572594,
+          "mean_psnr_db": 10.833013265432552,
+          "mean_ssim": 0.12153071531703054,
+          "mean_lpips": 0.669565549120307
+        },
+        "member_00_5000": {
+          "mean_mse": 0.08881926323528655,
+          "mean_psnr_db": 10.872730786322734,
+          "mean_ssim": 0.1261606239534129,
+          "mean_lpips": 0.6740555465221405
+        },
+        "member_01_5000": {
+          "mean_mse": 0.08842193290495876,
+          "mean_psnr_db": 10.904674662122925,
+          "mean_ssim": 0.12830456832164158,
+          "mean_lpips": 0.6560229193419218
+        },
+        "member_02_5000": {
+          "mean_mse": 0.0886465623349611,
+          "mean_psnr_db": 10.852674246331787,
+          "mean_ssim": 0.12226125192654103,
+          "mean_lpips": 0.6799640990793705
+        },
+        "member_03_5000": {
+          "mean_mse": 0.08870159089512156,
+          "mean_psnr_db": 10.874132118265418,
+          "mean_ssim": 0.1222807733670478,
+          "mean_lpips": 0.6772001478821039
+        },
+        "member_04_5000": {
+          "mean_mse": 0.08895956191395533,
+          "mean_psnr_db": 10.86876526019354,
+          "mean_ssim": 0.1229313930038075,
+          "mean_lpips": 0.676051652058959
+        },
+        "member_05_5000": {
+          "mean_mse": 0.08906316063722625,
+          "mean_psnr_db": 10.860277518923676,
+          "mean_ssim": 0.12636725746406197,
+          "mean_lpips": 0.6690124478191137
+        },
+        "member_06_5000": {
+          "mean_mse": 0.08857870497322314,
+          "mean_psnr_db": 10.868229924165446,
+          "mean_ssim": 0.1236247829061881,
+          "mean_lpips": 0.6747401300817728
+        },
+        "member_07_5000": {
+          "mean_mse": 0.08887874430925888,
+          "mean_psnr_db": 10.866383685231332,
+          "mean_ssim": 0.12132328283088793,
+          "mean_lpips": 0.6737544257193804
+        },
+        "center_25000": {
+          "mean_mse": 0.07552178329548416,
+          "mean_psnr_db": 11.639735973721601,
+          "mean_ssim": 0.2596383579955102,
+          "mean_lpips": 0.6961209550499916
+        },
+        "rank1_member_01_25000": {
+          "mean_mse": 0.07545785087363654,
+          "mean_psnr_db": 11.667487096553497,
+          "mean_ssim": 0.2689876435397502,
+          "mean_lpips": 0.665904251858592
+        },
+        "rank2_member_03_25000": {
+          "mean_mse": 0.07567821278705145,
+          "mean_psnr_db": 11.59765844022912,
+          "mean_ssim": 0.2727687292886997,
+          "mean_lpips": 0.6709883380681276
+        },
+        "rank3_member_04_25000": {
+          "mean_mse": 0.07632374650472064,
+          "mean_psnr_db": 11.572437303919154,
+          "mean_ssim": 0.27138847283293643,
+          "mean_lpips": 0.7051771022379398
+        }
+      },
+      "primary_contrast_rank1_minus_center25000": {
+        "mean_mse": -6.393242184761505e-05,
+        "mean_psnr_db": 0.02775112283189607,
+        "mean_ssim": 0.009349285544239971,
+        "mean_lpips": -0.030216703191399574
+      },
+      "evaluation_output": "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results_private/signed_int6_randomized8_screen3_fia_B16_T10_20260918_sweep/evaluation_recovery_20260918",
+      "figure_artifacts": [
+        "contact_sheet_b6_5000.png",
+        "contact_sheet_b6_25000.png"
+      ]
+    },
+    "5": {
+      "evaluation_status": "COMPLETED",
+      "scientific_quality": "EVALUATED",
+      "candidate_count": 13,
+      "mean_metrics": {
+        "center_5000": {
+          "mean_mse": 0.09355114497420591,
+          "mean_psnr_db": 10.60051488947623,
+          "mean_ssim": 0.10767083537601214,
+          "mean_lpips": 0.7633776813745499
+        },
+        "member_00_5000": {
+          "mean_mse": 0.09341632029828269,
+          "mean_psnr_db": 10.629114481319032,
+          "mean_ssim": 0.10195815549987955,
+          "mean_lpips": 0.7492055147886276
+        },
+        "member_01_5000": {
+          "mean_mse": 0.09252038362972591,
+          "mean_psnr_db": 10.665042091883283,
+          "mean_ssim": 0.10946732947192199,
+          "mean_lpips": 0.7579376511275768
+        },
+        "member_02_5000": {
+          "mean_mse": 0.09267032339817766,
+          "mean_psnr_db": 10.666608316643076,
+          "mean_ssim": 0.10553268442244455,
+          "mean_lpips": 0.7583656944334507
+        },
+        "member_03_5000": {
+          "mean_mse": 0.09345446967655527,
+          "mean_psnr_db": 10.619007021053507,
+          "mean_ssim": 0.10601470070762731,
+          "mean_lpips": 0.7312572859227657
+        },
+        "member_04_5000": {
+          "mean_mse": 0.09341413507636354,
+          "mean_psnr_db": 10.631362840852796,
+          "mean_ssim": 0.10491342706312923,
+          "mean_lpips": 0.7624950930476189
+        },
+        "member_05_5000": {
+          "mean_mse": 0.09323140201789806,
+          "mean_psnr_db": 10.588459541526033,
+          "mean_ssim": 0.10462461701529918,
+          "mean_lpips": 0.7443835735321045
+        },
+        "member_06_5000": {
+          "mean_mse": 0.09313246080407717,
+          "mean_psnr_db": 10.6486753382015,
+          "mean_ssim": 0.10831928066273797,
+          "mean_lpips": 0.7383105047047138
+        },
+        "member_07_5000": {
+          "mean_mse": 0.09310823730114662,
+          "mean_psnr_db": 10.601487629576884,
+          "mean_ssim": 0.10330008403629237,
+          "mean_lpips": 0.7667298913002014
+        },
+        "center_25000": {
+          "mean_mse": 0.07740545451726855,
+          "mean_psnr_db": 11.55242958679751,
+          "mean_ssim": 0.2619981027995902,
+          "mean_lpips": 0.7826303653419018
+        },
+        "rank1_member_05_25000": {
+          "mean_mse": 0.07723096939192238,
+          "mean_psnr_db": 11.545827553386472,
+          "mean_ssim": 0.25582689455478913,
+          "mean_lpips": 0.7489930726587772
+        },
+        "rank2_member_07_25000": {
+          "mean_mse": 0.07681791191714178,
+          "mean_psnr_db": 11.588090082434316,
+          "mean_ssim": 0.25865652387119004,
+          "mean_lpips": 0.7694916874170303
+        },
+        "rank3_member_06_25000": {
+          "mean_mse": 0.07703144471508414,
+          "mean_psnr_db": 11.585008331006737,
+          "mean_ssim": 0.2603538526807969,
+          "mean_lpips": 0.7810496687889099
+        }
+      },
+      "primary_contrast_rank1_minus_center25000": {
+        "mean_mse": -0.000174485125346166,
+        "mean_psnr_db": -0.006602033411038377,
+        "mean_ssim": -0.006171208244801052,
+        "mean_lpips": -0.03363729268312454
+      },
+      "evaluation_output": "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results_private/signed_int5_randomized8_screen3_fia_B16_T10_20260918_sweep/evaluation_recovery_20260918",
+      "figure_artifacts": [
+        "contact_sheet_b5_5000.png",
+        "contact_sheet_b5_25000.png"
+      ]
+    },
+    "4": {
+      "evaluation_status": "COMPLETED",
+      "scientific_quality": "EVALUATED",
+      "candidate_count": 13,
+      "mean_metrics": {
+        "center_5000": {
+          "mean_mse": 0.09628305648730243,
+          "mean_psnr_db": 10.41696415055847,
+          "mean_ssim": 0.09272103762703836,
+          "mean_lpips": 0.7873755730688572
+        },
+        "member_00_5000": {
+          "mean_mse": 0.09434974771128544,
+          "mean_psnr_db": 10.554419241370237,
+          "mean_ssim": 0.10023087815879181,
+          "mean_lpips": 0.8053322359919548
+        },
+        "member_01_5000": {
+          "mean_mse": 0.09520777207592863,
+          "mean_psnr_db": 10.56144006431439,
+          "mean_ssim": 0.09726653031646078,
+          "mean_lpips": 0.7988578379154205
+        },
+        "member_02_5000": {
+          "mean_mse": 0.09624406215039333,
+          "mean_psnr_db": 10.488567609489634,
+          "mean_ssim": 0.09286056883160053,
+          "mean_lpips": 0.8058817945420742
+        },
+        "member_03_5000": {
+          "mean_mse": 0.09529833590282709,
+          "mean_psnr_db": 10.498704793664869,
+          "mean_ssim": 0.09046187625660289,
+          "mean_lpips": 0.7992121577262878
+        },
+        "member_04_5000": {
+          "mean_mse": 0.09517565605270858,
+          "mean_psnr_db": 10.54244812722486,
+          "mean_ssim": 0.09256378981390674,
+          "mean_lpips": 0.7939220480620861
+        },
+        "member_05_5000": {
+          "mean_mse": 0.09445686904896029,
+          "mean_psnr_db": 10.593823485235678,
+          "mean_ssim": 0.09918932710823809,
+          "mean_lpips": 0.7962593883275986
+        },
+        "member_06_5000": {
+          "mean_mse": 0.09578363398417572,
+          "mean_psnr_db": 10.483719680422876,
+          "mean_ssim": 0.09408891373169523,
+          "mean_lpips": 0.8007644824683666
+        },
+        "member_07_5000": {
+          "mean_mse": 0.09473476652929641,
+          "mean_psnr_db": 10.545173163191306,
+          "mean_ssim": 0.1022681930682649,
+          "mean_lpips": 0.7808981537818909
+        },
+        "center_25000": {
+          "mean_mse": 0.07786523008775834,
+          "mean_psnr_db": 11.519656023306183,
+          "mean_ssim": 0.2920934189711948,
+          "mean_lpips": 0.8070732466876507
+        },
+        "rank1_member_06_25000": {
+          "mean_mse": 0.07798894580197738,
+          "mean_psnr_db": 11.502841466363446,
+          "mean_ssim": 0.25763901450273924,
+          "mean_lpips": 0.8085191771388054
+        },
+        "rank2_member_05_25000": {
+          "mean_mse": 0.07699568949246369,
+          "mean_psnr_db": 11.595638943223115,
+          "mean_ssim": 0.2621588531900693,
+          "mean_lpips": 0.8001326844096184
+        },
+        "rank3_member_00_25000": {
+          "mean_mse": 0.07710545724789646,
+          "mean_psnr_db": 11.555842555517009,
+          "mean_ssim": 0.2614190003468897,
+          "mean_lpips": 0.8055475391447544
+        }
+      },
+      "primary_contrast_rank1_minus_center25000": {
+        "mean_mse": 0.00012371571421904148,
+        "mean_psnr_db": -0.01681455694273737,
+        "mean_ssim": -0.034454404468455546,
+        "mean_lpips": 0.0014459304511547089
+      },
+      "evaluation_output": "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results_private/signed_int4_randomized8_screen3_fia_B16_T10_20260918_sweep/evaluation_recovery_20260918",
+      "figure_artifacts": [
+        "contact_sheet_b4_5000.png",
+        "contact_sheet_b4_25000.png"
+      ]
+    }
+  },
+  "parent_original_failure_preserved": true,
+  "actual_image_cell_feasibility": "NOT_EVALUATED",
+  "accounting": {
+    "bit7_base_used_seconds": 11021.525099699968,
+    "aggregate_base_used_seconds": 11024.35411100008,
+    "bit7_recovery_seconds": 118.54876310005784,
+    "fresh_bit_recovery_seconds": 32533.737916999962,
+    "aggregate_recovery_seconds": 32652.28668010002,
+    "bit7_remaining_at_start_seconds": 1578.474900300032,
+    "aggregate_remaining_at_start_seconds": 39375.64588899992
+  }
+}

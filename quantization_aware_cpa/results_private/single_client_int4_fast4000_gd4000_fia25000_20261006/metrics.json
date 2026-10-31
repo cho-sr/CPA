@@ -1,0 +1,201 @@
+{
+  "matching": "Hungarian_pixel_MSE_once_for_all_metrics",
+  "n_images": 16,
+  "all_images_included": true,
+  "candidate_selection": "none_single_supplied_artifact",
+  "per_image": [
+    {
+      "candidate_index": 0,
+      "truth_index": 9,
+      "mse": 0.04889819392856226,
+      "psnr_db": 13.107071813946739,
+      "perfect_pixel_match": false,
+      "ssim": 0.21123820028787443,
+      "lpips": 0.7870327830314636
+    },
+    {
+      "candidate_index": 1,
+      "truth_index": 4,
+      "mse": 0.06102091575148204,
+      "psnr_db": 12.145212791119793,
+      "perfect_pixel_match": false,
+      "ssim": 0.39200695305661626,
+      "lpips": 0.8500452041625977
+    },
+    {
+      "candidate_index": 2,
+      "truth_index": 14,
+      "mse": 0.04203373590208659,
+      "psnr_db": 13.764020087678915,
+      "perfect_pixel_match": false,
+      "ssim": 0.23581494114362217,
+      "lpips": 0.830355703830719
+    },
+    {
+      "candidate_index": 3,
+      "truth_index": 2,
+      "mse": 0.07044867317647296,
+      "psnr_db": 11.521271819380537,
+      "perfect_pixel_match": false,
+      "ssim": 0.23643646285540248,
+      "lpips": 0.8083372116088867
+    },
+    {
+      "candidate_index": 4,
+      "truth_index": 0,
+      "mse": 0.048403285171643065,
+      "psnr_db": 13.151251614237932,
+      "perfect_pixel_match": false,
+      "ssim": 0.27281852868525214,
+      "lpips": 0.8187726736068726
+    },
+    {
+      "candidate_index": 5,
+      "truth_index": 15,
+      "mse": 0.060931439796303936,
+      "psnr_db": 12.151585594727406,
+      "perfect_pixel_match": false,
+      "ssim": 0.45143912682570914,
+      "lpips": 0.7028397917747498
+    },
+    {
+      "candidate_index": 6,
+      "truth_index": 8,
+      "mse": 0.04219546256612109,
+      "psnr_db": 13.747342478166157,
+      "perfect_pixel_match": false,
+      "ssim": 0.42495912658987545,
+      "lpips": 0.8596435785293579
+    },
+    {
+      "candidate_index": 7,
+      "truth_index": 3,
+      "mse": 0.21098986868241004,
+      "psnr_db": 6.75738398166578,
+      "perfect_pixel_match": false,
+      "ssim": 0.5003020287548715,
+      "lpips": 0.8630863428115845
+    },
+    {
+      "candidate_index": 8,
+      "truth_index": 12,
+      "mse": 0.03989295974861483,
+      "psnr_db": 13.991037412081697,
+      "perfect_pixel_match": false,
+      "ssim": 0.3785592652643557,
+      "lpips": 0.8313524723052979
+    },
+    {
+      "candidate_index": 9,
+      "truth_index": 5,
+      "mse": 0.11648367610136807,
+      "psnr_db": 9.337349319411794,
+      "perfect_pixel_match": false,
+      "ssim": 0.4158080627031228,
+      "lpips": 0.7803227305412292
+    },
+    {
+      "candidate_index": 10,
+      "truth_index": 11,
+      "mse": 0.06841250321516965,
+      "psnr_db": 11.648645184389814,
+      "perfect_pixel_match": false,
+      "ssim": 0.19658653824405958,
+      "lpips": 0.8258543610572815
+    },
+    {
+      "candidate_index": 11,
+      "truth_index": 7,
+      "mse": 0.12162999642471682,
+      "psnr_db": 9.149593060237832,
+      "perfect_pixel_match": false,
+      "ssim": 0.13667861575358073,
+      "lpips": 0.7264240384101868
+    },
+    {
+      "candidate_index": 12,
+      "truth_index": 1,
+      "mse": 0.07557870896885083,
+      "psnr_db": 11.216005309489441,
+      "perfect_pixel_match": false,
+      "ssim": 0.2052970337711819,
+      "lpips": 0.7015624046325684
+    },
+    {
+      "candidate_index": 13,
+      "truth_index": 13,
+      "mse": 0.09197045345951607,
+      "psnr_db": 10.363516722247347,
+      "perfect_pixel_match": false,
+      "ssim": 0.2039857098313979,
+      "lpips": 0.8006778955459595
+    },
+    {
+      "candidate_index": 14,
+      "truth_index": 6,
+      "mse": 0.07146278224892455,
+      "psnr_db": 11.459200794877164,
+      "perfect_pixel_match": false,
+      "ssim": 0.1623428929559522,
+      "lpips": 0.8598064184188843
+    },
+    {
+      "candidate_index": 15,
+      "truth_index": 10,
+      "mse": 0.075009201985528,
+      "psnr_db": 11.248854549230503,
+      "perfect_pixel_match": false,
+      "ssim": 0.1800500871378521,
+      "lpips": 0.844083309173584
+    }
+  ],
+  "metric_dtype": "float64",
+  "truth_denormalization_tolerance_abs": 9.5367431640625e-07,
+  "truth_denormalization_clipped_values": 77691,
+  "perfect_pixel_matches": 0,
+  "psnr_null_meaning": "positive_infinity_for_perfect_pixel_match",
+  "mean_psnr_null_meaning": "positive_infinity_if_any_image_is_a_perfect_pixel_match",
+  "mean_mse": 0.07783511607048568,
+  "mean_psnr_db": 11.547458908305556,
+  "mean_ssim": 0.28777022336629543,
+  "lpips": "computed_offline_vgg",
+  "reconstruction_success": "no_threshold_registered",
+  "mean_lpips": 0.8056373074650764,
+  "lpips_provenance": {
+    "implementation": "torchmetrics.image.lpip.LearnedPerceptualImagePatchSimilarity",
+    "net_type": "vgg",
+    "normalize_argument": false,
+    "device": "cpu",
+    "dtype": "float32",
+    "versions": {
+      "torch": "2.13.0+cu132",
+      "torchvision": "0.28.0+cu132",
+      "torchmetrics": "1.9.0"
+    },
+    "input_normalization": "FP32 RGB [0,1] to [-1,1] using (pixels - 0.5) * 2",
+    "weights": {
+      "backbone": {
+        "path": "C:\\Users\\조상제\\.cache\\torch\\hub\\checkpoints\\vgg16-397923af.pth",
+        "sha256": "397923af8e79cdbb6a7127f12361acd7a2f83e06b05044ddf496e83de57a5bf0"
+      },
+      "calibration": {
+        "path": "C:\\miniconda\\envs\\DLG\\Lib\\site-packages\\torchmetrics\\functional\\image\\lpips_models\\vgg.pth",
+        "sha256": "a78928a0af1e5f0fcb1f3b9e8f8c3a2a5a3de244d830ad5c1feddc79b8432868"
+      }
+    },
+    "downloads_allowed": false
+  },
+  "private_keys_materialized": [
+    "labels",
+    "x",
+    "z"
+  ],
+  "private_fields_consumed": [
+    "x"
+  ],
+  "labels_consumed": false,
+  "feature_truth_consumed": false,
+  "private_truth_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results_private\\signed_int4_baseline_B16_T10\\observation\\evaluation_truth.pt",
+  "private_truth_sha256": "724bbacbe316cc28dac086db9cfaf6507f4c1af31144fd610cc480985aab72e2",
+  "evaluation_repair": "source-file hash replaced by independently verified evaluation-bundle hash"
+}

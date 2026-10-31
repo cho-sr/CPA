@@ -1,0 +1,2853 @@
+{
+  "scope": "recent zero-fill baselines and historical CoRA R8, keep80/50/30/10",
+  "sources": [
+    {
+      "source_file": "C:\\Users\\조상제\\Desktop\\CPA\\cora_fedavg_single_client_cpa\\outputs_v1\\fedavg_single_client_updates\\imagenet\\vgg16\\fedavg_single_client_clients3_round20of20_spc24_target0_local1_5441531bedd12a66\\global_topk\\keep_0p1.pickle",
+      "source_file_sha256": "f3892ffa3af44656c54bf1d986c9b4c6109da063a821c42a67cdc22a463a2a09",
+      "source_file_bytes": 570301664,
+      "observation_file": "C:\\Users\\조상제\\Desktop\\CPA\\cora_fedavg_single_client_cpa\\outputs_v1\\fedavg_single_client_updates\\imagenet\\vgg16\\fedavg_single_client_clients3_round20of20_spc24_target0_local1_5441531bedd12a66\\global_topk\\keep_0p1_attack_layer_observation.pickle",
+      "observation_index_sha256": "9a6bc7aef47af59b288568c43e312593406680021363ee39f92f23102d965221",
+      "observation_index_bytes": 3466,
+      "source_index_link_verified": true,
+      "shard_hash_verified": true,
+      "update_tensor_hash_verified": true,
+      "checkpoint_verified": true,
+      "metadata": {
+        "keep_ratio": 0.1,
+        "n_samples": 24,
+        "local_steps": 1,
+        "local_epochs": 1,
+        "local_batch_size": 24,
+        "micro_batch_size": 24,
+        "lr": 0.001,
+        "seed": 42,
+        "observed_round": 20,
+        "observed_client_id": 0,
+        "sample_indices_hash": "0f2bf88518768bfc21a12255682050bae117cbd14410fc71f2a9757c5d3d4d4a",
+        "label_hash": "08aa3ba7407e74455e4e2691ea77cdc5f9557bbd57eb5ab53adc8ba7060c707b",
+        "source_fp32_update_hash": "f6771041015b5b62a26009fbf4d634c7b4fdebf2fcfbd4284fb00bf4adbee0a3",
+        "sparse_relative_l2": 0.20383070409297943,
+        "sparse_nonzero_fraction": 0.10000000433659043,
+        "sparse_cosine_similarity_to_fp32": 0.9790061712265015,
+        "shared_fp32_control": null,
+        "shared_fp32_control_id": null
+      },
+      "checkpoint": {
+        "path": "C:\\Users\\조상제\\Desktop\\CPA\\cora_fedavg_single_client_cpa\\outputs_v1\\fedavg_single_client_updates\\imagenet\\vgg16\\fedavg_single_client_clients3_round20of20_spc24_target0_local1_5441531bedd12a66\\global_topk\\keep_0p1.fedavg_round_before.pt",
+        "sha256": "d15a24791b62c237c1f6ab9e264057184c983aee049930bb38eef76573e2dd91"
+      },
+      "attack_layer": {
+        "index": 26,
+        "name": "classifier.0.weight"
+      },
+      "npz_path": "C:\\Users\\조상제\\Desktop\\CPA\\cora_fedavg_single_client_cpa\\outputs_v1\\fedavg_single_client_updates\\imagenet\\vgg16\\fedavg_single_client_clients3_round20of20_spc24_target0_local1_5441531bedd12a66\\global_topk\\keep_0p1_attack_layer_observation_shards\\batch_000_client_0000.npz",
+      "npz_bytes": 29429422,
+      "npz_plus_index_bytes": 29432888,
+      "dense_fc1_bytes": 411041792,
+      "values_bytes": 16583568,
+      "bitmap_bytes": 12845056,
+      "npz_container_and_shape_bytes": 798,
+      "fc1_kept_elements": 4145892,
+      "fc1_elements": 102760448,
+      "fc1_retained_fraction": 0.040345211418307554,
+      "fc1_nonzero_elements": 4145892,
+      "fc1_savings_fraction_npz_only": 0.9284028471732626,
+      "fc1_savings_fraction_npz_plus_index": 0.9283944149406589,
+      "tau": 4.041939973831177e-07,
+      "global_total": 138357544,
+      "global_kept": 13835755,
+      "decode_vs_saved_sparse_update": {
+        "numerically_equal": true,
+        "different_elements": 0,
+        "max_abs_error": 0.0,
+        "relative_l2": 0.0
+      },
+      "per_tensor_stats": [
+        {
+          "name": "features.0.weight",
+          "shape": [
+            64,
+            3,
+            3,
+            3
+          ],
+          "total_elements": 1728,
+          "mask_kept_elements": 1675,
+          "stored_nonzero_elements": 1675,
+          "original_nonzero_elements": 1728,
+          "mask_fraction": 0.9693287037037037,
+          "stored_nonzero_fraction": 0.9693287037037037,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "features.0.bias",
+          "shape": [
+            64
+          ],
+          "total_elements": 64,
+          "mask_kept_elements": 63,
+          "stored_nonzero_elements": 63,
+          "original_nonzero_elements": 64,
+          "mask_fraction": 0.984375,
+          "stored_nonzero_fraction": 0.984375,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "features.2.weight",
+          "shape": [
+            64,
+            64,
+            3,
+            3
+          ],
+          "total_elements": 36864,
+          "mask_kept_elements": 29107,
+          "stored_nonzero_elements": 29107,
+          "original_nonzero_elements": 36831,
+          "mask_fraction": 0.7895779079861112,
+          "stored_nonzero_fraction": 0.7895779079861112,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "features.2.bias",
+          "shape": [
+            64
+          ],
+          "total_elements": 64,
+          "mask_kept_elements": 57,
+          "stored_nonzero_elements": 57,
+          "original_nonzero_elements": 64,
+          "mask_fraction": 0.890625,
+          "stored_nonzero_fraction": 0.890625,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "features.5.weight",
+          "shape": [
+            128,
+            64,
+            3,
+            3
+          ],
+          "total_elements": 73728,
+          "mask_kept_elements": 60218,
+          "stored_nonzero_elements": 60218,
+          "original_nonzero_elements": 73684,
+          "mask_fraction": 0.8167588975694444,
+          "stored_nonzero_fraction": 0.8167588975694444,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "features.5.bias",
+          "shape": [
+            128
+          ],
+          "total_elements": 128,
+          "mask_kept_elements": 115,
+          "stored_nonzero_elements": 115,
+          "original_nonzero_elements": 128,
+          "mask_fraction": 0.8984375,
+          "stored_nonzero_fraction": 0.8984375,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "features.7.weight",
+          "shape": [
+            128,
+            128,
+            3,
+            3
+          ],
+          "total_elements": 147456,
+          "mask_kept_elements": 119284,
+          "stored_nonzero_elements": 119284,
+          "original_nonzero_elements": 147367,
+          "mask_fraction": 0.8089463975694444,
+          "stored_nonzero_fraction": 0.8089463975694444,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "features.7.bias",
+          "shape": [
+            128
+          ],
+          "total_elements": 128,
+          "mask_kept_elements": 110,
+          "stored_nonzero_elements": 110,
+          "original_nonzero_elements": 128,
+          "mask_fraction": 0.859375,
+          "stored_nonzero_fraction": 0.859375,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "features.10.weight",
+          "shape": [
+            256,
+            128,
+            3,
+            3
+          ],
+          "total_elements": 294912,
+          "mask_kept_elements": 231125,
+          "stored_nonzero_elements": 231125,
+          "original_nonzero_elements": 294749,
+          "mask_fraction": 0.7837083604600694,
+          "stored_nonzero_fraction": 0.7837083604600694,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "features.10.bias",
+          "shape": [
+            256
+          ],
+          "total_elements": 256,
+          "mask_kept_elements": 157,
+          "stored_nonzero_elements": 157,
+          "original_nonzero_elements": 255,
+          "mask_fraction": 0.61328125,
+          "stored_nonzero_fraction": 0.61328125,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "features.12.weight",
+          "shape": [
+            256,
+            256,
+            3,
+            3
+          ],
+          "total_elements": 589824,
+          "mask_kept_elements": 410393,
+          "stored_nonzero_elements": 410393,
+          "original_nonzero_elements": 589462,
+          "mask_fraction": 0.6957889133029513,
+          "stored_nonzero_fraction": 0.6957889133029513,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "features.12.bias",
+          "shape": [
+            256
+          ],
+          "total_elements": 256,
+          "mask_kept_elements": 141,
+          "stored_nonzero_elements": 141,
+          "original_nonzero_elements": 256,
+          "mask_fraction": 0.55078125,
+          "stored_nonzero_fraction": 0.55078125,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "features.14.weight",
+          "shape": [
+            256,
+            256,
+            3,
+            3
+          ],
+          "total_elements": 589824,
+          "mask_kept_elements": 417988,
+          "stored_nonzero_elements": 417988,
+          "original_nonzero_elements": 589458,
+          "mask_fraction": 0.7086656358506944,
+          "stored_nonzero_fraction": 0.7086656358506944,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "features.14.bias",
+          "shape": [
+            256
+          ],
+          "total_elements": 256,
+          "mask_kept_elements": 148,
+          "stored_nonzero_elements": 148,
+          "original_nonzero_elements": 256,
+          "mask_fraction": 0.578125,
+          "stored_nonzero_fraction": 0.578125,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "features.17.weight",
+          "shape": [
+            512,
+            256,
+            3,
+            3
+          ],
+          "total_elements": 1179648,
+          "mask_kept_elements": 773068,
+          "stored_nonzero_elements": 773068,
+          "original_nonzero_elements": 1178914,
+          "mask_fraction": 0.6553378634982638,
+          "stored_nonzero_fraction": 0.6553378634982638,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "features.17.bias",
+          "shape": [
+            512
+          ],
+          "total_elements": 512,
+          "mask_kept_elements": 169,
+          "stored_nonzero_elements": 169,
+          "original_nonzero_elements": 511,
+          "mask_fraction": 0.330078125,
+          "stored_nonzero_fraction": 0.330078125,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "features.19.weight",
+          "shape": [
+            512,
+            512,
+            3,
+            3
+          ],
+          "total_elements": 2359296,
+          "mask_kept_elements": 1243221,
+          "stored_nonzero_elements": 1243221,
+          "original_nonzero_elements": 2357386,
+          "mask_fraction": 0.5269457499186198,
+          "stored_nonzero_fraction": 0.5269457499186198,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "features.19.bias",
+          "shape": [
+            512
+          ],
+          "total_elements": 512,
+          "mask_kept_elements": 202,
+          "stored_nonzero_elements": 202,
+          "original_nonzero_elements": 507,
+          "mask_fraction": 0.39453125,
+          "stored_nonzero_fraction": 0.39453125,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "features.21.weight",
+          "shape": [
+            512,
+            512,
+            3,
+            3
+          ],
+          "total_elements": 2359296,
+          "mask_kept_elements": 1147155,
+          "stored_nonzero_elements": 1147155,
+          "original_nonzero_elements": 2357093,
+          "mask_fraction": 0.48622767130533856,
+          "stored_nonzero_fraction": 0.48622767130533856,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "features.21.bias",
+          "shape": [
+            512
+          ],
+          "total_elements": 512,
+          "mask_kept_elements": 238,
+          "stored_nonzero_elements": 238,
+          "original_nonzero_elements": 509,
+          "mask_fraction": 0.46484375,
+          "stored_nonzero_fraction": 0.46484375,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "features.24.weight",
+          "shape": [
+            512,
+            512,
+            3,
+            3
+          ],
+          "total_elements": 2359296,
+          "mask_kept_elements": 1231622,
+          "stored_nonzero_elements": 1231622,
+          "original_nonzero_elements": 2357229,
+          "mask_fraction": 0.5220294528537326,
+          "stored_nonzero_fraction": 0.5220294528537326,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "features.24.bias",
+          "shape": [
+            512
+          ],
+          "total_elements": 512,
+          "mask_kept_elements": 300,
+          "stored_nonzero_elements": 300,
+          "original_nonzero_elements": 509,
+          "mask_fraction": 0.5859375,
+          "stored_nonzero_fraction": 0.5859375,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "features.26.weight",
+          "shape": [
+            512,
+            512,
+            3,
+            3
+          ],
+          "total_elements": 2359296,
+          "mask_kept_elements": 1185478,
+          "stored_nonzero_elements": 1185478,
+          "original_nonzero_elements": 2356788,
+          "mask_fraction": 0.5024710761176215,
+          "stored_nonzero_fraction": 0.5024710761176215,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "features.26.bias",
+          "shape": [
+            512
+          ],
+          "total_elements": 512,
+          "mask_kept_elements": 317,
+          "stored_nonzero_elements": 317,
+          "original_nonzero_elements": 510,
+          "mask_fraction": 0.619140625,
+          "stored_nonzero_fraction": 0.619140625,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "features.28.weight",
+          "shape": [
+            512,
+            512,
+            3,
+            3
+          ],
+          "total_elements": 2359296,
+          "mask_kept_elements": 905163,
+          "stored_nonzero_elements": 905163,
+          "original_nonzero_elements": 2347041,
+          "mask_fraction": 0.38365809122721356,
+          "stored_nonzero_fraction": 0.38365809122721356,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "features.28.bias",
+          "shape": [
+            512
+          ],
+          "total_elements": 512,
+          "mask_kept_elements": 320,
+          "stored_nonzero_elements": 320,
+          "original_nonzero_elements": 511,
+          "mask_fraction": 0.625,
+          "stored_nonzero_fraction": 0.625,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "classifier.0.weight",
+          "shape": [
+            4096,
+            25088
+          ],
+          "total_elements": 102760448,
+          "mask_kept_elements": 4145892,
+          "stored_nonzero_elements": 4145892,
+          "original_nonzero_elements": 53324328,
+          "mask_fraction": 0.040345211418307554,
+          "stored_nonzero_fraction": 0.040345211418307554,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "classifier.0.bias",
+          "shape": [
+            4096
+          ],
+          "total_elements": 4096,
+          "mask_kept_elements": 214,
+          "stored_nonzero_elements": 214,
+          "original_nonzero_elements": 4028,
+          "mask_fraction": 0.05224609375,
+          "stored_nonzero_fraction": 0.05224609375,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "classifier.3.weight",
+          "shape": [
+            4096,
+            4096
+          ],
+          "total_elements": 16777216,
+          "mask_kept_elements": 1874588,
+          "stored_nonzero_elements": 1874588,
+          "original_nonzero_elements": 10317852,
+          "mask_fraction": 0.11173415184020996,
+          "stored_nonzero_fraction": 0.11173415184020996,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "classifier.3.bias",
+          "shape": [
+            4096
+          ],
+          "total_elements": 4096,
+          "mask_kept_elements": 647,
+          "stored_nonzero_elements": 647,
+          "original_nonzero_elements": 3938,
+          "mask_fraction": 0.157958984375,
+          "stored_nonzero_fraction": 0.157958984375,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "classifier.6.weight",
+          "shape": [
+            1000,
+            4096
+          ],
+          "total_elements": 4096000,
+          "mask_kept_elements": 56508,
+          "stored_nonzero_elements": 56508,
+          "original_nonzero_elements": 1056984,
+          "mask_fraction": 0.0137958984375,
+          "stored_nonzero_fraction": 0.0137958984375,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "classifier.6.bias",
+          "shape": [
+            1000
+          ],
+          "total_elements": 1000,
+          "mask_kept_elements": 72,
+          "stored_nonzero_elements": 72,
+          "original_nonzero_elements": 673,
+          "mask_fraction": 0.072,
+          "stored_nonzero_fraction": 0.072,
+          "selected_original_zero_elements": 0
+        }
+      ],
+      "sample_indices": [
+        [
+          37542,
+          44491,
+          216,
+          43688,
+          41558,
+          32245,
+          27206,
+          10863,
+          2190,
+          31849,
+          25408,
+          33504,
+          27102,
+          21934,
+          40181,
+          47682,
+          45747,
+          17004,
+          43777,
+          7433,
+          45129,
+          37684,
+          14817,
+          38215
+        ]
+      ]
+    },
+    {
+      "source_file": "C:\\Users\\조상제\\Desktop\\CPA\\cora_fedavg_single_client_cpa\\outputs_v1\\fedavg_single_client_updates\\imagenet\\vgg16\\fedavg_single_client_clients3_round20of20_spc24_target0_local1_e920201510be97a8\\global_topk\\keep_0p1.pickle",
+      "source_file_sha256": "33396cdfbd396b253d853ef84e45206b449ce827e3d8553c47f5fdd72fc1b976",
+      "source_file_bytes": 570301663,
+      "observation_file": "C:\\Users\\조상제\\Desktop\\CPA\\cora_fedavg_single_client_cpa\\outputs_v1\\fedavg_single_client_updates\\imagenet\\vgg16\\fedavg_single_client_clients3_round20of20_spc24_target0_local1_e920201510be97a8\\global_topk\\keep_0p1_attack_layer_observation.pickle",
+      "observation_index_sha256": "30ddf606217a3c922afd29475f29c353b5fb83314159e10f5fb8f20cf1a400ea",
+      "observation_index_bytes": 3466,
+      "source_index_link_verified": true,
+      "shard_hash_verified": true,
+      "update_tensor_hash_verified": true,
+      "checkpoint_verified": true,
+      "metadata": {
+        "keep_ratio": 0.1,
+        "n_samples": 24,
+        "local_steps": 1,
+        "local_epochs": 1,
+        "local_batch_size": 24,
+        "micro_batch_size": 4,
+        "lr": 0.001,
+        "seed": 42,
+        "observed_round": 20,
+        "observed_client_id": 0,
+        "sample_indices_hash": "0f2bf88518768bfc21a12255682050bae117cbd14410fc71f2a9757c5d3d4d4a",
+        "label_hash": "08aa3ba7407e74455e4e2691ea77cdc5f9557bbd57eb5ab53adc8ba7060c707b",
+        "source_fp32_update_hash": "928644d3cf436cf418bdd8a14ff798f6c95f3482cc61f279a591a1342724c7cc",
+        "sparse_relative_l2": 0.2038288414478302,
+        "sparse_nonzero_fraction": 0.10000000433659043,
+        "sparse_cosine_similarity_to_fp32": 0.9790064692497253,
+        "shared_fp32_control": null,
+        "shared_fp32_control_id": null
+      },
+      "checkpoint": {
+        "path": "C:\\Users\\조상제\\Desktop\\CPA\\cora_fedavg_single_client_cpa\\outputs_v1\\fedavg_single_client_updates\\imagenet\\vgg16\\fedavg_single_client_clients3_round20of20_spc24_target0_local1_e920201510be97a8\\global_topk\\keep_0p1.fedavg_round_before.pt",
+        "sha256": "4daba0870eed8d3179ca2e93a48867fcfefed69b0aeb959aa4eee1f956a63037"
+      },
+      "attack_layer": {
+        "index": 26,
+        "name": "classifier.0.weight"
+      },
+      "npz_path": "C:\\Users\\조상제\\Desktop\\CPA\\cora_fedavg_single_client_cpa\\outputs_v1\\fedavg_single_client_updates\\imagenet\\vgg16\\fedavg_single_client_clients3_round20of20_spc24_target0_local1_e920201510be97a8\\global_topk\\keep_0p1_attack_layer_observation_shards\\batch_000_client_0000.npz",
+      "npz_bytes": 29444290,
+      "npz_plus_index_bytes": 29447756,
+      "dense_fc1_bytes": 411041792,
+      "values_bytes": 16598436,
+      "bitmap_bytes": 12845056,
+      "npz_container_and_shape_bytes": 798,
+      "fc1_kept_elements": 4149609,
+      "fc1_elements": 102760448,
+      "fc1_retained_fraction": 0.040381382922736964,
+      "fc1_nonzero_elements": 4149609,
+      "fc1_savings_fraction_npz_only": 0.9283666756688332,
+      "fc1_savings_fraction_npz_plus_index": 0.9283582434362294,
+      "tau": 4.043104127049446e-07,
+      "global_total": 138357544,
+      "global_kept": 13835755,
+      "decode_vs_saved_sparse_update": {
+        "numerically_equal": true,
+        "different_elements": 0,
+        "max_abs_error": 0.0,
+        "relative_l2": 0.0
+      },
+      "per_tensor_stats": [
+        {
+          "name": "features.0.weight",
+          "shape": [
+            64,
+            3,
+            3,
+            3
+          ],
+          "total_elements": 1728,
+          "mask_kept_elements": 1670,
+          "stored_nonzero_elements": 1670,
+          "original_nonzero_elements": 1727,
+          "mask_fraction": 0.9664351851851852,
+          "stored_nonzero_fraction": 0.9664351851851852,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "features.0.bias",
+          "shape": [
+            64
+          ],
+          "total_elements": 64,
+          "mask_kept_elements": 64,
+          "stored_nonzero_elements": 64,
+          "original_nonzero_elements": 64,
+          "mask_fraction": 1.0,
+          "stored_nonzero_fraction": 1.0,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "features.2.weight",
+          "shape": [
+            64,
+            64,
+            3,
+            3
+          ],
+          "total_elements": 36864,
+          "mask_kept_elements": 29099,
+          "stored_nonzero_elements": 29099,
+          "original_nonzero_elements": 36831,
+          "mask_fraction": 0.7893608940972222,
+          "stored_nonzero_fraction": 0.7893608940972222,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "features.2.bias",
+          "shape": [
+            64
+          ],
+          "total_elements": 64,
+          "mask_kept_elements": 56,
+          "stored_nonzero_elements": 56,
+          "original_nonzero_elements": 64,
+          "mask_fraction": 0.875,
+          "stored_nonzero_fraction": 0.875,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "features.5.weight",
+          "shape": [
+            128,
+            64,
+            3,
+            3
+          ],
+          "total_elements": 73728,
+          "mask_kept_elements": 60228,
+          "stored_nonzero_elements": 60228,
+          "original_nonzero_elements": 73673,
+          "mask_fraction": 0.81689453125,
+          "stored_nonzero_fraction": 0.81689453125,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "features.5.bias",
+          "shape": [
+            128
+          ],
+          "total_elements": 128,
+          "mask_kept_elements": 113,
+          "stored_nonzero_elements": 113,
+          "original_nonzero_elements": 128,
+          "mask_fraction": 0.8828125,
+          "stored_nonzero_fraction": 0.8828125,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "features.7.weight",
+          "shape": [
+            128,
+            128,
+            3,
+            3
+          ],
+          "total_elements": 147456,
+          "mask_kept_elements": 119251,
+          "stored_nonzero_elements": 119251,
+          "original_nonzero_elements": 147377,
+          "mask_fraction": 0.8087226019965278,
+          "stored_nonzero_fraction": 0.8087226019965278,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "features.7.bias",
+          "shape": [
+            128
+          ],
+          "total_elements": 128,
+          "mask_kept_elements": 109,
+          "stored_nonzero_elements": 109,
+          "original_nonzero_elements": 127,
+          "mask_fraction": 0.8515625,
+          "stored_nonzero_fraction": 0.8515625,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "features.10.weight",
+          "shape": [
+            256,
+            128,
+            3,
+            3
+          ],
+          "total_elements": 294912,
+          "mask_kept_elements": 231080,
+          "stored_nonzero_elements": 231080,
+          "original_nonzero_elements": 294738,
+          "mask_fraction": 0.7835557725694444,
+          "stored_nonzero_fraction": 0.7835557725694444,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "features.10.bias",
+          "shape": [
+            256
+          ],
+          "total_elements": 256,
+          "mask_kept_elements": 157,
+          "stored_nonzero_elements": 157,
+          "original_nonzero_elements": 253,
+          "mask_fraction": 0.61328125,
+          "stored_nonzero_fraction": 0.61328125,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "features.12.weight",
+          "shape": [
+            256,
+            256,
+            3,
+            3
+          ],
+          "total_elements": 589824,
+          "mask_kept_elements": 410369,
+          "stored_nonzero_elements": 410369,
+          "original_nonzero_elements": 589440,
+          "mask_fraction": 0.6957482231987847,
+          "stored_nonzero_fraction": 0.6957482231987847,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "features.12.bias",
+          "shape": [
+            256
+          ],
+          "total_elements": 256,
+          "mask_kept_elements": 142,
+          "stored_nonzero_elements": 142,
+          "original_nonzero_elements": 256,
+          "mask_fraction": 0.5546875,
+          "stored_nonzero_fraction": 0.5546875,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "features.14.weight",
+          "shape": [
+            256,
+            256,
+            3,
+            3
+          ],
+          "total_elements": 589824,
+          "mask_kept_elements": 417971,
+          "stored_nonzero_elements": 417971,
+          "original_nonzero_elements": 589459,
+          "mask_fraction": 0.7086368136935763,
+          "stored_nonzero_fraction": 0.7086368136935763,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "features.14.bias",
+          "shape": [
+            256
+          ],
+          "total_elements": 256,
+          "mask_kept_elements": 149,
+          "stored_nonzero_elements": 149,
+          "original_nonzero_elements": 255,
+          "mask_fraction": 0.58203125,
+          "stored_nonzero_fraction": 0.58203125,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "features.17.weight",
+          "shape": [
+            512,
+            256,
+            3,
+            3
+          ],
+          "total_elements": 1179648,
+          "mask_kept_elements": 772567,
+          "stored_nonzero_elements": 772567,
+          "original_nonzero_elements": 1178875,
+          "mask_fraction": 0.6549131605360243,
+          "stored_nonzero_fraction": 0.6549131605360243,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "features.17.bias",
+          "shape": [
+            512
+          ],
+          "total_elements": 512,
+          "mask_kept_elements": 173,
+          "stored_nonzero_elements": 173,
+          "original_nonzero_elements": 510,
+          "mask_fraction": 0.337890625,
+          "stored_nonzero_fraction": 0.337890625,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "features.19.weight",
+          "shape": [
+            512,
+            512,
+            3,
+            3
+          ],
+          "total_elements": 2359296,
+          "mask_kept_elements": 1241690,
+          "stored_nonzero_elements": 1241690,
+          "original_nonzero_elements": 2357480,
+          "mask_fraction": 0.5262968275282118,
+          "stored_nonzero_fraction": 0.5262968275282118,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "features.19.bias",
+          "shape": [
+            512
+          ],
+          "total_elements": 512,
+          "mask_kept_elements": 204,
+          "stored_nonzero_elements": 204,
+          "original_nonzero_elements": 509,
+          "mask_fraction": 0.3984375,
+          "stored_nonzero_fraction": 0.3984375,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "features.21.weight",
+          "shape": [
+            512,
+            512,
+            3,
+            3
+          ],
+          "total_elements": 2359296,
+          "mask_kept_elements": 1146047,
+          "stored_nonzero_elements": 1146047,
+          "original_nonzero_elements": 2357077,
+          "mask_fraction": 0.48575803968641496,
+          "stored_nonzero_fraction": 0.48575803968641496,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "features.21.bias",
+          "shape": [
+            512
+          ],
+          "total_elements": 512,
+          "mask_kept_elements": 236,
+          "stored_nonzero_elements": 236,
+          "original_nonzero_elements": 510,
+          "mask_fraction": 0.4609375,
+          "stored_nonzero_fraction": 0.4609375,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "features.24.weight",
+          "shape": [
+            512,
+            512,
+            3,
+            3
+          ],
+          "total_elements": 2359296,
+          "mask_kept_elements": 1230687,
+          "stored_nonzero_elements": 1230687,
+          "original_nonzero_elements": 2357089,
+          "mask_fraction": 0.5216331481933594,
+          "stored_nonzero_fraction": 0.5216331481933594,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "features.24.bias",
+          "shape": [
+            512
+          ],
+          "total_elements": 512,
+          "mask_kept_elements": 300,
+          "stored_nonzero_elements": 300,
+          "original_nonzero_elements": 509,
+          "mask_fraction": 0.5859375,
+          "stored_nonzero_fraction": 0.5859375,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "features.26.weight",
+          "shape": [
+            512,
+            512,
+            3,
+            3
+          ],
+          "total_elements": 2359296,
+          "mask_kept_elements": 1185841,
+          "stored_nonzero_elements": 1185841,
+          "original_nonzero_elements": 2356780,
+          "mask_fraction": 0.5026249355740018,
+          "stored_nonzero_fraction": 0.5026249355740018,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "features.26.bias",
+          "shape": [
+            512
+          ],
+          "total_elements": 512,
+          "mask_kept_elements": 318,
+          "stored_nonzero_elements": 318,
+          "original_nonzero_elements": 511,
+          "mask_fraction": 0.62109375,
+          "stored_nonzero_fraction": 0.62109375,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "features.28.weight",
+          "shape": [
+            512,
+            512,
+            3,
+            3
+          ],
+          "total_elements": 2359296,
+          "mask_kept_elements": 905567,
+          "stored_nonzero_elements": 905567,
+          "original_nonzero_elements": 2346990,
+          "mask_fraction": 0.38382932874891496,
+          "stored_nonzero_fraction": 0.38382932874891496,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "features.28.bias",
+          "shape": [
+            512
+          ],
+          "total_elements": 512,
+          "mask_kept_elements": 321,
+          "stored_nonzero_elements": 321,
+          "original_nonzero_elements": 509,
+          "mask_fraction": 0.626953125,
+          "stored_nonzero_fraction": 0.626953125,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "classifier.0.weight",
+          "shape": [
+            4096,
+            25088
+          ],
+          "total_elements": 102760448,
+          "mask_kept_elements": 4149609,
+          "stored_nonzero_elements": 4149609,
+          "original_nonzero_elements": 53327295,
+          "mask_fraction": 0.040381382922736964,
+          "stored_nonzero_fraction": 0.040381382922736964,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "classifier.0.bias",
+          "shape": [
+            4096
+          ],
+          "total_elements": 4096,
+          "mask_kept_elements": 214,
+          "stored_nonzero_elements": 214,
+          "original_nonzero_elements": 4031,
+          "mask_fraction": 0.05224609375,
+          "stored_nonzero_fraction": 0.05224609375,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "classifier.3.weight",
+          "shape": [
+            4096,
+            4096
+          ],
+          "total_elements": 16777216,
+          "mask_kept_elements": 1874285,
+          "stored_nonzero_elements": 1874285,
+          "original_nonzero_elements": 10316264,
+          "mask_fraction": 0.11171609163284302,
+          "stored_nonzero_fraction": 0.11171609163284302,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "classifier.3.bias",
+          "shape": [
+            4096
+          ],
+          "total_elements": 4096,
+          "mask_kept_elements": 649,
+          "stored_nonzero_elements": 649,
+          "original_nonzero_elements": 3937,
+          "mask_fraction": 0.158447265625,
+          "stored_nonzero_fraction": 0.158447265625,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "classifier.6.weight",
+          "shape": [
+            1000,
+            4096
+          ],
+          "total_elements": 4096000,
+          "mask_kept_elements": 56517,
+          "stored_nonzero_elements": 56517,
+          "original_nonzero_elements": 1057026,
+          "mask_fraction": 0.013798095703125,
+          "stored_nonzero_fraction": 0.013798095703125,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "classifier.6.bias",
+          "shape": [
+            1000
+          ],
+          "total_elements": 1000,
+          "mask_kept_elements": 72,
+          "stored_nonzero_elements": 72,
+          "original_nonzero_elements": 673,
+          "mask_fraction": 0.072,
+          "stored_nonzero_fraction": 0.072,
+          "selected_original_zero_elements": 0
+        }
+      ],
+      "sample_indices": [
+        [
+          37542,
+          44491,
+          216,
+          43688,
+          41558,
+          32245,
+          27206,
+          10863,
+          2190,
+          31849,
+          25408,
+          33504,
+          27102,
+          21934,
+          40181,
+          47682,
+          45747,
+          17004,
+          43777,
+          7433,
+          45129,
+          37684,
+          14817,
+          38215
+        ]
+      ]
+    },
+    {
+      "source_file": "C:\\Users\\조상제\\Desktop\\CPA\\cora_fedavg_single_client_cpa\\outputs_v1\\fedavg_single_client_updates\\imagenet\\vgg16\\fedavg_single_client_clients3_round20of20_spc24_target0_local1_e920201510be97a8\\global_topk\\keep_0p3.pickle",
+      "source_file_sha256": "b3b33823f9796febd5285de8a3d7c5279380d6c8368e5399fb4aa4d538f4a1c5",
+      "source_file_bytes": 570301679,
+      "observation_file": "C:\\Users\\조상제\\Desktop\\CPA\\cora_fedavg_single_client_cpa\\outputs_v1\\fedavg_single_client_updates\\imagenet\\vgg16\\fedavg_single_client_clients3_round20of20_spc24_target0_local1_e920201510be97a8\\global_topk\\keep_0p3_attack_layer_observation.pickle",
+      "observation_index_sha256": "b803ec90590f587a4e345f3cea950e299faac210a3b943e224b15f7023be19d2",
+      "observation_index_bytes": 3466,
+      "source_index_link_verified": true,
+      "shard_hash_verified": true,
+      "update_tensor_hash_verified": true,
+      "checkpoint_verified": true,
+      "metadata": {
+        "keep_ratio": 0.3,
+        "n_samples": 24,
+        "local_steps": 1,
+        "local_epochs": 1,
+        "local_batch_size": 24,
+        "micro_batch_size": 4,
+        "lr": 0.001,
+        "seed": 42,
+        "observed_round": 20,
+        "observed_client_id": 0,
+        "sample_indices_hash": "0f2bf88518768bfc21a12255682050bae117cbd14410fc71f2a9757c5d3d4d4a",
+        "label_hash": "08aa3ba7407e74455e4e2691ea77cdc5f9557bbd57eb5ab53adc8ba7060c707b",
+        "source_fp32_update_hash": "eba789e0b2994ac29f9ff37c42464b6eedb09ec442167267f43bff05c521f3d4",
+        "sparse_relative_l2": 0.033465344458818436,
+        "sparse_nonzero_fraction": 0.30000000578212055,
+        "sparse_cosine_similarity_to_fp32": 0.9994398951530457,
+        "shared_fp32_control": null,
+        "shared_fp32_control_id": null
+      },
+      "checkpoint": {
+        "path": "C:\\Users\\조상제\\Desktop\\CPA\\cora_fedavg_single_client_cpa\\outputs_v1\\fedavg_single_client_updates\\imagenet\\vgg16\\fedavg_single_client_clients3_round20of20_spc24_target0_local1_e920201510be97a8\\global_topk\\keep_0p3.fedavg_round_before.pt",
+        "sha256": "9fdb59e3aaba376a6fc68ba1f7d0b1184f1c63304390067a9c266ca9d16008c8"
+      },
+      "attack_layer": {
+        "index": 26,
+        "name": "classifier.0.weight"
+      },
+      "npz_path": "C:\\Users\\조상제\\Desktop\\CPA\\cora_fedavg_single_client_cpa\\outputs_v1\\fedavg_single_client_updates\\imagenet\\vgg16\\fedavg_single_client_clients3_round20of20_spc24_target0_local1_e920201510be97a8\\global_topk\\keep_0p3_attack_layer_observation_shards\\batch_000_client_0000.npz",
+      "npz_bytes": 101263926,
+      "npz_plus_index_bytes": 101267392,
+      "dense_fc1_bytes": 411041792,
+      "values_bytes": 88418072,
+      "bitmap_bytes": 12845056,
+      "npz_container_and_shape_bytes": 798,
+      "fc1_kept_elements": 22104518,
+      "fc1_elements": 102760448,
+      "fc1_retained_fraction": 0.2151072560524454,
+      "fc1_nonzero_elements": 22104518,
+      "fc1_savings_fraction_npz_only": 0.7536408025391248,
+      "fc1_savings_fraction_npz_plus_index": 0.7536323703065211,
+      "tau": 6.693881005048752e-08,
+      "global_total": 138357544,
+      "global_kept": 41507264,
+      "decode_vs_saved_sparse_update": {
+        "numerically_equal": true,
+        "different_elements": 0,
+        "max_abs_error": 0.0,
+        "relative_l2": 0.0
+      },
+      "per_tensor_stats": [
+        {
+          "name": "features.0.weight",
+          "shape": [
+            64,
+            3,
+            3,
+            3
+          ],
+          "total_elements": 1728,
+          "mask_kept_elements": 1718,
+          "stored_nonzero_elements": 1718,
+          "original_nonzero_elements": 1728,
+          "mask_fraction": 0.9942129629629629,
+          "stored_nonzero_fraction": 0.9942129629629629,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "features.0.bias",
+          "shape": [
+            64
+          ],
+          "total_elements": 64,
+          "mask_kept_elements": 64,
+          "stored_nonzero_elements": 64,
+          "original_nonzero_elements": 64,
+          "mask_fraction": 1.0,
+          "stored_nonzero_fraction": 1.0,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "features.2.weight",
+          "shape": [
+            64,
+            64,
+            3,
+            3
+          ],
+          "total_elements": 36864,
+          "mask_kept_elements": 35095,
+          "stored_nonzero_elements": 35095,
+          "original_nonzero_elements": 36831,
+          "mask_fraction": 0.9520128038194444,
+          "stored_nonzero_fraction": 0.9520128038194444,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "features.2.bias",
+          "shape": [
+            64
+          ],
+          "total_elements": 64,
+          "mask_kept_elements": 62,
+          "stored_nonzero_elements": 62,
+          "original_nonzero_elements": 63,
+          "mask_fraction": 0.96875,
+          "stored_nonzero_fraction": 0.96875,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "features.5.weight",
+          "shape": [
+            128,
+            64,
+            3,
+            3
+          ],
+          "total_elements": 73728,
+          "mask_kept_elements": 71342,
+          "stored_nonzero_elements": 71342,
+          "original_nonzero_elements": 73685,
+          "mask_fraction": 0.9676378038194444,
+          "stored_nonzero_fraction": 0.9676378038194444,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "features.5.bias",
+          "shape": [
+            128
+          ],
+          "total_elements": 128,
+          "mask_kept_elements": 124,
+          "stored_nonzero_elements": 124,
+          "original_nonzero_elements": 128,
+          "mask_fraction": 0.96875,
+          "stored_nonzero_fraction": 0.96875,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "features.7.weight",
+          "shape": [
+            128,
+            128,
+            3,
+            3
+          ],
+          "total_elements": 147456,
+          "mask_kept_elements": 142481,
+          "stored_nonzero_elements": 142481,
+          "original_nonzero_elements": 147371,
+          "mask_fraction": 0.9662611219618056,
+          "stored_nonzero_fraction": 0.9662611219618056,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "features.7.bias",
+          "shape": [
+            128
+          ],
+          "total_elements": 128,
+          "mask_kept_elements": 124,
+          "stored_nonzero_elements": 124,
+          "original_nonzero_elements": 127,
+          "mask_fraction": 0.96875,
+          "stored_nonzero_fraction": 0.96875,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "features.10.weight",
+          "shape": [
+            256,
+            128,
+            3,
+            3
+          ],
+          "total_elements": 294912,
+          "mask_kept_elements": 283776,
+          "stored_nonzero_elements": 283776,
+          "original_nonzero_elements": 294724,
+          "mask_fraction": 0.9622395833333334,
+          "stored_nonzero_fraction": 0.9622395833333334,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "features.10.bias",
+          "shape": [
+            256
+          ],
+          "total_elements": 256,
+          "mask_kept_elements": 237,
+          "stored_nonzero_elements": 237,
+          "original_nonzero_elements": 254,
+          "mask_fraction": 0.92578125,
+          "stored_nonzero_fraction": 0.92578125,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "features.12.weight",
+          "shape": [
+            256,
+            256,
+            3,
+            3
+          ],
+          "total_elements": 589824,
+          "mask_kept_elements": 557223,
+          "stored_nonzero_elements": 557223,
+          "original_nonzero_elements": 589448,
+          "mask_fraction": 0.9447275797526041,
+          "stored_nonzero_fraction": 0.9447275797526041,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "features.12.bias",
+          "shape": [
+            256
+          ],
+          "total_elements": 256,
+          "mask_kept_elements": 234,
+          "stored_nonzero_elements": 234,
+          "original_nonzero_elements": 255,
+          "mask_fraction": 0.9140625,
+          "stored_nonzero_fraction": 0.9140625,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "features.14.weight",
+          "shape": [
+            256,
+            256,
+            3,
+            3
+          ],
+          "total_elements": 589824,
+          "mask_kept_elements": 558218,
+          "stored_nonzero_elements": 558218,
+          "original_nonzero_elements": 589417,
+          "mask_fraction": 0.9464145236545138,
+          "stored_nonzero_fraction": 0.9464145236545138,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "features.14.bias",
+          "shape": [
+            256
+          ],
+          "total_elements": 256,
+          "mask_kept_elements": 236,
+          "stored_nonzero_elements": 236,
+          "original_nonzero_elements": 256,
+          "mask_fraction": 0.921875,
+          "stored_nonzero_fraction": 0.921875,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "features.17.weight",
+          "shape": [
+            512,
+            256,
+            3,
+            3
+          ],
+          "total_elements": 1179648,
+          "mask_kept_elements": 1102457,
+          "stored_nonzero_elements": 1102457,
+          "original_nonzero_elements": 1178835,
+          "mask_fraction": 0.9345643785264757,
+          "stored_nonzero_fraction": 0.9345643785264757,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "features.17.bias",
+          "shape": [
+            512
+          ],
+          "total_elements": 512,
+          "mask_kept_elements": 438,
+          "stored_nonzero_elements": 438,
+          "original_nonzero_elements": 509,
+          "mask_fraction": 0.85546875,
+          "stored_nonzero_fraction": 0.85546875,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "features.19.weight",
+          "shape": [
+            512,
+            512,
+            3,
+            3
+          ],
+          "total_elements": 2359296,
+          "mask_kept_elements": 2120256,
+          "stored_nonzero_elements": 2120256,
+          "original_nonzero_elements": 2357381,
+          "mask_fraction": 0.898681640625,
+          "stored_nonzero_fraction": 0.898681640625,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "features.19.bias",
+          "shape": [
+            512
+          ],
+          "total_elements": 512,
+          "mask_kept_elements": 447,
+          "stored_nonzero_elements": 447,
+          "original_nonzero_elements": 510,
+          "mask_fraction": 0.873046875,
+          "stored_nonzero_fraction": 0.873046875,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "features.21.weight",
+          "shape": [
+            512,
+            512,
+            3,
+            3
+          ],
+          "total_elements": 2359296,
+          "mask_kept_elements": 2082111,
+          "stored_nonzero_elements": 2082111,
+          "original_nonzero_elements": 2357029,
+          "mask_fraction": 0.882513682047526,
+          "stored_nonzero_fraction": 0.882513682047526,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "features.21.bias",
+          "shape": [
+            512
+          ],
+          "total_elements": 512,
+          "mask_kept_elements": 466,
+          "stored_nonzero_elements": 466,
+          "original_nonzero_elements": 509,
+          "mask_fraction": 0.91015625,
+          "stored_nonzero_fraction": 0.91015625,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "features.24.weight",
+          "shape": [
+            512,
+            512,
+            3,
+            3
+          ],
+          "total_elements": 2359296,
+          "mask_kept_elements": 2109472,
+          "stored_nonzero_elements": 2109472,
+          "original_nonzero_elements": 2357068,
+          "mask_fraction": 0.8941107855902778,
+          "stored_nonzero_fraction": 0.8941107855902778,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "features.24.bias",
+          "shape": [
+            512
+          ],
+          "total_elements": 512,
+          "mask_kept_elements": 477,
+          "stored_nonzero_elements": 477,
+          "original_nonzero_elements": 508,
+          "mask_fraction": 0.931640625,
+          "stored_nonzero_fraction": 0.931640625,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "features.26.weight",
+          "shape": [
+            512,
+            512,
+            3,
+            3
+          ],
+          "total_elements": 2359296,
+          "mask_kept_elements": 2079784,
+          "stored_nonzero_elements": 2079784,
+          "original_nonzero_elements": 2356637,
+          "mask_fraction": 0.8815273708767362,
+          "stored_nonzero_fraction": 0.8815273708767362,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "features.26.bias",
+          "shape": [
+            512
+          ],
+          "total_elements": 512,
+          "mask_kept_elements": 484,
+          "stored_nonzero_elements": 484,
+          "original_nonzero_elements": 511,
+          "mask_fraction": 0.9453125,
+          "stored_nonzero_fraction": 0.9453125,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "features.28.weight",
+          "shape": [
+            512,
+            512,
+            3,
+            3
+          ],
+          "total_elements": 2359296,
+          "mask_kept_elements": 1911092,
+          "stored_nonzero_elements": 1911092,
+          "original_nonzero_elements": 2346854,
+          "mask_fraction": 0.8100263807508681,
+          "stored_nonzero_fraction": 0.8100263807508681,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "features.28.bias",
+          "shape": [
+            512
+          ],
+          "total_elements": 512,
+          "mask_kept_elements": 483,
+          "stored_nonzero_elements": 483,
+          "original_nonzero_elements": 510,
+          "mask_fraction": 0.943359375,
+          "stored_nonzero_fraction": 0.943359375,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "classifier.0.weight",
+          "shape": [
+            4096,
+            25088
+          ],
+          "total_elements": 102760448,
+          "mask_kept_elements": 22104518,
+          "stored_nonzero_elements": 22104518,
+          "original_nonzero_elements": 53272126,
+          "mask_fraction": 0.2151072560524454,
+          "stored_nonzero_fraction": 0.2151072560524454,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "classifier.0.bias",
+          "shape": [
+            4096
+          ],
+          "total_elements": 4096,
+          "mask_kept_elements": 2577,
+          "stored_nonzero_elements": 2577,
+          "original_nonzero_elements": 4025,
+          "mask_fraction": 0.629150390625,
+          "stored_nonzero_fraction": 0.629150390625,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "classifier.3.weight",
+          "shape": [
+            4096,
+            4096
+          ],
+          "total_elements": 16777216,
+          "mask_kept_elements": 6199615,
+          "stored_nonzero_elements": 6199615,
+          "original_nonzero_elements": 10323633,
+          "mask_fraction": 0.36952584981918335,
+          "stored_nonzero_fraction": 0.36952584981918335,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "classifier.3.bias",
+          "shape": [
+            4096
+          ],
+          "total_elements": 4096,
+          "mask_kept_elements": 2983,
+          "stored_nonzero_elements": 2983,
+          "original_nonzero_elements": 3941,
+          "mask_fraction": 0.728271484375,
+          "stored_nonzero_fraction": 0.728271484375,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "classifier.6.weight",
+          "shape": [
+            1000,
+            4096
+          ],
+          "total_elements": 4096000,
+          "mask_kept_elements": 138513,
+          "stored_nonzero_elements": 138513,
+          "original_nonzero_elements": 1037091,
+          "mask_fraction": 0.033816650390625,
+          "stored_nonzero_fraction": 0.033816650390625,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "classifier.6.bias",
+          "shape": [
+            1000
+          ],
+          "total_elements": 1000,
+          "mask_kept_elements": 157,
+          "stored_nonzero_elements": 157,
+          "original_nonzero_elements": 665,
+          "mask_fraction": 0.157,
+          "stored_nonzero_fraction": 0.157,
+          "selected_original_zero_elements": 0
+        }
+      ],
+      "sample_indices": [
+        [
+          37542,
+          44491,
+          216,
+          43688,
+          41558,
+          32245,
+          27206,
+          10863,
+          2190,
+          31849,
+          25408,
+          33504,
+          27102,
+          21934,
+          40181,
+          47682,
+          45747,
+          17004,
+          43777,
+          7433,
+          45129,
+          37684,
+          14817,
+          38215
+        ]
+      ]
+    },
+    {
+      "source_file": "C:\\Users\\조상제\\Desktop\\CPA\\cora_fedavg_single_client_cpa\\outputs_v1\\fedavg_single_client_updates\\imagenet\\vgg16\\fedavg_single_client_clients3_round20of20_spc24_target0_local1_e920201510be97a8\\global_topk\\keep_0p5.pickle",
+      "source_file_sha256": "d9639da9ac8a4f58e0e455af3e8b600fd85018022b11e1432ee7721bf6f8f826",
+      "source_file_bytes": 570301686,
+      "observation_file": "C:\\Users\\조상제\\Desktop\\CPA\\cora_fedavg_single_client_cpa\\outputs_v1\\fedavg_single_client_updates\\imagenet\\vgg16\\fedavg_single_client_clients3_round20of20_spc24_target0_local1_e920201510be97a8\\global_topk\\keep_0p5_attack_layer_observation.pickle",
+      "observation_index_sha256": "036f51d97a253ce91f19e245cd147203a387771fd56cefcb8b92e4fb6956a8bb",
+      "observation_index_bytes": 3466,
+      "source_index_link_verified": true,
+      "shard_hash_verified": true,
+      "update_tensor_hash_verified": true,
+      "checkpoint_verified": true,
+      "metadata": {
+        "keep_ratio": 0.5,
+        "n_samples": 24,
+        "local_steps": 1,
+        "local_epochs": 1,
+        "local_batch_size": 24,
+        "micro_batch_size": 4,
+        "lr": 0.001,
+        "seed": 42,
+        "observed_round": 20,
+        "observed_client_id": 0,
+        "sample_indices_hash": "0f2bf88518768bfc21a12255682050bae117cbd14410fc71f2a9757c5d3d4d4a",
+        "label_hash": "08aa3ba7407e74455e4e2691ea77cdc5f9557bbd57eb5ab53adc8ba7060c707b",
+        "source_fp32_update_hash": "4e90ba4a4b9521b9f743188e2dc632729cfa9dd31e2e043e8ce61da1c6f2829a",
+        "sparse_relative_l2": 0.0009711834718473256,
+        "sparse_nonzero_fraction": 0.5,
+        "sparse_cosine_similarity_to_fp32": 0.9999995231628418,
+        "shared_fp32_control": null,
+        "shared_fp32_control_id": null
+      },
+      "checkpoint": {
+        "path": "C:\\Users\\조상제\\Desktop\\CPA\\cora_fedavg_single_client_cpa\\outputs_v1\\fedavg_single_client_updates\\imagenet\\vgg16\\fedavg_single_client_clients3_round20of20_spc24_target0_local1_e920201510be97a8\\global_topk\\keep_0p5.fedavg_round_before.pt",
+        "sha256": "40ea70acf2d99483684c89c3af7345858f955cff22c95bffa2efe16a907c4684"
+      },
+      "attack_layer": {
+        "index": 26,
+        "name": "classifier.0.weight"
+      },
+      "npz_path": "C:\\Users\\조상제\\Desktop\\CPA\\cora_fedavg_single_client_cpa\\outputs_v1\\fedavg_single_client_updates\\imagenet\\vgg16\\fedavg_single_client_clients3_round20of20_spc24_target0_local1_e920201510be97a8\\global_topk\\keep_0p5_attack_layer_observation_shards\\batch_000_client_0000.npz",
+      "npz_bytes": 191616350,
+      "npz_plus_index_bytes": 191619816,
+      "dense_fc1_bytes": 411041792,
+      "values_bytes": 178770496,
+      "bitmap_bytes": 12845056,
+      "npz_container_and_shape_bytes": 798,
+      "fc1_kept_elements": 44692624,
+      "fc1_elements": 102760448,
+      "fc1_retained_fraction": 0.4349204861387915,
+      "fc1_nonzero_elements": 44692624,
+      "fc1_savings_fraction_npz_only": 0.5338275724527788,
+      "fc1_savings_fraction_npz_plus_index": 0.533819140220175,
+      "tau": 3.725290298461914e-09,
+      "global_total": 138357544,
+      "global_kept": 69178772,
+      "decode_vs_saved_sparse_update": {
+        "numerically_equal": true,
+        "different_elements": 0,
+        "max_abs_error": 0.0,
+        "relative_l2": 0.0
+      },
+      "per_tensor_stats": [
+        {
+          "name": "features.0.weight",
+          "shape": [
+            64,
+            3,
+            3,
+            3
+          ],
+          "total_elements": 1728,
+          "mask_kept_elements": 1727,
+          "stored_nonzero_elements": 1727,
+          "original_nonzero_elements": 1727,
+          "mask_fraction": 0.9994212962962963,
+          "stored_nonzero_fraction": 0.9994212962962963,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "features.0.bias",
+          "shape": [
+            64
+          ],
+          "total_elements": 64,
+          "mask_kept_elements": 63,
+          "stored_nonzero_elements": 63,
+          "original_nonzero_elements": 63,
+          "mask_fraction": 0.984375,
+          "stored_nonzero_fraction": 0.984375,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "features.2.weight",
+          "shape": [
+            64,
+            64,
+            3,
+            3
+          ],
+          "total_elements": 36864,
+          "mask_kept_elements": 36708,
+          "stored_nonzero_elements": 36708,
+          "original_nonzero_elements": 36823,
+          "mask_fraction": 0.9957682291666666,
+          "stored_nonzero_fraction": 0.9957682291666666,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "features.2.bias",
+          "shape": [
+            64
+          ],
+          "total_elements": 64,
+          "mask_kept_elements": 64,
+          "stored_nonzero_elements": 64,
+          "original_nonzero_elements": 64,
+          "mask_fraction": 1.0,
+          "stored_nonzero_fraction": 1.0,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "features.5.weight",
+          "shape": [
+            128,
+            64,
+            3,
+            3
+          ],
+          "total_elements": 73728,
+          "mask_kept_elements": 73560,
+          "stored_nonzero_elements": 73560,
+          "original_nonzero_elements": 73672,
+          "mask_fraction": 0.9977213541666666,
+          "stored_nonzero_fraction": 0.9977213541666666,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "features.5.bias",
+          "shape": [
+            128
+          ],
+          "total_elements": 128,
+          "mask_kept_elements": 128,
+          "stored_nonzero_elements": 128,
+          "original_nonzero_elements": 128,
+          "mask_fraction": 1.0,
+          "stored_nonzero_fraction": 1.0,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "features.7.weight",
+          "shape": [
+            128,
+            128,
+            3,
+            3
+          ],
+          "total_elements": 147456,
+          "mask_kept_elements": 147124,
+          "stored_nonzero_elements": 147124,
+          "original_nonzero_elements": 147376,
+          "mask_fraction": 0.9977484809027778,
+          "stored_nonzero_fraction": 0.9977484809027778,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "features.7.bias",
+          "shape": [
+            128
+          ],
+          "total_elements": 128,
+          "mask_kept_elements": 127,
+          "stored_nonzero_elements": 127,
+          "original_nonzero_elements": 127,
+          "mask_fraction": 0.9921875,
+          "stored_nonzero_fraction": 0.9921875,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "features.10.weight",
+          "shape": [
+            256,
+            128,
+            3,
+            3
+          ],
+          "total_elements": 294912,
+          "mask_kept_elements": 294127,
+          "stored_nonzero_elements": 294127,
+          "original_nonzero_elements": 294736,
+          "mask_fraction": 0.9973381890190972,
+          "stored_nonzero_fraction": 0.9973381890190972,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "features.10.bias",
+          "shape": [
+            256
+          ],
+          "total_elements": 256,
+          "mask_kept_elements": 253,
+          "stored_nonzero_elements": 253,
+          "original_nonzero_elements": 254,
+          "mask_fraction": 0.98828125,
+          "stored_nonzero_fraction": 0.98828125,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "features.12.weight",
+          "shape": [
+            256,
+            256,
+            3,
+            3
+          ],
+          "total_elements": 589824,
+          "mask_kept_elements": 587631,
+          "stored_nonzero_elements": 587631,
+          "original_nonzero_elements": 589448,
+          "mask_fraction": 0.9962819417317709,
+          "stored_nonzero_fraction": 0.9962819417317709,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "features.12.bias",
+          "shape": [
+            256
+          ],
+          "total_elements": 256,
+          "mask_kept_elements": 256,
+          "stored_nonzero_elements": 256,
+          "original_nonzero_elements": 256,
+          "mask_fraction": 1.0,
+          "stored_nonzero_fraction": 1.0,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "features.14.weight",
+          "shape": [
+            256,
+            256,
+            3,
+            3
+          ],
+          "total_elements": 589824,
+          "mask_kept_elements": 587668,
+          "stored_nonzero_elements": 587668,
+          "original_nonzero_elements": 589424,
+          "mask_fraction": 0.9963446723090278,
+          "stored_nonzero_fraction": 0.9963446723090278,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "features.14.bias",
+          "shape": [
+            256
+          ],
+          "total_elements": 256,
+          "mask_kept_elements": 256,
+          "stored_nonzero_elements": 256,
+          "original_nonzero_elements": 256,
+          "mask_fraction": 1.0,
+          "stored_nonzero_fraction": 1.0,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "features.17.weight",
+          "shape": [
+            512,
+            256,
+            3,
+            3
+          ],
+          "total_elements": 1179648,
+          "mask_kept_elements": 1174533,
+          "stored_nonzero_elements": 1174533,
+          "original_nonzero_elements": 1178836,
+          "mask_fraction": 0.9956639607747396,
+          "stored_nonzero_fraction": 0.9956639607747396,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "features.17.bias",
+          "shape": [
+            512
+          ],
+          "total_elements": 512,
+          "mask_kept_elements": 506,
+          "stored_nonzero_elements": 506,
+          "original_nonzero_elements": 509,
+          "mask_fraction": 0.98828125,
+          "stored_nonzero_fraction": 0.98828125,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "features.19.weight",
+          "shape": [
+            512,
+            512,
+            3,
+            3
+          ],
+          "total_elements": 2359296,
+          "mask_kept_elements": 2343552,
+          "stored_nonzero_elements": 2343552,
+          "original_nonzero_elements": 2357366,
+          "mask_fraction": 0.9933268229166666,
+          "stored_nonzero_fraction": 0.9933268229166666,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "features.19.bias",
+          "shape": [
+            512
+          ],
+          "total_elements": 512,
+          "mask_kept_elements": 511,
+          "stored_nonzero_elements": 511,
+          "original_nonzero_elements": 511,
+          "mask_fraction": 0.998046875,
+          "stored_nonzero_fraction": 0.998046875,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "features.21.weight",
+          "shape": [
+            512,
+            512,
+            3,
+            3
+          ],
+          "total_elements": 2359296,
+          "mask_kept_elements": 2340849,
+          "stored_nonzero_elements": 2340849,
+          "original_nonzero_elements": 2356966,
+          "mask_fraction": 0.992181142171224,
+          "stored_nonzero_fraction": 0.992181142171224,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "features.21.bias",
+          "shape": [
+            512
+          ],
+          "total_elements": 512,
+          "mask_kept_elements": 509,
+          "stored_nonzero_elements": 509,
+          "original_nonzero_elements": 511,
+          "mask_fraction": 0.994140625,
+          "stored_nonzero_fraction": 0.994140625,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "features.24.weight",
+          "shape": [
+            512,
+            512,
+            3,
+            3
+          ],
+          "total_elements": 2359296,
+          "mask_kept_elements": 2342500,
+          "stored_nonzero_elements": 2342500,
+          "original_nonzero_elements": 2357012,
+          "mask_fraction": 0.9928809271918403,
+          "stored_nonzero_fraction": 0.9928809271918403,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "features.24.bias",
+          "shape": [
+            512
+          ],
+          "total_elements": 512,
+          "mask_kept_elements": 509,
+          "stored_nonzero_elements": 509,
+          "original_nonzero_elements": 509,
+          "mask_fraction": 0.994140625,
+          "stored_nonzero_fraction": 0.994140625,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "features.26.weight",
+          "shape": [
+            512,
+            512,
+            3,
+            3
+          ],
+          "total_elements": 2359296,
+          "mask_kept_elements": 2339701,
+          "stored_nonzero_elements": 2339701,
+          "original_nonzero_elements": 2356565,
+          "mask_fraction": 0.9916945563422309,
+          "stored_nonzero_fraction": 0.9916945563422309,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "features.26.bias",
+          "shape": [
+            512
+          ],
+          "total_elements": 512,
+          "mask_kept_elements": 512,
+          "stored_nonzero_elements": 512,
+          "original_nonzero_elements": 512,
+          "mask_fraction": 1.0,
+          "stored_nonzero_fraction": 1.0,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "features.28.weight",
+          "shape": [
+            512,
+            512,
+            3,
+            3
+          ],
+          "total_elements": 2359296,
+          "mask_kept_elements": 2311424,
+          "stored_nonzero_elements": 2311424,
+          "original_nonzero_elements": 2346816,
+          "mask_fraction": 0.9797092013888888,
+          "stored_nonzero_fraction": 0.9797092013888888,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "features.28.bias",
+          "shape": [
+            512
+          ],
+          "total_elements": 512,
+          "mask_kept_elements": 510,
+          "stored_nonzero_elements": 510,
+          "original_nonzero_elements": 511,
+          "mask_fraction": 0.99609375,
+          "stored_nonzero_fraction": 0.99609375,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "classifier.0.weight",
+          "shape": [
+            4096,
+            25088
+          ],
+          "total_elements": 102760448,
+          "mask_kept_elements": 44692624,
+          "stored_nonzero_elements": 44692624,
+          "original_nonzero_elements": 53267646,
+          "mask_fraction": 0.4349204861387915,
+          "stored_nonzero_fraction": 0.4349204861387915,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "classifier.0.bias",
+          "shape": [
+            4096
+          ],
+          "total_elements": 4096,
+          "mask_kept_elements": 3954,
+          "stored_nonzero_elements": 3954,
+          "original_nonzero_elements": 4030,
+          "mask_fraction": 0.96533203125,
+          "stored_nonzero_fraction": 0.96533203125,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "classifier.3.weight",
+          "shape": [
+            4096,
+            4096
+          ],
+          "total_elements": 16777216,
+          "mask_kept_elements": 9376799,
+          "stored_nonzero_elements": 9376799,
+          "original_nonzero_elements": 10325286,
+          "mask_fraction": 0.558900773525238,
+          "stored_nonzero_fraction": 0.558900773525238,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "classifier.3.bias",
+          "shape": [
+            4096
+          ],
+          "total_elements": 4096,
+          "mask_kept_elements": 3937,
+          "stored_nonzero_elements": 3937,
+          "original_nonzero_elements": 3940,
+          "mask_fraction": 0.961181640625,
+          "stored_nonzero_fraction": 0.961181640625,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "classifier.6.weight",
+          "shape": [
+            1000,
+            4096
+          ],
+          "total_elements": 4096000,
+          "mask_kept_elements": 515646,
+          "stored_nonzero_elements": 515646,
+          "original_nonzero_elements": 1037049,
+          "mask_fraction": 0.12589013671875,
+          "stored_nonzero_fraction": 0.12589013671875,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "classifier.6.bias",
+          "shape": [
+            1000
+          ],
+          "total_elements": 1000,
+          "mask_kept_elements": 504,
+          "stored_nonzero_elements": 504,
+          "original_nonzero_elements": 665,
+          "mask_fraction": 0.504,
+          "stored_nonzero_fraction": 0.504,
+          "selected_original_zero_elements": 0
+        }
+      ],
+      "sample_indices": [
+        [
+          37542,
+          44491,
+          216,
+          43688,
+          41558,
+          32245,
+          27206,
+          10863,
+          2190,
+          31849,
+          25408,
+          33504,
+          27102,
+          21934,
+          40181,
+          47682,
+          45747,
+          17004,
+          43777,
+          7433,
+          45129,
+          37684,
+          14817,
+          38215
+        ]
+      ]
+    },
+    {
+      "source_file": "C:\\Users\\조상제\\Desktop\\CPA\\cora_fedavg_single_client_cpa\\outputs_v1\\fedavg_single_client_updates\\imagenet\\vgg16\\fedavg_single_client_clients3_round20of20_spc24_target0_local1_e920201510be97a8\\global_topk\\keep_0p8.pickle",
+      "source_file_sha256": "fbb2b394ebd23c299802670330a8ce6d6598c9f5dda3536124777321c9bb02dc",
+      "source_file_bytes": 570301690,
+      "observation_file": "C:\\Users\\조상제\\Desktop\\CPA\\cora_fedavg_single_client_cpa\\outputs_v1\\fedavg_single_client_updates\\imagenet\\vgg16\\fedavg_single_client_clients3_round20of20_spc24_target0_local1_e920201510be97a8\\global_topk\\keep_0p8_attack_layer_observation.pickle",
+      "observation_index_sha256": "1c7d9499674fe4065a509fa22a1bf34ca9322d9c7bb057d3482cc04498c5fa83",
+      "observation_index_bytes": 3466,
+      "source_index_link_verified": true,
+      "shard_hash_verified": true,
+      "update_tensor_hash_verified": true,
+      "checkpoint_verified": true,
+      "metadata": {
+        "keep_ratio": 0.8,
+        "n_samples": 24,
+        "local_steps": 1,
+        "local_epochs": 1,
+        "local_batch_size": 24,
+        "micro_batch_size": 4,
+        "lr": 0.001,
+        "seed": 42,
+        "observed_round": 20,
+        "observed_client_id": 0,
+        "sample_indices_hash": "0f2bf88518768bfc21a12255682050bae117cbd14410fc71f2a9757c5d3d4d4a",
+        "label_hash": "08aa3ba7407e74455e4e2691ea77cdc5f9557bbd57eb5ab53adc8ba7060c707b",
+        "source_fp32_update_hash": "b5a99e7d173bf10cdc8e7f0348bb0edffac086bc5e1e552af7c08f8be395f255",
+        "sparse_relative_l2": 0.0,
+        "sparse_nonzero_fraction": 0.5732563234860544,
+        "sparse_cosine_similarity_to_fp32": 1.0,
+        "shared_fp32_control": null,
+        "shared_fp32_control_id": null
+      },
+      "checkpoint": {
+        "path": "C:\\Users\\조상제\\Desktop\\CPA\\cora_fedavg_single_client_cpa\\outputs_v1\\fedavg_single_client_updates\\imagenet\\vgg16\\fedavg_single_client_clients3_round20of20_spc24_target0_local1_e920201510be97a8\\global_topk\\keep_0p8.fedavg_round_before.pt",
+        "sha256": "0ffa50ca749de226533ec33cfb4b05fe45962ecb7ae768256bb54a47c4cec93a"
+      },
+      "attack_layer": {
+        "index": 26,
+        "name": "classifier.0.weight"
+      },
+      "npz_path": "C:\\Users\\조상제\\Desktop\\CPA\\cora_fedavg_single_client_cpa\\outputs_v1\\fedavg_single_client_updates\\imagenet\\vgg16\\fedavg_single_client_clients3_round20of20_spc24_target0_local1_e920201510be97a8\\global_topk\\keep_0p8_attack_layer_observation_shards\\batch_000_client_0000.npz",
+      "npz_bytes": 313295666,
+      "npz_plus_index_bytes": 313299132,
+      "dense_fc1_bytes": 411041792,
+      "values_bytes": 300449812,
+      "bitmap_bytes": 12845056,
+      "npz_container_and_shape_bytes": 798,
+      "fc1_kept_elements": 75112453,
+      "fc1_elements": 102760448,
+      "fc1_retained_fraction": 0.7309471149833835,
+      "fc1_nonzero_elements": 53253311,
+      "fc1_savings_fraction_npz_only": 0.2378009436081867,
+      "fc1_savings_fraction_npz_plus_index": 0.237792511375583,
+      "tau": 0.0,
+      "global_total": 138357544,
+      "global_kept": 110686036,
+      "decode_vs_saved_sparse_update": {
+        "numerically_equal": true,
+        "different_elements": 0,
+        "max_abs_error": 0.0,
+        "relative_l2": 0.0
+      },
+      "per_tensor_stats": [
+        {
+          "name": "features.0.weight",
+          "shape": [
+            64,
+            3,
+            3,
+            3
+          ],
+          "total_elements": 1728,
+          "mask_kept_elements": 1728,
+          "stored_nonzero_elements": 1728,
+          "original_nonzero_elements": 1728,
+          "mask_fraction": 1.0,
+          "stored_nonzero_fraction": 1.0,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "features.0.bias",
+          "shape": [
+            64
+          ],
+          "total_elements": 64,
+          "mask_kept_elements": 64,
+          "stored_nonzero_elements": 64,
+          "original_nonzero_elements": 64,
+          "mask_fraction": 1.0,
+          "stored_nonzero_fraction": 1.0,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "features.2.weight",
+          "shape": [
+            64,
+            64,
+            3,
+            3
+          ],
+          "total_elements": 36864,
+          "mask_kept_elements": 36834,
+          "stored_nonzero_elements": 36834,
+          "original_nonzero_elements": 36834,
+          "mask_fraction": 0.9991861979166666,
+          "stored_nonzero_fraction": 0.9991861979166666,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "features.2.bias",
+          "shape": [
+            64
+          ],
+          "total_elements": 64,
+          "mask_kept_elements": 63,
+          "stored_nonzero_elements": 63,
+          "original_nonzero_elements": 63,
+          "mask_fraction": 0.984375,
+          "stored_nonzero_fraction": 0.984375,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "features.5.weight",
+          "shape": [
+            128,
+            64,
+            3,
+            3
+          ],
+          "total_elements": 73728,
+          "mask_kept_elements": 73673,
+          "stored_nonzero_elements": 73673,
+          "original_nonzero_elements": 73673,
+          "mask_fraction": 0.9992540147569444,
+          "stored_nonzero_fraction": 0.9992540147569444,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "features.5.bias",
+          "shape": [
+            128
+          ],
+          "total_elements": 128,
+          "mask_kept_elements": 128,
+          "stored_nonzero_elements": 128,
+          "original_nonzero_elements": 128,
+          "mask_fraction": 1.0,
+          "stored_nonzero_fraction": 1.0,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "features.7.weight",
+          "shape": [
+            128,
+            128,
+            3,
+            3
+          ],
+          "total_elements": 147456,
+          "mask_kept_elements": 147371,
+          "stored_nonzero_elements": 147371,
+          "original_nonzero_elements": 147371,
+          "mask_fraction": 0.9994235568576388,
+          "stored_nonzero_fraction": 0.9994235568576388,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "features.7.bias",
+          "shape": [
+            128
+          ],
+          "total_elements": 128,
+          "mask_kept_elements": 127,
+          "stored_nonzero_elements": 127,
+          "original_nonzero_elements": 127,
+          "mask_fraction": 0.9921875,
+          "stored_nonzero_fraction": 0.9921875,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "features.10.weight",
+          "shape": [
+            256,
+            128,
+            3,
+            3
+          ],
+          "total_elements": 294912,
+          "mask_kept_elements": 294761,
+          "stored_nonzero_elements": 294761,
+          "original_nonzero_elements": 294761,
+          "mask_fraction": 0.9994879828559028,
+          "stored_nonzero_fraction": 0.9994879828559028,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "features.10.bias",
+          "shape": [
+            256
+          ],
+          "total_elements": 256,
+          "mask_kept_elements": 254,
+          "stored_nonzero_elements": 254,
+          "original_nonzero_elements": 254,
+          "mask_fraction": 0.9921875,
+          "stored_nonzero_fraction": 0.9921875,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "features.12.weight",
+          "shape": [
+            256,
+            256,
+            3,
+            3
+          ],
+          "total_elements": 589824,
+          "mask_kept_elements": 589421,
+          "stored_nonzero_elements": 589421,
+          "original_nonzero_elements": 589421,
+          "mask_fraction": 0.9993167453342013,
+          "stored_nonzero_fraction": 0.9993167453342013,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "features.12.bias",
+          "shape": [
+            256
+          ],
+          "total_elements": 256,
+          "mask_kept_elements": 255,
+          "stored_nonzero_elements": 255,
+          "original_nonzero_elements": 255,
+          "mask_fraction": 0.99609375,
+          "stored_nonzero_fraction": 0.99609375,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "features.14.weight",
+          "shape": [
+            256,
+            256,
+            3,
+            3
+          ],
+          "total_elements": 589824,
+          "mask_kept_elements": 589445,
+          "stored_nonzero_elements": 589445,
+          "original_nonzero_elements": 589445,
+          "mask_fraction": 0.9993574354383681,
+          "stored_nonzero_fraction": 0.9993574354383681,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "features.14.bias",
+          "shape": [
+            256
+          ],
+          "total_elements": 256,
+          "mask_kept_elements": 255,
+          "stored_nonzero_elements": 255,
+          "original_nonzero_elements": 255,
+          "mask_fraction": 0.99609375,
+          "stored_nonzero_fraction": 0.99609375,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "features.17.weight",
+          "shape": [
+            512,
+            256,
+            3,
+            3
+          ],
+          "total_elements": 1179648,
+          "mask_kept_elements": 1178829,
+          "stored_nonzero_elements": 1178829,
+          "original_nonzero_elements": 1178829,
+          "mask_fraction": 0.9993057250976562,
+          "stored_nonzero_fraction": 0.9993057250976562,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "features.17.bias",
+          "shape": [
+            512
+          ],
+          "total_elements": 512,
+          "mask_kept_elements": 511,
+          "stored_nonzero_elements": 511,
+          "original_nonzero_elements": 511,
+          "mask_fraction": 0.998046875,
+          "stored_nonzero_fraction": 0.998046875,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "features.19.weight",
+          "shape": [
+            512,
+            512,
+            3,
+            3
+          ],
+          "total_elements": 2359296,
+          "mask_kept_elements": 2357401,
+          "stored_nonzero_elements": 2357401,
+          "original_nonzero_elements": 2357401,
+          "mask_fraction": 0.99919679429796,
+          "stored_nonzero_fraction": 0.99919679429796,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "features.19.bias",
+          "shape": [
+            512
+          ],
+          "total_elements": 512,
+          "mask_kept_elements": 508,
+          "stored_nonzero_elements": 508,
+          "original_nonzero_elements": 508,
+          "mask_fraction": 0.9921875,
+          "stored_nonzero_fraction": 0.9921875,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "features.21.weight",
+          "shape": [
+            512,
+            512,
+            3,
+            3
+          ],
+          "total_elements": 2359296,
+          "mask_kept_elements": 2356947,
+          "stored_nonzero_elements": 2356947,
+          "original_nonzero_elements": 2356947,
+          "mask_fraction": 0.9990043640136719,
+          "stored_nonzero_fraction": 0.9990043640136719,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "features.21.bias",
+          "shape": [
+            512
+          ],
+          "total_elements": 512,
+          "mask_kept_elements": 509,
+          "stored_nonzero_elements": 509,
+          "original_nonzero_elements": 509,
+          "mask_fraction": 0.994140625,
+          "stored_nonzero_fraction": 0.994140625,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "features.24.weight",
+          "shape": [
+            512,
+            512,
+            3,
+            3
+          ],
+          "total_elements": 2359296,
+          "mask_kept_elements": 2357058,
+          "stored_nonzero_elements": 2357058,
+          "original_nonzero_elements": 2357058,
+          "mask_fraction": 0.9990514119466146,
+          "stored_nonzero_fraction": 0.9990514119466146,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "features.24.bias",
+          "shape": [
+            512
+          ],
+          "total_elements": 512,
+          "mask_kept_elements": 508,
+          "stored_nonzero_elements": 508,
+          "original_nonzero_elements": 508,
+          "mask_fraction": 0.9921875,
+          "stored_nonzero_fraction": 0.9921875,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "features.26.weight",
+          "shape": [
+            512,
+            512,
+            3,
+            3
+          ],
+          "total_elements": 2359296,
+          "mask_kept_elements": 2356741,
+          "stored_nonzero_elements": 2356741,
+          "original_nonzero_elements": 2356741,
+          "mask_fraction": 0.9989170498318143,
+          "stored_nonzero_fraction": 0.9989170498318143,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "features.26.bias",
+          "shape": [
+            512
+          ],
+          "total_elements": 512,
+          "mask_kept_elements": 508,
+          "stored_nonzero_elements": 508,
+          "original_nonzero_elements": 508,
+          "mask_fraction": 0.9921875,
+          "stored_nonzero_fraction": 0.9921875,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "features.28.weight",
+          "shape": [
+            512,
+            512,
+            3,
+            3
+          ],
+          "total_elements": 2359296,
+          "mask_kept_elements": 2346766,
+          "stored_nonzero_elements": 2346766,
+          "original_nonzero_elements": 2346766,
+          "mask_fraction": 0.9946890936957465,
+          "stored_nonzero_fraction": 0.9946890936957465,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "features.28.bias",
+          "shape": [
+            512
+          ],
+          "total_elements": 512,
+          "mask_kept_elements": 510,
+          "stored_nonzero_elements": 510,
+          "original_nonzero_elements": 510,
+          "mask_fraction": 0.99609375,
+          "stored_nonzero_fraction": 0.99609375,
+          "selected_original_zero_elements": 0
+        },
+        {
+          "name": "classifier.0.weight",
+          "shape": [
+            4096,
+            25088
+          ],
+          "total_elements": 102760448,
+          "mask_kept_elements": 75112453,
+          "stored_nonzero_elements": 53253311,
+          "original_nonzero_elements": 53253311,
+          "mask_fraction": 0.7309471149833835,
+          "stored_nonzero_fraction": 0.5182277037172901,
+          "selected_original_zero_elements": 21859142
+        },
+        {
+          "name": "classifier.0.bias",
+          "shape": [
+            4096
+          ],
+          "total_elements": 4096,
+          "mask_kept_elements": 4096,
+          "stored_nonzero_elements": 4023,
+          "original_nonzero_elements": 4023,
+          "mask_fraction": 1.0,
+          "stored_nonzero_fraction": 0.982177734375,
+          "selected_original_zero_elements": 73
+        },
+        {
+          "name": "classifier.3.weight",
+          "shape": [
+            4096,
+            4096
+          ],
+          "total_elements": 16777216,
+          "mask_kept_elements": 16777216,
+          "stored_nonzero_elements": 10324151,
+          "original_nonzero_elements": 10324151,
+          "mask_fraction": 1.0,
+          "stored_nonzero_fraction": 0.6153673529624939,
+          "selected_original_zero_elements": 6453065
+        },
+        {
+          "name": "classifier.3.bias",
+          "shape": [
+            4096
+          ],
+          "total_elements": 4096,
+          "mask_kept_elements": 4096,
+          "stored_nonzero_elements": 3940,
+          "original_nonzero_elements": 3940,
+          "mask_fraction": 1.0,
+          "stored_nonzero_fraction": 0.9619140625,
+          "selected_original_zero_elements": 156
+        },
+        {
+          "name": "classifier.6.weight",
+          "shape": [
+            1000,
+            4096
+          ],
+          "total_elements": 4096000,
+          "mask_kept_elements": 4096000,
+          "stored_nonzero_elements": 1037072,
+          "original_nonzero_elements": 1037072,
+          "mask_fraction": 1.0,
+          "stored_nonzero_fraction": 0.25319140625,
+          "selected_original_zero_elements": 3058928
+        },
+        {
+          "name": "classifier.6.bias",
+          "shape": [
+            1000
+          ],
+          "total_elements": 1000,
+          "mask_kept_elements": 1000,
+          "stored_nonzero_elements": 665,
+          "original_nonzero_elements": 665,
+          "mask_fraction": 1.0,
+          "stored_nonzero_fraction": 0.665,
+          "selected_original_zero_elements": 335
+        }
+      ],
+      "sample_indices": [
+        [
+          37542,
+          44491,
+          216,
+          43688,
+          41558,
+          32245,
+          27206,
+          10863,
+          2190,
+          31849,
+          25408,
+          33504,
+          27102,
+          21934,
+          40181,
+          47682,
+          45747,
+          17004,
+          43777,
+          7433,
+          45129,
+          37684,
+          14817,
+          38215
+        ]
+      ]
+    }
+  ],
+  "run_links": [
+    {
+      "path": "imagenet/vgg16/fedavg_single_client_clients3_round20of20_spc24_target0_local1_5441531bedd12a66/global_topk/keep_0p1/R8_seed1234_model_pred/observation_manifest.json",
+      "keep": 0.1,
+      "R": 8,
+      "sampler": "retained_rescaled",
+      "source_hash": "f3892ffa3af44656c54bf1d986c9b4c6109da063a821c42a67cdc22a463a2a09",
+      "observation_hash": "9a6bc7aef47af59b288568c43e312593406680021363ee39f92f23102d965221",
+      "source_file": "C:\\Users\\조상제\\Desktop\\CPA\\cora_fedavg_single_client_cpa\\outputs_v1\\fedavg_single_client_updates\\imagenet\\vgg16\\fedavg_single_client_clients3_round20of20_spc24_target0_local1_5441531bedd12a66\\global_topk\\keep_0p1.pickle",
+      "checkpoint": "C:\\Users\\조상제\\Desktop\\CPA\\cora_fedavg_single_client_cpa\\outputs_v1\\fedavg_single_client_updates\\imagenet\\vgg16\\fedavg_single_client_clients3_round20of20_spc24_target0_local1_5441531bedd12a66\\global_topk\\keep_0p1.fedavg_round_before.pt",
+      "current_source_hash_matches_run": true,
+      "current_observation_hash_matches_run": true
+    },
+    {
+      "path": "imagenet/vgg16/fedavg_single_client_clients3_round20of20_spc24_target0_local1_e920201510be97a8/global_topk/keep_0p1/R1_seed1234_model_pred/zf_keep10_e920/observation_manifest.json",
+      "keep": 0.1,
+      "R": 1,
+      "sampler": "zero_fill",
+      "source_hash": "33396cdfbd396b253d853ef84e45206b449ce827e3d8553c47f5fdd72fc1b976",
+      "observation_hash": "30ddf606217a3c922afd29475f29c353b5fb83314159e10f5fb8f20cf1a400ea",
+      "source_file": "C:\\Users\\조상제\\Desktop\\CPA\\cora_fedavg_single_client_cpa\\outputs_v1\\fedavg_single_client_updates\\imagenet\\vgg16\\fedavg_single_client_clients3_round20of20_spc24_target0_local1_e920201510be97a8\\global_topk\\keep_0p1.pickle",
+      "checkpoint": "C:\\Users\\조상제\\Desktop\\CPA\\cora_fedavg_single_client_cpa\\outputs_v1\\fedavg_single_client_updates\\imagenet\\vgg16\\fedavg_single_client_clients3_round20of20_spc24_target0_local1_e920201510be97a8\\global_topk\\keep_0p1.fedavg_round_before.pt",
+      "current_source_hash_matches_run": true,
+      "current_observation_hash_matches_run": true
+    },
+    {
+      "path": "imagenet/vgg16/fedavg_single_client_clients3_round20of20_spc24_target0_local1_e920201510be97a8/global_topk/keep_0p3/R1_seed1234_model_pred/cora_obs_zero_fill_keep80_50_30/observation_manifest.json",
+      "keep": 0.3,
+      "R": 1,
+      "sampler": "zero_fill",
+      "source_hash": "b3b33823f9796febd5285de8a3d7c5279380d6c8368e5399fb4aa4d538f4a1c5",
+      "observation_hash": "b803ec90590f587a4e345f3cea950e299faac210a3b943e224b15f7023be19d2",
+      "source_file": "C:\\Users\\조상제\\Desktop\\CPA\\cora_fedavg_single_client_cpa\\outputs_v1\\fedavg_single_client_updates\\imagenet\\vgg16\\fedavg_single_client_clients3_round20of20_spc24_target0_local1_e920201510be97a8\\global_topk\\keep_0p3.pickle",
+      "checkpoint": "C:\\Users\\조상제\\Desktop\\CPA\\cora_fedavg_single_client_cpa\\outputs_v1\\fedavg_single_client_updates\\imagenet\\vgg16\\fedavg_single_client_clients3_round20of20_spc24_target0_local1_e920201510be97a8\\global_topk\\keep_0p3.fedavg_round_before.pt",
+      "current_source_hash_matches_run": true,
+      "current_observation_hash_matches_run": true
+    },
+    {
+      "path": "imagenet/vgg16/fedavg_single_client_clients3_round20of20_spc24_target0_local1_e920201510be97a8/global_topk/keep_0p3/R8_seed1234_model_pred/observation_manifest.json",
+      "keep": 0.3,
+      "R": 8,
+      "sampler": "retained_rescaled",
+      "source_hash": "b3b33823f9796febd5285de8a3d7c5279380d6c8368e5399fb4aa4d538f4a1c5",
+      "observation_hash": "b803ec90590f587a4e345f3cea950e299faac210a3b943e224b15f7023be19d2",
+      "source_file": "C:\\Users\\조상제\\Desktop\\CPA\\cora_fedavg_single_client_cpa\\outputs_v1\\fedavg_single_client_updates\\imagenet\\vgg16\\fedavg_single_client_clients3_round20of20_spc24_target0_local1_e920201510be97a8\\global_topk\\keep_0p3.pickle",
+      "checkpoint": "C:\\Users\\조상제\\Desktop\\CPA\\cora_fedavg_single_client_cpa\\outputs_v1\\fedavg_single_client_updates\\imagenet\\vgg16\\fedavg_single_client_clients3_round20of20_spc24_target0_local1_e920201510be97a8\\global_topk\\keep_0p3.fedavg_round_before.pt",
+      "current_source_hash_matches_run": true,
+      "current_observation_hash_matches_run": true
+    },
+    {
+      "path": "imagenet/vgg16/fedavg_single_client_clients3_round20of20_spc24_target0_local1_e920201510be97a8/global_topk/keep_0p5/R1_seed1234_model_pred/cora_obs_zero_fill_keep80_50_30/observation_manifest.json",
+      "keep": 0.5,
+      "R": 1,
+      "sampler": "zero_fill",
+      "source_hash": "d9639da9ac8a4f58e0e455af3e8b600fd85018022b11e1432ee7721bf6f8f826",
+      "observation_hash": "036f51d97a253ce91f19e245cd147203a387771fd56cefcb8b92e4fb6956a8bb",
+      "source_file": "C:\\Users\\조상제\\Desktop\\CPA\\cora_fedavg_single_client_cpa\\outputs_v1\\fedavg_single_client_updates\\imagenet\\vgg16\\fedavg_single_client_clients3_round20of20_spc24_target0_local1_e920201510be97a8\\global_topk\\keep_0p5.pickle",
+      "checkpoint": "C:\\Users\\조상제\\Desktop\\CPA\\cora_fedavg_single_client_cpa\\outputs_v1\\fedavg_single_client_updates\\imagenet\\vgg16\\fedavg_single_client_clients3_round20of20_spc24_target0_local1_e920201510be97a8\\global_topk\\keep_0p5.fedavg_round_before.pt",
+      "current_source_hash_matches_run": true,
+      "current_observation_hash_matches_run": true
+    },
+    {
+      "path": "imagenet/vgg16/fedavg_single_client_clients3_round20of20_spc24_target0_local1_e920201510be97a8/global_topk/keep_0p5/R8_seed1234_model_pred/observation_manifest.json",
+      "keep": 0.5,
+      "R": 8,
+      "sampler": "retained_rescaled",
+      "source_hash": "d9639da9ac8a4f58e0e455af3e8b600fd85018022b11e1432ee7721bf6f8f826",
+      "observation_hash": "036f51d97a253ce91f19e245cd147203a387771fd56cefcb8b92e4fb6956a8bb",
+      "source_file": "C:\\Users\\조상제\\Desktop\\CPA\\cora_fedavg_single_client_cpa\\outputs_v1\\fedavg_single_client_updates\\imagenet\\vgg16\\fedavg_single_client_clients3_round20of20_spc24_target0_local1_e920201510be97a8\\global_topk\\keep_0p5.pickle",
+      "checkpoint": "C:\\Users\\조상제\\Desktop\\CPA\\cora_fedavg_single_client_cpa\\outputs_v1\\fedavg_single_client_updates\\imagenet\\vgg16\\fedavg_single_client_clients3_round20of20_spc24_target0_local1_e920201510be97a8\\global_topk\\keep_0p5.fedavg_round_before.pt",
+      "current_source_hash_matches_run": true,
+      "current_observation_hash_matches_run": true
+    },
+    {
+      "path": "imagenet/vgg16/fedavg_single_client_clients3_round20of20_spc24_target0_local1_e920201510be97a8/global_topk/keep_0p8/R1_seed1234_model_pred/cora_obs_zero_fill_keep80_50_30/observation_manifest.json",
+      "keep": 0.8,
+      "R": 1,
+      "sampler": "zero_fill",
+      "source_hash": "fbb2b394ebd23c299802670330a8ce6d6598c9f5dda3536124777321c9bb02dc",
+      "observation_hash": "1c7d9499674fe4065a509fa22a1bf34ca9322d9c7bb057d3482cc04498c5fa83",
+      "source_file": "C:\\Users\\조상제\\Desktop\\CPA\\cora_fedavg_single_client_cpa\\outputs_v1\\fedavg_single_client_updates\\imagenet\\vgg16\\fedavg_single_client_clients3_round20of20_spc24_target0_local1_e920201510be97a8\\global_topk\\keep_0p8.pickle",
+      "checkpoint": "C:\\Users\\조상제\\Desktop\\CPA\\cora_fedavg_single_client_cpa\\outputs_v1\\fedavg_single_client_updates\\imagenet\\vgg16\\fedavg_single_client_clients3_round20of20_spc24_target0_local1_e920201510be97a8\\global_topk\\keep_0p8.fedavg_round_before.pt",
+      "current_source_hash_matches_run": true,
+      "current_observation_hash_matches_run": true
+    },
+    {
+      "path": "imagenet/vgg16/fedavg_single_client_clients3_round20of20_spc24_target0_local1_e920201510be97a8/global_topk/keep_0p8/R8_seed1234_model_pred/observation_manifest.json",
+      "keep": 0.8,
+      "R": 8,
+      "sampler": "retained_rescaled",
+      "source_hash": "2e000ba38a3a60c2146af2790976762d72ce0abca874bbee6492c323b29de934",
+      "observation_hash": "d9b8c2b69ebf0ddd1abdaee9d1d0381de38a189bc82b3c0ab11b0da7f4553355",
+      "source_file": "C:\\Users\\조상제\\Desktop\\CPA\\cora_fedavg_single_client_cpa\\outputs_v1\\fedavg_single_client_updates\\imagenet\\vgg16\\fedavg_single_client_clients3_round20of20_spc24_target0_local1_e920201510be97a8\\global_topk\\keep_0p8.pickle",
+      "checkpoint": "C:\\Users\\조상제\\Desktop\\CPA\\cora_fedavg_single_client_cpa\\outputs_v1\\fedavg_single_client_updates\\imagenet\\vgg16\\fedavg_single_client_clients3_round20of20_spc24_target0_local1_e920201510be97a8\\global_topk\\keep_0p8.fedavg_round_before.pt",
+      "current_source_hash_matches_run": false,
+      "current_observation_hash_matches_run": false
+    }
+  ]
+}

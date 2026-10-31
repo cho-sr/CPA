@@ -1,0 +1,13 @@
+{
+  "task_id": "CPA_SIGNED_COMBINATION_ICA_IMPLEMENTATION_20260916",
+  "status": "COMPLETED",
+  "report_path": "C:\\Users\\조상제\\Desktop\\CPA\\.ai\\execution-results\\CPA_SIGNED_COMBINATION_ICA_IMPLEMENTATION_20260916\\report.md",
+  "summary_path": "C:\\Users\\조상제\\Desktop\\CPA\\.ai\\execution-results\\CPA_SIGNED_COMBINATION_ICA_IMPLEMENTATION_20260916\\execution_summary.json",
+  "result_notice": "QUEUED",
+  "planner_thread": "01a0a799-d62c-7ab0-9c2a-628acf6d2c95",
+  "planner_pid": 24972,
+  "delivery_receipt": {
+    "queued": true,
+    "receipt": "Queued message 01a0aa56-f07b-7ea2-ad5e-9a30e63c20e3 for thread 01a0a799-d62c-7ab0-9c2a-628acf6d2c95."
+  }
+}

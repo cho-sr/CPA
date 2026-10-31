@@ -1,0 +1,56 @@
+{
+  "task_id": "CPA_SIGNED_INT4_GDONLY_SCREEN3_FIA_20260918",
+  "plan_version": 1,
+  "status": "COMPLETED",
+  "active_claim_status": "COMPLETED",
+  "executor_thread": "01a0a799-f1ce-7b31-8c46-b4ddef40aeab",
+  "executor_pid": 14236,
+  "runtime": "Luna/xhigh",
+  "role": "CODEX_EXECUTOR",
+  "handoff_sha256": "75acba8097331f0bf9b91d3f9f20eaa7a3c4f8a2f6c4f8015803d46da3cef7aa",
+  "immutable_plan_sha256": "75acba8097331f0bf9b91d3f9f20eaa7a3c4f8a2f6c4f8015803d46da3cef7aa",
+  "immutable_snapshot_sha256": "75acba8097331f0bf9b91d3f9f20eaa7a3c4f8a2f6c4f8015803d46da3cef7aa",
+  "claimed_at": "2026-09-18T10:39:50.578242+00:00",
+  "parent_final_audit": "C:\\Users\\조상제\\Desktop\\CPA\\.ai\\execution-results\\CPA_SIGNED_BITS7654_RECOVERY_20260918\\final_audit.json",
+  "parent_success_verified": true,
+  "implementation_tests": {
+    "py_compile": true,
+    "cli_help": true,
+    "pytest_passed": 5,
+    "pytest_failed": 0
+  },
+  "research_launched": true,
+  "same_scope_repairs": [
+    {
+      "at": "2026-09-18T10:42:31.081584+00:00",
+      "kind": "LAUNCHER_PATH_REPAIR",
+      "note": "First wrapper launch exited before research because task-local ROOT used parents[2] instead of parents[3]; no optimizer, separation, FIA, private load or model call occurred. Evidence is preserved under launch_attempt_1_root_calculation_failure.",
+      "research_steps": 0,
+      "private_loaded": false
+    }
+  ],
+  "research_process_started": true,
+  "launch_receipt": {
+    "wrapper_pid": 24724,
+    "wrapper_created_ms": 1789728168506,
+    "callback_pid": 27532,
+    "callback_created_ms": 1789728169263,
+    "startup_status": "RUNNING",
+    "startup_stage": "REGISTERED",
+    "launched_at": "2026-09-18T10:43:38.481873+00:00",
+    "startup_receipt": "C:\\Users\\조상제\\Desktop\\CPA\\.ai\\execution-results\\CPA_SIGNED_INT4_GDONLY_SCREEN3_FIA_20260918\\startup_receipt.json",
+    "stage_execution": "C:\\Users\\조상제\\Desktop\\CPA\\.ai\\execution-results\\CPA_SIGNED_INT4_GDONLY_SCREEN3_FIA_20260918\\stage_execution.json",
+    "callback_status": "C:\\Users\\조상제\\Desktop\\CPA\\.ai\\relay-runs\\completions\\CPA_SIGNED_INT4_GDONLY_SCREEN3_FIA_20260918\\real_experiment\\status.json",
+    "launch_record_repair": "PowerShell UTF-8 parser failed after both processes started; recorded with Python UTF-8 without relaunch."
+  },
+  "callback_registered": true,
+  "updated_at": "2026-09-18T10:43:38.481873+00:00",
+  "completed_at": "2026-09-18T13:44:25.306083+00:00",
+  "final_result": "C:\\Users\\조상제\\Desktop\\CPA\\.ai\\execution-results\\CPA_SIGNED_INT4_GDONLY_SCREEN3_FIA_20260918\\final_result.json",
+  "optimizer_steps_added": 0,
+  "evaluation_status": "COMPLETED",
+  "final_planner_notice": "QUEUED",
+  "planner_thread": "01a0a799-d62c-7ab0-9c2a-628acf6d2c95",
+  "planner_message_id": "01a0b4c3-408d-7f32-938f-4d1e419b3ea2",
+  "final_notice_at": "2026-09-18T13:45:04.765591+00:00"
+}

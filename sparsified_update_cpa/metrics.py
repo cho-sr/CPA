@@ -8,6 +8,8 @@ from pathlib import Path
 from statistics import mean, pstdev
 from typing import Any, Iterable, Mapping, Sequence
 
+from common import filesystem_path
+
 
 SUMMARY_METRICS = (
     "lpips",
@@ -115,7 +117,7 @@ def write_csv(path: Path, rows: Sequence[Mapping[str, Any]], fieldnames: Sequenc
                 if key not in keys:
                     keys.append(key)
         fieldnames = keys
-    with path.open("w", newline="", encoding="utf-8") as handle:
+    with open(filesystem_path(path), "w", newline="", encoding="utf-8") as handle:
         writer = csv.DictWriter(handle, fieldnames=list(fieldnames), extrasaction="ignore")
         writer.writeheader()
         for row in rows:

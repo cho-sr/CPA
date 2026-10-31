@@ -1,0 +1,23 @@
+SESSION_ROLE: CODEX_EXECUTOR
+TASK_ID: CPA_SIGNED_COMBINATION_ICA_EXPERIMENT_20260916
+RESULT_STATUS: COMPLETED_WITH_REVIEW
+
+The one registered real pipeline and offline evaluation completed. SEPARATE, INVERT, REFINE, and PRIVATE_EVALUATION all exited 0; total wall time was 2330.788675 s within the 2700 s cap, with zero model calls while running. FastICA converged in 84 iterations, separator prior refinement completed 1000 steps, Direct FIA completed 25000 steps, and actual-update cell refinement completed 100 steps. The six-tensor numerical preflight passed feature grad/no-grad and terminal-delta equality checks.
+
+PUBLIC_GATE_PASSED before private loading, and protected/shared/public-input integrity remained unchanged. The four frozen 16-image sets were evaluated with one pixel-MSE Hungarian correspondence per candidate reused for all metrics and the aligned figure. Private truth consumption was x only; labels_consumed=false, true_updates_consumed=false, and no private feedback entered the attack.
+
+The scientific comparison is NEEDS_REVIEW because archived direct-control LPIPS reproduction differed by -2.2351741790771484e-08, just beyond the predeclared 2e-8 absolute tolerance. The new combination cell endpoint is separately reported as exact_feasible=false with 995058 code mismatches and 995058 bounded-cell violations. No rerun, added arm, tuning, or condition change was made.
+
+Mean image metrics (MSE / PSNR dB / SSIM / LPIPS):
+original_separator_direct: 0.0781093468343797 / 11.5173321456311 / 0.284893989708307 / 0.822924602776766
+original_separator_cell: 0.0781608770772640 / 11.5217423643100 / 0.282700870678415 / 0.808156996965408
+combination_separator_direct: 0.0776844093863262 / 11.5249464319988 / 0.293223489802580 / 0.809157457202673
+combination_separator_cell: 0.0777360436803490 / 11.5214056622864 / 0.284907516904722 / 0.800327986478806
+
+Final report: .ai/execution-results/CPA_SIGNED_COMBINATION_ICA_EXPERIMENT_20260916/report.md
+Final audit: .ai/execution-results/CPA_SIGNED_COMBINATION_ICA_EXPERIMENT_20260916/final_audit.json
+Execution summary: .ai/execution-results/CPA_SIGNED_COMBINATION_ICA_EXPERIMENT_20260916/execution_summary.json
+Private comparison: quantization_aware_cpa/results_private/signed_combination_ica_B16_T10_20260916/comparison.json
+Figure: quantization_aware_cpa/results_private/signed_combination_ica_B16_T10_20260916/all16_comparison.png
+
+Please show this result once and end your turn. Do not poll or start new work.

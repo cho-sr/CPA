@@ -1,0 +1,1039 @@
+{
+  "status": "COMPLETED",
+  "arms": {
+    "reference": {
+      "image_oracle": {
+        "matching": "Hungarian_pixel_MSE_once_for_all_metrics",
+        "n_images": 16,
+        "all_images_included": true,
+        "candidate_selection": "none_single_supplied_artifact",
+        "per_image": [
+          {
+            "candidate_index": 0,
+            "truth_index": 7,
+            "mse": 0.11044360910963072,
+            "psnr_db": 9.568594097945756,
+            "perfect_pixel_match": false,
+            "ssim": 0.14594591892049438,
+            "lpips": 0.543885350227356
+          },
+          {
+            "candidate_index": 1,
+            "truth_index": 1,
+            "mse": 0.06899350142457064,
+            "psnr_db": 11.611918140216233,
+            "perfect_pixel_match": false,
+            "ssim": 0.2542205637081405,
+            "lpips": 0.4035034477710724
+          },
+          {
+            "candidate_index": 2,
+            "truth_index": 6,
+            "mse": 0.06444832597236881,
+            "psnr_db": 11.907883588443994,
+            "perfect_pixel_match": false,
+            "ssim": 0.1732563140606483,
+            "lpips": 0.47755396366119385
+          },
+          {
+            "candidate_index": 3,
+            "truth_index": 15,
+            "mse": 0.04352304411803583,
+            "psnr_db": 13.612807365306827,
+            "perfect_pixel_match": false,
+            "ssim": 0.491643803403466,
+            "lpips": 0.4167231023311615
+          },
+          {
+            "candidate_index": 4,
+            "truth_index": 5,
+            "mse": 0.08637639212656448,
+            "psnr_db": 10.636049400459601,
+            "perfect_pixel_match": false,
+            "ssim": 0.4620525852680497,
+            "lpips": 0.4186444580554962
+          },
+          {
+            "candidate_index": 5,
+            "truth_index": 13,
+            "mse": 0.07365927773271637,
+            "psnr_db": 11.327725439420565,
+            "perfect_pixel_match": false,
+            "ssim": 0.315220035012946,
+            "lpips": 0.49223780632019043
+          },
+          {
+            "candidate_index": 6,
+            "truth_index": 9,
+            "mse": 0.042972812654790866,
+            "psnr_db": 13.668062199609922,
+            "perfect_pixel_match": false,
+            "ssim": 0.22978665577310584,
+            "lpips": 0.41192612051963806
+          },
+          {
+            "candidate_index": 7,
+            "truth_index": 3,
+            "mse": 0.19648771649993851,
+            "psnr_db": 7.066645945152246,
+            "perfect_pixel_match": false,
+            "ssim": 0.6195045394339261,
+            "lpips": 0.545607328414917
+          },
+          {
+            "candidate_index": 8,
+            "truth_index": 8,
+            "mse": 0.03028623910968087,
+            "psnr_db": 15.187546532211444,
+            "perfect_pixel_match": false,
+            "ssim": 0.5978304997016171,
+            "lpips": 0.33731815218925476
+          },
+          {
+            "candidate_index": 9,
+            "truth_index": 2,
+            "mse": 0.0630274528287974,
+            "psnr_db": 12.004702439572139,
+            "perfect_pixel_match": false,
+            "ssim": 0.3187065794589329,
+            "lpips": 0.47861596941947937
+          },
+          {
+            "candidate_index": 10,
+            "truth_index": 10,
+            "mse": 0.05990358238599144,
+            "psnr_db": 12.22547204923769,
+            "perfect_pixel_match": false,
+            "ssim": 0.2533951696789097,
+            "lpips": 0.517124354839325
+          },
+          {
+            "candidate_index": 11,
+            "truth_index": 12,
+            "mse": 0.02818988587708067,
+            "psnr_db": 15.499066823069876,
+            "perfect_pixel_match": false,
+            "ssim": 0.47031049290449445,
+            "lpips": 0.4150097072124481
+          },
+          {
+            "candidate_index": 12,
+            "truth_index": 4,
+            "mse": 0.04583828412322022,
+            "psnr_db": 13.38771647798181,
+            "perfect_pixel_match": false,
+            "ssim": 0.43695756922228135,
+            "lpips": 0.4179173409938812
+          },
+          {
+            "candidate_index": 13,
+            "truth_index": 0,
+            "mse": 0.04114936367651067,
+            "psnr_db": 13.856368762212576,
+            "perfect_pixel_match": false,
+            "ssim": 0.32062873289552046,
+            "lpips": 0.5185742378234863
+          },
+          {
+            "candidate_index": 14,
+            "truth_index": 14,
+            "mse": 0.03830482918006479,
+            "psnr_db": 14.167464700511216,
+            "perfect_pixel_match": false,
+            "ssim": 0.24974781596809179,
+            "lpips": 0.43257641792297363
+          },
+          {
+            "candidate_index": 15,
+            "truth_index": 11,
+            "mse": 0.05584311850270342,
+            "psnr_db": 12.530303369697972,
+            "perfect_pixel_match": false,
+            "ssim": 0.21093456277883532,
+            "lpips": 0.5271571278572083
+          }
+        ],
+        "metric_dtype": "float64",
+        "truth_denormalization_tolerance_abs": 9.5367431640625e-07,
+        "truth_denormalization_clipped_values": 77691,
+        "perfect_pixel_matches": 0,
+        "psnr_null_meaning": "positive_infinity_for_perfect_pixel_match",
+        "mean_psnr_null_meaning": "positive_infinity_if_any_image_is_a_perfect_pixel_match",
+        "mean_mse": 0.06559046470766662,
+        "mean_psnr_db": 12.391145458190616,
+        "mean_ssim": 0.3468838648868412,
+        "lpips": "VGG_same_pixel_MSE_Hungarian_pairs",
+        "reconstruction_success": "no_threshold_registered",
+        "mean_lpips": 0.4596484303474426
+      },
+      "embedding_oracle": {
+        "matching": "Hungarian_max_embedding_cosine_offline_only",
+        "per_source": [
+          {
+            "source_index": 0,
+            "truth_index": 7,
+            "cosine": 0.9999093420765987
+          },
+          {
+            "source_index": 1,
+            "truth_index": 1,
+            "cosine": 0.9999994055516288
+          },
+          {
+            "source_index": 2,
+            "truth_index": 6,
+            "cosine": 0.9997469816970733
+          },
+          {
+            "source_index": 3,
+            "truth_index": 15,
+            "cosine": 0.9999413606876781
+          },
+          {
+            "source_index": 4,
+            "truth_index": 5,
+            "cosine": 0.999738772060915
+          },
+          {
+            "source_index": 5,
+            "truth_index": 13,
+            "cosine": 0.9996573047146124
+          },
+          {
+            "source_index": 6,
+            "truth_index": 9,
+            "cosine": 0.9994801755969929
+          },
+          {
+            "source_index": 7,
+            "truth_index": 3,
+            "cosine": 0.9999868673310943
+          },
+          {
+            "source_index": 8,
+            "truth_index": 8,
+            "cosine": 0.9992591514173427
+          },
+          {
+            "source_index": 9,
+            "truth_index": 2,
+            "cosine": 0.9997453128823865
+          },
+          {
+            "source_index": 10,
+            "truth_index": 10,
+            "cosine": 0.999995858243589
+          },
+          {
+            "source_index": 11,
+            "truth_index": 12,
+            "cosine": 0.9993958878092304
+          },
+          {
+            "source_index": 12,
+            "truth_index": 4,
+            "cosine": 0.9982659597287731
+          },
+          {
+            "source_index": 13,
+            "truth_index": 0,
+            "cosine": 0.9999883382508996
+          },
+          {
+            "source_index": 14,
+            "truth_index": 14,
+            "cosine": 0.9769463279072451
+          },
+          {
+            "source_index": 15,
+            "truth_index": 11,
+            "cosine": 0.9523217021903115
+          }
+        ],
+        "mean_cosine": 0.9952736717591482,
+        "all_sources_included": true,
+        "adapter": "abs(S_hat); no scaling/permutation before FIA"
+      },
+      "final_result": {
+        "status": "COMPLETED",
+        "input": {
+          "arm": "FP32 Reference",
+          "raw_file_sha256": "ef9aefc66ab9fcfd0b023fdfc064dbadc27567bd3ef3508bc14ebda9af28ba4c",
+          "private_raw_update_used": true,
+          "oracle_truth_used": false
+        },
+        "seed": 42,
+        "candidate_sha256": "dfd8981d6a928a3dc4412796bd0305a9a3a0ed54dc7b07d1a2c2a5b47e8bbd49",
+        "sources_sha256": "ae05b24ed453f799d6c26e71ff4ead64f8544fd733404ecef5732a9498d94f47",
+        "cpa_iterations": 25000,
+        "fia_iterations": 25000,
+        "image_count": 16,
+        "selection": "final_iteration_only_no_oracle_selection",
+        "labels_used": false,
+        "cpa_runtime": {
+          "python": "3.11.14 | packaged by Anaconda, Inc. | (main, Oct 21 2025, 18:30:03) [MSC v.1929 64 bit (AMD64)]",
+          "torch": "2.13.0+cu132",
+          "numpy": "2.4.4",
+          "torchvision": "0.28.0+cu132",
+          "cuda": "13.2",
+          "cudnn": 92000,
+          "cudnn_enabled": true,
+          "cudnn_benchmark": false,
+          "cudnn_deterministic": true,
+          "deterministic_algorithms": true,
+          "deterministic_warn_only": true,
+          "matmul_tf32": false,
+          "cudnn_tf32": false,
+          "cublas_workspace_config": ":4096:8",
+          "threads": 1,
+          "gpu": "NVIDIA GeForce RTX 5060 Ti",
+          "cuda_peak_allocated": 1258441216,
+          "cuda_peak_reserved": 1447034880
+        },
+        "final_runtime": {
+          "python": "3.11.14 | packaged by Anaconda, Inc. | (main, Oct 21 2025, 18:30:03) [MSC v.1929 64 bit (AMD64)]",
+          "torch": "2.13.0+cu132",
+          "numpy": "2.4.4",
+          "torchvision": "0.28.0+cu132",
+          "cuda": "13.2",
+          "cudnn": 92000,
+          "cudnn_enabled": true,
+          "cudnn_benchmark": true,
+          "cudnn_deterministic": true,
+          "deterministic_algorithms": true,
+          "deterministic_warn_only": true,
+          "matmul_tf32": false,
+          "cudnn_tf32": false,
+          "cublas_workspace_config": ":4096:8",
+          "threads": 1,
+          "gpu": "NVIDIA GeForce RTX 5060 Ti",
+          "cuda_peak_allocated": 3593020928,
+          "cuda_peak_reserved": 3959422976
+        },
+        "wall_seconds": 2154.681095399952,
+        "completed_at_utc": "2026-09-14T09:32:24.044936+00:00"
+      },
+      "initialization": {
+        "tensor_sha256": "6f6ec493923b7081284f0fc405f76f60b583cc41a5977393751f96bb21147e59",
+        "shape": [
+          16,
+          3,
+          224,
+          224
+        ],
+        "runtime": {
+          "python": "3.11.14 | packaged by Anaconda, Inc. | (main, Oct 21 2025, 18:30:03) [MSC v.1929 64 bit (AMD64)]",
+          "torch": "2.13.0+cu132",
+          "numpy": "2.4.4",
+          "torchvision": "0.28.0+cu132",
+          "cuda": "13.2",
+          "cudnn": 92000,
+          "cudnn_enabled": true,
+          "cudnn_benchmark": true,
+          "cudnn_deterministic": true,
+          "deterministic_algorithms": true,
+          "deterministic_warn_only": true,
+          "matmul_tf32": false,
+          "cudnn_tf32": false,
+          "cublas_workspace_config": ":4096:8",
+          "threads": 1,
+          "gpu": "NVIDIA GeForce RTX 5060 Ti",
+          "cuda_peak_allocated": 1258441216,
+          "cuda_peak_reserved": 1447034880
+        },
+        "seed": 42
+      }
+    },
+    "naive": {
+      "image_oracle": {
+        "matching": "Hungarian_pixel_MSE_once_for_all_metrics",
+        "n_images": 16,
+        "all_images_included": true,
+        "candidate_selection": "none_single_supplied_artifact",
+        "per_image": [
+          {
+            "candidate_index": 0,
+            "truth_index": 4,
+            "mse": 0.05929120473560415,
+            "psnr_db": 12.270097251532746,
+            "perfect_pixel_match": false,
+            "ssim": 0.39859080796182317,
+            "lpips": 0.894607663154602
+          },
+          {
+            "candidate_index": 1,
+            "truth_index": 11,
+            "mse": 0.06776193561979367,
+            "psnr_db": 11.690141968776292,
+            "perfect_pixel_match": false,
+            "ssim": 0.20773743423273272,
+            "lpips": 0.8210153579711914
+          },
+          {
+            "candidate_index": 2,
+            "truth_index": 15,
+            "mse": 0.0652687053488196,
+            "psnr_db": 11.852950017584437,
+            "perfect_pixel_match": false,
+            "ssim": 0.3751457553905385,
+            "lpips": 0.7983898520469666
+          },
+          {
+            "candidate_index": 3,
+            "truth_index": 8,
+            "mse": 0.04437110955490228,
+            "psnr_db": 13.52899711072797,
+            "perfect_pixel_match": false,
+            "ssim": 0.4339286926579059,
+            "lpips": 0.8559707999229431
+          },
+          {
+            "candidate_index": 4,
+            "truth_index": 2,
+            "mse": 0.06939795056046573,
+            "psnr_db": 11.586533548106075,
+            "perfect_pixel_match": false,
+            "ssim": 0.2504421572139185,
+            "lpips": 0.7906415462493896
+          },
+          {
+            "candidate_index": 5,
+            "truth_index": 10,
+            "mse": 0.07119426734191858,
+            "psnr_db": 11.475549749306177,
+            "perfect_pixel_match": false,
+            "ssim": 0.22604055950027535,
+            "lpips": 0.870148777961731
+          },
+          {
+            "candidate_index": 6,
+            "truth_index": 14,
+            "mse": 0.04321140969315368,
+            "psnr_db": 13.644015653950554,
+            "perfect_pixel_match": false,
+            "ssim": 0.1977184870765163,
+            "lpips": 0.7816146612167358
+          },
+          {
+            "candidate_index": 7,
+            "truth_index": 1,
+            "mse": 0.07489717241846498,
+            "psnr_db": 11.255345778444294,
+            "perfect_pixel_match": false,
+            "ssim": 0.20797209151200374,
+            "lpips": 0.814141035079956
+          },
+          {
+            "candidate_index": 8,
+            "truth_index": 9,
+            "mse": 0.051274607479559205,
+            "psnr_db": 12.900976555839543,
+            "perfect_pixel_match": false,
+            "ssim": 0.1871444545661139,
+            "lpips": 0.7640813589096069
+          },
+          {
+            "candidate_index": 9,
+            "truth_index": 5,
+            "mse": 0.11922767078050199,
+            "psnr_db": 9.236229402948673,
+            "perfect_pixel_match": false,
+            "ssim": 0.41736698816283785,
+            "lpips": 0.7872798442840576
+          },
+          {
+            "candidate_index": 10,
+            "truth_index": 0,
+            "mse": 0.04888480177896204,
+            "psnr_db": 13.108261414790213,
+            "perfect_pixel_match": false,
+            "ssim": 0.3002314372314709,
+            "lpips": 0.8940838575363159
+          },
+          {
+            "candidate_index": 11,
+            "truth_index": 13,
+            "mse": 0.09102630235404696,
+            "psnr_db": 10.408330987040447,
+            "perfect_pixel_match": false,
+            "ssim": 0.2583173953148812,
+            "lpips": 0.8439177870750427
+          },
+          {
+            "candidate_index": 12,
+            "truth_index": 12,
+            "mse": 0.03943932992300864,
+            "psnr_db": 14.040704723619605,
+            "perfect_pixel_match": false,
+            "ssim": 0.37747681043446124,
+            "lpips": 0.8352307677268982
+          },
+          {
+            "candidate_index": 13,
+            "truth_index": 6,
+            "mse": 0.07450911501582522,
+            "psnr_db": 11.277905949170863,
+            "perfect_pixel_match": false,
+            "ssim": 0.1578873906582797,
+            "lpips": 0.7263423800468445
+          },
+          {
+            "candidate_index": 14,
+            "truth_index": 7,
+            "mse": 0.11903494479114748,
+            "psnr_db": 9.243255251443603,
+            "perfect_pixel_match": false,
+            "ssim": 0.15088817858761247,
+            "lpips": 0.8163847923278809
+          },
+          {
+            "candidate_index": 15,
+            "truth_index": 3,
+            "mse": 0.21095902195390162,
+            "psnr_db": 6.758018966816689,
+            "perfect_pixel_match": false,
+            "ssim": 0.4114151948315364,
+            "lpips": 0.8729431629180908
+          }
+        ],
+        "metric_dtype": "float64",
+        "truth_denormalization_tolerance_abs": 9.5367431640625e-07,
+        "truth_denormalization_clipped_values": 77691,
+        "perfect_pixel_matches": 0,
+        "psnr_null_meaning": "positive_infinity_for_perfect_pixel_match",
+        "mean_psnr_null_meaning": "positive_infinity_if_any_image_is_a_perfect_pixel_match",
+        "mean_mse": 0.07810934683437974,
+        "mean_psnr_db": 11.517332145631135,
+        "mean_ssim": 0.2848939897083067,
+        "lpips": "VGG_same_pixel_MSE_Hungarian_pairs",
+        "reconstruction_success": "no_threshold_registered",
+        "mean_lpips": 0.8229246027767658
+      },
+      "embedding_oracle": {
+        "matching": "Hungarian_max_embedding_cosine_offline_only",
+        "per_source": [
+          {
+            "source_index": 0,
+            "truth_index": 7,
+            "cosine": 0.6951742140756894
+          },
+          {
+            "source_index": 1,
+            "truth_index": 1,
+            "cosine": 0.7232146002520815
+          },
+          {
+            "source_index": 2,
+            "truth_index": 6,
+            "cosine": 0.7290523244590097
+          },
+          {
+            "source_index": 3,
+            "truth_index": 11,
+            "cosine": 0.09395377092492818
+          },
+          {
+            "source_index": 4,
+            "truth_index": 10,
+            "cosine": 0.0596460722533514
+          },
+          {
+            "source_index": 5,
+            "truth_index": 15,
+            "cosine": 0.7340929651950634
+          },
+          {
+            "source_index": 6,
+            "truth_index": 8,
+            "cosine": 0.06767492222212974
+          },
+          {
+            "source_index": 7,
+            "truth_index": 4,
+            "cosine": 0.09898332911357033
+          },
+          {
+            "source_index": 8,
+            "truth_index": 12,
+            "cosine": 0.056259363557485745
+          },
+          {
+            "source_index": 9,
+            "truth_index": 5,
+            "cosine": 0.7114260876400417
+          },
+          {
+            "source_index": 10,
+            "truth_index": 0,
+            "cosine": 0.01961239124130864
+          },
+          {
+            "source_index": 11,
+            "truth_index": 3,
+            "cosine": 0.0975333854827653
+          },
+          {
+            "source_index": 12,
+            "truth_index": 14,
+            "cosine": 0.07716450506671513
+          },
+          {
+            "source_index": 13,
+            "truth_index": 2,
+            "cosine": 0.044333550978207285
+          },
+          {
+            "source_index": 14,
+            "truth_index": 13,
+            "cosine": 0.6226337508160316
+          },
+          {
+            "source_index": 15,
+            "truth_index": 9,
+            "cosine": 0.15492736391768328
+          }
+        ],
+        "mean_cosine": 0.31160516232475394,
+        "all_sources_included": true,
+        "adapter": "abs(S_hat); no scaling/permutation before FIA"
+      },
+      "final_result": {
+        "status": "COMPLETED",
+        "input": {
+          "arm": "INT4_naive",
+          "public_manifest_sha256": "9b4891765e6fc7e4adb1e3e11c158b3d4a2c3430d3397e1f1466ddafe2e1cd69",
+          "checkpoint_sha256": "397923af8e79cdbb6a7127f12361acd7a2f83e06b05044ddf496e83de57a5bf0",
+          "private_inputs_used": false
+        },
+        "seed": 42,
+        "candidate_sha256": "fe683f68013896a407a38130ee54ef9dc799a9ca1abf7c4f08efeefea7d91751",
+        "sources_sha256": "c033e0df9304a6e0dcb19491bb43c3ac80cabed52566409e0f76dbe74194d7eb",
+        "cpa_iterations": 25000,
+        "fia_iterations": 25000,
+        "image_count": 16,
+        "selection": "final_iteration_only_no_oracle_selection",
+        "labels_used": false,
+        "cpa_runtime": {
+          "python": "3.11.14 | packaged by Anaconda, Inc. | (main, Oct 21 2025, 18:30:03) [MSC v.1929 64 bit (AMD64)]",
+          "torch": "2.13.0+cu132",
+          "numpy": "2.4.4",
+          "torchvision": "0.28.0+cu132",
+          "cuda": "13.2",
+          "cudnn": 92000,
+          "cudnn_enabled": true,
+          "cudnn_benchmark": false,
+          "cudnn_deterministic": true,
+          "deterministic_algorithms": true,
+          "deterministic_warn_only": true,
+          "matmul_tf32": false,
+          "cudnn_tf32": false,
+          "cublas_workspace_config": ":4096:8",
+          "threads": 1,
+          "gpu": "NVIDIA GeForce RTX 5060 Ti",
+          "cuda_peak_allocated": 1258441216,
+          "cuda_peak_reserved": 1447034880
+        },
+        "final_runtime": {
+          "python": "3.11.14 | packaged by Anaconda, Inc. | (main, Oct 21 2025, 18:30:03) [MSC v.1929 64 bit (AMD64)]",
+          "torch": "2.13.0+cu132",
+          "numpy": "2.4.4",
+          "torchvision": "0.28.0+cu132",
+          "cuda": "13.2",
+          "cudnn": 92000,
+          "cudnn_enabled": true,
+          "cudnn_benchmark": true,
+          "cudnn_deterministic": true,
+          "deterministic_algorithms": true,
+          "deterministic_warn_only": true,
+          "matmul_tf32": false,
+          "cudnn_tf32": false,
+          "cublas_workspace_config": ":4096:8",
+          "threads": 1,
+          "gpu": "NVIDIA GeForce RTX 5060 Ti",
+          "cuda_peak_allocated": 3593020928,
+          "cuda_peak_reserved": 3959422976
+        },
+        "wall_seconds": 2137.2704049999593,
+        "completed_at_utc": "2026-09-14T08:56:06.292120+00:00"
+      },
+      "initialization": {
+        "tensor_sha256": "6f6ec493923b7081284f0fc405f76f60b583cc41a5977393751f96bb21147e59",
+        "shape": [
+          16,
+          3,
+          224,
+          224
+        ],
+        "runtime": {
+          "python": "3.11.14 | packaged by Anaconda, Inc. | (main, Oct 21 2025, 18:30:03) [MSC v.1929 64 bit (AMD64)]",
+          "torch": "2.13.0+cu132",
+          "numpy": "2.4.4",
+          "torchvision": "0.28.0+cu132",
+          "cuda": "13.2",
+          "cudnn": 92000,
+          "cudnn_enabled": true,
+          "cudnn_benchmark": true,
+          "cudnn_deterministic": true,
+          "deterministic_algorithms": true,
+          "deterministic_warn_only": true,
+          "matmul_tf32": false,
+          "cudnn_tf32": false,
+          "cublas_workspace_config": ":4096:8",
+          "threads": 1,
+          "gpu": "NVIDIA GeForce RTX 5060 Ti",
+          "cuda_peak_allocated": 1258441216,
+          "cuda_peak_reserved": 1447034880
+        },
+        "seed": 42
+      }
+    }
+  },
+  "naive_minus_reference": {
+    "mean_psnr_db": -0.8738133125594807,
+    "mean_ssim": -0.06198987517853449,
+    "mean_lpips": 0.3632761724293232,
+    "mean_mse": 0.012518882126713121
+  },
+  "provenance_validation": {
+    "status": "PASS",
+    "raw_updates_sha256": "ef9aefc66ab9fcfd0b023fdfc064dbadc27567bd3ef3508bc14ebda9af28ba4c",
+    "public_manifest_sha256": "9b4891765e6fc7e4adb1e3e11c158b3d4a2c3430d3397e1f1466ddafe2e1cd69",
+    "distinct_arm_identities": true,
+    "registered_settings_and_sources_valid": true,
+    "private_output_isolated": true,
+    "paths": {
+      "naive": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\quantization_aware_cpa\\results\\signed_int4_baseline_B16_T10\\naive",
+      "reference": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\quantization_aware_cpa\\results_private\\signed_int4_baseline_B16_T10\\reference",
+      "private_observation": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\quantization_aware_cpa\\results_private\\signed_int4_baseline_B16_T10\\observation",
+      "public_observation": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\quantization_aware_cpa\\results\\signed_int4_baseline_B16_T10\\observation",
+      "output": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\quantization_aware_cpa\\results_private\\signed_int4_baseline_B16_T10\\evaluation"
+    }
+  },
+  "paired_naive_minus_reference_by_truth": [
+    {
+      "truth_index": 0,
+      "naive_candidate_index": 10,
+      "reference_candidate_index": 13,
+      "psnr_db": -0.7481073474223621,
+      "ssim": -0.020397295664049575,
+      "lpips": 0.3755096197128296,
+      "mse": 0.007735438102451371
+    },
+    {
+      "truth_index": 1,
+      "naive_candidate_index": 7,
+      "reference_candidate_index": 1,
+      "psnr_db": -0.3565723617719385,
+      "ssim": -0.04624847219613676,
+      "lpips": 0.41063758730888367,
+      "mse": 0.005903670993894342
+    },
+    {
+      "truth_index": 2,
+      "naive_candidate_index": 4,
+      "reference_candidate_index": 9,
+      "psnr_db": -0.4181688914660633,
+      "ssim": -0.06826442224501439,
+      "lpips": 0.3120255768299103,
+      "mse": 0.006370497731668326
+    },
+    {
+      "truth_index": 3,
+      "naive_candidate_index": 15,
+      "reference_candidate_index": 7,
+      "psnr_db": -0.30862697833555686,
+      "ssim": -0.20808934460238976,
+      "lpips": 0.32733583450317383,
+      "mse": 0.014471305453963107
+    },
+    {
+      "truth_index": 4,
+      "naive_candidate_index": 0,
+      "reference_candidate_index": 12,
+      "psnr_db": -1.1176192264490634,
+      "ssim": -0.03836676126045818,
+      "lpips": 0.4766903221607208,
+      "mse": 0.013452920612383928
+    },
+    {
+      "truth_index": 5,
+      "naive_candidate_index": 9,
+      "reference_candidate_index": 4,
+      "psnr_db": -1.399819997510928,
+      "ssim": -0.04468559710521186,
+      "lpips": 0.3686353862285614,
+      "mse": 0.03285127865393751
+    },
+    {
+      "truth_index": 6,
+      "naive_candidate_index": 13,
+      "reference_candidate_index": 2,
+      "psnr_db": -0.6299776392731307,
+      "ssim": -0.01536892340236859,
+      "lpips": 0.24878841638565063,
+      "mse": 0.010060789043456406
+    },
+    {
+      "truth_index": 7,
+      "naive_candidate_index": 14,
+      "reference_candidate_index": 0,
+      "psnr_db": -0.3253388465021523,
+      "ssim": 0.004942259667118087,
+      "lpips": 0.2724994421005249,
+      "mse": 0.008591335681516765
+    },
+    {
+      "truth_index": 8,
+      "naive_candidate_index": 3,
+      "reference_candidate_index": 8,
+      "psnr_db": -1.6585494214834746,
+      "ssim": -0.16390180704371116,
+      "lpips": 0.5186526477336884,
+      "mse": 0.014084870445221411
+    },
+    {
+      "truth_index": 9,
+      "naive_candidate_index": 8,
+      "reference_candidate_index": 6,
+      "psnr_db": -0.767085643770379,
+      "ssim": -0.04264220120699194,
+      "lpips": 0.35215523838996887,
+      "mse": 0.008301794824768338
+    },
+    {
+      "truth_index": 10,
+      "naive_candidate_index": 5,
+      "reference_candidate_index": 10,
+      "psnr_db": -0.7499222999315123,
+      "ssim": -0.02735461017863433,
+      "lpips": 0.353024423122406,
+      "mse": 0.011290684955927145
+    },
+    {
+      "truth_index": 11,
+      "naive_candidate_index": 1,
+      "reference_candidate_index": 15,
+      "psnr_db": -0.84016140092168,
+      "ssim": -0.003197128546102601,
+      "lpips": 0.29385823011398315,
+      "mse": 0.011918817117090252
+    },
+    {
+      "truth_index": 12,
+      "naive_candidate_index": 12,
+      "reference_candidate_index": 11,
+      "psnr_db": -1.4583620994502713,
+      "ssim": -0.09283368247003321,
+      "lpips": 0.4202210605144501,
+      "mse": 0.011249444045927967
+    },
+    {
+      "truth_index": 13,
+      "naive_candidate_index": 11,
+      "reference_candidate_index": 5,
+      "psnr_db": -0.9193944523801179,
+      "ssim": -0.056902639698064805,
+      "lpips": 0.3516799807548523,
+      "mse": 0.017367024621330593
+    },
+    {
+      "truth_index": 14,
+      "naive_candidate_index": 6,
+      "reference_candidate_index": 14,
+      "psnr_db": -0.5234490465606623,
+      "ssim": -0.052029328891575494,
+      "lpips": 0.3490382432937622,
+      "mse": 0.0049065805130888915
+    },
+    {
+      "truth_index": 15,
+      "naive_candidate_index": 2,
+      "reference_candidate_index": 3,
+      "psnr_db": -1.7598573477223898,
+      "ssim": -0.11649804801292746,
+      "lpips": 0.38166674971580505,
+      "mse": 0.021745661230783767
+    }
+  ],
+  "embedding_mean_cosine_delta": -0.6836685094343942,
+  "update_errors_evaluation_only": {
+    "classifier.0.weight": {
+      "mse": 1.1059911060006676e-11,
+      "relative_l2": 0.7322295905516008,
+      "relative_l2_null_reason": null,
+      "max_abs_error": 2.7081347070634365e-05,
+      "sender_raw_fit": {
+        "numel": 102760448,
+        "code_mismatch_count": 0,
+        "code_mismatch_fraction": 0.0,
+        "bounded_cell_violation_count": 0,
+        "bounded_cell_violation_fraction": 0.0,
+        "scale": {
+          "candidate_scale": 5.416279236669652e-05,
+          "observed_scale": 5.416279236669652e-05,
+          "absolute_error": 0.0,
+          "relative_error": 0.0,
+          "exact_equal": true,
+          "candidate_supported": true,
+          "reason": null
+        },
+        "scope": "supplied_matrix_only; no reconstructed_image_update_replay"
+      }
+    },
+    "classifier.0.bias": {
+      "mse": 6.863404630798602e-13,
+      "relative_l2": 0.1843454544343282,
+      "relative_l2_null_reason": null,
+      "max_abs_error": 1.5050839010655181e-06,
+      "sender_raw_fit": {
+        "numel": 4096,
+        "code_mismatch_count": 0,
+        "code_mismatch_fraction": 0.0,
+        "bounded_cell_violation_count": 0,
+        "bounded_cell_violation_fraction": 0.0,
+        "scale": {
+          "candidate_scale": 3.0104336019576294e-06,
+          "observed_scale": 3.0104336019576294e-06,
+          "absolute_error": 0.0,
+          "relative_error": 0.0,
+          "exact_equal": true,
+          "candidate_supported": true,
+          "reason": null
+        },
+        "scope": "supplied_matrix_only; no reconstructed_image_update_replay"
+      }
+    },
+    "classifier.3.weight": {
+      "mse": 1.818308607272562e-11,
+      "relative_l2": 0.6042095135126477,
+      "relative_l2_null_reason": null,
+      "max_abs_error": 2.029611641773954e-05,
+      "sender_raw_fit": {
+        "numel": 16777216,
+        "code_mismatch_count": 0,
+        "code_mismatch_fraction": 0.0,
+        "bounded_cell_violation_count": 0,
+        "bounded_cell_violation_fraction": 0.0,
+        "scale": {
+          "candidate_scale": 4.05922946811188e-05,
+          "observed_scale": 4.05922946811188e-05,
+          "absolute_error": 0.0,
+          "relative_error": 0.0,
+          "exact_equal": true,
+          "candidate_supported": true,
+          "reason": null
+        },
+        "scope": "supplied_matrix_only; no reconstructed_image_update_replay"
+      }
+    },
+    "classifier.3.bias": {
+      "mse": 2.8741512364952128e-12,
+      "relative_l2": 0.2258737431399707,
+      "relative_l2_null_reason": null,
+      "max_abs_error": 3.11434268951416e-06,
+      "sender_raw_fit": {
+        "numel": 4096,
+        "code_mismatch_count": 0,
+        "code_mismatch_fraction": 0.0,
+        "bounded_cell_violation_count": 0,
+        "bounded_cell_violation_fraction": 0.0,
+        "scale": {
+          "candidate_scale": 6.22868537902832e-06,
+          "observed_scale": 6.22868537902832e-06,
+          "absolute_error": 0.0,
+          "relative_error": 0.0,
+          "exact_equal": true,
+          "candidate_supported": true,
+          "reason": null
+        },
+        "scope": "supplied_matrix_only; no reconstructed_image_update_replay"
+      }
+    },
+    "classifier.6.weight": {
+      "mse": 4.399758529654029e-11,
+      "relative_l2": 0.3926047754370229,
+      "relative_l2_null_reason": null,
+      "max_abs_error": 0.00017044879496097565,
+      "sender_raw_fit": {
+        "numel": 4096000,
+        "code_mismatch_count": 0,
+        "code_mismatch_fraction": 0.0,
+        "bounded_cell_violation_count": 0,
+        "bounded_cell_violation_fraction": 0.0,
+        "scale": {
+          "candidate_scale": 0.000340950267855078,
+          "observed_scale": 0.000340950267855078,
+          "absolute_error": 0.0,
+          "relative_error": 0.0,
+          "exact_equal": true,
+          "candidate_supported": true,
+          "reason": null
+        },
+        "scope": "supplied_matrix_only; no reconstructed_image_update_replay"
+      }
+    },
+    "classifier.6.bias": {
+      "mse": 2.7672104727218342e-11,
+      "relative_l2": 0.16671777111712552,
+      "relative_l2_null_reason": null,
+      "max_abs_error": 3.6032870411872864e-05,
+      "sender_raw_fit": {
+        "numel": 1000,
+        "code_mismatch_count": 0,
+        "code_mismatch_fraction": 0.0,
+        "bounded_cell_violation_count": 0,
+        "bounded_cell_violation_fraction": 0.0,
+        "scale": {
+          "candidate_scale": 7.289834320545197e-05,
+          "observed_scale": 7.289834320545197e-05,
+          "absolute_error": 0.0,
+          "relative_error": 0.0,
+          "exact_equal": true,
+          "candidate_supported": true,
+          "reason": null
+        },
+        "scope": "supplied_matrix_only; no reconstructed_image_update_replay"
+      }
+    }
+  },
+  "lpips_provenance": {
+    "implementation": "torchmetrics.image.lpip.LearnedPerceptualImagePatchSimilarity",
+    "net_type": "vgg",
+    "normalize_argument": false,
+    "device": "cpu",
+    "dtype": "float32",
+    "versions": {
+      "torch": "2.13.0+cu132",
+      "torchvision": "0.28.0+cu132",
+      "torchmetrics": "1.9.0"
+    },
+    "input_normalization": "FP32 RGB [0,1] to [-1,1] using (pixels - 0.5) * 2",
+    "weights": {
+      "backbone": {
+        "path": "C:\\Users\\\uc870\uc0c1\uc81c\\.cache\\torch\\hub\\checkpoints\\vgg16-397923af.pth",
+        "sha256": "397923af8e79cdbb6a7127f12361acd7a2f83e06b05044ddf496e83de57a5bf0"
+      },
+      "calibration": {
+        "path": "C:\\miniconda\\envs\\DLG\\Lib\\site-packages\\torchmetrics\\functional\\image\\lpips_models\\vgg.pth",
+        "sha256": "a78928a0af1e5f0fcb1f3b9e8f8c3a2a5a3de244d830ad5c1feddc79b8432868"
+      }
+    },
+    "downloads_allowed": false
+  },
+  "truth_sha256": "724bbacbe316cc28dac086db9cfaf6507f4c1af31144fd610cc480985aab72e2",
+  "communication": {
+    "code_bytes": 61821428,
+    "header_bytes_excluding_scale": 96,
+    "manifest_bytes": 6139,
+    "packet_file_bytes": 61821548,
+    "scale_bytes": 24,
+    "total_file_bytes": 61827687
+  },
+  "wall_seconds": 15.524758199986536,
+  "batch_count": 1,
+  "seed": 42,
+  "success_threshold": null,
+  "generalization": "NOT_ESTABLISHED_SINGLE_BATCH_SINGLE_SEED",
+  "candidate_hashes_unchanged": true,
+  "fia_initializations_equal": true
+}

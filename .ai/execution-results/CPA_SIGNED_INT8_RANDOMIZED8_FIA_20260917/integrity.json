@@ -1,0 +1,9 @@
+{
+  "task_id": "CPA_SIGNED_INT8_RANDOMIZED8_FIA_20260917",
+  "status": "PARTIAL",
+  "artifacts": {
+    "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int8_randomized8_fia_B16_T10_20260917/registration.json": "2ee12c1284c36aa08f912055a156c20c3c398224a09d908464ae6cbf610cb85a"
+  },
+  "raw_input_sha256": "ef9aefc66ab9fcfd0b023fdfc064dbadc27567bd3ef3508bc14ebda9af28ba4c",
+  "checkpoint_sha256": "397923af8e79cdbb6a7127f12361acd7a2f83e06b05044ddf496e83de57a5bf0"
+}

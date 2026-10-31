@@ -1,0 +1,26 @@
+{
+  "task_id": "CORA_ENABLE_NEGENTROPY_20261006",
+  "status": "COMPLETED",
+  "session_role": "CODEX_EXECUTOR",
+  "user_authorization": "걍 negentropy 켜줘 너가; preceding clarification: CoRA 말한거임",
+  "scope": "Restore the existing upstream negentropy contrast for CoRA only and run small CPU regression checks.",
+  "scientific_change": "Negentropy enabled when ne > 0; preserve the upstream contrast and all other model, data, whitening, prior and optimizer settings.",
+  "research_experiments_launched": false,
+  "global_model_settings_changed": false,
+  "existing_results_changed": false,
+  "original_cpa_source_changed": false,
+  "validation": {
+    "pytest": "6 passed in 2.94s",
+    "syntax": "7 changed Python files parsed successfully"
+  },
+  "changed_source_sha256": {
+    "sparsified_update_cpa\\cora_ica.py": "3b0fafa55043c8188134a509c6fdf953c5f05d926de7c6fbfa336b115250d2ad",
+    "sparsified_update_cpa\\author_runner.py": "10fd6b004f0141127648445dfaea76a9cc4c0c32630cfbf1ef7710fe51af4f9d",
+    "sparsified_update_cpa\\tests\\test_cora_negentropy.py": "92e92b6371a2982ebb1e6aece830c5d36bc8df8ca46634e2b00a9b6e45b6f109",
+    "cora_sparse_update_cpa\\run_cora_sparse_cpa.py": "d96463890179c6ac695e8d57f9311074ac752f3277927a0f045be31793239790",
+    "cora_single_client_update_cpa\\run_cora_single_client_cpa.py": "4685ce4759d6a6160b142c9cea6319b52d10a737313c2ebbb405e8990e1fae21",
+    "cora_round_update_cpa\\run_cora_round_update_cpa.py": "84fcf8bed39e154625f0a38887bfaf64564a162e8d755d7298c5614cf848902c",
+    "cora_fedavg_single_client_cpa\\CoRA_sparsification.py": "62b17d991a96dd5828a0f54d6a8e989f1d0cbf6f0b17c24eccaf9f66d61535af"
+  },
+  "preserved_official_gradient_inversion_sha256": "c598e1ee7b4079f741060d10c8dfd14711e393a97384c63cf32be77a458b1873"
+}

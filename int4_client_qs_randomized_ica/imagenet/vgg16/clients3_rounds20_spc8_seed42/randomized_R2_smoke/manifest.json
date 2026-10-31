@@ -1,0 +1,29 @@
+{
+  "R": 2,
+  "alignment": "blind medoid permutation/sign/least-squares-scale alignment",
+  "branch": "randomized",
+  "dequantization": "uniform inside exact bounded quantization bins per client, then FedAvg",
+  "fastica_random_state": 42,
+  "global_sign": "blind positive-energy rule after medoid average",
+  "noise_seed": 1234,
+  "q_s_codes_sha256": "7097c9f91472094f0aa90df3f173c54c83c984bf4f1290c46f5a59b1ccabfa01",
+  "q_s_meta_sha256": "2367b38e3f25741a14549322e0bbcd8bff99293da5180f8ff4209512d2624ab1",
+  "schema_version": 1,
+  "seed_plan": [
+    {
+      "dequantization_seed": 1234,
+      "fastica_random_state": 42,
+      "trial": 0,
+      "trial_varying_randomness": "dequantization_noise_only"
+    },
+    {
+      "dequantization_seed": 1001237,
+      "fastica_random_state": 42,
+      "trial": 1,
+      "trial_varying_randomness": "dequantization_noise_only"
+    }
+  ],
+  "smoke": true,
+  "source": "same final-round client q,s artifact",
+  "true_z_policy": "not used for recovery, alignment, or final embedding generation; final eval only"
+}

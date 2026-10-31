@@ -1,0 +1,81 @@
+method,label,global_index,batch_index,source_index,lpips,recomputed_lpips,method_dir,local_index,source_kind
+fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),0,0,0,0.5116771459579468,0.5116773247718811,C:\Users\조상제\Desktop\CPA\quantization_aware_cpa\results\v5_m3_fia_4bit\fp32,0,CPA
+fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),1,0,1,0.4099198579788208,0.4099200963973999,C:\Users\조상제\Desktop\CPA\quantization_aware_cpa\results\v5_m3_fia_4bit\fp32,1,CPA
+fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),2,0,2,0.46397653222084045,0.4639762043952942,C:\Users\조상제\Desktop\CPA\quantization_aware_cpa\results\v5_m3_fia_4bit\fp32,2,CPA
+fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),3,0,3,0.5127305388450623,0.5127299427986145,C:\Users\조상제\Desktop\CPA\quantization_aware_cpa\results\v5_m3_fia_4bit\fp32,3,CPA
+fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),4,0,4,0.3980673849582672,0.39806729555130005,C:\Users\조상제\Desktop\CPA\quantization_aware_cpa\results\v5_m3_fia_4bit\fp32,4,CPA
+fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),5,0,5,0.445438951253891,0.445438951253891,C:\Users\조상제\Desktop\CPA\quantization_aware_cpa\results\v5_m3_fia_4bit\fp32,5,CPA
+fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),6,0,6,0.4684273898601532,0.4684271216392517,C:\Users\조상제\Desktop\CPA\quantization_aware_cpa\results\v5_m3_fia_4bit\fp32,6,CPA
+fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),7,0,7,0.5361782908439636,0.5361783504486084,C:\Users\조상제\Desktop\CPA\quantization_aware_cpa\results\v5_m3_fia_4bit\fp32,7,CPA
+fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),8,1,0,0.4863467216491699,0.4863468408584595,C:\Users\조상제\Desktop\CPA\quantization_aware_cpa\results\v5_m3_fia_4bit\fp32,8,CPA
+fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),9,1,1,0.3981913626194,0.3981916010379791,C:\Users\조상제\Desktop\CPA\quantization_aware_cpa\results\v5_m3_fia_4bit\fp32,9,CPA
+fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),10,1,2,0.429305762052536,0.4293060302734375,C:\Users\조상제\Desktop\CPA\quantization_aware_cpa\results\v5_m3_fia_4bit\fp32,10,CPA
+fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),11,1,3,0.3599189519882202,0.35991907119750977,C:\Users\조상제\Desktop\CPA\quantization_aware_cpa\results\v5_m3_fia_4bit\fp32,11,CPA
+fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),12,1,4,0.4247412085533142,0.4247409701347351,C:\Users\조상제\Desktop\CPA\quantization_aware_cpa\results\v5_m3_fia_4bit\fp32,12,CPA
+fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),13,1,5,0.4007197916507721,0.4007202088832855,C:\Users\조상제\Desktop\CPA\quantization_aware_cpa\results\v5_m3_fia_4bit\fp32,13,CPA
+fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),14,1,6,0.438009113073349,0.4380089342594147,C:\Users\조상제\Desktop\CPA\quantization_aware_cpa\results\v5_m3_fia_4bit\fp32,14,CPA
+fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),15,1,7,0.4324680268764496,0.4324682950973511,C:\Users\조상제\Desktop\CPA\quantization_aware_cpa\results\v5_m3_fia_4bit\fp32,15,CPA
+fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),16,2,0,0.46044203639030457,0.4604424834251404,C:\Users\조상제\Desktop\CPA\quantization_aware_cpa\results\v6_m3_fia_4bit_batch2\fp32,0,CPA
+fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),17,2,1,0.4045408368110657,0.4045403003692627,C:\Users\조상제\Desktop\CPA\quantization_aware_cpa\results\v6_m3_fia_4bit_batch2\fp32,1,CPA
+fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),18,2,2,0.3706204891204834,0.3706207871437073,C:\Users\조상제\Desktop\CPA\quantization_aware_cpa\results\v6_m3_fia_4bit_batch2\fp32,2,CPA
+fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),19,2,3,0.44051191210746765,0.4405117332935333,C:\Users\조상제\Desktop\CPA\quantization_aware_cpa\results\v6_m3_fia_4bit_batch2\fp32,3,CPA
+fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),20,2,4,0.47742959856987,0.47742959856987,C:\Users\조상제\Desktop\CPA\quantization_aware_cpa\results\v6_m3_fia_4bit_batch2\fp32,4,CPA
+fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),21,2,5,0.4389203190803528,0.4389204680919647,C:\Users\조상제\Desktop\CPA\quantization_aware_cpa\results\v6_m3_fia_4bit_batch2\fp32,5,CPA
+fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),22,2,6,0.4676448702812195,0.46764522790908813,C:\Users\조상제\Desktop\CPA\quantization_aware_cpa\results\v7_m3_fp32_truth_missing\fp32,0,exact_source
+fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),23,2,7,0.4013410806655884,0.40134114027023315,C:\Users\조상제\Desktop\CPA\quantization_aware_cpa\results\v6_m3_fia_4bit_batch2\fp32,6,CPA
+fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),24,3,0,0.4381074011325836,0.4381067156791687,C:\Users\조상제\Desktop\CPA\quantization_aware_cpa\results\v7_m3_fp32_truth_missing\fp32,1,exact_source
+fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),25,3,1,0.44471198320388794,0.44471225142478943,C:\Users\조상제\Desktop\CPA\quantization_aware_cpa\results\v6_m3_fia_4bit_batch3\fp32,0,CPA
+fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),26,3,2,0.3987732231616974,0.3987728953361511,C:\Users\조상제\Desktop\CPA\quantization_aware_cpa\results\v6_m3_fia_4bit_batch3\fp32,1,CPA
+fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),27,3,3,0.3628518283367157,0.36285197734832764,C:\Users\조상제\Desktop\CPA\quantization_aware_cpa\results\v6_m3_fia_4bit_batch3\fp32,2,CPA
+fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),28,3,4,0.506858229637146,0.5068576335906982,C:\Users\조상제\Desktop\CPA\quantization_aware_cpa\results\v6_m3_fia_4bit_batch3\fp32,3,CPA
+fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),29,3,5,0.4757113754749298,0.47571203112602234,C:\Users\조상제\Desktop\CPA\quantization_aware_cpa\results\v6_m3_fia_4bit_batch3\fp32,4,CPA
+fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),30,3,6,0.41641169786453247,0.41641172766685486,C:\Users\조상제\Desktop\CPA\quantization_aware_cpa\results\v6_m3_fia_4bit_batch3\fp32,5,CPA
+fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),31,3,7,0.4521303176879883,0.4521302282810211,C:\Users\조상제\Desktop\CPA\quantization_aware_cpa\results\v6_m3_fia_4bit_batch3\fp32,6,CPA
+fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),32,4,0,0.4073249101638794,0.40732550621032715,C:\Users\조상제\Desktop\CPA\quantization_aware_cpa\results\v7_m3_fp32_truth_missing\fp32,2,exact_source
+fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),33,4,1,0.47384005784988403,0.4738408327102661,C:\Users\조상제\Desktop\CPA\quantization_aware_cpa\results\v6_m3_fia_4bit_batch4\fp32,0,CPA
+fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),34,4,2,0.5564835071563721,0.556482195854187,C:\Users\조상제\Desktop\CPA\quantization_aware_cpa\results\v6_m3_fia_4bit_batch4\fp32,1,CPA
+fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),35,4,3,0.39208945631980896,0.3920891582965851,C:\Users\조상제\Desktop\CPA\quantization_aware_cpa\results\v6_m3_fia_4bit_batch4\fp32,2,CPA
+fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),36,4,4,0.40651893615722656,0.4065187871456146,C:\Users\조상제\Desktop\CPA\quantization_aware_cpa\results\v7_m3_fp32_truth_missing\fp32,3,exact_source
+fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),37,4,5,0.5096952319145203,0.5096959471702576,C:\Users\조상제\Desktop\CPA\quantization_aware_cpa\results\v6_m3_fia_4bit_batch4\fp32,3,CPA
+fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),38,4,6,0.49874264001846313,0.4987425208091736,C:\Users\조상제\Desktop\CPA\quantization_aware_cpa\results\v6_m3_fia_4bit_batch4\fp32,4,CPA
+fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),39,4,7,0.47480329871177673,0.4748036563396454,C:\Users\조상제\Desktop\CPA\quantization_aware_cpa\results\v6_m3_fia_4bit_batch4\fp32,5,CPA
+four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,0,0,0,0.7518289089202881,0.7518261075019836,C:\Users\조상제\Desktop\CPA\quantization_aware_cpa\results\v5_m3_fia_4bit\naive,0,CPA
+four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,1,0,1,0.4161328673362732,0.4161335229873657,C:\Users\조상제\Desktop\CPA\quantization_aware_cpa\results\v5_m3_fia_4bit\naive,1,CPA
+four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,2,0,2,0.48707425594329834,0.48707473278045654,C:\Users\조상제\Desktop\CPA\quantization_aware_cpa\results\v5_m3_fia_4bit\naive,2,CPA
+four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,3,0,3,0.5285910964012146,0.5285906195640564,C:\Users\조상제\Desktop\CPA\quantization_aware_cpa\results\v5_m3_fia_4bit\naive,3,CPA
+four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,4,0,4,0.8021260499954224,0.8021251559257507,C:\Users\조상제\Desktop\CPA\quantization_aware_cpa\results\v5_m3_fia_4bit\naive,4,CPA
+four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,5,0,5,0.42623382806777954,0.4262336492538452,C:\Users\조상제\Desktop\CPA\quantization_aware_cpa\results\v5_m3_fia_4bit\naive,5,CPA
+four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,6,0,6,0.4715278744697571,0.47152742743492126,C:\Users\조상제\Desktop\CPA\quantization_aware_cpa\results\v5_m3_fia_4bit\naive,6,CPA
+four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,7,0,7,0.5253833532333374,0.5253830552101135,C:\Users\조상제\Desktop\CPA\quantization_aware_cpa\results\v5_m3_fia_4bit\naive,7,CPA
+four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,8,1,0,0.8667491674423218,0.866749107837677,C:\Users\조상제\Desktop\CPA\quantization_aware_cpa\results\v5_m3_fia_4bit\naive,8,CPA
+four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,9,1,1,0.4036652147769928,0.4036654233932495,C:\Users\조상제\Desktop\CPA\quantization_aware_cpa\results\v5_m3_fia_4bit\naive,9,CPA
+four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,10,1,2,0.4340680241584778,0.43406811356544495,C:\Users\조상제\Desktop\CPA\quantization_aware_cpa\results\v5_m3_fia_4bit\naive,10,CPA
+four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,11,1,3,0.8045890927314758,0.8045886754989624,C:\Users\조상제\Desktop\CPA\quantization_aware_cpa\results\v5_m3_fia_4bit\naive,11,CPA
+four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,12,1,4,0.44343286752700806,0.4434332549571991,C:\Users\조상제\Desktop\CPA\quantization_aware_cpa\results\v5_m3_fia_4bit\naive,12,CPA
+four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,13,1,5,0.4154636561870575,0.415463387966156,C:\Users\조상제\Desktop\CPA\quantization_aware_cpa\results\v5_m3_fia_4bit\naive,13,CPA
+four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,14,1,6,0.4513973593711853,0.45139724016189575,C:\Users\조상제\Desktop\CPA\quantization_aware_cpa\results\v5_m3_fia_4bit\naive,14,CPA
+four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,15,1,7,0.44849851727485657,0.448498398065567,C:\Users\조상제\Desktop\CPA\quantization_aware_cpa\results\v5_m3_fia_4bit\naive,15,CPA
+four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,16,2,0,0.44946396350860596,0.44946420192718506,C:\Users\조상제\Desktop\CPA\quantization_aware_cpa\results\v6_m3_fia_4bit_batch2\naive,0,CPA
+four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,17,2,1,0.7604323625564575,0.7604337334632874,C:\Users\조상제\Desktop\CPA\quantization_aware_cpa\results\v6_m3_fia_4bit_batch2\naive,1,CPA
+four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,18,2,2,0.37576788663864136,0.3757677376270294,C:\Users\조상제\Desktop\CPA\quantization_aware_cpa\results\v6_m3_fia_4bit_batch2\naive,2,CPA
+four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,19,2,3,0.4469465911388397,0.44694647192955017,C:\Users\조상제\Desktop\CPA\quantization_aware_cpa\results\v6_m3_fia_4bit_batch2\naive,3,CPA
+four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,20,2,4,0.48288655281066895,0.48288628458976746,C:\Users\조상제\Desktop\CPA\quantization_aware_cpa\results\v6_m3_fia_4bit_batch2\naive,4,CPA
+four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,21,2,5,0.4621732831001282,0.46217331290245056,C:\Users\조상제\Desktop\CPA\quantization_aware_cpa\results\v6_m3_fia_4bit_batch2\naive,5,CPA
+four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,22,2,6,0.7648465633392334,0.7648463249206543,C:\Users\조상제\Desktop\CPA\quantization_aware_cpa\results\v6_m3_fia_4bit_batch2\naive,6,CPA
+four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,23,2,7,0.3995872735977173,0.3995875120162964,C:\Users\조상제\Desktop\CPA\quantization_aware_cpa\results\v6_m3_fia_4bit_batch2\naive,7,CPA
+four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,24,3,0,0.8117092251777649,0.811707615852356,C:\Users\조상제\Desktop\CPA\quantization_aware_cpa\results\v6_m3_fia_4bit_batch3\naive,0,CPA
+four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,25,3,1,0.44955286383628845,0.4495527148246765,C:\Users\조상제\Desktop\CPA\quantization_aware_cpa\results\v6_m3_fia_4bit_batch3\naive,1,CPA
+four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,26,3,2,0.39737367630004883,0.39737382531166077,C:\Users\조상제\Desktop\CPA\quantization_aware_cpa\results\v6_m3_fia_4bit_batch3\naive,2,CPA
+four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,27,3,3,0.35182279348373413,0.35182297229766846,C:\Users\조상제\Desktop\CPA\quantization_aware_cpa\results\v6_m3_fia_4bit_batch3\naive,3,CPA
+four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,28,3,4,0.5053824186325073,0.5053821802139282,C:\Users\조상제\Desktop\CPA\quantization_aware_cpa\results\v6_m3_fia_4bit_batch3\naive,4,CPA
+four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,29,3,5,0.47118866443634033,0.47118887305259705,C:\Users\조상제\Desktop\CPA\quantization_aware_cpa\results\v6_m3_fia_4bit_batch3\naive,5,CPA
+four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,30,3,6,0.4123312830924988,0.4123305082321167,C:\Users\조상제\Desktop\CPA\quantization_aware_cpa\results\v6_m3_fia_4bit_batch3\naive,6,CPA
+four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,31,3,7,0.7712681293487549,0.7712677717208862,C:\Users\조상제\Desktop\CPA\quantization_aware_cpa\results\v6_m3_fia_4bit_batch3\naive,7,CPA
+four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,32,4,0,0.7469152212142944,0.7469163537025452,C:\Users\조상제\Desktop\CPA\quantization_aware_cpa\results\v6_m3_fia_4bit_batch4\naive,0,CPA
+four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,33,4,1,0.7466493844985962,0.7466477155685425,C:\Users\조상제\Desktop\CPA\quantization_aware_cpa\results\v6_m3_fia_4bit_batch4\naive,1,CPA
+four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,34,4,2,0.5528295040130615,0.5528298616409302,C:\Users\조상제\Desktop\CPA\quantization_aware_cpa\results\v6_m3_fia_4bit_batch4\naive,2,CPA
+four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,35,4,3,0.41138261556625366,0.4113820493221283,C:\Users\조상제\Desktop\CPA\quantization_aware_cpa\results\v6_m3_fia_4bit_batch4\naive,3,CPA
+four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,36,4,4,0.7973436117172241,0.7973428964614868,C:\Users\조상제\Desktop\CPA\quantization_aware_cpa\results\v6_m3_fia_4bit_batch4\naive,4,CPA
+four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,37,4,5,0.5153810381889343,0.5153806209564209,C:\Users\조상제\Desktop\CPA\quantization_aware_cpa\results\v6_m3_fia_4bit_batch4\naive,5,CPA
+four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,38,4,6,0.5036472678184509,0.503646969795227,C:\Users\조상제\Desktop\CPA\quantization_aware_cpa\results\v6_m3_fia_4bit_batch4\naive,6,CPA
+four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,39,4,7,0.4939696490764618,0.49396950006484985,C:\Users\조상제\Desktop\CPA\quantization_aware_cpa\results\v6_m3_fia_4bit_batch4\naive,7,CPA

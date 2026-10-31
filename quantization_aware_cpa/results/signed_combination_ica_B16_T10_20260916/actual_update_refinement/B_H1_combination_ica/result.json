@@ -1,0 +1,22 @@
+{
+  "status": "COMPLETED",
+  "arm": "B_H1_combination_ica",
+  "optimized_label_hypothesis": "H1",
+  "lambda_cell": 0.24202997768915402,
+  "iterations": 100,
+  "optimization_seconds": 132.0574921000516,
+  "peak_cuda_allocated_bytes": 3965342208,
+  "peak_cuda_reserved_bytes": 4286578688,
+  "final_metrics": {
+    "feature_target_cosine_loss": 0.31928735971450806,
+    "tv_normalized": 0.09770317375659943,
+    "feature_norm_mean": 91.98310852050781,
+    "feature_norm_min": 64.88131713867188,
+    "feature_norm_max": 115.97038269042969,
+    "pixel_min": 0.0873253270983696,
+    "pixel_max": 0.9032450318336487,
+    "pixel_mean": 0.4395950734615326,
+    "x0_displacement_l2": 11.010910987854004
+  },
+  "candidate_sha256": "01c3b2b9289c055feb9c1a0bf496855fb7232a0bf406ba05bd161e679535d708"
+}

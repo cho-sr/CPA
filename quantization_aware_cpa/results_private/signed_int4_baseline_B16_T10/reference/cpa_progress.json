@@ -1,0 +1,16 @@
+{
+  "completed_this_process": 25000,
+  "total": 25000,
+  "elapsed_seconds_including_setup": 41.524521699990146,
+  "iterations_per_second": 602.0538943379553,
+  "estimated_remaining_seconds": 0.0,
+  "losses": {
+    "loss": 733.0448608398438,
+    "loss_ne": 0.0,
+    "loss_decor": 138.05560302734375,
+    "loss_tv": 0.0,
+    "loss_nv": 1.0573136806488037,
+    "loss_l1": 0.24254105985164642
+  },
+  "time_utc": "2026-09-14T08:57:11.187053+00:00"
+}

@@ -1,0 +1,25 @@
+{
+  "final_q": {
+    "bin_satisfaction": 0.8556605577468872,
+    "loss_q": 3.7513252920673423e-11,
+    "matched_elements": 87866788.0,
+    "mean_bin_violation": 1.126724328059936e-06,
+    "requantization_match": 0.8550642132759094,
+    "total_q_elements": 102760448.0
+  },
+  "last_logged": null,
+  "lpips_error": null,
+  "lpips_max": null,
+  "lpips_mean": null,
+  "lpips_min": null,
+  "mse_max": 2.0520312786102295,
+  "mse_mean": 1.4961065649986267,
+  "mse_min": 1.0473458766937256,
+  "psnr_max": -0.2009013444185257,
+  "psnr_mean": -1.6566109526902437,
+  "psnr_min": -3.121839761734009,
+  "ssim_error": null,
+  "ssim_max": null,
+  "ssim_mean": null,
+  "ssim_min": null
+}

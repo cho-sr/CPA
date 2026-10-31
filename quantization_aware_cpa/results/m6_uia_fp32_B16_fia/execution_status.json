@@ -1,0 +1,8 @@
+{
+  "run_tag": "m6_uia_fp32_B16_fia",
+  "pid": 2076,
+  "updated_at_utc": "2026-09-09T03:21:04.604618+00:00",
+  "state": "complete",
+  "report_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m6_uia_fp32_B16_fia\\report.md",
+  "protocol_sha256": "deaf2865732e28d02351b40cd1920f3561b1ea7088805fa00b6c3030fec3ff4e"
+}

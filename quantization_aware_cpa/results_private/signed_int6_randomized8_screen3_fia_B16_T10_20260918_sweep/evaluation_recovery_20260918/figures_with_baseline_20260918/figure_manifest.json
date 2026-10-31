@@ -1,0 +1,110 @@
+{
+  "task_id": "CPA_SCREEN3_BASELINE_FIGURE_REPAIR_20260918",
+  "status": "COMPLETED",
+  "bits": 6,
+  "evaluation_directory": "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results_private/signed_int6_randomized8_screen3_fia_B16_T10_20260918_sweep/evaluation_recovery_20260918",
+  "comparison_json": "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results_private/signed_int6_randomized8_screen3_fia_B16_T10_20260918_sweep/evaluation_recovery_20260918/comparison.json",
+  "comparison_sha256": "9d44ec6a1eaefefc16151c5463bf365ed72575ab7ff7953e0cbde2ab10fb4b0d",
+  "public_roots": [
+    "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int6_randomized8_screen3_fia_B16_T10_20260918_sweep"
+  ],
+  "public_gate_status": "PUBLIC_GATE_PASSED",
+  "private_truth": {
+    "path": "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results_private/signed_int4_baseline_B16_T10/observation/evaluation_truth.pt",
+    "sha256": "724bbacbe316cc28dac086db9cfaf6507f4c1af31144fd610cc480985aab72e2",
+    "bundle_keys_present": [
+      "labels",
+      "x",
+      "z"
+    ],
+    "consumed_field": "x only",
+    "labels_consumed": false,
+    "true_updates_consumed": false
+  },
+  "selection": [
+    1,
+    3,
+    4
+  ],
+  "column_contract": {
+    "final": [
+      "Ground truth",
+      "Naive dequantization baseline | 6-bit | center | 25000 steps",
+      "Public rank 1 | member 01 | 6-bit | 25000 steps",
+      "Public rank 2 | member 03 | 6-bit | 25000 steps",
+      "Public rank 3 | member 04 | 6-bit | 25000 steps"
+    ],
+    "screen": [
+      "Ground truth",
+      "Naive dequantization baseline | 6-bit | center | 5000 steps",
+      "member 00 | 6-bit | 5000 steps",
+      "member 01 | 6-bit | 5000 steps",
+      "member 02 | 6-bit | 5000 steps",
+      "member 03 | 6-bit | 5000 steps",
+      "member 04 | 6-bit | 5000 steps",
+      "member 05 | 6-bit | 5000 steps",
+      "member 06 | 6-bit | 5000 steps",
+      "member 07 | 6-bit | 5000 steps"
+    ]
+  },
+  "metric_source": "comparison.json mean_metrics and image_metrics.per_image",
+  "matching_recomputed": false,
+  "metrics_recomputed": false,
+  "optimizer_steps": 0,
+  "figures": {
+    "final": {
+      "path": "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results_private/signed_int6_randomized8_screen3_fia_B16_T10_20260918_sweep/evaluation_recovery_20260918/figures_with_baseline_20260918/contact_sheet_b6_25000_with_baseline.png",
+      "sha256": "02e5d898ccd89d741e7e775cc204b29a520604474ab61c9e849d1d62237e0c54",
+      "columns": [
+        "Ground truth",
+        "Naive dequantization baseline | 6-bit | center | 25000 steps",
+        "Public rank 1 | member 01 | 6-bit | 25000 steps",
+        "Public rank 2 | member 03 | 6-bit | 25000 steps",
+        "Public rank 3 | member 04 | 6-bit | 25000 steps"
+      ],
+      "column_count": 5,
+      "rows": 16,
+      "candidate_names": [
+        "center_25000",
+        "rank1_member_01_25000",
+        "rank2_member_03_25000",
+        "rank3_member_04_25000"
+      ],
+      "correspondence_reused": true,
+      "metrics_recomputed": false
+    },
+    "screen": {
+      "path": "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results_private/signed_int6_randomized8_screen3_fia_B16_T10_20260918_sweep/evaluation_recovery_20260918/figures_with_baseline_20260918/contact_sheet_b6_5000_with_baseline.png",
+      "sha256": "afc5736b1863fb4adbadfd5e8391a5b7bfa29f86af60364e9504118b012ceb81",
+      "columns": [
+        "Ground truth",
+        "Naive dequantization baseline | 6-bit | center | 5000 steps",
+        "member 00 | 6-bit | 5000 steps",
+        "member 01 | 6-bit | 5000 steps",
+        "member 02 | 6-bit | 5000 steps",
+        "member 03 | 6-bit | 5000 steps",
+        "member 04 | 6-bit | 5000 steps",
+        "member 05 | 6-bit | 5000 steps",
+        "member 06 | 6-bit | 5000 steps",
+        "member 07 | 6-bit | 5000 steps"
+      ],
+      "column_count": 10,
+      "rows": 16,
+      "candidate_names": [
+        "center_5000",
+        "member_00_5000",
+        "member_01_5000",
+        "member_02_5000",
+        "member_03_5000",
+        "member_04_5000",
+        "member_05_5000",
+        "member_06_5000",
+        "member_07_5000"
+      ],
+      "correspondence_reused": true,
+      "metrics_recomputed": false
+    }
+  },
+  "old_figures_preserved": true,
+  "scientific_quality": "REPORTING_ONLY"
+}

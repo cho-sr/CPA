@@ -1,0 +1,146 @@
+{
+  "run_tag": "m7_fedavg_heterogeneity",
+  "source_run": "m7_uia_4bit_B16",
+  "analysis_type": "post_hoc_descriptive_cpu_only",
+  "input_fingerprints": {
+    "m7_uia_4bit_B16\\per_image_metrics.csv": "02aa55e6c81fb2c0799db511585c72ce536df7a1f7f2ef80c95a2154da7b5011",
+    "m6_uia_fp32_B16_fia\\per_image_metrics.csv": "72dafc60ccb29acca4568bc0da7b77d48574ecafece7fe51898b173822c2f2ef",
+    "batch00/B_cumulative": "3431c7438430728242b884b0d0d99f5f48b3ce4559f1e66b29978c64559f42bc",
+    "batch00/Z_evaluation_only": "6ab4421fb4c3740cbe8fe0d53f4e317dfe9af70f1cb6b7419761decbe31e9db8",
+    "batch01/B_cumulative": "c93a3656f9f5f2f3c90270b19cdc0eda06a3ea41483936c0160740e17f4087a8",
+    "batch01/Z_evaluation_only": "30fbd691e784665868a7311d2e521f1caa703311056dbff1b87b4874438463cd",
+    "batch02/B_cumulative": "538e0ff20ddda09b4fefe1237556cbad11391619830c90e62f2136f9ad5815b7",
+    "batch02/Z_evaluation_only": "93e7652748f1de0c3d8ce8acd9230ec3ed48a24d8eeba4be2433b18a577de4b9",
+    "batch03/B_cumulative": "9c13568ea7e2f5c900fbc1e90b2ce0a8328cf6de56e3544105b7c8823f4a71d9",
+    "batch03/Z_evaluation_only": "f73c8a752a086890484380ee515fbcd7e8c0023d3e070ec95dcb2c3624c26d58",
+    "batch04/B_cumulative": "776f7fc0f676553d8b7074920a884757e2814ad2ac2c15bae058cf6b122521b5",
+    "batch04/Z_evaluation_only": "536580874d3b26c77b9419776402698a6b83a3a8534541ed632ad53c05036b5f"
+  },
+  "groups": {
+    "embedding_cos_gt_09": {
+      "n": 53,
+      "lpips_4bit": {
+        "mean": 0.46027713957822547,
+        "median": 0.4634645879268646
+      },
+      "lpips_fp32": {
+        "mean": 0.44938298103944313,
+        "median": 0.4523718059062958
+      },
+      "lpips_delta": {
+        "mean": 0.010894158538782372,
+        "median": 0.008822143077850342
+      },
+      "b_norm": {
+        "mean": 0.06799415893458684,
+        "median": 0.04090117513398791
+      },
+      "component_frobenius_norm": {
+        "mean": 12.809514465718124,
+        "median": 10.22099507736226
+      },
+      "initial_loss": {
+        "mean": 1.1758414764871012,
+        "median": 0.6740284562110901
+      },
+      "final_loss": {
+        "mean": 0.34530545936299945,
+        "median": 0.17363053560256958
+      }
+    },
+    "embedding_cos_le_09": {
+      "n": 27,
+      "lpips_4bit": {
+        "mean": 0.7515553655447783,
+        "median": 0.7585098147392273
+      },
+      "lpips_fp32": {
+        "mean": 0.4648327076876605,
+        "median": 0.4549541473388672
+      },
+      "lpips_delta": {
+        "mean": 0.2867226578571178,
+        "median": 0.30931296944618225
+      },
+      "b_norm": {
+        "mean": 0.0017398851153966198,
+        "median": 0.00041611288447406344
+      },
+      "component_frobenius_norm": {
+        "mean": 0.3453855910271217,
+        "median": 0.08780073373746447
+      },
+      "initial_loss": {
+        "mean": 0.011269513758594274,
+        "median": 0.001989767886698246
+      },
+      "final_loss": {
+        "mean": 0.009711716155693382,
+        "median": 0.001962641952559352
+      }
+    }
+  },
+  "correlations": {
+    "initial_loss:b_norm": {
+      "spearman": 0.9604781997187061,
+      "per_batch": [
+        0.9264705882352942,
+        0.976470588235294,
+        0.8852941176470588,
+        0.9647058823529412,
+        0.9647058823529412
+      ]
+    },
+    "b_norm:source_cosine_4bit": {
+      "spearman": 0.9208157524613222,
+      "per_batch": [
+        0.8617647058823529,
+        0.9029411764705882,
+        0.9735294117647059,
+        0.9235294117647058,
+        0.9441176470588234
+      ]
+    },
+    "b_norm:lpips_4bit": {
+      "spearman": -0.7297702766057196,
+      "per_batch": [
+        -0.488235294117647,
+        -0.8470588235294119,
+        -0.5647058823529412,
+        -0.7235294117647059,
+        -0.7852941176470588
+      ]
+    },
+    "component_frobenius_norm:lpips_4bit": {
+      "spearman": -0.758509142053446,
+      "per_batch": [
+        -0.5882352941176471,
+        -0.8705882352941177,
+        -0.5411764705882353,
+        -0.7617647058823529,
+        -0.823529411764706
+      ]
+    },
+    "initial_loss:lpips_4bit": {
+      "spearman": -0.7656821378340367,
+      "per_batch": [
+        -0.6235294117647059,
+        -0.8617647058823529,
+        -0.4588235294117647,
+        -0.8029411764705883,
+        -0.823529411764706
+      ]
+    }
+  },
+  "counts": {
+    "cos_gt_09": 53,
+    "cos_lt_01": 26,
+    "intermediate": [
+      50
+    ],
+    "fp32_high_to_4bit_low": 26
+  },
+  "no_cpa_control_used": false,
+  "image_success_threshold_used": false,
+  "limitations": "Outcome-conditioned summaries; not causal ablation. Five batches,80 images. B norms do not capture conditioning or source similarity. No new training/ICA/FIA or GPU work."
+}

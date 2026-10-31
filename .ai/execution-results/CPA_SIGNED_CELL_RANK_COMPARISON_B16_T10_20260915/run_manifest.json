@@ -1,0 +1,49 @@
+{
+  "task_id": "CPA_SIGNED_CELL_RANK_COMPARISON_B16_T10_20260915",
+  "plan_version": 1,
+  "pre_claim_snapshot_sha256": "d4f3e424a4ad290351ef8409bd0cd8592a001369c62d5a7c6f9d8cf866894b8a",
+  "created_utc": "2026-09-14T19:41:39.794392+00:00",
+  "runtime": {
+    "python": "C:/miniconda/envs/DLG/python.exe",
+    "model": "gpt-5.6-luna",
+    "reasoning_effort": "xhigh",
+    "executor_thread": "01a09e4d-51f3-7121-84e2-03a7a9ac3039",
+    "executor_pid": 18272
+  },
+  "commands": {
+    "preprocess": "C:/miniconda/envs/DLG/python.exe -m quantization_aware_cpa.qacpa.signed_cell_rank_runner preprocess --public-observation quantization_aware_cpa/results/signed_int4_baseline_B16_T10/observation --output quantization_aware_cpa/results/signed_cell_rank_B16_T10/preprocess_ap5 --ap-iterations 5 --projection-device cuda",
+    "attack": "C:/miniconda/envs/DLG/python.exe -m quantization_aware_cpa.qacpa.signed_cell_rank_runner attack --public-observation quantization_aware_cpa/results/signed_int4_baseline_B16_T10/observation --preprocessed quantization_aware_cpa/results/signed_cell_rank_B16_T10/preprocess_ap5 --checkpoint C:/Users/조상제/.cache/torch/hub/checkpoints/vgg16-397923af.pth --output quantization_aware_cpa/results/signed_cell_rank_B16_T10/cell_rank_ap5 --expected-ap-iterations 5",
+    "evaluation": "C:/miniconda/envs/DLG/python.exe -m quantization_aware_cpa.qacpa.signed_cell_rank_evaluation --naive quantization_aware_cpa/results/signed_int4_baseline_B16_T10/naive --cell-rank quantization_aware_cpa/results/signed_cell_rank_B16_T10/cell_rank_ap5 --public-observation quantization_aware_cpa/results/signed_int4_baseline_B16_T10/observation --private-observation quantization_aware_cpa/results_private/signed_int4_baseline_B16_T10/observation --output quantization_aware_cpa/results_private/signed_cell_rank_B16_T10/evaluation_ap5"
+  },
+  "outputs": {
+    "preprocess": "quantization_aware_cpa/results/signed_cell_rank_B16_T10/preprocess_ap5",
+    "attack": "quantization_aware_cpa/results/signed_cell_rank_B16_T10/cell_rank_ap5",
+    "evaluation": "quantization_aware_cpa/results_private/signed_cell_rank_B16_T10/evaluation_ap5"
+  },
+  "hashes": {
+    ".ai\\EXECUTION_HANDOFF.md": "4638c9c0795a69e1062158a000c0586164fdf59491ee1125673c1f013c1b0f79",
+    "quantization_aware_cpa\\qacpa\\signed_cell_rank.py": "7ae6deb49738914f4cd1f9328397400d89835ede4cd6a462b2ea260a77ae4acb",
+    "quantization_aware_cpa\\qacpa\\signed_cell_rank_runner.py": "e0d97a4266624f37cd9a184d1be9a733845461e07a148e8bcefb5cc9acc60a6b",
+    "quantization_aware_cpa\\qacpa\\signed_cell_rank_evaluation.py": "db719026ee65b4e1c808da9f6abbaef9bb29d17da5d35f5e36aa816cbb36e7b8",
+    "quantization_aware_cpa\\qacpa\\signed_baseline.py": "a2a6b3e3c7909fb15ab44d49839e6bb0759e44832e223d16f0f2c24e0e45e467",
+    "quantization_aware_cpa\\qacpa\\signed_baseline_observation.py": "2c18135e86e80c8f666033d5ea9d0c3495869ee60809fed04e295f28fa92cda2",
+    "quantization_aware_cpa\\qacpa\\upstream_naive.py": "8f29b885d86f4121eda5c55e17486a3a48bd8db08b2f83890fe7726730d1ee92",
+    "official_cpa\\src\\gradient_inversion.py": "c598e1ee7b4079f741060d10c8dfd14711e393a97384c63cf32be77a458b1873",
+    "official_cpa\\src\\feature_inversion.py": "dc73880427e3eaf1f873d295f17f1d48d301882f634ee5df36ddeea8e56c4dec",
+    "official_cpa\\src\\vgg16.py": "8114eca8cde553dace5f777aedd21b70851c570d473e597b005cb6be4b248d36",
+    "quantized_update_cpa\\quantization.py": "ae0f812c7de3de07cce3796c701475d6fc3e0a822f7d6dd8ab951d34201e3ceb",
+    "quantized_update_cpa\\cell_utils.py": "6725bce108a8e795680342231696c70f1d2bc8b01a727022c605e40aa841d361",
+    "quantized_update_cpa\\trial_metrics.py": "37368d41d5b5caac142949493ab7f501e7d5aecf9ed5e317c7112cc4c4ca1e50",
+    "quantization_aware_cpa\\results\\signed_int4_baseline_B16_T10\\observation\\manifest.json": "9b4891765e6fc7e4adb1e3e11c158b3d4a2c3430d3397e1f1466ddafe2e1cd69",
+    "C:\\Users\\조상제\\.cache\\torch\\hub\\checkpoints\\vgg16-397923af.pth": "397923af8e79cdbb6a7127f12361acd7a2f83e06b05044ddf496e83de57a5bf0"
+  },
+  "execution_plumbing": {
+    "wrapper_script": ".ai/execution-results/CPA_SIGNED_CELL_RANK_COMPARISON_B16_T10_20260915/run_comparison.py",
+    "wrapper_pid": 24828,
+    "wrapper_creation_utc_epoch_ms": 1789414973763,
+    "completion_callback": ".ai/completion_notify.py",
+    "completion_callback_pid": 5972,
+    "completion_callback_stage": "comparison",
+    "model_calls_while_waiting": 0
+  }
+}

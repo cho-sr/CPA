@@ -1,0 +1,17 @@
+{
+  "task_id": "CPA_SIGNED_BITS7654_SCREEN3_20260918",
+  "wrapper_pid": 26424,
+  "process_created_ms": 1789668364080,
+  "started_at_epoch": 1789668364.3348358,
+  "wrapper": "C:/Users/\uc870\uc0c1\uc81c/Desktop/CPA/.ai/execution-results/CPA_SIGNED_BITS7654_SCREEN3_20260918/run_bits.py",
+  "launch_mode": "hidden_persistent_detached",
+  "private_data_loaded_at_launch": false,
+  "bits": [
+    7,
+    6,
+    5,
+    4
+  ],
+  "per_bit_cap_seconds": 12600,
+  "aggregate_cap_seconds": 50400
+}

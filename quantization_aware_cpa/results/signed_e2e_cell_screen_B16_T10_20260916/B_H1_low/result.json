@@ -1,0 +1,22 @@
+{
+  "status": "COMPLETED",
+  "arm": "B_H1_low",
+  "optimized_label_hypothesis": "H1",
+  "lambda_cell": 0.0242029977689154,
+  "iterations": 100,
+  "optimization_seconds": 137.3676346000284,
+  "peak_cuda_allocated_bytes": 3964480512,
+  "peak_cuda_reserved_bytes": 4645191680,
+  "final_metrics": {
+    "feature_target_cosine_loss": 0.15149004757404327,
+    "tv_normalized": 0.09292590618133545,
+    "feature_norm_mean": 68.13174438476562,
+    "feature_norm_min": 23.1497802734375,
+    "feature_norm_max": 108.3829574584961,
+    "pixel_min": 0.09182827174663544,
+    "pixel_max": 0.8578925728797913,
+    "pixel_mean": 0.4385964870452881,
+    "x0_displacement_l2": 10.325797080993652
+  },
+  "candidate_sha256": "38cfca52b48a1c97f6b333562bd9ad435344cfe679528e02e5712d65c390b5a2"
+}

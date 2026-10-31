@@ -1,0 +1,466 @@
+% ICASSP draft -- numerical claims marked TODO must be replaced/confirmed by
+% additional experiments. Results not marked TODO are reproduced from our own
+% internal experiment log (single run per setting unless noted); error bars
+% and multi-seed averages are still required before submission.
+\documentclass{article}
+\usepackage{spconf,amsmath,amssymb,graphicx,booktabs,algorithm,algorithmic,hyperref}
+
+\newcommand{\x}{\mathbf{x}}
+\newcommand{\g}{\mathbf{g}}
+\newcommand{\C}{\mathcal{C}}
+\newcommand{\Sset}{\mathcal{S}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\todo}[1]{\textbf{[TODO: #1]}}
+
+\title{ONE LUCKY DRAW IS ENOUGH: STOCHASTIC GRADIENT LEAKAGE UNDER\\
+QUANTIZATION AND SPARSIFICATION, AND A CONSISTENCY-RANKED RESTART ATTACK}
+\name{Anonymous Author(s)}
+\address{Anonymous Affiliation}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This paper proposes CoRA (Consistency-Ranked restart Attack), a restart-based
+gradient inversion attack that treats communication compression in federated
+learning (FL) as a probabilistic rather than absolute privacy barrier.
+Quantization and sparsification are widely reported to defeat attacks such as
+DLG and the Cocktail Party Attack (CPA), but this conclusion rests on
+single-trial evaluations. Unlike single-shot attacks that decode the compressed
+update deterministically, CoRA resamples the information destroyed by
+compression from a calibrated per-tensor model and selects among candidate
+reconstructions by a self-supervised compression-consistency score rather than
+averaging them. We investigate how reconstruction quality changes with quantization
+bit-width and sparsification retention ratio. Our goal is to determine
+how far CoRA remains effective as compression becomes more aggressive,
+and to identify its reconstruction limits under a specified attack budget.
+
+\end{abstract}
+
+\begin{keywords}
+gradient inversion, federated learning, privacy, quantization, sparsification
+\end{keywords}
+
+\section{Introduction}
+Federated learning (FL) keeps raw training examples on-device and
+communicates only gradients or model updates. Gradient inversion attacks show
+that this is not sufficient for privacy: optimization-based attacks such as
+Deep Leakage from Gradients (DLG) \cite{zhu2019deep} and Inverting Gradients
+\cite{geiping2020inverting}, and analytical attacks such as the Cocktail
+Party Attack (CPA), which treats fully-connected gradients as a blind source
+separation problem solved with independent component analysis (ICA)
+\cite{kariyappa2023cocktail}, can reconstruct client inputs from communicated
+gradients with no auxiliary data and no change to training.
+
+Because these attacks were originally demonstrated on full-precision, dense
+gradients, a natural question is whether the lossy communication-compression
+techniques that FL systems already use for bandwidth reasons---fixed-bit
+quantization of model updates and top-$k$ gradient sparsification---also
+double as a privacy defense. Prior evaluations, including our own
+reproduction below, generally answer yes: a single deterministic attack
+attempt against a 4-bit quantized or aggressively sparsified update
+reconstructs images that are visually and quantitatively far worse than the
+full-precision baseline, and this is often reported as evidence that
+compression ``defeats'' the attack.
+
+We argue that this single-trial framing understates the actual risk. The
+information destroyed by quantization or sparsification is destroyed
+\emph{stochastically} with respect to the adversary: the client's true
+communicated bits determine only an ambiguity set of gradients (and, after
+inversion, of candidate images) consistent with the observation, and a fixed
+deterministic decoding rule (e.g., naive dequantization, or zero-filling
+pruned coordinates) picks one arbitrary point of that set. Nothing prevents
+an adversary from resampling within the ambiguity set and re-running the
+attack. We measured exactly this: reconstructing a sparsified update with
+independently re-imputed missing coordinates and re-running CPA/ICA succeeds
+in only about 4\% of independent trials in our setup, yet 4\% is not zero,
+and trials are cheap and embarrassingly parallel for an honest-but-curious
+server with modest compute.
+
+This paper makes three contributions.
+\begin{itemize}
+  \item We empirically characterize reconstruction quality under
+  quantization and sparsification, including an 8-to-4-bit
+  randomized-decoding sweep and a matched sparsification-retention
+  sweep. We examine how reconstruction quality changes with
+  compression severity, distinguishing measured degradation from
+  a calibrated success/failure boundary (Sections~3 and~5).
+
+  \item We show that naive random resampling followed by averaging
+  does not necessarily improve image reconstruction. In the tested
+  4-bit setting, ensemble averaging improves recovered-source cosine
+  similarity relative to a single randomized trial, but does not
+  improve the reported image metrics and remains worse than naive
+  deterministic decoding. This highlights the distinction between
+  source-recovery quality and final image-reconstruction quality
+  (Section~3.3).
+
+  \item We propose CoRA, a restart-based framework that generates
+  candidate updates by random sampling within compression-implied
+  bounds and replaces averaging with attacker-observable candidate
+  selection. We study feature-consistency screening with a total
+  variation term for quantized updates and recompressed-update
+  consistency ranking for sparsified updates, without using private
+  image metrics for selection (Section~4).
+\end{itemize}
+
+\todo{Define and validate an image-recovery success criterion before
+claiming specific successful and failing bit widths or retention ratios.}
+
+\todo{Use controlled ablations to determine whether sampling-model
+mismatch or candidate averaging explains the observed degradation.}
+
+\todo{Complete the matched randomized sparsification sweep and evaluate
+CoRA against deterministic decoding and averaging under equal total
+compute budgets. Report measured gains or limitations without assuming
+that randomized selection is superior.}
+
+\section{Background and threat model}
+\subsection{Federated update compression}
+We consider FedAvg-style cross-device FL in which a client sends a local
+model update $\g\in\R^{d}$ to an honest-but-curious server. Two
+communication-compression schemes are in scope. \emph{Quantization} applies
+fixed-bit symmetric uniform quantization to $\g$; the server observes the
+dequantized update $\C_b(\g)$, with quantization bin width $\Delta$ set by
+the bit-width $b$ and the per-tensor dynamic range. \emph{Sparsification} retains only the top-$k$ coordinates of $\g$
+by magnitude within the specified compression scope, and the server
+observes $\C_k(\g)$, an update with the pruned coordinates set to zero
+and their original indices known.
+
+
+\subsection{Adversary}
+The server knows the model architecture, loss, and compression scheme
+(bit-width or retention ratio $k$) but not the values removed by compression.
+It observes one client's compressed update from one or a few local steps,
+which is the standard analytical-attack setting used by DLG-style and CPA-style
+evaluations \cite{zhu2019deep,kariyappa2023cocktail}, and can run any number
+of independent attack attempts offline without further contacting the client.
+The server does not need an auxiliary dataset or a pretrained generative
+prior for the attack we study, in contrast to attacks that strengthen the
+optimization prior itself \cite{li2022ggl}.
+
+\section{Compression defeats the average attack, not every attack}
+\subsection{Single-trial results reproduce the standard picture}
+We first reproduce the standard single-trial picture using two setups.
+\textbf{Setup A (single-client, single-image):} Tiny-ImageNet, a 2-layer
+fully connected network (FC-2), Adam training (lr $10^{-3}$, batch size 128),
+and a CPA-style reconstruction objective combining ICA source-separation
+terms (negentropy, decorrelation) with a total-variation image prior,
+optimized for 25000 iterations. \textbf{Setup B (batched, CPA/FastICA):}
+ImageNet with a VGG16 client model, FedAvg local updates as the attack
+input, CPA/FastICA batch size 128, 25000 CPA iterations and 25000 feature-inversion
+iterations per round, following the CPA protocol of \cite{kariyappa2023cocktail}.
+
+\begin{table}[t]
+\caption{Setup A: single-trial reconstruction under compression (FC-2,
+Tiny-ImageNet, 25000 attack iterations). Global refer to how
+top-$k$ sparsification selects retained coordinates.}
+\label{tab:fc2}
+\centering
+\small
+\begin{tabular}{lccc}
+\toprule
+Setting & PSNR$\uparrow$ & SSIM$\uparrow$ & LPIPS$\downarrow$\\
+\midrule
+FP32 (no compression) & 26.44 & 0.794 & 0.243\\
+8-bit quantization & 26.24 & 0.779 & 0.257\\
+4-bit quantization & 21.82 & 0.164 & 0.702\\
+Top-$k$ 80\% (global) & 25.56 & 0.714 & 0.313\\
+Top-$k$ 50\% (global) & 22.92 & 0.334 & 0.602\\
+Top-$k$ 10\% (global) & 21.99 & 0.197 & 0.696\\
+Top-$k$ 80\% (layerwise) & 12.16 & 0.303 & 0.767\\
+Top-$k$ 50\% (layerwise) & 12.16 & 0.305 & 0.769\\
+Top-$k$ 10\% (layerwise) & 21.53 & 0.263 & 0.632\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Table~\ref{tab:fc2} shows a clear cliff: 8-bit quantization and 80\% top-$k$
+retention (global or layerwise) leave reconstruction close to the FP32
+baseline, while 4-bit quantization and 50\% or 10\% retention collapse SSIM
+toward the level of an unstructured guess. Figure~\ref{fig:cliff} visualizes
+the same cliff. A single deterministic attack attempt would conclude that
+4-bit quantization and $\le$50\% sparsification are effective defenses.
+
+\begin{figure}[t]
+  \centering
+  \includegraphics[width=\columnwidth]{figures/compression_cliff}
+  \caption{Single-trial PSNR and SSIM of the reproduced attack (Setup A)
+  across compression settings. Blue bars sit above an illustrative
+  ``reconstruction succeeds'' line; gray bars sit below it. This single-trial
+  view is what a naive defense evaluation would report.}
+  \label{fig:cliff}
+\end{figure}
+
+\subsection{A single attempt is not the adversary's only option}
+A deterministic decoder collapses the compression ambiguity set to one
+point: naive dequantization maps every value in a quantization bin to its
+bin center, and naive sparsification decoding maps every pruned coordinate
+to zero. Neither choice is privileged from the adversary's perspective---both
+are simply one sample from the set of updates consistent with the
+observation. We therefore repeated the attack under Setup B with
+\emph{randomized} decoding: for sparsification, each pruned coordinate is
+redrawn per trial within the range implied by the top-$k$ threshold (missing
+coordinates only; observed coordinates are kept fixed), and the resulting
+per-trial CPA/FastICA reconstructions are treated as an ensemble of
+independent attempts rather than a single answer.
+
+\begin{table}[t]
+\caption{Setup B: CPA/FastICA on VGG16/ImageNet FedAvg updates under
+4-bit quantization, comparing naive and randomized decoding. ICA/source CS
+is the cosine similarity of recovered vs. true mixing sources.}
+\label{tab:cpa}
+\centering
+\scriptsize
+\begin{tabular}{lcccc}
+\toprule
+Method & CS$\uparrow$ & PSNR$\uparrow$ & SSIM$\uparrow$ & LPIPS$\downarrow$\\
+\midrule
+FP32 (no compression) & 0.987 & 22.40 & 0.183 & 0.521\\
+Naive int4 dequant. & 0.691 & 12.22 & 0.329 & 0.671\\
+Randomized, 1 trial & 0.135 & 11.30 & 0.106 & 0.737\\
+Randomized, $K{=}8$ avg. & 0.809 & 13.22 & 0.337 & 0.737\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Randomized decoding allows the adversary to explore multiple candidate
+completions of the same compressed observation. Its effectiveness,
+however, depends on the decoding and reconstruction procedure.
+In a separate 8-bit quantization experiment, the randomized ensemble
+improved the mean reconstruction metrics relative to naive
+dequantization, whereas the 4-bit results in Table~\ref{tab:cpa}
+showed no corresponding improvement. These experiments used different
+protocols and therefore do not isolate the effect of bit width.
+A single deterministic reconstruction does not characterize the
+variation across alternative decodings, while an averaged ensemble
+does not establish the benefit of retaining and evaluating individual
+attempts.
+
+\subsection{Why naive multi-trial averaging still under-delivers}
+Table~\ref{tab:cpa} also shows that the obvious way to turn independent
+trials into a better attack---resample and average---does not work well
+here. Averaging $K{=}10$ randomized reconstructions raises the ICA/source
+cosine similarity (0.135 $\to$ 0.441) but leaves PSNR/SSIM essentially
+unchanged and still far below the naive int4 baseline. We attribute this to
+two compounding issues, both directly observable in our logs. First, the
+imputation noise was drawn i.i.d.\ per coordinate from a fixed range, but the
+true information removed by compression is far from i.i.d.: each parameter
+tensor has a different scale and a strongly non-uniform coefficient
+distribution, so an unstructured noise model perturbs the true structure of
+the update rather than recovering it. Second, pixel-space (or source-space)
+averaging blends reconstructions of varying quality together; a few good
+draws are diluted by many mediocre ones instead of being identified and kept.
+Enforcing quantization consistency as a hard constraint inside the
+reconstruction optimizer---which we also tested, both at the ICA stage and
+end-to-end through feature inversion---did not fix this either: the
+compressed-gradient consistency term makes the optimization landscape
+coarser and more constrained without proportionally improving reconstruction
+quality. Section~4 turns these three negative findings into design
+requirements.
+
+\subsection{A closed-form model of cumulative compromise}
+Model each independent attack trial $t=1,\dots,K$ against a fixed client and
+a fixed observed compressed update as an independent Bernoulli success
+indicator $Y_t\sim\mathrm{Bernoulli}(p)$, where independence follows from
+redrawing the ambiguity-set sample (and any stochastic optimization
+randomness) fresh each trial while holding the true input and the observed
+compressed update fixed. Then the probability of at least one success across
+$K$ trials is
+\begin{equation}
+ P(K)=1-(1-p)^K,
+ \label{eq:cumulative}
+\end{equation}
+and the number of trials needed to reach a target compromise probability
+$\tau$ is $K(\tau)=\lceil \ln(1-\tau)/\ln(1-p)\rceil$. Using the measured
+single-trial rate $p=0.04$ from Section~3.2, Eq.~\eqref{eq:cumulative} gives
+$K(0.5){\approx}17$, $K(0.9){\approx}57$, and $K(0.99){\approx}113$
+(Figure~\ref{fig:lucky}). None of these trial counts require additional
+communication with the client or auxiliary data; they only require offline
+compute, which is cheap relative to what an FL server already spends on
+aggregation and training.
+
+\begin{figure}[t]
+  \centering
+  \includegraphics[width=0.85\columnwidth]{figures/lucky_draw_curve}
+  \caption{Cumulative compromise probability $P(K)=1-(1-p)^K$ for the
+  measured single-trial success rate $p=0.04$ (Section~3.2). A defense that
+  looks effective against one attack attempt is compromised with 90\%
+  probability within about 56 independent, offline attack attempts.}
+  \label{fig:lucky}
+\end{figure}
+
+We treat $p=0.04$ as a single operating point measured on one setting
+(random sparsification imputation, Setup B) rather than a universal constant;
+$p$ should depend on compression severity, batch size, and model, and our
+independence assumption is optimistic because all trials condition on the
+same observed compressed update and true input. We report
+Eq.~\eqref{eq:cumulative} as a first-order model motivating the restart
+strategy, not as a validated end-to-end guarantee; \todo{directly measure
+$P(K)$ empirically by running $K$ independent trials per client/setting and
+counting distinct successes, and fit $p$ as a function of compression level.}
+
+\section{CoRA: consistency-ranked restart attack}
+Section~3 identifies two requirements for turning repeated trials into a
+reliable attack rather than a lucky occasional one: (i) candidates should be
+generated from a noise/imputation model that respects the true, non-uniform,
+per-tensor structure of the update instead of i.i.d.\ resampling, and
+(ii) the adversary should \emph{select} a good candidate rather than average
+across all of them, without folding the selection criterion into the
+optimizer's loss (which over-constrains it, Section~3.3). CoRA implements
+both, on top of any base analytical or optimization-based attack $A$ (DLG or
+CPA/FastICA).
+
+\textbf{Calibrated candidate generation.} Instead of i.i.d.\ noise over a
+fixed range, we fit a per-tensor, per-layer noise/imputation distribution
+$p_\theta(\cdot\mid\g_{\mathrm{obs}},\C)$ before the attack, using only
+information already available to the adversary from the compression scheme
+itself: the per-tensor quantization scale (for quantized updates) or the
+empirical magnitude distribution of the retained coordinates in the same
+tensor, truncated below the top-$k$ threshold (for sparsified updates).
+Sampling missing/quantized values from this calibrated distribution, rather
+than a shared i.i.d.\ range, directly targets the scale-mismatch failure
+mode observed in Section~3.3.
+
+\textbf{Independent unconstrained restarts.} For each of $K$ trials we draw
+one calibrated candidate update $\tilde\g^{(t)}\sim p_\theta$ and run the
+base attack $A$ unmodified: $\hat\x^{(t)}=A(\tilde\g^{(t)})$. We deliberately
+do not add a compressed-gradient consistency term to $A$'s objective, since
+Section~3.3 showed that doing so over-constrains the optimizer.
+
+\textbf{Post-hoc consistency ranking.} For each candidate reconstruction, we
+recompute its gradient $\g(\hat\x^{(t)})$ by a forward/backward pass through
+the known model and loss, apply the \emph{same} compression operator the
+client used, and score the candidate by how close this matches the actually
+observed update:
+\begin{equation}
+ s_t=-\big\|\C\big(\g(\hat\x^{(t)})\big)-\g_{\mathrm{obs}}\big\|.
+ \label{eq:score}
+\end{equation}
+This score is self-supervised: it uses only quantities the adversary already
+has (the model, the compression scheme, and the observed compressed update),
+never the true image. We return the top-scoring candidate,
+$\hat\x^{(t^\ast)}$ with $t^\ast=\arg\max_t s_t$ (or a short list of the top-$m$
+for a human analyst), instead of averaging over $t$.
+
+\begin{algorithm}[t]
+\caption{CoRA for one client's compressed update}
+\label{alg:cora}
+\begin{algorithmic}[1]
+\REQUIRE observed compressed update $\g_{\mathrm{obs}}$, compression operator
+$\C$, calibrated candidate model $p_\theta$, base attack $A$, trial budget $K$
+\FOR{$t=1,\dots,K$}
+  \STATE sample $\tilde\g^{(t)}\sim p_\theta(\cdot\mid\g_{\mathrm{obs}},\C)$
+  \STATE $\hat\x^{(t)}\leftarrow A(\tilde\g^{(t)})$ \COMMENT{unconstrained base attack}
+  \STATE compute $s_t$ from Eq.~\eqref{eq:score}
+\ENDFOR
+\STATE $t^\ast\leftarrow\arg\max_t s_t$
+\RETURN $\hat\x^{(t^\ast)}$ (or the top-$m$ candidates by $s_t$)
+\end{algorithmic}
+\end{algorithm}
+
+CoRA is attack-agnostic (it wraps DLG or CPA/FastICA without modifying their
+internals), requires no auxiliary dataset or pretrained generative prior
+(unlike attacks that strengthen the optimization prior itself
+\cite{li2022ggl}), and is embarrassingly parallel across trials.
+\todo{Implement and evaluate CoRA end-to-end against Setups A and B; report
+success rate at fixed $K$ and reconstruction quality of the selected
+candidate vs. (i) a single naive-decoding trial and (ii) naive $K$-trial
+pixel averaging, at matched compute budget.}
+
+\section{Experiments}
+\subsection{Research questions}
+(Q1) At what compression severity does single-trial reconstruction quality
+collapse, and is the collapse sharp or gradual (Section~3.1)? (Q2) What is
+the true per-trial success rate of resampling-based attacks, and does the
+closed-form model of Eq.~\eqref{eq:cumulative} predict cumulative compromise
+accurately (Section~3.4)? (Q3) Does CoRA's calibrated-sampling-plus-selection
+design recover more successes per unit compute than naive i.i.d.
+resampling-plus-averaging, and does it close the gap to the FP32 baseline
+(Section~4)?
+
+\subsection{Setup}
+We reuse Setups A and B from Section~3.1 for all experiments. Baselines are
+DLG \cite{zhu2019deep}, Inverting Gradients \cite{geiping2020inverting}, and
+CPA/FastICA \cite{kariyappa2023cocktail}, each evaluated (i) once with naive
+deterministic decoding, (ii) as an ensemble of $K$ i.i.d.-resampled,
+pixel-averaged trials, and (iii) wrapped in CoRA. We report PSNR, SSIM,
+LPIPS, and (for CPA) ICA/source cosine similarity, together with the
+per-setting empirical success rate $p$ used to validate
+Eq.~\eqref{eq:cumulative}. \todo{Run all three variants at
+$K\in\{1,5,10,25,50\}$, 4-bit and 2-bit quantization, and global/layerwise
+top-$k\in\{50,20,10\}\%$, over at least 100 examples and 3 seeds; add CIFAR-10
+and \todo{one additional dataset relevant to the final ICASSP track}.}
+
+Naive single-trial decoding and naive $K$-trial pixel averaging are already
+reported in Tables~\ref{tab:fc2} and~\ref{tab:cpa}. Table~\ref{tab:planned}
+adds the planned third arm, CoRA, at the same trial budget $K$.
+
+\begin{table}[t]
+\caption{Planned CoRA comparison at matched trial budget $K$, same settings
+as Tables~\ref{tab:fc2}--\ref{tab:cpa}. All entries are placeholders pending
+the experiments in Section~5.2.}
+\label{tab:planned}
+\centering
+\small
+\begin{tabular}{lccc}
+\toprule
+Method & Succ.\ rate & PSNR$\uparrow$ & SSIM$\uparrow$\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Discussion}
+\todo{Insert measured results once CoRA is implemented.} The central claim
+to test is whether calibrated sampling and consistency-based selection
+recover a substantially higher fraction of successes at fixed $K$ than naive
+i.i.d.\ averaging, and whether the empirically measured $P(K)$ tracks
+Eq.~\eqref{eq:cumulative} closely enough to be useful for auditing a
+defense's real risk, rather than only its single-trial appearance.
+
+\section{Related work}
+Optimization-based gradient inversion reconstructs inputs by matching
+observed and synthetic gradients \cite{zhu2019deep,geiping2020inverting}.
+CPA instead treats fully-connected-layer gradients as a blind source
+separation problem solved by ICA, and scales to large batches
+\cite{kariyappa2023cocktail}. Gradient compression (quantization,
+sparsification, and related obfuscation) is commonly proposed or assumed as
+a side-effect privacy defense; Yue et al.~\cite{yue2023gradient} showed that
+gradient \emph{obfuscation} more broadly can give a false sense of security
+relative to differential privacy, though their analysis targets a different
+compression regime and does not consider repeated stochastic attack trials.
+Li et al.~\cite{li2022ggl} showed that defenses evaluated only against
+relatively weak attacks can be broken by a \emph{stronger} attack that adds a
+pretrained generative prior; our approach is complementary and orthogonal:
+we do not strengthen the attack's prior, we exploit the fact that
+information loss under compression is stochastic from the adversary's
+viewpoint and combine repeated, calibrated resampling with self-supervised
+selection. Zhang et al.~\cite{zhang2022survey} survey gradient inversion attacks and
+defenses broadly, including compression-based defenses, but do not model
+multi-trial compromise probability. Recent work has also proposed improved
+attacks specifically targeting compressed gradients (e.g., quantization-aware
+reconstruction losses) \cite{yu2024compressed}; unlike these, CoRA does not
+require modifying the base attack's optimization objective (Section~3.3
+shows that adding a compression-consistency term as a hard constraint
+hurts), and instead separates candidate generation from selection.
+
+\section{Conclusion}
+Quantization and sparsification measurably degrade single-trial gradient
+inversion attacks, but the degradation is closer to adding noise to a
+lottery than to closing off the attack: a fixed, small per-trial success
+probability, repeated over dozens of cheap, independent, offline attempts,
+already yields a high chance of at least one successful reconstruction. A
+naive way of running many trials (i.i.d.\ resampling and averaging) mostly
+fails to realize this risk in practice; our proposed CoRA attack targets the
+two reasons why, via calibrated candidate generation and post-hoc,
+self-supervised selection instead of averaging.
+\todo{State the final measured boundary: at what compression levels and
+trial budgets does CoRA make compromise practical, and which of quantization
+vs.\ sparsification is more resistant at matched communication savings.} We
+recommend that defenses based on communication compression be evaluated by
+their compromise probability under a realistic, repeated-trial adversary,
+not by the outcome of a single deterministic attack attempt.
+
+\bibliographystyle{IEEEbib}
+\bibliography{refs}
+\end{document}

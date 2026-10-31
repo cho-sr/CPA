@@ -1,0 +1,77 @@
+{
+  "task_id": "CPA_PAPER_SPARSE_SAME80_K503020_R20_20260921",
+  "plan_version": 1,
+  "wrapper_pid": 17136,
+  "python": "C:\\miniconda\\envs\\DLG\\python.exe",
+  "project": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa",
+  "workspace": "C:\\Users\\조상제\\Desktop\\CPA",
+  "output_root": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\paper_sparse_same80_keep50_30_20_R20_20260921",
+  "status": "FAILED",
+  "full_experiment_status": "SUPERSEDED_PARTIAL_BY_R8",
+  "started_utc": "2026-09-20T22:38:21.419518+00:00",
+  "deadline_hours": 96,
+  "serial": true,
+  "commands": [
+    "C:\\miniconda\\envs\\DLG\\python.exe -u -m qacpa.run_paper_sparse_same80 --config configs/cpa_fia_random_topk50_same80_R20_S5k_K3_F25k.json --phase prepare",
+    "C:\\miniconda\\envs\\DLG\\python.exe -u -m qacpa.run_paper_sparse_same80 --config configs/cpa_fia_random_topk30_same80_R20_S5k_K3_F25k.json --phase prepare",
+    "C:\\miniconda\\envs\\DLG\\python.exe -u -m qacpa.run_paper_sparse_same80 --config configs/cpa_fia_random_topk20_same80_R20_S5k_K3_F25k.json --phase prepare",
+    "C:\\miniconda\\envs\\DLG\\python.exe -u -m qacpa.run_paper_sparse_same80 --config configs/cpa_fia_random_topk50_same80_R20_S5k_K3_F25k.json --phase run",
+    "C:\\miniconda\\envs\\DLG\\python.exe -u -m qacpa.run_paper_sparse_same80 --config configs/cpa_fia_random_topk30_same80_R20_S5k_K3_F25k.json --phase run",
+    "C:\\miniconda\\envs\\DLG\\python.exe -u -m qacpa.run_paper_sparse_same80 --config configs/cpa_fia_random_topk20_same80_R20_S5k_K3_F25k.json --phase run",
+    "C:\\miniconda\\envs\\DLG\\python.exe -u -m qacpa.report_paper_sparse_same80"
+  ],
+  "stages": [
+    {
+      "name": "prepare_topk50",
+      "command": "C:\\miniconda\\envs\\DLG\\python.exe -u -m qacpa.run_paper_sparse_same80 --config configs/cpa_fia_random_topk50_same80_R20_S5k_K3_F25k.json --phase prepare",
+      "status": "COMPLETED",
+      "started_utc": "2026-09-20T22:38:21.422518+00:00",
+      "stdout": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\paper_sparse_same80_keep50_30_20_R20_20260921\\prepare_topk50.stdout.log",
+      "stderr": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\paper_sparse_same80_keep50_30_20_R20_20260921\\prepare_topk50.stderr.log",
+      "exit_code": 0,
+      "duration_seconds": 50.954,
+      "ended_utc": "2026-09-20T22:39:12.379083+00:00"
+    },
+    {
+      "name": "prepare_topk30",
+      "command": "C:\\miniconda\\envs\\DLG\\python.exe -u -m qacpa.run_paper_sparse_same80 --config configs/cpa_fia_random_topk30_same80_R20_S5k_K3_F25k.json --phase prepare",
+      "status": "COMPLETED",
+      "started_utc": "2026-09-20T22:39:12.381083+00:00",
+      "stdout": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\paper_sparse_same80_keep50_30_20_R20_20260921\\prepare_topk30.stdout.log",
+      "stderr": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\paper_sparse_same80_keep50_30_20_R20_20260921\\prepare_topk30.stderr.log",
+      "exit_code": 0,
+      "duration_seconds": 25.438,
+      "ended_utc": "2026-09-20T22:39:37.823747+00:00"
+    },
+    {
+      "name": "prepare_topk20",
+      "command": "C:\\miniconda\\envs\\DLG\\python.exe -u -m qacpa.run_paper_sparse_same80 --config configs/cpa_fia_random_topk20_same80_R20_S5k_K3_F25k.json --phase prepare",
+      "status": "COMPLETED",
+      "started_utc": "2026-09-20T22:39:37.825728+00:00",
+      "stdout": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\paper_sparse_same80_keep50_30_20_R20_20260921\\prepare_topk20.stdout.log",
+      "stderr": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\paper_sparse_same80_keep50_30_20_R20_20260921\\prepare_topk20.stderr.log",
+      "exit_code": 0,
+      "duration_seconds": 24.265,
+      "ended_utc": "2026-09-20T22:40:02.093338+00:00"
+    },
+    {
+      "name": "run_topk50",
+      "command": "C:\\miniconda\\envs\\DLG\\python.exe -u -m qacpa.run_paper_sparse_same80 --config configs/cpa_fia_random_topk50_same80_R20_S5k_K3_F25k.json --phase run",
+      "status": "FAILED",
+      "started_utc": "2026-09-20T22:40:02.095765+00:00",
+      "stdout": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\paper_sparse_same80_keep50_30_20_R20_20260921\\run_topk50.stdout.log",
+      "stderr": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\paper_sparse_same80_keep50_30_20_R20_20260921\\run_topk50.stderr.log",
+      "exit_code": 15,
+      "duration_seconds": 1156.485,
+      "ended_utc": "2026-09-20T22:59:18.582936+00:00"
+    }
+  ],
+  "current_stage": "run_topk50",
+  "exit_status": 15,
+  "ended_utc": "2026-09-20T22:59:18.585938+00:00",
+  "superseded_by": {
+    "amendment_id": "CPA_PAPER_SPARSE_SAME80_K503020_R8_AMENDMENT_20260921",
+    "replacement_plan_version": 2,
+    "replacement_output_root": "quantization_aware_cpa/results/paper_sparse_same80_keep50_30_20_R8_20260921"
+  }
+}\n

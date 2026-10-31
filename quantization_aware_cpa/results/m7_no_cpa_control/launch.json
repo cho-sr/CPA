@@ -1,0 +1,13 @@
+﻿{
+    "pid":  14056,
+    "started_at_utc":  "2026-09-08T20:49:42.7651464Z",
+    "command":  "python -u -m qacpa.run_m7_controls --phase all",
+    "order":  [
+                  "no-CPA fp32 (40)",
+                  "no-CPA 4-bit (40)",
+                  "prior-only (40)",
+                  "report"
+              ],
+    "stdout":  "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_no_cpa_control\\run.stdout.log",
+    "stderr":  "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_no_cpa_control\\run.stderr.log"
+}

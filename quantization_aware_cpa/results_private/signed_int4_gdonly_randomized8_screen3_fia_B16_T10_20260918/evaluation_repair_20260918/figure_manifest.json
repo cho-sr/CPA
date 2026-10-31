@@ -1,0 +1,66 @@
+{
+  "status": "COMPLETED",
+  "final": "contact_sheet_int4_gdonly_25000_with_baseline.png",
+  "screen": "contact_sheet_int4_gdonly_5000_with_baseline.png",
+  "method_comparison": "method_comparison_parent_vs_gdonly.png",
+  "slide_manifest": {
+    "status": "COMPLETED",
+    "width": 3840,
+    "height": 2160,
+    "columns": [
+      "Ground truth",
+      "Naive dequantization baseline | INT4",
+      "GD-only public rank 1 | member 02",
+      "GD-only public rank 2 | member 04",
+      "GD-only public rank 3 | member 01"
+    ],
+    "rows": 16,
+    "pages": [
+      {
+        "path": "page01.png",
+        "sha256": "3fab6e1bfe8a17b02257f4a9c58044a0038975511dfb7e9173b56649092d31f6",
+        "rows": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "path": "page02.png",
+        "sha256": "15ae257d66206fa5583ba01fc1423f2d2543def70fe5332b925918d7cea08505",
+        "rows": [
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      {
+        "path": "page03.png",
+        "sha256": "29dea2ff03c15e1809eb044e232941dc1dde7ada187ef52a808af4622d69f0e5",
+        "rows": [
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      {
+        "path": "page04.png",
+        "sha256": "f56d65acd2d227634f55f4b420f3bac7f43320b7099268f305f088320ad59c15",
+        "rows": [
+          13,
+          14,
+          15,
+          16
+        ]
+      }
+    ],
+    "overview": {
+      "path": "int4_gdonly_25000_overview.png",
+      "sha256": "be50dd4c3deb4417eb20cfbcb4a194abeb1dd8bf69d9755a227a6f627ef1507f",
+      "rows": 16
+    }
+  }
+}

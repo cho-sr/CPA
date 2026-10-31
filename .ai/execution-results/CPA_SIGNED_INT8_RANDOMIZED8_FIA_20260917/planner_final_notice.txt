@@ -1,0 +1,11 @@
+[CPA final result | user-authorized one-time completion handoff]
+TASK_ID: CPA_SIGNED_INT8_RANDOMIZED8_FIA_20260917
+RESULT: PARTIAL / FAILED_BEFORE_SENDER_COMPUTATION
+Wrapper PID: 19124; process exit: 1
+Report: C:\Users\조상제\Desktop\CPA\.ai\execution-results\CPA_SIGNED_INT8_RANDOMIZED8_FIA_20260917\report.md
+Execution summary: C:\Users\조상제\Desktop\CPA\.ai\execution-results\CPA_SIGNED_INT8_RANDOMIZED8_FIA_20260917\execution_summary.json
+Failure analysis: C:\Users\조상제\Desktop\CPA\.ai\execution-results\CPA_SIGNED_INT8_RANDOMIZED8_FIA_20260917\failure_analysis.json
+
+Focused implementation validation passed: 6/6 tests, py_compile, and CLI help. Registration completed with exit 0. The sender subprocess exited before raw-update deserialization because signed_int8_observation.main passed argparse's command selector into collect(**vars(args)), producing TypeError: collect() got an unexpected keyword argument 'command'. No INT8 packet, separation, FIA, private evaluation, metric, or scientific result was produced. No retry, extra arm, seed, optimizer step, or condition change was performed. Historical INT4 artifacts and raw inputs are preserved.
+
+Show this result once in the visible Planner session and end the Planner turn. Do not poll, restart, or start follow-up work.

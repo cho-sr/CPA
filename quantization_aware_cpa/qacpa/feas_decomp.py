@@ -53,9 +53,20 @@ def main() -> None:
             max_iter=int(stage1_cfg.get("fastica_max_iter", 1000)),
             tol=float(stage1_cfg.get("fastica_tol", 1.0e-4)),
             fun=str(stage1_cfg.get("fastica_fun", "logcosh")),
-            c_mp=float(stage1_cfg.get("c_mp", 1.5)),
+            c_mp=float(stage1_cfg.get("c_mp", 3.0)),
             mp_truncation=bool(stage1_cfg.get("mp_truncation", True)),
             fastica_algorithm=str(stage1_cfg.get("fastica_algorithm", "parallel")),
+            ica_method=str(stage1_cfg.get("ica_method", "cpa")),
+            cpa_ica_max_iter=int(stage1_cfg.get("cpa_ica_max_iter", 25000)),
+            cpa_ica_lr=float(stage1_cfg.get("cpa_ica_lr", 1.0e-3)),
+            cpa_ica_optimizer=str(stage1_cfg.get("cpa_ica_optimizer", "adam")),
+            cpa_ica_decor=float(stage1_cfg.get("cpa_ica_decor", 5.3)),
+            cpa_ica_T=float(stage1_cfg.get("cpa_ica_T", 7.7)),
+            cpa_ica_ne=float(stage1_cfg.get("cpa_ica_ne", 1.0)),
+            cpa_ica_nv=float(stage1_cfg.get("cpa_ica_nv", 0.13)),
+            cpa_ica_l1=float(stage1_cfg.get("cpa_ica_l1", 5.0)),
+            cpa_ica_tv=float(stage1_cfg.get("cpa_ica_tv", 0.1)),
+            cpa_ica_log_every=int(stage1_cfg.get("cpa_ica_log_every", 0)),
         )
         _A_aligned, _S_aligned, alignment = align_estimate_to_truth(stage1.A_hat, stage1.S_hat, victim.S_true)
         matched = torch.tensor(alignment.true_indices, dtype=torch.long)

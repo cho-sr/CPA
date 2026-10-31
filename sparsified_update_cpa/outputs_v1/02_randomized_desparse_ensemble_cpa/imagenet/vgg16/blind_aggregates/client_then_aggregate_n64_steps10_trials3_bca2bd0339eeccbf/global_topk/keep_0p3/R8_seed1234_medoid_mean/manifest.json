@@ -1,0 +1,77 @@
+{
+  "alignment": "blind_medoid_align_then_mean",
+  "desparsification_scope": "attack_layer",
+  "ensemble_size": 8,
+  "keep_ratio": 0.3,
+  "method": "fixed_sparse_observation_randomized_desparsification_blind_ensemble",
+  "missing_value_abs_bound_policy": "per_client_global_topk_min_observed_abs_tau",
+  "missing_value_sampler": "uniform",
+  "noise_seed": 1234,
+  "oracle_inputs_used": false,
+  "schema_version": 1,
+  "seed_plan": [
+    {
+      "cpa_seed": "fixed_from_args_seed",
+      "desparsification_seed": 1234,
+      "member": 0,
+      "trial_varying_randomness": "desparsification_noise_only"
+    },
+    {
+      "cpa_seed": "fixed_from_args_seed",
+      "desparsification_seed": 1001237,
+      "member": 1,
+      "trial_varying_randomness": "desparsification_noise_only"
+    },
+    {
+      "cpa_seed": "fixed_from_args_seed",
+      "desparsification_seed": 2001240,
+      "member": 2,
+      "trial_varying_randomness": "desparsification_noise_only"
+    },
+    {
+      "cpa_seed": "fixed_from_args_seed",
+      "desparsification_seed": 3001243,
+      "member": 3,
+      "trial_varying_randomness": "desparsification_noise_only"
+    },
+    {
+      "cpa_seed": "fixed_from_args_seed",
+      "desparsification_seed": 4001246,
+      "member": 4,
+      "trial_varying_randomness": "desparsification_noise_only"
+    },
+    {
+      "cpa_seed": "fixed_from_args_seed",
+      "desparsification_seed": 5001249,
+      "member": 5,
+      "trial_varying_randomness": "desparsification_noise_only"
+    },
+    {
+      "cpa_seed": "fixed_from_args_seed",
+      "desparsification_seed": 6001252,
+      "member": 6,
+      "trial_varying_randomness": "desparsification_noise_only"
+    },
+    {
+      "cpa_seed": "fixed_from_args_seed",
+      "desparsification_seed": 7001255,
+      "member": 7,
+      "trial_varying_randomness": "desparsification_noise_only"
+    }
+  ],
+  "source_client_attack_observation_file": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\sparsified_update_cpa\\outputs_v1\\02_randomized_desparse_ensemble_cpa\\imagenet\\vgg16\\fixed_observations\\client_then_aggregate_n64_steps10_trials3_bca2bd0339eeccbf\\client_then_aggregate\\global_topk\\keep_0p3_attack_layer_observations.pickle",
+  "source_client_attack_observation_hash": "2e544e5db676631f9d51a2152d1561705dd638a98afeace5bb0166eb16bfd908",
+  "source_kind": "rec_emb_attack_order",
+  "source_run_paths": [
+    "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\sparsified_update_cpa\\outputs_v1\\author_runs\\imagenet\\vgg16\\attack\\cp_direct\\nodef\\02_randomized_desparse_ensemble_cpa_keep0p3_n64_steps10_trials3_R8_seed1234_m000_uia",
+    "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\sparsified_update_cpa\\outputs_v1\\author_runs\\imagenet\\vgg16\\attack\\cp_direct\\nodef\\02_randomized_desparse_ensemble_cpa_keep0p3_n64_steps10_trials3_R8_seed1234_m001_uia",
+    "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\sparsified_update_cpa\\outputs_v1\\author_runs\\imagenet\\vgg16\\attack\\cp_direct\\nodef\\02_randomized_desparse_ensemble_cpa_keep0p3_n64_steps10_trials3_R8_seed1234_m002_uia",
+    "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\sparsified_update_cpa\\outputs_v1\\author_runs\\imagenet\\vgg16\\attack\\cp_direct\\nodef\\02_randomized_desparse_ensemble_cpa_keep0p3_n64_steps10_trials3_R8_seed1234_m003_uia",
+    "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\sparsified_update_cpa\\outputs_v1\\author_runs\\imagenet\\vgg16\\attack\\cp_direct\\nodef\\02_randomized_desparse_ensemble_cpa_keep0p3_n64_steps10_trials3_R8_seed1234_m004_uia",
+    "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\sparsified_update_cpa\\outputs_v1\\author_runs\\imagenet\\vgg16\\attack\\cp_direct\\nodef\\02_randomized_desparse_ensemble_cpa_keep0p3_n64_steps10_trials3_R8_seed1234_m005_uia",
+    "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\sparsified_update_cpa\\outputs_v1\\author_runs\\imagenet\\vgg16\\attack\\cp_direct\\nodef\\02_randomized_desparse_ensemble_cpa_keep0p3_n64_steps10_trials3_R8_seed1234_m006_uia",
+    "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\sparsified_update_cpa\\outputs_v1\\author_runs\\imagenet\\vgg16\\attack\\cp_direct\\nodef\\02_randomized_desparse_ensemble_cpa_keep0p3_n64_steps10_trials3_R8_seed1234_m007_uia"
+  ],
+  "source_sparse_update_file": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\sparsified_update_cpa\\outputs_v1\\01_naive_sparse_cpa\\imagenet\\vgg16\\updates\\client_then_aggregate_n64_steps10_trials3_bca2bd0339eeccbf\\client_then_aggregate\\global_topk\\keep_0p3.pickle",
+  "source_sparse_update_hash": "d23851b54a63618e82d619191f0bfca76379d048054022a16f21349a2a74f7d0"
+}

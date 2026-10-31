@@ -1,0 +1,8 @@
+{
+  "status": "READY_FOR_SINGLE_PLANNER_NOTICE",
+  "required_files": 12,
+  "missing": [],
+  "execution_status": "COMPLETED",
+  "evaluation_status": "COMPLETED",
+  "new_optimizer_steps": 0
+}

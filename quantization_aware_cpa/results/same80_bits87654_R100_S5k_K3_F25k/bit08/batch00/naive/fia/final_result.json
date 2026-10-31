@@ -1,0 +1,116 @@
+{
+  "status": "COMPLETED",
+  "completed_iterations": 25000,
+  "target_z_sha256": "572e882afdacd41002f22f91a1eec68f77dd3af16f8000a93a8be2527aec8e8c",
+  "sources_sha256": "b68761d8dfb21dd1442a21622efb380aa2616dcaf571621488f253efa33e31e2",
+  "fia_identity_sha256": "465704b1867229bf0c4e64eb83a4f9f1e0b87759ebda2a4beccd2b1b2d4f35ef",
+  "rec_file_sha256": "d66cdf5920e7d0c5a05fe5281125d29940d66432c6df7eeb076f61ae114325e7",
+  "score": {
+    "feature_cosine_distances": [
+      0.0015593767166137695,
+      0.0005857944488525391,
+      0.0013393759727478027,
+      0.0008090734481811523,
+      0.000878453254699707,
+      0.000753939151763916,
+      0.007331430912017822,
+      0.006196081638336182,
+      0.0009682178497314453,
+      0.0008790493011474609,
+      0.0006482601165771484,
+      0.00180739164352417,
+      0.011292338371276855,
+      0.08763492107391357,
+      0.08104598522186279,
+      0.18396079540252686
+    ],
+    "feature_cosine_distance_mean": 0.024230655282735825,
+    "tv_normalized": 0.07619161903858185,
+    "score": 0.03184981644153595,
+    "raw_image_sha256_before": "069720cb271ef4ed991eb6cbd67fd82344ac916be41ad4b984d85230e951f1e8",
+    "raw_image_sha256_after": "069720cb271ef4ed991eb6cbd67fd82344ac916be41ad4b984d85230e951f1e8",
+    "raw_state_unchanged": true,
+    "score_semantics": "post_update_clone_feature_cosine_distance_plus_0.1_normalized_TV",
+    "checkpoint_sha256": "b40e114e85317563996bad4b8e923c6ed1ed0548a3d0034ac9d54d154c65e6ff",
+    "completed_iterations": 25000,
+    "source_sha256": "b68761d8dfb21dd1442a21622efb380aa2616dcaf571621488f253efa33e31e2",
+    "selection_identity_sha256": "465704b1867229bf0c4e64eb83a4f9f1e0b87759ebda2a4beccd2b1b2d4f35ef",
+    "score_wall_seconds": 2.3718543000286445
+  },
+  "fia_settings": {
+    "seed": 42,
+    "device": "cuda",
+    "n_iter": 25000,
+    "lr": 0.1,
+    "tv": 0.1,
+    "fi": 1.0,
+    "optimizer": "adam",
+    "scheduler": "cosine",
+    "log_every": 5000,
+    "backend": "official_cpa/src/feature_inversion.py:Direct",
+    "driver": "staged_fia_v1; fixed full cosine horizon; original Direct.step",
+    "cudnn_benchmark": true,
+    "cudnn_deterministic": true
+  },
+  "optimizer_log": [
+    {
+      "iter": 0,
+      "loss": 1.1353245973587036,
+      "loss_fi": 0.9146389365196228,
+      "loss_gm": 0.0,
+      "loss_tv": 2.2068567276000977,
+      "time_sec": 2.295529199996963
+    },
+    {
+      "iter": 4999,
+      "loss": 0.07177507877349854,
+      "loss_fi": 0.036530911922454834,
+      "loss_gm": 0.0,
+      "loss_tv": 0.352441668510437,
+      "time_sec": 392.0309531999519
+    },
+    {
+      "iter": 9999,
+      "loss": 0.05951813608407974,
+      "loss_fi": 0.03246995806694031,
+      "loss_gm": 0.0,
+      "loss_tv": 0.27048179507255554,
+      "time_sec": 773.6016296999296
+    },
+    {
+      "iter": 14999,
+      "loss": 0.04522174596786499,
+      "loss_fi": 0.028767146170139313,
+      "loss_gm": 0.0,
+      "loss_tv": 0.16454598307609558,
+      "time_sec": 1153.1590507999063
+    },
+    {
+      "iter": 19999,
+      "loss": 0.03401917964220047,
+      "loss_fi": 0.02495306357741356,
+      "loss_gm": 0.0,
+      "loss_tv": 0.09066113829612732,
+      "time_sec": 1532.7766394999344
+    },
+    {
+      "iter": 24999,
+      "loss": 0.031849805265665054,
+      "loss_fi": 0.02423064410686493,
+      "loss_gm": 0.0,
+      "loss_tv": 0.07619161903858185,
+      "time_sec": 1922.509845099994
+    }
+  ],
+  "wall_seconds": 1922.509845099994,
+  "peak_cuda_allocated_bytes": null,
+  "checkpoint_25000_sha256": "b40e114e85317563996bad4b8e923c6ed1ed0548a3d0034ac9d54d154c65e6ff",
+  "resource_measurement": false,
+  "private_data_used": false,
+  "checkpoint_recovery_attestation_sha256": "4f9c5b2016393c933632b2bf99f1970130b3409ff99da99beff160c81fdf5187",
+  "checkpoint_25000_recovery_attestation_sha256": "b0da1295e32c21caf5f9bc73dc5e26782835f9ca9a221fbb443de5029133f86c",
+  "reviewed_completed_checkpoint_reused": true,
+  "optimizer_steps_executed_during_recovery": 0,
+  "peak_cuda_allocated_bytes_available": false,
+  "resource_measurement_status": "UNAVAILABLE_FOR_ORIGINAL_COMPLETED_FIA; next scheduled Naive candidate will be measured"
+}

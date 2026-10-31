@@ -1,0 +1,153 @@
+{
+  "task_id": "CPA_FEDAVG_R001_C0_INT4_PT_VS_PC_B16_E3_20261012",
+  "plan_version": 1,
+  "status": "FAILED",
+  "started_at_utc": "2026-10-12T10:05:54.133226+00:00",
+  "execution_authorization": "Explicit current-user instruction directly authorizes this exact handoff scope.",
+  "executor_role": "CODEX_EXECUTOR",
+  "actual_runtime_model": "GPT-6-based Codex per current session; not verified as the separate Luna CLI",
+  "actual_reasoning_effort": "UNKNOWN; not exposed in current session metadata",
+  "attempt_number": 2,
+  "prior_prelaunch_validation_failure": {
+    "type": "ValueError",
+    "message": "VGG dropout modules must be disabled by model.eval()",
+    "scientific_training_or_attacks_started": false,
+    "repair": "The guard now checks Dropout.training; model.eval() disables dropout while the module p setting remains 0.5."
+  },
+  "inputs": {
+    "checkpoint": "C:\\Users\\조상제\\Desktop\\fedavg_cora_transfer_20261006\\fedavg_cora_transfer_20261006\\imagenet-fedavg\\runs\\imagenet_pretrained_full_reset_fc_E5_R20\\rounds\\round_001.pt",
+    "checkpoint_sha256": "0a1e344b0835884dd450a48bb7db3439262b6c3f1ffa2d4e387a07143a3defad",
+    "batch00": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m6_uia_fp32_B16_fia\\batch00\\inputs.pt",
+    "batch00_sha256": "24995487511a3e9d8d4665fdcd704f7a0f792249a9ba79880638d13bc4740141",
+    "round001_client00_truth": "C:\\Users\\조상제\\Desktop\\fedavg_cora_transfer_20261006\\fedavg_cora_transfer_20261006\\imagenet-fedavg\\runs\\cora_full_r1357_c3_b16_bits84_c100_full25k\\private\\round001\\client00\\truth.pt",
+    "truth_sha256": "d4a55ee873234f28d013fb427a89340511b7ae8ff0801222d7570b8837705e8d"
+  },
+  "expected_input_sha256": {
+    "checkpoint": "0a1e344b0835884dd450a48bb7db3439262b6c3f1ffa2d4e387a07143a3defad",
+    "batch00": "24995487511a3e9d8d4665fdcd704f7a0f792249a9ba79880638d13bc4740141"
+  },
+  "official_upstream_source_hashes_before": {
+    "C:\\Users\\조상제\\Desktop\\CPA\\official_cpa\\src\\datasets.py": "f9e7b47733b5acb4b73e6914a3f100b5187766bbed78a12d17b69c39eec1b6d1",
+    "C:\\Users\\조상제\\Desktop\\CPA\\official_cpa\\src\\utils.py": "565f1bf1a47f387d042b35bb24f677d1ff0d3ec5d979e2876c31ed114179b9fe",
+    "C:\\Users\\조상제\\Desktop\\CPA\\official_cpa\\src\\gradient_inversion_utils.py": "668d77788dc8d81c181c8c0a9fbe8533c6fbea22ba46fe7f5e15b0a431300e5f",
+    "C:\\Users\\조상제\\Desktop\\CPA\\official_cpa\\src\\gradient_inversion.py": "c598e1ee7b4079f741060d10c8dfd14711e393a97384c63cf32be77a458b1873",
+    "C:\\Users\\조상제\\Desktop\\CPA\\official_cpa\\src\\feature_inversion.py": "dc73880427e3eaf1f873d295f17f1d48d301882f634ee5df36ddeea8e56c4dec",
+    "C:\\Users\\조상제\\Desktop\\CPA\\official_cpa\\src\\vgg16.py": "8114eca8cde553dace5f777aedd21b70851c570d473e597b005cb6be4b248d36",
+    "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\qacpa\\upstream_naive.py": "8f29b885d86f4121eda5c55e17486a3a48bd8db08b2f83890fe7726730d1ee92",
+    "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\qacpa\\seed.py": "769366fcc2cf3e144d8caa86f73a55dcb0b6be615a45dab8b6e117399150c558"
+  },
+  "scientific_conditions": {
+    "model": "FedAvg round_001 VGG16 global checkpoint, strict torchvision vgg16(weights=None) load",
+    "round": 1,
+    "client_id": 0,
+    "input_batch": 0,
+    "batch_size": 16,
+    "conv_frozen": true,
+    "trainable": "all six FC parameters",
+    "dropout": 0.0,
+    "model_eval": true,
+    "epoch": 3,
+    "steps": 3,
+    "optimizer": {
+      "name": "SGD",
+      "lr": 0.001,
+      "momentum": 0.0,
+      "weight_decay": 0.0,
+      "foreach": false,
+      "loss": "mean cross-entropy"
+    },
+    "seed": 42,
+    "attacked_parameter": {
+      "name": "classifier.0.weight",
+      "shape": [
+        4096,
+        25088
+      ]
+    },
+    "quantization": {
+      "scheme": "symmetric signed INT4",
+      "codes": [
+        -7,
+        7
+      ],
+      "rounding": "nearest-even",
+      "per_tensor_scale_count": 1,
+      "per_channel_scale_count": 4096,
+      "per_channel_axis": "output row",
+      "zero_row_scale": 1.0
+    },
+    "arms": [
+      "fp32",
+      "int4_per_tensor",
+      "int4_per_channel"
+    ],
+    "cpa": {
+      "cpa_ica_max_iter": 25000,
+      "cpa_ica_lr": 0.001,
+      "cpa_ica_optimizer": "adam",
+      "cpa_ica_scheduler": "none",
+      "cpa_ica_decor": 5.3,
+      "cpa_ica_T": 7.7,
+      "cpa_ica_ne": 1.0,
+      "cpa_ica_nv": 0.13,
+      "cpa_ica_l1": 5.0,
+      "cpa_ica_tv": 0.1,
+      "cpa_ica_log_every": 5000,
+      "n_components": 16,
+      "seed": 42
+    },
+    "fia": {
+      "n_iter": 25000,
+      "lr": 0.1,
+      "tv": 0.1,
+      "fi": 1.0,
+      "optimizer": "adam",
+      "scheduler": "cosine",
+      "log_every": 5000,
+      "seed": 42,
+      "target": "abs(S_hat)",
+      "feature_adapter": "round_001 conv(features) and avgpool; CoRA RoundFeatureModel-equivalent"
+    },
+    "original_image_evaluation": "after all three arms complete; images not passed to attacks"
+  },
+  "runtime_before": {
+    "python": "3.11.14 | packaged by Anaconda, Inc. | (main, Oct 21 2025, 18:30:03) [MSC v.1929 64 bit (AMD64)]",
+    "torch": "2.13.0+cu132",
+    "numpy": "2.4.4",
+    "torchvision": "0.28.0+cu132",
+    "cuda": "13.2",
+    "cudnn": 92000,
+    "cudnn_enabled": true,
+    "cudnn_benchmark": false,
+    "cudnn_deterministic": false,
+    "deterministic_algorithms": false,
+    "deterministic_warn_only": false,
+    "matmul_tf32": false,
+    "cudnn_tf32": true,
+    "cublas_workspace_config": ":4096:8",
+    "threads": 8,
+    "gpu": "NVIDIA GeForce RTX 5060 Ti",
+    "cuda_peak_allocated": 0,
+    "cuda_peak_reserved": 0
+  },
+  "initial_cuda_free_bytes": 15908995072,
+  "initial_cuda_total_bytes": 17102864384,
+  "output_directory": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results_private\\fedavg_r001_c0_int4_pt_vs_pc_B16_E3_20261012",
+  "failed_at_utc": "2026-10-12T10:05:56.102147+00:00",
+  "failure": {
+    "type": "ValueError",
+    "message": "inplace module at classifier.1 is unsupported; use out-of-place activations",
+    "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results_private\\fedavg_r001_c0_int4_pt_vs_pc_B16_E3_20261012\\run_fedavg_r001_b16_int4_comparison.py\", line 804, in main\n    updates, truth_z, training_metadata = compute_training_updates(model, payload, labels)\n                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results_private\\fedavg_r001_c0_int4_pt_vs_pc_B16_E3_20261012\\run_fedavg_r001_b16_int4_comparison.py\", line 234, in compute_training_updates\n    replay_updates = fc_replay.fc_sgd_updates(\n                     ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\qacpa\\fc_replay.py\", line 69, in fc_sgd_updates\n    return differentiable_sgd(model, features, targets, spec, create_graph=create_graph,\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\qacpa\\full_update_replay.py\", line 128, in differentiable_sgd\n    _validate_inputs(model, images, targets, spec)\n  File \"C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\qacpa\\full_update_replay.py\", line 101, in _validate_inputs\n    raise ValueError(f\"inplace module at {name or '<root>'} is unsupported; use out-of-place activations\")\nValueError: inplace module at classifier.1 is unsupported; use out-of-place activations\n"
+  },
+  "official_upstream_source_hashes_after_failure": {
+    "C:\\Users\\조상제\\Desktop\\CPA\\official_cpa\\src\\datasets.py": "f9e7b47733b5acb4b73e6914a3f100b5187766bbed78a12d17b69c39eec1b6d1",
+    "C:\\Users\\조상제\\Desktop\\CPA\\official_cpa\\src\\utils.py": "565f1bf1a47f387d042b35bb24f677d1ff0d3ec5d979e2876c31ed114179b9fe",
+    "C:\\Users\\조상제\\Desktop\\CPA\\official_cpa\\src\\gradient_inversion_utils.py": "668d77788dc8d81c181c8c0a9fbe8533c6fbea22ba46fe7f5e15b0a431300e5f",
+    "C:\\Users\\조상제\\Desktop\\CPA\\official_cpa\\src\\gradient_inversion.py": "c598e1ee7b4079f741060d10c8dfd14711e393a97384c63cf32be77a458b1873",
+    "C:\\Users\\조상제\\Desktop\\CPA\\official_cpa\\src\\feature_inversion.py": "dc73880427e3eaf1f873d295f17f1d48d301882f634ee5df36ddeea8e56c4dec",
+    "C:\\Users\\조상제\\Desktop\\CPA\\official_cpa\\src\\vgg16.py": "8114eca8cde553dace5f777aedd21b70851c570d473e597b005cb6be4b248d36",
+    "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\qacpa\\upstream_naive.py": "8f29b885d86f4121eda5c55e17486a3a48bd8db08b2f83890fe7726730d1ee92",
+    "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\qacpa\\seed.py": "769366fcc2cf3e144d8caa86f73a55dcb0b6be615a45dab8b6e117399150c558"
+  },
+  "source_hashes_unchanged_at_failure": true
+}

@@ -1,0 +1,22 @@
+{
+  "task_id": "CPA_SINGLE_CLIENT_FP32_INT8_FAST4000_GD4000_FIA25000_20261006",
+  "arm": "int8",
+  "bits": 8,
+  "status": "COMPLETED",
+  "quality": "NOT_EVALUATED",
+  "fast_iterations": 4000,
+  "gd_iterations": 4000,
+  "fia_iterations": 25000,
+  "separation_seconds": 45.814285499975085,
+  "fia_seconds": 2053.8791841999628,
+  "attack_seconds": 2100.292516000103,
+  "peak_cuda_allocated_bytes": 3527878144,
+  "artifact_hashes": {
+    "sources.pt": "2ef837a755864c27f3c42d6ff920849f1ff18ff83b1469b91a2990bf61f27b86",
+    "fastica_log.json": "91201ed4d8844040529d200e133c888c1a27408527294bd40186b818f7e87c11",
+    "gdica_log.json": "2c7868207ea34eccb2cc742b59cd00d88f13cfd98a6df0fcf1d60d2409f8ccb6",
+    "separation.json": "7f3367ea4b807b4365dfdb109a8a0bed963a88215a9f94f47adc932eb3cf882c",
+    "candidate.pt": "65e223d49b8d75e776ace6b028504b3b7c04053cb8199b6867d5a056b03a942e",
+    "fia_result.json": "a651e230409e62820a8e61fd11a89f3a929ec28f8ae8af3d1cb86efc083d5583"
+  }
+}

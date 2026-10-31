@@ -33,3 +33,41 @@ quantized_update_cpa/outputs_v2/
 **/single_client_updates/
 **/fedavg_single_client_updates/
 **/round_updates/
+
+# Local tooling and temporary workspaces
+/.claude/
+/.codex/
+/.vscode/
+/.ai/relay-runs/
+/.tmp_pytest_*/
+/pytest_tmp_*/
+**/.pytest_cache/
+/.tools/
+/paper_preview/
+
+# Large local-only transfer and binary observation artifacts
+*.zip
+*.tar.gz
+*.bin
+*.sgn4
+*.sgn8
+*.sb4
+*.sb5
+*.sb6
+*.sb7
+*.sb8
+/bit04/
+/bit08/
+/handoff_m7_20260909/
+/handoff_m7_minimal_20260909/
+/random_dequant_code_20260920/
+/random_dequant_full_source_20260920/
+**/results_private/
+
+# Rebuildable LaTeX intermediates
+*.aux
+*.out
+*.toc
+*.fls
+*.fdb_latexmk
+*.synctex.gz

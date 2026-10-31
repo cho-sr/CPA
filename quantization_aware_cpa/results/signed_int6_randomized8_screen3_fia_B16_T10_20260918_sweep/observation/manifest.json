@@ -1,0 +1,159 @@
+{
+  "batch_id": "batch00",
+  "checkpoint_sha256": "397923af8e79cdbb6a7127f12361acd7a2f83e06b05044ddf496e83de57a5bf0",
+  "client_id": null,
+  "codec_metadata": {
+    "bits": 6,
+    "code_dtype": "int8",
+    "code_operation": "round(float32(G/s)).clamp(-31,31).int8",
+    "codec": "signed_symmetric_bits6_qplus31_nearest_even_cpu_fp32_v1",
+    "device": "cpu",
+    "edge_policy": "largest_finite_fp32_absmax_rounding_to_observed_scale",
+    "input_dtype": "float32",
+    "logical_code_bits": 6,
+    "physical_code_storage": "int8",
+    "qmax": 31,
+    "qmin": -31,
+    "rounding": "nearest_even",
+    "scale_dtype": "float32",
+    "scale_operation": "float32(max_abs/31)",
+    "scale_scope": "per_parameter_tensor_absmax_scalar",
+    "zero_tensor": "q=0,s=1"
+  },
+  "communication": {
+    "code_bytes": 123642856,
+    "header_bytes_excluding_scale": 96,
+    "logical_bits": 6,
+    "logical_code_bits": 741857136,
+    "manifest_bytes": 4468,
+    "packet_file_bytes": 123642976,
+    "physical_code_storage_bytes": 123642856,
+    "scale_bytes": 24,
+    "total_file_bytes": 123647444
+  },
+  "delta_convention": "theta_after10_minus_theta_start",
+  "format": "signed_symmetric_bits6_qplus31_nearest_even_cpu_fp32_v1",
+  "global_round_id": null,
+  "id_reason": "NOT_RECORDED",
+  "image_shape": [
+    16,
+    3,
+    224,
+    224
+  ],
+  "labels": "private",
+  "layers": {
+    "classifier.0.bias": {
+      "code_bytes": 4096,
+      "file": "fc_00.sb6",
+      "file_bytes": 4116,
+      "header_bytes_excluding_scale": 16,
+      "logical_code_bits": 6,
+      "numel": 4096,
+      "physical_code_storage": "int8",
+      "q_dtype": "int8",
+      "s_dtype": "float32",
+      "s_shape": [],
+      "scale_bytes": 4,
+      "sha256": "cee5e65923310104060173a9fc90675916a7e827eaadee36e3ec2be95e513904",
+      "shape": [
+        4096
+      ]
+    },
+    "classifier.0.weight": {
+      "code_bytes": 102760448,
+      "file": "fc_01.sb6",
+      "file_bytes": 102760468,
+      "header_bytes_excluding_scale": 16,
+      "logical_code_bits": 6,
+      "numel": 102760448,
+      "physical_code_storage": "int8",
+      "q_dtype": "int8",
+      "s_dtype": "float32",
+      "s_shape": [],
+      "scale_bytes": 4,
+      "sha256": "1e10b61988d3d715a8150b1d42c108e1d1621cd68abe53d4a290eec6c3b86709",
+      "shape": [
+        4096,
+        25088
+      ]
+    },
+    "classifier.3.bias": {
+      "code_bytes": 4096,
+      "file": "fc_02.sb6",
+      "file_bytes": 4116,
+      "header_bytes_excluding_scale": 16,
+      "logical_code_bits": 6,
+      "numel": 4096,
+      "physical_code_storage": "int8",
+      "q_dtype": "int8",
+      "s_dtype": "float32",
+      "s_shape": [],
+      "scale_bytes": 4,
+      "sha256": "79c92562907e9fbc7e206b18bb64c81d9fc1f380f58db232b78036f6750eb6db",
+      "shape": [
+        4096
+      ]
+    },
+    "classifier.3.weight": {
+      "code_bytes": 16777216,
+      "file": "fc_03.sb6",
+      "file_bytes": 16777236,
+      "header_bytes_excluding_scale": 16,
+      "logical_code_bits": 6,
+      "numel": 16777216,
+      "physical_code_storage": "int8",
+      "q_dtype": "int8",
+      "s_dtype": "float32",
+      "s_shape": [],
+      "scale_bytes": 4,
+      "sha256": "1734a196fd651de77bb9d06a87c4ee9d15dba01b0492eb4f3a67d0c3ab75a8a0",
+      "shape": [
+        4096,
+        4096
+      ]
+    },
+    "classifier.6.bias": {
+      "code_bytes": 1000,
+      "file": "fc_04.sb6",
+      "file_bytes": 1020,
+      "header_bytes_excluding_scale": 16,
+      "logical_code_bits": 6,
+      "numel": 1000,
+      "physical_code_storage": "int8",
+      "q_dtype": "int8",
+      "s_dtype": "float32",
+      "s_shape": [],
+      "scale_bytes": 4,
+      "sha256": "415e501e8950ac8cd1f10146369b930443a735bc0ecfdd78e6099c16a866974c",
+      "shape": [
+        1000
+      ]
+    },
+    "classifier.6.weight": {
+      "code_bytes": 4096000,
+      "file": "fc_05.sb6",
+      "file_bytes": 4096020,
+      "header_bytes_excluding_scale": 16,
+      "logical_code_bits": 6,
+      "numel": 4096000,
+      "physical_code_storage": "int8",
+      "q_dtype": "int8",
+      "s_dtype": "float32",
+      "s_shape": [],
+      "scale_bytes": 4,
+      "sha256": "3161946b0a5b25c598a2991d002a47585564896759e41e5a547a43c9be579cbb",
+      "shape": [
+        1000,
+        4096
+      ]
+    }
+  },
+  "model": "vgg16",
+  "normalization": "imagenet",
+  "observation_source": "single_client_single_local_update_archived_raw_update",
+  "training": {
+    "new_local_training": false,
+    "scope": "archived_raw_update_only"
+  }
+}

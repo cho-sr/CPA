@@ -1,0 +1,13 @@
+{
+  "n_jobs": 930,
+  "n_fp32_jobs": 30,
+  "n_quantized_jobs": 900,
+  "manifest": "results\\m4_grid_plan\\m4_grid_manifest.csv",
+  "cmd": "results\\m4_grid_plan\\run_m4_grid.cmd",
+  "grid_root": "results\\m4_grid",
+  "notes": [
+    "fp32 is emitted once per B/seed instead of once per rounding/granularity.",
+    "Quantized jobs run naive,A,A_oracle. Merge fp32 rows during aggregation.",
+    "B=1024 uses data.require_distinct_labels=false because ImageNet has 1000 labels."
+  ]
+}

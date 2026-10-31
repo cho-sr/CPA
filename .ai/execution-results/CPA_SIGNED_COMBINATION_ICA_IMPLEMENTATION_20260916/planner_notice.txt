@@ -1,0 +1,8 @@
+[CPA final result | CPA_SIGNED_COMBINATION_ICA_IMPLEMENTATION_20260916]
+Status: COMPLETED for the authorized implementation and focused synthetic validation scope.
+Report: .ai/execution-results/CPA_SIGNED_COMBINATION_ICA_IMPLEMENTATION_20260916
+Execution summary: .ai/execution-results/CPA_SIGNED_COMBINATION_ICA_IMPLEMENTATION_20260916/execution_summary.json
+Validation: 20 focused tests passed; 5 unchanged upstream contract tests passed with one pre-existing warning; py_compile and CLI help passed.
+Scientific quality: NOT_EVALUATED. Research runs: 0. Private tensors loaded: 0. Generator models used: 0. No real B16/T10 separation, Direct FIA, image replay, private evaluation, tuning, or extra run was performed.
+Protected/shared sources and public inputs were unchanged by before/after hash audit. The new ICA source preserves native signed S_hat and exact target_z=abs(S_hat), and the staged bridges are ready for a separately authorized future run.
+Please show this result once and end the Planner turn; do not start a research run automatically.

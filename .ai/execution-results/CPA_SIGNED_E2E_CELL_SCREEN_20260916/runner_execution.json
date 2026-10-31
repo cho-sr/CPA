@@ -1,0 +1,23 @@
+{
+  "task_id": "CPA_SIGNED_E2E_CELL_SCREEN_20260916",
+  "stage": "public_optimization_and_replay_evaluation",
+  "command": [
+    "C:\\miniconda\\envs\\DLG\\python.exe",
+    "-m",
+    "quantization_aware_cpa.qacpa.signed_e2e_runner",
+    "--public-observation",
+    "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\signed_int4_baseline_B16_T10\\observation",
+    "--naive",
+    "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\signed_int4_baseline_B16_T10\\naive",
+    "--checkpoint",
+    "C:\\Users\\조상제\\.cache\\torch\\hub\\checkpoints\\vgg16-397923af.pth",
+    "--output",
+    "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\signed_e2e_cell_screen_B16_T10_20260916",
+    "--device",
+    "cuda"
+  ],
+  "cwd": "C:\\Users\\조상제\\Desktop\\CPA",
+  "started_at_utc": "2026-09-16T07:24:22.935250+00:00",
+  "exit_status": 0,
+  "wall_seconds": 603.019371900009
+}

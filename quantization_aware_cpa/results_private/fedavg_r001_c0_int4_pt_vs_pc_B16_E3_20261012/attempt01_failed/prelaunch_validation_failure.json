@@ -1,0 +1,5 @@
+{
+  "type": "ValueError",
+  "message": "VGG dropout modules must be disabled by model.eval()",
+  "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results_private\\fedavg_r001_c0_int4_pt_vs_pc_B16_E3_20261012\\run_fedavg_r001_b16_int4_comparison.py\", line 777, in main\n    updates, truth_z, training_metadata = compute_training_updates(model, payload, labels)\n                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results_private\\fedavg_r001_c0_int4_pt_vs_pc_B16_E3_20261012\\run_fedavg_r001_b16_int4_comparison.py\", line 191, in compute_training_updates\n    raise ValueError(\"VGG dropout modules must be disabled by model.eval()\")\nValueError: VGG dropout modules must be disabled by model.eval()\n"
+}

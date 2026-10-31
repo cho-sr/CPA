@@ -1,0 +1,103 @@
+panel,method,statistic,replicate,n_images,lpips,source
+a,"CPA + FIA: gradients, FP32",correct_assignment_mean,,36,0.4464729486240281,quantization_aware_cpa/results/m7_shuffle_control/summary.csv
+a,"CPA + FIA: gradients, FP32",mean_of_permutation_means,,36,0.8084243430445592,quantization_aware_cpa/results/m7_shuffle_control/per_seed_summary.csv
+a,"CPA + FIA: gradients, FP32",permutation_mean,0,36,0.814067017700937,quantization_aware_cpa/results/m7_shuffle_control/per_seed_summary.csv
+a,"CPA + FIA: gradients, FP32",permutation_mean,1,36,0.8204780237542258,quantization_aware_cpa/results/m7_shuffle_control/per_seed_summary.csv
+a,"CPA + FIA: gradients, FP32",permutation_mean,2,36,0.8309565401739545,quantization_aware_cpa/results/m7_shuffle_control/per_seed_summary.csv
+a,"CPA + FIA: gradients, FP32",permutation_mean,3,36,0.8190970536735322,quantization_aware_cpa/results/m7_shuffle_control/per_seed_summary.csv
+a,"CPA + FIA: gradients, FP32",permutation_mean,4,36,0.8239294687906901,quantization_aware_cpa/results/m7_shuffle_control/per_seed_summary.csv
+a,"CPA + FIA: gradients, FP32",permutation_mean,5,36,0.8116442180342145,quantization_aware_cpa/results/m7_shuffle_control/per_seed_summary.csv
+a,"CPA + FIA: gradients, FP32",permutation_mean,6,36,0.7838177358110746,quantization_aware_cpa/results/m7_shuffle_control/per_seed_summary.csv
+a,"CPA + FIA: gradients, FP32",permutation_mean,7,36,0.7983015875021616,quantization_aware_cpa/results/m7_shuffle_control/per_seed_summary.csv
+a,"CPA + FIA: gradients, FP32",permutation_mean,8,36,0.8205174406369528,quantization_aware_cpa/results/m7_shuffle_control/per_seed_summary.csv
+a,"CPA + FIA: gradients, FP32",permutation_mean,9,36,0.7929974413580365,quantization_aware_cpa/results/m7_shuffle_control/per_seed_summary.csv
+a,"CPA + FIA: gradients, FP32",permutation_mean,10,36,0.7947702606519064,quantization_aware_cpa/results/m7_shuffle_control/per_seed_summary.csv
+a,"CPA + FIA: gradients, FP32",permutation_mean,11,36,0.8037872032986747,quantization_aware_cpa/results/m7_shuffle_control/per_seed_summary.csv
+a,"CPA + FIA: gradients, FP32",permutation_mean,12,36,0.793818356262313,quantization_aware_cpa/results/m7_shuffle_control/per_seed_summary.csv
+a,"CPA + FIA: gradients, FP32",permutation_mean,13,36,0.8099263807137808,quantization_aware_cpa/results/m7_shuffle_control/per_seed_summary.csv
+a,"CPA + FIA: gradients, FP32",permutation_mean,14,36,0.8051385805010796,quantization_aware_cpa/results/m7_shuffle_control/per_seed_summary.csv
+a,"CPA + FIA: gradients, FP32",permutation_mean,15,36,0.8022828160060776,quantization_aware_cpa/results/m7_shuffle_control/per_seed_summary.csv
+a,"CPA + FIA: gradients, FP32",permutation_mean,16,36,0.8106140750977728,quantization_aware_cpa/results/m7_shuffle_control/per_seed_summary.csv
+a,"CPA + FIA: gradients, FP32",permutation_mean,17,36,0.8147344721688164,quantization_aware_cpa/results/m7_shuffle_control/per_seed_summary.csv
+a,"CPA + FIA: gradients, FP32",permutation_mean,18,36,0.8117849263879988,quantization_aware_cpa/results/m7_shuffle_control/per_seed_summary.csv
+a,"CPA + FIA: gradients, FP32",permutation_mean,19,36,0.8058232623669837,quantization_aware_cpa/results/m7_shuffle_control/per_seed_summary.csv
+a,"CPA + FIA: gradients, 4-bit observation model",correct_assignment_mean,,40,0.5439403489232063,quantization_aware_cpa/results/m7_shuffle_control/summary.csv
+a,"CPA + FIA: gradients, 4-bit observation model",mean_of_permutation_means,,40,0.7989024382084609,quantization_aware_cpa/results/m7_shuffle_control/per_seed_summary.csv
+a,"CPA + FIA: gradients, 4-bit observation model",permutation_mean,0,40,0.7909326739609241,quantization_aware_cpa/results/m7_shuffle_control/per_seed_summary.csv
+a,"CPA + FIA: gradients, 4-bit observation model",permutation_mean,1,40,0.7974979393184185,quantization_aware_cpa/results/m7_shuffle_control/per_seed_summary.csv
+a,"CPA + FIA: gradients, 4-bit observation model",permutation_mean,2,40,0.7896794475615024,quantization_aware_cpa/results/m7_shuffle_control/per_seed_summary.csv
+a,"CPA + FIA: gradients, 4-bit observation model",permutation_mean,3,40,0.8076535165309906,quantization_aware_cpa/results/m7_shuffle_control/per_seed_summary.csv
+a,"CPA + FIA: gradients, 4-bit observation model",permutation_mean,4,40,0.8054981246590615,quantization_aware_cpa/results/m7_shuffle_control/per_seed_summary.csv
+a,"CPA + FIA: gradients, 4-bit observation model",permutation_mean,5,40,0.8128083482384681,quantization_aware_cpa/results/m7_shuffle_control/per_seed_summary.csv
+a,"CPA + FIA: gradients, 4-bit observation model",permutation_mean,6,40,0.8061387486755848,quantization_aware_cpa/results/m7_shuffle_control/per_seed_summary.csv
+a,"CPA + FIA: gradients, 4-bit observation model",permutation_mean,7,40,0.7822792790830135,quantization_aware_cpa/results/m7_shuffle_control/per_seed_summary.csv
+a,"CPA + FIA: gradients, 4-bit observation model",permutation_mean,8,40,0.7894070982933045,quantization_aware_cpa/results/m7_shuffle_control/per_seed_summary.csv
+a,"CPA + FIA: gradients, 4-bit observation model",permutation_mean,9,40,0.8089200228452682,quantization_aware_cpa/results/m7_shuffle_control/per_seed_summary.csv
+a,"CPA + FIA: gradients, 4-bit observation model",permutation_mean,10,40,0.7997934788465499,quantization_aware_cpa/results/m7_shuffle_control/per_seed_summary.csv
+a,"CPA + FIA: gradients, 4-bit observation model",permutation_mean,11,40,0.8035683311522007,quantization_aware_cpa/results/m7_shuffle_control/per_seed_summary.csv
+a,"CPA + FIA: gradients, 4-bit observation model",permutation_mean,12,40,0.8098631531000138,quantization_aware_cpa/results/m7_shuffle_control/per_seed_summary.csv
+a,"CPA + FIA: gradients, 4-bit observation model",permutation_mean,13,40,0.7903234988451004,quantization_aware_cpa/results/m7_shuffle_control/per_seed_summary.csv
+a,"CPA + FIA: gradients, 4-bit observation model",permutation_mean,14,40,0.7617411755025387,quantization_aware_cpa/results/m7_shuffle_control/per_seed_summary.csv
+a,"CPA + FIA: gradients, 4-bit observation model",permutation_mean,15,40,0.8087243229150772,quantization_aware_cpa/results/m7_shuffle_control/per_seed_summary.csv
+a,"CPA + FIA: gradients, 4-bit observation model",permutation_mean,16,40,0.810338108241558,quantization_aware_cpa/results/m7_shuffle_control/per_seed_summary.csv
+a,"CPA + FIA: gradients, 4-bit observation model",permutation_mean,17,40,0.7973555885255337,quantization_aware_cpa/results/m7_shuffle_control/per_seed_summary.csv
+a,"CPA + FIA: gradients, 4-bit observation model",permutation_mean,18,40,0.8092901051044464,quantization_aware_cpa/results/m7_shuffle_control/per_seed_summary.csv
+a,"CPA + FIA: gradients, 4-bit observation model",permutation_mean,19,40,0.796235802769661,quantization_aware_cpa/results/m7_shuffle_control/per_seed_summary.csv
+a,"CPA + FIA: client updates, FP32",correct_assignment_mean,,80,0.45459726378321647,quantization_aware_cpa/results/m7_shuffle_control/summary.csv
+a,"CPA + FIA: client updates, FP32",mean_of_permutation_means,,80,0.8165259888395665,quantization_aware_cpa/results/m7_shuffle_control/per_seed_summary.csv
+a,"CPA + FIA: client updates, FP32",permutation_mean,0,80,0.822721341997385,quantization_aware_cpa/results/m7_shuffle_control/per_seed_summary.csv
+a,"CPA + FIA: client updates, FP32",permutation_mean,1,80,0.8208927866071463,quantization_aware_cpa/results/m7_shuffle_control/per_seed_summary.csv
+a,"CPA + FIA: client updates, FP32",permutation_mean,2,80,0.8127581637352705,quantization_aware_cpa/results/m7_shuffle_control/per_seed_summary.csv
+a,"CPA + FIA: client updates, FP32",permutation_mean,3,80,0.8204102613031864,quantization_aware_cpa/results/m7_shuffle_control/per_seed_summary.csv
+a,"CPA + FIA: client updates, FP32",permutation_mean,4,80,0.8073949545621872,quantization_aware_cpa/results/m7_shuffle_control/per_seed_summary.csv
+a,"CPA + FIA: client updates, FP32",permutation_mean,5,80,0.8010050490498543,quantization_aware_cpa/results/m7_shuffle_control/per_seed_summary.csv
+a,"CPA + FIA: client updates, FP32",permutation_mean,6,80,0.815616849437356,quantization_aware_cpa/results/m7_shuffle_control/per_seed_summary.csv
+a,"CPA + FIA: client updates, FP32",permutation_mean,7,80,0.8147948622703552,quantization_aware_cpa/results/m7_shuffle_control/per_seed_summary.csv
+a,"CPA + FIA: client updates, FP32",permutation_mean,8,80,0.8180618949234486,quantization_aware_cpa/results/m7_shuffle_control/per_seed_summary.csv
+a,"CPA + FIA: client updates, FP32",permutation_mean,9,80,0.814793361723423,quantization_aware_cpa/results/m7_shuffle_control/per_seed_summary.csv
+a,"CPA + FIA: client updates, FP32",permutation_mean,10,80,0.8208792604506016,quantization_aware_cpa/results/m7_shuffle_control/per_seed_summary.csv
+a,"CPA + FIA: client updates, FP32",permutation_mean,11,80,0.8213373444974422,quantization_aware_cpa/results/m7_shuffle_control/per_seed_summary.csv
+a,"CPA + FIA: client updates, FP32",permutation_mean,12,80,0.8144556552171707,quantization_aware_cpa/results/m7_shuffle_control/per_seed_summary.csv
+a,"CPA + FIA: client updates, FP32",permutation_mean,13,80,0.8171464942395688,quantization_aware_cpa/results/m7_shuffle_control/per_seed_summary.csv
+a,"CPA + FIA: client updates, FP32",permutation_mean,14,80,0.8205970004200935,quantization_aware_cpa/results/m7_shuffle_control/per_seed_summary.csv
+a,"CPA + FIA: client updates, FP32",permutation_mean,15,80,0.8175462126731873,quantization_aware_cpa/results/m7_shuffle_control/per_seed_summary.csv
+a,"CPA + FIA: client updates, FP32",permutation_mean,16,80,0.8231466643512249,quantization_aware_cpa/results/m7_shuffle_control/per_seed_summary.csv
+a,"CPA + FIA: client updates, FP32",permutation_mean,17,80,0.8131266012787819,quantization_aware_cpa/results/m7_shuffle_control/per_seed_summary.csv
+a,"CPA + FIA: client updates, FP32",permutation_mean,18,80,0.8136047709733247,quantization_aware_cpa/results/m7_shuffle_control/per_seed_summary.csv
+a,"CPA + FIA: client updates, FP32",permutation_mean,19,80,0.8202302470803261,quantization_aware_cpa/results/m7_shuffle_control/per_seed_summary.csv
+b,FIA on observed gradient rows (FP32),victim_batch_mean,0,8,0.69184784963727,quantization_aware_cpa/results/m7_no_cpa_control/fp32/per_image_metrics.csv
+b,FIA on observed gradient rows (FP32),victim_batch_mean,1,8,0.8371799811720848,quantization_aware_cpa/results/m7_no_cpa_control/fp32/per_image_metrics.csv
+b,FIA on observed gradient rows (FP32),victim_batch_mean,2,8,0.7765699252486229,quantization_aware_cpa/results/m7_no_cpa_control/fp32/per_image_metrics.csv
+b,FIA on observed gradient rows (FP32),victim_batch_mean,3,8,0.7365928553044796,quantization_aware_cpa/results/m7_no_cpa_control/fp32/per_image_metrics.csv
+b,FIA on observed gradient rows (FP32),victim_batch_mean,4,8,0.741909097880125,quantization_aware_cpa/results/m7_no_cpa_control/fp32/per_image_metrics.csv
+b,FIA on observed gradient rows (FP32),all_image_mean,,40,0.7568199418485164,quantization_aware_cpa/results/m7_normalized_metrics/normalized_metrics.csv
+b,FIA on observed gradient rows (4-bit observation model),victim_batch_mean,0,8,0.7203241065144539,quantization_aware_cpa/results/m7_no_cpa_control/4bit/per_image_metrics.csv
+b,FIA on observed gradient rows (4-bit observation model),victim_batch_mean,1,8,0.8006206601858139,quantization_aware_cpa/results/m7_no_cpa_control/4bit/per_image_metrics.csv
+b,FIA on observed gradient rows (4-bit observation model),victim_batch_mean,2,8,0.7752754017710686,quantization_aware_cpa/results/m7_no_cpa_control/4bit/per_image_metrics.csv
+b,FIA on observed gradient rows (4-bit observation model),victim_batch_mean,3,8,0.7239871434867382,quantization_aware_cpa/results/m7_no_cpa_control/4bit/per_image_metrics.csv
+b,FIA on observed gradient rows (4-bit observation model),victim_batch_mean,4,8,0.7489058375358582,quantization_aware_cpa/results/m7_no_cpa_control/4bit/per_image_metrics.csv
+b,FIA on observed gradient rows (4-bit observation model),all_image_mean,,40,0.7538226298987866,quantization_aware_cpa/results/m7_normalized_metrics/normalized_metrics.csv
+b,FIA on random embeddings,victim_batch_mean,0,8,0.783801406621933,quantization_aware_cpa/results/m7_prior_only/prior_only/per_image_metrics.csv
+b,FIA on random embeddings,victim_batch_mean,1,8,0.7775494009256363,quantization_aware_cpa/results/m7_prior_only/prior_only/per_image_metrics.csv
+b,FIA on random embeddings,victim_batch_mean,2,8,0.7650455012917519,quantization_aware_cpa/results/m7_prior_only/prior_only/per_image_metrics.csv
+b,FIA on random embeddings,victim_batch_mean,3,8,0.7598255574703217,quantization_aware_cpa/results/m7_prior_only/prior_only/per_image_metrics.csv
+b,FIA on random embeddings,victim_batch_mean,4,8,0.7826548367738724,quantization_aware_cpa/results/m7_prior_only/prior_only/per_image_metrics.csv
+b,FIA on random embeddings,all_image_mean,,40,0.7737753406167031,quantization_aware_cpa/results/m7_normalized_metrics/normalized_metrics.csv
+b,Full-validation mean image,victim_batch_mean,0,8,0.8017204701900482,quantization_aware_cpa/results/m7_recompute_controls/per_image_metrics.csv
+b,Full-validation mean image,victim_batch_mean,1,8,0.8299891576170921,quantization_aware_cpa/results/m7_recompute_controls/per_image_metrics.csv
+b,Full-validation mean image,victim_batch_mean,2,8,0.8067662864923477,quantization_aware_cpa/results/m7_recompute_controls/per_image_metrics.csv
+b,Full-validation mean image,victim_batch_mean,3,8,0.7919955477118492,quantization_aware_cpa/results/m7_recompute_controls/per_image_metrics.csv
+b,Full-validation mean image,victim_batch_mean,4,8,0.79690982401371,quantization_aware_cpa/results/m7_recompute_controls/per_image_metrics.csv
+b,Full-validation mean image,all_image_mean,,40,0.8054762572050095,quantization_aware_cpa/results/m7_normalized_metrics/normalized_metrics.csv
+b,Constant gray image (RGB 0.5),victim_batch_mean,0,8,0.8287502378225327,quantization_aware_cpa/results/m7_recompute_controls/per_image_metrics.csv
+b,Constant gray image (RGB 0.5),victim_batch_mean,1,8,0.8515416607260704,quantization_aware_cpa/results/m7_recompute_controls/per_image_metrics.csv
+b,Constant gray image (RGB 0.5),victim_batch_mean,2,8,0.8363313376903534,quantization_aware_cpa/results/m7_recompute_controls/per_image_metrics.csv
+b,Constant gray image (RGB 0.5),victim_batch_mean,3,8,0.8300949409604073,quantization_aware_cpa/results/m7_recompute_controls/per_image_metrics.csv
+b,Constant gray image (RGB 0.5),victim_batch_mean,4,8,0.7992751151323318,quantization_aware_cpa/results/m7_recompute_controls/per_image_metrics.csv
+b,Constant gray image (RGB 0.5),all_image_mean,,40,0.8291986584663391,quantization_aware_cpa/results/m7_normalized_metrics/normalized_metrics.csv
+b,Uniform random image,victim_batch_mean,0,8,0.8668446019291878,quantization_aware_cpa/results/m7_recompute_controls/per_image_metrics.csv
+b,Uniform random image,victim_batch_mean,1,8,0.874345526099205,quantization_aware_cpa/results/m7_recompute_controls/per_image_metrics.csv
+b,Uniform random image,victim_batch_mean,2,8,0.8378604874014854,quantization_aware_cpa/results/m7_recompute_controls/per_image_metrics.csv
+b,Uniform random image,victim_batch_mean,3,8,0.830825611948967,quantization_aware_cpa/results/m7_recompute_controls/per_image_metrics.csv
+b,Uniform random image,victim_batch_mean,4,8,0.8733257502317429,quantization_aware_cpa/results/m7_recompute_controls/per_image_metrics.csv
+b,Uniform random image,all_image_mean,,40,0.8566403955221176,quantization_aware_cpa/results/m7_normalized_metrics/normalized_metrics.csv

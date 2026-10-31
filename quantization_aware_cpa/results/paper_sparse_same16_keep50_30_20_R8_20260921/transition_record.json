@@ -1,0 +1,120 @@
+{
+  "schema_version": 1,
+  "task_id": "CPA_PAPER_SPARSE_SAME80_K503020_R20_20260921",
+  "plan_version": 3,
+  "amendment_id": "CPA_PAPER_SPARSE_SAME16_R8_AMENDMENT_20260921",
+  "status": "FAILED_NEEDS_REVIEW",
+  "recorded_at_utc": "2026-09-20T23:44:32.052332+00:00",
+  "amendment_receipt": "C:\\Users\\조상제\\Desktop\\CPA\\.ai\\execution-handoffs\\CPA_PAPER_SPARSE_SAME16_R8_AMENDMENT_20260921.md",
+  "amendment_receipt_sha256": "004266033f9b054df392fc5a7d61c30ee85f4ba46256941bb4688b1d8372230f",
+  "v1_handoff_archive": "C:\\Users\\조상제\\Desktop\\CPA\\.ai\\execution-handoffs\\CPA_PAPER_SPARSE_SAME80_K503020_R20_20260921_V1_CLAIMED_ARCHIVE_20260921.md",
+  "v2_handoff_archive": "C:\\Users\\조상제\\Desktop\\CPA\\.ai\\execution-handoffs\\CPA_PAPER_SPARSE_SAME80_K503020_R20_20260921_V2_R8_CLAIMED_ARCHIVE_20260921.md",
+  "v2_supersession": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\paper_sparse_same80_keep50_30_20_R8_20260921\\v2_supersession.json",
+  "v2_callback_status": "C:\\Users\\조상제\\Desktop\\CPA\\.ai\\relay-runs\\completions\\CPA_PAPER_SPARSE_SAME80_K503020_R20_20260921\\paper_sparse_sweep_r8\\status.json",
+  "v2_callback_supersession": "C:\\Users\\조상제\\Desktop\\CPA\\.ai\\relay-runs\\completions\\CPA_PAPER_SPARSE_SAME80_K503020_R20_20260921\\paper_sparse_sweep_r8\\supersession.json",
+  "actual_v2_transition": {
+    "wrapper_pid": 11696,
+    "wrapper_created_ms": 1789946314801,
+    "wrapper_exit_code": 15,
+    "last_child_pid": 9156,
+    "last_child_created_ms": 1789946521149,
+    "last_child_exit_code": 15,
+    "callback_receipt_id": "797580f5-25bc-45d3-ab80-f67e6c813c6c",
+    "callback_state": "NOTIFICATION_QUEUED",
+    "scope": "v2 same80 only"
+  },
+  "v3_scope": {
+    "n_images": 16,
+    "batch_indices": [
+      0
+    ],
+    "global_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "candidate_ids": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "fractions": [
+      50,
+      30,
+      20
+    ],
+    "input_sha256": "24995487511a3e9d8d4665fdcd704f7a0f792249a9ba79880638d13bc4740141",
+    "no_batches_01_04": true,
+    "naive_pairing": "same original batch00 per-image rows only"
+  },
+  "focused_tests": {
+    "command": "pytest -q tests/test_paper_sparse_same16_r8.py",
+    "result": "7 passed"
+  },
+  "code_sha256": {
+    "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\qacpa\\run_paper_sparse_same16_r8.py": "9872888f11d8961ec6fa7904629e1e80e8a1c54062b0c4c1c06e47181927cec8",
+    "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\qacpa\\report_paper_sparse_same16_r8.py": "bb99b24ee8d922a7456e81b6365965ee120d707665b8bb0807b69564d2f06033",
+    "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\scripts\\run_paper_sparse_same16_r8.py": "441274876be011edf48de23e198d59f4cd8dc1ddfcbc8f62ceefbefefe199723"
+  },
+  "config_sha256": {
+    "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\configs\\cpa_fia_random_topk50_same16_R8_S5k_K3_F25k.json": "f4c0e3f3254d4c6719eec4a563e62dac9c19839fe197c524746bdf8405fa639d",
+    "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\configs\\cpa_fia_random_topk30_same16_R8_S5k_K3_F25k.json": "842a7b660cf4b5a2666daa33ca8dd2e839643c72cb1209d7c1ae12bef4856a90",
+    "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\configs\\cpa_fia_random_topk20_same16_R8_S5k_K3_F25k.json": "9c3575677297138fef37f9b27bab24f4beb2f7964633339792fa0d52b9fcd410"
+  },
+  "manifest_sha256": {
+    "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\cpa_fia_random_topk50_same16_R8_S5k_K3_F25k\\input_manifest.json": "d2ad849b9037db7ca8e0e0c912adddb066a05cb24bea9a21ca36abe47fe20896",
+    "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\cpa_fia_random_topk30_same16_R8_S5k_K3_F25k\\input_manifest.json": "5555636f44828a6715d043644e27a588ecad477c469cdcc2367fad17e22f9c70",
+    "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\cpa_fia_random_topk20_same16_R8_S5k_K3_F25k\\input_manifest.json": "b035a33e0be22918997f8822cd51b16ea82fcd2162b747bb47e1ecc553d33435"
+  },
+  "migration_sha256": {
+    "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\cpa_fia_random_topk50_same16_R8_S5k_K3_F25k\\migration_manifest.json": "aa4da2fb73421e58ac46a6d26281e73fc8d6fe68a1bf7becdbb0e48beb118247",
+    "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\cpa_fia_random_topk30_same16_R8_S5k_K3_F25k\\migration_manifest.json": "137f418e12d330f9b378b5b991382474a2e84ec67d97c33bb625f0dfa266a668",
+    "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\cpa_fia_random_topk20_same16_R8_S5k_K3_F25k\\migration_manifest.json": "c1b04a2710d09253fc2926128c491614dfde8539170cfe585e3c34f9489083ac"
+  },
+  "budget": {
+    "cpa_runs": 24,
+    "cpa_iterations": 600000,
+    "fia_iterations": 300000,
+    "ranking_replays": 33
+  },
+  "output_root": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\paper_sparse_same16_keep50_30_20_R8_20260921",
+  "launched_at_utc": "2026-09-20T23:46:09.448709+00:00",
+  "startup_receipt": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\paper_sparse_same16_keep50_30_20_R8_20260921\\startup_receipt.json",
+  "startup_receipt_sha256": "7579c76c53dd547e0005197540e859265d83aa549e3edcefa130528cc694ae50",
+  "actual_v3_transition": {
+    "wrapper_pid": 10180,
+    "wrapper_created_ms": 1789947925501,
+    "wrapper_command": "C:\\miniconda\\envs\\DLG\\python.exe -u scripts/run_paper_sparse_same16_r8.py",
+    "wrapper_scope": "serial SAME16 batch00 only",
+    "callback_pid": 15384,
+    "callback_stage": "paper_sparse_sweep_v3_same16",
+    "callback_status_path": "C:\\Users\\조상제\\Desktop\\CPA\\.ai\\relay-runs\\completions\\CPA_PAPER_SPARSE_SAME80_K503020_R20_20260921\\paper_sparse_sweep_v3_same16\\status.json",
+    "callback_state": "WAITING_FOR_PROCESS_EXIT",
+    "callback_process_created_ms": 1789947925501,
+    "model_calls_while_waiting": 0
+  },
+  "failed_at_utc": "2026-09-20T23:48:55.149048+00:00",
+  "failure_record": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\paper_sparse_same16_keep50_30_20_R8_20260921\\v3_failure_record.json",
+  "failure_record_sha256": "344f343aab079a620169cdb4d4d366664390bda13c68dc7c72df926e707fb931",
+  "failed_stage": "run_topk50",
+  "process_exit_code": 1,
+  "callback_final_state": "NOTIFICATION_QUEUED"
+}

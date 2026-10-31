@@ -1,0 +1,222 @@
+[
+  {
+    "path": "imagenet/vgg16/fedavg_single_client_clients3_round20of20_spc24_target0_local1_5441531bedd12a66/global_topk/keep_0p1/R1_seed1234_model_pred/cora_obs_naive_r1_keep10/observation_manifest.json",
+    "keep": 0.1,
+    "R": 1,
+    "sampler": "retained_rescaled",
+    "source_hash": "f3892ffa3af44656c54bf1d986c9b4c6109da063a821c42a67cdc22a463a2a09",
+    "observation_hash": "9a6bc7aef47af59b288568c43e312593406680021363ee39f92f23102d965221",
+    "source_file": "C:\\Users\\조상제\\Desktop\\CPA\\cora_fedavg_single_client_cpa\\outputs_v1\\fedavg_single_client_updates\\imagenet\\vgg16\\fedavg_single_client_clients3_round20of20_spc24_target0_local1_5441531bedd12a66\\global_topk\\keep_0p1.pickle",
+    "checkpoint": "C:\\Users\\조상제\\Desktop\\CPA\\cora_fedavg_single_client_cpa\\outputs_v1\\fedavg_single_client_updates\\imagenet\\vgg16\\fedavg_single_client_clients3_round20of20_spc24_target0_local1_5441531bedd12a66\\global_topk\\keep_0p1.fedavg_round_before.pt"
+  },
+  {
+    "path": "imagenet/vgg16/fedavg_single_client_clients3_round20of20_spc24_target0_local1_5441531bedd12a66/global_topk/keep_0p1/R8_seed1234_model_pred/observation_manifest.json",
+    "keep": 0.1,
+    "R": 8,
+    "sampler": "retained_rescaled",
+    "source_hash": "f3892ffa3af44656c54bf1d986c9b4c6109da063a821c42a67cdc22a463a2a09",
+    "observation_hash": "9a6bc7aef47af59b288568c43e312593406680021363ee39f92f23102d965221",
+    "source_file": "C:\\Users\\조상제\\Desktop\\CPA\\cora_fedavg_single_client_cpa\\outputs_v1\\fedavg_single_client_updates\\imagenet\\vgg16\\fedavg_single_client_clients3_round20of20_spc24_target0_local1_5441531bedd12a66\\global_topk\\keep_0p1.pickle",
+    "checkpoint": "C:\\Users\\조상제\\Desktop\\CPA\\cora_fedavg_single_client_cpa\\outputs_v1\\fedavg_single_client_updates\\imagenet\\vgg16\\fedavg_single_client_clients3_round20of20_spc24_target0_local1_5441531bedd12a66\\global_topk\\keep_0p1.fedavg_round_before.pt"
+  },
+  {
+    "path": "imagenet/vgg16/fedavg_single_client_clients3_round20of20_spc24_target0_local1_e920201510be97a8/global_topk/keep_0p1/R1_seed1234_model_pred/zf_keep10_e920/observation_manifest.json",
+    "keep": 0.1,
+    "R": 1,
+    "sampler": "zero_fill",
+    "source_hash": "33396cdfbd396b253d853ef84e45206b449ce827e3d8553c47f5fdd72fc1b976",
+    "observation_hash": "30ddf606217a3c922afd29475f29c353b5fb83314159e10f5fb8f20cf1a400ea",
+    "source_file": "C:\\Users\\조상제\\Desktop\\CPA\\cora_fedavg_single_client_cpa\\outputs_v1\\fedavg_single_client_updates\\imagenet\\vgg16\\fedavg_single_client_clients3_round20of20_spc24_target0_local1_e920201510be97a8\\global_topk\\keep_0p1.pickle",
+    "checkpoint": "C:\\Users\\조상제\\Desktop\\CPA\\cora_fedavg_single_client_cpa\\outputs_v1\\fedavg_single_client_updates\\imagenet\\vgg16\\fedavg_single_client_clients3_round20of20_spc24_target0_local1_e920201510be97a8\\global_topk\\keep_0p1.fedavg_round_before.pt"
+  },
+  {
+    "path": "imagenet/vgg16/fedavg_single_client_clients3_round20of20_spc24_target0_local1_e920201510be97a8/global_topk/keep_0p3/R1_seed1234_model_pred/cora_obs_zero_fill_keep80_50_30/observation_manifest.json",
+    "keep": 0.3,
+    "R": 1,
+    "sampler": "zero_fill",
+    "source_hash": "b3b33823f9796febd5285de8a3d7c5279380d6c8368e5399fb4aa4d538f4a1c5",
+    "observation_hash": "b803ec90590f587a4e345f3cea950e299faac210a3b943e224b15f7023be19d2",
+    "source_file": "C:\\Users\\조상제\\Desktop\\CPA\\cora_fedavg_single_client_cpa\\outputs_v1\\fedavg_single_client_updates\\imagenet\\vgg16\\fedavg_single_client_clients3_round20of20_spc24_target0_local1_e920201510be97a8\\global_topk\\keep_0p3.pickle",
+    "checkpoint": "C:\\Users\\조상제\\Desktop\\CPA\\cora_fedavg_single_client_cpa\\outputs_v1\\fedavg_single_client_updates\\imagenet\\vgg16\\fedavg_single_client_clients3_round20of20_spc24_target0_local1_e920201510be97a8\\global_topk\\keep_0p3.fedavg_round_before.pt"
+  },
+  {
+    "path": "imagenet/vgg16/fedavg_single_client_clients3_round20of20_spc24_target0_local1_e920201510be97a8/global_topk/keep_0p3/R8_seed1234_model_pred/observation_manifest.json",
+    "keep": 0.3,
+    "R": 8,
+    "sampler": "retained_rescaled",
+    "source_hash": "b3b33823f9796febd5285de8a3d7c5279380d6c8368e5399fb4aa4d538f4a1c5",
+    "observation_hash": "b803ec90590f587a4e345f3cea950e299faac210a3b943e224b15f7023be19d2",
+    "source_file": "C:\\Users\\조상제\\Desktop\\CPA\\cora_fedavg_single_client_cpa\\outputs_v1\\fedavg_single_client_updates\\imagenet\\vgg16\\fedavg_single_client_clients3_round20of20_spc24_target0_local1_e920201510be97a8\\global_topk\\keep_0p3.pickle",
+    "checkpoint": "C:\\Users\\조상제\\Desktop\\CPA\\cora_fedavg_single_client_cpa\\outputs_v1\\fedavg_single_client_updates\\imagenet\\vgg16\\fedavg_single_client_clients3_round20of20_spc24_target0_local1_e920201510be97a8\\global_topk\\keep_0p3.fedavg_round_before.pt"
+  },
+  {
+    "path": "imagenet/vgg16/fedavg_single_client_clients3_round20of20_spc24_target0_local1_e920201510be97a8/global_topk/keep_0p5/R1_seed1234_model_pred/cora_obs_zero_fill_keep80_50_30/observation_manifest.json",
+    "keep": 0.5,
+    "R": 1,
+    "sampler": "zero_fill",
+    "source_hash": "d9639da9ac8a4f58e0e455af3e8b600fd85018022b11e1432ee7721bf6f8f826",
+    "observation_hash": "036f51d97a253ce91f19e245cd147203a387771fd56cefcb8b92e4fb6956a8bb",
+    "source_file": "C:\\Users\\조상제\\Desktop\\CPA\\cora_fedavg_single_client_cpa\\outputs_v1\\fedavg_single_client_updates\\imagenet\\vgg16\\fedavg_single_client_clients3_round20of20_spc24_target0_local1_e920201510be97a8\\global_topk\\keep_0p5.pickle",
+    "checkpoint": "C:\\Users\\조상제\\Desktop\\CPA\\cora_fedavg_single_client_cpa\\outputs_v1\\fedavg_single_client_updates\\imagenet\\vgg16\\fedavg_single_client_clients3_round20of20_spc24_target0_local1_e920201510be97a8\\global_topk\\keep_0p5.fedavg_round_before.pt"
+  },
+  {
+    "path": "imagenet/vgg16/fedavg_single_client_clients3_round20of20_spc24_target0_local1_e920201510be97a8/global_topk/keep_0p5/R8_seed1234_model_pred/observation_manifest.json",
+    "keep": 0.5,
+    "R": 8,
+    "sampler": "retained_rescaled",
+    "source_hash": "d9639da9ac8a4f58e0e455af3e8b600fd85018022b11e1432ee7721bf6f8f826",
+    "observation_hash": "036f51d97a253ce91f19e245cd147203a387771fd56cefcb8b92e4fb6956a8bb",
+    "source_file": "C:\\Users\\조상제\\Desktop\\CPA\\cora_fedavg_single_client_cpa\\outputs_v1\\fedavg_single_client_updates\\imagenet\\vgg16\\fedavg_single_client_clients3_round20of20_spc24_target0_local1_e920201510be97a8\\global_topk\\keep_0p5.pickle",
+    "checkpoint": "C:\\Users\\조상제\\Desktop\\CPA\\cora_fedavg_single_client_cpa\\outputs_v1\\fedavg_single_client_updates\\imagenet\\vgg16\\fedavg_single_client_clients3_round20of20_spc24_target0_local1_e920201510be97a8\\global_topk\\keep_0p5.fedavg_round_before.pt"
+  },
+  {
+    "path": "imagenet/vgg16/fedavg_single_client_clients3_round20of20_spc24_target0_local1_e920201510be97a8/global_topk/keep_0p8/R1_seed1234_model_pred/cora_obs_zero_fill_keep80_50_30/observation_manifest.json",
+    "keep": 0.8,
+    "R": 1,
+    "sampler": "zero_fill",
+    "source_hash": "fbb2b394ebd23c299802670330a8ce6d6598c9f5dda3536124777321c9bb02dc",
+    "observation_hash": "1c7d9499674fe4065a509fa22a1bf34ca9322d9c7bb057d3482cc04498c5fa83",
+    "source_file": "C:\\Users\\조상제\\Desktop\\CPA\\cora_fedavg_single_client_cpa\\outputs_v1\\fedavg_single_client_updates\\imagenet\\vgg16\\fedavg_single_client_clients3_round20of20_spc24_target0_local1_e920201510be97a8\\global_topk\\keep_0p8.pickle",
+    "checkpoint": "C:\\Users\\조상제\\Desktop\\CPA\\cora_fedavg_single_client_cpa\\outputs_v1\\fedavg_single_client_updates\\imagenet\\vgg16\\fedavg_single_client_clients3_round20of20_spc24_target0_local1_e920201510be97a8\\global_topk\\keep_0p8.fedavg_round_before.pt"
+  },
+  {
+    "path": "imagenet/vgg16/fedavg_single_client_clients3_round20of20_spc24_target0_local1_e920201510be97a8/global_topk/keep_0p8/R8_seed1234_model_pred/observation_manifest.json",
+    "keep": 0.8,
+    "R": 8,
+    "sampler": "retained_rescaled",
+    "source_hash": "2e000ba38a3a60c2146af2790976762d72ce0abca874bbee6492c323b29de934",
+    "observation_hash": "d9b8c2b69ebf0ddd1abdaee9d1d0381de38a189bc82b3c0ab11b0da7f4553355",
+    "source_file": "C:\\Users\\조상제\\Desktop\\CPA\\cora_fedavg_single_client_cpa\\outputs_v1\\fedavg_single_client_updates\\imagenet\\vgg16\\fedavg_single_client_clients3_round20of20_spc24_target0_local1_e920201510be97a8\\global_topk\\keep_0p8.pickle",
+    "checkpoint": "C:\\Users\\조상제\\Desktop\\CPA\\cora_fedavg_single_client_cpa\\outputs_v1\\fedavg_single_client_updates\\imagenet\\vgg16\\fedavg_single_client_clients3_round20of20_spc24_target0_local1_e920201510be97a8\\global_topk\\keep_0p8.fedavg_round_before.pt"
+  },
+  {
+    "path": "shared_attacks/naive_desparse_r1/keep_0p1/R1_seed1234_model_pred/observation_manifest.json",
+    "keep": 0.1,
+    "R": 1,
+    "sampler": "retained_rescaled",
+    "source_hash": "d1b7aa479de350680c8b3d5ff3101a84a0a3c9cfcbbd9b94438218d020642713",
+    "observation_hash": "b6e7db117cfbe3ff1bef1b71d0734a65d8ab617bcbb6f8d5e769eaa0cf09d28f",
+    "source_file": "C:\\Users\\조상제\\Desktop\\CPA\\cora_fedavg_single_client_cpa\\outputs_v1\\shared_fp32_controls\\imagenet_vgg16_round20_target0_spc24_sharedfp32_from_keep50\\global_topk\\keep_0p1.pickle",
+    "checkpoint": "C:\\Users\\조상제\\Desktop\\CPA\\cora_fedavg_single_client_cpa\\outputs_v1\\fedavg_single_client_updates\\imagenet\\vgg16\\fedavg_single_client_clients3_round20of20_spc24_target0_local1_e920201510be97a8\\global_topk\\keep_0p5.fedavg_round_before.pt"
+  },
+  {
+    "path": "shared_attacks/naive_desparse_r1/keep_0p3/R1_seed1234_model_pred/observation_manifest.json",
+    "keep": 0.3,
+    "R": 1,
+    "sampler": "retained_rescaled",
+    "source_hash": "05147302ca2f6710fad8357525e88e6cdaf3fc64f2f0e9fddec6edfbe1601f65",
+    "observation_hash": "fd9547151d4c5635b67a3f689c4ac7d9d2da657b046470185252f835260484a9",
+    "source_file": "C:\\Users\\조상제\\Desktop\\CPA\\cora_fedavg_single_client_cpa\\outputs_v1\\shared_fp32_controls\\imagenet_vgg16_round20_target0_spc24_sharedfp32_from_keep50\\global_topk\\keep_0p3.pickle",
+    "checkpoint": "C:\\Users\\조상제\\Desktop\\CPA\\cora_fedavg_single_client_cpa\\outputs_v1\\fedavg_single_client_updates\\imagenet\\vgg16\\fedavg_single_client_clients3_round20of20_spc24_target0_local1_e920201510be97a8\\global_topk\\keep_0p5.fedavg_round_before.pt"
+  },
+  {
+    "path": "shared_attacks/naive_desparse_r1/keep_0p5/R1_seed1234_model_pred/observation_manifest.json",
+    "keep": 0.5,
+    "R": 1,
+    "sampler": "retained_rescaled",
+    "source_hash": "df9fedb72447bb4709778fe0fb865e4b39b42a401fe3f74b73664628ec70e731",
+    "observation_hash": "5b6e304f2e98ab0fa7eee89ca502f4ca0e016e75c480d22c419b43af00daa020",
+    "source_file": "C:\\Users\\조상제\\Desktop\\CPA\\cora_fedavg_single_client_cpa\\outputs_v1\\shared_fp32_controls\\imagenet_vgg16_round20_target0_spc24_sharedfp32_from_keep50\\global_topk\\keep_0p5.pickle",
+    "checkpoint": "C:\\Users\\조상제\\Desktop\\CPA\\cora_fedavg_single_client_cpa\\outputs_v1\\fedavg_single_client_updates\\imagenet\\vgg16\\fedavg_single_client_clients3_round20of20_spc24_target0_local1_e920201510be97a8\\global_topk\\keep_0p5.fedavg_round_before.pt"
+  },
+  {
+    "path": "shared_attacks/naive_desparse_r1/keep_0p8/R1_seed1234_model_pred/observation_manifest.json",
+    "keep": 0.8,
+    "R": 1,
+    "sampler": "retained_rescaled",
+    "source_hash": "7beaa9d47445679dac94d912ce4dcd7906f49a70b2f682640f50f645bbf41d4d",
+    "observation_hash": "191ec2983f88cce07735ca4139384f1b4d70f0510983f816841a8637c3ff3c97",
+    "source_file": "C:\\Users\\조상제\\Desktop\\CPA\\cora_fedavg_single_client_cpa\\outputs_v1\\shared_fp32_controls\\imagenet_vgg16_round20_target0_spc24_sharedfp32_from_keep50\\global_topk\\keep_0p8.pickle",
+    "checkpoint": "C:\\Users\\조상제\\Desktop\\CPA\\cora_fedavg_single_client_cpa\\outputs_v1\\fedavg_single_client_updates\\imagenet\\vgg16\\fedavg_single_client_clients3_round20of20_spc24_target0_local1_e920201510be97a8\\global_topk\\keep_0p5.fedavg_round_before.pt"
+  },
+  {
+    "path": "shared_attacks/naive_desparse_r1/keep_1/R1_seed1234_model_pred/observation_manifest.json",
+    "keep": 1.0,
+    "R": 1,
+    "sampler": "deterministic_identity",
+    "source_hash": "11ab0d3a53782d9ffed4c080d11bdb3ebc07229dae5a56b8b33b4c689d5c1781",
+    "observation_hash": null,
+    "source_file": "C:\\Users\\조상제\\Desktop\\CPA\\cora_fedavg_single_client_cpa\\outputs_v1\\shared_fp32_controls\\imagenet_vgg16_round20_target0_spc24_sharedfp32_from_keep50\\global_topk\\keep_1.pickle",
+    "checkpoint": "C:\\Users\\조상제\\Desktop\\CPA\\cora_fedavg_single_client_cpa\\outputs_v1\\fedavg_single_client_updates\\imagenet\\vgg16\\fedavg_single_client_clients3_round20of20_spc24_target0_local1_e920201510be97a8\\global_topk\\keep_0p5.fedavg_round_before.pt"
+  },
+  {
+    "path": "shared_attacks/sfp32bench10/keep_1/R1_seed1234_model_pred/observation_manifest.json",
+    "keep": 1.0,
+    "R": 1,
+    "sampler": "deterministic_identity",
+    "source_hash": "11ab0d3a53782d9ffed4c080d11bdb3ebc07229dae5a56b8b33b4c689d5c1781",
+    "observation_hash": null,
+    "source_file": "C:\\Users\\조상제\\Desktop\\CPA\\cora_fedavg_single_client_cpa\\outputs_v1\\shared_fp32_controls\\imagenet_vgg16_round20_target0_spc24_sharedfp32_from_keep50\\global_topk\\keep_1.pickle",
+    "checkpoint": "C:\\Users\\조상제\\Desktop\\CPA\\cora_fedavg_single_client_cpa\\outputs_v1\\fedavg_single_client_updates\\imagenet\\vgg16\\fedavg_single_client_clients3_round20of20_spc24_target0_local1_e920201510be97a8\\global_topk\\keep_0p5.fedavg_round_before.pt"
+  },
+  {
+    "path": "shared_attacks/sfp32r20c0/keep_0p1/R8_seed1234_model_pred/observation_manifest.json",
+    "keep": 0.1,
+    "R": 8,
+    "sampler": "retained_rescaled",
+    "source_hash": "186deccf519fbdc9f5d10729444ef4bb381e319be6c176504514986f401d7eba",
+    "observation_hash": "0d992a01ea6669dcf63b3e8822311294e0b58204a697206cec416601fef0d810",
+    "source_file": "C:\\Users\\조상제\\Desktop\\CPA\\cora_fedavg_single_client_cpa\\outputs_v1\\shared_fp32_controls\\imagenet_vgg16_round20_target0_spc24_sharedfp32\\global_topk\\keep_0p1.pickle",
+    "checkpoint": "C:\\Users\\조상제\\Desktop\\CPA\\cora_fedavg_single_client_cpa\\outputs_v1\\fedavg_single_client_updates\\imagenet\\vgg16\\fedavg_single_client_clients3_round20of20_spc24_target0_local1_e920201510be97a8\\global_topk\\keep_0p8.fedavg_round_before.pt"
+  },
+  {
+    "path": "shared_attacks/sfp32r20c0/keep_0p3/R8_seed1234_model_pred/observation_manifest.json",
+    "keep": 0.3,
+    "R": 8,
+    "sampler": "retained_rescaled",
+    "source_hash": "dd4cb5a49b2c3d8c2eca20f15bcaad011e38dd7b407b240b13a3ff261ece916e",
+    "observation_hash": "cd9f7ae58dd54e36efc00be1d8bdb062de72256f6d69fad7d56e26f475894cb3",
+    "source_file": "C:\\Users\\조상제\\Desktop\\CPA\\cora_fedavg_single_client_cpa\\outputs_v1\\shared_fp32_controls\\imagenet_vgg16_round20_target0_spc24_sharedfp32\\global_topk\\keep_0p3.pickle",
+    "checkpoint": "C:\\Users\\조상제\\Desktop\\CPA\\cora_fedavg_single_client_cpa\\outputs_v1\\fedavg_single_client_updates\\imagenet\\vgg16\\fedavg_single_client_clients3_round20of20_spc24_target0_local1_e920201510be97a8\\global_topk\\keep_0p8.fedavg_round_before.pt"
+  },
+  {
+    "path": "shared_attacks/sfp32r20c0/keep_0p5/R8_seed1234_model_pred/observation_manifest.json",
+    "keep": 0.5,
+    "R": 8,
+    "sampler": "retained_rescaled",
+    "source_hash": "ebbfff0ebee2da5490120f5e5e0da13c2ab842d17e892947c8ee4c64e87eeb1b",
+    "observation_hash": "2999151b7a04f8a872968af65427258bcc7bda122d8986766e81c443cf3b4c53",
+    "source_file": "C:\\Users\\조상제\\Desktop\\CPA\\cora_fedavg_single_client_cpa\\outputs_v1\\shared_fp32_controls\\imagenet_vgg16_round20_target0_spc24_sharedfp32\\global_topk\\keep_0p5.pickle",
+    "checkpoint": "C:\\Users\\조상제\\Desktop\\CPA\\cora_fedavg_single_client_cpa\\outputs_v1\\fedavg_single_client_updates\\imagenet\\vgg16\\fedavg_single_client_clients3_round20of20_spc24_target0_local1_e920201510be97a8\\global_topk\\keep_0p8.fedavg_round_before.pt"
+  },
+  {
+    "path": "shared_attacks/sfp32r20c0/keep_0p8/R8_seed1234_model_pred/observation_manifest.json",
+    "keep": 0.8,
+    "R": 8,
+    "sampler": "retained_rescaled",
+    "source_hash": "7f875f24b0ac6684cd6e384038ab9d7ceec51ecc6e2c34efaeebd6f26440233e",
+    "observation_hash": "17653c4a670b0bc5c277fe2e0ac5ecefee736ef8871ee76bc5b5735379cd0e79",
+    "source_file": "C:\\Users\\조상제\\Desktop\\CPA\\cora_fedavg_single_client_cpa\\outputs_v1\\shared_fp32_controls\\imagenet_vgg16_round20_target0_spc24_sharedfp32\\global_topk\\keep_0p8.pickle",
+    "checkpoint": "C:\\Users\\조상제\\Desktop\\CPA\\cora_fedavg_single_client_cpa\\outputs_v1\\fedavg_single_client_updates\\imagenet\\vgg16\\fedavg_single_client_clients3_round20of20_spc24_target0_local1_e920201510be97a8\\global_topk\\keep_0p8.fedavg_round_before.pt"
+  },
+  {
+    "path": "shared_attacks/sfp32r20c0/keep_1/R8_seed1234_model_pred/observation_manifest.json",
+    "keep": 1.0,
+    "R": 1,
+    "sampler": "deterministic_identity",
+    "source_hash": "9272cf8a832352d8db6b448e91a519537937422cb8f500c159a473466bd369ce",
+    "observation_hash": null,
+    "source_file": "C:\\Users\\조상제\\Desktop\\CPA\\cora_fedavg_single_client_cpa\\outputs_v1\\shared_fp32_controls\\imagenet_vgg16_round20_target0_spc24_sharedfp32\\global_topk\\keep_1.pickle",
+    "checkpoint": "C:\\Users\\조상제\\Desktop\\CPA\\cora_fedavg_single_client_cpa\\outputs_v1\\fedavg_single_client_updates\\imagenet\\vgg16\\fedavg_single_client_clients3_round20of20_spc24_target0_local1_e920201510be97a8\\global_topk\\keep_0p8.fedavg_round_before.pt"
+  },
+  {
+    "path": "shared_attacks/sfp32smoke/keep_1/R1_seed1234_model_pred/observation_manifest.json",
+    "keep": 1.0,
+    "R": 1,
+    "sampler": "deterministic_identity",
+    "source_hash": "11ab0d3a53782d9ffed4c080d11bdb3ebc07229dae5a56b8b33b4c689d5c1781",
+    "observation_hash": null,
+    "source_file": "C:\\Users\\조상제\\Desktop\\CPA\\cora_fedavg_single_client_cpa\\outputs_v1\\shared_fp32_controls\\imagenet_vgg16_round20_target0_spc24_sharedfp32_from_keep50\\global_topk\\keep_1.pickle",
+    "checkpoint": "C:\\Users\\조상제\\Desktop\\CPA\\cora_fedavg_single_client_cpa\\outputs_v1\\fedavg_single_client_updates\\imagenet\\vgg16\\fedavg_single_client_clients3_round20of20_spc24_target0_local1_e920201510be97a8\\global_topk\\keep_0p5.fedavg_round_before.pt"
+  },
+  {
+    "path": "shared_attacks/sfp32smoke24/keep_1/R1_seed1234_model_pred/observation_manifest.json",
+    "keep": 1.0,
+    "R": 1,
+    "sampler": "deterministic_identity",
+    "source_hash": "11ab0d3a53782d9ffed4c080d11bdb3ebc07229dae5a56b8b33b4c689d5c1781",
+    "observation_hash": null,
+    "source_file": "C:\\Users\\조상제\\Desktop\\CPA\\cora_fedavg_single_client_cpa\\outputs_v1\\shared_fp32_controls\\imagenet_vgg16_round20_target0_spc24_sharedfp32_from_keep50\\global_topk\\keep_1.pickle",
+    "checkpoint": "C:\\Users\\조상제\\Desktop\\CPA\\cora_fedavg_single_client_cpa\\outputs_v1\\fedavg_single_client_updates\\imagenet\\vgg16\\fedavg_single_client_clients3_round20of20_spc24_target0_local1_e920201510be97a8\\global_topk\\keep_0p5.fedavg_round_before.pt"
+  }
+]

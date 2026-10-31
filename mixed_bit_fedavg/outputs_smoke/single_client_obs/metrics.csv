@@ -1,0 +1,2 @@
+round,weighted_train_loss,client_train_losses,aggregate_update_l2,quant_bits_by_client,quant_bit_counts,quant_mse_mean,quant_relative_l2_mean,quant_cosine_similarity_mean,quant_saturation_ratio_mean,round_time
+1,0.18927057459950447,"[0.30815204977989197, 0.07038909941911697]",0.013971086854789474,"[8, 4]","{'4': 1, '8': 1}",8.029239364054175e-14,0.2817394522062329,0.9368825085632732,3.9029314097020323e-07,4.060480833053589

@@ -1,0 +1,39 @@
+{
+  "task_id": "CPA_SIGNED_E2E_CELL_SCREEN_20260916",
+  "status": "COMPLETED",
+  "wrapper_pid": 12380,
+  "wrapper_exit_status": 0,
+  "tests_exit_status": 0,
+  "runner_exit_status": 0,
+  "evaluator_exit_status": 0,
+  "focused_tests": "85 passed, 240 warnings",
+  "registered_arms": [
+    "A_FIA",
+    "B_H0_low",
+    "B_H0_high",
+    "B_H1_low",
+    "B_H1_high"
+  ],
+  "steps_per_arm": 100,
+  "wrapper_wall_seconds": 641.903975400026,
+  "public_runner_wall_seconds": 603.019371900009,
+  "private_evaluator_wall_seconds": 27.474775100010,
+  "numeric": {
+    "terminal_deltas_torch_equal": true,
+    "feature_grad_enabled_equals_no_grad": true,
+    "all_six_tensor_differences_zero": true
+  },
+  "integrity": {
+    "protected_sources_unchanged": true,
+    "inputs_unchanged": true
+  },
+  "exact_feasibility": {
+    "x0_h0": false,
+    "x0_h1": false,
+    "all_final_endpoints_h0_and_h1": false
+  },
+  "private_labels_consumed": false,
+  "report_path": ".ai/execution-results/CPA_SIGNED_E2E_CELL_SCREEN_20260916/report.md",
+  "public_output_root": "quantization_aware_cpa/results/signed_e2e_cell_screen_B16_T10_20260916",
+  "private_output_root": "quantization_aware_cpa/results_private/signed_e2e_cell_screen_B16_T10_20260916"
+}

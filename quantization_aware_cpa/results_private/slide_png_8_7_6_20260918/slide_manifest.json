@@ -1,0 +1,647 @@
+{
+  "task_id": "CPA_SCREEN3_SLIDE_PNG_876_20260918",
+  "status": "COMPLETED",
+  "bits": [
+    8,
+    7,
+    6
+  ],
+  "dimensions": [
+    3840,
+    2160
+  ],
+  "dpi": 240,
+  "optimizer_steps": 0,
+  "metrics_recomputed": false,
+  "matching_recomputed": false,
+  "private_x_only": true,
+  "labels_consumed": false,
+  "private_meta": {
+    "path": "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results_private/signed_int4_baseline_B16_T10/observation/evaluation_truth.pt",
+    "sha256": "724bbacbe316cc28dac086db9cfaf6507f4c1af31144fd610cc480985aab72e2",
+    "bundle_keys_present": [
+      "labels",
+      "x",
+      "z"
+    ],
+    "consumed_field": "x only",
+    "labels_consumed": false,
+    "true_updates_consumed": false
+  },
+  "output_root": "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results_private/slide_png_8_7_6_20260918",
+  "bits_detail": {
+    "8": {
+      "comparison_path": "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results_private/signed_int8_screen3_repair_B16_T10_20260918/evaluation_final_20260918/comparison.json",
+      "comparison_sha256": "a548a78058069fe828c6d32076b90e0afcb07a49e77fa16a380bcf61c7185c35",
+      "public_gate_status": "PUBLIC_GATE_PASSED",
+      "public_candidate_count": 13,
+      "public_roots": [
+        "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int8_randomized8_screen3_fia_B16_T10_20260917",
+        "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int8_randomized8_screen3_repair_B16_T10_20260918"
+      ],
+      "frozen_selection": [
+        1,
+        7,
+        5
+      ],
+      "roles": [
+        "Ground truth",
+        "Naive dequantization baseline",
+        "Public rank 1 | member 01",
+        "Public rank 2 | member 07",
+        "Public rank 3 | member 05"
+      ],
+      "candidate_names": [
+        "center_25000",
+        "rank1_member_01_25000",
+        "rank2_member_07_25000",
+        "rank3_member_05_25000"
+      ],
+      "candidate_hashes": {
+        "center_25000": "696d18fc23e23ea62834a6c0af849e6549ef47994e4c63fee54c53351d85a0db",
+        "rank1_member_01_25000": "2c2d591957bee5a842af4701c8bfb503c6c9f68e74302fca12eab835cc678411",
+        "rank2_member_07_25000": "4310a22db0a7ef6c9941e2f1ec9ccdf4bcddedc3f237a1c255d494dd20e62890",
+        "rank3_member_05_25000": "6dec8b1e478d83cf8036e8d998a27d115a9667b7badc06a9b1d050cf2300d1b3"
+      },
+      "overview": {
+        "file": "int8_25000_overview.png",
+        "sha256": "6d1b2a603d69355ae457369843e0b6eb755f8cc2e6b6c617e58fc5806ca31005",
+        "dimensions": [
+          3840,
+          2160
+        ],
+        "row_range": [
+          1,
+          16
+        ],
+        "roles": [
+          "Ground truth",
+          "Naive dequantization baseline",
+          "Public rank 1 | member 01",
+          "Public rank 2 | member 07",
+          "Public rank 3 | member 05"
+        ],
+        "candidate_names": [
+          "center_25000",
+          "rank1_member_01_25000",
+          "rank2_member_07_25000",
+          "rank3_member_05_25000"
+        ],
+        "matching_reused": true,
+        "metrics_recomputed": false
+      },
+      "detail_pages": [
+        {
+          "file": "int8_25000_page01.png",
+          "sha256": "045c18fe17fc7e8f2ef15b978b8408b37a86a0c0bc38b9800d795ea65c28737c",
+          "dimensions": [
+            3840,
+            2160
+          ],
+          "row_range": [
+            1,
+            4
+          ],
+          "roles": [
+            "Ground truth",
+            "Naive dequantization baseline",
+            "Public rank 1 | member 01",
+            "Public rank 2 | member 07",
+            "Public rank 3 | member 05"
+          ],
+          "candidate_names": [
+            "center_25000",
+            "rank1_member_01_25000",
+            "rank2_member_07_25000",
+            "rank3_member_05_25000"
+          ],
+          "matching_reused": true,
+          "metrics_recomputed": false
+        },
+        {
+          "file": "int8_25000_page02.png",
+          "sha256": "e70c17925fe08998f5532786dd69aac8b1bf4c9642493dfa4db68e02b67ced7e",
+          "dimensions": [
+            3840,
+            2160
+          ],
+          "row_range": [
+            5,
+            8
+          ],
+          "roles": [
+            "Ground truth",
+            "Naive dequantization baseline",
+            "Public rank 1 | member 01",
+            "Public rank 2 | member 07",
+            "Public rank 3 | member 05"
+          ],
+          "candidate_names": [
+            "center_25000",
+            "rank1_member_01_25000",
+            "rank2_member_07_25000",
+            "rank3_member_05_25000"
+          ],
+          "matching_reused": true,
+          "metrics_recomputed": false
+        },
+        {
+          "file": "int8_25000_page03.png",
+          "sha256": "a41899674d45cc575be58cd8c7fffb150c3a4ecc90c39932783c5bb6f3858aab",
+          "dimensions": [
+            3840,
+            2160
+          ],
+          "row_range": [
+            9,
+            12
+          ],
+          "roles": [
+            "Ground truth",
+            "Naive dequantization baseline",
+            "Public rank 1 | member 01",
+            "Public rank 2 | member 07",
+            "Public rank 3 | member 05"
+          ],
+          "candidate_names": [
+            "center_25000",
+            "rank1_member_01_25000",
+            "rank2_member_07_25000",
+            "rank3_member_05_25000"
+          ],
+          "matching_reused": true,
+          "metrics_recomputed": false
+        },
+        {
+          "file": "int8_25000_page04.png",
+          "sha256": "51286af55e37809bac7f6635cbec6170582b956006c5b9ef3e5711e3f0a48cd4",
+          "dimensions": [
+            3840,
+            2160
+          ],
+          "row_range": [
+            13,
+            16
+          ],
+          "roles": [
+            "Ground truth",
+            "Naive dequantization baseline",
+            "Public rank 1 | member 01",
+            "Public rank 2 | member 07",
+            "Public rank 3 | member 05"
+          ],
+          "candidate_names": [
+            "center_25000",
+            "rank1_member_01_25000",
+            "rank2_member_07_25000",
+            "rank3_member_05_25000"
+          ],
+          "matching_reused": true,
+          "metrics_recomputed": false
+        }
+      ],
+      "existing_mean_metrics": {
+        "center_25000": {
+          "mean_mse": 0.07066205413132838,
+          "mean_psnr_db": 12.056905793317746,
+          "mean_ssim": 0.29235535462254264,
+          "mean_lpips": 0.5594061017036438
+        },
+        "rank1_member_01_25000": {
+          "mean_mse": 0.07014708163727448,
+          "mean_psnr_db": 12.056761797271168,
+          "mean_ssim": 0.3070188888978447,
+          "mean_lpips": 0.5558413192629814
+        },
+        "rank2_member_07_25000": {
+          "mean_mse": 0.07033057343015583,
+          "mean_psnr_db": 12.044028639894204,
+          "mean_ssim": 0.30505453477339606,
+          "mean_lpips": 0.554504306986928
+        },
+        "rank3_member_05_25000": {
+          "mean_mse": 0.07049955504937017,
+          "mean_psnr_db": 12.029194601876894,
+          "mean_ssim": 0.3050015792778544,
+          "mean_lpips": 0.5534534398466349
+        }
+      }
+    },
+    "7": {
+      "comparison_path": "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results_private/signed_int7_randomized8_screen3_fia_B16_T10_20260918_sweep/evaluation_recovery_20260918/comparison.json",
+      "comparison_sha256": "71b178bbcc3a88deb992af1e3b1613bc2ff0ac419a84bdcbc3c4a2febfc64e86",
+      "public_gate_status": "PUBLIC_GATE_PASSED",
+      "public_candidate_count": 13,
+      "public_roots": [
+        "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int7_randomized8_screen3_fia_B16_T10_20260918_sweep"
+      ],
+      "frozen_selection": [
+        0,
+        5,
+        3
+      ],
+      "roles": [
+        "Ground truth",
+        "Naive dequantization baseline",
+        "Public rank 1 | member 00",
+        "Public rank 2 | member 05",
+        "Public rank 3 | member 03"
+      ],
+      "candidate_names": [
+        "center_25000",
+        "rank1_member_00_25000",
+        "rank2_member_05_25000",
+        "rank3_member_03_25000"
+      ],
+      "candidate_hashes": {
+        "center_25000": "191dcdeb54269a465aa56a27405d0f47d2ac06d4461ea92806df5b52e56e8472",
+        "rank1_member_00_25000": "82d34c84e72ad636df1660a45891e97b367c0f7d6d5a2cc19b8dac2af732d601",
+        "rank2_member_05_25000": "cfb9725bab6dd0ca2fc1550feba484788166d0826dd6e9a02c04cc57e8c27390",
+        "rank3_member_03_25000": "58e69bb17c744a33acbadb8a97deccf7a80d8f3a38eff6c1ab718e12ddc8810d"
+      },
+      "overview": {
+        "file": "int7_25000_overview.png",
+        "sha256": "4d0fff73d5d52b940cfb43371502ae77ca8b33580020006359a6404ff1af218b",
+        "dimensions": [
+          3840,
+          2160
+        ],
+        "row_range": [
+          1,
+          16
+        ],
+        "roles": [
+          "Ground truth",
+          "Naive dequantization baseline",
+          "Public rank 1 | member 00",
+          "Public rank 2 | member 05",
+          "Public rank 3 | member 03"
+        ],
+        "candidate_names": [
+          "center_25000",
+          "rank1_member_00_25000",
+          "rank2_member_05_25000",
+          "rank3_member_03_25000"
+        ],
+        "matching_reused": true,
+        "metrics_recomputed": false
+      },
+      "detail_pages": [
+        {
+          "file": "int7_25000_page01.png",
+          "sha256": "686590999a23f9e927ad02ad50f26a40af24d0258fd79561d95b6aedaa33870b",
+          "dimensions": [
+            3840,
+            2160
+          ],
+          "row_range": [
+            1,
+            4
+          ],
+          "roles": [
+            "Ground truth",
+            "Naive dequantization baseline",
+            "Public rank 1 | member 00",
+            "Public rank 2 | member 05",
+            "Public rank 3 | member 03"
+          ],
+          "candidate_names": [
+            "center_25000",
+            "rank1_member_00_25000",
+            "rank2_member_05_25000",
+            "rank3_member_03_25000"
+          ],
+          "matching_reused": true,
+          "metrics_recomputed": false
+        },
+        {
+          "file": "int7_25000_page02.png",
+          "sha256": "50c030e6a32c5925ae81306138e65ae525445eb8e2a95f9226cc46a08da83ae3",
+          "dimensions": [
+            3840,
+            2160
+          ],
+          "row_range": [
+            5,
+            8
+          ],
+          "roles": [
+            "Ground truth",
+            "Naive dequantization baseline",
+            "Public rank 1 | member 00",
+            "Public rank 2 | member 05",
+            "Public rank 3 | member 03"
+          ],
+          "candidate_names": [
+            "center_25000",
+            "rank1_member_00_25000",
+            "rank2_member_05_25000",
+            "rank3_member_03_25000"
+          ],
+          "matching_reused": true,
+          "metrics_recomputed": false
+        },
+        {
+          "file": "int7_25000_page03.png",
+          "sha256": "c249b3c4ce69c1d0ff914efe6b86aa4a14634386381267620a7a9b678ad92e67",
+          "dimensions": [
+            3840,
+            2160
+          ],
+          "row_range": [
+            9,
+            12
+          ],
+          "roles": [
+            "Ground truth",
+            "Naive dequantization baseline",
+            "Public rank 1 | member 00",
+            "Public rank 2 | member 05",
+            "Public rank 3 | member 03"
+          ],
+          "candidate_names": [
+            "center_25000",
+            "rank1_member_00_25000",
+            "rank2_member_05_25000",
+            "rank3_member_03_25000"
+          ],
+          "matching_reused": true,
+          "metrics_recomputed": false
+        },
+        {
+          "file": "int7_25000_page04.png",
+          "sha256": "8bf2004c11113511da02545570d445cf25dd4f10658251d6ff6938c0d50777fd",
+          "dimensions": [
+            3840,
+            2160
+          ],
+          "row_range": [
+            13,
+            16
+          ],
+          "roles": [
+            "Ground truth",
+            "Naive dequantization baseline",
+            "Public rank 1 | member 00",
+            "Public rank 2 | member 05",
+            "Public rank 3 | member 03"
+          ],
+          "candidate_names": [
+            "center_25000",
+            "rank1_member_00_25000",
+            "rank2_member_05_25000",
+            "rank3_member_03_25000"
+          ],
+          "matching_reused": true,
+          "metrics_recomputed": false
+        }
+      ],
+      "existing_mean_metrics": {
+        "center_25000": {
+          "mean_mse": 0.07300155613422421,
+          "mean_psnr_db": 11.795458399934107,
+          "mean_ssim": 0.276422813596087,
+          "mean_lpips": 0.6118270941078663
+        },
+        "rank1_member_00_25000": {
+          "mean_mse": 0.07264175614768305,
+          "mean_psnr_db": 11.83136624338533,
+          "mean_ssim": 0.2827499308738006,
+          "mean_lpips": 0.6331724599003792
+        },
+        "rank2_member_05_25000": {
+          "mean_mse": 0.07274173050730852,
+          "mean_psnr_db": 11.805827049418683,
+          "mean_ssim": 0.29288812388352703,
+          "mean_lpips": 0.6098512094467878
+        },
+        "rank3_member_03_25000": {
+          "mean_mse": 0.07352816257809447,
+          "mean_psnr_db": 11.748867267513681,
+          "mean_ssim": 0.29078154922091853,
+          "mean_lpips": 0.6503420695662498
+        }
+      }
+    },
+    "6": {
+      "comparison_path": "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results_private/signed_int6_randomized8_screen3_fia_B16_T10_20260918_sweep/evaluation_recovery_20260918/comparison.json",
+      "comparison_sha256": "9d44ec6a1eaefefc16151c5463bf365ed72575ab7ff7953e0cbde2ab10fb4b0d",
+      "public_gate_status": "PUBLIC_GATE_PASSED",
+      "public_candidate_count": 13,
+      "public_roots": [
+        "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int6_randomized8_screen3_fia_B16_T10_20260918_sweep"
+      ],
+      "frozen_selection": [
+        1,
+        3,
+        4
+      ],
+      "roles": [
+        "Ground truth",
+        "Naive dequantization baseline",
+        "Public rank 1 | member 01",
+        "Public rank 2 | member 03",
+        "Public rank 3 | member 04"
+      ],
+      "candidate_names": [
+        "center_25000",
+        "rank1_member_01_25000",
+        "rank2_member_03_25000",
+        "rank3_member_04_25000"
+      ],
+      "candidate_hashes": {
+        "center_25000": "340d4f162f9632386fce07d8352bf1b08ba126cce718909b28f2274adb9b4075",
+        "rank1_member_01_25000": "06742e96994ee455aaca62bea394e7df748997fa44c815f41f08fad31f86feb2",
+        "rank2_member_03_25000": "3a4df1c04fbfd286999993fbe5234be115e3e1ccd54630ce7984492340ed650f",
+        "rank3_member_04_25000": "abc5622e183a2465a5b820dc7f1ae58ddc4468e0feadfadec529c6643ac6464f"
+      },
+      "overview": {
+        "file": "int6_25000_overview.png",
+        "sha256": "7acea4669d97e78fd481aacc589dcb65c6a2957c341b4a2baf202c28ef0babd8",
+        "dimensions": [
+          3840,
+          2160
+        ],
+        "row_range": [
+          1,
+          16
+        ],
+        "roles": [
+          "Ground truth",
+          "Naive dequantization baseline",
+          "Public rank 1 | member 01",
+          "Public rank 2 | member 03",
+          "Public rank 3 | member 04"
+        ],
+        "candidate_names": [
+          "center_25000",
+          "rank1_member_01_25000",
+          "rank2_member_03_25000",
+          "rank3_member_04_25000"
+        ],
+        "matching_reused": true,
+        "metrics_recomputed": false
+      },
+      "detail_pages": [
+        {
+          "file": "int6_25000_page01.png",
+          "sha256": "24c2cc5de54052a9ecfd05bd751e2aaae9ebe2468df899b2f6f0f42b2282974f",
+          "dimensions": [
+            3840,
+            2160
+          ],
+          "row_range": [
+            1,
+            4
+          ],
+          "roles": [
+            "Ground truth",
+            "Naive dequantization baseline",
+            "Public rank 1 | member 01",
+            "Public rank 2 | member 03",
+            "Public rank 3 | member 04"
+          ],
+          "candidate_names": [
+            "center_25000",
+            "rank1_member_01_25000",
+            "rank2_member_03_25000",
+            "rank3_member_04_25000"
+          ],
+          "matching_reused": true,
+          "metrics_recomputed": false
+        },
+        {
+          "file": "int6_25000_page02.png",
+          "sha256": "8548740eb1c6eadb66d32c3c6321948d7de8eff6d60c672715582f9199b4b52c",
+          "dimensions": [
+            3840,
+            2160
+          ],
+          "row_range": [
+            5,
+            8
+          ],
+          "roles": [
+            "Ground truth",
+            "Naive dequantization baseline",
+            "Public rank 1 | member 01",
+            "Public rank 2 | member 03",
+            "Public rank 3 | member 04"
+          ],
+          "candidate_names": [
+            "center_25000",
+            "rank1_member_01_25000",
+            "rank2_member_03_25000",
+            "rank3_member_04_25000"
+          ],
+          "matching_reused": true,
+          "metrics_recomputed": false
+        },
+        {
+          "file": "int6_25000_page03.png",
+          "sha256": "90e7ae8ad52d2602249de38fc34d1f96b8bd132176bacc32c4340851fb2a0c6e",
+          "dimensions": [
+            3840,
+            2160
+          ],
+          "row_range": [
+            9,
+            12
+          ],
+          "roles": [
+            "Ground truth",
+            "Naive dequantization baseline",
+            "Public rank 1 | member 01",
+            "Public rank 2 | member 03",
+            "Public rank 3 | member 04"
+          ],
+          "candidate_names": [
+            "center_25000",
+            "rank1_member_01_25000",
+            "rank2_member_03_25000",
+            "rank3_member_04_25000"
+          ],
+          "matching_reused": true,
+          "metrics_recomputed": false
+        },
+        {
+          "file": "int6_25000_page04.png",
+          "sha256": "a19020155940baa06937c951acb948d4b74e31b35beaf084d7fe06c7778e25cf",
+          "dimensions": [
+            3840,
+            2160
+          ],
+          "row_range": [
+            13,
+            16
+          ],
+          "roles": [
+            "Ground truth",
+            "Naive dequantization baseline",
+            "Public rank 1 | member 01",
+            "Public rank 2 | member 03",
+            "Public rank 3 | member 04"
+          ],
+          "candidate_names": [
+            "center_25000",
+            "rank1_member_01_25000",
+            "rank2_member_03_25000",
+            "rank3_member_04_25000"
+          ],
+          "matching_reused": true,
+          "metrics_recomputed": false
+        }
+      ],
+      "existing_mean_metrics": {
+        "center_25000": {
+          "mean_mse": 0.07552178329548416,
+          "mean_psnr_db": 11.639735973721601,
+          "mean_ssim": 0.2596383579955102,
+          "mean_lpips": 0.6961209550499916
+        },
+        "rank1_member_01_25000": {
+          "mean_mse": 0.07545785087363654,
+          "mean_psnr_db": 11.667487096553497,
+          "mean_ssim": 0.2689876435397502,
+          "mean_lpips": 0.665904251858592
+        },
+        "rank2_member_03_25000": {
+          "mean_mse": 0.07567821278705145,
+          "mean_psnr_db": 11.59765844022912,
+          "mean_ssim": 0.2727687292886997,
+          "mean_lpips": 0.6709883380681276
+        },
+        "rank3_member_04_25000": {
+          "mean_mse": 0.07632374650472064,
+          "mean_psnr_db": 11.572437303919154,
+          "mean_ssim": 0.27138847283293643,
+          "mean_lpips": 0.7051771022379398
+        }
+      }
+    }
+  },
+  "zip": {
+    "file": "slide_png_8_7_6_20260918.zip",
+    "sha256": "6dcfdde5cbc556c093b3d9738b27014acdd19bb9ad4465e5b1663b96e41a727c",
+    "members": [
+      "int8_25000_overview.png",
+      "int8_25000_page01.png",
+      "int8_25000_page02.png",
+      "int8_25000_page03.png",
+      "int8_25000_page04.png",
+      "int7_25000_overview.png",
+      "int7_25000_page01.png",
+      "int7_25000_page02.png",
+      "int7_25000_page03.png",
+      "int7_25000_page04.png",
+      "int6_25000_overview.png",
+      "int6_25000_page01.png",
+      "int6_25000_page02.png",
+      "int6_25000_page03.png",
+      "int6_25000_page04.png",
+      "index.md"
+    ]
+  },
+  "original_files_preserved": true,
+  "active_parent_handoff_modified": false
+}

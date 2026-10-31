@@ -1,0 +1,34 @@
+{
+  "H0": {
+    "cell_loss": 41.317195892333984,
+    "cell_image_gradient_norm": 18.70659065246582,
+    "feature_norm_mean": 21.787342071533203,
+    "finite": true,
+    "wall_seconds": 1.6676925999345258,
+    "resource": {
+      "label": "calibration:H0",
+      "allocated_bytes": 3913171968,
+      "reserved_bytes": 5167382528,
+      "cap_bytes": 12884901888
+    }
+  },
+  "H1": {
+    "cell_loss": 22.991680145263672,
+    "cell_image_gradient_norm": 12.478582382202148,
+    "feature_norm_mean": 21.787342071533203,
+    "finite": true,
+    "wall_seconds": 1.34301549999509,
+    "resource": {
+      "label": "calibration:H1",
+      "allocated_bytes": 3913171968,
+      "reserved_bytes": 5167382528,
+      "cap_bytes": 12884901888
+    }
+  },
+  "weights": {
+    "lambda_base": 0.0242029977689154,
+    "lambda_low": 0.0242029977689154,
+    "lambda_high": 0.24202997768915402,
+    "definition": "lambda_base=1/max(1,L_C0_H0), shared by both hypotheses"
+  }
+}

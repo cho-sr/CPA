@@ -1,0 +1,1078 @@
+{
+  "status": "COMPLETED",
+  "arms": {
+    "fp32": {
+      "image_metrics": {
+        "matching": "Hungarian_pixel_MSE_once_for_all_metrics",
+        "n_images": 16,
+        "all_images_included": true,
+        "candidate_selection": "none_single_supplied_artifact",
+        "per_image": [
+          {
+            "candidate_index": 0,
+            "truth_index": 1,
+            "mse": 0.07217665384294707,
+            "psnr_db": 11.416032559870853,
+            "perfect_pixel_match": false,
+            "ssim": 0.24951633462651626,
+            "lpips": 0.4876863956451416
+          },
+          {
+            "candidate_index": 1,
+            "truth_index": 8,
+            "mse": 0.03177899040173752,
+            "psnr_db": 14.978599041682587,
+            "perfect_pixel_match": false,
+            "ssim": 0.5919942103672873,
+            "lpips": 0.39148759841918945
+          },
+          {
+            "candidate_index": 2,
+            "truth_index": 6,
+            "mse": 0.067372097343885,
+            "psnr_db": 11.715199325241539,
+            "perfect_pixel_match": false,
+            "ssim": 0.16355488968930326,
+            "lpips": 0.5063069462776184
+          },
+          {
+            "candidate_index": 3,
+            "truth_index": 15,
+            "mse": 0.04624624122169525,
+            "psnr_db": 13.349235598549814,
+            "perfect_pixel_match": false,
+            "ssim": 0.47842135783199463,
+            "lpips": 0.45293453335762024
+          },
+          {
+            "candidate_index": 4,
+            "truth_index": 7,
+            "mse": 0.11066151038223047,
+            "psnr_db": 9.560034065401585,
+            "perfect_pixel_match": false,
+            "ssim": 0.13870508799736592,
+            "lpips": 0.6081850528717041
+          },
+          {
+            "candidate_index": 5,
+            "truth_index": 10,
+            "mse": 0.057790952525314056,
+            "psnr_db": 12.38140147321494,
+            "perfect_pixel_match": false,
+            "ssim": 0.25130273715998547,
+            "lpips": 0.5579982399940491
+          },
+          {
+            "candidate_index": 6,
+            "truth_index": 2,
+            "mse": 0.06476479508248073,
+            "psnr_db": 11.886610042551666,
+            "perfect_pixel_match": false,
+            "ssim": 0.32071036892905164,
+            "lpips": 0.5076321959495544
+          },
+          {
+            "candidate_index": 7,
+            "truth_index": 9,
+            "mse": 0.04374856067995914,
+            "psnr_db": 13.590362306195875,
+            "perfect_pixel_match": false,
+            "ssim": 0.22939707784986874,
+            "lpips": 0.4413793385028839
+          },
+          {
+            "candidate_index": 8,
+            "truth_index": 3,
+            "mse": 0.1995976442468214,
+            "psnr_db": 6.9984458878333555,
+            "perfect_pixel_match": false,
+            "ssim": 0.6202091216544534,
+            "lpips": 0.5893540382385254
+          },
+          {
+            "candidate_index": 9,
+            "truth_index": 5,
+            "mse": 0.09097934516393319,
+            "psnr_db": 10.410571933877282,
+            "perfect_pixel_match": false,
+            "ssim": 0.4522739787908408,
+            "lpips": 0.4792674779891968
+          },
+          {
+            "candidate_index": 10,
+            "truth_index": 4,
+            "mse": 0.04886036699680792,
+            "psnr_db": 13.1104327530589,
+            "perfect_pixel_match": false,
+            "ssim": 0.42486767671048487,
+            "lpips": 0.5255178213119507
+          },
+          {
+            "candidate_index": 11,
+            "truth_index": 13,
+            "mse": 0.07098589023660934,
+            "psnr_db": 11.488279667928602,
+            "perfect_pixel_match": false,
+            "ssim": 0.31939500401817417,
+            "lpips": 0.5029497742652893
+          },
+          {
+            "candidate_index": 12,
+            "truth_index": 12,
+            "mse": 0.02911203649238625,
+            "psnr_db": 15.359274130266558,
+            "perfect_pixel_match": false,
+            "ssim": 0.4653332099639331,
+            "lpips": 0.45972469449043274
+          },
+          {
+            "candidate_index": 13,
+            "truth_index": 0,
+            "mse": 0.04504729328303877,
+            "psnr_db": 13.463312989702814,
+            "perfect_pixel_match": false,
+            "ssim": 0.3160157200541692,
+            "lpips": 0.5244442224502563
+          },
+          {
+            "candidate_index": 14,
+            "truth_index": 11,
+            "mse": 0.05380533692725047,
+            "psnr_db": 12.691746447220734,
+            "perfect_pixel_match": false,
+            "ssim": 0.2305487864052936,
+            "lpips": 0.4939621686935425
+          },
+          {
+            "candidate_index": 15,
+            "truth_index": 14,
+            "mse": 0.03745865745117007,
+            "psnr_db": 14.264477921502394,
+            "perfect_pixel_match": false,
+            "ssim": 0.2479185549868014,
+            "lpips": 0.4459826350212097
+          }
+        ],
+        "metric_dtype": "float64",
+        "truth_denormalization_tolerance_abs": 9.5367431640625e-07,
+        "truth_denormalization_clipped_values": 77691,
+        "perfect_pixel_matches": 0,
+        "psnr_null_meaning": "positive_infinity_for_perfect_pixel_match",
+        "mean_psnr_null_meaning": "positive_infinity_if_any_image_is_a_perfect_pixel_match",
+        "mean_mse": 0.06689914826739168,
+        "mean_psnr_db": 12.291501009006216,
+        "mean_ssim": 0.34376025731472026,
+        "lpips": "not_computed",
+        "reconstruction_success": "no_threshold_registered",
+        "mean_lpips": 0.4984258208423853,
+        "lpips_definition": "TorchMetrics VGG LPIPS; [0,1] mapped to [-1,1]; same pixel-MSE Hungarian pairs"
+      },
+      "embedding_cosine": {
+        "matching": "Hungarian_max_embedding_cosine_offline_only",
+        "per_source": [
+          {
+            "source_index": 0,
+            "truth_index": 1,
+            "cosine": 0.9999990978419543
+          },
+          {
+            "source_index": 1,
+            "truth_index": 8,
+            "cosine": 0.999735052888792
+          },
+          {
+            "source_index": 2,
+            "truth_index": 6,
+            "cosine": 0.9998685442756466
+          },
+          {
+            "source_index": 3,
+            "truth_index": 15,
+            "cosine": 0.9995321848674174
+          },
+          {
+            "source_index": 4,
+            "truth_index": 7,
+            "cosine": 0.9998938274643921
+          },
+          {
+            "source_index": 5,
+            "truth_index": 10,
+            "cosine": 0.9999994358744173
+          },
+          {
+            "source_index": 6,
+            "truth_index": 2,
+            "cosine": 0.9989090253938385
+          },
+          {
+            "source_index": 7,
+            "truth_index": 9,
+            "cosine": 0.9975021979831397
+          },
+          {
+            "source_index": 8,
+            "truth_index": 3,
+            "cosine": 0.9998073034435644
+          },
+          {
+            "source_index": 9,
+            "truth_index": 5,
+            "cosine": 0.9989068246898464
+          },
+          {
+            "source_index": 10,
+            "truth_index": 4,
+            "cosine": 0.9970201589255394
+          },
+          {
+            "source_index": 11,
+            "truth_index": 13,
+            "cosine": 0.9997948411898263
+          },
+          {
+            "source_index": 12,
+            "truth_index": 12,
+            "cosine": 0.9987843252899361
+          },
+          {
+            "source_index": 13,
+            "truth_index": 0,
+            "cosine": 0.9999993234891984
+          },
+          {
+            "source_index": 14,
+            "truth_index": 11,
+            "cosine": 0.9997464945011635
+          },
+          {
+            "source_index": 15,
+            "truth_index": 14,
+            "cosine": 0.9995933573712724
+          }
+        ],
+        "mean_cosine": 0.9993182497181217,
+        "all_sources_included": true,
+        "adapter": "abs(S_hat); no scaling/permutation before FIA"
+      },
+      "candidate_sha256": "ebcf89cf7810f773841ae7067a5b482778c27f2effbbfd1e79b6ff567a07eff5",
+      "sources_sha256": "9dcbc6275feea635d3ae57359d991f52fd089ea7aaba39bad1b6ec7d17d5e9ea",
+      "fia_initialization_sha256": "6f6ec493923b7081284f0fc405f76f60b583cc41a5977393751f96bb21147e59"
+    },
+    "int4_per_tensor": {
+      "image_metrics": {
+        "matching": "Hungarian_pixel_MSE_once_for_all_metrics",
+        "n_images": 16,
+        "all_images_included": true,
+        "candidate_selection": "none_single_supplied_artifact",
+        "per_image": [
+          {
+            "candidate_index": 0,
+            "truth_index": 12,
+            "mse": 0.03853818178710308,
+            "psnr_db": 14.141087790021844,
+            "perfect_pixel_match": false,
+            "ssim": 0.40762210717534886,
+            "lpips": 0.8436484336853027
+          },
+          {
+            "candidate_index": 1,
+            "truth_index": 14,
+            "mse": 0.042036954423622715,
+            "psnr_db": 13.763687561292299,
+            "perfect_pixel_match": false,
+            "ssim": 0.22668912802896563,
+            "lpips": 0.8228785395622253
+          },
+          {
+            "candidate_index": 2,
+            "truth_index": 4,
+            "mse": 0.05525064340924284,
+            "psnr_db": 12.576626601323222,
+            "perfect_pixel_match": false,
+            "ssim": 0.387454994451096,
+            "lpips": 0.8777986764907837
+          },
+          {
+            "candidate_index": 3,
+            "truth_index": 6,
+            "mse": 0.07504983503169638,
+            "psnr_db": 11.246502580496607,
+            "perfect_pixel_match": false,
+            "ssim": 0.15905032497755306,
+            "lpips": 0.8576105833053589
+          },
+          {
+            "candidate_index": 4,
+            "truth_index": 9,
+            "mse": 0.05024869406030941,
+            "psnr_db": 12.988752208680985,
+            "perfect_pixel_match": false,
+            "ssim": 0.20127683097150015,
+            "lpips": 0.8659326434135437
+          },
+          {
+            "candidate_index": 5,
+            "truth_index": 10,
+            "mse": 0.06634659403513361,
+            "psnr_db": 11.781813671433925,
+            "perfect_pixel_match": false,
+            "ssim": 0.24460763210408976,
+            "lpips": 0.7161422371864319
+          },
+          {
+            "candidate_index": 6,
+            "truth_index": 8,
+            "mse": 0.04140616584704963,
+            "psnr_db": 13.829349826964165,
+            "perfect_pixel_match": false,
+            "ssim": 0.5140242799688161,
+            "lpips": 0.912083089351654
+          },
+          {
+            "candidate_index": 7,
+            "truth_index": 7,
+            "mse": 0.11137678596775322,
+            "psnr_db": 9.532053188273808,
+            "perfect_pixel_match": false,
+            "ssim": 0.14844845020074698,
+            "lpips": 0.8007276654243469
+          },
+          {
+            "candidate_index": 8,
+            "truth_index": 5,
+            "mse": 0.11627651015481341,
+            "psnr_db": 9.345080113292966,
+            "perfect_pixel_match": false,
+            "ssim": 0.41570069709838964,
+            "lpips": 0.786879301071167
+          },
+          {
+            "candidate_index": 9,
+            "truth_index": 3,
+            "mse": 0.2043883625338485,
+            "psnr_db": 6.895438356959112,
+            "perfect_pixel_match": false,
+            "ssim": 0.5700915962308248,
+            "lpips": 0.7777068614959717
+          },
+          {
+            "candidate_index": 10,
+            "truth_index": 0,
+            "mse": 0.04913747426990173,
+            "psnr_db": 13.085871705835588,
+            "perfect_pixel_match": false,
+            "ssim": 0.22086468975976356,
+            "lpips": 0.7841267585754395
+          },
+          {
+            "candidate_index": 11,
+            "truth_index": 2,
+            "mse": 0.07427426118974914,
+            "psnr_db": 11.291616594544355,
+            "perfect_pixel_match": false,
+            "ssim": 0.23222479623888148,
+            "lpips": 0.7963329553604126
+          },
+          {
+            "candidate_index": 12,
+            "truth_index": 13,
+            "mse": 0.09331945980328663,
+            "psnr_db": 10.30027783863827,
+            "perfect_pixel_match": false,
+            "ssim": 0.1981321127887612,
+            "lpips": 0.8006083965301514
+          },
+          {
+            "candidate_index": 13,
+            "truth_index": 1,
+            "mse": 0.0786196708537242,
+            "psnr_db": 11.044687787137233,
+            "perfect_pixel_match": false,
+            "ssim": 0.17705084451439265,
+            "lpips": 0.8041417598724365
+          },
+          {
+            "candidate_index": 14,
+            "truth_index": 11,
+            "mse": 0.06462968784065588,
+            "psnr_db": 11.89567941700846,
+            "perfect_pixel_match": false,
+            "ssim": 0.20842151375853404,
+            "lpips": 0.8255900144577026
+          },
+          {
+            "candidate_index": 15,
+            "truth_index": 15,
+            "mse": 0.06416457814872717,
+            "psnr_db": 11.927046566659687,
+            "perfect_pixel_match": false,
+            "ssim": 0.36278271811800306,
+            "lpips": 0.7950125932693481
+          }
+        ],
+        "metric_dtype": "float64",
+        "truth_denormalization_tolerance_abs": 9.5367431640625e-07,
+        "truth_denormalization_clipped_values": 77691,
+        "perfect_pixel_matches": 0,
+        "psnr_null_meaning": "positive_infinity_for_perfect_pixel_match",
+        "mean_psnr_null_meaning": "positive_infinity_if_any_image_is_a_perfect_pixel_match",
+        "mean_mse": 0.0765664912097886,
+        "mean_psnr_db": 11.602848238035158,
+        "mean_ssim": 0.29215266977410426,
+        "lpips": "not_computed",
+        "reconstruction_success": "no_threshold_registered",
+        "mean_lpips": 0.8167012818157673,
+        "lpips_definition": "TorchMetrics VGG LPIPS; [0,1] mapped to [-1,1]; same pixel-MSE Hungarian pairs"
+      },
+      "embedding_cosine": {
+        "matching": "Hungarian_max_embedding_cosine_offline_only",
+        "per_source": [
+          {
+            "source_index": 0,
+            "truth_index": 1,
+            "cosine": 0.8638093619293354
+          },
+          {
+            "source_index": 1,
+            "truth_index": 8,
+            "cosine": 0.8386578165891306
+          },
+          {
+            "source_index": 2,
+            "truth_index": 6,
+            "cosine": 0.8069445954277017
+          },
+          {
+            "source_index": 3,
+            "truth_index": 15,
+            "cosine": 0.8103811852218648
+          },
+          {
+            "source_index": 4,
+            "truth_index": 7,
+            "cosine": 0.8081976080904929
+          },
+          {
+            "source_index": 5,
+            "truth_index": 10,
+            "cosine": 0.924517513373
+          },
+          {
+            "source_index": 6,
+            "truth_index": 2,
+            "cosine": 0.9302315882313067
+          },
+          {
+            "source_index": 7,
+            "truth_index": 9,
+            "cosine": 0.8926949891905189
+          },
+          {
+            "source_index": 8,
+            "truth_index": 5,
+            "cosine": 0.8510489916255046
+          },
+          {
+            "source_index": 9,
+            "truth_index": 3,
+            "cosine": 0.7986610597899776
+          },
+          {
+            "source_index": 10,
+            "truth_index": 11,
+            "cosine": 0.10987101198762275
+          },
+          {
+            "source_index": 11,
+            "truth_index": 14,
+            "cosine": 0.07913418417987043
+          },
+          {
+            "source_index": 12,
+            "truth_index": 12,
+            "cosine": 0.0770681438581877
+          },
+          {
+            "source_index": 13,
+            "truth_index": 13,
+            "cosine": 0.09093469002036218
+          },
+          {
+            "source_index": 14,
+            "truth_index": 4,
+            "cosine": 0.8077565565075404
+          },
+          {
+            "source_index": 15,
+            "truth_index": 0,
+            "cosine": 0.058946090495960175
+          }
+        ],
+        "mean_cosine": 0.6093034616573986,
+        "all_sources_included": true,
+        "adapter": "abs(S_hat); no scaling/permutation before FIA"
+      },
+      "candidate_sha256": "a684a369243e03d3e17b8ff589646407b31752822e6fc8a00655e1edcb940cd2",
+      "sources_sha256": "29b688fe27efe654855a92f0efc0fdba40c784b598557b07ceff8a5e1841bbe2",
+      "fia_initialization_sha256": "6f6ec493923b7081284f0fc405f76f60b583cc41a5977393751f96bb21147e59"
+    },
+    "int4_per_channel": {
+      "image_metrics": {
+        "matching": "Hungarian_pixel_MSE_once_for_all_metrics",
+        "n_images": 16,
+        "all_images_included": true,
+        "candidate_selection": "none_single_supplied_artifact",
+        "per_image": [
+          {
+            "candidate_index": 0,
+            "truth_index": 1,
+            "mse": 0.07398664939103526,
+            "psnr_db": 11.308466399838093,
+            "perfect_pixel_match": false,
+            "ssim": 0.2397542061709432,
+            "lpips": 0.5687633752822876
+          },
+          {
+            "candidate_index": 1,
+            "truth_index": 8,
+            "mse": 0.037749198250344965,
+            "psnr_db": 14.230922678533005,
+            "perfect_pixel_match": false,
+            "ssim": 0.5335179416053061,
+            "lpips": 0.6207738518714905
+          },
+          {
+            "candidate_index": 2,
+            "truth_index": 6,
+            "mse": 0.0692966320111155,
+            "psnr_db": 11.592878726686042,
+            "perfect_pixel_match": false,
+            "ssim": 0.1541406385985189,
+            "lpips": 0.586900532245636
+          },
+          {
+            "candidate_index": 3,
+            "truth_index": 15,
+            "mse": 0.06121908272817131,
+            "psnr_db": 12.13113181910818,
+            "perfect_pixel_match": false,
+            "ssim": 0.41361376923515136,
+            "lpips": 0.6242898106575012
+          },
+          {
+            "candidate_index": 4,
+            "truth_index": 9,
+            "mse": 0.05163097638775201,
+            "psnr_db": 12.87089661979634,
+            "perfect_pixel_match": false,
+            "ssim": 0.18782505089962825,
+            "lpips": 0.845678985118866
+          },
+          {
+            "candidate_index": 5,
+            "truth_index": 10,
+            "mse": 0.06142896009232065,
+            "psnr_db": 12.116268366255696,
+            "perfect_pixel_match": false,
+            "ssim": 0.24869494092878008,
+            "lpips": 0.6068323254585266
+          },
+          {
+            "candidate_index": 6,
+            "truth_index": 11,
+            "mse": 0.0639517125792198,
+            "psnr_db": 11.941478209469196,
+            "perfect_pixel_match": false,
+            "ssim": 0.21198801976750434,
+            "lpips": 0.8068565726280212
+          },
+          {
+            "candidate_index": 7,
+            "truth_index": 7,
+            "mse": 0.1076377696673513,
+            "psnr_db": 9.680353097116772,
+            "perfect_pixel_match": false,
+            "ssim": 0.14920539046744263,
+            "lpips": 0.7875748872756958
+          },
+          {
+            "candidate_index": 8,
+            "truth_index": 3,
+            "mse": 0.20315789060755804,
+            "psnr_db": 6.921663051083229,
+            "perfect_pixel_match": false,
+            "ssim": 0.6009111437868541,
+            "lpips": 0.6118196845054626
+          },
+          {
+            "candidate_index": 9,
+            "truth_index": 5,
+            "mse": 0.10002371994434738,
+            "psnr_db": 9.998969978061375,
+            "perfect_pixel_match": false,
+            "ssim": 0.43803655939402253,
+            "lpips": 0.5836449861526489
+          },
+          {
+            "candidate_index": 10,
+            "truth_index": 4,
+            "mse": 0.05465666124155754,
+            "psnr_db": 12.623569011588094,
+            "perfect_pixel_match": false,
+            "ssim": 0.38230890317940774,
+            "lpips": 0.7148234844207764
+          },
+          {
+            "candidate_index": 11,
+            "truth_index": 13,
+            "mse": 0.07840314762633677,
+            "psnr_db": 11.056665014825438,
+            "perfect_pixel_match": false,
+            "ssim": 0.2984300893376849,
+            "lpips": 0.5886141061782837
+          },
+          {
+            "candidate_index": 12,
+            "truth_index": 12,
+            "mse": 0.03735551358382351,
+            "psnr_db": 14.276452882981474,
+            "perfect_pixel_match": false,
+            "ssim": 0.4184356735452658,
+            "lpips": 0.6771437525749207
+          },
+          {
+            "candidate_index": 13,
+            "truth_index": 0,
+            "mse": 0.055865617453293256,
+            "psnr_db": 12.528553968428987,
+            "perfect_pixel_match": false,
+            "ssim": 0.1716306447213889,
+            "lpips": 0.7821731567382812
+          },
+          {
+            "candidate_index": 14,
+            "truth_index": 14,
+            "mse": 0.05210895257197194,
+            "psnr_db": 12.83087656381974,
+            "perfect_pixel_match": false,
+            "ssim": 0.137101613917649,
+            "lpips": 0.7904572486877441
+          },
+          {
+            "candidate_index": 15,
+            "truth_index": 2,
+            "mse": 0.08134695194606195,
+            "psnr_db": 10.896587153491987,
+            "perfect_pixel_match": false,
+            "ssim": 0.14244419322467666,
+            "lpips": 0.7865548133850098
+          }
+        ],
+        "metric_dtype": "float64",
+        "truth_denormalization_tolerance_abs": 9.5367431640625e-07,
+        "truth_denormalization_clipped_values": 77691,
+        "perfect_pixel_matches": 0,
+        "psnr_null_meaning": "positive_infinity_for_perfect_pixel_match",
+        "mean_psnr_null_meaning": "positive_infinity_if_any_image_is_a_perfect_pixel_match",
+        "mean_mse": 0.07436371475514132,
+        "mean_psnr_db": 11.687858346317727,
+        "mean_ssim": 0.295502423673764,
+        "lpips": "not_computed",
+        "reconstruction_success": "no_threshold_registered",
+        "mean_lpips": 0.686431348323822,
+        "lpips_definition": "TorchMetrics VGG LPIPS; [0,1] mapped to [-1,1]; same pixel-MSE Hungarian pairs"
+      },
+      "embedding_cosine": {
+        "matching": "Hungarian_max_embedding_cosine_offline_only",
+        "per_source": [
+          {
+            "source_index": 0,
+            "truth_index": 1,
+            "cosine": 0.987917746904491
+          },
+          {
+            "source_index": 1,
+            "truth_index": 8,
+            "cosine": 0.971056218512761
+          },
+          {
+            "source_index": 2,
+            "truth_index": 6,
+            "cosine": 0.97075069199405
+          },
+          {
+            "source_index": 3,
+            "truth_index": 15,
+            "cosine": 0.967719546623711
+          },
+          {
+            "source_index": 4,
+            "truth_index": 7,
+            "cosine": 0.9937984691636993
+          },
+          {
+            "source_index": 5,
+            "truth_index": 10,
+            "cosine": 0.9852556601311776
+          },
+          {
+            "source_index": 6,
+            "truth_index": 2,
+            "cosine": 0.9870339420201251
+          },
+          {
+            "source_index": 7,
+            "truth_index": 9,
+            "cosine": 0.9838223899266536
+          },
+          {
+            "source_index": 8,
+            "truth_index": 3,
+            "cosine": 0.989134737843623
+          },
+          {
+            "source_index": 9,
+            "truth_index": 5,
+            "cosine": 0.9881942537360877
+          },
+          {
+            "source_index": 10,
+            "truth_index": 4,
+            "cosine": 0.975685266251525
+          },
+          {
+            "source_index": 11,
+            "truth_index": 13,
+            "cosine": 0.9764223023800686
+          },
+          {
+            "source_index": 12,
+            "truth_index": 12,
+            "cosine": 0.9766321312518036
+          },
+          {
+            "source_index": 13,
+            "truth_index": 11,
+            "cosine": 0.12851724061370307
+          },
+          {
+            "source_index": 14,
+            "truth_index": 14,
+            "cosine": 0.07587142765338603
+          },
+          {
+            "source_index": 15,
+            "truth_index": 0,
+            "cosine": 0.15026365161084015
+          }
+        ],
+        "mean_cosine": 0.8192547297886067,
+        "all_sources_included": true,
+        "adapter": "abs(S_hat); no scaling/permutation before FIA"
+      },
+      "candidate_sha256": "410b46da0419c82b521710a32337e7e6e4ab9683a61af1f33bf4e1de511c327d",
+      "sources_sha256": "82f61e15497ce1e5be01ec0ae80d41b6609f6798601dfb390fadda3f1c5218c5",
+      "fia_initialization_sha256": "6f6ec493923b7081284f0fc405f76f60b583cc41a5977393751f96bb21147e59"
+    }
+  },
+  "deltas_vs_fp32": {
+    "int4_per_tensor_minus_fp32": {
+      "mean_psnr_db": -0.6886527709710588,
+      "mean_ssim": -0.05160758754061601,
+      "mean_lpips": 0.318275460973382,
+      "mean_mse": 0.00966734294239692,
+      "mean_embedding_cosine": -0.3900147880607231
+    },
+    "int4_per_channel_minus_fp32": {
+      "mean_psnr_db": -0.6036426626884897,
+      "mean_ssim": -0.04825783364095626,
+      "mean_lpips": 0.18800552748143673,
+      "mean_mse": 0.007464566487749638,
+      "mean_embedding_cosine": -0.18006351992951497
+    }
+  },
+  "update_statistics": {
+    "layer": "classifier.0.weight",
+    "shape": [
+      4096,
+      25088
+    ],
+    "numel": 102760448,
+    "quantization": {
+      "scheme": "symmetric signed INT4",
+      "codes": [
+        -7,
+        7
+      ],
+      "rounding": "torch.round nearest-even",
+      "dequantization": "FP32 code * scale",
+      "device": "CPU FP32",
+      "per_channel_axis": "output row",
+      "zero_row_scale": 1.0
+    },
+    "original_update": {
+      "l2_norm": 0.014023203019876779,
+      "max_abs": 6.623420631513e-05,
+      "nonzero_fraction": 0.5320852629992426,
+      "zero_rows": 8,
+      "active_rows": 4088,
+      "row_nonzero_value_fraction_all_rows": {
+        "p00": 0.0,
+        "p01": 0.16139787946428574,
+        "p05": 0.30546476403061223,
+        "p10": 0.3697783801020408,
+        "p25": 0.4624123086734694,
+        "p50": 0.5480508609693877,
+        "p75": 0.6206951530612245,
+        "p90": 0.6727718431122449,
+        "p95": 0.7019391741071429,
+        "p99": 0.7413624043367347,
+        "p100": 0.8060825892857143
+      },
+      "row_nonzero_value_fraction_active_rows": {
+        "p00": 0.07589285714285714,
+        "p01": 0.17095304528061223,
+        "p05": 0.3075314891581633,
+        "p10": 0.37100207270408164,
+        "p25": 0.46287069515306123,
+        "p50": 0.5482900191326531,
+        "p75": 0.6208745216836735,
+        "p90": 0.6731106505102042,
+        "p95": 0.7019551179846939,
+        "p99": 0.7413815369897959,
+        "p100": 0.8060825892857143
+      }
+    },
+    "per_tensor": {
+      "scale": 9.462029083806556e-06,
+      "scale_count": 1,
+      "scale_bytes_fp32": 4,
+      "nonzero_code_fraction": 0.01783040105080118,
+      "relative_l2_error": 0.6902655422510655,
+      "cosine_similarity": 0.7582636178279187,
+      "max_absolute_error": 4.7310122681665234e-06,
+      "relative_l2_error_quantiles_active_rows_only": {
+        "p00": 0.3371814184660973,
+        "p01": 0.4395390020280599,
+        "p05": 0.5396455132433595,
+        "p10": 0.5927313433619252,
+        "p25": 0.6846666330303154,
+        "p50": 0.7926469766216333,
+        "p75": 0.8915391448010178,
+        "p90": 0.9688836393285302,
+        "p95": 0.9954721318377674,
+        "p99": 1.0,
+        "p100": 1.0
+      },
+      "relative_l2_error_zero_rows_excluded": 8,
+      "nonzero_code_fraction_quantiles_all_rows": {
+        "p00": 0.0,
+        "p01": 0.0,
+        "p05": 0.00011957908163265306,
+        "p10": 0.0009566326530612245,
+        "p25": 0.004823022959183673,
+        "p50": 0.01371173469387755,
+        "p75": 0.02626753826530612,
+        "p90": 0.0408561862244898,
+        "p95": 0.050990513392857144,
+        "p99": 0.07043407206632654,
+        "p100": 0.09450733418367346
+      },
+      "nonzero_code_fraction_quantiles_active_rows": {
+        "p00": 0.0,
+        "p01": 0.0,
+        "p05": 0.00015943877551020407,
+        "p10": 0.0009964923469387755,
+        "p25": 0.004823022959183673,
+        "p50": 0.013751594387755101,
+        "p75": 0.026347257653061226,
+        "p90": 0.0408561862244898,
+        "p95": 0.05100645727040815,
+        "p99": 0.07043726084183674,
+        "p100": 0.09450733418367346
+      }
+    },
+    "per_channel": {
+      "scale_count": 4096,
+      "active_scale_count": 4088,
+      "scale_bytes_fp32": 16384,
+      "zero_rows_excluded_from_scale_quantiles": 8,
+      "zero_absmax_rows_using_scale_one_convention": 8,
+      "active_row_scale_quantiles": {
+        "p00": 6.45273479094044e-09,
+        "p01": 2.9870807964016423e-07,
+        "p05": 8.043633698662234e-07,
+        "p10": 1.0755910807347392e-06,
+        "p25": 1.7263061806715996e-06,
+        "p50": 2.498898538760841e-06,
+        "p75": 3.3958516496568336e-06,
+        "p90": 4.355436522018863e-06,
+        "p95": 5.006743526791979e-06,
+        "p99": 6.6187753009216996e-06,
+        "p100": 9.462029083806556e-06
+      },
+      "active_scale_ratio_to_per_tensor_quantiles": {
+        "p00": 0.0006819609973492617,
+        "p01": 0.031569135646748035,
+        "p05": 0.08500960658034985,
+        "p10": 0.11367446360691495,
+        "p25": 0.18244566417852418,
+        "p50": 0.2640975330584736,
+        "p75": 0.3588925398114174,
+        "p90": 0.46030682039149684,
+        "p95": 0.5291405767670475,
+        "p99": 0.6995090843938707,
+        "p100": 1.0
+      },
+      "active_scale_min": 6.45273479094044e-09,
+      "active_scale_max": 9.462029083806556e-06,
+      "rows_below_per_tensor_scale_over_14": 151,
+      "rows_below_threshold_energy_fraction_of_total_update": 0.0010798613241959363,
+      "rows_below_threshold_energy": 2.1235497014518102e-07,
+      "total_update_energy": 0.00019665022293793172,
+      "nonzero_code_fraction": 0.12321418645430585,
+      "relative_l2_error": 0.3398092173827232,
+      "cosine_similarity": 0.944539450701674,
+      "max_absolute_error": 4.729464308184106e-06,
+      "relative_l2_error_quantiles_active_rows_only": {
+        "p00": 0.2012920758672793,
+        "p01": 0.24519756263116424,
+        "p05": 0.2655091985636704,
+        "p10": 0.2778279978508244,
+        "p25": 0.3013528453897263,
+        "p50": 0.32910542659177616,
+        "p75": 0.36539314557329466,
+        "p90": 0.402826214552349,
+        "p95": 0.42826765219952,
+        "p99": 0.4753307022985926,
+        "p100": 0.5386864160744111
+      },
+      "relative_l2_error_zero_rows_excluded": 8,
+      "nonzero_code_fraction_quantiles_all_rows": {
+        "p00": 0.0,
+        "p01": 0.0353515625,
+        "p05": 0.05139907525510204,
+        "p10": 0.06674505739795919,
+        "p25": 0.08951490752551021,
+        "p50": 0.12057557397959184,
+        "p75": 0.15375876913265304,
+        "p90": 0.18568638392857142,
+        "p95": 0.20281608737244897,
+        "p99": 0.23206114477040832,
+        "p100": 0.292171556122449
+      },
+      "nonzero_code_fraction_quantiles_active_rows": {
+        "p00": 0.03148915816326531,
+        "p01": 0.03606265943877551,
+        "p05": 0.052256058673469385,
+        "p10": 0.06720742984693878,
+        "p25": 0.08968431122448979,
+        "p50": 0.12063536352040816,
+        "p75": 0.15383848852040816,
+        "p90": 0.18573022959183674,
+        "p95": 0.20283203125,
+        "p99": 0.23212173150510212,
+        "p100": 0.292171556122449
+      }
+    },
+    "top_17_singular_values": {
+      "method": "torch.linalg.svdvals FP32 CUDA, exact SVD routine",
+      "fp32": [
+        0.006218923721462488,
+        0.005543923936784267,
+        0.005057206843048334,
+        0.004948957823216915,
+        0.0044334870763123035,
+        0.0038061472587287426,
+        0.003379178000614047,
+        0.00325204711407423,
+        0.0026501822285354137,
+        0.0024949247017502785,
+        0.0016944613307714462,
+        0.0015146519290283322,
+        0.001322604133747518,
+        0.0006477369461208582,
+        0.0005055500078015029,
+        0.00022110214922577143,
+        8.500270354261374e-08
+      ],
+      "per_tensor": [
+        0.005505143664777279,
+        0.004742899443954229,
+        0.004418227355927229,
+        0.004289352335035801,
+        0.0038394941948354244,
+        0.0031947458628565073,
+        0.0029605142772197723,
+        0.0026567685417830944,
+        0.0017710283864289522,
+        0.0015585521468892694,
+        0.0014266808284446597,
+        0.0013657606905326247,
+        0.001295801135711372,
+        0.001239609089680016,
+        0.0012205814709886909,
+        0.0011380730429664254,
+        0.001087623881176114
+      ],
+      "per_channel": [
+        0.0061353356577456,
+        0.005511152092367411,
+        0.005061531439423561,
+        0.004932783078402281,
+        0.004412252921611071,
+        0.0037919736932963133,
+        0.0033443633001297712,
+        0.0032108924351632595,
+        0.0025160808581858873,
+        0.0024139084853231907,
+        0.0016176195349544287,
+        0.0013965314719825983,
+        0.0012415583478286862,
+        0.0006625643582083285,
+        0.0006141519406810403,
+        0.0005681801121681929,
+        0.0005454140482470393
+      ]
+    }
+  },
+  "lpips_provenance": {
+    "implementation": "torchmetrics.image.lpip.LearnedPerceptualImagePatchSimilarity",
+    "net_type": "vgg",
+    "normalize_argument": false,
+    "device": "cpu",
+    "dtype": "float32",
+    "versions": {
+      "torch": "2.13.0+cu132",
+      "torchvision": "0.28.0+cu132",
+      "torchmetrics": "1.9.0"
+    },
+    "input_normalization": "FP32 RGB [0,1] to [-1,1] using (pixels - 0.5) * 2",
+    "weights": {
+      "backbone": {
+        "path": "C:\\Users\\조상제\\.cache\\torch\\hub\\checkpoints\\vgg16-397923af.pth",
+        "sha256": "397923af8e79cdbb6a7127f12361acd7a2f83e06b05044ddf496e83de57a5bf0"
+      },
+      "calibration": {
+        "path": "C:\\miniconda\\envs\\DLG\\Lib\\site-packages\\torchmetrics\\functional\\image\\lpips_models\\vgg.pth",
+        "sha256": "a78928a0af1e5f0fcb1f3b9e8f8c3a2a5a3de244d830ad5c1feddc79b8432868"
+      }
+    },
+    "downloads_allowed": false
+  },
+  "matching": {
+    "image_metrics": "pixel-MSE Hungarian 16x16 once per arm; same pairs for PSNR/SSIM/LPIPS",
+    "embedding": "abs(S_hat) vs round_001 conv feature embeddings; Hungarian max cosine offline only"
+  },
+  "sample_size": {
+    "images": 16,
+    "seed": 1,
+    "statistical_claim": "descriptive only; no generalization"
+  },
+  "success_threshold": null,
+  "candidate_selection": "none; final iteration only",
+  "fia_initialization_sha256": "6f6ec493923b7081284f0fc405f76f60b583cc41a5977393751f96bb21147e59",
+  "evaluation_truth_sha256": "7ce01e43c3346e38194975539a61b17059b733cccd7ff3de25ff903fc3d53383",
+  "completed_at_utc": "2026-10-12T12:02:20.378229+00:00"
+}

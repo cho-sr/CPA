@@ -1,0 +1,2 @@
+job_index,run_tag,job_kind,B,bits,rounding,seed,scale_granularity,require_distinct_labels,status,returncode,wall_time_sec,summary_json
+0,m4A_B32_bitsfp32_stoch_seed0_scalenone_distinct,fp32_truth_fia,32,fp32,none,0,none,True,completed,0,1930.2185843999614,results\v10_m4_grid\m4A_B32_bitsfp32_stoch_seed0_scalenone_distinct\summary.json

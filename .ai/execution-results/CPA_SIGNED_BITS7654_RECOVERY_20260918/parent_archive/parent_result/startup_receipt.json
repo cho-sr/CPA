@@ -1,0 +1,12 @@
+{
+  "status": "READY_VALIDATED",
+  "bits": [
+    7,
+    6,
+    5,
+    4
+  ],
+  "all_four_registered_before_private_loading": true,
+  "private_data_loaded": false,
+  "cuda_cap_bytes": 12884901888
+}

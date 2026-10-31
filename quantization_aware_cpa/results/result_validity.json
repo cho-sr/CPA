@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "decision_date": "2026-09-09",
+  "record": "../../codex/docs/NO_CPA_CONTROL_INVALIDATION_20260909.md",
+  "invalid_sources": [
+    {
+      "source_id": "m7_no_cpa_control",
+      "path": "m7_no_cpa_control",
+      "conditions": [
+        "fp32",
+        "4-bit"
+      ],
+      "scientific_validity": "invalid",
+      "reason_code": "failed_variable_control",
+      "reason": "User confirmed failure to control experimental variables; specific confound not supplied.",
+      "authority": "user instruction, 2026-09-09",
+      "raw_artifacts_preserved": true,
+      "execution_completion_is_not_scientific_validity": true
+    }
+  ],
+  "dependent_artifacts": [
+    {
+      "path": "m7_no_cpa_control",
+      "scientific_validity": "invalid",
+      "scope": "All no-CPA conditions and every dependent comparison, threshold, count, claim and figure are withdrawn."
+    },
+    {
+      "path": "m7_normalized_metrics",
+      "scientific_validity": "partially_invalid",
+      "scope": "All floor-referenced distances and normalized ratios are invalid. Independent raw CPA/prior/shuffle LPIPS values remain observations."
+    },
+    {
+      "path": "m7_perimage_distribution",
+      "scientific_validity": "partially_invalid",
+      "scope": "All no-CPA-derived thresholds, success fields/counts, threshold figures and interpretations are invalid. Independent LPIPS observations remain."
+    },
+    {
+      "path": "m7_shuffle_control",
+      "scientific_validity": "partially_invalid",
+      "scope": "shuffled_minus_no_cpa_4bit and no-CPA-reference claims are withdrawn. Permutations, pairwise LPIPS and correct-to-shuffled differences remain independent."
+    },
+    {
+      "path": "m7_followup_review",
+      "scientific_validity": "partially_invalid",
+      "scope": "No-CPA-referenced normalization, thresholds/counts and CPA-contribution claims are invalid; the old review cannot restore them."
+    },
+    {
+      "path": "experiment_summary_20260909",
+      "scientific_validity": "withdrawn",
+      "scope": "The combined summary image and report include invalid no-CPA claims and must not be used in reporting."
+    },
+    {
+      "path": "publication_metric_figures",
+      "scientific_validity": "partially_invalid",
+      "scope": "fig02, existing combined fig03 (invalid panel b reference rows), and fig05 are withdrawn. fig01 and fig04 are independent; fig04 is outside the current requested graph scope."
+    }
+  ],
+  "unaffected_current_sources": [
+    "m6_uia_fp32_B16_fia/per_image_metrics.csv",
+    "m7_uia_4bit_B16/per_image_metrics.csv"
+  ],
+  "current_figure_bundle": "client_update_fp32_vs_4bit.zip"
+}

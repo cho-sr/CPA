@@ -1,0 +1,45 @@
+{
+  "desparse_sampler": "retained_rescaled",
+  "ensemble_size": 8,
+  "keep_ratio": 0.8,
+  "member_observation_summaries": [
+    {
+      "member": 0,
+      "reused_completed_run": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\sparsified_update_cpa\\outputs_v1\\author_runs\\imagenet\\vgg16\\attack\\cp_direct\\nodef\\cora_round_update_cpa_roundagg_keep0p8_n24_round20_R8_seed1234_m000_uia"
+    },
+    {
+      "member": 1,
+      "reused_completed_run": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\sparsified_update_cpa\\outputs_v1\\author_runs\\imagenet\\vgg16\\attack\\cp_direct\\nodef\\cora_round_update_cpa_roundagg_keep0p8_n24_round20_R8_seed1234_m001_uia"
+    },
+    {
+      "member": 2,
+      "reused_completed_run": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\sparsified_update_cpa\\outputs_v1\\author_runs\\imagenet\\vgg16\\attack\\cp_direct\\nodef\\cora_round_update_cpa_roundagg_keep0p8_n24_round20_R8_seed1234_m002_uia"
+    },
+    {
+      "member": 3,
+      "reused_completed_run": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\sparsified_update_cpa\\outputs_v1\\author_runs\\imagenet\\vgg16\\attack\\cp_direct\\nodef\\cora_round_update_cpa_roundagg_keep0p8_n24_round20_R8_seed1234_m003_uia"
+    },
+    {
+      "member": 4,
+      "reused_completed_run": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\sparsified_update_cpa\\outputs_v1\\author_runs\\imagenet\\vgg16\\attack\\cp_direct\\nodef\\cora_round_update_cpa_roundagg_keep0p8_n24_round20_R8_seed1234_m004_uia"
+    },
+    {
+      "member": 5,
+      "reused_completed_run": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\sparsified_update_cpa\\outputs_v1\\author_runs\\imagenet\\vgg16\\attack\\cp_direct\\nodef\\cora_round_update_cpa_roundagg_keep0p8_n24_round20_R8_seed1234_m005_uia"
+    },
+    {
+      "member": 6,
+      "reused_completed_run": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\sparsified_update_cpa\\outputs_v1\\author_runs\\imagenet\\vgg16\\attack\\cp_direct\\nodef\\cora_round_update_cpa_roundagg_keep0p8_n24_round20_R8_seed1234_m006_uia"
+    },
+    {
+      "member": 7,
+      "reused_completed_run": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\sparsified_update_cpa\\outputs_v1\\author_runs\\imagenet\\vgg16\\attack\\cp_direct\\nodef\\cora_round_update_cpa_roundagg_keep0p8_n24_round20_R8_seed1234_m007_uia"
+    }
+  ],
+  "noise_seed": 1234,
+  "observation": "aggregate_sparse_round_update_only",
+  "per_client_observations_used": false,
+  "schema_version": 1,
+  "source_file": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\cora_round_update_cpa\\outputs_v1\\imagenet\\vgg16\\round_updates\\round_observed_clients3_rounds20_spc8_local10_d2939b71f2f9d327\\client_topk_then_aggregate_observed_only\\global_topk\\keep_0p8.pickle",
+  "source_hash": "7c0b802f84fcd6d616ecaab2f2e26aaeb021c0f1a893b14930803aad674032b1"
+}

@@ -1,0 +1,26 @@
+{
+  "alignment": "blind_medoid_align_then_mean",
+  "dequantization_scope": "attack_layer",
+  "ensemble_size": 2,
+  "method": "fixed_bit_quantized_update_randomized_dequant_blind_ensemble",
+  "missing_value_policy": "sample continuous residual inside quantization bin",
+  "missing_value_sampler": "uniform",
+  "noise_seed": 4321,
+  "oracle_inputs_used": false,
+  "quant_bits": 4,
+  "schema_version": 1,
+  "seed_plan": [
+    {
+      "cpa_seed": "fixed_from_args_seed",
+      "dequantization_seed": 1004324,
+      "member": 1,
+      "trial_varying_randomness": "quantization_bin_noise_only"
+    }
+  ],
+  "source_kind": "rec_emb_attack_order",
+  "source_quantized_update_file": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\mixed_bit_fedavg\\outputs_smoke\\fixed4_single_client_obs\\round_001_client000_int4_dequant_update_cpa.pickle",
+  "source_quantized_update_hash": "d8d57be1e8194d4d0612ef2e1ab110a37b06318207a212c74309d0b205773dfc",
+  "source_run_paths": [
+    "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\mixed_bit_fedavg\\outputs_v1\\author_runs\\imagenet\\vgg16\\attack\\cp_direct\\nodef\\random_dequant_int4_client0_n2_steps1_trials1_R2_seed4321_attack_layer_fia2_m001_uia"
+  ]
+}

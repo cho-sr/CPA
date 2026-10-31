@@ -1,0 +1,929 @@
+[
+  {
+    "quant_bits": 4,
+    "rounding": "nearest",
+    "quantization": "signed_symmetric_int4",
+    "scale_scope": "per_client_per_parameter_tensor",
+    "zero_point": null,
+    "qmin": -7,
+    "qmax": 7,
+    "levels": 15,
+    "quant_mse": 1.6824676844949577e-14,
+    "quant_relative_l2": 0.5411021609376958,
+    "quant_cosine_similarity": 0.8593452034481237,
+    "quant_scale_mean": 1.4438202377009546e-06,
+    "quant_scale_min": 5.481498632775583e-08,
+    "quant_scale_max": 8.63256173033733e-06,
+    "quant_saturation_ratio": 6.577162215366906e-07,
+    "per_tensor": [
+      {
+        "name": "features.0.weight",
+        "scale": 5.257981229078723e-06,
+        "mse": 2.326272919151296e-12,
+        "relative_l2": 0.18006402575909186,
+        "saturation_ratio": 0.0052083334885537624,
+        "qmin": -7,
+        "qmax": 7
+      },
+      {
+        "name": "features.0.bias",
+        "scale": 2.7247838261246216e-06,
+        "mse": 7.32136790429494e-13,
+        "relative_l2": 0.1372403765983142,
+        "saturation_ratio": 0.015625,
+        "qmin": -7,
+        "qmax": 7
+      },
+      {
+        "name": "features.2.weight",
+        "scale": 2.7418136596679688e-06,
+        "mse": 4.934715830406944e-13,
+        "relative_l2": 0.3185319989483224,
+        "saturation_ratio": 0.00010850694525288418,
+        "qmin": -7,
+        "qmax": 7
+      },
+      {
+        "name": "features.2.bias",
+        "scale": 2.7290411708236206e-06,
+        "mse": 6.435372525669114e-13,
+        "relative_l2": 0.14603698968491127,
+        "saturation_ratio": 0.03125,
+        "qmin": -7,
+        "qmax": 7
+      },
+      {
+        "name": "features.5.weight",
+        "scale": 2.028686594712781e-06,
+        "mse": 3.203255562035502e-13,
+        "relative_l2": 0.3720041266010195,
+        "saturation_ratio": 8.138021075865254e-05,
+        "qmin": -7,
+        "qmax": 7
+      },
+      {
+        "name": "features.5.bias",
+        "scale": 7.258994401126984e-07,
+        "mse": 4.310525596401896e-14,
+        "relative_l2": 0.1306147283056539,
+        "saturation_ratio": 0.0078125,
+        "qmin": -7,
+        "qmax": 7
+      },
+      {
+        "name": "features.7.weight",
+        "scale": 1.7242772401004913e-06,
+        "mse": 2.288011119301449e-13,
+        "relative_l2": 0.38947423060004344,
+        "saturation_ratio": 4.069010537932627e-05,
+        "qmin": -7,
+        "qmax": 7
+      },
+      {
+        "name": "features.7.bias",
+        "scale": 9.451593427911575e-07,
+        "mse": 6.937007392127104e-14,
+        "relative_l2": 0.19465106019646478,
+        "saturation_ratio": 0.0078125,
+        "qmin": -7,
+        "qmax": 7
+      },
+      {
+        "name": "features.10.weight",
+        "scale": 1.402837938258017e-06,
+        "mse": 1.5654869858001193e-13,
+        "relative_l2": 0.40468362537550767,
+        "saturation_ratio": 3.3908420391526306e-06,
+        "qmin": -7,
+        "qmax": 7
+      },
+      {
+        "name": "features.10.bias",
+        "scale": 3.0334507528095855e-07,
+        "mse": 8.20749006681231e-15,
+        "relative_l2": 0.18072534823395148,
+        "saturation_ratio": 0.0078125,
+        "qmin": -7,
+        "qmax": 7
+      },
+      {
+        "name": "features.12.weight",
+        "scale": 1.070754819920694e-06,
+        "mse": 8.648244639709713e-14,
+        "relative_l2": 0.4415909860612891,
+        "saturation_ratio": 1.6954210195763153e-06,
+        "qmin": -7,
+        "qmax": 7
+      },
+      {
+        "name": "features.12.bias",
+        "scale": 1.9584383892379265e-07,
+        "mse": 3.4525602913589156e-15,
+        "relative_l2": 0.15792566034021233,
+        "saturation_ratio": 0.01171875,
+        "qmin": -7,
+        "qmax": 7
+      },
+      {
+        "name": "features.14.weight",
+        "scale": 1.2133803011238342e-06,
+        "mse": 1.0842332529477823e-13,
+        "relative_l2": 0.45964462997324707,
+        "saturation_ratio": 5.086263172415784e-06,
+        "qmin": -7,
+        "qmax": 7
+      },
+      {
+        "name": "features.14.bias",
+        "scale": 1.80942677729945e-07,
+        "mse": 2.6924809936126632e-15,
+        "relative_l2": 0.15184703053616816,
+        "saturation_ratio": 0.0078125,
+        "qmin": -7,
+        "qmax": 7
+      },
+      {
+        "name": "features.17.weight",
+        "scale": 1.5667507113903412e-06,
+        "mse": 1.4734467745065717e-13,
+        "relative_l2": 0.6244473512817079,
+        "saturation_ratio": 8.477105097881577e-07,
+        "qmin": -7,
+        "qmax": 7
+      },
+      {
+        "name": "features.17.bias",
+        "scale": 1.1388744525220318e-07,
+        "mse": 1.0143866464783712e-15,
+        "relative_l2": 0.159208569362699,
+        "saturation_ratio": 0.001953125,
+        "qmin": -7,
+        "qmax": 7
+      },
+      {
+        "name": "features.19.weight",
+        "scale": 1.3894002677261597e-06,
+        "mse": 9.13314321933213e-14,
+        "relative_l2": 0.6160417711084798,
+        "saturation_ratio": 8.477105097881577e-07,
+        "qmin": -7,
+        "qmax": 7
+      },
+      {
+        "name": "features.19.bias",
+        "scale": 2.7247838829680404e-07,
+        "mse": 5.9414732214832424e-15,
+        "relative_l2": 0.30114175948471733,
+        "saturation_ratio": 0.001953125,
+        "qmin": -7,
+        "qmax": 7
+      },
+      {
+        "name": "features.21.weight",
+        "scale": 1.2389251651256927e-06,
+        "mse": 7.587199218624879e-14,
+        "relative_l2": 0.5818118302811999,
+        "saturation_ratio": 4.238552548940788e-07,
+        "qmin": -7,
+        "qmax": 7
+      },
+      {
+        "name": "features.21.bias",
+        "scale": 1.617840297285511e-07,
+        "mse": 1.917209948199168e-15,
+        "relative_l2": 0.14654652399902127,
+        "saturation_ratio": 0.00390625,
+        "qmin": -7,
+        "qmax": 7
+      },
+      {
+        "name": "features.24.weight",
+        "scale": 1.5006268085926422e-06,
+        "mse": 1.0692442783800783e-13,
+        "relative_l2": 0.5936293727990358,
+        "saturation_ratio": 5.510118171514478e-06,
+        "qmin": -7,
+        "qmax": 7
+      },
+      {
+        "name": "features.24.bias",
+        "scale": 3.3421176226511307e-07,
+        "mse": 9.827098377125469e-15,
+        "relative_l2": 0.2613782540127825,
+        "saturation_ratio": 0.001953125,
+        "qmin": -7,
+        "qmax": 7
+      },
+      {
+        "name": "features.26.weight",
+        "scale": 1.7578048527866486e-06,
+        "mse": 1.216948392944296e-13,
+        "relative_l2": 0.5936105244930738,
+        "saturation_ratio": 2.1192763597355224e-06,
+        "qmin": -7,
+        "qmax": 7
+      },
+      {
+        "name": "features.26.bias",
+        "scale": 3.448554366514145e-07,
+        "mse": 9.36412202661753e-15,
+        "relative_l2": 0.19897827637601784,
+        "saturation_ratio": 0.001953125,
+        "qmin": -7,
+        "qmax": 7
+      },
+      {
+        "name": "features.28.weight",
+        "scale": 2.099467110383557e-06,
+        "mse": 1.1107162161467294e-13,
+        "relative_l2": 0.6284902023523969,
+        "saturation_ratio": 2.1192763597355224e-06,
+        "qmin": -7,
+        "qmax": 7
+      },
+      {
+        "name": "features.28.bias",
+        "scale": 7.152557373046875e-07,
+        "mse": 4.2729454550376536e-14,
+        "relative_l2": 0.33249342764492146,
+        "saturation_ratio": 0.001953125,
+        "qmin": -7,
+        "qmax": 7
+      },
+      {
+        "name": "classifier.0.weight",
+        "scale": 8.673274010106979e-07,
+        "mse": 4.750582279454889e-15,
+        "relative_l2": 0.6518359734391915,
+        "saturation_ratio": 1.9462740752373975e-08,
+        "qmin": -7,
+        "qmax": 7
+      },
+      {
+        "name": "classifier.0.bias",
+        "scale": 5.481498632775583e-08,
+        "mse": 2.055920751855802e-16,
+        "relative_l2": 0.18928003602303567,
+        "saturation_ratio": 0.000732421875,
+        "qmin": -7,
+        "qmax": 7
+      },
+      {
+        "name": "classifier.3.weight",
+        "scale": 7.82310962677002e-07,
+        "mse": 8.625951447810247e-15,
+        "relative_l2": 0.5297343626326325,
+        "saturation_ratio": 2.980232238769531e-07,
+        "qmin": -7,
+        "qmax": 7
+      },
+      {
+        "name": "classifier.3.bias",
+        "scale": 1.0750123635716591e-07,
+        "mse": 6.721541014477039e-16,
+        "relative_l2": 0.22892621947795788,
+        "saturation_ratio": 0.000244140625,
+        "qmin": -7,
+        "qmax": 7
+      },
+      {
+        "name": "classifier.6.weight",
+        "scale": 8.63256173033733e-06,
+        "mse": 2.059504476681351e-14,
+        "relative_l2": 0.290309255364267,
+        "saturation_ratio": 7.324218813664629e-07,
+        "qmin": -7,
+        "qmax": 7
+      },
+      {
+        "name": "classifier.6.bias",
+        "scale": 1.0175364195674774e-06,
+        "mse": 3.327142381048809e-15,
+        "relative_l2": 0.1203478335885545,
+        "saturation_ratio": 0.0010000000474974513,
+        "qmin": -7,
+        "qmax": 7
+      }
+    ],
+    "round": 20,
+    "client_id": 0
+  },
+  {
+    "quant_bits": 4,
+    "rounding": "nearest",
+    "quantization": "signed_symmetric_int4",
+    "scale_scope": "per_client_per_parameter_tensor",
+    "zero_point": null,
+    "qmin": -7,
+    "qmax": 7,
+    "levels": 15,
+    "quant_mse": 2.6390110685304806e-14,
+    "quant_relative_l2": 0.5566115264931197,
+    "quant_cosine_similarity": 0.8474640585035655,
+    "quant_scale_mean": 1.986611861459764e-06,
+    "quant_scale_min": 7.663454226758404e-08,
+    "quant_scale_max": 1.4796586583543103e-05,
+    "quant_saturation_ratio": 6.143503185303951e-07,
+    "per_tensor": [
+      {
+        "name": "features.0.weight",
+        "scale": 3.574150014173938e-06,
+        "mse": 1.0424605494673566e-12,
+        "relative_l2": 0.147902286274621,
+        "saturation_ratio": 0.0086805559694767,
+        "qmin": -7,
+        "qmax": 7
+      },
+      {
+        "name": "features.0.bias",
+        "scale": 5.564519142353674e-06,
+        "mse": 2.576466383991116e-12,
+        "relative_l2": 0.13335525920037666,
+        "saturation_ratio": 0.015625,
+        "qmin": -7,
+        "qmax": 7
+      },
+      {
+        "name": "features.2.weight",
+        "scale": 3.4357819913566345e-06,
+        "mse": 7.173507544150976e-13,
+        "relative_l2": 0.4012094851435658,
+        "saturation_ratio": 5.425347262644209e-05,
+        "qmin": -7,
+        "qmax": 7
+      },
+      {
+        "name": "features.2.bias",
+        "scale": 2.5970596198021667e-06,
+        "mse": 5.313808746319759e-13,
+        "relative_l2": 0.1494458126795856,
+        "saturation_ratio": 0.015625,
+        "qmin": -7,
+        "qmax": 7
+      },
+      {
+        "name": "features.5.weight",
+        "scale": 1.8445508658260223e-06,
+        "mse": 2.638638728809835e-13,
+        "relative_l2": 0.32208668201622,
+        "saturation_ratio": 0.00010850694525288418,
+        "qmin": -7,
+        "qmax": 7
+      },
+      {
+        "name": "features.5.bias",
+        "scale": 8.121132850646973e-07,
+        "mse": 4.921780824150741e-14,
+        "relative_l2": 0.12589062683998598,
+        "saturation_ratio": 0.015625,
+        "qmin": -7,
+        "qmax": 7
+      },
+      {
+        "name": "features.7.weight",
+        "scale": 1.983983111131238e-06,
+        "mse": 2.9249572478579685e-13,
+        "relative_l2": 0.3630241207218015,
+        "saturation_ratio": 2.0345052689663135e-05,
+        "qmin": -7,
+        "qmax": 7
+      },
+      {
+        "name": "features.7.bias",
+        "scale": 9.621892331779236e-07,
+        "mse": 7.613945959177373e-14,
+        "relative_l2": 0.17047091891440158,
+        "saturation_ratio": 0.0078125,
+        "qmin": -7,
+        "qmax": 7
+      },
+      {
+        "name": "features.10.weight",
+        "scale": 1.656157678553427e-06,
+        "mse": 2.06558873015276e-13,
+        "relative_l2": 0.3912530950850972,
+        "saturation_ratio": 1.0172526344831567e-05,
+        "qmin": -7,
+        "qmax": 7
+      },
+      {
+        "name": "features.10.bias",
+        "scale": 2.948301300875755e-07,
+        "mse": 7.040082577368595e-15,
+        "relative_l2": 0.12361176727593692,
+        "saturation_ratio": 0.0078125,
+        "qmin": -7,
+        "qmax": 7
+      },
+      {
+        "name": "features.12.weight",
+        "scale": 1.2953366876899963e-06,
+        "mse": 1.244632772617265e-13,
+        "relative_l2": 0.4251995512307628,
+        "saturation_ratio": 1.3563368156610522e-05,
+        "qmin": -7,
+        "qmax": 7
+      },
+      {
+        "name": "features.12.bias",
+        "scale": 2.9190309192017594e-07,
+        "mse": 6.956281796248465e-15,
+        "relative_l2": 0.1760710670658403,
+        "saturation_ratio": 0.00390625,
+        "qmin": -7,
+        "qmax": 7
+      },
+      {
+        "name": "features.14.weight",
+        "scale": 2.230916607004474e-06,
+        "mse": 2.8498234829076193e-13,
+        "relative_l2": 0.6514350794850684,
+        "saturation_ratio": 1.6954210195763153e-06,
+        "qmin": -7,
+        "qmax": 7
+      },
+      {
+        "name": "features.14.bias",
+        "scale": 2.3203236310109787e-07,
+        "mse": 3.878131031641394e-15,
+        "relative_l2": 0.15107695440568142,
+        "saturation_ratio": 0.00390625,
+        "qmin": -7,
+        "qmax": 7
+      },
+      {
+        "name": "features.17.weight",
+        "scale": 1.4901161193847656e-06,
+        "mse": 1.3962143555510152e-13,
+        "relative_l2": 0.5063588711405065,
+        "saturation_ratio": 8.477105097881577e-07,
+        "qmin": -7,
+        "qmax": 7
+      },
+      {
+        "name": "features.17.bias",
+        "scale": 1.4688286853470345e-07,
+        "mse": 1.588749735374382e-15,
+        "relative_l2": 0.1501189642566843,
+        "saturation_ratio": 0.001953125,
+        "qmin": -7,
+        "qmax": 7
+      },
+      {
+        "name": "features.19.weight",
+        "scale": 1.5768621324241394e-06,
+        "mse": 1.151495107791346e-13,
+        "relative_l2": 0.5717828229691087,
+        "saturation_ratio": 1.271565793103946e-06,
+        "qmin": -7,
+        "qmax": 7
+      },
+      {
+        "name": "features.19.bias",
+        "scale": 1.7455646172948036e-07,
+        "mse": 2.3550950652270666e-15,
+        "relative_l2": 0.15844046532200093,
+        "saturation_ratio": 0.00390625,
+        "qmin": -7,
+        "qmax": 7
+      },
+      {
+        "name": "features.21.weight",
+        "scale": 1.978395175683545e-06,
+        "mse": 1.2958685532816884e-13,
+        "relative_l2": 0.6216676037725252,
+        "saturation_ratio": 1.6954210195763153e-06,
+        "qmin": -7,
+        "qmax": 7
+      },
+      {
+        "name": "features.21.bias",
+        "scale": 3.012828528881073e-07,
+        "mse": 8.092170766208374e-15,
+        "relative_l2": 0.2411798243439728,
+        "saturation_ratio": 0.001953125,
+        "qmin": -7,
+        "qmax": 7
+      },
+      {
+        "name": "features.24.weight",
+        "scale": 2.0646091343223816e-06,
+        "mse": 1.4567204261909137e-13,
+        "relative_l2": 0.6251257669853492,
+        "saturation_ratio": 4.238552548940788e-07,
+        "qmin": -7,
+        "qmax": 7
+      },
+      {
+        "name": "features.24.bias",
+        "scale": 3.0653816907033615e-07,
+        "mse": 7.520094878028186e-15,
+        "relative_l2": 0.17515323040163622,
+        "saturation_ratio": 0.00390625,
+        "qmin": -7,
+        "qmax": 7
+      },
+      {
+        "name": "features.26.weight",
+        "scale": 3.120828750979854e-06,
+        "mse": 2.1526043871782856e-13,
+        "relative_l2": 0.707407800016405,
+        "saturation_ratio": 1.6954210195763153e-06,
+        "qmin": -7,
+        "qmax": 7
+      },
+      {
+        "name": "features.26.bias",
+        "scale": 4.002026230409683e-07,
+        "mse": 1.2831843572457587e-14,
+        "relative_l2": 0.18958075642292876,
+        "saturation_ratio": 0.001953125,
+        "qmin": -7,
+        "qmax": 7
+      },
+      {
+        "name": "features.28.weight",
+        "scale": 5.5864720707177185e-06,
+        "mse": 2.39545073591844e-13,
+        "relative_l2": 0.8012594777738887,
+        "saturation_ratio": 8.477105097881577e-07,
+        "qmin": -7,
+        "qmax": 7
+      },
+      {
+        "name": "features.28.bias",
+        "scale": 6.513936341434601e-07,
+        "mse": 3.289956604672281e-14,
+        "relative_l2": 0.2497130404974986,
+        "saturation_ratio": 0.00390625,
+        "qmin": -7,
+        "qmax": 7
+      },
+      {
+        "name": "classifier.0.weight",
+        "scale": 1.02418869118992e-06,
+        "mse": 5.749651901660959e-15,
+        "relative_l2": 0.6715118324439192,
+        "saturation_ratio": 3.892548150474795e-08,
+        "qmin": -7,
+        "qmax": 7
+      },
+      {
+        "name": "classifier.0.bias",
+        "scale": 7.663454226758404e-08,
+        "mse": 4.260266822361179e-16,
+        "relative_l2": 0.21014015839805494,
+        "saturation_ratio": 0.000244140625,
+        "qmin": -7,
+        "qmax": 7
+      },
+      {
+        "name": "classifier.3.weight",
+        "scale": 1.265534365302301e-06,
+        "mse": 1.8466212716936048e-14,
+        "relative_l2": 0.5761031389521986,
+        "saturation_ratio": 1.1920928955078125e-07,
+        "qmin": -7,
+        "qmax": 7
+      },
+      {
+        "name": "classifier.3.bias",
+        "scale": 1.287886135514782e-07,
+        "mse": 9.563273025044172e-16,
+        "relative_l2": 0.19572033192668722,
+        "saturation_ratio": 0.000732421875,
+        "qmin": -7,
+        "qmax": 7
+      },
+      {
+        "name": "classifier.6.weight",
+        "scale": 1.4796586583543103e-05,
+        "mse": 4.841201398098072e-14,
+        "relative_l2": 0.2800918350380096,
+        "saturation_ratio": 2.4414063659605745e-07,
+        "qmin": -7,
+        "qmax": 7
+      },
+      {
+        "name": "classifier.6.bias",
+        "scale": 1.7061829566955566e-06,
+        "mse": 6.520657278019648e-15,
+        "relative_l2": 0.09471350448409342,
+        "saturation_ratio": 0.0010000000474974513,
+        "qmin": -7,
+        "qmax": 7
+      }
+    ],
+    "round": 20,
+    "client_id": 1
+  },
+  {
+    "quant_bits": 4,
+    "rounding": "nearest",
+    "quantization": "signed_symmetric_int4",
+    "scale_scope": "per_client_per_parameter_tensor",
+    "zero_point": null,
+    "qmin": -7,
+    "qmax": 7,
+    "levels": 15,
+    "quant_mse": 1.1862677298632223e-14,
+    "quant_relative_l2": 0.5277238153189858,
+    "quant_cosine_similarity": 0.865431909075579,
+    "quant_scale_mean": 1.3147717672357118e-06,
+    "quant_scale_min": 4.237517714500427e-08,
+    "quant_scale_max": 1.1664948033285327e-05,
+    "quant_saturation_ratio": 7.083097730100686e-07,
+    "per_tensor": [
+      {
+        "name": "features.0.weight",
+        "scale": 3.925391411030432e-06,
+        "mse": 1.3108270898772907e-12,
+        "relative_l2": 0.21511940607015392,
+        "saturation_ratio": 0.0017361111240461469,
+        "qmin": -7,
+        "qmax": 7
+      },
+      {
+        "name": "features.0.bias",
+        "scale": 2.6481491204322083e-06,
+        "mse": 6.546284781611122e-13,
+        "relative_l2": 0.12356575539494943,
+        "saturation_ratio": 0.03125,
+        "qmin": -7,
+        "qmax": 7
+      },
+      {
+        "name": "features.2.weight",
+        "scale": 2.0691327335953247e-06,
+        "mse": 3.0077050032649585e-13,
+        "relative_l2": 0.3209259149554481,
+        "saturation_ratio": 5.425347262644209e-05,
+        "qmin": -7,
+        "qmax": 7
+      },
+      {
+        "name": "features.2.bias",
+        "scale": 2.0293518900871277e-06,
+        "mse": 3.3748757911553073e-13,
+        "relative_l2": 0.1470119081431904,
+        "saturation_ratio": 0.015625,
+        "qmin": -7,
+        "qmax": 7
+      },
+      {
+        "name": "features.5.weight",
+        "scale": 1.2899482726425049e-06,
+        "mse": 1.330990439391e-13,
+        "relative_l2": 0.2979836664980877,
+        "saturation_ratio": 0.00017632378148846328,
+        "qmin": -7,
+        "qmax": 7
+      },
+      {
+        "name": "features.5.bias",
+        "scale": 7.266976922437607e-07,
+        "mse": 3.875569095789129e-14,
+        "relative_l2": 0.17658536510795955,
+        "saturation_ratio": 0.0078125,
+        "qmin": -7,
+        "qmax": 7
+      },
+      {
+        "name": "features.7.weight",
+        "scale": 1.4411551774173859e-06,
+        "mse": 1.6147127761036625e-13,
+        "relative_l2": 0.3694583148569049,
+        "saturation_ratio": 2.7126736313221045e-05,
+        "qmin": -7,
+        "qmax": 7
+      },
+      {
+        "name": "features.7.bias",
+        "scale": 7.152557373046875e-07,
+        "mse": 4.532391985594825e-14,
+        "relative_l2": 0.18599618877104776,
+        "saturation_ratio": 0.015625,
+        "qmin": -7,
+        "qmax": 7
+      },
+      {
+        "name": "features.10.weight",
+        "scale": 1.045742237693048e-06,
+        "mse": 8.89660644536821e-14,
+        "relative_l2": 0.3658082743884563,
+        "saturation_ratio": 6.781684078305261e-06,
+        "qmin": -7,
+        "qmax": 7
+      },
+      {
+        "name": "features.10.bias",
+        "scale": 1.852001503266365e-07,
+        "mse": 2.829898960293991e-15,
+        "relative_l2": 0.15340376494250121,
+        "saturation_ratio": 0.0078125,
+        "qmin": -7,
+        "qmax": 7
+      },
+      {
+        "name": "features.12.weight",
+        "scale": 7.916241884231567e-07,
+        "mse": 4.9165981495367166e-14,
+        "relative_l2": 0.38085419715043944,
+        "saturation_ratio": 8.47710543894209e-06,
+        "qmin": -7,
+        "qmax": 7
+      },
+      {
+        "name": "features.12.bias",
+        "scale": 1.0856560095362511e-07,
+        "mse": 9.366865142817213e-16,
+        "relative_l2": 0.11384284459643072,
+        "saturation_ratio": 0.01953125,
+        "qmin": -7,
+        "qmax": 7
+      },
+      {
+        "name": "features.14.weight",
+        "scale": 1.1346170367687591e-06,
+        "mse": 9.092995212884992e-14,
+        "relative_l2": 0.4916397773869583,
+        "saturation_ratio": 1.6954210195763153e-06,
+        "qmin": -7,
+        "qmax": 7
+      },
+      {
+        "name": "features.14.bias",
+        "scale": 1.1920928955078125e-07,
+        "mse": 1.056595357031237e-15,
+        "relative_l2": 0.12928817726069589,
+        "saturation_ratio": 0.0078125,
+        "qmin": -7,
+        "qmax": 7
+      },
+      {
+        "name": "features.17.weight",
+        "scale": 1.0263174772262573e-06,
+        "mse": 7.144175538576553e-14,
+        "relative_l2": 0.48796019437660554,
+        "saturation_ratio": 8.477105097881577e-07,
+        "qmin": -7,
+        "qmax": 7
+      },
+      {
+        "name": "features.17.bias",
+        "scale": 8.621385916285362e-08,
+        "mse": 5.304938761291713e-16,
+        "relative_l2": 0.15363824187530045,
+        "saturation_ratio": 0.001953125,
+        "qmin": -7,
+        "qmax": 7
+      },
+      {
+        "name": "features.19.weight",
+        "scale": 1.0479374168426148e-06,
+        "mse": 5.5191251356920576e-14,
+        "relative_l2": 0.554499901724493,
+        "saturation_ratio": 1.271565793103946e-06,
+        "qmin": -7,
+        "qmax": 7
+      },
+      {
+        "name": "features.19.bias",
+        "scale": 9.579317605812321e-08,
+        "mse": 7.476529008935582e-16,
+        "relative_l2": 0.15077095489981052,
+        "saturation_ratio": 0.001953125,
+        "qmin": -7,
+        "qmax": 7
+      },
+      {
+        "name": "features.21.weight",
+        "scale": 1.3219458878666046e-06,
+        "mse": 6.740713793467684e-14,
+        "relative_l2": 0.6326824591373443,
+        "saturation_ratio": 1.6954210195763153e-06,
+        "qmin": -7,
+        "qmax": 7
+      },
+      {
+        "name": "features.21.bias",
+        "scale": 1.5300300049148063e-07,
+        "mse": 1.595193009125027e-15,
+        "relative_l2": 0.17456090329382457,
+        "saturation_ratio": 0.001953125,
+        "qmin": -7,
+        "qmax": 7
+      },
+      {
+        "name": "features.24.weight",
+        "scale": 1.4065632285564789e-06,
+        "mse": 7.706435557213053e-14,
+        "relative_l2": 0.5884281990236485,
+        "saturation_ratio": 1.6954210195763153e-06,
+        "qmin": -7,
+        "qmax": 7
+      },
+      {
+        "name": "features.24.bias",
+        "scale": 1.6817024572901573e-07,
+        "mse": 2.109077733828844e-15,
+        "relative_l2": 0.16165585488895615,
+        "saturation_ratio": 0.00390625,
+        "qmin": -7,
+        "qmax": 7
+      },
+      {
+        "name": "features.26.weight",
+        "scale": 1.9928972960769897e-06,
+        "mse": 1.0676230347314884e-13,
+        "relative_l2": 0.684664063385417,
+        "saturation_ratio": 1.271565793103946e-06,
+        "qmin": -7,
+        "qmax": 7
+      },
+      {
+        "name": "features.26.bias",
+        "scale": 2.7673584668264084e-07,
+        "mse": 6.2886428039261e-15,
+        "relative_l2": 0.23040849791669804,
+        "saturation_ratio": 0.001953125,
+        "qmin": -7,
+        "qmax": 7
+      },
+      {
+        "name": "features.28.weight",
+        "scale": 1.6311449826389435e-06,
+        "mse": 6.250323729841628e-14,
+        "relative_l2": 0.622413597633427,
+        "saturation_ratio": 3.814697265625e-06,
+        "qmin": -7,
+        "qmax": 7
+      },
+      {
+        "name": "features.28.bias",
+        "scale": 2.895082786835701e-07,
+        "mse": 6.581148268084954e-15,
+        "relative_l2": 0.21991120932322142,
+        "saturation_ratio": 0.001953125,
+        "qmin": -7,
+        "qmax": 7
+      },
+      {
+        "name": "classifier.0.weight",
+        "scale": 7.789848268657806e-07,
+        "mse": 3.076354518880904e-15,
+        "relative_l2": 0.6225852487803787,
+        "saturation_ratio": 5.8388224033478764e-08,
+        "qmin": -7,
+        "qmax": 7
+      },
+      {
+        "name": "classifier.0.bias",
+        "scale": 4.237517714500427e-08,
+        "mse": 1.0503481184683222e-16,
+        "relative_l2": 0.1778204154734978,
+        "saturation_ratio": 0.000732421875,
+        "qmin": -7,
+        "qmax": 7
+      },
+      {
+        "name": "classifier.3.weight",
+        "scale": 7.788517564222275e-07,
+        "mse": 6.127179265938117e-15,
+        "relative_l2": 0.5244475601094174,
+        "saturation_ratio": 4.76837158203125e-07,
+        "qmin": -7,
+        "qmax": 7
+      },
+      {
+        "name": "classifier.3.bias",
+        "scale": 6.758740767054405e-08,
+        "mse": 2.3122707734797836e-16,
+        "relative_l2": 0.16089769937872964,
+        "saturation_ratio": 0.000244140625,
+        "qmin": -7,
+        "qmax": 7
+      },
+      {
+        "name": "classifier.6.weight",
+        "scale": 1.1664948033285327e-05,
+        "mse": 2.728185559408569e-14,
+        "relative_l2": 0.33062512835061897,
+        "saturation_ratio": 4.882812731921149e-07,
+        "qmin": -7,
+        "qmax": 7
+      },
+      {
+        "name": "classifier.6.bias",
+        "scale": 1.0136781156688812e-06,
+        "mse": 1.822840055981656e-15,
+        "relative_l2": 0.09081718678755703,
+        "saturation_ratio": 0.0020000000949949026,
+        "qmin": -7,
+        "qmax": 7
+      }
+    ],
+    "round": 20,
+    "client_id": 2
+  }
+]

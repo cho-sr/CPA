@@ -1,0 +1,12 @@
+{
+  "task_id": "CPA_SIGNED_COMBINATION_ICA_IMPLEMENTATION_20260916",
+  "recipient_thread": "01a0a799-d62c-7ab0-9c2a-628acf6d2c95",
+  "recipient_pid": 24972,
+  "recipient_process_verified": true,
+  "status": "QUEUED",
+  "receipt": {
+    "queued": true,
+    "receipt": "Queued message 01a0aa56-f07b-7ea2-ad5e-9a30e63c20e3 for thread 01a0a799-d62c-7ab0-9c2a-628acf6d2c95."
+  },
+  "notice_file": "planner_notice.txt"
+}

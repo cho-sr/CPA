@@ -1,0 +1,22 @@
+{
+  "verified_source_packets": 5,
+  "verified_candidate_inputs": 8,
+  "original_code_sha256_at_audit": {
+    "cora_fedavg_single_client_cpa\\CoRA_sparsification.py": "9eec6d1eaf090ad8318530dd7eed47ab6a48108227123272332704d17f3aa360",
+    "cora_fedavg_single_client_cpa\\prepare_shared_fp32_topk.py": "96f2280938f781e438502539845d70ab290e5c165bfe90d4cbcdf1b12865a812",
+    "sparsified_update_cpa\\common.py": "e24c146128626c7339007790c2c753b4bdfdfb97f62a27fd99b2176f4e18dc4f",
+    "sparsified_update_cpa\\sparsification.py": "216196291899163ba7c1db0082e9819c0640b00fe5b72ab1d389ccbefc1afe04",
+    "sparsified_update_cpa\\author_runner.py": "acc7cce1aa4469d30b588be0d9621f884d70025d701b8e8b41d3fb2f57ab9c32"
+  },
+  "missing_old_runner": true,
+  "audit_output_sha256": {
+    "audit_observations.py": "ac05734d52adb3765c18982ba0ad193e6767283303a223755dcfe5e0a3a58c4b",
+    "candidate_input_verification.json": "412846eb66373e1557d4b7d7d6f8cb79b4c5dbb9a18f5786a0a0b27a7e0427fa",
+    "keep50_dense_validation.json": "32c397b8b1e4758f8690c3ae123ecb95c1767896bb56e17bf22bbeac78e5da75",
+    "observation_audit.json": "fb465f7ea014d4c52c3034825482f2db59389eafda11cd1ca9dd1b587cf7fd0b",
+    "pair_numerical_comparison.json": "83d0a0cf059305c6cb2f7a35f9e5e0bd4c2ea918f5071af9527a123f04b99637",
+    "report.md": "4a5c4d3736a3b2d29decf0f7de8818a39e6208c661fe921e9ed99147d8441c54",
+    "run_inventory.json": "021c5e5535bd028531120cce421bfb37672e18f868d17bfb15998dd80b75ff2c",
+    "verify_candidate_inputs.py": "d3421e3cd6605f453f6c3bc78cc50fda9b60d39c738207a64098ec38c20021b8"
+  }
+}

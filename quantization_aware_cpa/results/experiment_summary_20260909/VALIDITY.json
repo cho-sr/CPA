@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "decision_date": "2026-09-09",
+  "scientific_validity": "withdrawn",
+  "scope": "The combined summary image and report include invalid no-CPA claims and must not be used in reporting.",
+  "invalid_source_id": "m7_no_cpa_control",
+  "registry": "../result_validity.json"
+}

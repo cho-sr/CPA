@@ -1,0 +1,41 @@
+﻿global_index,grid_id,grid_position_1based,dataset,split,label_0based,wnid,class_name,class_synonyms,filename,relative_path
+0,g00,,ImageNet-1K (ILSVRC 2012),val,439,n02817516,bearskin,"bearskin, busby, shako",ILSVRC2012_val_00001048.JPEG,val/n02817516/ILSVRC2012_val_00001048.JPEG
+1,g01,,ImageNet-1K (ILSVRC 2012),val,621,n03649909,lawn mower,"lawn mower, mower",ILSVRC2012_val_00001433.JPEG,val/n03649909/ILSVRC2012_val_00001433.JPEG
+2,g02,7,ImageNet-1K (ILSVRC 2012),val,160,n02088094,Afghan hound,"Afghan hound, Afghan",ILSVRC2012_val_00005507.JPEG,val/n02088094/ILSVRC2012_val_00005507.JPEG
+3,g03,2,ImageNet-1K (ILSVRC 2012),val,549,n03291819,envelope,envelope,ILSVRC2012_val_00004047.JPEG,val/n03291819/ILSVRC2012_val_00004047.JPEG
+4,g04,,ImageNet-1K (ILSVRC 2012),val,237,n02107312,miniature pinscher,miniature pinscher,ILSVRC2012_val_00005242.JPEG,val/n02107312/ILSVRC2012_val_00005242.JPEG
+5,g05,,ImageNet-1K (ILSVRC 2012),val,389,n02514041,barracouta,"barracouta, snoek",ILSVRC2012_val_00004576.JPEG,val/n02514041/ILSVRC2012_val_00004576.JPEG
+6,g06,,ImageNet-1K (ILSVRC 2012),val,658,n03775071,mitten,mitten,ILSVRC2012_val_00014326.JPEG,val/n03775071/ILSVRC2012_val_00014326.JPEG
+7,g07,12,ImageNet-1K (ILSVRC 2012),val,507,n03075370,combination lock,combination lock,ILSVRC2012_val_00007817.JPEG,val/n03075370/ILSVRC2012_val_00007817.JPEG
+8,g08,,ImageNet-1K (ILSVRC 2012),val,124,n01985128,crayfish,"crayfish, crawfish, crawdad, crawdaddy",ILSVRC2012_val_00021094.JPEG,val/n01985128/ILSVRC2012_val_00021094.JPEG
+9,g09,,ImageNet-1K (ILSVRC 2012),val,290,n02128925,jaguar,"jaguar, panther, Panthera onca, Felis onca",ILSVRC2012_val_00027052.JPEG,val/n02128925/ILSVRC2012_val_00027052.JPEG
+10,g10,,ImageNet-1K (ILSVRC 2012),val,975,n09332890,lakeside,"lakeside, lakeshore",ILSVRC2012_val_00022291.JPEG,val/n09332890/ILSVRC2012_val_00022291.JPEG
+11,g11,,ImageNet-1K (ILSVRC 2012),val,392,n02606052,rock beauty,"rock beauty, Holocanthus tricolor",ILSVRC2012_val_00025871.JPEG,val/n02606052/ILSVRC2012_val_00025871.JPEG
+12,g12,,ImageNet-1K (ILSVRC 2012),val,231,n02106030,collie,collie,ILSVRC2012_val_00027165.JPEG,val/n02106030/ILSVRC2012_val_00027165.JPEG
+13,g13,,ImageNet-1K (ILSVRC 2012),val,969,n07932039,eggnog,eggnog,ILSVRC2012_val_00023089.JPEG,val/n07932039/ILSVRC2012_val_00023089.JPEG
+14,g14,1,ImageNet-1K (ILSVRC 2012),val,354,n02437312,Arabian camel,"Arabian camel, dromedary, Camelus dromedarius",ILSVRC2012_val_00026662.JPEG,val/n02437312/ILSVRC2012_val_00026662.JPEG
+15,g15,,ImageNet-1K (ILSVRC 2012),val,657,n03773504,missile,missile,ILSVRC2012_val_00026052.JPEG,val/n03773504/ILSVRC2012_val_00026052.JPEG
+16,g16,,ImageNet-1K (ILSVRC 2012),val,914,n04612504,yawl,yawl,ILSVRC2012_val_00045388.JPEG,val/n04612504/ILSVRC2012_val_00045388.JPEG
+17,g17,,ImageNet-1K (ILSVRC 2012),val,719,n03935335,piggy bank,"piggy bank, penny bank",ILSVRC2012_val_00049127.JPEG,val/n03935335/ILSVRC2012_val_00049127.JPEG
+18,g18,,ImageNet-1K (ILSVRC 2012),val,302,n02167151,ground beetle,"ground beetle, carabid beetle",ILSVRC2012_val_00049611.JPEG,val/n02167151/ILSVRC2012_val_00049611.JPEG
+19,g19,,ImageNet-1K (ILSVRC 2012),val,109,n01917289,brain coral,brain coral,ILSVRC2012_val_00049679.JPEG,val/n01917289/ILSVRC2012_val_00049679.JPEG
+20,g20,5,ImageNet-1K (ILSVRC 2012),val,508,n03085013,computer keyboard,"computer keyboard, keypad",ILSVRC2012_val_00000321.JPEG,val/n03085013/ILSVRC2012_val_00000321.JPEG
+21,g21,,ImageNet-1K (ILSVRC 2012),val,754,n04041544,radio,"radio, wireless",ILSVRC2012_val_00001903.JPEG,val/n04041544/ILSVRC2012_val_00001903.JPEG
+22,g22,,ImageNet-1K (ILSVRC 2012),val,576,n03447447,gondola,gondola,ILSVRC2012_val_00004545.JPEG,val/n03447447/ILSVRC2012_val_00004545.JPEG
+23,g23,3,ImageNet-1K (ILSVRC 2012),val,6,n01498041,stingray,stingray,ILSVRC2012_val_00003518.JPEG,val/n01498041/ILSVRC2012_val_00003518.JPEG
+24,g24,,ImageNet-1K (ILSVRC 2012),val,832,n04346328,stupa,"stupa, tope",ILSVRC2012_val_00016767.JPEG,val/n04346328/ILSVRC2012_val_00016767.JPEG
+25,g25,10,ImageNet-1K (ILSVRC 2012),val,243,n02108422,bull mastiff,bull mastiff,ILSVRC2012_val_00015657.JPEG,val/n02108422/ILSVRC2012_val_00015657.JPEG
+26,g26,,ImageNet-1K (ILSVRC 2012),val,359,n02443484,black-footed ferret,"black-footed ferret, ferret, Mustela nigripes",ILSVRC2012_val_00025750.JPEG,val/n02443484/ILSVRC2012_val_00025750.JPEG
+27,g27,,ImageNet-1K (ILSVRC 2012),val,710,n03908714,pencil sharpener,pencil sharpener,ILSVRC2012_val_00028958.JPEG,val/n03908714/ILSVRC2012_val_00028958.JPEG
+28,g28,,ImageNet-1K (ILSVRC 2012),val,34,n01665541,leatherback turtle,"leatherback turtle, leatherback, leathery turtle, Dermochelys coriacea",ILSVRC2012_val_00022588.JPEG,val/n01665541/ILSVRC2012_val_00022588.JPEG
+29,g29,6,ImageNet-1K (ILSVRC 2012),val,54,n01729322,hognose snake,"hognose snake, puff adder, sand viper",ILSVRC2012_val_00022930.JPEG,val/n01729322/ILSVRC2012_val_00022930.JPEG
+30,g30,,ImageNet-1K (ILSVRC 2012),val,399,n02667093,abaya,abaya,ILSVRC2012_val_00026236.JPEG,val/n02667093/ILSVRC2012_val_00026236.JPEG
+31,g31,,ImageNet-1K (ILSVRC 2012),val,559,n03376595,folding chair,folding chair,ILSVRC2012_val_00024982.JPEG,val/n03376595/ILSVRC2012_val_00024982.JPEG
+32,g32,8,ImageNet-1K (ILSVRC 2012),val,521,n03133878,Crock Pot,Crock Pot,ILSVRC2012_val_00042723.JPEG,val/n03133878/ILSVRC2012_val_00042723.JPEG
+33,g33,,ImageNet-1K (ILSVRC 2012),val,874,n04487081,trolleybus,"trolleybus, trolley coach, trackless trolley",ILSVRC2012_val_00042445.JPEG,val/n04487081/ILSVRC2012_val_00042445.JPEG
+34,g34,,ImageNet-1K (ILSVRC 2012),val,875,n04487394,trombone,trombone,ILSVRC2012_val_00041246.JPEG,val/n04487394/ILSVRC2012_val_00041246.JPEG
+35,g35,,ImageNet-1K (ILSVRC 2012),val,591,n03485794,handkerchief,"handkerchief, hankie, hanky, hankey",ILSVRC2012_val_00045988.JPEG,val/n03485794/ILSVRC2012_val_00045988.JPEG
+36,g36,,ImageNet-1K (ILSVRC 2012),val,137,n02018207,American coot,"American coot, marsh hen, mud hen, water hen, Fulica americana",ILSVRC2012_val_00045346.JPEG,val/n02018207/ILSVRC2012_val_00045346.JPEG
+37,g37,9,ImageNet-1K (ILSVRC 2012),val,793,n04209133,shower cap,shower cap,ILSVRC2012_val_00046639.JPEG,val/n04209133/ILSVRC2012_val_00046639.JPEG
+38,g38,4,ImageNet-1K (ILSVRC 2012),val,349,n02415577,bighorn,"bighorn, bighorn sheep, cimarron, Rocky Mountain bighorn, Rocky Mountain sheep, Ovis canadensis",ILSVRC2012_val_00049581.JPEG,val/n02415577/ILSVRC2012_val_00049581.JPEG
+39,g39,11,ImageNet-1K (ILSVRC 2012),val,782,n04152593,screen,"screen, CRT screen",ILSVRC2012_val_00049455.JPEG,val/n04152593/ILSVRC2012_val_00049455.JPEG

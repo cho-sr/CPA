@@ -1,0 +1,12 @@
+﻿{
+    "task_id":  "CPA_SIGNED_COMBINATION_ICA_EXPERIMENT_20260916",
+    "callback":  ".ai/completion_notify.py",
+    "callback_pid":  14544,
+    "callback_start_utc":  "2026-09-16T15:24:26.6588610Z",
+    "wait_pid":  6504,
+    "expected_created_ms":  1789572179878,
+    "stage":  "real_experiment",
+    "execution_record":  ".ai/execution-results/CPA_SIGNED_COMBINATION_ICA_EXPERIMENT_20260916/stage_execution.json",
+    "hidden":  true,
+    "model_calls_while_waiting":  0
+}

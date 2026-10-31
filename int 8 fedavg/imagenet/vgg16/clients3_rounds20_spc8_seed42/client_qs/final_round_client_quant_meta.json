@@ -1,0 +1,189 @@
+{
+  "aggregation_weights": [
+    0.3333333333333333,
+    0.3333333333333333,
+    0.3333333333333333
+  ],
+  "artifact_type": "final_round_client_qs",
+  "attack_layer": {
+    "index": 26,
+    "name": "classifier.0.weight"
+  },
+  "bin_policy_for_randomized": "bounded exact bins: q=127 [126.5s,127s], q=-127 [-127s,-126.5s]",
+  "clients": [
+    {
+      "aggregation_weight": 0.3333333333333333,
+      "client_id": 0,
+      "quant_stats": {
+        "client_id": 0,
+        "levels": 255,
+        "qmax": 127,
+        "qmin": -127,
+        "quant_bits": 8,
+        "quant_cosine_similarity": 0.9989837930177895,
+        "quant_mse": 7.556880150346798e-17,
+        "quant_relative_l2": 0.045114192875111106,
+        "quant_saturation_ratio": 2.3851247445396933e-07,
+        "quant_scale_max": 3.898648230915569e-07,
+        "quant_scale_mean": 6.533987468443359e-08,
+        "quant_scale_min": 2.405305510322364e-09,
+        "quantization": "signed_symmetric_int8",
+        "round": 20,
+        "rounding": "nearest",
+        "scale_scope": "per_client_per_parameter_tensor",
+        "zero_point": null
+      },
+      "tensors": [
+        {
+          "dtype": "int8",
+          "key": "client000_param26",
+          "max_abs": 4.911795258522034e-06,
+          "mse": 2.938321856932477e-17,
+          "name": "classifier.0.weight",
+          "param_index": 26,
+          "qmax": 127,
+          "qmin": -127,
+          "relative_l2": 0.06509539943252841,
+          "saturation_ratio": 9.731370376186987e-09,
+          "scale": 3.867555165015801e-08,
+          "shape": [
+            4096,
+            25088
+          ]
+        }
+      ]
+    },
+    {
+      "aggregation_weight": 0.3333333333333333,
+      "client_id": 1,
+      "quant_stats": {
+        "client_id": 1,
+        "levels": 255,
+        "qmax": 127,
+        "qmin": -127,
+        "quant_bits": 8,
+        "quant_cosine_similarity": 0.9984312601340584,
+        "quant_mse": 1.7506728346346696e-16,
+        "quant_relative_l2": 0.056069355013014355,
+        "quant_saturation_ratio": 2.312848236982535e-07,
+        "quant_scale_max": 6.530257792292105e-07,
+        "quant_scale_mean": 8.775331923616125e-08,
+        "quant_scale_min": 3.549292415527816e-09,
+        "quantization": "signed_symmetric_int8",
+        "round": 20,
+        "rounding": "nearest",
+        "scale_scope": "per_client_per_parameter_tensor",
+        "zero_point": null
+      },
+      "tensors": [
+        {
+          "dtype": "int8",
+          "key": "client001_param26",
+          "max_abs": 6.0675665736198425e-06,
+          "mse": 4.111054530154066e-17,
+          "name": "classifier.0.weight",
+          "param_index": 26,
+          "qmax": 127,
+          "qmin": -127,
+          "relative_l2": 0.07082881506050816,
+          "saturation_ratio": 9.731370376186987e-09,
+          "scale": 4.777611550821348e-08,
+          "shape": [
+            4096,
+            25088
+          ]
+        }
+      ]
+    },
+    {
+      "aggregation_weight": 0.3333333333333333,
+      "client_id": 2,
+      "quant_stats": {
+        "client_id": 2,
+        "levels": 255,
+        "qmax": 127,
+        "qmin": -127,
+        "quant_bits": 8,
+        "quant_cosine_similarity": 0.9989663350236009,
+        "quant_mse": 6.173559519466743e-17,
+        "quant_relative_l2": 0.045495938477033225,
+        "quant_saturation_ratio": 2.385124744001191e-07,
+        "quant_scale_max": 5.80030643959617e-07,
+        "quant_scale_mean": 6.235494261902508e-08,
+        "quant_scale_min": 1.9428525455111867e-09,
+        "quantization": "signed_symmetric_int8",
+        "round": 20,
+        "rounding": "nearest",
+        "scale_scope": "per_client_per_parameter_tensor",
+        "zero_point": null
+      },
+      "tensors": [
+        {
+          "dtype": "int8",
+          "key": "client002_param26",
+          "max_abs": 4.580710083246231e-06,
+          "mse": 1.9269952012471967e-17,
+          "name": "classifier.0.weight",
+          "param_index": 26,
+          "qmax": 127,
+          "qmin": -127,
+          "relative_l2": 0.05932528618693022,
+          "saturation_ratio": 9.731370376186987e-09,
+          "scale": 3.606858456350892e-08,
+          "shape": [
+            4096,
+            25088
+          ]
+        }
+      ]
+    }
+  ],
+  "code_file": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\int 8 fedavg\\imagenet\\vgg16\\clients3_rounds20_spc8_seed42\\client_qs\\final_round_client_codes.npz",
+  "codes_sha256": "1ac878ebbd215e9fd20a2a7b46137868a60169e3c4e9655efe03c0f2e1e546b4",
+  "context_file": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\int 8 fedavg\\imagenet\\vgg16\\clients3_rounds20_spc8_seed42\\client_qs\\final_round_context.pkl",
+  "context_sha256": "68744963909c23d220a61ef19225b7541a17ceb426e149405af4bc517e26bb6e",
+  "not_source": "final aggregate pickle",
+  "param_names": [
+    "features.0.weight",
+    "features.0.bias",
+    "features.2.weight",
+    "features.2.bias",
+    "features.5.weight",
+    "features.5.bias",
+    "features.7.weight",
+    "features.7.bias",
+    "features.10.weight",
+    "features.10.bias",
+    "features.12.weight",
+    "features.12.bias",
+    "features.14.weight",
+    "features.14.bias",
+    "features.17.weight",
+    "features.17.bias",
+    "features.19.weight",
+    "features.19.bias",
+    "features.21.weight",
+    "features.21.bias",
+    "features.24.weight",
+    "features.24.bias",
+    "features.26.weight",
+    "features.26.bias",
+    "features.28.weight",
+    "features.28.bias",
+    "classifier.0.weight",
+    "classifier.0.bias",
+    "classifier.3.weight",
+    "classifier.3.bias",
+    "classifier.6.weight",
+    "classifier.6.bias"
+  ],
+  "qmax": 127,
+  "qmin": -127,
+  "quant_bits": 8,
+  "rounding": "nearest",
+  "scale_definition": "scale=max_abs/127; scale=0 when max_abs=0",
+  "schema_version": 1,
+  "source": "client q,s before final-round server aggregation",
+  "source_model_state_file": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\int 8 fedavg\\imagenet\\vgg16\\clients3_rounds20_spc8_seed42\\client_qs\\final_round_global_model_before.pt",
+  "source_model_state_sha256": "168ea5e56213757ae3850f71275207a43714ce16ec29cec89c2f9b32d3151300"
+}

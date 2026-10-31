@@ -1,0 +1,15 @@
+{
+  "ensemble_size": 1,
+  "exact_single_client_batch_ranking": true,
+  "keep_ratio": 1.0,
+  "member_ranking_file": "consistency_member_ranking.csv",
+  "method": "CoRA FedAvg-context single-client compressed-update consistency ranking",
+  "model_checkpoint_for_attack_and_ranking": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\cora_fedavg_single_client_cpa\\outputs_v1\\fedavg_single_client_updates\\imagenet\\vgg16\\fedavg_single_client_clients3_round20of20_spc24_target0_local1_e920201510be97a8\\global_topk\\keep_0p5.fedavg_round_before.pt",
+  "ranked_member_ids": [
+    0
+  ],
+  "ranking_observation": "one_client_compressed_update_from_fedavg_round",
+  "schema_version": 1,
+  "selected_member": 0,
+  "selected_member_run_path": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\sparsified_update_cpa\\outputs_v1\\author_runs\\imagenet\\vgg16\\attack\\cp_direct\\nodef\\cora_shared_sfp32bench10_k1_R1_s1234_m000_uia"
+}

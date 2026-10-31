@@ -1,0 +1,15 @@
+﻿axis,m5_uia_spectrum,m5_uia_beff_validation,m6_round_dependence,same_across_runs
+round,0,0,0,True
+seed,0,0,0,True
+batch_index,0,0,0,True
+n,32,32,32,True
+T,1,1,1,True
+bits,4,4,4,True
+rounding,stochastic,stochastic,stochastic,True
+scale_granularity,per_row,per_row,per_row,True
+bucket_size,,,,True
+lr,0.001,0.001,0.001,True
+c_mp,3.0,3.0,3.0,True
+split,val,val,val,True
+observation,factorized gradient (T=1 bridge),factorized gradient (T=1 bridge),factorized gradient (T=1 bridge),True
+quantization_seed,0,294949,293536,False

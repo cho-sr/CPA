@@ -1,0 +1,11 @@
+{
+  "status": "COMPLETED",
+  "all_images": 16,
+  "optimization_rerun": false,
+  "public_artifacts_unchanged": true,
+  "output_hashes": {
+    "metrics.json": "8cad9d0d7b194016ccd6b316303c9d32d2de15f7eb042a666989e1caa12ae6b3",
+    "comparison.png": "f0ae345241a2d311e0b06dcdde24662566b5ecbedc39c3bf87c8ca4b246d7383",
+    "report.md": "3c3b6fd95ef4b22256c631841f5bb479fedc722b01151dbb0cad2bd42098f74d"
+  }
+}

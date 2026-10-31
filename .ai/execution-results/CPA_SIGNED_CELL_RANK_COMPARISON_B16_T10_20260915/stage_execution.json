@@ -1,0 +1,44 @@
+{
+  "task_id": "CPA_SIGNED_CELL_RANK_COMPARISON_B16_T10_20260915",
+  "plan_version": 1,
+  "wrapper_pid": 24828,
+  "status": "FAILED",
+  "full_experiment_status": "INCOMPLETE_STOPPED_ON_FAILURE",
+  "started_utc": "2026-09-14T19:42:53.823750+00:00",
+  "stages": [
+    {
+      "name": "preprocess",
+      "command": "C:\\miniconda\\envs\\DLG\\python.exe -m quantization_aware_cpa.qacpa.signed_cell_rank_runner preprocess --public-observation quantization_aware_cpa/results/signed_int4_baseline_B16_T10/observation --output quantization_aware_cpa/results/signed_cell_rank_B16_T10/preprocess_ap5 --ap-iterations 5 --projection-device cuda",
+      "status": "COMPLETED",
+      "started_utc": "2026-09-14T19:42:53.824749+00:00",
+      "stdout": "C:\\Users\\조상제\\Desktop\\CPA\\.ai\\execution-results\\CPA_SIGNED_CELL_RANK_COMPARISON_B16_T10_20260915\\preprocess.stdout.log",
+      "stderr": "C:\\Users\\조상제\\Desktop\\CPA\\.ai\\execution-results\\CPA_SIGNED_CELL_RANK_COMPARISON_B16_T10_20260915\\preprocess.stderr.log",
+      "exit_code": 0,
+      "duration_seconds": 47.188,
+      "ended_utc": "2026-09-14T19:43:41.001181+00:00"
+    },
+    {
+      "name": "attack",
+      "command": "C:\\miniconda\\envs\\DLG\\python.exe -m quantization_aware_cpa.qacpa.signed_cell_rank_runner attack --public-observation quantization_aware_cpa/results/signed_int4_baseline_B16_T10/observation --preprocessed quantization_aware_cpa/results/signed_cell_rank_B16_T10/preprocess_ap5 --checkpoint C:/Users/조상제/.cache/torch/hub/checkpoints/vgg16-397923af.pth --output quantization_aware_cpa/results/signed_cell_rank_B16_T10/cell_rank_ap5 --expected-ap-iterations 5",
+      "status": "COMPLETED",
+      "started_utc": "2026-09-14T19:43:41.002182+00:00",
+      "stdout": "C:\\Users\\조상제\\Desktop\\CPA\\.ai\\execution-results\\CPA_SIGNED_CELL_RANK_COMPARISON_B16_T10_20260915\\attack.stdout.log",
+      "stderr": "C:\\Users\\조상제\\Desktop\\CPA\\.ai\\execution-results\\CPA_SIGNED_CELL_RANK_COMPARISON_B16_T10_20260915\\attack.stderr.log",
+      "exit_code": 0,
+      "duration_seconds": 2175.984,
+      "ended_utc": "2026-09-14T20:19:56.985036+00:00"
+    },
+    {
+      "name": "evaluation",
+      "command": "C:\\miniconda\\envs\\DLG\\python.exe -m quantization_aware_cpa.qacpa.signed_cell_rank_evaluation --naive quantization_aware_cpa/results/signed_int4_baseline_B16_T10/naive --cell-rank quantization_aware_cpa/results/signed_cell_rank_B16_T10/cell_rank_ap5 --public-observation quantization_aware_cpa/results/signed_int4_baseline_B16_T10/observation --private-observation quantization_aware_cpa/results_private/signed_int4_baseline_B16_T10/observation --output quantization_aware_cpa/results_private/signed_cell_rank_B16_T10/evaluation_ap5",
+      "status": "FAILED",
+      "started_utc": "2026-09-14T20:19:56.986036+00:00",
+      "stdout": "C:\\Users\\조상제\\Desktop\\CPA\\.ai\\execution-results\\CPA_SIGNED_CELL_RANK_COMPARISON_B16_T10_20260915\\evaluation.stdout.log",
+      "stderr": "C:\\Users\\조상제\\Desktop\\CPA\\.ai\\execution-results\\CPA_SIGNED_CELL_RANK_COMPARISON_B16_T10_20260915\\evaluation.stderr.log",
+      "exit_code": 1,
+      "duration_seconds": 2.485,
+      "ended_utc": "2026-09-14T20:19:59.476475+00:00"
+    }
+  ],
+  "ended_utc": "2026-09-14T20:19:59.477474+00:00"
+}

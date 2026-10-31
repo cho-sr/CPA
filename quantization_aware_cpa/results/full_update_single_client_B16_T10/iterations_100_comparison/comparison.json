@@ -1,0 +1,609 @@
+{
+  "schema_version": 1,
+  "scope": "same_batch00_B16_T10_three_vs_100_outer_iterations",
+  "method": "direct_image_optimization_without_CPA",
+  "comparison_checks": {
+    "only_budget_change_from_pilot": {
+      "iterations": [
+        3,
+        100
+      ]
+    },
+    "only_arm_change_at_each_budget": "mode: cell/center",
+    "first_three_numeric_logs_exact": true,
+    "common_recorded_fingerprints": {
+      "implementation_sha256": {
+        "full_update_adjoint.py": "882efe5424f4c57660d1c4c15a2af06c4b31180ffb84f7f9bbd191f31d7cbade",
+        "full_update_evaluation.py": "0ca0c01115bedc4d5b09d9bac8791bbc18b5cca29f43c5812a345f391c61ef08",
+        "full_update_observation.py": "e72a8f68f202e1775ef7e3fe55c6b643c3f8f276c6c68fff4c2973abe7fbc88c",
+        "full_update_pipeline.py": "bdb9b0a10ecc77db1a8e6dbd089e43352aad5feabe6ef4298715a7805a3468c9",
+        "full_update_replay.py": "e45e9830bdcf2046de1c0e1ebe4579392c764065eb991826b9c6abd926af2e1c"
+      },
+      "runtime": {
+        "torch_version": "2.13.0+cu132",
+        "cuda_version": "13.2",
+        "device": "cuda",
+        "gpu_name": "NVIDIA GeForce RTX 5060 Ti",
+        "deterministic_algorithms": true,
+        "cudnn_deterministic": true,
+        "matmul_tf32": false,
+        "cudnn_tf32": false,
+        "spatial_pool": "checked_identity_for_7x7_to_7x7"
+      },
+      "observation_manifest_sha256": "9256f2c1a1ac702ac9670c25a843020c879053ce357ea898993e2d8168327205",
+      "contract_sha256": "64d52bedd1e261d99483b992ebecac0a6fd1b56bc59a523e0e857ca33a9c6a1a",
+      "checkpoint_sha256": "397923af8e79cdbb6a7127f12361acd7a2f83e06b05044ddf496e83de57a5bf0",
+      "method": "direct_image_optimization_without_CPA"
+    },
+    "common_attack_settings": {
+      "seed": 42,
+      "image_lr": 0.1,
+      "label_lr": 0.1,
+      "tv_weight": 0.0001,
+      "radius_weight": 1.0,
+      "checkpoint_forward": true,
+      "saved_tensors_on_cpu": false,
+      "log_every": 1,
+      "fit_tolerance_steps": 1e-06,
+      "gradient_strategy": "recompute_reverse"
+    },
+    "initialization": "fresh identical seeded starts; 100 total iterations, not resumed +100",
+    "fingerprint_scope_note": "Pilot recorded full_update_*.py; CLI and communication_codec hashes were not recorded there"
+  },
+  "truth_sha256": "9430257f1142c81f12a6610bb13f6458c50c26221538019e4140246367c26eb4",
+  "reporter_sha256": "10b7de25713b39fb3f453f530cc5bb54e37d834b26a7430ceb52239b40e052d0",
+  "existing_evaluations_revalidated": true,
+  "evaluation_revalidation": {
+    "assignments_and_metadata": "exact",
+    "float_rtol": 1e-10,
+    "float_atol": 1e-12
+  },
+  "arms": {
+    "cell_3": {
+      "status": "candidate_generated",
+      "mode": "cell",
+      "iterations": 3,
+      "artifact_sha256": {
+        "registered_design.json": "c675adcd104277d9c80a409ec36c52e125afa290ee125ef919d16a6b7d331290",
+        "result.json": "706fb1ace45b4932a116c1a5428107eb29e2b9c253f0cf3672aab6d8a5d8496e",
+        "optimization_log.json": "8f8f2164e76bae779a4a46aed81de09bb6508b0add34b5f9daddedb19c4886e0",
+        "candidate.pt": "47cb27f8bba32785a1232209bc3ab9b7ca829de3915d372e2f716506309bcac9",
+        "evaluation.json": "aa6ca6bb0340962eb18f33fe1d3cec0fe22434c5fa820f42be97c8f812c6f728"
+      },
+      "optimization_time_sec": 44.9458847999922,
+      "wall_time_sec": 47.786926899978425,
+      "peak_cuda_allocated_bytes": 5955634176,
+      "hard_label_observation_fit": {
+        "tolerance_steps": 1e-06,
+        "closure_fit_within_tolerance": false,
+        "bin_violation_rate": 0.22413447433223346,
+        "max_bin_violation_steps": 312778.32352941175,
+        "mean_bin_violation_steps": 11.516715557432647,
+        "max_radius_error_steps": 312771.32352941175,
+        "max_zero_scale_error_abs": 0.0003137572202831507,
+        "zero_marginal_probability_count": 30465827,
+        "exact_joint_rng_match": "not_checked"
+      },
+      "final_metrics": {
+        "mean_mse": 0.18178945443139422,
+        "mean_psnr_db": 7.487900392431286,
+        "mean_ssim": 0.008082798984951511,
+        "label_accuracy": 0.0,
+        "matching": "Hungarian_pixel_MSE_once_for_all_metrics",
+        "n_images": 16
+      },
+      "first_pre_update_soft_objective": 16899640.472650465,
+      "last_pre_update_soft_objective": 8002904.222072357
+    },
+    "center_3": {
+      "status": "candidate_generated",
+      "mode": "center",
+      "iterations": 3,
+      "artifact_sha256": {
+        "registered_design.json": "aefa72a9983ecf164c4d5ab90778636cc84c53a53fe5d8004a4b4db62587675d",
+        "result.json": "bb29261705bcc90bb005316450be13afd5312ce95a2fde72a2231855dfa0e8ee",
+        "optimization_log.json": "25e56f821a177b2f7153477f53495abbcf9b659bd7c023a0725de72d8732bbce",
+        "candidate.pt": "aec9314423f89fdb3b4489ac8ebf37e06cfed9662659b1e9f862c75819da5806",
+        "evaluation.json": "f93a6542ea78f50b15ad2e004a4b211e18014d0a2788e5d71ccd8b5e31998f87"
+      },
+      "optimization_time_sec": 45.38065579999238,
+      "wall_time_sec": 48.04576959996484,
+      "peak_cuda_allocated_bytes": 5955634176,
+      "hard_label_observation_fit": {
+        "tolerance_steps": 1e-06,
+        "closure_fit_within_tolerance": false,
+        "bin_violation_rate": 0.22711525248807618,
+        "max_bin_violation_steps": 349721.0862068966,
+        "mean_bin_violation_steps": 12.14925274704772,
+        "max_radius_error_steps": 349720.0862068966,
+        "max_zero_scale_error_abs": 0.0002887793816626072,
+        "zero_marginal_probability_count": 30870899,
+        "exact_joint_rng_match": "not_checked"
+      },
+      "final_metrics": {
+        "mean_mse": 0.18176305383927707,
+        "mean_psnr_db": 7.488563256115765,
+        "mean_ssim": 0.008088749370245701,
+        "label_accuracy": 0.0,
+        "matching": "Hungarian_pixel_MSE_once_for_all_metrics",
+        "n_images": 16
+      },
+      "first_pre_update_soft_objective": 16899663.7288195,
+      "last_pre_update_soft_objective": 8053205.043762023
+    },
+    "cell_100": {
+      "status": "candidate_generated",
+      "mode": "cell",
+      "iterations": 100,
+      "artifact_sha256": {
+        "registered_design.json": "e40921ef5174641eb5dc6283c24bfcb7a7f3ad8a4c760210e8146f82184b0142",
+        "result.json": "1cc0e35fc2ecde504e764402269a0c814d6f0de952dccc4be8c1b45423d479fe",
+        "optimization_log.json": "8c88ccef7378b77c9b6d3b1e703b5a019fd6dc4b24df0938ce36c89f38791f88",
+        "candidate.pt": "77e0303b427a1b2560221b15e8ab4c3e63a139babbfd2ff3059a843bde24f50b",
+        "evaluation.json": "10e98950e5c3bd0aadbf2218da9445d5ae5f63235efdcb84ccd3115396d97c5f"
+      },
+      "optimization_time_sec": 1500.1854824000038,
+      "wall_time_sec": 1502.948769300012,
+      "peak_cuda_allocated_bytes": 5955634176,
+      "hard_label_observation_fit": {
+        "tolerance_steps": 1e-06,
+        "closure_fit_within_tolerance": false,
+        "bin_violation_rate": 0.25344416831035543,
+        "max_bin_violation_steps": 762482.25,
+        "mean_bin_violation_steps": 8.10705068144524,
+        "max_radius_error_steps": 762476.25,
+        "max_zero_scale_error_abs": 0.00034280121326446533,
+        "zero_marginal_probability_count": 34449933,
+        "exact_joint_rng_match": "not_checked"
+      },
+      "final_metrics": {
+        "mean_mse": 0.24877832694754737,
+        "mean_psnr_db": 6.089763795364476,
+        "mean_ssim": 0.005471998956086667,
+        "label_accuracy": 0.0,
+        "matching": "Hungarian_pixel_MSE_once_for_all_metrics",
+        "n_images": 16
+      },
+      "first_pre_update_soft_objective": 16899640.472650465,
+      "last_pre_update_soft_objective": 9558.684884429786
+    },
+    "center_100": {
+      "status": "candidate_generated",
+      "mode": "center",
+      "iterations": 100,
+      "artifact_sha256": {
+        "registered_design.json": "d5a84a4cba3ad6d66448f842a55609025db10060668f9ac6649b1f2bdb29a8c2",
+        "result.json": "6e12c3411a88410831c5e1023fed8969061486679272e38abb81bab02add99e9",
+        "optimization_log.json": "450ee79d3ccb285b1b25e99ec7aef1eeb6a6d43b18ec61735cd7bb6cd31cd911",
+        "candidate.pt": "321b45592d62df94f66230d417ddffd9156eb57464af427600bb25e5be538794",
+        "evaluation.json": "08133fd176686079ba5b596644e00cf9b200cedac22c2469c80f9c5743dc17ac"
+      },
+      "optimization_time_sec": 1498.9313354999758,
+      "wall_time_sec": 1501.6407403000048,
+      "peak_cuda_allocated_bytes": 5955634176,
+      "hard_label_observation_fit": {
+        "tolerance_steps": 1e-06,
+        "closure_fit_within_tolerance": false,
+        "bin_violation_rate": 0.21354043645064935,
+        "max_bin_violation_steps": 1356434.5,
+        "mean_bin_violation_steps": 8.530752166949217,
+        "max_radius_error_steps": 1356427.5,
+        "max_zero_scale_error_abs": 0.0004710839129984379,
+        "zero_marginal_probability_count": 29026478,
+        "exact_joint_rng_match": "not_checked"
+      },
+      "final_metrics": {
+        "mean_mse": 0.2520604652279535,
+        "mean_psnr_db": 6.027652071830028,
+        "mean_ssim": 0.005648814974238409,
+        "label_accuracy": 0.0,
+        "matching": "Hungarian_pixel_MSE_once_for_all_metrics",
+        "n_images": 16
+      },
+      "first_pre_update_soft_objective": 16899663.7288195,
+      "last_pre_update_soft_objective": 9005.28536175833
+    }
+  },
+  "deltas_100_minus_3": {
+    "cell": {
+      "mean_mse": 0.06698887251615315,
+      "mean_psnr_db": -1.3981365970668103,
+      "mean_ssim": -0.0026108000288648445,
+      "label_accuracy": 0.0
+    },
+    "center": {
+      "mean_mse": 0.07029741138867643,
+      "mean_psnr_db": -1.4609111842857372,
+      "mean_ssim": -0.0024399343960072924,
+      "label_accuracy": 0.0
+    }
+  },
+  "interpretation": "Single batch, fixed final candidates; no success threshold or statistical superiority established.",
+  "log_semantics": "Last logged soft objective is pre-update; saved final candidate and hard-label fit are post-update.",
+  "supplemental_lpips": {
+    "provenance": {
+      "implementation": "torchmetrics.image.lpip.LearnedPerceptualImagePatchSimilarity",
+      "net_type": "vgg",
+      "normalize_argument": false,
+      "device": "cpu",
+      "dtype": "float32",
+      "versions": {
+        "torch": "2.13.0+cu132",
+        "torchvision": "0.28.0+cu132",
+        "torchmetrics": "1.9.0"
+      },
+      "input_normalization": "FP32 RGB [0,1] to [-1,1] using (pixels - 0.5) * 2",
+      "weights": {
+        "backbone": {
+          "path": "C:\\Users\\\uc870\uc0c1\uc81c\\.cache\\torch\\hub\\checkpoints\\vgg16-397923af.pth",
+          "sha256": "397923af8e79cdbb6a7127f12361acd7a2f83e06b05044ddf496e83de57a5bf0"
+        },
+        "calibration": {
+          "path": "C:\\miniconda\\envs\\DLG\\Lib\\site-packages\\torchmetrics\\functional\\image\\lpips_models\\vgg.pth",
+          "sha256": "a78928a0af1e5f0fcb1f3b9e8f8c3a2a5a3de244d830ad5c1feddc79b8432868"
+        }
+      },
+      "downloads_allowed": false
+    },
+    "matching": "existing_Hungarian_pixel_MSE_pairs_unchanged",
+    "all_images_included": true,
+    "threshold": "none_registered_or_applied",
+    "interpretation": "descriptive perceptual distance only; no reconstruction success classification",
+    "arms": {
+      "cell_3": {
+        "n_images": 16,
+        "mean_lpips": 0.8399002216756344,
+        "per_image": [
+          {
+            "candidate_index": 4,
+            "truth_index": 0,
+            "lpips": 0.7811918258666992
+          },
+          {
+            "candidate_index": 5,
+            "truth_index": 1,
+            "lpips": 0.8235049247741699
+          },
+          {
+            "candidate_index": 14,
+            "truth_index": 2,
+            "lpips": 0.8383132815361023
+          },
+          {
+            "candidate_index": 7,
+            "truth_index": 3,
+            "lpips": 0.9233421683311462
+          },
+          {
+            "candidate_index": 9,
+            "truth_index": 4,
+            "lpips": 0.8868933320045471
+          },
+          {
+            "candidate_index": 11,
+            "truth_index": 5,
+            "lpips": 0.8729497194290161
+          },
+          {
+            "candidate_index": 0,
+            "truth_index": 6,
+            "lpips": 0.7829574346542358
+          },
+          {
+            "candidate_index": 1,
+            "truth_index": 7,
+            "lpips": 0.8435049653053284
+          },
+          {
+            "candidate_index": 2,
+            "truth_index": 8,
+            "lpips": 0.9068447947502136
+          },
+          {
+            "candidate_index": 13,
+            "truth_index": 9,
+            "lpips": 0.863069474697113
+          },
+          {
+            "candidate_index": 8,
+            "truth_index": 10,
+            "lpips": 0.7602249383926392
+          },
+          {
+            "candidate_index": 15,
+            "truth_index": 11,
+            "lpips": 0.8124222159385681
+          },
+          {
+            "candidate_index": 6,
+            "truth_index": 12,
+            "lpips": 0.8665530681610107
+          },
+          {
+            "candidate_index": 3,
+            "truth_index": 13,
+            "lpips": 0.8419103622436523
+          },
+          {
+            "candidate_index": 10,
+            "truth_index": 14,
+            "lpips": 0.8043514490127563
+          },
+          {
+            "candidate_index": 12,
+            "truth_index": 15,
+            "lpips": 0.8303695917129517
+          }
+        ]
+      },
+      "center_3": {
+        "n_images": 16,
+        "mean_lpips": 0.8396464213728905,
+        "per_image": [
+          {
+            "candidate_index": 4,
+            "truth_index": 0,
+            "lpips": 0.7823036909103394
+          },
+          {
+            "candidate_index": 5,
+            "truth_index": 1,
+            "lpips": 0.8229604959487915
+          },
+          {
+            "candidate_index": 14,
+            "truth_index": 2,
+            "lpips": 0.8382298946380615
+          },
+          {
+            "candidate_index": 7,
+            "truth_index": 3,
+            "lpips": 0.9233381152153015
+          },
+          {
+            "candidate_index": 9,
+            "truth_index": 4,
+            "lpips": 0.8864219188690186
+          },
+          {
+            "candidate_index": 11,
+            "truth_index": 5,
+            "lpips": 0.8730535507202148
+          },
+          {
+            "candidate_index": 0,
+            "truth_index": 6,
+            "lpips": 0.7823721766471863
+          },
+          {
+            "candidate_index": 1,
+            "truth_index": 7,
+            "lpips": 0.8435987830162048
+          },
+          {
+            "candidate_index": 2,
+            "truth_index": 8,
+            "lpips": 0.9066561460494995
+          },
+          {
+            "candidate_index": 13,
+            "truth_index": 9,
+            "lpips": 0.8624019622802734
+          },
+          {
+            "candidate_index": 8,
+            "truth_index": 10,
+            "lpips": 0.7598387598991394
+          },
+          {
+            "candidate_index": 15,
+            "truth_index": 11,
+            "lpips": 0.8120118379592896
+          },
+          {
+            "candidate_index": 6,
+            "truth_index": 12,
+            "lpips": 0.8665536642074585
+          },
+          {
+            "candidate_index": 3,
+            "truth_index": 13,
+            "lpips": 0.8416786193847656
+          },
+          {
+            "candidate_index": 10,
+            "truth_index": 14,
+            "lpips": 0.8023967146873474
+          },
+          {
+            "candidate_index": 12,
+            "truth_index": 15,
+            "lpips": 0.8305264115333557
+          }
+        ]
+      },
+      "cell_100": {
+        "n_images": 16,
+        "mean_lpips": 0.8646476976573467,
+        "per_image": [
+          {
+            "candidate_index": 5,
+            "truth_index": 0,
+            "lpips": 0.8176812529563904
+          },
+          {
+            "candidate_index": 12,
+            "truth_index": 1,
+            "lpips": 0.8311787843704224
+          },
+          {
+            "candidate_index": 0,
+            "truth_index": 2,
+            "lpips": 0.850548267364502
+          },
+          {
+            "candidate_index": 7,
+            "truth_index": 3,
+            "lpips": 0.9331421256065369
+          },
+          {
+            "candidate_index": 9,
+            "truth_index": 4,
+            "lpips": 0.9228854179382324
+          },
+          {
+            "candidate_index": 8,
+            "truth_index": 5,
+            "lpips": 0.8827452659606934
+          },
+          {
+            "candidate_index": 6,
+            "truth_index": 6,
+            "lpips": 0.8143731355667114
+          },
+          {
+            "candidate_index": 1,
+            "truth_index": 7,
+            "lpips": 0.881558895111084
+          },
+          {
+            "candidate_index": 10,
+            "truth_index": 8,
+            "lpips": 0.9383072853088379
+          },
+          {
+            "candidate_index": 11,
+            "truth_index": 9,
+            "lpips": 0.8830112218856812
+          },
+          {
+            "candidate_index": 14,
+            "truth_index": 10,
+            "lpips": 0.7944520711898804
+          },
+          {
+            "candidate_index": 15,
+            "truth_index": 11,
+            "lpips": 0.8355594873428345
+          },
+          {
+            "candidate_index": 4,
+            "truth_index": 12,
+            "lpips": 0.8934072852134705
+          },
+          {
+            "candidate_index": 3,
+            "truth_index": 13,
+            "lpips": 0.8789681792259216
+          },
+          {
+            "candidate_index": 2,
+            "truth_index": 14,
+            "lpips": 0.824346125125885
+          },
+          {
+            "candidate_index": 13,
+            "truth_index": 15,
+            "lpips": 0.8521983623504639
+          }
+        ]
+      },
+      "center_100": {
+        "n_images": 16,
+        "mean_lpips": 0.8710431978106499,
+        "per_image": [
+          {
+            "candidate_index": 14,
+            "truth_index": 0,
+            "lpips": 0.8243502378463745
+          },
+          {
+            "candidate_index": 12,
+            "truth_index": 1,
+            "lpips": 0.856065571308136
+          },
+          {
+            "candidate_index": 0,
+            "truth_index": 2,
+            "lpips": 0.853693962097168
+          },
+          {
+            "candidate_index": 7,
+            "truth_index": 3,
+            "lpips": 0.9442365169525146
+          },
+          {
+            "candidate_index": 9,
+            "truth_index": 4,
+            "lpips": 0.9250154495239258
+          },
+          {
+            "candidate_index": 4,
+            "truth_index": 5,
+            "lpips": 0.8868284225463867
+          },
+          {
+            "candidate_index": 6,
+            "truth_index": 6,
+            "lpips": 0.8058952689170837
+          },
+          {
+            "candidate_index": 1,
+            "truth_index": 7,
+            "lpips": 0.8919304609298706
+          },
+          {
+            "candidate_index": 10,
+            "truth_index": 8,
+            "lpips": 0.953271210193634
+          },
+          {
+            "candidate_index": 11,
+            "truth_index": 9,
+            "lpips": 0.889853835105896
+          },
+          {
+            "candidate_index": 5,
+            "truth_index": 10,
+            "lpips": 0.796977162361145
+          },
+          {
+            "candidate_index": 15,
+            "truth_index": 11,
+            "lpips": 0.8451433777809143
+          },
+          {
+            "candidate_index": 8,
+            "truth_index": 12,
+            "lpips": 0.90290367603302
+          },
+          {
+            "candidate_index": 3,
+            "truth_index": 13,
+            "lpips": 0.8755118250846863
+          },
+          {
+            "candidate_index": 2,
+            "truth_index": 14,
+            "lpips": 0.8275890350341797
+          },
+          {
+            "candidate_index": 13,
+            "truth_index": 15,
+            "lpips": 0.8574251532554626
+          }
+        ]
+      }
+    },
+    "deltas_100_minus_3": {
+      "cell": 0.02474747598171234,
+      "center": 0.0313967764377594
+    }
+  },
+  "generated_artifact_sha256": {
+    "all16_by_truth.png": "7d1b4816820aebdb6184cb0673534a81039f33fc75b2300775fdb8750b2f6d2c",
+    "comparison.md": "0300ea0f4e4d9a6ec6c6130e82e687f721bebba65716c5b42e9db1100aee0c21",
+    "convergence.png": "b7289c83226696b69942d2433acafac0a0d4dbce55139814dd486702a429b2ec",
+    "final_psnr.png": "901593140b44986ae5c2726fee533b17f43285b4d53c68b2ef839765739d5757"
+  }
+}

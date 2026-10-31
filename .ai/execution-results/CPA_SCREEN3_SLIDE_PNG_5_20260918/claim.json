@@ -1,0 +1,17 @@
+{
+  "task_id": "CPA_SCREEN3_SLIDE_PNG_5_20260918",
+  "status": "COMPLETED",
+  "assigned_role": "CODEX_EXECUTOR",
+  "executor_thread": "01a0a799-f1ce-7b31-8c46-b4ddef40aeab",
+  "executor_pid": 14236,
+  "runtime": "Luna/xhigh",
+  "handoff_sha256": "2833f748ebfa0a367a9a250b28cc939537a38f7143c97f4b94c7c9d95a27da93",
+  "parent_task_id": "CPA_SIGNED_BITS7654_RECOVERY_20260918",
+  "active_parent_not_replaced": true,
+  "result_report": "C:\\Users\\조상제\\Desktop\\CPA\\.ai\\execution-results\\CPA_SCREEN3_SLIDE_PNG_5_20260918\\report.md",
+  "private_output_root": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results_private\\slide_png_5_20260918",
+  "planner_thread": "01a0a799-d62c-7ab0-9c2a-628acf6d2c95",
+  "originating_user_thread": "01a0a7ab-fa58-7d22-ac52-3247b1dd2255",
+  "planner_queue_receipt": "C:\\Users\\조상제\\Desktop\\CPA\\.ai\\execution-results\\CPA_SCREEN3_SLIDE_PNG_5_20260918\\planner_queue_receipt.json",
+  "output_png_count": 5
+}

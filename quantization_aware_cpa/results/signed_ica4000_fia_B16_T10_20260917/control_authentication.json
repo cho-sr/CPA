@@ -1,0 +1,28 @@
+{
+  "status": "PASSED",
+  "old_control_hashes": {
+    "registration.json": "70f48861153e5155c5d9fe1c4a20851dc8b4ca3ee9317dbef362148bf6d3d484",
+    "result.json": "80946a388a649ebb8a99bfcbdb9301659788d89e1cb7562c441dca43f6b4e36e",
+    "sources.pt": "408099e99bb6ad1d8b721ff518c040ec9bec332827f0f36d3b9715ffeb4af5a2",
+    "refinement_log.json": "c20f6a62b2e5161c63fc89fcfcbe9e2dee3221eb3956262c8dc7c6a7cf8d9d2f",
+    "direct_fia/candidate.pt": "4efc29ad08b1ea8b0cee6991de6f185839708c2c72aaafb4fedfb307b5e680ce",
+    "direct_fia/result.json": "91c05c281135ffff7dc2fb40fa14e213675d371f72c528036ac8b3e69515a6da",
+    "direct_fia/registration.json": "9b4d66d5c35588df5d9e4e7fae5362643569908177b65514348e32584c239657"
+  },
+  "old_control_task_id": "CPA_SIGNED_COMBINATION_ICA_IMPLEMENTATION_20260916",
+  "old_control_config": {
+    "fast_max_iter": 200,
+    "fast_tolerance": 1e-06,
+    "refinement_iterations": 1000,
+    "refinement_lr": 0.001,
+    "refinement_momentum": 0.0,
+    "refinement_weight_decay": 0.0,
+    "negentropy_weight": 0.0935827857091549,
+    "decorrelation_weight": 0.2513674104161625,
+    "sign_weight": 0.05811961446881231,
+    "l1_weight": 17.94138146247377,
+    "eps": 1e-10,
+    "rank_floor": 1e-12
+  },
+  "public_manifest": "signed_symmetric_int4_qplus7_packed_cpu_fp32_v1"
+}

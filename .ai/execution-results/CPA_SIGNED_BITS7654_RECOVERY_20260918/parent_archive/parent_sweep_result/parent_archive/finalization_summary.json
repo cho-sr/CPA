@@ -1,0 +1,75 @@
+{
+  "task_id": "CPA_SIGNED_INT8_SCREEN3_REPAIR_CONTINUE_20260918",
+  "status": "COMPLETED_AFTER_REPORTING_REPAIR",
+  "original_wrapper_status": "FAILED",
+  "original_failure_preserved": true,
+  "original_failure": "evaluator rejected the registered truth bundle key z before metrics; no private metrics were produced by the failed attempt",
+  "public_execution_status": "PUBLIC_COMPLETED",
+  "public_gate_status": "PUBLIC_GATE_PASSED",
+  "candidate_count": 13,
+  "selection": [
+    1,
+    7,
+    5
+  ],
+  "optimizer_steps_executed_by_recovery": {
+    "member01_export": 0,
+    "member07": 20000,
+    "member05": 20000
+  },
+  "cumulative_fia_updates": 125000,
+  "private_evaluation_status": "COMPLETED",
+  "private_x_only": true,
+  "labels_consumed": false,
+  "attack_true_updates_consumed": false,
+  "scientific_quality": "EVALUATED",
+  "actual_image_cell_feasibility": "NOT_EVALUATED",
+  "canonical_runtime": {
+    "threads": 1,
+    "seed": 42,
+    "device": "cpu"
+  },
+  "public_registration_sha256": "1f898e9e971c4ded4b030707c12cb99895705d8e0b3da794f7671d3d1cd12663",
+  "inherited_registration_sha256": "d974ad6075bdf3dbb5607ec914d992957a26d537a83483e98f70c370242ea3fb",
+  "inherited_selection_sha256": "9c6a24bd73d0d9fb4ea752316b3a77e05779b6ae4152c090c229ca2b1d2a8683",
+  "inherited_manifest_sha256": "331e55e45e7c59c8fccbf667caedb19b8ca480b181b2db802ad02de4d802831c",
+  "real_work_seconds_accounted": 3916.3106025998713,
+  "original_remaining_budget_seconds": 5399.606889200048,
+  "remaining_after_continuation_failed_eval_final_eval": 1483.2962866001762,
+  "stages": [
+    {
+      "name": "continuation",
+      "pid": 14720,
+      "exit_code": 0,
+      "timed_out": false,
+      "started_at_monotonic": 688524.0557788,
+      "wall_seconds": 3788.8108596999664,
+      "stdout": "C:/Users/조상제/Desktop/CPA/.ai/execution-results/CPA_SIGNED_INT8_SCREEN3_REPAIR_CONTINUE_20260918/continuation.stdout.log",
+      "stderr": "C:/Users/조상제/Desktop/CPA/.ai/execution-results/CPA_SIGNED_INT8_SCREEN3_REPAIR_CONTINUE_20260918/continuation.stderr.log",
+      "remaining_budget_after_seconds": 1609.072696300107
+    },
+    {
+      "name": "private_evaluation",
+      "pid": 10568,
+      "exit_code": 1,
+      "timed_out": false,
+      "started_at_monotonic": 692312.8956609,
+      "wall_seconds": 6.71539289993234,
+      "stdout": "C:/Users/조상제/Desktop/CPA/.ai/execution-results/CPA_SIGNED_INT8_SCREEN3_REPAIR_CONTINUE_20260918/private_evaluation.stdout.log",
+      "stderr": "C:/Users/조상제/Desktop/CPA/.ai/execution-results/CPA_SIGNED_INT8_SCREEN3_REPAIR_CONTINUE_20260918/private_evaluation.stderr.log",
+      "remaining_budget_after_seconds": 1602.3311350001022
+    }
+  ],
+  "final_evaluation_root": "quantization_aware_cpa/results_private/signed_int8_screen3_repair_B16_T10_20260918/evaluation_final_20260918",
+  "figures": [
+    "contact_sheet_5000.png",
+    "contact_sheet_25000.png"
+  ],
+  "primary_contrast": {
+    "mean_mse": -0.0005149724940538974,
+    "mean_psnr_db": -0.00014399604657810983,
+    "mean_ssim": 0.014663534275302037,
+    "mean_lpips": -0.003564782440662384
+  },
+  "reporting_repair": "truth-bundle schema correction from y expectation to registered z; zero optimizer steps"
+}

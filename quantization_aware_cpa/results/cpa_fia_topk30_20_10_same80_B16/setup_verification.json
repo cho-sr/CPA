@@ -1,0 +1,264 @@
+{
+  "created_at_utc": "2026-09-11T05:36:58.653227+00:00",
+  "focused_cpu_tests": 184,
+  "test_result": "passed",
+  "old_topk50_functions_ast_identical": {
+    "attack_from_packet": true,
+    "run_batch": true,
+    "validate_source_images": true,
+    "verify_inputs": true,
+    "verify_completed": true
+  },
+  "config_changes": {
+    "30": {
+      "codec": {
+        "topk50": "topk50_global_bitmap_fp32_v1",
+        "new": "topk_global_bitmap_fp32_v1"
+      },
+      "execution_scope": {
+        "topk50": "same historical80 images, original16x5 grouping, Top-k 50% sparsification CPA+FIA only; user authorized execution",
+        "new": "same historical80 images, original16x5 grouping, Top-k 30% sparsification CPA+FIA only; user authorized 30/20/10 percent on 2026-09-11"
+      },
+      "expected_packet_bytes": {
+        "topk50": 218365984,
+        "new": 136157624
+      },
+      "keep_percent": {
+        "topk50": null,
+        "new": 30
+      },
+      "observation": {
+        "topk50": "saved actual (W_initial-W_after10)/lr from each original n16 batch; receiver zero-fills a real Top-k 50% bitmap + FP32 packet",
+        "new": "saved actual (W_initial-W_after10)/lr from each original n16 batch; receiver zero-fills a real Top-k 30% bitmap + FP32 packet"
+      },
+      "output_dir": {
+        "topk50": "results/cpa_fia_topk50_same80_B16",
+        "new": "results/cpa_fia_topk30_same80_B16"
+      },
+      "run_tag": {
+        "topk50": "cpa_fia_topk50_same80_B16",
+        "new": "cpa_fia_topk30_same80_B16"
+      },
+      "sparsification": {
+        "topk50": {
+          "keep_fraction": 0.5,
+          "selection": "global magnitude within classifier.0.weight",
+          "tie_break": "flat index ascending",
+          "value_dtype": "float32",
+          "positions": "row-major bitmap, little bit order",
+          "discarded_fill": 0.0,
+          "quantization": false,
+          "rescaling": false,
+          "error_feedback": false
+        },
+        "new": {
+          "keep_fraction": 0.3,
+          "selection": "global magnitude within classifier.0.weight",
+          "tie_break": "flat index ascending",
+          "value_dtype": "float32",
+          "positions": "row-major bitmap, little bit order",
+          "discarded_fill": 0,
+          "quantization": false,
+          "rescaling": false,
+          "error_feedback": false
+        }
+      }
+    },
+    "20": {
+      "codec": {
+        "topk50": "topk50_global_bitmap_fp32_v1",
+        "new": "topk_global_bitmap_fp32_v1"
+      },
+      "execution_scope": {
+        "topk50": "same historical80 images, original16x5 grouping, Top-k 50% sparsification CPA+FIA only; user authorized execution",
+        "new": "same historical80 images, original16x5 grouping, Top-k 20% sparsification CPA+FIA only; user authorized 30/20/10 percent on 2026-09-11"
+      },
+      "expected_packet_bytes": {
+        "topk50": 218365984,
+        "new": 95053444
+      },
+      "keep_percent": {
+        "topk50": null,
+        "new": 20
+      },
+      "observation": {
+        "topk50": "saved actual (W_initial-W_after10)/lr from each original n16 batch; receiver zero-fills a real Top-k 50% bitmap + FP32 packet",
+        "new": "saved actual (W_initial-W_after10)/lr from each original n16 batch; receiver zero-fills a real Top-k 20% bitmap + FP32 packet"
+      },
+      "output_dir": {
+        "topk50": "results/cpa_fia_topk50_same80_B16",
+        "new": "results/cpa_fia_topk20_same80_B16"
+      },
+      "run_tag": {
+        "topk50": "cpa_fia_topk50_same80_B16",
+        "new": "cpa_fia_topk20_same80_B16"
+      },
+      "sparsification": {
+        "topk50": {
+          "keep_fraction": 0.5,
+          "selection": "global magnitude within classifier.0.weight",
+          "tie_break": "flat index ascending",
+          "value_dtype": "float32",
+          "positions": "row-major bitmap, little bit order",
+          "discarded_fill": 0.0,
+          "quantization": false,
+          "rescaling": false,
+          "error_feedback": false
+        },
+        "new": {
+          "keep_fraction": 0.2,
+          "selection": "global magnitude within classifier.0.weight",
+          "tie_break": "flat index ascending",
+          "value_dtype": "float32",
+          "positions": "row-major bitmap, little bit order",
+          "discarded_fill": 0,
+          "quantization": false,
+          "rescaling": false,
+          "error_feedback": false
+        }
+      }
+    },
+    "10": {
+      "codec": {
+        "topk50": "topk50_global_bitmap_fp32_v1",
+        "new": "topk_global_bitmap_fp32_v1"
+      },
+      "execution_scope": {
+        "topk50": "same historical80 images, original16x5 grouping, Top-k 50% sparsification CPA+FIA only; user authorized execution",
+        "new": "same historical80 images, original16x5 grouping, Top-k 10% sparsification CPA+FIA only; user authorized 30/20/10 percent on 2026-09-11"
+      },
+      "expected_packet_bytes": {
+        "topk50": 218365984,
+        "new": 53949264
+      },
+      "keep_percent": {
+        "topk50": null,
+        "new": 10
+      },
+      "observation": {
+        "topk50": "saved actual (W_initial-W_after10)/lr from each original n16 batch; receiver zero-fills a real Top-k 50% bitmap + FP32 packet",
+        "new": "saved actual (W_initial-W_after10)/lr from each original n16 batch; receiver zero-fills a real Top-k 10% bitmap + FP32 packet"
+      },
+      "output_dir": {
+        "topk50": "results/cpa_fia_topk50_same80_B16",
+        "new": "results/cpa_fia_topk10_same80_B16"
+      },
+      "run_tag": {
+        "topk50": "cpa_fia_topk50_same80_B16",
+        "new": "cpa_fia_topk10_same80_B16"
+      },
+      "sparsification": {
+        "topk50": {
+          "keep_fraction": 0.5,
+          "selection": "global magnitude within classifier.0.weight",
+          "tie_break": "flat index ascending",
+          "value_dtype": "float32",
+          "positions": "row-major bitmap, little bit order",
+          "discarded_fill": 0.0,
+          "quantization": false,
+          "rescaling": false,
+          "error_feedback": false
+        },
+        "new": {
+          "keep_fraction": 0.1,
+          "selection": "global magnitude within classifier.0.weight",
+          "tie_break": "flat index ascending",
+          "value_dtype": "float32",
+          "positions": "row-major bitmap, little bit order",
+          "discarded_fill": 0,
+          "quantization": false,
+          "rescaling": false,
+          "error_feedback": false
+        }
+      }
+    }
+  },
+  "device": "NVIDIA GeForce RTX 5060 Ti",
+  "capability": [
+    12,
+    0
+  ],
+  "code_sha256": {
+    "quantization_aware_cpa\\qacpa\\run_topk_ratios_same80.py": "88e2c53b60925ff89aa65ceebdec387c958e02b3e409670b7fbb4f800804b008",
+    "quantization_aware_cpa\\qacpa\\report_topk_ratios_same80.py": "3e8b47816ce0ab5b33ce0591aa67e33df09f2e75c58a078b7c647267cba43ba0",
+    "quantization_aware_cpa\\qacpa\\topk_ratio_codec.py": "a26fe23f0e9232a12412fb4795c2b689f806ef49abb2785109988316e7f57489",
+    "quantization_aware_cpa\\qacpa\\queue_topk_ratios_same80.py": "c375520842d84b667bff60f69970baabd2241a307f722af716dc9910abdd9906",
+    "quantization_aware_cpa\\qacpa\\run_topk50_same80.py": "0cb7a89273343d4ea485452145791ff6f25a014b7382bfec3aa0c6dc41c8451a",
+    "quantization_aware_cpa\\qacpa\\report_topk50_same80.py": "7dacc93fb6f79943b487f5c8a98ed70bae87ae80245cd9d61e956fd72fc8e9ea",
+    "quantization_aware_cpa\\qacpa\\run_m10_packed4.py": "fcdcd2dd08985aaa5d6a9c31aee9ae414e97ee9c610501a0af8f3fc9438f0aa4",
+    "quantization_aware_cpa\\qacpa\\report_m10_packed4.py": "09a8b62ed2a65c51e423fe982cfdb2b20782372abe0cb43a1bed4c864d58265e",
+    "quantization_aware_cpa\\qacpa\\sparsification_codec.py": "a75c9aa431bdc80d604c9e9f4c514512cfb4f3e3eb205dce397c191ca475765d",
+    "quantization_aware_cpa\\qacpa\\run_m6_uia_fp32_fia.py": "e00319498504257c91697918bf61e7794ee1fe75a48bdb2483c768f596f1bae6",
+    "quantization_aware_cpa\\qacpa\\run_m8_fedavg_naive.py": "0ea71db00a7e20e9ee9309215fbfa47c84f83290f9ca7027e3bec09ca2ea65f3",
+    "quantization_aware_cpa\\qacpa\\upstream_naive.py": "8f29b885d86f4121eda5c55e17486a3a48bd8db08b2f83890fe7726730d1ee92",
+    "quantization_aware_cpa\\qacpa\\uia.py": "fe19894d8a340e6bdfc56b83c26da516f2414a87c1cbe3fbe3e4620fcdd580c3",
+    "quantization_aware_cpa\\qacpa\\victim.py": "fdd40fd5c5062761872dc3bdd8dd4e750ccc188ce0050baf6330fad7e080874b",
+    "quantization_aware_cpa\\qacpa\\fia.py": "42a55ce6a4895785b10573f507658434e597f1138de3d45621f466702c7f5cb0",
+    "quantization_aware_cpa\\qacpa\\seed.py": "769366fcc2cf3e144d8caa86f73a55dcb0b6be615a45dab8b6e117399150c558",
+    "official_cpa\\src\\attack.py": "d2984fcab6708d1c28bec7c36c7792d40b01b7b4bd150316263f6f8bbd6b3816",
+    "official_cpa\\src\\collect_grads.py": "4d39b5e4bcbebe36dd8131d6c4a5ec0456e7e9de51f7301c0b5079a04aa436e6",
+    "official_cpa\\src\\collect_updates.py": "78a07e3f872231cb582c828eb315bb3c04976bc2f36fdecae5bdb6c17d7f6177",
+    "official_cpa\\src\\datasets.py": "f9e7b47733b5acb4b73e6914a3f100b5187766bbed78a12d17b69c39eec1b6d1",
+    "official_cpa\\src\\eval_utils.py": "042e6263905b32044290e2e1e4d93c54ebcb8e813509c27cf76bdd23b00ec349",
+    "official_cpa\\src\\feature_inversion.py": "dc73880427e3eaf1f873d295f17f1d48d301882f634ee5df36ddeea8e56c4dec",
+    "official_cpa\\src\\gradient_inversion.py": "c598e1ee7b4079f741060d10c8dfd14711e393a97384c63cf32be77a458b1873",
+    "official_cpa\\src\\gradient_inversion_utils.py": "668d77788dc8d81c181c8c0a9fbe8533c6fbea22ba46fe7f5e15b0a431300e5f",
+    "official_cpa\\src\\log_utils.py": "70ced512bcd2de0e6e52d34a5cb9ca34ae7877a0b220b044fce12e48c422cd80",
+    "official_cpa\\src\\models.py": "f684ca948a8ba8020d82cba3d2bdc5df731dd51d9807e38c5be37a3feab4ee56",
+    "official_cpa\\src\\report_m6_attack_results.py": "ce40db9745aebc515c5d52a031d3a4b2806e74edf9068ab26291094ba6455fa4",
+    "official_cpa\\src\\train.py": "a054cbe9c855b05bba9c808a59524c019b6549dde04c432a6e1906448d125bf1",
+    "official_cpa\\src\\utils.py": "565f1bf1a47f387d042b35bb24f677d1ff0d3ec5d979e2876c31ed114179b9fe",
+    "official_cpa\\src\\vgg16.py": "8114eca8cde553dace5f777aedd21b70851c570d473e597b005cb6be4b248d36",
+    "quantization_aware_cpa\\scripts\\run_topk50_same80.bat": "e33ce0bc688075b6608c0cd10507dabb757179ba02985881e721162ad046a933",
+    "quantization_aware_cpa\\scripts\\run_topk30_20_10_same80.bat": "4ff9c8ee0013341338acdeec779aae37ed8b5ce4791a59b9a0f4353a3956bdda"
+  },
+  "real_packet_verification": [
+    {
+      "keep_percent": 30,
+      "n_packets_verified": 5,
+      "same80_identity": true,
+      "same_source_hashes": true,
+      "packet_bytes_each": 136157624,
+      "packet_saved_percent": 66.87499518297194,
+      "relative_l2_error_per_batch": [
+        0.002952754289418249,
+        0.0013662350030471978,
+        0.008067155905830856,
+        0.0046473805480064445,
+        0.0014200115653114657
+      ]
+    },
+    {
+      "keep_percent": 20,
+      "n_packets_verified": 5,
+      "same80_identity": true,
+      "same_source_hashes": true,
+      "packet_bytes_each": 95053444,
+      "packet_saved_percent": 76.87499459908975,
+      "relative_l2_error_per_batch": [
+        0.030658791742113133,
+        0.018792046524443926,
+        0.04513075667439896,
+        0.034026134568607314,
+        0.02488105808507379
+      ]
+    },
+    {
+      "keep_percent": 10,
+      "n_packets_verified": 5,
+      "same80_identity": true,
+      "same_source_hashes": true,
+      "packet_bytes_each": 53949264,
+      "packet_saved_percent": 86.87499401520756,
+      "relative_l2_error_per_batch": [
+        0.1283749819854147,
+        0.11407905081980624,
+        0.1612959848799613,
+        0.15196633134994803,
+        0.12892565371763215
+      ]
+    }
+  ],
+  "all15_packets_verified": true,
+  "state": "ready_for_cuda"
+}

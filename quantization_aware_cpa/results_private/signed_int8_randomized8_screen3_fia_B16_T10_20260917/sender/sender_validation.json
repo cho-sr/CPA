@@ -1,0 +1,128 @@
+{
+  "archived_sender_validation_sha256": "6e78ec5ff2376b01c23a3606fa18b3d9e60d1209f55504211aaf811919d2e244",
+  "checkpoint_sha256": "397923af8e79cdbb6a7127f12361acd7a2f83e06b05044ddf496e83de57a5bf0",
+  "codec": {
+    "bits": 8,
+    "code_dtype": "int8",
+    "code_operation": "round(float32(G/s)).clamp(-127,127).int8",
+    "codec": "signed_symmetric_int8_qplus127_nearest_even_cpu_fp32_v1",
+    "device": "cpu",
+    "edge_policy": "largest_finite_fp32_absmax_rounding_to_observed_scale",
+    "input_dtype": "float32",
+    "qmax": 127,
+    "qmin": -127,
+    "rounding": "nearest_even",
+    "scale_dtype": "float32",
+    "scale_operation": "float32(max_abs/127)",
+    "scale_scope": "per_parameter_tensor_absmax_scalar",
+    "zero_tensor": "q=0,s=1"
+  },
+  "evaluation_truth_sha256": "724bbacbe316cc28dac086db9cfaf6507f4c1af31144fd610cc480985aab72e2",
+  "format": "signed_symmetric_int8_qplus127_nearest_even_cpu_fp32_v1",
+  "images_consumed": false,
+  "labels_consumed": false,
+  "layers": {
+    "classifier.0.bias": {
+      "code_bytes": 4096,
+      "file": "fc_00.sgn8",
+      "file_bytes": 4116,
+      "header_bytes_excluding_scale": 16,
+      "numel": 4096,
+      "q_dtype": "int8",
+      "s_dtype": "float32",
+      "s_shape": [],
+      "scale_bytes": 4,
+      "sha256": "d3da8f97bd36135d146fa7a017402672055a132ee7d391085f3579f2b2472525",
+      "shape": [
+        4096
+      ]
+    },
+    "classifier.0.weight": {
+      "code_bytes": 102760448,
+      "file": "fc_01.sgn8",
+      "file_bytes": 102760468,
+      "header_bytes_excluding_scale": 16,
+      "numel": 102760448,
+      "q_dtype": "int8",
+      "s_dtype": "float32",
+      "s_shape": [],
+      "scale_bytes": 4,
+      "sha256": "5b8cd99c9d8c57b981169344f04aeb9c3890b50f22b433ba81b10b30d2b0c2ad",
+      "shape": [
+        4096,
+        25088
+      ]
+    },
+    "classifier.3.bias": {
+      "code_bytes": 4096,
+      "file": "fc_02.sgn8",
+      "file_bytes": 4116,
+      "header_bytes_excluding_scale": 16,
+      "numel": 4096,
+      "q_dtype": "int8",
+      "s_dtype": "float32",
+      "s_shape": [],
+      "scale_bytes": 4,
+      "sha256": "7dfe66dfb1c413ae7a93addac8caf9e4b99be7785f346acfc9da9576a6fd1882",
+      "shape": [
+        4096
+      ]
+    },
+    "classifier.3.weight": {
+      "code_bytes": 16777216,
+      "file": "fc_03.sgn8",
+      "file_bytes": 16777236,
+      "header_bytes_excluding_scale": 16,
+      "numel": 16777216,
+      "q_dtype": "int8",
+      "s_dtype": "float32",
+      "s_shape": [],
+      "scale_bytes": 4,
+      "sha256": "f25775975a085cb843cfbaa657c6421e761de3ff218b4f3b2f81c2a7b94fac25",
+      "shape": [
+        4096,
+        4096
+      ]
+    },
+    "classifier.6.bias": {
+      "code_bytes": 1000,
+      "file": "fc_04.sgn8",
+      "file_bytes": 1020,
+      "header_bytes_excluding_scale": 16,
+      "numel": 1000,
+      "q_dtype": "int8",
+      "s_dtype": "float32",
+      "s_shape": [],
+      "scale_bytes": 4,
+      "sha256": "060b0c12833a253ba14cc173c22d37642617fbf6698dd0d7ca9af7fae303ebf6",
+      "shape": [
+        1000
+      ]
+    },
+    "classifier.6.weight": {
+      "code_bytes": 4096000,
+      "file": "fc_05.sgn8",
+      "file_bytes": 4096020,
+      "header_bytes_excluding_scale": 16,
+      "numel": 4096000,
+      "q_dtype": "int8",
+      "s_dtype": "float32",
+      "s_shape": [],
+      "scale_bytes": 4,
+      "sha256": "0536ae5e5b237da4656fe5892dfe08779f886e7f43cd5c22f801c56482b6d953",
+      "shape": [
+        1000,
+        4096
+      ]
+    }
+  },
+  "private_provenance_output": "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results_private/signed_int8_randomized8_screen3_fia_B16_T10_20260917/sender",
+  "public_manifest_sha256": "9c9dc415742db59681a3b2266eca80712c0643cfb834debe30f3e8bd6e289b9b",
+  "public_output": "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int8_randomized8_screen3_fia_B16_T10_20260917/observation",
+  "raw_features_saved": false,
+  "raw_updates_saved_in_public": false,
+  "raw_updates_sha256": "ef9aefc66ab9fcfd0b023fdfc064dbadc27567bd3ef3508bc14ebda9af28ba4c",
+  "stage": "SENDER",
+  "status": "COMPLETED",
+  "true_updates_consumed": true
+}

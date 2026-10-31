@@ -1,0 +1,33 @@
+{
+  "run_tag": "m7_consistency_audit",
+  "inputs": {
+    "codex/docs/M7_FOLLOWUP_ANALYSIS_PROTOCOL.json": "24a25980e58356591943559e29474bb777494f426b0834ca6d68f76aa2daae67",
+    "codex/docs/M7_FOLLOWUP_ANALYSIS_PROTOCOL.lock.json": "5beaf818de847b52fee6946e079d293c4c51675c592be50d8f9db687de0e0120",
+    "quantization_aware_cpa/qacpa/report_m3_spearman.py": "41eb409d7a9cdfabd94f38490f1d61cf5c6e791d9addfaac86be159e223202a5",
+    "quantization_aware_cpa/qacpa/run_uia_beff_validation.py": "dd5e77b767d239882eaa88c07ea22c4419f6e452f77294e344c4f72e39f05476",
+    "quantization_aware_cpa/qacpa/run_uia_spectrum.py": "777b57de9bbda1fb38026d454cb79880a78a6d3bffac8aec675f84a593542b07",
+    "quantization_aware_cpa/qacpa/run_round_dependence.py": "cec3e9c7223eb39ed52dadec5523a3fb971f79c9999b0a2da5bb69fa013fc1d9",
+    "quantization_aware_cpa/results/v5_m3_fia_4bit/fp32/per_image_metrics.csv": "5825efa07d2d3990cc15ba23110fcb1116b48c78eed4da8db478f6f5fdbd5450",
+    "quantization_aware_cpa/results/v5_m3_fia_4bit/naive/per_image_metrics.csv": "b34660e4000203075e8015c8f9783c2f2f17377c8848c621fa36d96b7d7ff4cc",
+    "quantization_aware_cpa/results/v6_m3_fia_4bit_batch2/fp32/per_image_metrics.csv": "0ec823c6d5068ba9c269fefc8240f1fff0fee36a0941e7c0a2bd5490d1373a77",
+    "quantization_aware_cpa/results/v6_m3_fia_4bit_batch2/naive/per_image_metrics.csv": "b3029c51ca8394f8d01f0095c419bf86400a51b6496cdb58b348b2bc99d41a4d",
+    "quantization_aware_cpa/results/v6_m3_fia_4bit_batch3/fp32/per_image_metrics.csv": "a2a24d2cf993cd5f464d31a7ee1c6a37ff3848563f0f550e6820142186f862a1",
+    "quantization_aware_cpa/results/v6_m3_fia_4bit_batch3/naive/per_image_metrics.csv": "4237a754ebe5c604f0c1ba8882f4c9ed5da7af25a298adbd8dc796798052b4d9",
+    "quantization_aware_cpa/results/v6_m3_fia_4bit_batch4/fp32/per_image_metrics.csv": "ad92e4e7921f0c2abe1962dae3587f4077754a73a2c14ce46d82ab2fe898c682",
+    "quantization_aware_cpa/results/v6_m3_fia_4bit_batch4/naive/per_image_metrics.csv": "c496b1a18f370ffbed48733d05f4460c4f4cb96ce3540d8a749cee556f362286",
+    "quantization_aware_cpa/results/v7_m3_fallback_5batch/per_image_metrics_aggregated.csv": "7d33efb9def3f2f955c19fe3d89a97e6f4e422e2c2637ce0153d292bf23a12bd",
+    "quantization_aware_cpa/results/v6_m3_spearman_5batch/per_image_metrics_aggregated.csv": "1088512cc2de23efc174ee56b068008cac110b1b39aa6c529e53d6bb2e9ac56b",
+    "quantization_aware_cpa/results/v7_m3_fp32_truth_missing/fp32/per_image_metrics.csv": "b851fec8cca84c82749db25f50cdce323243bcc069d88ed0f587dca716057e2f",
+    "quantization_aware_cpa/results/v6_m3_spearman_5batch/spearman_by_batch.csv": "0df80d40df37ecf651f92f1ecd97b2db7f453dbed2dafbccc440c5dec1356215",
+    "quantization_aware_cpa/results/v7_m3_fallback_5batch/spearman_by_batch.csv": "0e7f108f3fdfc58548f7a59b7c7e91dbfc8a53e882ce2fa6f4549a001f56a54d",
+    "quantization_aware_cpa/results/m5_uia_beff_validation/summary.csv": "27f53cd3c2cf3a8010e07cb1b7ef0731b9f4be2d3b2e746e0c8cbf3c6be70035",
+    "quantization_aware_cpa/results/m5_uia_beff_validation/summary.json": "9db617a739ca47a568b667c4c67e9a05b8f3d5ac595d63622042eecd8025b884",
+    "quantization_aware_cpa/results/m5_uia_spectrum/summary.csv": "68289433d3b9231d6b0e3569d13c407a7eff10968eea7296d5e772f2cafd0e93",
+    "quantization_aware_cpa/results/m6_round_dependence/summary.csv": "8db451fe22c0a90bdd8a0e4b7a432e13f9a4e728679485d8a730287c36fee3d5",
+    "quantization_aware_cpa/results/m6_round_dependence/summary.json": "84ce3e23d4fb4722f7662b3a4d7273f7561dbd310e8c2a275df64828eac96b20",
+    "quantization_aware_cpa/results/m5_uia_spectrum/source_norms.csv": "1ea98c300881a1442d2cea835bddbf053831e6428730aea5a193004ba38366ea",
+    "quantization_aware_cpa/results/m6_round_dependence/source_norms.csv": "8f33bddc61dab6dcf29376e7f9bc8d6f8441a8da679e3e69cade2ff7c3d450bc",
+    "quantization_aware_cpa/results/m6_round_dependence/aggregate_summary.csv": "3e39806be91d1adbf1f6250b42f161e49ededa4e06b2bc40ae1107ca3c00decc",
+    "quantization_aware_cpa/qacpa/report_m7_consistency_audit.py": "4e2463c9c0e8d950b7eda566b612882af24a481d5a9eb990422bbceee9580ac6"
+  }
+}

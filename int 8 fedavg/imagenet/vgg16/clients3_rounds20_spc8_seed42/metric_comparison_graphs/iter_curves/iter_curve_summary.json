@@ -1,0 +1,38 @@
+{
+  "summary": [
+    {
+      "metric": "loss",
+      "naive_start": 1.0853652954101562,
+      "naive_final": 0.080149345099926,
+      "naive_delta": -1.0052159503102303,
+      "randomized_start_mean": 1.2123764355977376,
+      "randomized_final_mean": 0.14327222729722658,
+      "randomized_delta_mean": -1.069104208300511,
+      "randomized_final_min": 0.04063182324171066,
+      "randomized_final_max": 0.1712566316127777
+    },
+    {
+      "metric": "loss_fi",
+      "naive_start": 0.8646089434623718,
+      "naive_final": 0.07005207985639572,
+      "naive_delta": -0.7945568636059761,
+      "randomized_start_mean": 0.991397907336553,
+      "randomized_final_mean": 0.1393283804257711,
+      "randomized_delta_mean": -0.8520695269107819,
+      "randomized_final_min": 0.03764215111732483,
+      "randomized_final_max": 0.16719390451908112
+    },
+    {
+      "metric": "loss_tv",
+      "naive_start": 2.2075629234313965,
+      "naive_final": 0.10097263753414154,
+      "naive_delta": -2.106590285897255,
+      "randomized_start_mean": 2.209785302480062,
+      "randomized_final_mean": 0.03943844325840473,
+      "randomized_delta_mean": -2.1703468592216573,
+      "randomized_final_min": 0.029896706342697144,
+      "randomized_final_max": 0.04733087122440338
+    }
+  ],
+  "note": "Randomized R8 is averaged across FIA chunks at each logged iteration."
+}

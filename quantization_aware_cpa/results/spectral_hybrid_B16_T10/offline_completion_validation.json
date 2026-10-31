@@ -1,0 +1,12 @@
+{
+  "identity_metrics_equal_previous_hybrid": {
+    "mean_psnr_db": true,
+    "mean_ssim": true,
+    "mean_lpips": true,
+    "label_accuracy": true
+  },
+  "all_passed": true,
+  "all16_included": true,
+  "evaluation_hashes_unchanged": true,
+  "new_plan_sha256": "836a764b13736269022982ee014b0e648ca89334be0d4a5be67ecfec34281337"
+}

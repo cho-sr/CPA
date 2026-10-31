@@ -1,0 +1,14 @@
+{
+    "task_id":  "CPA_SIGNED_ICA4000_FIA_20260917",
+    "wrapper_pid":  18788,
+    "wrapper_created_ms":  1789579375185,
+    "wrapper_alive":  true,
+    "registration_written":  true,
+    "wrapper_start_written":  true,
+    "callback_pid":  0,
+    "callback_reservation_written":  true,
+    "callback_waiting":  true,
+    "peer_restored":  true,
+    "one_startup_check_completed":  true,
+    "model_calls_while_waiting":  0
+}

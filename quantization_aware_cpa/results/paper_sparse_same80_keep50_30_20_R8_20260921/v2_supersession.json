@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "task_id": "CPA_PAPER_SPARSE_SAME80_K503020_R20_20260921",
+  "superseded_plan_version": 2,
+  "superseding_amendment_id": "CPA_PAPER_SPARSE_SAME16_R8_AMENDMENT_20260921",
+  "superseding_plan_version": 3,
+  "status": "SUPERSEDED_PARTIAL",
+  "recorded_at_utc": "2026-09-20T23:26:00.585501+00:00",
+  "wrapper": {
+    "pid": 11696,
+    "created_ms": 1789946314801,
+    "exit_code": 15,
+    "command": "C:\\miniconda\\envs\\DLG\\python.exe -u scripts/run_paper_sparse_same80_r8.py"
+  },
+  "last_child": {
+    "pid": 9156,
+    "created_ms": 1789946521149,
+    "exit_code": 15,
+    "command": "C:\\miniconda\\envs\\DLG\\python.exe -u -m qacpa.run_paper_sparse_same80_r8 --config configs/cpa_fia_random_topk50_same80_R8_S5k_K3_F25k.json --phase run"
+  },
+  "callback": {
+    "status_path": "C:\\Users\\조상제\\Desktop\\CPA\\.ai\\relay-runs\\completions\\CPA_PAPER_SPARSE_SAME80_K503020_R20_20260921\\paper_sparse_sweep_r8\\status.json",
+    "state": "NOTIFICATION_QUEUED",
+    "process_exit_code": 15,
+    "receipt_id": "797580f5-25bc-45d3-ab80-f67e6c813c6c",
+    "receipt_preserved": true
+  },
+  "completed_artifacts_preserved": true,
+  "v2_selection_reused": false,
+  "batches_attacked_before_stop": [],
+  "new_scope": "same16 original batch00 only; no batches01..04"
+}

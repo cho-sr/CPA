@@ -1,0 +1,92 @@
+{
+  "input_sha256": "80a547895c6ff783ab3d3ebbdbbd213042dfff404fa919233c071da2ce7f5c10",
+  "sample_audit_sha256": "b16368a6d2df6efd573af2249151b5adb961b7c7e625cbd0645b93e46df212ee",
+  "sources_file_sha256": "bdc5b35f98e8c8b1dbabe76a47f5c992403852596cb7b660820a98c24edd7ffe",
+  "sources_tensor_sha256": "8dea3f0bcbeb96774ddbc5db796a69fe8966c76ea9ebada3d61248b21bca81d6",
+  "settings": {
+    "n_components": 16,
+    "seed": 0,
+    "device": "cuda",
+    "n_iter": 25000,
+    "lr": 0.001,
+    "opt": "adam",
+    "sch": "none",
+    "decor": 5.3,
+    "T": 7.7,
+    "ne": 1.0,
+    "nv": 0.13,
+    "l1": 5.0,
+    "tv": 0.1,
+    "log_every": 5000,
+    "whitening": "upstream cov/(d-1), torch.linalg.eig, top abs eigenvalues",
+    "backend": "official_cpa/src/gradient_inversion.py:CocktailPartyAttack",
+    "debias": false,
+    "mp_truncation": false,
+    "mixing_matrix_computed": false
+  },
+  "optimizer_log": [
+    {
+      "iter": 0,
+      "loss": 739.2103881835938,
+      "loss_ne": 0.0,
+      "loss_decor": 137.959228515625,
+      "loss_tv": 0.0,
+      "loss_nv": 46.380836486816406,
+      "loss_l1": 0.39939144253730774,
+      "time_sec": 0.2412128000287339
+    },
+    {
+      "iter": 4999,
+      "loss": 735.6337890625,
+      "loss_ne": 0.0,
+      "loss_decor": 138.0222930908203,
+      "loss_tv": 0.0,
+      "loss_nv": 19.00984001159668,
+      "loss_l1": 0.3288635313510895,
+      "time_sec": 8.546097700018436
+    },
+    {
+      "iter": 9999,
+      "loss": 735.6331787109375,
+      "loss_ne": 0.0,
+      "loss_decor": 138.02206420898438,
+      "loss_tv": 0.0,
+      "loss_nv": 19.013187408447266,
+      "loss_l1": 0.3288959562778473,
+      "time_sec": 16.56715170003008
+    },
+    {
+      "iter": 14999,
+      "loss": 735.6316528320312,
+      "loss_ne": 0.0,
+      "loss_decor": 138.02142333984375,
+      "loss_tv": 0.0,
+      "loss_nv": 19.02904510498047,
+      "loss_l1": 0.32887524366378784,
+      "time_sec": 24.690114700002596
+    },
+    {
+      "iter": 19999,
+      "loss": 735.6304931640625,
+      "loss_ne": 0.0,
+      "loss_decor": 138.02101135253906,
+      "loss_tv": 0.0,
+      "loss_nv": 19.03521728515625,
+      "loss_l1": 0.3289003074169159,
+      "time_sec": 32.57331909995992
+    },
+    {
+      "iter": 24999,
+      "loss": 735.6309814453125,
+      "loss_ne": 0.0,
+      "loss_decor": 138.0211181640625,
+      "loss_tv": 0.0,
+      "loss_nv": 19.034183502197266,
+      "loss_l1": 0.3289145529270172,
+      "time_sec": 40.92096809996292
+    }
+  ],
+  "wall_seconds": 43.301438600057736,
+  "peak_cuda_allocated_bytes": 1258441216,
+  "private_data_used": false
+}

@@ -1,0 +1,13 @@
+{
+  "run_tag": "m8_fedavg_naive_cpa_dither4_B16",
+  "pid": 14900,
+  "updated_at_utc": "2026-09-09T16:40:17.254477+00:00",
+  "state": "complete",
+  "n_images": 80,
+  "metrics": {
+    "lpips_mean": 0.5561207078397274,
+    "psnr_mean": 21.936943936347962,
+    "ssim_mean": 0.2980232951231301,
+    "embedding_cos09": 53
+  }
+}

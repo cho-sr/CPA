@@ -1,0 +1,17 @@
+{
+  "data_root": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet",
+  "split": "val",
+  "count": 50000,
+  "definition": "Per-pixel arithmetic mean of all transformed RGB images in the full ImageNet validation split",
+  "transform": "qacpa.victim.load_imagenet_dataset: VGG16_Weights.IMAGENET1K_V1.transforms(); qacpa.fia.denormalize_imagenet",
+  "accumulator_dtype": "float64",
+  "saved_dtype": "float32",
+  "shape": [
+    3,
+    224,
+    224
+  ],
+  "sample_path_manifest_sha256": "f126a551e21a5a0f961a833494f986ed299441abb010f5d9962add2d11e14e35",
+  "wall_time_sec": 113.15170407295227,
+  "tensor_file_sha256": "00926b0932baaa9c8a999566e62ae8b7a810abf0c4697f2a719bd92ef67964c3"
+}

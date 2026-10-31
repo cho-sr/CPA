@@ -4,6 +4,8 @@ from copy import deepcopy
 from pathlib import Path
 from typing import Any
 
+from .quantizer import SCALE_GRANULARITIES
+
 
 def _import_yaml():
     try:
@@ -62,6 +64,14 @@ def validate_config(config: dict[str, Any]) -> None:
     bits = int(quant.get("bits", 0))
     if bits < 2:
         raise ValueError("quantization.bits must be >= 2")
+    scale_granularity = str(quant.get("scale_granularity", "per_row"))
+    if scale_granularity not in SCALE_GRANULARITIES:
+        raise ValueError(
+            "quantization.scale_granularity must be one of "
+            f"{sorted(SCALE_GRANULARITIES)}"
+        )
+    if int(quant.get("bucket_size", 256)) <= 0:
+        raise ValueError("quantization.bucket_size must be positive")
 
 
 def apply_overrides(config: dict[str, Any], overrides: list[str]) -> dict[str, Any]:

@@ -1,0 +1,81 @@
+{
+  "batches": [
+    {
+      "batch": 0,
+      "embedding": {
+        "max_cs": 0.9999658524501038,
+        "mean_cs": 0.9996806636878917,
+        "metric": "Oracle permutation-aligned cosine similarity, evaluation only",
+        "min_cs": 0.9993954749256796,
+        "per_sample_cs": [
+          0.9993954749256796,
+          0.9999658524501038
+        ],
+        "recovered_cols": [
+          1,
+          0
+        ],
+        "signs": [
+          1.0,
+          1.0
+        ],
+        "truth_rows": [
+          0,
+          1
+        ]
+      },
+      "metric_note": "Oracle metrics are evaluation only and are not fed back to CPA/FIA."
+    }
+  ],
+  "image_metric_dependencies": {
+    "reason": "member CPA-only run",
+    "skipped": true
+  },
+  "metric_summary": [
+    {
+      "max": null,
+      "mean": null,
+      "metric": "lpips",
+      "min": null,
+      "n": 0,
+      "std": null,
+      "threshold": null
+    },
+    {
+      "max": null,
+      "mean": null,
+      "metric": "psnr",
+      "min": null,
+      "n": 0,
+      "std": null,
+      "threshold": null
+    },
+    {
+      "max": null,
+      "mean": null,
+      "metric": "ssim",
+      "min": null,
+      "n": 0,
+      "std": null,
+      "threshold": null
+    },
+    {
+      "max": 0.9999658524501038,
+      "mean": 0.9996806636878917,
+      "metric": "embedding_cosine_similarity",
+      "min": 0.9993954749256796,
+      "n": 2,
+      "std": 0.00028518876221211853,
+      "threshold": null
+    },
+    {
+      "max": null,
+      "mean": null,
+      "metric": "reconstruction_success_rate",
+      "min": null,
+      "n": 0,
+      "std": null,
+      "threshold": 0.5
+    }
+  ]
+}

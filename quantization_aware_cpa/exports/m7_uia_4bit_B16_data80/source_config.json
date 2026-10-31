@@ -1,0 +1,123 @@
+{
+  "seed": 0,
+  "device": "cuda",
+  "model": {
+    "name": "vgg16",
+    "weights": "VGG16_Weights.IMAGENET1K_V1",
+    "attacked_checkpoint_round": 0,
+    "conv_frozen": true,
+    "updated_layers": "classifier only",
+    "classifier_dropout": "disabled (eval)",
+    "attack_layer": "classifier.0.weight"
+  },
+  "data": {
+    "root": "C:/Users/조상제/Desktop/DLG/cocktail_party_attack/datasets/imagenet",
+    "split": "val",
+    "batch_size": 16,
+    "n_batches": 5,
+    "batch_indices": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "n_images": 80,
+    "require_distinct_labels": true,
+    "microbatch_size": 16,
+    "num_workers": 0,
+    "selection": "existing qacpa.victim.select_label_indices seed0 batches0-4; all80 unique originals; no LPIPS selection"
+  },
+  "uia": {
+    "steps": 10,
+    "local_epochs": 10,
+    "lr": 0.001,
+    "optimizer": "sgd",
+    "momentum": 0.0,
+    "weight_decay": 0.0,
+    "nominal_minibatch_size": 32,
+    "effective_minibatch_size": 16,
+    "independent_client_updates": 5,
+    "global_training_rounds_before_attack": 0,
+    "model_reset_each_update": true,
+    "client_transmissions_observed_per_reconstruction": 1,
+    "observation": "Y_delta_over_lr",
+    "observation_definition": "(W_initial-W_after_10_local_steps)/lr",
+    "uses_Y_factor_as_attack_input": false,
+    "feature_computation": "cached frozen convolutional features, no repeated image forwards during local SGD",
+    "shuffle": "fixed full-batch order; for n16 and nominal minibatch32 author shuffle changes reduction order only",
+    "update_factor_rel_l2_gate": 0.001
+  },
+  "stage1": {
+    "n_components": 16,
+    "debias": false,
+    "mp_truncation": false,
+    "c_mp": 3.0,
+    "ica_method": "cpa",
+    "cpa_ica_max_iter": 25000,
+    "cpa_ica_lr": 0.001,
+    "cpa_ica_optimizer": "adam",
+    "cpa_ica_decor": 5.3,
+    "cpa_ica_T": 7.7,
+    "cpa_ica_ne": 1.0,
+    "cpa_ica_nv": 0.13,
+    "cpa_ica_l1": 5.0,
+    "cpa_ica_tv": 0.1,
+    "cpa_ica_log_every": 5000,
+    "whitening_tolerance": 0.001,
+    "seed_rule": "seed_all(victim_seed+batch_index); CPA initializes identity with no random restarts",
+    "failure_policy": "stop on failed whitening or fewer than16 sources; no reduced-rank or oracle-target fallback",
+    "source_adapter": "abs(S_hat); permutation-only Hungarian on absolute source cosine for correspondence; no true source substitution"
+  },
+  "fia": {
+    "n_iter": 25000,
+    "log_every": 5000,
+    "lr": 0.1,
+    "tv": 0.1,
+    "fi": 1.0,
+    "optimizer": "adam",
+    "scheduler": "cosine",
+    "seed": 42,
+    "chunk_size": 16,
+    "implementation": "qacpa.fia.run_direct_fia unchanged"
+  },
+  "schema_version": 1,
+  "protocol_id": "m7_uia_4bit_B16_v1",
+  "run_tag": "m7_uia_4bit_B16",
+  "source_fp32_config": "configs\\m6_uia_fp32_B16_fia.json",
+  "source_fp32_output": "results/m6_uia_fp32_B16_fia",
+  "gia_reference_csv": "results/v7_m3_fallback_5batch/per_image_metrics_aggregated.csv",
+  "followup_protocol": "../codex/docs/M7_FOLLOWUP_ANALYSIS_PROTOCOL.json",
+  "output_dir": "results/m7_uia_4bit_B16",
+  "new_training": false,
+  "oracle_fills": false,
+  "stage2": false,
+  "refine_A": false,
+  "quantization": {
+    "enabled": true,
+    "bits": 4,
+    "rounding": "stochastic",
+    "scale_granularity": "per_row",
+    "seed_rule": "0+1000003*batch_index",
+    "seeds": [
+      0,
+      1000003,
+      2000006,
+      3000009,
+      4000012
+    ],
+    "implementation": "qacpa.quantizer.quantize: subtractive-dither observation Y+U(-delta/2,delta/2), with inward cell projection; not conventional integer stochastic rounding"
+  },
+  "prediction": {
+    "implementation": "qacpa.uia.mp_prediction_from_quantized",
+    "c_mp": 3.0,
+    "debias_diagnostic_covariance": true,
+    "influences_attack": false
+  },
+  "grid": {
+    "seed": 42,
+    "n": 12,
+    "selection": "numpy.default_rng(42).choice(80,12,replace=False)",
+    "label": "not cherry-picked"
+  }
+}

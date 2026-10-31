@@ -1,0 +1,1721 @@
+control,method,label,seed,global_index,reconstruction_global_index,target_global_index,fixed_point,lpips
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),0,0,0,11,0,0.9000824689865112
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),0,1,1,27,0,0.7544395923614502
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),0,2,2,4,0,0.8774499893188477
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),0,3,3,24,0,0.815601110458374
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),0,4,4,23,0,0.7896784543991089
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),0,5,5,2,0,0.8165100812911987
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),0,6,6,3,0,0.8646207451820374
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),0,7,7,34,0,0.8325220346450806
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),0,8,8,18,0,0.8370800018310547
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),0,9,9,1,0,0.766291081905365
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),0,10,10,10,1,0.4293060302734375
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),0,11,11,22,0,0.8460803627967834
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),0,12,12,20,0,0.7716063261032104
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),0,13,13,26,0,0.7703301310539246
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),0,14,14,28,0,0.7787836194038391
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),0,15,15,30,0,0.733583390712738
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),0,16,16,37,0,0.8572701215744019
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),0,17,17,38,0,0.8969991207122803
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),0,18,18,17,0,0.8147261738777161
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),0,19,19,0,0,0.832139253616333
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),0,20,20,21,0,0.8885201215744019
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),0,21,21,35,0,0.727202296257019
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),0,22,22,9,0,0.8144088983535767
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),0,23,23,6,0,0.8928697109222412
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),0,24,24,32,0,0.7634113430976868
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),0,25,25,25,1,0.44471225142478943
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),0,26,26,19,0,0.7976754903793335
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),0,27,27,36,0,0.8195563554763794
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),0,28,28,8,0,1.0750138759613037
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),0,29,29,16,0,0.8712570667266846
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),0,30,30,13,0,0.7836220264434814
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),0,31,31,12,0,0.8157485723495483
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),0,32,32,7,0,0.783601701259613
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),0,33,33,39,0,0.854651927947998
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),0,34,34,5,0,0.8199336528778076
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),0,35,35,14,0,0.7795791029930115
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),0,36,36,29,0,0.8099405765533447
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),0,37,37,33,0,0.79236900806427
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),0,38,38,15,0,0.8027645945549011
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),0,39,39,31,0,0.8249210119247437
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),1,0,0,9,0,0.7983373403549194
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),1,1,1,23,0,0.7591791749000549
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),1,2,2,17,0,0.7629074454307556
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),1,3,3,28,0,0.7865033745765686
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),1,4,4,0,0,0.7950098514556885
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),1,5,5,7,0,0.8052852749824524
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),1,6,6,6,1,0.4684271216392517
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),1,7,7,22,0,0.8064509630203247
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),1,8,8,15,0,0.789598286151886
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),1,9,9,16,0,0.9003617763519287
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),1,10,10,3,0,0.8911216259002686
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),1,11,11,29,0,0.8500716090202332
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),1,12,12,20,0,0.7716063261032104
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),1,13,13,19,0,0.799813985824585
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),1,14,14,27,0,0.7209881544113159
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),1,15,15,39,0,0.8026624321937561
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),1,16,16,1,0,0.7854821085929871
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),1,17,17,11,0,0.8233281373977661
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),1,18,18,36,0,0.8139539957046509
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),1,19,19,26,0,0.7683274745941162
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),1,20,20,25,0,0.8441190719604492
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),1,21,21,34,0,0.8328803777694702
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),1,22,22,24,0,0.8102757930755615
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),1,23,23,31,0,0.7479698657989502
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),1,24,24,35,0,0.7510017156600952
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),1,25,25,4,0,0.9570926427841187
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),1,26,26,14,0,0.8386737108230591
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),1,27,27,21,0,0.8509414792060852
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),1,28,28,37,0,0.8981778621673584
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),1,29,29,30,0,0.789436936378479
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),1,30,30,2,0,0.7938576340675354
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),1,31,31,33,0,0.8353393077850342
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),1,32,32,12,0,0.7891586422920227
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),1,33,33,10,0,0.7990201711654663
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),1,34,34,5,0,0.8199336528778076
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),1,35,35,8,0,0.9795671701431274
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),1,36,36,32,0,0.7891743183135986
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),1,37,37,18,0,0.8312256336212158
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),1,38,38,13,0,0.7711857557296753
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),1,39,39,38,0,0.9329244494438171
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),2,0,0,22,0,0.8523527979850769
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),2,1,1,32,0,0.8486320972442627
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),2,2,2,23,0,0.7455534934997559
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),2,3,3,7,0,0.766274094581604
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),2,4,4,34,0,0.7932077646255493
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),2,5,5,12,0,0.8097097277641296
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),2,6,6,33,0,0.787015438079834
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),2,7,7,6,0,0.8156942129135132
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),2,8,8,3,0,0.9210885167121887
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),2,9,9,37,0,0.8975022435188293
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),2,10,10,24,0,0.815814733505249
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),2,11,11,28,0,0.8001312017440796
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),2,12,12,27,0,0.7560669183731079
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),2,13,13,10,0,0.8020321726799011
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),2,14,14,26,0,0.777468740940094
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),2,15,15,14,0,0.7878962159156799
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),2,16,16,16,1,0.4604424834251404
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),2,17,17,15,0,0.7544882297515869
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),2,18,18,38,0,0.873379111289978
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),2,19,19,25,0,0.7724511027336121
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),2,20,20,20,1,0.47742959856987
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),2,21,21,39,0,0.8429425954818726
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),2,22,22,2,0,0.8133838772773743
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),2,23,23,18,0,0.7675647735595703
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),2,24,24,11,0,0.8708806037902832
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),2,25,25,13,0,0.8735047578811646
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),2,26,26,0,0,0.8524068593978882
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),2,27,27,4,0,0.8422343730926514
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),2,28,28,17,0,0.8112326264381409
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),2,29,29,19,0,0.8083610534667969
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),2,30,30,9,0,0.7832084894180298
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),2,31,31,5,0,0.8558647036552429
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),2,32,32,21,0,0.8669514060020447
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),2,33,33,29,0,0.8096609115600586
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),2,34,34,31,0,0.8003548383712769
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),2,35,35,30,0,0.7663224935531616
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),2,36,36,35,0,0.7684905529022217
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),2,37,37,36,0,0.8326404094696045
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),2,38,38,8,0,0.9605340361595154
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),2,39,39,1,0,0.8731604814529419
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),3,0,0,23,0,0.7371201515197754
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),3,1,1,32,0,0.8486320972442627
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),3,2,2,30,0,0.803176760673523
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),3,3,3,17,0,0.7449779510498047
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),3,4,4,20,0,0.7725155353546143
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),3,5,5,11,0,0.859524130821228
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),3,6,6,33,0,0.787015438079834
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),3,7,7,2,0,0.8241117000579834
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),3,8,8,12,0,0.795102059841156
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),3,9,9,3,0,0.8267423510551453
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),3,10,10,21,0,0.8847951292991638
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),3,11,11,29,0,0.8500716090202332
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),3,12,12,38,0,0.8538357019424438
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),3,13,13,4,0,0.8162579536437988
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),3,14,14,25,0,0.8291860818862915
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),3,15,15,22,0,0.7869746088981628
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),3,16,16,0,0,0.8286980390548706
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),3,17,17,28,0,0.7871835231781006
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),3,18,18,39,0,0.9289765357971191
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),3,19,19,35,0,0.8102560043334961
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),3,20,20,10,0,0.8382729291915894
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),3,21,21,31,0,0.8254772424697876
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),3,22,22,15,0,0.7518585920333862
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),3,23,23,24,0,0.8368082046508789
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),3,24,24,34,0,0.880463719367981
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),3,25,25,27,0,0.7527406215667725
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),3,26,26,13,0,0.8278010487556458
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),3,27,27,8,0,0.9770646691322327
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),3,28,28,9,0,0.8007791042327881
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),3,29,29,18,0,0.7828958630561829
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),3,30,30,6,0,0.7768316268920898
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),3,31,31,1,0,0.7535874843597412
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),3,32,32,26,0,0.804187536239624
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),3,33,33,37,0,0.8274255394935608
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),3,34,34,16,0,0.8397958278656006
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),3,35,35,14,0,0.7795791029930115
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),3,36,36,36,1,0.4065187871456146
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),3,37,37,7,0,0.8203670978546143
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),3,38,38,5,0,0.8285083770751953
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),3,39,39,19,0,0.8377862572669983
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),4,0,0,31,0,0.7684229016304016
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),4,1,1,16,0,0.8934801816940308
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),4,2,2,23,0,0.7455534934997559
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),4,3,3,39,0,0.8196338415145874
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),4,4,4,35,0,0.6902960538864136
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),4,5,5,13,0,0.8140013217926025
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),4,6,6,19,0,0.7979253530502319
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),4,7,7,1,0,0.8293864727020264
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),4,8,8,34,0,0.8017737865447998
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),4,9,9,11,0,0.9199963808059692
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),4,10,10,8,0,0.9683513641357422
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),4,11,11,37,0,0.8310052752494812
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),4,12,12,28,0,0.7828122973442078
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),4,13,13,38,0,0.8291692733764648
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),4,14,14,7,0,0.7985914945602417
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),4,15,15,24,0,0.7983989715576172
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),4,16,16,18,0,0.8264139890670776
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),4,17,17,10,0,0.7986459732055664
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),4,18,18,32,0,0.8281590938568115
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),4,19,19,0,0,0.832139253616333
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),4,20,20,27,0,0.7435791492462158
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),4,21,21,26,0,0.8052195310592651
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),4,22,22,25,0,0.8208061456680298
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),4,23,23,29,0,0.8469316959381104
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),4,24,24,15,0,0.7642577886581421
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),4,25,25,9,0,0.679725170135498
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),4,26,26,22,0,0.8651071190834045
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),4,27,27,21,0,0.8509414792060852
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),4,28,28,5,0,0.8748782873153687
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),4,29,29,20,0,0.784317135810852
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),4,30,30,33,0,0.748048722743988
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),4,31,31,17,0,0.7777777314186096
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),4,32,32,30,0,0.7403008937835693
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),4,33,33,36,0,0.843710720539093
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),4,34,34,2,0,0.8084216713905334
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),4,35,35,6,0,0.832634449005127
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),4,36,36,4,0,0.9069522023200989
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),4,37,37,3,0,0.865932047367096
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),4,38,38,12,0,0.7496442794799805
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),4,39,39,14,0,0.8102250695228577
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),5,0,0,30,0,0.8200419545173645
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),5,1,1,18,0,0.7778586149215698
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),5,2,2,6,0,0.8580574989318848
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),5,3,3,24,0,0.815601110458374
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),5,4,4,25,0,0.8286296129226685
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),5,5,5,38,0,0.921822190284729
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),5,6,6,9,0,0.8040418028831482
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),5,7,7,23,0,0.7535727024078369
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),5,8,8,2,0,0.7991703152656555
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),5,9,9,17,0,0.8235236406326294
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),5,10,10,22,0,0.7827833890914917
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),5,11,11,35,0,0.7882589101791382
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),5,12,12,34,0,0.8077442646026611
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),5,13,13,27,0,0.7215302586555481
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),5,14,14,20,0,0.7752744555473328
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),5,15,15,12,0,0.8024037480354309
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),5,16,16,7,0,0.8158495426177979
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),5,17,17,36,0,0.8107963800430298
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),5,18,18,39,0,0.9289765357971191
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),5,19,19,11,0,0.8829802870750427
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),5,20,20,29,0,0.8086236715316772
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),5,21,21,19,0,0.8267717361450195
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),5,22,22,26,0,0.7958992719650269
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),5,23,23,28,0,0.8254711627960205
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),5,24,24,31,0,0.8269823789596558
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),5,25,25,3,0,0.8323876857757568
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),5,26,26,32,0,0.8427514433860779
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),5,27,27,8,0,0.9770646691322327
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),5,28,28,33,0,0.8459094762802124
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),5,29,29,13,0,0.8437332510948181
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),5,30,30,21,0,0.8516302108764648
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),5,31,31,1,0,0.7535874843597412
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),5,32,32,16,0,0.8362745046615601
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),5,33,33,14,0,0.8004949688911438
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),5,34,34,4,0,0.8295612931251526
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),5,35,35,5,0,0.8381515145301819
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),5,36,36,15,0,0.7931212186813354
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),5,37,37,10,0,0.8471516370773315
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),5,38,38,0,0,0.8034546971321106
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),5,39,39,37,0,0.8211537003517151
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),6,0,0,23,0,0.7371201515197754
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),6,1,1,33,0,0.853270947933197
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),6,2,2,26,0,0.7901050448417664
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),6,3,3,2,0,0.8050834536552429
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),6,4,4,16,0,0.8617841005325317
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),6,5,5,35,0,0.7217975854873657
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),6,6,6,27,0,0.7843818664550781
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),6,7,7,18,0,0.8240501284599304
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),6,8,8,34,0,0.8017737865447998
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),6,9,9,6,0,0.8861767649650574
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),6,10,10,1,0,0.8635002970695496
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),6,11,11,10,0,0.8568789958953857
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),6,12,12,11,0,0.8558976650238037
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),6,13,13,28,0,0.7851741313934326
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),6,14,14,15,0,0.7979278564453125
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),6,15,15,14,0,0.7878962159156799
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),6,16,16,39,0,0.8546039462089539
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),6,17,17,30,0,0.7579476237297058
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),6,18,18,3,0,0.8348230719566345
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),6,19,19,22,0,0.8474843502044678
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),6,20,20,0,0,0.8025902509689331
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),6,21,21,38,0,0.8774096965789795
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),6,22,22,36,0,0.8241939544677734
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),6,23,23,4,0,0.9532029032707214
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),6,24,24,5,0,0.7545485496520996
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),6,25,25,8,0,1.107016921043396
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),6,26,26,13,0,0.8278010487556458
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),6,27,27,25,0,0.7971991896629333
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),6,28,28,37,0,0.8981778621673584
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),6,29,29,29,1,0.47571203112602234
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),6,30,30,20,0,0.7347118854522705
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),6,31,31,21,0,0.9009225368499756
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),6,32,32,24,0,0.8340378403663635
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),6,33,33,9,0,0.8025856018066406
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),6,34,34,19,0,0.8139320611953735
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),6,35,35,32,0,0.7597208619117737
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),6,36,36,12,0,0.7979271411895752
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),6,37,37,7,0,0.8203670978546143
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),6,38,38,31,0,0.7654640674591064
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),6,39,39,17,0,0.8283763527870178
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),7,0,0,4,0,0.9288904070854187
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),7,1,1,0,0,0.9102398157119751
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),7,2,2,28,0,0.8170368671417236
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),7,3,3,20,0,0.7582588195800781
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),7,4,4,30,0,0.7540549635887146
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),7,5,5,10,0,0.7984093427658081
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),7,6,6,12,0,0.8044582605361938
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),7,7,7,32,0,0.7402921915054321
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),7,8,8,19,0,0.8337136507034302
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),7,9,9,9,1,0.3981916010379791
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),7,10,10,14,0,0.7603346109390259
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),7,11,11,22,0,0.8460803627967834
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),7,12,12,27,0,0.7560669183731079
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),7,13,13,38,0,0.8291692733764648
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),7,14,14,3,0,0.8306905031204224
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),7,15,15,24,0,0.7983989715576172
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),7,16,16,39,0,0.8546039462089539
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),7,17,17,26,0,0.7896485924720764
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),7,18,18,13,0,0.8058781623840332
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),7,19,19,17,0,0.7907065749168396
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),7,20,20,18,0,0.8314603567123413
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),7,21,21,36,0,0.8613039255142212
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),7,22,22,35,0,0.7099685668945312
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),7,23,23,37,0,0.8944097757339478
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),7,24,24,8,0,1.0131560564041138
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),7,25,25,7,0,0.8372765183448792
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),7,26,26,1,0,0.7943273186683655
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),7,27,27,33,0,0.7726086974143982
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),7,28,28,15,0,0.8616796731948853
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),7,29,29,29,1,0.47571203112602234
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),7,30,30,6,0,0.7768316268920898
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),7,31,31,16,0,0.8958609104156494
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),7,32,32,23,0,0.7546436786651611
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),7,33,33,25,0,0.8295417428016663
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),7,34,34,5,0,0.8199336528778076
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),7,35,35,2,0,0.7933184504508972
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),7,36,36,31,0,0.8207869529724121
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),7,37,37,34,0,0.858076274394989
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),7,38,38,21,0,0.857585608959198
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),7,39,39,11,0,0.8400132060050964
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),8,0,0,25,0,0.8369123935699463
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),8,1,1,15,0,0.8869326710700989
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),8,2,2,27,0,0.7309443354606628
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),8,3,3,10,0,0.8081081509590149
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),8,4,4,13,0,0.736670196056366
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),8,5,5,39,0,0.821941614151001
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),8,6,6,24,0,0.8493674993515015
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),8,7,7,31,0,0.7989205121994019
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),8,8,8,12,0,0.795102059841156
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),8,9,9,19,0,0.7803661227226257
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),8,10,10,30,0,0.7336792945861816
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),8,11,11,7,0,0.8303696513175964
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),8,12,12,21,0,0.8542776703834534
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),8,13,13,14,0,0.7587141394615173
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),8,14,14,16,0,0.8597725033760071
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),8,15,15,32,0,0.7176234126091003
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),8,16,16,8,0,1.0721317529678345
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),8,17,17,29,0,0.804155707359314
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),8,18,18,22,0,0.8434150218963623
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),8,19,19,5,0,0.8225482702255249
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),8,20,20,38,0,0.9301174283027649
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),8,21,21,11,0,0.8519892692565918
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),8,22,22,17,0,0.7591040134429932
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),8,23,23,0,0,0.8645879626274109
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),8,24,24,1,0,0.8304532766342163
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),8,25,25,36,0,0.7853281497955322
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),8,26,26,23,0,0.7435634136199951
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),8,27,27,3,0,0.8350117206573486
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),8,28,28,28,1,0.5068576335906982
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),8,29,29,9,0,0.7847104668617249
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),8,30,30,4,0,0.831743061542511
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),8,31,31,34,0,0.9007620215415955
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),8,32,32,35,0,0.7044949531555176
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),8,33,33,33,1,0.4738408327102661
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),8,34,34,18,0,0.8349865674972534
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),8,35,35,6,0,0.832634449005127
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),8,36,36,20,0,0.7878457307815552
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),8,37,37,37,1,0.5096959471702576
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),8,38,38,26,0,0.776526153087616
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),8,39,39,2,0,0.8628314733505249
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),9,0,0,22,0,0.8523527979850769
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),9,1,1,34,0,0.9061047434806824
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),9,2,2,21,0,0.8905670642852783
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),9,3,3,2,0,0.8050834536552429
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),9,4,4,31,0,0.8157883286476135
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),9,5,5,18,0,0.8428382873535156
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),9,6,6,29,0,0.7980641722679138
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),9,7,7,15,0,0.7753875851631165
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),9,8,8,20,0,0.7795929312705994
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),9,9,9,6,0,0.8861767649650574
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),9,10,10,13,0,0.8195332884788513
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),9,11,11,25,0,0.8711631894111633
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),9,12,12,7,0,0.7853637933731079
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),9,13,13,27,0,0.7215302586555481
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),9,14,14,17,0,0.7638353705406189
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),9,15,15,9,0,0.8018403649330139
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),9,16,16,19,0,0.7927970886230469
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),9,17,17,35,0,0.718271791934967
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),9,18,18,39,0,0.9289765357971191
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),9,19,19,14,0,0.8398279547691345
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),9,20,20,3,0,0.8442113995552063
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),9,21,21,37,0,0.8220458626747131
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),9,22,22,26,0,0.7958992719650269
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),9,23,23,16,0,0.8637193441390991
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),9,24,24,38,0,0.9399793148040771
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),9,25,25,36,0,0.7853281497955322
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),9,26,26,28,0,0.8281728029251099
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),9,27,27,12,0,0.7768979072570801
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),9,28,28,10,0,0.8799152374267578
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),9,29,29,23,0,0.7498418688774109
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),9,30,30,24,0,0.8113356828689575
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),9,31,31,8,0,1.0795334577560425
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),9,32,32,0,0,0.7938951849937439
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),9,33,33,5,0,0.8162679672241211
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),9,34,34,1,0,0.8576070666313171
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),9,35,35,11,0,0.8888406753540039
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),9,36,36,4,0,0.9069522023200989
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),9,37,37,32,0,0.7879958152770996
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),9,38,38,30,0,0.762432336807251
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),9,39,39,33,0,0.7895095348358154
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),10,0,0,18,0,0.7838304042816162
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),10,1,1,39,0,0.9210444688796997
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),10,2,2,27,0,0.7309443354606628
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),10,3,3,9,0,0.7986857295036316
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),10,4,4,23,0,0.7896784543991089
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),10,5,5,28,0,0.7859774231910706
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),10,6,6,36,0,0.8381319046020508
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),10,7,7,5,0,0.8229001760482788
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),10,8,8,15,0,0.789598286151886
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),10,9,9,29,0,0.8371624946594238
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),10,10,10,13,0,0.8195332884788513
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),10,11,11,38,0,0.9272860884666443
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),10,12,12,30,0,0.747287929058075
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),10,13,13,25,0,0.802135169506073
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),10,14,14,32,0,0.7443497180938721
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),10,15,15,4,0,0.8653517365455627
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),10,16,16,31,0,0.8103551864624023
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),10,17,17,2,0,0.8172533512115479
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),10,18,18,7,0,0.839847207069397
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),10,19,19,6,0,0.8529807925224304
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),10,20,20,19,0,0.8278383612632751
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),10,21,21,12,0,0.796589195728302
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),10,22,22,35,0,0.7099685668945312
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),10,23,23,17,0,0.7522396445274353
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),10,24,24,37,0,0.8378721475601196
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),10,25,25,1,0,0.7423349618911743
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),10,26,26,20,0,0.8257440328598022
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),10,27,27,11,0,0.8852930665016174
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),10,28,28,3,0,0.8595942258834839
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),10,29,29,10,0,0.8417547941207886
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),10,30,30,26,0,0.7775447368621826
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),10,31,31,33,0,0.8353393077850342
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),10,32,32,14,0,0.7800323367118835
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),10,33,33,16,0,0.8207308053970337
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),10,34,34,34,1,0.556482195854187
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),10,35,35,8,0,0.9795671701431274
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),10,36,36,21,0,0.8999634981155396
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),10,37,37,22,0,0.8337436318397522
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),10,38,38,0,0,0.8034546971321106
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),10,39,39,24,0,0.8233604431152344
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),11,0,0,1,0,0.8515704870223999
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),11,1,1,6,0,0.908656895160675
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),11,2,2,5,0,0.8305355310440063
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),11,3,3,26,0,0.7841106653213501
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),11,4,4,4,1,0.39806729555130005
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),11,5,5,34,0,0.8508316278457642
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),11,6,6,37,0,0.8123478293418884
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),11,7,7,27,0,0.7649428844451904
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),11,8,8,11,0,0.853507399559021
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),11,9,9,18,0,0.7571907639503479
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),11,10,10,0,0,0.7839512228965759
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),11,11,11,7,0,0.8303696513175964
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),11,12,12,39,0,0.8551303148269653
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),11,13,13,9,0,0.7814593315124512
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),11,14,14,29,0,0.8019075989723206
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),11,15,15,15,1,0.4324682950973511
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),11,16,16,2,0,0.8542414307594299
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),11,17,17,24,0,0.7887336015701294
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),11,18,18,8,0,1.006867527961731
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),11,19,19,33,0,0.8289849758148193
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),11,20,20,3,0,0.8442113995552063
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),11,21,21,36,0,0.8613039255142212
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),11,22,22,28,0,0.7818506956100464
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),11,23,23,38,0,0.9435954093933105
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),11,24,24,17,0,0.7840542197227478
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),11,25,25,12,0,0.7929905652999878
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),11,26,26,25,0,0.7931880950927734
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),11,27,27,32,0,0.7567751407623291
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),11,28,28,22,0,0.8855851888656616
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),11,29,29,23,0,0.7498418688774109
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),11,30,30,21,0,0.8516302108764648
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),11,31,31,35,0,0.8131909370422363
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),11,32,32,20,0,0.7447577714920044
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),11,33,33,31,0,0.808214545249939
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),11,34,34,13,0,0.8082304000854492
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),11,35,35,19,0,0.7978901863098145
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),11,36,36,30,0,0.7775180339813232
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),11,37,37,10,0,0.8471516370773315
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),11,38,38,16,0,0.8704954385757446
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),11,39,39,14,0,0.8102250695228577
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),12,0,0,9,0,0.7983373403549194
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),12,1,1,32,0,0.8486320972442627
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),12,2,2,11,0,0.9001613855361938
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),12,3,3,5,0,0.7988195419311523
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),12,4,4,21,0,0.842322826385498
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),12,5,5,22,0,0.7832491397857666
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),12,6,6,3,0,0.8646207451820374
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),12,7,7,39,0,0.8298613429069519
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),12,8,8,31,0,0.824816107749939
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),12,9,9,2,0,0.8490802645683289
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),12,10,10,4,0,0.8525834083557129
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),12,11,11,37,0,0.8310052752494812
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),12,12,12,14,0,0.7635136842727661
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),12,13,13,1,0,0.8275941014289856
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),12,14,14,38,0,0.8625423312187195
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),12,15,15,24,0,0.7983989715576172
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),12,16,16,26,0,0.809130072593689
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),12,17,17,13,0,0.7948344945907593
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),12,18,18,33,0,0.8475590944290161
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),12,19,19,12,0,0.8039475679397583
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),12,20,20,25,0,0.8441190719604492
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),12,21,21,15,0,0.7651299238204956
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),12,22,22,7,0,0.795678436756134
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),12,23,23,20,0,0.8477106094360352
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),12,24,24,36,0,0.7734962105751038
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),12,25,25,35,0,0.8620187044143677
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),12,26,26,18,0,0.7072345614433289
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),12,27,27,8,0,0.9770646691322327
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),12,28,28,23,0,0.7363175749778748
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),12,29,29,16,0,0.8712570667266846
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),12,30,30,6,0,0.7768316268920898
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),12,31,31,17,0,0.7777777314186096
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),12,32,32,34,0,0.8342003226280212
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),12,33,33,27,0,0.7263110876083374
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),12,34,34,10,0,0.8049784898757935
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),12,35,35,29,0,0.791122555732727
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),12,36,36,0,0,0.8741706609725952
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),12,37,37,19,0,0.8200620412826538
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),12,38,38,30,0,0.762432336807251
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),12,39,39,28,0,0.8000230193138123
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),13,0,0,38,0,0.9411857724189758
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),13,1,1,1,1,0.4099200963973999
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),13,2,2,16,0,0.8834835290908813
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),13,3,3,20,0,0.7582588195800781
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),13,4,4,0,0,0.7950098514556885
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),13,5,5,3,0,0.8625774383544922
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),13,6,6,35,0,0.74036705493927
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),13,7,7,29,0,0.7969427108764648
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),13,8,8,30,0,0.7661560773849487
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),13,9,9,6,0,0.8861767649650574
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),13,10,10,24,0,0.815814733505249
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),13,11,11,13,0,0.8626376390457153
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),13,12,12,32,0,0.7162076234817505
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),13,13,13,17,0,0.7579413652420044
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),13,14,14,14,1,0.4380089342594147
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),13,15,15,22,0,0.7869746088981628
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),13,16,16,12,0,0.8269317150115967
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),13,17,17,10,0,0.7986459732055664
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),13,18,18,33,0,0.8475590944290161
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),13,19,19,2,0,0.8340731859207153
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),13,20,20,28,0,0.8022550940513611
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),13,21,21,36,0,0.8613039255142212
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),13,22,22,8,0,0.9728649854660034
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),13,23,23,27,0,0.7182973027229309
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),13,24,24,5,0,0.7545485496520996
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),13,25,25,15,0,0.8997065424919128
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),13,26,26,4,0,0.9147774577140808
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),13,27,27,39,0,0.8552871942520142
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),13,28,28,34,0,0.9122117161750793
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),13,29,29,23,0,0.7498418688774109
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),13,30,30,25,0,0.8239944577217102
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),13,31,31,18,0,0.757199764251709
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),13,32,32,31,0,0.7888000011444092
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),13,33,33,7,0,0.7997406721115112
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),13,34,34,21,0,0.8680828213691711
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),13,35,35,37,0,0.8248887062072754
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),13,36,36,11,0,0.9057881236076355
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),13,37,37,19,0,0.8200620412826538
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),13,38,38,26,0,0.776526153087616
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),13,39,39,9,0,0.8492960929870605
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),14,0,0,22,0,0.8523527979850769
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),14,1,1,10,0,0.8927416205406189
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),14,2,2,2,1,0.4639762043952942
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),14,3,3,32,0,0.7240480184555054
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),14,4,4,39,0,0.8611049652099609
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),14,5,5,29,0,0.8123453259468079
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),14,6,6,9,0,0.8040418028831482
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),14,7,7,35,0,0.7426673173904419
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),14,8,8,19,0,0.8337136507034302
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),14,9,9,7,0,0.8309981226921082
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),14,10,10,28,0,0.7740545868873596
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),14,11,11,26,0,0.8334108591079712
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),14,12,12,4,0,0.8128782510757446
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),14,13,13,13,1,0.4007202088832855
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),14,14,14,8,0,0.9614430665969849
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),14,15,15,20,0,0.7280086278915405
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),14,16,16,33,0,0.7804003953933716
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),14,17,17,5,0,0.7901119589805603
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),14,18,18,18,1,0.3706207871437073
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),14,19,19,36,0,0.7452452778816223
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),14,20,20,15,0,0.7527905702590942
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),14,21,21,6,0,0.8214232325553894
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),14,22,22,14,0,0.7522284984588623
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),14,23,23,12,0,0.8310366868972778
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),14,24,24,24,1,0.4381067156791687
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),14,25,25,11,0,0.9468131065368652
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),14,26,26,25,0,0.7931880950927734
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),14,27,27,27,1,0.36285197734832764
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),14,28,28,16,0,0.8700658679008484
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),14,29,29,17,0,0.8045758008956909
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),14,30,30,38,0,0.8761229515075684
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),14,31,31,30,0,0.827920138835907
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),14,32,32,23,0,0.7546436786651611
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),14,33,33,37,0,0.8274255394935608
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),14,34,34,21,0,0.8680828213691711
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),14,35,35,3,0,0.829986035823822
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),14,36,36,0,0,0.8741706609725952
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),14,37,37,31,0,0.8130309581756592
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),14,38,38,1,0,0.8041624426841736
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),14,39,39,34,0,0.8476976156234741
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),15,0,0,9,0,0.7983373403549194
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),15,1,1,30,0,0.8444950580596924
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),15,2,2,15,0,0.8286473751068115
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),15,3,3,5,0,0.7988195419311523
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),15,4,4,18,0,0.8092857003211975
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),15,5,5,22,0,0.7832491397857666
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),15,6,6,0,0,0.80716472864151
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),15,7,7,31,0,0.7989205121994019
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),15,8,8,12,0,0.795102059841156
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),15,9,9,35,0,0.8536858558654785
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),15,10,10,7,0,0.8357692956924438
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),15,11,11,16,0,0.8398821353912354
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),15,12,12,11,0,0.8558976650238037
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),15,13,13,34,0,0.8190069198608398
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),15,14,14,39,0,0.8580837249755859
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),15,15,15,6,0,0.8022855520248413
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),15,16,16,25,0,0.8259286880493164
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),15,17,17,14,0,0.773398756980896
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),15,18,18,3,0,0.8348230719566345
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),15,19,19,26,0,0.7683274745941162
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),15,20,20,8,0,1.0176349878311157
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),15,21,21,32,0,0.7477400302886963
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),15,22,22,13,0,0.7877421975135803
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),15,23,23,33,0,0.8416060209274292
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),15,24,24,19,0,0.8218974471092224
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),15,25,25,24,0,0.8634714484214783
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),15,26,26,23,0,0.7435634136199951
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),15,27,27,38,0,0.8621001243591309
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),15,28,28,37,0,0.8981778621673584
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),15,29,29,10,0,0.8417547941207886
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),15,30,30,27,0,0.7418988943099976
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),15,31,31,4,0,0.9314473867416382
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),15,32,32,21,0,0.8669514060020447
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),15,33,33,28,0,0.7853453755378723
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),15,34,34,20,0,0.7491998672485352
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),15,35,35,2,0,0.7933184504508972
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),15,36,36,17,0,0.7986569404602051
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),15,37,37,36,0,0.8326404094696045
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),15,38,38,29,0,0.7785364985466003
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),15,39,39,1,0,0.8731604814529419
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),16,0,0,3,0,0.8445245623588562
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),16,1,1,28,0,0.8315268754959106
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),16,2,2,16,0,0.8834835290908813
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),16,3,3,11,0,0.8178452253341675
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),16,4,4,4,1,0.39806729555130005
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),16,5,5,8,0,0.9879695177078247
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),16,6,6,25,0,0.8341073393821716
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),16,7,7,36,0,0.8241288661956787
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),16,8,8,18,0,0.8370800018310547
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),16,9,9,14,0,0.8803811073303223
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),16,10,10,6,0,0.8170473575592041
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),16,11,11,15,0,0.7574751377105713
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),16,12,12,32,0,0.7162076234817505
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),16,13,13,20,0,0.7517000436782837
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),16,14,14,7,0,0.7985914945602417
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),16,15,15,34,0,0.8517966270446777
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),16,16,16,26,0,0.809130072593689
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),16,17,17,38,0,0.8969991207122803
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),16,18,18,9,0,0.7756025791168213
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),16,19,19,1,0,0.7745333909988403
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),16,20,20,22,0,0.824365496635437
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),16,21,21,30,0,0.7655958533287048
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),16,22,22,21,0,0.8610118627548218
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),16,23,23,29,0,0.8469316959381104
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),16,24,24,24,1,0.4381067156791687
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),16,25,25,37,0,0.9259684681892395
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),16,26,26,27,0,0.7471705079078674
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),16,27,27,5,0,0.8179185390472412
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),16,28,28,0,0,0.8885589241981506
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),16,29,29,23,0,0.7498418688774109
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),16,30,30,12,0,0.7722690105438232
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),16,31,31,33,0,0.8353393077850342
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),16,32,32,10,0,0.8280754089355469
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),16,33,33,19,0,0.8075720071792603
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),16,34,34,13,0,0.8082304000854492
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),16,35,35,31,0,0.7859847545623779
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),16,36,36,35,0,0.7684905529022217
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),16,37,37,17,0,0.8024057745933533
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),16,38,38,39,0,0.8673557043075562
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),16,39,39,2,0,0.8628314733505249
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),17,0,0,2,0,0.8356436491012573
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),17,1,1,16,0,0.8934801816940308
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),17,2,2,13,0,0.7864142656326294
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),17,3,3,38,0,0.8829045295715332
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),17,4,4,27,0,0.776103675365448
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),17,5,5,14,0,0.7649877071380615
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),17,6,6,39,0,0.8410830497741699
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),17,7,7,30,0,0.7588016390800476
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),17,8,8,6,0,0.7988356351852417
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),17,9,9,19,0,0.7803661227226257
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),17,10,10,3,0,0.8911216259002686
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),17,11,11,37,0,0.8310052752494812
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),17,12,12,23,0,0.7501848340034485
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),17,13,13,28,0,0.7851741313934326
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),17,14,14,22,0,0.8003709316253662
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),17,15,15,24,0,0.7983989715576172
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),17,16,16,35,0,0.7878396511077881
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),17,17,17,25,0,0.8274142742156982
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),17,18,18,5,0,0.8780031800270081
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),17,19,19,12,0,0.8039475679397583
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),17,20,20,20,1,0.47742959856987
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),17,21,21,26,0,0.8052195310592651
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),17,22,22,4,0,0.8459599018096924
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),17,23,23,31,0,0.7479698657989502
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),17,24,24,29,0,0.8217228651046753
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),17,25,25,32,0,0.86556476354599
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),17,26,26,36,0,0.816825270652771
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),17,27,27,7,0,0.7931928634643555
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),17,28,28,15,0,0.8616796731948853
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),17,29,29,17,0,0.8045758008956909
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),17,30,30,33,0,0.748048722743988
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),17,31,31,9,0,0.7561665773391724
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),17,32,32,8,0,0.9845288991928101
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),17,33,33,1,0,0.8143585920333862
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),17,34,34,0,0,0.7722867131233215
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),17,35,35,34,0,0.8605220913887024
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),17,36,36,10,0,0.8663478493690491
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),17,37,37,18,0,0.8312256336212158
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),17,38,38,11,0,0.8504171371459961
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),17,39,39,21,0,0.8867950439453125
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),18,0,0,18,0,0.7838304042816162
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),18,1,1,26,0,0.779563844203949
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),18,2,2,25,0,0.8035310506820679
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),18,3,3,8,0,0.9752135872840881
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),18,4,4,1,0,0.8888496160507202
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),18,5,5,3,0,0.8625774383544922
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),18,6,6,30,0,0.746315598487854
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),18,7,7,34,0,0.8325220346450806
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),18,8,8,15,0,0.789598286151886
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),18,9,9,12,0,0.8022980093955994
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),18,10,10,32,0,0.7393078207969666
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),18,11,11,0,0,0.8380082845687866
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),18,12,12,39,0,0.8551303148269653
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),18,13,13,36,0,0.8367077112197876
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),18,14,14,4,0,0.8190611004829407
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),18,15,15,24,0,0.7983989715576172
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),18,16,16,2,0,0.8542414307594299
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),18,17,17,31,0,0.7921772599220276
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),18,18,18,6,0,0.8751704692840576
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),18,19,19,21,0,0.8947376012802124
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),18,20,20,23,0,0.7447858452796936
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),18,21,21,29,0,0.805351734161377
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),18,22,22,28,0,0.7818506956100464
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),18,23,23,13,0,0.8582634925842285
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),18,24,24,37,0,0.8378721475601196
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),18,25,25,14,0,0.888336718082428
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),18,26,26,7,0,0.830178439617157
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),18,27,27,22,0,0.8039359450340271
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),18,28,28,10,0,0.8799152374267578
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),18,29,29,5,0,0.8490870594978333
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),18,30,30,11,0,0.8288314938545227
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),18,31,31,38,0,0.9303399324417114
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),18,32,32,27,0,0.7497183680534363
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),18,33,33,16,0,0.8207308053970337
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),18,34,34,17,0,0.8079609870910645
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),18,35,35,20,0,0.7729842066764832
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),18,36,36,33,0,0.8339552879333496
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),18,37,37,9,0,0.7989801168441772
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),18,38,38,35,0,0.7082501649856567
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),18,39,39,19,0,0.8377862572669983
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),19,0,0,12,0,0.8340585231781006
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),19,1,1,5,0,0.886780858039856
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),19,2,2,4,0,0.8774499893188477
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),19,3,3,24,0,0.815601110458374
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),19,4,4,10,0,0.8071154356002808
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),19,5,5,25,0,0.8340395092964172
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),19,6,6,33,0,0.787015438079834
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),19,7,7,3,0,0.8526018261909485
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),19,8,8,7,0,0.8290042877197266
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),19,9,9,28,0,0.8428879380226135
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),19,10,10,29,0,0.8103471398353577
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),19,11,11,16,0,0.8398821353912354
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),19,12,12,37,0,0.8122972249984741
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),19,13,13,13,1,0.4007202088832855
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),19,14,14,34,0,0.8203407526016235
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),19,15,15,17,0,0.7572611570358276
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),19,16,16,11,0,0.8657463788986206
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),19,17,17,38,0,0.8969991207122803
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),19,18,18,21,0,0.8670382499694824
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),19,19,19,14,0,0.8398279547691345
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),19,20,20,30,0,0.7631033062934875
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),19,21,21,9,0,0.849088728427887
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),19,22,22,20,0,0.7518528699874878
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),19,23,23,22,0,0.8616516590118408
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),19,24,24,31,0,0.8269823789596558
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),19,25,25,19,0,0.7905707955360413
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),19,26,26,36,0,0.816825270652771
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),19,27,27,18,0,0.766476035118103
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),19,28,28,6,0,0.8994911313056946
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),19,29,29,23,0,0.7498418688774109
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),19,30,30,1,0,0.8123364448547363
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),19,31,31,8,0,1.0795334577560425
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),19,32,32,26,0,0.804187536239624
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),19,33,33,2,0,0.812166154384613
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),19,34,34,0,0,0.7722867131233215
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),19,35,35,32,0,0.7597208619117737
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),19,36,36,39,0,0.8590766787528992
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),19,37,37,15,0,0.8050481081008911
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),19,38,38,35,0,0.7082501649856567
+shuffled,fp32_CPA,fp32-CPA (36 CPA + 4 exact-source),19,39,39,27,0,0.8007205724716187
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,0,0,0,11,0,0.8191244602203369
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,0,1,1,27,0,0.7550461292266846
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,0,2,2,4,0,0.8860241770744324
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,0,3,3,24,0,0.81214839220047
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,0,4,4,23,0,0.7178502082824707
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,0,5,5,2,0,0.8266415596008301
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,0,6,6,3,0,0.8676790595054626
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,0,7,7,34,0,0.8305214643478394
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,0,8,8,18,0,0.7751861214637756
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,0,9,9,1,0,0.7604421973228455
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,0,10,10,10,1,0.43406811356544495
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,0,11,11,22,0,0.7654291987419128
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,0,12,12,20,0,0.7664374709129333
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,0,13,13,26,0,0.7744491100311279
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,0,14,14,28,0,0.7873713970184326
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,0,15,15,30,0,0.7434808611869812
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,0,16,16,37,0,0.8589375019073486
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,0,17,17,38,0,0.8286195993423462
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,0,18,18,17,0,0.8229913711547852
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,0,19,19,0,0,0.8387489318847656
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,0,20,20,21,0,0.876811683177948
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,0,21,21,35,0,0.7324803471565247
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,0,22,22,9,0,0.755043625831604
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,0,23,23,6,0,0.8945440053939819
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,0,24,24,32,0,0.756442129611969
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,0,25,25,25,1,0.4495527148246765
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,0,26,26,19,0,0.7953014969825745
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,0,27,27,36,0,0.8139129281044006
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,0,28,28,8,0,1.0809476375579834
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,0,29,29,16,0,0.8769713640213013
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,0,30,30,13,0,0.7850843071937561
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,0,31,31,12,0,0.7473258972167969
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,0,32,32,7,0,0.7696517109870911
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,0,33,33,39,0,0.8383646607398987
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,0,34,34,5,0,0.8287147283554077
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,0,35,35,14,0,0.7759070992469788
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,0,36,36,29,0,0.7507261633872986
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,0,37,37,33,0,0.7895334362983704
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,0,38,38,15,0,0.8375933170318604
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,0,39,39,31,0,0.8112003803253174
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,1,0,0,9,0,0.7457553744316101
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,1,1,1,23,0,0.7599686980247498
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,1,2,2,17,0,0.7649896144866943
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,1,3,3,28,0,0.7871783375740051
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,1,4,4,0,0,0.7597544193267822
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,1,5,5,7,0,0.801679253578186
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,1,6,6,6,1,0.47152742743492126
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,1,7,7,22,0,0.8060634136199951
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,1,8,8,15,0,0.7511886954307556
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,1,9,9,16,0,0.9015029072761536
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,1,10,10,3,0,0.8945419788360596
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,1,11,11,29,0,0.7503198385238647
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,1,12,12,20,0,0.7664374709129333
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,1,13,13,19,0,0.8036878108978271
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,1,14,14,27,0,0.7220361232757568
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,1,15,15,39,0,0.8142855167388916
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,1,16,16,1,0,0.7841825485229492
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,1,17,17,11,0,0.7963706254959106
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,1,18,18,36,0,0.8128649592399597
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,1,19,19,26,0,0.7694972157478333
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,1,20,20,25,0,0.8357075452804565
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,1,21,21,34,0,0.8365994691848755
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,1,22,22,24,0,0.8174864649772644
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,1,23,23,31,0,0.7474799752235413
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,1,24,24,35,0,0.7438080310821533
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,1,25,25,4,0,0.9303205013275146
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,1,26,26,14,0,0.8448346853256226
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,1,27,27,21,0,0.8507356643676758
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,1,28,28,37,0,0.8915067315101624
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,1,29,29,30,0,0.7892075777053833
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,1,30,30,2,0,0.8003990650177002
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,1,31,31,33,0,0.7409683465957642
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,1,32,32,12,0,0.7483731508255005
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,1,33,33,10,0,0.7710081934928894
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,1,34,34,5,0,0.8287147283554077
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,1,35,35,8,0,0.9776272773742676
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,1,36,36,32,0,0.7560891509056091
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,1,37,37,18,0,0.8190141320228577
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,1,38,38,13,0,0.7805989980697632
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,1,39,39,38,0,0.9256056547164917
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,2,0,0,22,0,0.766686201095581
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,2,1,1,32,0,0.830848753452301
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,2,2,2,23,0,0.7400117516517639
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,2,3,3,7,0,0.7677152156829834
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,2,4,4,34,0,0.797630250453949
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,2,5,5,12,0,0.8141629695892334
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,2,6,6,33,0,0.7817399501800537
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,2,7,7,6,0,0.8173807263374329
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,2,8,8,3,0,0.8354513645172119
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,2,9,9,37,0,0.8964662551879883
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,2,10,10,24,0,0.8207343220710754
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,2,11,11,28,0,0.7504366636276245
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,2,12,12,27,0,0.7525169253349304
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,2,13,13,10,0,0.8020815253257751
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,2,14,14,26,0,0.781438410282135
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,2,15,15,14,0,0.7881182432174683
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,2,16,16,16,1,0.44946420192718506
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,2,17,17,15,0,0.7528808116912842
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,2,18,18,38,0,0.8493093848228455
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,2,19,19,25,0,0.7801553010940552
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,2,20,20,20,1,0.48288628458976746
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,2,21,21,39,0,0.8479056358337402
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,2,22,22,2,0,0.7633558511734009
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,2,23,23,18,0,0.7697527408599854
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,2,24,24,11,0,0.8031688332557678
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,2,25,25,13,0,0.8531953692436218
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,2,26,26,0,0,0.8499579429626465
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,2,27,27,4,0,0.8609964847564697
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,2,28,28,17,0,0.8073899745941162
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,2,29,29,19,0,0.8110859990119934
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,2,30,30,9,0,0.7915560007095337
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,2,31,31,5,0,0.8101335167884827
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,2,32,32,21,0,0.8190757036209106
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,2,33,33,29,0,0.746391236782074
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,2,34,34,31,0,0.8011602163314819
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,2,35,35,30,0,0.7597767114639282
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,2,36,36,35,0,0.746145486831665
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,2,37,37,36,0,0.83861243724823
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,2,38,38,8,0,0.9828506708145142
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,2,39,39,1,0,0.8665515780448914
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,3,0,0,23,0,0.7163501977920532
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,3,1,1,32,0,0.830848753452301
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,3,2,2,30,0,0.8137965202331543
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,3,3,3,17,0,0.7533534169197083
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,3,4,4,20,0,0.7505462169647217
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,3,5,5,11,0,0.8494294881820679
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,3,6,6,33,0,0.7817399501800537
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,3,7,7,2,0,0.8165385127067566
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,3,8,8,12,0,0.7510999441146851
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,3,9,9,3,0,0.8361218571662903
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,3,10,10,21,0,0.8869925737380981
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,3,11,11,29,0,0.7503198385238647
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,3,12,12,38,0,0.8498328328132629
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,3,13,13,4,0,0.8093848824501038
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,3,14,14,25,0,0.831279993057251
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,3,15,15,22,0,0.789506196975708
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,3,16,16,0,0,0.8266879320144653
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,3,17,17,28,0,0.7507242560386658
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,3,18,18,39,0,0.9278870820999146
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,3,19,19,35,0,0.8240495920181274
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,3,20,20,10,0,0.8264833092689514
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,3,21,21,31,0,0.8295234441757202
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,3,22,22,15,0,0.7573087215423584
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,3,23,23,24,0,0.8328285217285156
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,3,24,24,34,0,0.8049846887588501
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,3,25,25,27,0,0.751186728477478
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,3,26,26,13,0,0.8331432938575745
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,3,27,27,8,0,0.9933692216873169
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,3,28,28,9,0,0.7892811894416809
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,3,29,29,18,0,0.7793516516685486
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,3,30,30,6,0,0.7780346274375916
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,3,31,31,1,0,0.784530758857727
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,3,32,32,26,0,0.7238239049911499
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,3,33,33,37,0,0.7654666900634766
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,3,34,34,16,0,0.8461751341819763
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,3,35,35,14,0,0.7759070992469788
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,3,36,36,36,1,0.7973428964614868
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,3,37,37,7,0,0.8161797523498535
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,3,38,38,5,0,0.8383667469024658
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,3,39,39,19,0,0.8363622426986694
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,4,0,0,31,0,0.770218014717102
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,4,1,1,16,0,0.8874634504318237
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,4,2,2,23,0,0.7400117516517639
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,4,3,3,39,0,0.8263201713562012
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,4,4,4,35,0,0.7389608025550842
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,4,5,5,13,0,0.8184623122215271
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,4,6,6,19,0,0.8008570671081543
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,4,7,7,1,0,0.819739580154419
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,4,8,8,34,0,0.8002380132675171
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,4,9,9,11,0,0.9305462837219238
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,4,10,10,8,0,0.9711846113204956
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,4,11,11,37,0,0.7710052728652954
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,4,12,12,28,0,0.7822058796882629
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,4,13,13,38,0,0.8354150056838989
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,4,14,14,7,0,0.800148069858551
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,4,15,15,24,0,0.807687520980835
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,4,16,16,18,0,0.8304080963134766
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,4,17,17,10,0,0.777111291885376
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,4,18,18,32,0,0.8280278444290161
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,4,19,19,0,0,0.8387489318847656
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,4,20,20,27,0,0.7351769804954529
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,4,21,21,26,0,0.813559889793396
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,4,22,22,25,0,0.7625734210014343
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,4,23,23,29,0,0.8472534418106079
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,4,24,24,15,0,0.763099193572998
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,4,25,25,9,0,0.6811160445213318
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,4,26,26,22,0,0.864162802696228
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,4,27,27,21,0,0.8507356643676758
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,4,28,28,5,0,0.8670387268066406
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,4,29,29,20,0,0.7828927040100098
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,4,30,30,33,0,0.7431845664978027
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,4,31,31,17,0,0.7697214484214783
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,4,32,32,30,0,0.7317605018615723
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,4,33,33,36,0,0.7937325239181519
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,4,34,34,2,0,0.8108569383621216
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,4,35,35,6,0,0.8208010196685791
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,4,36,36,4,0,0.8083592057228088
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,4,37,37,3,0,0.8296377062797546
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,4,38,38,12,0,0.7539880871772766
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,4,39,39,14,0,0.8155141472816467
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,5,0,0,30,0,0.7496120929718018
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,5,1,1,18,0,0.7797963619232178
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,5,2,2,6,0,0.871186375617981
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,5,3,3,24,0,0.81214839220047
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,5,4,4,25,0,0.7528867125511169
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,5,5,5,38,0,0.9274181127548218
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,5,6,6,9,0,0.8100835084915161
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,5,7,7,23,0,0.7536285519599915
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,5,8,8,2,0,0.76544588804245
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,5,9,9,17,0,0.8188790082931519
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,5,10,10,22,0,0.7886547446250916
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,5,11,11,35,0,0.7447049617767334
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,5,12,12,34,0,0.8055087327957153
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,5,13,13,27,0,0.7168083786964417
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,5,14,14,20,0,0.7853375673294067
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,5,15,15,12,0,0.804756224155426
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,5,16,16,7,0,0.813605785369873
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,5,17,17,36,0,0.7927452325820923
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,5,18,18,39,0,0.9278870820999146
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,5,19,19,11,0,0.8834747672080994
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,5,20,20,29,0,0.799824059009552
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,5,21,21,19,0,0.8192315101623535
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,5,22,22,26,0,0.741277813911438
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,5,23,23,28,0,0.820644736289978
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,5,24,24,31,0,0.7715015411376953
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,5,25,25,3,0,0.8392472267150879
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,5,26,26,32,0,0.8418931365013123
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,5,27,27,8,0,0.9933692216873169
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,5,28,28,33,0,0.8438604474067688
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,5,29,29,13,0,0.8396124243736267
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,5,30,30,21,0,0.8533557057380676
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,5,31,31,1,0,0.784530758857727
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,5,32,32,16,0,0.7851529717445374
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,5,33,33,14,0,0.7504589557647705
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,5,34,34,4,0,0.8287405967712402
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,5,35,35,5,0,0.8328454494476318
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,5,36,36,15,0,0.7627845406532288
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,5,37,37,10,0,0.8369944095611572
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,5,38,38,0,0,0.8361750245094299
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,5,39,39,37,0,0.8262649178504944
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,6,0,0,23,0,0.7163501977920532
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,6,1,1,33,0,0.8435657024383545
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,6,2,2,26,0,0.7895817160606384
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,6,3,3,2,0,0.8000754714012146
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,6,4,4,16,0,0.7824102640151978
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,6,5,5,35,0,0.7346469163894653
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,6,6,6,27,0,0.7800321578979492
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,6,7,7,18,0,0.8030984401702881
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,6,8,8,34,0,0.8002380132675171
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,6,9,9,6,0,0.8879566788673401
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,6,10,10,1,0,0.8511943221092224
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,6,11,11,10,0,0.7707679271697998
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,6,12,12,11,0,0.8520285487174988
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,6,13,13,28,0,0.7861130833625793
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,6,14,14,15,0,0.8116590976715088
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,6,15,15,14,0,0.7881182432174683
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,6,16,16,39,0,0.8498557209968567
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,6,17,17,30,0,0.734112024307251
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,6,18,18,3,0,0.8416621685028076
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,6,19,19,22,0,0.8537082672119141
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,6,20,20,0,0,0.7961454391479492
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,6,21,21,38,0,0.881080150604248
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,6,22,22,36,0,0.8128432035446167
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,6,23,23,4,0,0.9439151287078857
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,6,24,24,5,0,0.8053014874458313
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,6,25,25,8,0,1.0693624019622803
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,6,26,26,13,0,0.8331432938575745
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,6,27,27,25,0,0.8036494851112366
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,6,28,28,37,0,0.8915067315101624
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,6,29,29,29,1,0.47118887305259705
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,6,30,30,20,0,0.7319140434265137
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,6,31,31,21,0,0.8257851600646973
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,6,32,32,24,0,0.8064528107643127
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,6,33,33,9,0,0.7511712908744812
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,6,34,34,19,0,0.8179894089698792
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,6,35,35,32,0,0.7539710998535156
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,6,36,36,12,0,0.7579428553581238
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,6,37,37,7,0,0.8161797523498535
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,6,38,38,31,0,0.7863924503326416
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,6,39,39,17,0,0.8124399185180664
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,7,0,0,4,0,0.8013644218444824
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,7,1,1,0,0,0.8952149152755737
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,7,2,2,28,0,0.8215145468711853
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,7,3,3,20,0,0.7589377164840698
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,7,4,4,30,0,0.7354943156242371
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,7,5,5,10,0,0.809759259223938
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,7,6,6,12,0,0.8072614669799805
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,7,7,7,32,0,0.7418129444122314
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,7,8,8,19,0,0.7315008044242859
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,7,9,9,9,1,0.4036654233932495
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,7,10,10,14,0,0.7650262117385864
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,7,11,11,22,0,0.7654291987419128
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,7,12,12,27,0,0.7525169253349304
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,7,13,13,38,0,0.8354150056838989
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,7,14,14,3,0,0.8312769532203674
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,7,15,15,24,0,0.807687520980835
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,7,16,16,39,0,0.8498557209968567
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,7,17,17,26,0,0.7285538911819458
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,7,18,18,13,0,0.796095073223114
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,7,19,19,17,0,0.7866847515106201
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,7,20,20,18,0,0.8187583088874817
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,7,21,21,36,0,0.8629516959190369
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,7,22,22,35,0,0.739047646522522
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,7,23,23,37,0,0.892364501953125
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,7,24,24,8,0,0.8663160800933838
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,7,25,25,7,0,0.8235332369804382
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,7,26,26,1,0,0.794356644153595
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,7,27,27,33,0,0.7817936539649963
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,7,28,28,15,0,0.8510196208953857
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,7,29,29,29,1,0.47118887305259705
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,7,30,30,6,0,0.7780346274375916
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,7,31,31,16,0,0.7797189950942993
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,7,32,32,23,0,0.7159069180488586
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,7,33,33,25,0,0.7552198767662048
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,7,34,34,5,0,0.8287147283554077
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,7,35,35,2,0,0.7963306903839111
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,7,36,36,31,0,0.7624391317367554
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,7,37,37,34,0,0.8506456017494202
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,7,38,38,21,0,0.8598648309707642
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,7,39,39,11,0,0.8378984332084656
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,8,0,0,25,0,0.7623761892318726
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,8,1,1,15,0,0.8722152709960938
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,8,2,2,27,0,0.7272747159004211
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,8,3,3,10,0,0.8050680756568909
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,8,4,4,13,0,0.76445472240448
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,8,5,5,39,0,0.8273539543151855
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,8,6,6,24,0,0.8443188667297363
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,8,7,7,31,0,0.7854127287864685
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,8,8,8,12,0,0.7510999441146851
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,8,9,9,19,0,0.7780393362045288
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,8,10,10,30,0,0.73829185962677
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,8,11,11,7,0,0.7731168866157532
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,8,12,12,21,0,0.8440612554550171
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,8,13,13,14,0,0.7618178725242615
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,8,14,14,16,0,0.8678335547447205
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,8,15,15,32,0,0.7200387716293335
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,8,16,16,8,0,1.072234869003296
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,8,17,17,29,0,0.7480099201202393
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,8,18,18,22,0,0.8433626890182495
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,8,19,19,5,0,0.8236055970191956
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,8,20,20,38,0,0.913559079170227
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,8,21,21,11,0,0.873133659362793
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,8,22,22,17,0,0.7673457264900208
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,8,23,23,0,0,0.8585141897201538
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,8,24,24,1,0,0.78659987449646
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,8,25,25,36,0,0.7847161293029785
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,8,26,26,23,0,0.7432498931884766
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,8,27,27,3,0,0.8111377358436584
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,8,28,28,28,1,0.5053821802139282
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,8,29,29,9,0,0.7868044972419739
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,8,30,30,4,0,0.8211961388587952
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,8,31,31,34,0,0.7897818088531494
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,8,32,32,35,0,0.733501672744751
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,8,33,33,33,1,0.7466477155685425
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,8,34,34,18,0,0.8239161372184753
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,8,35,35,6,0,0.8208010196685791
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,8,36,36,20,0,0.7589834928512573
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,8,37,37,37,1,0.5153806209564209
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,8,38,38,26,0,0.7727072834968567
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,8,39,39,2,0,0.8529379963874817
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,9,0,0,22,0,0.766686201095581
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,9,1,1,34,0,0.8983851671218872
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,9,2,2,21,0,0.8945656418800354
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,9,3,3,2,0,0.8000754714012146
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,9,4,4,31,0,0.7645310163497925
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,9,5,5,18,0,0.8450977802276611
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,9,6,6,29,0,0.7977774143218994
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,9,7,7,15,0,0.7806478142738342
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,9,8,8,20,0,0.7500850558280945
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,9,9,9,6,0,0.8879566788673401
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,9,10,10,13,0,0.8191158771514893
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,9,11,11,25,0,0.7619974613189697
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,9,12,12,7,0,0.7860018014907837
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,9,13,13,27,0,0.7168083786964417
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,9,14,14,17,0,0.7737185955047607
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,9,15,15,9,0,0.8027898073196411
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,9,16,16,19,0,0.793047308921814
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,9,17,17,35,0,0.7361141443252563
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,9,18,18,39,0,0.9278870820999146
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,9,19,19,14,0,0.8528016805648804
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,9,20,20,3,0,0.8369954824447632
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,9,21,21,37,0,0.8300530314445496
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,9,22,22,26,0,0.741277813911438
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,9,23,23,16,0,0.8594988584518433
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,9,24,24,38,0,0.8147064447402954
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,9,25,25,36,0,0.7847161293029785
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,9,26,26,28,0,0.8284896016120911
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,9,27,27,12,0,0.7870090007781982
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,9,28,28,10,0,0.8714022040367126
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,9,29,29,23,0,0.7577248811721802
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,9,30,30,24,0,0.8013267517089844
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,9,31,31,8,0,0.8431146740913391
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,9,32,32,0,0,0.753433346748352
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,9,33,33,5,0,0.808587908744812
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,9,34,34,1,0,0.8390181064605713
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,9,35,35,11,0,0.8734694123268127
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,9,36,36,4,0,0.8083592057228088
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,9,37,37,32,0,0.7862708568572998
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,9,38,38,30,0,0.7871043682098389
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,9,39,39,33,0,0.7881524562835693
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,10,0,0,18,0,0.7692987322807312
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,10,1,1,39,0,0.9121031165122986
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,10,2,2,27,0,0.7272747159004211
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,10,3,3,9,0,0.7888449430465698
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,10,4,4,23,0,0.7178502082824707
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,10,5,5,28,0,0.7925809621810913
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,10,6,6,36,0,0.842315673828125
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,10,7,7,5,0,0.8354952931404114
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,10,8,8,15,0,0.7511886954307556
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,10,9,9,29,0,0.8327895402908325
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,10,10,10,13,0,0.8191158771514893
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,10,11,11,38,0,0.813663899898529
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,10,12,12,30,0,0.7443995475769043
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,10,13,13,25,0,0.8101992607116699
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,10,14,14,32,0,0.7544664144515991
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,10,15,15,4,0,0.8694443106651306
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,10,16,16,31,0,0.822064995765686
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,10,17,17,2,0,0.7680723667144775
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,10,18,18,7,0,0.8286005258560181
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,10,19,19,6,0,0.8616074323654175
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,10,20,20,19,0,0.8147717714309692
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,10,21,21,12,0,0.797856330871582
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,10,22,22,35,0,0.739047646522522
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,10,23,23,17,0,0.7495667934417725
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,10,24,24,37,0,0.7701082825660706
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,10,25,25,1,0,0.7493655681610107
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,10,26,26,20,0,0.8241502642631531
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,10,27,27,11,0,0.8745306730270386
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,10,28,28,3,0,0.864021897315979
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,10,29,29,10,0,0.8447879552841187
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,10,30,30,26,0,0.7753625512123108
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,10,31,31,33,0,0.7409683465957642
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,10,32,32,14,0,0.7442867755889893
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,10,33,33,16,0,0.7883671522140503
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,10,34,34,34,1,0.5528298616409302
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,10,35,35,8,0,0.9776272773742676
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,10,36,36,21,0,0.8341869711875916
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,10,37,37,22,0,0.8320188522338867
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,10,38,38,0,0,0.8361750245094299
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,10,39,39,24,0,0.8203326463699341
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,11,0,0,1,0,0.7819033265113831
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,11,1,1,6,0,0.8959318399429321
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,11,2,2,5,0,0.8371115326881409
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,11,3,3,26,0,0.7785770297050476
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,11,4,4,4,1,0.8021251559257507
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,11,5,5,34,0,0.8602776527404785
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,11,6,6,37,0,0.8093163371086121
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,11,7,7,27,0,0.7629745006561279
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,11,8,8,11,0,0.7931615710258484
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,11,9,9,18,0,0.7578322887420654
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,11,10,10,0,0,0.7797749638557434
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,11,11,11,7,0,0.7731168866157532
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,11,12,12,39,0,0.8546825647354126
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,11,13,13,9,0,0.7941511273384094
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,11,14,14,29,0,0.8082526922225952
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,11,15,15,15,1,0.448498398065567
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,11,16,16,2,0,0.8538216948509216
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,11,17,17,24,0,0.80967116355896
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,11,18,18,8,0,0.9872793555259705
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,11,19,19,33,0,0.8348429799079895
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,11,20,20,3,0,0.8369954824447632
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,11,21,21,36,0,0.8629516959190369
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,11,22,22,28,0,0.7540249824523926
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,11,23,23,38,0,0.9444503784179688
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,11,24,24,17,0,0.7662926912307739
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,11,25,25,12,0,0.7795838117599487
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,11,26,26,25,0,0.7994486093521118
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,11,27,27,32,0,0.7686880826950073
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,11,28,28,22,0,0.8791524171829224
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,11,29,29,23,0,0.7577248811721802
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,11,30,30,21,0,0.8533557057380676
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,11,31,31,35,0,0.7244925498962402
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,11,32,32,20,0,0.7557151317596436
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,11,33,33,31,0,0.7607534527778625
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,11,34,34,13,0,0.8054042458534241
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,11,35,35,19,0,0.7907091379165649
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,11,36,36,30,0,0.7400275468826294
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,11,37,37,10,0,0.8369944095611572
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,11,38,38,16,0,0.8871508240699768
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,11,39,39,14,0,0.8155141472816467
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,12,0,0,9,0,0.7457553744316101
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,12,1,1,32,0,0.830848753452301
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,12,2,2,11,0,0.9093919992446899
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,12,3,3,5,0,0.8143731355667114
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,12,4,4,21,0,0.8217732310295105
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,12,5,5,22,0,0.7890009880065918
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,12,6,6,3,0,0.8676790595054626
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,12,7,7,39,0,0.8320379257202148
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,12,8,8,31,0,0.7692893147468567
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,12,9,9,2,0,0.8451828956604004
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,12,10,10,4,0,0.8580467104911804
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,12,11,11,37,0,0.7710052728652954
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,12,12,12,14,0,0.7563832402229309
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,12,13,13,1,0,0.8406984210014343
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,12,14,14,38,0,0.8717633485794067
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,12,15,15,24,0,0.807687520980835
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,12,16,16,26,0,0.8103058934211731
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,12,17,17,13,0,0.7665950059890747
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,12,18,18,33,0,0.8466911315917969
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,12,19,19,12,0,0.8116641044616699
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,12,20,20,25,0,0.8357075452804565
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,12,21,21,15,0,0.7769168615341187
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,12,22,22,7,0,0.7797871828079224
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,12,23,23,20,0,0.848609983921051
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,12,24,24,36,0,0.8014313578605652
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,12,25,25,35,0,0.8157045841217041
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,12,26,26,18,0,0.7086058855056763
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,12,27,27,8,0,0.9933692216873169
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,12,28,28,23,0,0.7247388958930969
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,12,29,29,16,0,0.8769713640213013
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,12,30,30,6,0,0.7780346274375916
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,12,31,31,17,0,0.7697214484214783
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,12,32,32,34,0,0.7967933416366577
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,12,33,33,27,0,0.7685211896896362
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,12,34,34,10,0,0.8118736147880554
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,12,35,35,29,0,0.7828813791275024
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,12,36,36,0,0,0.7598724961280823
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,12,37,37,19,0,0.8153446912765503
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,12,38,38,30,0,0.7871043682098389
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,12,39,39,28,0,0.7963627576828003
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,13,0,0,38,0,0.8113613724708557
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,13,1,1,1,1,0.4161335229873657
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,13,2,2,16,0,0.8832212090492249
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,13,3,3,20,0,0.7589377164840698
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,13,4,4,0,0,0.7597544193267822
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,13,5,5,3,0,0.8353027105331421
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,13,6,6,35,0,0.7410886287689209
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,13,7,7,29,0,0.793258547782898
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,13,8,8,30,0,0.7304660081863403
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,13,9,9,6,0,0.8879566788673401
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,13,10,10,24,0,0.8207343220710754
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,13,11,11,13,0,0.7604626417160034
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,13,12,12,32,0,0.7149226665496826
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,13,13,13,17,0,0.7488968968391418
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,13,14,14,14,1,0.45139724016189575
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,13,15,15,22,0,0.789506196975708
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,13,16,16,12,0,0.8301184177398682
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,13,17,17,10,0,0.777111291885376
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,13,18,18,33,0,0.8466911315917969
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,13,19,19,2,0,0.8414071202278137
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,13,20,20,28,0,0.795060396194458
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,13,21,21,36,0,0.8629516959190369
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,13,22,22,8,0,0.8612977266311646
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,13,23,23,27,0,0.714874267578125
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,13,24,24,5,0,0.8053014874458313
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,13,25,25,15,0,0.8660937547683716
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,13,26,26,4,0,0.9253748059272766
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,13,27,27,39,0,0.8583528995513916
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,13,28,28,34,0,0.9138197898864746
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,13,29,29,23,0,0.7577248811721802
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,13,30,30,25,0,0.8206287622451782
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,13,31,31,18,0,0.7729290723800659
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,13,32,32,31,0,0.7653511166572571
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,13,33,33,7,0,0.773743748664856
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,13,34,34,21,0,0.8597651720046997
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,13,35,35,37,0,0.8164509534835815
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,13,36,36,11,0,0.8201923370361328
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,13,37,37,19,0,0.8153446912765503
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,13,38,38,26,0,0.7727072834968567
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,13,39,39,9,0,0.8362463712692261
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,14,0,0,22,0,0.766686201095581
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,14,1,1,10,0,0.8868972063064575
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,14,2,2,2,1,0.48707473278045654
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,14,3,3,32,0,0.7239401936531067
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,14,4,4,39,0,0.835639238357544
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,14,5,5,29,0,0.8195650577545166
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,14,6,6,9,0,0.8100835084915161
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,14,7,7,35,0,0.7351140975952148
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,14,8,8,19,0,0.7315008044242859
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,14,9,9,7,0,0.8303049206733704
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,14,10,10,28,0,0.7772064208984375
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,14,11,11,26,0,0.7292088270187378
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,14,12,12,4,0,0.8041865229606628
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,14,13,13,13,1,0.415463387966156
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,14,14,14,8,0,0.9772308468818665
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,14,15,15,20,0,0.7322107553482056
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,14,16,16,33,0,0.7790593504905701
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,14,17,17,5,0,0.807554304599762
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,14,18,18,18,1,0.3757677376270294
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,14,19,19,36,0,0.7430016994476318
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,14,20,20,15,0,0.7608190178871155
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,14,21,21,6,0,0.8269392251968384
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,14,22,22,14,0,0.749738335609436
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,14,23,23,12,0,0.832993745803833
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,14,24,24,24,1,0.811707615852356
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,14,25,25,11,0,0.9406265020370483
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,14,26,26,25,0,0.7994486093521118
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,14,27,27,27,1,0.35182297229766846
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,14,28,28,16,0,0.8614646196365356
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,14,29,29,17,0,0.8128787875175476
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,14,30,30,38,0,0.8776150941848755
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,14,31,31,30,0,0.729794442653656
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,14,32,32,23,0,0.7159069180488586
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,14,33,33,37,0,0.7654666900634766
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,14,34,34,21,0,0.8597651720046997
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,14,35,35,3,0,0.8151650428771973
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,14,36,36,0,0,0.7598724961280823
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,14,37,37,31,0,0.792654275894165
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,14,38,38,1,0,0.7894337177276611
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,14,39,39,34,0,0.8478379249572754
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,15,0,0,9,0,0.7457553744316101
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,15,1,1,30,0,0.8287368416786194
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,15,2,2,15,0,0.840217649936676
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,15,3,3,5,0,0.8143731355667114
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,15,4,4,18,0,0.7770415544509888
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,15,5,5,22,0,0.7890009880065918
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,15,6,6,0,0,0.804983377456665
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,15,7,7,31,0,0.7854127287864685
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,15,8,8,12,0,0.7510999441146851
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,15,9,9,35,0,0.8488494157791138
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,15,10,10,7,0,0.8347620368003845
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,15,11,11,16,0,0.7903373837471008
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,15,12,12,11,0,0.8520285487174988
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,15,13,13,34,0,0.8225562572479248
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,15,14,14,39,0,0.8574733734130859
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,15,15,15,6,0,0.8047066330909729
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,15,16,16,25,0,0.8360530734062195
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,15,17,17,14,0,0.7581902742385864
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,15,18,18,3,0,0.8416621685028076
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,15,19,19,26,0,0.7694972157478333
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,15,20,20,8,0,1.005997657775879
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,15,21,21,32,0,0.7561970353126526
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,15,22,22,13,0,0.758022665977478
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,15,23,23,33,0,0.8379152417182922
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,15,24,24,19,0,0.733600378036499
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,15,25,25,24,0,0.8584551811218262
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,15,26,26,23,0,0.7432498931884766
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,15,27,27,38,0,0.8720998167991638
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,15,28,28,37,0,0.8915067315101624
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,15,29,29,10,0,0.8447879552841187
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,15,30,30,27,0,0.7393476366996765
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,15,31,31,4,0,0.7873843312263489
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,15,32,32,21,0,0.8190757036209106
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,15,33,33,28,0,0.743890643119812
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,15,34,34,20,0,0.7496979832649231
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,15,35,35,2,0,0.7963306903839111
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,15,36,36,17,0,0.7639659643173218
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,15,37,37,36,0,0.83861243724823
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,15,38,38,29,0,0.7895454168319702
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,15,39,39,1,0,0.8665515780448914
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,16,0,0,3,0,0.8428796529769897
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,16,1,1,28,0,0.8201207518577576
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,16,2,2,16,0,0.8832212090492249
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,16,3,3,11,0,0.8390610218048096
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,16,4,4,4,1,0.8021251559257507
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,16,5,5,8,0,0.9981375932693481
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,16,6,6,25,0,0.8310967683792114
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,16,7,7,36,0,0.8272147178649902
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,16,8,8,18,0,0.7751861214637756
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,16,9,9,14,0,0.8760992288589478
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,16,10,10,6,0,0.8179610967636108
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,16,11,11,15,0,0.7590099573135376
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,16,12,12,32,0,0.7149226665496826
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,16,13,13,20,0,0.7548955678939819
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,16,14,14,7,0,0.800148069858551
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,16,15,15,34,0,0.8541499972343445
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,16,16,16,26,0,0.8103058934211731
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,16,17,17,38,0,0.8286195993423462
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,16,18,18,9,0,0.7804501056671143
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,16,19,19,1,0,0.7754135131835938
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,16,20,20,22,0,0.8200250267982483
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,16,21,21,30,0,0.7763946652412415
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,16,22,22,21,0,0.8222728371620178
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,16,23,23,29,0,0.8472534418106079
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,16,24,24,24,1,0.811707615852356
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,16,25,25,37,0,0.8950538635253906
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,16,26,26,27,0,0.7452726364135742
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,16,27,27,5,0,0.8258099555969238
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,16,28,28,0,0,0.8728474974632263
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,16,29,29,23,0,0.7577248811721802
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,16,30,30,12,0,0.7717615962028503
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,16,31,31,33,0,0.7409683465957642
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,16,32,32,10,0,0.7679873704910278
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,16,33,33,19,0,0.7312551140785217
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,16,34,34,13,0,0.8054042458534241
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,16,35,35,31,0,0.7578171491622925
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,16,36,36,35,0,0.746145486831665
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,16,37,37,17,0,0.7956147193908691
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,16,38,38,39,0,0.8782511949539185
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,16,39,39,2,0,0.8529379963874817
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,17,0,0,2,0,0.7610337138175964
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,17,1,1,16,0,0.8874634504318237
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,17,2,2,13,0,0.7956877946853638
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,17,3,3,38,0,0.8849219679832458
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,17,4,4,27,0,0.759634256362915
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,17,5,5,14,0,0.7718033194541931
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,17,6,6,39,0,0.8387566804885864
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,17,7,7,30,0,0.7555710077285767
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,17,8,8,6,0,0.7613185048103333
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,17,9,9,19,0,0.7780393362045288
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,17,10,10,3,0,0.8945419788360596
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,17,11,11,37,0,0.7710052728652954
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,17,12,12,23,0,0.7537379264831543
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,17,13,13,28,0,0.7861130833625793
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,17,14,14,22,0,0.8088388442993164
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,17,15,15,24,0,0.807687520980835
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,17,16,16,35,0,0.7905344367027283
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,17,17,17,25,0,0.7627922892570496
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,17,18,18,5,0,0.8888583183288574
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,17,19,19,12,0,0.8116641044616699
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,17,20,20,20,1,0.48288628458976746
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,17,21,21,26,0,0.813559889793396
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,17,22,22,4,0,0.8005458116531372
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,17,23,23,31,0,0.7474799752235413
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,17,24,24,29,0,0.7541492581367493
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,17,25,25,32,0,0.834714412689209
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,17,26,26,36,0,0.8126569390296936
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,17,27,27,7,0,0.7972977757453918
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,17,28,28,15,0,0.8510196208953857
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,17,29,29,17,0,0.8128787875175476
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,17,30,30,33,0,0.7431845664978027
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,17,31,31,9,0,0.7539410591125488
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,17,32,32,8,0,0.858091413974762
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,17,33,33,1,0,0.7867235541343689
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,17,34,34,0,0,0.7819768786430359
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,17,35,35,34,0,0.8556708693504333
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,17,36,36,10,0,0.773267388343811
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,17,37,37,18,0,0.8190141320228577
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,17,38,38,11,0,0.866335928440094
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,17,39,39,21,0,0.8788251876831055
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,18,0,0,18,0,0.7692987322807312
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,18,1,1,26,0,0.7842603921890259
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,18,2,2,25,0,0.8131621479988098
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,18,3,3,8,0,0.9810487031936646
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,18,4,4,1,0,0.771358072757721
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,18,5,5,3,0,0.8353027105331421
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,18,6,6,30,0,0.7417145371437073
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,18,7,7,34,0,0.8305214643478394
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,18,8,8,15,0,0.7511886954307556
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,18,9,9,12,0,0.7966238260269165
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,18,10,10,32,0,0.7428894639015198
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,18,11,11,0,0,0.7605543732643127
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,18,12,12,39,0,0.8546825647354126
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,18,13,13,36,0,0.8442311882972717
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,18,14,14,4,0,0.829387366771698
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,18,15,15,24,0,0.807687520980835
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,18,16,16,2,0,0.8538216948509216
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,18,17,17,31,0,0.7665016055107117
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,18,18,18,6,0,0.87363600730896
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,18,19,19,21,0,0.9022330045700073
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,18,20,20,23,0,0.7416283488273621
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,18,21,21,29,0,0.8104125261306763
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,18,22,22,28,0,0.7540249824523926
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,18,23,23,13,0,0.8548200130462646
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,18,24,24,37,0,0.7701082825660706
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,18,25,25,14,0,0.8566980957984924
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,18,26,26,7,0,0.8287554979324341
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,18,27,27,22,0,0.812738835811615
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,18,28,28,10,0,0.8714022040367126
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,18,29,29,5,0,0.8550553321838379
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,18,30,30,11,0,0.8291406631469727
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,18,31,31,38,0,0.8101054430007935
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,18,32,32,27,0,0.7586555480957031
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,18,33,33,16,0,0.7883671522140503
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,18,34,34,17,0,0.8070642948150635
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,18,35,35,20,0,0.7688735723495483
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,18,36,36,33,0,0.7522364854812622
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,18,37,37,9,0,0.8110702037811279
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,18,38,38,35,0,0.7439804077148438
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,18,39,39,19,0,0.8363622426986694
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,19,0,0,12,0,0.7514340281486511
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,19,1,1,5,0,0.8796902894973755
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,19,2,2,4,0,0.8860241770744324
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,19,3,3,24,0,0.81214839220047
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,19,4,4,10,0,0.7678759694099426
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,19,5,5,25,0,0.855003833770752
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,19,6,6,33,0,0.7817399501800537
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,19,7,7,3,0,0.850415825843811
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,19,8,8,7,0,0.7713475227355957
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,19,9,9,28,0,0.8380561470985413
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,19,10,10,29,0,0.8083686828613281
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,19,11,11,16,0,0.7903373837471008
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,19,12,12,37,0,0.8081675171852112
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,19,13,13,13,1,0.415463387966156
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,19,14,14,34,0,0.8345143795013428
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,19,15,15,17,0,0.7572240233421326
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,19,16,16,11,0,0.8566697835922241
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,19,17,17,38,0,0.8286195993423462
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,19,18,18,21,0,0.8591205477714539
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,19,19,19,14,0,0.8528016805648804
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,19,20,20,30,0,0.7584700584411621
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,19,21,21,9,0,0.8387241363525391
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,19,22,22,20,0,0.761017382144928
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,19,23,23,22,0,0.8612064123153687
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,19,24,24,31,0,0.7715015411376953
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,19,25,25,19,0,0.7805479764938354
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,19,26,26,36,0,0.8126569390296936
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,19,27,27,18,0,0.7621658444404602
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,19,28,28,6,0,0.8976967930793762
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,19,29,29,23,0,0.7577248811721802
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,19,30,30,1,0,0.819007396697998
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,19,31,31,8,0,0.8431146740913391
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,19,32,32,26,0,0.7238239049911499
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,19,33,33,2,0,0.7597658038139343
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,19,34,34,0,0,0.7819768786430359
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,19,35,35,32,0,0.7539710998535156
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,19,36,36,39,0,0.8404079675674438
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,19,37,37,15,0,0.8035567998886108
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,19,38,38,35,0,0.7439804077148438
+shuffled,four_bit_CPA,4bit-CPA / CPA (미수정) + naive dequant,19,39,39,27,0,0.7730920910835266
+gray_0.5,constant,gray_0.5,,0,,0,,0.8011081218719482
+gray_0.5,constant,gray_0.5,,1,,1,,0.9226316213607788
+gray_0.5,constant,gray_0.5,,2,,2,,0.8589380979537964
+gray_0.5,constant,gray_0.5,,3,,3,,0.746105432510376
+gray_0.5,constant,gray_0.5,,4,,4,,0.8857054710388184
+gray_0.5,constant,gray_0.5,,5,,5,,0.782259464263916
+gray_0.5,constant,gray_0.5,,6,,6,,0.8381745219230652
+gray_0.5,constant,gray_0.5,,7,,7,,0.7950791716575623
+gray_0.5,constant,gray_0.5,,8,,8,,1.0188968181610107
+gray_0.5,constant,gray_0.5,,9,,9,,0.8975014090538025
+gray_0.5,constant,gray_0.5,,10,,10,,0.8294637799263
+gray_0.5,constant,gray_0.5,,11,,11,,0.8807846903800964
+gray_0.5,constant,gray_0.5,,12,,12,,0.8194043040275574
+gray_0.5,constant,gray_0.5,,13,,13,,0.8339688777923584
+gray_0.5,constant,gray_0.5,,14,,14,,0.7932155132293701
+gray_0.5,constant,gray_0.5,,15,,15,,0.7390978932380676
+gray_0.5,constant,gray_0.5,,16,,16,,0.8477499485015869
+gray_0.5,constant,gray_0.5,,17,,17,,0.8023560643196106
+gray_0.5,constant,gray_0.5,,18,,18,,0.8794667720794678
+gray_0.5,constant,gray_0.5,,19,,19,,0.8767391443252563
+gray_0.5,constant,gray_0.5,,20,,20,,0.7648367285728455
+gray_0.5,constant,gray_0.5,,21,,21,,0.8999496102333069
+gray_0.5,constant,gray_0.5,,22,,22,,0.8030645251274109
+gray_0.5,constant,gray_0.5,,23,,23,,0.8164879083633423
+gray_0.5,constant,gray_0.5,,24,,24,,0.823096752166748
+gray_0.5,constant,gray_0.5,,25,,25,,0.9077498912811279
+gray_0.5,constant,gray_0.5,,26,,26,,0.8647423386573792
+gray_0.5,constant,gray_0.5,,27,,27,,0.7972432374954224
+gray_0.5,constant,gray_0.5,,28,,28,,0.812812328338623
+gray_0.5,constant,gray_0.5,,29,,29,,0.8376005291938782
+gray_0.5,constant,gray_0.5,,30,,30,,0.7306405901908875
+gray_0.5,constant,gray_0.5,,31,,31,,0.8668738603591919
+gray_0.5,constant,gray_0.5,,32,,32,,0.6933064460754395
+gray_0.5,constant,gray_0.5,,33,,33,,0.7777389883995056
+gray_0.5,constant,gray_0.5,,34,,34,,0.7999240756034851
+gray_0.5,constant,gray_0.5,,35,,35,,0.6588515043258667
+gray_0.5,constant,gray_0.5,,36,,36,,0.9015675187110901
+gray_0.5,constant,gray_0.5,,37,,37,,0.8401688933372498
+gray_0.5,constant,gray_0.5,,38,,38,,0.9464746713638306
+gray_0.5,constant,gray_0.5,,39,,39,,0.7761688232421875
+uniform_noise,constant,uniform_noise,42,0,,0,,0.8030974864959717
+uniform_noise,constant,uniform_noise,42,1,,1,,0.8329832553863525
+uniform_noise,constant,uniform_noise,42,2,,2,,0.8617674112319946
+uniform_noise,constant,uniform_noise,42,3,,3,,0.9327642917633057
+uniform_noise,constant,uniform_noise,42,4,,4,,0.9239565134048462
+uniform_noise,constant,uniform_noise,42,5,,5,,0.8908908367156982
+uniform_noise,constant,uniform_noise,42,6,,6,,0.8219884634017944
+uniform_noise,constant,uniform_noise,42,7,,7,,0.8673085570335388
+uniform_noise,constant,uniform_noise,42,8,,8,,0.9732805490493774
+uniform_noise,constant,uniform_noise,42,9,,9,,0.8265954256057739
+uniform_noise,constant,uniform_noise,42,10,,10,,0.8227623105049133
+uniform_noise,constant,uniform_noise,42,11,,11,,0.8889880776405334
+uniform_noise,constant,uniform_noise,42,12,,12,,0.8412491083145142
+uniform_noise,constant,uniform_noise,42,13,,13,,0.9075226783752441
+uniform_noise,constant,uniform_noise,42,14,,14,,0.8856549263000488
+uniform_noise,constant,uniform_noise,42,15,,15,,0.8487111330032349
+uniform_noise,constant,uniform_noise,42,16,,16,,0.8204753398895264
+uniform_noise,constant,uniform_noise,42,17,,17,,0.879453182220459
+uniform_noise,constant,uniform_noise,42,18,,18,,0.889794111251831
+uniform_noise,constant,uniform_noise,42,19,,19,,0.7403392195701599
+uniform_noise,constant,uniform_noise,42,20,,20,,0.8291082978248596
+uniform_noise,constant,uniform_noise,42,21,,21,,0.9283273220062256
+uniform_noise,constant,uniform_noise,42,22,,22,,0.8165587782859802
+uniform_noise,constant,uniform_noise,42,23,,23,,0.7988276481628418
+uniform_noise,constant,uniform_noise,42,24,,24,,0.8822253942489624
+uniform_noise,constant,uniform_noise,42,25,,25,,0.8030480742454529
+uniform_noise,constant,uniform_noise,42,26,,26,,0.8103580474853516
+uniform_noise,constant,uniform_noise,42,27,,27,,0.91732257604599
+uniform_noise,constant,uniform_noise,42,28,,28,,0.7681674957275391
+uniform_noise,constant,uniform_noise,42,29,,29,,0.8280287981033325
+uniform_noise,constant,uniform_noise,42,30,,30,,0.8109092712402344
+uniform_noise,constant,uniform_noise,42,31,,31,,0.826545238494873
+uniform_noise,constant,uniform_noise,42,32,,32,,0.8405428528785706
+uniform_noise,constant,uniform_noise,42,33,,33,,0.8298051357269287
+uniform_noise,constant,uniform_noise,42,34,,34,,0.9027333855628967
+uniform_noise,constant,uniform_noise,42,35,,35,,0.8598138689994812
+uniform_noise,constant,uniform_noise,42,36,,36,,0.898097038269043
+uniform_noise,constant,uniform_noise,42,37,,37,,0.8182014226913452
+uniform_noise,constant,uniform_noise,42,38,,38,,0.9417091608047485
+uniform_noise,constant,uniform_noise,42,39,,39,,0.895703136920929
+dataset_mean,constant,dataset_mean,,0,,0,,0.8223680257797241
+dataset_mean,constant,dataset_mean,,1,,1,,0.8283989429473877
+dataset_mean,constant,dataset_mean,,2,,2,,0.8069552183151245
+dataset_mean,constant,dataset_mean,,3,,3,,0.6848146915435791
+dataset_mean,constant,dataset_mean,,4,,4,,0.8575360774993896
+dataset_mean,constant,dataset_mean,,5,,5,,0.8030675053596497
+dataset_mean,constant,dataset_mean,,6,,6,,0.8594908714294434
+dataset_mean,constant,dataset_mean,,7,,7,,0.7511324286460876
+dataset_mean,constant,dataset_mean,,8,,8,,1.0024183988571167
+dataset_mean,constant,dataset_mean,,9,,9,,0.792292594909668
+dataset_mean,constant,dataset_mean,,10,,10,,0.8467893600463867
+dataset_mean,constant,dataset_mean,,11,,11,,0.8978087902069092
+dataset_mean,constant,dataset_mean,,12,,12,,0.758372962474823
+dataset_mean,constant,dataset_mean,,13,,13,,0.7632031440734863
+dataset_mean,constant,dataset_mean,,14,,14,,0.7593778371810913
+dataset_mean,constant,dataset_mean,,15,,15,,0.8196501731872559
+dataset_mean,constant,dataset_mean,,16,,16,,0.8913400173187256
+dataset_mean,constant,dataset_mean,,17,,17,,0.7601804137229919
+dataset_mean,constant,dataset_mean,,18,,18,,0.7573122978210449
+dataset_mean,constant,dataset_mean,,19,,19,,0.8224170207977295
+dataset_mean,constant,dataset_mean,,20,,20,,0.7840882539749146
+dataset_mean,constant,dataset_mean,,21,,21,,0.8521562814712524
+dataset_mean,constant,dataset_mean,,22,,22,,0.8090371489524841
+dataset_mean,constant,dataset_mean,,23,,23,,0.7775988578796387
+dataset_mean,constant,dataset_mean,,24,,24,,0.8308318853378296
+dataset_mean,constant,dataset_mean,,25,,25,,0.8275526165962219
+dataset_mean,constant,dataset_mean,,26,,26,,0.7899174690246582
+dataset_mean,constant,dataset_mean,,27,,27,,0.7124577164649963
+dataset_mean,constant,dataset_mean,,28,,28,,0.8072190284729004
+dataset_mean,constant,dataset_mean,,29,,29,,0.8074232935905457
+dataset_mean,constant,dataset_mean,,30,,30,,0.7680648565292358
+dataset_mean,constant,dataset_mean,,31,,31,,0.7924975156784058
+dataset_mean,constant,dataset_mean,,32,,32,,0.7263805866241455
+dataset_mean,constant,dataset_mean,,33,,33,,0.7975813150405884
+dataset_mean,constant,dataset_mean,,34,,34,,0.767478883266449
+dataset_mean,constant,dataset_mean,,35,,35,,0.6903238296508789
+dataset_mean,constant,dataset_mean,,36,,36,,0.8348681926727295
+dataset_mean,constant,dataset_mean,,37,,37,,0.8559785485267639
+dataset_mean,constant,dataset_mean,,38,,38,,0.8644639849662781
+dataset_mean,constant,dataset_mean,,39,,39,,0.8382032513618469

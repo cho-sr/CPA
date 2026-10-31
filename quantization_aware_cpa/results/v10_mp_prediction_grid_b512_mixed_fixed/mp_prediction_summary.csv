@@ -1,0 +1,6 @@
+B,bits,scale_granularity,require_distinct_labels,n,B_eff_mean,B_eff_min,B_eff_max,mp_edge_mean,labels_unique_count_mean,labels_duplicate_count_mean,min_lam_over_mp_edge_mean,near_boundary_count_pm20pct_sum
+512,2,per_row,False,1,56.0,56,56,1.737724909389568e-07,384.0,128.0,0.29586130380630493,27
+512,3,per_row,False,1,162.0,162,162,3.191739579464081e-08,384.0,128.0,0.32092851400375366,20
+512,4,per_row,False,1,229.0,229,229,6.950899339897844e-09,384.0,128.0,0.34090444445610046,16
+512,6,per_row,False,1,320.0,320,320,3.940419169732024e-10,384.0,128.0,0.3751448094844818,9
+512,8,per_row,False,1,378.0,378,378,2.4051555915744834e-11,384.0,128.0,0.38602927327156067,8

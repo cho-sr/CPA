@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "task_id": "CPA_PAPER_SPARSE_SAME80_K503020_R20_20260921",
+  "plan_version": 4,
+  "amendment_id": "CPA_PAPER_SPARSE_FRESH16_R8_AMENDMENT_20260921",
+  "keep_percent": 20,
+  "packet_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\paper_sparse_fresh16_keep50_30_20_R8_20260921\\keep20\\packet\\observation.bin",
+  "packet_sha256": "13e1e6bf34547555965b1c7d9a9e1bf9867474c3d77a59597fe77039d9426fac",
+  "packet_bytes": 95053444,
+  "source_codec": "topk_global_bitmap_fp32_v1",
+  "fresh_update_sha256": "7d7874a135a77fe5c86591bff62dc37270163ea346b0d40875100ca4138f8ba4",
+  "fresh_Y_sha256": "751445ef6c040119cf6c960c2355d7d7548f723311a2ba4b36f0d34893c03937",
+  "shared_by": [
+    "naive_zero_fill",
+    "uniform_random_fill_candidates_0_to_7"
+  ],
+  "old_packet_imported": false,
+  "validation": {
+    "source_codec": "topk_global_bitmap_fp32_v1",
+    "generic_codec": "topk_global_bitmap_fp32_v1",
+    "shape": [
+      4096,
+      25088
+    ],
+    "elements": 102760448,
+    "kept_elements": 20552089,
+    "keep_percent": 20,
+    "packet_bytes": 95053444,
+    "bitmap_bytes": 12845056,
+    "value_bytes": 82208356,
+    "header_bytes": 32,
+    "expected_packet_bytes": 95053444,
+    "mask_sha256": "23ec4ea967f20c6a59ed0fed840c88b314992da2128f78676652af3026d81988",
+    "retained_values_sha256": "2729aa2c5a12f5cea3421a7ab279c23180a4def67a90d13ded825e11842f6192",
+    "retained_fp32_bits_exact": true,
+    "row_major_little_bit_order": true,
+    "tie_break": "flat index ascending",
+    "historical_50_schema_checked": false
+  },
+  "communication_sha256": "b330367b72394d4f554a903c657efbd9a3530dd4ae0e628e69069aaa52af07c8",
+  "diagnostics_sha256": "aefa8a10251d30dad30008afecbde2ab8afe7248753096a70b35e5f3b543f46b",
+  "created_at_utc": "2026-09-21T01:33:20.838963+00:00"
+}

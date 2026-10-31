@@ -1,0 +1,9 @@
+sample,label,path
+0,750,C:\Users\조상제\Desktop\CPA\int 4 fedavg\imagenet\vgg16\clients3_rounds20_spc8_seed42\quant_aware_cpa_grad_loss\direct_q_update_cpa_attack_layer_known_n8_it0_random\png\reconstructed\rec_000_label750.png
+1,889,C:\Users\조상제\Desktop\CPA\int 4 fedavg\imagenet\vgg16\clients3_rounds20_spc8_seed42\quant_aware_cpa_grad_loss\direct_q_update_cpa_attack_layer_known_n8_it0_random\png\reconstructed\rec_001_label889.png
+2,4,C:\Users\조상제\Desktop\CPA\int 4 fedavg\imagenet\vgg16\clients3_rounds20_spc8_seed42\quant_aware_cpa_grad_loss\direct_q_update_cpa_attack_layer_known_n8_it0_random\png\reconstructed\rec_002_label4.png
+3,873,C:\Users\조상제\Desktop\CPA\int 4 fedavg\imagenet\vgg16\clients3_rounds20_spc8_seed42\quant_aware_cpa_grad_loss\direct_q_update_cpa_attack_layer_known_n8_it0_random\png\reconstructed\rec_003_label873.png
+4,831,C:\Users\조상제\Desktop\CPA\int 4 fedavg\imagenet\vgg16\clients3_rounds20_spc8_seed42\quant_aware_cpa_grad_loss\direct_q_update_cpa_attack_layer_known_n8_it0_random\png\reconstructed\rec_004_label831.png
+5,644,C:\Users\조상제\Desktop\CPA\int 4 fedavg\imagenet\vgg16\clients3_rounds20_spc8_seed42\quant_aware_cpa_grad_loss\direct_q_update_cpa_attack_layer_known_n8_it0_random\png\reconstructed\rec_005_label644.png
+6,544,C:\Users\조상제\Desktop\CPA\int 4 fedavg\imagenet\vgg16\clients3_rounds20_spc8_seed42\quant_aware_cpa_grad_loss\direct_q_update_cpa_attack_layer_known_n8_it0_random\png\reconstructed\rec_006_label544.png
+7,217,C:\Users\조상제\Desktop\CPA\int 4 fedavg\imagenet\vgg16\clients3_rounds20_spc8_seed42\quant_aware_cpa_grad_loss\direct_q_update_cpa_attack_layer_known_n8_it0_random\png\reconstructed\rec_007_label217.png

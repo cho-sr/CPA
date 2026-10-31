@@ -1,0 +1,12 @@
+﻿{
+    "task_id":  "CPA_SIGNED_COMBINATION_ICA_REVIEW_20260917",
+    "wait_pid":  25444,
+    "expected_created_ms":  1789577479510,
+    "callback_pid":  5156,
+    "callback_process_name":  null,
+    "callback_command_line":  null,
+    "reservation_created":  false,
+    "stdout":  "C:\\Users\\조상제\\Desktop\\CPA\\.ai\\execution-results\\CPA_SIGNED_COMBINATION_ICA_REVIEW_20260917\\completion_callback_stdout.log",
+    "stderr":  "C:\\Users\\조상제\\Desktop\\CPA\\.ai\\execution-results\\CPA_SIGNED_COMBINATION_ICA_REVIEW_20260917\\completion_callback_stderr.log",
+    "launched_at_utc":  "2026-09-16T16:52:15.0593029Z"
+}

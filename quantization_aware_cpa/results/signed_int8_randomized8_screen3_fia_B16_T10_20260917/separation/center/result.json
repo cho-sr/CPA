@@ -1,0 +1,67 @@
+{
+  "task_id": "CPA_SIGNED_INT8_RANDOMIZED8_SCREEN3_FIA_20260917",
+  "status": "COMPLETED",
+  "index": "center",
+  "separation_call": 1,
+  "input_sha256": "98a92e36b0c5f39b14d74e7ebbcec13bce184dec348d8f835d624646808173dd",
+  "S_hat_sha256": "106f51cdba1b193c8096374214621e8cfe48480df54b9e14dd34fab99db50269",
+  "target_z_sha256": "27fd6d0688faa772a56f10b471a7de5b4d047bf1060726e6c22f2379ce3e23f5",
+  "fastica": {
+    "algorithm": "parallel_symmetric_fixed_point_logcosh_alpha1",
+    "corrected_derivative_broadcast": "a[:,None] * W",
+    "converged": true,
+    "iterations": 27,
+    "residual": 8.940696716308594e-07,
+    "max_iter": 200,
+    "tolerance": 1e-06
+  },
+  "refinement": {
+    "optimizer": "SGD",
+    "iterations": 4000,
+    "lr": 0.001,
+    "momentum": 0.0,
+    "weight_decay": 0.0,
+    "scheduler": null,
+    "active_terms": [
+      "negentropy",
+      "decorrelation",
+      "sign",
+      "l1"
+    ],
+    "weights": {
+      "negentropy": 0.0935827857091549,
+      "decorrelation": 0.2513674104161625,
+      "sign": 0.05811961446881231,
+      "l1": 17.94138146247377
+    },
+    "stable_logcosh": true
+  },
+  "whitening": {
+    "algorithm": "row_centered_covariance_torch.linalg.eig_top_abs_eigenvalues",
+    "computed_once_on": "cpu",
+    "shared_between_stages": true,
+    "mu_shape": [
+      4096,
+      1
+    ],
+    "K_shape": [
+      16,
+      4096
+    ],
+    "Xw_shape": [
+      16,
+      25088
+    ],
+    "requested_device": "cpu",
+    "dtype": "float32",
+    "rank_floor": 1e-12
+  },
+  "final_losses": {
+    "negentropy": -0.04028455540537834,
+    "decorrelation": 0.5511098504066467,
+    "sign": 12.941437721252441,
+    "l1": 0.29075831174850464,
+    "total": 6.103518009185791
+  },
+  "private_data_used": false
+}

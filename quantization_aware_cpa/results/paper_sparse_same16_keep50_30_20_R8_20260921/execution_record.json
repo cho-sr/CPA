@@ -1,0 +1,125 @@
+{
+  "task_id": "CPA_PAPER_SPARSE_SAME80_K503020_R20_20260921",
+  "plan_version": 3,
+  "amendment_id": "CPA_PAPER_SPARSE_SAME16_R8_AMENDMENT_20260921",
+  "candidate_count": 8,
+  "candidate_ids": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "n_images": 16,
+  "batch_indices": [
+    0
+  ],
+  "wrapper_pid": 10180,
+  "python": "C:\\miniconda\\envs\\DLG\\python.exe",
+  "project": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa",
+  "workspace": "C:\\Users\\조상제\\Desktop\\CPA",
+  "output_root": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\paper_sparse_same16_keep50_30_20_R8_20260921",
+  "status": "FAILED",
+  "full_experiment_status": "INCOMPLETE_STOPPED_ON_FAILURE",
+  "started_utc": "2026-09-20T23:45:25.536129+00:00",
+  "deadline_hours": 48,
+  "serial": true,
+  "supersedes": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\paper_sparse_same80_keep50_30_20_R8_20260921\\v2_supersession.json",
+  "commands": [
+    "C:\\miniconda\\envs\\DLG\\python.exe -u -m qacpa.run_paper_sparse_same16_r8 --config configs/cpa_fia_random_topk50_same16_R8_S5k_K3_F25k.json --phase prepare",
+    "C:\\miniconda\\envs\\DLG\\python.exe -u -m qacpa.run_paper_sparse_same16_r8 --config configs/cpa_fia_random_topk30_same16_R8_S5k_K3_F25k.json --phase prepare",
+    "C:\\miniconda\\envs\\DLG\\python.exe -u -m qacpa.run_paper_sparse_same16_r8 --config configs/cpa_fia_random_topk20_same16_R8_S5k_K3_F25k.json --phase prepare",
+    "C:\\miniconda\\envs\\DLG\\python.exe -u -m qacpa.run_paper_sparse_same16_r8 --config configs/cpa_fia_random_topk50_same16_R8_S5k_K3_F25k.json --phase migrate",
+    "C:\\miniconda\\envs\\DLG\\python.exe -u -m qacpa.run_paper_sparse_same16_r8 --config configs/cpa_fia_random_topk30_same16_R8_S5k_K3_F25k.json --phase migrate",
+    "C:\\miniconda\\envs\\DLG\\python.exe -u -m qacpa.run_paper_sparse_same16_r8 --config configs/cpa_fia_random_topk20_same16_R8_S5k_K3_F25k.json --phase migrate",
+    "C:\\miniconda\\envs\\DLG\\python.exe -u -m qacpa.run_paper_sparse_same16_r8 --config configs/cpa_fia_random_topk50_same16_R8_S5k_K3_F25k.json --phase run",
+    "C:\\miniconda\\envs\\DLG\\python.exe -u -m qacpa.run_paper_sparse_same16_r8 --config configs/cpa_fia_random_topk30_same16_R8_S5k_K3_F25k.json --phase run",
+    "C:\\miniconda\\envs\\DLG\\python.exe -u -m qacpa.run_paper_sparse_same16_r8 --config configs/cpa_fia_random_topk20_same16_R8_S5k_K3_F25k.json --phase run",
+    "C:\\miniconda\\envs\\DLG\\python.exe -u -m qacpa.report_paper_sparse_same16_r8"
+  ],
+  "stages": [
+    {
+      "name": "prepare_topk50",
+      "command": "C:\\miniconda\\envs\\DLG\\python.exe -u -m qacpa.run_paper_sparse_same16_r8 --config configs/cpa_fia_random_topk50_same16_R8_S5k_K3_F25k.json --phase prepare",
+      "status": "COMPLETED",
+      "started_utc": "2026-09-20T23:45:25.539128+00:00",
+      "stdout": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\paper_sparse_same16_keep50_30_20_R8_20260921\\prepare_topk50.stdout.log",
+      "stderr": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\paper_sparse_same16_keep50_30_20_R8_20260921\\prepare_topk50.stderr.log",
+      "exit_code": 0,
+      "duration_seconds": 12.422,
+      "ended_utc": "2026-09-20T23:45:37.964225+00:00"
+    },
+    {
+      "name": "prepare_topk30",
+      "command": "C:\\miniconda\\envs\\DLG\\python.exe -u -m qacpa.run_paper_sparse_same16_r8 --config configs/cpa_fia_random_topk30_same16_R8_S5k_K3_F25k.json --phase prepare",
+      "status": "COMPLETED",
+      "started_utc": "2026-09-20T23:45:37.966225+00:00",
+      "stdout": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\paper_sparse_same16_keep50_30_20_R8_20260921\\prepare_topk30.stdout.log",
+      "stderr": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\paper_sparse_same16_keep50_30_20_R8_20260921\\prepare_topk30.stderr.log",
+      "exit_code": 0,
+      "duration_seconds": 6.532,
+      "ended_utc": "2026-09-20T23:45:44.496404+00:00"
+    },
+    {
+      "name": "prepare_topk20",
+      "command": "C:\\miniconda\\envs\\DLG\\python.exe -u -m qacpa.run_paper_sparse_same16_r8 --config configs/cpa_fia_random_topk20_same16_R8_S5k_K3_F25k.json --phase prepare",
+      "status": "COMPLETED",
+      "started_utc": "2026-09-20T23:45:44.499404+00:00",
+      "stdout": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\paper_sparse_same16_keep50_30_20_R8_20260921\\prepare_topk20.stdout.log",
+      "stderr": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\paper_sparse_same16_keep50_30_20_R8_20260921\\prepare_topk20.stderr.log",
+      "exit_code": 0,
+      "duration_seconds": 6.671,
+      "ended_utc": "2026-09-20T23:45:51.169585+00:00"
+    },
+    {
+      "name": "migrate_topk50",
+      "command": "C:\\miniconda\\envs\\DLG\\python.exe -u -m qacpa.run_paper_sparse_same16_r8 --config configs/cpa_fia_random_topk50_same16_R8_S5k_K3_F25k.json --phase migrate",
+      "status": "COMPLETED",
+      "started_utc": "2026-09-20T23:45:51.172585+00:00",
+      "stdout": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\paper_sparse_same16_keep50_30_20_R8_20260921\\migrate_topk50.stdout.log",
+      "stderr": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\paper_sparse_same16_keep50_30_20_R8_20260921\\migrate_topk50.stderr.log",
+      "exit_code": 0,
+      "duration_seconds": 15.141,
+      "ended_utc": "2026-09-20T23:46:06.308065+00:00"
+    },
+    {
+      "name": "migrate_topk30",
+      "command": "C:\\miniconda\\envs\\DLG\\python.exe -u -m qacpa.run_paper_sparse_same16_r8 --config configs/cpa_fia_random_topk30_same16_R8_S5k_K3_F25k.json --phase migrate",
+      "status": "COMPLETED",
+      "started_utc": "2026-09-20T23:46:06.311066+00:00",
+      "stdout": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\paper_sparse_same16_keep50_30_20_R8_20260921\\migrate_topk30.stdout.log",
+      "stderr": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\paper_sparse_same16_keep50_30_20_R8_20260921\\migrate_topk30.stderr.log",
+      "exit_code": 0,
+      "duration_seconds": 7.5,
+      "ended_utc": "2026-09-20T23:46:13.807921+00:00"
+    },
+    {
+      "name": "migrate_topk20",
+      "command": "C:\\miniconda\\envs\\DLG\\python.exe -u -m qacpa.run_paper_sparse_same16_r8 --config configs/cpa_fia_random_topk20_same16_R8_S5k_K3_F25k.json --phase migrate",
+      "status": "COMPLETED",
+      "started_utc": "2026-09-20T23:46:13.810923+00:00",
+      "stdout": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\paper_sparse_same16_keep50_30_20_R8_20260921\\migrate_topk20.stdout.log",
+      "stderr": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\paper_sparse_same16_keep50_30_20_R8_20260921\\migrate_topk20.stderr.log",
+      "exit_code": 0,
+      "duration_seconds": 6.188,
+      "ended_utc": "2026-09-20T23:46:19.999799+00:00"
+    },
+    {
+      "name": "run_topk50",
+      "command": "C:\\miniconda\\envs\\DLG\\python.exe -u -m qacpa.run_paper_sparse_same16_r8 --config configs/cpa_fia_random_topk50_same16_R8_S5k_K3_F25k.json --phase run",
+      "status": "FAILED",
+      "started_utc": "2026-09-20T23:46:20.002799+00:00",
+      "stdout": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\paper_sparse_same16_keep50_30_20_R8_20260921\\run_topk50.stdout.log",
+      "stderr": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\paper_sparse_same16_keep50_30_20_R8_20260921\\run_topk50.stderr.log",
+      "exit_code": 1,
+      "duration_seconds": 14.953,
+      "ended_utc": "2026-09-20T23:46:34.947132+00:00"
+    }
+  ],
+  "current_stage": "run_topk50",
+  "exit_status": 1,
+  "ended_utc": "2026-09-20T23:46:34.950135+00:00"
+}

@@ -1,0 +1,36 @@
+{
+  "task_id": "CPA_PAPER_SPARSE_SAME80_K503020_R20_20260921",
+  "plan_version": 3,
+  "amendment_id": "CPA_PAPER_SPARSE_SAME16_R8_AMENDMENT_20260921",
+  "keep_percent": 30,
+  "source_codec": "topk_global_bitmap_fp32_v1",
+  "batches": [
+    {
+      "source_codec": "topk_global_bitmap_fp32_v1",
+      "generic_codec": "topk_global_bitmap_fp32_v1",
+      "shape": [
+        4096,
+        25088
+      ],
+      "elements": 102760448,
+      "kept_elements": 30828134,
+      "keep_percent": 30,
+      "packet_bytes": 136157624,
+      "bitmap_bytes": 12845056,
+      "value_bytes": 123312536,
+      "header_bytes": 32,
+      "expected_packet_bytes": 136157624,
+      "mask_sha256": "c82e4abb02dd7277182ddf93b0a41cbe01f1a1f4ca2d4469ea1bfbc26975745c",
+      "retained_values_sha256": "7283b28cad01cabbc374c2c0fe6f366556113e95ff954f986629a52253b4e7c6",
+      "retained_fp32_bits_exact": true,
+      "row_major_little_bit_order": true,
+      "tie_break": "flat index ascending",
+      "historical_50_schema_checked": false,
+      "batch_index": 0,
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\cpa_fia_topk30_same80_B16\\batch00\\observation.bin",
+      "sha256": "598998b2e634f95cfb74d3f44852c0d85dece073973237e849fe75d71eaeae3f",
+      "baseline_summary_sha256": "f9975631b05f7b9e2313b41cd591401ae16d3280d1eec78b71820a14666dfa32",
+      "baseline_communication_sha256": "6df5bc2179b325b85d7a3b814dd15a9482f0eb7d315247f01373cd68780015c1"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "python": "3.11.14 | packaged by Anaconda, Inc. | (main, Oct 21 2025, 18:30:03) [MSC v.1929 64 bit (AMD64)]",
+  "executable": "C:\\miniconda\\envs\\DLG\\python.exe",
+  "torch": "2.13.0+cu132",
+  "numpy": "2.4.4",
+  "pytest": "9.1.1",
+  "platform": "Windows-10-10.0.19045-SP0",
+  "device": "cpu",
+  "input_dtype": "float32",
+  "scale_dtype": "float32",
+  "code_dtype": "int8",
+  "default_torch_dtype": "torch.float32",
+  "flush_denormal_setting": "not changed; positive subnormal behavior covered by tests",
+  "seed": 20260914,
+  "model": "gpt-6-astra",
+  "effort": "high",
+  "test_started_at_utc": "2026-09-14T06:29:58.383859+00:00",
+  "test_wall_seconds": 1.9350414000218734,
+  "pytest_reported_seconds": 1.362,
+  "pytest_process_peak_working_set_bytes": 547037184,
+  "peak_method": "Windows GetProcessMemoryInfo PeakWorkingSetSize; child process lifetime",
+  "gpu_executions": 0,
+  "gpu_peak_vram_bytes": null,
+  "gpu_reason": "NOT_USED_CPU_ONLY",
+  "budget": {
+    "wall_seconds": null,
+    "ram_bytes": null,
+    "reason": "NOT_SPECIFIED"
+  }
+}

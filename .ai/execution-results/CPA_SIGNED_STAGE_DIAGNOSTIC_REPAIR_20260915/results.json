@@ -1,0 +1,449 @@
+{
+  "task_id": "CPA_SIGNED_STAGE_DIAGNOSTIC_REPAIR_20260915",
+  "plan_version": 1,
+  "status": "COMPLETED",
+  "tests": {
+    "command": "C:/miniconda/envs/DLG/python.exe -m pytest quantization_aware_cpa/tests/test_signed_stage_diagnostics.py quantization_aware_cpa/tests/test_signed_cell_rank.py quantization_aware_cpa/tests/test_signed_cell_rank_pipeline.py quantization_aware_cpa/tests/test_signed_cell_rank_validation.py -q --basetemp .tmp_pytest_signed_stage_diagnostic_repair_20260915",
+    "exit_status": 0,
+    "result": "57 passed, 240 warnings in 10.27s"
+  },
+  "execution": {
+    "task_id": "CPA_SIGNED_STAGE_DIAGNOSTIC_REPAIR_20260915",
+    "stage": "corrected_offline_evaluation",
+    "status": "COMPLETED",
+    "pid": 2172,
+    "command": [
+      "C:/miniconda/envs/DLG/python.exe",
+      "-m",
+      "quantization_aware_cpa.qacpa.signed_stage_diagnostics",
+      "--naive",
+      "quantization_aware_cpa/results/signed_int4_baseline_B16_T10/naive",
+      "--cell-rank",
+      "quantization_aware_cpa/results/signed_cell_rank_B16_T10/cell_rank_ap5",
+      "--comparison",
+      "quantization_aware_cpa/results_private/signed_cell_rank_B16_T10/evaluation_ap5/comparison.json",
+      "--public-observation",
+      "quantization_aware_cpa/results/signed_int4_baseline_B16_T10/observation",
+      "--private-observation",
+      "quantization_aware_cpa/results_private/signed_int4_baseline_B16_T10/observation",
+      "--checkpoint",
+      "C:/Users/조상제/.cache/torch/hub/checkpoints/vgg16-397923af.pth",
+      "--method-plan",
+      ".ai/proposals/SIGNED_CPA_FIA_STAGE_DIAGNOSTIC_20260915.md",
+      "--expected-plan-sha256",
+      "d24c271ae8461bdad3061c957b53f247cf852c7ba1bbf1d63933205511f0d14d",
+      "--output",
+      "quantization_aware_cpa/results_private/signed_cell_rank_B16_T10/stage_diagnostic_v2_repaired",
+      "--device",
+      "cuda",
+      "--eval-microbatch",
+      "1",
+      "--max-evaluation-seconds",
+      "600",
+      "--max-cuda-allocated-gib",
+      "6"
+    ],
+    "cwd": "C:\\Users\\조상제\\Desktop\\CPA",
+    "started_at_utc": "2026-09-15T10:51:58.775266+00:00",
+    "exit_status": 0,
+    "wall_seconds": 10.226289400015958,
+    "finished_at_utc": "2026-09-15T10:52:09.002347+00:00"
+  },
+  "callback": {
+    "task_id": "CPA_SIGNED_STAGE_DIAGNOSTIC_REPAIR_20260915",
+    "stage": "corrected_offline_evaluation",
+    "wait_pid": 2172,
+    "process_created_ms": 1789469518708,
+    "notification_thread": "01a09e4d-51f3-7121-84e2-03a7a9ac3039",
+    "execution_record": "C:\\Users\\조상제\\Desktop\\CPA\\.ai\\execution-results\\CPA_SIGNED_STAGE_DIAGNOSTIC_REPAIR_20260915\\diagnostic_execution.json",
+    "registered_at": "2026-09-15T10:51:59.730665+00:00",
+    "state": "NOTIFICATION_QUEUED",
+    "model_calls_while_waiting": 0,
+    "process_exit_code": 0,
+    "ended_at": "2026-09-15T10:52:09.008349+00:00",
+    "recorded_stage_status": "COMPLETED",
+    "recorded_exit_status": 0,
+    "receipt": {
+      "queued": true,
+      "receipt": "Queued message 01a0a4b2-1738-7101-a8d3-9c9376b44328 for thread 01a09e4d-51f3-7121-84e2-03a7a9ac3039."
+    },
+    "notified_at": "2026-09-15T10:52:09.942566+00:00"
+  },
+  "evaluated_images": 32,
+  "corrected_revision": "repair_20260915_r1",
+  "summaries": {
+    "cell_rank": {
+      "C_fit": {
+        "max": 0.9760982642007724,
+        "mean": 0.9261285591979537,
+        "median": 0.933560647292491,
+        "min": 0.8461109147022765,
+        "n": 16
+      },
+      "C_image_E": {
+        "max": 0.7300500656262986,
+        "mean": 0.31075016888454343,
+        "median": 0.08222110479615793,
+        "min": 0.013981796481480017,
+        "n": 16
+      },
+      "C_image_I": {
+        "max": 0.7300500656262986,
+        "mean": 0.19913913502928893,
+        "median": 0.04808571202495836,
+        "min": 0.009148189927347297,
+        "n": 16
+      },
+      "C_target_E": {
+        "max": 0.7788181687893901,
+        "mean": 0.3447613956630308,
+        "median": 0.13259205125262719,
+        "min": 0.023977368187835673,
+        "n": 16
+      },
+      "C_target_I": {
+        "max": 0.7788181687893901,
+        "mean": 0.23582110040587417,
+        "median": 0.0799475396000498,
+        "min": 0.023977368187835673,
+        "n": 16
+      },
+      "lpips": {
+        "max": 0.8774943351745605,
+        "mean": 0.7941681928932667,
+        "median": 0.7969079315662384,
+        "min": 0.6696828603744507,
+        "n": 16
+      },
+      "mse": {
+        "max": 0.20729802560822283,
+        "mean": 0.07792987947221378,
+        "median": 0.07055534791694923,
+        "min": 0.04114022810526412,
+        "n": 16
+      },
+      "psnr_db": {
+        "max": 13.857333046543513,
+        "mean": 11.504525428879345,
+        "median": 11.514977299996124,
+        "min": 6.834048342859624,
+        "n": 16
+      },
+      "ssim": {
+        "max": 0.5021462070259335,
+        "mean": 0.2816569651558574,
+        "median": 0.24499980518575,
+        "min": 0.128168008359689,
+        "n": 16
+      }
+    },
+    "naive": {
+      "C_fit": {
+        "max": 0.9854886890321491,
+        "mean": 0.9305190048284289,
+        "median": 0.9385466217460373,
+        "min": 0.8548753260065849,
+        "n": 16
+      },
+      "C_image_E": {
+        "max": 0.6775599362772516,
+        "mean": 0.27681722564429967,
+        "median": 0.08004408007896444,
+        "min": 0.012355640234051257,
+        "n": 16
+      },
+      "C_image_I": {
+        "max": 0.6768612127149692,
+        "mean": 0.11702065331552734,
+        "median": 0.038017173418785105,
+        "min": 0.012355640234051257,
+        "n": 16
+      },
+      "C_target_E": {
+        "max": 0.7340929651950623,
+        "mean": 0.3116051623247538,
+        "median": 0.09825835729816779,
+        "min": 0.019612391241308626,
+        "n": 16
+      },
+      "C_target_I": {
+        "max": 0.7114260876400417,
+        "mean": 0.1412642815341632,
+        "median": 0.05833420258367149,
+        "min": 0.019612391241308626,
+        "n": 16
+      },
+      "lpips": {
+        "max": 0.894607663154602,
+        "mean": 0.8229246027767658,
+        "median": 0.8187000751495361,
+        "min": 0.7263423800468445,
+        "n": 16
+      },
+      "mse": {
+        "max": 0.21095902195390162,
+        "mean": 0.07810934683437974,
+        "median": 0.0685799430901297,
+        "min": 0.03943932992300864,
+        "n": 16
+      },
+      "psnr_db": {
+        "max": 14.040704723619605,
+        "mean": 11.517332145631137,
+        "median": 11.638337758441184,
+        "min": 6.758018966816689,
+        "n": 16
+      },
+      "ssim": {
+        "max": 0.4339286926579059,
+        "mean": 0.28489398970830676,
+        "median": 0.25437977626439984,
+        "min": 0.15088817858761247,
+        "n": 16
+      }
+    }
+  },
+  "map_agreement_within_arm": {
+    "cell_rank": {
+      "count": 4,
+      "disagreement_ids": [
+        0,
+        2,
+        3,
+        5,
+        6,
+        7,
+        9,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "fraction": 0.25
+    },
+    "naive": {
+      "count": 2,
+      "disagreement_ids": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "fraction": 0.125
+    }
+  },
+  "geometry": {
+    "cell_rank": {
+      "E": {
+        "defined": 16,
+        "invalid": 0,
+        "mean_c_minus_b": -0.034011226778487356,
+        "undefined": 0,
+        "violations": 0
+      },
+      "I": {
+        "defined": 16,
+        "invalid": 0,
+        "mean_c_minus_b": -0.03668196537658524,
+        "undefined": 0,
+        "violations": 0
+      }
+    },
+    "naive": {
+      "E": {
+        "defined": 16,
+        "invalid": 0,
+        "mean_c_minus_b": -0.034787936680454164,
+        "undefined": 0,
+        "violations": 0
+      },
+      "I": {
+        "defined": 16,
+        "invalid": 0,
+        "mean_c_minus_b": -0.02424362821863585,
+        "undefined": 0,
+        "violations": 0
+      }
+    }
+  },
+  "sign_summary": {
+    "cell_rank": {
+      "mean_abs_vs_best_global_sign_cosine": 0.9227060525372368,
+      "mean_abs_vs_best_global_sign_relative_l2": 0.3594445081325397,
+      "mean_minority_sign_energy_fraction": 0.03864697373138161,
+      "mean_negative_energy_fraction": 0.4990073737122445,
+      "undefined": 0
+    },
+    "naive": {
+      "mean_abs_vs_best_global_sign_cosine": 0.9467287083753517,
+      "mean_abs_vs_best_global_sign_relative_l2": 0.2944356289167927,
+      "mean_minority_sign_energy_fraction": 0.026635645812324135,
+      "mean_negative_energy_fraction": 0.6202112285598645,
+      "undefined": 0
+    }
+  },
+  "descriptive_associations": {
+    "cell_rank": {
+      "lpips": {
+        "C_fit_vs_metric": {
+          "n": 16,
+          "reason": null,
+          "rho": -0.43529411764705883
+        },
+        "C_image_I_vs_metric": {
+          "n": 16,
+          "reason": null,
+          "rho": -0.8176470588235294
+        }
+      },
+      "mse": {
+        "C_fit_vs_metric": {
+          "n": 16,
+          "reason": null,
+          "rho": 0.1323529411764706
+        },
+        "C_image_I_vs_metric": {
+          "n": 16,
+          "reason": null,
+          "rho": 0.1264705882352941
+        }
+      },
+      "psnr_db": {
+        "C_fit_vs_metric": {
+          "n": 16,
+          "reason": null,
+          "rho": -0.1323529411764706
+        },
+        "C_image_I_vs_metric": {
+          "n": 16,
+          "reason": null,
+          "rho": -0.1264705882352941
+        }
+      },
+      "ssim": {
+        "C_fit_vs_metric": {
+          "n": 16,
+          "reason": null,
+          "rho": 0.19117647058823528
+        },
+        "C_image_I_vs_metric": {
+          "n": 16,
+          "reason": null,
+          "rho": -0.008823529411764706
+        }
+      }
+    },
+    "naive": {
+      "lpips": {
+        "C_fit_vs_metric": {
+          "n": 16,
+          "reason": null,
+          "rho": 0.09411764705882353
+        },
+        "C_image_I_vs_metric": {
+          "n": 16,
+          "reason": null,
+          "rho": -0.27941176470588236
+        }
+      },
+      "mse": {
+        "C_fit_vs_metric": {
+          "n": 16,
+          "reason": null,
+          "rho": 0.10588235294117647
+        },
+        "C_image_I_vs_metric": {
+          "n": 16,
+          "reason": null,
+          "rho": 0.4411764705882353
+        }
+      },
+      "psnr_db": {
+        "C_fit_vs_metric": {
+          "n": 16,
+          "reason": null,
+          "rho": -0.10588235294117647
+        },
+        "C_image_I_vs_metric": {
+          "n": 16,
+          "reason": null,
+          "rho": -0.4411764705882353
+        }
+      },
+      "ssim": {
+        "C_fit_vs_metric": {
+          "n": 16,
+          "reason": null,
+          "rho": -0.08529411764705883
+        },
+        "C_image_I_vs_metric": {
+          "n": 16,
+          "reason": null,
+          "rho": 0.047058823529411764
+        }
+      }
+    }
+  },
+  "runtime": {
+    "cell_rank": {
+      "delta_cuda_allocated_bytes": 109080576,
+      "global_wall_seconds": 0.6341568999923766,
+      "max_cuda_allocated_gib": 6.0,
+      "max_evaluation_seconds": 600.0,
+      "microbatch": 1,
+      "peak_cuda_allocated_bytes": 663822336,
+      "start_cuda_allocated_bytes": 554741760,
+      "wall_seconds": 0.12939139996888116
+    },
+    "global_deadline_seconds": 600.0,
+    "naive": {
+      "delta_cuda_allocated_bytes": 109080576,
+      "global_wall_seconds": 0.5046671000309289,
+      "max_cuda_allocated_gib": 6.0,
+      "max_evaluation_seconds": 600.0,
+      "microbatch": 1,
+      "peak_cuda_allocated_bytes": 663822336,
+      "start_cuda_allocated_bytes": 554741760,
+      "wall_seconds": 0.501411699980963
+    },
+    "peak_cuda_allocated_bytes_total": 663822336,
+    "total_wall_seconds": 0.7191452999832109
+  },
+  "private_truth": {
+    "bundled_fields": [
+      "labels",
+      "x",
+      "z"
+    ],
+    "labels_consumed": false,
+    "private_loaded": true,
+    "x_or_labels_may_materialize": true
+  },
+  "superseded_metrics": [
+    "signed-target C_fit/C_target values from stage_diagnostic_v2",
+    "cross-arm mapping agreement",
+    "cross-map paired C_image_E deltas"
+  ],
+  "provenance_integrity": "integrity.json",
+  "latent_g_design": "latent_g_design.md",
+  "artifacts": {
+    "output_dir": "quantization_aware_cpa/results_private/signed_cell_rank_B16_T10/stage_diagnostic_v2_repaired",
+    "diagnostic": "quantization_aware_cpa/results_private/signed_cell_rank_B16_T10/stage_diagnostic_v2_repaired/diagnostic.json",
+    "all32": "quantization_aware_cpa/results_private/signed_cell_rank_B16_T10/stage_diagnostic_v2_repaired/all32_per_candidate.csv",
+    "paired_image_truth": "quantization_aware_cpa/results_private/signed_cell_rank_B16_T10/stage_diagnostic_v2_repaired/paired16_by_truth.csv",
+    "paired_embedding_truth": "quantization_aware_cpa/results_private/signed_cell_rank_B16_T10/stage_diagnostic_v2_repaired/paired16_by_embedding_truth.csv",
+    "features": "quantization_aware_cpa/results_private/signed_cell_rank_B16_T10/stage_diagnostic_v2_repaired/features_h.pt",
+    "plot": "quantization_aware_cpa/results_private/signed_cell_rank_B16_T10/stage_diagnostic_v2_repaired/stage_diagnostic_v2_repaired.png"
+  }
+}

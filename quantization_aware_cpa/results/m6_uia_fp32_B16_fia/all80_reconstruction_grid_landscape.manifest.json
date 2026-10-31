@@ -1,0 +1,2622 @@
+{
+  "schema_version": 1,
+  "artifact_type": "archived_reconstruction_layout",
+  "created_at_utc": "2026-09-09T15:40:51.572842+00:00",
+  "run_tag": "m6_uia_fp32_B16_fia",
+  "title": "FedAvg FP32 (32-bit) | n=16, T=10 | All 80 images",
+  "subtitle": "Original (left) / FP32 reconstruction (right) | g00-g79 in original order | All images included; not cherry-picked | No oracle fills",
+  "script": {
+    "path": "scripts\\render_m6_all80_landscape.py",
+    "sha256": "37fc0b0a24cf6f3e0d8887e3ed48492c4a348235b05ff505fa8fd59700e1a708"
+  },
+  "font": {
+    "path": "C:\\Windows\\Fonts\\arial.ttf",
+    "sha256": "c9b76220a5be42ead4733611e417cd65c5fd8aeaa33eb56576ac378a37d130a1"
+  },
+  "source_summary": {
+    "path": "results\\m6_uia_fp32_B16_fia\\summary.json",
+    "sha256": "1f85b5750c6171e0259160c48731dc7646fb3f7a5b9c59b8c06b0478bd2f4ad0"
+  },
+  "source_metrics": {
+    "path": "results\\m6_uia_fp32_B16_fia\\per_image_metrics.csv",
+    "sha256": "72dafc60ccb29acca4568bc0da7b77d48574ecafece7fe51898b173822c2f2ef"
+  },
+  "source_batches": [
+    {
+      "batch_index": 0,
+      "summary_path": "results\\m6_uia_fp32_B16_fia\\batch00\\summary.json",
+      "summary_sha256": "b21f7a9d9012d17a061341ac55797b874f4a92eda2684235065613a1468e8d47",
+      "tensors": {
+        "inputs.pt": {
+          "path": "results\\m6_uia_fp32_B16_fia\\batch00\\inputs.pt",
+          "sha256": "24995487511a3e9d8d4665fdcd704f7a0f792249a9ba79880638d13bc4740141",
+          "matches_archived_hash": true
+        },
+        "rec.pt": {
+          "path": "results\\m6_uia_fp32_B16_fia\\batch00\\rec.pt",
+          "sha256": "47f891bbe2997d5fa0fcf6f781ffef501db34d045a8a874024a66f0cf1ae10ce",
+          "matches_archived_hash": true
+        }
+      }
+    },
+    {
+      "batch_index": 1,
+      "summary_path": "results\\m6_uia_fp32_B16_fia\\batch01\\summary.json",
+      "summary_sha256": "5c411885fed8c5a6b3ca5fd8c5e48aebc7c2c57ed03ba8dc082c2625c494dcae",
+      "tensors": {
+        "inputs.pt": {
+          "path": "results\\m6_uia_fp32_B16_fia\\batch01\\inputs.pt",
+          "sha256": "2f8db846205dda931162ca171282b8372a41bf8d3061c66bb6c83f65c7f20088",
+          "matches_archived_hash": true
+        },
+        "rec.pt": {
+          "path": "results\\m6_uia_fp32_B16_fia\\batch01\\rec.pt",
+          "sha256": "d006bd56d0e1356b9482184c49262cc8652258810b4babde8c76925d5a3a7836",
+          "matches_archived_hash": true
+        }
+      }
+    },
+    {
+      "batch_index": 2,
+      "summary_path": "results\\m6_uia_fp32_B16_fia\\batch02\\summary.json",
+      "summary_sha256": "38dbc35a8e152c303274a73c58d25749602ef614a4661ff0b309f5185d10e665",
+      "tensors": {
+        "inputs.pt": {
+          "path": "results\\m6_uia_fp32_B16_fia\\batch02\\inputs.pt",
+          "sha256": "1f1c898c93b7e0fcf4c00fecbb88fce2f913b4d4ed298aa21479a851c3284db3",
+          "matches_archived_hash": true
+        },
+        "rec.pt": {
+          "path": "results\\m6_uia_fp32_B16_fia\\batch02\\rec.pt",
+          "sha256": "6994a936ac4e1fbe96effcf07ee705aa8c2f78c4fb64179ef0664e08696ab2da",
+          "matches_archived_hash": true
+        }
+      }
+    },
+    {
+      "batch_index": 3,
+      "summary_path": "results\\m6_uia_fp32_B16_fia\\batch03\\summary.json",
+      "summary_sha256": "67a35cee65672688a438035cb53b05e368625a4a2ffae15458aca00e322245f6",
+      "tensors": {
+        "inputs.pt": {
+          "path": "results\\m6_uia_fp32_B16_fia\\batch03\\inputs.pt",
+          "sha256": "ebdbd1774a320767a40f22c698260b4e3a9ac7ad4b69c2a92b987fe4318d570a",
+          "matches_archived_hash": true
+        },
+        "rec.pt": {
+          "path": "results\\m6_uia_fp32_B16_fia\\batch03\\rec.pt",
+          "sha256": "18266d5e465fcd49b5f7128147a8689b25e75d6654307fea1594e45925297590",
+          "matches_archived_hash": true
+        }
+      }
+    },
+    {
+      "batch_index": 4,
+      "summary_path": "results\\m6_uia_fp32_B16_fia\\batch04\\summary.json",
+      "summary_sha256": "3a741858d15ff06fc4942509e045e220c2560115aae8628b315d0c5950ea7887",
+      "tensors": {
+        "inputs.pt": {
+          "path": "results\\m6_uia_fp32_B16_fia\\batch04\\inputs.pt",
+          "sha256": "6c30802ecdeb7c679e28f47b00e59f016464a3e850cca23fd5a396448ceae20f",
+          "matches_archived_hash": true
+        },
+        "rec.pt": {
+          "path": "results\\m6_uia_fp32_B16_fia\\batch04\\rec.pt",
+          "sha256": "47853a1cb3887043c188887c7e50107c2f0430fc9e2f5c953af2be8fef219f52",
+          "matches_archived_hash": true
+        }
+      }
+    }
+  ],
+  "output": {
+    "path": "results\\m6_uia_fp32_B16_fia\\all80_reconstruction_grid_landscape.png",
+    "sha256": "7106c8eac43362c9018f9078c094ae367bfabc2ac37e3b72126fefc0f9ae95e5",
+    "format": "PNG",
+    "mode": "RGB",
+    "width": 4820,
+    "height": 2448
+  },
+  "layout": {
+    "groups_across": 10,
+    "group_rows": 8,
+    "tile_width": 224,
+    "tile_height": 224,
+    "pair_order": [
+      "original",
+      "FP32 reconstruction"
+    ]
+  },
+  "verification": {
+    "image_pairs": 80,
+    "exact_rgb8_tensor_tile_matches": 160,
+    "all_global_indices_once_in_original_order": true,
+    "archived_input_and_reconstruction_hashes_verified": 10,
+    "metadata_and_csv_correspondence_verified": true,
+    "png_decodes": true,
+    "oracle_fills": 0,
+    "gpu_initialized": false,
+    "new_attack_or_training": false
+  },
+  "placements": [
+    {
+      "global_index": 0,
+      "batch_index": 0,
+      "source_index": 0,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n02817516\\ILSVRC2012_val_00001048.JPEG",
+      "oracle_fill": false,
+      "lpips": 0.5091800689697266,
+      "source_abs_cosine": 1.0,
+      "tiles": [
+        {
+          "condition": "Original",
+          "bbox_xyxy": [
+            20,
+            160,
+            244,
+            384
+          ],
+          "rgb8_sha256": "f525185dce347135b15d4a21e4cf7384d8529f1ebaa64979f46a591b296f9474"
+        },
+        {
+          "condition": "FP32",
+          "bbox_xyxy": [
+            256,
+            160,
+            480,
+            384
+          ],
+          "rgb8_sha256": "6539a0ba27014c3d71f6db0b83e70d84debff5546e0d7013706d7232285c8406"
+        }
+      ]
+    },
+    {
+      "global_index": 1,
+      "batch_index": 0,
+      "source_index": 1,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n03649909\\ILSVRC2012_val_00001433.JPEG",
+      "oracle_fill": false,
+      "lpips": 0.38614770770072937,
+      "source_abs_cosine": 0.9999997615814209,
+      "tiles": [
+        {
+          "condition": "Original",
+          "bbox_xyxy": [
+            500,
+            160,
+            724,
+            384
+          ],
+          "rgb8_sha256": "50ced13986611abdc284b588fc1d1b0f5471798c2512e0c73971cf99d47a99f9"
+        },
+        {
+          "condition": "FP32",
+          "bbox_xyxy": [
+            736,
+            160,
+            960,
+            384
+          ],
+          "rgb8_sha256": "69bb776133cc5e6c55f054e082396001e9d9cb96afb19bd06a6d7d889c407fe3"
+        }
+      ]
+    },
+    {
+      "global_index": 2,
+      "batch_index": 0,
+      "source_index": 2,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n02088094\\ILSVRC2012_val_00005507.JPEG",
+      "oracle_fill": false,
+      "lpips": 0.47525525093078613,
+      "source_abs_cosine": 0.9997090101242065,
+      "tiles": [
+        {
+          "condition": "Original",
+          "bbox_xyxy": [
+            980,
+            160,
+            1204,
+            384
+          ],
+          "rgb8_sha256": "da0e12aa684e29db3fe990617a3fff50569b81b6137f6297ed59db4801522dd9"
+        },
+        {
+          "condition": "FP32",
+          "bbox_xyxy": [
+            1216,
+            160,
+            1440,
+            384
+          ],
+          "rgb8_sha256": "5ee840a8027bce95514d08e009ea99a6546852a31ee811d9e56e58b7ae8d3bf3"
+        }
+      ]
+    },
+    {
+      "global_index": 3,
+      "batch_index": 0,
+      "source_index": 3,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n03291819\\ILSVRC2012_val_00004047.JPEG",
+      "oracle_fill": false,
+      "lpips": 0.5265352129936218,
+      "source_abs_cosine": 0.9999886751174927,
+      "tiles": [
+        {
+          "condition": "Original",
+          "bbox_xyxy": [
+            1460,
+            160,
+            1684,
+            384
+          ],
+          "rgb8_sha256": "15c3a24231b583b69cad69efd615746c9310f35510f05faf9bb494bcba95150a"
+        },
+        {
+          "condition": "FP32",
+          "bbox_xyxy": [
+            1696,
+            160,
+            1920,
+            384
+          ],
+          "rgb8_sha256": "7f351454a04e685b4fc24be86a91d1a337f57138654300ce74af69635da3372f"
+        }
+      ]
+    },
+    {
+      "global_index": 4,
+      "batch_index": 0,
+      "source_index": 4,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n02107312\\ILSVRC2012_val_00005242.JPEG",
+      "oracle_fill": false,
+      "lpips": 0.400777131319046,
+      "source_abs_cosine": 0.9981387257575989,
+      "tiles": [
+        {
+          "condition": "Original",
+          "bbox_xyxy": [
+            1940,
+            160,
+            2164,
+            384
+          ],
+          "rgb8_sha256": "2f54d17fcb1ae3731cd8dce56b1d9ab0bd7e902daf253013a71b0fdd06dab8d2"
+        },
+        {
+          "condition": "FP32",
+          "bbox_xyxy": [
+            2176,
+            160,
+            2400,
+            384
+          ],
+          "rgb8_sha256": "0e67144b5cb90825365ad510d31438c20918bc66889e5b473e6a0f25e6d08cda"
+        }
+      ]
+    },
+    {
+      "global_index": 5,
+      "batch_index": 0,
+      "source_index": 5,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n02514041\\ILSVRC2012_val_00004576.JPEG",
+      "oracle_fill": false,
+      "lpips": 0.4376401901245117,
+      "source_abs_cosine": 0.9995126724243164,
+      "tiles": [
+        {
+          "condition": "Original",
+          "bbox_xyxy": [
+            2420,
+            160,
+            2644,
+            384
+          ],
+          "rgb8_sha256": "0a9387edc3eeb614131ba9dd080a85d75ed6d9bcaf393a883a947b908e876748"
+        },
+        {
+          "condition": "FP32",
+          "bbox_xyxy": [
+            2656,
+            160,
+            2880,
+            384
+          ],
+          "rgb8_sha256": "c7794ef36d757a3153c31325577a708f930160cd7a2ea7310f7eb038e8c024d0"
+        }
+      ]
+    },
+    {
+      "global_index": 6,
+      "batch_index": 0,
+      "source_index": 6,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n03775071\\ILSVRC2012_val_00014326.JPEG",
+      "oracle_fill": false,
+      "lpips": 0.4608069956302643,
+      "source_abs_cosine": 0.9997515678405762,
+      "tiles": [
+        {
+          "condition": "Original",
+          "bbox_xyxy": [
+            2900,
+            160,
+            3124,
+            384
+          ],
+          "rgb8_sha256": "29b97cb9f83daa9e35b12a11f7cda4153a59d6c5aa2db34bff9c4bd7ad04a9e2"
+        },
+        {
+          "condition": "FP32",
+          "bbox_xyxy": [
+            3136,
+            160,
+            3360,
+            384
+          ],
+          "rgb8_sha256": "4bb22111fddc7f82f476c9187b29d1e042a40b76875bcf6cb8623249d5614a1f"
+        }
+      ]
+    },
+    {
+      "global_index": 7,
+      "batch_index": 0,
+      "source_index": 7,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n03075370\\ILSVRC2012_val_00007817.JPEG",
+      "oracle_fill": false,
+      "lpips": 0.5146068930625916,
+      "source_abs_cosine": 0.9995534420013428,
+      "tiles": [
+        {
+          "condition": "Original",
+          "bbox_xyxy": [
+            3380,
+            160,
+            3604,
+            384
+          ],
+          "rgb8_sha256": "61ef56f62c457dd909920088c5b285493789a82ec1a0520482ffdcbe248a6e5a"
+        },
+        {
+          "condition": "FP32",
+          "bbox_xyxy": [
+            3616,
+            160,
+            3840,
+            384
+          ],
+          "rgb8_sha256": "391bdaf94afaf8ce14ff9017e423d6fe66265a08eb5b2feae0c3cbb2e8cb686e"
+        }
+      ]
+    },
+    {
+      "global_index": 8,
+      "batch_index": 0,
+      "source_index": 8,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n01985128\\ILSVRC2012_val_00004665.JPEG",
+      "oracle_fill": false,
+      "lpips": 0.3501439094543457,
+      "source_abs_cosine": 0.999309241771698,
+      "tiles": [
+        {
+          "condition": "Original",
+          "bbox_xyxy": [
+            3860,
+            160,
+            4084,
+            384
+          ],
+          "rgb8_sha256": "90fd1436c706095c96e8131006706ef4c4e967692aec741dfc09bf0aa6ef6727"
+        },
+        {
+          "condition": "FP32",
+          "bbox_xyxy": [
+            4096,
+            160,
+            4320,
+            384
+          ],
+          "rgb8_sha256": "2d6012a205aacaf53e647712a03cc0de8266c8b318b95789560e3dc17da8ef5f"
+        }
+      ]
+    },
+    {
+      "global_index": 9,
+      "batch_index": 0,
+      "source_index": 9,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n02128925\\ILSVRC2012_val_00012411.JPEG",
+      "oracle_fill": false,
+      "lpips": 0.40425148606300354,
+      "source_abs_cosine": 0.9993017911911011,
+      "tiles": [
+        {
+          "condition": "Original",
+          "bbox_xyxy": [
+            4340,
+            160,
+            4564,
+            384
+          ],
+          "rgb8_sha256": "1f552c161596493e363cb22d8eec4f1696c3b5354abc82a1f5706a48903901d5"
+        },
+        {
+          "condition": "FP32",
+          "bbox_xyxy": [
+            4576,
+            160,
+            4800,
+            384
+          ],
+          "rgb8_sha256": "6a6f6ada92728f2a9da20d87751e786770286d95facf7dc010bca873a3e20ecb"
+        }
+      ]
+    },
+    {
+      "global_index": 10,
+      "batch_index": 0,
+      "source_index": 10,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n09332890\\ILSVRC2012_val_00012261.JPEG",
+      "oracle_fill": false,
+      "lpips": 0.5151442289352417,
+      "source_abs_cosine": 0.999998927116394,
+      "tiles": [
+        {
+          "condition": "Original",
+          "bbox_xyxy": [
+            20,
+            452,
+            244,
+            676
+          ],
+          "rgb8_sha256": "84ef084242546b6599a23ef238f79d37eaf3effe151257d3b36a2798f3e85a1e"
+        },
+        {
+          "condition": "FP32",
+          "bbox_xyxy": [
+            256,
+            452,
+            480,
+            676
+          ],
+          "rgb8_sha256": "3c4b326fd79df70eb58c4e2980433b8a04e9e61c4a3afd424c230bdbc8620435"
+        }
+      ]
+    },
+    {
+      "global_index": 11,
+      "batch_index": 0,
+      "source_index": 11,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n02606052\\ILSVRC2012_val_00008490.JPEG",
+      "oracle_fill": false,
+      "lpips": 0.4549541473388672,
+      "source_abs_cosine": 0.9996774792671204,
+      "tiles": [
+        {
+          "condition": "Original",
+          "bbox_xyxy": [
+            500,
+            452,
+            724,
+            676
+          ],
+          "rgb8_sha256": "6ad04d9da3ef79cf733614a9307fd2baac659e71e99c5c6a443026aa2e398146"
+        },
+        {
+          "condition": "FP32",
+          "bbox_xyxy": [
+            736,
+            452,
+            960,
+            676
+          ],
+          "rgb8_sha256": "f0f31141fcce64dc4d621aff2103033d449a600ee29c3bc62a725b6ef264fed9"
+        }
+      ]
+    },
+    {
+      "global_index": 12,
+      "batch_index": 0,
+      "source_index": 12,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n02106030\\ILSVRC2012_val_00015294.JPEG",
+      "oracle_fill": false,
+      "lpips": 0.41949743032455444,
+      "source_abs_cosine": 0.9993711709976196,
+      "tiles": [
+        {
+          "condition": "Original",
+          "bbox_xyxy": [
+            980,
+            452,
+            1204,
+            676
+          ],
+          "rgb8_sha256": "34c03a552cd8f1d0ba849ed6f8b3436a48a961b738bac0f84adb70cb6d4c89aa"
+        },
+        {
+          "condition": "FP32",
+          "bbox_xyxy": [
+            1216,
+            452,
+            1440,
+            676
+          ],
+          "rgb8_sha256": "a3ac86cc45ae504c44cab9cb8bb5e8bd009c0db1edd4c3c9a37d448b10710f72"
+        }
+      ]
+    },
+    {
+      "global_index": 13,
+      "batch_index": 0,
+      "source_index": 13,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n07932039\\ILSVRC2012_val_00012565.JPEG",
+      "oracle_fill": false,
+      "lpips": 0.49537622928619385,
+      "source_abs_cosine": 0.9996779561042786,
+      "tiles": [
+        {
+          "condition": "Original",
+          "bbox_xyxy": [
+            1460,
+            452,
+            1684,
+            676
+          ],
+          "rgb8_sha256": "c4b5d2fc6f51f2a5f1df272d95e547cd40cccf97c96d617a3e66428dc6b7b0e3"
+        },
+        {
+          "condition": "FP32",
+          "bbox_xyxy": [
+            1696,
+            452,
+            1920,
+            676
+          ],
+          "rgb8_sha256": "0926a14a3d7606722d420cb0ccec0208031929fa6c84db95e238045b8cc5aef9"
+        }
+      ]
+    },
+    {
+      "global_index": 14,
+      "batch_index": 0,
+      "source_index": 14,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n02437312\\ILSVRC2012_val_00015872.JPEG",
+      "oracle_fill": false,
+      "lpips": 0.41667401790618896,
+      "source_abs_cosine": 0.9992848038673401,
+      "tiles": [
+        {
+          "condition": "Original",
+          "bbox_xyxy": [
+            1940,
+            452,
+            2164,
+            676
+          ],
+          "rgb8_sha256": "441236802dced9e8b335f563d8d9d6ca1e5880d49f28037c0d0d63c59f6a0ce3"
+        },
+        {
+          "condition": "FP32",
+          "bbox_xyxy": [
+            2176,
+            452,
+            2400,
+            676
+          ],
+          "rgb8_sha256": "3175dc2500e19c28c964289c6f7a455aed94867bfb2020be4f1e0ee2695caa89"
+        }
+      ]
+    },
+    {
+      "global_index": 15,
+      "batch_index": 0,
+      "source_index": 15,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n03773504\\ILSVRC2012_val_00016588.JPEG",
+      "oracle_fill": false,
+      "lpips": 0.4277816712856293,
+      "source_abs_cosine": 0.9996737837791443,
+      "tiles": [
+        {
+          "condition": "Original",
+          "bbox_xyxy": [
+            2420,
+            452,
+            2644,
+            676
+          ],
+          "rgb8_sha256": "a23e54348cb0ab9fe30fda3f0f399ae3358da0be9e567c6804da99891c8a68fd"
+        },
+        {
+          "condition": "FP32",
+          "bbox_xyxy": [
+            2656,
+            452,
+            2880,
+            676
+          ],
+          "rgb8_sha256": "4ac82d6f6076276b2d9a90b11b1770908a415875b60f7a52fb41a24dd95db766"
+        }
+      ]
+    },
+    {
+      "global_index": 16,
+      "batch_index": 1,
+      "source_index": 0,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n04612504\\ILSVRC2012_val_00021209.JPEG",
+      "oracle_fill": false,
+      "lpips": 0.4209098517894745,
+      "source_abs_cosine": 0.9996305704116821,
+      "tiles": [
+        {
+          "condition": "Original",
+          "bbox_xyxy": [
+            2900,
+            452,
+            3124,
+            676
+          ],
+          "rgb8_sha256": "f9a69037c505f3ccab51ecd1774ea5fc01b29cd5053e21725f84d91d2d492f3c"
+        },
+        {
+          "condition": "FP32",
+          "bbox_xyxy": [
+            3136,
+            452,
+            3360,
+            676
+          ],
+          "rgb8_sha256": "07221c0f92459e6d06e82325e8702541afcbaf13c71d9de48ff6a4d81303780c"
+        }
+      ]
+    },
+    {
+      "global_index": 17,
+      "batch_index": 1,
+      "source_index": 1,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n03935335\\ILSVRC2012_val_00027469.JPEG",
+      "oracle_fill": false,
+      "lpips": 0.3968166410923004,
+      "source_abs_cosine": 0.9993058443069458,
+      "tiles": [
+        {
+          "condition": "Original",
+          "bbox_xyxy": [
+            3380,
+            452,
+            3604,
+            676
+          ],
+          "rgb8_sha256": "7018ab6d285b4eedd857b94c595f2bd92d0dafb91207f2139388e8f94e133985"
+        },
+        {
+          "condition": "FP32",
+          "bbox_xyxy": [
+            3616,
+            452,
+            3840,
+            676
+          ],
+          "rgb8_sha256": "de1b145f9209bfdc8384620407663358eb7baf0c7acda3e791eda0c3fc07b478"
+        }
+      ]
+    },
+    {
+      "global_index": 18,
+      "batch_index": 1,
+      "source_index": 2,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n02167151\\ILSVRC2012_val_00025224.JPEG",
+      "oracle_fill": false,
+      "lpips": 0.4468792974948883,
+      "source_abs_cosine": 0.999518871307373,
+      "tiles": [
+        {
+          "condition": "Original",
+          "bbox_xyxy": [
+            3860,
+            452,
+            4084,
+            676
+          ],
+          "rgb8_sha256": "9d2a3a57d0d919dc95a5520f00e0075fcc4c086dfb4684078a564dd27149b96f"
+        },
+        {
+          "condition": "FP32",
+          "bbox_xyxy": [
+            4096,
+            452,
+            4320,
+            676
+          ],
+          "rgb8_sha256": "b2fc7bcecebac16d2aeefbe258c47aad61df996e426335ddb671a19c1831511d"
+        }
+      ]
+    },
+    {
+      "global_index": 19,
+      "batch_index": 1,
+      "source_index": 3,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n01917289\\ILSVRC2012_val_00032351.JPEG",
+      "oracle_fill": false,
+      "lpips": 0.49577072262763977,
+      "source_abs_cosine": 0.9996330142021179,
+      "tiles": [
+        {
+          "condition": "Original",
+          "bbox_xyxy": [
+            4340,
+            452,
+            4564,
+            676
+          ],
+          "rgb8_sha256": "03483898c7b16fd1e0cfba4f7642faf801f7d3698756dd2362ba9cd38691c53c"
+        },
+        {
+          "condition": "FP32",
+          "bbox_xyxy": [
+            4576,
+            452,
+            4800,
+            676
+          ],
+          "rgb8_sha256": "9c49eb8be609bdb4544e0d1643e46335bea311ba4d9093d2c3278a340deb0470"
+        }
+      ]
+    },
+    {
+      "global_index": 20,
+      "batch_index": 1,
+      "source_index": 4,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n03085013\\ILSVRC2012_val_00027181.JPEG",
+      "oracle_fill": false,
+      "lpips": 0.4119737148284912,
+      "source_abs_cosine": 0.999851644039154,
+      "tiles": [
+        {
+          "condition": "Original",
+          "bbox_xyxy": [
+            20,
+            744,
+            244,
+            968
+          ],
+          "rgb8_sha256": "e505aa5dee0602f2df00d78b529d335ad06e87dc7f7aefe898d16c85d61e6bf0"
+        },
+        {
+          "condition": "FP32",
+          "bbox_xyxy": [
+            256,
+            744,
+            480,
+            968
+          ],
+          "rgb8_sha256": "b2964413772a3891e93faf76db898b559a505b23101cc8c87c6890f0ceb30e09"
+        }
+      ]
+    },
+    {
+      "global_index": 21,
+      "batch_index": 1,
+      "source_index": 5,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n04041544\\ILSVRC2012_val_00028245.JPEG",
+      "oracle_fill": false,
+      "lpips": 0.458535373210907,
+      "source_abs_cosine": 0.9995152354240417,
+      "tiles": [
+        {
+          "condition": "Original",
+          "bbox_xyxy": [
+            500,
+            744,
+            724,
+            968
+          ],
+          "rgb8_sha256": "c39eb7e5a8985cb4e59fbe5d4c261c24e1c02b07196e7e2580668bc92fa85a46"
+        },
+        {
+          "condition": "FP32",
+          "bbox_xyxy": [
+            736,
+            744,
+            960,
+            968
+          ],
+          "rgb8_sha256": "09064b81d3c051d9e6524f771c14ea9c00b5c49d81ffdcc9f91881bb0f89ca4c"
+        }
+      ]
+    },
+    {
+      "global_index": 22,
+      "batch_index": 1,
+      "source_index": 6,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n03447447\\ILSVRC2012_val_00027865.JPEG",
+      "oracle_fill": false,
+      "lpips": 0.7813290357589722,
+      "source_abs_cosine": 0.07186583429574966,
+      "tiles": [
+        {
+          "condition": "Original",
+          "bbox_xyxy": [
+            980,
+            744,
+            1204,
+            968
+          ],
+          "rgb8_sha256": "4767d649832e36ee6dcb7bf12e3200959d01c2c2bdc5c20e1353aaf5dbae17e6"
+        },
+        {
+          "condition": "FP32",
+          "bbox_xyxy": [
+            1216,
+            744,
+            1440,
+            968
+          ],
+          "rgb8_sha256": "f2428498d3b12931c4837c2ab2bf61f5dfd6a42744a727dd78514156850ce4b3"
+        }
+      ]
+    },
+    {
+      "global_index": 23,
+      "batch_index": 1,
+      "source_index": 7,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n01498041\\ILSVRC2012_val_00036118.JPEG",
+      "oracle_fill": false,
+      "lpips": 0.4091242551803589,
+      "source_abs_cosine": 0.9995614290237427,
+      "tiles": [
+        {
+          "condition": "Original",
+          "bbox_xyxy": [
+            1460,
+            744,
+            1684,
+            968
+          ],
+          "rgb8_sha256": "b57518d4b467fd6e0beb967a03ed11d694034e0316e7ed2369f733602bd7304d"
+        },
+        {
+          "condition": "FP32",
+          "bbox_xyxy": [
+            1696,
+            744,
+            1920,
+            968
+          ],
+          "rgb8_sha256": "a877143f14993ad3183585c1b8554e9a6aa59725a2380414639b7f3b978804c0"
+        }
+      ]
+    },
+    {
+      "global_index": 24,
+      "batch_index": 1,
+      "source_index": 8,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n04346328\\ILSVRC2012_val_00024094.JPEG",
+      "oracle_fill": false,
+      "lpips": 0.4316955506801605,
+      "source_abs_cosine": 0.9999695420265198,
+      "tiles": [
+        {
+          "condition": "Original",
+          "bbox_xyxy": [
+            1940,
+            744,
+            2164,
+            968
+          ],
+          "rgb8_sha256": "d774fbbe4f079651acdfd9e2eb2b96b765df9b50a0a2ef6af2cf0a97b26717bb"
+        },
+        {
+          "condition": "FP32",
+          "bbox_xyxy": [
+            2176,
+            744,
+            2400,
+            968
+          ],
+          "rgb8_sha256": "f6b73ece9495d6c4cee4ccdad738243af78185af9e51d05222e649c4e192178e"
+        }
+      ]
+    },
+    {
+      "global_index": 25,
+      "batch_index": 1,
+      "source_index": 9,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n02108422\\ILSVRC2012_val_00026027.JPEG",
+      "oracle_fill": false,
+      "lpips": 0.4521591365337372,
+      "source_abs_cosine": 0.9996020197868347,
+      "tiles": [
+        {
+          "condition": "Original",
+          "bbox_xyxy": [
+            2420,
+            744,
+            2644,
+            968
+          ],
+          "rgb8_sha256": "d21a32c74a82a857e5e3bd9c2324e969ce82dcf5ecb0e8fefbb66f05bd88f3f2"
+        },
+        {
+          "condition": "FP32",
+          "bbox_xyxy": [
+            2656,
+            744,
+            2880,
+            968
+          ],
+          "rgb8_sha256": "b3c8725c9baa3c1fe298de7ff0433cd487163fd257de73a1dfffe4a10a02455c"
+        }
+      ]
+    },
+    {
+      "global_index": 26,
+      "batch_index": 1,
+      "source_index": 10,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n02443484\\ILSVRC2012_val_00036439.JPEG",
+      "oracle_fill": false,
+      "lpips": 0.49394690990448,
+      "source_abs_cosine": 0.9999989867210388,
+      "tiles": [
+        {
+          "condition": "Original",
+          "bbox_xyxy": [
+            2900,
+            744,
+            3124,
+            968
+          ],
+          "rgb8_sha256": "6b81de23be8f3480056e7d8b9c86830684217755825616b52edc5c6f9b33afa3"
+        },
+        {
+          "condition": "FP32",
+          "bbox_xyxy": [
+            3136,
+            744,
+            3360,
+            968
+          ],
+          "rgb8_sha256": "64f522ee6a5965db36e34063391c96b6c67a9e92b8b1d8cd02a1f195f5cef01f"
+        }
+      ]
+    },
+    {
+      "global_index": 27,
+      "batch_index": 1,
+      "source_index": 11,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n03908714\\ILSVRC2012_val_00036558.JPEG",
+      "oracle_fill": false,
+      "lpips": 0.5012668371200562,
+      "source_abs_cosine": 0.9996383190155029,
+      "tiles": [
+        {
+          "condition": "Original",
+          "bbox_xyxy": [
+            3380,
+            744,
+            3604,
+            968
+          ],
+          "rgb8_sha256": "069f74a8232a6aa4781fc68f9632354e24b0485e5d5a0449924138a14e49f943"
+        },
+        {
+          "condition": "FP32",
+          "bbox_xyxy": [
+            3616,
+            744,
+            3840,
+            968
+          ],
+          "rgb8_sha256": "3b6e5b778d58fc98ac7147901e707b2368b1d1e1137240c25c25e007491cf820"
+        }
+      ]
+    },
+    {
+      "global_index": 28,
+      "batch_index": 1,
+      "source_index": 12,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n01665541\\ILSVRC2012_val_00035905.JPEG",
+      "oracle_fill": false,
+      "lpips": 0.4582260847091675,
+      "source_abs_cosine": 0.9988043308258057,
+      "tiles": [
+        {
+          "condition": "Original",
+          "bbox_xyxy": [
+            3860,
+            744,
+            4084,
+            968
+          ],
+          "rgb8_sha256": "4d940fa557f865372e065c6185991ac0acde40023741dcc93865d0d8fe7e90b0"
+        },
+        {
+          "condition": "FP32",
+          "bbox_xyxy": [
+            4096,
+            744,
+            4320,
+            968
+          ],
+          "rgb8_sha256": "b29dc457ff3736521e4aa65a8a4bb2b59148395a7b63306331f9caa6c1795ff4"
+        }
+      ]
+    },
+    {
+      "global_index": 29,
+      "batch_index": 1,
+      "source_index": 13,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n01729322\\ILSVRC2012_val_00038365.JPEG",
+      "oracle_fill": false,
+      "lpips": 0.4523718059062958,
+      "source_abs_cosine": 0.9992462396621704,
+      "tiles": [
+        {
+          "condition": "Original",
+          "bbox_xyxy": [
+            4340,
+            744,
+            4564,
+            968
+          ],
+          "rgb8_sha256": "f3747e3b94fea14623ab8246ba0afda716887dcf9a803604256e7bd26e5f8358"
+        },
+        {
+          "condition": "FP32",
+          "bbox_xyxy": [
+            4576,
+            744,
+            4800,
+            968
+          ],
+          "rgb8_sha256": "8d86838d0a5f5980ee5d46f323d6be0a596c4d677f0d21cbad6890e8932544d2"
+        }
+      ]
+    },
+    {
+      "global_index": 30,
+      "batch_index": 1,
+      "source_index": 14,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n02667093\\ILSVRC2012_val_00040700.JPEG",
+      "oracle_fill": false,
+      "lpips": 0.4657866954803467,
+      "source_abs_cosine": 0.9999942779541016,
+      "tiles": [
+        {
+          "condition": "Original",
+          "bbox_xyxy": [
+            20,
+            1036,
+            244,
+            1260
+          ],
+          "rgb8_sha256": "6b6fdd32d35fcfef2cdbbd6edfc221517066b364791cb11cf124ba6c75bd0616"
+        },
+        {
+          "condition": "FP32",
+          "bbox_xyxy": [
+            256,
+            1036,
+            480,
+            1260
+          ],
+          "rgb8_sha256": "4f379c0e3410195925b96b67bf007d00b5ba01f8f29cfd80872ef05fa837f435"
+        }
+      ]
+    },
+    {
+      "global_index": 31,
+      "batch_index": 1,
+      "source_index": 15,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n03376595\\ILSVRC2012_val_00040576.JPEG",
+      "oracle_fill": false,
+      "lpips": 0.47234582901000977,
+      "source_abs_cosine": 0.9995549917221069,
+      "tiles": [
+        {
+          "condition": "Original",
+          "bbox_xyxy": [
+            500,
+            1036,
+            724,
+            1260
+          ],
+          "rgb8_sha256": "d37ab3206d84593e2fcb1f2f4f180535b0ec3c5b55c4ab6ee50fb695f8160fc4"
+        },
+        {
+          "condition": "FP32",
+          "bbox_xyxy": [
+            736,
+            1036,
+            960,
+            1260
+          ],
+          "rgb8_sha256": "4ab5b4af9e0449a5b836d12a73d863f53a55809c53480a159f7f789adc6722e3"
+        }
+      ]
+    },
+    {
+      "global_index": 32,
+      "batch_index": 2,
+      "source_index": 0,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n03133878\\ILSVRC2012_val_00044789.JPEG",
+      "oracle_fill": false,
+      "lpips": 0.39716070890426636,
+      "source_abs_cosine": 0.9999947547912598,
+      "tiles": [
+        {
+          "condition": "Original",
+          "bbox_xyxy": [
+            980,
+            1036,
+            1204,
+            1260
+          ],
+          "rgb8_sha256": "81de213189af7a9212f79309ab90d38687dc70641bb032635008aa278f80a230"
+        },
+        {
+          "condition": "FP32",
+          "bbox_xyxy": [
+            1216,
+            1036,
+            1440,
+            1260
+          ],
+          "rgb8_sha256": "0648876076a8f90ff889615a25afe90b6eb1d82bfa6f807eb559d0c5a7ae44f0"
+        }
+      ]
+    },
+    {
+      "global_index": 33,
+      "batch_index": 2,
+      "source_index": 1,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n04487081\\ILSVRC2012_val_00044849.JPEG",
+      "oracle_fill": false,
+      "lpips": 0.48049843311309814,
+      "source_abs_cosine": 0.9997314214706421,
+      "tiles": [
+        {
+          "condition": "Original",
+          "bbox_xyxy": [
+            1460,
+            1036,
+            1684,
+            1260
+          ],
+          "rgb8_sha256": "b8bfb75ecd395a65ac744e1c769fb7ccf9806abd85e578ab298bd51b0874dc93"
+        },
+        {
+          "condition": "FP32",
+          "bbox_xyxy": [
+            1696,
+            1036,
+            1920,
+            1260
+          ],
+          "rgb8_sha256": "a8926793a45fc50c0950d5f822675ccbd84801e24d2099f0c128beec5ae764a2"
+        }
+      ]
+    },
+    {
+      "global_index": 34,
+      "batch_index": 2,
+      "source_index": 2,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n04487394\\ILSVRC2012_val_00048169.JPEG",
+      "oracle_fill": false,
+      "lpips": 0.4431842863559723,
+      "source_abs_cosine": 0.9997918605804443,
+      "tiles": [
+        {
+          "condition": "Original",
+          "bbox_xyxy": [
+            1940,
+            1036,
+            2164,
+            1260
+          ],
+          "rgb8_sha256": "624e78a26baf17fe39b8647748295fa1d2dcd7eadd3a76fa086244e02804b838"
+        },
+        {
+          "condition": "FP32",
+          "bbox_xyxy": [
+            2176,
+            1036,
+            2400,
+            1260
+          ],
+          "rgb8_sha256": "c9df6948c2356c607c99444798d2db22f0afa938f0972dd019a3e447f09dd1aa"
+        }
+      ]
+    },
+    {
+      "global_index": 35,
+      "batch_index": 2,
+      "source_index": 3,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n03485794\\ILSVRC2012_val_00049825.JPEG",
+      "oracle_fill": false,
+      "lpips": 0.45192858576774597,
+      "source_abs_cosine": 0.9998928308486938,
+      "tiles": [
+        {
+          "condition": "Original",
+          "bbox_xyxy": [
+            2420,
+            1036,
+            2644,
+            1260
+          ],
+          "rgb8_sha256": "a61ad4a2f4b69d0abba46c5dec721dffd1c49d69f92fe4cffae7f82d96137a7a"
+        },
+        {
+          "condition": "FP32",
+          "bbox_xyxy": [
+            2656,
+            1036,
+            2880,
+            1260
+          ],
+          "rgb8_sha256": "864a4ea0fd11db3979c30c0859ded13b1a241c92944699f752c009f661782625"
+        }
+      ]
+    },
+    {
+      "global_index": 36,
+      "batch_index": 2,
+      "source_index": 4,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n02018207\\ILSVRC2012_val_00000825.JPEG",
+      "oracle_fill": false,
+      "lpips": 0.4600374102592468,
+      "source_abs_cosine": 0.9991680383682251,
+      "tiles": [
+        {
+          "condition": "Original",
+          "bbox_xyxy": [
+            2900,
+            1036,
+            3124,
+            1260
+          ],
+          "rgb8_sha256": "3d4b3d86d28a1acb499d8803db4eeeba706ef4d7a027db3398f461a4e330573a"
+        },
+        {
+          "condition": "FP32",
+          "bbox_xyxy": [
+            3136,
+            1036,
+            3360,
+            1260
+          ],
+          "rgb8_sha256": "c9f9c68bee5a0bc90d331798bb851c9c026cf057ef82e5189fb8760bcae22330"
+        }
+      ]
+    },
+    {
+      "global_index": 37,
+      "batch_index": 2,
+      "source_index": 5,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n04209133\\ILSVRC2012_val_00002465.JPEG",
+      "oracle_fill": false,
+      "lpips": 0.4495428502559662,
+      "source_abs_cosine": 0.9999999403953552,
+      "tiles": [
+        {
+          "condition": "Original",
+          "bbox_xyxy": [
+            3380,
+            1036,
+            3604,
+            1260
+          ],
+          "rgb8_sha256": "c2643d0016c63603c30e348324d11d992044cecde518d9e34905caf52027373b"
+        },
+        {
+          "condition": "FP32",
+          "bbox_xyxy": [
+            3616,
+            1036,
+            3840,
+            1260
+          ],
+          "rgb8_sha256": "a49e4d92f82ea177524bae04528a6b07e0e58d3baa44256214941e68c4e11261"
+        }
+      ]
+    },
+    {
+      "global_index": 38,
+      "batch_index": 2,
+      "source_index": 6,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n02415577\\ILSVRC2012_val_00001279.JPEG",
+      "oracle_fill": false,
+      "lpips": 0.5261732339859009,
+      "source_abs_cosine": 0.9991615414619446,
+      "tiles": [
+        {
+          "condition": "Original",
+          "bbox_xyxy": [
+            3860,
+            1036,
+            4084,
+            1260
+          ],
+          "rgb8_sha256": "ca862900a21585e679200a6f3c30279c1701fa8dfe60dcfcf1fcf1981c3d2e8d"
+        },
+        {
+          "condition": "FP32",
+          "bbox_xyxy": [
+            4096,
+            1036,
+            4320,
+            1260
+          ],
+          "rgb8_sha256": "ec3a3481ff79401f260dd19cb33fc847c0fa0e35c18c5e8a25d3ff3b0a02ffb0"
+        }
+      ]
+    },
+    {
+      "global_index": 39,
+      "batch_index": 2,
+      "source_index": 7,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n04152593\\ILSVRC2012_val_00002598.JPEG",
+      "oracle_fill": false,
+      "lpips": 0.39768385887145996,
+      "source_abs_cosine": 0.9999555349349976,
+      "tiles": [
+        {
+          "condition": "Original",
+          "bbox_xyxy": [
+            4340,
+            1036,
+            4564,
+            1260
+          ],
+          "rgb8_sha256": "bfc677edd58286e75b4228ca7998eb27303cc700d9df283d1bacbd427c63234c"
+        },
+        {
+          "condition": "FP32",
+          "bbox_xyxy": [
+            4576,
+            1036,
+            4800,
+            1260
+          ],
+          "rgb8_sha256": "d3152875542a8a6b1f0776aba631e40d7b1f35a3a79fbb6a37f5260b9def451f"
+        }
+      ]
+    },
+    {
+      "global_index": 40,
+      "batch_index": 2,
+      "source_index": 8,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n07749582\\ILSVRC2012_val_00002363.JPEG",
+      "oracle_fill": false,
+      "lpips": 0.5307249426841736,
+      "source_abs_cosine": 0.9998427033424377,
+      "tiles": [
+        {
+          "condition": "Original",
+          "bbox_xyxy": [
+            20,
+            1328,
+            244,
+            1552
+          ],
+          "rgb8_sha256": "8cec371672df7b34a04708e504d2e9d5c9fdb477dbe21cc222dc935c3b0b4b56"
+        },
+        {
+          "condition": "FP32",
+          "bbox_xyxy": [
+            256,
+            1328,
+            480,
+            1552
+          ],
+          "rgb8_sha256": "d2a7236cbfcee325fd0551121846615db4e1166f19e66b382692b830cf841a35"
+        }
+      ]
+    },
+    {
+      "global_index": 41,
+      "batch_index": 2,
+      "source_index": 9,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n12620546\\ILSVRC2012_val_00006863.JPEG",
+      "oracle_fill": false,
+      "lpips": 0.347263365983963,
+      "source_abs_cosine": 0.9990643262863159,
+      "tiles": [
+        {
+          "condition": "Original",
+          "bbox_xyxy": [
+            500,
+            1328,
+            724,
+            1552
+          ],
+          "rgb8_sha256": "be4c51120a793620cfc828c4aed8e440fb2eae5e4ec507ed47d4180a431bf88d"
+        },
+        {
+          "condition": "FP32",
+          "bbox_xyxy": [
+            736,
+            1328,
+            960,
+            1552
+          ],
+          "rgb8_sha256": "83b999ffc40712355348eed25c1bbf543aed17aabd791d034f0ab4367c129cea"
+        }
+      ]
+    },
+    {
+      "global_index": 42,
+      "batch_index": 2,
+      "source_index": 10,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n02002724\\ILSVRC2012_val_00006487.JPEG",
+      "oracle_fill": false,
+      "lpips": 0.465183287858963,
+      "source_abs_cosine": 0.9988274574279785,
+      "tiles": [
+        {
+          "condition": "Original",
+          "bbox_xyxy": [
+            980,
+            1328,
+            1204,
+            1552
+          ],
+          "rgb8_sha256": "bb9a8af286ec3dec4715b6637848c0e1070dc0f2f9396dc3c35d0e19800516be"
+        },
+        {
+          "condition": "FP32",
+          "bbox_xyxy": [
+            1216,
+            1328,
+            1440,
+            1552
+          ],
+          "rgb8_sha256": "4de051cdd3f0ec33473b67d455b6de5962f988112952c3e8ea333561b745a292"
+        }
+      ]
+    },
+    {
+      "global_index": 43,
+      "batch_index": 2,
+      "source_index": 11,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n02105855\\ILSVRC2012_val_00003810.JPEG",
+      "oracle_fill": false,
+      "lpips": 0.48088395595550537,
+      "source_abs_cosine": 0.9999045133590698,
+      "tiles": [
+        {
+          "condition": "Original",
+          "bbox_xyxy": [
+            1460,
+            1328,
+            1684,
+            1552
+          ],
+          "rgb8_sha256": "20a34595787f4c81550414e641074163af671a2b283b252fa899047686363471"
+        },
+        {
+          "condition": "FP32",
+          "bbox_xyxy": [
+            1696,
+            1328,
+            1920,
+            1552
+          ],
+          "rgb8_sha256": "680892b79062a76419fb049985fe18c8ab05fd4d831b2181d6b8f5f5747981d7"
+        }
+      ]
+    },
+    {
+      "global_index": 44,
+      "batch_index": 2,
+      "source_index": 12,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n03709823\\ILSVRC2012_val_00005929.JPEG",
+      "oracle_fill": false,
+      "lpips": 0.4961054027080536,
+      "source_abs_cosine": 0.9999616146087646,
+      "tiles": [
+        {
+          "condition": "Original",
+          "bbox_xyxy": [
+            1940,
+            1328,
+            2164,
+            1552
+          ],
+          "rgb8_sha256": "52bb4f89417893299522a5baa3062b1353fa348afc335f32e9655850693d22b1"
+        },
+        {
+          "condition": "FP32",
+          "bbox_xyxy": [
+            2176,
+            1328,
+            2400,
+            1552
+          ],
+          "rgb8_sha256": "a05944795021cabae52edbb17340cbbd8fe71cc25047caf19ea69101703c3807"
+        }
+      ]
+    },
+    {
+      "global_index": 45,
+      "batch_index": 2,
+      "source_index": 13,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n04550184\\ILSVRC2012_val_00007593.JPEG",
+      "oracle_fill": false,
+      "lpips": 0.44785237312316895,
+      "source_abs_cosine": 0.9998201727867126,
+      "tiles": [
+        {
+          "condition": "Original",
+          "bbox_xyxy": [
+            2420,
+            1328,
+            2644,
+            1552
+          ],
+          "rgb8_sha256": "fcb6c213ca515b77d2617fe1d665064d2e1c6510570fd1e992e4d6c1629e9290"
+        },
+        {
+          "condition": "FP32",
+          "bbox_xyxy": [
+            2656,
+            1328,
+            2880,
+            1552
+          ],
+          "rgb8_sha256": "97c5caeeb1e70200a64231edc7030a96c82dcb50fe6cf276111e781c61464dfa"
+        }
+      ]
+    },
+    {
+      "global_index": 46,
+      "batch_index": 2,
+      "source_index": 14,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n03584829\\ILSVRC2012_val_00009366.JPEG",
+      "oracle_fill": false,
+      "lpips": 0.3034989833831787,
+      "source_abs_cosine": 0.9990196228027344,
+      "tiles": [
+        {
+          "condition": "Original",
+          "bbox_xyxy": [
+            2900,
+            1328,
+            3124,
+            1552
+          ],
+          "rgb8_sha256": "d448952cfc27d7d9aa8de50ed9fcd718aa1775114349acd215a05cb842c9f6a6"
+        },
+        {
+          "condition": "FP32",
+          "bbox_xyxy": [
+            3136,
+            1328,
+            3360,
+            1552
+          ],
+          "rgb8_sha256": "be6c8df5deb0a450da19c0b0ff1212ab87a5b4a5e9c23d14bc78cbd3e0297a1a"
+        }
+      ]
+    },
+    {
+      "global_index": 47,
+      "batch_index": 2,
+      "source_index": 15,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n04597913\\ILSVRC2012_val_00013892.JPEG",
+      "oracle_fill": false,
+      "lpips": 0.46044495701789856,
+      "source_abs_cosine": 0.9993817806243896,
+      "tiles": [
+        {
+          "condition": "Original",
+          "bbox_xyxy": [
+            3380,
+            1328,
+            3604,
+            1552
+          ],
+          "rgb8_sha256": "f254c79aff9281c52b75263dfbcb39eb321b1ff3394b17b694c158f7f7677717"
+        },
+        {
+          "condition": "FP32",
+          "bbox_xyxy": [
+            3616,
+            1328,
+            3840,
+            1552
+          ],
+          "rgb8_sha256": "164acc2edafff82ee41e8613916de3d8f33f4d4c5c30e8b8f92e2beea0554e83"
+        }
+      ]
+    },
+    {
+      "global_index": 48,
+      "batch_index": 3,
+      "source_index": 0,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n03482405\\ILSVRC2012_val_00026275.JPEG",
+      "oracle_fill": false,
+      "lpips": 0.5388553738594055,
+      "source_abs_cosine": 0.9998276233673096,
+      "tiles": [
+        {
+          "condition": "Original",
+          "bbox_xyxy": [
+            3860,
+            1328,
+            4084,
+            1552
+          ],
+          "rgb8_sha256": "ce05436e9e0389a97b0de41833d757e9500d8d359341f935cec08f42cf69c1e5"
+        },
+        {
+          "condition": "FP32",
+          "bbox_xyxy": [
+            4096,
+            1328,
+            4320,
+            1552
+          ],
+          "rgb8_sha256": "c8a861ae23e246de8a55f45c4753678ae9ef33f1104acce95cf46a62cda3b046"
+        }
+      ]
+    },
+    {
+      "global_index": 49,
+      "batch_index": 3,
+      "source_index": 1,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n04592741\\ILSVRC2012_val_00020064.JPEG",
+      "oracle_fill": false,
+      "lpips": 0.46819210052490234,
+      "source_abs_cosine": 0.9986864924430847,
+      "tiles": [
+        {
+          "condition": "Original",
+          "bbox_xyxy": [
+            4340,
+            1328,
+            4564,
+            1552
+          ],
+          "rgb8_sha256": "b32537cb276766589e7f62a9eb7e503fceb5e4fcb69aa1d21856d15e3d2f9eb3"
+        },
+        {
+          "condition": "FP32",
+          "bbox_xyxy": [
+            4576,
+            1328,
+            4800,
+            1552
+          ],
+          "rgb8_sha256": "2f93564741ebfd5f77fa861e28712d0209b4e6478d2ec65dcdf50d4ae449e20c"
+        }
+      ]
+    },
+    {
+      "global_index": 50,
+      "batch_index": 3,
+      "source_index": 2,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n09468604\\ILSVRC2012_val_00025327.JPEG",
+      "oracle_fill": false,
+      "lpips": 0.5382225513458252,
+      "source_abs_cosine": 0.9993265867233276,
+      "tiles": [
+        {
+          "condition": "Original",
+          "bbox_xyxy": [
+            20,
+            1620,
+            244,
+            1844
+          ],
+          "rgb8_sha256": "ecc4371042f9bee49aa8571198c6656b6fdf2e246a75ed72d88510ce4de46c33"
+        },
+        {
+          "condition": "FP32",
+          "bbox_xyxy": [
+            256,
+            1620,
+            480,
+            1844
+          ],
+          "rgb8_sha256": "144246a0f6e2c7dd9951764670cba03323f0b9993f8703e595c868380853403e"
+        }
+      ]
+    },
+    {
+      "global_index": 51,
+      "batch_index": 3,
+      "source_index": 3,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n04179913\\ILSVRC2012_val_00016978.JPEG",
+      "oracle_fill": false,
+      "lpips": 0.4362814128398895,
+      "source_abs_cosine": 0.9991449117660522,
+      "tiles": [
+        {
+          "condition": "Original",
+          "bbox_xyxy": [
+            500,
+            1620,
+            724,
+            1844
+          ],
+          "rgb8_sha256": "f17c8caf024e21407f44b559245ea0a4b213267623f3861dbd36dff3744413a2"
+        },
+        {
+          "condition": "FP32",
+          "bbox_xyxy": [
+            736,
+            1620,
+            960,
+            1844
+          ],
+          "rgb8_sha256": "a80b5550577b0ac724637655cc1513260c323144cc4616550922ce73406a7f6f"
+        }
+      ]
+    },
+    {
+      "global_index": 52,
+      "batch_index": 3,
+      "source_index": 4,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n02114367\\ILSVRC2012_val_00022055.JPEG",
+      "oracle_fill": false,
+      "lpips": 0.4611718952655792,
+      "source_abs_cosine": 0.9999023675918579,
+      "tiles": [
+        {
+          "condition": "Original",
+          "bbox_xyxy": [
+            980,
+            1620,
+            1204,
+            1844
+          ],
+          "rgb8_sha256": "fa5f073a88409c5ebbdc06390b45397c954887ec461e717b992532aae3f357e9"
+        },
+        {
+          "condition": "FP32",
+          "bbox_xyxy": [
+            1216,
+            1620,
+            1440,
+            1844
+          ],
+          "rgb8_sha256": "5f58351967094da1f78e8c106fff1d67969f92aa269a0929c4eee924531979db"
+        }
+      ]
+    },
+    {
+      "global_index": 53,
+      "batch_index": 3,
+      "source_index": 5,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n03041632\\ILSVRC2012_val_00022700.JPEG",
+      "oracle_fill": false,
+      "lpips": 0.4011072814464569,
+      "source_abs_cosine": 0.9988348484039307,
+      "tiles": [
+        {
+          "condition": "Original",
+          "bbox_xyxy": [
+            1460,
+            1620,
+            1684,
+            1844
+          ],
+          "rgb8_sha256": "fa8019eeed74cc9b1c3a2bdc6a6f19eb646b8474062cddd2a99e9eea7592d4b7"
+        },
+        {
+          "condition": "FP32",
+          "bbox_xyxy": [
+            1696,
+            1620,
+            1920,
+            1844
+          ],
+          "rgb8_sha256": "b0b83be87a127bc5e734b81786eae9944f63e298f1515cb124c270740848fe45"
+        }
+      ]
+    },
+    {
+      "global_index": 54,
+      "batch_index": 3,
+      "source_index": 6,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n03255030\\ILSVRC2012_val_00026198.JPEG",
+      "oracle_fill": false,
+      "lpips": 0.43732908368110657,
+      "source_abs_cosine": 0.9992431998252869,
+      "tiles": [
+        {
+          "condition": "Original",
+          "bbox_xyxy": [
+            1940,
+            1620,
+            2164,
+            1844
+          ],
+          "rgb8_sha256": "a21005b49fa5abba815650755126d2221900d397846ef48d75c896de4e7b1354"
+        },
+        {
+          "condition": "FP32",
+          "bbox_xyxy": [
+            2176,
+            1620,
+            2400,
+            1844
+          ],
+          "rgb8_sha256": "ee717c5603be497985cfab4ac40cb4c9d5dc81caf6855992473aa2a689e09167"
+        }
+      ]
+    },
+    {
+      "global_index": 55,
+      "batch_index": 3,
+      "source_index": 7,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n03126707\\ILSVRC2012_val_00035686.JPEG",
+      "oracle_fill": false,
+      "lpips": 0.37582001090049744,
+      "source_abs_cosine": 0.9990715384483337,
+      "tiles": [
+        {
+          "condition": "Original",
+          "bbox_xyxy": [
+            2420,
+            1620,
+            2644,
+            1844
+          ],
+          "rgb8_sha256": "94e51e2432f10f8a2f94bc49cf6b66beb1f75f98ad5814dcb1b59998348d2cd6"
+        },
+        {
+          "condition": "FP32",
+          "bbox_xyxy": [
+            2656,
+            1620,
+            2880,
+            1844
+          ],
+          "rgb8_sha256": "6f95fe7ffbfdc8f5d1fcd2cefa716d4786fa54c1ea7f74daee86a00791f0b75f"
+        }
+      ]
+    },
+    {
+      "global_index": 56,
+      "batch_index": 3,
+      "source_index": 8,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n02484975\\ILSVRC2012_val_00022174.JPEG",
+      "oracle_fill": false,
+      "lpips": 0.4459075629711151,
+      "source_abs_cosine": 0.9998341202735901,
+      "tiles": [
+        {
+          "condition": "Original",
+          "bbox_xyxy": [
+            2900,
+            1620,
+            3124,
+            1844
+          ],
+          "rgb8_sha256": "0f2fb609a52490d8d15bd678db1f43d51660df3548e4db462107e5bb911dadad"
+        },
+        {
+          "condition": "FP32",
+          "bbox_xyxy": [
+            3136,
+            1620,
+            3360,
+            1844
+          ],
+          "rgb8_sha256": "c232f7eca95e420bfe9b3f6eca76d1e6d9d78f7a376bd43f0fec67d2d7ae5438"
+        }
+      ]
+    },
+    {
+      "global_index": 57,
+      "batch_index": 3,
+      "source_index": 9,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n01742172\\ILSVRC2012_val_00027484.JPEG",
+      "oracle_fill": false,
+      "lpips": 0.410140722990036,
+      "source_abs_cosine": 0.999036967754364,
+      "tiles": [
+        {
+          "condition": "Original",
+          "bbox_xyxy": [
+            3380,
+            1620,
+            3604,
+            1844
+          ],
+          "rgb8_sha256": "ddcd1ff6fa9a544b7faaa731ad713baf56e23e492b70afd407d60f7423399640"
+        },
+        {
+          "condition": "FP32",
+          "bbox_xyxy": [
+            3616,
+            1620,
+            3840,
+            1844
+          ],
+          "rgb8_sha256": "86c7215226edbdd2c2297fcb7fda7841695a3bb0ba6d438932e4c3b161fc81ce"
+        }
+      ]
+    },
+    {
+      "global_index": 58,
+      "batch_index": 3,
+      "source_index": 10,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n02085782\\ILSVRC2012_val_00029262.JPEG",
+      "oracle_fill": false,
+      "lpips": 0.3693896532058716,
+      "source_abs_cosine": 0.9999983906745911,
+      "tiles": [
+        {
+          "condition": "Original",
+          "bbox_xyxy": [
+            3860,
+            1620,
+            4084,
+            1844
+          ],
+          "rgb8_sha256": "e6de7693227e7ba1a336577121e93bcd33e4b28cdbbacb7f8bb42dffb2a6ee96"
+        },
+        {
+          "condition": "FP32",
+          "bbox_xyxy": [
+            4096,
+            1620,
+            4320,
+            1844
+          ],
+          "rgb8_sha256": "6be0eb246f904df20cfa1c9608dbb8ee12d09a6c6b76b29c5208cb612f6fe58f"
+        }
+      ]
+    },
+    {
+      "global_index": 59,
+      "batch_index": 3,
+      "source_index": 11,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n03958227\\ILSVRC2012_val_00031510.JPEG",
+      "oracle_fill": false,
+      "lpips": 0.44057196378707886,
+      "source_abs_cosine": 0.9996444582939148,
+      "tiles": [
+        {
+          "condition": "Original",
+          "bbox_xyxy": [
+            4340,
+            1620,
+            4564,
+            1844
+          ],
+          "rgb8_sha256": "593d65cbb7d4abe244bdb4348c4b7fc477aa7919f80602a3d4165a51bd727e44"
+        },
+        {
+          "condition": "FP32",
+          "bbox_xyxy": [
+            4576,
+            1620,
+            4800,
+            1844
+          ],
+          "rgb8_sha256": "a29fdfcea4413c02543399eaf839a6fcd4cd6d904bbf93f3de26da6d3313f42e"
+        }
+      ]
+    },
+    {
+      "global_index": 60,
+      "batch_index": 3,
+      "source_index": 12,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n04154565\\ILSVRC2012_val_00029403.JPEG",
+      "oracle_fill": false,
+      "lpips": 0.4525376856327057,
+      "source_abs_cosine": 0.9999677538871765,
+      "tiles": [
+        {
+          "condition": "Original",
+          "bbox_xyxy": [
+            20,
+            1912,
+            244,
+            2136
+          ],
+          "rgb8_sha256": "8620ec0ed3b5fdc9407a894fbaea8950b77e6db6b5a09374f987017a5d59d3c9"
+        },
+        {
+          "condition": "FP32",
+          "bbox_xyxy": [
+            256,
+            1912,
+            480,
+            2136
+          ],
+          "rgb8_sha256": "6f317279d6cc7b33aea93033afe84570d7facb17f6fc77a7a46314463a1050b1"
+        }
+      ]
+    },
+    {
+      "global_index": 61,
+      "batch_index": 3,
+      "source_index": 13,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n03476684\\ILSVRC2012_val_00030414.JPEG",
+      "oracle_fill": false,
+      "lpips": 0.5111062526702881,
+      "source_abs_cosine": 0.9996028542518616,
+      "tiles": [
+        {
+          "condition": "Original",
+          "bbox_xyxy": [
+            500,
+            1912,
+            724,
+            2136
+          ],
+          "rgb8_sha256": "f76d395b357c38d9cc5ba2ccd3538e7c63415711cb378dc7a3404ef1e5037a73"
+        },
+        {
+          "condition": "FP32",
+          "bbox_xyxy": [
+            736,
+            1912,
+            960,
+            2136
+          ],
+          "rgb8_sha256": "dce3c4d8e5175493e6906b2ba1d24fb2b2d956175443c157201282cb98142f76"
+        }
+      ]
+    },
+    {
+      "global_index": 62,
+      "batch_index": 3,
+      "source_index": 14,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n02916936\\ILSVRC2012_val_00030157.JPEG",
+      "oracle_fill": false,
+      "lpips": 0.4350506067276001,
+      "source_abs_cosine": 0.999640941619873,
+      "tiles": [
+        {
+          "condition": "Original",
+          "bbox_xyxy": [
+            980,
+            1912,
+            1204,
+            2136
+          ],
+          "rgb8_sha256": "b427ff7decdac6cd8a247ba438f831bb01a95574c316c6f5979693ce8133a3b6"
+        },
+        {
+          "condition": "FP32",
+          "bbox_xyxy": [
+            1216,
+            1912,
+            1440,
+            2136
+          ],
+          "rgb8_sha256": "82b91d3831f2b316b8826765c94c6866b850791f27ea4f1a7efed41847cf7804"
+        }
+      ]
+    },
+    {
+      "global_index": 63,
+      "batch_index": 3,
+      "source_index": 15,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n02808304\\ILSVRC2012_val_00031759.JPEG",
+      "oracle_fill": false,
+      "lpips": 0.40560775995254517,
+      "source_abs_cosine": 0.9999973773956299,
+      "tiles": [
+        {
+          "condition": "Original",
+          "bbox_xyxy": [
+            1460,
+            1912,
+            1684,
+            2136
+          ],
+          "rgb8_sha256": "fac337c7213198eb9e7c24e15900b2d92f9dc8ce3bd1bd50c99c1244f48e235a"
+        },
+        {
+          "condition": "FP32",
+          "bbox_xyxy": [
+            1696,
+            1912,
+            1920,
+            2136
+          ],
+          "rgb8_sha256": "fb919a67211ad251dfc6d1cc89a5b16fa0e6806cc4ebdd8402982d4df5b66a13"
+        }
+      ]
+    },
+    {
+      "global_index": 64,
+      "batch_index": 4,
+      "source_index": 0,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n02066245\\ILSVRC2012_val_00037913.JPEG",
+      "oracle_fill": false,
+      "lpips": 0.46113136410713196,
+      "source_abs_cosine": 0.9847086668014526,
+      "tiles": [
+        {
+          "condition": "Original",
+          "bbox_xyxy": [
+            1940,
+            1912,
+            2164,
+            2136
+          ],
+          "rgb8_sha256": "139b14e6f5945c2109ff08bf2232d86d7b8fed8a9c75b2066f4a69a25d130deb"
+        },
+        {
+          "condition": "FP32",
+          "bbox_xyxy": [
+            2176,
+            1912,
+            2400,
+            2136
+          ],
+          "rgb8_sha256": "5d8c5b5c3625bf1f0b52452dcdcc5b97b660fb46420408ddbdabc23a6270b68b"
+        }
+      ]
+    },
+    {
+      "global_index": 65,
+      "batch_index": 4,
+      "source_index": 1,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n02102318\\ILSVRC2012_val_00044890.JPEG",
+      "oracle_fill": false,
+      "lpips": 0.4884379506111145,
+      "source_abs_cosine": 0.9987022280693054,
+      "tiles": [
+        {
+          "condition": "Original",
+          "bbox_xyxy": [
+            2420,
+            1912,
+            2644,
+            2136
+          ],
+          "rgb8_sha256": "f45fd749b05a9788308abf604121e2f9a0d099aefab3595c88890ab906e09b5d"
+        },
+        {
+          "condition": "FP32",
+          "bbox_xyxy": [
+            2656,
+            1912,
+            2880,
+            2136
+          ],
+          "rgb8_sha256": "fc46ee8f9b747633ce1a818644a082bb7748a94d17ce1c8d6a811d964b447f02"
+        }
+      ]
+    },
+    {
+      "global_index": 66,
+      "batch_index": 4,
+      "source_index": 2,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n03325584\\ILSVRC2012_val_00045538.JPEG",
+      "oracle_fill": false,
+      "lpips": 0.5409647226333618,
+      "source_abs_cosine": 0.9708967804908752,
+      "tiles": [
+        {
+          "condition": "Original",
+          "bbox_xyxy": [
+            2900,
+            1912,
+            3124,
+            2136
+          ],
+          "rgb8_sha256": "c26810152b4b48d3650abe44971c97ec1dc28314d46193376eea031b5fe16560"
+        },
+        {
+          "condition": "FP32",
+          "bbox_xyxy": [
+            3136,
+            1912,
+            3360,
+            2136
+          ],
+          "rgb8_sha256": "16c50d46424cf643ce138bec4a53aefb86c51635fdb58c781a491c2edb959b00"
+        }
+      ]
+    },
+    {
+      "global_index": 67,
+      "batch_index": 4,
+      "source_index": 3,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n03961711\\ILSVRC2012_val_00042539.JPEG",
+      "oracle_fill": false,
+      "lpips": 0.4484071731567383,
+      "source_abs_cosine": 0.999978244304657,
+      "tiles": [
+        {
+          "condition": "Original",
+          "bbox_xyxy": [
+            3380,
+            1912,
+            3604,
+            2136
+          ],
+          "rgb8_sha256": "5484c87235bf8114d778b8f37ecd25f090125195380265f6bdcfb2e28ef6db69"
+        },
+        {
+          "condition": "FP32",
+          "bbox_xyxy": [
+            3616,
+            1912,
+            3840,
+            2136
+          ],
+          "rgb8_sha256": "4855bd756ffe8dbca45ac58a6c68a47c0a8d5d6a25561c9aa58e35571c06822c"
+        }
+      ]
+    },
+    {
+      "global_index": 68,
+      "batch_index": 4,
+      "source_index": 4,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n02112350\\ILSVRC2012_val_00047187.JPEG",
+      "oracle_fill": false,
+      "lpips": 0.4736616909503937,
+      "source_abs_cosine": 0.9969640970230103,
+      "tiles": [
+        {
+          "condition": "Original",
+          "bbox_xyxy": [
+            3860,
+            1912,
+            4084,
+            2136
+          ],
+          "rgb8_sha256": "d3f306dd91e4959ab02abc67d3cefb8e8efb25dd8b167758accda6702ec56ac4"
+        },
+        {
+          "condition": "FP32",
+          "bbox_xyxy": [
+            4096,
+            1912,
+            4320,
+            2136
+          ],
+          "rgb8_sha256": "8656508a6c612a3f1903665905be75514459a5bdd9b8830ebf69f0c88065cc50"
+        }
+      ]
+    },
+    {
+      "global_index": 69,
+      "batch_index": 4,
+      "source_index": 5,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n04417672\\ILSVRC2012_val_00046924.JPEG",
+      "oracle_fill": false,
+      "lpips": 0.447422057390213,
+      "source_abs_cosine": 0.9999706745147705,
+      "tiles": [
+        {
+          "condition": "Original",
+          "bbox_xyxy": [
+            4340,
+            1912,
+            4564,
+            2136
+          ],
+          "rgb8_sha256": "81f36dd728ebc3d84807f3d50e254ba76083802d590c3320f8902782a3b66e11"
+        },
+        {
+          "condition": "FP32",
+          "bbox_xyxy": [
+            4576,
+            1912,
+            4800,
+            2136
+          ],
+          "rgb8_sha256": "f61c176a8debc2ca3f9ae0b87578aa37a95dd263b07b243d1824c376b40c7d90"
+        }
+      ]
+    },
+    {
+      "global_index": 70,
+      "batch_index": 4,
+      "source_index": 6,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n02107142\\ILSVRC2012_val_00048330.JPEG",
+      "oracle_fill": false,
+      "lpips": 0.4180075228214264,
+      "source_abs_cosine": 0.9993569254875183,
+      "tiles": [
+        {
+          "condition": "Original",
+          "bbox_xyxy": [
+            20,
+            2204,
+            244,
+            2428
+          ],
+          "rgb8_sha256": "caac5851abf0d4ad47e369f2678bc64c7050711db98bb85e82a75b0c9c291365"
+        },
+        {
+          "condition": "FP32",
+          "bbox_xyxy": [
+            256,
+            2204,
+            480,
+            2428
+          ],
+          "rgb8_sha256": "5b9cc9c9b492dd9d3dd1d6cd9adfd130c49a69182f582176cedf1cd1b8c46f52"
+        }
+      ]
+    },
+    {
+      "global_index": 71,
+      "batch_index": 4,
+      "source_index": 7,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n01695060\\ILSVRC2012_val_00049602.JPEG",
+      "oracle_fill": false,
+      "lpips": 0.4059467911720276,
+      "source_abs_cosine": 0.9996818900108337,
+      "tiles": [
+        {
+          "condition": "Original",
+          "bbox_xyxy": [
+            500,
+            2204,
+            724,
+            2428
+          ],
+          "rgb8_sha256": "49b5b0cf59c148bf913374061b9acdc425f96cdb7bdd16db4becf974c16ff688"
+        },
+        {
+          "condition": "FP32",
+          "bbox_xyxy": [
+            736,
+            2204,
+            960,
+            2428
+          ],
+          "rgb8_sha256": "d86c7e3cf9fc121072cda8c795adfe7ea8a7d325ddec1049ae651ad26bc6df54"
+        }
+      ]
+    },
+    {
+      "global_index": 72,
+      "batch_index": 4,
+      "source_index": 8,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n04355338\\ILSVRC2012_val_00002015.JPEG",
+      "oracle_fill": false,
+      "lpips": 0.46869656443595886,
+      "source_abs_cosine": 0.9999541640281677,
+      "tiles": [
+        {
+          "condition": "Original",
+          "bbox_xyxy": [
+            980,
+            2204,
+            1204,
+            2428
+          ],
+          "rgb8_sha256": "9ade93927a4d79933c305baa1bad1219963bd51059486af9863f1c5c0fea7962"
+        },
+        {
+          "condition": "FP32",
+          "bbox_xyxy": [
+            1216,
+            2204,
+            1440,
+            2428
+          ],
+          "rgb8_sha256": "7e995bf097674a1372a3a86668485eaac93dfc1b5a6a9849ef451d35b64880eb"
+        }
+      ]
+    },
+    {
+      "global_index": 73,
+      "batch_index": 4,
+      "source_index": 9,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n03891251\\ILSVRC2012_val_00002930.JPEG",
+      "oracle_fill": false,
+      "lpips": 0.4603409171104431,
+      "source_abs_cosine": 0.9995377659797668,
+      "tiles": [
+        {
+          "condition": "Original",
+          "bbox_xyxy": [
+            1460,
+            2204,
+            1684,
+            2428
+          ],
+          "rgb8_sha256": "97b424aeda35864f0b51786fe6c81d4c106b8e5d4fe8538910683f56fed6e414"
+        },
+        {
+          "condition": "FP32",
+          "bbox_xyxy": [
+            1696,
+            2204,
+            1920,
+            2428
+          ],
+          "rgb8_sha256": "22ce419ee6261c3ad0a056d909f0bd22df393d6df2263e2e624001c327024db3"
+        }
+      ]
+    },
+    {
+      "global_index": 74,
+      "batch_index": 4,
+      "source_index": 10,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n01855032\\ILSVRC2012_val_00007973.JPEG",
+      "oracle_fill": false,
+      "lpips": 0.42251986265182495,
+      "source_abs_cosine": 0.9993336200714111,
+      "tiles": [
+        {
+          "condition": "Original",
+          "bbox_xyxy": [
+            1940,
+            2204,
+            2164,
+            2428
+          ],
+          "rgb8_sha256": "8a5cbc169bc9de3c2b9f6e8517f51d82c0c3f7bf848d2e4a2d80ba6a2b94a0c1"
+        },
+        {
+          "condition": "FP32",
+          "bbox_xyxy": [
+            2176,
+            2204,
+            2400,
+            2428
+          ],
+          "rgb8_sha256": "5bcd55805d594da2350432eefa5a7e52a639676259d576ddbe4dbbd746a073d7"
+        }
+      ]
+    },
+    {
+      "global_index": 75,
+      "batch_index": 4,
+      "source_index": 11,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n02114855\\ILSVRC2012_val_00004178.JPEG",
+      "oracle_fill": false,
+      "lpips": 0.46004238724708557,
+      "source_abs_cosine": 0.9976953864097595,
+      "tiles": [
+        {
+          "condition": "Original",
+          "bbox_xyxy": [
+            2420,
+            2204,
+            2644,
+            2428
+          ],
+          "rgb8_sha256": "2e1f882f6d1f749fd526ed34116a8c83d8938f4acf0ad05f051c03c242c1026d"
+        },
+        {
+          "condition": "FP32",
+          "bbox_xyxy": [
+            2656,
+            2204,
+            2880,
+            2428
+          ],
+          "rgb8_sha256": "7322c9fce22fd0d1982c6c297f050ed4a7291a41c9d65f4bed1c01af887208fc"
+        }
+      ]
+    },
+    {
+      "global_index": 76,
+      "batch_index": 4,
+      "source_index": 12,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n03062245\\ILSVRC2012_val_00003439.JPEG",
+      "oracle_fill": false,
+      "lpips": 0.48635220527648926,
+      "source_abs_cosine": 0.9999766945838928,
+      "tiles": [
+        {
+          "condition": "Original",
+          "bbox_xyxy": [
+            2900,
+            2204,
+            3124,
+            2428
+          ],
+          "rgb8_sha256": "5c3a6a8f0d0525b72a3dfff3feace15d02503776470d12bac50996a2890d3c2f"
+        },
+        {
+          "condition": "FP32",
+          "bbox_xyxy": [
+            3136,
+            2204,
+            3360,
+            2428
+          ],
+          "rgb8_sha256": "e81fb4d6a645451c100d8d14b3ca2fa11ea21f31f9f66fe2d8ac0f41747b279b"
+        }
+      ]
+    },
+    {
+      "global_index": 77,
+      "batch_index": 4,
+      "source_index": 13,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n02948072\\ILSVRC2012_val_00007889.JPEG",
+      "oracle_fill": false,
+      "lpips": 0.42221158742904663,
+      "source_abs_cosine": 0.9999995827674866,
+      "tiles": [
+        {
+          "condition": "Original",
+          "bbox_xyxy": [
+            3380,
+            2204,
+            3604,
+            2428
+          ],
+          "rgb8_sha256": "00851c4860ecf750c9ffe181809adfdf4c059a330e82525b773429d58be22167"
+        },
+        {
+          "condition": "FP32",
+          "bbox_xyxy": [
+            3616,
+            2204,
+            3840,
+            2428
+          ],
+          "rgb8_sha256": "534bc8781ddbea0203a6de2d947f38482d459ac27c22c47d9ae98992b99397ba"
+        }
+      ]
+    },
+    {
+      "global_index": 78,
+      "batch_index": 4,
+      "source_index": 14,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n03908618\\ILSVRC2012_val_00007771.JPEG",
+      "oracle_fill": false,
+      "lpips": 0.4560418725013733,
+      "source_abs_cosine": 0.9999991655349731,
+      "tiles": [
+        {
+          "condition": "Original",
+          "bbox_xyxy": [
+            3860,
+            2204,
+            4084,
+            2428
+          ],
+          "rgb8_sha256": "6e14fa252532ecb8bf7ff841eb9aa9082bbc2b6b384b4683a1049a7c05dadb03"
+        },
+        {
+          "condition": "FP32",
+          "bbox_xyxy": [
+            4096,
+            2204,
+            4320,
+            2428
+          ],
+          "rgb8_sha256": "e4c4998b4abe671b21094b8259100c40d36069377def9d8ad82b349b0a2e63aa"
+        }
+      ]
+    },
+    {
+      "global_index": 79,
+      "batch_index": 4,
+      "source_index": 15,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n02112137\\ILSVRC2012_val_00006664.JPEG",
+      "oracle_fill": false,
+      "lpips": 0.4982275664806366,
+      "source_abs_cosine": 0.999037504196167,
+      "tiles": [
+        {
+          "condition": "Original",
+          "bbox_xyxy": [
+            4340,
+            2204,
+            4564,
+            2428
+          ],
+          "rgb8_sha256": "0f281548ed4af1f651dd77ab251de4e215c53b1fa5a69e75fd824c6a54fbcbb1"
+        },
+        {
+          "condition": "FP32",
+          "bbox_xyxy": [
+            4576,
+            2204,
+            4800,
+            2428
+          ],
+          "rgb8_sha256": "557b6cc8e2a5ba887cbbd74db79bbcfb0dc25ac578c3422c0cdf05aa2177da86"
+        }
+      ]
+    }
+  ]
+}

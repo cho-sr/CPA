@@ -1,0 +1,7 @@
+label,metric,mean,std,n_cells,note
+"src=official,bs=8,smoke200iter",lpips,0.6045904830098152,0.0,1,oracle-aligned; leak=1[PSNR>18.0 & LPIPS<0.1]
+"src=official,bs=8,smoke200iter",psnr,11.24771761894226,0.0,1,oracle-aligned; leak=1[PSNR>18.0 & LPIPS<0.1]
+"src=official,bs=8,smoke200iter",ssim,0.05304239899851382,0.0,1,oracle-aligned; leak=1[PSNR>18.0 & LPIPS<0.1]
+"src=official,bs=8,smoke200iter",emb_cs,0.9782182276248932,0.0,1,oracle-aligned; leak=1[PSNR>18.0 & LPIPS<0.1]
+"src=official,bs=8,smoke200iter",brr,0.0,0.0,1,oracle-aligned; leak=1[PSNR>18.0 & LPIPS<0.1]
+"src=official,bs=8,smoke200iter",wsrr,0.0,0.0,1,over K=1 runs: frac of runs with >=1 leaked sample; averaged over 1 data batches

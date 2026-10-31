@@ -1,0 +1,2 @@
+keep 80%: 1/24 success; batch 1 sample 5 idx 49024 LPIPS 0.479
+keep 50%: 1/24 success; batch 1 sample 5 idx 49024 LPIPS 0.469

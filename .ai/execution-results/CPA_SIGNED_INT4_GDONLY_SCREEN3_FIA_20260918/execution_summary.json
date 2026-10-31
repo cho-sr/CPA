@@ -1,0 +1,16 @@
+{
+  "task_id": "CPA_SIGNED_INT4_GDONLY_SCREEN3_FIA_20260918",
+  "status": "COMPLETED",
+  "evaluation_status": "COMPLETED",
+  "public_status": "PUBLIC_COMPLETED",
+  "public_gate": "PUBLIC_GATE_PASSED",
+  "optimizer_steps_added": 0,
+  "separation_calls_reused": 9,
+  "new_fia_updates_reused": 125000,
+  "evaluation_output": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results_private\\signed_int4_gdonly_randomized8_screen3_fia_B16_T10_20260918\\evaluation_repair_20260918",
+  "repair_provenance": "C:\\Users\\조상제\\Desktop\\CPA\\.ai\\execution-results\\CPA_SIGNED_INT4_GDONLY_SCREEN3_FIA_20260918\\evaluation_repair_provenance.json",
+  "finished_at": "2026-09-18T13:43:03.974797+00:00",
+  "actual_image_cell_feasibility": "NOT_EVALUATED",
+  "final_result": "C:\\Users\\조상제\\Desktop\\CPA\\.ai\\execution-results\\CPA_SIGNED_INT4_GDONLY_SCREEN3_FIA_20260918\\final_result.json",
+  "completed_at": "2026-09-18T13:44:25.306083+00:00"
+}

@@ -1,0 +1,108 @@
+{
+  "task_id": "CPA_SINGLE_CLIENT_INT4_FAST4000_GD4000_FIA25000_20261006",
+  "status": "PREPARED",
+  "session_role": "CODEX_EXECUTOR",
+  "authorized_thread": "01a11025-fc1c-7e53-bea5-3cc32a1bae01",
+  "authorization": "User: ICA 각 4천번씩 FIA 25k, 4비트 업데이트, single client; 그냥 여기서 실험 넣어줘",
+  "executor_exception": "Current conversation explicitly authorized; no model switch or Luna dispatch",
+  "input_hashes": {
+    "C:\\Users\\조상제\\.cache\\torch\\hub\\checkpoints\\vgg16-397923af.pth": "397923af8e79cdbb6a7127f12361acd7a2f83e06b05044ddf496e83de57a5bf0",
+    "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\signed_int4_baseline_B16_T10\\observation\\manifest.json": "9b4891765e6fc7e4adb1e3e11c158b3d4a2c3430d3397e1f1466ddafe2e1cd69",
+    "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\signed_int4_baseline_B16_T10\\observation\\fc_00.sgn4": "697c24316428133714e9fad5831429adced101d90c921746b4802b0914079a70",
+    "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\signed_int4_baseline_B16_T10\\observation\\fc_01.sgn4": "005da86bee21afa8bee1dda0a4cba492510c73b021b64114f030f3d9f52343a6",
+    "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\signed_int4_baseline_B16_T10\\observation\\fc_02.sgn4": "b6bc983225a97a481832f4d028bf1f41a087f84e4810df01f69ce397d1875baf",
+    "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\signed_int4_baseline_B16_T10\\observation\\fc_03.sgn4": "d8220d804ac511d93e307dfab6ed41d30718eb571d5e4725a62351bc5e5b0936",
+    "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\signed_int4_baseline_B16_T10\\observation\\fc_04.sgn4": "12b8748b134e8a7c67bfa87c94b9b5de4f76128af7bf82fac196528b5b6c7996",
+    "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\signed_int4_baseline_B16_T10\\observation\\fc_05.sgn4": "af6acbb5c356a9b9884823886383c8020093f6cf724dd6605a115df1afdcfdc7"
+  },
+  "code_hashes": {
+    "C:\\Users\\조상제\\Desktop\\CPA\\.ai\\execution-results\\CPA_SINGLE_CLIENT_INT4_FAST4000_GD4000_FIA25000_20261006\\run_experiment.py": "f3cb63895999a4c0eb20ace43e975c217d6f7f4ac9864c6a8984007b7523491f",
+    "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\qacpa\\signed_combination_ica.py": "1c7482e1ed77ca4641cd8822ebb6046c5150e794c3838aacc3e3d575f3d992d6",
+    "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\qacpa\\signed_baseline_observation.py": "2c18135e86e80c8f666033d5ea9d0c3495869ee60809fed04e295f28fa92cda2",
+    "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\qacpa\\deterministic_hybrid_setup.py": "ca040e2e88f900b8490402bb18fc132f7c8a17e1b45d5662673ad6b56fbc958a",
+    "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\qacpa\\upstream_naive.py": "8f29b885d86f4121eda5c55e17486a3a48bd8db08b2f83890fe7726730d1ee92",
+    "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\qacpa\\full_update_evaluation.py": "bb67a12bbdd165f75eab69a6cabc7e85e3b1446596e8ac171285c954df6adada",
+    "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\qacpa\\report_full_update_iterations.py": "10b7de25713b39fb3f453f530cc5bb54e37d834b26a7430ceb52239b40e052d0",
+    "upstream:C:\\Users\\조상제\\Desktop\\CPA\\official_cpa\\src\\datasets.py": "f9e7b47733b5acb4b73e6914a3f100b5187766bbed78a12d17b69c39eec1b6d1",
+    "upstream:C:\\Users\\조상제\\Desktop\\CPA\\official_cpa\\src\\utils.py": "565f1bf1a47f387d042b35bb24f677d1ff0d3ec5d979e2876c31ed114179b9fe",
+    "upstream:C:\\Users\\조상제\\Desktop\\CPA\\official_cpa\\src\\gradient_inversion_utils.py": "668d77788dc8d81c181c8c0a9fbe8533c6fbea22ba46fe7f5e15b0a431300e5f",
+    "upstream:C:\\Users\\조상제\\Desktop\\CPA\\official_cpa\\src\\gradient_inversion.py": "c598e1ee7b4079f741060d10c8dfd14711e393a97384c63cf32be77a458b1873",
+    "upstream:C:\\Users\\조상제\\Desktop\\CPA\\official_cpa\\src\\feature_inversion.py": "dc73880427e3eaf1f873d295f17f1d48d301882f634ee5df36ddeea8e56c4dec",
+    "upstream:C:\\Users\\조상제\\Desktop\\CPA\\official_cpa\\src\\vgg16.py": "8114eca8cde553dace5f777aedd21b70851c570d473e597b005cb6be4b248d36",
+    "upstream:C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\qacpa\\upstream_naive.py": "8f29b885d86f4121eda5c55e17486a3a48bd8db08b2f83890fe7726730d1ee92",
+    "upstream:C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\qacpa\\seed.py": "769366fcc2cf3e144d8caa86f73a55dcb0b6be615a45dab8b6e117399150c558"
+  },
+  "observation": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\signed_int4_baseline_B16_T10\\observation",
+  "config": {
+    "fast_max_iter": 4000,
+    "fast_tolerance": 1e-06,
+    "refinement_iterations": 4000,
+    "refinement_lr": 0.001,
+    "refinement_momentum": 0.0,
+    "refinement_weight_decay": 0.0,
+    "negentropy_weight": 0.0935827857091549,
+    "decorrelation_weight": 0.2513674104161625,
+    "sign_weight": 0.05811961446881231,
+    "l1_weight": 17.94138146247377,
+    "eps": 1e-10,
+    "rank_floor": 1e-12
+  },
+  "fast_early_stop": false,
+  "fia_config": {
+    "n_iter": 25000,
+    "lr": 0.1,
+    "tv": 0.1,
+    "fi": 1.0,
+    "optimizer": "adam",
+    "scheduler": "cosine",
+    "log_every": 5000
+  },
+  "source_count": 16,
+  "seed": 42,
+  "input_shape": [
+    4096,
+    25088
+  ],
+  "observation_dtype": "INT4 codes and per-tensor FP32 scale; decoded q*s for attack",
+  "generator_used": false,
+  "private_feedback": false,
+  "new_observation": false,
+  "cell_or_replay_optimization": false,
+  "candidate_selection": "final_only",
+  "evaluation": "All 16 images; pixel-MSE Hungarian pairing once for MSE/PSNR/SSIM/LPIPS; no success cutoff",
+  "lpips_weights": {
+    "implementation": "torchmetrics.image.lpip.LearnedPerceptualImagePatchSimilarity",
+    "net_type": "vgg",
+    "normalize_argument": false,
+    "device": "cpu",
+    "dtype": "float32",
+    "versions": {
+      "torch": "2.13.0+cu132",
+      "torchvision": "0.28.0+cu132",
+      "torchmetrics": "1.9.0"
+    },
+    "input_normalization": "FP32 RGB [0,1] to [-1,1] using (pixels - 0.5) * 2",
+    "weights": {
+      "backbone": {
+        "path": "C:\\Users\\조상제\\.cache\\torch\\hub\\checkpoints\\vgg16-397923af.pth",
+        "sha256": "397923af8e79cdbb6a7127f12361acd7a2f83e06b05044ddf496e83de57a5bf0"
+      },
+      "calibration": {
+        "path": "C:\\miniconda\\envs\\DLG\\Lib\\site-packages\\torchmetrics\\functional\\image\\lpips_models\\vgg.pth",
+        "sha256": "a78928a0af1e5f0fcb1f3b9e8f8c3a2a5a3de244d830ad5c1feddc79b8432868"
+      }
+    },
+    "downloads_allowed": false
+  },
+  "runtime": {
+    "torch": "2.13.0+cu132",
+    "cuda": "13.2",
+    "gpu": "NVIDIA GeForce RTX 5060 Ti",
+    "threads": 1
+  },
+  "estimated_minutes": [
+    35,
+    45
+  ],
+  "guardrail": "One run only; nonfinite values or provenance failure abort dependent stages"
+}

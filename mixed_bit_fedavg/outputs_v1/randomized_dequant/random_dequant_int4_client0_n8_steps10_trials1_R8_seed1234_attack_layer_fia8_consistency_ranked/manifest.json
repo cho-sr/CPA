@@ -1,0 +1,79 @@
+{
+  "attack_trials": 1,
+  "dequantization_scope": "attack_layer",
+  "ds": "imagenet",
+  "ensemble_size": 8,
+  "h_dim": 256,
+  "local_batch_size": 8,
+  "local_epochs": 10,
+  "local_lr": 0.001,
+  "member_ranking_file": "consistency_member_ranking.csv",
+  "method": "CoRA-style fixed-bit randomized dequantization consistency ranking",
+  "missing_value_policy": "sample continuous residual inside quantization bin",
+  "missing_value_sampler": "uniform",
+  "model": "vgg16",
+  "model_checkpoint_for_attack_and_ranking": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\mixed_bit_fedavg\\imagenet\\vgg16\\clients3_rounds20_spc8_seed42_int4_obsclient0\\client_qs\\final_round_global_model_before.pt",
+  "n_samples": 8,
+  "noise_seed": 1234,
+  "oracle_inputs_used_for_ranking": false,
+  "quant_bits": 4,
+  "ranking_label_mode": "model_pred",
+  "ranking_observation": "one_client_fixed_bit_quantized_update_from_fedavg_round",
+  "ranking_score": "mean relative L2 between recomputed quantized/dequantized attack layer and observed dequantized attack layer",
+  "schema_version": 1,
+  "seed_plan": [
+    {
+      "cpa_seed": "fixed_from_args_seed",
+      "dequantization_seed": 1234,
+      "member": 0,
+      "trial_varying_randomness": "quantization_bin_noise_only"
+    },
+    {
+      "cpa_seed": "fixed_from_args_seed",
+      "dequantization_seed": 1001237,
+      "member": 1,
+      "trial_varying_randomness": "quantization_bin_noise_only"
+    },
+    {
+      "cpa_seed": "fixed_from_args_seed",
+      "dequantization_seed": 2001240,
+      "member": 2,
+      "trial_varying_randomness": "quantization_bin_noise_only"
+    },
+    {
+      "cpa_seed": "fixed_from_args_seed",
+      "dequantization_seed": 3001243,
+      "member": 3,
+      "trial_varying_randomness": "quantization_bin_noise_only"
+    },
+    {
+      "cpa_seed": "fixed_from_args_seed",
+      "dequantization_seed": 4001246,
+      "member": 4,
+      "trial_varying_randomness": "quantization_bin_noise_only"
+    },
+    {
+      "cpa_seed": "fixed_from_args_seed",
+      "dequantization_seed": 5001249,
+      "member": 5,
+      "trial_varying_randomness": "quantization_bin_noise_only"
+    },
+    {
+      "cpa_seed": "fixed_from_args_seed",
+      "dequantization_seed": 6001252,
+      "member": 6,
+      "trial_varying_randomness": "quantization_bin_noise_only"
+    },
+    {
+      "cpa_seed": "fixed_from_args_seed",
+      "dequantization_seed": 7001255,
+      "member": 7,
+      "trial_varying_randomness": "quantization_bin_noise_only"
+    }
+  ],
+  "selected_member": 7,
+  "selected_member_run_path": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\mixed_bit_fedavg\\outputs_v1\\author_runs\\imagenet\\vgg16\\attack\\cp_direct\\nodef\\random_dequant_int4_client0_n8_steps10_trials1_R8_seed1234_attack_layer_fia8_m007_uia",
+  "source_quantized_update_file": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\mixed_bit_fedavg\\imagenet\\vgg16\\clients3_rounds20_spc8_seed42_int4_obsclient0\\round_020_client000_int4_dequant_update_cpa.pickle",
+  "source_quantized_update_hash": "b8f5c7c2d5e870c015d6293de1ffda41d9fccb7fc679d989b00e03e724dc3476",
+  "update_file": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\mixed_bit_fedavg\\imagenet\\vgg16\\clients3_rounds20_spc8_seed42_int4_obsclient0\\round_020_client000_int4_dequant_update_cpa.pickle"
+}

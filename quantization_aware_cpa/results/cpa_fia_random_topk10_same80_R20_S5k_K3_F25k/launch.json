@@ -1,0 +1,12 @@
+{
+    "cmd_pid":  15420,
+    "executable":  "C:\\WINDOWS\\system32\\cmd.exe",
+    "started_at_utc":  "2026-09-11T17:49:25.8286468Z",
+    "final_fia_iterations":  25000,
+    "victim_batches":  5,
+    "finalists_per_batch":  3,
+    "screen_fia_iterations":  5000,
+    "keep_percent":  10,
+    "candidates_per_batch":  20,
+    "arguments":  "/d /c \"\"C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\scripts\\run_random_fill_topk10_same80.bat\"\""
+}

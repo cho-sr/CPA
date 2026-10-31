@@ -1,0 +1,17 @@
+{
+  "checks": {
+    "implementation_sha256": true,
+    "runtime": true,
+    "observation_manifest_sha256": true,
+    "contract_sha256": true,
+    "checkpoint_sha256": true,
+    "method": true,
+    "only_iteration_changed": true,
+    "first_three_numerically_identical": true
+  },
+  "additional_implementation_sha256": {
+    "communication_codec.py": "7ea86955bf7d5516699111de76ffbe41d7b1a5e58167e5d1a8507a590b669d33",
+    "run_full_update.py": "e47d45d66dc56082763d535060780e2d4a247ced1b5ba9b8a179325420ffe73e"
+  },
+  "additional_hashes_were_not_captured_in_pilot": true
+}

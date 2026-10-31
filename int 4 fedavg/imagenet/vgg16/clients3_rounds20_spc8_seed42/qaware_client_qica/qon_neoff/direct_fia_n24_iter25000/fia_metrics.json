@@ -1,0 +1,232 @@
+{
+  "checkpoint_path": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\int 4 fedavg\\imagenet\\vgg16\\clients3_rounds20_spc8_seed42\\client_qs\\final_round_global_model_before.pt",
+  "checkpoint_sha256": "a402d9d575a847ad045a5ea12634745c37924851096f0530bde806aaae1daf2d",
+  "context_path": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\int 4 fedavg\\imagenet\\vgg16\\clients3_rounds20_spc8_seed42\\client_qs\\final_round_context.pkl",
+  "device": "cuda",
+  "embedding_branch": "randomized",
+  "embedding_match": {
+    "matched_signed_cosines": [
+      0.017650295279832053,
+      0.10717070214824412,
+      0.15513920566387093,
+      0.05784885767374891,
+      0.1548460189243807,
+      0.131562727981523,
+      0.21333493267674414,
+      0.00550170874643347,
+      -0.13171494340788603,
+      0.13119813594065638,
+      0.05423574800353135,
+      0.03220974933309293,
+      0.017216933765487302,
+      0.054750831699737434,
+      0.06904322925660239,
+      0.16450159109622917,
+      0.1805861028567535,
+      0.1757889109146253,
+      -0.04476645907885341,
+      0.1437866632052535,
+      0.11900869677852673,
+      0.05051631324495385,
+      0.04415992838974016,
+      0.14498523691754783
+    ],
+    "max_abs_cosine": 0.21333493267674414,
+    "mean_abs_cosine": 0.1000634967910106,
+    "median_abs_cosine": 0.11308969946338543,
+    "min_abs_cosine": 0.00550170874643347,
+    "policy": "oracle_hungarian_abs_cosine_eval_only",
+    "recovered_order_for_true_index": [
+      14,
+      16,
+      12,
+      3,
+      19,
+      17,
+      7,
+      6,
+      0,
+      11,
+      1,
+      13,
+      21,
+      2,
+      15,
+      23,
+      22,
+      18,
+      4,
+      5,
+      9,
+      8,
+      20,
+      10
+    ],
+    "signs_for_eval_only": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      -1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      -1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "true_z_used_only_after_fia": true
+  },
+  "embedding_path": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\int 4 fedavg\\imagenet\\vgg16\\clients3_rounds20_spc8_seed42\\qaware_client_qica\\qon_neoff\\final_embeddings.npy",
+  "embedding_sha256": "3a968004416f62fb831def50ffdf522e7270d91a1995d04218b467b1b01075dd",
+  "feature_info": {
+    "embedding_dim": 25088,
+    "expected_feature_dim": 25088,
+    "fia_feature": "classifier.0 input / flattened VGG feature before classifier.0",
+    "ica_layer": "classifier.0.weight"
+  },
+  "fi": 1.0,
+  "fia_batch_size": 4,
+  "lr_fi": 0.1,
+  "metrics_batch": {
+    "lpips": [
+      0.7886247634887695,
+      0.7683311104774475,
+      0.8703441619873047,
+      0.7833791971206665,
+      0.7642080783843994,
+      0.7603069543838501,
+      0.7470958232879639,
+      0.7528547644615173,
+      0.7939646244049072,
+      0.7679803967475891,
+      0.7695891857147217,
+      0.7615969777107239,
+      0.8218632936477661,
+      0.7963311672210693,
+      0.7918863296508789,
+      0.9571855068206787,
+      0.7728153467178345,
+      0.7329379320144653,
+      0.7771450877189636,
+      0.8353197574615479,
+      0.7633583545684814,
+      0.7703949213027954,
+      0.7590250968933105,
+      0.7947775721549988
+    ]
+  },
+  "metrics_summary": {
+    "lpips_error": null,
+    "lpips_max": 0.9571855068206787,
+    "lpips_mean": 0.7875548501809438,
+    "lpips_min": 0.7329379320144653,
+    "psnr_max": 14.166778564453125,
+    "psnr_mean": 11.37908927599589,
+    "psnr_min": 8.608501434326172,
+    "ssim_error": null,
+    "ssim_max": 0.243303120136261,
+    "ssim_mean": 0.15871537104249,
+    "ssim_min": 0.07984272390604019
+  },
+  "model_info": {
+    "model_source": "final_round_global_model_before",
+    "model_state_path": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\int 4 fedavg\\imagenet\\vgg16\\clients3_rounds20_spc8_seed42\\client_qs\\final_round_global_model_before.pt",
+    "model_state_sha256": "a402d9d575a847ad045a5ea12634745c37924851096f0530bde806aaae1daf2d"
+  },
+  "n_iter_fi": 25000,
+  "n_log_fi": 500,
+  "n_sample": 24,
+  "opt_fi": "adam",
+  "output_dir": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\int 4 fedavg\\imagenet\\vgg16\\clients3_rounds20_spc8_seed42\\qaware_client_qica\\qon_neoff\\direct_fia_n24_iter25000",
+  "run_dir": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\int 4 fedavg\\imagenet\\vgg16\\clients3_rounds20_spc8_seed42",
+  "sch_fi": "cosine",
+  "sign_selection": {
+    "chunks": [
+      {
+        "candidate_blind_losses": {
+          "+": 0.6298288702964783
+        },
+        "chunk_end": 4,
+        "chunk_start": 0,
+        "selected_blind_loss": 0.6298288702964783,
+        "selected_sign_variant": "+",
+        "signs_parallelized": false,
+        "tried_both_signs": false
+      },
+      {
+        "candidate_blind_losses": {
+          "+": 0.5415456146001816
+        },
+        "chunk_end": 8,
+        "chunk_start": 4,
+        "selected_blind_loss": 0.5415456146001816,
+        "selected_sign_variant": "+",
+        "signs_parallelized": false,
+        "tried_both_signs": false
+      },
+      {
+        "candidate_blind_losses": {
+          "+": 0.4945339486002922
+        },
+        "chunk_end": 12,
+        "chunk_start": 8,
+        "selected_blind_loss": 0.4945339486002922,
+        "selected_sign_variant": "+",
+        "signs_parallelized": false,
+        "tried_both_signs": false
+      },
+      {
+        "candidate_blind_losses": {
+          "+": 0.5682848319411278
+        },
+        "chunk_end": 16,
+        "chunk_start": 12,
+        "selected_blind_loss": 0.5682848319411278,
+        "selected_sign_variant": "+",
+        "signs_parallelized": false,
+        "tried_both_signs": false
+      },
+      {
+        "candidate_blind_losses": {
+          "+": 0.46331915259361267
+        },
+        "chunk_end": 20,
+        "chunk_start": 16,
+        "selected_blind_loss": 0.46331915259361267,
+        "selected_sign_variant": "+",
+        "signs_parallelized": false,
+        "tried_both_signs": false
+      },
+      {
+        "candidate_blind_losses": {
+          "+": 0.524847224354744
+        },
+        "chunk_end": 24,
+        "chunk_start": 20,
+        "selected_blind_loss": 0.524847224354744,
+        "selected_sign_variant": "+",
+        "signs_parallelized": false,
+        "tried_both_signs": false
+      }
+    ],
+    "fia_batch_size": 4,
+    "policy": "use_saved_blind_global_sign",
+    "signs_parallelized": false
+  },
+  "true_z_policy": "used only after FIA for eval-order matching and metrics",
+  "tv": 0.1
+}

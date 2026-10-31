@@ -1,0 +1,11 @@
+{
+  "status": "FAILED",
+  "public_root": "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int8_randomized8_screen3_repair_B16_T10_20260918",
+  "private_loaded": false,
+  "completed_stages": [
+    "continuation"
+  ],
+  "error_type": "RuntimeError",
+  "error": "private_evaluation failed with exit code 1",
+  "parent_artifacts_preserved": true
+}

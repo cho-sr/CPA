@@ -1,0 +1,81 @@
+{
+  "checkpoint_path": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\int4_client_qs_randomized_ica\\imagenet\\vgg16\\clients3_rounds20_spc8_seed42\\client_qs\\final_round_global_model_before.pt",
+  "checkpoint_sha256": "a402d9d575a847ad045a5ea12634745c37924851096f0530bde806aaae1daf2d",
+  "context_path": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\int4_client_qs_randomized_ica\\imagenet\\vgg16\\clients3_rounds20_spc8_seed42\\client_qs\\final_round_context.pkl",
+  "device": "cuda",
+  "embedding_branch": "randomized",
+  "embedding_match": {
+    "matched_signed_cosines": [
+      0.044997440086750065,
+      0.01702764318289894
+    ],
+    "max_abs_cosine": 0.044997440086750065,
+    "mean_abs_cosine": 0.031012541634824503,
+    "median_abs_cosine": 0.031012541634824503,
+    "min_abs_cosine": 0.01702764318289894,
+    "policy": "oracle_hungarian_abs_cosine_eval_only",
+    "recovered_order_for_true_index": [
+      1,
+      0
+    ],
+    "signs_for_eval_only": [
+      1.0,
+      1.0
+    ],
+    "true_z_used_only_after_fia": true
+  },
+  "embedding_path": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\int4_client_qs_randomized_ica\\imagenet\\vgg16\\clients3_rounds20_spc8_seed42\\randomized_R2_smoke\\final_embeddings.npy",
+  "embedding_sha256": "548fecf2ba20eef3584e7b9fc72cc0dded35092683d1ba9cac18c610f6216ba2",
+  "feature_info": {
+    "embedding_dim": 25088,
+    "expected_feature_dim": 25088,
+    "fia_feature": "classifier.0 input / flattened VGG feature before classifier.0",
+    "ica_layer": "classifier.0.weight"
+  },
+  "fi": 1.0,
+  "fia_batch_size": 1,
+  "lr_fi": 0.1,
+  "metrics_summary": {
+    "psnr_max": 13.690733909606934,
+    "psnr_mean": 12.593443393707275,
+    "psnr_min": 11.496152877807617,
+    "ssim_error": null,
+    "ssim_max": null,
+    "ssim_mean": null,
+    "ssim_min": null
+  },
+  "model_info": {
+    "model_source": "final_round_global_model_before",
+    "model_state_path": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\int4_client_qs_randomized_ica\\imagenet\\vgg16\\clients3_rounds20_spc8_seed42\\client_qs\\final_round_global_model_before.pt",
+    "model_state_sha256": "a402d9d575a847ad045a5ea12634745c37924851096f0530bde806aaae1daf2d"
+  },
+  "n_iter_fi": 500,
+  "n_log_fi": 100,
+  "n_sample": 2,
+  "opt_fi": "adam",
+  "output_dir": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\int4_client_qs_randomized_ica\\imagenet\\vgg16\\clients3_rounds20_spc8_seed42\\randomized_R2_smoke\\direct_fia_n2_iter500",
+  "run_dir": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\int4_client_qs_randomized_ica\\imagenet\\vgg16\\clients3_rounds20_spc8_seed42",
+  "sch_fi": "cosine",
+  "sign_selection": {
+    "chunks": [
+      {
+        "chunk_end": 1,
+        "chunk_start": 0,
+        "selected_blind_loss": 0.1165701299905777,
+        "selected_sign_variant": "+",
+        "tried_both_signs": false
+      },
+      {
+        "chunk_end": 2,
+        "chunk_start": 1,
+        "selected_blind_loss": 0.11023341119289398,
+        "selected_sign_variant": "+",
+        "tried_both_signs": false
+      }
+    ],
+    "fia_batch_size": 1,
+    "policy": "use_saved_blind_global_sign"
+  },
+  "true_z_policy": "used only after FIA for eval-order matching and metrics",
+  "tv": 0.1
+}

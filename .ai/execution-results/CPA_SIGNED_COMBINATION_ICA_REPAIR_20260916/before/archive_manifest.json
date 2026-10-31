@@ -1,0 +1,116 @@
+{
+  "task_id": "CPA_SIGNED_COMBINATION_ICA_REPAIR_20260916",
+  "pre_repair_references": [
+    {
+      "path": "quantization_aware_cpa/qacpa/signed_combination_ica.py",
+      "expected_handoff_sha256": "1c7482e1ed77ca4641cd8822ebb6046c5150e794c3838aacc3e3d575f3d992d6",
+      "actual_pre_repair_sha256": "1c7482e1ed77ca4641cd8822ebb6046c5150e794c3838aacc3e3d575f3d992d6",
+      "matches": true
+    },
+    {
+      "path": "quantization_aware_cpa/qacpa/signed_combination_ica_runner.py",
+      "expected_handoff_sha256": "00394ff2d5f056156d3b572bb02e6e817b2a9f39b5ab343be7442044cdea6020",
+      "actual_pre_repair_sha256": "00394ff2d5f056156d3b572bb02e6e817b2a9f39b5ab343be7442044cdea6020",
+      "matches": true
+    },
+    {
+      "path": "quantization_aware_cpa/tests/test_signed_combination_ica_pipeline.py",
+      "expected_handoff_sha256": "049b318b3ba04449a9bbb7224f5a79590e87a0bd0693d4bd96391b9254684354",
+      "actual_pre_repair_sha256": "049b318b3ba04449a9bbb7224f5a79590e87a0bd0693d4bd96391b9254684354",
+      "matches": true
+    },
+    {
+      "path": "quantization_aware_cpa/docs/signed_combination_ica.md",
+      "expected_handoff_sha256": "7fc613172047c65b3eb592f1d044744511f2d4720d6de4f7fea871650fc8cf6c",
+      "actual_pre_repair_sha256": "7fc613172047c65b3eb592f1d044744511f2d4720d6de4f7fea871650fc8cf6c",
+      "matches": true,
+      "archive_source": "Planner captured pre-repair file output, normalized transport CRLF duplication"
+    }
+  ],
+  "parent_handoff": {
+    "source": ".ai/execution-handoffs/CPA_SIGNED_COMBINATION_ICA_IMPLEMENTATION_20260916_v1.md",
+    "archive": "before/parent_handoff.md",
+    "sha256": "0c55ce637b4c1dec1e15358cc1fd83bef0fa38143b6dc9e8b78936f3ee8b45a9",
+    "bytes": 17427
+  },
+  "parent_report_files": [
+    {
+      "source": ".ai/execution-results/CPA_SIGNED_COMBINATION_ICA_IMPLEMENTATION_20260916/cli_help.log",
+      "archive": "before/parent_report/cli_help.log",
+      "sha256": "ca0d2a8aba6b55ab637d81688e84b05e77d996e8d22828b4198890a018ee2ca5",
+      "bytes": 1350
+    },
+    {
+      "source": ".ai/execution-results/CPA_SIGNED_COMBINATION_ICA_IMPLEMENTATION_20260916/codex.stderr.log",
+      "archive": "before/parent_report/codex.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "source": ".ai/execution-results/CPA_SIGNED_COMBINATION_ICA_IMPLEMENTATION_20260916/codex.stdout.log",
+      "archive": "before/parent_report/codex.stdout.log",
+      "sha256": "536b75b1cef79b0314a28ff0943ecaac33a879d46b2c58645968dca72bb8d17f",
+      "bytes": 101
+    },
+    {
+      "source": ".ai/execution-results/CPA_SIGNED_COMBINATION_ICA_IMPLEMENTATION_20260916/completion_receipt.json",
+      "archive": "before/parent_report/completion_receipt.json",
+      "sha256": "0b87601fca687fe1ecdc1dcb8f79fc893336a0ff3b56dbb8441adc0e004b72d4",
+      "bytes": 686
+    },
+    {
+      "source": ".ai/execution-results/CPA_SIGNED_COMBINATION_ICA_IMPLEMENTATION_20260916/execution_summary.json",
+      "archive": "before/parent_report/execution_summary.json",
+      "sha256": "473a9a8cac4a91027489820add3bd9ca89ae1bc82114efec82cfcdd72fd1b1dc",
+      "bytes": 4582
+    },
+    {
+      "source": ".ai/execution-results/CPA_SIGNED_COMBINATION_ICA_IMPLEMENTATION_20260916/focused_tests.log",
+      "archive": "before/parent_report/focused_tests.log",
+      "sha256": "9fa4104b44164aaf1e4c4a440646a3e4fc271e8e4d8f5adb7d4dd5a3283f3ab6",
+      "bytes": 204
+    },
+    {
+      "source": ".ai/execution-results/CPA_SIGNED_COMBINATION_ICA_IMPLEMENTATION_20260916/planner_delivery.json",
+      "archive": "before/parent_report/planner_delivery.json",
+      "sha256": "3fa385afc8ad81d0e3716236b7ef2773d7e3ce5fe52f82bed22f29fec8e6837b",
+      "bytes": 427
+    },
+    {
+      "source": ".ai/execution-results/CPA_SIGNED_COMBINATION_ICA_IMPLEMENTATION_20260916/planner_notice.txt",
+      "archive": "before/parent_report/planner_notice.txt",
+      "sha256": "d2a408f1da0bd7cae3ae832368f20a3a8e25ba694a96c87ccfef6ff762307872",
+      "bytes": 1064
+    },
+    {
+      "source": ".ai/execution-results/CPA_SIGNED_COMBINATION_ICA_IMPLEMENTATION_20260916/py_compile.log",
+      "archive": "before/parent_report/py_compile.log",
+      "sha256": "841f94deee8697b8110792f8e6ba87662fac7981b7604971521daf2912af9b76",
+      "bytes": 42
+    },
+    {
+      "source": ".ai/execution-results/CPA_SIGNED_COMBINATION_ICA_IMPLEMENTATION_20260916/report.md",
+      "archive": "before/parent_report/report.md",
+      "sha256": "d8bc40a44a69983cd18c72d0234500a14e4eeaf053da317fa73c1f7f3e3f7b90",
+      "bytes": 4540
+    },
+    {
+      "source": ".ai/execution-results/CPA_SIGNED_COMBINATION_ICA_IMPLEMENTATION_20260916/results.json",
+      "archive": "before/parent_report/results.json",
+      "sha256": "8072c85875a33404d9fcb0ced08fa4d9ebd529ad9e3f3a70df490e33a83c4073",
+      "bytes": 1235
+    },
+    {
+      "source": ".ai/execution-results/CPA_SIGNED_COMBINATION_ICA_IMPLEMENTATION_20260916/source_integrity.json",
+      "archive": "before/parent_report/source_integrity.json",
+      "sha256": "4255531b488440023c6e4ff69cba8a689ecc3ba0e07649f6fad54cf5f22be6d9",
+      "bytes": 8988
+    },
+    {
+      "source": ".ai/execution-results/CPA_SIGNED_COMBINATION_ICA_IMPLEMENTATION_20260916/upstream_contract_tests.log",
+      "archive": "before/parent_report/upstream_contract_tests.log",
+      "sha256": "76e52c5379913e2afc666ec3123d16fc62490013db2c6e842cd40b0942f701f9",
+      "bytes": 1352
+    }
+  ]
+}

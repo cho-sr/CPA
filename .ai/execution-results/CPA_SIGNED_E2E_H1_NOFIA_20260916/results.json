@@ -1,0 +1,40 @@
+{
+  "task_id": "CPA_SIGNED_E2E_H1_NOFIA_20260916",
+  "status": "PARTIAL",
+  "needs_review": true,
+  "wrapper_pid": 20948,
+  "wrapper_exit_status": 1,
+  "tests_exit_status": 0,
+  "runner_exit_status": 1,
+  "evaluator_started": false,
+  "focused_tests": "88 passed, 240 warnings",
+  "new_arm": {
+    "arm": "C_H1_high_noFIA",
+    "status": "COMPLETED",
+    "iterations": 100,
+    "lambda_fia": 0.0,
+    "lambda_tv": 0.1,
+    "lambda_cell": 0.24202997768915402,
+    "candidate_sha256": "5a20b87bf69473bf7696e46d9054c0f3d04a4c02f98ffde6ee3969374bf4e525",
+    "peak_cuda_allocated_bytes": 3987526656
+  },
+  "preflight": {
+    "initial_h1_cell_loss": 22.991680145263672,
+    "initial_h1_feature_norm_mean": 21.787342071533203,
+    "matches_previous_cell_loss_exact": true,
+    "matches_previous_feature_norm_exact": true,
+    "terminal_deltas_torch_equal": true,
+    "feature_grad_enabled_equals_no_grad": true
+  },
+  "failure": {
+    "stage": "public_endpoint_replay",
+    "type": "ExperimentError",
+    "message": "archived B_H1_high endpoint profile mismatch",
+    "endpoint_profiles_written": false,
+    "private_evaluation_run": false
+  },
+  "private_labels_consumed": false,
+  "report_path": ".ai/execution-results/CPA_SIGNED_E2E_H1_NOFIA_20260916/report.md",
+  "public_output_root": "quantization_aware_cpa/results/signed_e2e_h1_nofia_B16_T10_20260916",
+  "private_output_root": "quantization_aware_cpa/results_private/signed_e2e_h1_nofia_B16_T10_20260916"
+}

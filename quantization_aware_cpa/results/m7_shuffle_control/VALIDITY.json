@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "decision_date": "2026-09-09",
+  "scientific_validity": "partially_invalid",
+  "scope": "shuffled_minus_no_cpa_4bit and no-CPA-reference claims are withdrawn. Permutations, pairwise LPIPS and correct-to-shuffled differences remain independent.",
+  "invalid_source_id": "m7_no_cpa_control",
+  "registry": "../result_validity.json"
+}

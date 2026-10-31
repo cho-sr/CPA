@@ -1,0 +1,81 @@
+{
+  "log": [
+    {
+      "iter": 0,
+      "loss": 1.1782702207565308,
+      "loss_fi": 0.9575845003128052,
+      "loss_gm": 0.0,
+      "loss_tv": 2.2068567276000977,
+      "time_sec": 4.166220800019801
+    },
+    {
+      "iter": 4999,
+      "loss": 0.1425429731607437,
+      "loss_fi": 0.08898358047008514,
+      "loss_gm": 0.0,
+      "loss_tv": 0.5355939269065857,
+      "time_sec": 432.40468919998966
+    },
+    {
+      "iter": 9999,
+      "loss": 0.11945044994354248,
+      "loss_fi": 0.07780050486326218,
+      "loss_gm": 0.0,
+      "loss_tv": 0.41649943590164185,
+      "time_sec": 843.0328498000163
+    },
+    {
+      "iter": 14999,
+      "loss": 0.09568680822849274,
+      "loss_fi": 0.07243804633617401,
+      "loss_gm": 0.0,
+      "loss_tv": 0.23248757421970367,
+      "time_sec": 1253.8334020000184
+    },
+    {
+      "iter": 19999,
+      "loss": 0.08043023943901062,
+      "loss_fi": 0.07066389918327332,
+      "loss_gm": 0.0,
+      "loss_tv": 0.09766337275505066,
+      "time_sec": 1672.2812601000187
+    },
+    {
+      "iter": 24999,
+      "loss": 0.07485381513834,
+      "loss_fi": 0.06948098540306091,
+      "loss_gm": 0.0,
+      "loss_tv": 0.053728267550468445,
+      "time_sec": 2091.700676599983
+    }
+  ],
+  "wall_time_sec": 2093.3823187000235,
+  "setup_wall_time_sec": 1.6614182000048459,
+  "optimizer_wall_time_sec": 2091.7209005000186,
+  "source_hashes": {
+    "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\official_cpa\\src\\datasets.py": "f9e7b47733b5acb4b73e6914a3f100b5187766bbed78a12d17b69c39eec1b6d1",
+    "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\official_cpa\\src\\utils.py": "565f1bf1a47f387d042b35bb24f677d1ff0d3ec5d979e2876c31ed114179b9fe",
+    "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\official_cpa\\src\\gradient_inversion_utils.py": "668d77788dc8d81c181c8c0a9fbe8533c6fbea22ba46fe7f5e15b0a431300e5f",
+    "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\official_cpa\\src\\gradient_inversion.py": "c598e1ee7b4079f741060d10c8dfd14711e393a97384c63cf32be77a458b1873",
+    "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\official_cpa\\src\\feature_inversion.py": "dc73880427e3eaf1f873d295f17f1d48d301882f634ee5df36ddeea8e56c4dec",
+    "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\official_cpa\\src\\vgg16.py": "8114eca8cde553dace5f777aedd21b70851c570d473e597b005cb6be4b248d36",
+    "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\quantization_aware_cpa\\qacpa\\upstream_naive.py": "8f29b885d86f4121eda5c55e17486a3a48bd8db08b2f83890fe7726730d1ee92",
+    "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\quantization_aware_cpa\\qacpa\\seed.py": "769366fcc2cf3e144d8caa86f73a55dcb0b6be615a45dab8b6e117399150c558"
+  },
+  "settings": {
+    "seed": 42,
+    "device": "cuda",
+    "n_iter": 25000,
+    "lr": 0.1,
+    "tv": 0.1,
+    "fi": 1.0,
+    "optimizer": "adam",
+    "scheduler": "cosine",
+    "log_every": 5000,
+    "backend": "official_cpa/src/feature_inversion.py:Direct",
+    "feature_adapter": "VGG16 IMAGENET1K_V1 features/avgpool; unused classifier skipped",
+    "evaluation_inputs": false,
+    "cudnn_benchmark": true,
+    "cudnn_deterministic": true
+  }
+}

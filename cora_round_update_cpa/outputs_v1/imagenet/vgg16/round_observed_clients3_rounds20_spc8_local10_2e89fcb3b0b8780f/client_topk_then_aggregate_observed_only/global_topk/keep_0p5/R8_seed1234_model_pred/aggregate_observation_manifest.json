@@ -1,0 +1,149 @@
+{
+  "desparse_sampler": "retained_rescaled",
+  "ensemble_size": 8,
+  "keep_ratio": 0.5,
+  "member_observation_summaries": [
+    {
+      "member": 0,
+      "observations": [
+        {
+          "batch": 0,
+          "observed_elements": 52842718,
+          "observed_fraction": 0.5142320710785535,
+          "shape": [
+            4096,
+            25088
+          ],
+          "tau": 1.0842021724855044e-19,
+          "tau_policy": "min_abs_nonzero_observed_aggregate_attack_layer",
+          "total_elements": 102760448
+        }
+      ]
+    },
+    {
+      "member": 1,
+      "observations": [
+        {
+          "batch": 0,
+          "observed_elements": 52842718,
+          "observed_fraction": 0.5142320710785535,
+          "shape": [
+            4096,
+            25088
+          ],
+          "tau": 1.0842021724855044e-19,
+          "tau_policy": "min_abs_nonzero_observed_aggregate_attack_layer",
+          "total_elements": 102760448
+        }
+      ]
+    },
+    {
+      "member": 2,
+      "observations": [
+        {
+          "batch": 0,
+          "observed_elements": 52842718,
+          "observed_fraction": 0.5142320710785535,
+          "shape": [
+            4096,
+            25088
+          ],
+          "tau": 1.0842021724855044e-19,
+          "tau_policy": "min_abs_nonzero_observed_aggregate_attack_layer",
+          "total_elements": 102760448
+        }
+      ]
+    },
+    {
+      "member": 3,
+      "observations": [
+        {
+          "batch": 0,
+          "observed_elements": 52842718,
+          "observed_fraction": 0.5142320710785535,
+          "shape": [
+            4096,
+            25088
+          ],
+          "tau": 1.0842021724855044e-19,
+          "tau_policy": "min_abs_nonzero_observed_aggregate_attack_layer",
+          "total_elements": 102760448
+        }
+      ]
+    },
+    {
+      "member": 4,
+      "observations": [
+        {
+          "batch": 0,
+          "observed_elements": 52842718,
+          "observed_fraction": 0.5142320710785535,
+          "shape": [
+            4096,
+            25088
+          ],
+          "tau": 1.0842021724855044e-19,
+          "tau_policy": "min_abs_nonzero_observed_aggregate_attack_layer",
+          "total_elements": 102760448
+        }
+      ]
+    },
+    {
+      "member": 5,
+      "observations": [
+        {
+          "batch": 0,
+          "observed_elements": 52842718,
+          "observed_fraction": 0.5142320710785535,
+          "shape": [
+            4096,
+            25088
+          ],
+          "tau": 1.0842021724855044e-19,
+          "tau_policy": "min_abs_nonzero_observed_aggregate_attack_layer",
+          "total_elements": 102760448
+        }
+      ]
+    },
+    {
+      "member": 6,
+      "observations": [
+        {
+          "batch": 0,
+          "observed_elements": 52842718,
+          "observed_fraction": 0.5142320710785535,
+          "shape": [
+            4096,
+            25088
+          ],
+          "tau": 1.0842021724855044e-19,
+          "tau_policy": "min_abs_nonzero_observed_aggregate_attack_layer",
+          "total_elements": 102760448
+        }
+      ]
+    },
+    {
+      "member": 7,
+      "observations": [
+        {
+          "batch": 0,
+          "observed_elements": 52842718,
+          "observed_fraction": 0.5142320710785535,
+          "shape": [
+            4096,
+            25088
+          ],
+          "tau": 1.0842021724855044e-19,
+          "tau_policy": "min_abs_nonzero_observed_aggregate_attack_layer",
+          "total_elements": 102760448
+        }
+      ]
+    }
+  ],
+  "noise_seed": 1234,
+  "observation": "aggregate_sparse_round_update_only",
+  "per_client_observations_used": false,
+  "schema_version": 1,
+  "source_file": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\cora_round_update_cpa\\outputs_v1\\imagenet\\vgg16\\round_updates\\round_observed_clients3_rounds20_spc8_local10_d2939b71f2f9d327\\client_topk_then_aggregate_observed_only\\global_topk\\keep_0p5.pickle",
+  "source_hash": "7253bffe7bb2421629d81f2a1999f73dbc5594f5efb115f753b4021aa827564d"
+}

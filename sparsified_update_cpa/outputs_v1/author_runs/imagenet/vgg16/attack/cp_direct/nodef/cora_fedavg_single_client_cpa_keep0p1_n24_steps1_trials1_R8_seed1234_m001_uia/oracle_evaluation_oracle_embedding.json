@@ -1,0 +1,62 @@
+{
+  "dataset": "imagenet",
+  "image_metric_dependencies": {
+    "lpips_available": true,
+    "lpips_error": null,
+    "ssim_available": true,
+    "ssim_error": null,
+    "success_lpips_threshold": 0.5
+  },
+  "matching": "oracle_embedding",
+  "metric_note": "Evaluation-only recomputation from reconstructions.pkl.",
+  "metric_summary": [
+    {
+      "max": 0.9680265188217163,
+      "mean": 0.6890566746393839,
+      "metric": "lpips",
+      "min": 0.5655301809310913,
+      "n": 24,
+      "std": 0.09016788781130293,
+      "threshold": null
+    },
+    {
+      "max": 14.857446670532227,
+      "mean": 11.220200419425964,
+      "metric": "psnr",
+      "min": 8.545623779296875,
+      "n": 24,
+      "std": 1.601551829071593,
+      "threshold": null
+    },
+    {
+      "max": 0.28266361355781555,
+      "mean": 0.13182901327187815,
+      "metric": "ssim",
+      "min": 0.05836610123515129,
+      "n": 24,
+      "std": 0.05938968308880701,
+      "threshold": null
+    },
+    {
+      "max": null,
+      "mean": null,
+      "metric": "embedding_cosine_similarity",
+      "min": null,
+      "n": 0,
+      "std": null,
+      "threshold": null
+    },
+    {
+      "max": 0.0,
+      "mean": 0.0,
+      "metric": "reconstruction_success_rate",
+      "min": 0.0,
+      "n": 24,
+      "std": 0.0,
+      "threshold": 0.5
+    }
+  ],
+  "reconstruction_file": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\sparsified_update_cpa\\outputs_v1\\author_runs\\imagenet\\vgg16\\attack\\cp_direct\\nodef\\cora_fedavg_single_client_cpa_keep0p1_n24_steps1_trials1_R8_seed1234_m001_uia\\reconstructions.pkl",
+  "run_dir": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\sparsified_update_cpa\\outputs_v1\\author_runs\\imagenet\\vgg16\\attack\\cp_direct\\nodef\\cora_fedavg_single_client_cpa_keep0p1_n24_steps1_trials1_R8_seed1234_m001_uia",
+  "source": "update_file"
+}

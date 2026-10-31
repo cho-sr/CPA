@@ -1,0 +1,12 @@
+{
+  "task_id": "CPA_SIGNED_E2E_H1_NOFIA_20260916",
+  "status": "PARTIAL",
+  "wrapper_pid": 20948,
+  "wrapper_exit_status": 1,
+  "callback_state": "NOTIFICATION_QUEUED",
+  "callback_model_calls_while_waiting": 0,
+  "executor_callback_message_id": "01a0a95b-f119-7693-aa74-0f4d6779b4f8",
+  "planner_notice": "SENT_ONCE",
+  "planner_thread": "01a0a799-d62c-7ab0-9c2a-628acf6d2c95",
+  "planner_notice_message_id": "01a0a95d-eea8-7b73-9d03-5ee58c291b84"
+}

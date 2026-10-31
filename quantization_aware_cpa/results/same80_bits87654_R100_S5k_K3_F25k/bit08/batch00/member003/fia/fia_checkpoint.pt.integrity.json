@@ -1,0 +1,8 @@
+{
+  "checkpoint_sha256": "759f032aa89bd96deba222b72e64d4db002db3cdd24b8e517eeadc2c6feede9c",
+  "completed_iterations": 5000,
+  "horizon": 25000,
+  "identity_sha256": "b1c5e931c3a2d5d7e6a918b49ee2a88c7bca5529d64d668ef1f11308926e9c19",
+  "kind": "fia",
+  "recorded_at_utc": "2026-09-26T14:06:43.287091+00:00"
+}

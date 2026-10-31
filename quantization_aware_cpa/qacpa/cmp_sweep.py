@@ -28,6 +28,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--set", dest="overrides", action="append", default=[])
     parser.add_argument("--c-mp-values", default="1.0,1.5,3,6,12")
     parser.add_argument("--n-batches", type=int, default=None)
+    parser.add_argument("--run-tag", default="v4_cmp_sweep_cpaica")
     parser.add_argument("--force-cache", action="store_true")
     return parser.parse_args()
 
@@ -59,6 +60,17 @@ def main() -> None:
                 c_mp=float(c_mp),
                 mp_truncation=True,
                 fastica_algorithm=str(stage1_cfg.get("fastica_algorithm", "parallel")),
+                ica_method=str(stage1_cfg.get("ica_method", "cpa")),
+                cpa_ica_max_iter=int(stage1_cfg.get("cpa_ica_max_iter", 25000)),
+                cpa_ica_lr=float(stage1_cfg.get("cpa_ica_lr", 1.0e-3)),
+                cpa_ica_optimizer=str(stage1_cfg.get("cpa_ica_optimizer", "adam")),
+                cpa_ica_decor=float(stage1_cfg.get("cpa_ica_decor", 5.3)),
+                cpa_ica_T=float(stage1_cfg.get("cpa_ica_T", 7.7)),
+                cpa_ica_ne=float(stage1_cfg.get("cpa_ica_ne", 1.0)),
+                cpa_ica_nv=float(stage1_cfg.get("cpa_ica_nv", 0.13)),
+                cpa_ica_l1=float(stage1_cfg.get("cpa_ica_l1", 5.0)),
+                cpa_ica_tv=float(stage1_cfg.get("cpa_ica_tv", 0.1)),
+                cpa_ica_log_every=int(stage1_cfg.get("cpa_ica_log_every", 0)),
             )
             A_aligned, _S_aligned, alignment = align_estimate_to_truth(
                 stage1.A_hat,
@@ -73,6 +85,7 @@ def main() -> None:
                 stage1=stage1,
                 alignment=alignment,
                 A_aligned=A_aligned,
+                run_tag=str(args.run_tag),
                 wall_time_sec=time.perf_counter() - start,
             )
             append_jsonl(Path(config["paths"]["results_jsonl"]), row)
@@ -101,6 +114,7 @@ def make_sweep_row(
     stage1: Any,
     alignment: Any,
     A_aligned: torch.Tensor,
+    run_tag: str,
     wall_time_sec: float,
 ) -> dict[str, Any]:
     stage1_dict = asdict(stage1)
@@ -125,7 +139,7 @@ def make_sweep_row(
     n_recovered = int(sum(value > 0.9 for value in alignment.per_source_abs_cosine))
 
     config_for_row = deepcopy(config)
-    config_for_row["run_tag"] = "v3_cmp_sweep"
+    config_for_row["run_tag"] = run_tag
     config_for_row.setdefault("stage1", {})["c_mp"] = float(c_mp)
     source_records = [
         {
@@ -143,7 +157,7 @@ def make_sweep_row(
 
     return {
         "schema_version": 1,
-        "run_tag": "v3_cmp_sweep",
+        "run_tag": run_tag,
         "milestone": "c_mp_sweep",
         "batch_index": int(batch_index),
         "seed": int(config["seed"]),

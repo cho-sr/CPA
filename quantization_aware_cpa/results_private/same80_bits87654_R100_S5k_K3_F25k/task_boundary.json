@@ -1,0 +1,7 @@
+{
+  "task_id": "CPA_SAME80_BITS87654_R100_SCREEN3_20260926",
+  "attack_reads_private_inputs": false,
+  "evaluator_may_read_after_public_gate": true,
+  "true_update_used_only_by_prepare_encoder": true,
+  "labels_used_for_attack_or_selection": false
+}

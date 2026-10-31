@@ -1,0 +1,11 @@
+{
+  "state": "NOTIFICATION_QUEUED",
+  "pid": 26080,
+  "created_ms": 1791285632213,
+  "thread": "01a110c4-3fad-7d53-9951-d66ff4af0c6b",
+  "model_calls_while_waiting": 0,
+  "registered_unix": 1791285632.4798057,
+  "exit_code": 1,
+  "ended_unix": 1791285643.9616497,
+  "queue_exit_code": 0
+}

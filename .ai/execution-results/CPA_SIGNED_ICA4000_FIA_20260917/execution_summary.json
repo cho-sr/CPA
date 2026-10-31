@@ -1,0 +1,112 @@
+{
+  "task_id": "CPA_SIGNED_ICA4000_FIA_20260917",
+  "status": "COMPLETED",
+  "wrapper_pid": 18788,
+  "started_at_utc": "2026-09-16T17:22:57.433476+00:00",
+  "stage_order": [
+    "SEPARATE",
+    "INVERT",
+    "PRIVATE_EVALUATION"
+  ],
+  "stages": [
+    {
+      "task_id": "CPA_SIGNED_ICA4000_FIA_20260917",
+      "stage": "SEPARATE",
+      "command": [
+        "C:/miniconda/envs/DLG/python.exe",
+        "-m",
+        "qacpa.signed_ica4000_fia_runner",
+        "separate",
+        "--device",
+        "cpu",
+        "--output",
+        "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_ica4000_fia_B16_T10_20260917"
+      ],
+      "cwd": "C:/Users/조상제/Desktop/CPA",
+      "started_at_utc": "2026-09-16T17:22:57.435476+00:00",
+      "status": "COMPLETED",
+      "exit_status": 0,
+      "model_calls_while_running": 0,
+      "hard_cap_seconds": 2700,
+      "pid": 16896,
+      "process_created_ms": 1789579377436,
+      "finished_at_utc": "2026-09-16T17:23:43.874616+00:00",
+      "wall_seconds": 46.441274099983275
+    },
+    {
+      "task_id": "CPA_SIGNED_ICA4000_FIA_20260917",
+      "stage": "INVERT",
+      "command": [
+        "C:/miniconda/envs/DLG/python.exe",
+        "-m",
+        "qacpa.signed_ica4000_fia_runner",
+        "invert",
+        "--device",
+        "cuda",
+        "--source-root",
+        "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_ica4000_fia_B16_T10_20260917",
+        "--output",
+        "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_ica4000_fia_B16_T10_20260917/direct_fia"
+      ],
+      "cwd": "C:/Users/조상제/Desktop/CPA",
+      "started_at_utc": "2026-09-16T17:23:43.915624+00:00",
+      "status": "COMPLETED",
+      "exit_status": 0,
+      "model_calls_while_running": 0,
+      "hard_cap_seconds": 2700,
+      "pid": 2848,
+      "process_created_ms": 1789579423916,
+      "finished_at_utc": "2026-09-16T17:57:03.981541+00:00",
+      "wall_seconds": 2046.5486134999665
+    },
+    {
+      "task_id": "CPA_SIGNED_ICA4000_FIA_20260917",
+      "stage": "PRIVATE_EVALUATION",
+      "command": [
+        "C:/miniconda/envs/DLG/python.exe",
+        "-m",
+        "qacpa.signed_ica4000_fia_evaluation",
+        "--registration",
+        "C:/Users/조상제/Desktop/CPA/.ai/execution-results/CPA_SIGNED_ICA4000_FIA_20260917/registration.json",
+        "--public-output",
+        "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_ica4000_fia_B16_T10_20260917",
+        "--private-truth",
+        "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results_private/signed_int4_baseline_B16_T10/observation/evaluation_truth.pt",
+        "--output",
+        "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results_private/signed_ica4000_fia_B16_T10_20260917"
+      ],
+      "cwd": "C:/Users/조상제/Desktop/CPA",
+      "started_at_utc": "2026-09-16T17:57:06.218590+00:00",
+      "status": "COMPLETED",
+      "exit_status": 0,
+      "model_calls_while_running": 0,
+      "hard_cap_seconds": 2700,
+      "pid": 15128,
+      "process_created_ms": 1789581426219,
+      "finished_at_utc": "2026-09-16T17:57:35.273159+00:00",
+      "wall_seconds": 2077.839623500011
+    }
+  ],
+  "model_calls_while_running": 0,
+  "budget_seconds": 2700,
+  "cuda_allocated_cap_bytes": 12884901888,
+  "private_phase_started": true,
+  "public_gate": {
+    "status": "PASSED",
+    "private_loaded": false
+  },
+  "evaluation_status": "COMPLETED",
+  "private_loaded": true,
+  "scientific_quality": "EVALUATED",
+  "private_report_path": "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results_private/signed_ica4000_fia_B16_T10_20260917/report.md",
+  "finished_at_utc": "2026-09-16T17:57:35.281161+00:00",
+  "wall_seconds": 2077.847997899982,
+  "final_audit": {
+    "status": "PASSED",
+    "public_gate_revalidated": "PUBLIC_GATE_PASSED",
+    "artifact_validation": "PASSED",
+    "control_reproduction": "PASSED",
+    "private_comparison": "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results_private/signed_ica4000_fia_B16_T10_20260917/comparison.json",
+    "final_audit_path": "C:/Users/조상제/Desktop/CPA/.ai/execution-results/CPA_SIGNED_ICA4000_FIA_20260917/final_audit.json"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "run_tag": "m7_uia_4bit_B16",
+  "pid": 15880,
+  "updated_at_utc": "2026-09-09T10:48:04.026400+00:00",
+  "state": "complete",
+  "protocol_sha256": "39cc98aa436159365c4bbdb91e6ac9822a742be1e0c985a6ea282bf3c28ac156",
+  "report_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_uia_4bit_B16\\report.md"
+}

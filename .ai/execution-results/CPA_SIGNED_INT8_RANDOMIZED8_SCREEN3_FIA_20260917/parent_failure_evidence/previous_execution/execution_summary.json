@@ -1,0 +1,62 @@
+{
+  "task_id": "CPA_SIGNED_INT8_RANDOMIZED8_FIA_20260917",
+  "status": "PARTIAL",
+  "stage": "real_experiment",
+  "scientific_quality": "NOT_EVALUATED",
+  "started_at": 662651.0684373,
+  "finished_at": 1789637434.9558594,
+  "wall_seconds": 3.341594299999997,
+  "budget_seconds": 5400,
+  "stages": [
+    {
+      "name": "register",
+      "module": "qacpa.signed_int8_randomized_runner",
+      "args": [
+        "register",
+        "--public-root",
+        "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\signed_int8_randomized8_fia_B16_T10_20260917",
+        "--private-root",
+        "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results_private\\signed_int8_randomized8_fia_B16_T10_20260917"
+      ],
+      "started_at": 1789637431.614843,
+      "log": "C:/Users/조상제/Desktop/CPA/.ai/execution-results/CPA_SIGNED_INT8_RANDOMIZED8_FIA_20260917/01_register.log",
+      "remaining_seconds_before": 5399.999957200023,
+      "exit_code": 0,
+      "status": "COMPLETED",
+      "finished_at": 1789637433.4434226,
+      "wall_seconds": 1.8289018999785185
+    },
+    {
+      "name": "sender",
+      "module": "qacpa.signed_int8_observation",
+      "args": [
+        "sender",
+        "--raw-updates",
+        "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results_private\\signed_int4_baseline_B16_T10\\observation\\raw_updates.pt",
+        "--archived-sender-validation",
+        "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results_private\\signed_int4_baseline_B16_T10\\observation\\sender_validation.json",
+        "--evaluation-truth",
+        "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results_private\\signed_int4_baseline_B16_T10\\observation\\evaluation_truth.pt",
+        "--output",
+        "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\signed_int8_randomized8_fia_B16_T10_20260917\\observation",
+        "--private-output",
+        "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results_private\\signed_int8_randomized8_fia_B16_T10_20260917\\sender"
+      ],
+      "started_at": 1789637433.4434226,
+      "log": "C:/Users/조상제/Desktop/CPA/.ai/execution-results/CPA_SIGNED_INT8_RANDOMIZED8_FIA_20260917/02_sender.log",
+      "remaining_seconds_before": 5398.171037400025,
+      "exit_code": 1,
+      "status": "FAILED",
+      "finished_at": 1789637434.9478579,
+      "wall_seconds": 3.333595999982208
+    }
+  ],
+  "artifacts": {
+    "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int8_randomized8_fia_B16_T10_20260917/registration.json": "2ee12c1284c36aa08f912055a156c20c3c398224a09d908464ae6cbf610cb85a"
+  },
+  "public_root": "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int8_randomized8_fia_B16_T10_20260917",
+  "private_root": "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results_private/signed_int8_randomized8_fia_B16_T10_20260917",
+  "report_path": null,
+  "no_restart_or_extra_arm": true,
+  "actual_image_cell_feasibility": "NOT_EVALUATED"
+}

@@ -1,0 +1,14 @@
+[CPA finalization completed]
+TASK_ID: CPA_SIGNED_E2E_H1_NOFIA_FINALIZE_20260916
+Scientific task: CPA_SIGNED_E2E_H1_NOFIA_20260916
+Status: COMPLETED
+Parent wrapper exit: 1 (endpoint schema authentication failure after the saved 100-step C_H1_high_noFIA arm completed)
+Finalizer exit: 0; offline evaluation exit: 0; new optimizer steps: 0
+Public endpoint authentication: passed for x0, B_H1_high, C_H1_high_noFIA; endpoint passes: 3 repair / 6 including parent attempt
+Public integrity: protected sources, shared sources, inputs, previous control files, and all parent candidate/state/result/log artifacts unchanged
+Private evaluation: all16 completed after public gate; private x only, labels_consumed=false, true_updates_consumed=false
+Mean metrics: x0 MSE 0.07810934683437976, PSNR 11.517332145631135, SSIM 0.2848939897083067, LPIPS 0.8229246251285076; B_H1_high MSE 0.07816087707726402, PSNR 11.521742364310004, SSIM 0.2827008706784151, LPIPS 0.8081570006906986; C_H1_high_noFIA MSE 0.07815045044322919, PSNR 11.51461116063817, SSIM 0.277993884203648, LPIPS 0.8211588636040688
+Archived-control reproduction: passed; max absolute reported difference 3.725290298461914e-09 within 2e-8 tolerance
+Report: .ai/execution-results/CPA_SIGNED_E2E_H1_NOFIA_FINALIZE_20260916/report.md
+Execution summary: .ai/execution-results/CPA_SIGNED_E2E_H1_NOFIA_FINALIZE_20260916/execution_summary.json
+Private comparison: quantization_aware_cpa/results_private/signed_e2e_h1_nofia_B16_T10_20260916/comparison.json

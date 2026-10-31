@@ -1,0 +1,21 @@
+{
+  "task_id": "CPA_SIGNED_E2E_H1_NOFIA_20260916",
+  "stage": "public_one_arm_noFIA_and_replay",
+  "command": [
+    "C:/miniconda/envs/DLG/python.exe",
+    "-m",
+    "quantization_aware_cpa.qacpa.signed_e2e_nofia_runner",
+    "--public-observation",
+    "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int4_baseline_B16_T10/observation",
+    "--naive",
+    "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int4_baseline_B16_T10/naive",
+    "--checkpoint",
+    "C:/Users/조상제/.cache/torch/hub/checkpoints/vgg16-397923af.pth",
+    "--output",
+    "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_e2e_h1_nofia_B16_T10_20260916"
+  ],
+  "cwd": "C:/Users/조상제/Desktop/CPA",
+  "started_at_utc": "2026-09-16T08:36:10.003438+00:00",
+  "exit_status": 1,
+  "wall_seconds": 157.8018749000039
+}

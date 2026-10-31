@@ -1,0 +1,28 @@
+{
+  "task_id": "CPA_SIGNED_COMBINATION_ICA_EXPERIMENT_20260916",
+  "implementation_task_id": "CPA_SIGNED_COMBINATION_ICA_IMPLEMENTATION_20260916",
+  "stage": "PRIVATE_EVALUATION",
+  "command": [
+    "C:/miniconda/envs/DLG/python.exe",
+    "-m",
+    "qacpa.signed_combination_ica_evaluation",
+    "--registration",
+    "C:/Users/조상제/Desktop/CPA/.ai/execution-results/CPA_SIGNED_COMBINATION_ICA_EXPERIMENT_20260916/registration.json",
+    "--public-output",
+    "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_combination_ica_B16_T10_20260916",
+    "--private-truth",
+    "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results_private/signed_int4_baseline_B16_T10/observation/evaluation_truth.pt",
+    "--output",
+    "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results_private/signed_combination_ica_B16_T10_20260916"
+  ],
+  "cwd": "C:/Users/조상제/Desktop/CPA",
+  "started_at_utc": "2026-09-16T16:01:29.081979+00:00",
+  "status": "COMPLETED",
+  "exit_status": 0,
+  "hard_cap_seconds": 2700,
+  "model_calls_while_running": 0,
+  "pid": 11984,
+  "process_created_ms": 1789574489083,
+  "finished_at_utc": "2026-09-16T16:01:50.656562+00:00",
+  "wall_seconds": 2330.7812562999316
+}

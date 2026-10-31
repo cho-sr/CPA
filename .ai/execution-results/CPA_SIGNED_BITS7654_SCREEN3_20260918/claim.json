@@ -1,0 +1,8 @@
+{
+  "task_id": "CPA_SIGNED_BITS7654_SCREEN3_20260918",
+  "status": "RUNNING",
+  "claimed_by": "01a0a799-f1ce-7b31-8c46-b4ddef40aeab",
+  "claimed_epoch": 1789667547.7039127,
+  "parent_finalization": "COMPLETED_AFTER_REPORTING_REPAIR",
+  "no_other_active_task_owner": true
+}

@@ -1,0 +1,10 @@
+{
+  "author_source_hash": "29c93e49aa2a92cd5687275b12a52a3bfdb977580e70c657ed132b674d956926",
+  "keep_ratio": 0.8,
+  "method": "global_topk_sparse_from_shared_fp32",
+  "observed_zero_policy": "zeros_are_treated_as_true_observed_update_values",
+  "schema_version": 1,
+  "source_fp32_hash": "7c2a7f09cc5855db69dcde102a9c7085a0e965d298c72ae921bb47b543969562",
+  "source_fp32_path": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\sparsified_update_cpa\\outputs_v1\\shared_updates\\imagenet\\vgg16\\n64_steps10_trials3_bb4ae7e4640e2fa7\\fp32.pickle",
+  "sparse_policy": "global_topk"
+}

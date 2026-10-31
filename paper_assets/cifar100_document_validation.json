@@ -1,0 +1,32 @@
+{
+  "status": "PASS",
+  "selected_examples": [
+    11,
+    24
+  ],
+  "source_hashes_checked": 38,
+  "all_exported_tiles_pixel_equal": true,
+  "protected_files_unchanged": [
+    "paper_assets/combined_results.tex",
+    "test.tex",
+    "paper_assets/sparsification_naive_random.pdf"
+  ],
+  "paper_pages": 6,
+  "figure_pages": [
+    {
+      "page": 4,
+      "preview": "paper_preview/cifar100_examples11_24/figure_page_4.png"
+    }
+  ],
+  "sparsification_figure_pages": [
+    {
+      "page": 4,
+      "preview": "paper_preview/cifar100_examples11_24/sparsification_page_4.png"
+    }
+  ],
+  "pdf_sha256": "f51236c89ea97b3ef289450830bc48dec20edb92d79d967f4c202d8679b0f8d8",
+  "preexisting_table_warnings": [
+    "combined_results.tex has two overfull alignments (~18.32pt)",
+    "combined_results.tex contains 0ㅇㅇ323 in ImageNet sparse LPIPS; left unchanged"
+  ]
+}

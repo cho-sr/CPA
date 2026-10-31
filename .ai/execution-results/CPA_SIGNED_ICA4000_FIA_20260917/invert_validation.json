@@ -1,0 +1,25 @@
+{
+  "status": "PASSED",
+  "candidate_sha256": "e515a797ef2d04487637957aeb60b8936fc78d469e101fc1aa3971771c157693",
+  "candidate_shape": [
+    16,
+    3,
+    224,
+    224
+  ],
+  "target_z_sha256": "6b4800b0d99a4ca6456c79e10ec5983f9d0b6c095b83a1be9cd29604b378e170",
+  "source_sha256": "e154da571d323019f3642767299121355650ef6dbb842ca5cdc08e330413e826",
+  "fia_config": {
+    "n_iter": 25000,
+    "lr": 0.1,
+    "tv": 0.1,
+    "fi": 1.0,
+    "optimizer": "adam",
+    "scheduler": "cosine",
+    "log_every": 5000
+  },
+  "resource": {
+    "cuda_max_memory_allocated_bytes": 3526829568,
+    "cuda_allocated_cap_bytes": 12884901888
+  }
+}

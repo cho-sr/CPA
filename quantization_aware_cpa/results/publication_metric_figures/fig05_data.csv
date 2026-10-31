@@ -1,0 +1,6 @@
+panel,condition,value,numerator,denominator
+normalized_improvement,Reported sets: FP32 36 / 4-bit 40,68.28778221115309,,
+normalized_improvement,Matched 36,76.68700590516137,,
+fixed_cutoff_fraction_percent,Gradient FP32,100.0,36,36
+fixed_cutoff_fraction_percent,Gradient 4-bit observation model,72.5,29,40
+fixed_cutoff_fraction_percent,Client update FP32,98.75,79,80

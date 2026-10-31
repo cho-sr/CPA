@@ -1,0 +1,9 @@
+{
+  "state": "complete",
+  "phase": "all",
+  "started_at_utc": "2026-09-08T20:49:46.552374+00:00",
+  "updated_at_utc": "2026-09-09T00:37:56.217210+00:00",
+  "pid": 14056,
+  "report_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_no_cpa_control\\report.md",
+  "report_completed_at_utc": "2026-09-09T00:37:56.723189+00:00"
+}

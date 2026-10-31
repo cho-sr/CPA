@@ -1,0 +1,405 @@
+{
+  "task_id": "CPA_STEP3_SIGNED_CELLS_20260914",
+  "plan_version": 1,
+  "status": "COMPLETED",
+  "step2": {
+    "status": "ARTIFACT_MISSING",
+    "baseline_executed": false,
+    "generation_command": null,
+    "reason": "UNAVAILABLE; no signed artifact matching fixed conditions per approved handoff"
+  },
+  "step3": {
+    "status": "COMPLETED",
+    "A": "PASS",
+    "B": "PASS",
+    "C": "PASS",
+    "D": "PASS",
+    "E": "PASS: all 15 codes/endpoints/neighbors and 14 ties",
+    "F": "PASS",
+    "reference_equality": "PASS: torch.equal q,s,dequantization"
+  },
+  "codec_metadata": {
+    "codec": "signed_symmetric_int4_nearest_even_cpu_fp32_utility_v1",
+    "provenance": "quantized_update_cpa/quantization.py:quantize_tensor_symmetric",
+    "bits": 4,
+    "qmin": -7,
+    "qmax": 7,
+    "scale_scope": "per_parameter_tensor_absmax_scalar",
+    "input_dtype": "float32",
+    "scale_dtype": "float32",
+    "code_dtype": "int8",
+    "device": "cpu",
+    "rounding": "nearest_even",
+    "zero_tensor": "q=0,s=1",
+    "scale_operation": "float32(max_abs/7)",
+    "code_operation": "round(float32(G/s)).clamp(-7,7).int8",
+    "edge_policy": "largest_finite_fp32_absmax_rounding_to_observed_scale"
+  },
+  "fixture_evidence": [
+    {
+      "fixture": "normal",
+      "shape": [
+        4,
+        19
+      ],
+      "scale_shape": [],
+      "scale": 0.3537870943546295,
+      "numel": 76,
+      "reference_q_equal": true,
+      "reference_s_equal": true,
+      "reference_dequantization_equal": true,
+      "A": true,
+      "B": true,
+      "C": true,
+      "D": true,
+      "scale_consistency_original": {
+        "candidate_scale": 0.3537870943546295,
+        "observed_scale": 0.3537870943546295,
+        "absolute_error": 0.0,
+        "relative_error": 0.0,
+        "exact_equal": true,
+        "candidate_supported": true,
+        "reason": null
+      }
+    },
+    {
+      "fixture": "zero",
+      "shape": [
+        2,
+        5
+      ],
+      "scale_shape": [],
+      "scale": 1.0,
+      "numel": 10,
+      "reference_q_equal": true,
+      "reference_s_equal": true,
+      "reference_dequantization_equal": true,
+      "A": true,
+      "B": true,
+      "C": true,
+      "D": true,
+      "scale_consistency_original": {
+        "candidate_scale": 1.0,
+        "observed_scale": 1.0,
+        "absolute_error": 0.0,
+        "relative_error": 0.0,
+        "exact_equal": true,
+        "candidate_supported": true,
+        "reason": null
+      }
+    },
+    {
+      "fixture": "ties",
+      "shape": [
+        17
+      ],
+      "scale_shape": [],
+      "scale": 1.0,
+      "numel": 17,
+      "reference_q_equal": true,
+      "reference_s_equal": true,
+      "reference_dequantization_equal": true,
+      "A": true,
+      "B": true,
+      "C": true,
+      "D": true,
+      "scale_consistency_original": {
+        "candidate_scale": 1.0,
+        "observed_scale": 1.0,
+        "absolute_error": 0.0,
+        "relative_error": 0.0,
+        "exact_equal": true,
+        "candidate_supported": true,
+        "reason": null
+      }
+    },
+    {
+      "fixture": "tiny_normal",
+      "shape": [
+        4,
+        19
+      ],
+      "scale_shape": [],
+      "scale": 3.5378707715398885e-31,
+      "numel": 76,
+      "reference_q_equal": true,
+      "reference_s_equal": true,
+      "reference_dequantization_equal": true,
+      "A": true,
+      "B": true,
+      "C": true,
+      "D": true,
+      "scale_consistency_original": {
+        "candidate_scale": 3.5378707715398885e-31,
+        "observed_scale": 3.5378707715398885e-31,
+        "absolute_error": 0.0,
+        "relative_error": 0.0,
+        "exact_equal": true,
+        "candidate_supported": true,
+        "reason": null
+      }
+    },
+    {
+      "fixture": "subnormal_positive_scale",
+      "shape": [
+        5
+      ],
+      "scale_shape": [],
+      "scale": 1.401298464324817e-45,
+      "numel": 5,
+      "reference_q_equal": true,
+      "reference_s_equal": true,
+      "reference_dequantization_equal": true,
+      "A": true,
+      "B": true,
+      "C": true,
+      "D": true,
+      "scale_consistency_original": {
+        "candidate_scale": 1.401298464324817e-45,
+        "observed_scale": 1.401298464324817e-45,
+        "absolute_error": 0.0,
+        "relative_error": 0.0,
+        "exact_equal": true,
+        "candidate_supported": true,
+        "reason": null
+      }
+    },
+    {
+      "fixture": "scale_rounding",
+      "shape": [
+        4
+      ],
+      "scale_shape": [],
+      "scale": 0.142857164144516,
+      "numel": 4,
+      "reference_q_equal": true,
+      "reference_s_equal": true,
+      "reference_dequantization_equal": true,
+      "A": true,
+      "B": true,
+      "C": true,
+      "D": true,
+      "scale_consistency_original": {
+        "candidate_scale": 0.142857164144516,
+        "observed_scale": 0.142857164144516,
+        "absolute_error": 0.0,
+        "relative_error": 0.0,
+        "exact_equal": true,
+        "candidate_supported": true,
+        "reason": null
+      }
+    },
+    {
+      "fixture": "max_finite",
+      "shape": [
+        3
+      ],
+      "scale_shape": [],
+      "scale": 4.861176380550412e+37,
+      "numel": 3,
+      "reference_q_equal": true,
+      "reference_s_equal": true,
+      "reference_dequantization_equal": true,
+      "A": true,
+      "B": true,
+      "C": true,
+      "D": true,
+      "scale_consistency_original": {
+        "candidate_scale": 4.861176380550412e+37,
+        "observed_scale": 4.861176380550412e+37,
+        "absolute_error": 0.0,
+        "relative_error": 0.0,
+        "exact_equal": true,
+        "candidate_supported": true,
+        "reason": null
+      }
+    },
+    {
+      "fixture": "scalar",
+      "shape": [],
+      "scale_shape": [],
+      "scale": 0.017636684700846672,
+      "numel": 1,
+      "reference_q_equal": true,
+      "reference_s_equal": true,
+      "reference_dequantization_equal": true,
+      "A": true,
+      "B": true,
+      "C": true,
+      "D": true,
+      "scale_consistency_original": {
+        "candidate_scale": 0.017636684700846672,
+        "observed_scale": 0.017636684700846672,
+        "absolute_error": 0.0,
+        "relative_error": 0.0,
+        "exact_equal": true,
+        "candidate_supported": true,
+        "reason": null
+      }
+    }
+  ],
+  "scale_cap_counterexample": {
+    "max_abs_bits_hex": "0x3fe00006",
+    "max_abs": 1.7500007152557373,
+    "s": 0.25000008940696716,
+    "naive_fp32_7s": 1.7500005960464478,
+    "computed_cap": 1.7500007152557373,
+    "original_inside": true
+  },
+  "limitations": [
+    {
+      "kind": "NONZERO_ABSMAX_DIV7_UNDERFLOW",
+      "positive_absmax_bits": 1,
+      "G": [
+        -1.401298464324817e-45,
+        0.0,
+        1.401298464324817e-45
+      ],
+      "reference_s": 0.0,
+      "reference_q": [
+        -7,
+        0,
+        7
+      ],
+      "reference_dequantization": [
+        -0.0,
+        0.0,
+        0.0
+      ],
+      "division_at_zero": null,
+      "division_at_zero_reason": "0/0 is NaN; int8 conversion gives 0 on recorded CPU runtime",
+      "utility_behavior": "explicit UnsupportedCodecInput; no epsilon or dtype repair"
+    },
+    {
+      "kind": "NONZERO_ABSMAX_DIV7_UNDERFLOW",
+      "positive_absmax_bits": 2,
+      "G": [
+        -2.802596928649634e-45,
+        0.0,
+        2.802596928649634e-45
+      ],
+      "reference_s": 0.0,
+      "reference_q": [
+        -7,
+        0,
+        7
+      ],
+      "reference_dequantization": [
+        -0.0,
+        0.0,
+        0.0
+      ],
+      "division_at_zero": null,
+      "division_at_zero_reason": "0/0 is NaN; int8 conversion gives 0 on recorded CPU runtime",
+      "utility_behavior": "explicit UnsupportedCodecInput; no epsilon or dtype repair"
+    },
+    {
+      "kind": "NONZERO_ABSMAX_DIV7_UNDERFLOW",
+      "positive_absmax_bits": 3,
+      "G": [
+        -4.203895392974451e-45,
+        0.0,
+        4.203895392974451e-45
+      ],
+      "reference_s": 0.0,
+      "reference_q": [
+        -7,
+        0,
+        7
+      ],
+      "reference_dequantization": [
+        -0.0,
+        0.0,
+        0.0
+      ],
+      "division_at_zero": null,
+      "division_at_zero_reason": "0/0 is NaN; int8 conversion gives 0 on recorded CPU runtime",
+      "utility_behavior": "explicit UnsupportedCodecInput; no epsilon or dtype repair"
+    }
+  ],
+  "support_domain": "Nonempty finite CPU FP32 tensors with positive FP32 absmax/7, plus zero tensor q=0,s=1; explicit signed metadata; positive scalar FP32 s from reference",
+  "bound_semantics": "Inclusive representable endpoints, exact fixed-s code ownership, finite cap=max finite m with FP32(m/7)=s; projection does not enforce scale equality",
+  "runtime": {
+    "python": "3.11.14 | packaged by Anaconda, Inc. | (main, Oct 21 2025, 18:30:03) [MSC v.1929 64 bit (AMD64)]",
+    "executable": "C:\\miniconda\\envs\\DLG\\python.exe",
+    "torch": "2.13.0+cu132",
+    "numpy": "2.4.4",
+    "pytest": "9.1.1",
+    "platform": "Windows-10-10.0.19045-SP0",
+    "device": "cpu",
+    "input_dtype": "float32",
+    "scale_dtype": "float32",
+    "code_dtype": "int8",
+    "default_torch_dtype": "torch.float32",
+    "flush_denormal_setting": "not changed; positive subnormal behavior covered by tests",
+    "seed": 20260914,
+    "model": "gpt-6-astra",
+    "effort": "high",
+    "test_started_at_utc": "2026-09-14T06:29:58.383859+00:00",
+    "test_wall_seconds": 1.9350414000218734,
+    "pytest_reported_seconds": 1.362,
+    "pytest_process_peak_working_set_bytes": 547037184,
+    "peak_method": "Windows GetProcessMemoryInfo PeakWorkingSetSize; child process lifetime",
+    "gpu_executions": 0,
+    "gpu_peak_vram_bytes": null,
+    "gpu_reason": "NOT_USED_CPU_ONLY",
+    "budget": {
+      "wall_seconds": null,
+      "ram_bytes": null,
+      "reason": "NOT_SPECIFIED"
+    }
+  },
+  "test_command_argv": [
+    "C:\\miniconda\\envs\\DLG\\python.exe",
+    "-B",
+    "-m",
+    "pytest",
+    "-q",
+    "quantized_update_cpa/tests/test_cell_utils.py",
+    "-o",
+    "cache_dir=.ai/execution-results/CPA_STEP3_SIGNED_CELLS_20260914/pytest-cache",
+    "--junitxml=.ai/execution-results/CPA_STEP3_SIGNED_CELLS_20260914/pytest.xml"
+  ],
+  "exit_status": 0,
+  "test_counts": {
+    "tests": 79,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "passed": 79
+  },
+  "first_run": {
+    "passed": 78,
+    "failed": 1,
+    "reason": "ineffective cap-counterexample fixture",
+    "log": "pytest-first.log"
+  },
+  "source_hashes_before": {
+    "quantized_update_cpa/quantization.py": "ae0f812c7de3de07cce3796c701475d6fc3e0a822f7d6dd8ab951d34201e3ceb",
+    ".ai/STATE.md": "7d28f690b6364b791e14c4ab8164ec708cc88201485e956081594a5278c6e446",
+    ".ai/RELAY.md": "003e78b6a78a5b967644e709b8dfedc1cba8a97a76bb289baef18428612426e2"
+  },
+  "source_hashes_after": {
+    "quantized_update_cpa/quantization.py": "ae0f812c7de3de07cce3796c701475d6fc3e0a822f7d6dd8ab951d34201e3ceb",
+    ".ai/STATE.md": "7d28f690b6364b791e14c4ab8164ec708cc88201485e956081594a5278c6e446",
+    ".ai/RELAY.md": "003e78b6a78a5b967644e709b8dfedc1cba8a97a76bb289baef18428612426e2"
+  },
+  "protected_hashes_equal": true,
+  "new_source_hashes": {
+    "quantized_update_cpa/cell_utils.py": "6725bce108a8e795680342231696c70f1d2bc8b01a727022c605e40aa841d361",
+    "quantized_update_cpa/trial_metrics.py": "37368d41d5b5caac142949493ab7f501e7d5aecf9ed5e317c7112cc4c4ca1e50",
+    "quantized_update_cpa/tests/test_cell_utils.py": "74c0ccf3e19ce04b831e7ba82f9081a11fa361ee9c8f925686c39341a1bb2e3c"
+  },
+  "completed_at_utc": "2026-09-14T06:30:00.354545+00:00",
+  "not_executed": [
+    "FP32 Reference",
+    "INT4 reconstruction",
+    "CPA",
+    "FIA",
+    "VGG loading/training",
+    "observation generation",
+    "private data loading",
+    "embedding oracle",
+    "image oracle"
+  ]
+}

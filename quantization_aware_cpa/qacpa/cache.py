@@ -18,8 +18,16 @@ def quant_cache_path(
     batch_index: int,
     bits: int,
     rounding: str,
+    scale_granularity: str = "per_row",
+    bucket_size: int | None = None,
+    require_distinct_labels: bool = True,
 ) -> Path:
-    name = f"quant_seed{seed}_B{B}_batch{batch_index}_bits{bits}_{rounding}.pt"
+    bucket_suffix = "" if scale_granularity != "per_bucket" else f"_bucket{int(bucket_size or 256)}"
+    label_suffix = "" if require_distinct_labels else "_labelsmixed"
+    name = (
+        f"quant_seed{seed}_B{B}_batch{batch_index}{label_suffix}_bits{bits}_{rounding}"
+        f"_scale{scale_granularity}{bucket_suffix}.pt"
+    )
     return Path(cache_dir) / name
 
 
@@ -32,6 +40,9 @@ def load_or_quantize_observation(
     quant_cfg = config["quantization"]
     bits = int(quant_cfg["bits"])
     rounding = str(quant_cfg["rounding"])
+    scale_granularity = str(quant_cfg.get("scale_granularity", "per_row"))
+    bucket_size = int(quant_cfg.get("bucket_size", 256))
+    require_distinct = bool(config.get("data", {}).get("require_distinct_labels", True))
     path = quant_cache_path(
         config["paths"]["cache_dir"],
         seed=int(config["seed"]),
@@ -39,6 +50,9 @@ def load_or_quantize_observation(
         batch_index=int(victim.batch_index),
         bits=bits,
         rounding=rounding,
+        scale_granularity=scale_granularity,
+        bucket_size=bucket_size,
+        require_distinct_labels=require_distinct,
     )
     if path.is_file() and not force:
         payload = torch.load(path, map_location="cpu")
@@ -47,6 +61,8 @@ def load_or_quantize_observation(
             delta=payload["delta"],
             bits=int(payload["bits"]),
             rounding=str(payload["rounding"]),
+            scale_granularity=str(payload.get("scale_granularity", scale_granularity)),
+            bucket_size=payload.get("bucket_size", bucket_size),
         )
 
     path.parent.mkdir(parents=True, exist_ok=True)
@@ -56,6 +72,8 @@ def load_or_quantize_observation(
         bits=bits,
         rounding=rounding,
         generator=torch_generator(generator_seed, device=victim.Y.device),
+        scale_granularity=scale_granularity,
+        bucket_size=bucket_size,
     )
     assert_cell_membership(victim.Y, qobs.Y_hat, qobs.delta)
     torch.save(
@@ -65,6 +83,9 @@ def load_or_quantize_observation(
             "delta": qobs.delta.cpu(),
             "bits": bits,
             "rounding": rounding,
+            "scale_granularity": scale_granularity,
+            "bucket_size": bucket_size,
+            "require_distinct_labels": require_distinct,
             "seed": int(config["seed"]),
             "batch_index": int(victim.batch_index),
         },

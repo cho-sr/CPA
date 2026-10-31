@@ -1,0 +1,812 @@
+{
+  "schema": {
+    "canonical_root_fields": [
+      "per_tensor",
+      "overall_numel",
+      "overall_code_mismatch_count",
+      "overall_code_mismatch_fraction",
+      "overall_bounded_cell_violation_count",
+      "overall_bounded_cell_violation_fraction",
+      "cell_loss_equal_tensor_mean",
+      "exact_feasible",
+      "feature_norm_mean",
+      "feature_norm_min",
+      "feature_norm_max"
+    ],
+    "canonical_tensor_fields": [
+      "name",
+      "numel",
+      "fixed_s",
+      "code_mismatch_count",
+      "code_mismatch_fraction",
+      "bounded_cell_violation_count",
+      "bounded_cell_violation_fraction",
+      "mean_violation_in_s",
+      "max_violation_in_s",
+      "cell_penalty",
+      "candidate_scale"
+    ],
+    "allowed_root_diagnostics": [
+      "label_hypothesis",
+      "feature_target_cosine_loss",
+      "tv_normalized",
+      "pixel_min",
+      "pixel_max",
+      "pixel_mean",
+      "x0_displacement_l2"
+    ]
+  },
+  "control": {
+    "passed": true,
+    "schema_errors": {
+      "actual": [],
+      "expected": []
+    },
+    "mismatches": [],
+    "float_differences": [
+      {
+        "path": "profile.per_tensor.classifier.0.bias.fixed_s",
+        "expected": 3.0104336019576294e-06,
+        "actual": 3.0104336019576294e-06,
+        "difference": 0.0,
+        "within_tolerance": true
+      },
+      {
+        "path": "profile.per_tensor.classifier.0.bias.code_mismatch_fraction",
+        "expected": 0.596435546875,
+        "actual": 0.596435546875,
+        "difference": 0.0,
+        "within_tolerance": true
+      },
+      {
+        "path": "profile.per_tensor.classifier.0.bias.bounded_cell_violation_fraction",
+        "expected": 0.596435546875,
+        "actual": 0.596435546875,
+        "difference": 0.0,
+        "within_tolerance": true
+      },
+      {
+        "path": "profile.per_tensor.classifier.0.bias.mean_violation_in_s",
+        "expected": 0.5102990675636226,
+        "actual": 0.5102990675636226,
+        "difference": 0.0,
+        "within_tolerance": true
+      },
+      {
+        "path": "profile.per_tensor.classifier.0.bias.max_violation_in_s",
+        "expected": 5.482057098524044,
+        "actual": 5.482057098524044,
+        "difference": 0.0,
+        "within_tolerance": true
+      },
+      {
+        "path": "profile.per_tensor.classifier.0.bias.cell_penalty",
+        "expected": 0.7636076694607696,
+        "actual": 0.7636076694607696,
+        "difference": 0.0,
+        "within_tolerance": true
+      },
+      {
+        "path": "profile.per_tensor.classifier.0.bias.candidate_scale",
+        "expected": 2.7657620194077026e-06,
+        "actual": 2.7657620194077026e-06,
+        "difference": 0.0,
+        "within_tolerance": true
+      },
+      {
+        "path": "profile.per_tensor.classifier.0.weight.fixed_s",
+        "expected": 5.416279236669652e-05,
+        "actual": 5.416279236669652e-05,
+        "difference": 0.0,
+        "within_tolerance": true
+      },
+      {
+        "path": "profile.per_tensor.classifier.0.weight.code_mismatch_fraction",
+        "expected": 0.005446978977748326,
+        "actual": 0.005446978977748326,
+        "difference": 0.0,
+        "within_tolerance": true
+      },
+      {
+        "path": "profile.per_tensor.classifier.0.weight.bounded_cell_violation_fraction",
+        "expected": 0.005446978977748326,
+        "actual": 0.005446978977748326,
+        "difference": 0.0,
+        "within_tolerance": true
+      },
+      {
+        "path": "profile.per_tensor.classifier.0.weight.mean_violation_in_s",
+        "expected": 0.0023534756365393835,
+        "actual": 0.0023534756365393835,
+        "difference": 0.0,
+        "within_tolerance": true
+      },
+      {
+        "path": "profile.per_tensor.classifier.0.weight.max_violation_in_s",
+        "expected": 6.274549935838255,
+        "actual": 6.274549935838255,
+        "difference": 0.0,
+        "within_tolerance": true
+      },
+      {
+        "path": "profile.per_tensor.classifier.0.weight.cell_penalty",
+        "expected": 0.001337715396148619,
+        "actual": 0.001337715396148619,
+        "difference": 0.0,
+        "within_tolerance": true
+      },
+      {
+        "path": "profile.per_tensor.classifier.0.weight.candidate_scale",
+        "expected": 3.363750874996185e-05,
+        "actual": 3.363750874996185e-05,
+        "difference": 0.0,
+        "within_tolerance": true
+      },
+      {
+        "path": "profile.per_tensor.classifier.3.bias.fixed_s",
+        "expected": 6.22868537902832e-06,
+        "actual": 6.22868537902832e-06,
+        "difference": 0.0,
+        "within_tolerance": true
+      },
+      {
+        "path": "profile.per_tensor.classifier.3.bias.code_mismatch_fraction",
+        "expected": 0.479248046875,
+        "actual": 0.479248046875,
+        "difference": 0.0,
+        "within_tolerance": true
+      },
+      {
+        "path": "profile.per_tensor.classifier.3.bias.bounded_cell_violation_fraction",
+        "expected": 0.479248046875,
+        "actual": 0.479248046875,
+        "difference": 0.0,
+        "within_tolerance": true
+      },
+      {
+        "path": "profile.per_tensor.classifier.3.bias.mean_violation_in_s",
+        "expected": 0.32347418850902737,
+        "actual": 0.32347418850902737,
+        "difference": 0.0,
+        "within_tolerance": true
+      },
+      {
+        "path": "profile.per_tensor.classifier.3.bias.max_violation_in_s",
+        "expected": 4.600478760933762,
+        "actual": 4.600478760933762,
+        "difference": 0.0,
+        "within_tolerance": true
+      },
+      {
+        "path": "profile.per_tensor.classifier.3.bias.cell_penalty",
+        "expected": 0.42502992803995676,
+        "actual": 0.42502992803995676,
+        "difference": 0.0,
+        "within_tolerance": true
+      },
+      {
+        "path": "profile.per_tensor.classifier.3.bias.candidate_scale",
+        "expected": 4.582107067108154e-06,
+        "actual": 4.582107067108154e-06,
+        "difference": 0.0,
+        "within_tolerance": true
+      },
+      {
+        "path": "profile.per_tensor.classifier.3.weight.fixed_s",
+        "expected": 4.05922946811188e-05,
+        "actual": 4.05922946811188e-05,
+        "difference": 0.0,
+        "within_tolerance": true
+      },
+      {
+        "path": "profile.per_tensor.classifier.3.weight.code_mismatch_fraction",
+        "expected": 0.02548128366470337,
+        "actual": 0.02548128366470337,
+        "difference": 0.0,
+        "within_tolerance": true
+      },
+      {
+        "path": "profile.per_tensor.classifier.3.weight.bounded_cell_violation_fraction",
+        "expected": 0.02548128366470337,
+        "actual": 0.02548128366470337,
+        "difference": 0.0,
+        "within_tolerance": true
+      },
+      {
+        "path": "profile.per_tensor.classifier.3.weight.mean_violation_in_s",
+        "expected": 0.010700400021173227,
+        "actual": 0.010700400021173227,
+        "difference": 0.0,
+        "within_tolerance": true
+      },
+      {
+        "path": "profile.per_tensor.classifier.3.weight.max_violation_in_s",
+        "expected": 4.950809402285819,
+        "actual": 4.950809402285819,
+        "difference": 0.0,
+        "within_tolerance": true
+      },
+      {
+        "path": "profile.per_tensor.classifier.3.weight.cell_penalty",
+        "expected": 0.006422123934161315,
+        "actual": 0.006422123934161315,
+        "difference": 0.0,
+        "within_tolerance": true
+      },
+      {
+        "path": "profile.per_tensor.classifier.3.weight.candidate_scale",
+        "expected": 2.2248630557442084e-05,
+        "actual": 2.2248630557442084e-05,
+        "difference": 0.0,
+        "within_tolerance": true
+      },
+      {
+        "path": "profile.per_tensor.classifier.6.bias.fixed_s",
+        "expected": 7.289834320545197e-05,
+        "actual": 7.289834320545197e-05,
+        "difference": 0.0,
+        "within_tolerance": true
+      },
+      {
+        "path": "profile.per_tensor.classifier.6.bias.code_mismatch_fraction",
+        "expected": 0.019,
+        "actual": 0.019,
+        "difference": 0.0,
+        "within_tolerance": true
+      },
+      {
+        "path": "profile.per_tensor.classifier.6.bias.bounded_cell_violation_fraction",
+        "expected": 0.019,
+        "actual": 0.019,
+        "difference": 0.0,
+        "within_tolerance": true
+      },
+      {
+        "path": "profile.per_tensor.classifier.6.bias.mean_violation_in_s",
+        "expected": 0.01562612295829394,
+        "actual": 0.01562612295829394,
+        "difference": 0.0,
+        "within_tolerance": true
+      },
+      {
+        "path": "profile.per_tensor.classifier.6.bias.max_violation_in_s",
+        "expected": 3.2452027493165034,
+        "actual": 3.2452027493165034,
+        "difference": 0.0,
+        "within_tolerance": true
+      },
+      {
+        "path": "profile.per_tensor.classifier.6.bias.cell_penalty",
+        "expected": 0.02749109561034129,
+        "actual": 0.02749109561034129,
+        "difference": 0.0,
+        "within_tolerance": true
+      },
+      {
+        "path": "profile.per_tensor.classifier.6.bias.candidate_scale",
+        "expected": 4.523620009422302e-05,
+        "actual": 4.523620009422302e-05,
+        "difference": 0.0,
+        "within_tolerance": true
+      },
+      {
+        "path": "profile.per_tensor.classifier.6.weight.fixed_s",
+        "expected": 0.000340950267855078,
+        "actual": 0.000340950267855078,
+        "difference": 0.0,
+        "within_tolerance": true
+      },
+      {
+        "path": "profile.per_tensor.classifier.6.weight.code_mismatch_fraction",
+        "expected": 0.001267822265625,
+        "actual": 0.001267822265625,
+        "difference": 0.0,
+        "within_tolerance": true
+      },
+      {
+        "path": "profile.per_tensor.classifier.6.weight.bounded_cell_violation_fraction",
+        "expected": 0.001267822265625,
+        "actual": 0.001267822265625,
+        "difference": 0.0,
+        "within_tolerance": true
+      },
+      {
+        "path": "profile.per_tensor.classifier.6.weight.mean_violation_in_s",
+        "expected": 0.000633514324495038,
+        "actual": 0.000633514324495038,
+        "difference": 0.0,
+        "within_tolerance": true
+      },
+      {
+        "path": "profile.per_tensor.classifier.6.weight.max_violation_in_s",
+        "expected": 5.471287742973472,
+        "actual": 5.471287742973472,
+        "difference": 0.0,
+        "within_tolerance": true
+      },
+      {
+        "path": "profile.per_tensor.classifier.6.weight.cell_penalty",
+        "expected": 0.0005801705459411641,
+        "actual": 0.0005801705459411641,
+        "difference": 0.0,
+        "within_tolerance": true
+      },
+      {
+        "path": "profile.per_tensor.classifier.6.weight.candidate_scale",
+        "expected": 0.0001857493625720963,
+        "actual": 0.0001857493625720963,
+        "difference": 0.0,
+        "within_tolerance": true
+      },
+      {
+        "path": "profile.overall_code_mismatch_fraction",
+        "expected": 0.00806239060023007,
+        "actual": 0.00806239060023007,
+        "difference": 0.0,
+        "within_tolerance": true
+      },
+      {
+        "path": "profile.overall_bounded_cell_violation_fraction",
+        "expected": 0.00806239060023007,
+        "actual": 0.00806239060023007,
+        "difference": 0.0,
+        "within_tolerance": true
+      },
+      {
+        "path": "profile.cell_loss_equal_tensor_mean",
+        "expected": 0.20407811716455315,
+        "actual": 0.20407811716455315,
+        "difference": 0.0,
+        "within_tolerance": true
+      },
+      {
+        "path": "profile.feature_norm_mean",
+        "expected": 92.97657775878906,
+        "actual": 92.97657775878906,
+        "difference": 0.0,
+        "within_tolerance": true
+      },
+      {
+        "path": "profile.feature_norm_min",
+        "expected": 65.68217468261719,
+        "actual": 65.68217468261719,
+        "difference": 0.0,
+        "within_tolerance": true
+      },
+      {
+        "path": "profile.feature_norm_max",
+        "expected": 114.71402740478516,
+        "actual": 114.71402740478516,
+        "difference": 0.0,
+        "within_tolerance": true
+      }
+    ],
+    "float_tolerance": {
+      "rel_tol": 2e-07,
+      "abs_tol": 2e-09
+    }
+  },
+  "x0": {
+    "passed": true,
+    "schema_errors": {
+      "actual": [],
+      "expected": []
+    },
+    "mismatches": [],
+    "float_differences": [
+      {
+        "path": "profile.per_tensor.classifier.0.bias.fixed_s",
+        "expected": 3.0104336019576294e-06,
+        "actual": 3.0104336019576294e-06,
+        "difference": 0.0,
+        "within_tolerance": true
+      },
+      {
+        "path": "profile.per_tensor.classifier.0.bias.code_mismatch_fraction",
+        "expected": 0.9375,
+        "actual": 0.9375,
+        "difference": 0.0,
+        "within_tolerance": true
+      },
+      {
+        "path": "profile.per_tensor.classifier.0.bias.bounded_cell_violation_fraction",
+        "expected": 0.93798828125,
+        "actual": 0.93798828125,
+        "difference": 0.0,
+        "within_tolerance": true
+      },
+      {
+        "path": "profile.per_tensor.classifier.0.bias.mean_violation_in_s",
+        "expected": 7.5772610384024945,
+        "actual": 7.5772610384024945,
+        "difference": 0.0,
+        "within_tolerance": true
+      },
+      {
+        "path": "profile.per_tensor.classifier.0.bias.max_violation_in_s",
+        "expected": 53.37307303074231,
+        "actual": 53.37307303074231,
+        "difference": 0.0,
+        "within_tolerance": true
+      },
+      {
+        "path": "profile.per_tensor.classifier.0.bias.cell_penalty",
+        "expected": 117.37343388020085,
+        "actual": 117.37343388020085,
+        "difference": 0.0,
+        "within_tolerance": true
+      },
+      {
+        "path": "profile.per_tensor.classifier.0.bias.candidate_scale",
+        "expected": 2.3983418941497803e-05,
+        "actual": 2.3983418941497803e-05,
+        "difference": 0.0,
+        "within_tolerance": true
+      },
+      {
+        "path": "profile.per_tensor.classifier.0.weight.fixed_s",
+        "expected": 5.416279236669652e-05,
+        "actual": 5.416279236669652e-05,
+        "difference": 0.0,
+        "within_tolerance": true
+      },
+      {
+        "path": "profile.per_tensor.classifier.0.weight.code_mismatch_fraction",
+        "expected": 0.0074140879572654255,
+        "actual": 0.0074140879572654255,
+        "difference": 0.0,
+        "within_tolerance": true
+      },
+      {
+        "path": "profile.per_tensor.classifier.0.weight.bounded_cell_violation_fraction",
+        "expected": 0.0074140879572654255,
+        "actual": 0.0074140879572654255,
+        "difference": 0.0,
+        "within_tolerance": true
+      },
+      {
+        "path": "profile.per_tensor.classifier.0.weight.mean_violation_in_s",
+        "expected": 0.003276929975524293,
+        "actual": 0.003276929975524293,
+        "difference": 0.0,
+        "within_tolerance": true
+      },
+      {
+        "path": "profile.per_tensor.classifier.0.weight.max_violation_in_s",
+        "expected": 7.4108497661395925,
+        "actual": 7.4108497661395925,
+        "difference": 0.0,
+        "within_tolerance": true
+      },
+      {
+        "path": "profile.per_tensor.classifier.0.weight.cell_penalty",
+        "expected": 0.0023644063271613712,
+        "actual": 0.0023644063271613712,
+        "difference": 0.0,
+        "within_tolerance": true
+      },
+      {
+        "path": "profile.per_tensor.classifier.0.weight.candidate_scale",
+        "expected": 4.806875222129747e-05,
+        "actual": 4.806875222129747e-05,
+        "difference": 0.0,
+        "within_tolerance": true
+      },
+      {
+        "path": "profile.per_tensor.classifier.3.bias.fixed_s",
+        "expected": 6.22868537902832e-06,
+        "actual": 6.22868537902832e-06,
+        "difference": 0.0,
+        "within_tolerance": true
+      },
+      {
+        "path": "profile.per_tensor.classifier.3.bias.code_mismatch_fraction",
+        "expected": 0.87060546875,
+        "actual": 0.87060546875,
+        "difference": 0.0,
+        "within_tolerance": true
+      },
+      {
+        "path": "profile.per_tensor.classifier.3.bias.bounded_cell_violation_fraction",
+        "expected": 0.870849609375,
+        "actual": 0.870849609375,
+        "difference": 0.0,
+        "within_tolerance": true
+      },
+      {
+        "path": "profile.per_tensor.classifier.3.bias.mean_violation_in_s",
+        "expected": 3.086745096397314,
+        "actual": 3.086745096397314,
+        "difference": 0.0,
+        "within_tolerance": true
+      },
+      {
+        "path": "profile.per_tensor.classifier.3.bias.max_violation_in_s",
+        "expected": 27.03708133971292,
+        "actual": 27.03708133971292,
+        "difference": 0.0,
+        "within_tolerance": true
+      },
+      {
+        "path": "profile.per_tensor.classifier.3.bias.cell_penalty",
+        "expected": 19.72019849691083,
+        "actual": 19.72019849691083,
+        "difference": 0.0,
+        "within_tolerance": true
+      },
+      {
+        "path": "profile.per_tensor.classifier.3.bias.candidate_scale",
+        "expected": 2.19608518818859e-05,
+        "actual": 2.19608518818859e-05,
+        "difference": 0.0,
+        "within_tolerance": true
+      },
+      {
+        "path": "profile.per_tensor.classifier.3.weight.fixed_s",
+        "expected": 4.05922946811188e-05,
+        "actual": 4.05922946811188e-05,
+        "difference": 0.0,
+        "within_tolerance": true
+      },
+      {
+        "path": "profile.per_tensor.classifier.3.weight.code_mismatch_fraction",
+        "expected": 0.025970935821533203,
+        "actual": 0.025970935821533203,
+        "difference": 0.0,
+        "within_tolerance": true
+      },
+      {
+        "path": "profile.per_tensor.classifier.3.weight.bounded_cell_violation_fraction",
+        "expected": 0.025970935821533203,
+        "actual": 0.025970935821533203,
+        "difference": 0.0,
+        "within_tolerance": true
+      },
+      {
+        "path": "profile.per_tensor.classifier.3.weight.mean_violation_in_s",
+        "expected": 0.012950265484923814,
+        "actual": 0.012950265484923814,
+        "difference": 0.0,
+        "within_tolerance": true
+      },
+      {
+        "path": "profile.per_tensor.classifier.3.weight.max_violation_in_s",
+        "expected": 5.662768659943493,
+        "actual": 5.662768659943493,
+        "difference": 0.0,
+        "within_tolerance": true
+      },
+      {
+        "path": "profile.per_tensor.classifier.3.weight.cell_penalty",
+        "expected": 0.009647601425145093,
+        "actual": 0.009647601425145093,
+        "difference": 0.0,
+        "within_tolerance": true
+      },
+      {
+        "path": "profile.per_tensor.classifier.3.weight.candidate_scale",
+        "expected": 9.293003131460864e-06,
+        "actual": 9.293003131460864e-06,
+        "difference": 0.0,
+        "within_tolerance": true
+      },
+      {
+        "path": "profile.per_tensor.classifier.6.bias.fixed_s",
+        "expected": 7.289834320545197e-05,
+        "actual": 7.289834320545197e-05,
+        "difference": 0.0,
+        "within_tolerance": true
+      },
+      {
+        "path": "profile.per_tensor.classifier.6.bias.code_mismatch_fraction",
+        "expected": 0.027,
+        "actual": 0.027,
+        "difference": 0.0,
+        "within_tolerance": true
+      },
+      {
+        "path": "profile.per_tensor.classifier.6.bias.bounded_cell_violation_fraction",
+        "expected": 0.028,
+        "actual": 0.028,
+        "difference": 0.0,
+        "within_tolerance": true
+      },
+      {
+        "path": "profile.per_tensor.classifier.6.bias.mean_violation_in_s",
+        "expected": 0.10368802090652707,
+        "actual": 0.10368802090652707,
+        "difference": 0.0,
+        "within_tolerance": true
+      },
+      {
+        "path": "profile.per_tensor.classifier.6.bias.max_violation_in_s",
+        "expected": 18.378031019240105,
+        "actual": 18.378031019240105,
+        "difference": 0.0,
+        "within_tolerance": true
+      },
+      {
+        "path": "profile.per_tensor.classifier.6.bias.cell_penalty",
+        "expected": 0.8434558838345111,
+        "actual": 0.8434558838345111,
+        "difference": 0.0,
+        "within_tolerance": true
+      },
+      {
+        "path": "profile.per_tensor.classifier.6.bias.candidate_scale",
+        "expected": 0.00017576864047441632,
+        "actual": 0.00017576864047441632,
+        "difference": 0.0,
+        "within_tolerance": true
+      },
+      {
+        "path": "profile.per_tensor.classifier.6.weight.fixed_s",
+        "expected": 0.000340950267855078,
+        "actual": 0.000340950267855078,
+        "difference": 0.0,
+        "within_tolerance": true
+      },
+      {
+        "path": "profile.per_tensor.classifier.6.weight.code_mismatch_fraction",
+        "expected": 0.001352783203125,
+        "actual": 0.001352783203125,
+        "difference": 0.0,
+        "within_tolerance": true
+      },
+      {
+        "path": "profile.per_tensor.classifier.6.weight.bounded_cell_violation_fraction",
+        "expected": 0.001352783203125,
+        "actual": 0.001352783203125,
+        "difference": 0.0,
+        "within_tolerance": true
+      },
+      {
+        "path": "profile.per_tensor.classifier.6.weight.mean_violation_in_s",
+        "expected": 0.0008766265908669026,
+        "actual": 0.0008766265908669026,
+        "difference": 0.0,
+        "within_tolerance": true
+      },
+      {
+        "path": "profile.per_tensor.classifier.6.weight.max_violation_in_s",
+        "expected": 5.8684769101257,
+        "actual": 5.8684769101257,
+        "difference": 0.0,
+        "within_tolerance": true
+      },
+      {
+        "path": "profile.per_tensor.classifier.6.weight.cell_penalty",
+        "expected": 0.0009956155883123195,
+        "actual": 0.0009956155883123195,
+        "difference": 0.0,
+        "within_tolerance": true
+      },
+      {
+        "path": "profile.per_tensor.classifier.6.weight.candidate_scale",
+        "expected": 9.743709961185232e-05,
+        "actual": 9.743709961185232e-05,
+        "difference": 0.0,
+        "within_tolerance": true
+      },
+      {
+        "path": "profile.overall_code_mismatch_fraction",
+        "expected": 0.00979085277680742,
+        "actual": 0.00979085277680742,
+        "difference": 0.0,
+        "within_tolerance": true
+      },
+      {
+        "path": "profile.overall_bounded_cell_violation_fraction",
+        "expected": 0.009790885128049777,
+        "actual": 0.009790885128049777,
+        "difference": 0.0,
+        "within_tolerance": true
+      },
+      {
+        "path": "profile.cell_loss_equal_tensor_mean",
+        "expected": 22.991682647381136,
+        "actual": 22.991682647381136,
+        "difference": 0.0,
+        "within_tolerance": true
+      },
+      {
+        "path": "profile.feature_norm_mean",
+        "expected": 21.787342071533203,
+        "actual": 21.787342071533203,
+        "difference": 0.0,
+        "within_tolerance": true
+      },
+      {
+        "path": "profile.feature_norm_min",
+        "expected": 11.455498695373535,
+        "actual": 11.455498695373535,
+        "difference": 0.0,
+        "within_tolerance": true
+      },
+      {
+        "path": "profile.feature_norm_max",
+        "expected": 36.13764190673828,
+        "actual": 36.13764190673828,
+        "difference": 0.0,
+        "within_tolerance": true
+      }
+    ],
+    "float_tolerance": {
+      "rel_tol": 2e-07,
+      "abs_tol": 2e-09
+    }
+  },
+  "control_added_result_diagnostics": {
+    "passed": true,
+    "differences": [
+      {
+        "path": "B_H1_high.feature_target_cosine_loss",
+        "expected": 0.3174843490123749,
+        "actual": 0.3174843490123749,
+        "difference": 0.0,
+        "within_tolerance": true
+      },
+      {
+        "path": "B_H1_high.tv_normalized",
+        "expected": 0.09613793343305588,
+        "actual": 0.09613793343305588,
+        "difference": 0.0,
+        "within_tolerance": true
+      },
+      {
+        "path": "B_H1_high.feature_norm_mean",
+        "expected": 92.97657775878906,
+        "actual": 92.97657775878906,
+        "difference": 0.0,
+        "within_tolerance": true
+      },
+      {
+        "path": "B_H1_high.feature_norm_min",
+        "expected": 65.68217468261719,
+        "actual": 65.68217468261719,
+        "difference": 0.0,
+        "within_tolerance": true
+      },
+      {
+        "path": "B_H1_high.feature_norm_max",
+        "expected": 114.71402740478516,
+        "actual": 114.71402740478516,
+        "difference": 0.0,
+        "within_tolerance": true
+      },
+      {
+        "path": "B_H1_high.pixel_min",
+        "expected": 0.10193424671888351,
+        "actual": 0.10193424671888351,
+        "difference": 0.0,
+        "within_tolerance": true
+      },
+      {
+        "path": "B_H1_high.pixel_max",
+        "expected": 0.8497588038444519,
+        "actual": 0.8497588038444519,
+        "difference": 0.0,
+        "within_tolerance": true
+      },
+      {
+        "path": "B_H1_high.pixel_mean",
+        "expected": 0.4385800063610077,
+        "actual": 0.4385800063610077,
+        "difference": 0.0,
+        "within_tolerance": true
+      },
+      {
+        "path": "B_H1_high.x0_displacement_l2",
+        "expected": 10.969314575195312,
+        "actual": 10.969314575195312,
+        "difference": 0.0,
+        "within_tolerance": true
+      }
+    ],
+    "float_tolerance": {
+      "rel_tol": 2e-07,
+      "abs_tol": 2e-09
+    }
+  },
+  "archived_control_candidate_sha256": "b352c3bde7db87ff00ecbbbd4715c5c865ada662c4dcf88b1e116f5369ec9d5a"
+}

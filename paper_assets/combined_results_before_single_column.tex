@@ -1,0 +1,39 @@
+% Generated from existing metrics by build_results_table.py; no evaluation.
+\begin{table*}[!t]
+\centering
+\caption{Naive versus randomized decoding (PSNR$\uparrow$, SSIM$\uparrow$,
+LPIPS$\downarrow$). Dashes denote unavailable results.
+Protocols differ between panels (Section~\ref{sec:sparse}).}
+\label{tab:compression}
+\label{tab:bits}
+\small
+\setlength{\tabcolsep}{1.2pt}
+\renewcommand{\arraystretch}{1.0}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}llrrrrrrrrrrrrrrr@{}}
+\toprule
+\multicolumn{2}{l}{\textit{(a) Quantization}} & \multicolumn{3}{c}{8-bit} & \multicolumn{3}{c}{7-bit} & \multicolumn{3}{c}{6-bit} & \multicolumn{3}{c}{5-bit} & \multicolumn{3}{c}{4-bit}\\
+\cmidrule(lr){3-5}\cmidrule(lr){6-8}\cmidrule(lr){9-11}\cmidrule(lr){12-14}\cmidrule(lr){15-17}
+Dataset & Method & PSNR & SSIM & LPIPS & PSNR & SSIM & LPIPS & PSNR & SSIM & LPIPS & PSNR & SSIM & LPIPS & PSNR & SSIM & LPIPS\\
+\midrule
+\multirow{2}{*}{CIFAR-100} & Naive & --- & --- & --- & --- & --- & --- & --- & --- & --- & --- & --- & --- & --- & --- & ---\\
+ & \cora{} & --- & --- & --- & --- & --- & --- & --- & --- & --- & --- & --- & --- & --- & --- & ---\\
+\midrule
+\multirow{2}{*}{ImageNet} & Naive & 12.06 & 0.2924 & 0.5594 & 11.80 & 0.2764 & 0.6118 & 11.64 & 0.2596 & 0.6961 & 11.55 & 0.2620 & 0.7826 & 11.52 & 0.2921 & 0.8071\\
+ & \cora{} & 12.06 & 0.3070 & 0.5558 & 11.83 & 0.2827 & 0.6332 & 11.67 & 0.2690 & 0.6659 & 11.55 & 0.2558 & 0.7490 & 11.50 & 0.2576 & 0.8085\\
+\bottomrule
+\end{tabular*}
+\par\smallskip
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}llrrrrrrrrrrrr@{}}
+\toprule
+\multicolumn{2}{l}{\textit{(b) Sparsification}} & \multicolumn{3}{c}{Keep 50\%} & \multicolumn{3}{c}{Keep 30\%} & \multicolumn{3}{c}{Keep 20\%} & \multicolumn{3}{c}{Keep 10\%}\\
+\cmidrule(lr){3-5}\cmidrule(lr){6-8}\cmidrule(lr){9-11}\cmidrule(lr){12-14}
+Dataset & Method & PSNR & SSIM & LPIPS & PSNR & SSIM & LPIPS & PSNR & SSIM & LPIPS & PSNR & SSIM & LPIPS\\
+\midrule
+\multirow{2}{*}{CIFAR-100} & Naive & --- & --- & --- & --- & --- & --- & --- & --- & --- & --- & --- & ---\\
+ & Random fill & --- & --- & --- & --- & --- & --- & --- & --- & --- & --- & --- & ---\\
+\midrule
+\multirow{2}{*}{ImageNet} & Naive & 22.29 & 0.3344 & 0.4864 & 22.14 & 0.3141 & 0.5098 & 21.87 & 0.2906 & 0.5536 & 21.53 & 0.2631 & 0.6323\\
+ & Random fill & --- & --- & --- & --- & --- & --- & --- & --- & --- & 21.51 & 0.2610 & 0.6300\\
+\bottomrule
+\end{tabular*}
+\end{table*}

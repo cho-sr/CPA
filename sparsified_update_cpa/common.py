@@ -165,24 +165,41 @@ def hash_json(value: Mapping[str, Any]) -> str:
     return sha256_bytes(json.dumps(value, sort_keys=True, default=str).encode("utf-8"))
 
 
+def filesystem_path(path: Path) -> str:
+    path = Path(path)
+    if os.name != "nt":
+        return str(path)
+    try:
+        path_str = str(path.resolve())
+    except OSError:
+        path_str = str(path.absolute())
+    if path_str.startswith("\\\\?\\"):
+        return path_str
+    if path_str.startswith("\\\\"):
+        return "\\\\?\\UNC\\" + path_str[2:]
+    return "\\\\?\\" + path_str
+
+
 def read_pickle(path: Path) -> Any:
-    with path.open("rb") as handle:
+    with open(filesystem_path(path), "rb") as handle:
         return pickle.load(handle)
 
 
 def write_pickle(path: Path, value: Any) -> None:
-    path.parent.mkdir(parents=True, exist_ok=True)
-    with path.open("wb") as handle:
+    os.makedirs(filesystem_path(path.parent), exist_ok=True)
+    with open(filesystem_path(path), "wb") as handle:
         pickle.dump(value, handle, protocol=pickle.HIGHEST_PROTOCOL)
 
 
 def write_json(path: Path, value: Mapping[str, Any]) -> None:
-    path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(json.dumps(value, indent=2, sort_keys=True, default=str) + "\n", encoding="utf-8")
+    os.makedirs(filesystem_path(path.parent), exist_ok=True)
+    with open(filesystem_path(path), "w", encoding="utf-8") as handle:
+        handle.write(json.dumps(value, indent=2, sort_keys=True, default=str) + "\n")
 
 
 def read_json(path: Path) -> Dict[str, Any]:
-    return json.loads(path.read_text(encoding="utf-8"))
+    with open(filesystem_path(path), "r", encoding="utf-8") as handle:
+        return json.load(handle)
 
 
 def assert_matching_manifest(path: Path, expected: Mapping[str, Any]) -> None:

@@ -1,0 +1,10 @@
+{
+  "archive_stage": "before_finalization_repair",
+  "sources": {
+    "quantization_aware_cpa/qacpa/signed_e2e_nofia_runner.py": "ba803e996e91b1d64c713674514101e2100c1b9ce80a8d989ca7ab03e7442ea4",
+    "quantization_aware_cpa/qacpa/signed_e2e_nofia_evaluation.py": "cacc3c35ea4b54dafcaa17280b73eaaa58252b16851b6f8339e0796bb7135741",
+    "quantization_aware_cpa/tests/test_signed_e2e_nofia.py": "7d27731b53464c63f28b3fd552972df589c33725f2f10a6eca79a23d206fe481"
+  },
+  "parent_failed_summary_sha256": "379d79565906075db58da9fa4695e8adda907eb2d88a9ec59872443b8ba224be",
+  "note": "Exact source and parent receipt bytes were archived before the finalization repair."
+}

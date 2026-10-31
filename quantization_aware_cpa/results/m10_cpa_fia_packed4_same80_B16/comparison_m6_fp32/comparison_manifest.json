@@ -1,0 +1,106 @@
+{
+  "run_tags": [
+    "m6_uia_fp32_B16_fia",
+    "m10_cpa_fia_packed4_same80_B16"
+  ],
+  "n_images": 80,
+  "paired_identity_fields": [
+    "global_index",
+    "batch_index",
+    "source_index",
+    "dataset_index",
+    "label",
+    "image_path"
+  ],
+  "means_recomputed_from_per_image_csv": true,
+  "comparison": [
+    {
+      "metric": "lpips",
+      "n_images": 80,
+      "m6_fp32_mean": 0.45459726378321647,
+      "m10_packed4_mean": 0.5732020232826471,
+      "m10_minus_m6": 0.11860475949943067,
+      "preferred_direction": "lower"
+    },
+    {
+      "metric": "ssim",
+      "n_images": 80,
+      "m6_fp32_mean": 0.3426545349881053,
+      "m10_packed4_mean": 0.288918933365494,
+      "m10_minus_m6": -0.05373560162261126,
+      "preferred_direction": "higher"
+    },
+    {
+      "metric": "psnr",
+      "n_images": 80,
+      "m6_fp32_mean": 22.40604360103607,
+      "m10_packed4_mean": 21.8309161901474,
+      "m10_minus_m6": -0.5751274108886726,
+      "preferred_direction": "higher"
+    }
+  ],
+  "interpretation": "Descriptive comparison: CPA implementation and FIA matching order differ between runs. The observed differences do not isolate the effect of compression alone.",
+  "implementation_difference": "M6: ported Stage1 and permutation before FIA; M10: direct upstream CPA and matching after FIA",
+  "source_hashes": {
+    "m6_uia_fp32_B16_fia": {
+      "summary.json": "1f85b5750c6171e0259160c48731dc7646fb3f7a5b9c59b8c06b0478bd2f4ad0",
+      "per_image_metrics.csv": "72dafc60ccb29acca4568bc0da7b77d48574ecafece7fe51898b173822c2f2ef"
+    },
+    "m10_cpa_fia_packed4_same80_B16": {
+      "summary.json": "f1eb62014f9581fe9bbc458babc76d5af604f48d3a8f87e7e3550465f0498f5f",
+      "per_image_metrics.csv": "b2bde29dd877ec60149085c6cdc972aed5366da97f6fca6a59f3a7546371a4c0"
+    }
+  },
+  "outputs": [
+    {
+      "file": "m6_fp32_vs_m10_packed4_metrics_16x9.png",
+      "size": [
+        3840,
+        2160
+      ],
+      "sha256": "e5df124cc7dd4d67a10c54176dce4fe4afecc7c2361ac6929d8e8cffaab26f08",
+      "svg": "m6_fp32_vs_m10_packed4_metrics_16x9.svg",
+      "metrics": [
+        "lpips",
+        "ssim",
+        "psnr"
+      ]
+    },
+    {
+      "file": "lpips_comparison_16x9.png",
+      "size": [
+        1920,
+        1080
+      ],
+      "sha256": "4edf675e1e51c55cf72a086787f5428b63b4cc1bf06435b0c12e4a794e449e37",
+      "svg": "lpips_comparison_16x9.svg",
+      "metrics": [
+        "lpips"
+      ]
+    },
+    {
+      "file": "ssim_comparison_16x9.png",
+      "size": [
+        1920,
+        1080
+      ],
+      "sha256": "e035b0d7d639c34d1faa85d189065436893ea56304a2df5f567dfe6202d51316",
+      "svg": "ssim_comparison_16x9.svg",
+      "metrics": [
+        "ssim"
+      ]
+    },
+    {
+      "file": "psnr_comparison_16x9.png",
+      "size": [
+        1920,
+        1080
+      ],
+      "sha256": "13d3355787543c5140f55b15da36544a76324747fdf4bd7c5d3b809537fe0df1",
+      "svg": "psnr_comparison_16x9.svg",
+      "metrics": [
+        "psnr"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,224 @@
+{
+  "aggregation_weights": [
+    0.3333333333333333,
+    0.3333333333333333,
+    0.3333333333333333
+  ],
+  "artifact_type": "final_round_client_qs",
+  "attack_layer": {
+    "index": 26,
+    "name": "classifier.0.weight"
+  },
+  "attacker_observes_round_aggregate": false,
+  "bin_policy_for_randomized": "bounded exact bins using each client's selected bit width",
+  "clients": [
+    {
+      "aggregation_weight": 0.3333333333333333,
+      "client_id": 0,
+      "quant_bits": 4,
+      "quant_stats": {
+        "client_id": 0,
+        "levels": 15,
+        "qmax": 7,
+        "qmin": -7,
+        "quant_bits": 4,
+        "quant_cosine_similarity": 0.8591792129680369,
+        "quant_mse": 1.4334049873406707e-14,
+        "quant_relative_l2": 0.5411408492550791,
+        "quant_saturation_ratio": 7.01082126555637e-07,
+        "quant_scale_max": 8.034919119381811e-06,
+        "quant_scale_mean": 1.3420877971181966e-06,
+        "quant_scale_min": 5.002532788012104e-08,
+        "quantization": "signed_symmetric_int4",
+        "round": 20,
+        "rounding": "nearest",
+        "scale_scope": "per_client_per_parameter_tensor",
+        "zero_point": null
+      },
+      "tensors": [
+        {
+          "dtype": "int8",
+          "key": "client000_param26",
+          "max_abs": 5.580484867095947e-06,
+          "mse": 4.035379465744846e-15,
+          "name": "classifier.0.weight",
+          "param_index": 26,
+          "qmax": 7,
+          "qmin": -7,
+          "quant_bits": 4,
+          "relative_l2": 0.6543401043497183,
+          "saturation_ratio": 1.9462740752373975e-08,
+          "scale": 7.972121238708496e-07,
+          "shape": [
+            4096,
+            25088
+          ]
+        }
+      ]
+    },
+    {
+      "aggregation_weight": 0.3333333333333333,
+      "client_id": 1,
+      "quant_bits": 8,
+      "quant_stats": {
+        "client_id": 1,
+        "levels": 255,
+        "qmax": 127,
+        "qmin": -127,
+        "quant_bits": 8,
+        "quant_cosine_similarity": 0.998469533228351,
+        "quant_mse": 2.2836664089960097e-16,
+        "quant_relative_l2": 0.05537711464216678,
+        "quant_saturation_ratio": 2.4574012510198473e-07,
+        "quant_scale_max": 7.60575233016425e-07,
+        "quant_scale_mean": 1.0151106845379676e-07,
+        "quant_scale_min": 3.901288181396012e-09,
+        "quantization": "signed_symmetric_int8",
+        "round": 20,
+        "rounding": "nearest",
+        "scale_scope": "per_client_per_parameter_tensor",
+        "zero_point": null
+      },
+      "tensors": [
+        {
+          "dtype": "int8",
+          "key": "client001_param26",
+          "max_abs": 6.7604705691337585e-06,
+          "mse": 5.0643767153391055e-17,
+          "name": "classifier.0.weight",
+          "param_index": 26,
+          "qmax": 127,
+          "qmin": -127,
+          "quant_bits": 8,
+          "relative_l2": 0.06772759300180328,
+          "saturation_ratio": 9.731370376186987e-09,
+          "scale": 5.3232053431884196e-08,
+          "shape": [
+            4096,
+            25088
+          ]
+        }
+      ]
+    },
+    {
+      "aggregation_weight": 0.3333333333333333,
+      "client_id": 2,
+      "quant_bits": 8,
+      "quant_stats": {
+        "client_id": 2,
+        "levels": 255,
+        "qmax": 127,
+        "qmin": -127,
+        "quant_bits": 8,
+        "quant_cosine_similarity": 0.9989820973169197,
+        "quant_mse": 7.528530079462219e-17,
+        "quant_relative_l2": 0.04514974542576193,
+        "quant_saturation_ratio": 2.457401252096851e-07,
+        "quant_scale_max": 6.150542048999341e-07,
+        "quant_scale_mean": 6.788832160320446e-08,
+        "quant_scale_min": 2.173391466797625e-09,
+        "quantization": "signed_symmetric_int8",
+        "round": 20,
+        "rounding": "nearest",
+        "scale_scope": "per_client_per_parameter_tensor",
+        "zero_point": null
+      },
+      "tensors": [
+        {
+          "dtype": "int8",
+          "key": "client002_param26",
+          "max_abs": 5.247537046670914e-06,
+          "mse": 2.513278563201934e-17,
+          "name": "classifier.0.weight",
+          "param_index": 26,
+          "qmax": 127,
+          "qmin": -127,
+          "quant_bits": 8,
+          "relative_l2": 0.06053230872121299,
+          "saturation_ratio": 9.731370376186987e-09,
+          "scale": 4.1319189847399684e-08,
+          "shape": [
+            4096,
+            25088
+          ]
+        }
+      ]
+    }
+  ],
+  "code_file": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\mixed_bit_fedavg\\imagenet\\vgg16\\clients3_rounds20_spc8_seed42_bits4_8_client_round_bitseed1234_obsclient0\\client_qs\\final_round_client_codes.npz",
+  "codes_sha256": "b78b6616eed4d6ac7b57c279670a701633ff33cc4b4969f3dcc87b4284015c9c",
+  "context_file": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\mixed_bit_fedavg\\imagenet\\vgg16\\clients3_rounds20_spc8_seed42_bits4_8_client_round_bitseed1234_obsclient0\\client_qs\\final_round_context.pkl",
+  "context_sha256": "aa590f6da9358c86fc93eeff9489420571dea5362172beee7cc0d6bbf809e894",
+  "final_round_quant_bits_by_client": [
+    {
+      "client_id": 0,
+      "quant_bits": 4
+    },
+    {
+      "client_id": 1,
+      "quant_bits": 8
+    },
+    {
+      "client_id": 2,
+      "quant_bits": 8
+    }
+  ],
+  "mixed_quant_bits": [
+    4,
+    8
+  ],
+  "not_source": "post-hoc FP32 quantization",
+  "observation_scope": "single_client",
+  "observed_client_id": 0,
+  "param_names": [
+    "features.0.weight",
+    "features.0.bias",
+    "features.2.weight",
+    "features.2.bias",
+    "features.5.weight",
+    "features.5.bias",
+    "features.7.weight",
+    "features.7.bias",
+    "features.10.weight",
+    "features.10.bias",
+    "features.12.weight",
+    "features.12.bias",
+    "features.14.weight",
+    "features.14.bias",
+    "features.17.weight",
+    "features.17.bias",
+    "features.19.weight",
+    "features.19.bias",
+    "features.21.weight",
+    "features.21.bias",
+    "features.24.weight",
+    "features.24.bias",
+    "features.26.weight",
+    "features.26.bias",
+    "features.28.weight",
+    "features.28.bias",
+    "classifier.0.weight",
+    "classifier.0.bias",
+    "classifier.3.weight",
+    "classifier.3.bias",
+    "classifier.6.weight",
+    "classifier.6.bias"
+  ],
+  "qrange_by_bits": {
+    "4": {
+      "qmax": 7,
+      "qmin": -7
+    },
+    "8": {
+      "qmax": 127,
+      "qmin": -127
+    }
+  },
+  "quant_bits": "mixed",
+  "rounding": "nearest",
+  "scale_definition": "scale=max_abs/qmax; scale=0 when max_abs=0",
+  "schema_version": 1,
+  "source": "mixed 4/8-bit client q,s before final-round server aggregation",
+  "source_model_state_file": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\mixed_bit_fedavg\\imagenet\\vgg16\\clients3_rounds20_spc8_seed42_bits4_8_client_round_bitseed1234_obsclient0\\client_qs\\final_round_global_model_before.pt",
+  "source_model_state_sha256": "8f40509c8935e41332ae17a38ae14d6ddbcf26c37e111660e4498d07f8127b17"
+}

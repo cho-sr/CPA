@@ -1,0 +1,19 @@
+{
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "COMPLETED",
+      "started_at_utc": "2026-09-26T13:38:45.570674+00:00",
+      "pid": 20896,
+      "resumed_after_interruption": false,
+      "valid_checkpoint_reused": false,
+      "wasted_work_steps_lower_bound": 0,
+      "wasted_work_steps_upper_bound": 0,
+      "wasted_work_exact": true,
+      "ended_at_utc": "2026-09-26T13:45:18.543559+00:00",
+      "completed_steps": 5000,
+      "checkpoint_sha256": "af19cb78068571cc6bd6f419439a27229d2d04510ad3e0526d5e13b80d77f4b5",
+      "error": null
+    }
+  ]
+}

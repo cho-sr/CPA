@@ -1,0 +1,12 @@
+{
+  "method": "client-wise bin-constrained QICA",
+  "outputs": [
+    "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\int 4 fedavg\\imagenet\\vgg16\\clients3_rounds20_spc8_seed42\\qaware_client_qica\\qon_neon"
+  ],
+  "run_dir": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\int 4 fedavg\\imagenet\\vgg16\\clients3_rounds20_spc8_seed42",
+  "schema_version": 1,
+  "source_info": {
+    "client_qs_dir": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\int 4 fedavg\\imagenet\\vgg16\\clients3_rounds20_spc8_seed42\\client_qs",
+    "source": "run_dir/client_qs"
+  }
+}

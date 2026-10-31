@@ -1,0 +1,5 @@
+[CPA noFIA process completion]
+TASK_ID: CPA_SIGNED_E2E_H1_NOFIA_20260916
+Wrapper PID: 20948; process exit: 1
+Report directory: C:/Users/조상제/Desktop/CPA/.ai/execution-results/CPA_SIGNED_E2E_H1_NOFIA_20260916
+One OS process-exit callback completed with zero model calls while waiting. Read execution_summary.json and the runner/evaluation logs, verify artifacts, update the claimed handoff truthfully, ensure report files exist, and send one final result notice to the existing Planner. Do not rerun, add arms, tune, or poll.

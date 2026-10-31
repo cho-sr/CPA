@@ -1,0 +1,878 @@
+{
+  "task_id": "CPA_SIGNED_E2E_H1_NOFIA_20260916",
+  "finalization_task_id": "CPA_SIGNED_E2E_H1_NOFIA_FINALIZE_20260916",
+  "plan_version": 1,
+  "status": "COMPLETED",
+  "evaluation_status": "COMPLETED",
+  "public_output": "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_e2e_h1_nofia_B16_T10_20260916",
+  "private_output": "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results_private/signed_e2e_h1_nofia_B16_T10_20260916",
+  "private_truth_path": "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results_private/signed_int4_baseline_B16_T10/observation/evaluation_truth.pt",
+  "private_truth_metadata": {
+    "private_loaded": true,
+    "labels_consumed": false,
+    "bundled_fields_may_materialize": [
+      "labels",
+      "x",
+      "z"
+    ],
+    "consumed_field": "x only"
+  },
+  "labels_consumed": false,
+  "true_updates_consumed": false,
+  "matching": "Hungarian_pixel_MSE_once_per_candidate_reused_for_SSIM_LPIPS_and_aligned_figure",
+  "all_images_included": true,
+  "candidates": {
+    "x0": {
+      "tensor_sha256": "305ea27c30ea08afb487034f131835eebc4634d265d96d175832ae428551b165",
+      "file_sha256": "fe683f68013896a407a38130ee54ef9dc799a9ca1abf7c4f08efeefea7d91751"
+    },
+    "B_H1_high": {
+      "tensor_sha256": "65837781d3d39162caa4087c0738d2e9a847b651bd0751b473b3755ad935e299",
+      "file_sha256": "b352c3bde7db87ff00ecbbbd4715c5c865ada662c4dcf88b1e116f5369ec9d5a"
+    },
+    "C_H1_high_noFIA": {
+      "tensor_sha256": "a8cb69b90ee7a1a7f4e40290b49ee73f19bf9698de7b29714b953abf6afe62fb",
+      "file_sha256": "5a20b87bf69473bf7696e46d9054c0f3d04a4c02f98ffde6ee3969374bf4e525"
+    }
+  },
+  "image_metrics": {
+    "x0": {
+      "matching": "Hungarian_pixel_MSE_once_for_all_metrics",
+      "n_images": 16,
+      "all_images_included": true,
+      "candidate_selection": "none_single_supplied_artifact",
+      "per_image": [
+        {
+          "candidate_index": 0,
+          "truth_index": 4,
+          "mse": 0.05929120473560415,
+          "psnr_db": 12.270097251532746,
+          "perfect_pixel_match": false,
+          "ssim": 0.39859080796182317,
+          "lpips": 0.8946077227592468
+        },
+        {
+          "candidate_index": 1,
+          "truth_index": 11,
+          "mse": 0.0677619356197937,
+          "psnr_db": 11.690141968776288,
+          "perfect_pixel_match": false,
+          "ssim": 0.20773743423273278,
+          "lpips": 0.8210153579711914
+        },
+        {
+          "candidate_index": 2,
+          "truth_index": 15,
+          "mse": 0.0652687053488196,
+          "psnr_db": 11.852950017584437,
+          "perfect_pixel_match": false,
+          "ssim": 0.3751457553905384,
+          "lpips": 0.7983899116516113
+        },
+        {
+          "candidate_index": 3,
+          "truth_index": 8,
+          "mse": 0.04437110955490228,
+          "psnr_db": 13.52899711072797,
+          "perfect_pixel_match": false,
+          "ssim": 0.4339286926579059,
+          "lpips": 0.8559708595275879
+        },
+        {
+          "candidate_index": 4,
+          "truth_index": 2,
+          "mse": 0.06939795056046572,
+          "psnr_db": 11.586533548106077,
+          "perfect_pixel_match": false,
+          "ssim": 0.2504421572139185,
+          "lpips": 0.7906415462493896
+        },
+        {
+          "candidate_index": 5,
+          "truth_index": 10,
+          "mse": 0.07119426734191858,
+          "psnr_db": 11.475549749306177,
+          "perfect_pixel_match": false,
+          "ssim": 0.22604055950027532,
+          "lpips": 0.8701488971710205
+        },
+        {
+          "candidate_index": 6,
+          "truth_index": 14,
+          "mse": 0.04321140969315368,
+          "psnr_db": 13.644015653950554,
+          "perfect_pixel_match": false,
+          "ssim": 0.19771848707651626,
+          "lpips": 0.7816146612167358
+        },
+        {
+          "candidate_index": 7,
+          "truth_index": 1,
+          "mse": 0.074897172418465,
+          "psnr_db": 11.255345778444294,
+          "perfect_pixel_match": false,
+          "ssim": 0.20797209151200372,
+          "lpips": 0.814141035079956
+        },
+        {
+          "candidate_index": 8,
+          "truth_index": 9,
+          "mse": 0.05127460747955921,
+          "psnr_db": 12.900976555839543,
+          "perfect_pixel_match": false,
+          "ssim": 0.1871444545661139,
+          "lpips": 0.7640813589096069
+        },
+        {
+          "candidate_index": 9,
+          "truth_index": 5,
+          "mse": 0.11922767078050202,
+          "psnr_db": 9.236229402948672,
+          "perfect_pixel_match": false,
+          "ssim": 0.41736698816283785,
+          "lpips": 0.7872798442840576
+        },
+        {
+          "candidate_index": 10,
+          "truth_index": 0,
+          "mse": 0.04888480177896204,
+          "psnr_db": 13.108261414790213,
+          "perfect_pixel_match": false,
+          "ssim": 0.3002314372314708,
+          "lpips": 0.8940839171409607
+        },
+        {
+          "candidate_index": 11,
+          "truth_index": 13,
+          "mse": 0.09102630235404695,
+          "psnr_db": 10.408330987040449,
+          "perfect_pixel_match": false,
+          "ssim": 0.2583173953148812,
+          "lpips": 0.8439177870750427
+        },
+        {
+          "candidate_index": 12,
+          "truth_index": 12,
+          "mse": 0.039439329923008644,
+          "psnr_db": 14.040704723619605,
+          "perfect_pixel_match": false,
+          "ssim": 0.37747681043446124,
+          "lpips": 0.8352307677268982
+        },
+        {
+          "candidate_index": 13,
+          "truth_index": 6,
+          "mse": 0.07450911501582522,
+          "psnr_db": 11.277905949170863,
+          "perfect_pixel_match": false,
+          "ssim": 0.15788739065827972,
+          "lpips": 0.7263423800468445
+        },
+        {
+          "candidate_index": 14,
+          "truth_index": 7,
+          "mse": 0.11903494479114748,
+          "psnr_db": 9.243255251443603,
+          "perfect_pixel_match": false,
+          "ssim": 0.15088817858761247,
+          "lpips": 0.8163847923278809
+        },
+        {
+          "candidate_index": 15,
+          "truth_index": 3,
+          "mse": 0.21095902195390165,
+          "psnr_db": 6.758018966816689,
+          "perfect_pixel_match": false,
+          "ssim": 0.41141519483153643,
+          "lpips": 0.8729431629180908
+        }
+      ],
+      "metric_dtype": "float64",
+      "truth_denormalization_tolerance_abs": 9.5367431640625e-07,
+      "truth_denormalization_clipped_values": 77691,
+      "perfect_pixel_matches": 0,
+      "psnr_null_meaning": "positive_infinity_for_perfect_pixel_match",
+      "mean_psnr_null_meaning": "positive_infinity_if_any_image_is_a_perfect_pixel_match",
+      "mean_mse": 0.07810934683437976,
+      "mean_psnr_db": 11.517332145631135,
+      "mean_ssim": 0.2848939897083067,
+      "lpips": "not_computed",
+      "reconstruction_success": "no_threshold_registered",
+      "mean_lpips": 0.8229246251285076,
+      "lpips_provenance": {
+        "implementation": "torchmetrics.image.lpip.LearnedPerceptualImagePatchSimilarity",
+        "net_type": "vgg",
+        "normalize_argument": false,
+        "device": "cpu",
+        "dtype": "float32",
+        "versions": {
+          "torch": "2.13.0+cu132",
+          "torchvision": "0.28.0+cu132",
+          "torchmetrics": "1.9.0"
+        },
+        "input_normalization": "FP32 RGB [0,1] to [-1,1] using (pixels - 0.5) * 2",
+        "weights": {
+          "backbone": {
+            "path": "C:\\Users\\조상제\\.cache\\torch\\hub\\checkpoints\\vgg16-397923af.pth",
+            "sha256": "397923af8e79cdbb6a7127f12361acd7a2f83e06b05044ddf496e83de57a5bf0"
+          },
+          "calibration": {
+            "path": "C:\\miniconda\\envs\\DLG\\Lib\\site-packages\\torchmetrics\\functional\\image\\lpips_models\\vgg.pth",
+            "sha256": "a78928a0af1e5f0fcb1f3b9e8f8c3a2a5a3de244d830ad5c1feddc79b8432868"
+          }
+        },
+        "downloads_allowed": false
+      }
+    },
+    "B_H1_high": {
+      "matching": "Hungarian_pixel_MSE_once_for_all_metrics",
+      "n_images": 16,
+      "all_images_included": true,
+      "candidate_selection": "none_single_supplied_artifact",
+      "per_image": [
+        {
+          "candidate_index": 0,
+          "truth_index": 4,
+          "mse": 0.059349429749966265,
+          "psnr_db": 12.26583449542292,
+          "perfect_pixel_match": false,
+          "ssim": 0.387428479665829,
+          "lpips": 0.8850359916687012
+        },
+        {
+          "candidate_index": 1,
+          "truth_index": 11,
+          "mse": 0.06781013996368691,
+          "psnr_db": 11.68705359215467,
+          "perfect_pixel_match": false,
+          "ssim": 0.20349324671265234,
+          "lpips": 0.8116191029548645
+        },
+        {
+          "candidate_index": 2,
+          "truth_index": 0,
+          "mse": 0.0497850467190568,
+          "psnr_db": 13.029010809868737,
+          "perfect_pixel_match": false,
+          "ssim": 0.2538220952148138,
+          "lpips": 0.8235714435577393
+        },
+        {
+          "candidate_index": 3,
+          "truth_index": 10,
+          "mse": 0.07531981754611493,
+          "psnr_db": 11.230907406842025,
+          "perfect_pixel_match": false,
+          "ssim": 0.19277747930193223,
+          "lpips": 0.8220735192298889
+        },
+        {
+          "candidate_index": 4,
+          "truth_index": 2,
+          "mse": 0.06945780515739665,
+          "psnr_db": 11.582789443637484,
+          "perfect_pixel_match": false,
+          "ssim": 0.24435922520122644,
+          "lpips": 0.7737938761711121
+        },
+        {
+          "candidate_index": 5,
+          "truth_index": 15,
+          "mse": 0.06360288352129469,
+          "psnr_db": 11.965231945874507,
+          "perfect_pixel_match": false,
+          "ssim": 0.4309332818965339,
+          "lpips": 0.7088437676429749
+        },
+        {
+          "candidate_index": 6,
+          "truth_index": 14,
+          "mse": 0.04327056263264648,
+          "psnr_db": 13.638074577787403,
+          "perfect_pixel_match": false,
+          "ssim": 0.19292165083458315,
+          "lpips": 0.7680441737174988
+        },
+        {
+          "candidate_index": 7,
+          "truth_index": 1,
+          "mse": 0.07493373163073613,
+          "psnr_db": 11.253226393986468,
+          "perfect_pixel_match": false,
+          "ssim": 0.20493032490971594,
+          "lpips": 0.802312433719635
+        },
+        {
+          "candidate_index": 8,
+          "truth_index": 9,
+          "mse": 0.05133114893197776,
+          "psnr_db": 12.896190149281372,
+          "perfect_pixel_match": false,
+          "ssim": 0.18242776358416568,
+          "lpips": 0.7721738815307617
+        },
+        {
+          "candidate_index": 9,
+          "truth_index": 5,
+          "mse": 0.11927247810379885,
+          "psnr_db": 9.234597573905658,
+          "perfect_pixel_match": false,
+          "ssim": 0.40336699414700344,
+          "lpips": 0.7896181344985962
+        },
+        {
+          "candidate_index": 10,
+          "truth_index": 8,
+          "mse": 0.041203830874409715,
+          "psnr_db": 13.850624041058675,
+          "perfect_pixel_match": false,
+          "ssim": 0.5104809981646422,
+          "lpips": 0.9213535189628601
+        },
+        {
+          "candidate_index": 11,
+          "truth_index": 13,
+          "mse": 0.09108665197090385,
+          "psnr_db": 10.405452607889167,
+          "perfect_pixel_match": false,
+          "ssim": 0.25232099319628915,
+          "lpips": 0.8362647294998169
+        },
+        {
+          "candidate_index": 12,
+          "truth_index": 12,
+          "mse": 0.03948630134930206,
+          "psnr_db": 14.035535443798612,
+          "perfect_pixel_match": false,
+          "ssim": 0.3681671305782816,
+          "lpips": 0.8194559812545776
+        },
+        {
+          "candidate_index": 13,
+          "truth_index": 6,
+          "mse": 0.07456140983385273,
+          "psnr_db": 11.274858887807653,
+          "perfect_pixel_match": false,
+          "ssim": 0.15428037957661755,
+          "lpips": 0.7292467355728149
+        },
+        {
+          "candidate_index": 14,
+          "truth_index": 7,
+          "mse": 0.11906914999331161,
+          "psnr_db": 9.242007466883836,
+          "perfect_pixel_match": false,
+          "ssim": 0.14686548852174147,
+          "lpips": 0.8146897554397583
+        },
+        {
+          "candidate_index": 15,
+          "truth_index": 3,
+          "mse": 0.211033645257769,
+          "psnr_db": 6.756482992760887,
+          "perfect_pixel_match": false,
+          "ssim": 0.39463839934861306,
+          "lpips": 0.8524149656295776
+        }
+      ],
+      "metric_dtype": "float64",
+      "truth_denormalization_tolerance_abs": 9.5367431640625e-07,
+      "truth_denormalization_clipped_values": 77691,
+      "perfect_pixel_matches": 0,
+      "psnr_null_meaning": "positive_infinity_for_perfect_pixel_match",
+      "mean_psnr_null_meaning": "positive_infinity_if_any_image_is_a_perfect_pixel_match",
+      "mean_mse": 0.07816087707726402,
+      "mean_psnr_db": 11.521742364310004,
+      "mean_ssim": 0.2827008706784151,
+      "lpips": "not_computed",
+      "reconstruction_success": "no_threshold_registered",
+      "mean_lpips": 0.8081570006906986,
+      "lpips_provenance": {
+        "implementation": "torchmetrics.image.lpip.LearnedPerceptualImagePatchSimilarity",
+        "net_type": "vgg",
+        "normalize_argument": false,
+        "device": "cpu",
+        "dtype": "float32",
+        "versions": {
+          "torch": "2.13.0+cu132",
+          "torchvision": "0.28.0+cu132",
+          "torchmetrics": "1.9.0"
+        },
+        "input_normalization": "FP32 RGB [0,1] to [-1,1] using (pixels - 0.5) * 2",
+        "weights": {
+          "backbone": {
+            "path": "C:\\Users\\조상제\\.cache\\torch\\hub\\checkpoints\\vgg16-397923af.pth",
+            "sha256": "397923af8e79cdbb6a7127f12361acd7a2f83e06b05044ddf496e83de57a5bf0"
+          },
+          "calibration": {
+            "path": "C:\\miniconda\\envs\\DLG\\Lib\\site-packages\\torchmetrics\\functional\\image\\lpips_models\\vgg.pth",
+            "sha256": "a78928a0af1e5f0fcb1f3b9e8f8c3a2a5a3de244d830ad5c1feddc79b8432868"
+          }
+        },
+        "downloads_allowed": false
+      }
+    },
+    "C_H1_high_noFIA": {
+      "matching": "Hungarian_pixel_MSE_once_for_all_metrics",
+      "n_images": 16,
+      "all_images_included": true,
+      "candidate_selection": "none_single_supplied_artifact",
+      "per_image": [
+        {
+          "candidate_index": 0,
+          "truth_index": 4,
+          "mse": 0.05933588759683679,
+          "psnr_db": 12.26682556702878,
+          "perfect_pixel_match": false,
+          "ssim": 0.388665274452672,
+          "lpips": 0.8752366304397583
+        },
+        {
+          "candidate_index": 1,
+          "truth_index": 11,
+          "mse": 0.06779857376789447,
+          "psnr_db": 11.68779441992056,
+          "perfect_pixel_match": false,
+          "ssim": 0.20416064443420084,
+          "lpips": 0.8164948225021362
+        },
+        {
+          "candidate_index": 2,
+          "truth_index": 15,
+          "mse": 0.06530612839207098,
+          "psnr_db": 11.85046062186254,
+          "perfect_pixel_match": false,
+          "ssim": 0.3655824678903833,
+          "lpips": 0.7945647239685059
+        },
+        {
+          "candidate_index": 3,
+          "truth_index": 8,
+          "mse": 0.04441630921147842,
+          "psnr_db": 13.524575321379109,
+          "perfect_pixel_match": false,
+          "ssim": 0.41927695059205433,
+          "lpips": 0.8474281430244446
+        },
+        {
+          "candidate_index": 4,
+          "truth_index": 2,
+          "mse": 0.06944779261858254,
+          "psnr_db": 11.583415536528479,
+          "perfect_pixel_match": false,
+          "ssim": 0.24489107668897334,
+          "lpips": 0.7765965461730957
+        },
+        {
+          "candidate_index": 5,
+          "truth_index": 10,
+          "mse": 0.07122685228105219,
+          "psnr_db": 11.473562479504725,
+          "perfect_pixel_match": false,
+          "ssim": 0.22245790337375693,
+          "lpips": 0.863413393497467
+        },
+        {
+          "candidate_index": 6,
+          "truth_index": 14,
+          "mse": 0.04325634785009135,
+          "psnr_db": 13.639501509974451,
+          "perfect_pixel_match": false,
+          "ssim": 0.19347834506402178,
+          "lpips": 0.7681706547737122
+        },
+        {
+          "candidate_index": 7,
+          "truth_index": 1,
+          "mse": 0.07493172891935769,
+          "psnr_db": 11.253342466962506,
+          "perfect_pixel_match": false,
+          "ssim": 0.20551550929350365,
+          "lpips": 0.7992302179336548
+        },
+        {
+          "candidate_index": 8,
+          "truth_index": 9,
+          "mse": 0.051315229045296604,
+          "psnr_db": 12.897537282834417,
+          "perfect_pixel_match": false,
+          "ssim": 0.18272433454471684,
+          "lpips": 0.7882281541824341
+        },
+        {
+          "candidate_index": 9,
+          "truth_index": 5,
+          "mse": 0.11926833501649546,
+          "psnr_db": 9.234748434459084,
+          "perfect_pixel_match": false,
+          "ssim": 0.40595222444664436,
+          "lpips": 0.826513409614563
+        },
+        {
+          "candidate_index": 10,
+          "truth_index": 0,
+          "mse": 0.04892633976648988,
+          "psnr_db": 13.104572730746218,
+          "perfect_pixel_match": false,
+          "ssim": 0.29464905699798216,
+          "lpips": 0.8630431294441223
+        },
+        {
+          "candidate_index": 11,
+          "truth_index": 13,
+          "mse": 0.09107575260125043,
+          "psnr_db": 10.405972312941751,
+          "perfect_pixel_match": false,
+          "ssim": 0.2531439647361539,
+          "lpips": 0.8357614874839783
+        },
+        {
+          "candidate_index": 12,
+          "truth_index": 12,
+          "mse": 0.039474489996983365,
+          "psnr_db": 14.036834722867786,
+          "perfect_pixel_match": false,
+          "ssim": 0.3701667865859741,
+          "lpips": 0.8230307102203369
+        },
+        {
+          "candidate_index": 13,
+          "truth_index": 6,
+          "mse": 0.07455510877970706,
+          "psnr_db": 11.275225917976105,
+          "perfect_pixel_match": false,
+          "ssim": 0.15494852511696117,
+          "lpips": 0.795974850654602
+        },
+        {
+          "candidate_index": 14,
+          "truth_index": 7,
+          "mse": 0.11905079197257952,
+          "psnr_db": 9.242677111521962,
+          "perfect_pixel_match": false,
+          "ssim": 0.1475894526295785,
+          "lpips": 0.81345134973526
+        },
+        {
+          "candidate_index": 15,
+          "truth_index": 3,
+          "mse": 0.2110215392755001,
+          "psnr_db": 6.756732133702238,
+          "perfect_pixel_match": false,
+          "ssim": 0.3946996304107921,
+          "lpips": 0.8514035940170288
+        }
+      ],
+      "metric_dtype": "float64",
+      "truth_denormalization_tolerance_abs": 9.5367431640625e-07,
+      "truth_denormalization_clipped_values": 77691,
+      "perfect_pixel_matches": 0,
+      "psnr_null_meaning": "positive_infinity_for_perfect_pixel_match",
+      "mean_psnr_null_meaning": "positive_infinity_if_any_image_is_a_perfect_pixel_match",
+      "mean_mse": 0.07815045044322919,
+      "mean_psnr_db": 11.51461116063817,
+      "mean_ssim": 0.277993884203648,
+      "lpips": "not_computed",
+      "reconstruction_success": "no_threshold_registered",
+      "mean_lpips": 0.8211588636040688,
+      "lpips_provenance": {
+        "implementation": "torchmetrics.image.lpip.LearnedPerceptualImagePatchSimilarity",
+        "net_type": "vgg",
+        "normalize_argument": false,
+        "device": "cpu",
+        "dtype": "float32",
+        "versions": {
+          "torch": "2.13.0+cu132",
+          "torchvision": "0.28.0+cu132",
+          "torchmetrics": "1.9.0"
+        },
+        "input_normalization": "FP32 RGB [0,1] to [-1,1] using (pixels - 0.5) * 2",
+        "weights": {
+          "backbone": {
+            "path": "C:\\Users\\조상제\\.cache\\torch\\hub\\checkpoints\\vgg16-397923af.pth",
+            "sha256": "397923af8e79cdbb6a7127f12361acd7a2f83e06b05044ddf496e83de57a5bf0"
+          },
+          "calibration": {
+            "path": "C:\\miniconda\\envs\\DLG\\Lib\\site-packages\\torchmetrics\\functional\\image\\lpips_models\\vgg.pth",
+            "sha256": "a78928a0af1e5f0fcb1f3b9e8f8c3a2a5a3de244d830ad5c1feddc79b8432868"
+          }
+        },
+        "downloads_allowed": false
+      }
+    }
+  },
+  "mean_metrics": {
+    "x0": {
+      "mean_mse": 0.07810934683437976,
+      "mean_psnr_db": 11.517332145631135,
+      "mean_ssim": 0.2848939897083067,
+      "mean_lpips": 0.8229246251285076
+    },
+    "B_H1_high": {
+      "mean_mse": 0.07816087707726402,
+      "mean_psnr_db": 11.521742364310004,
+      "mean_ssim": 0.2827008706784151,
+      "mean_lpips": 0.8081570006906986
+    },
+    "C_H1_high_noFIA": {
+      "mean_mse": 0.07815045044322919,
+      "mean_psnr_db": 11.51461116063817,
+      "mean_ssim": 0.277993884203648,
+      "mean_lpips": 0.8211588636040688
+    }
+  },
+  "lpips": {
+    "metrics": {
+      "x0": {
+        "mean_lpips": 0.8229246251285076,
+        "per_image": [
+          0.8946077227592468,
+          0.8210153579711914,
+          0.7983899116516113,
+          0.8559708595275879,
+          0.7906415462493896,
+          0.8701488971710205,
+          0.7816146612167358,
+          0.814141035079956,
+          0.7640813589096069,
+          0.7872798442840576,
+          0.8940839171409607,
+          0.8439177870750427,
+          0.8352307677268982,
+          0.7263423800468445,
+          0.8163847923278809,
+          0.8729431629180908
+        ]
+      },
+      "B_H1_high": {
+        "mean_lpips": 0.8081570006906986,
+        "per_image": [
+          0.8850359916687012,
+          0.8116191029548645,
+          0.8235714435577393,
+          0.8220735192298889,
+          0.7737938761711121,
+          0.7088437676429749,
+          0.7680441737174988,
+          0.802312433719635,
+          0.7721738815307617,
+          0.7896181344985962,
+          0.9213535189628601,
+          0.8362647294998169,
+          0.8194559812545776,
+          0.7292467355728149,
+          0.8146897554397583,
+          0.8524149656295776
+        ]
+      },
+      "C_H1_high_noFIA": {
+        "mean_lpips": 0.8211588636040688,
+        "per_image": [
+          0.8752366304397583,
+          0.8164948225021362,
+          0.7945647239685059,
+          0.8474281430244446,
+          0.7765965461730957,
+          0.863413393497467,
+          0.7681706547737122,
+          0.7992302179336548,
+          0.7882281541824341,
+          0.826513409614563,
+          0.8630431294441223,
+          0.8357614874839783,
+          0.8230307102203369,
+          0.795974850654602,
+          0.81345134973526,
+          0.8514035940170288
+        ]
+      }
+    },
+    "provenance": {
+      "implementation": "torchmetrics.image.lpip.LearnedPerceptualImagePatchSimilarity",
+      "net_type": "vgg",
+      "normalize_argument": false,
+      "device": "cpu",
+      "dtype": "float32",
+      "versions": {
+        "torch": "2.13.0+cu132",
+        "torchvision": "0.28.0+cu132",
+        "torchmetrics": "1.9.0"
+      },
+      "input_normalization": "FP32 RGB [0,1] to [-1,1] using (pixels - 0.5) * 2",
+      "weights": {
+        "backbone": {
+          "path": "C:\\Users\\조상제\\.cache\\torch\\hub\\checkpoints\\vgg16-397923af.pth",
+          "sha256": "397923af8e79cdbb6a7127f12361acd7a2f83e06b05044ddf496e83de57a5bf0"
+        },
+        "calibration": {
+          "path": "C:\\miniconda\\envs\\DLG\\Lib\\site-packages\\torchmetrics\\functional\\image\\lpips_models\\vgg.pth",
+          "sha256": "a78928a0af1e5f0fcb1f3b9e8f8c3a2a5a3de244d830ad5c1feddc79b8432868"
+        }
+      },
+      "downloads_allowed": false
+    }
+  },
+  "figure_artifacts": [
+    "all16_comparison.png"
+  ],
+  "fixed_ablation": {
+    "control": "B_H1_high",
+    "new_arm": "C_H1_high_noFIA",
+    "lambda_fia_control": 1.0,
+    "lambda_fia_new": 0.0,
+    "lambda_tv": 0.1,
+    "lambda_cell": 0.24202997768915402,
+    "h1_labels": [
+      507,
+      655,
+      452,
+      549,
+      231,
+      657,
+      160,
+      761,
+      975,
+      389,
+      658,
+      761,
+      621,
+      124,
+      969,
+      290
+    ]
+  },
+  "control_metric_reproduction": {
+    "matches_prior_report_with_tolerance": true,
+    "prior_means": {
+      "mean_mse": 0.07816087707726402,
+      "mean_psnr_db": 11.521742364310006,
+      "mean_ssim": 0.28270087067841515,
+      "mean_lpips": 0.8081569969654083
+    },
+    "current_means": {
+      "mean_mse": 0.07816087707726402,
+      "mean_psnr_db": 11.521742364310004,
+      "mean_ssim": 0.2827008706784151,
+      "mean_lpips": 0.8081570006906986
+    },
+    "difference": {
+      "mean_mse": 0.0,
+      "mean_psnr_db": -1.7763568394002505e-15,
+      "mean_ssim": -5.551115123125783e-17,
+      "mean_lpips": 3.725290298461914e-09
+    },
+    "tolerance": {
+      "mean_mse": 2e-08,
+      "mean_psnr_db": 2e-08,
+      "mean_ssim": 2e-08,
+      "mean_lpips": 2e-08
+    }
+  },
+  "public_gate": {
+    "finalization_task_id": "CPA_SIGNED_E2E_H1_NOFIA_FINALIZE_20260916",
+    "parent_task_id": "CPA_SIGNED_E2E_H1_NOFIA_20260916",
+    "protected_sources_unchanged": true,
+    "shared_sources_unchanged": true,
+    "inputs_unchanged": true,
+    "previous_control_files_unchanged": true,
+    "parent_artifacts_unchanged": true,
+    "endpoint_profiles_authenticated": true,
+    "hashes": {
+      "parent_recorded_inputs": {
+        "quantization_aware_cpa\\results\\signed_int4_baseline_B16_T10\\observation\\manifest.json": "9b4891765e6fc7e4adb1e3e11c158b3d4a2c3430d3397e1f1466ddafe2e1cd69",
+        "quantization_aware_cpa\\results\\signed_int4_baseline_B16_T10\\naive\\candidate.pt": "fe683f68013896a407a38130ee54ef9dc799a9ca1abf7c4f08efeefea7d91751",
+        "quantization_aware_cpa\\results\\signed_int4_baseline_B16_T10\\naive\\sources.pt": "c033e0df9304a6e0dcb19491bb43c3ac80cabed52566409e0f76dbe74194d7eb",
+        "C:\\Users\\조상제\\.cache\\torch\\hub\\checkpoints\\vgg16-397923af.pth": "397923af8e79cdbb6a7127f12361acd7a2f83e06b05044ddf496e83de57a5bf0",
+        "quantization_aware_cpa\\results\\signed_int4_baseline_B16_T10\\observation\\fc_00.sgn4": "697c24316428133714e9fad5831429adced101d90c921746b4802b0914079a70",
+        "quantization_aware_cpa\\results\\signed_int4_baseline_B16_T10\\observation\\fc_01.sgn4": "005da86bee21afa8bee1dda0a4cba492510c73b021b64114f030f3d9f52343a6",
+        "quantization_aware_cpa\\results\\signed_int4_baseline_B16_T10\\observation\\fc_02.sgn4": "b6bc983225a97a481832f4d028bf1f41a087f84e4810df01f69ce397d1875baf",
+        "quantization_aware_cpa\\results\\signed_int4_baseline_B16_T10\\observation\\fc_03.sgn4": "d8220d804ac511d93e307dfab6ed41d30718eb571d5e4725a62351bc5e5b0936",
+        "quantization_aware_cpa\\results\\signed_int4_baseline_B16_T10\\observation\\fc_04.sgn4": "12b8748b134e8a7c67bfa87c94b9b5de4f76128af7bf82fac196528b5b6c7996",
+        "quantization_aware_cpa\\results\\signed_int4_baseline_B16_T10\\observation\\fc_05.sgn4": "af6acbb5c356a9b9884823886383c8020093f6cf724dd6605a115df1afdcfdc7"
+      },
+      "current_inputs": {
+        "quantization_aware_cpa\\results\\signed_int4_baseline_B16_T10\\observation\\manifest.json": "9b4891765e6fc7e4adb1e3e11c158b3d4a2c3430d3397e1f1466ddafe2e1cd69",
+        "quantization_aware_cpa\\results\\signed_int4_baseline_B16_T10\\naive\\candidate.pt": "fe683f68013896a407a38130ee54ef9dc799a9ca1abf7c4f08efeefea7d91751",
+        "quantization_aware_cpa\\results\\signed_int4_baseline_B16_T10\\naive\\sources.pt": "c033e0df9304a6e0dcb19491bb43c3ac80cabed52566409e0f76dbe74194d7eb",
+        "C:\\Users\\조상제\\.cache\\torch\\hub\\checkpoints\\vgg16-397923af.pth": "397923af8e79cdbb6a7127f12361acd7a2f83e06b05044ddf496e83de57a5bf0",
+        "quantization_aware_cpa\\results\\signed_int4_baseline_B16_T10\\observation\\fc_00.sgn4": "697c24316428133714e9fad5831429adced101d90c921746b4802b0914079a70",
+        "quantization_aware_cpa\\results\\signed_int4_baseline_B16_T10\\observation\\fc_01.sgn4": "005da86bee21afa8bee1dda0a4cba492510c73b021b64114f030f3d9f52343a6",
+        "quantization_aware_cpa\\results\\signed_int4_baseline_B16_T10\\observation\\fc_02.sgn4": "b6bc983225a97a481832f4d028bf1f41a087f84e4810df01f69ce397d1875baf",
+        "quantization_aware_cpa\\results\\signed_int4_baseline_B16_T10\\observation\\fc_03.sgn4": "d8220d804ac511d93e307dfab6ed41d30718eb571d5e4725a62351bc5e5b0936",
+        "quantization_aware_cpa\\results\\signed_int4_baseline_B16_T10\\observation\\fc_04.sgn4": "12b8748b134e8a7c67bfa87c94b9b5de4f76128af7bf82fac196528b5b6c7996",
+        "quantization_aware_cpa\\results\\signed_int4_baseline_B16_T10\\observation\\fc_05.sgn4": "af6acbb5c356a9b9884823886383c8020093f6cf724dd6605a115df1afdcfdc7"
+      },
+      "parent_recorded_protected": {
+        "quantization_aware_cpa\\qacpa\\fc_replay.py": "bfe6b9671752edef941c56f80960ddea962b7e0ea44831f3c798887f41d4e49a",
+        "quantization_aware_cpa\\qacpa\\full_update_replay.py": "e45e9830bdcf2046de1c0e1ebe4579392c764065eb991826b9c6abd926af2e1c",
+        "quantization_aware_cpa\\qacpa\\full_update_adjoint.py": "882efe5424f4c57660d1c4c15a2af06c4b31180ffb84f7f9bbd191f31d7cbade",
+        "quantization_aware_cpa\\qacpa\\full_update_pipeline.py": "bdb9b0a10ecc77db1a8e6dbd089e43352aad5feabe6ef4298715a7805a3468c9",
+        "quantization_aware_cpa\\qacpa\\deterministic_hybrid_setup.py": "ca040e2e88f900b8490402bb18fc132f7c8a17e1b45d5662673ad6b56fbc958a",
+        "quantization_aware_cpa\\qacpa\\signed_baseline_observation.py": "2c18135e86e80c8f666033d5ea9d0c3495869ee60809fed04e295f28fa92cda2",
+        "quantization_aware_cpa\\qacpa\\signed_cell_rank.py": "7ae6deb49738914f4cd1f9328397400d89835ede4cd6a462b2ea260a77ae4acb",
+        "quantization_aware_cpa\\qacpa\\signed_cell_rank_evaluation.py": "c163aaa54bd8d5ebfc1528f49cafe2a830de72a9d7fe38583391b7ddaf4a65ef",
+        "quantization_aware_cpa\\qacpa\\upstream_naive.py": "8f29b885d86f4121eda5c55e17486a3a48bd8db08b2f83890fe7726730d1ee92",
+        "quantized_update_cpa\\cell_utils.py": "6725bce108a8e795680342231696c70f1d2bc8b01a727022c605e40aa841d361",
+        "official_cpa\\src\\gradient_inversion.py": "c598e1ee7b4079f741060d10c8dfd14711e393a97384c63cf32be77a458b1873",
+        "official_cpa\\src\\feature_inversion.py": "dc73880427e3eaf1f873d295f17f1d48d301882f634ee5df36ddeea8e56c4dec",
+        "official_cpa\\src\\vgg16.py": "8114eca8cde553dace5f777aedd21b70851c570d473e597b005cb6be4b248d36"
+      },
+      "current_protected": {
+        "quantization_aware_cpa\\qacpa\\fc_replay.py": "bfe6b9671752edef941c56f80960ddea962b7e0ea44831f3c798887f41d4e49a",
+        "quantization_aware_cpa\\qacpa\\full_update_replay.py": "e45e9830bdcf2046de1c0e1ebe4579392c764065eb991826b9c6abd926af2e1c",
+        "quantization_aware_cpa\\qacpa\\full_update_adjoint.py": "882efe5424f4c57660d1c4c15a2af06c4b31180ffb84f7f9bbd191f31d7cbade",
+        "quantization_aware_cpa\\qacpa\\full_update_pipeline.py": "bdb9b0a10ecc77db1a8e6dbd089e43352aad5feabe6ef4298715a7805a3468c9",
+        "quantization_aware_cpa\\qacpa\\deterministic_hybrid_setup.py": "ca040e2e88f900b8490402bb18fc132f7c8a17e1b45d5662673ad6b56fbc958a",
+        "quantization_aware_cpa\\qacpa\\signed_baseline_observation.py": "2c18135e86e80c8f666033d5ea9d0c3495869ee60809fed04e295f28fa92cda2",
+        "quantization_aware_cpa\\qacpa\\signed_cell_rank.py": "7ae6deb49738914f4cd1f9328397400d89835ede4cd6a462b2ea260a77ae4acb",
+        "quantization_aware_cpa\\qacpa\\signed_cell_rank_evaluation.py": "c163aaa54bd8d5ebfc1528f49cafe2a830de72a9d7fe38583391b7ddaf4a65ef",
+        "quantization_aware_cpa\\qacpa\\upstream_naive.py": "8f29b885d86f4121eda5c55e17486a3a48bd8db08b2f83890fe7726730d1ee92",
+        "quantized_update_cpa\\cell_utils.py": "6725bce108a8e795680342231696c70f1d2bc8b01a727022c605e40aa841d361",
+        "official_cpa\\src\\gradient_inversion.py": "c598e1ee7b4079f741060d10c8dfd14711e393a97384c63cf32be77a458b1873",
+        "official_cpa\\src\\feature_inversion.py": "dc73880427e3eaf1f873d295f17f1d48d301882f634ee5df36ddeea8e56c4dec",
+        "official_cpa\\src\\vgg16.py": "8114eca8cde553dace5f777aedd21b70851c570d473e597b005cb6be4b248d36"
+      },
+      "parent_recorded_shared": {
+        "quantization_aware_cpa\\qacpa\\signed_e2e_cells.py": "d69a6fd4a79eecf128c085079559cfd1808e1d7fa05794dce0fe72877d8b6db2",
+        "quantization_aware_cpa\\qacpa\\signed_e2e_runner.py": "2c68298f3fe6b38e5040231c2f21a250a07761e5fe93f3a259226360483253df",
+        "quantization_aware_cpa\\qacpa\\fc_replay.py": "bfe6b9671752edef941c56f80960ddea962b7e0ea44831f3c798887f41d4e49a",
+        "quantization_aware_cpa\\qacpa\\full_update_replay.py": "e45e9830bdcf2046de1c0e1ebe4579392c764065eb991826b9c6abd926af2e1c",
+        "quantization_aware_cpa\\qacpa\\full_update_adjoint.py": "882efe5424f4c57660d1c4c15a2af06c4b31180ffb84f7f9bbd191f31d7cbade"
+      },
+      "current_shared": {
+        "quantization_aware_cpa\\qacpa\\signed_e2e_cells.py": "d69a6fd4a79eecf128c085079559cfd1808e1d7fa05794dce0fe72877d8b6db2",
+        "quantization_aware_cpa\\qacpa\\signed_e2e_runner.py": "2c68298f3fe6b38e5040231c2f21a250a07761e5fe93f3a259226360483253df",
+        "quantization_aware_cpa\\qacpa\\fc_replay.py": "bfe6b9671752edef941c56f80960ddea962b7e0ea44831f3c798887f41d4e49a",
+        "quantization_aware_cpa\\qacpa\\full_update_replay.py": "e45e9830bdcf2046de1c0e1ebe4579392c764065eb991826b9c6abd926af2e1c",
+        "quantization_aware_cpa\\qacpa\\full_update_adjoint.py": "882efe5424f4c57660d1c4c15a2af06c4b31180ffb84f7f9bbd191f31d7cbade"
+      },
+      "parent_artifacts": {
+        "registration.json": true,
+        "full_size_numeric_check.json": true,
+        "initial_calibration_comparison.json": true,
+        "x0_candidate.pt": true,
+        "x0_metadata.json": true,
+        "failure.json": true,
+        "summary.json": true,
+        "C_H1_high_noFIA/candidate.pt": true,
+        "C_H1_high_noFIA/attack_state.pt": true,
+        "C_H1_high_noFIA/result.json": true,
+        "C_H1_high_noFIA/optimization_log.json": true
+      }
+    },
+    "candidate_hashes": {
+      "x0_file": "fe683f68013896a407a38130ee54ef9dc799a9ca1abf7c4f08efeefea7d91751",
+      "B_H1_high": "b352c3bde7db87ff00ecbbbd4715c5c865ada662c4dcf88b1e116f5369ec9d5a",
+      "C_H1_high_noFIA": "5a20b87bf69473bf7696e46d9054c0f3d04a4c02f98ffde6ee3969374bf4e525"
+    }
+  },
+  "source_integrity_after_private": {
+    "protected_sources_unchanged": true,
+    "inputs_unchanged": true
+  },
+  "directional_interpretation": {
+    "rule": "fixed-H1 paired descriptive FIA-weight contrast; no threshold, selection, or generalization",
+    "private_metrics_not_used_for_attack_or_selection": true,
+    "labels_consumed": false
+  }
+}

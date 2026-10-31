@@ -1,0 +1,48 @@
+{
+  "tests": {
+    "task_id": "CPA_SIGNED_E2E_H1_NOFIA_20260916",
+    "stage": "focused_and_relevant_tests",
+    "command": [
+      "C:/miniconda/envs/DLG/python.exe",
+      "-m",
+      "pytest",
+      "quantization_aware_cpa/tests/test_signed_e2e_nofia.py",
+      "quantization_aware_cpa/tests/test_signed_e2e_cells.py",
+      "quantization_aware_cpa/tests/test_fc_replay.py",
+      "quantization_aware_cpa/tests/test_signed_stage_diagnostics.py",
+      "quantization_aware_cpa/tests/test_signed_cell_rank.py",
+      "quantization_aware_cpa/tests/test_signed_cell_rank_pipeline.py",
+      "quantization_aware_cpa/tests/test_signed_cell_rank_validation.py",
+      "-q",
+      "--basetemp",
+      ".tmp_pytest_signed_e2e_h1_nofia_20260916"
+    ],
+    "cwd": "C:/Users/조상제/Desktop/CPA",
+    "started_at_utc": "2026-09-16T08:33:32.200821+00:00",
+    "exit_status": 0,
+    "wall_seconds": 11.458534199977294
+  },
+  "runner": {
+    "task_id": "CPA_SIGNED_E2E_H1_NOFIA_20260916",
+    "stage": "public_one_arm_noFIA_and_replay",
+    "command": [
+      "C:/miniconda/envs/DLG/python.exe",
+      "-m",
+      "quantization_aware_cpa.qacpa.signed_e2e_nofia_runner",
+      "--public-observation",
+      "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int4_baseline_B16_T10/observation",
+      "--naive",
+      "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int4_baseline_B16_T10/naive",
+      "--checkpoint",
+      "C:/Users/조상제/.cache/torch/hub/checkpoints/vgg16-397923af.pth",
+      "--output",
+      "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_e2e_h1_nofia_B16_T10_20260916"
+    ],
+    "cwd": "C:/Users/조상제/Desktop/CPA",
+    "started_at_utc": "2026-09-16T08:36:10.003438+00:00",
+    "exit_status": 1,
+    "wall_seconds": 157.8018749000039
+  },
+  "status": "FAILED_PUBLIC_RUNNER",
+  "wall_seconds": 169.26204069994856
+}

@@ -1,0 +1,12 @@
+{
+  "n_jobs": 32,
+  "n_done": 0,
+  "n_metric_rows": 0,
+  "outputs": {
+    "observed_metrics": "results\\v10_m4_phase_A_report\\phase_A_observed_metrics.csv",
+    "job_status": "results\\v10_m4_phase_A_report\\phase_A_job_status.csv",
+    "prediction_figure": "results\\v10_m4_phase_A_report\\mp_predicted_vs_observed_beff.png",
+    "granularity_tradeoff": "results\\v10_m4_phase_A_report\\granularity_tradeoff.csv",
+    "phase_B_selected_manifest": "results\\v10_m4_phase_A_report\\phase_B_selected_manifest.csv"
+  }
+}

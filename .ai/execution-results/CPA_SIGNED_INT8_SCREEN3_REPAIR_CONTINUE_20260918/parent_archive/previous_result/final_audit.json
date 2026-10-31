@@ -1,0 +1,189 @@
+{
+  "task_id": "CPA_SIGNED_INT8_RANDOMIZED8_SCREEN3_FIA_20260917",
+  "status": "PARTIAL",
+  "scientific_quality": "NOT_EVALUATED",
+  "failure": {
+    "stage": "public_attack",
+    "error_type": "StagedFIAError",
+    "error": "25000 trajectory did not produce its 5000 checkpoint",
+    "meaning": "continuation child had an authenticated parent checkpoint and completed 20000 additional updates; the writer then incorrectly required a new prefix checkpoint before writing result/candidate",
+    "no_restart": true
+  },
+  "completed_stages": [
+    "registration",
+    "sender",
+    "nine_separations",
+    "public_alignment",
+    "center_25000",
+    "eight_member_5000_screens",
+    "public_top3_selection",
+    "member_01_continuation_updates_to_25000"
+  ],
+  "not_run": [
+    "member_07_continuation",
+    "member_05_continuation",
+    "private_gate",
+    "private_evaluation",
+    "figures"
+  ],
+  "separation": {
+    "calls": 9,
+    "all_fastica_converged": true
+  },
+  "selection": {
+    "selected_member_indices": [
+      1,
+      7,
+      5
+    ],
+    "ranking": [
+      {
+        "rank": 1,
+        "member_index": 1,
+        "score": 0.07304210960865021
+      },
+      {
+        "rank": 2,
+        "member_index": 7,
+        "score": 0.07420720905065536
+      },
+      {
+        "rank": 3,
+        "member_index": 5,
+        "score": 0.0743328183889389
+      },
+      {
+        "rank": 4,
+        "member_index": 0,
+        "score": 0.07454453408718109
+      },
+      {
+        "rank": 5,
+        "member_index": 2,
+        "score": 0.07511814683675766
+      },
+      {
+        "rank": 6,
+        "member_index": 3,
+        "score": 0.07611936330795288
+      },
+      {
+        "rank": 7,
+        "member_index": 4,
+        "score": 0.0766577422618866
+      },
+      {
+        "rank": 8,
+        "member_index": 6,
+        "score": 0.07926438748836517
+      }
+    ],
+    "private_metrics_used": false
+  },
+  "center": {
+    "checkpoint_5000_sha256": "ae7942cfce971091a9cb0ca357ebde184fe9e9f03977cd4c7a2a16273e5be1b6",
+    "checkpoint_25000_sha256": "2e6f075d2097d0c663648564359aae729895b86ebf090eae107a2931f0c9c9fe",
+    "candidate_5000_sha256": "8dedc50fe179663195e8e2061a62a1ea6369abd24c92fb7415628f1c6b032de6",
+    "candidate_25000_sha256": "696d18fc23e23ea62834a6c0af849e6549ef47994e4c63fee54c53351d85a0db"
+  },
+  "member_prefixes": [
+    {
+      "member_index": 0,
+      "checkpoint": true,
+      "candidate": true,
+      "result": true,
+      "checkpoint_sha256": "ef5d2c7f57aaccbe4e2ffbf54ea2cf66bf29eedb2ef241f201b6336154f53813",
+      "result_status": "COMPLETED",
+      "completed_iterations": 5000
+    },
+    {
+      "member_index": 1,
+      "checkpoint": true,
+      "candidate": true,
+      "result": true,
+      "checkpoint_sha256": "8932029334060d05b9f50a75b8a4a3dd816d8726a1b41bbcbdd8bd470f033cb5",
+      "result_status": "COMPLETED",
+      "completed_iterations": 5000
+    },
+    {
+      "member_index": 2,
+      "checkpoint": true,
+      "candidate": true,
+      "result": true,
+      "checkpoint_sha256": "ec454f859f12d912148ed4a93aee4343f089586134edbbbeee4aafa647dddd92",
+      "result_status": "COMPLETED",
+      "completed_iterations": 5000
+    },
+    {
+      "member_index": 3,
+      "checkpoint": true,
+      "candidate": true,
+      "result": true,
+      "checkpoint_sha256": "7b486947edb31f0322e0bfa4fe48bbf195ecf874a4343f4f9d0cd6cd2195ebf3",
+      "result_status": "COMPLETED",
+      "completed_iterations": 5000
+    },
+    {
+      "member_index": 4,
+      "checkpoint": true,
+      "candidate": true,
+      "result": true,
+      "checkpoint_sha256": "b11df9a22d70cba44eff3c3aac1ebb92c01089f812efc1b2cdf4e84d982c8455",
+      "result_status": "COMPLETED",
+      "completed_iterations": 5000
+    },
+    {
+      "member_index": 5,
+      "checkpoint": true,
+      "candidate": true,
+      "result": true,
+      "checkpoint_sha256": "7bdccb705c2edb911ce33f283e68167cb41c160262e336d667f3fdd7f1ce3908",
+      "result_status": "COMPLETED",
+      "completed_iterations": 5000
+    },
+    {
+      "member_index": 6,
+      "checkpoint": true,
+      "candidate": true,
+      "result": true,
+      "checkpoint_sha256": "ad0d2e5a26b04f73cd9ab6fec6089f517d4367e3631207fa5714147acd9f5b06",
+      "result_status": "COMPLETED",
+      "completed_iterations": 5000
+    },
+    {
+      "member_index": 7,
+      "checkpoint": true,
+      "candidate": true,
+      "result": true,
+      "checkpoint_sha256": "5e8f6ead3dd7a3e2f486fb6adb587c55411ebdaf2f28b40d1d41d8fa21c154da",
+      "result_status": "COMPLETED",
+      "completed_iterations": 5000
+    }
+  ],
+  "member_01_child": {
+    "checkpoint_25000_sha256": "e48fee1e339d2f47c25cd308f3f78cad0ff44e2b6e6d78ea72d8669190f14353",
+    "completed_iterations": 25000,
+    "parent_checkpoint_sha256": "8932029334060d05b9f50a75b8a4a3dd816d8726a1b41bbcbdd8bd470f033cb5",
+    "parent_checkpoint_matches_member_01_prefix": true,
+    "candidate_saved": false,
+    "result_saved": false
+  },
+  "update_counts": {
+    "center": 25000,
+    "member_prefixes": 40000,
+    "member_continuation_additional": 20000,
+    "total_executed": 85000,
+    "registered_total": 125000
+  },
+  "private_boundary": {
+    "sender_true_updates_consumed": true,
+    "attack_true_updates_consumed": false,
+    "evaluator_true_updates_consumed": false,
+    "private_evaluation_started": false
+  },
+  "actual_image_cell_feasibility": "NOT_EVALUATED",
+  "source_and_parent_evidence": {
+    "parent_failure_evidence": "C:/Users/조상제/Desktop/CPA/.ai/execution-results/CPA_SIGNED_INT8_RANDOMIZED8_SCREEN3_FIA_20260917/parent_failure_evidence",
+    "ownership_transition": "C:/Users/조상제/Desktop/CPA/.ai/execution-results/CPA_SIGNED_INT8_RANDOMIZED8_SCREEN3_FIA_20260917/ownership_transition.json"
+  }
+}

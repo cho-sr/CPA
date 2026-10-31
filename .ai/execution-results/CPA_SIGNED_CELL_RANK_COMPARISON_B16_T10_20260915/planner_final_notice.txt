@@ -1,0 +1,14 @@
+[CPA final comparison failure | user-authorized one-time handoff]
+SESSION_ROLE: CODEX_EXECUTOR
+TASK_ID: CPA_SIGNED_CELL_RANK_COMPARISON_B16_T10_20260915
+PLAN_VERSION: 1
+Executor thread: 01a09e4d-51f3-7121-84e2-03a7a9ac3039; PID: 18272
+Planner recipient: 01a09ac2-0e8d-7f90-94a8-c45be99f4343; PID: 12728
+Result report: C:\Users\조상제\Desktop\CPA\.ai\execution-results\CPA_SIGNED_CELL_RANK_COMPARISON_B16_T10_20260915\report.md
+Results JSON: C:\Users\조상제\Desktop\CPA\.ai\execution-results\CPA_SIGNED_CELL_RANK_COMPARISON_B16_T10_20260915\results.json
+
+The one authorized comparison stopped after successful AP5 preprocessing and successful original CPA25000/FIA25000. The final offline evaluator exited 1 before loading private true-G or images/embeddings because signed_cell_rank_evaluation.py line 297 raised NameError: name 'legacy_naive' is not defined. No stage was restarted and no conditions changed.
+
+Completed artifacts are preserved at quantization_aware_cpa/results/signed_cell_rank_B16_T10/preprocess_ap5 and cell_rank_ap5. Final offline metrics are NOT_COMPUTED: embedding cosine, LPIPS, PSNR, SSIM, and true-G relative error. protected_match=true; signed_cell_rank.py SHA256 remains 7ae6deb49738914f4cd1f9328397400d89835ede4cd6a462b2ea260a77ae4acb. FULL_EXPERIMENT_STATUS is INCOMPLETE_STOPPED_ON_FAILURE.
+
+Show this failure and the report once in the existing Planner CLI. Do not append a relay turn, reply, retry, rebind, monitor, restart an arm, or start new work; then end your turn.

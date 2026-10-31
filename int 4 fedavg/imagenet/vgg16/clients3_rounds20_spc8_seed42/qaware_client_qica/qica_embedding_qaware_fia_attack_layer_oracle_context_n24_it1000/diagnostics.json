@@ -1,0 +1,476 @@
+{
+  "client_sample_and_a_column_order": {
+    "all_ok": true,
+    "clients": [
+      {
+        "a_column_meaning": "A_k[:, j] multiplies z_target/client_feature row j in this client slice.",
+        "a_shape": [
+          4096,
+          8
+        ],
+        "attack_order_rows": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "client_id": 0,
+        "context_original_index_order_ok": true,
+        "dataset_original_indices": [
+          37542,
+          44491,
+          216,
+          43688,
+          41558,
+          32245,
+          27206,
+          10863
+        ],
+        "expected_client_original_indices": [
+          37542,
+          44491,
+          216,
+          43688,
+          41558,
+          32245,
+          27206,
+          10863
+        ],
+        "num_samples": 8,
+        "ok": true,
+        "sample_slice": [
+          0,
+          8
+        ],
+        "shape_ok": true,
+        "slice_matches_selected_rows": true,
+        "target_shape": [
+          4096,
+          25088
+        ]
+      },
+      {
+        "a_column_meaning": "A_k[:, j] multiplies z_target/client_feature row j in this client slice.",
+        "a_shape": [
+          4096,
+          8
+        ],
+        "attack_order_rows": [
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "client_id": 1,
+        "context_original_index_order_ok": true,
+        "dataset_original_indices": [
+          2190,
+          31849,
+          25408,
+          33504,
+          27102,
+          21934,
+          40181,
+          47682
+        ],
+        "expected_client_original_indices": [
+          2190,
+          31849,
+          25408,
+          33504,
+          27102,
+          21934,
+          40181,
+          47682
+        ],
+        "num_samples": 8,
+        "ok": true,
+        "sample_slice": [
+          8,
+          16
+        ],
+        "shape_ok": true,
+        "slice_matches_selected_rows": true,
+        "target_shape": [
+          4096,
+          25088
+        ]
+      },
+      {
+        "a_column_meaning": "A_k[:, j] multiplies z_target/client_feature row j in this client slice.",
+        "a_shape": [
+          4096,
+          8
+        ],
+        "attack_order_rows": [
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23
+        ],
+        "client_id": 2,
+        "context_original_index_order_ok": true,
+        "dataset_original_indices": [
+          45747,
+          17004,
+          43777,
+          7433,
+          45129,
+          37684,
+          14817,
+          38215
+        ],
+        "expected_client_original_indices": [
+          45747,
+          17004,
+          43777,
+          7433,
+          45129,
+          37684,
+          14817,
+          38215
+        ],
+        "num_samples": 8,
+        "ok": true,
+        "sample_slice": [
+          16,
+          24
+        ],
+        "shape_ok": true,
+        "slice_matches_selected_rows": true,
+        "target_shape": [
+          4096,
+          25088
+        ]
+      }
+    ],
+    "note": "The selected row index is the attack-order row in context['x'], context['z'], and final_embeddings.npy after any requested alignment.",
+    "selected_attack_order_rows": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23
+    ]
+  },
+  "embedding_alignment": {
+    "context_row_to_embedding_row": [
+      14,
+      16,
+      12,
+      3,
+      19,
+      17,
+      7,
+      6,
+      0,
+      11,
+      1,
+      13,
+      21,
+      2,
+      15,
+      23,
+      22,
+      18,
+      4,
+      5,
+      9,
+      8,
+      20,
+      10
+    ],
+    "embedding_path": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\int 4 fedavg\\imagenet\\vgg16\\clients3_rounds20_spc8_seed42\\qaware_client_qica\\qon_neoff\\final_embeddings.npy",
+    "embedding_shape": [
+      24,
+      25088
+    ],
+    "least_squares_sign_scales": [
+      33.40198153774585,
+      152.3249211337932,
+      249.1094455916851,
+      73.75110423678204,
+      266.23990347007555,
+      238.39984171130638,
+      209.02897743832185,
+      6.949877690973794,
+      -106.20609967433117,
+      168.7906896949883,
+      84.05395956232123,
+      95.47454129876395,
+      19.39225514217143,
+      55.277620384962106,
+      133.91667023758401,
+      108.15164361377884,
+      153.30741128667518,
+      282.7188749601075,
+      -33.04983883406595,
+      74.55596804543696,
+      82.28003505362568,
+      73.95561412524896,
+      102.7742958345387,
+      302.9744215823472
+    ],
+    "max_abs_cosine": 0.21333493267674414,
+    "mean_abs_cosine": 0.1000634967910106,
+    "mean_signed_cosine": 0.08535671325044898,
+    "median_abs_cosine": 0.11308969946338543,
+    "min_abs_cosine": 0.00550170874643347,
+    "note": "oracle_context uses context['z']; use it for diagnostics/upper-bound, not a blind attack claim.",
+    "oracle_context_used": true,
+    "policy": "oracle_context_hungarian_abs_cosine_with_least_squares_sign_scale",
+    "row_policy": "full_context_oracle_alignment_then_select_attack_order_rows",
+    "selected_attack_order_rows": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23
+    ],
+    "selected_count": 24,
+    "selected_embedding_rows": [
+      14,
+      16,
+      12,
+      3,
+      19,
+      17,
+      7,
+      6,
+      0,
+      11,
+      1,
+      13,
+      21,
+      2,
+      15,
+      23,
+      22,
+      18,
+      4,
+      5,
+      9,
+      8,
+      20,
+      10
+    ],
+    "selected_least_squares_sign_scales": [
+      33.40198153774585,
+      152.3249211337932,
+      249.1094455916851,
+      73.75110423678204,
+      266.23990347007555,
+      238.39984171130638,
+      209.02897743832185,
+      6.949877690973794,
+      -106.20609967433117,
+      168.7906896949883,
+      84.05395956232123,
+      95.47454129876395,
+      19.39225514217143,
+      55.277620384962106,
+      133.91667023758401,
+      108.15164361377884,
+      153.30741128667518,
+      282.7188749601075,
+      -33.04983883406595,
+      74.55596804543696,
+      82.28003505362568,
+      73.95561412524896,
+      102.7742958345387,
+      302.9744215823472
+    ]
+  },
+  "feature_axis_note": "This factorization uses A_k @ z with A_k acting on sample rows. It can absorb sample-row permutation/sign/scale through A_k columns, but it cannot undo arbitrary feature-column permutation/sign/scale.",
+  "final_lq_pixel_gradient_probe": {
+    "eps": 1e-12,
+    "loss_q": 3.0418723434761687e-15,
+    "nonzero_pixel_gradient": false,
+    "pixel_logit_grad": {
+      "l2": 2.2313453449607813e-17,
+      "max_abs": 4.601891641931707e-19,
+      "nonzero_fraction": 0.0
+    },
+    "q_metrics": {
+      "bin_satisfaction": 0.988671322663625,
+      "mean_bin_violation": 5.1378690931377e-09,
+      "requantization_match": 0.9886591831843058,
+      "total_q_elements": 308281344.0
+    },
+    "status": "zero_gradient_because_q_loss_is_zero_or_inside_bins",
+    "z_grad": {
+      "l2": 1.2206145125350944e-17,
+      "max_abs": 7.863665905514722e-19,
+      "nonzero_fraction": 0.0
+    }
+  },
+  "initial_lq_pixel_gradient_probe": {
+    "eps": 1e-12,
+    "loss_q": 3.741886629108487e-15,
+    "nonzero_pixel_gradient": false,
+    "pixel_logit_grad": {
+      "l2": 2.830680877583425e-17,
+      "max_abs": 1.3644011263865639e-18,
+      "nonzero_fraction": 0.0
+    },
+    "q_metrics": {
+      "bin_satisfaction": 0.9861648678779602,
+      "mean_bin_violation": 6.104792227290545e-09,
+      "requantization_match": 0.986030360062917,
+      "total_q_elements": 308281344.0
+    },
+    "status": "zero_gradient_because_q_loss_is_zero_or_inside_bins",
+    "z_grad": {
+      "l2": 1.4149003787058343e-17,
+      "max_abs": 7.9712655595956195e-19,
+      "nonzero_fraction": 0.0
+    }
+  },
+  "mixing_init_on_z_qica": {
+    "bin_satisfaction": 0.9887210528055826,
+    "loss_mix_l2": 7.552610567049148e-16,
+    "loss_q": 3.25410068357547e-15,
+    "mean_bin_violation": 5.388545017600184e-09,
+    "note": "This checks A_k @ z_qica before image optimization.",
+    "requantization_match": 0.9887210528055826,
+    "total_q_elements": 308281344.0
+  },
+  "sample_axis_permutation_sign_scale_inverse": {
+    "all_ok": true,
+    "axis": "sample_rows",
+    "clients": [
+      {
+        "client_id": 0,
+        "inverse_rule": "if z'_j = d_j * z_perm[j], then A'_[:,j] = A[:,perm[j]] / d_j",
+        "max_abs_error": 5.684341886080802e-14,
+        "ok": true,
+        "permutation_new_row_to_old_row": [
+          6,
+          1,
+          7,
+          4,
+          0,
+          5,
+          3,
+          2
+        ],
+        "relative_l2_error": 7.373763821760804e-08,
+        "sign_scale_new_row": [
+          1.4451409578323364,
+          1.3337453603744507,
+          -0.8104537129402161,
+          -0.6928927898406982,
+          -0.7550641894340515,
+          -0.637248694896698,
+          1.8026832342147827,
+          -1.0393890142440796
+        ]
+      },
+      {
+        "client_id": 1,
+        "inverse_rule": "if z'_j = d_j * z_perm[j], then A'_[:,j] = A[:,perm[j]] / d_j",
+        "max_abs_error": 4.263256414560601e-14,
+        "ok": true,
+        "permutation_new_row_to_old_row": [
+          7,
+          2,
+          4,
+          5,
+          0,
+          3,
+          1,
+          6
+        ],
+        "relative_l2_error": 8.364455084119982e-08,
+        "sign_scale_new_row": [
+          0.6509235501289368,
+          -1.5546263456344604,
+          -0.3919433653354645,
+          0.6858386993408203,
+          1.0053586959838867,
+          -1.154740571975708,
+          1.1012518405914307,
+          0.794334888458252
+        ]
+      },
+      {
+        "client_id": 2,
+        "inverse_rule": "if z'_j = d_j * z_perm[j], then A'_[:,j] = A[:,perm[j]] / d_j",
+        "max_abs_error": 4.263256414560601e-14,
+        "ok": true,
+        "permutation_new_row_to_old_row": [
+          6,
+          3,
+          2,
+          1,
+          0,
+          4,
+          5,
+          7
+        ],
+        "relative_l2_error": 6.626119386510254e-08,
+        "sign_scale_new_row": [
+          -1.3872472047805786,
+          0.9461433291435242,
+          -1.4354678392410278,
+          -1.4626494646072388,
+          1.9537708759307861,
+          1.3429319858551025,
+          0.7186479568481445,
+          -0.8356125950813293
+        ]
+      }
+    ],
+    "note": "A_k is [attack_layer_rows, client_samples], so its columns can invert sample-row permutation/sign/scale. Feature-column transforms of z are not inverted by A_k."
+  }
+}

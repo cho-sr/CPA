@@ -1,0 +1,40 @@
+{
+  "task_id": "CPA_PAPER_SPARSE_SAME80_K503020_R20_20260921",
+  "plan_version": 3,
+  "amendment_id": "CPA_PAPER_SPARSE_SAME16_R8_AMENDMENT_20260921",
+  "keep_percent": 50,
+  "source_codec": "topk50_global_bitmap_fp32_v1",
+  "batches": [
+    {
+      "source_codec": "topk50_global_bitmap_fp32_v1",
+      "generic_codec": "topk_global_bitmap_fp32_v1",
+      "shape": [
+        4096,
+        25088
+      ],
+      "elements": 102760448,
+      "kept_elements": 51380224,
+      "keep_percent": 50,
+      "packet_bytes": 218365984,
+      "bitmap_bytes": 12845056,
+      "value_bytes": 205520896,
+      "header_bytes": 32,
+      "expected_packet_bytes": 218365984,
+      "mask_sha256": "8f43f89316f4cb0d959a1d792f50b2c65584717a404369e3932c86f3747c1e74",
+      "retained_values_sha256": "efb6b82f288a11bc367d232ea0c6a24e148c9647df3edafeafbbdbb02c7b06da",
+      "retained_fp32_bits_exact": true,
+      "row_major_little_bit_order": true,
+      "tie_break": "flat index ascending",
+      "historical_50_schema_checked": true,
+      "mask_equal": true,
+      "retained_fp32_bits_equal": true,
+      "decoded_tensor_equal": true,
+      "generic_recompression_equal": true,
+      "batch_index": 0,
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\cpa_fia_topk50_same80_B16\\batch00\\observation.bin",
+      "sha256": "9bd2646bb1d9f185b503a036f678d30dce389dae990add706795a4b03d15dec7",
+      "baseline_summary_sha256": "6e82711eb301bed97f8acb69d4f1c372932c1b92301b781068997f5117447a18",
+      "baseline_communication_sha256": "d6079404112b7b0b0f0475c4f5ad270f399d7314cf252f179c8d04bebb93fda5"
+    }
+  ]
+}

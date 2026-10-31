@@ -1,0 +1,28 @@
+{
+  "source_directories": [
+    "bit04",
+    "bit08"
+  ],
+  "center": "candidate000 (q * scale)",
+  "random_candidates": "candidate001..candidate099",
+  "metric": "recorded CPA/FIA total loss",
+  "x_axis": "attack optimization step (logged iter + 1)",
+  "logged_steps": [
+    1,
+    5000,
+    10000,
+    15000,
+    20000,
+    25000
+  ],
+  "band": "pointwise min and max of 99 random candidate losses",
+  "interpolation": "straight segments between recorded values; no additional measurements",
+  "artifacts": [
+    "total_loss_minmax.csv",
+    "bit04_cpa_total_loss.png",
+    "bit04_fia_total_loss.png",
+    "bit08_cpa_total_loss.png",
+    "bit08_fia_total_loss.png",
+    "overview_total_loss.png"
+  ]
+}

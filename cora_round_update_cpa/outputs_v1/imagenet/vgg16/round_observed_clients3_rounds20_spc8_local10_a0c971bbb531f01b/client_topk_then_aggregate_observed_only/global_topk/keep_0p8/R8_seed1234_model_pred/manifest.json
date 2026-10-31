@@ -1,0 +1,12 @@
+{
+  "ensemble_size": 8,
+  "exact_aggregate_ranking": true,
+  "keep_ratio": 0.8,
+  "member_ranking_file": "consistency_member_ranking.csv",
+  "method": "CoRA round-update aggregate consistency ranking",
+  "per_client_observations_used": false,
+  "ranking_observation": "aggregate_sparse_round_update_only",
+  "schema_version": 1,
+  "selected_member": 4,
+  "selected_member_run_path": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\sparsified_update_cpa\\outputs_v1\\author_runs\\imagenet\\vgg16\\attack\\cp_direct\\nodef\\cora_round_update_cpa_roundagg_keep0p8_n24_round20_R8_seed1234_m004_uia"
+}

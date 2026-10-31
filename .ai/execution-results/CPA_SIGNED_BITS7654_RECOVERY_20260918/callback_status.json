@@ -1,0 +1,33 @@
+{
+  "task_id": "CPA_SIGNED_BITS7654_RECOVERY_20260918",
+  "state": "NOTIFICATION_QUEUED",
+  "wrapper_pid": 28600,
+  "wrapper_created_ms": 1789691952231,
+  "callback_pid": 17792,
+  "executor": {
+    "thread": "01a0a799-f1ce-7b31-8c46-b4ddef40aeab",
+    "pid": 14236,
+    "started_ms": 1789518279030,
+    "model": "gpt-5.6-luna",
+    "reasoning_effort": "xhigh",
+    "cwd": "\\\\?\\C:\\Users\\조상제\\Desktop\\CPA"
+  },
+  "registered_at": "2026-09-18T00:39:12.420804+00:00",
+  "model_calls_while_waiting": 0,
+  "process_exit_code": 1,
+  "ended_at": "2026-09-18T00:41:12.548535+00:00",
+  "recorded_status": "PARTIAL",
+  "recorded_bit_status": {
+    "7": "FAILED",
+    "6": "BLOCKED_BY_PREVIOUS_FAILURE",
+    "5": "BLOCKED_BY_PREVIOUS_FAILURE",
+    "4": "BLOCKED_BY_PREVIOUS_FAILURE"
+  },
+  "notification_started_at": "2026-09-18T00:41:12.550534+00:00",
+  "delivery": {
+    "exit_code": 0,
+    "stdout": "Queued message 01a0b1f5-d2ba-7032-bf2c-f95cdbdb1f81 for thread 01a0a799-f1ce-7b31-8c46-b4ddef40aeab.\n",
+    "stderr": ""
+  },
+  "notified_at": "2026-09-18T00:41:12.687070+00:00"
+}

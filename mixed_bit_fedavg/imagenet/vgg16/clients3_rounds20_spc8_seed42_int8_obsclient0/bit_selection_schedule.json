@@ -1,0 +1,302 @@
+[
+  {
+    "client_id": 0,
+    "quant_bits": 8,
+    "round": 1
+  },
+  {
+    "client_id": 1,
+    "quant_bits": 8,
+    "round": 1
+  },
+  {
+    "client_id": 2,
+    "quant_bits": 8,
+    "round": 1
+  },
+  {
+    "client_id": 0,
+    "quant_bits": 8,
+    "round": 2
+  },
+  {
+    "client_id": 1,
+    "quant_bits": 8,
+    "round": 2
+  },
+  {
+    "client_id": 2,
+    "quant_bits": 8,
+    "round": 2
+  },
+  {
+    "client_id": 0,
+    "quant_bits": 8,
+    "round": 3
+  },
+  {
+    "client_id": 1,
+    "quant_bits": 8,
+    "round": 3
+  },
+  {
+    "client_id": 2,
+    "quant_bits": 8,
+    "round": 3
+  },
+  {
+    "client_id": 0,
+    "quant_bits": 8,
+    "round": 4
+  },
+  {
+    "client_id": 1,
+    "quant_bits": 8,
+    "round": 4
+  },
+  {
+    "client_id": 2,
+    "quant_bits": 8,
+    "round": 4
+  },
+  {
+    "client_id": 0,
+    "quant_bits": 8,
+    "round": 5
+  },
+  {
+    "client_id": 1,
+    "quant_bits": 8,
+    "round": 5
+  },
+  {
+    "client_id": 2,
+    "quant_bits": 8,
+    "round": 5
+  },
+  {
+    "client_id": 0,
+    "quant_bits": 8,
+    "round": 6
+  },
+  {
+    "client_id": 1,
+    "quant_bits": 8,
+    "round": 6
+  },
+  {
+    "client_id": 2,
+    "quant_bits": 8,
+    "round": 6
+  },
+  {
+    "client_id": 0,
+    "quant_bits": 8,
+    "round": 7
+  },
+  {
+    "client_id": 1,
+    "quant_bits": 8,
+    "round": 7
+  },
+  {
+    "client_id": 2,
+    "quant_bits": 8,
+    "round": 7
+  },
+  {
+    "client_id": 0,
+    "quant_bits": 8,
+    "round": 8
+  },
+  {
+    "client_id": 1,
+    "quant_bits": 8,
+    "round": 8
+  },
+  {
+    "client_id": 2,
+    "quant_bits": 8,
+    "round": 8
+  },
+  {
+    "client_id": 0,
+    "quant_bits": 8,
+    "round": 9
+  },
+  {
+    "client_id": 1,
+    "quant_bits": 8,
+    "round": 9
+  },
+  {
+    "client_id": 2,
+    "quant_bits": 8,
+    "round": 9
+  },
+  {
+    "client_id": 0,
+    "quant_bits": 8,
+    "round": 10
+  },
+  {
+    "client_id": 1,
+    "quant_bits": 8,
+    "round": 10
+  },
+  {
+    "client_id": 2,
+    "quant_bits": 8,
+    "round": 10
+  },
+  {
+    "client_id": 0,
+    "quant_bits": 8,
+    "round": 11
+  },
+  {
+    "client_id": 1,
+    "quant_bits": 8,
+    "round": 11
+  },
+  {
+    "client_id": 2,
+    "quant_bits": 8,
+    "round": 11
+  },
+  {
+    "client_id": 0,
+    "quant_bits": 8,
+    "round": 12
+  },
+  {
+    "client_id": 1,
+    "quant_bits": 8,
+    "round": 12
+  },
+  {
+    "client_id": 2,
+    "quant_bits": 8,
+    "round": 12
+  },
+  {
+    "client_id": 0,
+    "quant_bits": 8,
+    "round": 13
+  },
+  {
+    "client_id": 1,
+    "quant_bits": 8,
+    "round": 13
+  },
+  {
+    "client_id": 2,
+    "quant_bits": 8,
+    "round": 13
+  },
+  {
+    "client_id": 0,
+    "quant_bits": 8,
+    "round": 14
+  },
+  {
+    "client_id": 1,
+    "quant_bits": 8,
+    "round": 14
+  },
+  {
+    "client_id": 2,
+    "quant_bits": 8,
+    "round": 14
+  },
+  {
+    "client_id": 0,
+    "quant_bits": 8,
+    "round": 15
+  },
+  {
+    "client_id": 1,
+    "quant_bits": 8,
+    "round": 15
+  },
+  {
+    "client_id": 2,
+    "quant_bits": 8,
+    "round": 15
+  },
+  {
+    "client_id": 0,
+    "quant_bits": 8,
+    "round": 16
+  },
+  {
+    "client_id": 1,
+    "quant_bits": 8,
+    "round": 16
+  },
+  {
+    "client_id": 2,
+    "quant_bits": 8,
+    "round": 16
+  },
+  {
+    "client_id": 0,
+    "quant_bits": 8,
+    "round": 17
+  },
+  {
+    "client_id": 1,
+    "quant_bits": 8,
+    "round": 17
+  },
+  {
+    "client_id": 2,
+    "quant_bits": 8,
+    "round": 17
+  },
+  {
+    "client_id": 0,
+    "quant_bits": 8,
+    "round": 18
+  },
+  {
+    "client_id": 1,
+    "quant_bits": 8,
+    "round": 18
+  },
+  {
+    "client_id": 2,
+    "quant_bits": 8,
+    "round": 18
+  },
+  {
+    "client_id": 0,
+    "quant_bits": 8,
+    "round": 19
+  },
+  {
+    "client_id": 1,
+    "quant_bits": 8,
+    "round": 19
+  },
+  {
+    "client_id": 2,
+    "quant_bits": 8,
+    "round": 19
+  },
+  {
+    "client_id": 0,
+    "quant_bits": 8,
+    "round": 20
+  },
+  {
+    "client_id": 1,
+    "quant_bits": 8,
+    "round": 20
+  },
+  {
+    "client_id": 2,
+    "quant_bits": 8,
+    "round": 20
+  }
+]

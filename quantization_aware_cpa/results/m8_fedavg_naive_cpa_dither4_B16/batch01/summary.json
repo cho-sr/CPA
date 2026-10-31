@@ -1,0 +1,49 @@
+{
+  "identity": {
+    "config_sha256": "908c8592fa7d6e96407eff9373cf8ed40f1717cef9bd02fffe6c00f95d1ff099",
+    "code_sha256": {
+      "quantization_aware_cpa\\qacpa\\run_m8_fedavg_naive.py": "0ea71db00a7e20e9ee9309215fbfa47c84f83290f9ca7027e3bec09ca2ea65f3",
+      "quantization_aware_cpa\\qacpa\\upstream_naive.py": "8f29b885d86f4121eda5c55e17486a3a48bd8db08b2f83890fe7726730d1ee92",
+      "quantization_aware_cpa\\qacpa\\seed.py": "769366fcc2cf3e144d8caa86f73a55dcb0b6be615a45dab8b6e117399150c558",
+      "quantization_aware_cpa\\qacpa\\fia.py": "42a55ce6a4895785b10573f507658434e597f1138de3d45621f466702c7f5cb0",
+      "quantization_aware_cpa\\scripts\\launch_m8_fedavg_naive.ps1": "59c028614f912fe457da10bfffd302c4349e027d01dab44d84a3a5d0e4ecef29",
+      "official_cpa\\src\\attack.py": "d2984fcab6708d1c28bec7c36c7792d40b01b7b4bd150316263f6f8bbd6b3816",
+      "official_cpa\\src\\collect_grads.py": "4d39b5e4bcbebe36dd8131d6c4a5ec0456e7e9de51f7301c0b5079a04aa436e6",
+      "official_cpa\\src\\collect_updates.py": "78a07e3f872231cb582c828eb315bb3c04976bc2f36fdecae5bdb6c17d7f6177",
+      "official_cpa\\src\\datasets.py": "f9e7b47733b5acb4b73e6914a3f100b5187766bbed78a12d17b69c39eec1b6d1",
+      "official_cpa\\src\\eval_utils.py": "042e6263905b32044290e2e1e4d93c54ebcb8e813509c27cf76bdd23b00ec349",
+      "official_cpa\\src\\feature_inversion.py": "dc73880427e3eaf1f873d295f17f1d48d301882f634ee5df36ddeea8e56c4dec",
+      "official_cpa\\src\\gradient_inversion.py": "c598e1ee7b4079f741060d10c8dfd14711e393a97384c63cf32be77a458b1873",
+      "official_cpa\\src\\gradient_inversion_utils.py": "668d77788dc8d81c181c8c0a9fbe8533c6fbea22ba46fe7f5e15b0a431300e5f",
+      "official_cpa\\src\\log_utils.py": "70ced512bcd2de0e6e52d34a5cb9ca34ae7877a0b220b044fce12e48c422cd80",
+      "official_cpa\\src\\models.py": "f684ca948a8ba8020d82cba3d2bdc5df731dd51d9807e38c5be37a3feab4ee56",
+      "official_cpa\\src\\report_m6_attack_results.py": "ce40db9745aebc515c5d52a031d3a4b2806e74edf9068ab26291094ba6455fa4",
+      "official_cpa\\src\\train.py": "a054cbe9c855b05bba9c808a59524c019b6549dde04c432a6e1906448d125bf1",
+      "official_cpa\\src\\utils.py": "565f1bf1a47f387d042b35bb24f677d1ff0d3ec5d979e2876c31ed114179b9fe",
+      "official_cpa\\src\\vgg16.py": "8114eca8cde553dace5f777aedd21b70851c570d473e597b005cb6be4b248d36"
+    },
+    "source_summary_sha256": "9674322f7eda0f9afb8fe586f034e87101138e1b491f0bd04954f80474a0a22c"
+  },
+  "batch_index": 1,
+  "n_images": 16,
+  "oracle_fills": 0,
+  "ls_A": false,
+  "embedding_cos09": 9,
+  "lpips_mean": 0.5889154151082039,
+  "psnr_mean": 21.192537784576416,
+  "ssim_mean": 0.26323788752779365,
+  "runtime_sec": {
+    "cpa": 42.56874479993712,
+    "fia": 1976.817165400018,
+    "invocation": 2020.6654037999688
+  },
+  "completed_at_utc": "2026-09-09T15:03:06.062350+00:00",
+  "output_hashes": {
+    "sources.pt": "1c2f7efdd7fc2b268ea117eb507e7ad53a73bccffdc903aebea6def808e9a944",
+    "source_order_rec.pt": "21858b8d7fb85e0fdcad5896a37bf078eb944da56f09d51ef78454d797ff63fd",
+    "rec.pt": "4d765efa042154a32e3c9788ffe3336b5f40d6fa8389e431a2a7458e0f2fbc9f",
+    "per_image_metrics.csv": "aff67e3a99b331cd132f84213c6ec8e21f380d826f99f00e167c067e9e892006",
+    "cpa_log.json": "74661af3597237c58a982121cc3af6221022b43a87f575438d9003d65df8cc03",
+    "fia_log.json": "fb9f432aa35cf6e5f39a0a7f9daed7dcf23b6fa05f944cbe1e07c5d3c5075928"
+  }
+}

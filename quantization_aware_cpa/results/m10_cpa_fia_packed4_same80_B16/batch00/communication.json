@@ -1,0 +1,23 @@
+{
+  "codec": "uniform_affine_uint4_stochastic_v1",
+  "bits": 4,
+  "shape": [
+    4096,
+    25088
+  ],
+  "n_values": 102760448,
+  "fp32_payload_bytes": 411041792,
+  "fp32_packet_bytes": 411041824,
+  "packed_payload_bytes": 51380224,
+  "scale_bytes": 16384,
+  "header_bytes": 32,
+  "packet_bytes": 51396640,
+  "compression_ratio": 7.997445436121894,
+  "saved_percent": 87.49600721896368,
+  "scope": "attacked classifier.0.weight packet only",
+  "codec_wall_time_sec": 2.6038257000036538,
+  "transmitted_tensor_convention": "Y=(W_initial-W_final)/lr",
+  "server_weight_delta": "-0.001*decoded_Y",
+  "sha256": "5f26b39da3b404f6b424462065bf875745637401b9b927f6e50b560f5a603036",
+  "source_reconstruction_only_from_packet": true
+}

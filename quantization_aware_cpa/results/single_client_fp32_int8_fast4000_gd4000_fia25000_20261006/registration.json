@@ -1,0 +1,135 @@
+{
+  "task_id": "CPA_SINGLE_CLIENT_FP32_INT8_FAST4000_GD4000_FIA25000_20261006",
+  "status": "PREPARED",
+  "session_role": "CODEX_EXECUTOR",
+  "authorized_thread": "01a11025-fc1c-7e53-bea5-3cc32a1bae01",
+  "authorization": "User: 32비트랑 8비트에 대해서 돌려줘; same prior ICA4000/GD4000/FIA25000 conditions",
+  "arms": [
+    "fp32",
+    "int8"
+  ],
+  "arm_bits": {
+    "fp32": 32,
+    "int8": 8
+  },
+  "arm_order": [
+    "fp32",
+    "int8"
+  ],
+  "code_hashes": {
+    "C:\\Users\\조상제\\Desktop\\CPA\\.ai\\execution-results\\CPA_SINGLE_CLIENT_INT4_FAST4000_GD4000_FIA25000_20261006\\run_experiment.py": "f3cb63895999a4c0eb20ace43e975c217d6f7f4ac9864c6a8984007b7523491f",
+    "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\qacpa\\signed_combination_ica.py": "1c7482e1ed77ca4641cd8822ebb6046c5150e794c3838aacc3e3d575f3d992d6",
+    "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\qacpa\\signed_baseline_observation.py": "2c18135e86e80c8f666033d5ea9d0c3495869ee60809fed04e295f28fa92cda2",
+    "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\qacpa\\deterministic_hybrid_setup.py": "ca040e2e88f900b8490402bb18fc132f7c8a17e1b45d5662673ad6b56fbc958a",
+    "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\qacpa\\upstream_naive.py": "8f29b885d86f4121eda5c55e17486a3a48bd8db08b2f83890fe7726730d1ee92",
+    "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\qacpa\\full_update_evaluation.py": "bb67a12bbdd165f75eab69a6cabc7e85e3b1446596e8ac171285c954df6adada",
+    "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\qacpa\\report_full_update_iterations.py": "10b7de25713b39fb3f453f530cc5bb54e37d834b26a7430ceb52239b40e052d0",
+    "upstream:C:\\Users\\조상제\\Desktop\\CPA\\official_cpa\\src\\datasets.py": "f9e7b47733b5acb4b73e6914a3f100b5187766bbed78a12d17b69c39eec1b6d1",
+    "upstream:C:\\Users\\조상제\\Desktop\\CPA\\official_cpa\\src\\utils.py": "565f1bf1a47f387d042b35bb24f677d1ff0d3ec5d979e2876c31ed114179b9fe",
+    "upstream:C:\\Users\\조상제\\Desktop\\CPA\\official_cpa\\src\\gradient_inversion_utils.py": "668d77788dc8d81c181c8c0a9fbe8533c6fbea22ba46fe7f5e15b0a431300e5f",
+    "upstream:C:\\Users\\조상제\\Desktop\\CPA\\official_cpa\\src\\gradient_inversion.py": "c598e1ee7b4079f741060d10c8dfd14711e393a97384c63cf32be77a458b1873",
+    "upstream:C:\\Users\\조상제\\Desktop\\CPA\\official_cpa\\src\\feature_inversion.py": "dc73880427e3eaf1f873d295f17f1d48d301882f634ee5df36ddeea8e56c4dec",
+    "upstream:C:\\Users\\조상제\\Desktop\\CPA\\official_cpa\\src\\vgg16.py": "8114eca8cde553dace5f777aedd21b70851c570d473e597b005cb6be4b248d36",
+    "upstream:C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\qacpa\\upstream_naive.py": "8f29b885d86f4121eda5c55e17486a3a48bd8db08b2f83890fe7726730d1ee92",
+    "upstream:C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\qacpa\\seed.py": "769366fcc2cf3e144d8caa86f73a55dcb0b6be615a45dab8b6e117399150c558",
+    "C:\\Users\\조상제\\Desktop\\CPA\\.ai\\execution-results\\CPA_SINGLE_CLIENT_FP32_INT8_FAST4000_GD4000_FIA25000_20261006\\run_experiment.py": "5cffdf0f570d17285ec6b239b0645538f6399a606d3c9cd64029ed0a90122b74",
+    "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\qacpa\\signed_int8_observation.py": "97fb64c47eaceff53a958a9207b6b79d97f6206ee5c541e19ec18d05a0696be5",
+    "C:\\Users\\조상제\\Desktop\\CPA\\quantized_update_cpa\\cell_utils.py": "6725bce108a8e795680342231696c70f1d2bc8b01a727022c605e40aa841d361"
+  },
+  "input_hashes": {
+    "fp32": {
+      "C:\\Users\\조상제\\.cache\\torch\\hub\\checkpoints\\vgg16-397923af.pth": "397923af8e79cdbb6a7127f12361acd7a2f83e06b05044ddf496e83de57a5bf0",
+      "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\single_client_fp32_int8_fast4000_gd4000_fia25000_20261006\\fp32\\observation\\manifest.json": "8ece313f30af4c0c692ecfaf3fd98afdd438fce8dd1df4291a54cb3adb62de06",
+      "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\single_client_fp32_int8_fast4000_gd4000_fia25000_20261006\\fp32\\observation\\updates.pt": "ef9aefc66ab9fcfd0b023fdfc064dbadc27567bd3ef3508bc14ebda9af28ba4c",
+      "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\single_client_fp32_int8_fast4000_gd4000_fia25000_20261006\\sender_provenance.json": "b8dd32101e8729ae82d13c603c79a65a183213ad182bfa09a69f1ed2e1fc57a7"
+    },
+    "int8": {
+      "C:\\Users\\조상제\\.cache\\torch\\hub\\checkpoints\\vgg16-397923af.pth": "397923af8e79cdbb6a7127f12361acd7a2f83e06b05044ddf496e83de57a5bf0",
+      "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\single_client_fp32_int8_fast4000_gd4000_fia25000_20261006\\int8\\observation\\manifest.json": "9c9dc415742db59681a3b2266eca80712c0643cfb834debe30f3e8bd6e289b9b",
+      "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\single_client_fp32_int8_fast4000_gd4000_fia25000_20261006\\int8\\observation\\fc_00.sgn8": "d3da8f97bd36135d146fa7a017402672055a132ee7d391085f3579f2b2472525",
+      "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\single_client_fp32_int8_fast4000_gd4000_fia25000_20261006\\int8\\observation\\fc_01.sgn8": "5b8cd99c9d8c57b981169344f04aeb9c3890b50f22b433ba81b10b30d2b0c2ad",
+      "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\single_client_fp32_int8_fast4000_gd4000_fia25000_20261006\\int8\\observation\\fc_02.sgn8": "7dfe66dfb1c413ae7a93addac8caf9e4b99be7785f346acfc9da9576a6fd1882",
+      "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\single_client_fp32_int8_fast4000_gd4000_fia25000_20261006\\int8\\observation\\fc_03.sgn8": "f25775975a085cb843cfbaa657c6421e761de3ff218b4f3b2f81c2a7b94fac25",
+      "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\single_client_fp32_int8_fast4000_gd4000_fia25000_20261006\\int8\\observation\\fc_04.sgn8": "060b0c12833a253ba14cc173c22d37642617fbf6698dd0d7ca9af7fae303ebf6",
+      "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\single_client_fp32_int8_fast4000_gd4000_fia25000_20261006\\int8\\observation\\fc_05.sgn8": "0536ae5e5b237da4656fe5892dfe08779f886e7f43cd5c22f801c56482b6d953",
+      "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\single_client_fp32_int8_fast4000_gd4000_fia25000_20261006\\sender_provenance.json": "b8dd32101e8729ae82d13c603c79a65a183213ad182bfa09a69f1ed2e1fc57a7"
+    }
+  },
+  "config": {
+    "fast_max_iter": 4000,
+    "fast_tolerance": 1e-06,
+    "refinement_iterations": 4000,
+    "refinement_lr": 0.001,
+    "refinement_momentum": 0.0,
+    "refinement_weight_decay": 0.0,
+    "negentropy_weight": 0.0935827857091549,
+    "decorrelation_weight": 0.2513674104161625,
+    "sign_weight": 0.05811961446881231,
+    "l1_weight": 17.94138146247377,
+    "eps": 1e-10,
+    "rank_floor": 1e-12
+  },
+  "fast_early_stop": false,
+  "fia_config": {
+    "n_iter": 25000,
+    "lr": 0.1,
+    "tv": 0.1,
+    "fi": 1.0,
+    "optimizer": "adam",
+    "scheduler": "cosine",
+    "log_every": 5000
+  },
+  "source_count": 16,
+  "seed": 42,
+  "input_shape": [
+    4096,
+    25088
+  ],
+  "same_client_update_as_int4": true,
+  "new_local_training": false,
+  "generator_used": false,
+  "private_feedback": false,
+  "cell_or_replay_optimization": false,
+  "candidate_selection": "final_only",
+  "evaluation_after_both_attacks": true,
+  "evaluation": "All16; pixel-MSE Hungarian matching once per arm for MSE/PSNR/SSIM/VGG LPIPS",
+  "lpips_weights": {
+    "implementation": "torchmetrics.image.lpip.LearnedPerceptualImagePatchSimilarity",
+    "net_type": "vgg",
+    "normalize_argument": false,
+    "device": "cpu",
+    "dtype": "float32",
+    "versions": {
+      "torch": "2.13.0+cu132",
+      "torchvision": "0.28.0+cu132",
+      "torchmetrics": "1.9.0"
+    },
+    "input_normalization": "FP32 RGB [0,1] to [-1,1] using (pixels - 0.5) * 2",
+    "weights": {
+      "backbone": {
+        "path": "C:\\Users\\조상제\\.cache\\torch\\hub\\checkpoints\\vgg16-397923af.pth",
+        "sha256": "397923af8e79cdbb6a7127f12361acd7a2f83e06b05044ddf496e83de57a5bf0"
+      },
+      "calibration": {
+        "path": "C:\\miniconda\\envs\\DLG\\Lib\\site-packages\\torchmetrics\\functional\\image\\lpips_models\\vgg.pth",
+        "sha256": "a78928a0af1e5f0fcb1f3b9e8f8c3a2a5a3de244d830ad5c1feddc79b8432868"
+      }
+    },
+    "downloads_allowed": false
+  },
+  "cached_int4_metrics": {
+    "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results_private\\single_client_int4_fast4000_gd4000_fia25000_20261006\\metrics.json",
+    "sha256": "5f91104cd300d35d219b37c057e596cb084fe10a0703a22b7f0888bc151fcc2f"
+  },
+  "runtime": {
+    "torch": "2.13.0+cu132",
+    "cuda": "13.2",
+    "gpu": "NVIDIA GeForce RTX 5060 Ti",
+    "threads": 1
+  },
+  "estimated_total_minutes": [
+    70,
+    90
+  ],
+  "restart": "forbidden"
+}

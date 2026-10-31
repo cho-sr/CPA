@@ -1,0 +1,10 @@
+﻿{
+    "fia_steps_per_member":  500,
+    "worker_created_ms":  1791285632213,
+    "cpa_steps_per_member":  500,
+    "task_id":  "CORA_INT4_NE_SHORT_20261006",
+    "callback_pid":  31340,
+    "members":  2,
+    "thread":  "01a110c4-3fad-7d53-9951-d66ff4af0c6b",
+    "worker_pid":  26080
+}

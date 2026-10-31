@@ -1,0 +1,645 @@
+{
+  "task_id": "CPA_SIGNED_BITS7654_RECOVERY_20260918",
+  "status": "COMPLETED_ARTIFACTS_VERIFIED",
+  "wrapper_exit_code": 0,
+  "wrapper_summary_status": "COMPLETED",
+  "wrapper_error_preserved": {
+    "error_type": "RecoveryError",
+    "error": "bit 6 registration bytes changed"
+  },
+  "wrapper_error_interpretation": "The raw summary retains the late bit-6 registration-byte error. All four saved public gates, 13-set x-only comparisons, and corrected figure manifests independently pass; no optimizer rerun was performed.",
+  "bits": {
+    "7": {
+      "comparison_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results_private\\signed_int7_randomized8_screen3_fia_B16_T10_20260918_sweep\\evaluation_recovery_20260918\\comparison.json",
+      "comparison_sha256": "71b178bbcc3a88deb992af1e3b1613bc2ff0ac419a84bdcbc3c4a2febfc64e86",
+      "status": "COMPLETED",
+      "evaluation_status": "COMPLETED",
+      "scientific_quality": "EVALUATED",
+      "gate_status": "PUBLIC_GATE_PASSED",
+      "candidate_count": 13,
+      "selection": [
+        0,
+        5,
+        3
+      ],
+      "mean_metrics": {
+        "center_25000": {
+          "mean_mse": 0.07300155613422421,
+          "mean_psnr_db": 11.795458399934107,
+          "mean_ssim": 0.276422813596087,
+          "mean_lpips": 0.6118270941078663
+        },
+        "rank1_member_00_25000": {
+          "mean_mse": 0.07264175614768305,
+          "mean_psnr_db": 11.83136624338533,
+          "mean_ssim": 0.2827499308738006,
+          "mean_lpips": 0.6331724599003792
+        },
+        "rank2_member_05_25000": {
+          "mean_mse": 0.07274173050730852,
+          "mean_psnr_db": 11.805827049418683,
+          "mean_ssim": 0.29288812388352703,
+          "mean_lpips": 0.6098512094467878
+        },
+        "rank3_member_03_25000": {
+          "mean_mse": 0.07352816257809447,
+          "mean_psnr_db": 11.748867267513681,
+          "mean_ssim": 0.29078154922091853,
+          "mean_lpips": 0.6503420695662498
+        }
+      }
+    },
+    "6": {
+      "comparison_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results_private\\signed_int6_randomized8_screen3_fia_B16_T10_20260918_sweep\\evaluation_recovery_20260918\\comparison.json",
+      "comparison_sha256": "9d44ec6a1eaefefc16151c5463bf365ed72575ab7ff7953e0cbde2ab10fb4b0d",
+      "status": "COMPLETED",
+      "evaluation_status": "COMPLETED",
+      "scientific_quality": "EVALUATED",
+      "gate_status": "PUBLIC_GATE_PASSED",
+      "candidate_count": 13,
+      "selection": [
+        1,
+        3,
+        4
+      ],
+      "mean_metrics": {
+        "center_25000": {
+          "mean_mse": 0.07552178329548416,
+          "mean_psnr_db": 11.639735973721601,
+          "mean_ssim": 0.2596383579955102,
+          "mean_lpips": 0.6961209550499916
+        },
+        "rank1_member_01_25000": {
+          "mean_mse": 0.07545785087363654,
+          "mean_psnr_db": 11.667487096553497,
+          "mean_ssim": 0.2689876435397502,
+          "mean_lpips": 0.665904251858592
+        },
+        "rank2_member_03_25000": {
+          "mean_mse": 0.07567821278705145,
+          "mean_psnr_db": 11.59765844022912,
+          "mean_ssim": 0.2727687292886997,
+          "mean_lpips": 0.6709883380681276
+        },
+        "rank3_member_04_25000": {
+          "mean_mse": 0.07632374650472064,
+          "mean_psnr_db": 11.572437303919154,
+          "mean_ssim": 0.27138847283293643,
+          "mean_lpips": 0.7051771022379398
+        }
+      }
+    },
+    "5": {
+      "comparison_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results_private\\signed_int5_randomized8_screen3_fia_B16_T10_20260918_sweep\\evaluation_recovery_20260918\\comparison.json",
+      "comparison_sha256": "bee134ec832db6139f074959b936ffb1f5f935242e91261d9a6bffc91c06533a",
+      "status": "COMPLETED",
+      "evaluation_status": "COMPLETED",
+      "scientific_quality": "EVALUATED",
+      "gate_status": "PUBLIC_GATE_PASSED",
+      "candidate_count": 13,
+      "selection": [
+        5,
+        7,
+        6
+      ],
+      "mean_metrics": {
+        "center_25000": {
+          "mean_mse": 0.07740545451726855,
+          "mean_psnr_db": 11.55242958679751,
+          "mean_ssim": 0.2619981027995902,
+          "mean_lpips": 0.7826303653419018
+        },
+        "rank1_member_05_25000": {
+          "mean_mse": 0.07723096939192238,
+          "mean_psnr_db": 11.545827553386472,
+          "mean_ssim": 0.25582689455478913,
+          "mean_lpips": 0.7489930726587772
+        },
+        "rank2_member_07_25000": {
+          "mean_mse": 0.07681791191714178,
+          "mean_psnr_db": 11.588090082434316,
+          "mean_ssim": 0.25865652387119004,
+          "mean_lpips": 0.7694916874170303
+        },
+        "rank3_member_06_25000": {
+          "mean_mse": 0.07703144471508414,
+          "mean_psnr_db": 11.585008331006737,
+          "mean_ssim": 0.2603538526807969,
+          "mean_lpips": 0.7810496687889099
+        }
+      }
+    },
+    "4": {
+      "comparison_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results_private\\signed_int4_randomized8_screen3_fia_B16_T10_20260918_sweep\\evaluation_recovery_20260918\\comparison.json",
+      "comparison_sha256": "fac6c5c1716674a23d1a069355626c9125dbd6fd710a6b82c65aa1d1eb0e3fb2",
+      "status": "COMPLETED",
+      "evaluation_status": "COMPLETED",
+      "scientific_quality": "EVALUATED",
+      "gate_status": "PUBLIC_GATE_PASSED",
+      "candidate_count": 13,
+      "selection": [
+        6,
+        5,
+        0
+      ],
+      "mean_metrics": {
+        "center_25000": {
+          "mean_mse": 0.07786523008775834,
+          "mean_psnr_db": 11.519656023306183,
+          "mean_ssim": 0.2920934189711948,
+          "mean_lpips": 0.8070732466876507
+        },
+        "rank1_member_06_25000": {
+          "mean_mse": 0.07798894580197738,
+          "mean_psnr_db": 11.502841466363446,
+          "mean_ssim": 0.25763901450273924,
+          "mean_lpips": 0.8085191771388054
+        },
+        "rank2_member_05_25000": {
+          "mean_mse": 0.07699568949246369,
+          "mean_psnr_db": 11.595638943223115,
+          "mean_ssim": 0.2621588531900693,
+          "mean_lpips": 0.8001326844096184
+        },
+        "rank3_member_00_25000": {
+          "mean_mse": 0.07710545724789646,
+          "mean_psnr_db": 11.555842555517009,
+          "mean_ssim": 0.2614190003468897,
+          "mean_lpips": 0.8055475391447544
+        }
+      }
+    }
+  },
+  "candidate_hashes": {
+    "7": {
+      "center_5000": {
+        "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\signed_int7_randomized8_screen3_fia_B16_T10_20260918_sweep\\fia_center_25000\\candidate_5000.pt",
+        "sha256": "f4853d15190f352e6337acbdf805dbd97b7beb35b161a4f08d3ab45c30ce50f8"
+      },
+      "member_00_5000": {
+        "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\signed_int7_randomized8_screen3_fia_B16_T10_20260918_sweep\\fia_member_00_5000\\candidate.pt",
+        "sha256": "9927cd2eb4de6f20db0016f2343ae1f15b42a78947cbe23c60e4d31e081f75e1"
+      },
+      "member_01_5000": {
+        "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\signed_int7_randomized8_screen3_fia_B16_T10_20260918_sweep\\fia_member_01_5000\\candidate.pt",
+        "sha256": "6091bb9b975d2be47fb6227efb810388f0c3e5826f4124f296b5f9b0297cc707"
+      },
+      "member_02_5000": {
+        "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\signed_int7_randomized8_screen3_fia_B16_T10_20260918_sweep\\fia_member_02_5000\\candidate.pt",
+        "sha256": "ec4139329d04785db637346c8662d3afb8a489deae05bdad37d05fe53aa9ea9a"
+      },
+      "member_03_5000": {
+        "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\signed_int7_randomized8_screen3_fia_B16_T10_20260918_sweep\\fia_member_03_5000\\candidate.pt",
+        "sha256": "6e39f7612e5a07472a31c38b24e744b710d8c28ea799e34bfb4b900348745a1e"
+      },
+      "member_04_5000": {
+        "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\signed_int7_randomized8_screen3_fia_B16_T10_20260918_sweep\\fia_member_04_5000\\candidate.pt",
+        "sha256": "23030be1a415d38bbcb5ee0fca1834cbcc0de6ed0a02e23ff010a42e4e67800b"
+      },
+      "member_05_5000": {
+        "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\signed_int7_randomized8_screen3_fia_B16_T10_20260918_sweep\\fia_member_05_5000\\candidate.pt",
+        "sha256": "28e703db2d9add34e22706eea1cd1d06aebbdf60548b1e719fcfcebfee58810b"
+      },
+      "member_06_5000": {
+        "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\signed_int7_randomized8_screen3_fia_B16_T10_20260918_sweep\\fia_member_06_5000\\candidate.pt",
+        "sha256": "439f9f52acc91cdfef5885d0a633c71d0d19ddeeabf6665ff5f57a4a5deddd1c"
+      },
+      "member_07_5000": {
+        "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\signed_int7_randomized8_screen3_fia_B16_T10_20260918_sweep\\fia_member_07_5000\\candidate.pt",
+        "sha256": "9f0ce2d85f5fe30b8ab5412982c299dd0f7ace4075e1166571f449ec35f66db0"
+      },
+      "center_25000": {
+        "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\signed_int7_randomized8_screen3_fia_B16_T10_20260918_sweep\\fia_center_25000\\candidate.pt",
+        "sha256": "191dcdeb54269a465aa56a27405d0f47d2ac06d4461ea92806df5b52e56e8472"
+      },
+      "rank1_member_00_25000": {
+        "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\signed_int7_randomized8_screen3_fia_B16_T10_20260918_sweep\\fia_member_00_25000\\candidate.pt",
+        "sha256": "82d34c84e72ad636df1660a45891e97b367c0f7d6d5a2cc19b8dac2af732d601"
+      },
+      "rank2_member_05_25000": {
+        "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\signed_int7_randomized8_screen3_fia_B16_T10_20260918_sweep\\fia_member_05_25000\\candidate.pt",
+        "sha256": "cfb9725bab6dd0ca2fc1550feba484788166d0826dd6e9a02c04cc57e8c27390"
+      },
+      "rank3_member_03_25000": {
+        "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\signed_int7_randomized8_screen3_fia_B16_T10_20260918_sweep\\fia_member_03_25000\\candidate.pt",
+        "sha256": "58e69bb17c744a33acbadb8a97deccf7a80d8f3a38eff6c1ab718e12ddc8810d"
+      }
+    },
+    "6": {
+      "center_5000": {
+        "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\signed_int6_randomized8_screen3_fia_B16_T10_20260918_sweep\\fia_center_25000\\candidate_5000.pt",
+        "sha256": "f54de79073e6e0f45597dfc1386f0fee224c32914d1e53339a6dc032c5c7a2fe"
+      },
+      "member_00_5000": {
+        "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\signed_int6_randomized8_screen3_fia_B16_T10_20260918_sweep\\fia_member_00_5000\\candidate.pt",
+        "sha256": "b653cecd15ccc5b41917eb52161cb596a2e980de17d94b97a99017a7e9988058"
+      },
+      "member_01_5000": {
+        "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\signed_int6_randomized8_screen3_fia_B16_T10_20260918_sweep\\fia_member_01_5000\\candidate.pt",
+        "sha256": "6afb028e2a28f0ba74280798f7e6c05566310131cc546a8bf66cdacde42b1b97"
+      },
+      "member_02_5000": {
+        "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\signed_int6_randomized8_screen3_fia_B16_T10_20260918_sweep\\fia_member_02_5000\\candidate.pt",
+        "sha256": "8da059776946c8414c93ca2643189fd95dc8d53df1318279fa521b09a11f1fc0"
+      },
+      "member_03_5000": {
+        "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\signed_int6_randomized8_screen3_fia_B16_T10_20260918_sweep\\fia_member_03_5000\\candidate.pt",
+        "sha256": "6682a139166bfcc164957b7475bfd358f2e783465f76e7c0a3eea9f7c5876205"
+      },
+      "member_04_5000": {
+        "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\signed_int6_randomized8_screen3_fia_B16_T10_20260918_sweep\\fia_member_04_5000\\candidate.pt",
+        "sha256": "09cbc7269f3829fe1edd6398db0310cc361d53ad4981067f0a0faf5d779a816c"
+      },
+      "member_05_5000": {
+        "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\signed_int6_randomized8_screen3_fia_B16_T10_20260918_sweep\\fia_member_05_5000\\candidate.pt",
+        "sha256": "abbccbf0ca3160337ed32a04b5ccd4f1a1c5c69c317c54182ca438373f0671ca"
+      },
+      "member_06_5000": {
+        "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\signed_int6_randomized8_screen3_fia_B16_T10_20260918_sweep\\fia_member_06_5000\\candidate.pt",
+        "sha256": "4432060732aa7fa33fc1a1a17462fa16848051a20434cefcae35ede1b747dffb"
+      },
+      "member_07_5000": {
+        "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\signed_int6_randomized8_screen3_fia_B16_T10_20260918_sweep\\fia_member_07_5000\\candidate.pt",
+        "sha256": "3ca4e911bc96b38f5496b725196b8f1e3c226c63f85a12aff9d8f406e6d6e781"
+      },
+      "center_25000": {
+        "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\signed_int6_randomized8_screen3_fia_B16_T10_20260918_sweep\\fia_center_25000\\candidate.pt",
+        "sha256": "340d4f162f9632386fce07d8352bf1b08ba126cce718909b28f2274adb9b4075"
+      },
+      "rank1_member_01_25000": {
+        "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\signed_int6_randomized8_screen3_fia_B16_T10_20260918_sweep\\fia_member_01_25000\\candidate.pt",
+        "sha256": "06742e96994ee455aaca62bea394e7df748997fa44c815f41f08fad31f86feb2"
+      },
+      "rank2_member_03_25000": {
+        "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\signed_int6_randomized8_screen3_fia_B16_T10_20260918_sweep\\fia_member_03_25000\\candidate.pt",
+        "sha256": "3a4df1c04fbfd286999993fbe5234be115e3e1ccd54630ce7984492340ed650f"
+      },
+      "rank3_member_04_25000": {
+        "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\signed_int6_randomized8_screen3_fia_B16_T10_20260918_sweep\\fia_member_04_25000\\candidate.pt",
+        "sha256": "abc5622e183a2465a5b820dc7f1ae58ddc4468e0feadfadec529c6643ac6464f"
+      }
+    },
+    "5": {
+      "center_5000": {
+        "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\signed_int5_randomized8_screen3_fia_B16_T10_20260918_sweep\\fia_center_25000\\candidate_5000.pt",
+        "sha256": "c36eba994c6d0dfb8467185b47ca12ee71c466d2d1e8e8ebb531dc37a6d27c5d"
+      },
+      "member_00_5000": {
+        "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\signed_int5_randomized8_screen3_fia_B16_T10_20260918_sweep\\fia_member_00_5000\\candidate.pt",
+        "sha256": "73d248f19b25b54dffd5b749739b708aa88d97ca63d31203473c77eebb672905"
+      },
+      "member_01_5000": {
+        "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\signed_int5_randomized8_screen3_fia_B16_T10_20260918_sweep\\fia_member_01_5000\\candidate.pt",
+        "sha256": "3d837a2dc149933cb540f4a014ca4cf919825a87afab3db09c6425d1d4b031c8"
+      },
+      "member_02_5000": {
+        "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\signed_int5_randomized8_screen3_fia_B16_T10_20260918_sweep\\fia_member_02_5000\\candidate.pt",
+        "sha256": "6ad2b48417eba9730392c3f5c5178455aaad8bdb40ce7cefe94262e8639b40b1"
+      },
+      "member_03_5000": {
+        "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\signed_int5_randomized8_screen3_fia_B16_T10_20260918_sweep\\fia_member_03_5000\\candidate.pt",
+        "sha256": "025cad0914a41d70d05aff3bd243f1837e4b6f94cd76d2577c9d7a31029a46b4"
+      },
+      "member_04_5000": {
+        "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\signed_int5_randomized8_screen3_fia_B16_T10_20260918_sweep\\fia_member_04_5000\\candidate.pt",
+        "sha256": "f2fe9b3e3cbc31ab6f2da56e5b26ee32bc8a7b53097f916d3441e3e90c0e2791"
+      },
+      "member_05_5000": {
+        "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\signed_int5_randomized8_screen3_fia_B16_T10_20260918_sweep\\fia_member_05_5000\\candidate.pt",
+        "sha256": "56c25a1baf1afd3a75738d66ad1d36813b0a0d8a1fd6c5cc37e9287fe70344e9"
+      },
+      "member_06_5000": {
+        "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\signed_int5_randomized8_screen3_fia_B16_T10_20260918_sweep\\fia_member_06_5000\\candidate.pt",
+        "sha256": "5bff2167a1298bb7caf2622654bc259a3c14c8288fa05fe34186559093d4461c"
+      },
+      "member_07_5000": {
+        "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\signed_int5_randomized8_screen3_fia_B16_T10_20260918_sweep\\fia_member_07_5000\\candidate.pt",
+        "sha256": "e27cf5c35462ebca3879df44c7c1c6b265169f1e3f7f0e57c92fbb631b67d974"
+      },
+      "center_25000": {
+        "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\signed_int5_randomized8_screen3_fia_B16_T10_20260918_sweep\\fia_center_25000\\candidate.pt",
+        "sha256": "a81bdf0ad6a57a57ccc49bb3185b59b6de005d698e4dd47008f27f3860b4013a"
+      },
+      "rank1_member_05_25000": {
+        "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\signed_int5_randomized8_screen3_fia_B16_T10_20260918_sweep\\fia_member_05_25000\\candidate.pt",
+        "sha256": "1b8310dccf236d3eec3dc77f8a44390e129ce579d47382e435fe336c7555ff3f"
+      },
+      "rank2_member_07_25000": {
+        "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\signed_int5_randomized8_screen3_fia_B16_T10_20260918_sweep\\fia_member_07_25000\\candidate.pt",
+        "sha256": "2a65df73d7dd6ac5da6c9c333e35420d223ad536758b3301a88413bcd42f7219"
+      },
+      "rank3_member_06_25000": {
+        "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\signed_int5_randomized8_screen3_fia_B16_T10_20260918_sweep\\fia_member_06_25000\\candidate.pt",
+        "sha256": "b7927384a73ab85554f2a6d5a0d3fea99bf4dc667f7b6225552962c8383d2aa7"
+      }
+    },
+    "4": {
+      "center_5000": {
+        "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\signed_int4_randomized8_screen3_fia_B16_T10_20260918_sweep\\fia_center_25000\\candidate_5000.pt",
+        "sha256": "8180ca941efc60341cf4e2f91051143caee9dc54a52e541b24f6fc464fa18181"
+      },
+      "member_00_5000": {
+        "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\signed_int4_randomized8_screen3_fia_B16_T10_20260918_sweep\\fia_member_00_5000\\candidate.pt",
+        "sha256": "6f949f0e6cdbcbcb14be26640daf0c1cfce3fd68cce64d234008eb61594d3ea1"
+      },
+      "member_01_5000": {
+        "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\signed_int4_randomized8_screen3_fia_B16_T10_20260918_sweep\\fia_member_01_5000\\candidate.pt",
+        "sha256": "eaf0734481fb96997612ea97094511bc273e4259bc829b44cbca0c7593468a9e"
+      },
+      "member_02_5000": {
+        "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\signed_int4_randomized8_screen3_fia_B16_T10_20260918_sweep\\fia_member_02_5000\\candidate.pt",
+        "sha256": "57b17044d6921d2a684dbbfd3fb80480195bfd8f7191087a7dbb9aa8b170ac11"
+      },
+      "member_03_5000": {
+        "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\signed_int4_randomized8_screen3_fia_B16_T10_20260918_sweep\\fia_member_03_5000\\candidate.pt",
+        "sha256": "552ca03b2c57792bc54d9c594834d0f45de0d3fac667e0024fbee9a243dbd0f1"
+      },
+      "member_04_5000": {
+        "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\signed_int4_randomized8_screen3_fia_B16_T10_20260918_sweep\\fia_member_04_5000\\candidate.pt",
+        "sha256": "59d8c1d9229a511aa2a64896a73ef9862b555fac889e4e99b039ff34fa4667c4"
+      },
+      "member_05_5000": {
+        "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\signed_int4_randomized8_screen3_fia_B16_T10_20260918_sweep\\fia_member_05_5000\\candidate.pt",
+        "sha256": "ec1d01d178f7512288b7b20d0334f9df4410ebbe685c6838305c7cf156c0ac06"
+      },
+      "member_06_5000": {
+        "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\signed_int4_randomized8_screen3_fia_B16_T10_20260918_sweep\\fia_member_06_5000\\candidate.pt",
+        "sha256": "4163a1e6f5a5723575c8c379ccc8c48c09bbaa9e19298b4852f04e51047874ab"
+      },
+      "member_07_5000": {
+        "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\signed_int4_randomized8_screen3_fia_B16_T10_20260918_sweep\\fia_member_07_5000\\candidate.pt",
+        "sha256": "297b72b864e6c0a15b9ca26ebba28e319ee51ca24a13f07d81c0f5e5a1779e17"
+      },
+      "center_25000": {
+        "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\signed_int4_randomized8_screen3_fia_B16_T10_20260918_sweep\\fia_center_25000\\candidate.pt",
+        "sha256": "e515a797ef2d04487637957aeb60b8936fc78d469e101fc1aa3971771c157693"
+      },
+      "rank1_member_06_25000": {
+        "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\signed_int4_randomized8_screen3_fia_B16_T10_20260918_sweep\\fia_member_06_25000\\candidate.pt",
+        "sha256": "24a43fdba5a67936bc1f6f80972d60efc16d6d7f4ca19bae0b97743d3909d313"
+      },
+      "rank2_member_05_25000": {
+        "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\signed_int4_randomized8_screen3_fia_B16_T10_20260918_sweep\\fia_member_05_25000\\candidate.pt",
+        "sha256": "9e01864a06d6a8e5d5ec7b9f60001bb9c243d2ed7600db6cf77f32aa2949455e"
+      },
+      "rank3_member_00_25000": {
+        "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\signed_int4_randomized8_screen3_fia_B16_T10_20260918_sweep\\fia_member_00_25000\\candidate.pt",
+        "sha256": "8095878cb02d204359cb75e8756db20674b6c989608d0fcf51a70cc73a59c2f8"
+      }
+    }
+  },
+  "corrected_figures": {
+    "7": {
+      "directory": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results_private\\signed_int7_randomized8_screen3_fia_B16_T10_20260918_sweep\\evaluation_recovery_20260918\\figures_with_baseline_20260918",
+      "manifest": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results_private\\signed_int7_randomized8_screen3_fia_B16_T10_20260918_sweep\\evaluation_recovery_20260918\\figures_with_baseline_20260918\\figure_manifest.json",
+      "final": {
+        "path": "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results_private/signed_int7_randomized8_screen3_fia_B16_T10_20260918_sweep/evaluation_recovery_20260918/figures_with_baseline_20260918/contact_sheet_b7_25000_with_baseline.png",
+        "sha256": "29ad12ffe3a35658b6cba25d70cbe986b73dd7ca0a4a031c0096d59a7ff9f6c5",
+        "columns": [
+          "Ground truth",
+          "Naive dequantization baseline | 7-bit | center | 25000 steps",
+          "Public rank 1 | member 00 | 7-bit | 25000 steps",
+          "Public rank 2 | member 05 | 7-bit | 25000 steps",
+          "Public rank 3 | member 03 | 7-bit | 25000 steps"
+        ],
+        "column_count": 5,
+        "rows": 16,
+        "candidate_names": [
+          "center_25000",
+          "rank1_member_00_25000",
+          "rank2_member_05_25000",
+          "rank3_member_03_25000"
+        ],
+        "correspondence_reused": true,
+        "metrics_recomputed": false
+      },
+      "screen": {
+        "path": "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results_private/signed_int7_randomized8_screen3_fia_B16_T10_20260918_sweep/evaluation_recovery_20260918/figures_with_baseline_20260918/contact_sheet_b7_5000_with_baseline.png",
+        "sha256": "3c7e53385d4cddf3953cbbcc2e2954ccf8c3b82e8e9c83f1ccbb6cf3c1c79637",
+        "columns": [
+          "Ground truth",
+          "Naive dequantization baseline | 7-bit | center | 5000 steps",
+          "member 00 | 7-bit | 5000 steps",
+          "member 01 | 7-bit | 5000 steps",
+          "member 02 | 7-bit | 5000 steps",
+          "member 03 | 7-bit | 5000 steps",
+          "member 04 | 7-bit | 5000 steps",
+          "member 05 | 7-bit | 5000 steps",
+          "member 06 | 7-bit | 5000 steps",
+          "member 07 | 7-bit | 5000 steps"
+        ],
+        "column_count": 10,
+        "rows": 16,
+        "candidate_names": [
+          "center_5000",
+          "member_00_5000",
+          "member_01_5000",
+          "member_02_5000",
+          "member_03_5000",
+          "member_04_5000",
+          "member_05_5000",
+          "member_06_5000",
+          "member_07_5000"
+        ],
+        "correspondence_reused": true,
+        "metrics_recomputed": false
+      }
+    },
+    "6": {
+      "directory": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results_private\\signed_int6_randomized8_screen3_fia_B16_T10_20260918_sweep\\evaluation_recovery_20260918\\figures_with_baseline_20260918",
+      "manifest": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results_private\\signed_int6_randomized8_screen3_fia_B16_T10_20260918_sweep\\evaluation_recovery_20260918\\figures_with_baseline_20260918\\figure_manifest.json",
+      "final": {
+        "path": "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results_private/signed_int6_randomized8_screen3_fia_B16_T10_20260918_sweep/evaluation_recovery_20260918/figures_with_baseline_20260918/contact_sheet_b6_25000_with_baseline.png",
+        "sha256": "02e5d898ccd89d741e7e775cc204b29a520604474ab61c9e849d1d62237e0c54",
+        "columns": [
+          "Ground truth",
+          "Naive dequantization baseline | 6-bit | center | 25000 steps",
+          "Public rank 1 | member 01 | 6-bit | 25000 steps",
+          "Public rank 2 | member 03 | 6-bit | 25000 steps",
+          "Public rank 3 | member 04 | 6-bit | 25000 steps"
+        ],
+        "column_count": 5,
+        "rows": 16,
+        "candidate_names": [
+          "center_25000",
+          "rank1_member_01_25000",
+          "rank2_member_03_25000",
+          "rank3_member_04_25000"
+        ],
+        "correspondence_reused": true,
+        "metrics_recomputed": false
+      },
+      "screen": {
+        "path": "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results_private/signed_int6_randomized8_screen3_fia_B16_T10_20260918_sweep/evaluation_recovery_20260918/figures_with_baseline_20260918/contact_sheet_b6_5000_with_baseline.png",
+        "sha256": "afc5736b1863fb4adbadfd5e8391a5b7bfa29f86af60364e9504118b012ceb81",
+        "columns": [
+          "Ground truth",
+          "Naive dequantization baseline | 6-bit | center | 5000 steps",
+          "member 00 | 6-bit | 5000 steps",
+          "member 01 | 6-bit | 5000 steps",
+          "member 02 | 6-bit | 5000 steps",
+          "member 03 | 6-bit | 5000 steps",
+          "member 04 | 6-bit | 5000 steps",
+          "member 05 | 6-bit | 5000 steps",
+          "member 06 | 6-bit | 5000 steps",
+          "member 07 | 6-bit | 5000 steps"
+        ],
+        "column_count": 10,
+        "rows": 16,
+        "candidate_names": [
+          "center_5000",
+          "member_00_5000",
+          "member_01_5000",
+          "member_02_5000",
+          "member_03_5000",
+          "member_04_5000",
+          "member_05_5000",
+          "member_06_5000",
+          "member_07_5000"
+        ],
+        "correspondence_reused": true,
+        "metrics_recomputed": false
+      }
+    },
+    "5": {
+      "directory": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results_private\\signed_int5_randomized8_screen3_fia_B16_T10_20260918_sweep\\evaluation_recovery_20260918\\figures_with_baseline_20260918",
+      "manifest": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results_private\\signed_int5_randomized8_screen3_fia_B16_T10_20260918_sweep\\evaluation_recovery_20260918\\figures_with_baseline_20260918\\figure_manifest.json",
+      "final": {
+        "path": "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results_private/signed_int5_randomized8_screen3_fia_B16_T10_20260918_sweep/evaluation_recovery_20260918/figures_with_baseline_20260918/contact_sheet_b5_25000_with_baseline.png",
+        "sha256": "9aeebc336d8635708f25c676d3f9e747e0186c4a25d46df109cb1502687b9fc5",
+        "columns": [
+          "Ground truth",
+          "Naive dequantization baseline | 5-bit | center | 25000 steps",
+          "Public rank 1 | member 05 | 5-bit | 25000 steps",
+          "Public rank 2 | member 07 | 5-bit | 25000 steps",
+          "Public rank 3 | member 06 | 5-bit | 25000 steps"
+        ],
+        "column_count": 5,
+        "rows": 16,
+        "candidate_names": [
+          "center_25000",
+          "rank1_member_05_25000",
+          "rank2_member_07_25000",
+          "rank3_member_06_25000"
+        ],
+        "correspondence_reused": true,
+        "metrics_recomputed": false
+      },
+      "screen": {
+        "path": "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results_private/signed_int5_randomized8_screen3_fia_B16_T10_20260918_sweep/evaluation_recovery_20260918/figures_with_baseline_20260918/contact_sheet_b5_5000_with_baseline.png",
+        "sha256": "d008802b6097bde912a3012d370f74bf94ed50c73173206e5b1dd27c854ba99c",
+        "columns": [
+          "Ground truth",
+          "Naive dequantization baseline | 5-bit | center | 5000 steps",
+          "member 00 | 5-bit | 5000 steps",
+          "member 01 | 5-bit | 5000 steps",
+          "member 02 | 5-bit | 5000 steps",
+          "member 03 | 5-bit | 5000 steps",
+          "member 04 | 5-bit | 5000 steps",
+          "member 05 | 5-bit | 5000 steps",
+          "member 06 | 5-bit | 5000 steps",
+          "member 07 | 5-bit | 5000 steps"
+        ],
+        "column_count": 10,
+        "rows": 16,
+        "candidate_names": [
+          "center_5000",
+          "member_00_5000",
+          "member_01_5000",
+          "member_02_5000",
+          "member_03_5000",
+          "member_04_5000",
+          "member_05_5000",
+          "member_06_5000",
+          "member_07_5000"
+        ],
+        "correspondence_reused": true,
+        "metrics_recomputed": false
+      }
+    },
+    "4": {
+      "directory": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results_private\\signed_int4_randomized8_screen3_fia_B16_T10_20260918_sweep\\evaluation_recovery_20260918\\figures_with_baseline_20260918",
+      "manifest": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results_private\\signed_int4_randomized8_screen3_fia_B16_T10_20260918_sweep\\evaluation_recovery_20260918\\figures_with_baseline_20260918\\figure_manifest.json",
+      "final": {
+        "path": "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results_private/signed_int4_randomized8_screen3_fia_B16_T10_20260918_sweep/evaluation_recovery_20260918/figures_with_baseline_20260918/contact_sheet_b4_25000_with_baseline.png",
+        "sha256": "31b4588d135e3e05ebfcde742d88870f26608967ef3a72c05590de456abd9250",
+        "columns": [
+          "Ground truth",
+          "Naive dequantization baseline | 4-bit | center | 25000 steps",
+          "Public rank 1 | member 06 | 4-bit | 25000 steps",
+          "Public rank 2 | member 05 | 4-bit | 25000 steps",
+          "Public rank 3 | member 00 | 4-bit | 25000 steps"
+        ],
+        "column_count": 5,
+        "rows": 16,
+        "candidate_names": [
+          "center_25000",
+          "rank1_member_06_25000",
+          "rank2_member_05_25000",
+          "rank3_member_00_25000"
+        ],
+        "correspondence_reused": true,
+        "metrics_recomputed": false
+      },
+      "screen": {
+        "path": "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results_private/signed_int4_randomized8_screen3_fia_B16_T10_20260918_sweep/evaluation_recovery_20260918/figures_with_baseline_20260918/contact_sheet_b4_5000_with_baseline.png",
+        "sha256": "c654b656be33f12f2a80950559e9e461f9993e93f2ed44a282cce5fd652cd4f1",
+        "columns": [
+          "Ground truth",
+          "Naive dequantization baseline | 4-bit | center | 5000 steps",
+          "member 00 | 4-bit | 5000 steps",
+          "member 01 | 4-bit | 5000 steps",
+          "member 02 | 4-bit | 5000 steps",
+          "member 03 | 4-bit | 5000 steps",
+          "member 04 | 4-bit | 5000 steps",
+          "member 05 | 4-bit | 5000 steps",
+          "member 06 | 4-bit | 5000 steps",
+          "member 07 | 4-bit | 5000 steps"
+        ],
+        "column_count": 10,
+        "rows": 16,
+        "candidate_names": [
+          "center_5000",
+          "member_00_5000",
+          "member_01_5000",
+          "member_02_5000",
+          "member_03_5000",
+          "member_04_5000",
+          "member_05_5000",
+          "member_06_5000",
+          "member_07_5000"
+        ],
+        "correspondence_reused": true,
+        "metrics_recomputed": false
+      }
+    }
+  },
+  "source_hashes": {
+    "signed_bits_screen3_runner.py": {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\qacpa\\signed_bits_screen3_runner.py",
+      "sha256": "0ab6bdac5e121b1713e7124bc8dcc958e9b962d6eb667676389823e87d4ff984",
+      "expected_registered_sha256": "0ab6bdac5e121b1713e7124bc8dcc958e9b962d6eb667676389823e87d4ff984",
+      "unchanged": true
+    },
+    "signed_bits_screen3_evaluation.py": {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\qacpa\\signed_bits_screen3_evaluation.py",
+      "sha256": "811b2d45b0b5c98b46d018b11e0ff80dec8314364968cba9f43b266d76b51120",
+      "expected_registered_sha256": "811b2d45b0b5c98b46d018b11e0ff80dec8314364968cba9f43b266d76b51120",
+      "unchanged": true
+    }
+  },
+  "optimizer_steps": {
+    "7": 0,
+    "6": 125000,
+    "5": 125000,
+    "4": 125000
+  },
+  "public_gate_before_private_evaluation": true,
+  "private_x_only": true,
+  "labels_consumed": false,
+  "actual_image_cell_feasibility": "NOT_EVALUATED",
+  "parent_artifacts_preserved": true,
+  "original_failure_evidence_preserved": true,
+  "active_handoff_before": "C:\\Users\\조상제\\Desktop\\CPA\\.ai\\execution-results\\CPA_SIGNED_BITS7654_RECOVERY_20260918\\active_handoff_before_finalization.md",
+  "finalized_at": "2026-09-18T09:56:09.848634+00:00"
+}

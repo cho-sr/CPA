@@ -1,0 +1,32 @@
+{
+  "state": "COMPLETED",
+  "identity": {
+    "registration_sha256": "675f8ad66b533ee4f92a469f9cf1ccda6de4586dbfd46ed25896a5be0544b9fe",
+    "bits": 8,
+    "candidate_id": 78,
+    "kind": "random",
+    "sample_seed": 77001465,
+    "cpa_seed": 0,
+    "fia_seed": 42,
+    "cpa_steps": 25000,
+    "fia_steps": 25000,
+    "fia_horizon": 25000,
+    "smoke": false
+  },
+  "completed_at": "2026-10-01T02:13:57.558397+00:00",
+  "cpa_completed": 25000,
+  "fia_completed": 25000,
+  "gpu": "2",
+  "pid": 223709,
+  "peak_cuda_bytes": 3558649344,
+  "attempt_wall_seconds": 1448.0652471119975,
+  "cpa_wall_seconds": 197.82747996000398,
+  "fia_wall_seconds": 1241.771162459001,
+  "artifacts": {
+    "sources.pt": "310bf5fc123cf4324b17673c656e088960b8c875a5f29e225c024e94b279cdfe",
+    "reconstruction.pt": "821c5ce766317d8ef230fd3f8f607d49b910531ffb54220bb00623c58b34b148",
+    "sample.json": "e55b61dea1773308b9f62fa9514a09235bd3589dadbc0850126548f891967023",
+    "cpa_result.json": "ecd199abdb2b7466e910b412fbdb5aed93c7423a4a0c37f35fb0093a0bb9ddeb",
+    "fia_result.json": "2ad8de5a3506986437fe8b5fd532ef0b46113caccc7db6fe5b1b27eb139e137b"
+  }
+}

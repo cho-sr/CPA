@@ -1,0 +1,19 @@
+{
+  "inputs_sha256": {
+    "m6_uia_fp32_B16_fia\\per_image_metrics.csv": "72dafc60ccb29acca4568bc0da7b77d48574ecafece7fe51898b173822c2f2ef",
+    "m6_uia_fp32_B16_fia\\summary.json": "1f85b5750c6171e0259160c48731dc7646fb3f7a5b9c59b8c06b0478bd2f4ad0",
+    "m7_no_cpa_control\\4bit\\per_image_metrics.csv": "329b0363f05667423e412df738e50cf8dc815264750b558f98cf277f48a9b026",
+    "m7_no_cpa_control\\fp32\\per_image_metrics.csv": "4a62ff5ac976296d8cb2bfe19de6bab60b0fa0b40e78ddc6f575d25479211167",
+    "m7_no_cpa_control\\summary.json": "60a7b8a3be59ac939e725e2dd6f5164848f5423990710af545e0f2c1ca5c5070",
+    "m7_prior_only\\prior_only\\per_image_metrics.csv": "7bf30747b6aa01df6fe3b6386d8e7f0df6b96ce26c2d4c070fae2fd6ba641077",
+    "m7_uia_4bit_B16\\per_image_metrics.csv": "02aa55e6c81fb2c0799db511585c72ce536df7a1f7f2ef80c95a2154da7b5011",
+    "m7_uia_4bit_B16\\summary.json": "9674322f7eda0f9afb8fe586f034e87101138e1b491f0bd04954f80474a0a22c",
+    "v7_m3_fallback_5batch\\per_image_metrics_aggregated.csv": "7d33efb9def3f2f955c19fe3d89a97e6f4e422e2c2637ce0153d292bf23a12bd"
+  },
+  "PNG_dpi": 300,
+  "vector_formats": [
+    "pdf",
+    "svg"
+  ],
+  "no_experiments_executed": true
+}

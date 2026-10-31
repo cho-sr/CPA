@@ -1,0 +1,31 @@
+{
+  "stage": "naive",
+  "status": "COMPLETED",
+  "command_argv": [
+    "C:\\miniconda\\envs\\DLG\\python.exe",
+    "-B",
+    "-m",
+    "qacpa.signed_baseline",
+    "naive",
+    "--public-observation",
+    "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\quantization_aware_cpa\\results\\signed_int4_baseline_B16_T10\\observation",
+    "--checkpoint",
+    "C:\\Users\\\uc870\uc0c1\uc81c\\.cache\\torch\\hub\\checkpoints\\vgg16-397923af.pth",
+    "--output",
+    "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\quantization_aware_cpa\\results\\signed_int4_baseline_B16_T10\\naive"
+  ],
+  "cwd": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA",
+  "source_hashes": {
+    "quantization_aware_cpa\\qacpa\\signed_baseline.py": "a2a6b3e3c7909fb15ab44d49839e6bb0759e44832e223d16f0f2c24e0e45e467",
+    "quantization_aware_cpa\\qacpa\\signed_baseline_evaluation.py": "62f583afddf9f325971a241c7fbb74ccb0926a3cbe251fd27bc00485e89e380f",
+    "quantization_aware_cpa\\qacpa\\signed_baseline_observation.py": "2c18135e86e80c8f666033d5ea9d0c3495869ee60809fed04e295f28fa92cda2",
+    "quantization_aware_cpa\\qacpa\\full_update_evaluation.py": "bb67a12bbdd165f75eab69a6cabc7e85e3b1446596e8ac171285c954df6adada"
+  },
+  "log": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\.ai\\execution-results\\CPA_SIGNED_BASELINE_B16_T10_20260914\\naive_attempt_1.log",
+  "attempt": 1,
+  "started_at_utc": "2026-09-14T08:20:22.907438+00:00",
+  "pid": 3680,
+  "exit_status": 0,
+  "wall_seconds": 2144.442747700028,
+  "ended_at_utc": "2026-09-14T08:56:07.351383+00:00"
+}

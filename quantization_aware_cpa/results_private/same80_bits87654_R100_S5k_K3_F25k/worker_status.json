@@ -1,0 +1,46 @@
+{
+  "task_id": "CPA_SAME80_BITS87654_R100_SCREEN3_20260926",
+  "plan_version": 1,
+  "state": "STOPPED_BY_USER",
+  "worker_pid": 7548,
+  "worker_start_time_utc": "2026-09-26T13:37:47.410348+00:00",
+  "started_at_utc": "2026-09-26T13:37:50.399401+00:00",
+  "config_sha256": "ceadcebaeb2a50c52a0035e3cebf086ccc044b218e79463ff0c197fbdb79727b",
+  "worker_count": 1,
+  "phases": [
+    {
+      "phase": "run",
+      "state": "STOPPED_BY_USER",
+      "command": [
+        "C:\\miniconda\\envs\\DLG\\python.exe",
+        "-u",
+        "-m",
+        "qacpa.run_same80_bits_r100",
+        "--config",
+        "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\configs\\same80_bits87654_R100_S5k_K3_F25k.json",
+        "--phase",
+        "run"
+      ],
+      "started_at_utc": "2026-09-26T13:37:50.593447+00:00",
+      "pid": 20896,
+      "stdout": "run.stdout.log",
+      "stderr": "run.stderr.log",
+      "ended_at_utc": "2026-09-26T16:16:25.607645+00:00"
+    }
+  ],
+  "failure": null,
+  "runtime": {
+    "python": "C:\\miniconda\\envs\\DLG\\python.exe",
+    "torch": "2.13.0+cu132",
+    "cuda_runtime": "13.2",
+    "gpu_name": "NVIDIA GeForce RTX 5060 Ti",
+    "cuda_free_bytes_before_start": 15908995072,
+    "cuda_total_bytes": 17102864384,
+    "disk_free_bytes_before_start": 133158789120,
+    "minimum_free_disk_bytes": 8589934592
+  },
+  "current_phase": "run",
+  "user_stopped_at_utc": "2026-09-26T16:16:25.607645+00:00",
+  "stop_reason": "Explicit user request: stop experiment",
+  "automatic_restart_allowed": false
+}

@@ -1,0 +1,10 @@
+{
+    "task_id":  "CPA_SIGNED_INT8_RANDOMIZED8_FIA_20260917",
+    "destination_thread":  "01a0a799-d62c-7ab0-9c2a-628acf6d2c95",
+    "planner_pid":  24972,
+    "queue_exit_code":  0,
+    "stdout_path":  "C:\\Users\\조상제\\Desktop\\CPA\\.ai\\execution-results\\CPA_SIGNED_INT8_RANDOMIZED8_FIA_20260917\\planner_queue.stdout.log",
+    "stderr_path":  "C:\\Users\\조상제\\Desktop\\CPA\\.ai\\execution-results\\CPA_SIGNED_INT8_RANDOMIZED8_FIA_20260917\\planner_queue.stderr.log",
+    "notice_path":  "C:\\Users\\조상제\\Desktop\\CPA\\.ai\\execution-results\\CPA_SIGNED_INT8_RANDOMIZED8_FIA_20260917\\planner_final_notice.txt",
+    "queued_at":  "2026-09-17T09:32:50.3865478+00:00"
+}

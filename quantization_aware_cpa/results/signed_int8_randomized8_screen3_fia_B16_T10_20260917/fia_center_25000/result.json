@@ -1,0 +1,126 @@
+{
+  "status": "COMPLETED",
+  "arm": "center_25000",
+  "stage": "INVERT",
+  "completed_iterations": 25000,
+  "total_schedule_iterations": 25000,
+  "checkpoint": "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int8_randomized8_screen3_fia_B16_T10_20260917/fia_center_25000/checkpoint_25000.pt",
+  "checkpoint_sha256": "2e6f075d2097d0c663648564359aae729895b86ebf090eae107a2931f0c9c9fe",
+  "prefix_checkpoint": "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int8_randomized8_screen3_fia_B16_T10_20260917/fia_center_25000/checkpoint_5000.pt",
+  "prefix_checkpoint_sha256": "ae7942cfce971091a9cb0ca357ebde184fe9e9f03977cd4c7a2a16273e5be1b6",
+  "candidate": "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int8_randomized8_screen3_fia_B16_T10_20260917/fia_center_25000/candidate.pt",
+  "candidate_sha256": "696d18fc23e23ea62834a6c0af849e6549ef47994e4c63fee54c53351d85a0db",
+  "prefix_candidate": "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int8_randomized8_screen3_fia_B16_T10_20260917/fia_center_25000/candidate_5000.pt",
+  "prefix_candidate_sha256": "8dedc50fe179663195e8e2061a62a1ea6369abd24c92fb7415628f1c6b032de6",
+  "candidate_tensor_sha256": "f93aceefaf8a8e69644a0135d2d870c5d9ff3e5c00f8c04899970702a7f9b0e7",
+  "target_z_sha256": "27fd6d0688faa772a56f10b471a7de5b4d047bf1060726e6c22f2379ce3e23f5",
+  "source_sha256": "bf2f3e0995f963fa7ad4097316cde8ecef0fedb3f4f32deb56f132031267671d",
+  "initial_image_sha256": "6f6ec493923b7081284f0fc405f76f60b583cc41a5977393751f96bb21147e59",
+  "parent_checkpoint_sha256": null,
+  "log": [
+    {
+      "iter": 1,
+      "loss": 1.1360427141189575,
+      "loss_fi": 0.9153569936752319,
+      "loss_gm": 0.0,
+      "loss_tv": 2.2068567276000977,
+      "time_sec": 4.147196399979293
+    },
+    {
+      "iter": 5000,
+      "loss": 0.0709681361913681,
+      "loss_fi": 0.03604024648666382,
+      "loss_gm": 0.0,
+      "loss_tv": 0.34927892684936523,
+      "time_sec": 412.7526401000796
+    },
+    {
+      "iter": 10000,
+      "loss": 0.05873052403330803,
+      "loss_fi": 0.030763816088438034,
+      "loss_gm": 0.0,
+      "loss_tv": 0.27966707944869995,
+      "time_sec": 820.0117661000695
+    },
+    {
+      "iter": 15000,
+      "loss": 0.044078279286623,
+      "loss_fi": 0.027431339025497437,
+      "loss_gm": 0.0,
+      "loss_tv": 0.16646939516067505,
+      "time_sec": 1227.100023200037
+    },
+    {
+      "iter": 20000,
+      "loss": 0.032894402742385864,
+      "loss_fi": 0.02402712032198906,
+      "loss_gm": 0.0,
+      "loss_tv": 0.08867283910512924,
+      "time_sec": 1634.1288407000247
+    },
+    {
+      "iter": 25000,
+      "loss": 0.030724188312888145,
+      "loss_fi": 0.023332439363002777,
+      "loss_gm": 0.0,
+      "loss_tv": 0.07391749322414398,
+      "time_sec": 2038.6916403999785
+    }
+  ],
+  "fia_config": {
+    "n_iter": 25000,
+    "lr": 0.1,
+    "tv": 0.1,
+    "fi": 1.0,
+    "optimizer": "adam",
+    "scheduler": "cosine",
+    "log_every": 5000
+  },
+  "runtime": {
+    "seed": 42,
+    "device": "cuda",
+    "target_z_sha256": "27fd6d0688faa772a56f10b471a7de5b4d047bf1060726e6c22f2379ce3e23f5",
+    "initial_image_sha256": "6f6ec493923b7081284f0fc405f76f60b583cc41a5977393751f96bb21147e59",
+    "target_shape": [
+      16,
+      25088
+    ],
+    "settings": {
+      "n_iter": 25000,
+      "lr": 0.1,
+      "tv": 0.1,
+      "fi": 1.0,
+      "optimizer": "adam",
+      "scheduler": "cosine",
+      "log_every": 5000,
+      "seed": 42,
+      "device": "cuda",
+      "backend": "official_cpa/src/feature_inversion.py:Direct",
+      "upstream_source_hashes": {
+        "C:\\Users\\조상제\\Desktop\\CPA\\official_cpa\\src\\datasets.py": "f9e7b47733b5acb4b73e6914a3f100b5187766bbed78a12d17b69c39eec1b6d1",
+        "C:\\Users\\조상제\\Desktop\\CPA\\official_cpa\\src\\utils.py": "565f1bf1a47f387d042b35bb24f677d1ff0d3ec5d979e2876c31ed114179b9fe",
+        "C:\\Users\\조상제\\Desktop\\CPA\\official_cpa\\src\\gradient_inversion_utils.py": "668d77788dc8d81c181c8c0a9fbe8533c6fbea22ba46fe7f5e15b0a431300e5f",
+        "C:\\Users\\조상제\\Desktop\\CPA\\official_cpa\\src\\gradient_inversion.py": "c598e1ee7b4079f741060d10c8dfd14711e393a97384c63cf32be77a458b1873",
+        "C:\\Users\\조상제\\Desktop\\CPA\\official_cpa\\src\\feature_inversion.py": "dc73880427e3eaf1f873d295f17f1d48d301882f634ee5df36ddeea8e56c4dec",
+        "C:\\Users\\조상제\\Desktop\\CPA\\official_cpa\\src\\vgg16.py": "8114eca8cde553dace5f777aedd21b70851c570d473e597b005cb6be4b248d36",
+        "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\qacpa\\upstream_naive.py": "8f29b885d86f4121eda5c55e17486a3a48bd8db08b2f83890fe7726730d1ee92",
+        "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\qacpa\\seed.py": "769366fcc2cf3e144d8caa86f73a55dcb0b6be615a45dab8b6e117399150c558"
+      },
+      "schedule_semantics": "constructed_with_T_max_25000_outer_stop_only"
+    },
+    "source_hashes": {
+      "C:\\Users\\조상제\\Desktop\\CPA\\official_cpa\\src\\datasets.py": "f9e7b47733b5acb4b73e6914a3f100b5187766bbed78a12d17b69c39eec1b6d1",
+      "C:\\Users\\조상제\\Desktop\\CPA\\official_cpa\\src\\utils.py": "565f1bf1a47f387d042b35bb24f677d1ff0d3ec5d979e2876c31ed114179b9fe",
+      "C:\\Users\\조상제\\Desktop\\CPA\\official_cpa\\src\\gradient_inversion_utils.py": "668d77788dc8d81c181c8c0a9fbe8533c6fbea22ba46fe7f5e15b0a431300e5f",
+      "C:\\Users\\조상제\\Desktop\\CPA\\official_cpa\\src\\gradient_inversion.py": "c598e1ee7b4079f741060d10c8dfd14711e393a97384c63cf32be77a458b1873",
+      "C:\\Users\\조상제\\Desktop\\CPA\\official_cpa\\src\\feature_inversion.py": "dc73880427e3eaf1f873d295f17f1d48d301882f634ee5df36ddeea8e56c4dec",
+      "C:\\Users\\조상제\\Desktop\\CPA\\official_cpa\\src\\vgg16.py": "8114eca8cde553dace5f777aedd21b70851c570d473e597b005cb6be4b248d36",
+      "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\qacpa\\upstream_naive.py": "8f29b885d86f4121eda5c55e17486a3a48bd8db08b2f83890fe7726730d1ee92",
+      "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\qacpa\\seed.py": "769366fcc2cf3e144d8caa86f73a55dcb0b6be615a45dab8b6e117399150c558"
+    },
+    "setup_wall_seconds": 1.5476208999752998,
+    "schedule_T_max": 25000
+  },
+  "wall_seconds": 2038.691712400061,
+  "allocated_cuda_bytes": 100410368
+}

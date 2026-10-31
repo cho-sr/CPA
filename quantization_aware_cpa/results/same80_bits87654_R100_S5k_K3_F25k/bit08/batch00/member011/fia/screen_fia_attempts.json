@@ -1,0 +1,15 @@
+{
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "RUNNING",
+      "started_at_utc": "2026-09-26T16:09:30.837399+00:00",
+      "pid": 20896,
+      "resumed_after_interruption": false,
+      "valid_checkpoint_reused": false,
+      "wasted_work_steps_lower_bound": 0,
+      "wasted_work_steps_upper_bound": 0,
+      "wasted_work_exact": true
+    }
+  ]
+}

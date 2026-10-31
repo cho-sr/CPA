@@ -1,0 +1,78 @@
+{
+  "agg_consistency": "mse",
+  "aggregate_observation": {
+    "agg_consistency": "mse",
+    "bin_source": "MSE to stored dequantized aggregate update",
+    "meta": {
+      "aggregation": "weighted_mean_by_client_sample_count",
+      "aggregation_weights": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ],
+      "final_round_train_loss": 0.003777355258353055,
+      "global_round_after": 20,
+      "global_round_before": 19,
+      "local_batch_size": 8,
+      "local_epochs": 10,
+      "lr": 0.001,
+      "n_epochs": 10,
+      "n_samples": 24,
+      "num_clients": 3,
+      "private_split": "test",
+      "quant_bits": 4,
+      "quantization": "signed_symmetric_int4",
+      "round": 20,
+      "rounding": "nearest",
+      "samples_per_client": 8,
+      "scale_scope": "per_client_per_parameter_tensor",
+      "server_aggregation_input": "dequantized_client_updates",
+      "source_model_for_z": "global model before final round",
+      "update_definition": "server aggregate of final int4/dequantized FedAvg round"
+    },
+    "path": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\int 4 fedavg\\imagenet\\vgg16\\clients3_rounds20_spc8_seed42\\round_020_int4_dequant_aggregate_cpa.pickle",
+    "sha256": "adc2eacd9fcd0038eaf38815b1e3cc1186011b0c4a4d24378e8dc6c3421cefc3",
+    "signal": "server aggregate of final int4/dequantized FedAvg round"
+  },
+  "artifact_hashes": {
+    "codes_sha256": "7097c9f91472094f0aa90df3f173c54c83c984bf4f1290c46f5a59b1ccabfa01",
+    "context_sha256": "fd20de5f9118ec3b7e8313276247d88560705b8aae7053955cf92043b1955848",
+    "quant_meta_sha256": "ca54cddb42d400f6066af929d257c039d3ca8e25bf18d909130e21bbb7d2f732"
+  },
+  "client_ids": [
+    0,
+    1,
+    2
+  ],
+  "client_qs_dir": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\int 4 fedavg\\imagenet\\vgg16\\clients3_rounds20_spc8_seed42\\client_qs",
+  "device": "cuda",
+  "formula": "q_weight * L_update(FedAvg_k(theta_T_k(x,y)-theta_0), observed_aggregate_constraint) + tv_weight * TV(x)",
+  "init_pixels": "random",
+  "inner_microbatch_size": 0,
+  "label_mode": "known",
+  "local_sgd": {
+    "full_batch": true,
+    "lr": 0.001,
+    "steps": 10
+  },
+  "loss_scope": "attack_layer",
+  "lr": 0.01,
+  "method": "direct_aggregated_update_to_xy_quant_aware_cpa",
+  "model": {
+    "checkpoint_path": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\int 4 fedavg\\imagenet\\vgg16\\clients3_rounds20_spc8_seed42\\client_qs\\final_round_global_model_before.pt",
+    "checkpoint_sha256": "a402d9d575a847ad045a5ea12634745c37924851096f0530bde806aaae1daf2d"
+  },
+  "n_iter": 0,
+  "n_log": 1,
+  "note": "No recovered embedding is used; the server-side aggregated gradient/update layer directly constrains x.",
+  "q_row_chunk": 128,
+  "q_row_sample": 128,
+  "q_weight": 1.0,
+  "run_dir": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\int 4 fedavg\\imagenet\\vgg16\\clients3_rounds20_spc8_seed42",
+  "seed": 42,
+  "selected_param_names": [
+    "classifier.0.weight"
+  ],
+  "tv_weight": 0.0001,
+  "unroll_param_scope": "loss_params"
+}

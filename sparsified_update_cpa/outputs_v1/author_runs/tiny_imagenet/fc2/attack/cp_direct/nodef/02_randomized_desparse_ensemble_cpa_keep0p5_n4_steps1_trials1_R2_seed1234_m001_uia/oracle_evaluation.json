@@ -1,0 +1,59 @@
+{
+  "batches": [
+    {
+      "batch": 0,
+      "metric_note": "Oracle metrics are evaluation only and are not fed back to CPA/FIA."
+    }
+  ],
+  "image_metric_dependencies": {
+    "reason": "member CPA-only run",
+    "skipped": true
+  },
+  "metric_summary": [
+    {
+      "max": null,
+      "mean": null,
+      "metric": "lpips",
+      "min": null,
+      "n": 0,
+      "std": null,
+      "threshold": null
+    },
+    {
+      "max": null,
+      "mean": null,
+      "metric": "psnr",
+      "min": null,
+      "n": 0,
+      "std": null,
+      "threshold": null
+    },
+    {
+      "max": null,
+      "mean": null,
+      "metric": "ssim",
+      "min": null,
+      "n": 0,
+      "std": null,
+      "threshold": null
+    },
+    {
+      "max": null,
+      "mean": null,
+      "metric": "embedding_cosine_similarity",
+      "min": null,
+      "n": 0,
+      "std": null,
+      "threshold": null
+    },
+    {
+      "max": null,
+      "mean": null,
+      "metric": "reconstruction_success_rate",
+      "min": null,
+      "n": 0,
+      "std": null,
+      "threshold": 0.5
+    }
+  ]
+}

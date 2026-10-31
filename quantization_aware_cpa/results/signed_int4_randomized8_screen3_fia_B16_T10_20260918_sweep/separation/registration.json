@@ -1,0 +1,35 @@
+{
+  "task_id": "CPA_SIGNED_BITS7654_SCREEN3_20260918_B4",
+  "status": "COMPLETED",
+  "stage": "SEPARATE",
+  "bits": 4,
+  "public_manifest_sha256": "e1519866632bce490c687420ce6f7f61afd9fb05cbe1fc25ff63c8fa51788fa9",
+  "config": {
+    "fast_max_iter": 200,
+    "fast_tolerance": 1e-06,
+    "refinement_iterations": 4000,
+    "refinement_lr": 0.001,
+    "refinement_momentum": 0.0,
+    "refinement_weight_decay": 0.0,
+    "negentropy_weight": 0.0935827857091549,
+    "decorrelation_weight": 0.2513674104161625,
+    "sign_weight": 0.05811961446881231,
+    "l1_weight": 17.94138146247377,
+    "eps": 1e-10,
+    "rank_floor": 1e-12
+  },
+  "separation_calls_registered": 9,
+  "member_count": 8,
+  "member_seeds": [
+    1234,
+    1001237,
+    2001240,
+    3001243,
+    4001246,
+    5001249,
+    6001252,
+    7001255
+  ],
+  "private_data_used": false,
+  "result_sha256": "cf282193939a7c690b056a5a3084aef0327f7c7ad9d448d39c8452175c50be80"
+}

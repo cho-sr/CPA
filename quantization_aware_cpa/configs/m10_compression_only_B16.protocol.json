@@ -1,0 +1,465 @@
+{
+  "schema_version": 1,
+  "protocol_id": "m10_compression_only_B16_v1",
+  "created_at_utc": "2026-09-10T08:00:00.001981+00:00",
+  "state": "design_complete_codec_and_attacks_not_implemented_or_run",
+  "is_runner_config": false,
+  "objective": "Measure whether inversion remains possible after actual communication compression, holding each existing M8/M9 attack and cached victim setup fixed.",
+  "design_document": "../codex/docs/COMMUNICATION_COMPRESSION_REDESIGN_20260910.md",
+  "independent_variable": "transmitted observation codec only within each fixed attack method",
+  "arms": [
+    {
+      "method": "upstream_cpa_fia",
+      "codec": "fp32_identity_v1",
+      "n_images": 80,
+      "state": "designed_not_run",
+      "priority": "primary"
+    },
+    {
+      "method": "upstream_cpa_fia",
+      "codec": "uniform_affine_uint4_stochastic_v1",
+      "n_images": 80,
+      "state": "designed_not_run",
+      "priority": "primary"
+    },
+    {
+      "method": "fixed_raw_rows_fia",
+      "codec": "fp32_identity_v1",
+      "n_images": 80,
+      "state": "designed_not_run",
+      "priority": "existing_secondary_comparison"
+    },
+    {
+      "method": "fixed_raw_rows_fia",
+      "codec": "uniform_affine_uint4_stochastic_v1",
+      "n_images": 80,
+      "state": "designed_not_run",
+      "priority": "existing_secondary_comparison"
+    }
+  ],
+  "source_configs_sha256": {
+    "quantization_aware_cpa/configs/m6_uia_fp32_B16_fia.json": "deaf2865732e28d02351b40cd1920f3561b1ea7088805fa00b6c3030fec3ff4e",
+    "quantization_aware_cpa/configs/m8_fedavg_naive_cpa_dither4_B16.json": "908c8592fa7d6e96407eff9373cf8ed40f1717cef9bd02fffe6c00f95d1ff099",
+    "quantization_aware_cpa/configs/m9_fedavg_rawrow_dither4_B16.json": "c852ec204a90910d95c93e70fd87bc9023dd37ea798954a9798bb0e4357a377e"
+  },
+  "source_model": {
+    "name": "vgg16",
+    "weights": "VGG16_Weights.IMAGENET1K_V1",
+    "attacked_checkpoint_round": 0,
+    "conv_frozen": true,
+    "updated_layers": "classifier only",
+    "classifier_dropout": "disabled (eval)",
+    "attack_layer": "classifier.0.weight"
+  },
+  "source_data": {
+    "root": "C:/Users/조상제/Desktop/DLG/cocktail_party_attack/datasets/imagenet",
+    "split": "val",
+    "batch_size": 16,
+    "n_batches": 5,
+    "batch_indices": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "n_images": 80,
+    "require_distinct_labels": true,
+    "microbatch_size": 16,
+    "num_workers": 0,
+    "selection": "existing qacpa.victim.select_label_indices seed0 batches0-4; all80 unique originals; no LPIPS selection"
+  },
+  "source_training": {
+    "steps": 10,
+    "local_epochs": 10,
+    "lr": 0.001,
+    "optimizer": "sgd",
+    "momentum": 0.0,
+    "weight_decay": 0.0,
+    "nominal_minibatch_size": 32,
+    "effective_minibatch_size": 16,
+    "independent_client_updates": 5,
+    "global_training_rounds_before_attack": 0,
+    "model_reset_each_update": true,
+    "client_transmissions_observed_per_reconstruction": 1,
+    "observation": "Y_delta_over_lr",
+    "observation_definition": "(W_initial-W_after_10_local_steps)/lr",
+    "uses_Y_factor_as_attack_input": false,
+    "feature_computation": "cached frozen convolutional features, no repeated image forwards during local SGD",
+    "shuffle": "fixed full-batch order; for n16 and nominal minibatch32 author shuffle changes reduction order only",
+    "update_factor_rel_l2_gate": 0.001
+  },
+  "source_inputs": [
+    {
+      "batch_index": 0,
+      "observation_file": "results/m6_uia_fp32_B16_fia/batch00/observation.pt",
+      "tensor_key": "observation.Y_delta_over_lr",
+      "declared_observation_sha256": "b4de671b85c76786e311acc32e494a08bd6176b67c9d74b3686d9b771b017e54",
+      "inputs_file": "results/m6_uia_fp32_B16_fia/batch00/inputs.pt",
+      "declared_inputs_sha256": "24995487511a3e9d8d4665fdcd704f7a0f792249a9ba79880638d13bc4740141",
+      "verification_policy": "verify full file hashes against source summaries and metadata before packet creation; no new training"
+    },
+    {
+      "batch_index": 1,
+      "observation_file": "results/m6_uia_fp32_B16_fia/batch01/observation.pt",
+      "tensor_key": "observation.Y_delta_over_lr",
+      "declared_observation_sha256": "39168d7b8239e8521fbbb213031565340680daacfb8ff6ba1bee2aa4aaef1165",
+      "inputs_file": "results/m6_uia_fp32_B16_fia/batch01/inputs.pt",
+      "declared_inputs_sha256": "2f8db846205dda931162ca171282b8372a41bf8d3061c66bb6c83f65c7f20088",
+      "verification_policy": "verify full file hashes against source summaries and metadata before packet creation; no new training"
+    },
+    {
+      "batch_index": 2,
+      "observation_file": "results/m6_uia_fp32_B16_fia/batch02/observation.pt",
+      "tensor_key": "observation.Y_delta_over_lr",
+      "declared_observation_sha256": "3ddcd6ef311c0f97dc7a461636973fcb8a1b160e10b5b6b9acf8d2c1b15548c2",
+      "inputs_file": "results/m6_uia_fp32_B16_fia/batch02/inputs.pt",
+      "declared_inputs_sha256": "1f1c898c93b7e0fcf4c00fecbb88fce2f913b4d4ed298aa21479a851c3284db3",
+      "verification_policy": "verify full file hashes against source summaries and metadata before packet creation; no new training"
+    },
+    {
+      "batch_index": 3,
+      "observation_file": "results/m6_uia_fp32_B16_fia/batch03/observation.pt",
+      "tensor_key": "observation.Y_delta_over_lr",
+      "declared_observation_sha256": "cda34d3f8bed30feab5ccb03ea183488bca0ea87aab3004a76558566bd4e75a1",
+      "inputs_file": "results/m6_uia_fp32_B16_fia/batch03/inputs.pt",
+      "declared_inputs_sha256": "ebdbd1774a320767a40f22c698260b4e3a9ac7ad4b69c2a92b987fe4318d570a",
+      "verification_policy": "verify full file hashes against source summaries and metadata before packet creation; no new training"
+    },
+    {
+      "batch_index": 4,
+      "observation_file": "results/m6_uia_fp32_B16_fia/batch04/observation.pt",
+      "tensor_key": "observation.Y_delta_over_lr",
+      "declared_observation_sha256": "2d7d22f8364fc119d5c660f8bd0d1db583a64788fb3c66f02e7779ece1bb2e0b",
+      "inputs_file": "results/m6_uia_fp32_B16_fia/batch04/inputs.pt",
+      "declared_inputs_sha256": "6c30802ecdeb7c679e28f47b00e59f016464a3e850cca23fd5a396448ceae20f",
+      "verification_policy": "verify full file hashes against source summaries and metadata before packet creation; no new training"
+    }
+  ],
+  "observation": {
+    "shape": [
+      4096,
+      25088
+    ],
+    "input_dtype": "float32",
+    "input_definition": "(W_initial-W_final)/lr",
+    "server_update_interpretation": "DeltaW=-lr*decoded_Y",
+    "transmission_scope": "classifier.0.weight normalized client update",
+    "full_client_upload_measured": false,
+    "compression_insertion": "after saved local update, before communication and attack",
+    "ideal_factor_substitution": false,
+    "new_training": false
+  },
+  "fixed_cpa": {
+    "function": "qacpa.upstream_naive.run_upstream_cpa",
+    "n_components": 16,
+    "initialization": "identity",
+    "seed_rule": "0+batch_index",
+    "config": {
+      "cpa_ica_max_iter": 25000,
+      "cpa_ica_lr": 0.001,
+      "cpa_ica_optimizer": "adam",
+      "cpa_ica_scheduler": "none",
+      "cpa_ica_decor": 5.3,
+      "cpa_ica_T": 7.7,
+      "cpa_ica_ne": 1.0,
+      "cpa_ica_nv": 0.13,
+      "cpa_ica_l1": 5.0,
+      "cpa_ica_tv": 0.1,
+      "cpa_ica_log_every": 5000
+    }
+  },
+  "fixed_raw_rows": {
+    "selection": "CPU torch.randperm(4096, Generator.manual_seed(seed+batch))[:16]; fixed before FIA; preserve selection order and zero rows",
+    "frozen_row_indices": {
+      "0": [
+        2732,
+        1810,
+        3111,
+        2738,
+        155,
+        2864,
+        2423,
+        2918,
+        2441,
+        3201,
+        2475,
+        3147,
+        2724,
+        4072,
+        3456,
+        1825
+      ],
+      "1": [
+        1061,
+        1635,
+        3924,
+        4082,
+        227,
+        1726,
+        3027,
+        1041,
+        3487,
+        1567,
+        12,
+        3320,
+        3524,
+        3972,
+        1729,
+        3695
+      ],
+      "2": [
+        3240,
+        88,
+        3691,
+        1396,
+        1170,
+        622,
+        1028,
+        1748,
+        768,
+        3918,
+        3652,
+        592,
+        731,
+        3539,
+        3101,
+        2319
+      ],
+      "3": [
+        1898,
+        2139,
+        2293,
+        3935,
+        3728,
+        2978,
+        1416,
+        600,
+        349,
+        3561,
+        2258,
+        2667,
+        2789,
+        282,
+        890,
+        479
+      ],
+      "4": [
+        1146,
+        2695,
+        3797,
+        3688,
+        1933,
+        501,
+        1905,
+        1526,
+        1826,
+        3676,
+        3308,
+        1532,
+        3647,
+        263,
+        1254,
+        2024
+      ]
+    },
+    "adapter": "signed raw update rows saved; abs(raw rows) to FIA; no L2 normalization or source estimation",
+    "normalization": false
+  },
+  "fixed_fia": {
+    "function": "qacpa.upstream_naive.run_upstream_fia",
+    "batch_size": 16,
+    "config": {
+      "n_iter": 25000,
+      "log_every": 5000,
+      "lr": 0.1,
+      "tv": 0.1,
+      "fi": 1.0,
+      "optimizer": "adam",
+      "scheduler": "cosine",
+      "seed": 42
+    },
+    "seed_reset": "42 per batch, independent of codec RNG"
+  },
+  "fixed_evaluation": {
+    "function": "qacpa.run_m8_fedavg_naive.evaluate_after_fia",
+    "matching": "signed-source absolute-cosine Hungarian after FIA only",
+    "all_images": 80,
+    "oracle_fills": false,
+    "image_selection": false,
+    "grid": {
+      "seed": 42,
+      "n": 12
+    },
+    "lpips_success_cutoff": null,
+    "embedding_cosine_threshold": 0.9,
+    "embedding_count_is_image_success_rate": false,
+    "invalid_historical_no_cpa_used": false
+  },
+  "disabled": [
+    "ls_A",
+    "debias",
+    "mp_truncation",
+    "mp_diagnostic",
+    "stage2",
+    "refine_A",
+    "error_feedback",
+    "new_training",
+    "oracle_fills"
+  ],
+  "codec": {
+    "id": "uniform_affine_uint4_stochastic_v1",
+    "bits": 4,
+    "levels": 16,
+    "codes_min": 0,
+    "codes_max": 15,
+    "granularity": "per_row",
+    "radius": "float32 max(abs(Y_row))",
+    "offset": "-radius",
+    "delta": "2*radius/15",
+    "normalized_coordinate": "clip((float64(Y)/float64(radius)+1)*7.5,0,15)",
+    "rounding": "floor(t)+int(uniform_float64 < t-floor(t))",
+    "decoded_value": "float32(float64(radius)*(2*float64(q)/15-1))",
+    "zero_radius_row": "all q=0, decoder returns exact zero",
+    "zero_in_nonzero_row_is_exactly_representable": false,
+    "original_dependent_projection": false,
+    "encoder_rng": {
+      "library": "torch",
+      "device": "cpu",
+      "dtype": "float64",
+      "seed_rule": "0+1000003*batch_index",
+      "row_chunk_size": 64,
+      "traversal": "row-major; one torch.rand per contiguous row chunk, including all zero-row elements; override zero-row codes only after RNG consumption",
+      "version_must_be_recorded": true
+    },
+    "decoder_needs_seed": false,
+    "decoder_inputs": [
+      "packet bytes only"
+    ],
+    "error_model_real_arithmetic": {
+      "conditional_bias": 0,
+      "conditional_variance": "delta^2*p*(1-p)",
+      "absolute_error_bound": "delta",
+      "legacy_delta2_over12_applicable": false,
+      "legacy_half_delta_cell_applicable": false
+    },
+    "floating_point_policy": "use transmitted float32 radius with float64 intermediate math; log FP32 reconstruction tolerance separately; reject nonfinite input or invalid radius"
+  },
+  "wire_format": {
+    "endianness": "little",
+    "header_struct": "<8sBBBBIIQI",
+    "header_bytes": 32,
+    "magic_ascii": "CPACOMM1",
+    "version": 1,
+    "codec_ids": {
+      "fp32_identity_v1": 0,
+      "uniform_affine_uint4_stochastic_v1": 1
+    },
+    "fields": [
+      "magic8",
+      "version_u8",
+      "codec_id_u8",
+      "bits_u8",
+      "flags_u8",
+      "rows_u32",
+      "cols_u32",
+      "elements_u64",
+      "radius_count_u32"
+    ],
+    "flags": 0,
+    "fp32_body": "row-major little-endian float32 Y, radius_count=0",
+    "uint4_body": "rows little-endian float32 radii, then packed row-major codes; radius_count=rows",
+    "packing": "low nibble first: q[2k] | q[2k+1]<<4",
+    "odd_padding": "zero high nibble; use elements to remove",
+    "provenance_not_decoder_input": [
+      "encoder_seed",
+      "original_Y",
+      "true_images",
+      "true_embeddings",
+      "source_hashes"
+    ],
+    "byte_count_rule": "measure complete packet file/buffer length including any additional transmitted metadata"
+  },
+  "predicted_communication_not_measured": {
+    "fp32_data_bytes": 411041792,
+    "uint4_codes_bytes": 51380224,
+    "radii_bytes": 16384,
+    "fp32_packet_bytes": 411041824,
+    "uint4_packet_bytes": 51396640,
+    "compression_ratio": 7.997445436121894,
+    "saved_percent": 87.49600721896368,
+    "scope": "attacked FC1 weight packet only"
+  },
+  "required_checks": [
+    "integer alphabet and nibble round trip",
+    "FP32 identity bitwise round trip",
+    "decoder round trip without original Y",
+    "zero rows/endpoints/grid points/half steps/odd length",
+    "reject nonfinite values and malformed packets",
+    "toy fixed-budget stochastic mean and variance verification",
+    "source hashes, image identity and M9 row IDs before runs",
+    "freeze common code/config/weights and new codec/payload hashes",
+    "measure actual packet bytes",
+    "same packet and decoder for both attack methods",
+    "no data-dependent budget/seed/rank/codec selection"
+  ],
+  "execution_order": [
+    "upstream_cpa_fia__fp32_identity_v1",
+    "upstream_cpa_fia__uniform_affine_uint4_stochastic_v1",
+    "fixed_raw_rows_fia__fp32_identity_v1",
+    "fixed_raw_rows_fia__uniform_affine_uint4_stochastic_v1"
+  ],
+  "artifacts": [
+    "input_manifest.json",
+    "communication.csv",
+    "quantization_diagnostics.csv",
+    "per_image_metrics.csv",
+    "per_batch_metrics.csv",
+    "paired_compression_effect.csv",
+    "all80 reconstruction grid",
+    "seed42 random12 reconstruction grid"
+  ],
+  "code_sha256_at_design": {
+    "quantization_aware_cpa/configs/m6_uia_fp32_B16_fia.json": "deaf2865732e28d02351b40cd1920f3561b1ea7088805fa00b6c3030fec3ff4e",
+    "quantization_aware_cpa/configs/m8_fedavg_naive_cpa_dither4_B16.json": "908c8592fa7d6e96407eff9373cf8ed40f1717cef9bd02fffe6c00f95d1ff099",
+    "quantization_aware_cpa/configs/m9_fedavg_rawrow_dither4_B16.json": "c852ec204a90910d95c93e70fd87bc9023dd37ea798954a9798bb0e4357a377e",
+    "quantization_aware_cpa/qacpa/quantizer.py": "4ad7b239e7a060cc8f400a6eb560f1d1fa69863dc0d9fc7049f33a494f02f075",
+    "quantization_aware_cpa/qacpa/run_m7_uia_4bit.py": "3a771235d024f3d0eb407843632dd22805c7813f7836a86784cac10838742820",
+    "quantization_aware_cpa/qacpa/run_m8_fedavg_naive.py": "0ea71db00a7e20e9ee9309215fbfa47c84f83290f9ca7027e3bec09ca2ea65f3",
+    "quantization_aware_cpa/qacpa/run_m9_rawrow_fia.py": "e02531f384191e3a8d40cc9794e426cf01a5c153e2d56bd1f964d19466949427",
+    "quantization_aware_cpa/qacpa/upstream_naive.py": "8f29b885d86f4121eda5c55e17486a3a48bd8db08b2f83890fe7726730d1ee92",
+    "quantization_aware_cpa/qacpa/fia.py": "42a55ce6a4895785b10573f507658434e597f1138de3d45621f466702c7f5cb0",
+    "quantization_aware_cpa/qacpa/seed.py": "769366fcc2cf3e144d8caa86f73a55dcb0b6be615a45dab8b6e117399150c558",
+    "official_cpa/src/attack.py": "d2984fcab6708d1c28bec7c36c7792d40b01b7b4bd150316263f6f8bbd6b3816",
+    "official_cpa/src/collect_grads.py": "4d39b5e4bcbebe36dd8131d6c4a5ec0456e7e9de51f7301c0b5079a04aa436e6",
+    "official_cpa/src/collect_updates.py": "78a07e3f872231cb582c828eb315bb3c04976bc2f36fdecae5bdb6c17d7f6177",
+    "official_cpa/src/datasets.py": "f9e7b47733b5acb4b73e6914a3f100b5187766bbed78a12d17b69c39eec1b6d1",
+    "official_cpa/src/eval_utils.py": "042e6263905b32044290e2e1e4d93c54ebcb8e813509c27cf76bdd23b00ec349",
+    "official_cpa/src/feature_inversion.py": "dc73880427e3eaf1f873d295f17f1d48d301882f634ee5df36ddeea8e56c4dec",
+    "official_cpa/src/gradient_inversion.py": "c598e1ee7b4079f741060d10c8dfd14711e393a97384c63cf32be77a458b1873",
+    "official_cpa/src/gradient_inversion_utils.py": "668d77788dc8d81c181c8c0a9fbe8533c6fbea22ba46fe7f5e15b0a431300e5f",
+    "official_cpa/src/log_utils.py": "70ced512bcd2de0e6e52d34a5cb9ca34ae7877a0b220b044fce12e48c422cd80",
+    "official_cpa/src/models.py": "f684ca948a8ba8020d82cba3d2bdc5df731dd51d9807e38c5be37a3feab4ee56",
+    "official_cpa/src/report_m6_attack_results.py": "ce40db9745aebc515c5d52a031d3a4b2806e74edf9068ab26291094ba6455fa4",
+    "official_cpa/src/train.py": "a054cbe9c855b05bba9c808a59524c019b6549dde04c432a6e1906448d125bf1",
+    "official_cpa/src/utils.py": "565f1bf1a47f387d042b35bb24f677d1ff0d3ec5d979e2876c31ed114179b9fe",
+    "official_cpa/src/vgg16.py": "8114eca8cde553dace5f777aedd21b70851c570d473e597b005cb6be4b248d36"
+  },
+  "historical_quantizer_cpu_probe": {
+    "input": "torch.linspace(-1,1,4097).reshape(1,-1)",
+    "bits": 4,
+    "seed": 0,
+    "stochastic_unique_values": 4097,
+    "deterministic_unique_values": 17,
+    "deterministic_max_distance_to_integer_lattice": 7.486343383789062e-05,
+    "integer_codes_present": false,
+    "packed_payload_present": false
+  },
+  "reporting_limits": [
+    "Historical dither metrics do not demonstrate a transmitted integer codec.",
+    "Historical M6 FP32 is not the latest M8 attack baseline.",
+    "Attacked-layer bytes are not full-client or full-training bytes.",
+    "No success or utility claim before new measurements.",
+    "Historical invalid no-CPA controls and derived thresholds remain withdrawn."
+  ]
+}

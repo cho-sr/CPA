@@ -1,0 +1,83 @@
+{
+  "log": [
+    {
+      "iter": 0,
+      "loss": 1.1297248601913452,
+      "loss_fi": 0.9090391397476196,
+      "loss_gm": 0.0,
+      "loss_tv": 2.2068567276000977,
+      "time_sec": 2.244050499983132
+    },
+    {
+      "iter": 4999,
+      "loss": 0.03676380217075348,
+      "loss_fi": 0.008686885237693787,
+      "loss_gm": 0.0,
+      "loss_tv": 0.2807691693305969,
+      "time_sec": 431.1339051001705
+    },
+    {
+      "iter": 9999,
+      "loss": 0.026551341637969017,
+      "loss_fi": 0.006421305239200592,
+      "loss_gm": 0.0,
+      "loss_tv": 0.20130035281181335,
+      "time_sec": 860.674237600062
+    },
+    {
+      "iter": 14999,
+      "loss": 0.01878558099269867,
+      "loss_fi": 0.004215370863676071,
+      "loss_gm": 0.0,
+      "loss_tv": 0.14570209383964539,
+      "time_sec": 1290.1862226000521
+    },
+    {
+      "iter": 19999,
+      "loss": 0.007068865466862917,
+      "loss_fi": 0.0021188966929912567,
+      "loss_gm": 0.0,
+      "loss_tv": 0.04949968680739403,
+      "time_sec": 1718.2585330000147
+    },
+    {
+      "iter": 24999,
+      "loss": 0.00427956972271204,
+      "loss_fi": 0.001438591629266739,
+      "loss_gm": 0.0,
+      "loss_tv": 0.02840977907180786,
+      "time_sec": 2145.2485776999965
+    }
+  ],
+  "wall_time_sec": 2145.276622700272,
+  "setup_wall_time_sec": 0.0069228000938892365,
+  "optimizer_wall_time_sec": 2145.2696999001782,
+  "source_hashes": {
+    "C:\\Users\\조상제\\Desktop\\CPA\\official_cpa\\src\\datasets.py": "f9e7b47733b5acb4b73e6914a3f100b5187766bbed78a12d17b69c39eec1b6d1",
+    "C:\\Users\\조상제\\Desktop\\CPA\\official_cpa\\src\\utils.py": "565f1bf1a47f387d042b35bb24f677d1ff0d3ec5d979e2876c31ed114179b9fe",
+    "C:\\Users\\조상제\\Desktop\\CPA\\official_cpa\\src\\gradient_inversion_utils.py": "668d77788dc8d81c181c8c0a9fbe8533c6fbea22ba46fe7f5e15b0a431300e5f",
+    "C:\\Users\\조상제\\Desktop\\CPA\\official_cpa\\src\\gradient_inversion.py": "c598e1ee7b4079f741060d10c8dfd14711e393a97384c63cf32be77a458b1873",
+    "C:\\Users\\조상제\\Desktop\\CPA\\official_cpa\\src\\feature_inversion.py": "dc73880427e3eaf1f873d295f17f1d48d301882f634ee5df36ddeea8e56c4dec",
+    "C:\\Users\\조상제\\Desktop\\CPA\\official_cpa\\src\\vgg16.py": "8114eca8cde553dace5f777aedd21b70851c570d473e597b005cb6be4b248d36",
+    "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\qacpa\\upstream_naive.py": "8f29b885d86f4121eda5c55e17486a3a48bd8db08b2f83890fe7726730d1ee92",
+    "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\qacpa\\seed.py": "769366fcc2cf3e144d8caa86f73a55dcb0b6be615a45dab8b6e117399150c558"
+  },
+  "settings": {
+    "seed": 42,
+    "device": "cuda",
+    "n_iter": 25000,
+    "lr": 0.1,
+    "tv": 0.1,
+    "fi": 1.0,
+    "optimizer": "adam",
+    "scheduler": "cosine",
+    "log_every": 5000,
+    "backend": "official_cpa/src/feature_inversion.py:Direct",
+    "feature_adapter": "FedAvg round_001 VGG16 features/avgpool; CoRA RoundFeatureModel-equivalent",
+    "feature_adapter_sha256": "6369c7bfe93e25d653dd70537e89ad6c6fcf9ed919772186c69a1a7879ffccaa",
+    "evaluation_inputs": false,
+    "cudnn_benchmark": true,
+    "cudnn_deterministic": true
+  },
+  "initialization_sha256": "6f6ec493923b7081284f0fc405f76f60b583cc41a5977393751f96bb21147e59"
+}

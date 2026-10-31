@@ -1,0 +1,11 @@
+global_index,batch_index,source_index,dataset_index,label,image_path,initial_per_sample_loss,historical_global_index,historical_batch_index,historical_source_index,historical_m8_lpips,selection_rank
+0,0,0,30310,606,C:\Users\조상제\Desktop\DLG\cocktail_party_attack\datasets\imagenet\val\n03584829\ILSVRC2012_val_00009366.JPEG,0.08740963786840439,46,2,14,0.34454238414764404,1
+1,0,1,6208,124,C:\Users\조상제\Desktop\DLG\cocktail_party_attack\datasets\imagenet\val\n01985128\ILSVRC2012_val_00004665.JPEG,0.2700023353099823,8,0,8,0.3621746301651001,2
+2,0,2,7629,152,C:\Users\조상제\Desktop\DLG\cocktail_party_attack\datasets\imagenet\val\n02085782\ILSVRC2012_val_00029262.JPEG,0.6939354538917542,58,3,10,0.374515175819397,3
+3,0,3,39103,782,C:\Users\조상제\Desktop\DLG\cocktail_party_attack\datasets\imagenet\val\n04152593\ILSVRC2012_val_00002598.JPEG,1.9826552867889404,39,2,7,0.39399293065071106,4
+4,0,4,31051,621,C:\Users\조상제\Desktop\DLG\cocktail_party_attack\datasets\imagenet\val\n03649909\ILSVRC2012_val_00001433.JPEG,1.8839209079742432,1,0,1,0.3974275290966034,5
+5,0,5,35974,719,C:\Users\조상제\Desktop\DLG\cocktail_party_attack\datasets\imagenet\val\n03935335\ILSVRC2012_val_00027469.JPEG,7.72914981842041,17,1,1,0.40256407856941223,6
+6,0,6,21734,434,C:\Users\조상제\Desktop\DLG\cocktail_party_attack\datasets\imagenet\val\n02808304\ILSVRC2012_val_00031759.JPEG,0.42881402373313904,63,3,15,0.407230406999588,7
+7,0,7,14509,290,C:\Users\조상제\Desktop\DLG\cocktail_party_attack\datasets\imagenet\val\n02128925\ILSVRC2012_val_00012411.JPEG,0.4991302788257599,9,0,9,0.4107787311077118,8
+8,0,8,24974,499,C:\Users\조상제\Desktop\DLG\cocktail_party_attack\datasets\imagenet\val\n03041632\ILSVRC2012_val_00022700.JPEG,2.2352890968322754,53,3,5,0.411035418510437,9
+9,0,9,11848,236,C:\Users\조상제\Desktop\DLG\cocktail_party_attack\datasets\imagenet\val\n02107142\ILSVRC2012_val_00048330.JPEG,0.6846553683280945,70,4,6,0.4159829616546631,10

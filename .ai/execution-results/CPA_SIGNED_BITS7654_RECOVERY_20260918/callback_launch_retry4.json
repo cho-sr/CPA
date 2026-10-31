@@ -1,0 +1,11 @@
+{
+  "task_id": "CPA_SIGNED_BITS7654_RECOVERY_20260918",
+  "attempt": 4,
+  "callback_pid": 25904,
+  "wait_pid": 25160,
+  "wait_created_ms": 1789703008341,
+  "callback": "C:/Users/조상제/Desktop/CPA/.ai/execution-results/CPA_SIGNED_BITS7654_RECOVERY_20260918/completion_callback.py",
+  "launched_at_epoch": 1789703008.3931394,
+  "model_calls_while_waiting": 0,
+  "previous_callback_preserved": true
+}

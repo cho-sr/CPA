@@ -1,0 +1,15 @@
+[CPA final validation repair result | user-authorized one-time handoff]
+SESSION_ROLE: CODEX_EXECUTOR
+TASK_ID: CPA_SIGNED_CELL_VALIDATION_REPAIR_20260915
+PLAN_VERSION: 1
+Executor thread: 01a09e4d-51f3-7121-84e2-03a7a9ac3039; PID: 18272
+Planner recipient: 01a09ac2-0e8d-7f90-94a8-c45be99f4343; PID: 12728
+Handoff: C:\Users\조상제\Desktop\CPA\.ai\EXECUTION_HANDOFF.md
+Result report: C:\Users\조상제\Desktop\CPA\.ai\execution-results\CPA_SIGNED_CELL_VALIDATION_REPAIR_20260915\report.md
+Results JSON: C:\Users\조상제\Desktop\CPA\.ai\execution-results\CPA_SIGNED_CELL_VALIDATION_REPAIR_20260915\results.json
+
+The three authorized validation repairs are complete. V1 now validates required fields/types/SHA256 before equality and preserves the actual baseline runtime contract, including deterministic_warn_only=true. V2 cross-checks registration, result, and independently declared arm metadata for rank16, uncentered gram_eigh, AP0/AP5, hashes, shapes, and finalized statuses before CPA. V3 computes evaluation-only true-G absolute/reference/relative errors from finalized naive sq and cell V inputs, with JSON null and UNDEFINED_ZERO_REFERENCE_NORM for zero reference norms plus a separate absolute error.
+
+Final focused synthetic/mock CPU suite: 43 passed, exit 0. Existing codec/original-adapter/provenance regression: 109 passed, exit 0. Syntax, actual baseline runtime, pre-fix hole reproduction, and protected hash checks passed. Protected_match=true; signed_cell_rank.py hash remains 7ae6deb49738914f4cd1f9328397400d89835ede4cd6a462b2ea260a77ae4acb.
+
+FULL_EXPERIMENT_NOT_RUN remains explicit. No GPU comparison, real observation/private tensor, reconstruction, new arm/seed/worker, or scientific condition change was made. Show this result once in the existing Planner CLI, do not append a relay turn, reply, poll, start work, or run another experiment, then end your turn.

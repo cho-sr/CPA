@@ -1,0 +1,5 @@
+[CPA process completion | user-authorized one-time wakeup]
+TASK_ID: CPA_SIGNED_INT8_RANDOMIZED8_SCREEN3_FIA_20260917
+Wrapper PID: 23720; process exit: 1
+Report directory: C:\Users\조상제\Desktop\CPA\.ai\execution-results\CPA_SIGNED_INT8_RANDOMIZED8_SCREEN3_FIA_20260917
+This callback waited once on the OS process event with zero model calls. Read execution_summary.json and stage logs, verify artifacts, update the claimed handoff truthfully, and send exactly one final result to the existing Planner. Do not rerun, add arms, tune, or poll.

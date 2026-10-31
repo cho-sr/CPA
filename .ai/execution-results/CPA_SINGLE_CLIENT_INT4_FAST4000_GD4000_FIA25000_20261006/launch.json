@@ -1,0 +1,9 @@
+{
+    "task_id":  "CPA_SINGLE_CLIENT_INT4_FAST4000_GD4000_FIA25000_20261006",
+    "thread":  "01a11025-fc1c-7e53-bea5-3cc32a1bae01",
+    "worker_pid":  18052,
+    "worker_created_ms":  1791275487701,
+    "callback_pid":  16376,
+    "callback_created_ms":  1791275487725,
+    "launch_utc":  "2026-10-06T08:31:27.7390718+00:00"
+}

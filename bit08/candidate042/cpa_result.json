@@ -1,0 +1,99 @@
+{
+  "log": [
+    {
+      "iter": 0,
+      "loss": 741.15283203125,
+      "loss_ne": 0.0,
+      "loss_decor": 137.959228515625,
+      "loss_tv": 0.0,
+      "loss_nv": 59.70973587036133,
+      "loss_l1": 0.441318541765213,
+      "time_sec": 0.3017947299958905
+    },
+    {
+      "iter": 4999,
+      "loss": 735.1031494140625,
+      "loss_ne": 0.0,
+      "loss_decor": 138.0391845703125,
+      "loss_tv": 0.0,
+      "loss_nv": 14.919051170349121,
+      "loss_l1": 0.3111923933029175,
+      "time_sec": 35.64113033399917
+    },
+    {
+      "iter": 9999,
+      "loss": 735.1044921875,
+      "loss_ne": 0.0,
+      "loss_decor": 138.03948974609375,
+      "loss_tv": 0.0,
+      "loss_nv": 14.916271209716797,
+      "loss_l1": 0.3112122416496277,
+      "time_sec": 70.93580317900341
+    },
+    {
+      "iter": 14999,
+      "loss": 735.1033325195312,
+      "loss_ne": 0.0,
+      "loss_decor": 138.03924560546875,
+      "loss_tv": 0.0,
+      "loss_nv": 14.917810440063477,
+      "loss_l1": 0.3111952841281891,
+      "time_sec": 106.10322638100479
+    },
+    {
+      "iter": 19999,
+      "loss": 735.1033325195312,
+      "loss_ne": 0.0,
+      "loss_decor": 138.03939819335938,
+      "loss_tv": 0.0,
+      "loss_nv": 14.912332534790039,
+      "loss_l1": 0.3111856281757355,
+      "time_sec": 141.58127075100492
+    },
+    {
+      "iter": 24999,
+      "loss": 735.103271484375,
+      "loss_ne": 0.0,
+      "loss_decor": 138.03955078125,
+      "loss_tv": 0.0,
+      "loss_nv": 14.906808853149414,
+      "loss_l1": 0.31115177273750305,
+      "time_sec": 176.819186120003
+    }
+  ],
+  "wall_time_sec": 194.7357693350059,
+  "setup_wall_time_sec": 17.908710755000357,
+  "optimizer_wall_time_sec": 176.82705858000554,
+  "source_hashes": {
+    "/root/same80/CPA/official_cpa/src/datasets.py": "f9e7b47733b5acb4b73e6914a3f100b5187766bbed78a12d17b69c39eec1b6d1",
+    "/root/same80/CPA/official_cpa/src/utils.py": "565f1bf1a47f387d042b35bb24f677d1ff0d3ec5d979e2876c31ed114179b9fe",
+    "/root/same80/CPA/official_cpa/src/gradient_inversion_utils.py": "668d77788dc8d81c181c8c0a9fbe8533c6fbea22ba46fe7f5e15b0a431300e5f",
+    "/root/same80/CPA/official_cpa/src/gradient_inversion.py": "c598e1ee7b4079f741060d10c8dfd14711e393a97384c63cf32be77a458b1873",
+    "/root/same80/CPA/official_cpa/src/feature_inversion.py": "dc73880427e3eaf1f873d295f17f1d48d301882f634ee5df36ddeea8e56c4dec",
+    "/root/same80/CPA/official_cpa/src/vgg16.py": "8114eca8cde553dace5f777aedd21b70851c570d473e597b005cb6be4b248d36",
+    "/root/same80/CPA/quantization_aware_cpa/qacpa/upstream_naive.py": "8f29b885d86f4121eda5c55e17486a3a48bd8db08b2f83890fe7726730d1ee92",
+    "/root/same80/CPA/quantization_aware_cpa/qacpa/seed.py": "769366fcc2cf3e144d8caa86f73a55dcb0b6be615a45dab8b6e117399150c558"
+  },
+  "settings": {
+    "n_components": 16,
+    "seed": 0,
+    "device": "cuda:0",
+    "n_iter": 25000,
+    "lr": 0.001,
+    "opt": "adam",
+    "sch": "none",
+    "decor": 5.3,
+    "T": 7.7,
+    "ne": 1.0,
+    "nv": 0.13,
+    "l1": 5.0,
+    "tv": 0.1,
+    "log_every": 5000,
+    "whitening": "upstream cov/(d-1), torch.linalg.eig, top abs eigenvalues",
+    "backend": "official_cpa/src/gradient_inversion.py:CocktailPartyAttack",
+    "debias": false,
+    "mp_truncation": false,
+    "mixing_matrix_computed": false
+  },
+  "cache_path": "/root/same80/CPA/quantization_aware_cpa/results/same16_bits84_full100_fedavg20/bit08/candidate042/cpa_work/upstream_cpa_4hefxl50/imagenet/vgg16/attack/cp_direct/observed/private_uia/w_16_0.pkl"
+}

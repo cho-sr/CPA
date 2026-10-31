@@ -1,0 +1,10 @@
+{
+  "released": true,
+  "run_tag": "m7_uia_4bit_B16",
+  "protocol_sha256": "39cc98aa436159365c4bbdb91e6ac9822a742be1e0c985a6ea282bf3c28ac156",
+  "released_at_utc": "2026-09-09T08:04:22.143481+00:00",
+  "root_review": "passed; root and independent review; combined21tests passed",
+  "authorization": "root launch approval after shuffled GPU metric completion; no optional A/B",
+  "shuffle_completion_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_shuffle_control\\gpu_complete.json",
+  "shuffle_completion_sha256": "c87dca9511ad18a06840c086f31319cf11600cb49e2b60094cf9c4261cc920e2"
+}

@@ -1,0 +1,144 @@
+{
+  "archived_sender_validation_sha256": "6e78ec5ff2376b01c23a3606fa18b3d9e60d1209f55504211aaf811919d2e244",
+  "bits": 7,
+  "checkpoint_sha256": "397923af8e79cdbb6a7127f12361acd7a2f83e06b05044ddf496e83de57a5bf0",
+  "codec": {
+    "bits": 7,
+    "code_dtype": "int8",
+    "code_operation": "round(float32(G/s)).clamp(-63,63).int8",
+    "codec": "signed_symmetric_bits7_qplus63_nearest_even_cpu_fp32_v1",
+    "device": "cpu",
+    "edge_policy": "largest_finite_fp32_absmax_rounding_to_observed_scale",
+    "input_dtype": "float32",
+    "logical_code_bits": 7,
+    "physical_code_storage": "int8",
+    "qmax": 63,
+    "qmin": -63,
+    "rounding": "nearest_even",
+    "scale_dtype": "float32",
+    "scale_operation": "float32(max_abs/63)",
+    "scale_scope": "per_parameter_tensor_absmax_scalar",
+    "zero_tensor": "q=0,s=1"
+  },
+  "evaluation_truth_sha256": "724bbacbe316cc28dac086db9cfaf6507f4c1af31144fd610cc480985aab72e2",
+  "images_consumed": false,
+  "labels_consumed": false,
+  "layers": {
+    "classifier.0.bias": {
+      "code_bytes": 4096,
+      "file": "fc_00.sb7",
+      "file_bytes": 4116,
+      "header_bytes_excluding_scale": 16,
+      "logical_code_bits": 7,
+      "numel": 4096,
+      "physical_code_storage": "int8",
+      "q_dtype": "int8",
+      "s_dtype": "float32",
+      "s_shape": [],
+      "scale_bytes": 4,
+      "sha256": "e84917051dd344a746000509669c8466ab78f0b9da2f8564b3927d5a1f381d73",
+      "shape": [
+        4096
+      ]
+    },
+    "classifier.0.weight": {
+      "code_bytes": 102760448,
+      "file": "fc_01.sb7",
+      "file_bytes": 102760468,
+      "header_bytes_excluding_scale": 16,
+      "logical_code_bits": 7,
+      "numel": 102760448,
+      "physical_code_storage": "int8",
+      "q_dtype": "int8",
+      "s_dtype": "float32",
+      "s_shape": [],
+      "scale_bytes": 4,
+      "sha256": "13ed5dbac944708d9133ad079a43bdf08f101c665aa4135666fbd90fe67dfae5",
+      "shape": [
+        4096,
+        25088
+      ]
+    },
+    "classifier.3.bias": {
+      "code_bytes": 4096,
+      "file": "fc_02.sb7",
+      "file_bytes": 4116,
+      "header_bytes_excluding_scale": 16,
+      "logical_code_bits": 7,
+      "numel": 4096,
+      "physical_code_storage": "int8",
+      "q_dtype": "int8",
+      "s_dtype": "float32",
+      "s_shape": [],
+      "scale_bytes": 4,
+      "sha256": "c710e1906c4896467dd21370d4afc93b1f00ef088546c4498fa26b74d076a9c5",
+      "shape": [
+        4096
+      ]
+    },
+    "classifier.3.weight": {
+      "code_bytes": 16777216,
+      "file": "fc_03.sb7",
+      "file_bytes": 16777236,
+      "header_bytes_excluding_scale": 16,
+      "logical_code_bits": 7,
+      "numel": 16777216,
+      "physical_code_storage": "int8",
+      "q_dtype": "int8",
+      "s_dtype": "float32",
+      "s_shape": [],
+      "scale_bytes": 4,
+      "sha256": "aaedf089aa50d88464c551263c39d95995626b9ec59a854ad54bf884a82c42af",
+      "shape": [
+        4096,
+        4096
+      ]
+    },
+    "classifier.6.bias": {
+      "code_bytes": 1000,
+      "file": "fc_04.sb7",
+      "file_bytes": 1020,
+      "header_bytes_excluding_scale": 16,
+      "logical_code_bits": 7,
+      "numel": 1000,
+      "physical_code_storage": "int8",
+      "q_dtype": "int8",
+      "s_dtype": "float32",
+      "s_shape": [],
+      "scale_bytes": 4,
+      "sha256": "08201bf42b0e01a08bf0d0c3d6e9dd2568731dbfc024f2028fb92a3f51706f2c",
+      "shape": [
+        1000
+      ]
+    },
+    "classifier.6.weight": {
+      "code_bytes": 4096000,
+      "file": "fc_05.sb7",
+      "file_bytes": 4096020,
+      "header_bytes_excluding_scale": 16,
+      "logical_code_bits": 7,
+      "numel": 4096000,
+      "physical_code_storage": "int8",
+      "q_dtype": "int8",
+      "s_dtype": "float32",
+      "s_shape": [],
+      "scale_bytes": 4,
+      "sha256": "63d62e77f77a5fc84a47c0154a5fa5a8bf0d2f9a25ada2eb809e0ef3e61dbf17",
+      "shape": [
+        1000,
+        4096
+      ]
+    }
+  },
+  "logical_bits": 7,
+  "physical_code_storage": "int8",
+  "private_provenance_output": "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results_private/signed_int7_randomized8_screen3_fia_B16_T10_20260918_sweep/sender",
+  "public_manifest_sha256": "236d9c8551bc722ea7a1614d491965057978df34ff81ddde3aac522990f25291",
+  "public_output": "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int7_randomized8_screen3_fia_B16_T10_20260918_sweep/observation",
+  "raw_features_saved": false,
+  "raw_updates_saved_in_public": false,
+  "raw_updates_sha256": "ef9aefc66ab9fcfd0b023fdfc064dbadc27567bd3ef3508bc14ebda9af28ba4c",
+  "stage": "SENDER",
+  "status": "COMPLETED",
+  "true_updates_consumed": true
+}

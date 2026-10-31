@@ -1,0 +1,10 @@
+{
+  "author_source_hash": "synthetic-author",
+  "keep_ratio": 0.5,
+  "method": "global_topk_sparse_from_shared_fp32",
+  "observed_zero_policy": "zeros_are_treated_as_true_observed_update_values",
+  "schema_version": 1,
+  "source_fp32_hash": "c94b44fa0c2c93cde7f0377e50f42c1382e3d778a8c90842a0b53614d90467bb",
+  "source_fp32_path": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\sparsified_update_cpa\\outputs_v1\\sanity\\synthetic_fp32.pickle",
+  "sparse_policy": "global_topk"
+}

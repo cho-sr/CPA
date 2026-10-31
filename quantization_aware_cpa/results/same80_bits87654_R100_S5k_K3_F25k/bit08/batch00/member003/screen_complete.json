@@ -1,0 +1,11 @@
+{
+  "identity_sha256": "99ea5a242a0f10dbc6f44fed4326a7ee65c9b5bb695a55500ff73ea2650bf8e2",
+  "output_hashes": {
+    "sample.json": "44fc00e6f4ac61095a47aefda506530703948698d93e240d564ac397b3e309ca",
+    "sources.pt": "deb4bef8b72a6d8dc4079e47af8072a4ba27d5d96b94dbf8ae1af9a6fab102a3",
+    "cpa_result.json": "562212798abaddec96b302090f36af2e0cc9600ee88e9c1cce7bacc0595caff8",
+    "screen_5000_rec.pt": "d7a8055f5205c7a850a00ac4ed98ae03f09ac0ab819c40d5669bf7a88080d030",
+    "screen_result.json": "ffd86a02c937528fd2be0550459193f9aebab8f18f2af486b8c37bd4ad9e7d95"
+  },
+  "completed_iterations": 5000
+}

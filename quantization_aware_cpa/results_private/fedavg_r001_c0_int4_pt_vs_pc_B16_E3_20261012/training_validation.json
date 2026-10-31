@@ -1,0 +1,94 @@
+{
+  "checkpoint": "C:\\Users\\조상제\\Desktop\\fedavg_cora_transfer_20261006\\fedavg_cora_transfer_20261006\\imagenet-fedavg\\runs\\imagenet_pretrained_full_reset_fc_E5_R20\\rounds\\round_001.pt",
+  "checkpoint_sha256": "0a1e344b0835884dd450a48bb7db3439262b6c3f1ffa2d4e387a07143a3defad",
+  "round": 1,
+  "trainable_scope": "all",
+  "client_count": 3,
+  "client_id": 0,
+  "input_batch": 0,
+  "input_file": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m6_uia_fp32_B16_fia\\batch00\\inputs.pt",
+  "input_file_sha256": "24995487511a3e9d8d4665fdcd704f7a0f792249a9ba79880638d13bc4740141",
+  "truth_file": "C:\\Users\\조상제\\Desktop\\fedavg_cora_transfer_20261006\\fedavg_cora_transfer_20261006\\imagenet-fedavg\\runs\\cora_full_r1357_c3_b16_bits84_c100_full25k\\private\\round001\\client00\\truth.pt",
+  "truth_file_sha256": "d4a55ee873234f28d013fb427a89340511b7ae8ff0801222d7570b8837705e8d",
+  "input_truth_torch_equal": true,
+  "training": {
+    "optimizer": "SGD",
+    "lr": 0.001,
+    "momentum": 0.0,
+    "weight_decay": 0.0,
+    "foreach": false,
+    "reduction": "mean",
+    "batch_size": 16,
+    "epoch": 3,
+    "steps": 3,
+    "seed": 42,
+    "conv_frozen": true,
+    "all_six_fc_parameters_trainable": true,
+    "dropout": 0.0,
+    "model_eval": true,
+    "relu_modules": 15,
+    "all_relu_inplace_false": true,
+    "delta_convention": "theta_after_step3_minus_theta_start"
+  },
+  "feature_source": "round_001 flatten(avgpool(features(x))), no_grad",
+  "feature_adapter": "CoRA RoundFeatureModel-equivalent round_001 features/avgpool; identity pooling bypass on 7x7",
+  "round_001_feature_adapter_state_sha256": "6369c7bfe93e25d653dd70537e89ad6c6fcf9ed919772186c69a1a7879ffccaa",
+  "feature_shape": [
+    16,
+    25088
+  ],
+  "training_losses": [
+    1.2921929359436035,
+    1.2092866897583008,
+    1.1343390941619873
+  ],
+  "ordinary_vs_fc_replay": {
+    "classifier.0.bias": {
+      "torch_equal": true,
+      "shape": [
+        4096
+      ],
+      "max_abs_difference": 0.0
+    },
+    "classifier.0.weight": {
+      "torch_equal": true,
+      "shape": [
+        4096,
+        25088
+      ],
+      "max_abs_difference": 0.0
+    },
+    "classifier.3.bias": {
+      "torch_equal": true,
+      "shape": [
+        4096
+      ],
+      "max_abs_difference": 0.0
+    },
+    "classifier.3.weight": {
+      "torch_equal": true,
+      "shape": [
+        4096,
+        4096
+      ],
+      "max_abs_difference": 0.0
+    },
+    "classifier.6.bias": {
+      "torch_equal": true,
+      "shape": [
+        1000
+      ],
+      "max_abs_difference": 0.0
+    },
+    "classifier.6.weight": {
+      "torch_equal": true,
+      "shape": [
+        1000,
+        4096
+      ],
+      "max_abs_difference": 0.0
+    }
+  },
+  "all_six_updates_torch_equal": true,
+  "update_sign_relation_to_cora": "CoRA (W_before-W_after)/lr differs by sign and scalar only; CPA whitening and abs(S_hat)/absmax scaling remove that difference"
+}

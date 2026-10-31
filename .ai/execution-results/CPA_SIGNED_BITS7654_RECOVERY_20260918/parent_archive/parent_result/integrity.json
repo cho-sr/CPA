@@ -1,0 +1,12 @@
+{
+  "status": "FAILED",
+  "bit_status": {
+    "7": "BLOCKED_BY_PREVIOUS_FAILURE",
+    "6": "BLOCKED_BY_PREVIOUS_FAILURE",
+    "5": "BLOCKED_BY_PREVIOUS_FAILURE",
+    "4": "BLOCKED_BY_PREVIOUS_FAILURE"
+  },
+  "error_type": "RuntimeError",
+  "error": "bit 7 public_gate failed with exit code 1",
+  "parent_artifacts_preserved": true
+}

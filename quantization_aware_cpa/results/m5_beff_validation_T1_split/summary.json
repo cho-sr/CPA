@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "run_tag": "m5_beff_validation_T1_split",
+  "source_run_tag": "m5_uia_beff_validation",
+  "source_summary_csv": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m5_uia_beff_validation\\summary.csv",
+  "confirmed_overall": {
+    "condition_count": 96,
+    "exact_count": 81,
+    "exact_fraction": 0.84375,
+    "mean_abs_error": 0.21875,
+    "max_abs_error": 2
+  },
+  "core_per_row_T1_FedSGD": {
+    "condition_count": 36,
+    "exact_count": 30,
+    "exact_fraction": 0.8333333333333334,
+    "mean_abs_error": 0.19444444444444445,
+    "max_abs_error": 2
+  },
+  "all_granularities_T1": {
+    "condition_count": 48,
+    "exact_count": 39,
+    "exact_fraction": 0.8125,
+    "mean_abs_error": 0.22916666666666666,
+    "max_abs_error": 2
+  },
+  "paper_sentence_ko": "예측식은 96 조건 중 81 에서 정확했다 (MAE 0.219). FedSGD 에 해당하는 T=1 부분격자에서는 30/36 가 정확했다.",
+  "definition_note": "The 30/36 denominator is the core per-row grid n in {16,32,64} x bits in {2,3,4,8} x seed in {0,1,2}. Including the extra 4-bit per-tensor/per-bucket granularity checks, T=1 is 39/48.",
+  "artifacts": {
+    "t_split_summary_full_96_csv": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m5_beff_validation_T1_split\\t_split_summary_full_96.csv",
+    "t_split_summary_core_per_row_csv": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m5_beff_validation_T1_split\\t_split_summary_core_per_row.csv",
+    "scatter_png": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m5_beff_validation_T1_split\\predicted_vs_measured_beff_T_split_square.png",
+    "paper_sentence_md": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m5_beff_validation_T1_split\\paper_sentence.md"
+  }
+}

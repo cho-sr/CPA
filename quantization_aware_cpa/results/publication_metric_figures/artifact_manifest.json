@@ -1,0 +1,121 @@
+{
+  "figures": [
+    {
+      "png": "fig01_client_update_reconstruction.png",
+      "pixels": [
+        3006,
+        2103
+      ],
+      "dpi": [
+        299.9994,
+        299.9994
+      ],
+      "formats": [
+        "png",
+        "pdf",
+        "svg"
+      ]
+    },
+    {
+      "png": "fig02_gradient_inversion_controls.png",
+      "pixels": [
+        3568,
+        2207
+      ],
+      "dpi": [
+        299.9994,
+        299.9994
+      ],
+      "formats": [
+        "png",
+        "pdf",
+        "svg"
+      ]
+    },
+    {
+      "png": "fig03_pairing_and_reference_controls.png",
+      "pixels": [
+        3640,
+        1485
+      ],
+      "dpi": [
+        299.9994,
+        299.9994
+      ],
+      "formats": [
+        "png",
+        "pdf",
+        "svg"
+      ]
+    },
+    {
+      "png": "fig04_prediction_and_leakage.png",
+      "pixels": [
+        2252,
+        1457
+      ],
+      "dpi": [
+        299.9994,
+        299.9994
+      ],
+      "formats": [
+        "png",
+        "pdf",
+        "svg"
+      ]
+    },
+    {
+      "png": "fig05_normalized_lpips_and_cutoff_counts.png",
+      "pixels": [
+        3062,
+        1300
+      ],
+      "dpi": [
+        299.9994,
+        299.9994
+      ],
+      "formats": [
+        "png",
+        "pdf",
+        "svg"
+      ]
+    }
+  ],
+  "file_sha256": {
+    "captions.md": "99abd019595570582efae6efb622186cfb41420c587f542f917d5af02bdf78f1",
+    "fig01_caption.md": "66875a6132da46d722bc8bb26d7fb4916e86709d63fdf1144e95b0aaeecd0e41",
+    "fig01_client_update_reconstruction.pdf": "886f22933f078ab637822385c34f58b3d1e9694a0373439ba81f69be39a6d547",
+    "fig01_client_update_reconstruction.png": "bb1779e7f22dd250d6504ec010239d18884d11faddd63c5fd9c764e026f16a02",
+    "fig01_client_update_reconstruction.svg": "38deab20a45410a3fe2d9e9d81d2d44b4c02544b9c7a6aa26cbf498c5a5fae48",
+    "fig01_image_metrics.csv": "ec4deb740a7af6854220cf15873df1b92f6cf78890997341882bcd7f43eb8193",
+    "fig01_summary.csv": "1827b1f0ace625a074007313fcbdfdc109633627d6fdd5ce60a77ff3c48db606",
+    "fig02_caption.md": "e8509946a8f72f1556904ad55f611a006e8d3fe560bbff4ea9e43d20ad79a748",
+    "fig02_gradient_inversion_controls.pdf": "438fbf3a95304c63406714ae83bfdcc113a15ef1ad634b672455aacd17ababd1",
+    "fig02_gradient_inversion_controls.png": "c7f4fffeadc30e1c904e7935c53beab81ef5fd2c7d0d7993913ba012ac0d4496",
+    "fig02_gradient_inversion_controls.svg": "a1df314a9511533013d413441188d1cabfe0b50aab1e06df3373df68c4e02532",
+    "fig02_image_metrics.csv": "ca94e21ac628c5db2654826f8ba55b9464547a9ffe3e7efc1c6dbb88538188ea",
+    "fig02_summary.csv": "65329197b6a739b54e3cc5b7a14185d55fc82540bd0b392f04cd1ebb4be16037",
+    "fig03_caption.md": "8daccc0bd4cc111f9da817ffcd0b88fe04ff51388ebc3920d79d3f208e639f72",
+    "fig03_data.csv": "3be742d0915e1ab2dbc26217a9d9d4d17eb7e174f807673f0f792d1fa450dca8",
+    "fig03_pairing_and_reference_controls.pdf": "843fc3995a188c0ed5af6d06a479399677ffa56b26f7bd49d56c83017bbdb2e8",
+    "fig03_pairing_and_reference_controls.png": "2b435aa6c49349d479cbfe3faa5f926e311cfd88285965c5b83d953ac6a17e72",
+    "fig03_pairing_and_reference_controls.svg": "62bc82e38e0e69ec163c4561392a3d29bdbdf279e1ee94656d2f7bfb4e4b227e",
+    "fig04_caption.md": "66ebbcc8595ea55344c5b097fcc174735f03fdf3d073a62755bee307c5fce6fd",
+    "fig04_data.csv": "1b9e04d4a4fdc717cb3576647a58d88b73368d92c93deb28e04df8cfc0a3f9f2",
+    "fig04_prediction_and_leakage.pdf": "705ec82c715f64b546717b3a247d8e871bb73767a74bec540fa390bb223a2405",
+    "fig04_prediction_and_leakage.png": "44c45a985ad5fab2e0333c31847a6edcccb1de42e4f0d7851dd38316434857a1",
+    "fig04_prediction_and_leakage.svg": "b45a674143df4070510242fc9754591f7ecb846ad18ad52e09f452aba54bdfac",
+    "fig05_caption.md": "147c710c3b198a5250b163cf289b8a883c05c8e10f7373b111bde48ddf2b93ed",
+    "fig05_data.csv": "784bc5a6a23c1214a864525e635cd4985b8ef8f7c8608c2692dc255799ebdc62",
+    "fig05_normalized_lpips_and_cutoff_counts.pdf": "38849c8013c01ac52337f3a0e20e955435638c10c34b375c9b81f91ef6fc843a",
+    "fig05_normalized_lpips_and_cutoff_counts.png": "5036493ad3771083fe0a93c5162dd995746e0bc158331d0b7051d7f46721e5bf",
+    "fig05_normalized_lpips_and_cutoff_counts.svg": "11344f8864b16abd992ee699e79e25cf21784468b79feec18d483aba11adcf77",
+    "package_figures.py": "c40fb240c1401c37a29b0aea3c08f463ff765ee8499c6a266e4a2df2752d28ec",
+    "README.md": "c8d4b3b09ea0e3f45b29ad2c1aa3d0567ec0d071306d1835d4d4e68f2e5d2bf6",
+    "reconstruction_figures.sources.json": "5028d05d9ac168eb80bc386b0e2d882e77002570fea4027f102976551c929a5b",
+    "render_descriptive_recovery.py": "726069838ad6c797b8eba15ac738c33c3fab3dcddd8eb5cfcebc0873c7ca7c9b",
+    "render_pairing_controls.py": "20637f89dfcedc382500dc6561fae1229a2a465a2de07a8c0665dddca2409073",
+    "render_prediction_diagnostics.py": "8482271aa219f4fa694189b6e5e30c3313acfe598260f1570189579e067bbbaf",
+    "render_reconstruction_metrics.py": "be45ffa8241f90fdc070f7fdec7ffa820eb5e614ffa1bdd3228c04fe7943fda7"
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "scope": "Pre-existing issues observed in copied source files; no research repair performed.",
+  "files": [
+    {
+      "path": ".ai/execution-results/CPA_SIGNED_COMBINATION_ICA_EXPERIMENT_20260916/final_audit.json",
+      "error": "JSONDecodeError",
+      "line": 598,
+      "sha256": "2fad470450eb22889a195589d07176bb3c8ab423fd4a333474efdad69eb23783",
+      "reason": "A literal backslash-n suffix follows the closing JSON brace.",
+      "policy": "Preserve original bytes as historical evidence; do not treat as validated executable input."
+    },
+    {
+      "path": ".ai/execution-results/CPA_SIGNED_COMBINATION_ICA_REVIEW_20260917/before/parent_and_comparison/parent_final_audit.json",
+      "error": "JSONDecodeError",
+      "line": 598,
+      "sha256": "2fad470450eb22889a195589d07176bb3c8ab423fd4a333474efdad69eb23783",
+      "reason": "A literal backslash-n suffix follows the closing JSON brace.",
+      "policy": "Preserve original bytes as historical evidence; do not treat as validated executable input."
+    },
+    {
+      "path": "quantization_aware_cpa/qacpa/run_pc_vs_pt_small_batch.py",
+      "error": "SyntaxError",
+      "line": 43,
+      "sha256": "67512df576d57d510ff547bbede4059b196e2b98dd72ca1c613105f330a25a51",
+      "reason": "Unfinished script ending in a bare def statement.",
+      "policy": "Preserve original bytes as historical evidence; do not treat as validated executable input."
+    },
+    {
+      "path": "quantization_aware_cpa/results/paper_sparse_same80_keep50_30_20_R20_20260921/execution_record.json",
+      "error": "JSONDecodeError",
+      "line": 77,
+      "sha256": "cd4a157bad6c3d6e007f6fd1eab57bcf31e3d748b19a4c78f954b1e6c7ac43b2",
+      "reason": "A literal backslash-n suffix follows the closing JSON brace.",
+      "policy": "Preserve original bytes as historical evidence; do not treat as validated executable input."
+    },
+    {
+      "path": "quantization_aware_cpa/results/paper_sparse_same80_keep50_30_20_R20_20260921/stage_execution.json",
+      "error": "JSONDecodeError",
+      "line": 77,
+      "sha256": "cd4a157bad6c3d6e007f6fd1eab57bcf31e3d748b19a4c78f954b1e6c7ac43b2",
+      "reason": "A literal backslash-n suffix follows the closing JSON brace.",
+      "policy": "Preserve original bytes as historical evidence; do not treat as validated executable input."
+    },
+    {
+      "path": "quantization_aware_cpa/results/paper_sparse_same80_keep50_30_20_R20_20260921/v1_supersession.json",
+      "error": "JSONDecodeError",
+      "line": 69,
+      "sha256": "3ab4beaa456363400a7a9d6b3efda0223413aed3907e3e94d60f5bd327c715f6",
+      "reason": "A literal backslash-n suffix follows the closing JSON brace.",
+      "policy": "Preserve original bytes as historical evidence; do not treat as validated executable input."
+    }
+  ]
+}

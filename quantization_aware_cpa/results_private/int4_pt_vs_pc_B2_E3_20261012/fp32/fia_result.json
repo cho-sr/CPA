@@ -1,0 +1,81 @@
+{
+  "log": [
+    {
+      "iter": 0,
+      "loss": 1.152137279510498,
+      "loss_fi": 0.9314267039299011,
+      "loss_gm": 0.0,
+      "loss_tv": 2.207106351852417,
+      "time_sec": 0.7297292000148445
+    },
+    {
+      "iter": 4999,
+      "loss": 0.03315295651555061,
+      "loss_fi": 0.00851401686668396,
+      "loss_gm": 0.0,
+      "loss_tv": 0.24638938903808594,
+      "time_sec": 209.37321039987728
+    },
+    {
+      "iter": 9999,
+      "loss": 0.024888111278414726,
+      "loss_fi": 0.006251513957977295,
+      "loss_gm": 0.0,
+      "loss_tv": 0.18636596202850342,
+      "time_sec": 418.5223630000837
+    },
+    {
+      "iter": 14999,
+      "loss": 0.014109681360423565,
+      "loss_fi": 0.0032448768615722656,
+      "loss_gm": 0.0,
+      "loss_tv": 0.10864804685115814,
+      "time_sec": 627.6956030000001
+    },
+    {
+      "iter": 19999,
+      "loss": 0.004267030395567417,
+      "loss_fi": 0.0008233785629272461,
+      "loss_gm": 0.0,
+      "loss_tv": 0.03443651646375656,
+      "time_sec": 836.6282003000379
+    },
+    {
+      "iter": 24999,
+      "loss": 0.0030723430681973696,
+      "loss_fi": 0.0005666613578796387,
+      "loss_gm": 0.0,
+      "loss_tv": 0.02505681663751602,
+      "time_sec": 1045.5883969001006
+    }
+  ],
+  "wall_time_sec": 1047.2207829998806,
+  "setup_wall_time_sec": 1.6280485999304801,
+  "optimizer_wall_time_sec": 1045.5927343999501,
+  "source_hashes": {
+    "C:\\Users\\조상제\\Desktop\\CPA\\official_cpa\\src\\datasets.py": "f9e7b47733b5acb4b73e6914a3f100b5187766bbed78a12d17b69c39eec1b6d1",
+    "C:\\Users\\조상제\\Desktop\\CPA\\official_cpa\\src\\utils.py": "565f1bf1a47f387d042b35bb24f677d1ff0d3ec5d979e2876c31ed114179b9fe",
+    "C:\\Users\\조상제\\Desktop\\CPA\\official_cpa\\src\\gradient_inversion_utils.py": "668d77788dc8d81c181c8c0a9fbe8533c6fbea22ba46fe7f5e15b0a431300e5f",
+    "C:\\Users\\조상제\\Desktop\\CPA\\official_cpa\\src\\gradient_inversion.py": "c598e1ee7b4079f741060d10c8dfd14711e393a97384c63cf32be77a458b1873",
+    "C:\\Users\\조상제\\Desktop\\CPA\\official_cpa\\src\\feature_inversion.py": "dc73880427e3eaf1f873d295f17f1d48d301882f634ee5df36ddeea8e56c4dec",
+    "C:\\Users\\조상제\\Desktop\\CPA\\official_cpa\\src\\vgg16.py": "8114eca8cde553dace5f777aedd21b70851c570d473e597b005cb6be4b248d36",
+    "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\qacpa\\upstream_naive.py": "8f29b885d86f4121eda5c55e17486a3a48bd8db08b2f83890fe7726730d1ee92",
+    "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\qacpa\\seed.py": "769366fcc2cf3e144d8caa86f73a55dcb0b6be615a45dab8b6e117399150c558"
+  },
+  "settings": {
+    "seed": 42,
+    "device": "cuda",
+    "n_iter": 25000,
+    "lr": 0.1,
+    "tv": 0.1,
+    "fi": 1.0,
+    "optimizer": "adam",
+    "scheduler": "cosine",
+    "log_every": 5000,
+    "backend": "official_cpa/src/feature_inversion.py:Direct",
+    "feature_adapter": "VGG16 IMAGENET1K_V1 features/avgpool; unused classifier skipped",
+    "evaluation_inputs": false,
+    "cudnn_benchmark": true,
+    "cudnn_deterministic": true
+  }
+}

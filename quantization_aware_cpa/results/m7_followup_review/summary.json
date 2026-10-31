@@ -1,0 +1,25 @@
+{
+  "updated_at_utc": "2026-09-09T10:48:05.795337+00:00",
+  "protocol_sha256": "24a25980e58356591943559e29474bb777494f426b0834ca6d68f76aa2daae67",
+  "task4_complete": true,
+  "task4_display_status": "완료",
+  "inputs": {
+    "C:\\Users\\조상제\\Desktop\\CPA\\codex\\docs\\M7_FOLLOWUP_ANALYSIS_PROTOCOL.lock.json": "5beaf818de847b52fee6946e079d293c4c51675c592be50d8f9db687de0e0120",
+    "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_normalized_metrics\\summary.json": "3a301f571140631622034516a33af9f2f1c693e28afce1ea281c700e3f4db06b",
+    "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_shuffle_control\\summary.json": "f42ec96c7973cb4376a05f450a1c45cd947e2c684202a55aa09e538759389716",
+    "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_perimage_distribution\\summary.json": "f5a74f9809f3d0f4c29163f57a2543ad7c75a929637b5fa2fc57b305043c07b6",
+    "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_consistency_audit\\summary.json": "cd0091e5ff15969d8e5955821973987e3c486d177a6e59ea3fd2c70ce5252d2b",
+    "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_perimage_distribution\\success_counts.csv": "34424d59bedfc0e17f5de0ce97fcdf121237a8dac621832ddcb3787dba137720",
+    "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_shuffle_control\\summary.csv": "cc5665c565f75687dcb4a64ce4f23bdc073cc92d767727bcc30f4836bbef08a1",
+    "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m6_uia_fp32_B16_fia\\summary.json": "1f85b5750c6171e0259160c48731dc7646fb3f7a5b9c59b8c06b0478bd2f4ad0",
+    "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_uia_4bit_B16\\summary.json": "9674322f7eda0f9afb8fe586f034e87101138e1b491f0bd04954f80474a0a22c",
+    "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_uia_4bit_B16\\execution_status.json": "7714cddebefe2faf367488cc94bcc476c6208b3dc89205b057f754348a9c6f8d",
+    "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_uia_4bit_B16\\three_condition_comparison.csv": "01aec75017f9d5f4a76851762f1285443db5e74167a239bfc0afd4b1dddfe67b"
+  },
+  "code_sha256": "9f38ae11d517562f272f2adcbcef5902b80d4a4ff72fe60ada43bbd441b41284",
+  "outputs": {
+    "C:\\Users\\조상제\\Desktop\\CPA\\codex\\docs\\EXPERIMENT_RESULTS_20260909.md": "3149c30ec7dfa4cd08d1f2cd248e197c1117b561b640dd34fe1112761649e047",
+    "C:\\Users\\조상제\\Desktop\\CPA\\codex\\STATUS.md": "22b2cfdd11fffb58e8a07c98188d359278e33f6e619037f0b808a3402aa07548",
+    "C:\\Users\\조상제\\Desktop\\CPA\\codex\\docs\\QACPA_SPEC.md": "1a26168d149a9587524c74e5a7ea7e5acd5637b07469b61650015ab031788f75"
+  }
+}

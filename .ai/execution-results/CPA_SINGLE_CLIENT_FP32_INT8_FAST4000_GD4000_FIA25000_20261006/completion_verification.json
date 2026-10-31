@@ -1,0 +1,64 @@
+{
+  "task_id": "CPA_SINGLE_CLIENT_FP32_INT8_FAST4000_GD4000_FIA25000_20261006",
+  "status": "VERIFIED_PARTIAL_COMPLETION",
+  "original_worker_exit_status": 1,
+  "reporting_exit_status": 0,
+  "optimization_rerun": false,
+  "new_experiment": false,
+  "polling_performed": false,
+  "historical_peer_message_sent": false,
+  "fp32_actual_counts": [
+    0,
+    0,
+    0
+  ],
+  "fp32_failure_sha256": "a593b3c12ae2f01d2ab5d108e63f252888d4a2306c024ca1250fb358d4b0fb58",
+  "verified_completed_arms": {
+    "8": {
+      "actual_counts": [
+        4000,
+        4000,
+        25000
+      ],
+      "all16_evaluated": true,
+      "metrics_sha256": "8cad9d0d7b194016ccd6b316303c9d32d2de15f7eb042a666989e1caa12ae6b3",
+      "artifact_hashes": {
+        "sources.pt": "2ef837a755864c27f3c42d6ff920849f1ff18ff83b1469b91a2990bf61f27b86",
+        "fastica_log.json": "91201ed4d8844040529d200e133c888c1a27408527294bd40186b818f7e87c11",
+        "gdica_log.json": "2c7868207ea34eccb2cc742b59cd00d88f13cfd98a6df0fcf1d60d2409f8ccb6",
+        "separation.json": "7f3367ea4b807b4365dfdb109a8a0bed963a88215a9f94f47adc932eb3cf882c",
+        "candidate.pt": "65e223d49b8d75e776ace6b028504b3b7c04053cb8199b6867d5a056b03a942e",
+        "fia_result.json": "a651e230409e62820a8e61fd11a89f3a929ec28f8ae8af3d1cb86efc083d5583"
+      }
+    },
+    "4": {
+      "actual_counts": [
+        4000,
+        4000,
+        25000
+      ],
+      "all16_evaluated": true,
+      "metrics_sha256": "5f91104cd300d35d219b37c057e596cb084fe10a0703a22b7f0888bc151fcc2f",
+      "artifact_hashes": {
+        "sources.pt": "c161f01bada0eebf1727ab2a7bebcae22808fd9a54d1ab66bc0c8734f748820e",
+        "fastica_log.json": "2010a6a224c26563fe3c9799a24c42ea66b30f95209fa25de61d726a78a0cc46",
+        "gdica_log.json": "e837587bb91d2a5b8a02dbb47dc4922e4e052b91bb951609b17d9db8ae48e0b0",
+        "separation.json": "926bbda7f2d8ed53bf992f9aa1290922caa2b023a2e2c3f8c191c9edfc1c1475",
+        "candidate.pt": "53bf0634d9a1daf029eea0a38c83f5d1ec23d817851f64574688066f9ac5b626",
+        "fia_result.json": "3378f7b74778acbbf1e8985367b34e8cfb2e5e34f3ba77bae975d067d56194be"
+      }
+    }
+  },
+  "int8_evaluation_output_hashes": {
+    "metrics.json": "8cad9d0d7b194016ccd6b316303c9d32d2de15f7eb042a666989e1caa12ae6b3",
+    "comparison.png": "f0ae345241a2d311e0b06dcdde24662566b5ecbedc39c3bf87c8ca4b246d7383",
+    "report.md": "3c3b6fd95ef4b22256c631841f5bb479fedc722b01151dbb0cad2bd42098f74d"
+  },
+  "finalizer_sha256": "741dad3a56b2b5cfb803391e74eb491c9924e932f346032cdd4186a0e4916273",
+  "reporting_outputs": {
+    "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results_private\\single_client_fp32_int8_fast4000_gd4000_fia25000_20261006\\report.md": "6930d89b5652c2a8a2667c911e0f81df4a50a576a7991fa2d2e92a37fd8d2668",
+    "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results_private\\single_client_fp32_int8_fast4000_gd4000_fia25000_20261006\\comparison.json": "3f21a269d5fc054a47f471e8c31e3eceb7aaa9f2ca99ba17d77aa7dd32d6c2ef",
+    "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results_private\\single_client_fp32_int8_fast4000_gd4000_fia25000_20261006\\fp32\\report.md": "6c29b652e300bb506db1ef7959580b31ece95647ede6e6737218ecfacf6322e2",
+    "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results_private\\single_client_fp32_int8_fast4000_gd4000_fia25000_20261006\\fp32\\failure_summary.json": "3902449a04e798ac0a1d732fdf7a6760e3a6d59192f514c819127f1699ad214e"
+  }
+}

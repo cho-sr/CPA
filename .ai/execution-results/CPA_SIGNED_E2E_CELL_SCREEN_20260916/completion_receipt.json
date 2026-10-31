@@ -1,0 +1,9 @@
+{
+  "task_id": "CPA_SIGNED_E2E_CELL_SCREEN_20260916",
+  "status": "COMPLETED",
+  "wrapper_pid": 12380,
+  "wrapper_exit_status": 0,
+  "planner_thread": "01a0a799-d62c-7ab0-9c2a-628acf6d2c95",
+  "planner_notice_status": "SENT_ONCE",
+  "planner_notice_message_id": "01a0a91f-0350-7493-843c-254cbf410ee9"
+}

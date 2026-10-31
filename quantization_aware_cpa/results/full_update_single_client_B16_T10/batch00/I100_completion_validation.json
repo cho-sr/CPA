@@ -1,0 +1,27 @@
+{
+  "all_200_iterations_completed": true,
+  "live_sources_match_registered_hashes": {
+    "full_update_adjoint.py": "882efe5424f4c57660d1c4c15a2af06c4b31180ffb84f7f9bbd191f31d7cbade",
+    "full_update_evaluation.py": "0ca0c01115bedc4d5b09d9bac8791bbc18b5cca29f43c5812a345f391c61ef08",
+    "full_update_observation.py": "e72a8f68f202e1775ef7e3fe55c6b643c3f8f276c6c68fff4c2973abe7fbc88c",
+    "full_update_pipeline.py": "bdb9b0a10ecc77db1a8e6dbd089e43352aad5feabe6ef4298715a7805a3468c9",
+    "full_update_replay.py": "e45e9830bdcf2046de1c0e1ebe4579392c764065eb991826b9c6abd926af2e1c"
+  },
+  "config_still_matches_plan": true,
+  "comparison_artifacts_hashes_verified": true,
+  "wall_time_sec_both_100": 3004.5895096000168,
+  "supplemental_lpips": {
+    "cell_3": 0.8399002216756344,
+    "center_3": 0.8396464213728905,
+    "cell_100": 0.8646476976573467,
+    "center_100": 0.8710431978106499
+  },
+  "cell_100": {
+    "peak_gib": 5.546616554260254,
+    "all_32_tensors_fail_hard_closure": true
+  },
+  "center_100": {
+    "peak_gib": 5.546616554260254,
+    "all_32_tensors_fail_hard_closure": true
+  }
+}

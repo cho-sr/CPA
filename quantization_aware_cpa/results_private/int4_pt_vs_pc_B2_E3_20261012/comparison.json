@@ -1,0 +1,327 @@
+{
+  "status": "COMPLETED",
+  "arms": {
+    "fp32": {
+      "image_metrics": {
+        "matching": "Hungarian_pixel_MSE_once_for_all_metrics",
+        "n_images": 2,
+        "all_images_included": true,
+        "candidate_selection": "none_single_supplied_artifact",
+        "per_image": [
+          {
+            "candidate_index": 0,
+            "truth_index": 1,
+            "mse": 0.06751005249829087,
+            "psnr_db": 11.706315542877437,
+            "perfect_pixel_match": false,
+            "ssim": 0.2521440942897164,
+            "lpips": 0.40166032314300537
+          },
+          {
+            "candidate_index": 1,
+            "truth_index": 0,
+            "mse": 0.0400420825795587,
+            "psnr_db": 13.974833430486164,
+            "perfect_pixel_match": false,
+            "ssim": 0.32412196127331283,
+            "lpips": 0.5117780566215515
+          }
+        ],
+        "metric_dtype": "float64",
+        "truth_denormalization_tolerance_abs": 9.5367431640625e-07,
+        "truth_denormalization_clipped_values": 2709,
+        "perfect_pixel_matches": 0,
+        "psnr_null_meaning": "positive_infinity_for_perfect_pixel_match",
+        "mean_psnr_null_meaning": "positive_infinity_if_any_image_is_a_perfect_pixel_match",
+        "mean_mse": 0.053776067538924784,
+        "mean_psnr_db": 12.8405744866818,
+        "mean_ssim": 0.2881330277815146,
+        "lpips": "not_computed",
+        "reconstruction_success": "no_threshold_registered",
+        "mean_lpips": 0.45671918988227844,
+        "lpips_definition": "TorchMetrics VGG LPIPS; [0,1] mapped to [-1,1]; pixel-MSE Hungarian pairs"
+      },
+      "embedding_cosine": {
+        "matching": "Hungarian_max_embedding_cosine_offline_only",
+        "per_source": [
+          {
+            "source_index": 0,
+            "truth_index": 1,
+            "cosine": 0.9999602317309031
+          },
+          {
+            "source_index": 1,
+            "truth_index": 0,
+            "cosine": 0.9999999778010846
+          }
+        ],
+        "mean_cosine": 0.9999801047659939,
+        "all_sources_included": true,
+        "adapter": "abs(S_hat); no scaling/permutation before FIA"
+      },
+      "candidate_sha256": "6b7ff18edcdd620a6c370c959c57b18afc3f3b116b6ecc36c41a7c54cff55756",
+      "sources_sha256": "587f5b5829670cfcc77c3536acb69a40165bc0369f0d3379ac7447c9452f67d0"
+    },
+    "int4_per_tensor": {
+      "image_metrics": {
+        "matching": "Hungarian_pixel_MSE_once_for_all_metrics",
+        "n_images": 2,
+        "all_images_included": true,
+        "candidate_selection": "none_single_supplied_artifact",
+        "per_image": [
+          {
+            "candidate_index": 0,
+            "truth_index": 0,
+            "mse": 0.05089898027842895,
+            "psnr_db": 12.93290918329008,
+            "perfect_pixel_match": false,
+            "ssim": 0.28467945322015714,
+            "lpips": 0.8612955212593079
+          },
+          {
+            "candidate_index": 1,
+            "truth_index": 1,
+            "mse": 0.07452468276276981,
+            "psnr_db": 11.276998639994142,
+            "perfect_pixel_match": false,
+            "ssim": 0.20724573313843564,
+            "lpips": 0.6595863699913025
+          }
+        ],
+        "metric_dtype": "float64",
+        "truth_denormalization_tolerance_abs": 9.5367431640625e-07,
+        "truth_denormalization_clipped_values": 2709,
+        "perfect_pixel_matches": 0,
+        "psnr_null_meaning": "positive_infinity_for_perfect_pixel_match",
+        "mean_psnr_null_meaning": "positive_infinity_if_any_image_is_a_perfect_pixel_match",
+        "mean_mse": 0.06271183152059938,
+        "mean_psnr_db": 12.104953911642111,
+        "mean_ssim": 0.2459625931792964,
+        "lpips": "not_computed",
+        "reconstruction_success": "no_threshold_registered",
+        "mean_lpips": 0.7604409456253052,
+        "lpips_definition": "TorchMetrics VGG LPIPS; [0,1] mapped to [-1,1]; pixel-MSE Hungarian pairs"
+      },
+      "embedding_cosine": {
+        "matching": "Hungarian_max_embedding_cosine_offline_only",
+        "per_source": [
+          {
+            "source_index": 0,
+            "truth_index": 1,
+            "cosine": 0.8246591094631229
+          },
+          {
+            "source_index": 1,
+            "truth_index": 0,
+            "cosine": 0.050659704450973064
+          }
+        ],
+        "mean_cosine": 0.43765940695704797,
+        "all_sources_included": true,
+        "adapter": "abs(S_hat); no scaling/permutation before FIA"
+      },
+      "candidate_sha256": "b3a9e3e6db55506e5ba57957ba8f29cae57880686b6377729fad85688b5dcd63",
+      "sources_sha256": "9d84e1c035e8b69aeef6b0b8af9224b064a0d3f31742eb5acd7c294d84193b4b"
+    },
+    "int4_per_channel": {
+      "image_metrics": {
+        "matching": "Hungarian_pixel_MSE_once_for_all_metrics",
+        "n_images": 2,
+        "all_images_included": true,
+        "candidate_selection": "none_single_supplied_artifact",
+        "per_image": [
+          {
+            "candidate_index": 0,
+            "truth_index": 1,
+            "mse": 0.07577273413826614,
+            "psnr_db": 11.204870416440862,
+            "perfect_pixel_match": false,
+            "ssim": 0.21965040115312573,
+            "lpips": 0.5941227674484253
+          },
+          {
+            "candidate_index": 1,
+            "truth_index": 0,
+            "mse": 0.04548718293784683,
+            "psnr_db": 13.42110958585119,
+            "perfect_pixel_match": false,
+            "ssim": 0.2976997977016121,
+            "lpips": 0.5861396193504333
+          }
+        ],
+        "metric_dtype": "float64",
+        "truth_denormalization_tolerance_abs": 9.5367431640625e-07,
+        "truth_denormalization_clipped_values": 2709,
+        "perfect_pixel_matches": 0,
+        "psnr_null_meaning": "positive_infinity_for_perfect_pixel_match",
+        "mean_psnr_null_meaning": "positive_infinity_if_any_image_is_a_perfect_pixel_match",
+        "mean_mse": 0.060629958538056486,
+        "mean_psnr_db": 12.312990001146026,
+        "mean_ssim": 0.2586750994273689,
+        "lpips": "not_computed",
+        "reconstruction_success": "no_threshold_registered",
+        "mean_lpips": 0.5901311933994293,
+        "lpips_definition": "TorchMetrics VGG LPIPS; [0,1] mapped to [-1,1]; pixel-MSE Hungarian pairs"
+      },
+      "embedding_cosine": {
+        "matching": "Hungarian_max_embedding_cosine_offline_only",
+        "per_source": [
+          {
+            "source_index": 0,
+            "truth_index": 1,
+            "cosine": 0.9574736173189874
+          },
+          {
+            "source_index": 1,
+            "truth_index": 0,
+            "cosine": 0.9713261768562457
+          }
+        ],
+        "mean_cosine": 0.9643998970876165,
+        "all_sources_included": true,
+        "adapter": "abs(S_hat); no scaling/permutation before FIA"
+      },
+      "candidate_sha256": "f5f6b7b67c3089fd8fdf55ac1c21cb6528458a24d8389c78ef335dccbf242569",
+      "sources_sha256": "dd6b34c209b9cf6082103a86fe3c92d11d5e0b92ffdd2f9c92ae63956105a832"
+    }
+  },
+  "deltas_vs_fp32": {
+    "int4_per_tensor_minus_fp32": {
+      "mean_psnr_db": -0.7356205750396896,
+      "mean_ssim": -0.042170434602218226,
+      "mean_lpips": 0.30372175574302673,
+      "mean_mse": 0.008935763981674595,
+      "mean_embedding_cosine": -0.5623206978089459
+    },
+    "int4_per_channel_minus_fp32": {
+      "mean_psnr_db": -0.5275844855357743,
+      "mean_ssim": -0.029457928354145735,
+      "mean_lpips": 0.13341200351715088,
+      "mean_mse": 0.006853890999131702,
+      "mean_embedding_cosine": -0.03558020767837733
+    }
+  },
+  "update_statistics": {
+    "layer": "classifier.0.weight",
+    "shape": [
+      4096,
+      25088
+    ],
+    "numel": 102760448,
+    "original_update": {
+      "l2_norm": 0.04115368106378018,
+      "max_abs": 0.0006370862247422338,
+      "nonzero_fraction": 0.05280682505393515
+    },
+    "per_tensor": {
+      "scale": 9.101231989916414e-05,
+      "scale_count": 1,
+      "scale_bytes_fp32": 4,
+      "nonzero_code_fraction": 0.0016694847418337452,
+      "relative_l2_error": 0.6318350726873079,
+      "cosine_similarity": 0.8038659053363981,
+      "max_absolute_error": 4.550605081021786e-05
+    },
+    "per_channel": {
+      "scale_count": 4096,
+      "scale_bytes_fp32": 16384,
+      "zero_scale_rows": 0,
+      "zero_absmax_rows_using_scale_one_convention": 2387,
+      "scale_quantiles": {
+        "p00": 2.3283064365386963e-10,
+        "p01": 2.280243487362555e-08,
+        "p05": 1.3883359173405552e-07,
+        "p25": 1.0555751259744284e-05,
+        "p50": 1.0,
+        "p75": 1.0,
+        "p95": 1.0,
+        "p99": 1.0,
+        "p100": 1.0
+      },
+      "scale_ratio_to_per_tensor_quantiles": {
+        "p00": 2.558232159248673e-06,
+        "p01": 0.0002505422881087879,
+        "p05": 0.0015254373461513157,
+        "p25": 0.11598156459959909,
+        "p50": 10987.523459548514,
+        "p75": 10987.523459548514,
+        "p95": 10987.523459548514,
+        "p99": 10987.523459548514,
+        "p100": 10987.523459548514
+      },
+      "nonzero_code_fraction": 0.022022179194859097,
+      "relative_l2_error": 0.296707746557246,
+      "cosine_similarity": 0.9573031713001896,
+      "max_absolute_error": 4.5493245124816895e-05
+    },
+    "top_three_singular_values": {
+      "method": "torch.linalg.svdvals FP32 CUDA (top 3; exact SVD routine)",
+      "fp32": [
+        0.04114362597465515,
+        0.0007479835185222328,
+        2.8545017016767815e-08
+      ],
+      "per_tensor": [
+        0.036669716238975525,
+        0.011840199120342731,
+        0.009565882384777069
+      ],
+      "per_channel": [
+        0.042123425751924515,
+        0.0006519191665574908,
+        0.00047578031080774963
+      ]
+    },
+    "quantization": {
+      "scheme": "symmetric signed INT4",
+      "code_min": -7,
+      "code_max": 7,
+      "rounding": "torch.round nearest-even",
+      "dequantization": "FP32 code * scale",
+      "device": "CPU FP32",
+      "per_channel_axis": 0,
+      "zero_row_scale": 1.0
+    }
+  },
+  "lpips_provenance": {
+    "implementation": "torchmetrics.image.lpip.LearnedPerceptualImagePatchSimilarity",
+    "net_type": "vgg",
+    "normalize_argument": false,
+    "device": "cpu",
+    "dtype": "float32",
+    "versions": {
+      "torch": "2.13.0+cu132",
+      "torchvision": "0.28.0+cu132",
+      "torchmetrics": "1.9.0"
+    },
+    "input_normalization": "FP32 RGB [0,1] to [-1,1] using (pixels - 0.5) * 2",
+    "weights": {
+      "backbone": {
+        "path": "C:\\Users\\조상제\\.cache\\torch\\hub\\checkpoints\\vgg16-397923af.pth",
+        "sha256": "397923af8e79cdbb6a7127f12361acd7a2f83e06b05044ddf496e83de57a5bf0"
+      },
+      "calibration": {
+        "path": "C:\\miniconda\\envs\\DLG\\Lib\\site-packages\\torchmetrics\\functional\\image\\lpips_models\\vgg.pth",
+        "sha256": "a78928a0af1e5f0fcb1f3b9e8f8c3a2a5a3de244d830ad5c1feddc79b8432868"
+      }
+    },
+    "downloads_allowed": false
+  },
+  "matching": {
+    "image_metrics": "pixel-MSE Hungarian 2x2 once per arm; same pairs for PSNR/SSIM/LPIPS",
+    "embedding": "absolute CPA sources vs original saved z; Hungarian max cosine, offline only"
+  },
+  "sample_size": {
+    "images": 2,
+    "seed": 1,
+    "statistical_claim": "descriptive only; no generalization"
+  },
+  "success_threshold": null,
+  "candidate_selection": "none; final iteration only",
+  "evaluation_truth_sha256": "ede233ce1e9933e569c063336472cc23bc0e10b306da2a10690e88a7801956a0",
+  "completed_at_utc": "2026-10-12T07:19:32.198081+00:00",
+  "execution_warnings": [
+    "official_cpa/src/gradient_inversion.py emitted its existing complex-to-real cast warning during covariance eigendecomposition; original source was left unchanged.",
+    "FIA emitted PyTorch adaptive_avg_pool2d_backward_cuda nondeterminism warning under deterministic_algorithms=True, warn_only=True; strict bitwise GPU determinism is not guaranteed."
+  ]
+}

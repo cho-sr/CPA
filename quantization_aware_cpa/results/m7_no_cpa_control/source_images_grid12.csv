@@ -1,0 +1,13 @@
+﻿global_index,grid_id,grid_position_1based,dataset,split,label_0based,wnid,class_name,class_synonyms,filename,relative_path
+14,g14,1,ImageNet-1K (ILSVRC 2012),val,354,n02437312,Arabian camel,"Arabian camel, dromedary, Camelus dromedarius",ILSVRC2012_val_00026662.JPEG,val/n02437312/ILSVRC2012_val_00026662.JPEG
+3,g03,2,ImageNet-1K (ILSVRC 2012),val,549,n03291819,envelope,envelope,ILSVRC2012_val_00004047.JPEG,val/n03291819/ILSVRC2012_val_00004047.JPEG
+23,g23,3,ImageNet-1K (ILSVRC 2012),val,6,n01498041,stingray,stingray,ILSVRC2012_val_00003518.JPEG,val/n01498041/ILSVRC2012_val_00003518.JPEG
+38,g38,4,ImageNet-1K (ILSVRC 2012),val,349,n02415577,bighorn,"bighorn, bighorn sheep, cimarron, Rocky Mountain bighorn, Rocky Mountain sheep, Ovis canadensis",ILSVRC2012_val_00049581.JPEG,val/n02415577/ILSVRC2012_val_00049581.JPEG
+20,g20,5,ImageNet-1K (ILSVRC 2012),val,508,n03085013,computer keyboard,"computer keyboard, keypad",ILSVRC2012_val_00000321.JPEG,val/n03085013/ILSVRC2012_val_00000321.JPEG
+29,g29,6,ImageNet-1K (ILSVRC 2012),val,54,n01729322,hognose snake,"hognose snake, puff adder, sand viper",ILSVRC2012_val_00022930.JPEG,val/n01729322/ILSVRC2012_val_00022930.JPEG
+2,g02,7,ImageNet-1K (ILSVRC 2012),val,160,n02088094,Afghan hound,"Afghan hound, Afghan",ILSVRC2012_val_00005507.JPEG,val/n02088094/ILSVRC2012_val_00005507.JPEG
+32,g32,8,ImageNet-1K (ILSVRC 2012),val,521,n03133878,Crock Pot,Crock Pot,ILSVRC2012_val_00042723.JPEG,val/n03133878/ILSVRC2012_val_00042723.JPEG
+37,g37,9,ImageNet-1K (ILSVRC 2012),val,793,n04209133,shower cap,shower cap,ILSVRC2012_val_00046639.JPEG,val/n04209133/ILSVRC2012_val_00046639.JPEG
+25,g25,10,ImageNet-1K (ILSVRC 2012),val,243,n02108422,bull mastiff,bull mastiff,ILSVRC2012_val_00015657.JPEG,val/n02108422/ILSVRC2012_val_00015657.JPEG
+39,g39,11,ImageNet-1K (ILSVRC 2012),val,782,n04152593,screen,"screen, CRT screen",ILSVRC2012_val_00049455.JPEG,val/n04152593/ILSVRC2012_val_00049455.JPEG
+7,g07,12,ImageNet-1K (ILSVRC 2012),val,507,n03075370,combination lock,combination lock,ILSVRC2012_val_00007817.JPEG,val/n03075370/ILSVRC2012_val_00007817.JPEG

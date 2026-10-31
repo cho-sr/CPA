@@ -1,0 +1,22 @@
+{
+  "identity": {
+    "protocol_sha256": "deaf2865732e28d02351b40cd1920f3561b1ea7088805fa00b6c3030fec3ff4e",
+    "code_sha256": {
+      "run_m6_uia_fp32_fia.py": "e00319498504257c91697918bf61e7794ee1fe75a48bdb2483c768f596f1bae6",
+      "uia.py": "fe19894d8a340e6bdfc56b83c26da516f2414a87c1cbe3fbe3e4620fcdd580c3",
+      "victim.py": "fdd40fd5c5062761872dc3bdd8dd4e750ccc188ce0050baf6330fad7e080874b",
+      "stage1.py": "f6423da5c14e610676e8d1a3c113238b39511dd1c99a6d66adb59b9cf754607b",
+      "fia.py": "42a55ce6a4895785b10573f507658434e597f1138de3d45621f466702c7f5cb0",
+      "alignment.py": "93259800bdf8843acfb1a7ed31beba199db218e61548b3a8d1fb10c4efae7cce",
+      "seed.py": "769366fcc2cf3e144d8caa86f73a55dcb0b6be615a45dab8b6e117399150c558"
+    },
+    "weights_path": "C:\\Users\\조상제\\.cache\\torch\\hub\\checkpoints\\vgg16-397923af.pth",
+    "weights_sha256": "397923af8e79cdbb6a7127f12361acd7a2f83e06b05044ddf496e83de57a5bf0",
+    "batch_index": 3,
+    "inputs_sha256": "ebdbd1774a320767a40f22c698260b4e3a9ac7ad4b69c2a92b987fe4318d570a",
+    "stage": "CPA_full16",
+    "observation_sha256": "cda34d3f8bed30feab5ccb03ea183488bca0ea87aab3004a76558566bd4e75a1"
+  },
+  "file_sha256": "ec6dcd401bb0b77272633d97687199fc4e1c88869816025117fd16210e1cae0b",
+  "saved_at_utc": "2026-09-09T02:16:47.412766+00:00"
+}

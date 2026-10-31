@@ -1,0 +1,6 @@
+metric,mean,std,min,max,n,threshold
+lpips,,,,,0,
+psnr,,,,,0,
+ssim,,,,,0,
+embedding_cosine_similarity,0.8179918052947756,0.3398758860823169,0.026360594447525334,0.9999991043176838,192,
+reconstruction_success_rate,,,,,0,0.5

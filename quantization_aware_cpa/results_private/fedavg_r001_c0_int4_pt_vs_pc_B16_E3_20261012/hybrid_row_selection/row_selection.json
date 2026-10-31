@@ -1,0 +1,77 @@
+{
+  "reproduction_check": {
+    "l2": 0.014023203019876779,
+    "saved_l2": 0.014023203019876779,
+    "s_t": 9.462029083806556e-06,
+    "saved_s_t": 9.462029083806556e-06,
+    "exact_match": true
+  },
+  "active_rows": 4088,
+  "zero_rows": 8,
+  "median_scale": 2.4987259621411795e-06,
+  "log10_median": -5.6022813707866455,
+  "log10_MAD_scaled": 0.21434642285326871,
+  "C_threshold_scale": 1.0983933572952003e-05,
+  "B_threshold_scale": 4.997451924282359e-06,
+  "notes": [
+    "Selection uses only public per-channel scales s_r.",
+    "proxy error energy = s_r^2 (uniform-error approximation; same column count per row).",
+    "actual error energy uses the private FP32 update; evaluation-only."
+  ],
+  "criteria": {
+    "A_top5pct": {
+      "rows_selected": 205,
+      "fraction_of_active_rows": 0.05014677103718199,
+      "coords_selected": 5143040,
+      "min_selected_scale": 5.0067901611328125e-06,
+      "proxy_error_energy_fraction": 0.2042672088202189,
+      "actual_error_energy_fraction": 0.1722008556323827,
+      "update_energy_fraction": 0.15644665997071688
+    },
+    "A_top10pct": {
+      "rows_selected": 409,
+      "fraction_of_active_rows": 0.10004892367906067,
+      "coords_selected": 10260992,
+      "min_selected_scale": 4.357392299425555e-06,
+      "proxy_error_energy_fraction": 0.32753793334124187,
+      "actual_error_energy_fraction": 0.2888886467222386,
+      "update_energy_fraction": 0.26334333639293483
+    },
+    "B_gt_2x_median": {
+      "rows_selected": 209,
+      "fraction_of_active_rows": 0.0511252446183953,
+      "coords_selected": 5243392,
+      "min_selected_scale": 4.997876203560736e-06,
+      "proxy_error_energy_fraction": 0.2070829501426261,
+      "actual_error_energy_fraction": 0.17490860716068996,
+      "update_energy_fraction": 0.15911639317753995
+    },
+    "C_log_gt_median_3MAD": {
+      "rows_selected": 0,
+      "fraction_of_active_rows": 0.0,
+      "coords_selected": 0,
+      "min_selected_scale": null,
+      "proxy_error_energy_fraction": 0.0,
+      "actual_error_energy_fraction": 0.0,
+      "update_energy_fraction": 0.0
+    },
+    "D_proxy_energy50": {
+      "rows_selected": 796,
+      "fraction_of_active_rows": 0.19471624266144813,
+      "coords_selected": 19970048,
+      "min_selected_scale": 3.6703754631162155e-06,
+      "proxy_error_energy_fraction": 0.5000838469037191,
+      "actual_error_energy_fraction": 0.46166768222997356,
+      "update_energy_fraction": 0.42943773766438575
+    },
+    "D_proxy_energy80": {
+      "rows_selected": 1903,
+      "fraction_of_active_rows": 0.4655088062622309,
+      "coords_selected": 47742464,
+      "min_selected_scale": 2.6063728455483215e-06,
+      "proxy_error_energy_fraction": 0.8000048530111166,
+      "actual_error_energy_fraction": 0.781535646177172,
+      "update_energy_fraction": 0.7556055497316605
+    }
+  }
+}

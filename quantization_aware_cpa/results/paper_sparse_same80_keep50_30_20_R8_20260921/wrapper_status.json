@@ -1,0 +1,14 @@
+{
+  "task_id": "CPA_PAPER_SPARSE_SAME80_K503020_R20_20260921",
+  "plan_version": 2,
+  "amendment_id": "CPA_PAPER_SPARSE_SAME80_K503020_R8_AMENDMENT_20260921",
+  "candidate_count": 8,
+  "wrapper_pid": 11696,
+  "status": "SUPERSEDED",
+  "current_stage": "run_topk50",
+  "exit_status": 15,
+  "updated_utc": "2026-09-20T23:26:00.585501+00:00",
+  "stage_execution": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\paper_sparse_same80_keep50_30_20_R8_20260921\\stage_execution.json",
+  "superseded_by": "CPA_PAPER_SPARSE_SAME16_R8_AMENDMENT_20260921",
+  "full_experiment_status": "SUPERSEDED_PARTIAL_BY_V3"
+}

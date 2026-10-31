@@ -1,0 +1,50 @@
+{
+  "n_images": 80,
+  "batch_size": 16,
+  "batch_indices": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "dataset": "ILSVRC2012 ImageNet validation; exact historical80",
+  "selection": "original global_index0..79, unchanged batches0..4",
+  "labels": "original ImageNet1000-class indices; never remap to subset classes",
+  "transform": "ImageClassification(\n    crop_size=[224]\n    resize_size=[256]\n    mean=[0.485, 0.456, 0.406]\n    std=[0.229, 0.224, 0.225]\n    interpolation=InterpolationMode.BILINEAR\n)",
+  "source_manifest_sha256": "d09d274c22f5a5c0b6d5a2bcb73d464d81eef85a6af543d3c3b0289128a0fda4",
+  "source_manifest": "results\\cpa_fia_topk50_same80_B16\\image_manifest.csv",
+  "preprocessed_cache_verification": [
+    {
+      "batch_index": 0,
+      "n_images": 16,
+      "preprocessed_inputs_bit_exact": true
+    },
+    {
+      "batch_index": 1,
+      "n_images": 16,
+      "preprocessed_inputs_bit_exact": true
+    },
+    {
+      "batch_index": 2,
+      "n_images": 16,
+      "preprocessed_inputs_bit_exact": true
+    },
+    {
+      "batch_index": 3,
+      "n_images": 16,
+      "preprocessed_inputs_bit_exact": true
+    },
+    {
+      "batch_index": 4,
+      "n_images": 16,
+      "preprocessed_inputs_bit_exact": true
+    }
+  ],
+  "versions": {
+    "python": "3.11.14",
+    "torch": "2.13.0+cu132",
+    "torchvision": "0.28.0+cu132",
+    "Pillow": "12.2.0"
+  }
+}

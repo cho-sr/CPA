@@ -1,0 +1,93 @@
+{
+  "identity": {
+    "task_id": "CPA_PAPER_SPARSE_SAME80_K503020_R20_20260921",
+    "plan_version": 4,
+    "amendment_id": "CPA_PAPER_SPARSE_FRESH16_R8_AMENDMENT_20260921",
+    "config_sha256": "b12d6e246b113bb0bc548b80b9613e8e892931546052e0a6188f1e4cea7c76b9",
+    "runner_sha256": "96c33897f253fcccac27ca94b6fb3ca5353dc87d91eae9ede47b13278d5b1711",
+    "code_sha256": {
+      "quantization_aware_cpa\\qacpa\\run_paper_sparse_fresh16_r8.py": "96c33897f253fcccac27ca94b6fb3ca5353dc87d91eae9ede47b13278d5b1711",
+      "quantization_aware_cpa\\qacpa\\paper_sparse_codec.py": "3a45e0d577759703046e7a4d695a9a507651357dc55e74d2c2525fec7cc9fbef",
+      "quantization_aware_cpa\\qacpa\\topk_ratio_codec.py": "a26fe23f0e9232a12412fb4795c2b689f806ef49abb2785109988316e7f57489",
+      "quantization_aware_cpa\\qacpa\\random_fill.py": "53f2cf45a6f6ac47830eb2903736741d9a5e9437e46805602c5aaac4733646d2",
+      "quantization_aware_cpa\\qacpa\\staged_fia.py": "45eeeb925be426cf91ce9c9f2bd7d63192d721742739ee5b3affc4f25b816dfb",
+      "quantization_aware_cpa\\qacpa\\upstream_naive.py": "8f29b885d86f4121eda5c55e17486a3a48bd8db08b2f83890fe7726730d1ee92",
+      "quantization_aware_cpa\\qacpa\\run_m8_fedavg_naive.py": "0ea71db00a7e20e9ee9309215fbfa47c84f83290f9ca7027e3bec09ca2ea65f3",
+      "quantization_aware_cpa\\qacpa\\fia.py": "42a55ce6a4895785b10573f507658434e597f1138de3d45621f466702c7f5cb0",
+      "quantization_aware_cpa\\qacpa\\victim.py": "fdd40fd5c5062761872dc3bdd8dd4e750ccc188ce0050baf6330fad7e080874b"
+    },
+    "source_input_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m6_uia_fp32_B16_fia\\batch00\\inputs.pt",
+    "source_input_sha256": "24995487511a3e9d8d4665fdcd704f7a0f792249a9ba79880638d13bc4740141",
+    "original_x_sha256": "32b97527cbb3c71f8975a24b595db3165a3294e3022fc9079516c44882b525d4",
+    "original_labels_sha256": "85b7b5a03dd188cda0062e16213aedbd4e9e7ff928eb78dc835a27e678b5e1f4",
+    "weights_path": "C:\\Users\\조상제\\.cache\\torch\\hub\\checkpoints\\vgg16-397923af.pth",
+    "weights_sha256": "397923af8e79cdbb6a7127f12361acd7a2f83e06b05044ddf496e83de57a5bf0",
+    "n_images": 16,
+    "batch_indices": [
+      0
+    ],
+    "keep_percents": [
+      50,
+      30,
+      20
+    ],
+    "candidate_ids": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "new_update_collection": true,
+    "old_attack_artifacts_imported": false,
+    "keep_percent": 50,
+    "source_codec": "topk50_global_bitmap_fp32_v1",
+    "packet_sha256": "9bd2646bb1d9f185b503a036f678d30dce389dae990add706795a4b03d15dec7",
+    "packet_bytes": 218365984,
+    "fresh_update_sha256": "7d7874a135a77fe5c86591bff62dc37270163ea346b0d40875100ca4138f8ba4",
+    "fresh_Y_sha256": "751445ef6c040119cf6c960c2355d7d7548f723311a2ba4b36f0d34893c03937",
+    "attack_artifacts_imported": false
+  },
+  "method": "uniform_random_fill",
+  "candidate": 0,
+  "batch_index": 0,
+  "completed_iterations": 5000,
+  "fill_seed": 100000,
+  "relative_l2": 0.955311778654654,
+  "predicted_labels": [
+    761,
+    621,
+    806,
+    744,
+    389,
+    969,
+    290,
+    549,
+    124,
+    160,
+    975,
+    231,
+    237,
+    439,
+    354,
+    354
+  ],
+  "label_mode": "public round0 model argmax on reconstructed images",
+  "score": "norm(TopK(replayed_Y)-decoded_received_Y)/norm(decoded_received_Y)",
+  "replay": "all16; round0 frozen conv; all classifier SGD lr0.001 T10; dropout off",
+  "true_labels_used": false,
+  "true_images_used": false,
+  "true_features_used": false,
+  "ranking_wall_time_sec": 8.031330600002548,
+  "fia_optimizer_wall_time_sec": 398.8179945999873,
+  "completed_at_utc": "2026-09-21T01:40:54.443696+00:00",
+  "output_hashes": {
+    "screen_rec.pt": "861524b9267c4e263f91773cdb69b911770fc2c13af25ec92d9ab991d023af8f",
+    "screen_fia_log.json": "f2130324e1f938676b95b5d6049f7843b0be28413c7205c09d5b7c4bc211aa0a",
+    "sources.pt": "db2a458b331936120466694a391e5d94fab83395307bd40f9cd878960996c1ab",
+    "cpa_result.json": "1a327f0d3dc79f4ff3b2d3866964d7c7569d41dab944e1b7c42db4f872d9a4cd"
+  }
+}

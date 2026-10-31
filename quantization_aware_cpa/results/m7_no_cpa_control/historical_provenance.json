@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "audit_scope": "historical_M3_artifacts_only_no_M7_metrics_inspected",
+  "audit_date_local": "2026-09-09",
+  "historical_aggregate": "results/v7_m3_fallback_5batch/summary.json",
+  "victim_seed": 0,
+  "batch_size": 8,
+  "batch_indices": [0, 1, 2, 3, 4],
+  "global_indices": {"start": 0, "stop_exclusive": 40},
+  "fp32": {
+    "lpips_mean": 0.444815556704998,
+    "n_images": 40,
+    "n_cpa_targets": 36,
+    "n_exact_source_targets": 4,
+    "exact_source_global_indices": [22, 24, 32, 36],
+    "pure_cpa_cell": false
+  },
+  "4bit_cpa": {
+    "historical_key": "naive",
+    "display_label": "CPA (미수정) + naive dequant",
+    "lpips_mean": 0.5439403489232063,
+    "n_images": 40,
+    "n_exact_source_targets": 0,
+    "fia_group_sizes": [16, 8, 8, 8]
+  },
+  "fia": {
+    "n_iter": 25000,
+    "log_every": 5000,
+    "lr": 0.1,
+    "tv": 0.1,
+    "fi": 1.0,
+    "optimizer": "adam",
+    "scheduler": "cosine",
+    "seed_per_invocation": 42,
+    "historical_cudnn_benchmark": true,
+    "bitwise_determinism_guaranteed": false,
+    "implementation": "qacpa/fia.py"
+  },
+  "lpips": {"implementation": "torchmetrics", "net_type": "vgg", "input_range": [-1, 1]},
+  "legacy_observation_pattern": "cache/quant_seed0_B8_batch{batch}_bits4_stochastic.pt",
+  "current_observation_pattern": "cache/quant_seed0_B8_batch{batch}_bits4_stochastic_scaleper_row.pt",
+  "legacy_current_equality": [
+    {"batch": 0, "Y_hat_torch_equal": true, "delta_torch_equal": true},
+    {"batch": 1, "Y_hat_torch_equal": true, "delta_torch_equal": true},
+    {"batch": 2, "Y_hat_torch_equal": true, "delta_torch_equal": true},
+    {"batch": 3, "Y_hat_torch_equal": true, "delta_torch_equal": true},
+    {"batch": 4, "Y_hat_torch_equal": true, "delta_torch_equal": true}
+  ],
+  "historical_source_dirs": [
+    "results/v5_m3_fia_4bit",
+    "results/v6_m3_fia_4bit_batch2",
+    "results/v6_m3_fia_4bit_batch3",
+    "results/v6_m3_fia_4bit_batch4",
+    "results/v7_m3_fp32_truth_missing"
+  ]
+}

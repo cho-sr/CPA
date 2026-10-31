@@ -1,0 +1,16 @@
+{
+  "task_id": "CPA_SIGNED_INT4_GDONLY_SCREEN3_FIA_20260918",
+  "status": "RUNNING",
+  "pid": 24724,
+  "started_at": "2026-09-18T10:42:48.582832+00:00",
+  "runtime": "C:\\miniconda\\envs\\DLG\\python.exe",
+  "cwd": "C:\\Users\\조상제\\Desktop\\CPA",
+  "public_root": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\signed_int4_gdonly_randomized8_screen3_fia_B16_T10_20260918",
+  "private_root": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results_private\\signed_int4_gdonly_randomized8_screen3_fia_B16_T10_20260918",
+  "model_calls": 0,
+  "stage": "REGISTERED",
+  "cuda_available": true,
+  "torch": "2.13.0+cu132",
+  "cuda": "13.2",
+  "registration": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\signed_int4_gdonly_randomized8_screen3_fia_B16_T10_20260918\\registration.json"
+}

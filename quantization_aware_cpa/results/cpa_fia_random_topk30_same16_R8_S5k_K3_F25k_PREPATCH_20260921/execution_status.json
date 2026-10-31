@@ -1,0 +1,27 @@
+{
+  "run_tag": "cpa_fia_random_topk30_same16_R8_S5k_K3_F25k",
+  "pid": 13904,
+  "updated_at_utc": "2026-09-20T23:39:40.831165+00:00",
+  "task_id": "CPA_PAPER_SPARSE_SAME80_K503020_R20_20260921",
+  "plan_version": 3,
+  "amendment_id": "CPA_PAPER_SPARSE_SAME16_R8_AMENDMENT_20260921",
+  "candidate_count": 8,
+  "keep_percent": 30,
+  "state": "prepared",
+  "n_images": 16,
+  "packets": 1,
+  "batch_indices": [
+    0
+  ],
+  "attack_started": false,
+  "candidate_ids": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ]
+}

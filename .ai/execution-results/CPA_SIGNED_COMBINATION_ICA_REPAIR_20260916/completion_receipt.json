@@ -1,0 +1,22 @@
+{
+  "task_id": "CPA_SIGNED_COMBINATION_ICA_REPAIR_20260916",
+  "plan_version": 1,
+  "status": "COMPLETED",
+  "final_status": "REPAIR_AND_SYNTHETIC_VALIDATION_COMPLETED",
+  "scientific_quality": "NOT_EVALUATED",
+  "research_runs": 0,
+  "private_tensors_loaded": 0,
+  "generator_models_used": 0,
+  "real_research_output_created": false,
+  "report_path": "C:\\Users\\조상제\\Desktop\\CPA\\.ai\\execution-results\\CPA_SIGNED_COMBINATION_ICA_REPAIR_20260916\\report.md",
+  "results_path": "C:\\Users\\조상제\\Desktop\\CPA\\.ai\\execution-results\\CPA_SIGNED_COMBINATION_ICA_REPAIR_20260916\\results.json",
+  "source_integrity_path": "C:\\Users\\조상제\\Desktop\\CPA\\.ai\\execution-results\\CPA_SIGNED_COMBINATION_ICA_REPAIR_20260916\\source_integrity.json",
+  "planner_delivery": "QUEUED_SINGLE_FINAL_NOTICE",
+  "created_at_utc": "2026-09-16T14:00:48.073086+00:00",
+  "planner_delivery_path": "C:\\Users\\조상제\\Desktop\\CPA\\.ai\\execution-results\\CPA_SIGNED_COMBINATION_ICA_REPAIR_20260916\\planner_delivery.json",
+  "planner_receipt": {
+    "queued": true,
+    "receipt": "Queued message 01a0aa86-0afe-7060-b9df-c66211ecec06 for thread 01a0a799-d62c-7ab0-9c2a-628acf6d2c95."
+  },
+  "completed_at_utc": "2026-09-16T14:01:46.579005+00:00"
+}

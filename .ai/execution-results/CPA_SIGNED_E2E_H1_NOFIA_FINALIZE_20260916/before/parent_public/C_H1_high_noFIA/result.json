@@ -1,0 +1,25 @@
+{
+  "status": "COMPLETED",
+  "task_id": "CPA_SIGNED_E2E_H1_NOFIA_20260916",
+  "arm": "C_H1_high_noFIA",
+  "optimized_label_hypothesis": "H1",
+  "lambda_fia": 0.0,
+  "lambda_tv": 0.1,
+  "lambda_cell": 0.24202997768915402,
+  "iterations": 100,
+  "optimization_seconds": 140.69041750009637,
+  "peak_cuda_allocated_bytes": 3987526656,
+  "peak_cuda_reserved_bytes": 5102370816,
+  "final_metrics": {
+    "feature_target_cosine_loss": 0.7338348627090454,
+    "tv_normalized": 0.09336171299219131,
+    "feature_norm_mean": 124.83021545410156,
+    "feature_norm_min": 95.06898498535156,
+    "feature_norm_max": 168.4079132080078,
+    "pixel_min": 0.10182350128889084,
+    "pixel_max": 0.8513603806495667,
+    "pixel_mean": 0.4385729730129242,
+    "x0_displacement_l2": 10.598596572875977
+  },
+  "candidate_sha256": "5a20b87bf69473bf7696e46d9054c0f3d04a4c02f98ffde6ee3969374bf4e525"
+}

@@ -1,0 +1,35 @@
+{
+  "run_tag": "paper_sparse_fresh16_keep50_30_20_R8_20260921",
+  "pid": 2604,
+  "updated_at_utc": "2026-09-21T01:49:12.894568+00:00",
+  "task_id": "CPA_PAPER_SPARSE_SAME80_K503020_R20_20260921",
+  "plan_version": 4,
+  "amendment_id": "CPA_PAPER_SPARSE_FRESH16_R8_AMENDMENT_20260921",
+  "n_images": 16,
+  "candidate_ids": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "keep_percents": [
+    50,
+    30,
+    20
+  ],
+  "state": "stopped_by_user_for_ssh",
+  "stage": "random_candidate02_FIA_screen",
+  "keep_percent": 50,
+  "candidate": 2,
+  "fia_stop": 5000,
+  "fia_horizon": 25000,
+  "truth_used_for_selection": false,
+  "user_stop_receipt": "quantization_aware_cpa/results/paper_sparse_fresh16_keep50_30_20_R8_20260921/user_stop_for_ssh_20260921.json",
+  "stopped_by_user_utc": "2026-09-21T01:49:57.506091+00:00",
+  "local_restart_allowed": false,
+  "exit_status": 15
+}

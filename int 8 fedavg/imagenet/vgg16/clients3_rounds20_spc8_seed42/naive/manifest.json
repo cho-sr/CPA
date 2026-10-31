@@ -1,0 +1,52 @@
+{
+  "branch": "naive",
+  "dequantization": "deterministic q*s per client, then FedAvg",
+  "fastica": {
+    "components_shape": [
+      24,
+      4096
+    ],
+    "converged": true,
+    "mixing_shape": [
+      4096,
+      24
+    ],
+    "n_iter": 17
+  },
+  "fastica_random_state": 42,
+  "global_sign": {
+    "flipped_count": 15,
+    "policy": "blind_positive_energy_global_sign",
+    "signs": [
+      -1.0,
+      -1.0,
+      -1.0,
+      1.0,
+      1.0,
+      1.0,
+      -1.0,
+      1.0,
+      -1.0,
+      1.0,
+      -1.0,
+      -1.0,
+      -1.0,
+      1.0,
+      -1.0,
+      1.0,
+      -1.0,
+      1.0,
+      -1.0,
+      -1.0,
+      1.0,
+      -1.0,
+      -1.0,
+      -1.0
+    ]
+  },
+  "q_s_codes_sha256": "1ac878ebbd215e9fd20a2a7b46137868a60169e3c4e9655efe03c0f2e1e546b4",
+  "q_s_meta_sha256": "5d8f9e3c6adeb4a613cf54ba7489cdd8f7343bde1d44a21a75f66207dd325ce8",
+  "schema_version": 1,
+  "source": "same final-round client q,s artifact",
+  "true_z_policy": "not used for recovery, alignment, or final embedding generation; final eval only"
+}

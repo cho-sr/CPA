@@ -32,6 +32,7 @@ common_mod._install_optional_dependency_stubs()
 import utils as author_utils  # noqa: E402
 from feature_inversion import Direct  # noqa: E402
 from gradient_inversion import CocktailPartyAttack  # noqa: E402
+from cora_ica import CoRACocktailPartyAttack, source_hash as cora_ica_source_hash  # noqa: E402
 
 
 IMAGE_METRIC_FIELDS = ("batch", "sample", "sample_index", "mse", "psnr", "ssim", "lpips", "success_lpips")
@@ -67,7 +68,18 @@ def _save_checkpoint(path: Path, *, iteration: int, state: Mapping[str, Any]) ->
     torch.save({"iteration": iteration, "state": dict(state)}, path)
 
 
-RESUME_COMPATIBLE_MANIFEST_FIELDS = {"fia_micro_batch_size"}
+def _resolve_fia_stop_iter(args, attack_args) -> int:
+    target = int(attack_args.n_iter_fi)
+    stop_iter = getattr(args, "fia_stop_iter", None)
+    if stop_iter in {None, 0}:
+        return target
+    stop_iter = int(stop_iter)
+    if stop_iter < 1:
+        raise ValueError("fia_stop_iter must be >= 1")
+    return min(stop_iter, target)
+
+
+RESUME_COMPATIBLE_MANIFEST_FIELDS = {"fia_micro_batch_size", "member_cpa_only"}
 RESUME_COMPATIBLE_MANIFEST_METADATA_FIELDS = {
     "resume_compatible_overrides",
     "fia_micro_batch_size_resume_note",
@@ -102,8 +114,11 @@ def _prepare_resume_compatible_manifest(path: Path, expected: Mapping[str, Any])
         {
             "changed_fields": changed,
             "reason": (
-                "Resume from existing CPA/FIA checkpoints with a memory-only chunking "
-                "change. Optimization objective, samples, seeds, and iteration counts are unchanged."
+                "Resume from existing CPA/FIA checkpoints when only resume-compatible "
+                "fields change. member_cpa_only may change when Direct FIA is added "
+                "after a completed CPA-only member; fia_micro_batch_size controls only "
+                "memory chunking. Optimization objective, samples, seeds, and iteration "
+                "counts are unchanged."
             ),
         }
     )
@@ -379,10 +394,11 @@ def run_author_cpa_with_update_file(
     allow_true_labels: bool = False,
     update_data: Optional[Mapping[str, Any]] = None,
     run_fia: bool = True,
+    enable_negentropy: bool = False,
     extra_manifest: Optional[Mapping[str, Any]] = None,
     attack_order_policy: str = "no oracle permutation; sparse zeros are treated as observed values",
 ) -> Path:
-    """Run official CPA classes without oracle reordering in the attack path."""
+    """Run CPA without oracle reordering; CoRA explicitly restores negentropy."""
     if args.fi_method != "direct":
         raise ValueError(
             "The sparse runner supports original direct FIA only. "
@@ -408,6 +424,13 @@ def run_author_cpa_with_update_file(
         manifest_updates["az_scope"] = data["metadata"].get("az_scope")
     if extra_manifest:
         manifest_updates.update(dict(extra_manifest))
+    cpa_class = CoRACocktailPartyAttack if enable_negentropy else CocktailPartyAttack
+    if enable_negentropy:
+        manifest_updates.update({
+            "negentropy_enabled": float(args.ne) > 0,
+            "negentropy_behavior": "upstream_logcosh_contrast_without_zero_overwrite",
+            "cora_ica_source_sha256": cora_ica_source_hash(),
+        })
     attack_args, exp_path, _manifest = _prepare_exp_path(
         args,
         exp_name=exp_name,
@@ -437,10 +460,12 @@ def run_author_cpa_with_update_file(
     log_path = exp_path / "losses.jsonl"
     if getattr(args, "fresh_start", False) and log_path.exists():
         log_path.unlink()
+    fia_stop_iter = _resolve_fia_stop_iter(args, attack_args)
 
     print(
         f"[attack] start exp={exp_path.name} batches={n_batches} "
-        f"cpa_iter={attack_args.n_iter} fia_iter={attack_args.n_iter_fi}",
+        f"cpa_iter={attack_args.n_iter} fia_iter={attack_args.n_iter_fi} "
+        f"fia_stop_iter={fia_stop_iter}",
         flush=True,
     )
     rec_entries: list[dict[str, Any]] = []
@@ -451,7 +476,7 @@ def run_author_cpa_with_update_file(
         grads = _tensor_list(data["grad"][batch], device=device)
         labels = _labels_for_attack(args.n_samples, device, data["y"][batch] if args.use_labels else None)
 
-        gi = CocktailPartyAttack(model, grads, labels, attack_args, batch)
+        gi = cpa_class(model, grads, labels, attack_args, batch)
         gi_ckpt = exp_path / f"batch_{batch:03d}_gi.pt"
         ckpt = _load_checkpoint(gi_ckpt)
         if ckpt is not None:
@@ -488,9 +513,9 @@ def run_author_cpa_with_update_file(
                 fi.set_attack_state(ckpt["state"])
                 fi.start_iter = int(ckpt["iteration"])
 
-            for iter_fi in range(fi.start_iter, attack_args.n_iter_fi):
+            for iter_fi in range(fi.start_iter, fia_stop_iter):
                 loss_dict_fi = fi.step()
-                if (iter_fi % attack_args.n_log_fi == 0) or (iter_fi == attack_args.n_iter_fi - 1):
+                if (iter_fi % attack_args.n_log_fi == 0) or (iter_fi == fia_stop_iter - 1):
                     _write_jsonl(log_path, {"phase": "fi", "batch": batch, "iter": iter_fi, **loss_dict_fi})
                     _save_checkpoint(fi_ckpt, iteration=iter_fi + 1, state=fi.get_attack_state())
                     print(

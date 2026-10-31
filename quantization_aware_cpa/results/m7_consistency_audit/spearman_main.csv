@@ -1,0 +1,3 @@
+﻿condition,n_images,lpips_mean,spearman_rho,pvalue_two_sided,pvalue_method
+"GIA fp32 CPA, pure36",36,0.4464729486240281,0.03088803088803089,0.8580710885452416,scipy.stats.spearmanr asymptotic two-sided; descriptive image-level audit
+"GIA 4-bit CPA + dequant, all40",40,0.5439403489232063,-0.5906191369606004,6.02093714008584e-05,scipy.stats.spearmanr asymptotic two-sided; descriptive image-level audit

@@ -29,6 +29,7 @@ if str(SPARSE_SRC) not in sys.path:
     sys.path.insert(0, str(SPARSE_SRC))
 
 from author_runner import run_author_cpa_with_update_file  # noqa: E402
+from cora_ica import require_negentropy_run  # noqa: E402
 from blind_alignment import _linear_sum_assignment  # noqa: E402
 from common import (  # noqa: E402
     AUTHOR_SOURCE_HASH,
@@ -845,6 +846,7 @@ def main() -> None:
             )
             completed_path = completed_member_run_path(args, exp_name)
             if completed_path is not None:
+                require_negentropy_run(completed_path, args.ne)
                 run_path = completed_path
                 run_paths.append(run_path)
                 print(
@@ -871,6 +873,7 @@ def main() -> None:
             )
             run_path = run_author_cpa_with_update_file(
                 args,
+                enable_negentropy=True,
                 exp_name=exp_name,
                 update_file=sparse_file,
                 update_data=member_data,

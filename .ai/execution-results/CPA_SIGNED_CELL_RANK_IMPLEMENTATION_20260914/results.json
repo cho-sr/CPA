@@ -1,0 +1,109 @@
+{
+  "task_id": "CPA_SIGNED_CELL_RANK_IMPLEMENTATION_20260914",
+  "plan_version": 1,
+  "status": "COMPLETED",
+  "full_experiment_status": "FULL_EXPERIMENT_NOT_RUN",
+  "runtime": {
+    "model": "gpt-5.6-luna",
+    "reasoning_effort": "xhigh",
+    "thread_id": "01a09e4d-51f3-7121-84e2-03a7a9ac3039",
+    "pid": 18272,
+    "evidence": "logs_2.sqlite row 5741830"
+  },
+  "handoff": {
+    "pre_claim_snapshot_sha256": "122962474ac3ad8cd6558c21e32277a6bbb2e92c6b40e502f5cfda4ca8e41393",
+    "task_version_verified": true,
+    "pre_claim_state": "READY_UNCLAIMED",
+    "claim_state": "RUNNING",
+    "claimed_by": "01a09e4d-51f3-7121-84e2-03a7a9ac3039",
+    "result_report": ".ai/execution-results/CPA_SIGNED_CELL_RANK_IMPLEMENTATION_20260914/report.md"
+  },
+  "planner_final_delivery": {
+    "state": "FINAL_RESULT_HANDOFF_UNCONFIRMED",
+    "authorized_one_time": true,
+    "peer_id": "01a09ac2-0e8d-7f90-94a8-c45be99f4343",
+    "peer_pid": 12728,
+    "attempted_once": true,
+    "queue_error": "no rollout found for thread id 01a09ac2-0e8d-7f90-94a8-c45be99f4343 (code -32603)",
+    "receipt_file": ".ai/execution-results/CPA_SIGNED_CELL_RANK_IMPLEMENTATION_20260914/planner_final_delivery.json",
+    "no_retry_or_replacement": true
+  },
+  "changed_files": [
+    "quantization_aware_cpa/qacpa/signed_cell_rank.py",
+    "quantization_aware_cpa/qacpa/signed_cell_rank_runner.py",
+    "quantization_aware_cpa/qacpa/signed_cell_rank_evaluation.py",
+    "quantization_aware_cpa/tests/test_signed_cell_rank.py",
+    "quantization_aware_cpa/tests/test_signed_cell_rank_pipeline.py",
+    "quantization_aware_cpa/docs/signed_cell_rank_comparison.md",
+    ".ai/execution-results/CPA_SIGNED_CELL_RANK_IMPLEMENTATION_20260914/report.md",
+    ".ai/execution-results/CPA_SIGNED_CELL_RANK_IMPLEMENTATION_20260914/results.json"
+  ],
+  "protected_files_unchanged": true,
+  "tests": [
+    {
+      "command": "C:/miniconda/envs/DLG/python.exe -m pytest quantization_aware_cpa/tests/test_signed_cell_rank.py quantization_aware_cpa/tests/test_signed_cell_rank_pipeline.py -q --basetemp C:/Users/조상제/Desktop/CPA/.tmp_pytest_signed_cell_rank_2",
+      "status": "PASS",
+      "passed": 9,
+      "duration_seconds": 1.44,
+      "scope": "tiny synthetic CPU and mocked integration/provenance"
+    },
+    {
+      "command": "C:/miniconda/envs/DLG/python.exe -m pytest quantized_update_cpa/tests/test_cell_utils.py -q --basetemp C:/Users/조상제/Desktop/CPA/.tmp_pytest_cell_utils",
+      "status": "PASS",
+      "passed": 79,
+      "duration_seconds": 1.44,
+      "scope": "existing codec/cell utility regression"
+    },
+    {
+      "command": "C:/miniconda/envs/DLG/python.exe -m pytest quantization_aware_cpa/tests/test_upstream_naive.py quantization_aware_cpa/tests/test_signed_baseline_provenance.py -q --basetemp C:/Users/조상제/Desktop/CPA/.tmp_pytest_existing_contracts",
+      "status": "PASS",
+      "passed": 30,
+      "duration_seconds": 5.49,
+      "scope": "existing original adapter/provenance contracts on synthetic data"
+    }
+  ],
+  "implementation_facts": [
+    "Uncentered V0=s*q; alternating row-Gram gram_eigh rank projection followed by exact existing fixed-q,s cell projection.",
+    "Scientific runner rank is 16, default AP iterations are 5, and AP0 is exposed as an identity control.",
+    "Final V is the only CPA input; M is a separate diagnostic/artifact and scale consistency is metric-only.",
+    "Runner reuses immutable original CPA/FIA configurations, seed 42, CPA25k/FIA25k, and abs(S_hat) estimated ordering.",
+    "Offline evaluator checks provenance before private tensor deserialization and evaluates all 16 candidates label-free.",
+    "Future research commands are documented but were not executed."
+  ],
+  "inferences": [
+    "The final V can satisfy fixed observed cells even when its separate M rank projection is not cell-feasible; no convergence or feasible-intersection claim is made.",
+    "Row-Gram eigendecomposition is memory-conscious but remains subject to FP32 conditioning and near-eigenvalue tie limitations."
+  ],
+  "proposals": [
+    "After a new explicit research authorization, run the three documented preprocess, attack, and offline evaluation commands with AP5/CUDA and preserve all fixed CPA/FIA settings."
+  ],
+  "unknowns": [
+    "Real-size movement/convergence and scale drift",
+    "Full-size memory, VRAM, and runtime",
+    "CPA/FIA and image-quality effect",
+    "Cross-device reproducibility",
+    "LPIPS behavior on real images"
+  ],
+  "future_commands_documented_not_run": [
+    "C:/miniconda/envs/DLG/python.exe -m quantization_aware_cpa.qacpa.signed_cell_rank_runner preprocess --public-observation quantization_aware_cpa/results/signed_int4_baseline_B16_T10/observation --output quantization_aware_cpa/results/signed_cell_rank_B16_T10/preprocess_ap5 --ap-iterations 5 --projection-device cuda",
+    "C:/miniconda/envs/DLG/python.exe -m quantization_aware_cpa.qacpa.signed_cell_rank_runner attack --public-observation quantization_aware_cpa/results/signed_int4_baseline_B16_T10/observation --preprocessed quantization_aware_cpa/results/signed_cell_rank_B16_T10/preprocess_ap5 --checkpoint C:/Users/조상제/.cache/torch/hub/checkpoints/vgg16-397923af.pth --output quantization_aware_cpa/results/signed_cell_rank_B16_T10/cell_rank_ap5",
+    "C:/miniconda/envs/DLG/python.exe -m quantization_aware_cpa.qacpa.signed_cell_rank_evaluation --naive quantization_aware_cpa/results/signed_int4_baseline_B16_T10/naive --cell-rank quantization_aware_cpa/results/signed_cell_rank_B16_T10/cell_rank_ap5 --public-observation quantization_aware_cpa/results/signed_int4_baseline_B16_T10/observation --private-observation quantization_aware_cpa/results_private/signed_int4_baseline_B16_T10/observation --output quantization_aware_cpa/results_private/signed_cell_rank_B16_T10/evaluation_ap5"
+  ],
+  "protected_source_hashes_current": {
+    "official_cpa/src/gradient_inversion.py": "c598e1ee7b4079f741060d10c8dfd14711e393a97384c63cf32be77a458b1873",
+    "official_cpa/src/feature_inversion.py": "dc73880427e3eaf1f873d295f17f1d48d301882f634ee5df36ddeea8e56c4dec",
+    "official_cpa/src/vgg16.py": "8114eca8cde553dace5f777aedd21b70851c570d473e597b005cb6be4b248d36",
+    "quantization_aware_cpa/qacpa/upstream_naive.py": "8f29b885d86f4121eda5c55e17486a3a48bd8db08b2f83890fe7726730d1ee92",
+    "quantization_aware_cpa/qacpa/seed.py": "769366fcc2cf3e144d8caa86f73a55dcb0b6be615a45dab8b6e117399150c558",
+    "quantization_aware_cpa/qacpa/signed_baseline.py": "a2a6b3e3c7909fb15ab44d49839e6bb0759e44832e223d16f0f2c24e0e45e467",
+    "quantization_aware_cpa/qacpa/signed_baseline_observation.py": "2c18135e86e80c8f666033d5ea9d0c3495869ee60809fed04e295f28fa92cda2",
+    "quantized_update_cpa/quantization.py": "ae0f812c7de3de07cce3796c701475d6fc3e0a822f7d6dd8ab951d34201e3ceb",
+    "quantized_update_cpa/cell_utils.py": "6725bce108a8e795680342231696c70f1d2bc8b01a727022c605e40aa841d361",
+    "quantized_update_cpa/trial_metrics.py": "37368d41d5b5caac142949493ab7f501e7d5aecf9ed5e317c7112cc4c4ca1e50"
+  },
+  "limitations": [
+    "No real observation/private tensor was loaded.",
+    "No GPU, VGG, CPA/FIA, LPIPS, collection, training, reconstruction, or download was run.",
+    "The implementation does not establish scientific performance or convergence."
+  ]
+}

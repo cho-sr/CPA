@@ -1,0 +1,15 @@
+{
+  "task_id": "CPA_SAME80_BITS87654_R100_SCREEN3_20260926",
+  "state": "STOPPED_BY_USER",
+  "at_utc": "2026-09-26T16:16:25.607645+00:00",
+  "stopped_verified_pids": [
+    18352,
+    18252,
+    7548,
+    20896
+  ],
+  "automatic_restart_disabled": true,
+  "control_kind": "USER_STOP",
+  "artifacts_preserved": true,
+  "completed_screen_count": 11
+}

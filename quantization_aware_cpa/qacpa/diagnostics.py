@@ -2,6 +2,7 @@ from __future__ import annotations
 
 from dataclasses import dataclass
 import math
+from typing import Any
 
 import numpy as np
 import torch
@@ -249,6 +250,127 @@ def estimate_axis_extent(
         "infeasible_lps": infeasible_lps,
         "failed_lps": failed_lps,
     }
+
+
+def estimate_coordinate_extents(
+    *,
+    A: torch.Tensor,
+    S_reference: torch.Tensor,
+    Y_hat: torch.Tensor,
+    delta: torch.Tensor,
+    columns: np.ndarray,
+    method: str,
+    feasibility_tol: float,
+) -> dict[str, Any]:
+    linprog = _import_linprog()
+    A_np = A.detach().cpu().double().numpy()
+    S_np = S_reference.detach().cpu().double().numpy()
+    Y_np = Y_hat.detach().cpu().double().numpy()
+    delta_np = delta.detach().cpu().double().numpy()
+    B = A_np.shape[1]
+    A_ub_base = np.vstack([A_np, -A_np])
+    bounds = [(0.0, None)] * B
+    options = {
+        "primal_feasibility_tolerance": float(feasibility_tol),
+        "dual_feasibility_tolerance": float(feasibility_tol),
+    }
+
+    raw_extents: list[list[float]] = [[] for _ in range(B)]
+    normalized_extents: list[list[float]] = [[] for _ in range(B)]
+    feasible_columns = 0
+    infeasible_columns = 0
+    failed_columns = 0
+
+    for col in columns:
+        col_int = int(col)
+        denominator = max(float(np.linalg.norm(S_np[:, col_int])), 1.0e-12)
+        upper = Y_np[:, col_int] + delta_np / 2.0
+        lower = Y_np[:, col_int] - delta_np / 2.0
+        b_ub = np.concatenate([upper, -lower])
+        column_values: list[float] = []
+        column_infeasible = False
+        column_failed = False
+        for axis in range(B):
+            c = np.zeros(B, dtype=np.float64)
+            c[axis] = 1.0
+            min_res = linprog(c, A_ub=A_ub_base, b_ub=b_ub, bounds=bounds, method=method, options=options)
+            max_res = linprog(-c, A_ub=A_ub_base, b_ub=b_ub, bounds=bounds, method=method, options=options)
+            if min_res.status == 2 or max_res.status == 2:
+                column_infeasible = True
+                break
+            if not min_res.success or not max_res.success:
+                column_failed = True
+                break
+            column_values.append(float(-max_res.fun - min_res.fun))
+        if column_infeasible:
+            infeasible_columns += 1
+            continue
+        if column_failed:
+            failed_columns += 1
+            continue
+        feasible_columns += 1
+        for axis, extent in enumerate(column_values):
+            raw_extents[axis].append(extent)
+            normalized_extents[axis].append(extent / denominator)
+
+    raw_mean = [float(np.mean(values)) if values else math.nan for values in raw_extents]
+    raw_median = [float(np.median(values)) if values else math.nan for values in raw_extents]
+    normalized_mean = [float(np.mean(values)) if values else math.nan for values in normalized_extents]
+    a_norm = [float(x) for x in A.detach().cpu().float().norm(dim=0).tolist()]
+    inv_a_norm = [1.0 / max(value, 1.0e-12) for value in a_norm]
+    total_columns = max(1, len(columns))
+    return {
+        "coordinate_extent_mean": raw_mean,
+        "coordinate_extent_median": raw_median,
+        "coordinate_extent_normalized_mean": normalized_mean,
+        "a_norm_per_coordinate": a_norm,
+        "inv_a_norm_per_coordinate": inv_a_norm,
+        "extent_times_a_norm": [
+            float(extent * norm) if math.isfinite(extent) else math.nan
+            for extent, norm in zip(raw_mean, a_norm)
+        ],
+        "pearson_extent_vs_inv_a_norm": pearson(raw_mean, inv_a_norm),
+        "spearman_extent_vs_inv_a_norm": spearman(raw_mean, inv_a_norm),
+        "feasible_column_fraction": float(feasible_columns / total_columns),
+        "infeasible_column_fraction": float(infeasible_columns / total_columns),
+        "failed_column_fraction": float(failed_columns / total_columns),
+        "feasible_columns": int(feasible_columns),
+        "infeasible_columns": int(infeasible_columns),
+        "failed_columns": int(failed_columns),
+        "total_columns": int(len(columns)),
+    }
+
+
+def pearson(x: list[float], y: list[float]) -> float:
+    x_arr = np.asarray(x, dtype=np.float64)
+    y_arr = np.asarray(y, dtype=np.float64)
+    mask = np.isfinite(x_arr) & np.isfinite(y_arr)
+    x_arr = x_arr[mask]
+    y_arr = y_arr[mask]
+    if x_arr.size < 2 or float(x_arr.std()) == 0.0 or float(y_arr.std()) == 0.0:
+        return math.nan
+    return float(np.corrcoef(x_arr, y_arr)[0, 1])
+
+
+def spearman(x: list[float], y: list[float]) -> float:
+    return pearson(rankdata(x), rankdata(y))
+
+
+def rankdata(values: list[float]) -> list[float]:
+    arr = np.asarray(values, dtype=np.float64)
+    ranks = np.full(arr.shape[0], np.nan, dtype=np.float64)
+    finite = np.isfinite(arr)
+    finite_idx = np.nonzero(finite)[0]
+    finite_values = arr[finite]
+    order = np.argsort(finite_values, kind="mergesort")
+    i = 0
+    while i < finite_values.shape[0]:
+        j = i + 1
+        while j < finite_values.shape[0] and finite_values[order[j]] == finite_values[order[i]]:
+            j += 1
+        ranks[finite_idx[order[i:j]]] = (i + 1 + j) / 2.0
+        i = j
+    return [float(x) for x in ranks]
 
 
 def estimate_column_feasibility(

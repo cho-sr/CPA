@@ -1,0 +1,12 @@
+{
+  "task_id": "CPA_SIGNED_COMBINATION_ICA_REPAIR_20260916",
+  "to_thread": "01a0a799-d62c-7ab0-9c2a-628acf6d2c95",
+  "to_pid": 24972,
+  "queued": true,
+  "receipt": {
+    "queued": true,
+    "receipt": "Queued message 01a0aa86-0afe-7060-b9df-c66211ecec06 for thread 01a0a799-d62c-7ab0-9c2a-628acf6d2c95."
+  },
+  "notice_path": "C:\\Users\\조상제\\Desktop\\CPA\\.ai\\execution-results\\CPA_SIGNED_COMBINATION_ICA_REPAIR_20260916\\planner_notice.txt",
+  "sent_at_utc": "2026-09-16T14:01:46.576314+00:00"
+}

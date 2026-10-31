@@ -1,0 +1,144 @@
+{
+  "schema_version": 1,
+  "run_tag": "m5_uia_beff_smoke",
+  "milestone": "m5_uia_beff_validation",
+  "git_sha": "437013a234e92e882fb6744a64995b0ab812841c",
+  "config": {
+    "seed": 0,
+    "run_tag": "v3_mptrunc",
+    "device": "auto",
+    "milestone": 1,
+    "data": {
+      "root": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet",
+      "split": "val",
+      "batch_size": 8,
+      "n_batches": 3,
+      "num_workers": 0,
+      "require_distinct_labels": true,
+      "microbatch_size": 8
+    },
+    "quantization": {
+      "bits": 4,
+      "rounding": "stochastic",
+      "scale_granularity": "per_row",
+      "bucket_size": 256
+    },
+    "stage1": {
+      "n_components": 8,
+      "debias": true,
+      "ica_method": "cpa",
+      "fastica_max_iter": 1000,
+      "fastica_tol": 0.0001,
+      "fastica_fun": "logcosh",
+      "fastica_algorithm": "parallel",
+      "cpa_ica_max_iter": 5,
+      "cpa_ica_lr": 0.001,
+      "cpa_ica_optimizer": "adam",
+      "cpa_ica_decor": 5.3,
+      "cpa_ica_T": 7.7,
+      "cpa_ica_ne": 1.0,
+      "cpa_ica_nv": 0.13,
+      "cpa_ica_l1": 5.0,
+      "cpa_ica_tv": 0.1,
+      "cpa_ica_log_every": 0,
+      "mp_truncation": true,
+      "c_mp": 3.0
+    },
+    "diagnostics": {
+      "gamma_columns": 512,
+      "lp_method": "highs",
+      "lp_feasibility_tol": 1e-07
+    },
+    "stage2": {
+      "max_iter": 250,
+      "chunk_size": 4096,
+      "stop_tolerance": 1e-10,
+      "check_every": 25,
+      "mu": "1.0e3",
+      "eps": 0.001,
+      "phase1_acceleration": true,
+      "lam_R": 300.0
+    },
+    "bplus": {
+      "radius_scale": 1.0,
+      "step_size": 1.0
+    },
+    "rank_split": {
+      "keep_update_scale": 0.05,
+      "extra_update_scale": 1.0,
+      "extra_debias": false,
+      "extra_ica_method": "cpa",
+      "extra_cpa_ica_max_iter": 5000
+    },
+    "paths": {
+      "cache_dir": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\quantization_aware_cpa\\cache",
+      "results_jsonl": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\quantization_aware_cpa\\results\\runs.jsonl"
+    },
+    "uia_beff_validation": {
+      "n_conditions": 1,
+      "conditions": [
+        {
+          "seed": 0,
+          "batch_index": 0,
+          "n": 16,
+          "T": 1,
+          "bits": 4,
+          "rounding": "stochastic",
+          "scale_granularity": "per_row",
+          "bucket_size": ""
+        }
+      ],
+      "lr": 0.001,
+      "c_mp": 3.0,
+      "output_dir": "results\\m5_uia_beff_smoke"
+    }
+  },
+  "metrics": {
+    "summary": [
+      {
+        "run_tag": "m5_uia_beff_smoke",
+        "condition_index": 0,
+        "seed": 0,
+        "batch_index": 0,
+        "n": 16,
+        "T": 1,
+        "bits": 4,
+        "rounding": "stochastic",
+        "scale_granularity": "per_row",
+        "bucket_size": "",
+        "lr": 0.001,
+        "c_mp": 3.0,
+        "device": "cuda",
+        "device_name": "NVIDIA GeForce RTX 5060 Ti",
+        "predicted_B_eff": 12,
+        "stage1_B_eff": 12,
+        "measured_recovered_cos09": 10,
+        "measured_over_predicted": 0.8333333333333334,
+        "measured_over_n": 0.625,
+        "source_cos_mean": 0.9541911780834198,
+        "source_cos_min": 0.8477190732955933,
+        "source_cos_per_source": "[0.9934017658233643, 0.8477190732955933, 0.9317494630813599, 0.9821478724479675, 0.993703305721283, 0.9910392165184021, 0.9561731815338135, 0.8928055167198181, 0.9387458562850952, 0.9532250165939331, 0.9933559894561768, 0.976227879524231]",
+        "matched_true_indices": "[1, 2, 3, 5, 6, 7, 8, 9, 10, 12, 13, 15]",
+        "unmatched_true_indices": "[0, 4, 11, 14]",
+        "lam_over_mp_edge": "[1583.1218855289915, 1256.8847772955457, 808.1744987733238, 311.2422448030722, 241.32249589436756, 121.64361428305932, 82.63791004684485, 72.18097988566832, 57.60606814557456, 47.410465164544426, 37.718121434351396, 12.080598993668238, 1.9548920944142085, 1.283080990352913, 1.2727714115665525, 1.2367232042370986]",
+        "min_lam_over_mp_edge": 1.2367232042370986,
+        "kept_min_lam_over_mp_edge": 12.080598993668238,
+        "discarded_max_lam_over_mp_edge": 1.9548920944142085,
+        "sigma2": 1.4838204265288368e-07,
+        "mp_edge": 2.925184806310131e-07,
+        "stage1_ica_method": "cpa",
+        "stage1_ica_n_iter": 5,
+        "stage1_cpa_ica_l1": 5.0,
+        "stage1_reconstruction_rel_l2": 0.5416324138641357,
+        "wall_time_sec": 7.001875000016298
+      }
+    ]
+  },
+  "artifacts": {
+    "summary_csv": "results\\m5_uia_beff_smoke\\summary.csv",
+    "source_cosines_csv": "results\\m5_uia_beff_smoke\\source_cosines.csv",
+    "lam_spectrum_csv": "results\\m5_uia_beff_smoke\\lam_spectrum.csv",
+    "predicted_vs_measured_png": "results\\m5_uia_beff_smoke\\predicted_vs_measured_beff.png"
+  },
+  "wall_time_sec": 7.291691299993545
+}

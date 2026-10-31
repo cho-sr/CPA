@@ -1,0 +1,82 @@
+{
+  "layer": "classifier.0.weight",
+  "shape": [
+    4096,
+    25088
+  ],
+  "numel": 102760448,
+  "original_update": {
+    "l2_norm": 0.04115368106378018,
+    "max_abs": 0.0006370862247422338,
+    "nonzero_fraction": 0.05280682505393515
+  },
+  "per_tensor": {
+    "scale": 9.101231989916414e-05,
+    "scale_count": 1,
+    "scale_bytes_fp32": 4,
+    "nonzero_code_fraction": 0.0016694847418337452,
+    "relative_l2_error": 0.6318350726873079,
+    "cosine_similarity": 0.8038659053363981,
+    "max_absolute_error": 4.550605081021786e-05
+  },
+  "per_channel": {
+    "scale_count": 4096,
+    "scale_bytes_fp32": 16384,
+    "zero_scale_rows": 0,
+    "zero_absmax_rows_using_scale_one_convention": 2387,
+    "scale_quantiles": {
+      "p00": 2.3283064365386963e-10,
+      "p01": 2.280243487362555e-08,
+      "p05": 1.3883359173405552e-07,
+      "p25": 1.0555751259744284e-05,
+      "p50": 1.0,
+      "p75": 1.0,
+      "p95": 1.0,
+      "p99": 1.0,
+      "p100": 1.0
+    },
+    "scale_ratio_to_per_tensor_quantiles": {
+      "p00": 2.558232159248673e-06,
+      "p01": 0.0002505422881087879,
+      "p05": 0.0015254373461513157,
+      "p25": 0.11598156459959909,
+      "p50": 10987.523459548514,
+      "p75": 10987.523459548514,
+      "p95": 10987.523459548514,
+      "p99": 10987.523459548514,
+      "p100": 10987.523459548514
+    },
+    "nonzero_code_fraction": 0.022022179194859097,
+    "relative_l2_error": 0.296707746557246,
+    "cosine_similarity": 0.9573031713001896,
+    "max_absolute_error": 4.5493245124816895e-05
+  },
+  "top_three_singular_values": {
+    "method": "torch.linalg.svdvals FP32 CUDA (top 3; exact SVD routine)",
+    "fp32": [
+      0.04114362597465515,
+      0.0007479835185222328,
+      2.8545017016767815e-08
+    ],
+    "per_tensor": [
+      0.036669716238975525,
+      0.011840199120342731,
+      0.009565882384777069
+    ],
+    "per_channel": [
+      0.042123425751924515,
+      0.0006519191665574908,
+      0.00047578031080774963
+    ]
+  },
+  "quantization": {
+    "scheme": "symmetric signed INT4",
+    "code_min": -7,
+    "code_max": 7,
+    "rounding": "torch.round nearest-even",
+    "dequantization": "FP32 code * scale",
+    "device": "CPU FP32",
+    "per_channel_axis": 0,
+    "zero_row_scale": 1.0
+  }
+}

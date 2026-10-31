@@ -1,0 +1,25 @@
+{
+  "iter": 999,
+  "latest": {
+    "bin_satisfaction": 0.9886713027954102,
+    "fi_weight": 1.0,
+    "iter": 999,
+    "loss": 0.6086485385894775,
+    "loss_fi": 0.6085822582244873,
+    "loss_mix_l2": 7.552610567049148e-16,
+    "loss_q": 3.0418723434761687e-15,
+    "loss_tv": 0.6628366708755493,
+    "mean_bin_violation": 5.137868797078227e-09,
+    "mix_l2_weight": 0.0,
+    "q_weight": 1.0,
+    "requantization_match": 0.9886591831843058,
+    "run_tag": "qaware_frozen_a",
+    "seconds_since_last_log": 25.850118160247803,
+    "seconds_total": 529.4191851615906,
+    "total_q_elements": 308281344.0,
+    "tv_weight": 0.0001
+  },
+  "n_iter": 1000,
+  "run_tag": "qaware_frozen_a",
+  "status": "running"
+}

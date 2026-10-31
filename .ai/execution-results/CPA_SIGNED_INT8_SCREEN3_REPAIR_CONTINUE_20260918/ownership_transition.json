@@ -1,0 +1,13 @@
+{
+    "task_id":  "CPA_SIGNED_INT8_SCREEN3_REPAIR_CONTINUE_20260918",
+    "transition_status":  "RUNNING",
+    "executor_thread_id":  "01a0a799-f1ce-7b31-8c46-b4ddef40aeab",
+    "executor_pid":  14236,
+    "planner_thread_id":  "01a0a799-d62c-7ab0-9c2a-628acf6d2c95",
+    "parent_task_id":  "CPA_SIGNED_INT8_RANDOMIZED8_SCREEN3_FIA_20260917",
+    "parent_wrapper_pid":  23720,
+    "parent_active_at_transition":  false,
+    "parent_active_handoff_sha256":  "fc046fa7c8a82c8c0e924453e4b27b09c375b8f594358c1d56b79af538286e82",
+    "ready_snapshot_sha256":  "fc046fa7c8a82c8c0e924453e4b27b09c375b8f594358c1d56b79af538286e82",
+    "timestamp_utc":  "2026-09-17T16:24:10.4351112Z"
+}

@@ -1,0 +1,53 @@
+{
+  "identity": {
+    "registration_sha256": "675f8ad66b533ee4f92a469f9cf1ccda6de4586dbfd46ed25896a5be0544b9fe",
+    "bits": 4,
+    "candidate_id": 71,
+    "kind": "random",
+    "sample_seed": 70001444,
+    "cpa_seed": 0,
+    "fia_seed": 42,
+    "cpa_steps": 25000,
+    "fia_steps": 25000,
+    "fia_horizon": 25000,
+    "smoke": false
+  },
+  "audit": {
+    "bits": 4,
+    "seed": 70001444,
+    "chunk_rows": 32,
+    "generator": "torch.Generator(cpu)",
+    "sampler": "uniform_fp64_interpolation_cast_fp32_inclusive_registered_cells",
+    "codec_metadata": {
+      "codec": "signed_symmetric_bits4_qplus7_nearest_even_cpu_fp32_v1",
+      "bits": 4,
+      "qmin": -7,
+      "qmax": 7,
+      "scale_scope": "per_tensor_absmax_scalar_fp32",
+      "scale_operation": "float32(max_abs/7)",
+      "code_operation": "round(float32(G/s)).clamp(-7,7).int8",
+      "rounding": "nearest_even",
+      "logical_code_bits": 4,
+      "physical_code_storage": "int8",
+      "zero_tensor": "q=0,s=1",
+      "edge_policy": "largest_finite_fp32_absmax_rounding_to_observed_scale"
+    },
+    "anchor": {
+      "flat_index": 6861718,
+      "row": 273,
+      "column": 12694,
+      "q": -7,
+      "value": -0.050204917788505554,
+      "cap": 0.050204917788505554
+    },
+    "scale": 0.0071721309795975685,
+    "scale_reproduced": true,
+    "code_consistency": {
+      "all_equal": true,
+      "mismatch_count": 0,
+      "numel": 102760448,
+      "mismatch_fraction": 0.0
+    },
+    "tensor_sha256": "2984695484b64e33fa335094b546c4141e3f638fc473b30fd0c3e3600a4d5d59"
+  }
+}

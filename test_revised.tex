@@ -1,0 +1,394 @@
+% Working revision, 2026-09-20. Original test.tex is intentionally unchanged.
+% Evidence and excluded historical results: PAPER_REVISION_NOTES_20260920.md.
+% This is an empirical working draft, not a submission-ready boundary claim.
+% Use the conference's spconf.sty. References are embedded below.
+\documentclass{article}
+\usepackage{spconf,amsmath,amssymb,graphicx,booktabs,hyperref}
+\newcommand{\U}{\mathbf{U}}
+\newcommand{\X}{\mathbf{X}}
+\newcommand{\HH}{\mathbf{H}}
+\newcommand{\C}{\mathcal{C}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\todo}[1]{\par\noindent\textbf{[TODO]} #1\par}
+\newif\ifshowtodos
+\showtodostrue % Change to \showtodosfalse only after resolving the TODOs.
+
+\title{RANDOMIZED RECONSTRUCTION OF COMPRESSED MODEL UPDATES:\\
+AN EMPIRICAL STUDY OF BIT-WIDTH AND SPARSITY LIMITS}
+\name{Anonymous Author(s)}
+\address{Anonymous Affiliation}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+How far can communication compression be increased before an update-inversion
+attack loses reconstruction quality? We investigate this question using
+randomized decoding followed by source separation and feature inversion.
+The sender applies deterministic compression; the attacker samples values
+inside quantization cells or fills discarded coordinates within observable
+top-$k$ bounds. In a fixed 16-image VGG16 experiment, the publicly selected
+randomized reconstruction deteriorates from LPIPS 0.5558 at 8 bits to 0.8085
+at 4 bits. Randomized decoding does not consistently outperform cell-center
+decoding. In a separate, matched 80-image sparsification study, reducing
+retention from 50\% to 10\% increases zero-fill LPIPS from 0.4864 to 0.6323.
+At 10\% retention, randomized filling yields LPIPS 0.6300, with slightly
+lower PSNR and SSIM than zero filling despite a larger search budget.
+These measurements characterize degradation under the tested attacks, but
+do not yet identify a calibrated image-recovery success/failure boundary
+or establish a privacy guarantee.
+\end{abstract}
+
+\begin{keywords}
+update inversion, randomized decoding, quantization, sparsification,
+reconstruction limits
+\end{keywords}
+
+\section{Introduction}
+Sharing model updates rather than raw data does not by itself prevent
+training-data reconstruction. Deep Leakage from Gradients demonstrates
+optimization-based reconstruction from gradients~\cite{zhu2019deep}.
+The Cocktail Party Attack (CPA) uses independent component analysis (ICA)
+to separate the inputs mixed in fully connected layer gradients and
+updates~\cite{kariyappa2023cocktail}.
+Here we study the behavior of a CPA-based reconstruction pipeline when its
+observations are compressed.
+
+Our central question is empirical: \emph{at which bit widths and retention
+ratios does a specified attack retain useful reconstruction quality, and
+where does it cease to do so?} This is a question about an attack, its
+compute budget, and a defined recovery criterion---not a universal claim
+that a particular compression setting is secure.
+
+We investigate a simple attacker-side strategy. Instead of using only the
+center of each quantization cell or setting every discarded coordinate to
+zero, the attacker samples several admissible numerical completions of the
+received observation. Each completion is processed by source separation
+and feature inversion. Observable scores, rather than private image
+metrics, determine which candidates receive further computation.
+Randomness is introduced by the attacker, not by the sender's compressor.
+
+The present study provides an 8/7/6/5/4-bit randomized-decoding sweep, a
+matched zero-fill retention sweep, and a randomized-filling comparison at
+10\% retention. These are complementary experiments, not a completed
+factorial study with identical attack backends. We report the observed
+quality curves and separate them from the additional evidence needed to
+claim a success/failure boundary.
+
+\section{Observation Model}
+\label{sec:observation}
+\subsection{Multi-step updates with frozen features}
+The main experiments use VGG16 with a frozen convolutional feature
+extractor and trainable fully connected layers. A client performs $T=10$
+full-batch SGD steps on $B=16$ images, using learning rate $\eta=10^{-3}$,
+zero momentum, zero weight decay, and disabled dropout. Let
+$\HH=[\phi(x_1),\ldots,\phi(x_B)]^\top$ contain the fixed input features
+of the first fully connected layer. Writing its per-step gradient as
+$\mathbf{A}_t\HH$, with the loss averaging absorbed into $\mathbf{A}_t$,
+gives the scaled update
+\begin{equation}
+  \U=\frac{\mathbf{W}^{(0)}-\mathbf{W}^{(T)}}{\eta}
+      =\sum_{t=0}^{T-1}\mathbf{A}_t\HH.
+  \label{eq:mixture}
+\end{equation}
+Thus the frozen-feature setting retains a source-mixture structure across
+local steps. Compression perturbs the observed matrix, and neither this
+factorization nor successful numerical separation guarantees image recovery.
+
+The attacker observes the compressed update and its decoding metadata,
+knows the public model and local training configuration, and attacks the
+first fully connected weight matrix. True images, labels, features, and
+uncompressed updates are unavailable for candidate construction or ranking.
+Private references are used only after selection for evaluation. We do not
+assume access to individual updates hidden by an additional secure
+aggregation mechanism.
+
+\subsection{Deterministic compression and ambiguous decoding}
+For a symmetric signed $b$-bit tensor quantizer, define
+\begin{equation}
+ Q_b=2^{b-1}-1,\qquad
+ s=\frac{\|\U\|_\infty}{Q_b},\qquad
+ q_j=\operatorname{round}_{\rm even}(U_j/s).
+ \label{eq:quant}
+\end{equation}
+The scale is stored in FP32, independently for each tensor. A zero tensor
+is treated separately. Cell-center decoding returns $s q_j$. The signed
+code range is $[-Q_b,Q_b]$, so this convention uses $2^b-1$ numerical levels.
+For positive $s$, the ideal interior cell lies between
+$s(q_j-\tfrac12)$ and $s(q_j+\tfrac12)$. Actual admissible endpoints also
+depend on ties-to-even rounding, finite precision, and the scale-compatible
+tensor maximum.
+
+For sparsification, let $r$ denote the \emph{retained fraction}; the removed
+fraction is $1-r$. In the matched 80-image study, magnitude top-$k$ is
+applied within the attacked first-FC tensor, with
+$k=\lfloor rD\rfloor$ for $D$ coordinates. The packet contains a position
+bitmap and the retained FP32 values. With retained index set $I$ and
+$\tau=\min_{j\in I}|U_j|$, discarded magnitudes satisfy
+$|U_j|\leq\tau$. Flat-index order resolves magnitude ties. This is
+magnitude-based selection, not random pruning.
+
+\section{Randomized Decoding and Reconstruction}
+\label{sec:method}
+\subsection{Quantization-cell sampling}
+For each received quantized tensor, the attacker samples a completion from
+its bounded cells. The implementation uses uniform draws between admissible
+FP32 endpoints, then casts to FP32. An extremal coordinate is anchored to
+a scale-compatible maximum, and exact re-encoding is checked. Consequently,
+the sampled numerical observation is consistent with the received codes;
+this does not certify that the final reconstructed images reproduce those
+codes after local training. No learned or calibrated gradient prior is used.
+
+We generate eight randomized completions with seeds
+$1234+1000003m$, $m=0,\ldots,7$, and retain cell-center decoding as a
+separate control. Each first-FC matrix is separated into 16 sources using
+FastICA initialization followed by 4,000 gradient-refinement iterations.
+The FastICA iteration cap is 200. Source rows are aligned to the
+cell-center sources by absolute-cosine assignment, changing only permutation
+and sign, not row norms. Absolute source values are then used as targets
+for feature inversion (FIA). This backend is a modified CPA-based pipeline,
+not an unmodified execution of the original CPA optimizer.
+
+Each randomized candidate receives 5,000 FIA iterations. Its observable
+screening score is
+\begin{equation}
+ J_m=\frac{1}{B}\sum_{i=1}^{B}
+ \left[1-\cos\!\left(\phi(\hat x_{m,i}),|\hat h_{m,i}|\right)\right]
+       +0.1\,\mathrm{TV}_{\rm norm}(\hat\X_m),
+ \label{eq:screen}
+\end{equation}
+evaluated on a pixel-boxed clone in the model's normalized input space.
+The three lowest-scoring candidates continue to a total of 25,000 FIA
+iterations, resuming their optimizer and scheduler states. The scheduler
+horizon is 25,000 from the first step. Ties use ascending member index.
+The rank-1 candidate fixed at screening is the primary randomized result;
+we do not replace it with a finalist chosen using private LPIPS.
+The center control also receives 25,000 FIA iterations. Total FIA work is
+125,000 iterations per bit width including that control, versus 25,000
+for the center alone.
+
+\subsection{Bounded random filling for sparsification}
+The randomized sparsification experiment uses
+\begin{equation}
+ \tilde U^{(m)}_j=
+ \begin{cases}
+   U_j, & j\in I,\\
+   \epsilon^{(m)}_j,\quad
+     \epsilon^{(m)}_j\sim\operatorname{Unif}(-\tau,\tau), & j\notin I.
+ \end{cases}
+ \label{eq:fill}
+\end{equation}
+Retained values remain bit-exact. This bounded completion is an exploratory
+sampling model, not an estimate of a validated posterior distribution.
+The same five 10\%-retention packets used by the zero-fill control are
+attacked with 20 fills per packet. Each fill receives the original CPA
+optimizer for 25,000 iterations and FIA for 5,000 iterations.
+
+Unlike the bit sweep, this experiment uses an update-consistency score.
+Starting from the public model, the attacker replays the known 10-step
+classifier SGD procedure on all 16 reconstructed images, assigning labels
+with the public model's predictions. It recompresses that update using the
+same top-$k$ codec and minimizes its relative $\ell_2$ discrepancy from
+the received decoded packet. The best three candidates continue FIA to
+25,000 iterations with preserved optimizer/scheduler states. The same
+observable score selects one final, whole 16-image candidate per packet.
+This proxy need not select the most accurate private-image reconstruction.
+
+Per packet, the random-fill search uses 500,000 CPA iterations, 160,000 FIA
+iterations, and 23 update replays. Zero filling uses 25,000 CPA and 25,000
+FIA iterations. Candidate averaging is not used in this experiment, and
+these unequal budgets do not isolate the benefit of random filling.
+
+\section{Experimental Results}
+\label{sec:results}
+\subsection{Evaluation scope}
+The quantization sweep uses one fixed 16-image ImageNet batch. The matched
+sparsification study uses five fixed 16-image ImageNet batches (80 images),
+with the same observations across retention conditions. We report mean
+PSNR, SSIM, and LPIPS~\cite{zhang2018lpips}; larger PSNR/SSIM and smaller
+LPIPS indicate better scores. Neither image counts nor randomized
+candidates are independent repetitions of the complete experiment.
+
+Matching is performed only after the public selection is frozen. The bit
+sweep uses pixel-MSE Hungarian matching once per candidate and reuses the
+assignment for all image metrics. The 80-image sparsification study uses
+signed-source absolute-cosine Hungarian matching after FIA. Because these
+studies use different backends and matching protocols, their absolute
+metric values must not be interpreted as a controlled comparison between
+quantization and sparsification.
+
+\subsection{Bit width: degradation from 8 to 4 bits}
+\begin{table}[t]
+\centering
+\caption{Same 16-image batch, final 25,000-iteration FIA endpoints.
+Random denotes the rank-1 candidate selected at 5,000 iterations.
+No image-recovery success threshold was registered.}
+\label{tab:bits}
+\small
+\begin{tabular}{clrrr}
+\toprule
+Bits & Decoding & PSNR $\uparrow$ & SSIM $\uparrow$ & LPIPS $\downarrow$\\
+\midrule
+8 & Center & 12.0569 & 0.2924 & 0.5594\\
+8 & Random & 12.0568 & 0.3070 & 0.5558\\
+7 & Center & 11.7955 & 0.2764 & 0.6118\\
+7 & Random & 11.8314 & 0.2827 & 0.6332\\
+6 & Center & 11.6397 & 0.2596 & 0.6961\\
+6 & Random & 11.6675 & 0.2690 & 0.6659\\
+5 & Center & 11.5524 & 0.2620 & 0.7826\\
+5 & Random & 11.5458 & 0.2558 & 0.7490\\
+4 & Center & 11.5197 & 0.2921 & 0.8071\\
+4 & Random & 11.5028 & 0.2576 & 0.8085\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Table~\ref{tab:bits} shows worsening randomized PSNR and LPIPS as bit width
+decreases from 8 to 4. Randomized LPIPS increases from 0.5558 to 0.8085,
+while PSNR decreases from 12.0568 to 11.5028 dB. SSIM is not monotonic.
+Randomization improves LPIPS relative to center decoding at 8, 6, and
+5 bits, but worsens it at 7 and 4 bits. At 4 bits the selected randomized
+candidate does not improve any of the three reported metrics.
+
+These observations support a quality-degradation account and show that
+the tested random search does not consistently compensate for coarser
+quantization. They do not establish that 8 bits is successful or that
+4 bits is the first failing setting. Completing an optimization run or
+passing an observation-provenance check is not an image-recovery criterion.
+
+\subsection{Retention ratio: a matched sparsification sweep}
+\begin{table}[t]
+\centering
+\caption{Same 80 images, original CPA plus FIA. Keep is retained fraction;
+remove is sparsity. The four zero-fill rows form the matched retention
+sweep. Random filling was evaluated only at 10\% retention in this protocol.}
+\label{tab:sparse}
+\small
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{cc l rrr}
+\toprule
+Keep & Remove & Fill & PSNR $\uparrow$ & SSIM $\uparrow$ & LPIPS $\downarrow$\\
+\midrule
+50\% & 50\% & Zero & 22.2878 & 0.3344 & 0.4864\\
+30\% & 70\% & Zero & 22.1371 & 0.3141 & 0.5098\\
+20\% & 80\% & Zero & 21.8720 & 0.2906 & 0.5536\\
+10\% & 90\% & Zero & 21.5305 & 0.2631 & 0.6323\\
+10\% & 90\% & Random & 21.5104 & 0.2610 & 0.6300\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+All three zero-fill image metrics worsen as retention decreases
+(Table~\ref{tab:sparse}). Importantly, the 50\% packets discard only
+already-zero coordinates: these five updates have nonzero fractions
+between 0.3822 and 0.4209, and zero-fill decoding reproduces their FP32
+values exactly. That condition demonstrates lossless sparse representation
+for these observations, not robustness to removing nonzero information.
+By contrast, zero-fill relative update errors at 10\% retention range from
+0.1141 to 0.1613 across packets.
+
+At 10\% retention, random filling changes mean LPIPS from 0.6323 to
+0.6300, while PSNR decreases by approximately 0.0201 dB and SSIM by
+0.0021. Without repeated runs or a compute-matched control, this small,
+mixed change is not evidence of a reliable reconstruction advantage.
+The observed decline across retention levels is not yet a calibrated
+transition from image-recovery success to failure.
+
+The actual bitmap-plus-FP32 packets save 46.875\%, 66.875\%, 76.875\%,
+and 86.875\% of bytes at 50\%, 30\%, 20\%, and 10\% retention, respectively,
+relative to same-shape dense FP32 packets. These figures cover only the
+attacked first-FC tensor, not full-model traffic. Random filling adds no
+communication because it reuses the received packets.
+
+\section{Discussion and Conclusion}
+The completed experiments show a progressive decline in reconstruction
+quality with lower bit width and lower retention. Sampling missing
+numerical values is a practical way to explore multiple decodings of a
+fixed observation, but the tested selectors and budgets do not yield a
+consistent advantage over center or zero filling.
+
+The intended boundary statement must therefore remain conditional:
+\emph{under a fixed attack budget and a predeclared recovery criterion,
+reconstruction meets the criterion at some tested compression levels and
+fails to meet it at others}. The present results establish the measured
+quality curves, not those final level assignments. A complete randomized
+retention sweep and a calibrated per-image criterion remain necessary.
+Failure of this attack at a tested setting would still not prove that the
+compressed observation prevents other attacks from recovering private data.
+
+\ifshowtodos
+\section*{TODOs for the Next Revision (Not Completed Results)}
+\todo{T1 --- Define image-recovery success before assigning a boundary.
+Specify a held-out calibrated metric or blinded recognition criterion,
+its threshold, and the required fraction of recovered images. Report
+per-image outcomes, not a threshold applied to mean LPIPS. Distinguish
+image success, any-image success per packet, and success per independent
+randomized run. Do not infer a boundary below 4 bits merely because the
+4-bit program completed.}
+
+\todo{T2 --- Complete a matched randomized retention study. Extend the
+same80 protocol to the selected retention levels with the same sampler,
+selector, CPA/FIA backend, and budget. The old 80/50/30/10\%-retention
+R8 source-averaging runs use a different client arrangement and evaluator;
+they cannot fill the missing rows of Table~\ref{tab:sparse}. Prioritize
+levels around a transition only after T1. This is a proposed experiment,
+not an instruction to launch it automatically.}
+
+\todo{T3 --- Add repeated victim batches and independent complete-search
+seeds, with paired uncertainty estimates that respect batch clustering.
+Add same-backend FP32 controls where needed and a compute-matched
+deterministic-decoding restart control. State both per-candidate and total
+CPA/FIA/replay budgets. Do not use image-level historical success rates
+as probabilities of independent random trials.}
+
+\todo{T4 --- Unify evaluation for any cross-study comparison. Freeze
+matching, preprocessing, pixel range, SSIM settings, and LPIPS version and
+backbone. Audit legacy source ordering: existing direct-order and
+embedding-matched reevaluations produce different image scores. Keep
+private matching strictly evaluation-only.}
+
+\todo{T5 --- Add fixed-index qualitative panels spanning all bit widths
+and retention levels, with paired controls and representative failures.
+Choose examples without best-of-private-metric selection; include the
+complete evaluated set in supplementary material.}
+
+\todo{T6 --- Explain the mechanism with controlled ablations if space
+permits: random versus center decoding, candidate count, public screening
+quality, and source quality versus image quality. Learned completion
+priors, a common update-consistency selector for both codecs, and the
+proposed CIFAR-100/FC2 track are extensions, not completed contributions.}
+
+\todo{T7 --- If making a deployment trade-off claim, add measured task
+utility and full-model communication accounting. Nominal retention is not
+the same as information loss; retain the nonzero-fraction and distortion
+audit. No utility or end-to-end privacy guarantee is established here.}
+
+\todo{T8 --- Finish the related-work review with verified primary sources,
+resolve all TODOs, supply the conference style, and check the applicable
+submission format and page limit. The current file is a working draft.}
+\fi
+
+\begin{thebibliography}{9}
+\bibitem{zhu2019deep}
+L. Zhu, Z. Liu, and S. Han,
+``Deep leakage from gradients,''
+in \emph{Advances in Neural Information Processing Systems}, vol. 32, 2019.
+% https://papers.neurips.cc/paper_files/paper/2019/hash/60a6c4002cc7b29142def8871531281a-Abstract.html
+
+\bibitem{kariyappa2023cocktail}
+S. Kariyappa, C. Guo, K. Maeng, W. Xiong, G. E. Suh,
+M. K. Qureshi, and H.-H. S. Lee,
+``Cocktail Party Attack: Breaking aggregation-based privacy in federated
+learning using independent component analysis,''
+in \emph{Proc. International Conference on Machine Learning},
+vol. 202, pp. 15884--15899, 2023.
+% https://proceedings.mlr.press/v202/kariyappa23a.html
+
+\bibitem{zhang2018lpips}
+R. Zhang, P. Isola, A. A. Efros, E. Shechtman, and O. Wang,
+``The unreasonable effectiveness of deep features as a perceptual metric,''
+in \emph{Proc. IEEE Conference on Computer Vision and Pattern Recognition},
+2018.
+% https://openaccess.thecvf.com/content_cvpr_2018/html/Zhang_The_Unreasonable_Effectiveness_CVPR_2018_paper.html
+\end{thebibliography}
+\end{document}

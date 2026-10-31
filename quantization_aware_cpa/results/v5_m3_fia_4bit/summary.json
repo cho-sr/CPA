@@ -1,0 +1,165 @@
+{
+  "schema_version": 1,
+  "run_tag": "v5_m3_fia_4bit",
+  "milestone": 3,
+  "git_sha": "437013a234e92e882fb6744a64995b0ab812841c",
+  "config": {
+    "seed": 0,
+    "run_tag": "v5_m3_fia_4bit",
+    "device": "auto",
+    "milestone": 1,
+    "data": {
+      "root": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet",
+      "split": "val",
+      "batch_size": 8,
+      "n_batches": 3,
+      "num_workers": 0,
+      "require_distinct_labels": true
+    },
+    "quantization": {
+      "bits": 4,
+      "rounding": "stochastic"
+    },
+    "stage1": {
+      "n_components": 8,
+      "debias": true,
+      "ica_method": "cpa",
+      "fastica_max_iter": 1000,
+      "fastica_tol": 0.0001,
+      "fastica_fun": "logcosh",
+      "fastica_algorithm": "parallel",
+      "cpa_ica_max_iter": 25000,
+      "cpa_ica_lr": 0.001,
+      "cpa_ica_optimizer": "adam",
+      "cpa_ica_decor": 5.3,
+      "cpa_ica_T": 7.7,
+      "cpa_ica_ne": 1.0,
+      "cpa_ica_nv": 0.13,
+      "cpa_ica_l1": 5.0,
+      "cpa_ica_tv": 0.1,
+      "cpa_ica_log_every": 0,
+      "mp_truncation": true,
+      "c_mp": 3.0
+    },
+    "diagnostics": {
+      "gamma_columns": 512,
+      "lp_method": "highs",
+      "lp_feasibility_tol": 1e-07
+    },
+    "stage2": {
+      "max_iter": 250,
+      "chunk_size": 4096,
+      "stop_tolerance": 1e-10,
+      "check_every": 25,
+      "mu": "1.0e3",
+      "eps": 0.001,
+      "phase1_acceleration": true,
+      "lam_R": 300.0
+    },
+    "bplus": {
+      "radius_scale": 1.0,
+      "step_size": 1.0
+    },
+    "paths": {
+      "cache_dir": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\quantization_aware_cpa\\cache",
+      "results_jsonl": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\quantization_aware_cpa\\results\\runs.jsonl"
+    },
+    "m3_fia": {
+      "methods": [
+        "fp32",
+        "naive",
+        "A",
+        "A_oracle"
+      ],
+      "batch_indices": [
+        0,
+        1
+      ],
+      "max_images": 16,
+      "n_iter_fi": 25000,
+      "n_log_fi": 5000,
+      "lr_fi": 0.1,
+      "tv": 0.1,
+      "fi": 1.0,
+      "opt_fi": "adam",
+      "sch_fi": "cosine",
+      "seed_fi": 42,
+      "output_dir": "results\\v5_m3_fia_4bit"
+    }
+  },
+  "metrics": {
+    "fp32": {
+      "n_images": 16,
+      "psnr_mean": 21.61918556690216,
+      "ssim_mean": 0.33780611027032137,
+      "lpips_mean": 0.4447573143988848,
+      "spearman_loss_lpips": 0.0058823529411764705,
+      "spearman_loss_lpips_pvalue": 0.9827505044191351,
+      "fia_wall_time_sec": 1902.2884069999564,
+      "target_source_cosine_mean": 0.9992885142564774,
+      "final_log": {
+        "iter": 24999.0,
+        "loss": 0.00411632563918829,
+        "loss_fi": 0.0012792572379112244,
+        "loss_tv": 0.028370682150125504,
+        "lr": 0.0,
+        "time_sec": 1900.7091113999486
+      }
+    },
+    "naive": {
+      "n_images": 16,
+      "psnr_mean": 21.33965516090393,
+      "ssim_mean": 0.303907229565084,
+      "lpips_mean": 0.5422976333647966,
+      "spearman_loss_lpips": -0.6558823529411765,
+      "spearman_loss_lpips_pvalue": 0.005800736962231499,
+      "fia_wall_time_sec": 1896.778140600014,
+      "target_source_cosine_mean": 0.7507630852633156,
+      "final_log": {
+        "iter": 24999.0,
+        "loss": 0.06873181462287903,
+        "loss_fi": 0.06272540986537933,
+        "loss_tv": 0.060064032673835754,
+        "lr": 0.0,
+        "time_sec": 1896.045778300031
+      }
+    },
+    "A": {
+      "n_images": 12,
+      "psnr_mean": 21.387311617533367,
+      "ssim_mean": 0.3400763397415479,
+      "lpips_mean": 0.46558157602945965,
+      "spearman_loss_lpips": -0.2797202797202798,
+      "spearman_loss_lpips_pvalue": 0.37856866966230307,
+      "fia_wall_time_sec": 1485.7122366999974,
+      "target_source_cosine_mean": 0.9932577908039093,
+      "final_log": {
+        "iter": 24999.0,
+        "loss": 0.008281949907541275,
+        "loss_fi": 0.005209620110690594,
+        "loss_tv": 0.030723296105861664,
+        "lr": 0.0,
+        "time_sec": 1484.849756199983
+      }
+    },
+    "A_oracle": {
+      "n_images": 16,
+      "psnr_mean": 21.531145215034485,
+      "ssim_mean": 0.33036740124225616,
+      "lpips_mean": 0.47180025093257427,
+      "spearman_loss_lpips": -0.4441176470588235,
+      "spearman_loss_lpips_pvalue": 0.08482274417741574,
+      "fia_wall_time_sec": 1824.3388772999751,
+      "target_source_cosine_mean": 0.9877904653549194,
+      "final_log": {
+        "iter": 24999.0,
+        "loss": 0.012830553576350212,
+        "loss_fi": 0.009557526558637619,
+        "loss_tv": 0.03273026645183563,
+        "lr": 0.0,
+        "time_sec": 1823.6139426999725
+      }
+    }
+  },
+  "wall_time_sec": 7376.640708799998
+}

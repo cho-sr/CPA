@@ -1,0 +1,12 @@
+{
+    "task_id":  "CPA_SIGNED_INT8_RANDOMIZED8_FIA_20260917",
+    "wrapper_pid":  19124,
+    "wrapper_created_ms":  1789637431542,
+    "wrapper_process_name":  "python",
+    "launched_at":  "2026-09-17T09:30:31.5683284+00:00",
+    "callback":  "pending",
+    "callback_pid":  23844,
+    "callback_started_at":  "2026-09-17T09:30:31.6898608+00:00",
+    "callback_reservation_seen":  true,
+    "wrapper_still_running_at_check":  true
+}

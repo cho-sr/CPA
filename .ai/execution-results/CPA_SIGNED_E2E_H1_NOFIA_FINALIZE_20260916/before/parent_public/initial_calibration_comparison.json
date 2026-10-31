@@ -1,0 +1,24 @@
+{
+  "current": {
+    "cell_loss": 22.991680145263672,
+    "cell_image_gradient_norm": 12.478582382202148,
+    "feature_norm_mean": 21.787342071533203,
+    "finite": true,
+    "wall_seconds": 1.576650199946016,
+    "resource": {
+      "label": "initial_h1_calibration",
+      "allocated_bytes": 3915563520,
+      "reserved_bytes": 5102370816,
+      "cap_bytes": 12884901888
+    },
+    "matches_previous_cell_loss_exact": true,
+    "matches_previous_feature_norm_exact": true,
+    "cell_loss_difference": 0.0,
+    "feature_norm_difference": 0.0
+  },
+  "previous_recorded": {
+    "cell_loss": 22.991680145263672,
+    "feature_norm_mean": 21.787342071533203
+  },
+  "separate_cpu_endpoint_mean_not_substituted": 22.991682647381136
+}

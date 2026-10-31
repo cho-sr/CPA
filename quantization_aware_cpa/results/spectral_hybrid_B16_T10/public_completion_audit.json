@@ -1,0 +1,43 @@
+{
+  "status": "completed",
+  "identity_vs_previous_hybrid": {
+    "pixels": {
+      "torch_equal": true,
+      "max_absolute_difference": 0.0,
+      "rmse": 0.0,
+      "l2": 0.0
+    },
+    "label_logits": {
+      "torch_equal": true,
+      "max_absolute_difference": 0.0,
+      "rmse": 0.0,
+      "l2": 0.0
+    },
+    "hard_labels_equal": true
+  },
+  "mp_vs_flat": {
+    "pixels": {
+      "torch_equal": false,
+      "max_absolute_difference": 0.17583972215652466,
+      "rmse": 0.016275741408949638,
+      "l2": 25.25860830180326
+    },
+    "label_logits": {
+      "torch_equal": false,
+      "max_absolute_difference": 0.6262520551681519,
+      "rmse": 0.12830147259773753,
+      "l2": 16.228995222501183
+    },
+    "hard_labels_equal": false
+  },
+  "input_and_source_hashes_unchanged": true,
+  "binding": {
+    "plan_sha256": "836a764b13736269022982ee014b0e648ca89334be0d4a5be67ecfec34281337",
+    "common_initial_sha256": "dcb96523d12fa691c978642559b64dd7131f0eafb01aa65dcc4421dd20c0babc",
+    "observation_manifest_sha256": "946f848bd8df76b8c276c2d7babafc66c823b1162f664a818e47e09560671364",
+    "cpa_target_sha256": "b331576f2b2621c935020c137e7e55df2b1a01bf7ab14ab6816934b27b9bd5d1",
+    "spectrum_npz_sha256": "0671debbf1c4286dffcd1fbf95060446057fc5128b752d49aef18ffbac076e8c"
+  },
+  "all_50_iterations": true,
+  "no_private_input": true
+}

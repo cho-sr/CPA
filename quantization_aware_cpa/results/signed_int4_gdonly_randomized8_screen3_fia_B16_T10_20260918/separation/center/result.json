@@ -1,0 +1,118 @@
+{
+  "task_id": "CPA_SIGNED_INT4_GDONLY_SCREEN3_FIA_20260918",
+  "status": "COMPLETED",
+  "index": "center",
+  "method": "original_upstream_naive.run_upstream_cpa",
+  "separation_call": 1,
+  "input_sha256": "815f28e872de6f1b1d565cb413f26e958fa66758cd6fbbaad85758f77552f69c",
+  "native_source_sha256": "8e42cf8170e01b5b61fa79d69693342bfff6dfbacc40493a76c22f21dcf4584c",
+  "settings": {
+    "n_components": 16,
+    "seed": 42,
+    "device": "cuda",
+    "n_iter": 25000,
+    "lr": 0.001,
+    "opt": "adam",
+    "sch": "none",
+    "decor": 5.3,
+    "T": 7.7,
+    "ne": 1.0,
+    "nv": 0.13,
+    "l1": 5.0,
+    "tv": 0.1,
+    "log_every": 5000,
+    "whitening": "upstream cov/(d-1), torch.linalg.eig, top abs eigenvalues",
+    "backend": "official_cpa/src/gradient_inversion.py:CocktailPartyAttack",
+    "debias": false,
+    "mp_truncation": false,
+    "mixing_matrix_computed": false
+  },
+  "wall_time_sec": 42.61766659992281,
+  "setup_wall_time_sec": 2.6566145999822766,
+  "optimizer_wall_time_sec": 39.96105199994054,
+  "log": [
+    {
+      "iter": 0,
+      "loss": 741.6746826171875,
+      "loss_ne": 0.0,
+      "loss_decor": 137.959228515625,
+      "loss_tv": 0.0,
+      "loss_nv": 72.21723937988281,
+      "loss_l1": 0.2204934060573578,
+      "time_sec": 0.587202399969101
+    },
+    {
+      "iter": 4999,
+      "loss": 735.4381103515625,
+      "loss_ne": 0.0,
+      "loss_decor": 138.0437774658203,
+      "loss_tv": 0.0,
+      "loss_nv": 23.433170318603516,
+      "loss_l1": 0.15195168554782867,
+      "time_sec": 8.413408700027503
+    },
+    {
+      "iter": 9999,
+      "loss": 735.4382934570312,
+      "loss_ne": 0.0,
+      "loss_decor": 138.0437774658203,
+      "loss_tv": 0.0,
+      "loss_nv": 23.43465805053711,
+      "loss_l1": 0.1519559770822525,
+      "time_sec": 16.192456000018865
+    },
+    {
+      "iter": 14999,
+      "loss": 735.4358520507812,
+      "loss_ne": 0.0,
+      "loss_decor": 138.04327392578125,
+      "loss_tv": 0.0,
+      "loss_nv": 23.435680389404297,
+      "loss_l1": 0.15196587145328522,
+      "time_sec": 24.176313400035724
+    },
+    {
+      "iter": 19999,
+      "loss": 735.4375,
+      "loss_ne": 0.0,
+      "loss_decor": 138.04356384277344,
+      "loss_tv": 0.0,
+      "loss_nv": 23.43694496154785,
+      "loss_l1": 0.15195198357105255,
+      "time_sec": 32.186570000019856
+    },
+    {
+      "iter": 24999,
+      "loss": 735.4362182617188,
+      "loss_ne": 0.0,
+      "loss_decor": 138.04287719726562,
+      "loss_tv": 0.0,
+      "loss_nv": 23.45525550842285,
+      "loss_l1": 0.15195249021053314,
+      "time_sec": 39.957700700033456
+    }
+  ],
+  "upstream_source_hashes": {
+    "C:\\Users\\조상제\\Desktop\\CPA\\official_cpa\\src\\datasets.py": "f9e7b47733b5acb4b73e6914a3f100b5187766bbed78a12d17b69c39eec1b6d1",
+    "C:\\Users\\조상제\\Desktop\\CPA\\official_cpa\\src\\utils.py": "565f1bf1a47f387d042b35bb24f677d1ff0d3ec5d979e2876c31ed114179b9fe",
+    "C:\\Users\\조상제\\Desktop\\CPA\\official_cpa\\src\\gradient_inversion_utils.py": "668d77788dc8d81c181c8c0a9fbe8533c6fbea22ba46fe7f5e15b0a431300e5f",
+    "C:\\Users\\조상제\\Desktop\\CPA\\official_cpa\\src\\gradient_inversion.py": "c598e1ee7b4079f741060d10c8dfd14711e393a97384c63cf32be77a458b1873",
+    "C:\\Users\\조상제\\Desktop\\CPA\\official_cpa\\src\\feature_inversion.py": "dc73880427e3eaf1f873d295f17f1d48d301882f634ee5df36ddeea8e56c4dec",
+    "C:\\Users\\조상제\\Desktop\\CPA\\official_cpa\\src\\vgg16.py": "8114eca8cde553dace5f777aedd21b70851c570d473e597b005cb6be4b248d36",
+    "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\qacpa\\upstream_naive.py": "8f29b885d86f4121eda5c55e17486a3a48bd8db08b2f83890fe7726730d1ee92",
+    "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\qacpa\\seed.py": "769366fcc2cf3e144d8caa86f73a55dcb0b6be615a45dab8b6e117399150c558"
+  },
+  "fastica": {
+    "called": false,
+    "method": "NONE"
+  },
+  "private_data_used": false,
+  "legacy_objective": {
+    "negentropy_effective": 0.0,
+    "feature_tv_effective": 0.0,
+    "configured_ne": 1.0,
+    "configured_nv": 0.13
+  },
+  "target_z_sha256": "8702fb131e0c63cd08100ec1a9b0e2c1c862b44aad7f4e68411d5793571a9532",
+  "source_file_sha256": "c033e0df9304a6e0dcb19491bb43c3ac80cabed52566409e0f76dbe74194d7eb"
+}

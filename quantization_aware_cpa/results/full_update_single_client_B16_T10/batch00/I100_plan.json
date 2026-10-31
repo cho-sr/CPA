@@ -1,0 +1,38 @@
+{
+  "user_instruction": "반복수 늘려봐",
+  "outer_iterations_per_arm": 100,
+  "modes": [
+    "cell",
+    "center"
+  ],
+  "changed_from_pilot": [
+    "attack.iterations: 3 -> 100"
+  ],
+  "start": "same seed42 and initialization; fresh100-step runs, no optimizer-state resume",
+  "same_contract_as_pilot": true,
+  "same_observation_as_pilot": true,
+  "same_attack_parameters_except_iterations": true,
+  "attack_truth_access": false,
+  "evaluation": "after each final candidate is fixed, isolated offline evaluation only",
+  "estimated_total_seconds": 3102.47096,
+  "estimate_excludes": [
+    "process initialization",
+    "final hard-label validation",
+    "offline evaluation"
+  ],
+  "no_early_stopping_on_private_metrics": true,
+  "config_sha256": "5615fb6f3150abdde636228ffe68ac327ff880e673bbfaa7a90fd0b86b19f23f",
+  "interpretation_amendment": {
+    "registered_at_local": "2026-09-13T23:51:21.963382",
+    "timing": "after Claude Turn17; intermediate soft losses had been observed; before either100-step final candidate/fit/evaluation",
+    "changes_to_running_attack": null,
+    "hard_label_observation_feasibility": "existing fit_tolerance_steps=1e-6 including radius/zero-radius checks; this is not an image-recovery success criterion",
+    "image_recovery_success_threshold": "not_registered; do not import a historical threshold without confirming applicability",
+    "comparison": "report descriptive numerical differences on this same batch and seed; generalized performance superiority remains INCONCLUSIVE, including when categorical closure outcomes differ",
+    "negative_result": "budget-limited non-attainment; not proof that the method or observation is inherently uninvertible",
+    "partial_improvement": "report as partial improvement, not automatically image recovery success",
+    "historical_iteration_budgets": "different CPA/FIA objectives and per-step costs are not an established required iteration count for this method",
+    "supplemental_metrics": "Add descriptive CPU VGG LPIPS for all16 existing final pixel-MSE Hungarian pairs in each of the four arms (cell/center at3/100); same RGB[-1,1] convention as historical fia.py. Locally cached checkpoint/calibration only. No LPIPS threshold, no rematching, no impact on attack or candidate selection. Registered before either100-step final candidate or private evaluation; intermediate soft losses had been observed.",
+    "threshold_source_check": "QACPA_SPEC.md section0.10 prohibits inventing replacement thresholds; NO_CPA_CONTROL_INVALIDATION_20260909.md withdraws old0.5704289049 cutoff. No authorization found for Claude Turn17 proposed0.1 threshold. Historical FP32 FC-only same80 bands do not define current full-update success."
+  }
+}

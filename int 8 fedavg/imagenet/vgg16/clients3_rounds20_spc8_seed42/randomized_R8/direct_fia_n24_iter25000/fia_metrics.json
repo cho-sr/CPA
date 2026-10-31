@@ -1,0 +1,200 @@
+{
+  "checkpoint_path": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\int 8 fedavg\\imagenet\\vgg16\\clients3_rounds20_spc8_seed42\\client_qs\\final_round_global_model_before.pt",
+  "checkpoint_sha256": "168ea5e56213757ae3850f71275207a43714ce16ec29cec89c2f9b32d3151300",
+  "context_path": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\int 8 fedavg\\imagenet\\vgg16\\clients3_rounds20_spc8_seed42\\client_qs\\final_round_context.pkl",
+  "device": "cuda",
+  "embedding_branch": "randomized",
+  "embedding_match": {
+    "matched_signed_cosines": [
+      0.9628358188443968,
+      0.9538541839595579,
+      0.9527793446832704,
+      0.8560414911608493,
+      0.9546437836706182,
+      0.956142169270258,
+      0.9447287375438782,
+      0.969970998632817,
+      0.04630015379527227,
+      0.9608397196207473,
+      0.9642415590744502,
+      0.960121080383331,
+      0.9671504975839246,
+      0.9612724436039692,
+      0.004263892875965379,
+      0.9480235069710653,
+      0.9528069787980846,
+      0.3204321492735735,
+      0.9635342334244289,
+      0.9480157199746995,
+      0.9589508009784611,
+      0.010968985653959158,
+      -0.024815111417042977,
+      0.9537883156006143
+    ],
+    "max_abs_cosine": 0.969970998632817,
+    "mean_abs_cosine": 0.7706884031998014,
+    "median_abs_cosine": 0.9538212497800861,
+    "min_abs_cosine": 0.004263892875965379,
+    "policy": "oracle_hungarian_abs_cosine_eval_only",
+    "recovered_order_for_true_index": [
+      17,
+      8,
+      18,
+      15,
+      1,
+      2,
+      5,
+      13,
+      19,
+      12,
+      16,
+      14,
+      23,
+      6,
+      20,
+      22,
+      10,
+      0,
+      7,
+      21,
+      3,
+      11,
+      4,
+      9
+    ],
+    "signs_for_eval_only": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      -1.0,
+      1.0
+    ],
+    "true_z_used_only_after_fia": true
+  },
+  "embedding_path": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\int 8 fedavg\\imagenet\\vgg16\\clients3_rounds20_spc8_seed42\\randomized_R8\\final_embeddings.npy",
+  "embedding_sha256": "bca7a633eacaa0c2304d121e19fffcac55fe59f4a34dd2500ca414234e87029d",
+  "feature_info": {
+    "embedding_dim": 25088,
+    "expected_feature_dim": 25088,
+    "fia_feature": "classifier.0 input / flattened VGG feature before classifier.0",
+    "ica_layer": "classifier.0.weight"
+  },
+  "fi": 1.0,
+  "fia_batch_size": 4,
+  "lr_fi": 0.1,
+  "metrics_summary": {
+    "psnr_max": 17.449844360351562,
+    "psnr_mean": 13.034725745519003,
+    "psnr_min": 9.364033699035645,
+    "ssim_error": null,
+    "ssim_max": 0.6660492420196533,
+    "ssim_mean": 0.37869498257835704,
+    "ssim_min": 0.13759660720825195
+  },
+  "model_info": {
+    "model_source": "final_round_global_model_before",
+    "model_state_path": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\int 8 fedavg\\imagenet\\vgg16\\clients3_rounds20_spc8_seed42\\client_qs\\final_round_global_model_before.pt",
+    "model_state_sha256": "168ea5e56213757ae3850f71275207a43714ce16ec29cec89c2f9b32d3151300"
+  },
+  "n_iter_fi": 25000,
+  "n_log_fi": 500,
+  "n_sample": 24,
+  "opt_fi": "adam",
+  "output_dir": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\int 8 fedavg\\imagenet\\vgg16\\clients3_rounds20_spc8_seed42\\randomized_R8\\direct_fia_n24_iter25000",
+  "run_dir": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\int 8 fedavg\\imagenet\\vgg16\\clients3_rounds20_spc8_seed42",
+  "sch_fi": "cosine",
+  "sign_selection": {
+    "chunks": [
+      {
+        "candidate_blind_losses": {
+          "+": 0.14833167474716902
+        },
+        "chunk_end": 4,
+        "chunk_start": 0,
+        "selected_blind_loss": 0.14833167474716902,
+        "selected_sign_variant": "+",
+        "signs_parallelized": false,
+        "tried_both_signs": false
+      },
+      {
+        "candidate_blind_losses": {
+          "+": 0.17125663068145514
+        },
+        "chunk_end": 8,
+        "chunk_start": 4,
+        "selected_blind_loss": 0.17125663068145514,
+        "selected_sign_variant": "+",
+        "signs_parallelized": false,
+        "tried_both_signs": false
+      },
+      {
+        "candidate_blind_losses": {
+          "+": 0.1689481632784009
+        },
+        "chunk_end": 12,
+        "chunk_start": 8,
+        "selected_blind_loss": 0.1689481632784009,
+        "selected_sign_variant": "+",
+        "signs_parallelized": false,
+        "tried_both_signs": false
+      },
+      {
+        "candidate_blind_losses": {
+          "+": 0.04063182231038809
+        },
+        "chunk_end": 16,
+        "chunk_start": 12,
+        "selected_blind_loss": 0.04063182231038809,
+        "selected_sign_variant": "+",
+        "signs_parallelized": false,
+        "tried_both_signs": false
+      },
+      {
+        "candidate_blind_losses": {
+          "+": 0.1691380124539137
+        },
+        "chunk_end": 20,
+        "chunk_start": 16,
+        "selected_blind_loss": 0.1691380124539137,
+        "selected_sign_variant": "+",
+        "signs_parallelized": false,
+        "tried_both_signs": false
+      },
+      {
+        "candidate_blind_losses": {
+          "+": 0.16132706310600042
+        },
+        "chunk_end": 24,
+        "chunk_start": 20,
+        "selected_blind_loss": 0.16132706310600042,
+        "selected_sign_variant": "+",
+        "signs_parallelized": false,
+        "tried_both_signs": false
+      }
+    ],
+    "fia_batch_size": 4,
+    "policy": "use_saved_blind_global_sign",
+    "signs_parallelized": false
+  },
+  "true_z_policy": "used only after FIA for eval-order matching and metrics",
+  "tv": 0.1
+}

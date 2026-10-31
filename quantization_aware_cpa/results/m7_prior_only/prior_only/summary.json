@@ -1,0 +1,355 @@
+{
+  "schema_version": 1,
+  "run_tag": "m7_prior_only",
+  "method": "prior_only",
+  "git_sha": "437013a234e92e882fb6744a64995b0ab812841c",
+  "identity": {
+    "protocol_sha256": "41f402f5449deaadc92f37ec4a76909eafda329d89f11fb7d84b984580251539",
+    "target_sha256": "55605685e070fd892c1157e52f2b946df8636c2323809d62bc4b6380cecbddc1",
+    "fia_sha256": "42a55ce6a4895785b10573f507658434e597f1138de3d45621f466702c7f5cb0"
+  },
+  "config": {
+    "schema_version": 1,
+    "protocol_id": "m7_controls_v1",
+    "registration_phase": "before_any_new_M7_LPIPS_or_reconstruction",
+    "run_tags": [
+      "m7_no_cpa_control",
+      "m7_recompute_controls",
+      "m7_prior_only"
+    ],
+    "victim": {
+      "seed": 0,
+      "batch_size": 8,
+      "batch_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "global_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39
+      ],
+      "checkpoint": "VGG16_IMAGENET1K_V1_round0",
+      "split": "val"
+    },
+    "historical": {
+      "csv": "results/v7_m3_fallback_5batch/per_image_metrics_aggregated.csv",
+      "fp32_legacy_key": "fp32",
+      "4bit_legacy_key": "naive",
+      "fp32_truth_fill_global_indices": [
+        22,
+        24,
+        32,
+        36
+      ],
+      "fp32_requested_mean": 0.444815556704998,
+      "4bit_requested_mean": 0.5439403489232063
+    },
+    "no_cpa": {
+      "row_selection": "torch.randperm(4096, generator=CPU_generator.manual_seed(victim_seed+batch_index))[:8]",
+      "selection_excludes_zero_rows": false,
+      "shared_row_indices_across_precision": true,
+      "fp32_observation": "legacy victim cache Y",
+      "4bit_observation": "legacy quant_seed0_B8_batch{batch}_bits4_stochastic.pt Y_hat",
+      "transform": "row L2 normalization only, eps=1e-12; zero rows retained",
+      "sign_flip": false,
+      "abs": false,
+      "centering": false,
+      "whitening": false,
+      "ica": false,
+      "unmixing": false
+    },
+    "fia": {
+      "n_iter": 25000,
+      "log_every": 5000,
+      "lr": 0.1,
+      "tv": 0.1,
+      "fi": 1.0,
+      "optimizer": "adam",
+      "scheduler": "cosine",
+      "seed": 42,
+      "chunk_global_ranges": [
+        [
+          0,
+          16
+        ],
+        [
+          16,
+          24
+        ],
+        [
+          24,
+          32
+        ],
+        [
+          32,
+          40
+        ]
+      ],
+      "implementation": "qacpa.fia.run_direct_fia unchanged"
+    },
+    "prior_only": {
+      "distribution": "iid Uniform[0,1), CPU torch.rand(40,25088) then row L2 normalization eps=1e-12",
+      "embedding_seed": 42,
+      "uses_observation_or_true_embedding": false,
+      "shared_across_precision": true,
+      "repetitions": 1
+    },
+    "evaluation": {
+      "metric": "torchmetrics LPIPS VGG, RGB [0,1] transformed to [-1,1]",
+      "pairing": "within each B=8 victim batch, permutation-only Hungarian on absolute target embedding cosine with S_true; evaluation only, after FIA; no target sign/scale changes",
+      "also_report_positional_pairing": true,
+      "historical_metric_diagonal_tolerance": 1e-05
+    },
+    "shuffled": {
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "permutation": "numpy.default_rng(seed).permutation(40)",
+      "derangement": false,
+      "record_fixed_points": true,
+      "rematch": false,
+      "precisions": [
+        "fp32",
+        "4bit"
+      ]
+    },
+    "constants": {
+      "dataset_mean": "pixelwise RGB mean of all transformed ImageNet val images, full split count logged; never substitute evaluation-40 mean",
+      "gray": 0.5,
+      "noise": "iid Uniform[0,1) RGB",
+      "noise_seed": 42
+    },
+    "success": {
+      "alpha": 0.05,
+      "image_count": "control-calibrated lower-tail count, not per-image significance",
+      "calibration": "leave entire candidate victim batch out; use 32 precision-matched no-CPA LPIPS and 32 prior-only LPIPS",
+      "rank_p": "(1+count(control_lpips <= candidate_lpips))/(1+32)",
+      "image_success": "max(rank_p_no_cpa, rank_p_prior_only) <= 0.05; with 32 references this requires strict LPIPS below both control minima",
+      "thresholds": "derive only from held-out controls, serialize thresholds.json before applying to candidate images",
+      "primary_group_claim": "4bit CPA improves over BOTH precision-matched no-CPA and prior-only",
+      "group_test": "exact one-sided paired sign-flip of mean(control-CPA) across 5 victim-batch means, enumerate all 32 signs including observed; p includes ties",
+      "group_iut_p": "max(p_no_cpa,p_prior_only)",
+      "group_success": "both mean effects positive and group_iut_p <= 0.05",
+      "secondary": "fp32 hybrid row and same-36-images sensitivity; no confirmatory fp32 claim",
+      "assumptions": "batch sign-flip symmetry; lower-tail calibration assumes cross-image comparability and is descriptive without individual FWER control"
+    },
+    "figures": {
+      "histogram": "one common LPIPS axis, common bins, per-condition density, all requested conditions separately labelled",
+      "grid_seed": 42,
+      "grid_size": 12,
+      "grid_sampling": "numpy.default_rng(42).choice(40,12,replace=False), same indices both precisions, independent of losses",
+      "grid_label": "not cherry-picked"
+    },
+    "prohibited": [
+      "Stage 2",
+      "--refine-A",
+      "4-bit GMA",
+      "post-result parameter or threshold selection"
+    ]
+  },
+  "preregistration": {
+    "protocol_id": "m7_controls_v1",
+    "registered_at_utc": "2026-09-08T20:44:15.0241517Z",
+    "sha256": "41f402f5449deaadc92f37ec4a76909eafda329d89f11fb7d84b984580251539",
+    "phase": "before_any_new_M7_LPIPS_or_reconstruction"
+  },
+  "completed_at_utc": "2026-09-09T00:37:55.908177+00:00",
+  "n_images": 40,
+  "lpips_mean": 0.7737753406167031,
+  "lpips_positional_mean": 0.7744525298476219,
+  "source_cos_per_source": [
+    0.196482315659523,
+    0.20385807752609253,
+    0.19946745038032532,
+    0.21380361914634705,
+    0.23264682292938232,
+    0.22435522079467773,
+    0.26567867398262024,
+    0.2259501963853836,
+    0.2887728214263916,
+    0.2372717559337616,
+    0.21697312593460083,
+    0.2817634344100952,
+    0.23072370886802673,
+    0.2579253315925598,
+    0.24638083577156067,
+    0.26487356424331665,
+    0.237350195646286,
+    0.28050607442855835,
+    0.23953332006931305,
+    0.24657049775123596,
+    0.175717294216156,
+    0.2172880321741104,
+    0.213510662317276,
+    0.24856840074062347,
+    0.2074526846408844,
+    0.20951300859451294,
+    0.250275194644928,
+    0.2590879201889038,
+    0.2176819145679474,
+    0.22993671894073486,
+    0.23749597370624542,
+    0.18137213587760925,
+    0.20870716869831085,
+    0.20591206848621368,
+    0.1961705982685089,
+    0.27966544032096863,
+    0.21364766359329224,
+    0.18786723911762238,
+    0.2429993748664856,
+    0.18647649884223938
+  ],
+  "per_victim_batch": [
+    {
+      "batch_index": 0,
+      "n_images": 8,
+      "lpips_mean": 0.783801406621933,
+      "lpips_positional_mean": 0.7862877175211906,
+      "source_cos_per_source": [
+        0.196482315659523,
+        0.20385807752609253,
+        0.19946745038032532,
+        0.21380361914634705,
+        0.23264682292938232,
+        0.22435522079467773,
+        0.26567867398262024,
+        0.2259501963853836
+      ]
+    },
+    {
+      "batch_index": 1,
+      "n_images": 8,
+      "lpips_mean": 0.7775494009256363,
+      "lpips_positional_mean": 0.7780247703194618,
+      "source_cos_per_source": [
+        0.2887728214263916,
+        0.2372717559337616,
+        0.21697312593460083,
+        0.2817634344100952,
+        0.23072370886802673,
+        0.2579253315925598,
+        0.24638083577156067,
+        0.26487356424331665
+      ]
+    },
+    {
+      "batch_index": 2,
+      "n_images": 8,
+      "lpips_mean": 0.7650455012917519,
+      "lpips_positional_mean": 0.7657441422343254,
+      "source_cos_per_source": [
+        0.237350195646286,
+        0.28050607442855835,
+        0.23953332006931305,
+        0.24657049775123596,
+        0.175717294216156,
+        0.2172880321741104,
+        0.213510662317276,
+        0.24856840074062347
+      ]
+    },
+    {
+      "batch_index": 3,
+      "n_images": 8,
+      "lpips_mean": 0.7598255574703217,
+      "lpips_positional_mean": 0.7591261342167854,
+      "source_cos_per_source": [
+        0.2074526846408844,
+        0.20951300859451294,
+        0.250275194644928,
+        0.2590879201889038,
+        0.2176819145679474,
+        0.22993671894073486,
+        0.23749597370624542,
+        0.18137213587760925
+      ]
+    },
+    {
+      "batch_index": 4,
+      "n_images": 8,
+      "lpips_mean": 0.7826548367738724,
+      "lpips_positional_mean": 0.7830798849463463,
+      "source_cos_per_source": [
+        0.20870716869831085,
+        0.20591206848621368,
+        0.1961705982685089,
+        0.27966544032096863,
+        0.21364766359329224,
+        0.18786723911762238,
+        0.2429993748664856,
+        0.18647649884223938
+      ]
+    }
+  ],
+  "fia_wall_time_sec": 4547.0102598000085,
+  "invocation_wall_time_sec": 4548.733572900062,
+  "stage1": "not applicable: omitted",
+  "stage2": "not applicable: prohibited",
+  "input_manifest": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\m7_no_cpa_control\\input_manifest.json",
+  "output_hashes": {
+    "rec.pt": "c85381ae90d4a363ec33cfacc5a121c942d4fb9e213f92fecdeff9dd44aebd02",
+    "rec_raw.pt": "5db1b966b4b71f1d0b25a730ef223247699ebfd3e34e10a64207a0fd441df5a4",
+    "per_image_metrics.csv": "7bf30747b6aa01df6fe3b6386d8e7f0df6b96ce26c2d4c070fae2fd6ba641077",
+    "fia_log.json": "cf54f0a0be3d9a29cbd0b0ff129ab63116de2aa8c5caaa38bdc4df640d75e1be"
+  }
+}

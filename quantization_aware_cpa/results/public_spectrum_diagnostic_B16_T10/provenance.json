@@ -1,0 +1,22 @@
+{
+  "plan_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\configs\\public_spectrum_diagnostic_B16_T10.json",
+  "observation_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\deterministic_fc_hybrid_pilot_B16_T10\\observation",
+  "hashes_before": {
+    "plan": "564264055d472acacf31277fab84830cb0470c8b51207d6a9f7885c66fa8e71c",
+    "manifest": "946f848bd8df76b8c276c2d7babafc66c823b1162f664a818e47e09560671364",
+    "source/run_public_spectrum_diagnostic.py": "cde45e3d8fa978b5f4cd6e4fb694bb0b3d93d76f130702590dda9ac87a34baeb",
+    "source/mp_spectrum.py": "f167acfb91e98c7284144b7743d85f55e17c6431ff8e90b7f5b7fa25f6013ff6",
+    "source/deterministic_hybrid_setup.py": "ca040e2e88f900b8490402bb18fc132f7c8a17e1b45d5662673ad6b56fbc958a",
+    "source/deterministic_observation.py": "dd487f63f6f7ec8805752cd7014a5e1e6b047d7029cd373d5633c40fc96b21a3",
+    "source/communication_codec.py": "7ea86955bf7d5516699111de76ffbe41d7b1a5e58167e5d1a8507a590b669d33",
+    "source/full_update_observation.py": "e72a8f68f202e1775ef7e3fe55c6b643c3f8f276c6c68fff4c2973abe7fbc88c",
+    "source/full_update_pipeline.py": "bdb9b0a10ecc77db1a8e6dbd089e43352aad5feabe6ef4298715a7805a3468c9",
+    "observation/packet_00.bin": "b4aebd66320edc7a84df93dec290667ce1c48e566dca6ca1c4221991638a4162",
+    "observation/packet_01.bin": "c213bdd96e7926af4e450d7a586deb7429e28f2ae355045d9c5373fa5ccd37cc",
+    "observation/packet_02.bin": "fb3075b8296d0c9c529f0d5e6e897b1a151f2d5e5eff3a62d992a07321c78ce7",
+    "observation/packet_03.bin": "9e0b4433d8e2a47ec16f692ad9fa6e4b0ad062459a56c44d0f31f873a5fa25ac",
+    "observation/packet_04.bin": "ac09d2b949c9f1c6bd8341ceaf76d1d43c99456f838ba009ae9e0d5f360fd589",
+    "observation/packet_05.bin": "ac1f9b0a32d04ed4e7e1b834ad44d3636c385fa8c5daaeb191dc50e768989033"
+  },
+  "public_inputs_only": true
+}

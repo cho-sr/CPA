@@ -1,0 +1,129 @@
+{
+  "status": "PUBLIC_GATE_PASSED",
+  "bits": 4,
+  "private_loaded": false,
+  "candidate_count": 13,
+  "candidates": {
+    "center_5000": {
+      "path": "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int4_randomized8_screen3_fia_B16_T10_20260918_sweep/fia_center_25000/candidate_5000.pt",
+      "sha256": "8180ca941efc60341cf4e2f91051143caee9dc54a52e541b24f6fc464fa18181",
+      "result": "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int4_randomized8_screen3_fia_B16_T10_20260918_sweep/fia_center_25000/result.json",
+      "result_sha256": "17b570fa206d73f9d5d13286e5930429eb015b14e6cc65513908e264390bcbd7",
+      "step": 5000
+    },
+    "member_00_5000": {
+      "path": "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int4_randomized8_screen3_fia_B16_T10_20260918_sweep/fia_member_00_5000/candidate.pt",
+      "sha256": "6f949f0e6cdbcbcb14be26640daf0c1cfce3fd68cce64d234008eb61594d3ea1",
+      "result": "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int4_randomized8_screen3_fia_B16_T10_20260918_sweep/fia_member_00_5000/result.json",
+      "result_sha256": "4df4032ae271167b72f01606008b7b9d3c6a05d3c55850e36e9ae1dee7346fcd",
+      "step": 5000
+    },
+    "member_01_5000": {
+      "path": "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int4_randomized8_screen3_fia_B16_T10_20260918_sweep/fia_member_01_5000/candidate.pt",
+      "sha256": "eaf0734481fb96997612ea97094511bc273e4259bc829b44cbca0c7593468a9e",
+      "result": "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int4_randomized8_screen3_fia_B16_T10_20260918_sweep/fia_member_01_5000/result.json",
+      "result_sha256": "96dfa83df64bade1a95e7c18e7ed3a6af3d5903acdafd1a40986445623936189",
+      "step": 5000
+    },
+    "member_02_5000": {
+      "path": "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int4_randomized8_screen3_fia_B16_T10_20260918_sweep/fia_member_02_5000/candidate.pt",
+      "sha256": "57b17044d6921d2a684dbbfd3fb80480195bfd8f7191087a7dbb9aa8b170ac11",
+      "result": "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int4_randomized8_screen3_fia_B16_T10_20260918_sweep/fia_member_02_5000/result.json",
+      "result_sha256": "5a42c3314659acd346fdae3ab768cc961081fbd6d964239d6e78a18ffd013c09",
+      "step": 5000
+    },
+    "member_03_5000": {
+      "path": "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int4_randomized8_screen3_fia_B16_T10_20260918_sweep/fia_member_03_5000/candidate.pt",
+      "sha256": "552ca03b2c57792bc54d9c594834d0f45de0d3fac667e0024fbee9a243dbd0f1",
+      "result": "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int4_randomized8_screen3_fia_B16_T10_20260918_sweep/fia_member_03_5000/result.json",
+      "result_sha256": "6a33313c0ce6b085fc2048b5a3297518ac0a493327a1f76c7acddd5a27a496f2",
+      "step": 5000
+    },
+    "member_04_5000": {
+      "path": "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int4_randomized8_screen3_fia_B16_T10_20260918_sweep/fia_member_04_5000/candidate.pt",
+      "sha256": "59d8c1d9229a511aa2a64896a73ef9862b555fac889e4e99b039ff34fa4667c4",
+      "result": "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int4_randomized8_screen3_fia_B16_T10_20260918_sweep/fia_member_04_5000/result.json",
+      "result_sha256": "e9e5f3b0bae27b7ed44515e16e8c773684dc3b086f8bbb9feb69594dc2d0407f",
+      "step": 5000
+    },
+    "member_05_5000": {
+      "path": "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int4_randomized8_screen3_fia_B16_T10_20260918_sweep/fia_member_05_5000/candidate.pt",
+      "sha256": "ec1d01d178f7512288b7b20d0334f9df4410ebbe685c6838305c7cf156c0ac06",
+      "result": "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int4_randomized8_screen3_fia_B16_T10_20260918_sweep/fia_member_05_5000/result.json",
+      "result_sha256": "44a4a0b75b871b0f3559ee7a21334c7e6a29de917f94d12d956faf6e2c30fb30",
+      "step": 5000
+    },
+    "member_06_5000": {
+      "path": "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int4_randomized8_screen3_fia_B16_T10_20260918_sweep/fia_member_06_5000/candidate.pt",
+      "sha256": "4163a1e6f5a5723575c8c379ccc8c48c09bbaa9e19298b4852f04e51047874ab",
+      "result": "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int4_randomized8_screen3_fia_B16_T10_20260918_sweep/fia_member_06_5000/result.json",
+      "result_sha256": "b4dd8617f4f27d536f3f04d3ab62241a3eeab34d44c356f6fc97697dc8eeb5a5",
+      "step": 5000
+    },
+    "member_07_5000": {
+      "path": "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int4_randomized8_screen3_fia_B16_T10_20260918_sweep/fia_member_07_5000/candidate.pt",
+      "sha256": "297b72b864e6c0a15b9ca26ebba28e319ee51ca24a13f07d81c0f5e5a1779e17",
+      "result": "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int4_randomized8_screen3_fia_B16_T10_20260918_sweep/fia_member_07_5000/result.json",
+      "result_sha256": "ffda322e4ff4da5ad5a3b9ba28928763f48d556c16e941d289a8453843fc9825",
+      "step": 5000
+    },
+    "center_25000": {
+      "path": "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int4_randomized8_screen3_fia_B16_T10_20260918_sweep/fia_center_25000/candidate.pt",
+      "sha256": "e515a797ef2d04487637957aeb60b8936fc78d469e101fc1aa3971771c157693",
+      "result": "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int4_randomized8_screen3_fia_B16_T10_20260918_sweep/fia_center_25000/result.json",
+      "result_sha256": "17b570fa206d73f9d5d13286e5930429eb015b14e6cc65513908e264390bcbd7",
+      "step": 25000
+    },
+    "rank1_member_06_25000": {
+      "path": "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int4_randomized8_screen3_fia_B16_T10_20260918_sweep/fia_member_06_25000/candidate.pt",
+      "sha256": "24a43fdba5a67936bc1f6f80972d60efc16d6d7f4ca19bae0b97743d3909d313",
+      "result": "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int4_randomized8_screen3_fia_B16_T10_20260918_sweep/fia_member_06_25000/result.json",
+      "result_sha256": "4477f7860d542bd7a9a92b541dd1e67c819cc97df39e47e950091b5131ceb389",
+      "step": 25000
+    },
+    "rank2_member_05_25000": {
+      "path": "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int4_randomized8_screen3_fia_B16_T10_20260918_sweep/fia_member_05_25000/candidate.pt",
+      "sha256": "9e01864a06d6a8e5d5ec7b9f60001bb9c243d2ed7600db6cf77f32aa2949455e",
+      "result": "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int4_randomized8_screen3_fia_B16_T10_20260918_sweep/fia_member_05_25000/result.json",
+      "result_sha256": "e2a1a524e0e009988c2c5041d70e415aab0757923c35ab67a4514541015b9ea4",
+      "step": 25000
+    },
+    "rank3_member_00_25000": {
+      "path": "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int4_randomized8_screen3_fia_B16_T10_20260918_sweep/fia_member_00_25000/candidate.pt",
+      "sha256": "8095878cb02d204359cb75e8756db20674b6c989608d0fcf51a70cc73a59c2f8",
+      "result": "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int4_randomized8_screen3_fia_B16_T10_20260918_sweep/fia_member_00_25000/result.json",
+      "result_sha256": "1aad5344676a773ad2bc98b985bb4f51b7ff77c0b81b72833d275f9a8f16a174",
+      "step": 25000
+    }
+  },
+  "selection": [
+    6,
+    5,
+    0
+  ],
+  "registration_sha256": "3bcd2691034e0174f1a6a20d9b3ad7428bba8bb20f99f661629bf681346cc0f0",
+  "selection_sha256": "a0526dbd56aaa088fef42ec4f737894aba45ad503713cbec2adb63f866554e13",
+  "public_input_hashes": {
+    "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int4_randomized8_screen3_fia_B16_T10_20260918_sweep/observation/manifest.json": "e1519866632bce490c687420ce6f7f61afd9fb05cbe1fc25ff63c8fa51788fa9",
+    "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int4_randomized8_screen3_fia_B16_T10_20260918_sweep/observation/fc_00.sb4": "f1758fde3393cb62ca993eb374948d15f9aadd02e23f1600644d9601417e3d12",
+    "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int4_randomized8_screen3_fia_B16_T10_20260918_sweep/observation/fc_01.sb4": "f546c7224d6a2891306e6f2f49d7a9f42ade29235234efcbcc85821f921d0ca5",
+    "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int4_randomized8_screen3_fia_B16_T10_20260918_sweep/observation/fc_02.sb4": "ee244983a55d271016e613aa687c71513972d0921b444c5790cbe216ee41db58",
+    "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int4_randomized8_screen3_fia_B16_T10_20260918_sweep/observation/fc_03.sb4": "39018117190d8ac3169afe34a4444e8457155f84d0b8a28ff7e2878db4ebeff8",
+    "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int4_randomized8_screen3_fia_B16_T10_20260918_sweep/observation/fc_04.sb4": "abc88b17b9501070d971d3e3277f9e76cd56287afae146bec2e28e26d5bfe699",
+    "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results/signed_int4_randomized8_screen3_fia_B16_T10_20260918_sweep/observation/fc_05.sb4": "eabd0d57aa04a0a224fee175bc7074f0661f9136d435661c1f4aa428cc3018d0",
+    "C:/Users/조상제/.cache/torch/hub/checkpoints/vgg16-397923af.pth": "397923af8e79cdbb6a7127f12361acd7a2f83e06b05044ddf496e83de57a5bf0"
+  },
+  "source_code_hashes": {
+    "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/qacpa/signed_bits_screen3_runner.py": "0ab6bdac5e121b1713e7124bc8dcc958e9b962d6eb667676389823e87d4ff984",
+    "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/qacpa/signed_bits_observation.py": "ff503552b445884fcacecd612d61b3a80bbd98b498afb55a64ac4b5e4270db91",
+    "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/qacpa/signed_bits_randomized.py": "6c67753d4fa3675879ee083e6a0fc8f9dcc34321bba464e2f9c5c8be48784102",
+    "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/qacpa/signed_bits_screen3_evaluation.py": "811b2d45b0b5c98b46d018b11e0ff80dec8314364968cba9f43b266d76b51120",
+    "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/qacpa/signed_int8_screen3_fia.py": "5c9604e865974898b07d9f8b34c3f4d1c919d8cbbd1ebe323ced9e27ddddec7c",
+    "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/qacpa/signed_combination_ica.py": "1c7482e1ed77ca4641cd8822ebb6046c5150e794c3838aacc3e3d575f3d992d6",
+    "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/qacpa/upstream_naive.py": "8f29b885d86f4121eda5c55e17486a3a48bd8db08b2f83890fe7726730d1ee92"
+  },
+  "cumulative_fia_updates": 125000,
+  "task_id": "CPA_SIGNED_BITS7654_SCREEN3_20260918_B4",
+  "adapter_task_id_source": "runner.bit_task_id(authenticated_bits)",
+  "adapter_did_not_modify_runner": true
+}

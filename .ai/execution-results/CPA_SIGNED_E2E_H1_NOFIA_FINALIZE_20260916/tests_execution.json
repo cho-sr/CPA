@@ -1,0 +1,9 @@
+{
+  "task_id": "CPA_SIGNED_E2E_H1_NOFIA_FINALIZE_20260916",
+  "status": "COMPLETED",
+  "command": "C:\\miniconda\\envs\\DLG\\python.exe -m pytest -q tests/test_signed_e2e_nofia.py tests/test_signed_e2e_cells.py",
+  "exit_code": 0,
+  "passed": 17,
+  "failed": 0,
+  "log": "tests.log"
+}

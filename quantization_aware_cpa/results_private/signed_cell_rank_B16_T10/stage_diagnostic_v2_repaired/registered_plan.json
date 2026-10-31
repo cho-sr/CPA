@@ -1,0 +1,49 @@
+{
+  "config": {
+    "cell_rank": "quantization_aware_cpa/results/signed_cell_rank_B16_T10/cell_rank_ap5",
+    "checkpoint": "C:/Users/조상제/.cache/torch/hub/checkpoints/vgg16-397923af.pth",
+    "comparison": "quantization_aware_cpa/results_private/signed_cell_rank_B16_T10/evaluation_ap5/comparison.json",
+    "device": "cuda",
+    "eval_microbatch": 1,
+    "expected_plan_sha256": "d24c271ae8461bdad3061c957b53f247cf852c7ba1bbf1d63933205511f0d14d",
+    "max_cuda_allocated_gib": 6.0,
+    "max_evaluation_seconds": 600.0,
+    "method_plan": ".ai/proposals/SIGNED_CPA_FIA_STAGE_DIAGNOSTIC_20260915.md",
+    "naive": "quantization_aware_cpa/results/signed_int4_baseline_B16_T10/naive",
+    "output": "quantization_aware_cpa/results_private/signed_cell_rank_B16_T10/stage_diagnostic_v2_repaired",
+    "private_observation": "quantization_aware_cpa/results_private/signed_int4_baseline_B16_T10/observation",
+    "public_observation": "quantization_aware_cpa/results/signed_int4_baseline_B16_T10/observation"
+  },
+  "encoder": "official_cpa/src/vgg16.py:vgg16 features->avgpool->flatten; frozen FP32",
+  "format": "signed_stage_diagnostic_v2_repaired",
+  "implementation_revision": "repair_20260915_r1",
+  "input_hashes": {
+    "cell_candidate": "700beaa7b7da8565da68bb782ea67738542695334d09a2910e29f83bf29ab9d6",
+    "cell_sources": "48e763c0539d77f44343dd6330c13ca27b181db587601e00e86076a3f278ff0f",
+    "checkpoint": "397923af8e79cdbb6a7127f12361acd7a2f83e06b05044ddf496e83de57a5bf0",
+    "comparison": "ecd1e3df7c6f452157f51e3389baea64b24a0915dce17dbddf8a1a6f5908a4d7",
+    "evaluation_truth": "724bbacbe316cc28dac086db9cfaf6507f4c1af31144fd610cc480985aab72e2",
+    "naive_candidate": "fe683f68013896a407a38130ee54ef9dc799a9ca1abf7c4f08efeefea7d91751",
+    "naive_sources": "c033e0df9304a6e0dcb19491bb43c3ac80cabed52566409e0f76dbe74194d7eb",
+    "public_manifest": "9b4891765e6fc7e4adb1e3e11c158b3d4a2c3430d3397e1f1466ddafe2e1cd69"
+  },
+  "labels_consumed": false,
+  "method_plan_sha256": "d24c271ae8461bdad3061c957b53f247cf852c7ba1bbf1d63933205511f0d14d",
+  "normalization": {
+    "exactly_once": true,
+    "mean": [
+      0.485,
+      0.456,
+      0.406
+    ],
+    "std": [
+      0.229,
+      0.224,
+      0.225
+    ]
+  },
+  "offline_only": true,
+  "plan_version": 2,
+  "selection_used": false,
+  "supersedes": "stage_diagnostic_v2 (signed-target and cross-arm-map metrics)"
+}

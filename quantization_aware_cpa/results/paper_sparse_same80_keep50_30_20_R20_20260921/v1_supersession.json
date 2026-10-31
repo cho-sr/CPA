@@ -1,0 +1,69 @@
+{
+  "task_id": "CPA_PAPER_SPARSE_SAME80_K503020_R20_20260921",
+  "base_plan_version": 1,
+  "amendment_id": "CPA_PAPER_SPARSE_SAME80_K503020_R8_AMENDMENT_20260921",
+  "replacement_plan_version": 2,
+  "status": "SUPERSEDED_PARTIAL",
+  "recorded_at_utc": "2026-09-20T23:00:20.488389+00:00",
+  "old_wrapper": {
+    "pid": 17136,
+    "created_ms": 1789943901384,
+    "exit_code": 15,
+    "record_sha256": "d0927af1ee4921319f0a84c55d6e75b5769f5f0ddebb0cdafe64857f01543946",
+    "record_path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\paper_sparse_same80_keep50_30_20_R20_20260921\\stage_execution.json",
+    "status": "FAILED",
+    "full_experiment_status": "INCOMPLETE_STOPPED_ON_FAILURE"
+  },
+  "old_child": {
+    "pid": 14888,
+    "parent_pid": 17136,
+    "created_ms": 1789944002099,
+    "exit_code": 15,
+    "command": "C:\\miniconda\\envs\\DLG\\python.exe -u -m qacpa.run_paper_sparse_same80 --config configs/cpa_fia_random_topk50_same80_R20_S5k_K3_F25k.json --phase run"
+  },
+  "checkpoint_boundary": {
+    "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\paper_sparse_same80_keep50_30_20_R20_20260921\\..\\cpa_fia_random_topk50_same80_R20_S5k_K3_F25k\\batch00\\candidate02\\fia\\progress.json",
+    "sha256": "5cc644047ac54c70bc4cb2f08b9f5a1c8a38ae3c81de131c07c7e6f59271c0ff",
+    "completed_iterations": 1,
+    "stage_stop": 5000,
+    "horizon": 25000,
+    "candidate": 2,
+    "batch_index": 0
+  },
+  "authenticated_completed_candidates": [
+    0,
+    1
+  ],
+  "partial_candidate": [
+    2
+  ],
+  "old_callback": {
+    "status_path": "C:\\Users\\조상제\\Desktop\\CPA\\.ai\\relay-runs\\completions\\CPA_PAPER_SPARSE_SAME80_K503020_R20_20260921\\paper_sparse_sweep\\status.json",
+    "state": "NOTIFICATION_QUEUED",
+    "process_exit_code": 15,
+    "receipt_id": "9a889b95-f95b-4c27-ac7c-3b8066ac8741",
+    "supersession_evidence_path": "C:\\Users\\조상제\\Desktop\\CPA\\.ai\\relay-runs\\completions\\CPA_PAPER_SPARSE_SAME80_K503020_R20_20260921\\paper_sparse_sweep\\supersession.json"
+  },
+  "handoff_archive": "C:\\Users\\조상제\\Desktop\\CPA\\.ai\\execution-handoffs\\CPA_PAPER_SPARSE_SAME80_K503020_R20_20260921_V1_CLAIMED_ARCHIVE_20260921.md",
+  "handoff_archive_sha256": "ba63f85795c8ba8b4cbdceea2018dad809a4e090613f04430504862dddea9014",
+  "preserved_artifacts": [
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\paper_sparse_same80_keep50_30_20_R20_20260921\\..\\cpa_fia_random_topk50_same80_R20_S5k_K3_F25k\\batch00\\candidate00\\screen.json",
+      "sha256": "2360f8af1ed855050a77f3a08793b04ace2f186d672ef3c54270117917f3f353"
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\paper_sparse_same80_keep50_30_20_R20_20260921\\..\\cpa_fia_random_topk50_same80_R20_S5k_K3_F25k\\batch00\\candidate01\\screen.json",
+      "sha256": "d4ca1aca1b3d866ce4712871167d9c92ecbf33713649cc86d673539062c236d8"
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\paper_sparse_same80_keep50_30_20_R20_20260921\\..\\cpa_fia_random_topk50_same80_R20_S5k_K3_F25k\\batch00\\candidate02\\cpa_result.json",
+      "sha256": "d528ccb35d2a04a104395549e7f737182fdf1cfd2223954808aae99c464a64dc"
+    },
+    {
+      "path": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\paper_sparse_same80_keep50_30_20_R20_20260921\\..\\cpa_fia_random_topk50_same80_R20_S5k_K3_F25k\\batch00\\candidate02\\fia\\fia_checkpoint.pt",
+      "sha256": "217527322c680d6a8e3066a8e68c7602cf6feaaa16d7fa258ed94a941f04e6b5"
+    }
+  ],
+  "old_selection_reused": false,
+  "note": "R20 was intentionally stopped at the recoverable checkpoint and is not resumed; v2/R8 may import only authenticated candidate 0..7 artifacts after independent verification."
+}\n

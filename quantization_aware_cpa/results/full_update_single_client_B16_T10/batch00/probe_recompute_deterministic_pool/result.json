@@ -1,0 +1,12 @@
+{
+  "status": "outer_gradient_probe_complete",
+  "iterations": 1,
+  "optimization_time_sec": 15.512354800011963,
+  "image_gradient_nonzero": true,
+  "reconstruction_success": "not_evaluated",
+  "mode": "cell",
+  "label_optimization": "soft_relaxation",
+  "wall_time_sec": 15.512381399981678,
+  "peak_cuda_allocated_bytes": 5936897024,
+  "peak_cuda_reserved_bytes": 8050966528
+}

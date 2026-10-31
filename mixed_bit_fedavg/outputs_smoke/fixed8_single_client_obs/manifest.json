@@ -1,0 +1,147 @@
+{
+  "aggregate_requantized": false,
+  "aggregation": "weighted_mean_by_client_sample_count",
+  "aggregation_weights": [
+    0.5,
+    0.5
+  ],
+  "attack_layer_index": 26,
+  "attack_layer_name": "classifier.0.weight",
+  "attacker_observation": "one_client_int8_dequantized_update_from_fedavg_round",
+  "attacker_observes_round_aggregate": false,
+  "bit_selection_counts": {
+    "8": 2
+  },
+  "bit_selection_granularity": "client_round",
+  "bit_selection_policy": "fixed_bit_width",
+  "bit_selection_random": false,
+  "bit_selection_schedule": [
+    {
+      "client_id": 0,
+      "quant_bits": 8,
+      "round": 1
+    },
+    {
+      "client_id": 1,
+      "quant_bits": 8,
+      "round": 1
+    }
+  ],
+  "bit_selection_seed": 1234,
+  "client_original_indices": [
+    [
+      37542,
+      44491
+    ],
+    [
+      216,
+      43688
+    ]
+  ],
+  "client_qs": {
+    "code_file": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\mixed_bit_fedavg\\outputs_smoke\\fixed8_single_client_obs\\client_qs\\final_round_client_codes.npz",
+    "codes_sha256": "8ecb8afcf48b995c2113f0b0d38275ed2e5ae33d5219263a5fff8ce13f6a09d7",
+    "context_file": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\mixed_bit_fedavg\\outputs_smoke\\fixed8_single_client_obs\\client_qs\\final_round_context.pkl",
+    "context_sha256": "8cfc15b0753dd041b11b5bd49e48d31baf2220da37f4faec756dc7a886e709fe",
+    "quant_meta_file": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\mixed_bit_fedavg\\outputs_smoke\\fixed8_single_client_obs\\client_qs\\final_round_client_quant_meta.json",
+    "source_model_state_file": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\mixed_bit_fedavg\\outputs_smoke\\fixed8_single_client_obs\\client_qs\\final_round_global_model_before.pt",
+    "source_model_state_sha256": "41244de2d97b813a85cf30098fd1ebd76c44dec4c96c8fe84d4cf6ec60d5f19e"
+  },
+  "client_sampling": "all_clients_each_round",
+  "client_subset_indices": [
+    [
+      37542,
+      44491
+    ],
+    [
+      216,
+      43688
+    ]
+  ],
+  "client_update_quantized_before_server_aggregation": true,
+  "device": "cuda",
+  "ds": "imagenet",
+  "fedavg_aggregation_weights": [
+    0.5,
+    0.5
+  ],
+  "fixed_quant_bits": 8,
+  "local_batch_size": 2,
+  "local_epochs": 1,
+  "lr": 0.001,
+  "mixed_quant_bits": null,
+  "model": "vgg16",
+  "n_samples": 2,
+  "num_clients": 2,
+  "observation_scope": "single_client",
+  "observe_round": 1,
+  "observed_client_id": 0,
+  "observed_client_original_indices": [
+    37542,
+    44491
+  ],
+  "observed_client_quant_bits": 8,
+  "observed_client_subset_indices": [
+    37542,
+    44491
+  ],
+  "observed_sample_count": 2,
+  "optimizer": "SGD",
+  "param_names": [
+    "features.0.weight",
+    "features.0.bias",
+    "features.2.weight",
+    "features.2.bias",
+    "features.5.weight",
+    "features.5.bias",
+    "features.7.weight",
+    "features.7.bias",
+    "features.10.weight",
+    "features.10.bias",
+    "features.12.weight",
+    "features.12.bias",
+    "features.14.weight",
+    "features.14.bias",
+    "features.17.weight",
+    "features.17.bias",
+    "features.19.weight",
+    "features.19.bias",
+    "features.21.weight",
+    "features.21.bias",
+    "features.24.weight",
+    "features.24.bias",
+    "features.26.weight",
+    "features.26.bias",
+    "features.28.weight",
+    "features.28.bias",
+    "classifier.0.weight",
+    "classifier.0.bias",
+    "classifier.3.weight",
+    "classifier.3.bias",
+    "classifier.6.weight",
+    "classifier.6.bias"
+  ],
+  "private_split": "test",
+  "quant_bits": 8,
+  "quant_bits_choices": [
+    8
+  ],
+  "quantization": "signed_symmetric_int8",
+  "quantization_scales_hash": "708e7c46d7ef6d8b881e1c72c018b59777c106ee035cccad8e53215ac9af4c58",
+  "rounding": "nearest",
+  "rounds": 1,
+  "samples_per_client": 2,
+  "saved_rounds": [
+    1
+  ],
+  "scale_scope": "per_client_per_parameter_tensor",
+  "schema_version": 1,
+  "seed": 42,
+  "server_aggregation_input": "dequantized_client_updates",
+  "signal": "int8_fedavg_single_client_dequantized_update",
+  "source_update_file": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\mixed_bit_fedavg\\outputs_smoke\\fixed8_single_client_obs\\round_001_client000_int8_dequant_update_cpa.pickle",
+  "source_update_hash": "10614efcb5abb9d2ef38ef1fcb926a15b5cd689872c48fe6f319e7bcff7428f4",
+  "store_scope": "attack_layer",
+  "total_fedavg_samples": 4,
+  "update_definition": "client_delta_w = w_client - w_global_before_round; observed client update is quantized to signed symmetric int8, then dequantized before attack"
+}

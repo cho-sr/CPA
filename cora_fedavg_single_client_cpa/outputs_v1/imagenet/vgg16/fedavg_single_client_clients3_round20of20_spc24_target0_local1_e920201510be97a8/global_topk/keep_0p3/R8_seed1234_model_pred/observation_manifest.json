@@ -1,0 +1,27 @@
+{
+  "attacker_observes_round_aggregate": false,
+  "continued_member_ids": [
+    5,
+    3,
+    4,
+    7,
+    2
+  ],
+  "desparse_sampler": "retained_rescaled",
+  "ensemble_size": 8,
+  "keep_ratio": 0.3,
+  "model_checkpoint_for_attack": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\cora_fedavg_single_client_cpa\\outputs_v1\\fedavg_single_client_updates\\imagenet\\vgg16\\fedavg_single_client_clients3_round20of20_spc24_target0_local1_e920201510be97a8\\global_topk\\keep_0p3.fedavg_round_before.pt",
+  "noise_seed": 1234,
+  "observation": "one_client_compressed_update_from_fedavg_round",
+  "observation_file": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\cora_fedavg_single_client_cpa\\outputs_v1\\fedavg_single_client_updates\\imagenet\\vgg16\\fedavg_single_client_clients3_round20of20_spc24_target0_local1_e920201510be97a8\\global_topk\\keep_0p3_attack_layer_observation.pickle",
+  "observation_hash": "b803ec90590f587a4e345f3cea950e299faac210a3b943e224b15f7023be19d2",
+  "schema_version": 1,
+  "screen_fia_iter": 5000,
+  "screen_top_k": 5,
+  "screened_ensemble_size": 8,
+  "screening_enabled": true,
+  "screening_member_ranking_file": "fia_screen_iter5000_member_ranking.csv",
+  "source_file": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\cora_fedavg_single_client_cpa\\outputs_v1\\fedavg_single_client_updates\\imagenet\\vgg16\\fedavg_single_client_clients3_round20of20_spc24_target0_local1_e920201510be97a8\\global_topk\\keep_0p3.pickle",
+  "source_hash": "b3b33823f9796febd5285de8a3d7c5279380d6c8368e5399fb4aa4d538f4a1c5",
+  "tau_policy": "topk_threshold"
+}

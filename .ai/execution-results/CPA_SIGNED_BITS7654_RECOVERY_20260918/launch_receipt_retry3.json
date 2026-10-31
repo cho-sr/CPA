@@ -1,0 +1,11 @@
+{
+  "task_id": "CPA_SIGNED_BITS7654_RECOVERY_20260918",
+  "attempt": 3,
+  "wrapper_pid": 9764,
+  "process_created_ms": 1789692221798,
+  "wrapper": "C:/Users/조상제/Desktop/CPA/.ai/execution-results/CPA_SIGNED_BITS7654_RECOVERY_20260918/recover_bits.py",
+  "launched_at_epoch": 1789692221.800832,
+  "launch_mode": "hidden_persistent_detached",
+  "private_data_loaded_at_launch": false,
+  "previous_attempt_preserved": true
+}

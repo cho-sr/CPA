@@ -1,0 +1,255 @@
+{
+  "task_id": "CPA_SAME80_BITS87654_R100_SCREEN3_20260926",
+  "plan_version": 1,
+  "state": "DISABLED",
+  "identity": {
+    "task_id": "CPA_SAME80_BITS87654_R100_SCREEN3_20260926",
+    "plan_version": 1,
+    "config_sha256": "ceadcebaeb2a50c52a0035e3cebf086ccc044b218e79463ff0c197fbdb79727b",
+    "registration_identity_sha256": "992f13929816b69302b08644eb5f5b953a18c0ca265a4f1986fe4a524bad3e57",
+    "registration_sha256": "9d445f925aa43e2cd00a8464e5345a72e489d51a3bd5ffd36956aaa1c8cda235",
+    "code_sha256": {
+      "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/qacpa/same80_bits_r100_core.py": "326c587d16393cc6437304c8d8a6780f31cb9fa36a77511a0f923c1b94ce2263",
+      "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/qacpa/run_same80_bits_r100.py": "b4a8e0fd9f26adde6fe103744226d9e3b191c1acfc2cc0a165127656fa94ae5e",
+      "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/qacpa/report_same80_bits_r100.py": "948a7bc6124d7d58d3d9309a555a66a5a6beab620dc9067bef09f6ba1159073c",
+      "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/qacpa/signed_bits_observation.py": "ff503552b445884fcacecd612d61b3a80bbd98b498afb55a64ac4b5e4270db91",
+      "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/qacpa/signed_bits_randomized.py": "6c67753d4fa3675879ee083e6a0fc8f9dcc34321bba464e2f9c5c8be48784102",
+      "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/qacpa/signed_int8_randomized.py": "d475c45109aec1e8a4b014d3a7d5c43cf8aad7b5c493fedb5eaefd2809aa66c7",
+      "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/qacpa/signed_int8_screen3_fia.py": "5c9604e865974898b07d9f8b34c3f4d1c919d8cbbd1ebe323ced9e27ddddec7c",
+      "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/qacpa/staged_fia.py": "45eeeb925be426cf91ce9c9f2bd7d63192d721742739ee5b3affc4f25b816dfb",
+      "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/qacpa/upstream_naive.py": "8f29b885d86f4121eda5c55e17486a3a48bd8db08b2f83890fe7726730d1ee92",
+      "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/qacpa/run_m8_fedavg_naive.py": "0ea71db00a7e20e9ee9309215fbfa47c84f83290f9ca7027e3bec09ca2ea65f3",
+      "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/qacpa/fia.py": "42a55ce6a4895785b10573f507658434e597f1138de3d45621f466702c7f5cb0",
+      "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/qacpa/alignment.py": "93259800bdf8843acfb1a7ed31beba199db218e61548b3a8d1fb10c4efae7cce",
+      "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/qacpa/seed.py": "769366fcc2cf3e144d8caa86f73a55dcb0b6be615a45dab8b6e117399150c558",
+      "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/qacpa/deterministic_hybrid_setup.py": "ca040e2e88f900b8490402bb18fc132f7c8a17e1b45d5662673ad6b56fbc958a",
+      "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/scripts/run_same80_bits_r100.py": "bbef196e4ac484e219fe6f6096aede8d32691af7ff36e6328334333c9fdf1a5f",
+      "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/configs/same80_bits87654_R100_S5k_K3_F25k.json": "ceadcebaeb2a50c52a0035e3cebf086ccc044b218e79463ff0c197fbdb79727b",
+      "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/docs/SAME80_BITS_R100.md": "f7cc03fd97931704044ac2a2f8521292f69ef12fda65cd2fce2a8840b8c42826",
+      "C:/Users/조상제/Desktop/CPA/official_cpa/src/datasets.py": "f9e7b47733b5acb4b73e6914a3f100b5187766bbed78a12d17b69c39eec1b6d1",
+      "C:/Users/조상제/Desktop/CPA/official_cpa/src/utils.py": "565f1bf1a47f387d042b35bb24f677d1ff0d3ec5d979e2876c31ed114179b9fe",
+      "C:/Users/조상제/Desktop/CPA/official_cpa/src/gradient_inversion_utils.py": "668d77788dc8d81c181c8c0a9fbe8533c6fbea22ba46fe7f5e15b0a431300e5f",
+      "C:/Users/조상제/Desktop/CPA/official_cpa/src/gradient_inversion.py": "c598e1ee7b4079f741060d10c8dfd14711e393a97384c63cf32be77a458b1873",
+      "C:/Users/조상제/Desktop/CPA/official_cpa/src/feature_inversion.py": "dc73880427e3eaf1f873d295f17f1d48d301882f634ee5df36ddeea8e56c4dec",
+      "C:/Users/조상제/Desktop/CPA/official_cpa/src/vgg16.py": "8114eca8cde553dace5f777aedd21b70851c570d473e597b005cb6be4b248d36",
+      "runtime::torch": "2.13.0+cu132",
+      "runtime::numpy": "2.4.4"
+    },
+    "packet_count": 25,
+    "checkpoint_sha256": "397923af8e79cdbb6a7127f12361acd7a2f83e06b05044ddf496e83de57a5bf0"
+  },
+  "last_supervisor_invocation": {
+    "pid": 18252,
+    "created_ms": 1790429832778,
+    "at_utc": "2026-09-26T16:15:17.707630+00:00"
+  },
+  "restart_count": 0,
+  "high_water": {
+    "cells": 0,
+    "naive": 1,
+    "screens": 0,
+    "finals": 0
+  },
+  "active_worker": {
+    "pid": 7548,
+    "created_ms": 1790429867410,
+    "image": "C:\\miniconda\\envs\\DLG\\python.exe",
+    "role": "wrapper"
+  },
+  "next_retry_at_utc": null,
+  "notifications": {
+    "needs_review": {
+      "state": "ALREADY_QUEUED",
+      "target": "executor",
+      "receipt": {
+        "queued": true,
+        "receipt": "Queued message 01a0dd7b-13b7-7693-a8c7-aa3c66cd83d7 for thread 01a0dcd1-66a4-7b52-a6c7-0e9d0a5c096e."
+      },
+      "callback_status": "C:\\Users\\조상제\\Desktop\\CPA\\.ai\\relay-runs\\completions\\CPA_SAME80_BITS87654_R100_SCREEN3_20260926\\worker_exit\\status.json"
+    }
+  },
+  "history": [],
+  "created_at_utc": "2026-09-26T12:15:25.759948+00:00",
+  "last_checked_at_utc": "2026-09-26T16:15:17.707630+00:00",
+  "installed_at_utc": "2026-09-26T12:20:43.754252+00:00",
+  "supervision_mode": "persistent_hidden_current_user_watchdog",
+  "availability": "after_user_logon_only",
+  "boot_recovery": false,
+  "hang_detection": "unsupported; stale logs/stage timestamps never trigger a kill",
+  "disable_command": "C:\\miniconda\\envs\\DLG\\python.exe -B C:\\Users\\조상제\\Desktop\\CPA\\.ai\\cpa_same80_supervisor.py --disable",
+  "last_worker": {
+    "pid": 14680,
+    "created_ms": 1790420245093,
+    "state": "FAILED",
+    "exit_code": 1
+  },
+  "blocker": null,
+  "failure": {
+    "task_id": "CPA_SAME80_BITS87654_R100_SCREEN3_20260926",
+    "plan_version": 1,
+    "pid": 6268,
+    "updated_at_utc": "2026-09-26T13:28:50.390897+00:00",
+    "state": "FAILED",
+    "stage": "public_attack",
+    "error": "KeyError: 'attestation_sha256'",
+    "worker_count": 1,
+    "failed_at_utc": "2026-09-26T13:28:50.390897+00:00"
+  },
+  "failure_evidence": {
+    "worker_status": "75261a788e6a5d99d6ec24eabd4c3f5d667281619229be4094f3534ea6f8c7f2",
+    "stage_execution": "5c66714d0d40651701ec795168302f4d4d69b08a67469293389ba8b31a0a789c"
+  },
+  "last_worker_exit_code": 1,
+  "task_scheduler_registration_failure": "Task Scheduler registration failed for CPA_SAME80_BITS87654_R100_SCREEN3_20260926_Logon: ERROR: Access is denied.\n\n",
+  "scheduler": {
+    "registered": true,
+    "mechanism": "HKCU Run key",
+    "scope": "current user, after login",
+    "command": "\"C:\\miniconda\\envs\\DLG\\pythonw.exe\" -B \"C:\\Users\\조상제\\Desktop\\CPA\\.ai\\cpa_same80_supervisor.py\" --watch",
+    "separate_health_trigger": false,
+    "health_trigger": "persistent hidden watchdog loop, 60-second interval",
+    "task_scheduler": {
+      "registered": false,
+      "error": "Task Scheduler registration failed for CPA_SAME80_BITS87654_R100_SCREEN3_20260926_Logon: ERROR: Access is denied.\n\n"
+    },
+    "watchdog": {
+      "pid": 18648,
+      "created_ms": 1790425243758,
+      "adopted_existing": false
+    }
+  },
+  "schedule_trigger_verified_at_utc": "2026-09-26T12:20:43.754252+00:00",
+  "watchdog": {
+    "pid": 18252,
+    "created_ms": 1790429832778,
+    "started_at_utc": "2026-09-26T13:37:12.869210+00:00",
+    "interval_seconds": 60
+  },
+  "supervisor_health_failures": 0,
+  "watchdog_last_tick_at_utc": "2026-09-26T16:15:17.721495+00:00",
+  "launch_guard": {
+    "installed": true,
+    "path": "C:\\miniconda\\envs\\DLG\\Lib\\site-packages\\sitecustomize.py",
+    "sha256": "87abab873c77e58a34ab5203b18dfbdbdb3fc4444dd63a6de73bc946d344167a",
+    "scope": "exact Same80 DLG runner/config invocations only",
+    "verification": {
+      "module_runner_blocked_exit_code": 86,
+      "direct_script_blocked_exit_code": 86,
+      "task_environment_blocked_exit_code": 86,
+      "unrelated_config_help_exit_code": 0
+    }
+  },
+  "final_planner_result": {
+    "state": "QUEUED",
+    "thread_id": "01a0dcd0-1857-7f93-840e-fe277062fa63",
+    "receipt": "01a0ddb4-4c40-7043-b132-0863b8c13c8d",
+    "message_file": ".ai\\relay-runs\\supervisors\\CPA_SAME80_BITS87654_R100_SCREEN3_20260926\\planner_final_result.txt",
+    "message_sha256": "48f6fb8b229ce783cbac2fcd9efd63b1add5d84401adee8ce59fb66bdb05fb71"
+  },
+  "resolved_blocker_history": [
+    {
+      "blocker": "DETERMINISTIC_ERROR_REVIEW",
+      "resolved_at_utc": "2026-09-26T13:28:24.697732+00:00",
+      "transition_sha256": "0a7d49f34803409a262242488ebfe3253edf0c8044beb1d8d41411c53a4c0893"
+    },
+    {
+      "blocker": "DETERMINISTIC_ERROR_REVIEW",
+      "resolved_at_utc": "2026-09-26T13:37:33.116183+00:00",
+      "transition_sha256": "453dd20fb870dacdeaa199890ff1b0a09953028a9a2c704bb7412f28f6bab75e"
+    }
+  ],
+  "reviewed_repair_resolution": {
+    "status": "LAUNCHED",
+    "amendment_id": "CPA_SAME80_SCORE_REPAIR_20260926",
+    "transition_sha256": "453dd20fb870dacdeaa199890ff1b0a09953028a9a2c704bb7412f28f6bab75e",
+    "resolved_at_utc": "2026-09-26T13:37:33.116183+00:00",
+    "launch_permitted": false,
+    "failure_provenance": {
+      "worker_status_path": "quantization_aware_cpa/results_private/same80_bits87654_R100_S5k_K3_F25k/worker_status.json",
+      "worker_status_sha256": "75261a788e6a5d99d6ec24eabd4c3f5d667281619229be4094f3534ea6f8c7f2",
+      "worker_pid": 11808,
+      "worker_created_ms": 1790429319044,
+      "exit_code": 1,
+      "stage_execution_path": "quantization_aware_cpa/results/same80_bits87654_R100_S5k_K3_F25k/stage_execution.json",
+      "stage_execution_sha256": "5c66714d0d40651701ec795168302f4d4d69b08a67469293389ba8b31a0a789c",
+      "phase_child_pid": 6268,
+      "error": "KeyError: 'attestation_sha256'"
+    },
+    "checkpoint_provenance": {
+      "task_id": "CPA_SAME80_BITS87654_R100_SCREEN3_20260926",
+      "plan_version": 1,
+      "authorization_handoff_sha256": "56fb37ce5f3bc06dc646782880b177ecd213bb49d1d75dedc87c9df258a738e5",
+      "registration_identity_sha256": "0dbbb8a40b3527374355ce728a4f4265b1debe94a3a938ef79c35edcbd49a581",
+      "stage_identity_sha256": "465704b1867229bf0c4e64eb83a4f9f1e0b87759ebda2a4beccd2b1b2d4f35ef",
+      "source_sha256": "572e882afdacd41002f22f91a1eec68f77dd3af16f8000a93a8be2527aec8e8c",
+      "sources_file_sha256": "a1b83a6096895c07e47cf0ff5cc85568328310457a58b4a8ae053ece6aca79e8",
+      "sources_tensor_sha256": "b68761d8dfb21dd1442a21622efb380aa2616dcaf571621488f253efa33e31e2",
+      "cpa_record_sha256": "187bfa4d5c2fcb0aedb1269a4b5fc88965434c341d9c2d6af0e611abebbcd23f",
+      "fia_manifest_sha256": "9ae62189a3b119f9ac0a462b55dd865dd177179816617ef040b8ac2cadb51ef4",
+      "attempt_ledger_sha256": "bad6ff9763e2e39feb70bb685eae8ff5d5b2a22847b0a93a10245b6dfb7c5bea",
+      "attempt_number": 1,
+      "completed_iterations": 25000,
+      "horizon": 25000,
+      "checkpoint_sha256": "b40e114e85317563996bad4b8e923c6ed1ed0548a3d0034ac9d54d154c65e6ff",
+      "checkpoint_image_sha256": "069720cb271ef4ed991eb6cbd67fd82344ac916be41ad4b984d85230e951f1e8",
+      "checkpoint_wall_time_sec": 1922.509845099994
+    },
+    "launched_worker_pid": 7548,
+    "launched_worker_created_ms": 1790429867410,
+    "launched_at_utc": "2026-09-26T13:37:47.410600+00:00"
+  },
+  "phases_to_resume": [
+    "run",
+    "gate",
+    "report"
+  ],
+  "last_failure_classification": "REVIEWED_IMPLEMENTATION_REPAIR",
+  "resume_policy": "same approved task/config/seeds; reviewed checkpoint lineage authenticated",
+  "current_phase": "adopted_existing_process",
+  "last_launch_at_utc": "2026-09-26T13:37:47.410600+00:00",
+  "reviewed_repair_resolution_history": [
+    {
+      "status": "LAUNCHED",
+      "amendment_id": "CPA_SAME80_SCORE_REPAIR_20260926",
+      "transition_sha256": "0a7d49f34803409a262242488ebfe3253edf0c8044beb1d8d41411c53a4c0893",
+      "resolved_at_utc": "2026-09-26T13:28:24.697732+00:00",
+      "launch_permitted": false,
+      "failure_provenance": {
+        "worker_status_path": "quantization_aware_cpa/results_private/same80_bits87654_R100_S5k_K3_F25k/worker_status.json",
+        "worker_status_sha256": "8c2550f4fc82c44ec622afbd846c8be954e92a62561c77aa6fc5020ff756ab6b",
+        "worker_pid": 14680,
+        "worker_created_ms": 1790420245093,
+        "exit_code": 1,
+        "stage_execution_path": "quantization_aware_cpa/results/same80_bits87654_R100_S5k_K3_F25k/stage_execution.json",
+        "stage_execution_sha256": "b635a64e5cb0e6d65ff94188b6c80dbec26157407c20ae13a10c13a7c676e603",
+        "phase_child_pid": 22048,
+        "error": "AttributeError: module 'qacpa.staged_fia' has no attribute '_device_state'"
+      },
+      "checkpoint_provenance": {
+        "task_id": "CPA_SAME80_BITS87654_R100_SCREEN3_20260926",
+        "plan_version": 1,
+        "authorization_handoff_sha256": "56fb37ce5f3bc06dc646782880b177ecd213bb49d1d75dedc87c9df258a738e5",
+        "registration_identity_sha256": "0dbbb8a40b3527374355ce728a4f4265b1debe94a3a938ef79c35edcbd49a581",
+        "stage_identity_sha256": "465704b1867229bf0c4e64eb83a4f9f1e0b87759ebda2a4beccd2b1b2d4f35ef",
+        "source_sha256": "572e882afdacd41002f22f91a1eec68f77dd3af16f8000a93a8be2527aec8e8c",
+        "sources_file_sha256": "a1b83a6096895c07e47cf0ff5cc85568328310457a58b4a8ae053ece6aca79e8",
+        "sources_tensor_sha256": "b68761d8dfb21dd1442a21622efb380aa2616dcaf571621488f253efa33e31e2",
+        "cpa_record_sha256": "187bfa4d5c2fcb0aedb1269a4b5fc88965434c341d9c2d6af0e611abebbcd23f",
+        "fia_manifest_sha256": "9ae62189a3b119f9ac0a462b55dd865dd177179816617ef040b8ac2cadb51ef4",
+        "attempt_ledger_sha256": "bad6ff9763e2e39feb70bb685eae8ff5d5b2a22847b0a93a10245b6dfb7c5bea",
+        "attempt_number": 1,
+        "completed_iterations": 25000,
+        "horizon": 25000,
+        "checkpoint_sha256": "b40e114e85317563996bad4b8e923c6ed1ed0548a3d0034ac9d54d154c65e6ff",
+        "checkpoint_image_sha256": "069720cb271ef4ed991eb6cbd67fd82344ac916be41ad4b984d85230e951f1e8",
+        "checkpoint_wall_time_sec": 1922.509845099994
+      },
+      "launched_worker_pid": 11808,
+      "launched_worker_created_ms": 1790429319044,
+      "launched_at_utc": "2026-09-26T13:28:39.044832+00:00"
+    }
+  ],
+  "last_authenticated_progress_at_utc": "2026-09-26T13:38:27.298293+00:00",
+  "disabled_at_utc": "2026-09-26T16:15:37.551390+00:00",
+  "disable_reason": "user requested stop"
+}

@@ -1,0 +1,259 @@
+{
+  "task_id": "CPA_SCREEN3_BASELINE_FIGURE_REPAIR_20260918",
+  "status": "COMPLETED_AVAILABLE_PENDING_PARENT",
+  "available_bits": [
+    8,
+    7,
+    6
+  ],
+  "pending_bits": [
+    5,
+    4
+  ],
+  "column_contracts_verified": true,
+  "final_columns": 5,
+  "screen_columns": 10,
+  "rows_per_sheet": 16,
+  "public_gate_authenticated": true,
+  "private_field_consumed": "x only",
+  "labels_consumed": false,
+  "metrics_recomputed": false,
+  "matching_recomputed": false,
+  "optimizer_steps": 0,
+  "old_figures_preserved": true,
+  "active_parent_not_modified": true,
+  "current_parent_task": "CPA_SIGNED_BITS7654_RECOVERY_20260918",
+  "entries": [
+    {
+      "bits": 8,
+      "evaluation_directory": "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results_private/signed_int8_screen3_repair_B16_T10_20260918/evaluation_final_20260918",
+      "comparison_json": "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results_private/signed_int8_screen3_repair_B16_T10_20260918/evaluation_final_20260918/comparison.json",
+      "comparison_sha256": "a548a78058069fe828c6d32076b90e0afcb07a49e77fa16a380bcf61c7185c35",
+      "selection": [
+        1,
+        7,
+        5
+      ],
+      "corrected_final_png": {
+        "path": "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results_private/signed_int8_screen3_repair_B16_T10_20260918/evaluation_final_20260918/figures_with_baseline_20260918/contact_sheet_b8_25000_with_baseline.png",
+        "sha256": "16bff4591b3b1ac4ce18110dd08c2d2872f98daa814ddfb5b9f31c4f104279d3",
+        "columns": [
+          "Ground truth",
+          "Naive dequantization baseline | 8-bit | center | 25000 steps",
+          "Public rank 1 | member 01 | 8-bit | 25000 steps",
+          "Public rank 2 | member 07 | 8-bit | 25000 steps",
+          "Public rank 3 | member 05 | 8-bit | 25000 steps"
+        ],
+        "column_count": 5,
+        "rows": 16,
+        "candidate_names": [
+          "center_25000",
+          "rank1_member_01_25000",
+          "rank2_member_07_25000",
+          "rank3_member_05_25000"
+        ],
+        "correspondence_reused": true,
+        "metrics_recomputed": false
+      },
+      "corrected_screen_png": {
+        "path": "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results_private/signed_int8_screen3_repair_B16_T10_20260918/evaluation_final_20260918/figures_with_baseline_20260918/contact_sheet_b8_5000_with_baseline.png",
+        "sha256": "f12c71dffe4d00ae6c80c29c95ddf57d9a9b237e16459309f36b892688d49751",
+        "columns": [
+          "Ground truth",
+          "Naive dequantization baseline | 8-bit | center | 5000 steps",
+          "member 00 | 8-bit | 5000 steps",
+          "member 01 | 8-bit | 5000 steps",
+          "member 02 | 8-bit | 5000 steps",
+          "member 03 | 8-bit | 5000 steps",
+          "member 04 | 8-bit | 5000 steps",
+          "member 05 | 8-bit | 5000 steps",
+          "member 06 | 8-bit | 5000 steps",
+          "member 07 | 8-bit | 5000 steps"
+        ],
+        "column_count": 10,
+        "rows": 16,
+        "candidate_names": [
+          "center_5000",
+          "member_00_5000",
+          "member_01_5000",
+          "member_02_5000",
+          "member_03_5000",
+          "member_04_5000",
+          "member_05_5000",
+          "member_06_5000",
+          "member_07_5000"
+        ],
+        "correspondence_reused": true,
+        "metrics_recomputed": false
+      },
+      "figure_manifest": "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results_private/signed_int8_screen3_repair_B16_T10_20260918/evaluation_final_20260918/figures_with_baseline_20260918/figure_manifest.json",
+      "old_figures": [
+        {
+          "path": "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results_private/signed_int8_screen3_repair_B16_T10_20260918/evaluation_final_20260918/contact_sheet_5000.png",
+          "sha256": "5090197aed0539330cdf773447a9491ba0ff47d64f67bc7f16f2f30eb2db9267",
+          "preserved": true
+        },
+        {
+          "path": "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results_private/signed_int8_screen3_repair_B16_T10_20260918/evaluation_final_20260918/contact_sheet_25000.png",
+          "sha256": "8e3c7fe490425c3e76c0a05439b9ab0be9604034091e8c361b487857357f1b36",
+          "preserved": true
+        }
+      ],
+      "numeric_metrics_unchanged": true
+    },
+    {
+      "bits": 7,
+      "evaluation_directory": "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results_private/signed_int7_randomized8_screen3_fia_B16_T10_20260918_sweep/evaluation_recovery_20260918",
+      "comparison_json": "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results_private/signed_int7_randomized8_screen3_fia_B16_T10_20260918_sweep/evaluation_recovery_20260918/comparison.json",
+      "comparison_sha256": "71b178bbcc3a88deb992af1e3b1613bc2ff0ac419a84bdcbc3c4a2febfc64e86",
+      "selection": [
+        0,
+        5,
+        3
+      ],
+      "corrected_final_png": {
+        "path": "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results_private/signed_int7_randomized8_screen3_fia_B16_T10_20260918_sweep/evaluation_recovery_20260918/figures_with_baseline_20260918/contact_sheet_b7_25000_with_baseline.png",
+        "sha256": "29ad12ffe3a35658b6cba25d70cbe986b73dd7ca0a4a031c0096d59a7ff9f6c5",
+        "columns": [
+          "Ground truth",
+          "Naive dequantization baseline | 7-bit | center | 25000 steps",
+          "Public rank 1 | member 00 | 7-bit | 25000 steps",
+          "Public rank 2 | member 05 | 7-bit | 25000 steps",
+          "Public rank 3 | member 03 | 7-bit | 25000 steps"
+        ],
+        "column_count": 5,
+        "rows": 16,
+        "candidate_names": [
+          "center_25000",
+          "rank1_member_00_25000",
+          "rank2_member_05_25000",
+          "rank3_member_03_25000"
+        ],
+        "correspondence_reused": true,
+        "metrics_recomputed": false
+      },
+      "corrected_screen_png": {
+        "path": "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results_private/signed_int7_randomized8_screen3_fia_B16_T10_20260918_sweep/evaluation_recovery_20260918/figures_with_baseline_20260918/contact_sheet_b7_5000_with_baseline.png",
+        "sha256": "3c7e53385d4cddf3953cbbcc2e2954ccf8c3b82e8e9c83f1ccbb6cf3c1c79637",
+        "columns": [
+          "Ground truth",
+          "Naive dequantization baseline | 7-bit | center | 5000 steps",
+          "member 00 | 7-bit | 5000 steps",
+          "member 01 | 7-bit | 5000 steps",
+          "member 02 | 7-bit | 5000 steps",
+          "member 03 | 7-bit | 5000 steps",
+          "member 04 | 7-bit | 5000 steps",
+          "member 05 | 7-bit | 5000 steps",
+          "member 06 | 7-bit | 5000 steps",
+          "member 07 | 7-bit | 5000 steps"
+        ],
+        "column_count": 10,
+        "rows": 16,
+        "candidate_names": [
+          "center_5000",
+          "member_00_5000",
+          "member_01_5000",
+          "member_02_5000",
+          "member_03_5000",
+          "member_04_5000",
+          "member_05_5000",
+          "member_06_5000",
+          "member_07_5000"
+        ],
+        "correspondence_reused": true,
+        "metrics_recomputed": false
+      },
+      "figure_manifest": "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results_private/signed_int7_randomized8_screen3_fia_B16_T10_20260918_sweep/evaluation_recovery_20260918/figures_with_baseline_20260918/figure_manifest.json",
+      "old_figures": [
+        {
+          "path": "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results_private/signed_int7_randomized8_screen3_fia_B16_T10_20260918_sweep/evaluation_recovery_20260918/contact_sheet_b7_5000.png",
+          "sha256": "a12641ee0af14719e9f7cd3e3cbc24a1c1f2d82d63536659d47fc2d9dde90e56",
+          "preserved": true
+        },
+        {
+          "path": "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results_private/signed_int7_randomized8_screen3_fia_B16_T10_20260918_sweep/evaluation_recovery_20260918/contact_sheet_b7_25000.png",
+          "sha256": "2136b8545eb98a5fd4424ae985482de73e4e1f856daacf291ab523021f14b83e",
+          "preserved": true
+        }
+      ],
+      "numeric_metrics_unchanged": true
+    },
+    {
+      "bits": 6,
+      "evaluation_directory": "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results_private/signed_int6_randomized8_screen3_fia_B16_T10_20260918_sweep/evaluation_recovery_20260918",
+      "comparison_json": "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results_private/signed_int6_randomized8_screen3_fia_B16_T10_20260918_sweep/evaluation_recovery_20260918/comparison.json",
+      "comparison_sha256": "9d44ec6a1eaefefc16151c5463bf365ed72575ab7ff7953e0cbde2ab10fb4b0d",
+      "selection": [
+        1,
+        3,
+        4
+      ],
+      "corrected_final_png": {
+        "path": "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results_private/signed_int6_randomized8_screen3_fia_B16_T10_20260918_sweep/evaluation_recovery_20260918/figures_with_baseline_20260918/contact_sheet_b6_25000_with_baseline.png",
+        "sha256": "02e5d898ccd89d741e7e775cc204b29a520604474ab61c9e849d1d62237e0c54",
+        "columns": [
+          "Ground truth",
+          "Naive dequantization baseline | 6-bit | center | 25000 steps",
+          "Public rank 1 | member 01 | 6-bit | 25000 steps",
+          "Public rank 2 | member 03 | 6-bit | 25000 steps",
+          "Public rank 3 | member 04 | 6-bit | 25000 steps"
+        ],
+        "column_count": 5,
+        "rows": 16,
+        "candidate_names": [
+          "center_25000",
+          "rank1_member_01_25000",
+          "rank2_member_03_25000",
+          "rank3_member_04_25000"
+        ],
+        "correspondence_reused": true,
+        "metrics_recomputed": false
+      },
+      "corrected_screen_png": {
+        "path": "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results_private/signed_int6_randomized8_screen3_fia_B16_T10_20260918_sweep/evaluation_recovery_20260918/figures_with_baseline_20260918/contact_sheet_b6_5000_with_baseline.png",
+        "sha256": "afc5736b1863fb4adbadfd5e8391a5b7bfa29f86af60364e9504118b012ceb81",
+        "columns": [
+          "Ground truth",
+          "Naive dequantization baseline | 6-bit | center | 5000 steps",
+          "member 00 | 6-bit | 5000 steps",
+          "member 01 | 6-bit | 5000 steps",
+          "member 02 | 6-bit | 5000 steps",
+          "member 03 | 6-bit | 5000 steps",
+          "member 04 | 6-bit | 5000 steps",
+          "member 05 | 6-bit | 5000 steps",
+          "member 06 | 6-bit | 5000 steps",
+          "member 07 | 6-bit | 5000 steps"
+        ],
+        "column_count": 10,
+        "rows": 16,
+        "candidate_names": [
+          "center_5000",
+          "member_00_5000",
+          "member_01_5000",
+          "member_02_5000",
+          "member_03_5000",
+          "member_04_5000",
+          "member_05_5000",
+          "member_06_5000",
+          "member_07_5000"
+        ],
+        "correspondence_reused": true,
+        "metrics_recomputed": false
+      },
+      "figure_manifest": "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results_private/signed_int6_randomized8_screen3_fia_B16_T10_20260918_sweep/evaluation_recovery_20260918/figures_with_baseline_20260918/figure_manifest.json",
+      "old_figures": [
+        {
+          "path": "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results_private/signed_int6_randomized8_screen3_fia_B16_T10_20260918_sweep/evaluation_recovery_20260918/contact_sheet_b6_5000.png",
+          "sha256": "56d14d41ca92173bb4957f651177b965460b1d3db3d21f141240c3df3bb6aa7d",
+          "preserved": true
+        },
+        {
+          "path": "C:/Users/조상제/Desktop/CPA/quantization_aware_cpa/results_private/signed_int6_randomized8_screen3_fia_B16_T10_20260918_sweep/evaluation_recovery_20260918/contact_sheet_b6_25000.png",
+          "sha256": "a2a0cd159b09c1528e506ba68fba9e6969893cb44265ebfc6e419ee93a683f14",
+          "preserved": true
+        }
+      ],
+      "numeric_metrics_unchanged": true
+    }
+  ]
+}

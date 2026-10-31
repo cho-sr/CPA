@@ -1,0 +1,23 @@
+SESSION_ROLE: CODEX_EXECUTOR
+TASK_ID: CPA_SIGNED_COMBINATION_ICA_REVIEW_20260917
+RESULT_STATUS: COMPLETED
+
+The one canonical-runtime frozen comparison review completed successfully. The unchanged evaluator was invoked exactly once after configure_runtime(42, threads=1), with no optimizer steps, FC replay, separator/FIA run, new arm, tuning, download, or second attempt. Evaluation took 40.6040567 seconds; wrapper wall time was 44.9851397 seconds. Parent cumulative time became 2375.7738148 seconds within the original 2700-second cap.
+
+PUBLIC_GATE_PASSED before private loading. The private bundle was consumed as x only; labels_consumed=false and true_updates_consumed=false. All four frozen 16-image candidate sets were evaluated with one pixel-MSE Hungarian correspondence per candidate reused for all metrics and the aligned figure. Public inputs, candidates, parent metadata, protected/shared sources, checkpoint and LPIPS weights remained byte-identical.
+
+Canonical runtime restored both archived controls exactly within the unchanged 2e-8 mean-metric tolerance:
+original_separator_direct vs x0: MSE/PSNR/SSIM/LPIPS residuals all 0.0.
+original_separator_cell vs B_H1_high: MSE/PSNR/SSIM/LPIPS residuals all 0.0.
+Both control correspondences match; all per-image residuals and LPIPS float32-spacing residuals are zero. The four-set metrics and three predeclared contrasts are in the review comparison.
+
+Exact cell feasibility remains false independently of metric reproduction. The new final endpoint retains 995058 fixed-scale code mismatches and 995058 bounded-cell violations. This is not a recovery-success claim.
+
+Final review report: .ai/execution-results/CPA_SIGNED_COMBINATION_ICA_REVIEW_20260917/report.md
+Execution summary: .ai/execution-results/CPA_SIGNED_COMBINATION_ICA_REVIEW_20260917/execution_summary.json
+Review results: .ai/execution-results/CPA_SIGNED_COMBINATION_ICA_REVIEW_20260917/review_results.json
+Review comparison: quantization_aware_cpa/results_private/signed_combination_ica_B16_T10_20260916/review_20260917/comparison.json
+Figure: quantization_aware_cpa/results_private/signed_combination_ica_B16_T10_20260916/review_20260917/all16_comparison.png
+Integrity: .ai/execution-results/CPA_SIGNED_COMBINATION_ICA_REVIEW_20260917/before_after_integrity.json
+
+The callback launch failed before reservation because the temporary peer JSON had a UTF-8 BOM; evidence is preserved in callback_launch_receipt_bom_failure.json and completion_callback_stderr.log. The peer file was restored, and this is the single final result delivery to Planner. Please show this result once and end your turn. Do not poll or start new work.

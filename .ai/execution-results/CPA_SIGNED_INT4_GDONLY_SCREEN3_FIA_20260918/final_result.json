@@ -1,0 +1,36 @@
+{
+  "task_id": "CPA_SIGNED_INT4_GDONLY_SCREEN3_FIA_20260918",
+  "status": "COMPLETED",
+  "completed_at": "2026-09-18T13:44:25.306083+00:00",
+  "public_gate": "PUBLIC_GATE_PASSED",
+  "candidate_count": 17,
+  "selection": [
+    2,
+    4,
+    1
+  ],
+  "optimizer_steps_added": 0,
+  "new_fia_updates": 125000,
+  "separation_calls": 9,
+  "controls_reproduced": true,
+  "control_max_abs_residual": 0.0,
+  "private_x_only": true,
+  "labels_consumed": false,
+  "actual_image_cell_feasibility": "NOT_EVALUATED",
+  "primary_contrast": {
+    "mean_mse": 0.0003091541728981323,
+    "mean_psnr_db": -0.04517088776186107,
+    "mean_ssim": -0.028058447073330217,
+    "mean_lpips": 0.00924677774310112
+  },
+  "public_root": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results\\signed_int4_gdonly_randomized8_screen3_fia_B16_T10_20260918",
+  "evaluation_report": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results_private\\signed_int4_gdonly_randomized8_screen3_fia_B16_T10_20260918\\evaluation_repair_20260918\\report.md",
+  "comparison": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results_private\\signed_int4_gdonly_randomized8_screen3_fia_B16_T10_20260918\\evaluation_repair_20260918\\comparison.json",
+  "figure_manifest": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results_private\\signed_int4_gdonly_randomized8_screen3_fia_B16_T10_20260918\\evaluation_repair_20260918\\figure_manifest.json",
+  "slide_overview": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results_private\\signed_int4_gdonly_randomized8_screen3_fia_B16_T10_20260918\\evaluation_repair_20260918\\slide_png\\int4_gdonly_25000_overview.png",
+  "slide_zip": "C:\\Users\\조상제\\Desktop\\CPA\\quantization_aware_cpa\\results_private\\signed_int4_gdonly_randomized8_screen3_fia_B16_T10_20260918\\evaluation_repair_20260918\\slide_png_int4_gdonly_20260918.zip",
+  "failed_wrapper_evidence": "C:\\Users\\조상제\\Desktop\\CPA\\.ai\\execution-results\\CPA_SIGNED_INT4_GDONLY_SCREEN3_FIA_20260918\\failure.json",
+  "evaluation_repair_provenance": "C:\\Users\\조상제\\Desktop\\CPA\\.ai\\execution-results\\CPA_SIGNED_INT4_GDONLY_SCREEN3_FIA_20260918\\evaluation_repair_provenance.json",
+  "planner_notice": "QUEUED",
+  "planner_message_id": "01a0b4c3-408d-7f32-938f-4d1e419b3ea2"
+}

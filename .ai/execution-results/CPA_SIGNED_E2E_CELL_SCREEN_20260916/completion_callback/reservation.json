@@ -1,0 +1,9 @@
+{
+  "task_id": "CPA_SIGNED_E2E_CELL_SCREEN_20260916",
+  "wait_pid": 12380,
+  "process_created_ms": 1789542848446,
+  "executor_thread": "01a0a799-f1ce-7b31-8c46-b4ddef40aeab",
+  "state": "WAITING_FOR_PROCESS_EXIT",
+  "model_calls_while_waiting": 0,
+  "registered_at": "2026-09-16T07:14:08.533692+00:00"
+}

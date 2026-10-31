@@ -1,0 +1,923 @@
+{
+  "schema_version": 1,
+  "run_tag": "m10_cpa_fia_packed4_same80_B16",
+  "n_images": 80,
+  "git_sha": "437013a234e92e882fb6744a64995b0ab812841c",
+  "identity": {
+    "config_sha256": "ec7bf7dc4713204b3e4827206cd8726f3185772c2e66666691ab0d1f22deb509",
+    "code_sha256": {
+      "quantization_aware_cpa\\qacpa\\run_m10_packed4_same80.py": "d901524ebff81343aeb5f9ade6341d2e5a21fa0e81911b5ee214f6c4a0e48b2f",
+      "quantization_aware_cpa\\qacpa\\report_m10_packed4_same80.py": "1e54b9e42c8fc10c7d2c6db7297d713f6391ecc62d50415533bde7828d9b1d84",
+      "quantization_aware_cpa\\qacpa\\run_m10_packed4.py": "fcdcd2dd08985aaa5d6a9c31aee9ae414e97ee9c610501a0af8f3fc9438f0aa4",
+      "quantization_aware_cpa\\qacpa\\report_m10_packed4.py": "09a8b62ed2a65c51e423fe982cfdb2b20782372abe0cb43a1bed4c864d58265e",
+      "quantization_aware_cpa\\qacpa\\communication_codec.py": "7ea86955bf7d5516699111de76ffbe41d7b1a5e58167e5d1a8507a590b669d33",
+      "quantization_aware_cpa\\qacpa\\run_m6_uia_fp32_fia.py": "e00319498504257c91697918bf61e7794ee1fe75a48bdb2483c768f596f1bae6",
+      "quantization_aware_cpa\\qacpa\\run_m8_fedavg_naive.py": "0ea71db00a7e20e9ee9309215fbfa47c84f83290f9ca7027e3bec09ca2ea65f3",
+      "quantization_aware_cpa\\qacpa\\upstream_naive.py": "8f29b885d86f4121eda5c55e17486a3a48bd8db08b2f83890fe7726730d1ee92",
+      "quantization_aware_cpa\\qacpa\\uia.py": "fe19894d8a340e6bdfc56b83c26da516f2414a87c1cbe3fbe3e4620fcdd580c3",
+      "quantization_aware_cpa\\qacpa\\victim.py": "fdd40fd5c5062761872dc3bdd8dd4e750ccc188ce0050baf6330fad7e080874b",
+      "quantization_aware_cpa\\qacpa\\fia.py": "42a55ce6a4895785b10573f507658434e597f1138de3d45621f466702c7f5cb0",
+      "quantization_aware_cpa\\qacpa\\seed.py": "769366fcc2cf3e144d8caa86f73a55dcb0b6be615a45dab8b6e117399150c558",
+      "official_cpa\\src\\attack.py": "d2984fcab6708d1c28bec7c36c7792d40b01b7b4bd150316263f6f8bbd6b3816",
+      "official_cpa\\src\\collect_grads.py": "4d39b5e4bcbebe36dd8131d6c4a5ec0456e7e9de51f7301c0b5079a04aa436e6",
+      "official_cpa\\src\\collect_updates.py": "78a07e3f872231cb582c828eb315bb3c04976bc2f36fdecae5bdb6c17d7f6177",
+      "official_cpa\\src\\datasets.py": "f9e7b47733b5acb4b73e6914a3f100b5187766bbed78a12d17b69c39eec1b6d1",
+      "official_cpa\\src\\eval_utils.py": "042e6263905b32044290e2e1e4d93c54ebcb8e813509c27cf76bdd23b00ec349",
+      "official_cpa\\src\\feature_inversion.py": "dc73880427e3eaf1f873d295f17f1d48d301882f634ee5df36ddeea8e56c4dec",
+      "official_cpa\\src\\gradient_inversion.py": "c598e1ee7b4079f741060d10c8dfd14711e393a97384c63cf32be77a458b1873",
+      "official_cpa\\src\\gradient_inversion_utils.py": "668d77788dc8d81c181c8c0a9fbe8533c6fbea22ba46fe7f5e15b0a431300e5f",
+      "official_cpa\\src\\log_utils.py": "70ced512bcd2de0e6e52d34a5cb9ca34ae7877a0b220b044fce12e48c422cd80",
+      "official_cpa\\src\\models.py": "f684ca948a8ba8020d82cba3d2bdc5df731dd51d9807e38c5be37a3feab4ee56",
+      "official_cpa\\src\\report_m6_attack_results.py": "ce40db9745aebc515c5d52a031d3a4b2806e74edf9068ab26291094ba6455fa4",
+      "official_cpa\\src\\train.py": "a054cbe9c855b05bba9c808a59524c019b6549dde04c432a6e1906448d125bf1",
+      "official_cpa\\src\\utils.py": "565f1bf1a47f387d042b35bb24f677d1ff0d3ec5d979e2876c31ed114179b9fe",
+      "official_cpa\\src\\vgg16.py": "8114eca8cde553dace5f777aedd21b70851c570d473e597b005cb6be4b248d36",
+      "quantization_aware_cpa\\scripts\\launch_m10_packed4_same80.ps1": "70a41e279c3e9a04e038fe861f0558599ff2010e31e214f7adda63a5163b93dd"
+    },
+    "source_summary_sha256": "1f85b5750c6171e0259160c48731dc7646fb3f7a5b9c59b8c06b0478bd2f4ad0",
+    "historical_summary_sha256": "a3ab0e90b2b08ce889fd5a327b139a64ad6bb863892ee0c5dac9dcbe7c06a197",
+    "design_sha256": "f923a99c0f29543e24b3a2ab7a89dd7b37fe02e95d3ff1163dba935d0e160350",
+    "weights_sha256": "397923af8e79cdbb6a7127f12361acd7a2f83e06b05044ddf496e83de57a5bf0",
+    "versions": {
+      "torch": "2.13.0+cu132",
+      "numpy": "2.4.4"
+    }
+  },
+  "inputs_sha256": {
+    "results\\m6_uia_fp32_B16_fia\\summary.json": "1f85b5750c6171e0259160c48731dc7646fb3f7a5b9c59b8c06b0478bd2f4ad0",
+    "results\\m8_fedavg_naive_cpa_dither4_B16\\summary.json": "a3ab0e90b2b08ce889fd5a327b139a64ad6bb863892ee0c5dac9dcbe7c06a197",
+    "results\\m8_fedavg_naive_cpa_dither4_B16\\per_image_metrics.csv": "e2c977977fa8fe305cb781118d1b68f005d4843db5d42c7de8d9356041ffbaed",
+    "configs\\m10_compression_only_B16.protocol.json": "f923a99c0f29543e24b3a2ab7a89dd7b37fe02e95d3ff1163dba935d0e160350",
+    "results\\m6_uia_fp32_B16_fia\\batch00\\inputs.pt": "24995487511a3e9d8d4665fdcd704f7a0f792249a9ba79880638d13bc4740141",
+    "results\\m6_uia_fp32_B16_fia\\batch00\\inputs.meta.json": "9b05f45cdaed0f7fffbf273cd466fbb881de26b1649a30b4fff8946b63526f18",
+    "results\\m6_uia_fp32_B16_fia\\batch00\\observation.pt": "b4de671b85c76786e311acc32e494a08bd6176b67c9d74b3686d9b771b017e54",
+    "results\\m6_uia_fp32_B16_fia\\batch00\\observation.meta.json": "3f92e87c963fd8ea21ccd5293f717c4957c75faa15e52fc35df8def0c32e1a41",
+    "results\\m6_uia_fp32_B16_fia\\batch00\\summary.json": "b21f7a9d9012d17a061341ac55797b874f4a92eda2684235065613a1468e8d47",
+    "results\\m6_uia_fp32_B16_fia\\batch01\\inputs.pt": "2f8db846205dda931162ca171282b8372a41bf8d3061c66bb6c83f65c7f20088",
+    "results\\m6_uia_fp32_B16_fia\\batch01\\inputs.meta.json": "2eb526f25ebff4414087e8e0fc28ad9d7e47154ede05a3edb6aceef45d7fc4dc",
+    "results\\m6_uia_fp32_B16_fia\\batch01\\observation.pt": "39168d7b8239e8521fbbb213031565340680daacfb8ff6ba1bee2aa4aaef1165",
+    "results\\m6_uia_fp32_B16_fia\\batch01\\observation.meta.json": "e5e40897a0f12b20bd733979fd605099de02bd1377aaccc55869f2392e43ff78",
+    "results\\m6_uia_fp32_B16_fia\\batch01\\summary.json": "5c411885fed8c5a6b3ca5fd8c5e48aebc7c2c57ed03ba8dc082c2625c494dcae",
+    "results\\m6_uia_fp32_B16_fia\\batch02\\inputs.pt": "1f1c898c93b7e0fcf4c00fecbb88fce2f913b4d4ed298aa21479a851c3284db3",
+    "results\\m6_uia_fp32_B16_fia\\batch02\\inputs.meta.json": "dee7ea0f7d1f9aed04fe46994a19ea1d4bac88f692153cc000eb99cd4c4d837b",
+    "results\\m6_uia_fp32_B16_fia\\batch02\\observation.pt": "3ddcd6ef311c0f97dc7a461636973fcb8a1b160e10b5b6b9acf8d2c1b15548c2",
+    "results\\m6_uia_fp32_B16_fia\\batch02\\observation.meta.json": "328c103f48f51869fdfdc6c56cdb56cd57f31bf0b2f0b634eea0f795678a5e15",
+    "results\\m6_uia_fp32_B16_fia\\batch02\\summary.json": "38dbc35a8e152c303274a73c58d25749602ef614a4661ff0b309f5185d10e665",
+    "results\\m6_uia_fp32_B16_fia\\batch03\\inputs.pt": "ebdbd1774a320767a40f22c698260b4e3a9ac7ad4b69c2a92b987fe4318d570a",
+    "results\\m6_uia_fp32_B16_fia\\batch03\\inputs.meta.json": "b5f018aff020ed8cb6779f95d9933b6ac1ecfd661fec5b3af937b0d643a23569",
+    "results\\m6_uia_fp32_B16_fia\\batch03\\observation.pt": "cda34d3f8bed30feab5ccb03ea183488bca0ea87aab3004a76558566bd4e75a1",
+    "results\\m6_uia_fp32_B16_fia\\batch03\\observation.meta.json": "880e2bd7cb599b191a960fe17adf35e34f7b4426ba451de98b5a37878e42d9b0",
+    "results\\m6_uia_fp32_B16_fia\\batch03\\summary.json": "67a35cee65672688a438035cb53b05e368625a4a2ffae15458aca00e322245f6",
+    "results\\m6_uia_fp32_B16_fia\\batch04\\inputs.pt": "6c30802ecdeb7c679e28f47b00e59f016464a3e850cca23fd5a396448ceae20f",
+    "results\\m6_uia_fp32_B16_fia\\batch04\\inputs.meta.json": "ed2061f0fcda483b541eda0d35b73326e649767a575a0e75c0f7f250cd00985d",
+    "results\\m6_uia_fp32_B16_fia\\batch04\\observation.pt": "2d7d22f8364fc119d5c660f8bd0d1db583a64788fb3c66f02e7779ece1bb2e0b",
+    "results\\m6_uia_fp32_B16_fia\\batch04\\observation.meta.json": "03683ecbd0cd4b2890a961c625ec590114b01517ec9cbf1103305e2b6611f527",
+    "results\\m6_uia_fp32_B16_fia\\batch04\\summary.json": "3a741858d15ff06fc4942509e045e220c2560115aae8628b315d0c5950ea7887"
+  },
+  "metadata": [
+    {
+      "global_index": 0,
+      "batch_index": 0,
+      "source_index": 0,
+      "dataset_index": 21950,
+      "label": 439,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n02817516\\ILSVRC2012_val_00001048.JPEG",
+      "initial_per_sample_loss": 0.006558678112924099
+    },
+    {
+      "global_index": 1,
+      "batch_index": 0,
+      "source_index": 1,
+      "dataset_index": 31051,
+      "label": 621,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n03649909\\ILSVRC2012_val_00001433.JPEG",
+      "initial_per_sample_loss": 1.8839209079742432
+    },
+    {
+      "global_index": 2,
+      "batch_index": 0,
+      "source_index": 2,
+      "dataset_index": 8002,
+      "label": 160,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n02088094\\ILSVRC2012_val_00005507.JPEG",
+      "initial_per_sample_loss": 0.14922575652599335
+    },
+    {
+      "global_index": 3,
+      "batch_index": 0,
+      "source_index": 3,
+      "dataset_index": 27453,
+      "label": 549,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n03291819\\ILSVRC2012_val_00004047.JPEG",
+      "initial_per_sample_loss": 0.2141835242509842
+    },
+    {
+      "global_index": 4,
+      "batch_index": 0,
+      "source_index": 4,
+      "dataset_index": 11854,
+      "label": 237,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n02107312\\ILSVRC2012_val_00005242.JPEG",
+      "initial_per_sample_loss": 0.03428862988948822
+    },
+    {
+      "global_index": 5,
+      "batch_index": 0,
+      "source_index": 5,
+      "dataset_index": 19455,
+      "label": 389,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n02514041\\ILSVRC2012_val_00004576.JPEG",
+      "initial_per_sample_loss": 0.4333776831626892
+    },
+    {
+      "global_index": 6,
+      "batch_index": 0,
+      "source_index": 6,
+      "dataset_index": 32906,
+      "label": 658,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n03775071\\ILSVRC2012_val_00014326.JPEG",
+      "initial_per_sample_loss": 2.0438809394836426
+    },
+    {
+      "global_index": 7,
+      "batch_index": 0,
+      "source_index": 7,
+      "dataset_index": 25357,
+      "label": 507,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n03075370\\ILSVRC2012_val_00007817.JPEG",
+      "initial_per_sample_loss": 3.0688400268554688
+    },
+    {
+      "global_index": 8,
+      "batch_index": 0,
+      "source_index": 8,
+      "dataset_index": 6208,
+      "label": 124,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n01985128\\ILSVRC2012_val_00004665.JPEG",
+      "initial_per_sample_loss": 0.2700023353099823
+    },
+    {
+      "global_index": 9,
+      "batch_index": 0,
+      "source_index": 9,
+      "dataset_index": 14509,
+      "label": 290,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n02128925\\ILSVRC2012_val_00012411.JPEG",
+      "initial_per_sample_loss": 0.4991302788257599
+    },
+    {
+      "global_index": 10,
+      "batch_index": 0,
+      "source_index": 10,
+      "dataset_index": 48760,
+      "label": 975,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n09332890\\ILSVRC2012_val_00012261.JPEG",
+      "initial_per_sample_loss": 0.21352560818195343
+    },
+    {
+      "global_index": 11,
+      "batch_index": 0,
+      "source_index": 11,
+      "dataset_index": 19611,
+      "label": 392,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n02606052\\ILSVRC2012_val_00008490.JPEG",
+      "initial_per_sample_loss": 0.00025996167096309364
+    },
+    {
+      "global_index": 12,
+      "batch_index": 0,
+      "source_index": 12,
+      "dataset_index": 11562,
+      "label": 231,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n02106030\\ILSVRC2012_val_00015294.JPEG",
+      "initial_per_sample_loss": 0.0994042307138443
+    },
+    {
+      "global_index": 13,
+      "batch_index": 0,
+      "source_index": 13,
+      "dataset_index": 48463,
+      "label": 969,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n07932039\\ILSVRC2012_val_00012565.JPEG",
+      "initial_per_sample_loss": 0.24580030143260956
+    },
+    {
+      "global_index": 14,
+      "batch_index": 0,
+      "source_index": 14,
+      "dataset_index": 17714,
+      "label": 354,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n02437312\\ILSVRC2012_val_00015872.JPEG",
+      "initial_per_sample_loss": 0.00029797881143167615
+    },
+    {
+      "global_index": 15,
+      "batch_index": 0,
+      "source_index": 15,
+      "dataset_index": 32865,
+      "label": 657,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n03773504\\ILSVRC2012_val_00016588.JPEG",
+      "initial_per_sample_loss": 1.1281647682189941
+    },
+    {
+      "global_index": 16,
+      "batch_index": 1,
+      "source_index": 0,
+      "dataset_index": 45723,
+      "label": 914,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n04612504\\ILSVRC2012_val_00021209.JPEG",
+      "initial_per_sample_loss": 0.0050996229983866215
+    },
+    {
+      "global_index": 17,
+      "batch_index": 1,
+      "source_index": 1,
+      "dataset_index": 35974,
+      "label": 719,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n03935335\\ILSVRC2012_val_00027469.JPEG",
+      "initial_per_sample_loss": 7.72914981842041
+    },
+    {
+      "global_index": 18,
+      "batch_index": 1,
+      "source_index": 2,
+      "dataset_index": 15125,
+      "label": 302,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n02167151\\ILSVRC2012_val_00025224.JPEG",
+      "initial_per_sample_loss": 1.2989099025726318
+    },
+    {
+      "global_index": 19,
+      "batch_index": 1,
+      "source_index": 3,
+      "dataset_index": 5476,
+      "label": 109,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n01917289\\ILSVRC2012_val_00032351.JPEG",
+      "initial_per_sample_loss": 0.015518858097493649
+    },
+    {
+      "global_index": 20,
+      "batch_index": 1,
+      "source_index": 4,
+      "dataset_index": 25427,
+      "label": 508,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n03085013\\ILSVRC2012_val_00027181.JPEG",
+      "initial_per_sample_loss": 0.043260008096694946
+    },
+    {
+      "global_index": 21,
+      "batch_index": 1,
+      "source_index": 5,
+      "dataset_index": 37728,
+      "label": 754,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n04041544\\ILSVRC2012_val_00028245.JPEG",
+      "initial_per_sample_loss": 0.8941110968589783
+    },
+    {
+      "global_index": 22,
+      "batch_index": 1,
+      "source_index": 6,
+      "dataset_index": 28829,
+      "label": 576,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n03447447\\ILSVRC2012_val_00027865.JPEG",
+      "initial_per_sample_loss": 5.960462772236497e-07
+    },
+    {
+      "global_index": 23,
+      "batch_index": 1,
+      "source_index": 7,
+      "dataset_index": 330,
+      "label": 6,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n01498041\\ILSVRC2012_val_00036118.JPEG",
+      "initial_per_sample_loss": 1.389937162399292
+    },
+    {
+      "global_index": 24,
+      "batch_index": 1,
+      "source_index": 8,
+      "dataset_index": 41631,
+      "label": 832,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n04346328\\ILSVRC2012_val_00024094.JPEG",
+      "initial_per_sample_loss": 0.0015220972709357738
+    },
+    {
+      "global_index": 25,
+      "batch_index": 1,
+      "source_index": 9,
+      "dataset_index": 12182,
+      "label": 243,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n02108422\\ILSVRC2012_val_00026027.JPEG",
+      "initial_per_sample_loss": 0.5157827138900757
+    },
+    {
+      "global_index": 26,
+      "batch_index": 1,
+      "source_index": 10,
+      "dataset_index": 17983,
+      "label": 359,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n02443484\\ILSVRC2012_val_00036439.JPEG",
+      "initial_per_sample_loss": 0.6298207640647888
+    },
+    {
+      "global_index": 27,
+      "batch_index": 1,
+      "source_index": 11,
+      "dataset_index": 35534,
+      "label": 710,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n03908714\\ILSVRC2012_val_00036558.JPEG",
+      "initial_per_sample_loss": 0.29362285137176514
+    },
+    {
+      "global_index": 28,
+      "batch_index": 1,
+      "source_index": 12,
+      "dataset_index": 1735,
+      "label": 34,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n01665541\\ILSVRC2012_val_00035905.JPEG",
+      "initial_per_sample_loss": 0.001989767886698246
+    },
+    {
+      "global_index": 29,
+      "batch_index": 1,
+      "source_index": 13,
+      "dataset_index": 2736,
+      "label": 54,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n01729322\\ILSVRC2012_val_00038365.JPEG",
+      "initial_per_sample_loss": 0.97261643409729
+    },
+    {
+      "global_index": 30,
+      "batch_index": 1,
+      "source_index": 14,
+      "dataset_index": 19987,
+      "label": 399,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n02667093\\ILSVRC2012_val_00040700.JPEG",
+      "initial_per_sample_loss": 0.0013872295385226607
+    },
+    {
+      "global_index": 31,
+      "batch_index": 1,
+      "source_index": 15,
+      "dataset_index": 27988,
+      "label": 559,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n03376595\\ILSVRC2012_val_00040576.JPEG",
+      "initial_per_sample_loss": 4.238031387329102
+    },
+    {
+      "global_index": 32,
+      "batch_index": 2,
+      "source_index": 0,
+      "dataset_index": 26096,
+      "label": 521,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n03133878\\ILSVRC2012_val_00044789.JPEG",
+      "initial_per_sample_loss": 0.0011250602547079325
+    },
+    {
+      "global_index": 33,
+      "batch_index": 2,
+      "source_index": 1,
+      "dataset_index": 43747,
+      "label": 874,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n04487081\\ILSVRC2012_val_00044849.JPEG",
+      "initial_per_sample_loss": 0.000198821333469823
+    },
+    {
+      "global_index": 34,
+      "batch_index": 2,
+      "source_index": 2,
+      "dataset_index": 43798,
+      "label": 875,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n04487394\\ILSVRC2012_val_00048169.JPEG",
+      "initial_per_sample_loss": 0.37584054470062256
+    },
+    {
+      "global_index": 35,
+      "batch_index": 2,
+      "source_index": 3,
+      "dataset_index": 29599,
+      "label": 591,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n03485794\\ILSVRC2012_val_00049825.JPEG",
+      "initial_per_sample_loss": 0.07488778233528137
+    },
+    {
+      "global_index": 36,
+      "batch_index": 2,
+      "source_index": 4,
+      "dataset_index": 6850,
+      "label": 137,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n02018207\\ILSVRC2012_val_00000825.JPEG",
+      "initial_per_sample_loss": 0.05932094156742096
+    },
+    {
+      "global_index": 37,
+      "batch_index": 2,
+      "source_index": 5,
+      "dataset_index": 39651,
+      "label": 793,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n04209133\\ILSVRC2012_val_00002465.JPEG",
+      "initial_per_sample_loss": 0.39948201179504395
+    },
+    {
+      "global_index": 38,
+      "batch_index": 2,
+      "source_index": 6,
+      "dataset_index": 17452,
+      "label": 349,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n02415577\\ILSVRC2012_val_00001279.JPEG",
+      "initial_per_sample_loss": 0.6740284562110901
+    },
+    {
+      "global_index": 39,
+      "batch_index": 2,
+      "source_index": 7,
+      "dataset_index": 39103,
+      "label": 782,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n04152593\\ILSVRC2012_val_00002598.JPEG",
+      "initial_per_sample_loss": 1.9826552867889404
+    },
+    {
+      "global_index": 40,
+      "batch_index": 2,
+      "source_index": 8,
+      "dataset_index": 47554,
+      "label": 951,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n07749582\\ILSVRC2012_val_00002363.JPEG",
+      "initial_per_sample_loss": 0.36380138993263245
+    },
+    {
+      "global_index": 41,
+      "batch_index": 2,
+      "source_index": 9,
+      "dataset_index": 49455,
+      "label": 989,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n12620546\\ILSVRC2012_val_00006863.JPEG",
+      "initial_per_sample_loss": 0.022732380777597427
+    },
+    {
+      "global_index": 42,
+      "batch_index": 2,
+      "source_index": 10,
+      "dataset_index": 6406,
+      "label": 128,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n02002724\\ILSVRC2012_val_00006487.JPEG",
+      "initial_per_sample_loss": 0.22738392651081085
+    },
+    {
+      "global_index": 43,
+      "batch_index": 2,
+      "source_index": 11,
+      "dataset_index": 11507,
+      "label": 230,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n02105855\\ILSVRC2012_val_00003810.JPEG",
+      "initial_per_sample_loss": 0.45026886463165283
+    },
+    {
+      "global_index": 44,
+      "batch_index": 2,
+      "source_index": 12,
+      "dataset_index": 31808,
+      "label": 636,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n03709823\\ILSVRC2012_val_00005929.JPEG",
+      "initial_per_sample_loss": 0.42411741614341736
+    },
+    {
+      "global_index": 45,
+      "batch_index": 2,
+      "source_index": 13,
+      "dataset_index": 44709,
+      "label": 894,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n04550184\\ILSVRC2012_val_00007593.JPEG",
+      "initial_per_sample_loss": 1.1197121143341064
+    },
+    {
+      "global_index": 46,
+      "batch_index": 2,
+      "source_index": 14,
+      "dataset_index": 30310,
+      "label": 606,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n03584829\\ILSVRC2012_val_00009366.JPEG",
+      "initial_per_sample_loss": 0.08740963786840439
+    },
+    {
+      "global_index": 47,
+      "batch_index": 2,
+      "source_index": 15,
+      "dataset_index": 45511,
+      "label": 910,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n04597913\\ILSVRC2012_val_00013892.JPEG",
+      "initial_per_sample_loss": 0.007855948060750961
+    },
+    {
+      "global_index": 48,
+      "batch_index": 3,
+      "source_index": 0,
+      "dataset_index": 29419,
+      "label": 588,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n03482405\\ILSVRC2012_val_00026275.JPEG",
+      "initial_per_sample_loss": 1.6115641593933105
+    },
+    {
+      "global_index": 49,
+      "batch_index": 3,
+      "source_index": 1,
+      "dataset_index": 45420,
+      "label": 908,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n04592741\\ILSVRC2012_val_00020064.JPEG",
+      "initial_per_sample_loss": 0.0002181292074965313
+    },
+    {
+      "global_index": 50,
+      "batch_index": 3,
+      "source_index": 2,
+      "dataset_index": 48971,
+      "label": 979,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n09468604\\ILSVRC2012_val_00025327.JPEG",
+      "initial_per_sample_loss": 0.08593523502349854
+    },
+    {
+      "global_index": 51,
+      "batch_index": 3,
+      "source_index": 3,
+      "dataset_index": 39322,
+      "label": 786,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n04179913\\ILSVRC2012_val_00016978.JPEG",
+      "initial_per_sample_loss": 0.007809345610439777
+    },
+    {
+      "global_index": 52,
+      "batch_index": 3,
+      "source_index": 4,
+      "dataset_index": 13473,
+      "label": 269,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n02114367\\ILSVRC2012_val_00022055.JPEG",
+      "initial_per_sample_loss": 0.2516932785511017
+    },
+    {
+      "global_index": 53,
+      "batch_index": 3,
+      "source_index": 5,
+      "dataset_index": 24974,
+      "label": 499,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n03041632\\ILSVRC2012_val_00022700.JPEG",
+      "initial_per_sample_loss": 2.2352890968322754
+    },
+    {
+      "global_index": 54,
+      "batch_index": 3,
+      "source_index": 6,
+      "dataset_index": 27175,
+      "label": 543,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n03255030\\ILSVRC2012_val_00026198.JPEG",
+      "initial_per_sample_loss": 2.138169050216675
+    },
+    {
+      "global_index": 55,
+      "batch_index": 3,
+      "source_index": 7,
+      "dataset_index": 25876,
+      "label": 517,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n03126707\\ILSVRC2012_val_00035686.JPEG",
+      "initial_per_sample_loss": 0.0005802616360597312
+    },
+    {
+      "global_index": 56,
+      "batch_index": 3,
+      "source_index": 8,
+      "dataset_index": 18527,
+      "label": 370,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n02484975\\ILSVRC2012_val_00022174.JPEG",
+      "initial_per_sample_loss": 0.016579000279307365
+    },
+    {
+      "global_index": 57,
+      "batch_index": 3,
+      "source_index": 9,
+      "dataset_index": 3078,
+      "label": 61,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n01742172\\ILSVRC2012_val_00027484.JPEG",
+      "initial_per_sample_loss": 0.015857776626944542
+    },
+    {
+      "global_index": 58,
+      "batch_index": 3,
+      "source_index": 10,
+      "dataset_index": 7629,
+      "label": 152,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n02085782\\ILSVRC2012_val_00029262.JPEG",
+      "initial_per_sample_loss": 0.6939354538917542
+    },
+    {
+      "global_index": 59,
+      "batch_index": 3,
+      "source_index": 11,
+      "dataset_index": 36430,
+      "label": 728,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n03958227\\ILSVRC2012_val_00031510.JPEG",
+      "initial_per_sample_loss": 1.3395335674285889
+    },
+    {
+      "global_index": 60,
+      "batch_index": 3,
+      "source_index": 12,
+      "dataset_index": 39231,
+      "label": 784,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n04154565\\ILSVRC2012_val_00029403.JPEG",
+      "initial_per_sample_loss": 1.2948276996612549
+    },
+    {
+      "global_index": 61,
+      "batch_index": 3,
+      "source_index": 13,
+      "dataset_index": 29232,
+      "label": 584,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n03476684\\ILSVRC2012_val_00030414.JPEG",
+      "initial_per_sample_loss": 0.3348301351070404
+    },
+    {
+      "global_index": 62,
+      "batch_index": 3,
+      "source_index": 14,
+      "dataset_index": 23283,
+      "label": 465,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n02916936\\ILSVRC2012_val_00030157.JPEG",
+      "initial_per_sample_loss": 1.0459011793136597
+    },
+    {
+      "global_index": 63,
+      "batch_index": 3,
+      "source_index": 15,
+      "dataset_index": 21734,
+      "label": 434,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n02808304\\ILSVRC2012_val_00031759.JPEG",
+      "initial_per_sample_loss": 0.42881402373313904
+    },
+    {
+      "global_index": 64,
+      "batch_index": 4,
+      "source_index": 0,
+      "dataset_index": 7392,
+      "label": 147,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n02066245\\ILSVRC2012_val_00037913.JPEG",
+      "initial_per_sample_loss": 3.099393507000059e-05
+    },
+    {
+      "global_index": 65,
+      "batch_index": 4,
+      "source_index": 1,
+      "dataset_index": 10993,
+      "label": 219,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n02102318\\ILSVRC2012_val_00044890.JPEG",
+      "initial_per_sample_loss": 0.03796762228012085
+    },
+    {
+      "global_index": 66,
+      "batch_index": 4,
+      "source_index": 2,
+      "dataset_index": 27644,
+      "label": 552,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n03325584\\ILSVRC2012_val_00045538.JPEG",
+      "initial_per_sample_loss": 1.1920858014491387e-05
+    },
+    {
+      "global_index": 67,
+      "batch_index": 4,
+      "source_index": 3,
+      "dataset_index": 36495,
+      "label": 729,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n03961711\\ILSVRC2012_val_00042539.JPEG",
+      "initial_per_sample_loss": 0.01583430916070938
+    },
+    {
+      "global_index": 68,
+      "batch_index": 4,
+      "source_index": 4,
+      "dataset_index": 13096,
+      "label": 261,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n02112350\\ILSVRC2012_val_00047187.JPEG",
+      "initial_per_sample_loss": 0.20687364041805267
+    },
+    {
+      "global_index": 69,
+      "batch_index": 4,
+      "source_index": 5,
+      "dataset_index": 42697,
+      "label": 853,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n04417672\\ILSVRC2012_val_00046924.JPEG",
+      "initial_per_sample_loss": 0.0005895545473322272
+    },
+    {
+      "global_index": 70,
+      "batch_index": 4,
+      "source_index": 6,
+      "dataset_index": 11848,
+      "label": 236,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n02107142\\ILSVRC2012_val_00048330.JPEG",
+      "initial_per_sample_loss": 0.6846553683280945
+    },
+    {
+      "global_index": 71,
+      "batch_index": 4,
+      "source_index": 7,
+      "dataset_index": 2449,
+      "label": 48,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n01695060\\ILSVRC2012_val_00049602.JPEG",
+      "initial_per_sample_loss": 0.0020317642483860254
+    },
+    {
+      "global_index": 72,
+      "batch_index": 4,
+      "source_index": 8,
+      "dataset_index": 41750,
+      "label": 835,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n04355338\\ILSVRC2012_val_00002015.JPEG",
+      "initial_per_sample_loss": 1.6174709796905518
+    },
+    {
+      "global_index": 73,
+      "batch_index": 4,
+      "source_index": 9,
+      "dataset_index": 35151,
+      "label": 703,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n03891251\\ILSVRC2012_val_00002930.JPEG",
+      "initial_per_sample_loss": 0.37707263231277466
+    },
+    {
+      "global_index": 74,
+      "batch_index": 4,
+      "source_index": 10,
+      "dataset_index": 4902,
+      "label": 98,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n01855032\\ILSVRC2012_val_00007973.JPEG",
+      "initial_per_sample_loss": 4.841395378112793
+    },
+    {
+      "global_index": 75,
+      "batch_index": 4,
+      "source_index": 11,
+      "dataset_index": 13603,
+      "label": 272,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n02114855\\ILSVRC2012_val_00004178.JPEG",
+      "initial_per_sample_loss": 1.4138875007629395
+    },
+    {
+      "global_index": 76,
+      "batch_index": 4,
+      "source_index": 12,
+      "dataset_index": 25154,
+      "label": 503,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n03062245\\ILSVRC2012_val_00003439.JPEG",
+      "initial_per_sample_loss": 3.4276998043060303
+    },
+    {
+      "global_index": 77,
+      "batch_index": 4,
+      "source_index": 13,
+      "dataset_index": 23505,
+      "label": 470,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n02948072\\ILSVRC2012_val_00007889.JPEG",
+      "initial_per_sample_loss": 1.484232783317566
+    },
+    {
+      "global_index": 78,
+      "batch_index": 4,
+      "source_index": 14,
+      "dataset_index": 35456,
+      "label": 709,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n03908618\\ILSVRC2012_val_00007771.JPEG",
+      "initial_per_sample_loss": 2.418673276901245
+    },
+    {
+      "global_index": 79,
+      "batch_index": 4,
+      "source_index": 15,
+      "dataset_index": 13007,
+      "label": 260,
+      "image_path": "C:\\Users\\조상제\\Desktop\\DLG\\cocktail_party_attack\\datasets\\imagenet\\val\\n02112137\\ILSVRC2012_val_00006664.JPEG",
+      "initial_per_sample_loss": 0.0014676999999210238
+    }
+  ],
+  "batches": [
+    {
+      "batch_index": 0,
+      "global_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "update_factor_rel_l2": 7.543886749772355e-05,
+      "codec_seed": 0
+    },
+    {
+      "batch_index": 1,
+      "global_indices": [
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31
+      ],
+      "update_factor_rel_l2": 6.437602860387415e-05,
+      "codec_seed": 1000003
+    },
+    {
+      "batch_index": 2,
+      "global_indices": [
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47
+      ],
+      "update_factor_rel_l2": 0.00012553512351587415,
+      "codec_seed": 2000006
+    },
+    {
+      "batch_index": 3,
+      "global_indices": [
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63
+      ],
+      "update_factor_rel_l2": 7.086072582751513e-05,
+      "codec_seed": 3000009
+    },
+    {
+      "batch_index": 4,
+      "global_indices": [
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79
+      ],
+      "update_factor_rel_l2": 6.022725210641511e-05,
+      "codec_seed": 4000012
+    }
+  ],
+  "selection": "all80 in original global_index order; original batches0-4; no LPIPS selection",
+  "weights_path": "C:\\Users\\조상제\\.cache\\torch\\hub\\checkpoints\\vgg16-397923af.pth",
+  "weights_sha256": "397923af8e79cdbb6a7127f12361acd7a2f83e06b05044ddf496e83de57a5bf0",
+  "image_manifest_sha256": "d09d274c22f5a5c0b6d5a2bcb73d464d81eef85a6af543d3c3b0289128a0fda4",
+  "new_training": false,
+  "new_update_collection": false,
+  "created_at_utc": "2026-09-10T11:30:19.730147+00:00"
+}

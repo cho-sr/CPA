@@ -1,0 +1,26 @@
+[
+  {
+    "iteration": 1,
+    "loss": 16899663.7288195,
+    "observation_loss": 16899663.728752907,
+    "tv": 0.6659237146377563,
+    "image_gradient_norm": 19603706.0,
+    "elapsed_sec": 15.368788599967957
+  },
+  {
+    "iteration": 2,
+    "loss": 9753405.259019863,
+    "observation_loss": 9753405.258952416,
+    "tv": 0.6744561195373535,
+    "image_gradient_norm": 3771010.5,
+    "elapsed_sec": 30.36952469998505
+  },
+  {
+    "iteration": 3,
+    "loss": 8053205.043762023,
+    "observation_loss": 8053205.043693602,
+    "tv": 0.6842043399810791,
+    "image_gradient_norm": 2713647.0,
+    "elapsed_sec": 45.378840199962724
+  }
+]

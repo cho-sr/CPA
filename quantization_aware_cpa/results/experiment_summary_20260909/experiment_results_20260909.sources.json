@@ -1,0 +1,20 @@
+{
+  "output": "experiment_results_20260909.png",
+  "dimensions": [
+    3600,
+    2700
+  ],
+  "sources_sha256": {
+    "m6_uia_fp32_B16_fia\\summary.json": "1f85b5750c6171e0259160c48731dc7646fb3f7a5b9c59b8c06b0478bd2f4ad0",
+    "m6_uia_fp32_B16_fia\\per_image_metrics.csv": "72dafc60ccb29acca4568bc0da7b77d48574ecafece7fe51898b173822c2f2ef",
+    "m6_uia_fp32_B16_fia\\per_batch_summary.csv": "a7baf596e11692f365b4aed8bc9e880105e0e737e90fde9a1ffc297d4f26ba7f",
+    "m7_no_cpa_control\\summary.json": "60a7b8a3be59ac939e725e2dd6f5164848f5423990710af545e0f2c1ca5c5070",
+    "m7_no_cpa_control\\image_success.csv": "1bbf6ee99a12a88fe4eead264550800baa60ba568c9278d1536153b9b7f91d66",
+    "m7_prior_only\\prior_only\\per_image_metrics.csv": "7bf30747b6aa01df6fe3b6386d8e7f0df6b96ce26c2d4c070fae2fd6ba641077"
+  },
+  "uia_lpips": 0.45459726378321647,
+  "m7_cpa_4bit_lpips": 0.5439403489232063,
+  "m7_no_cpa_4bit_lpips": 0.7538226298987866,
+  "m7_prior_lpips": 0.7737753406167031,
+  "m7_iut_p": 0.03125
+}

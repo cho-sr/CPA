@@ -1,0 +1,101 @@
+{
+  "input_pickle": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\int 4 fedavg\\imagenet\\vgg16\\clients3_rounds20_spc8_seed42\\round_020_int4_dequant_aggregate_cpa.pickle",
+  "output_dir": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\int 4 fedavg\\imagenet\\vgg16\\clients3_rounds20_spc8_seed42\\fastica_dequantized_aggregate",
+  "dequant_check": {
+    "passed": true,
+    "checks": {
+      "signal_is_int4_dequantized": true,
+      "quant_bits_is_4": true,
+      "rounding_is_nearest": true,
+      "server_input_is_dequantized": true,
+      "scale_scope_is_client_tensor": true
+    },
+    "interpretation": "This is a naive dequantized int4 FedAvg aggregate update"
+  },
+  "attack_layer_index": 26,
+  "attack_layer_name": "classifier.0.weight",
+  "attack_matrix_shape": [
+    4096,
+    25088
+  ],
+  "n_components": 24,
+  "blind_embedding_shape": [
+    24,
+    25088
+  ],
+  "fastica": {
+    "max_iter": 1000,
+    "tol": 0.0001,
+    "random_state": 42,
+    "whiten": "unit-variance",
+    "fun": "logcosh",
+    "n_iter": 27,
+    "converged": true,
+    "mixing_shape": [
+      4096,
+      24
+    ],
+    "components_shape": [
+      24,
+      4096
+    ]
+  },
+  "oracle_matching": {
+    "mean_cosine": 0.691139359887063,
+    "min_cosine": 0.09424650633015506,
+    "max_cosine": 0.9400645375893559,
+    "median_cosine": 0.8552692806721485,
+    "recovered_order_for_true_index": [
+      23,
+      8,
+      18,
+      9,
+      1,
+      4,
+      16,
+      22,
+      5,
+      17,
+      21,
+      3,
+      20,
+      12,
+      11,
+      10,
+      13,
+      6,
+      7,
+      14,
+      0,
+      15,
+      19,
+      2
+    ],
+    "matched_cosines": [
+      0.9222751728082439,
+      0.8426205858749672,
+      0.9174348707090655,
+      0.10564792496428584,
+      0.9019278912070271,
+      0.8769597593142074,
+      0.8457468973239158,
+      0.9397421727492455,
+      0.20344884398759938,
+      0.7827749074679891,
+      0.8509494328079285,
+      0.8767706877168114,
+      0.8195927873781822,
+      0.7873279462226228,
+      0.13554581839612834,
+      0.8595891285363686,
+      0.9248500572047894,
+      0.1096156876637459,
+      0.9272999963846722,
+      0.8665678354444051,
+      0.9400645375893559,
+      0.09424650633015506,
+      0.1321079992025368,
+      0.9242371900052597
+    ]
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "raw_metrics": {
+    "cpa_objective": {
+      "value": null,
+      "status": "NOT_COMPUTED",
+      "reason": "Not executed",
+      "definition": null
+    },
+    "mi": {
+      "value": null,
+      "status": "NOT_COMPUTED",
+      "reason": "Not executed",
+      "definition": null
+    },
+    "negentropy": {
+      "value": null,
+      "status": "NOT_COMPUTED",
+      "reason": "Not executed",
+      "definition": null
+    },
+    "sparsity": {
+      "value": null,
+      "status": "NOT_COMPUTED",
+      "reason": "Not executed",
+      "definition": null
+    },
+    "sign_consistency": {
+      "value": null,
+      "status": "NOT_COMPUTED",
+      "reason": "Not executed",
+      "definition": null
+    },
+    "source_diversity": {
+      "value": null,
+      "status": "NOT_COMPUTED",
+      "reason": "Not executed",
+      "definition": null
+    },
+    "quantization_consistency": {
+      "value": {
+        "all_equal": true,
+        "mismatch_count": 0,
+        "numel": 76,
+        "mismatch_fraction": 0.0
+      },
+      "status": "COMPUTED",
+      "reason": null,
+      "definition": "Synthetic original: exact fixed-observed-scale code mismatch count/fraction"
+    },
+    "scale_consistency": {
+      "value": {
+        "candidate_scale": 0.3537870943546295,
+        "observed_scale": 0.3537870943546295,
+        "absolute_error": 0.0,
+        "relative_error": 0.0,
+        "exact_equal": true,
+        "candidate_supported": true,
+        "reason": null
+      },
+      "status": "COMPUTED",
+      "reason": null,
+      "definition": "Synthetic original: reference FP32 absmax/7 versus observed scale; diagnostic only"
+    }
+  },
+  "evaluation_metrics": {
+    "embedding_oracle": {
+      "cosine": {
+        "value": null,
+        "status": "NOT_COMPUTED",
+        "reason": "Oracle evaluation not executed",
+        "definition": null
+      }
+    },
+    "image_oracle": {
+      "lpips": {
+        "value": null,
+        "status": "NOT_COMPUTED",
+        "reason": "Oracle evaluation not executed",
+        "definition": null
+      },
+      "psnr": {
+        "value": null,
+        "status": "NOT_COMPUTED",
+        "reason": "Oracle evaluation not executed",
+        "definition": null
+      },
+      "ssim": {
+        "value": null,
+        "status": "NOT_COMPUTED",
+        "reason": "Oracle evaluation not executed",
+        "definition": null
+      }
+    }
+  }
+}

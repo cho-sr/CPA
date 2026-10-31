@@ -1,0 +1,62 @@
+{
+  "dataset": "imagenet",
+  "image_metric_dependencies": {
+    "lpips_available": true,
+    "lpips_error": null,
+    "ssim_available": true,
+    "ssim_error": null,
+    "success_lpips_threshold": 0.5
+  },
+  "matching": "oracle_embedding",
+  "metric_note": "Evaluation-only recomputation from reconstructions.pkl.",
+  "metric_summary": [
+    {
+      "max": 0.6491841673851013,
+      "mean": 0.45125919207930565,
+      "metric": "lpips",
+      "min": 0.3645434081554413,
+      "n": 8,
+      "std": 0.08377676396017524,
+      "threshold": null
+    },
+    {
+      "max": 16.7269344329834,
+      "mean": 14.25205659866333,
+      "metric": "psnr",
+      "min": 11.12010383605957,
+      "n": 8,
+      "std": 1.8274275522578527,
+      "threshold": null
+    },
+    {
+      "max": 0.5819401741027832,
+      "mean": 0.39463378489017487,
+      "metric": "ssim",
+      "min": 0.20775234699249268,
+      "n": 8,
+      "std": 0.13710968462202058,
+      "threshold": null
+    },
+    {
+      "max": null,
+      "mean": null,
+      "metric": "embedding_cosine_similarity",
+      "min": null,
+      "n": 0,
+      "std": null,
+      "threshold": null
+    },
+    {
+      "max": 1.0,
+      "mean": 0.875,
+      "metric": "reconstruction_success_rate",
+      "min": 0.0,
+      "n": 8,
+      "std": 0.33071891388307384,
+      "threshold": 0.5
+    }
+  ],
+  "reconstruction_file": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\mixed_bit_fedavg\\outputs_v1\\randomized_dequant\\random_dequant_int8_client0_n8_steps10_trials1_R8_seed1234_attack_layer_fia8_consistency_ranked\\reconstructions.pkl",
+  "run_dir": "C:\\Users\\\uc870\uc0c1\uc81c\\Desktop\\CPA\\mixed_bit_fedavg\\outputs_v1\\randomized_dequant\\random_dequant_int8_client0_n8_steps10_trials1_R8_seed1234_attack_layer_fia8_consistency_ranked",
+  "source": "update_file"
+}

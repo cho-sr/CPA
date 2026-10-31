@@ -1,0 +1,387 @@
+{
+  "status": "COMPLETED",
+  "source_truth_sha256": "9430257f1142c81f12a6610bb13f6458c50c26221538019e4140246367c26eb4",
+  "checkpoint_sha256": "397923af8e79cdbb6a7127f12361acd7a2f83e06b05044ddf496e83de57a5bf0",
+  "raw_updates_sha256": "ef9aefc66ab9fcfd0b023fdfc064dbadc27567bd3ef3508bc14ebda9af28ba4c",
+  "evaluation_truth_sha256": "724bbacbe316cc28dac086db9cfaf6507f4c1af31144fd610cc480985aab72e2",
+  "public_manifest_sha256": "9b4891765e6fc7e4adb1e3e11c158b3d4a2c3430d3397e1f1466ddafe2e1cd69",
+  "training": {
+    "scope": "conv_frozen_all_six_fc_parameters",
+    "steps": 10,
+    "optimizer": "sgd",
+    "lr": 0.001,
+    "momentum": 0.0,
+    "weight_decay": 0.0,
+    "foreach": false,
+    "cross_entropy_reduction": "mean",
+    "seed": 42,
+    "dropout": 0.0,
+    "model_eval": true,
+    "batch_order": [
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ]
+    ]
+  },
+  "training_losses": [
+    0.643095076084137,
+    0.5755571722984314,
+    0.5147713422775269,
+    0.4602929353713989,
+    0.41204386949539185,
+    0.3693370819091797,
+    0.33159691095352173,
+    0.29871228337287903,
+    0.27014392614364624,
+    0.24539867043495178
+  ],
+  "ordinary_runs": 1,
+  "replay_runs": 1,
+  "all_raw_deltas_torch_equal": true,
+  "replay_comparisons": {
+    "classifier.0.weight": {
+      "torch_equal": true,
+      "max_abs_error": 0.0
+    },
+    "classifier.0.bias": {
+      "torch_equal": true,
+      "max_abs_error": 0.0
+    },
+    "classifier.3.weight": {
+      "torch_equal": true,
+      "max_abs_error": 0.0
+    },
+    "classifier.3.bias": {
+      "torch_equal": true,
+      "max_abs_error": 0.0
+    },
+    "classifier.6.weight": {
+      "torch_equal": true,
+      "max_abs_error": 0.0
+    },
+    "classifier.6.bias": {
+      "torch_equal": true,
+      "max_abs_error": 0.0
+    }
+  },
+  "codec_checks": {
+    "classifier.0.weight": {
+      "reference_q_s_dequantized_equal": true,
+      "fit": {
+        "numel": 102760448,
+        "code_mismatch_count": 0,
+        "code_mismatch_fraction": 0.0,
+        "bounded_cell_violation_count": 0,
+        "bounded_cell_violation_fraction": 0.0,
+        "scale": {
+          "candidate_scale": 5.416279236669652e-05,
+          "observed_scale": 5.416279236669652e-05,
+          "absolute_error": 0.0,
+          "relative_error": 0.0,
+          "exact_equal": true,
+          "candidate_supported": true,
+          "reason": null
+        },
+        "scope": "supplied_matrix_only; no reconstructed_image_update_replay"
+      }
+    },
+    "classifier.0.bias": {
+      "reference_q_s_dequantized_equal": true,
+      "fit": {
+        "numel": 4096,
+        "code_mismatch_count": 0,
+        "code_mismatch_fraction": 0.0,
+        "bounded_cell_violation_count": 0,
+        "bounded_cell_violation_fraction": 0.0,
+        "scale": {
+          "candidate_scale": 3.0104336019576294e-06,
+          "observed_scale": 3.0104336019576294e-06,
+          "absolute_error": 0.0,
+          "relative_error": 0.0,
+          "exact_equal": true,
+          "candidate_supported": true,
+          "reason": null
+        },
+        "scope": "supplied_matrix_only; no reconstructed_image_update_replay"
+      }
+    },
+    "classifier.3.weight": {
+      "reference_q_s_dequantized_equal": true,
+      "fit": {
+        "numel": 16777216,
+        "code_mismatch_count": 0,
+        "code_mismatch_fraction": 0.0,
+        "bounded_cell_violation_count": 0,
+        "bounded_cell_violation_fraction": 0.0,
+        "scale": {
+          "candidate_scale": 4.05922946811188e-05,
+          "observed_scale": 4.05922946811188e-05,
+          "absolute_error": 0.0,
+          "relative_error": 0.0,
+          "exact_equal": true,
+          "candidate_supported": true,
+          "reason": null
+        },
+        "scope": "supplied_matrix_only; no reconstructed_image_update_replay"
+      }
+    },
+    "classifier.3.bias": {
+      "reference_q_s_dequantized_equal": true,
+      "fit": {
+        "numel": 4096,
+        "code_mismatch_count": 0,
+        "code_mismatch_fraction": 0.0,
+        "bounded_cell_violation_count": 0,
+        "bounded_cell_violation_fraction": 0.0,
+        "scale": {
+          "candidate_scale": 6.22868537902832e-06,
+          "observed_scale": 6.22868537902832e-06,
+          "absolute_error": 0.0,
+          "relative_error": 0.0,
+          "exact_equal": true,
+          "candidate_supported": true,
+          "reason": null
+        },
+        "scope": "supplied_matrix_only; no reconstructed_image_update_replay"
+      }
+    },
+    "classifier.6.weight": {
+      "reference_q_s_dequantized_equal": true,
+      "fit": {
+        "numel": 4096000,
+        "code_mismatch_count": 0,
+        "code_mismatch_fraction": 0.0,
+        "bounded_cell_violation_count": 0,
+        "bounded_cell_violation_fraction": 0.0,
+        "scale": {
+          "candidate_scale": 0.000340950267855078,
+          "observed_scale": 0.000340950267855078,
+          "absolute_error": 0.0,
+          "relative_error": 0.0,
+          "exact_equal": true,
+          "candidate_supported": true,
+          "reason": null
+        },
+        "scope": "supplied_matrix_only; no reconstructed_image_update_replay"
+      }
+    },
+    "classifier.6.bias": {
+      "reference_q_s_dequantized_equal": true,
+      "fit": {
+        "numel": 1000,
+        "code_mismatch_count": 0,
+        "code_mismatch_fraction": 0.0,
+        "bounded_cell_violation_count": 0,
+        "bounded_cell_violation_fraction": 0.0,
+        "scale": {
+          "candidate_scale": 7.289834320545197e-05,
+          "observed_scale": 7.289834320545197e-05,
+          "absolute_error": 0.0,
+          "relative_error": 0.0,
+          "exact_equal": true,
+          "candidate_supported": true,
+          "reason": null
+        },
+        "scope": "supplied_matrix_only; no reconstructed_image_update_replay"
+      }
+    }
+  },
+  "wall_seconds": 9.467715200036764,
+  "runtime": {
+    "python": "3.11.14 | packaged by Anaconda, Inc. | (main, Oct 21 2025, 18:30:03) [MSC v.1929 64 bit (AMD64)]",
+    "torch": "2.13.0+cu132",
+    "numpy": "2.4.4",
+    "torchvision": "0.28.0+cu132",
+    "cuda": "13.2",
+    "cudnn": 92000,
+    "cudnn_enabled": true,
+    "cudnn_benchmark": false,
+    "cudnn_deterministic": true,
+    "deterministic_algorithms": true,
+    "deterministic_warn_only": false,
+    "matmul_tf32": false,
+    "cudnn_tf32": false,
+    "cublas_workspace_config": ":4096:8",
+    "threads": 1,
+    "gpu": "NVIDIA GeForce RTX 5060 Ti",
+    "cuda_peak_allocated": 3593540608,
+    "cuda_peak_reserved": 3898605568
+  }
+}

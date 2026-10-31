@@ -1,0 +1,2 @@
+round,keep_ratio,train_loss,val_loss,val_accuracy,val_top1,val_top5,eval_samples,aggregate_update_l2,sparse_mask_fraction_mean,sparse_nonzero_fraction_mean,sparse_relative_l2_mean,sparse_cosine_similarity_to_fp32_mean,sparse_energy_retained_mean,topk_threshold_abs_mean,round_time
+1,1.0,0.1089303195476532,0.8880410995916463,1.0,1.0,1.0,2,0.012210029289413471,1.0,0.12030623353649585,0.0,1.0,1.0,0.0,12.078128576278687

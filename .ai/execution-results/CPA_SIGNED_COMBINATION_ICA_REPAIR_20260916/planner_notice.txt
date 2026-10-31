@@ -1,0 +1,10 @@
+[CPA final result | CPA_SIGNED_COMBINATION_ICA_REPAIR_20260916]
+Task completed: implementation repair and focused synthetic integration validation.
+Status: COMPLETED; scientific quality: NOT_EVALUATED.
+Validated: 31 focused tests passed; unchanged upstream contract 5 passed with the pre-existing complex-to-real warning; py_compile and CLI help passed.
+Repaired: canonical [16,25088] source writer/loader, exact abs target binding, runtime/config guards, per-stage integrity, pre-optimization preflight/start evidence, final all-six-FC endpoint profiles, explicit B_H1_combination_ica arm metadata, and separate exact-feasibility reporting.
+No real B16/T10 separation, FIA, replay, private evaluation, generator use, download, new arm/seed, tuning, or continuation was run. Mock feasible and infeasible paths were both validated; production scientific feasibility remains NOT_EVALUATED.
+Report: C:\Users\조상제\Desktop\CPA\.ai\execution-results\CPA_SIGNED_COMBINATION_ICA_REPAIR_20260916\report.md
+Results: C:\Users\조상제\Desktop\CPA\.ai\execution-results\CPA_SIGNED_COMBINATION_ICA_REPAIR_20260916\results.json
+Integrity: C:\Users\조상제\Desktop\CPA\.ai\execution-results\CPA_SIGNED_COMBINATION_ICA_REPAIR_20260916\source_integrity.json
+Pre-repair and parent completion archives: C:\Users\조상제\Desktop\CPA\.ai\execution-results\CPA_SIGNED_COMBINATION_ICA_REPAIR_20260916\before

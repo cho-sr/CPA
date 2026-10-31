@@ -1,0 +1,173 @@
+panel,method,condition_index,T,client_size,seed,bits,scale_granularity,bucket_size,c_mp,predicted_source_count,measured_source_count,absolute_prediction_error,source_csv,source_csv_line,global_index,batch_index,source_index,label,per_sample_cross_entropy,lpips,oracle_fill,sample_count,spearman_rho,spearman_pvalue_two_sided
+a,CPA source-count diagnostic / FedSGD,0,1,16,0,2,per_row,,3.0,7,6,1,results/m5_uia_beff_validation/summary.csv,2,,,,,,,,,,
+a,CPA source-count diagnostic / FedSGD,1,1,16,0,3,per_row,,3.0,11,11,0,results/m5_uia_beff_validation/summary.csv,3,,,,,,,,,,
+a,CPA source-count diagnostic / FedSGD,2,1,16,0,4,per_row,,3.0,12,12,0,results/m5_uia_beff_validation/summary.csv,4,,,,,,,,,,
+a,CPA source-count diagnostic / FedSGD,3,1,16,0,8,per_row,,3.0,14,14,0,results/m5_uia_beff_validation/summary.csv,5,,,,,,,,,,
+a,CPA source-count diagnostic / FedSGD,4,1,16,0,4,per_tensor,,3.0,7,6,1,results/m5_uia_beff_validation/summary.csv,6,,,,,,,,,,
+a,CPA source-count diagnostic / FedSGD,5,1,16,0,4,per_bucket,256,3.0,9,8,1,results/m5_uia_beff_validation/summary.csv,7,,,,,,,,,,
+a,CPA source-count diagnostic / FedAvg,6,10,16,0,2,per_row,,3.0,7,7,0,results/m5_uia_beff_validation/summary.csv,8,,,,,,,,,,
+a,CPA source-count diagnostic / FedAvg,7,10,16,0,3,per_row,,3.0,12,12,0,results/m5_uia_beff_validation/summary.csv,9,,,,,,,,,,
+a,CPA source-count diagnostic / FedAvg,8,10,16,0,4,per_row,,3.0,13,12,1,results/m5_uia_beff_validation/summary.csv,10,,,,,,,,,,
+a,CPA source-count diagnostic / FedAvg,9,10,16,0,8,per_row,,3.0,14,14,0,results/m5_uia_beff_validation/summary.csv,11,,,,,,,,,,
+a,CPA source-count diagnostic / FedAvg,10,10,16,0,4,per_tensor,,3.0,7,7,0,results/m5_uia_beff_validation/summary.csv,12,,,,,,,,,,
+a,CPA source-count diagnostic / FedAvg,11,10,16,0,4,per_bucket,256,3.0,11,11,0,results/m5_uia_beff_validation/summary.csv,13,,,,,,,,,,
+a,CPA source-count diagnostic / FedSGD,12,1,32,0,2,per_row,,3.0,14,14,0,results/m5_uia_beff_validation/summary.csv,14,,,,,,,,,,
+a,CPA source-count diagnostic / FedSGD,13,1,32,0,3,per_row,,3.0,20,19,1,results/m5_uia_beff_validation/summary.csv,15,,,,,,,,,,
+a,CPA source-count diagnostic / FedSGD,14,1,32,0,4,per_row,,3.0,24,24,0,results/m5_uia_beff_validation/summary.csv,16,,,,,,,,,,
+a,CPA source-count diagnostic / FedSGD,15,1,32,0,8,per_row,,3.0,28,28,0,results/m5_uia_beff_validation/summary.csv,17,,,,,,,,,,
+a,CPA source-count diagnostic / FedSGD,16,1,32,0,4,per_tensor,,3.0,14,14,0,results/m5_uia_beff_validation/summary.csv,18,,,,,,,,,,
+a,CPA source-count diagnostic / FedSGD,17,1,32,0,4,per_bucket,256,3.0,14,14,0,results/m5_uia_beff_validation/summary.csv,19,,,,,,,,,,
+a,CPA source-count diagnostic / FedAvg,18,10,32,0,2,per_row,,3.0,14,14,0,results/m5_uia_beff_validation/summary.csv,20,,,,,,,,,,
+a,CPA source-count diagnostic / FedAvg,19,10,32,0,3,per_row,,3.0,22,22,0,results/m5_uia_beff_validation/summary.csv,21,,,,,,,,,,
+a,CPA source-count diagnostic / FedAvg,20,10,32,0,4,per_row,,3.0,24,24,0,results/m5_uia_beff_validation/summary.csv,22,,,,,,,,,,
+a,CPA source-count diagnostic / FedAvg,21,10,32,0,8,per_row,,3.0,28,28,0,results/m5_uia_beff_validation/summary.csv,23,,,,,,,,,,
+a,CPA source-count diagnostic / FedAvg,22,10,32,0,4,per_tensor,,3.0,12,10,2,results/m5_uia_beff_validation/summary.csv,24,,,,,,,,,,
+a,CPA source-count diagnostic / FedAvg,23,10,32,0,4,per_bucket,256,3.0,14,14,0,results/m5_uia_beff_validation/summary.csv,25,,,,,,,,,,
+a,CPA source-count diagnostic / FedSGD,24,1,64,0,2,per_row,,3.0,21,21,0,results/m5_uia_beff_validation/summary.csv,26,,,,,,,,,,
+a,CPA source-count diagnostic / FedSGD,25,1,64,0,3,per_row,,3.0,35,35,0,results/m5_uia_beff_validation/summary.csv,27,,,,,,,,,,
+a,CPA source-count diagnostic / FedSGD,26,1,64,0,4,per_row,,3.0,43,43,0,results/m5_uia_beff_validation/summary.csv,28,,,,,,,,,,
+a,CPA source-count diagnostic / FedSGD,27,1,64,0,8,per_row,,3.0,56,56,0,results/m5_uia_beff_validation/summary.csv,29,,,,,,,,,,
+a,CPA source-count diagnostic / FedAvg,28,10,64,0,2,per_row,,3.0,21,21,0,results/m5_uia_beff_validation/summary.csv,30,,,,,,,,,,
+a,CPA source-count diagnostic / FedAvg,29,10,64,0,3,per_row,,3.0,35,35,0,results/m5_uia_beff_validation/summary.csv,31,,,,,,,,,,
+a,CPA source-count diagnostic / FedAvg,30,10,64,0,4,per_row,,3.0,43,43,0,results/m5_uia_beff_validation/summary.csv,32,,,,,,,,,,
+a,CPA source-count diagnostic / FedAvg,31,10,64,0,8,per_row,,3.0,57,57,0,results/m5_uia_beff_validation/summary.csv,33,,,,,,,,,,
+a,CPA source-count diagnostic / FedSGD,32,1,16,1,2,per_row,,3.0,7,7,0,results/m5_uia_beff_validation/summary.csv,34,,,,,,,,,,
+a,CPA source-count diagnostic / FedSGD,33,1,16,1,3,per_row,,3.0,11,10,1,results/m5_uia_beff_validation/summary.csv,35,,,,,,,,,,
+a,CPA source-count diagnostic / FedSGD,34,1,16,1,4,per_row,,3.0,12,12,0,results/m5_uia_beff_validation/summary.csv,36,,,,,,,,,,
+a,CPA source-count diagnostic / FedSGD,35,1,16,1,8,per_row,,3.0,16,16,0,results/m5_uia_beff_validation/summary.csv,37,,,,,,,,,,
+a,CPA source-count diagnostic / FedSGD,36,1,16,1,4,per_tensor,,3.0,7,7,0,results/m5_uia_beff_validation/summary.csv,38,,,,,,,,,,
+a,CPA source-count diagnostic / FedSGD,37,1,16,1,4,per_bucket,256,3.0,7,7,0,results/m5_uia_beff_validation/summary.csv,39,,,,,,,,,,
+a,CPA source-count diagnostic / FedAvg,38,10,16,1,2,per_row,,3.0,7,7,0,results/m5_uia_beff_validation/summary.csv,40,,,,,,,,,,
+a,CPA source-count diagnostic / FedAvg,39,10,16,1,3,per_row,,3.0,11,10,1,results/m5_uia_beff_validation/summary.csv,41,,,,,,,,,,
+a,CPA source-count diagnostic / FedAvg,40,10,16,1,4,per_row,,3.0,12,12,0,results/m5_uia_beff_validation/summary.csv,42,,,,,,,,,,
+a,CPA source-count diagnostic / FedAvg,41,10,16,1,8,per_row,,3.0,16,16,0,results/m5_uia_beff_validation/summary.csv,43,,,,,,,,,,
+a,CPA source-count diagnostic / FedAvg,42,10,16,1,4,per_tensor,,3.0,7,7,0,results/m5_uia_beff_validation/summary.csv,44,,,,,,,,,,
+a,CPA source-count diagnostic / FedAvg,43,10,16,1,4,per_bucket,256,3.0,7,7,0,results/m5_uia_beff_validation/summary.csv,45,,,,,,,,,,
+a,CPA source-count diagnostic / FedSGD,44,1,32,1,2,per_row,,3.0,14,14,0,results/m5_uia_beff_validation/summary.csv,46,,,,,,,,,,
+a,CPA source-count diagnostic / FedSGD,45,1,32,1,3,per_row,,3.0,17,17,0,results/m5_uia_beff_validation/summary.csv,47,,,,,,,,,,
+a,CPA source-count diagnostic / FedSGD,46,1,32,1,4,per_row,,3.0,19,19,0,results/m5_uia_beff_validation/summary.csv,48,,,,,,,,,,
+a,CPA source-count diagnostic / FedSGD,47,1,32,1,8,per_row,,3.0,30,30,0,results/m5_uia_beff_validation/summary.csv,49,,,,,,,,,,
+a,CPA source-count diagnostic / FedSGD,48,1,32,1,4,per_tensor,,3.0,14,14,0,results/m5_uia_beff_validation/summary.csv,50,,,,,,,,,,
+a,CPA source-count diagnostic / FedSGD,49,1,32,1,4,per_bucket,256,3.0,14,14,0,results/m5_uia_beff_validation/summary.csv,51,,,,,,,,,,
+a,CPA source-count diagnostic / FedAvg,50,10,32,1,2,per_row,,3.0,14,14,0,results/m5_uia_beff_validation/summary.csv,52,,,,,,,,,,
+a,CPA source-count diagnostic / FedAvg,51,10,32,1,3,per_row,,3.0,17,17,0,results/m5_uia_beff_validation/summary.csv,53,,,,,,,,,,
+a,CPA source-count diagnostic / FedAvg,52,10,32,1,4,per_row,,3.0,19,19,0,results/m5_uia_beff_validation/summary.csv,54,,,,,,,,,,
+a,CPA source-count diagnostic / FedAvg,53,10,32,1,8,per_row,,3.0,30,30,0,results/m5_uia_beff_validation/summary.csv,55,,,,,,,,,,
+a,CPA source-count diagnostic / FedAvg,54,10,32,1,4,per_tensor,,3.0,14,14,0,results/m5_uia_beff_validation/summary.csv,56,,,,,,,,,,
+a,CPA source-count diagnostic / FedAvg,55,10,32,1,4,per_bucket,256,3.0,14,14,0,results/m5_uia_beff_validation/summary.csv,57,,,,,,,,,,
+a,CPA source-count diagnostic / FedSGD,56,1,64,1,2,per_row,,3.0,21,21,0,results/m5_uia_beff_validation/summary.csv,58,,,,,,,,,,
+a,CPA source-count diagnostic / FedSGD,57,1,64,1,3,per_row,,3.0,32,30,2,results/m5_uia_beff_validation/summary.csv,59,,,,,,,,,,
+a,CPA source-count diagnostic / FedSGD,58,1,64,1,4,per_row,,3.0,36,36,0,results/m5_uia_beff_validation/summary.csv,60,,,,,,,,,,
+a,CPA source-count diagnostic / FedSGD,59,1,64,1,8,per_row,,3.0,49,48,1,results/m5_uia_beff_validation/summary.csv,61,,,,,,,,,,
+a,CPA source-count diagnostic / FedAvg,60,10,64,1,2,per_row,,3.0,21,19,2,results/m5_uia_beff_validation/summary.csv,62,,,,,,,,,,
+a,CPA source-count diagnostic / FedAvg,61,10,64,1,3,per_row,,3.0,30,28,2,results/m5_uia_beff_validation/summary.csv,63,,,,,,,,,,
+a,CPA source-count diagnostic / FedAvg,62,10,64,1,4,per_row,,3.0,36,36,0,results/m5_uia_beff_validation/summary.csv,64,,,,,,,,,,
+a,CPA source-count diagnostic / FedAvg,63,10,64,1,8,per_row,,3.0,51,51,0,results/m5_uia_beff_validation/summary.csv,65,,,,,,,,,,
+a,CPA source-count diagnostic / FedSGD,64,1,16,2,2,per_row,,3.0,6,6,0,results/m5_uia_beff_validation/summary.csv,66,,,,,,,,,,
+a,CPA source-count diagnostic / FedSGD,65,1,16,2,3,per_row,,3.0,7,7,0,results/m5_uia_beff_validation/summary.csv,67,,,,,,,,,,
+a,CPA source-count diagnostic / FedSGD,66,1,16,2,4,per_row,,3.0,8,8,0,results/m5_uia_beff_validation/summary.csv,68,,,,,,,,,,
+a,CPA source-count diagnostic / FedSGD,67,1,16,2,8,per_row,,3.0,13,13,0,results/m5_uia_beff_validation/summary.csv,69,,,,,,,,,,
+a,CPA source-count diagnostic / FedSGD,68,1,16,2,4,per_tensor,,3.0,6,6,0,results/m5_uia_beff_validation/summary.csv,70,,,,,,,,,,
+a,CPA source-count diagnostic / FedSGD,69,1,16,2,4,per_bucket,256,3.0,6,6,0,results/m5_uia_beff_validation/summary.csv,71,,,,,,,,,,
+a,CPA source-count diagnostic / FedAvg,70,10,16,2,2,per_row,,3.0,6,6,0,results/m5_uia_beff_validation/summary.csv,72,,,,,,,,,,
+a,CPA source-count diagnostic / FedAvg,71,10,16,2,3,per_row,,3.0,7,7,0,results/m5_uia_beff_validation/summary.csv,73,,,,,,,,,,
+a,CPA source-count diagnostic / FedAvg,72,10,16,2,4,per_row,,3.0,9,9,0,results/m5_uia_beff_validation/summary.csv,74,,,,,,,,,,
+a,CPA source-count diagnostic / FedAvg,73,10,16,2,8,per_row,,3.0,13,13,0,results/m5_uia_beff_validation/summary.csv,75,,,,,,,,,,
+a,CPA source-count diagnostic / FedAvg,74,10,16,2,4,per_tensor,,3.0,6,6,0,results/m5_uia_beff_validation/summary.csv,76,,,,,,,,,,
+a,CPA source-count diagnostic / FedAvg,75,10,16,2,4,per_bucket,256,3.0,6,6,0,results/m5_uia_beff_validation/summary.csv,77,,,,,,,,,,
+a,CPA source-count diagnostic / FedSGD,76,1,32,2,2,per_row,,3.0,9,8,1,results/m5_uia_beff_validation/summary.csv,78,,,,,,,,,,
+a,CPA source-count diagnostic / FedSGD,77,1,32,2,3,per_row,,3.0,16,16,0,results/m5_uia_beff_validation/summary.csv,79,,,,,,,,,,
+a,CPA source-count diagnostic / FedSGD,78,1,32,2,4,per_row,,3.0,19,19,0,results/m5_uia_beff_validation/summary.csv,80,,,,,,,,,,
+a,CPA source-count diagnostic / FedSGD,79,1,32,2,8,per_row,,3.0,27,27,0,results/m5_uia_beff_validation/summary.csv,81,,,,,,,,,,
+a,CPA source-count diagnostic / FedSGD,80,1,32,2,4,per_tensor,,3.0,11,9,2,results/m5_uia_beff_validation/summary.csv,82,,,,,,,,,,
+a,CPA source-count diagnostic / FedSGD,81,1,32,2,4,per_bucket,256,3.0,14,14,0,results/m5_uia_beff_validation/summary.csv,83,,,,,,,,,,
+a,CPA source-count diagnostic / FedAvg,82,10,32,2,2,per_row,,3.0,7,7,0,results/m5_uia_beff_validation/summary.csv,84,,,,,,,,,,
+a,CPA source-count diagnostic / FedAvg,83,10,32,2,3,per_row,,3.0,16,16,0,results/m5_uia_beff_validation/summary.csv,85,,,,,,,,,,
+a,CPA source-count diagnostic / FedAvg,84,10,32,2,4,per_row,,3.0,19,19,0,results/m5_uia_beff_validation/summary.csv,86,,,,,,,,,,
+a,CPA source-count diagnostic / FedAvg,85,10,32,2,8,per_row,,3.0,27,27,0,results/m5_uia_beff_validation/summary.csv,87,,,,,,,,,,
+a,CPA source-count diagnostic / FedAvg,86,10,32,2,4,per_tensor,,3.0,9,7,2,results/m5_uia_beff_validation/summary.csv,88,,,,,,,,,,
+a,CPA source-count diagnostic / FedAvg,87,10,32,2,4,per_bucket,256,3.0,14,14,0,results/m5_uia_beff_validation/summary.csv,89,,,,,,,,,,
+a,CPA source-count diagnostic / FedSGD,88,1,64,2,2,per_row,,3.0,14,14,0,results/m5_uia_beff_validation/summary.csv,90,,,,,,,,,,
+a,CPA source-count diagnostic / FedSGD,89,1,64,2,3,per_row,,3.0,25,25,0,results/m5_uia_beff_validation/summary.csv,91,,,,,,,,,,
+a,CPA source-count diagnostic / FedSGD,90,1,64,2,4,per_row,,3.0,33,33,0,results/m5_uia_beff_validation/summary.csv,92,,,,,,,,,,
+a,CPA source-count diagnostic / FedSGD,91,1,64,2,8,per_row,,3.0,49,49,0,results/m5_uia_beff_validation/summary.csv,93,,,,,,,,,,
+a,CPA source-count diagnostic / FedAvg,92,10,64,2,2,per_row,,3.0,14,14,0,results/m5_uia_beff_validation/summary.csv,94,,,,,,,,,,
+a,CPA source-count diagnostic / FedAvg,93,10,64,2,3,per_row,,3.0,25,25,0,results/m5_uia_beff_validation/summary.csv,95,,,,,,,,,,
+a,CPA source-count diagnostic / FedAvg,94,10,64,2,4,per_row,,3.0,33,33,0,results/m5_uia_beff_validation/summary.csv,96,,,,,,,,,,
+a,CPA source-count diagnostic / FedAvg,95,10,64,2,8,per_row,,3.0,49,49,0,results/m5_uia_beff_validation/summary.csv,97,,,,,,,,,,
+b,CPA + FIA (FP32),,1,8,,fp32,not applicable,,,,,,results/v5_m3_fia_4bit/fp32/per_image_metrics.csv,2,0,0,0,439,0.006560809910297394,0.5116771459579468,False,36,0.03088803088803089,0.8580710885452416
+b,CPA + FIA (FP32),,1,8,,fp32,not applicable,,,,,,results/v5_m3_fia_4bit/fp32/per_image_metrics.csv,3,1,0,1,621,1.884617805480957,0.4099198579788208,False,36,0.03088803088803089,0.8580710885452416
+b,CPA + FIA (FP32),,1,8,,fp32,not applicable,,,,,,results/v5_m3_fia_4bit/fp32/per_image_metrics.csv,4,2,0,2,160,0.1492542028427124,0.46397653222084045,False,36,0.03088803088803089,0.8580710885452416
+b,CPA + FIA (FP32),,1,8,,fp32,not applicable,,,,,,results/v5_m3_fia_4bit/fp32/per_image_metrics.csv,5,3,0,3,549,0.2141382098197937,0.5127305388450623,False,36,0.03088803088803089,0.8580710885452416
+b,CPA + FIA (FP32),,1,8,,fp32,not applicable,,,,,,results/v5_m3_fia_4bit/fp32/per_image_metrics.csv,6,4,0,4,237,0.03426513075828552,0.3980673849582672,False,36,0.03088803088803089,0.8580710885452416
+b,CPA + FIA (FP32),,1,8,,fp32,not applicable,,,,,,results/v5_m3_fia_4bit/fp32/per_image_metrics.csv,7,5,0,5,389,0.4338216483592987,0.445438951253891,False,36,0.03088803088803089,0.8580710885452416
+b,CPA + FIA (FP32),,1,8,,fp32,not applicable,,,,,,results/v5_m3_fia_4bit/fp32/per_image_metrics.csv,8,6,0,6,658,2.0429108142852783,0.4684273898601532,False,36,0.03088803088803089,0.8580710885452416
+b,CPA + FIA (FP32),,1,8,,fp32,not applicable,,,,,,results/v5_m3_fia_4bit/fp32/per_image_metrics.csv,9,7,0,7,507,3.0688328742980957,0.5361782908439636,False,36,0.03088803088803089,0.8580710885452416
+b,CPA + FIA (FP32),,1,8,,fp32,not applicable,,,,,,results/v5_m3_fia_4bit/fp32/per_image_metrics.csv,10,8,1,0,124,0.02712208591401577,0.4863467216491699,False,36,0.03088803088803089,0.8580710885452416
+b,CPA + FIA (FP32),,1,8,,fp32,not applicable,,,,,,results/v5_m3_fia_4bit/fp32/per_image_metrics.csv,11,9,1,1,290,0.679574191570282,0.3981913626194,False,36,0.03088803088803089,0.8580710885452416
+b,CPA + FIA (FP32),,1,8,,fp32,not applicable,,,,,,results/v5_m3_fia_4bit/fp32/per_image_metrics.csv,12,10,1,2,975,0.24234816431999207,0.429305762052536,False,36,0.03088803088803089,0.8580710885452416
+b,CPA + FIA (FP32),,1,8,,fp32,not applicable,,,,,,results/v5_m3_fia_4bit/fp32/per_image_metrics.csv,13,11,1,3,392,0.020733527839183807,0.3599189519882202,False,36,0.03088803088803089,0.8580710885452416
+b,CPA + FIA (FP32),,1,8,,fp32,not applicable,,,,,,results/v5_m3_fia_4bit/fp32/per_image_metrics.csv,14,12,1,4,231,0.3284319341182709,0.4247412085533142,False,36,0.03088803088803089,0.8580710885452416
+b,CPA + FIA (FP32),,1,8,,fp32,not applicable,,,,,,results/v5_m3_fia_4bit/fp32/per_image_metrics.csv,15,13,1,5,969,4.617753982543945,0.4007197916507721,False,36,0.03088803088803089,0.8580710885452416
+b,CPA + FIA (FP32),,1,8,,fp32,not applicable,,,,,,results/v5_m3_fia_4bit/fp32/per_image_metrics.csv,16,14,1,6,354,1.0118539333343506,0.438009113073349,False,36,0.03088803088803089,0.8580710885452416
+b,CPA + FIA (FP32),,1,8,,fp32,not applicable,,,,,,results/v5_m3_fia_4bit/fp32/per_image_metrics.csv,17,15,1,7,657,0.7222250699996948,0.4324680268764496,False,36,0.03088803088803089,0.8580710885452416
+b,CPA + FIA (FP32),,1,8,,fp32,not applicable,,,,,,results/v6_m3_fia_4bit_batch2/fp32/per_image_metrics.csv,2,16,2,0,914,0.44117388129234314,0.46044203639030457,False,36,0.03088803088803089,0.8580710885452416
+b,CPA + FIA (FP32),,1,8,,fp32,not applicable,,,,,,results/v6_m3_fia_4bit_batch2/fp32/per_image_metrics.csv,3,17,2,1,719,0.01205598283559084,0.4045408368110657,False,36,0.03088803088803089,0.8580710885452416
+b,CPA + FIA (FP32),,1,8,,fp32,not applicable,,,,,,results/v6_m3_fia_4bit_batch2/fp32/per_image_metrics.csv,4,18,2,2,302,0.05754310265183449,0.3706204891204834,False,36,0.03088803088803089,0.8580710885452416
+b,CPA + FIA (FP32),,1,8,,fp32,not applicable,,,,,,results/v6_m3_fia_4bit_batch2/fp32/per_image_metrics.csv,5,19,2,3,109,0.09421037882566452,0.44051191210746765,False,36,0.03088803088803089,0.8580710885452416
+b,CPA + FIA (FP32),,1,8,,fp32,not applicable,,,,,,results/v6_m3_fia_4bit_batch2/fp32/per_image_metrics.csv,6,20,2,4,508,0.3734523057937622,0.47742959856987,False,36,0.03088803088803089,0.8580710885452416
+b,CPA + FIA (FP32),,1,8,,fp32,not applicable,,,,,,results/v6_m3_fia_4bit_batch2/fp32/per_image_metrics.csv,7,21,2,5,754,0.06091225519776344,0.4389203190803528,False,36,0.03088803088803089,0.8580710885452416
+b,CPA + FIA (FP32),,1,8,,fp32,not applicable,,,,,,results/v6_m3_fia_4bit_batch2/fp32/per_image_metrics.csv,8,23,2,7,6,0.40885862708091736,0.4013410806655884,False,36,0.03088803088803089,0.8580710885452416
+b,CPA + FIA (FP32),,1,8,,fp32,not applicable,,,,,,results/v6_m3_fia_4bit_batch3/fp32/per_image_metrics.csv,2,25,3,1,243,0.21786047518253326,0.44471198320388794,False,36,0.03088803088803089,0.8580710885452416
+b,CPA + FIA (FP32),,1,8,,fp32,not applicable,,,,,,results/v6_m3_fia_4bit_batch3/fp32/per_image_metrics.csv,3,26,3,2,359,2.4877266883850098,0.3987732231616974,False,36,0.03088803088803089,0.8580710885452416
+b,CPA + FIA (FP32),,1,8,,fp32,not applicable,,,,,,results/v6_m3_fia_4bit_batch3/fp32/per_image_metrics.csv,4,27,3,3,710,6.453697204589844,0.3628518283367157,False,36,0.03088803088803089,0.8580710885452416
+b,CPA + FIA (FP32),,1,8,,fp32,not applicable,,,,,,results/v6_m3_fia_4bit_batch3/fp32/per_image_metrics.csv,5,28,3,4,34,5.247193336486816,0.506858229637146,False,36,0.03088803088803089,0.8580710885452416
+b,CPA + FIA (FP32),,1,8,,fp32,not applicable,,,,,,results/v6_m3_fia_4bit_batch3/fp32/per_image_metrics.csv,6,29,3,5,54,1.4264161586761475,0.4757113754749298,False,36,0.03088803088803089,0.8580710885452416
+b,CPA + FIA (FP32),,1,8,,fp32,not applicable,,,,,,results/v6_m3_fia_4bit_batch3/fp32/per_image_metrics.csv,7,30,3,6,399,3.125230312347412,0.41641169786453247,False,36,0.03088803088803089,0.8580710885452416
+b,CPA + FIA (FP32),,1,8,,fp32,not applicable,,,,,,results/v6_m3_fia_4bit_batch3/fp32/per_image_metrics.csv,8,31,3,7,559,0.02611871063709259,0.4521303176879883,False,36,0.03088803088803089,0.8580710885452416
+b,CPA + FIA (FP32),,1,8,,fp32,not applicable,,,,,,results/v6_m3_fia_4bit_batch4/fp32/per_image_metrics.csv,2,33,4,1,874,0.002290009055286646,0.47384005784988403,False,36,0.03088803088803089,0.8580710885452416
+b,CPA + FIA (FP32),,1,8,,fp32,not applicable,,,,,,results/v6_m3_fia_4bit_batch4/fp32/per_image_metrics.csv,3,34,4,2,875,0.8017486333847046,0.5564835071563721,False,36,0.03088803088803089,0.8580710885452416
+b,CPA + FIA (FP32),,1,8,,fp32,not applicable,,,,,,results/v6_m3_fia_4bit_batch4/fp32/per_image_metrics.csv,4,35,4,3,591,1.0457772016525269,0.39208945631980896,False,36,0.03088803088803089,0.8580710885452416
+b,CPA + FIA (FP32),,1,8,,fp32,not applicable,,,,,,results/v6_m3_fia_4bit_batch4/fp32/per_image_metrics.csv,5,37,4,5,793,5.4884233474731445,0.5096952319145203,False,36,0.03088803088803089,0.8580710885452416
+b,CPA + FIA (FP32),,1,8,,fp32,not applicable,,,,,,results/v6_m3_fia_4bit_batch4/fp32/per_image_metrics.csv,6,38,4,6,349,0.9776003360748291,0.49874264001846313,False,36,0.03088803088803089,0.8580710885452416
+b,CPA + FIA (FP32),,1,8,,fp32,not applicable,,,,,,results/v6_m3_fia_4bit_batch4/fp32/per_image_metrics.csv,7,39,4,7,782,0.987927258014679,0.47480329871177673,False,36,0.03088803088803089,0.8580710885452416
+b,CPA + FIA (4-bit observation model),,1,8,,4,per_row,,,,,,results/v5_m3_fia_4bit/naive/per_image_metrics.csv,2,0,0,0,439,0.006560809910297394,0.7518289089202881,False,40,-0.5906191369606004,6.02093714008584e-05
+b,CPA + FIA (4-bit observation model),,1,8,,4,per_row,,,,,,results/v5_m3_fia_4bit/naive/per_image_metrics.csv,3,1,0,1,621,1.884617805480957,0.4161328673362732,False,40,-0.5906191369606004,6.02093714008584e-05
+b,CPA + FIA (4-bit observation model),,1,8,,4,per_row,,,,,,results/v5_m3_fia_4bit/naive/per_image_metrics.csv,4,2,0,2,160,0.1492542028427124,0.48707425594329834,False,40,-0.5906191369606004,6.02093714008584e-05
+b,CPA + FIA (4-bit observation model),,1,8,,4,per_row,,,,,,results/v5_m3_fia_4bit/naive/per_image_metrics.csv,5,3,0,3,549,0.2141382098197937,0.5285910964012146,False,40,-0.5906191369606004,6.02093714008584e-05
+b,CPA + FIA (4-bit observation model),,1,8,,4,per_row,,,,,,results/v5_m3_fia_4bit/naive/per_image_metrics.csv,6,4,0,4,237,0.03426513075828552,0.8021260499954224,False,40,-0.5906191369606004,6.02093714008584e-05
+b,CPA + FIA (4-bit observation model),,1,8,,4,per_row,,,,,,results/v5_m3_fia_4bit/naive/per_image_metrics.csv,7,5,0,5,389,0.4338216483592987,0.42623382806777954,False,40,-0.5906191369606004,6.02093714008584e-05
+b,CPA + FIA (4-bit observation model),,1,8,,4,per_row,,,,,,results/v5_m3_fia_4bit/naive/per_image_metrics.csv,8,6,0,6,658,2.0429108142852783,0.4715278744697571,False,40,-0.5906191369606004,6.02093714008584e-05
+b,CPA + FIA (4-bit observation model),,1,8,,4,per_row,,,,,,results/v5_m3_fia_4bit/naive/per_image_metrics.csv,9,7,0,7,507,3.0688328742980957,0.5253833532333374,False,40,-0.5906191369606004,6.02093714008584e-05
+b,CPA + FIA (4-bit observation model),,1,8,,4,per_row,,,,,,results/v5_m3_fia_4bit/naive/per_image_metrics.csv,10,8,1,0,124,0.02712208591401577,0.8667491674423218,False,40,-0.5906191369606004,6.02093714008584e-05
+b,CPA + FIA (4-bit observation model),,1,8,,4,per_row,,,,,,results/v5_m3_fia_4bit/naive/per_image_metrics.csv,11,9,1,1,290,0.679574191570282,0.4036652147769928,False,40,-0.5906191369606004,6.02093714008584e-05
+b,CPA + FIA (4-bit observation model),,1,8,,4,per_row,,,,,,results/v5_m3_fia_4bit/naive/per_image_metrics.csv,12,10,1,2,975,0.24234816431999207,0.4340680241584778,False,40,-0.5906191369606004,6.02093714008584e-05
+b,CPA + FIA (4-bit observation model),,1,8,,4,per_row,,,,,,results/v5_m3_fia_4bit/naive/per_image_metrics.csv,13,11,1,3,392,0.020733527839183807,0.8045890927314758,False,40,-0.5906191369606004,6.02093714008584e-05
+b,CPA + FIA (4-bit observation model),,1,8,,4,per_row,,,,,,results/v5_m3_fia_4bit/naive/per_image_metrics.csv,14,12,1,4,231,0.3284319341182709,0.44343286752700806,False,40,-0.5906191369606004,6.02093714008584e-05
+b,CPA + FIA (4-bit observation model),,1,8,,4,per_row,,,,,,results/v5_m3_fia_4bit/naive/per_image_metrics.csv,15,13,1,5,969,4.617753982543945,0.4154636561870575,False,40,-0.5906191369606004,6.02093714008584e-05
+b,CPA + FIA (4-bit observation model),,1,8,,4,per_row,,,,,,results/v5_m3_fia_4bit/naive/per_image_metrics.csv,16,14,1,6,354,1.0118539333343506,0.4513973593711853,False,40,-0.5906191369606004,6.02093714008584e-05
+b,CPA + FIA (4-bit observation model),,1,8,,4,per_row,,,,,,results/v5_m3_fia_4bit/naive/per_image_metrics.csv,17,15,1,7,657,0.7222250699996948,0.44849851727485657,False,40,-0.5906191369606004,6.02093714008584e-05
+b,CPA + FIA (4-bit observation model),,1,8,,4,per_row,,,,,,results/v6_m3_fia_4bit_batch2/naive/per_image_metrics.csv,2,16,2,0,914,0.44117388129234314,0.44946396350860596,False,40,-0.5906191369606004,6.02093714008584e-05
+b,CPA + FIA (4-bit observation model),,1,8,,4,per_row,,,,,,results/v6_m3_fia_4bit_batch2/naive/per_image_metrics.csv,3,17,2,1,719,0.01205598283559084,0.7604323625564575,False,40,-0.5906191369606004,6.02093714008584e-05
+b,CPA + FIA (4-bit observation model),,1,8,,4,per_row,,,,,,results/v6_m3_fia_4bit_batch2/naive/per_image_metrics.csv,4,18,2,2,302,0.05754310265183449,0.37576788663864136,False,40,-0.5906191369606004,6.02093714008584e-05
+b,CPA + FIA (4-bit observation model),,1,8,,4,per_row,,,,,,results/v6_m3_fia_4bit_batch2/naive/per_image_metrics.csv,5,19,2,3,109,0.09421037882566452,0.4469465911388397,False,40,-0.5906191369606004,6.02093714008584e-05
+b,CPA + FIA (4-bit observation model),,1,8,,4,per_row,,,,,,results/v6_m3_fia_4bit_batch2/naive/per_image_metrics.csv,6,20,2,4,508,0.3734523057937622,0.48288655281066895,False,40,-0.5906191369606004,6.02093714008584e-05
+b,CPA + FIA (4-bit observation model),,1,8,,4,per_row,,,,,,results/v6_m3_fia_4bit_batch2/naive/per_image_metrics.csv,7,21,2,5,754,0.06091225519776344,0.4621732831001282,False,40,-0.5906191369606004,6.02093714008584e-05
+b,CPA + FIA (4-bit observation model),,1,8,,4,per_row,,,,,,results/v6_m3_fia_4bit_batch2/naive/per_image_metrics.csv,8,22,2,6,576,9.548207890475169e-05,0.7648465633392334,False,40,-0.5906191369606004,6.02093714008584e-05
+b,CPA + FIA (4-bit observation model),,1,8,,4,per_row,,,,,,results/v6_m3_fia_4bit_batch2/naive/per_image_metrics.csv,9,23,2,7,6,0.40885862708091736,0.3995872735977173,False,40,-0.5906191369606004,6.02093714008584e-05
+b,CPA + FIA (4-bit observation model),,1,8,,4,per_row,,,,,,results/v6_m3_fia_4bit_batch3/naive/per_image_metrics.csv,2,24,3,0,832,0.0006286313873715699,0.8117092251777649,False,40,-0.5906191369606004,6.02093714008584e-05
+b,CPA + FIA (4-bit observation model),,1,8,,4,per_row,,,,,,results/v6_m3_fia_4bit_batch3/naive/per_image_metrics.csv,3,25,3,1,243,0.21786047518253326,0.44955286383628845,False,40,-0.5906191369606004,6.02093714008584e-05
+b,CPA + FIA (4-bit observation model),,1,8,,4,per_row,,,,,,results/v6_m3_fia_4bit_batch3/naive/per_image_metrics.csv,4,26,3,2,359,2.4877266883850098,0.39737367630004883,False,40,-0.5906191369606004,6.02093714008584e-05
+b,CPA + FIA (4-bit observation model),,1,8,,4,per_row,,,,,,results/v6_m3_fia_4bit_batch3/naive/per_image_metrics.csv,5,27,3,3,710,6.453697204589844,0.35182279348373413,False,40,-0.5906191369606004,6.02093714008584e-05
+b,CPA + FIA (4-bit observation model),,1,8,,4,per_row,,,,,,results/v6_m3_fia_4bit_batch3/naive/per_image_metrics.csv,6,28,3,4,34,5.247193336486816,0.5053824186325073,False,40,-0.5906191369606004,6.02093714008584e-05
+b,CPA + FIA (4-bit observation model),,1,8,,4,per_row,,,,,,results/v6_m3_fia_4bit_batch3/naive/per_image_metrics.csv,7,29,3,5,54,1.4264161586761475,0.47118866443634033,False,40,-0.5906191369606004,6.02093714008584e-05
+b,CPA + FIA (4-bit observation model),,1,8,,4,per_row,,,,,,results/v6_m3_fia_4bit_batch3/naive/per_image_metrics.csv,8,30,3,6,399,3.125230312347412,0.4123312830924988,False,40,-0.5906191369606004,6.02093714008584e-05
+b,CPA + FIA (4-bit observation model),,1,8,,4,per_row,,,,,,results/v6_m3_fia_4bit_batch3/naive/per_image_metrics.csv,9,31,3,7,559,0.02611871063709259,0.7712681293487549,False,40,-0.5906191369606004,6.02093714008584e-05
+b,CPA + FIA (4-bit observation model),,1,8,,4,per_row,,,,,,results/v6_m3_fia_4bit_batch4/naive/per_image_metrics.csv,2,32,4,0,521,0.0003771070914808661,0.7469152212142944,False,40,-0.5906191369606004,6.02093714008584e-05
+b,CPA + FIA (4-bit observation model),,1,8,,4,per_row,,,,,,results/v6_m3_fia_4bit_batch4/naive/per_image_metrics.csv,3,33,4,1,874,0.002290009055286646,0.7466493844985962,False,40,-0.5906191369606004,6.02093714008584e-05
+b,CPA + FIA (4-bit observation model),,1,8,,4,per_row,,,,,,results/v6_m3_fia_4bit_batch4/naive/per_image_metrics.csv,4,34,4,2,875,0.8017486333847046,0.5528295040130615,False,40,-0.5906191369606004,6.02093714008584e-05
+b,CPA + FIA (4-bit observation model),,1,8,,4,per_row,,,,,,results/v6_m3_fia_4bit_batch4/naive/per_image_metrics.csv,5,35,4,3,591,1.0457772016525269,0.41138261556625366,False,40,-0.5906191369606004,6.02093714008584e-05
+b,CPA + FIA (4-bit observation model),,1,8,,4,per_row,,,,,,results/v6_m3_fia_4bit_batch4/naive/per_image_metrics.csv,6,36,4,4,137,6.198863957251888e-06,0.7973436117172241,False,40,-0.5906191369606004,6.02093714008584e-05
+b,CPA + FIA (4-bit observation model),,1,8,,4,per_row,,,,,,results/v6_m3_fia_4bit_batch4/naive/per_image_metrics.csv,7,37,4,5,793,5.4884233474731445,0.5153810381889343,False,40,-0.5906191369606004,6.02093714008584e-05
+b,CPA + FIA (4-bit observation model),,1,8,,4,per_row,,,,,,results/v6_m3_fia_4bit_batch4/naive/per_image_metrics.csv,8,38,4,6,349,0.9776003360748291,0.5036472678184509,False,40,-0.5906191369606004,6.02093714008584e-05
+b,CPA + FIA (4-bit observation model),,1,8,,4,per_row,,,,,,results/v6_m3_fia_4bit_batch4/naive/per_image_metrics.csv,9,39,4,7,782,0.987927258014679,0.4939696490764618,False,40,-0.5906191369606004,6.02093714008584e-05

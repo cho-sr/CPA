@@ -1,0 +1,3819 @@
+{
+  "run_tag": "m10_cpa_fia_packed4_same80_B16",
+  "source_png_sha256": "33c9c4e610afd3f62b2c694abccc7b2c5f4464253315d3927264fdf7a34f06ac",
+  "source_csv_sha256": "b2bde29dd877ec60149085c6cdc972aed5366da97f6fca6a59f3a7546371a4c0",
+  "mean_metrics": {
+    "lpips": 0.5732020232826471,
+    "ssim": 0.288918933365494,
+    "psnr": 21.8309161901474
+  },
+  "rendering": "Existing verified RGB tiles; isotropic Lanczos resampling; no color correction or image synthesis",
+  "outputs": [
+    {
+      "file": "all80_reconstruction_3840x2160.png",
+      "sha256": "7e9e75f0ea7b48b215446381ac85f2a6f16fe0fe349e79ec4b68b29a04fdb6a7",
+      "size": [
+        3840,
+        2160
+      ],
+      "columns": 10,
+      "rows": 8,
+      "tile_size": 169,
+      "n_images": 80,
+      "global_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79
+      ],
+      "mean_metrics": {
+        "lpips": 0.5732020232826471,
+        "ssim": 0.288918933365494,
+        "psnr": 21.8309161901474
+      },
+      "placements": [
+        {
+          "global_index": 0,
+          "panel": "Original",
+          "box": [
+            72,
+            316,
+            241,
+            485
+          ],
+          "rgb_sha256": "4a3c87f4e19dfd0b922ce6a7678c8012d883d57863d3ec84d26f4bd3f3f9317f"
+        },
+        {
+          "global_index": 0,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            251,
+            316,
+            420,
+            485
+          ],
+          "rgb_sha256": "f731f177aa9f6e00deadf9eb213a7b3fdf5e2a3657bcaa2763884e9f31c8ad3b"
+        },
+        {
+          "global_index": 1,
+          "panel": "Original",
+          "box": [
+            444,
+            316,
+            613,
+            485
+          ],
+          "rgb_sha256": "1bf709bee13eb07c78974944dad45eb94e7b3a757ab5d59572f4a097657ae012"
+        },
+        {
+          "global_index": 1,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            623,
+            316,
+            792,
+            485
+          ],
+          "rgb_sha256": "a652383f5bca4c7cff6ea76ce12941c44992c5ad8d6378f19c45469772a4a2cc"
+        },
+        {
+          "global_index": 2,
+          "panel": "Original",
+          "box": [
+            816,
+            316,
+            985,
+            485
+          ],
+          "rgb_sha256": "4f6268fff1d96e5ca9f70fca7c966f4ff474b4c0c52ea35d5c342516af3ae4de"
+        },
+        {
+          "global_index": 2,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            995,
+            316,
+            1164,
+            485
+          ],
+          "rgb_sha256": "14566edd420fadb84d7cf340c55d31fcb6e34e00023de1112c7b874f0438552c"
+        },
+        {
+          "global_index": 3,
+          "panel": "Original",
+          "box": [
+            1188,
+            316,
+            1357,
+            485
+          ],
+          "rgb_sha256": "4b0b6fcc2b8663ecebd83fdae2c4951fab10367aa5b70ef8c1ca3a5549954bcb"
+        },
+        {
+          "global_index": 3,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            1367,
+            316,
+            1536,
+            485
+          ],
+          "rgb_sha256": "11bbd33fb3dec7c198443d38559b412ad56201ca6736962af6aaf46fa7675d79"
+        },
+        {
+          "global_index": 4,
+          "panel": "Original",
+          "box": [
+            1560,
+            316,
+            1729,
+            485
+          ],
+          "rgb_sha256": "8d93c0b914f44a745e22a06749b54804ac77f56d4847a3fd25ecc0352b089791"
+        },
+        {
+          "global_index": 4,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            1739,
+            316,
+            1908,
+            485
+          ],
+          "rgb_sha256": "674c909aa0779e48703ab1a2292fb9b5a4ac7848b74234d3f90dbd3d653cb52e"
+        },
+        {
+          "global_index": 5,
+          "panel": "Original",
+          "box": [
+            1932,
+            316,
+            2101,
+            485
+          ],
+          "rgb_sha256": "c904148b13f7f9fb2a920f1b0e487958e5868f27fbca28e65f90bcd3214317db"
+        },
+        {
+          "global_index": 5,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            2111,
+            316,
+            2280,
+            485
+          ],
+          "rgb_sha256": "be5758f045047b8b686160bf2e0a1a34d3948397909dd6b2fdd95c40ea57bdc5"
+        },
+        {
+          "global_index": 6,
+          "panel": "Original",
+          "box": [
+            2304,
+            316,
+            2473,
+            485
+          ],
+          "rgb_sha256": "b6231d8f8f44a59a490b633044ce60e2f8306f3648e6090285cef538b7b62aac"
+        },
+        {
+          "global_index": 6,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            2483,
+            316,
+            2652,
+            485
+          ],
+          "rgb_sha256": "cbd70313378da74899a9a3acf8ea33f5b04578feaacff79726981600d593974b"
+        },
+        {
+          "global_index": 7,
+          "panel": "Original",
+          "box": [
+            2676,
+            316,
+            2845,
+            485
+          ],
+          "rgb_sha256": "42bcb56eeca54c870c59a99802c5a9d8a7971b44bcd1c9c5df26cb8f6b784147"
+        },
+        {
+          "global_index": 7,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            2855,
+            316,
+            3024,
+            485
+          ],
+          "rgb_sha256": "1e206edbe8fe6697b2da52005875e835cb5168ade4cd39091cc9e2930bb741b3"
+        },
+        {
+          "global_index": 8,
+          "panel": "Original",
+          "box": [
+            3048,
+            316,
+            3217,
+            485
+          ],
+          "rgb_sha256": "58fcfeeecef9f984ee88b9aebab8079a03e67463c6ea09b3d3909633ae648086"
+        },
+        {
+          "global_index": 8,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            3227,
+            316,
+            3396,
+            485
+          ],
+          "rgb_sha256": "c7e8827f93d8796bf8bffc70f1db50afb977a23459a78b298aa21b053b15e9f1"
+        },
+        {
+          "global_index": 9,
+          "panel": "Original",
+          "box": [
+            3420,
+            316,
+            3589,
+            485
+          ],
+          "rgb_sha256": "e765a1fcfc22122dcd9f656fd9a03cc142f8284cd3077cc4e90e048fd35427b2"
+        },
+        {
+          "global_index": 9,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            3599,
+            316,
+            3768,
+            485
+          ],
+          "rgb_sha256": "e9588295d948d1ad5af4559711b2c9a6f7cea8df6c73d8304b94bc2c7e5d7e24"
+        },
+        {
+          "global_index": 10,
+          "panel": "Original",
+          "box": [
+            72,
+            537,
+            241,
+            706
+          ],
+          "rgb_sha256": "4f0cdde6f9ac64818e39565167f04959c7172993ff9235fe418291f15d83a6b7"
+        },
+        {
+          "global_index": 10,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            251,
+            537,
+            420,
+            706
+          ],
+          "rgb_sha256": "27ff97dfea943e3d79dc0837312ef28f34d609d0a91455abbb1421e4b1cebe94"
+        },
+        {
+          "global_index": 11,
+          "panel": "Original",
+          "box": [
+            444,
+            537,
+            613,
+            706
+          ],
+          "rgb_sha256": "5be69a6eac33be9f13f0ea646fd89ee12d3e3623d3dc229e97c175b50c4c8d56"
+        },
+        {
+          "global_index": 11,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            623,
+            537,
+            792,
+            706
+          ],
+          "rgb_sha256": "c51aa60e63074b8d19efd6371289d0b44f6588d320d29987b477a02e0692cc33"
+        },
+        {
+          "global_index": 12,
+          "panel": "Original",
+          "box": [
+            816,
+            537,
+            985,
+            706
+          ],
+          "rgb_sha256": "e271ed80c8004579aa7f8cf76d3550aac582f715dbc1b410b6cec78917c4e63d"
+        },
+        {
+          "global_index": 12,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            995,
+            537,
+            1164,
+            706
+          ],
+          "rgb_sha256": "2000ef482a7c48e10da1bcb4b9d733cae7b45d30845ddb41fdee0e9637b6e383"
+        },
+        {
+          "global_index": 13,
+          "panel": "Original",
+          "box": [
+            1188,
+            537,
+            1357,
+            706
+          ],
+          "rgb_sha256": "24eebce817a33c35c82f3a49b2ba89b943caa07a03ba12d534169e1f35b2a382"
+        },
+        {
+          "global_index": 13,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            1367,
+            537,
+            1536,
+            706
+          ],
+          "rgb_sha256": "8830b2e9e3da256247e3473874b9a966af9ddc58f5bdf9ca2f96f7e5cdbc903f"
+        },
+        {
+          "global_index": 14,
+          "panel": "Original",
+          "box": [
+            1560,
+            537,
+            1729,
+            706
+          ],
+          "rgb_sha256": "7fe95a546fb24018a0b1db15bdaae1068a55f6eb5182e6a9427b27cdd8b57339"
+        },
+        {
+          "global_index": 14,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            1739,
+            537,
+            1908,
+            706
+          ],
+          "rgb_sha256": "16f2683c7718132af4a67ad643245ce5dbd103b2e8cbe4348073caab0b236f6b"
+        },
+        {
+          "global_index": 15,
+          "panel": "Original",
+          "box": [
+            1932,
+            537,
+            2101,
+            706
+          ],
+          "rgb_sha256": "9604f9c0e86156de41912ba53d41da9d4098f574977e35839e2ae385fe833496"
+        },
+        {
+          "global_index": 15,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            2111,
+            537,
+            2280,
+            706
+          ],
+          "rgb_sha256": "25752d9a394737997bc3bef56a0d26e6b1e17885be6f7a9ed1cd6ce3c701c437"
+        },
+        {
+          "global_index": 16,
+          "panel": "Original",
+          "box": [
+            2304,
+            537,
+            2473,
+            706
+          ],
+          "rgb_sha256": "de89188e035aef8b4230ed6aa1adf16361bfeecf9e958145dbdaae0b72c46e72"
+        },
+        {
+          "global_index": 16,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            2483,
+            537,
+            2652,
+            706
+          ],
+          "rgb_sha256": "dc848fa651fedc2c05669229048303c5628a5a53e6649e11b6a10e1259001c86"
+        },
+        {
+          "global_index": 17,
+          "panel": "Original",
+          "box": [
+            2676,
+            537,
+            2845,
+            706
+          ],
+          "rgb_sha256": "b2fe4bb47ae0cfef0d681eaa805fe95ffb01b27bc4470b5d5ee01f52ffeeaece"
+        },
+        {
+          "global_index": 17,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            2855,
+            537,
+            3024,
+            706
+          ],
+          "rgb_sha256": "a1550e50826829d52b24012bb75a069a714538ad924725cb3eb47b61fcd42911"
+        },
+        {
+          "global_index": 18,
+          "panel": "Original",
+          "box": [
+            3048,
+            537,
+            3217,
+            706
+          ],
+          "rgb_sha256": "80ef1d3865897c585d4547db703910bf460d208d4a3205e932d2c455c474e560"
+        },
+        {
+          "global_index": 18,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            3227,
+            537,
+            3396,
+            706
+          ],
+          "rgb_sha256": "31db45be4f5377a2775e408ae576fb3c71f44029544a6c3d080b28f6266acbbf"
+        },
+        {
+          "global_index": 19,
+          "panel": "Original",
+          "box": [
+            3420,
+            537,
+            3589,
+            706
+          ],
+          "rgb_sha256": "d200f5a5a51cb8acfb531240ee26dc54694a3289131856c8d824d35f5ba5068e"
+        },
+        {
+          "global_index": 19,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            3599,
+            537,
+            3768,
+            706
+          ],
+          "rgb_sha256": "ba47b818ebcc11c4237ff42cf463ddbb0deb9553511e9a59b23b894b26628504"
+        },
+        {
+          "global_index": 20,
+          "panel": "Original",
+          "box": [
+            72,
+            758,
+            241,
+            927
+          ],
+          "rgb_sha256": "af46954d5912f74dbb2d3c8974fac89c30ee9b31f5b51e2cfd5e09375d3d6ac7"
+        },
+        {
+          "global_index": 20,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            251,
+            758,
+            420,
+            927
+          ],
+          "rgb_sha256": "720742979000408f651e992c73a40ed7c62e46c20e0fb64db753b82217dacba3"
+        },
+        {
+          "global_index": 21,
+          "panel": "Original",
+          "box": [
+            444,
+            758,
+            613,
+            927
+          ],
+          "rgb_sha256": "0e06892d0da1fb0c53f5116b782d683b267e17dbc17073893b31239ee9502f96"
+        },
+        {
+          "global_index": 21,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            623,
+            758,
+            792,
+            927
+          ],
+          "rgb_sha256": "8322585f689eb43c635321d1fff5a1bfbb856f025f12f50dffebe5bba028e076"
+        },
+        {
+          "global_index": 22,
+          "panel": "Original",
+          "box": [
+            816,
+            758,
+            985,
+            927
+          ],
+          "rgb_sha256": "5fcfe8244285958711a2c2613fcd459269e9d8944ef0c36ad68764cfebc33cb5"
+        },
+        {
+          "global_index": 22,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            995,
+            758,
+            1164,
+            927
+          ],
+          "rgb_sha256": "e0c21430017cd348b3b893aa5c52d63ba869995a6312a5e724f55f4eafedbe0b"
+        },
+        {
+          "global_index": 23,
+          "panel": "Original",
+          "box": [
+            1188,
+            758,
+            1357,
+            927
+          ],
+          "rgb_sha256": "bb83d542280c314c0ee6612d3350370d57a4086ff193ff9420f314ec6d612441"
+        },
+        {
+          "global_index": 23,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            1367,
+            758,
+            1536,
+            927
+          ],
+          "rgb_sha256": "c0c7e8c2b1c00a2521aaa229847260cdbb3eee4f821b5c5b993ef736024fc9bf"
+        },
+        {
+          "global_index": 24,
+          "panel": "Original",
+          "box": [
+            1560,
+            758,
+            1729,
+            927
+          ],
+          "rgb_sha256": "dc03febecb24bdbd0b7a2f332fa45cfbc87939b2bfbe99e4858689d341890bce"
+        },
+        {
+          "global_index": 24,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            1739,
+            758,
+            1908,
+            927
+          ],
+          "rgb_sha256": "77474182b15fa40a229eeff901f4552e1c85b84a011d163fca7d40d778df705a"
+        },
+        {
+          "global_index": 25,
+          "panel": "Original",
+          "box": [
+            1932,
+            758,
+            2101,
+            927
+          ],
+          "rgb_sha256": "e1c3c538cc100f4f19c8b5fc356010bcd1264fba33749d974123b0986dab8f3c"
+        },
+        {
+          "global_index": 25,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            2111,
+            758,
+            2280,
+            927
+          ],
+          "rgb_sha256": "d89b66b9a12b3eef1c725da63e9ef552a4405e3ff2eb43d07640aa7fed549ad8"
+        },
+        {
+          "global_index": 26,
+          "panel": "Original",
+          "box": [
+            2304,
+            758,
+            2473,
+            927
+          ],
+          "rgb_sha256": "67abec5aa5c8538662428b44f4b6939e35213fd1053a4c3c37d5012e5157ca4f"
+        },
+        {
+          "global_index": 26,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            2483,
+            758,
+            2652,
+            927
+          ],
+          "rgb_sha256": "b393c73fd759cb673301b3b17ca33bfbb47b7da4569396701dfc7c192cef8458"
+        },
+        {
+          "global_index": 27,
+          "panel": "Original",
+          "box": [
+            2676,
+            758,
+            2845,
+            927
+          ],
+          "rgb_sha256": "47a3f9989dadfe60857ae1e3b1de1dbee3f01d165d4d07739d443d7ac3179a2e"
+        },
+        {
+          "global_index": 27,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            2855,
+            758,
+            3024,
+            927
+          ],
+          "rgb_sha256": "2248a3ae219685a5ff1420e8cf2d130db1bd1f531b1e53d73a985eb13df226eb"
+        },
+        {
+          "global_index": 28,
+          "panel": "Original",
+          "box": [
+            3048,
+            758,
+            3217,
+            927
+          ],
+          "rgb_sha256": "e2e0668f2351dd8cf5ded0cd3bf5506a1e71d10a23c949f8053226de43a9180d"
+        },
+        {
+          "global_index": 28,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            3227,
+            758,
+            3396,
+            927
+          ],
+          "rgb_sha256": "0961470b315ec452ca971d817f17098da69c37aa347fd79558a14ede5e7ea5dd"
+        },
+        {
+          "global_index": 29,
+          "panel": "Original",
+          "box": [
+            3420,
+            758,
+            3589,
+            927
+          ],
+          "rgb_sha256": "6948ff9cbc62964b79f226ff22b1f9f6a02f448054be80b970775f1f8fd62902"
+        },
+        {
+          "global_index": 29,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            3599,
+            758,
+            3768,
+            927
+          ],
+          "rgb_sha256": "2262f5124b71a6cf1d714315cd1af68b69ca8fcba5e4ca5455e77bba502b15b0"
+        },
+        {
+          "global_index": 30,
+          "panel": "Original",
+          "box": [
+            72,
+            979,
+            241,
+            1148
+          ],
+          "rgb_sha256": "992ac09ed7a9b7e557f87b76a16de6712263dedd411be35791385b1323dcbaf6"
+        },
+        {
+          "global_index": 30,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            251,
+            979,
+            420,
+            1148
+          ],
+          "rgb_sha256": "beb3e5d987fd3335301f04999b7e733deae64ffceb41def6f9570587a0f4e46a"
+        },
+        {
+          "global_index": 31,
+          "panel": "Original",
+          "box": [
+            444,
+            979,
+            613,
+            1148
+          ],
+          "rgb_sha256": "26c3c5aa4ffad05ebd4016c20e243594f90a8e22bf105fb1cbc36992f8d664fa"
+        },
+        {
+          "global_index": 31,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            623,
+            979,
+            792,
+            1148
+          ],
+          "rgb_sha256": "c74aac2fd090e667914bdeabc0f18a5885a409c12a4cfaddadd9480bcab84e25"
+        },
+        {
+          "global_index": 32,
+          "panel": "Original",
+          "box": [
+            816,
+            979,
+            985,
+            1148
+          ],
+          "rgb_sha256": "b22d225348a51a8638409b6eef12dd06331d848c1f01a69ce977cc74f54b76af"
+        },
+        {
+          "global_index": 32,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            995,
+            979,
+            1164,
+            1148
+          ],
+          "rgb_sha256": "b4bd2aac86892167595037c31b428882bf4387c7333df1d66d6cffd64674f20b"
+        },
+        {
+          "global_index": 33,
+          "panel": "Original",
+          "box": [
+            1188,
+            979,
+            1357,
+            1148
+          ],
+          "rgb_sha256": "faa7d15e09fc442a01e6155a0a54d37a88d65255416074bb62f1ebdddb7ed7fd"
+        },
+        {
+          "global_index": 33,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            1367,
+            979,
+            1536,
+            1148
+          ],
+          "rgb_sha256": "92a602ce23333dc0b1d1aade17d31c4e3a2a4164eae1e65ee909f03fb5a2da5c"
+        },
+        {
+          "global_index": 34,
+          "panel": "Original",
+          "box": [
+            1560,
+            979,
+            1729,
+            1148
+          ],
+          "rgb_sha256": "ad3348018b077e04ba60e112719a0f1546f690f59d70d6a6c5022e4853650bbf"
+        },
+        {
+          "global_index": 34,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            1739,
+            979,
+            1908,
+            1148
+          ],
+          "rgb_sha256": "4a2060626f064435b853ab23613d4dd9afc346079b54041b6ac0d1666881e6b8"
+        },
+        {
+          "global_index": 35,
+          "panel": "Original",
+          "box": [
+            1932,
+            979,
+            2101,
+            1148
+          ],
+          "rgb_sha256": "9c73286094e6c27e3cee5c89dccc4e1db4158f327ba52db3c412a2c8cdb0bdac"
+        },
+        {
+          "global_index": 35,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            2111,
+            979,
+            2280,
+            1148
+          ],
+          "rgb_sha256": "749807c0495d1774c08dff019298e668b7863f50a7ecb529dfad49647f04d61e"
+        },
+        {
+          "global_index": 36,
+          "panel": "Original",
+          "box": [
+            2304,
+            979,
+            2473,
+            1148
+          ],
+          "rgb_sha256": "853372e054c48dc7757bdbccf3a27e1912248e0de4f31be2995a96526fb68e0c"
+        },
+        {
+          "global_index": 36,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            2483,
+            979,
+            2652,
+            1148
+          ],
+          "rgb_sha256": "a9075dffa98c88760e11d6dd469bf272e107a19aaeb30f2d1329a1602c495f01"
+        },
+        {
+          "global_index": 37,
+          "panel": "Original",
+          "box": [
+            2676,
+            979,
+            2845,
+            1148
+          ],
+          "rgb_sha256": "8773864acc40cafd5298263578688894fee073d6e769a24b8f7bcbfd4a0e2264"
+        },
+        {
+          "global_index": 37,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            2855,
+            979,
+            3024,
+            1148
+          ],
+          "rgb_sha256": "498ba1edb02c97d07e11e5981d45ffaf13dd0d1fcbae86ebf187e37c5e9b8564"
+        },
+        {
+          "global_index": 38,
+          "panel": "Original",
+          "box": [
+            3048,
+            979,
+            3217,
+            1148
+          ],
+          "rgb_sha256": "b9a096e368f998cdfd429cb4155a7e479f18e09b2baa4ae7f2e2cf545a478730"
+        },
+        {
+          "global_index": 38,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            3227,
+            979,
+            3396,
+            1148
+          ],
+          "rgb_sha256": "b16ecd86b07e89c1ac14a1904acdedd21ecbc383c6fd9cf2d32ad3f00c2c2e17"
+        },
+        {
+          "global_index": 39,
+          "panel": "Original",
+          "box": [
+            3420,
+            979,
+            3589,
+            1148
+          ],
+          "rgb_sha256": "bfa213ea8e3edee700197b50ee2bda1040cf6bb201930b1e6bfe3435340ec778"
+        },
+        {
+          "global_index": 39,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            3599,
+            979,
+            3768,
+            1148
+          ],
+          "rgb_sha256": "5d48a9741a2e3d800b6a1cfac8a395695787ef3b834908413368096da282f599"
+        },
+        {
+          "global_index": 40,
+          "panel": "Original",
+          "box": [
+            72,
+            1200,
+            241,
+            1369
+          ],
+          "rgb_sha256": "a162edaa340249a1a8a78ef28c9a1b74a7fe4e9e93e071f38cdef89b5d4f8a66"
+        },
+        {
+          "global_index": 40,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            251,
+            1200,
+            420,
+            1369
+          ],
+          "rgb_sha256": "d58089cd1e0ae0345505de381e33e37a17b6f7d73d2872b006c6ecd462f1498f"
+        },
+        {
+          "global_index": 41,
+          "panel": "Original",
+          "box": [
+            444,
+            1200,
+            613,
+            1369
+          ],
+          "rgb_sha256": "080ee2bdb654d5ccd6d34a828a3c8886975640e2b62ab6798bdd32b552713c70"
+        },
+        {
+          "global_index": 41,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            623,
+            1200,
+            792,
+            1369
+          ],
+          "rgb_sha256": "6cd4867e2390cdd4dd16b20c9bb3bf827a5306b28bea86c588b6b31b835b2a02"
+        },
+        {
+          "global_index": 42,
+          "panel": "Original",
+          "box": [
+            816,
+            1200,
+            985,
+            1369
+          ],
+          "rgb_sha256": "b55bb777fc77dcd92cbc9b5162bf4876df4a9d5d81d8d29b2dc0d929023cac4b"
+        },
+        {
+          "global_index": 42,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            995,
+            1200,
+            1164,
+            1369
+          ],
+          "rgb_sha256": "e440f9ef3e574fa54cdab57a93836db36d3980b746d30b5dbcd35300023b8050"
+        },
+        {
+          "global_index": 43,
+          "panel": "Original",
+          "box": [
+            1188,
+            1200,
+            1357,
+            1369
+          ],
+          "rgb_sha256": "49f2d35ccf43100220ac84eef3a970372f0931941a88300c883b2dc309bf132c"
+        },
+        {
+          "global_index": 43,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            1367,
+            1200,
+            1536,
+            1369
+          ],
+          "rgb_sha256": "8a593d426bf35994385c905ea6ad7fc82e51a53c25a8f8ff74aa2155d0509ab7"
+        },
+        {
+          "global_index": 44,
+          "panel": "Original",
+          "box": [
+            1560,
+            1200,
+            1729,
+            1369
+          ],
+          "rgb_sha256": "ae7937f805f9d339f9b45af8418e14a8538b289a63d3fed34b4f9bae683fa4f8"
+        },
+        {
+          "global_index": 44,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            1739,
+            1200,
+            1908,
+            1369
+          ],
+          "rgb_sha256": "857408c648f35e528ac80f647d60d7146970aa69094fdf1e910b43d53b44a2ca"
+        },
+        {
+          "global_index": 45,
+          "panel": "Original",
+          "box": [
+            1932,
+            1200,
+            2101,
+            1369
+          ],
+          "rgb_sha256": "78cc66a8150a027a0ea7c3e94693942c70d5ba7ba4b77b6e88310f22c1f5f521"
+        },
+        {
+          "global_index": 45,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            2111,
+            1200,
+            2280,
+            1369
+          ],
+          "rgb_sha256": "dcf6246889532c5e1d07e696f89f04c258ffff2d503dceba4a076349c3479d10"
+        },
+        {
+          "global_index": 46,
+          "panel": "Original",
+          "box": [
+            2304,
+            1200,
+            2473,
+            1369
+          ],
+          "rgb_sha256": "46ae1cf81ea5b4832751b67bd43094d3c700ba3767435c01cc065e99d25c7577"
+        },
+        {
+          "global_index": 46,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            2483,
+            1200,
+            2652,
+            1369
+          ],
+          "rgb_sha256": "73bec4c20e2ca5208a4b68d0e6a11a45bebc34a49cbc3a026e3e756daf6d7781"
+        },
+        {
+          "global_index": 47,
+          "panel": "Original",
+          "box": [
+            2676,
+            1200,
+            2845,
+            1369
+          ],
+          "rgb_sha256": "f50603084c9852c0d95f72e729774966e52d7ba1382ccdea172eb1f6460b43fa"
+        },
+        {
+          "global_index": 47,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            2855,
+            1200,
+            3024,
+            1369
+          ],
+          "rgb_sha256": "f6cf2a3ac28f7863e25076b32d28be8e642aeb51e2d79aa32bc198772a23601a"
+        },
+        {
+          "global_index": 48,
+          "panel": "Original",
+          "box": [
+            3048,
+            1200,
+            3217,
+            1369
+          ],
+          "rgb_sha256": "b1e4298627b0c800b325986ef0f9eb124f6f09241cb5d04c04cf84b746af7dd8"
+        },
+        {
+          "global_index": 48,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            3227,
+            1200,
+            3396,
+            1369
+          ],
+          "rgb_sha256": "37dd95e973338eecdb1049c60efabc660251ff445d8ddfa8c5379c1b3073257e"
+        },
+        {
+          "global_index": 49,
+          "panel": "Original",
+          "box": [
+            3420,
+            1200,
+            3589,
+            1369
+          ],
+          "rgb_sha256": "0136a795e41c6ab13dae1d1683732e5106c095b92617dd05600960c64f7998d8"
+        },
+        {
+          "global_index": 49,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            3599,
+            1200,
+            3768,
+            1369
+          ],
+          "rgb_sha256": "d8b28407f6183ca3bbfa29b380186fb5e7c1777a3527d31fd5b2962eca64ccac"
+        },
+        {
+          "global_index": 50,
+          "panel": "Original",
+          "box": [
+            72,
+            1421,
+            241,
+            1590
+          ],
+          "rgb_sha256": "36d0711b25c03c698ac79de2fb7df1f3b2f9a790ba328eb46b3ad94573bd4603"
+        },
+        {
+          "global_index": 50,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            251,
+            1421,
+            420,
+            1590
+          ],
+          "rgb_sha256": "3d907d55d506e0fbf5dc410222cba9d41e3b7495506e30e73cc54b11cf3198b5"
+        },
+        {
+          "global_index": 51,
+          "panel": "Original",
+          "box": [
+            444,
+            1421,
+            613,
+            1590
+          ],
+          "rgb_sha256": "f1a3e5466eaca38373bc1fe3255b0a8d0da6861c081b1fd0beaa88aa0e95039d"
+        },
+        {
+          "global_index": 51,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            623,
+            1421,
+            792,
+            1590
+          ],
+          "rgb_sha256": "1014c3c626ee823c3348d09d148ca8d9d8e1a85fdaaa5d5cf0661da230a17664"
+        },
+        {
+          "global_index": 52,
+          "panel": "Original",
+          "box": [
+            816,
+            1421,
+            985,
+            1590
+          ],
+          "rgb_sha256": "ea11a4f18f59fe61392a87e6fe0bb49bc0f5301a0667e703dfe4c6fc421c2f14"
+        },
+        {
+          "global_index": 52,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            995,
+            1421,
+            1164,
+            1590
+          ],
+          "rgb_sha256": "f50deaf917f381f0e88f8881bf7f737c75be7229fd378be4208386de82f8a739"
+        },
+        {
+          "global_index": 53,
+          "panel": "Original",
+          "box": [
+            1188,
+            1421,
+            1357,
+            1590
+          ],
+          "rgb_sha256": "32d97df79afb05df55c11b002512dabd431386bebd3d43440a8e7316af7cb26e"
+        },
+        {
+          "global_index": 53,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            1367,
+            1421,
+            1536,
+            1590
+          ],
+          "rgb_sha256": "804d7802ac80845b2e139f04ef731fdfa0469a9a42099fe7973b3fabc2bb8e25"
+        },
+        {
+          "global_index": 54,
+          "panel": "Original",
+          "box": [
+            1560,
+            1421,
+            1729,
+            1590
+          ],
+          "rgb_sha256": "079fc8a32e77e1e0f66a2342532fc0ac18d4d7f43ea97b98861d8a7828f85ed2"
+        },
+        {
+          "global_index": 54,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            1739,
+            1421,
+            1908,
+            1590
+          ],
+          "rgb_sha256": "d3995ae454a797c22a971c3dd40ec8cac87b08c7cfa824fff0c7b13712f16096"
+        },
+        {
+          "global_index": 55,
+          "panel": "Original",
+          "box": [
+            1932,
+            1421,
+            2101,
+            1590
+          ],
+          "rgb_sha256": "937142e6d78fa3d37d63e1595b1b5e974c28b0c80751b0e890c4a0081f30bda5"
+        },
+        {
+          "global_index": 55,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            2111,
+            1421,
+            2280,
+            1590
+          ],
+          "rgb_sha256": "fc3bab3cd1f06e9abe237bbe4bef78b7896fbd149ae7f9ebd74827186ccebf98"
+        },
+        {
+          "global_index": 56,
+          "panel": "Original",
+          "box": [
+            2304,
+            1421,
+            2473,
+            1590
+          ],
+          "rgb_sha256": "fb378417402d9bfb0e61a3c5c79283dd1f86913dc869733d2864117a20793ff5"
+        },
+        {
+          "global_index": 56,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            2483,
+            1421,
+            2652,
+            1590
+          ],
+          "rgb_sha256": "471d4d22983f0f795a652bfa9cc92bae87ba54850159bed4a6bbfb155693ca1b"
+        },
+        {
+          "global_index": 57,
+          "panel": "Original",
+          "box": [
+            2676,
+            1421,
+            2845,
+            1590
+          ],
+          "rgb_sha256": "56e60f351500c096c4402c2b89e67e2312c89f1a12c81f740f70d2144a9f2fba"
+        },
+        {
+          "global_index": 57,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            2855,
+            1421,
+            3024,
+            1590
+          ],
+          "rgb_sha256": "2a6af15a72f45496913aeb62176a5be17e02878b72f3a3f0d8f4685518521b38"
+        },
+        {
+          "global_index": 58,
+          "panel": "Original",
+          "box": [
+            3048,
+            1421,
+            3217,
+            1590
+          ],
+          "rgb_sha256": "dc8024f111bfe51c1539a2f4d2fd657617d6febe1b94e9b936b419d3cc8ff979"
+        },
+        {
+          "global_index": 58,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            3227,
+            1421,
+            3396,
+            1590
+          ],
+          "rgb_sha256": "83a90f403943ab0ab74aeceec6cadffb359c760b4e2c6382e9d98ddfba6e2589"
+        },
+        {
+          "global_index": 59,
+          "panel": "Original",
+          "box": [
+            3420,
+            1421,
+            3589,
+            1590
+          ],
+          "rgb_sha256": "84f844df43fd8caecc4a62c428c5c98c7fe5586c549e0cbddc7e85b56731357c"
+        },
+        {
+          "global_index": 59,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            3599,
+            1421,
+            3768,
+            1590
+          ],
+          "rgb_sha256": "cd1393c5740c5a8aee808446c6a65d359580010320efc2d47472879fd8650084"
+        },
+        {
+          "global_index": 60,
+          "panel": "Original",
+          "box": [
+            72,
+            1642,
+            241,
+            1811
+          ],
+          "rgb_sha256": "b233e05eac36308d0a3c329498fc20884987cbb81c90ecf7705eadf4c0bccbc6"
+        },
+        {
+          "global_index": 60,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            251,
+            1642,
+            420,
+            1811
+          ],
+          "rgb_sha256": "4b8713397cb3d211f0c919a55d1e6c9e1fc0508d44ed5be38b6a6cf3f495be9a"
+        },
+        {
+          "global_index": 61,
+          "panel": "Original",
+          "box": [
+            444,
+            1642,
+            613,
+            1811
+          ],
+          "rgb_sha256": "ddfc32192db4d1858f6577390fae47fa15dc95f299705d2e8e6e75e3b4e15139"
+        },
+        {
+          "global_index": 61,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            623,
+            1642,
+            792,
+            1811
+          ],
+          "rgb_sha256": "8edddfc1459029a95d304c4ec6b7657a0a831f0239012fcbb7bac06c204db5b6"
+        },
+        {
+          "global_index": 62,
+          "panel": "Original",
+          "box": [
+            816,
+            1642,
+            985,
+            1811
+          ],
+          "rgb_sha256": "d3bd1b554a2f2de6095c50f09f101e279659a474d2d1940a58c681bf2c1ae781"
+        },
+        {
+          "global_index": 62,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            995,
+            1642,
+            1164,
+            1811
+          ],
+          "rgb_sha256": "e36ef2c9045f431409a6ad1b85dda3fac8bab8129e12e0c605cbba9d7144bb94"
+        },
+        {
+          "global_index": 63,
+          "panel": "Original",
+          "box": [
+            1188,
+            1642,
+            1357,
+            1811
+          ],
+          "rgb_sha256": "bc3c4fecf9501550a8b821e9e8a88da3009060ae3cd8ec0264c485eabb7702f2"
+        },
+        {
+          "global_index": 63,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            1367,
+            1642,
+            1536,
+            1811
+          ],
+          "rgb_sha256": "1bb64c919839534564707748f36f70c46efa0f4908e272f26865430875fdf15c"
+        },
+        {
+          "global_index": 64,
+          "panel": "Original",
+          "box": [
+            1560,
+            1642,
+            1729,
+            1811
+          ],
+          "rgb_sha256": "db213bf3ea54715af5dec3cff861078e0adf522135ccd6adde87b40e3e47ea11"
+        },
+        {
+          "global_index": 64,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            1739,
+            1642,
+            1908,
+            1811
+          ],
+          "rgb_sha256": "7a722c2a7ac03f8b8f9736c9e088b8648ef4899bc1dfdfc0aec62d860ce57d4f"
+        },
+        {
+          "global_index": 65,
+          "panel": "Original",
+          "box": [
+            1932,
+            1642,
+            2101,
+            1811
+          ],
+          "rgb_sha256": "9a06998f12e7d159c7772ddb13cd70f32a9a05052cde155031516d0e03fddd07"
+        },
+        {
+          "global_index": 65,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            2111,
+            1642,
+            2280,
+            1811
+          ],
+          "rgb_sha256": "f0ffd400efa60841935de1359fa305b4d393303b15f0105f36a20636533a3908"
+        },
+        {
+          "global_index": 66,
+          "panel": "Original",
+          "box": [
+            2304,
+            1642,
+            2473,
+            1811
+          ],
+          "rgb_sha256": "9e91fcb8b65312a8a250ffd9f51151d8c7a333d8ddbd8f0a99ba6670a5500639"
+        },
+        {
+          "global_index": 66,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            2483,
+            1642,
+            2652,
+            1811
+          ],
+          "rgb_sha256": "22fbf1b2f6f3a84709e2991efde764af111ad93d86f99946dad79aa0ade5d9fd"
+        },
+        {
+          "global_index": 67,
+          "panel": "Original",
+          "box": [
+            2676,
+            1642,
+            2845,
+            1811
+          ],
+          "rgb_sha256": "76210df360ba7ea150eb9148beafae0d213893fe4728085bb361cfee3c8d7fe2"
+        },
+        {
+          "global_index": 67,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            2855,
+            1642,
+            3024,
+            1811
+          ],
+          "rgb_sha256": "fabddae3c08bab0d198a9a9dc08c3bae1df3b4598446a3576f7074d2da1b0533"
+        },
+        {
+          "global_index": 68,
+          "panel": "Original",
+          "box": [
+            3048,
+            1642,
+            3217,
+            1811
+          ],
+          "rgb_sha256": "90ea30fa66a034a305a58c40442061824b35702eca68508d209409eb8a441b9b"
+        },
+        {
+          "global_index": 68,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            3227,
+            1642,
+            3396,
+            1811
+          ],
+          "rgb_sha256": "b9b36e998627e5d2a609b3c21d4a5662b66990b240609f48bf954133702a1f2b"
+        },
+        {
+          "global_index": 69,
+          "panel": "Original",
+          "box": [
+            3420,
+            1642,
+            3589,
+            1811
+          ],
+          "rgb_sha256": "9c0caf878e152193e56a38663f9476c020b62923966158ec1a11bb791dfbb5fc"
+        },
+        {
+          "global_index": 69,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            3599,
+            1642,
+            3768,
+            1811
+          ],
+          "rgb_sha256": "7d6c1e71adc05b65d4197148e1eaa7ee4c64d80e62ab74cb7806ece7cd6559eb"
+        },
+        {
+          "global_index": 70,
+          "panel": "Original",
+          "box": [
+            72,
+            1863,
+            241,
+            2032
+          ],
+          "rgb_sha256": "306ed026d74e62ae182e3ca3ad9f7cc1095db989fbfffbfc7ec0fbb9ce5b7807"
+        },
+        {
+          "global_index": 70,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            251,
+            1863,
+            420,
+            2032
+          ],
+          "rgb_sha256": "cedef78abfff9a3812ab0d7e9952e63a5bc4ca8696d466db2c03a3f71116f97a"
+        },
+        {
+          "global_index": 71,
+          "panel": "Original",
+          "box": [
+            444,
+            1863,
+            613,
+            2032
+          ],
+          "rgb_sha256": "48a5a27ed79699a06af8abce23316b4f75f58db180942f2c1570862b77ec77f5"
+        },
+        {
+          "global_index": 71,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            623,
+            1863,
+            792,
+            2032
+          ],
+          "rgb_sha256": "d460a275839da2c9574206892bdfef2bdbec15d39c6897fef56242af2a5742cb"
+        },
+        {
+          "global_index": 72,
+          "panel": "Original",
+          "box": [
+            816,
+            1863,
+            985,
+            2032
+          ],
+          "rgb_sha256": "09f3b56880c22309c73cce211053074a1e262fe3ba8e62c8fec6b443fba4e4f2"
+        },
+        {
+          "global_index": 72,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            995,
+            1863,
+            1164,
+            2032
+          ],
+          "rgb_sha256": "b6a7225d40ed8e1577a5d1112d0e5cb3bd89bb0702bf6d90b5e8e077593cfb18"
+        },
+        {
+          "global_index": 73,
+          "panel": "Original",
+          "box": [
+            1188,
+            1863,
+            1357,
+            2032
+          ],
+          "rgb_sha256": "d5e7b6464a4c9983804a2a6125473b1712bc9dab5e63fb46beccfb705890a04e"
+        },
+        {
+          "global_index": 73,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            1367,
+            1863,
+            1536,
+            2032
+          ],
+          "rgb_sha256": "1be67a3ca9103d0bbb8385fb89ff9a311c485ed51a753d2ae986fc3003005d14"
+        },
+        {
+          "global_index": 74,
+          "panel": "Original",
+          "box": [
+            1560,
+            1863,
+            1729,
+            2032
+          ],
+          "rgb_sha256": "a36b335f7d7e7dcf4b3312f1350b037b743bb0e784f0d85f992c8088fc35f225"
+        },
+        {
+          "global_index": 74,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            1739,
+            1863,
+            1908,
+            2032
+          ],
+          "rgb_sha256": "22c60709e17c79e4545d969cd8e19d06ebbca88bd041eaabea1febebf2a07e82"
+        },
+        {
+          "global_index": 75,
+          "panel": "Original",
+          "box": [
+            1932,
+            1863,
+            2101,
+            2032
+          ],
+          "rgb_sha256": "2564c1b2555bda3cbd54ef3b00b17d90bfc89292a53222d3ec8990f5544e2e7b"
+        },
+        {
+          "global_index": 75,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            2111,
+            1863,
+            2280,
+            2032
+          ],
+          "rgb_sha256": "8fbf5ae2c3cdddf19148fe52e252d457a8f400091a11c7d58f168c6fa62e3e43"
+        },
+        {
+          "global_index": 76,
+          "panel": "Original",
+          "box": [
+            2304,
+            1863,
+            2473,
+            2032
+          ],
+          "rgb_sha256": "24cdfd23e3384d8780fd0c839c3b9d5f4e5cc329ac5cdd7c84ddd1ca94e96216"
+        },
+        {
+          "global_index": 76,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            2483,
+            1863,
+            2652,
+            2032
+          ],
+          "rgb_sha256": "7069f8e399a79dc9b11e08fccddf9d3a33dee6c676c2395c4666c7ae89c7184f"
+        },
+        {
+          "global_index": 77,
+          "panel": "Original",
+          "box": [
+            2676,
+            1863,
+            2845,
+            2032
+          ],
+          "rgb_sha256": "330ca058ed6f5949cc8a18c912ed54fea571e5219646b8bbb632bcd02bfa88fc"
+        },
+        {
+          "global_index": 77,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            2855,
+            1863,
+            3024,
+            2032
+          ],
+          "rgb_sha256": "ac0a983e4b7c3834622e11ccc933af2dcb7b8da2b449af84f0609503deac82ba"
+        },
+        {
+          "global_index": 78,
+          "panel": "Original",
+          "box": [
+            3048,
+            1863,
+            3217,
+            2032
+          ],
+          "rgb_sha256": "db62ab0bf78ea034fd95835dbb1f404c1786ee630b968a28ad8dc0cda850177e"
+        },
+        {
+          "global_index": 78,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            3227,
+            1863,
+            3396,
+            2032
+          ],
+          "rgb_sha256": "ce632ca3384b068655dbe4bef54234d608e76b572cef4d271683846a9d1c31c6"
+        },
+        {
+          "global_index": 79,
+          "panel": "Original",
+          "box": [
+            3420,
+            1863,
+            3589,
+            2032
+          ],
+          "rgb_sha256": "b0f3ca58a46129cca9b0e517b4ceaa13ca94ea0b8a0c1718ed2f28c6059faf6f"
+        },
+        {
+          "global_index": 79,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            3599,
+            1863,
+            3768,
+            2032
+          ],
+          "rgb_sha256": "a3ad43b632e82c28be83761727d6952ada480ad9e937d82055930ff76883c8ad"
+        }
+      ]
+    },
+    {
+      "file": "batch00_reconstruction_3840x2160.png",
+      "sha256": "93546f1b6638da29b4dd26f8300d0412d97a5dd29319419aff5e5e2288b560b9",
+      "size": [
+        3840,
+        2160
+      ],
+      "columns": 4,
+      "rows": 4,
+      "tile_size": 414,
+      "n_images": 16,
+      "global_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "mean_metrics": {
+        "lpips": 0.5662638787180185,
+        "ssim": 0.2939077978953719,
+        "psnr": 21.45323395729065
+      },
+      "placements": [
+        {
+          "global_index": 0,
+          "panel": "Original",
+          "box": [
+            208,
+            268,
+            622,
+            682
+          ],
+          "rgb_sha256": "d1b6338f62312c9befb82162de18b704268ae041b6a9180c56b78d3fae91da95"
+        },
+        {
+          "global_index": 0,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            632,
+            268,
+            1046,
+            682
+          ],
+          "rgb_sha256": "7485d8d735b3e339a576f4dc28088ce89dade44a69956ec4b6928607cfff4266"
+        },
+        {
+          "global_index": 1,
+          "panel": "Original",
+          "box": [
+            1070,
+            268,
+            1484,
+            682
+          ],
+          "rgb_sha256": "659f226d1efdf0d0ba869c0dfec5215dedf9f16985f9fbfce4f20c159a415541"
+        },
+        {
+          "global_index": 1,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            1494,
+            268,
+            1908,
+            682
+          ],
+          "rgb_sha256": "54544dd9f37f7665264db33f459b3987737fb34bd64da8c3b12313329b55d99e"
+        },
+        {
+          "global_index": 2,
+          "panel": "Original",
+          "box": [
+            1932,
+            268,
+            2346,
+            682
+          ],
+          "rgb_sha256": "63283c8d8f6a37750da74c7aeabbba380196936fa996aef43320e3a3bba9ad64"
+        },
+        {
+          "global_index": 2,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            2356,
+            268,
+            2770,
+            682
+          ],
+          "rgb_sha256": "dd9024cff4b8b38f328771027eb2f633981b2c0381b641dfe0fdb09ae7ab0930"
+        },
+        {
+          "global_index": 3,
+          "panel": "Original",
+          "box": [
+            2794,
+            268,
+            3208,
+            682
+          ],
+          "rgb_sha256": "0c43bcb6150fbd63431f1658ca3ef2b8373fe23916e51ee136e23dea93c19e27"
+        },
+        {
+          "global_index": 3,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            3218,
+            268,
+            3632,
+            682
+          ],
+          "rgb_sha256": "36abd644f90b7802aedf2a4f5824b624adb8abf89a24fa356c4b73b6de24ef78"
+        },
+        {
+          "global_index": 4,
+          "panel": "Original",
+          "box": [
+            208,
+            734,
+            622,
+            1148
+          ],
+          "rgb_sha256": "4f4d8b62da0050fcf169536e500b268af368d072cf6b779ef0f17de48d9ffca3"
+        },
+        {
+          "global_index": 4,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            632,
+            734,
+            1046,
+            1148
+          ],
+          "rgb_sha256": "9f97d0544cf40753235910f676688ae65f455880a71c3d65faa4d5465f7925eb"
+        },
+        {
+          "global_index": 5,
+          "panel": "Original",
+          "box": [
+            1070,
+            734,
+            1484,
+            1148
+          ],
+          "rgb_sha256": "7fd105d3a4cf8cc662e56b1da350c834757cbe0a4876bbcac0c946499b903777"
+        },
+        {
+          "global_index": 5,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            1494,
+            734,
+            1908,
+            1148
+          ],
+          "rgb_sha256": "e38c88f412fcc2d9fc11c6f18fb16e2b7a7f9933f7f94222526fa48b7a9fb057"
+        },
+        {
+          "global_index": 6,
+          "panel": "Original",
+          "box": [
+            1932,
+            734,
+            2346,
+            1148
+          ],
+          "rgb_sha256": "729ce872beffdcd35ffc2a3211503298e5314661526ee63c7afc388f85c962e6"
+        },
+        {
+          "global_index": 6,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            2356,
+            734,
+            2770,
+            1148
+          ],
+          "rgb_sha256": "2dd7f44e91ef750a2ac0bef5ed7b1664b325673f57978be0a778e383bc4df3e6"
+        },
+        {
+          "global_index": 7,
+          "panel": "Original",
+          "box": [
+            2794,
+            734,
+            3208,
+            1148
+          ],
+          "rgb_sha256": "ad55b018832941b338431090302c9653ca459ef5d6e3ab5bc2827ba24491be93"
+        },
+        {
+          "global_index": 7,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            3218,
+            734,
+            3632,
+            1148
+          ],
+          "rgb_sha256": "56e7b5b32c2f414d39b9452e279d9381182b9cd340e72a8a8d4efc87fb825f6a"
+        },
+        {
+          "global_index": 8,
+          "panel": "Original",
+          "box": [
+            208,
+            1200,
+            622,
+            1614
+          ],
+          "rgb_sha256": "1f1dca41030f290dc79dd9f1bc9af54b8f68bda025618ba51a3d9346e6f59390"
+        },
+        {
+          "global_index": 8,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            632,
+            1200,
+            1046,
+            1614
+          ],
+          "rgb_sha256": "5dcb8cbb3069467be781f31272e1eef1bd102238598eb5ce501429d423767126"
+        },
+        {
+          "global_index": 9,
+          "panel": "Original",
+          "box": [
+            1070,
+            1200,
+            1484,
+            1614
+          ],
+          "rgb_sha256": "a84cdf236f0b021398532b03e0803bf572290b67d67a4f0b33a37483c0dc57c5"
+        },
+        {
+          "global_index": 9,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            1494,
+            1200,
+            1908,
+            1614
+          ],
+          "rgb_sha256": "1cc6f54abb61fe6383953de7f7bac7f81520a186eef8614f38ff2b1884b9a2c0"
+        },
+        {
+          "global_index": 10,
+          "panel": "Original",
+          "box": [
+            1932,
+            1200,
+            2346,
+            1614
+          ],
+          "rgb_sha256": "3726379a3a265790c2759a6035ca244fc6425292ebbc909a359aef277db8091e"
+        },
+        {
+          "global_index": 10,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            2356,
+            1200,
+            2770,
+            1614
+          ],
+          "rgb_sha256": "cd23df044a008b2c0a7eddae7deae28b075b9f92faf395448a34575dafb9295a"
+        },
+        {
+          "global_index": 11,
+          "panel": "Original",
+          "box": [
+            2794,
+            1200,
+            3208,
+            1614
+          ],
+          "rgb_sha256": "cc841bba2a34f5eb53836bce77f6ec08f774b9b1017395b31c2ba272eccc72bd"
+        },
+        {
+          "global_index": 11,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            3218,
+            1200,
+            3632,
+            1614
+          ],
+          "rgb_sha256": "7e0b2db37d94d69875133d18280a235db80ad2ee5423a729084a25f359afa963"
+        },
+        {
+          "global_index": 12,
+          "panel": "Original",
+          "box": [
+            208,
+            1666,
+            622,
+            2080
+          ],
+          "rgb_sha256": "a99a669b5b395d5b0650d640c103f3dbb884610b4575f5adfe2f794ff788cffb"
+        },
+        {
+          "global_index": 12,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            632,
+            1666,
+            1046,
+            2080
+          ],
+          "rgb_sha256": "cf4eab63fb8c33536041ceca7454e00f0d219628dfeed0b954494b81c9a1c767"
+        },
+        {
+          "global_index": 13,
+          "panel": "Original",
+          "box": [
+            1070,
+            1666,
+            1484,
+            2080
+          ],
+          "rgb_sha256": "e32a9cfac899404e833588b46be66a1c27ee3e74a349344bea737d71ad710c13"
+        },
+        {
+          "global_index": 13,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            1494,
+            1666,
+            1908,
+            2080
+          ],
+          "rgb_sha256": "9950eec962f728ae83d4ca6e82d08ca926cd9fd8d924d5f0b65c9c2cb97d03c4"
+        },
+        {
+          "global_index": 14,
+          "panel": "Original",
+          "box": [
+            1932,
+            1666,
+            2346,
+            2080
+          ],
+          "rgb_sha256": "77292f21caa3972da209426a92687a9f535dfd1b8bc442b7efc6eb6b5e01ee89"
+        },
+        {
+          "global_index": 14,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            2356,
+            1666,
+            2770,
+            2080
+          ],
+          "rgb_sha256": "e967e40c87196e64bb40f412b3b3b4e0d2aaf790f839dcb80f09822734c7ca30"
+        },
+        {
+          "global_index": 15,
+          "panel": "Original",
+          "box": [
+            2794,
+            1666,
+            3208,
+            2080
+          ],
+          "rgb_sha256": "8e96c5ddd540022a7292a19e5e09bfd1399384f25bf9b7b67020862c2f31f26f"
+        },
+        {
+          "global_index": 15,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            3218,
+            1666,
+            3632,
+            2080
+          ],
+          "rgb_sha256": "e29e07436829d80e94c189f96fc5f590e7ea100c28813a7e97b30d9518a74f26"
+        }
+      ]
+    },
+    {
+      "file": "batch01_reconstruction_3840x2160.png",
+      "sha256": "bf3288aae2eeb9d903b48cc6216d0fcc602c21fdf848d4347575b961b3cca086",
+      "size": [
+        3840,
+        2160
+      ],
+      "columns": 4,
+      "rows": 4,
+      "tile_size": 414,
+      "n_images": 16,
+      "global_indices": [
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31
+      ],
+      "mean_metrics": {
+        "lpips": 0.5947587601840496,
+        "ssim": 0.25997451739385724,
+        "psnr": 21.196037530899048
+      },
+      "placements": [
+        {
+          "global_index": 16,
+          "panel": "Original",
+          "box": [
+            208,
+            268,
+            622,
+            682
+          ],
+          "rgb_sha256": "275ec02961bec245fb2b5eeab413a3d2130c569fc7f186448f5d226384603788"
+        },
+        {
+          "global_index": 16,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            632,
+            268,
+            1046,
+            682
+          ],
+          "rgb_sha256": "252b43e530c3da2fc438fe6036ace29011bb372359ef74864a33d42ff3acde6f"
+        },
+        {
+          "global_index": 17,
+          "panel": "Original",
+          "box": [
+            1070,
+            268,
+            1484,
+            682
+          ],
+          "rgb_sha256": "92696d05b3888f66bcee9a5cd51cd9263176aa64643941576df100de600528e9"
+        },
+        {
+          "global_index": 17,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            1494,
+            268,
+            1908,
+            682
+          ],
+          "rgb_sha256": "cd06a6a8a6e691dca5feb2d400472504647197104595777d42c138ebc3db3e9c"
+        },
+        {
+          "global_index": 18,
+          "panel": "Original",
+          "box": [
+            1932,
+            268,
+            2346,
+            682
+          ],
+          "rgb_sha256": "b2c22ba233773300db20de5c033882adc383bdccc03e5858d87c08ceb024fb14"
+        },
+        {
+          "global_index": 18,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            2356,
+            268,
+            2770,
+            682
+          ],
+          "rgb_sha256": "cf49176f11fc208cef81b780badcbc65830303b0f879af8f152d8580b157110a"
+        },
+        {
+          "global_index": 19,
+          "panel": "Original",
+          "box": [
+            2794,
+            268,
+            3208,
+            682
+          ],
+          "rgb_sha256": "0570b37668c68d52eb9559ac5f4a135a9c6f6483e1e57f1119db29df5d7d8c56"
+        },
+        {
+          "global_index": 19,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            3218,
+            268,
+            3632,
+            682
+          ],
+          "rgb_sha256": "0a6af7304c9452d09b449cf6173f28ca2c27c5e8eb36fc438a0ae1d78be4bca5"
+        },
+        {
+          "global_index": 20,
+          "panel": "Original",
+          "box": [
+            208,
+            734,
+            622,
+            1148
+          ],
+          "rgb_sha256": "66c0b245177e80f284307e20eab3d949895ba407a9c44feb103908f14caa305b"
+        },
+        {
+          "global_index": 20,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            632,
+            734,
+            1046,
+            1148
+          ],
+          "rgb_sha256": "714effed9d0103101ce4a752fd5ee6eb4fd8f139d40d9dff9e2101117e9bcea1"
+        },
+        {
+          "global_index": 21,
+          "panel": "Original",
+          "box": [
+            1070,
+            734,
+            1484,
+            1148
+          ],
+          "rgb_sha256": "0f89c065514ccf7fb6ded08d984602848791ef9447aaab95dbe303acaa4741ab"
+        },
+        {
+          "global_index": 21,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            1494,
+            734,
+            1908,
+            1148
+          ],
+          "rgb_sha256": "fbe79863aa709bab8433469b04277bdf2441c939436f0cd768c13fcb802c6595"
+        },
+        {
+          "global_index": 22,
+          "panel": "Original",
+          "box": [
+            1932,
+            734,
+            2346,
+            1148
+          ],
+          "rgb_sha256": "88a62f1d2d3c21d21ca8ea6209ced7e9f1048a9ef23c0f97c8974debf08cbe61"
+        },
+        {
+          "global_index": 22,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            2356,
+            734,
+            2770,
+            1148
+          ],
+          "rgb_sha256": "771e5000fa7e70404eaa0701cc07d4573fbbb4b5f24ff7fdb8fee502e051b6b7"
+        },
+        {
+          "global_index": 23,
+          "panel": "Original",
+          "box": [
+            2794,
+            734,
+            3208,
+            1148
+          ],
+          "rgb_sha256": "7ad8711d0446a3ddf5b96fc3283cff3e0cc3db821e67abf3aada460c7e1c0d7e"
+        },
+        {
+          "global_index": 23,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            3218,
+            734,
+            3632,
+            1148
+          ],
+          "rgb_sha256": "307e8bbe10497ad029a29787df93585bf8d6da93a7f862ee20a3c44c17991b6b"
+        },
+        {
+          "global_index": 24,
+          "panel": "Original",
+          "box": [
+            208,
+            1200,
+            622,
+            1614
+          ],
+          "rgb_sha256": "df64834a25657e32d0b523337fcc367296341a5f3d3412fef9fe5ee0469c4d8b"
+        },
+        {
+          "global_index": 24,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            632,
+            1200,
+            1046,
+            1614
+          ],
+          "rgb_sha256": "0986f1325e4e2a75e0dd28fcc2bf3c941b424ee2216246c210067e1df8311107"
+        },
+        {
+          "global_index": 25,
+          "panel": "Original",
+          "box": [
+            1070,
+            1200,
+            1484,
+            1614
+          ],
+          "rgb_sha256": "9605d9bd7a32e5da666b87b988c2323298d73399acca66b6d74910c84c5d6ad4"
+        },
+        {
+          "global_index": 25,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            1494,
+            1200,
+            1908,
+            1614
+          ],
+          "rgb_sha256": "64f44cbd49392703d36b7cab39a8fbe5d52c00959f8df0d0b3b414c89d870021"
+        },
+        {
+          "global_index": 26,
+          "panel": "Original",
+          "box": [
+            1932,
+            1200,
+            2346,
+            1614
+          ],
+          "rgb_sha256": "c6c130cea2c1ea997ecdfd3431c2d344fbecbe2de90e6bc722ce8398d3259706"
+        },
+        {
+          "global_index": 26,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            2356,
+            1200,
+            2770,
+            1614
+          ],
+          "rgb_sha256": "ac0a7e640f5eec825e918010be319050cf6aa6f0851ad86ce7c537543733c471"
+        },
+        {
+          "global_index": 27,
+          "panel": "Original",
+          "box": [
+            2794,
+            1200,
+            3208,
+            1614
+          ],
+          "rgb_sha256": "05c06ffc3c775a480f686f0ba07b0c7771e2e634ca4fdcc6a50d2920c1f6bfe4"
+        },
+        {
+          "global_index": 27,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            3218,
+            1200,
+            3632,
+            1614
+          ],
+          "rgb_sha256": "f844f1ce5d1f85ca3945d0c29450c5aecf985f900a412aa5a90345f095c2edef"
+        },
+        {
+          "global_index": 28,
+          "panel": "Original",
+          "box": [
+            208,
+            1666,
+            622,
+            2080
+          ],
+          "rgb_sha256": "3e1fa6f375418508ee57c45f2b0c7465515846ab6392785a0d82a275fde9baed"
+        },
+        {
+          "global_index": 28,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            632,
+            1666,
+            1046,
+            2080
+          ],
+          "rgb_sha256": "2f28fe6bea5b121eac89ac35990dbad909b489e6b10ef0ecb2332a35c013d3e7"
+        },
+        {
+          "global_index": 29,
+          "panel": "Original",
+          "box": [
+            1070,
+            1666,
+            1484,
+            2080
+          ],
+          "rgb_sha256": "0528d986bd9f906e76fc7828daa9d4860a78b5d5921876ddc8c5868919924a19"
+        },
+        {
+          "global_index": 29,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            1494,
+            1666,
+            1908,
+            2080
+          ],
+          "rgb_sha256": "f2941fe243200501aa1941d16c7b58b2b0fb8810fc78c098931f4b959dfe27b7"
+        },
+        {
+          "global_index": 30,
+          "panel": "Original",
+          "box": [
+            1932,
+            1666,
+            2346,
+            2080
+          ],
+          "rgb_sha256": "dbdb2e44f8df0476aece734ee256437d58882941e37e3e195f18d1ae675d3707"
+        },
+        {
+          "global_index": 30,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            2356,
+            1666,
+            2770,
+            2080
+          ],
+          "rgb_sha256": "3e2fff1bed6509c4b34933366eeb69cf4b5b1b1ea0825695ed82564b134b8b98"
+        },
+        {
+          "global_index": 31,
+          "panel": "Original",
+          "box": [
+            2794,
+            1666,
+            3208,
+            2080
+          ],
+          "rgb_sha256": "3c9e6d0c5ba71c9875c7de924fabd7ee661cf74d96e665d161dcd3ddd1e00ebe"
+        },
+        {
+          "global_index": 31,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            3218,
+            1666,
+            3632,
+            2080
+          ],
+          "rgb_sha256": "85cf121ae29c44a49b40fe55d801e47275f31b814823838eff83abd842ccffb9"
+        }
+      ]
+    },
+    {
+      "file": "batch02_reconstruction_3840x2160.png",
+      "sha256": "6f5d293af2a26ba6a4ca700bdecd0e71a597317565ddfe75f0e979838bafe6ea",
+      "size": [
+        3840,
+        2160
+      ],
+      "columns": 4,
+      "rows": 4,
+      "tile_size": 414,
+      "n_images": 16,
+      "global_indices": [
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47
+      ],
+      "mean_metrics": {
+        "lpips": 0.5430349241942167,
+        "ssim": 0.33077211305499077,
+        "psnr": 23.02036416530609
+      },
+      "placements": [
+        {
+          "global_index": 32,
+          "panel": "Original",
+          "box": [
+            208,
+            268,
+            622,
+            682
+          ],
+          "rgb_sha256": "adcb4ca4945d41bcc36b87b86afcfb086280a629e6a3cd6ee441b5ca495f40bf"
+        },
+        {
+          "global_index": 32,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            632,
+            268,
+            1046,
+            682
+          ],
+          "rgb_sha256": "ded9db09167bf612dad3bfadb050660c24633f950b20b27e8e4c2726906d2df9"
+        },
+        {
+          "global_index": 33,
+          "panel": "Original",
+          "box": [
+            1070,
+            268,
+            1484,
+            682
+          ],
+          "rgb_sha256": "ad0bcb32370397c7574140b2b60b884c090cd85b2e2cbf66e194ca697ba3da61"
+        },
+        {
+          "global_index": 33,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            1494,
+            268,
+            1908,
+            682
+          ],
+          "rgb_sha256": "daa57429888047f15b97b4852a6c0aa7cb21d6b148f18d420f3f932882a619d5"
+        },
+        {
+          "global_index": 34,
+          "panel": "Original",
+          "box": [
+            1932,
+            268,
+            2346,
+            682
+          ],
+          "rgb_sha256": "b68270d99a104e7ef9425258835845c9d0ccaf57aea1e8a81b518ae939e3006a"
+        },
+        {
+          "global_index": 34,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            2356,
+            268,
+            2770,
+            682
+          ],
+          "rgb_sha256": "f50c66076ea5716b43c9cf9b31f49278b4c57cbc63433203206badc5dd54de87"
+        },
+        {
+          "global_index": 35,
+          "panel": "Original",
+          "box": [
+            2794,
+            268,
+            3208,
+            682
+          ],
+          "rgb_sha256": "121d1eff880a57e3b22a8f28e2fcfbc60c60e706f761d3bbafcaa30f1679427d"
+        },
+        {
+          "global_index": 35,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            3218,
+            268,
+            3632,
+            682
+          ],
+          "rgb_sha256": "c649aaa60bc41d47ecde91a02f673b09ac479ba35fc344478a247679f74307e0"
+        },
+        {
+          "global_index": 36,
+          "panel": "Original",
+          "box": [
+            208,
+            734,
+            622,
+            1148
+          ],
+          "rgb_sha256": "ce1201052e890548bf7028b4caec743936762fa4aaae59bad88ab2d5407cbc61"
+        },
+        {
+          "global_index": 36,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            632,
+            734,
+            1046,
+            1148
+          ],
+          "rgb_sha256": "aba113c338a62cb2dd9e0da213bb59aab1b4212b122908e93da87e3115113220"
+        },
+        {
+          "global_index": 37,
+          "panel": "Original",
+          "box": [
+            1070,
+            734,
+            1484,
+            1148
+          ],
+          "rgb_sha256": "8d0c57ff6f1feb77807972b745a83051a43636ab688a063b1790652b46267bd4"
+        },
+        {
+          "global_index": 37,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            1494,
+            734,
+            1908,
+            1148
+          ],
+          "rgb_sha256": "992cae7ede30792e64d47c913bce15dd0c03bea8ed0055279b2089b9ada115e4"
+        },
+        {
+          "global_index": 38,
+          "panel": "Original",
+          "box": [
+            1932,
+            734,
+            2346,
+            1148
+          ],
+          "rgb_sha256": "a089c8b642708da0f205d048ad25754cb7f29015d77ac949ec3d8c1c7723df32"
+        },
+        {
+          "global_index": 38,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            2356,
+            734,
+            2770,
+            1148
+          ],
+          "rgb_sha256": "1d4995f052b19336710198c783415004890c52287ebe20bceb65b4deab0071af"
+        },
+        {
+          "global_index": 39,
+          "panel": "Original",
+          "box": [
+            2794,
+            734,
+            3208,
+            1148
+          ],
+          "rgb_sha256": "1fa53d217cf44f601d5e60cce74af0fb5a69bb7041b8bdae20bde2d04eb03dc3"
+        },
+        {
+          "global_index": 39,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            3218,
+            734,
+            3632,
+            1148
+          ],
+          "rgb_sha256": "53f3717183007bfd875ec68d5a8c594dd0ed1abb7ec333770594e17d2d71edf8"
+        },
+        {
+          "global_index": 40,
+          "panel": "Original",
+          "box": [
+            208,
+            1200,
+            622,
+            1614
+          ],
+          "rgb_sha256": "589b5494f05b63a3c2cbdb50162f36f9e07e4a5692db8139960586eb45c75c77"
+        },
+        {
+          "global_index": 40,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            632,
+            1200,
+            1046,
+            1614
+          ],
+          "rgb_sha256": "2d28fbb5bc53169c94234e6401143edd645bda4bc35e73fa537c439091bc8043"
+        },
+        {
+          "global_index": 41,
+          "panel": "Original",
+          "box": [
+            1070,
+            1200,
+            1484,
+            1614
+          ],
+          "rgb_sha256": "4b3bc96db572930174831b53b666e18031766a243ef118fe0e198cdf57c99eab"
+        },
+        {
+          "global_index": 41,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            1494,
+            1200,
+            1908,
+            1614
+          ],
+          "rgb_sha256": "d4598710c6f9fed4cde2df321030874b0741f8305be7658690aae6a63fe406fe"
+        },
+        {
+          "global_index": 42,
+          "panel": "Original",
+          "box": [
+            1932,
+            1200,
+            2346,
+            1614
+          ],
+          "rgb_sha256": "8f6ce6aca00144f6f5935a2fcbde4c4b35ce0e8694d77e5ca41cde8126dc25dd"
+        },
+        {
+          "global_index": 42,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            2356,
+            1200,
+            2770,
+            1614
+          ],
+          "rgb_sha256": "c3bf2f1c7e2c6b2e6e6c95f5a32a222c736daf5cc0904a5dfbe5c6ed79ef0a5c"
+        },
+        {
+          "global_index": 43,
+          "panel": "Original",
+          "box": [
+            2794,
+            1200,
+            3208,
+            1614
+          ],
+          "rgb_sha256": "a0b8cfb45cfb08438a8d91fdc8a9c5537a4903d427dec10d258ed886c6a17d58"
+        },
+        {
+          "global_index": 43,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            3218,
+            1200,
+            3632,
+            1614
+          ],
+          "rgb_sha256": "ca6b3888eff0e718940507dfdd64c5e435157449f5f0403ee05cc5af617104cc"
+        },
+        {
+          "global_index": 44,
+          "panel": "Original",
+          "box": [
+            208,
+            1666,
+            622,
+            2080
+          ],
+          "rgb_sha256": "1f5c7fdaa3f12a5a864b09de08aa9be4914d8b9e711ffd07013450f343334616"
+        },
+        {
+          "global_index": 44,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            632,
+            1666,
+            1046,
+            2080
+          ],
+          "rgb_sha256": "a7e6ec099fa24cc2cafdaedcd0071bb436e2614874be0fbbd6972b769dcd4899"
+        },
+        {
+          "global_index": 45,
+          "panel": "Original",
+          "box": [
+            1070,
+            1666,
+            1484,
+            2080
+          ],
+          "rgb_sha256": "c09c116568efe49b7f2fd6cb0107067e426f45a434914cb1ca5cf26f835c7f30"
+        },
+        {
+          "global_index": 45,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            1494,
+            1666,
+            1908,
+            2080
+          ],
+          "rgb_sha256": "a306dcb90878f8d47c6ced0b3d86f3c36a3bdc1162f8ddff5026af3a955a8f68"
+        },
+        {
+          "global_index": 46,
+          "panel": "Original",
+          "box": [
+            1932,
+            1666,
+            2346,
+            2080
+          ],
+          "rgb_sha256": "bf38cd6916b51b32f1d230309332e818683ab535aa527cd9a1edc942855b4617"
+        },
+        {
+          "global_index": 46,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            2356,
+            1666,
+            2770,
+            2080
+          ],
+          "rgb_sha256": "12b25b3ed6ad6d212ab9e67aaca177cc5f2798213d2be447ee75f9bb3b50b6ef"
+        },
+        {
+          "global_index": 47,
+          "panel": "Original",
+          "box": [
+            2794,
+            1666,
+            3208,
+            2080
+          ],
+          "rgb_sha256": "5e882de05485712f870c1ddb62fc593187e1acc722dc3b3324d4181dc2ebc89d"
+        },
+        {
+          "global_index": 47,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            3218,
+            1666,
+            3632,
+            2080
+          ],
+          "rgb_sha256": "bb2fa290fa69f997d239e725cdbb6b7cf623d9e045a6a37e23c89ee70a2326df"
+        }
+      ]
+    },
+    {
+      "file": "batch03_reconstruction_3840x2160.png",
+      "sha256": "6b58338c498a6b5873fa869ada5f36aa67e7c2957352c3ffaa8cc9296f379895",
+      "size": [
+        3840,
+        2160
+      ],
+      "columns": 4,
+      "rows": 4,
+      "tile_size": 414,
+      "n_images": 16,
+      "global_indices": [
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63
+      ],
+      "mean_metrics": {
+        "lpips": 0.5661312658339739,
+        "ssim": 0.31386601319536567,
+        "psnr": 21.78282630443573
+      },
+      "placements": [
+        {
+          "global_index": 48,
+          "panel": "Original",
+          "box": [
+            208,
+            268,
+            622,
+            682
+          ],
+          "rgb_sha256": "3f55bed1d306d6b509738e6ae2aa3324c53e7157ab941f9c03abe75d3fb39a0b"
+        },
+        {
+          "global_index": 48,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            632,
+            268,
+            1046,
+            682
+          ],
+          "rgb_sha256": "45bc30c225bf1b6dd516f98363c82df12957f40ecc2ab4fbdd0a21dd3e314db7"
+        },
+        {
+          "global_index": 49,
+          "panel": "Original",
+          "box": [
+            1070,
+            268,
+            1484,
+            682
+          ],
+          "rgb_sha256": "9aa7bb7da9cdd6fe5b106fea3d362b3bd4974eeb0595e6fb308f597e41d39c25"
+        },
+        {
+          "global_index": 49,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            1494,
+            268,
+            1908,
+            682
+          ],
+          "rgb_sha256": "266d179e8ec2fc8375239f390b88acebd456f6607687bae8fba0b4d54509fcb6"
+        },
+        {
+          "global_index": 50,
+          "panel": "Original",
+          "box": [
+            1932,
+            268,
+            2346,
+            682
+          ],
+          "rgb_sha256": "24a739545f4202d0bc547b9cfd166829bf3b9499bd7f5df71dec5c6f9ae65a4c"
+        },
+        {
+          "global_index": 50,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            2356,
+            268,
+            2770,
+            682
+          ],
+          "rgb_sha256": "f9b267bdc12c7b84f6c45fc0c7ee12df68b74a22e5398a7a95039d7721def662"
+        },
+        {
+          "global_index": 51,
+          "panel": "Original",
+          "box": [
+            2794,
+            268,
+            3208,
+            682
+          ],
+          "rgb_sha256": "c4c31f1a4dc352ec347d4355e55a98ec885ec9cd05786590d939a4baef2a69db"
+        },
+        {
+          "global_index": 51,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            3218,
+            268,
+            3632,
+            682
+          ],
+          "rgb_sha256": "1c374a1c904eeb08ee6a8070b7f96a8ec9d0ae4f8337e25bcc92245b5f9e86bb"
+        },
+        {
+          "global_index": 52,
+          "panel": "Original",
+          "box": [
+            208,
+            734,
+            622,
+            1148
+          ],
+          "rgb_sha256": "2500977c87e69ab760b5ecd1703c755b0f317a5f5b3185d6c3c2bb3643f240dd"
+        },
+        {
+          "global_index": 52,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            632,
+            734,
+            1046,
+            1148
+          ],
+          "rgb_sha256": "28b5a580605fbd38bba721147a208b48fa55e1528cdbf88b511c8ce739ec3943"
+        },
+        {
+          "global_index": 53,
+          "panel": "Original",
+          "box": [
+            1070,
+            734,
+            1484,
+            1148
+          ],
+          "rgb_sha256": "5e1a5f3d7bee1baec08619818b67a4ed446a3350477581b8ba218985077efceb"
+        },
+        {
+          "global_index": 53,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            1494,
+            734,
+            1908,
+            1148
+          ],
+          "rgb_sha256": "ceca80d53d4b221154979a36e602fd959d9b3caebcc5e08dae6a4866f257ce44"
+        },
+        {
+          "global_index": 54,
+          "panel": "Original",
+          "box": [
+            1932,
+            734,
+            2346,
+            1148
+          ],
+          "rgb_sha256": "ae55b1ba9172f9bee504ef1a27a5576cb0625a5e53e8a23275bd10959978dce2"
+        },
+        {
+          "global_index": 54,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            2356,
+            734,
+            2770,
+            1148
+          ],
+          "rgb_sha256": "7e94aa9769eea0ba46d301a267ae3ddac0c70985493751b542aa6d9a76f47ba0"
+        },
+        {
+          "global_index": 55,
+          "panel": "Original",
+          "box": [
+            2794,
+            734,
+            3208,
+            1148
+          ],
+          "rgb_sha256": "1f8ae364d3ab8c7c7889b6b7e0d0a0e04ab0c840540feb66cb38ce6b2f339322"
+        },
+        {
+          "global_index": 55,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            3218,
+            734,
+            3632,
+            1148
+          ],
+          "rgb_sha256": "fcd72072f262cab9a7b5e43f516d68ace744a211115f92df00fee37bec1583f4"
+        },
+        {
+          "global_index": 56,
+          "panel": "Original",
+          "box": [
+            208,
+            1200,
+            622,
+            1614
+          ],
+          "rgb_sha256": "0e2d48c1b05a5f2f84bf8a8bda4ca3bdb7932c06cb93ef193f647fdd7457b424"
+        },
+        {
+          "global_index": 56,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            632,
+            1200,
+            1046,
+            1614
+          ],
+          "rgb_sha256": "17f1a33408c3d4d088811344ee4d60d7d3b417ac12d9a2791939875107684884"
+        },
+        {
+          "global_index": 57,
+          "panel": "Original",
+          "box": [
+            1070,
+            1200,
+            1484,
+            1614
+          ],
+          "rgb_sha256": "1ed2ea764500060477d760932f2f3f1235b6a4ca15c0beec7f257614140f1dab"
+        },
+        {
+          "global_index": 57,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            1494,
+            1200,
+            1908,
+            1614
+          ],
+          "rgb_sha256": "bf5dd3015e2536629d1eef3374a51b0446fe9615fd70cf13a50872dc828c77b9"
+        },
+        {
+          "global_index": 58,
+          "panel": "Original",
+          "box": [
+            1932,
+            1200,
+            2346,
+            1614
+          ],
+          "rgb_sha256": "7f7aecec9bb776b3ecfe898d7b476a1b6f9fed0c47e5a5bb50c11d0f644d8cf2"
+        },
+        {
+          "global_index": 58,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            2356,
+            1200,
+            2770,
+            1614
+          ],
+          "rgb_sha256": "b8229c5083e6c6c0fdc8e86521622515f6836c53dc80c96f6a0a5fd6693935e5"
+        },
+        {
+          "global_index": 59,
+          "panel": "Original",
+          "box": [
+            2794,
+            1200,
+            3208,
+            1614
+          ],
+          "rgb_sha256": "d59444f7f752c6c690d6731965a01a4a3bd41c34f3486098995c8500788a9d2b"
+        },
+        {
+          "global_index": 59,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            3218,
+            1200,
+            3632,
+            1614
+          ],
+          "rgb_sha256": "a9ba02875e0a411f8bb407ee6ed1d52a00e44386dae735397afe95605c4cbe71"
+        },
+        {
+          "global_index": 60,
+          "panel": "Original",
+          "box": [
+            208,
+            1666,
+            622,
+            2080
+          ],
+          "rgb_sha256": "75af3fa1ee6ed58497f6fad5a2084a577c4c2a8bcd2a691de687e905dc7a9ae9"
+        },
+        {
+          "global_index": 60,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            632,
+            1666,
+            1046,
+            2080
+          ],
+          "rgb_sha256": "7bf9093d6b6d2cc12e7bcc39ef347d999f25e3019c6ad6f1ff98f81fa07e8295"
+        },
+        {
+          "global_index": 61,
+          "panel": "Original",
+          "box": [
+            1070,
+            1666,
+            1484,
+            2080
+          ],
+          "rgb_sha256": "b6831b2f90dd59851ec965e025f96971ed8b1b71132e74c6637b62ab9eb2071f"
+        },
+        {
+          "global_index": 61,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            1494,
+            1666,
+            1908,
+            2080
+          ],
+          "rgb_sha256": "c7a22cd883dcf314247307cb4348aede81a2a05783f2a6052eeec09740c5d98c"
+        },
+        {
+          "global_index": 62,
+          "panel": "Original",
+          "box": [
+            1932,
+            1666,
+            2346,
+            2080
+          ],
+          "rgb_sha256": "fa97815d0662f7961cd5bd4497de9728b1ef26d137d1477993f4a969de3a9835"
+        },
+        {
+          "global_index": 62,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            2356,
+            1666,
+            2770,
+            2080
+          ],
+          "rgb_sha256": "4908f60ad843f6b8d82fd02f15390b8c6148b3804ba899d9b39031369e99d0fd"
+        },
+        {
+          "global_index": 63,
+          "panel": "Original",
+          "box": [
+            2794,
+            1666,
+            3208,
+            2080
+          ],
+          "rgb_sha256": "5498c80a7ae0009b3099c504526abac3abe7d10cf8db314b54a1a4da38e0ef04"
+        },
+        {
+          "global_index": 63,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            3218,
+            1666,
+            3632,
+            2080
+          ],
+          "rgb_sha256": "8a03af2c599684758c04e7c2439a9312783c9f36aad53cfba27df4c5bb829478"
+        }
+      ]
+    },
+    {
+      "file": "batch04_reconstruction_3840x2160.png",
+      "sha256": "30c29286f49dcd5b053d41dd027eb0d3c7a7cf3c6b6d16aa771825eee9253f9e",
+      "size": [
+        3840,
+        2160
+      ],
+      "columns": 4,
+      "rows": 4,
+      "tile_size": 414,
+      "n_images": 16,
+      "global_indices": [
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79
+      ],
+      "mean_metrics": {
+        "lpips": 0.5958212874829769,
+        "ssim": 0.24607422528788447,
+        "psnr": 21.70211899280548
+      },
+      "placements": [
+        {
+          "global_index": 64,
+          "panel": "Original",
+          "box": [
+            208,
+            268,
+            622,
+            682
+          ],
+          "rgb_sha256": "db3b1e0ddef3185d2cf39c051ece6b44acad43224e797e2b992aee727ef7e880"
+        },
+        {
+          "global_index": 64,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            632,
+            268,
+            1046,
+            682
+          ],
+          "rgb_sha256": "e95679cd5e0c6bcdbeb789265d9870f59b36c40a8a9382d7488b76106a6a59fa"
+        },
+        {
+          "global_index": 65,
+          "panel": "Original",
+          "box": [
+            1070,
+            268,
+            1484,
+            682
+          ],
+          "rgb_sha256": "ff58fadd4474fefa3c4d9b1bd4612332cce4fd906e181fa0e5ac90019c8066c1"
+        },
+        {
+          "global_index": 65,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            1494,
+            268,
+            1908,
+            682
+          ],
+          "rgb_sha256": "5c5dcf3ebe433a9a86a418c1a4e40902e6cda6293d34f06a495a1aa1b32f18e8"
+        },
+        {
+          "global_index": 66,
+          "panel": "Original",
+          "box": [
+            1932,
+            268,
+            2346,
+            682
+          ],
+          "rgb_sha256": "232825827cc00c9a0e9ca5b732c936966eb8f390055f696f268c72f5a8c1dc53"
+        },
+        {
+          "global_index": 66,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            2356,
+            268,
+            2770,
+            682
+          ],
+          "rgb_sha256": "50dd2c3ead30b66e01c01c93b697f78bed460502a55a49f03f07d8e4e5471f0f"
+        },
+        {
+          "global_index": 67,
+          "panel": "Original",
+          "box": [
+            2794,
+            268,
+            3208,
+            682
+          ],
+          "rgb_sha256": "0808e3e884f3e8daef755a9dceb5ac9575d4db67455542c7276e8bc6d7d3e1df"
+        },
+        {
+          "global_index": 67,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            3218,
+            268,
+            3632,
+            682
+          ],
+          "rgb_sha256": "c18604338f5f1db54f4100a4332b1d4a5f802c9c3bb97885489bf945c004a6e4"
+        },
+        {
+          "global_index": 68,
+          "panel": "Original",
+          "box": [
+            208,
+            734,
+            622,
+            1148
+          ],
+          "rgb_sha256": "8d0416fd2812af442d1d43dc30017475b58c107c0d485c7baa41959d42d6ab17"
+        },
+        {
+          "global_index": 68,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            632,
+            734,
+            1046,
+            1148
+          ],
+          "rgb_sha256": "5d5db72dd89a4e4a7b7758c24ac4014bddb4377c275af1c33bec856cd5dd65c7"
+        },
+        {
+          "global_index": 69,
+          "panel": "Original",
+          "box": [
+            1070,
+            734,
+            1484,
+            1148
+          ],
+          "rgb_sha256": "86edb9637db949208015fd4075c5587e4ab2f533580a9122e6fa06ac29e7d7ed"
+        },
+        {
+          "global_index": 69,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            1494,
+            734,
+            1908,
+            1148
+          ],
+          "rgb_sha256": "9a646cbba1ded7e7ae9078409413b523fee8559b3f0f226e02156cf0cd04345c"
+        },
+        {
+          "global_index": 70,
+          "panel": "Original",
+          "box": [
+            1932,
+            734,
+            2346,
+            1148
+          ],
+          "rgb_sha256": "65d119d9a8a3394ca831ba3b785f7233f8abe40f7a78661bf821be9877d0d0ff"
+        },
+        {
+          "global_index": 70,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            2356,
+            734,
+            2770,
+            1148
+          ],
+          "rgb_sha256": "82adcd513ab57786d1ff666d4d88ccff9e100411ae62d64dd92d1b51517f550b"
+        },
+        {
+          "global_index": 71,
+          "panel": "Original",
+          "box": [
+            2794,
+            734,
+            3208,
+            1148
+          ],
+          "rgb_sha256": "3631699748ca07a5fa50da0a7a17aeefc60e4644bdb9049465b953006d340cf5"
+        },
+        {
+          "global_index": 71,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            3218,
+            734,
+            3632,
+            1148
+          ],
+          "rgb_sha256": "4d75061766b8d5e235e0e61ad89f89a45a0ec4da04fbb65d41ac49fee1e15443"
+        },
+        {
+          "global_index": 72,
+          "panel": "Original",
+          "box": [
+            208,
+            1200,
+            622,
+            1614
+          ],
+          "rgb_sha256": "5c8e3da88e487e07bd2c1b3edcbf23235143a930edd4f0f9a1f9c8d296916882"
+        },
+        {
+          "global_index": 72,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            632,
+            1200,
+            1046,
+            1614
+          ],
+          "rgb_sha256": "92e06bd8068ff18314a74540860f09386c2d50dee30a8da529aa24484006d6df"
+        },
+        {
+          "global_index": 73,
+          "panel": "Original",
+          "box": [
+            1070,
+            1200,
+            1484,
+            1614
+          ],
+          "rgb_sha256": "4ca458a77e660d33a3ebc497f82ea1582fc3ca9cc3bc6dc92e87902d9e3764db"
+        },
+        {
+          "global_index": 73,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            1494,
+            1200,
+            1908,
+            1614
+          ],
+          "rgb_sha256": "da1209afc401935506a08c6ca541d9ccb9cb460a4857a74b7d85630adb77a829"
+        },
+        {
+          "global_index": 74,
+          "panel": "Original",
+          "box": [
+            1932,
+            1200,
+            2346,
+            1614
+          ],
+          "rgb_sha256": "72775c590730f02da56ba2a446da230e8de79927bba2b414f24267000df1d879"
+        },
+        {
+          "global_index": 74,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            2356,
+            1200,
+            2770,
+            1614
+          ],
+          "rgb_sha256": "6be96e2580530032616459123b853fc2ce6022e04ee4f9fbe9cc1880014ae946"
+        },
+        {
+          "global_index": 75,
+          "panel": "Original",
+          "box": [
+            2794,
+            1200,
+            3208,
+            1614
+          ],
+          "rgb_sha256": "51df2428d0e3fd28ba4992310214e4879cc4d6eb0a928e03539933127abe623c"
+        },
+        {
+          "global_index": 75,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            3218,
+            1200,
+            3632,
+            1614
+          ],
+          "rgb_sha256": "9b5828da31cdd05e4741a9a7a13e1e8787c3afb1f74801b849d33419da509bd8"
+        },
+        {
+          "global_index": 76,
+          "panel": "Original",
+          "box": [
+            208,
+            1666,
+            622,
+            2080
+          ],
+          "rgb_sha256": "8759b7e552af9efaeb9486efc88be0d9f4a5aa0069e8b3c941d0954c5c6f1317"
+        },
+        {
+          "global_index": 76,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            632,
+            1666,
+            1046,
+            2080
+          ],
+          "rgb_sha256": "d06256a0c2167e245619685a91e1d349250d447441f599cf7ba627a3f9d44a07"
+        },
+        {
+          "global_index": 77,
+          "panel": "Original",
+          "box": [
+            1070,
+            1666,
+            1484,
+            2080
+          ],
+          "rgb_sha256": "d3f5f65308d5cd06a9ba32e2e4f37a0893b9196186b84a726735b48720b22b3d"
+        },
+        {
+          "global_index": 77,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            1494,
+            1666,
+            1908,
+            2080
+          ],
+          "rgb_sha256": "f404f43ef5b37d4c5bc10b7017596396b88311f552bb9188f504e058ce9294ea"
+        },
+        {
+          "global_index": 78,
+          "panel": "Original",
+          "box": [
+            1932,
+            1666,
+            2346,
+            2080
+          ],
+          "rgb_sha256": "31190c2d924e1af684b03dcd944844a59dec06238ca1ada4cbefb6f8472f308a"
+        },
+        {
+          "global_index": 78,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            2356,
+            1666,
+            2770,
+            2080
+          ],
+          "rgb_sha256": "c6880c75c8dc4c1760bac9120e4d6bb03f40a82ddd0ae3c3a5e592a85058a03a"
+        },
+        {
+          "global_index": 79,
+          "panel": "Original",
+          "box": [
+            2794,
+            1666,
+            3208,
+            2080
+          ],
+          "rgb_sha256": "55f5dad696e682611c63f32bfbc9dc6b293cd9ab39e36aafe665b56344246bc8"
+        },
+        {
+          "global_index": 79,
+          "panel": "Packed4 CPA + FIA",
+          "box": [
+            3218,
+            1666,
+            3632,
+            2080
+          ],
+          "rgb_sha256": "78149a89b1503195bfe6c2fc5a2e51216de4054ecab9f21e63be7c68b329df70"
+        }
+      ]
+    }
+  ]
+}

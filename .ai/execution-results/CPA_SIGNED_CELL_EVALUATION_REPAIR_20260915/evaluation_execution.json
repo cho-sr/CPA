@@ -1,0 +1,14 @@
+{
+  "task_id": "CPA_SIGNED_CELL_EVALUATION_REPAIR_20260915",
+  "plan_version": 1,
+  "status": "COMPLETED",
+  "started_utc": "2026-09-15T04:42:25.585337+00:00",
+  "command": "C:\\miniconda\\envs\\DLG\\python.exe -m quantization_aware_cpa.qacpa.signed_cell_rank_evaluation --naive quantization_aware_cpa/results/signed_int4_baseline_B16_T10/naive --cell-rank quantization_aware_cpa/results/signed_cell_rank_B16_T10/cell_rank_ap5 --public-observation quantization_aware_cpa/results/signed_int4_baseline_B16_T10/observation --private-observation quantization_aware_cpa/results_private/signed_int4_baseline_B16_T10/observation --output quantization_aware_cpa/results_private/signed_cell_rank_B16_T10/evaluation_ap5",
+  "stdout": "C:\\Users\\조상제\\Desktop\\CPA\\.ai\\execution-results\\CPA_SIGNED_CELL_EVALUATION_REPAIR_20260915\\offline_evaluation.stdout.log",
+  "stderr": "C:\\Users\\조상제\\Desktop\\CPA\\.ai\\execution-results\\CPA_SIGNED_CELL_EVALUATION_REPAIR_20260915\\offline_evaluation.stderr.log",
+  "output": "quantization_aware_cpa/results_private/signed_cell_rank_B16_T10/evaluation_ap5",
+  "exit_code": 0,
+  "duration_seconds": 20.328,
+  "ended_utc": "2026-09-15T04:42:45.915511+00:00",
+  "full_evaluation_status": "COMPLETED"
+}

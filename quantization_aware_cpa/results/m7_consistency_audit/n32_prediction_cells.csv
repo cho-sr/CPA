@@ -1,0 +1,16 @@
+﻿source,round,seed,batch_index,n,T,bits,rounding,scale_granularity,bucket_size,lr,c_mp,split,observation,prediction,quantization_seed,quantization_seed_origin,aggregation_axis,source_csv
+m5_uia_spectrum,0,0,0,32,1,4,stochastic,per_row,,0.001,3.0,val,factorized gradient (T=1 bridge),24,0,logged CSV,single condition; no aggregation,results/m5_uia_spectrum/summary.csv
+m5_uia_spectrum,0,0,0,32,2,4,stochastic,per_row,,0.001,3.0,val,factorized cumulative local gradients,24,295554,logged CSV,single condition; no aggregation,results/m5_uia_spectrum/summary.csv
+m5_uia_spectrum,0,0,0,32,5,4,stochastic,per_row,,0.001,3.0,val,factorized cumulative local gradients,24,298581,logged CSV,single condition; no aggregation,results/m5_uia_spectrum/summary.csv
+m5_uia_spectrum,0,0,0,32,10,4,stochastic,per_row,,0.001,3.0,val,factorized cumulative local gradients,24,303626,logged CSV,single condition; no aggregation,results/m5_uia_spectrum/summary.csv
+m5_uia_beff_validation,0,0,0,32,1,4,stochastic,per_row,,0.001,3.0,val,factorized gradient (T=1 bridge),24,294949,source code formula,single condition; no aggregation,results/m5_uia_beff_validation/summary.csv
+m5_uia_beff_validation,0,0,0,32,10,4,stochastic,per_row,,0.001,3.0,val,factorized cumulative local gradients,24,304030,source code formula,single condition; no aggregation,results/m5_uia_beff_validation/summary.csv
+m5_uia_beff_validation,0,1,0,32,1,4,stochastic,per_row,,0.001,3.0,val,factorized gradient (T=1 bridge),19,294950,source code formula,single condition; no aggregation,results/m5_uia_beff_validation/summary.csv
+m5_uia_beff_validation,0,1,0,32,10,4,stochastic,per_row,,0.001,3.0,val,factorized cumulative local gradients,19,304031,source code formula,single condition; no aggregation,results/m5_uia_beff_validation/summary.csv
+m5_uia_beff_validation,0,2,0,32,1,4,stochastic,per_row,,0.001,3.0,val,factorized gradient (T=1 bridge),19,294951,source code formula,single condition; no aggregation,results/m5_uia_beff_validation/summary.csv
+m5_uia_beff_validation,0,2,0,32,10,4,stochastic,per_row,,0.001,3.0,val,factorized cumulative local gradients,19,304032,source code formula,single condition; no aggregation,results/m5_uia_beff_validation/summary.csv
+m6_round_dependence,0,0,0,32,1,4,stochastic,per_row,,0.001,3.0,val,factorized gradient (T=1 bridge),24,293536,logged CSV,single condition; no aggregation,results/m6_round_dependence/summary.csv
+m6_round_dependence,0,0,1,32,1,4,stochastic,per_row,,0.001,3.0,val,factorized gradient (T=1 bridge),25,1293539,logged CSV,single condition; no aggregation,results/m6_round_dependence/summary.csv
+m6_round_dependence,0,0,2,32,1,4,stochastic,per_row,,0.001,3.0,val,factorized gradient (T=1 bridge),22,2293542,logged CSV,single condition; no aggregation,results/m6_round_dependence/summary.csv
+m6_round_dependence,0,0,3,32,1,4,stochastic,per_row,,0.001,3.0,val,factorized gradient (T=1 bridge),21,3293545,logged CSV,single condition; no aggregation,results/m6_round_dependence/summary.csv
+m6_round_dependence,0,0,4,32,1,4,stochastic,per_row,,0.001,3.0,val,factorized gradient (T=1 bridge),14,4293548,logged CSV,single condition; no aggregation,results/m6_round_dependence/summary.csv

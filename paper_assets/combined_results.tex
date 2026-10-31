@@ -1,0 +1,53 @@
+% Generated from existing metrics by build_results_table.py; no evaluation.
+\begin{table}[!t]
+\centering
+\caption{Naive versus randomized decoding (PSNR$\uparrow$, SSIM$\uparrow$,
+LPIPS$\downarrow$). Dashes denote unavailable results.
+Protocols differ between panels (Section~\ref{sec:sparse}).}
+\label{tab:compression}
+\label{tab:bits}
+\small
+\setlength{\tabcolsep}{0.8pt}
+\renewcommand{\arraystretch}{1.0}
+\begin{tabular*}{\columnwidth}{@{\extracolsep{\fill}}lllrrrrr@{}}
+\toprule
+\multicolumn{8}{l}{\textit{(a) Quantization}}\\
+Dataset & Method & Metric & 8-bit & 7-bit & 6-bit & 5-bit & 4-bit\\
+\midrule
+\multirow{6}{*}{CIFAR-100} & \multirow{3}{*}{Baseline} & PSNR & 11.792 & 11.676 & 12.057 & 11.874 & 11.990\\
+ &  & SSIM & 0.1200 & 0.1163 & 0.1203 & 0.1212 & 0.1285\\
+ &  & LPIPS & 0.7550 & 0.7469 & 0.7442 & 0.7570 & 0.7372\\
+ & \multirow{3}{*}{Random selected} & PSNR & 11.967 & 11.836 & 11.948 & 11.920 & 11.736\\
+ &  & SSIM & 0.1090 & 0.1297 & 0.1250 & 0.1244 & 0.1207\\
+ &  & LPIPS & 0.7279 & 0.7471 & 0.7429 & 0.7411 & 0.7486\\
+\midrule
+\multirow{6}{*}{ImageNet} & \multirow{3}{*}{Naive} & PSNR & 12.06 & 11.80 & 11.64 & 11.55 & 11.52\\
+ &  & SSIM & 0.2924 & 0.2764 & 0.2596 & 0.2620 & 0.2921\\
+ &  & LPIPS & 0.5594 & 0.6118 & 0.6961 & 0.7826 & 0.8071\\
+ & \multirow{3}{*}{\cora{}} & PSNR & 12.06 & 11.83 & 11.67 & 11.55 & 11.50\\
+ &  & SSIM & 0.3070 & 0.2827 & 0.2690 & 0.2558 & 0.2576\\
+ &  & LPIPS & 0.5558 & 0.6332 & 0.6659 & 0.7490 & 0.8085\\
+\bottomrule
+\end{tabular*}
+\par\smallskip
+\begin{tabular*}{\columnwidth}{@{\extracolsep{\fill}}lllrrrrr@{}}
+\toprule
+\multicolumn{8}{l}{\textit{(b) Sparsification: retained fraction}}\\
+Dataset & Method & Metric & 80\% & 50\% & 30\% & 20\% & 10\%\\
+\midrule
+\multirow{6}{*}{CIFAR-100} & \multirow{3}{*}{Baseline} & PSNR & 11.994 & 12.020 & 11.948 & 11.793 & 11.757\\
+ &  & SSIM & 0.1289 & 0.1304 & 0.1293 & 0.1266 & 0.1285\\
+ &  & LPIPS & 0.7480 & 0.7528 & 0.7351 & 0.7467 & 0.7438\\
+ & \multirow{3}{*}{Random selected} & PSNR & 11.994 & 11.911 & 11.845 & 11.812 & 11.855\\
+ &  & SSIM & 0.1289 & 0.1306 & 0.1281 & 0.1145 & 0.1119\\
+ &  & LPIPS & 0.7480 & 0.7424 & 0.7438 & 0.7432 & 0.7299\\
+\midrule
+\multirow{6}{*}{ImageNet} & \multirow{3}{*}{Naive} & PSNR & --- & 22.29 & 22.14 & 21.87 & 21.53\\
+ &  & SSIM & --- & 0.3344 & 0.3141 & 0.2906 & 0.2631\\
+ &  & LPIPS & --- & 0.4864 & 0.5098 & 0.5536 & 0ㅇㅇ323\\
+ & \multirow{3}{*}{Random fill} & PSNR & --- & --- & --- & --- & 21.51\\
+ &  & SSIM & --- & --- & --- & --- & 0.2610\\
+ &  & LPIPS & --- & --- & --- & --- & 0.6300\\
+\bottomrule
+\end{tabular*}
+\end{table}
